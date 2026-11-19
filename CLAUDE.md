@@ -25,4 +25,5 @@ Vì là dự án Unity: việc cần Unity Editor làm ở phiên cục bộ ho�
 
 ## DECISIONS
 - 2026-11-19: Dùng GitHub private repo làm nơi lưu bản chính để làm việc từ nhiều nơi.
+- 2026-11-19: Giai đoạn hiện tại chỉ làm GDD trên Google Sheet (connector Google Sheets), chưa tạo Unity project.
 - 2026-11-19: Làm từ xa bằng Remote Control vào máy công ty (desktop, không pin). Phiên mới tự nối Remote Control. Tắt sleep khi cắm điện (standby-timeout-ac 0) để lúc nào cũng remote được.
