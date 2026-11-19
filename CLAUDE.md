@@ -3,20 +3,17 @@
 Repo: github.com/huycv18/DATN-SP27 (public từ 2026-11-19). Làm việc nhiều thiết bị: máy cá nhân clone/pull, phiên Claude Đám mây trỏ vào repo này.
 
 ## Game
-GDD (nguồn chuẩn, đọc ở đây trước khi làm): https://docs.google.com/spreadsheets/d/1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs
-25 tab theo khuôn Lead (`docs/process/templates/gdd-sheet-khuon-indie.md`, từ 2026-11-19): OVERVIEW, GAME STORY, TRACKING, WIREFRAME, CORE LOOP, Player, Enemy, Salvage, Recipe, Customer, Upgrade, Day, Zone, PROCESSING, Shop, ITEM LIST, Tutorials, ECONOMIC, Event Tracking, Assets, AUDIO ASSETS LIST, MVP Criteria Checklist, Balance Sheet, Playtest Report, Bugs Report. Nội dung v0.1 nằm ở 17 tab ẩn tiền tố `v0.1`, chờ chuyển sang tab mới.
+Đang định nghĩa lại từ đầu (Lead 2026-11-19: "Hãy coi như chúng ta chưa có gì hết và cần xác định lại từ đầu về game này", bỏ cả ý tưởng Space Salvage).
+Không gian làm việc: `projects/game-moi/` (slug tạm, đổi khi có tên). Tiến độ định nghĩa: `projects/game-moi/concept.md`. Space Salvage (`projects/game-moi/`, Sheet GDD cũ) chỉ để tra, không dùng làm gốc.
 
-| Mục | Giá trị |
+| Ràng buộc Lead đã chốt | Giá trị |
 |---|---|
-| Tên tạm | Space Salvage (chưa đặt tên) |
-| Loại dự án | Game indie, không phải Puzzle mobile |
-| Thể loại | Thám hiểm hành động 2D + quản lý quán (cấu trúc Dave the Diver) |
-| Engine / nền tảng | Unity, PC Windows, 1 người chơi, offline |
-| Art | 2D pixel art side-view, cyberpunk |
-| Core loop | Mua nhiên liệu -> bay jetpack ra tầng không gian -> nhặt, cắt, choáng + lưới bắt sinh vật -> về quán chế món / đồ độ -> bán lấy ₵ -> nâng cấp -> bay xa hơn |
-| Tiền tệ | ₵ là đơn vị duy nhất, không có XP |
-| Monetization | Không ads, không IAP, không liveops (game bán đứt, offline) |
-| Mốc hiện tại | MVP: 1 tầng, 3 quái, 7 công thức, 2 loài khách, chơi trọn 1 ngày |
+| Engine / nền tảng | Unity, PC (có thể mở rộng đa nền tảng), 1 người chơi (để mở Multiplayer) |
+| Art | 2D vector art, có thể thêm 3D thành 2.5D (chưa chốt) |
+| Kinh doanh | Bán đứt, không gói bán |
+| Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý (khá giống Dave the Diver) |
+| Nhóm | 1 Game Designer, 4 Game Developer, 1 Artist 2D |
+| Cách định nghĩa | Lead đưa ý tưởng, phòng cùng phát triển, chốt từng bước |
 
 Vì là dự án Unity: việc cần Unity Editor làm ở phiên cục bộ hoặc Remote Control, phiên Đám mây chỉ làm được tài liệu và script.
 
@@ -43,7 +40,7 @@ phạm vi lớn, thời hạn, hoặc thứ không đảo ngược được.
 
 Phiên vai mở ở gốc repo với tên `gd-<vai>` không phải GDM: đọc `.claude/agents/gd-<vai>.md` và làm theo vai đó, chờ GDM giao việc.
 
-Phòng hiện chỉ có một game, nên **GDM phòng kiêm gd-manager của Space Salvage** (không mở phiên `gdm-space-salvage`).
+Phòng hiện chỉ có một game, nên **GDM phòng kiêm gd-manager của game đang làm** (không mở phiên `gdm-<slug>`).
 Khi có game thứ hai mới tách theo `docs/org/gd-manager.md`.
 
 Lead là dân chuyên nghiệp: không giải thích khái niệm cơ bản (core loop, MDA, pillar). Đi thẳng vào nội dung.
@@ -56,7 +53,7 @@ Playbook, knowledge và một số skill của phòng rút từ dự án Puzzle 
 |---|---|
 | Phương pháp chung (chốt luật ra giấy, chứng minh bằng số, brief, QA độc lập, DECISIONS) | Dùng nguyên |
 | Solver, bàn, tile, khay, hàng chờ, booster, revive, ads, liveops | Bỏ, không áp |
-| `docs/knowledge/15-dang-puzzle-va-nguon-kho.md`, `level-forge`, `/gdd-v05`, `/gdd-v1 sheet` (khuôn 6 tab) | Không dùng cho Space Salvage. Chỉ lấy cấu trúc khi thật cần |
+| `docs/knowledge/15-dang-puzzle-va-nguon-kho.md`, `level-forge`, `/gdd-v05`, `/gdd-v1 sheet` (khuôn 6 tab) | Không dùng cho game mới. Chỉ lấy cấu trúc khi thật cần |
 | `/gdd-v1 he-thong`, `/gdd-review`, `/gdd-sheet-sync`, `/playtest`, `/retro`, `/kickoff-game` | Dùng được, GDD chuẩn vẫn là Sheet 25 tab của game, theo khuôn `docs/process/templates/gdd-sheet-khuon-indie.md` |
 
 ### Nguyên tắc vận hành
@@ -76,13 +73,13 @@ Playbook, knowledge và một số skill của phòng rút từ dự án Puzzle 
 8. **Không bịa tiến độ.** Chưa xong nói chưa xong, test fail nói fail kèm log, QA bỏ qua thì nói bỏ qua.
 9. **Tự động hóa việc lặp từ 3 lần.** Script, hook, cổng kiểm. Ghi vào `production/DECISIONS.md`.
 10. **Song song, nhưng tiết kiệm token.** Việc độc lập của các vai giao cùng một lượt. Chỉ giao việc trên đường găng, không giao trước việc còn chờ Lead quyết. Vai đơn giản dùng Sonnet, không dùng Fable cho agent.
-11. **Tốc độ đến từ bớt vòng làm lại.** Số Lead chốt nằm ở `projects/space-salvage/so-hien-hanh.md`. Đề xuất chỉ ở một file trình Lead tới khi chốt. Kiểm lặp phải là cổng máy. Vai giữ tab tự dán Sheet bằng `/gdd-sheet-sync`. Mỗi đợt GDM gửi tối đa số vai + 1 tin.
+11. **Tốc độ đến từ bớt vòng làm lại.** Số Lead chốt nằm ở `projects/game-moi/so-hien-hanh.md`. Đề xuất chỉ ở một file trình Lead tới khi chốt. Kiểm lặp phải là cổng máy. Vai giữ tab tự dán Sheet bằng `/gdd-sheet-sync`. Mỗi đợt GDM gửi tối đa số vai + 1 tin.
 12. **Bám mốc MVP.** Việc ngoài MVP (tầng 2, quái thứ 4, loài khách thứ 3...) chỉ ghi vào backlog, không làm khi Lead chưa mở phạm vi. Quyết định luật lõi chỉ tính là chốt khi Lead nói bằng lời. Tab Lead đã sửa tay: kéo bản Sheet về repo trước khi soạn bản sửa.
 
 ### Hệ thống phiên
 
 Mỗi vai tối đa một phiên, mở ở gốc repo, dùng chung cho mọi việc của vai đó. GDM giao việc bằng tin nhắn sang phiên vai
-(dòng đầu brief ghi slug `space-salvage`), vai trả `## Báo cáo cho GDM`. Việc nhỏ GDM gọi subagent cùng tên thay vì nhắn phiên.
+(dòng đầu brief ghi slug `game-moi`), vai trả `## Báo cáo cho GDM`. Việc nhỏ GDM gọi subagent cùng tên thay vì nhắn phiên.
 
 Vai chia theo hệ thống của game (kiểu team indie), mỗi hệ thống một người giữ luật và tab.
 
@@ -112,7 +109,7 @@ GDM viết yêu cầu bàn giao trong file và báo Lead.
 
 | Lệnh | Ai dùng | Làm gì |
 |---|---|---|
-| `/kickoff-game` | GDM | Nhận game có sẵn: dựng `projects/space-salvage/`, DECISIONS, task, đợt giao đầu |
+| `/kickoff-game` | GDM | Nhận game có sẵn: dựng `projects/game-moi/`, DECISIONS, task, đợt giao đầu |
 | `/gdd-v1 he-thong` | mọi vai giữ hệ thống | GDD một hệ thống bằng markdown theo khuôn, hỏi đáp chốt luật một lượt, soát định dạng |
 | `/gdd-review` | gd-qa | Review GDD độc lập 5 lớp trước khi giao dev hoặc dán Sheet |
 | `/gdd-sheet-sync moi|o|doi-chieu` | GDM, vai giữ tab | Dán tab Google Sheet từ TSV trong repo và đối chiếu từng ô bằng export CSV |
@@ -123,7 +120,7 @@ GDM viết yêu cầu bàn giao trong file và báo Lead.
 Không dùng cho game này: `/gdd-v05`, `/gdd-v1 sheet`, `level-forge` (đều cho Puzzle).
 
 Chi tiết tổ chức, thẩm quyền: `docs/org/to-chuc.md`. Playbook từng vai: `docs/playbooks/indie/<tên>.md` (bản Puzzle cũ ở `docs/playbooks/` chỉ để tra).
-Kho tri thức: `docs/knowledge/` (đọc `docs/knowledge/README.md`, nhớ bảng "Khung gốc viết cho Puzzle mobile" ở trên).
+Kho tri thức chuyên môn indie: `docs/knowledge/indie/` (đọc `docs/knowledge/indie/README.md` trước khi giao việc). Kho cũ `docs/knowledge/*.md` là tri thức Puzzle, chỉ để tra phương pháp.
 
 ### Cách giao việc
 
@@ -188,12 +185,12 @@ docs/process/templates/   brief, báo cáo, gdd hệ thống, kết quả QA, ec
 production/BACKLOG.md     việc đang làm
 production/DECISIONS.md   quyết định của cả phòng
 production/reports/       báo cáo theo mốc
-projects/space-salvage/   không gian làm việc của game (tạo bằng /kickoff-game)
+projects/game-moi/   không gian làm việc của game (tạo bằng /kickoff-game)
 ```
 
 ### Khi mở phiên GDM mới
 
-1. Đọc `production/BACKLOG.md` (đầu file), báo cáo mới nhất trong `production/reports/` (nếu có), `projects/space-salvage/DECISIONS.md` và `production/DECISIONS.md`.
-2. Chưa có `projects/space-salvage/` thì việc đầu tiên là `/kickoff-game` cho Space Salvage.
+1. Đọc `production/BACKLOG.md` (đầu file), báo cáo mới nhất trong `production/reports/` (nếu có), `projects/game-moi/DECISIONS.md` và `production/DECISIONS.md`.
+2. Chưa có `projects/game-moi/` thì việc đầu tiên là `/kickoff-game` cho game mới.
 3. Phân loại tin của Lead: yêu cầu mới (tạo task, giao) / câu hỏi (trả lời từ file) / phản hồi (ghi DECISIONS rồi giao lại).
 4. Sau mỗi mốc lớn: bài học vào playbook và prompt agent, không chỉ vào báo cáo.

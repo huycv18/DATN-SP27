@@ -1,5 +1,7 @@
 # Space Salvage (space-salvage)
 
+**Đã bỏ (Lead 2026-11-19, định nghĩa lại game từ đầu). Chỉ để tra, xem `projects/game-moi/`.**
+
 Tên tạm, chưa đặt tên. Repo: `github.com/huycv18/DATN-SP27` (gốc repo này, chưa có Unity project) | Nền tảng: Unity, PC Windows, 1 người chơi, offline | Đối tượng: người chơi 16+ thích nhịp vừa, quản lý, khám phá, tối ưu kinh tế (theo OVERVIEW)
 Game tham chiếu: Dave the Diver (chỉ lấy cấu trúc ngày thám hiểm + quán), Stardew Valley (nhịp ngày đêm), Hardspace: Shipbreaker (fantasy tháo dỡ). Không chép luật, không lấy asset.
 Người thực hiện ngoài phòng: chưa có (code Unity, art, audio không thuộc phòng) | Trạng thái: GDD v0.1.0 (19/10/2026), phần lớn số ở trạng thái "Đề xuất - chưa chốt"
