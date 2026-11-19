@@ -1,6 +1,6 @@
 # DATN SP27
 
-Repo: github.com/huycv18/DATN-SP27 (private). Làm việc nhiều thiết bị: máy cá nhân clone/pull, phiên Claude Đám mây trỏ vào repo này.
+Repo: github.com/huycv18/DATN-SP27 (public từ 2026-11-19). Làm việc nhiều thiết bị: máy cá nhân clone/pull, phiên Claude Đám mây trỏ vào repo này.
 
 ## Game
 GDD (nguồn chuẩn, đọc ở đây trước khi làm): https://docs.google.com/spreadsheets/d/1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs
