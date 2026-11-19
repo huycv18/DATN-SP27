@@ -9,3 +9,4 @@ Repo: github.com/huycv18/DATN-SP27 (private). Làm việc nhiều thiết bị: 
 
 ## DECISIONS
 - 2026-11-19: Dùng GitHub private repo làm nơi lưu bản chính để làm việc từ nhiều nơi.
+- 2026-11-19: Làm từ xa bằng Remote Control vào máy công ty (desktop, không pin). Phiên mới tự nối Remote Control; máy phải tắt sleep khi cắm điện (mặc định 15 phút).
