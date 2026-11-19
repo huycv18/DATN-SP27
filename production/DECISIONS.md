@@ -1,0 +1,11 @@
+# Quyết định của phòng Game Designer
+
+Chỉ ghi quyết định của cả phòng (tổ chức, quy trình, công cụ, luật chung). Quyết định của một sản phẩm ghi ở `projects/<slug>/DECISIONS.md`.
+
+Mỗi mục: ngày, `phòng`, quyết định, người quyết, lý do, hệ quả. Ghi ngay khi quyết, không hồi tố. Khi ghi quyết định mới, grep quyết định cũ cùng chủ đề.
+
+- 2026-11-19, phòng: Cài phòng Game Designer bằng skill gd-department, bộ gọn + gd-economy, gd-ux (6 vai). Người quyết: Huy. Lý do: game indie có economy ₵, shop, nâng cấp, wireframe, cốt truyện là việc thật. Hệ quả: gd-research, gd-algo để dành.
+- 2026-11-19, phòng: Space Salvage là game indie PC, không phải Puzzle. Agent, CLAUDE.md, `_shared-protocol.md` viết lại theo game này. Không dùng `/gdd-v05`, `/gdd-v1 sheet`, `level-forge`. Người quyết: Huy. Hệ quả: `cap-nhat` khung về sau sẽ ra `.moi` cho các file đã sửa, gộp tay.
+- 2026-11-19, phòng: Chỉ có một game nên GDM phòng kiêm gd-manager Space Salvage, không mở phiên `gdm-space-salvage`. Mỗi vai một phiên `gd-<vai>` mở ở gốc repo. Người quyết: GDM, Huy duyệt khi cài.
+- 2026-11-19, phòng: GDD Sheet của game indie theo khuôn rút từ GDD Dungeon Builder của Lead (`docs/process/templates/gdd-sheet-khuon-indie.md`): 4 nhóm tab, khuôn khối Issue ID / Task / Sub Task / Short Description / Ref, font Lexend, màu #351C75 và #B4A7D6. Người quyết: Huy giao khuôn, chi tiết áp cho Space Salvage chờ Huy duyệt. Hệ quả: `/gdd-sheet-sync` dán theo khuôn này, validator kiểm Issue ID duy nhất và số không ghi hai nơi.
+- 2026-11-19, phòng: Chia lại vai theo hệ thống của game indie (Lead: "Game sẽ có hệ thống cốt truyện, hệ thống nhân vật, hệ thống combat, hệ thống vũ khí vật phẩm, hệ thống map môi trường"). 10 vai: gd-story, gd-character, gd-combat, gd-items, gd-world, gd-quan, gd-economy, gd-ux, gd-tech, gd-qa. Bỏ gd-systems (tách thành character, combat, items, quan), gd-level đổi thành gd-world, gd-tools đổi thành gd-tech. GDM giữ thêm CORE LOOP và Day. Người quyết: Huy. Hệ quả: `/gd-department kiem` sẽ báo lệch ở dòng đếm agent và `cap-nhat` không nhận ra vai đổi tên, phòng coi như tách khỏi gói Puzzle. Playbook vẫn giữ tên cũ, agent trỏ tới playbook gần nhất.

@@ -1,0 +1,23 @@
+{
+  "_ghi_chu": "Mẫu điền cho game họ drop, đang điền theo một game bóng bay V0.5. Đổi object, chiều vật lý, tên loại, scope art, dev, sfx, vfx. Câu Order, Hàng chờ, Win, Lose mặc định nằm trong sinh-v05.py, game nào khác luật thì ghi đè bằng dong_order, dong_hang_cho. Order khác luật (theo nhóm chủ đề 4 ô) thì ghi đè bằng dong_order.",
+  "ho": "drop",
+  "ten_game": "Bóng Bay Mẫu",
+  "vat": "bóng",
+  "huong": "len",
+  "tam_nhin": "trên vạch sương",
+  "cung_loai": "cùng màu và cùng họa tiết",
+  "so_level": 15,
+  "level_tag": "2 level very hard 10, 15. 3 level hard 5, 8, 13",
+  "tutorial_scope": "Onboarding L1, vạch sương, hàng chờ, họa tiết, mechanic",
+  "demo_scope": "Màn gameplay theme bóng bay: bàn, vạch sương, Order box, hàng chờ",
+  "background": "1 background bầu trời",
+  "object_scope": "12 loại bóng: 8 màu trơn và 4 màu có họa tiết\nNhận ra ngay ở cỡ nhỏ nhất (6 cột)",
+  "dev_scope": "Vật lý bóng nổi, vạch sương, Order, hàng chờ, chuỗi nổ, Hồi sinh, mechanic khi chốt\nAnim bóng bay vào Order, bóng nổ",
+  "sfx_scope": "Nổ bóng, bấm bóng dưới sương, bóng trồi lên, cảnh báo hàng chờ, chime chuỗi nổ",
+  "vfx_scope": "Bóng nổ khi clear Order, bóng sáng lên khi qua vạch sương, hàng chờ sắp đầy, dải khen",
+  "ref": "Ref prototype",
+  "vat_day_du": "bóng bay",
+  "logic_nhat": "Nhặt bóng sáng (trên vạch sương). Bóng bên dưới nổi lên lấp chỗ, vượt vạch sương sẽ sáng để nhặt tiếp.",
+  "bo_3": "bộ 3 quả",
+  "tam_nhin_them": "bóng dưới sương nhìn mờ, chưa nhặt được"
+}

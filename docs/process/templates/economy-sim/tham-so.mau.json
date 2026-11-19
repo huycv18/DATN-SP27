@@ -1,0 +1,136 @@
+{
+  "game": "<slug>",
+  "cap_nhat": "2026-10-20",
+  "nguon_so_hien_hanh": "projects/<slug>/so-hien-hanh.md",
+  "level_csv": "../levels/level-v1.csv",
+  "cot_coin": "goi_y_coin",
+  "bo_qua_tieu_de": [
+    "Phụ lục",
+    "Lịch sử thay đổi"
+  ],
+  "ghi_chu": "gia_tri_doc là số như viết trong văn bản (30 cho 30%). bat: regex có nhóm 1 là số, doc phải khớp gia_tri_doc. cam: số cũ không được còn trong văn bản (regex). Bảng và số suy ra không nằm ở đây mà do sim in vào khối <!--khoi:...--> và <!--v:...-->.",
+  "tham_so": {
+    "coin_moi_coin": {
+      "gia_tri": 5,
+      "nguon": "DECISIONS (Lead chốt coin quân vàng; so-hien-hanh.md mục Coin)",
+      "nhan": "dữ kiện",
+      "bat": [
+        "(\\d+) coin mỗi (?:Coin|quân)",
+        "\\+(\\d+) coin\\b(?= ngay)",
+        "(?:số|Số) Coin x (\\d+)",
+        "tăng đúng (\\d+)",
+        "VFX \"\\+(\\d+)\"",
+        "nhặt \\+(\\d+) coin"
+      ],
+      "cam": [
+        "\\bx 10\\b",
+        "\\b10 coin mỗi",
+        "\\b1920\\b",
+        "\\b2090\\b",
+        "\\b209 quân"
+      ]
+    },
+    "thuong_thang": {
+      "gia_tri": 80,
+      "nguon": "Lead duyệt 20/10 (DECISIONS Lead duyệt coin màn thắng)",
+      "nhan": "dữ kiện",
+      "bat": [
+        "thắng level \\+(\\d+) coin",
+        "[Tt]hưởng thắng cơ bản \\| (\\d+) coin",
+        "dòng thưởng \\+(\\d+)",
+        "(\\d+) thưởng thắng\\)",
+        "thưởng thắng cơ bản \\((\\d+)\\)",
+        "thưởng thắng (\\d+) coin"
+      ],
+      "cam": [
+        "thưởng thắng 50\\b(?! coin \\(một)"
+      ]
+    },
+    "gia_hoi_sinh": {
+      "gia_tri": 900,
+      "nguon": "Lead chốt 06/10; so-hien-hanh.md mục Hồi sinh",
+      "nhan": "dữ kiện",
+      "bat": [
+        "Hồi sinh (\\d{3,}) coin",
+        "Hồi sinh với (\\d{3,}) coin",
+        "đủ (\\d{3,})\\b",
+        "trừ đúng (\\d{3,})",
+        "Hồi sinh (\\d{3,})\\b"
+      ],
+      "cam": []
+    },
+    "uptake_ads": {
+      "gia_tri": 0.3,
+      "gia_tri_doc": 30,
+      "nguon": "chưa có dữ liệu; đo sau playtest",
+      "nhan": "[GIẢ ĐỊNH]",
+      "bat": [
+        "xem ads nhân đôi ở (\\d+)% level",
+        "Tỉ lệ xem ads nhân đôi \\| (\\d+)%",
+        "ads x2 cả hai ở (\\d+)% level",
+        "ads x2 cả hai, (\\d+)% level"
+      ],
+      "cam": []
+    },
+    "gioi_thieu": {
+      "gia_tri": 6,
+      "nguon": "gd-level GD-015; so-hien-hanh.md mục Mốc giới thiệu",
+      "nhan": "dữ kiện",
+      "bat": [
+        "L(\\d+) trở đi"
+      ],
+      "cam": [
+        "từ L3\\b"
+      ]
+    }
+  },
+  "sim": {
+    "ty_le_goi_y": 0.04,
+    "tran_coin_goi_y": 8,
+    "bo_qua_level": [
+      9,
+      10,
+      12
+    ],
+    "thuong_thang_so_sanh": [
+      0,
+      30,
+      50,
+      80
+    ],
+    "ads": "ca_hai",
+    "runs": 4000,
+    "seed": 20261020,
+    "kich_ban": {
+      "tệ": {
+        "f": 0.7,
+        "q": 0.5
+      },
+      "trung bình": {
+        "f": 0.9,
+        "q": 0.25
+      },
+      "tốt": {
+        "f": 1.0,
+        "q": 0.1
+      }
+    },
+    "nhan_hanh_vi": "[GIẢ ĐỊNH] f: tỉ lệ Coin nhặt được; q: xác suất mỗi level có một lần thua mà người chơi muốn Hồi sinh; chưa có dữ liệu người chơi",
+    "dai_nhay": {
+      "kich_ban": "trung bình",
+      "f": [
+        0.6,
+        1.0
+      ],
+      "q": [
+        0.1,
+        0.5
+      ],
+      "uptake_ads": [
+        0.1,
+        0.5
+      ]
+    },
+    "nguong_dich_level": 1
+  }
+}

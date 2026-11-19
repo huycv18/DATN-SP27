@@ -1,0 +1,9 @@
+STT	Nhóm	Asset	Mô tả	Trạng thái	Ref
+	OBJECT
+1	OBJECT	Lớp băng trên quân	Lớp băng trong suốt phủ mặt quân, đọc được chữ bên dưới, 2 biến thể cho quân thoáng và quân bị đè	Cần update	Prototype: viền xanh băng và glow (GDD markdown V20)
+2	OBJECT	Số băng	Số 1 đến 6 ở đáy quân, chữ trắng viền xanh đậm	Cần update
+	ANIM-FX
+3	ANIM-FX	Băng tan	Lớp băng vỡ ngắn khi số về 0, không khóa input	Cần update	[GIẢ ĐỊNH] thời lượng 0,2 đến 0,4 giây
+4	ANIM-FX	Rung quân băng	Quân rung ngang nhẹ khi bấm vào lúc số còn lớn hơn 0		[GIẢ ĐỊNH]
+	SFX
+5	SFX	Băng tan	Tiếng băng vỡ nhỏ, nhỏ hơn tiếng nhặt đúng		[GIẢ ĐỊNH]

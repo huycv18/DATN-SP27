@@ -1,0 +1,11 @@
+Level	Nhãn	Chủ đề	Quân	Tầng	Order	Từ theo thứ tự	Chữ gợi ý	Chữ lộ/tổng	Khay	Quân úp	Quân băng (n)	Quân link	File
+16	Vừa		23	2	10	CHAIR, KEY, TABLE, ROOF, RADIO, HOUSE, LAMP, CLOCK, SOFA, QUILT	__AI_, _EY, _A__E, _OO_, _A_I_, _OU__, _A_P, __OCK, _O_A, _UI_T	22/45	5	0	4 (5, 6, 6, 5)	0	Level_16.json
+17	Vừa		26	2	9	COIN, SLED, KITE, BANJO, BLOCK, FLUTE, ROBOT, PIANO, MEDAL	_O__, __E_, _I_E, _A__O, __O_K, __U_E, _O_O_, _IA__, _E_A_	16/42	5	0	4 (6, 6, 6, 5)	0	Level_17.json
+18	Vừa		25	2	11	FIRE, MOON, HILL, FLAG, RAIN, SNOW, STAR, TENT, ARROW, CLOUD, LASER	_I_E, _OO_, _I_L, __AG, _AI_, __OW, __AR, _E_T, ___OW, __OU_, _A_E_	22/47	5	0	5 (6, 6, 6, 6, 6)	0	Level_18.json
+19	Vừa		28	2	8	BEACH, SQUID, OTTER, OCEAN, RIVER, WHALE, WATER, SHARK	_E___, __U__, ___E_, __EA_, _I_E_, __A_E, _A___, __A_K	12/40	5	0	0	0	Level_19.json
+20	Vừa		31	2	13	TOWER, KING, MASK, MONK, RING, WAND, CLOWN, CROWN, FAIRY, NINJA, QUEEN, SWORD, GIFT	_O_E_, _I_G, _A_K, _O_K, _I_G, _A_D, __OWN, __O_N, _AI__, _I__A, _UEE_, __O_D, _I_T	28/59	5	1	2 (4, 3)	0	Level_20.json
+21	Vừa		30	3	13	WHEEL, CAR, BIKE, CART, PARK, ROAD, SHOP, TRAIN, DRONE, TRUCK, TAXI, PLANE, BUS	__EE_, _AR, _I_E, _A_T, _A_K, _OA_, __OP, __AI_, __O_E, __U_K, _A_I, __A_E, _U_	25/55	5	0	0	0	Level_21.json
+22	Vừa		30	2	13	GUM, PIE, CANDY, TEA, BOBA, CAKE, MILK, SODA, JAM, DONUT, HONEY, SUGAR, TOAST	_U_, _IE, _A__Y, _E_, _O_A, _A_E, _I_K, _O_A, _A_, _O_U_, _O_E_, _U_A_, _OA__	23/53	5	2	3 (4, 4, 4)	0	Level_22.json
+23	Khó		34	2	13	ROBE, DRESS, PANTS, SCARF, SHIRT, SHOES, SKIRT, SOCKS, BELT, COAT, BOOTS, VEST, BAG	_O_E, __E_S, _A__S, __A_F, __I_T, __OE_, __I_T, _O__S, _E_T, _OA_, _OO__, _E_T, _A_	25/59	5	2	3 (5, 5, 4)	0	Level_23.json
+24	Vừa		34	2	10	ARROW, HILL, CLOUD, STAR, FLAG, LASER, MOON, RAIN, FIRE, TENT	___O_, _I__, __O__, __A_, __A_, _A___, ____, _A__, _I__, _E__	9/43	5	0	0	0	Level_24.json
+25	Khó		38	2	12	BOAT, OCEAN, ROCK, SWAN, BEACH, LAKE, OTTER, RIVER, SHARK, SQUID, WATER, WHALE	_O__, __EA_, _O__, __A_, _E___, _A__, ___ER, _I_E_, __A_K, __UI_, _A_E_, __A__	18/56	5	14	3 (5, 5, 5)	0	Level_25.json

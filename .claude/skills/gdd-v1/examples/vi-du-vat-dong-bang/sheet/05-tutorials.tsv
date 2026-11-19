@@ -1,0 +1,8 @@
+Bước	Tên bước	Khi nào	Highlight	Bàn tay	Text box (EN)	Kết thúc bước	Ghi chú
+	Quy tắc chung						Lớp tối khoảng 70%; chỉ sáng vật cần bấm; chặn tương tác ngoài luồng, khóa booster và Settings; khi chỉ dạy một ý thì một text box hiện suốt luồng; mỗi bước hiện một lần; text box tiếng Anh tối đa 2 dòng
+	Onboarding
+1	Nhặt chữ vào order	Vào L1 lần đầu	Order đầu và các quân chữ của nó đang thoáng	Chỉ quân cần bấm đầu tiên	TB1: Tap the letters to spell the word!	Ăn xong order đầu tiên	Text box giữ nguyên suốt luồng. Nguồn: tab Tutorials game tile chữ nhiều tầng 29/09/2026
+	Cảnh báo
+2	Khay sắp đầy	Lần đầu khay có 3 quân, level bất kỳ	Khay	Không	TB2: Watch out! The tray is filling up! If it gets full, you lose!	Bấm nút Got it!	Là cảnh báo, không phải giới thiệu nút "+". Dừng game khi hiện. Nguồn: tab Tutorials game tile chữ nhiều tầng 29/09/2026
+	Quân băng (L16)
+3	Băng là gì	Vào L16 lần đầu, sau khi bàn vào xong	Quân băng và một quân thoáng nhặt được	Chỉ quân thoáng nhặt được	TB3: Ice tiles are locked. Pick other tiles to melt the ice!	Bấm nút Got it!	[GIẢ ĐỊNH] text; sau Got it! người chơi nhặt quân thoáng và thấy số băng giảm
