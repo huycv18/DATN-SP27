@@ -30,9 +30,6 @@ prompt.airlock	{key} vào cửa khí	24	UI-30
 prompt.finish	Giữ {key} kết nhanh	24	UI-30
 prompt.repair	Giữ {key} sửa	18	UI-17
 prompt.use	{key} dùng	14	UI-10
-prompt.load	{key} bốc kiện	18	UI-40
-prompt.carry	Giữ {key} nhấc kiện	24	UI-40
-prompt.put	{key} đặt kiện	18	UI-40
 prompt.release	Thả phím để hủy	20	UI-30
 toast.pick	+{n} {item}	32	UI-30
 toast.bag_full	Túi đầy	12	UI-30
@@ -45,8 +42,6 @@ toast.goal_new	Mục tiêu mới	16	UI-10
 toast.joined	{name} đã vào	28	UI-10
 toast.left	{name} đã rời phiên	32	UI-10
 toast.home	{name} đã về trạm	32	UI-30
-toast.order_done	Đơn đủ	12	UI-40
-toast.order_missed	Tàu đã rời	16	UI-40
 btn.continue_world	Chơi tiếp	14	UI-01
 btn.new_world	Thế giới mới	16	UI-01
 btn.join	Tham gia	12	UI-01
@@ -65,7 +60,7 @@ btn.craft	Chế	8	UI-13
 btn.upgrade	Nâng cấp	12	UI-16
 btn.order	Đặt hàng	12	UI-15
 btn.open_shift	Mở ca	8	UI-14
-btn.pin_group	Ghim kiện	18	UI-14
+btn.pin_group	Ghim hàng	18	UI-14
 btn.sleep	Vào buồng ngủ	18	UI-44
 btn.retry	Thử lại	10	UI-01
 btn.swap	Hoán đổi	12	UI-52
@@ -108,8 +103,6 @@ err.net_lost	Mất kết nối	20	UI-30
 err.host_lost	Mất kết nối chủ phòng	24	UI-10
 err.save_fail	Lưu lỗi, thử lại	24	UI-44
 err.not_enough	Không đủ {res}	24	UI-16
-err.wrong_cargo	Không có trong đơn	20	UI-41
-err.shelf_full	Kệ đầy, máy giữ kiện	28	UI-42
 err.queue_full	Hàng đợi đầy	20	UI-13
 err.locked	Chưa mở ở chương này	28	UI-10
 set.text_size	Cỡ chữ	12	UI-51
@@ -134,9 +127,6 @@ state.unset	Chưa gán	12	UI-52
 state.fixed	Cố định	12	UI-52
 state.next_chapter	Chương sau	14	UI-18
 state.done	Xong	8	UI-18
-state.enough	Đủ	8	UI-41
-state.scheduled	Trong lịch	14	UI-40
-state.docked	Ở bến	10	UI-40
 state.waiting_out	Chờ ngoài	14	UI-40
 state.just_back	Nhóm vừa về	16	UI-20
 lbl.how_to	Cách chơi	12	UI-19
@@ -144,7 +134,6 @@ state.saving	Đang lưu	12	UI-44
 state.saved	Đã lưu	10	UI-44
 state.no_signal	Mất tín hiệu	16	UI-33
 state.wait_friends	Chờ bạn	10	UI-03
-lbl.orders_by_players	Đơn theo số người đang chơi	32	UI-14
 hud.block	Chưa có đường qua	24	UI-30
 prompt.need_key	Cần {tool} để mở	24	UI-30
 hud.share.floor	Dừng chia: giữ lại {n} Oxy	32	UI-30
@@ -192,12 +181,10 @@ state.engineer_wait	Kỹ sư chưa tới	24	UI-13
 state.wait_update	Chờ cập nhật	16	UI-20
 state.no_samples	Chưa có mẫu	14	UI-21
 state.no_blueprints	Hết bản thiết kế	20	UI-21
-state.shelf_full	Kệ đầy	10	UI-42
 lbl.shift_blocked	Còn người đang ở ngoài chuyến	36	UI-14
 state.shift_done	Hôm nay đã có ca	24	UI-14
 hud.confirm.shift	Mở ca sau {s} giây	28	HTR-01
 hud.confirm.skip	Bỏ ca sau {s} giây	28	HTR-01
-lbl.from_price	từ {n}	12	UI-14
 story.box	{câu thoại}	80	UI-53
 story.radio	{dòng radio}	60	UI-30
 story.bubble	{lời bong bóng}	60	UI-40
@@ -232,13 +219,70 @@ tut.t17	Chọn công thức rồi bấm Chế	40	T17
 tut.t18	Choáng rồi, giữ {finish} kết nhanh	40	T18
 tut.t19	Súng lưới bắt loài nhỏ còn sống	40	T19
 tut.t20	Chờ cứu hoặc bay tới cửa khí	40	T20
-tut.t21	Xem đơn của tàu, ghim hàng cần	40	T21
-tut.t22	Lấy hàng ở kho, bỏ vào máy đóng kiện	40	T22
-tut.t23	Mang kiện tới cửa bến, {interact} để bốc	40	T23
-tut.t24	Kiện này cần chế ở xưởng trước	40	T24
-tut.t25	Tàu chờ ngoài, bến trống sẽ cập	40	T25
-tut.t26	Đơn đủ mới có thưởng và điểm cảng	40	T26
+tut.t21	Xem danh mục rồi bấm Mở ca	40	T21
+tut.t22	Tàu gọi món, thanh là thời gian chờ	40	T22
+tut.t23	{interact} nhặt thùng ở ô quầy sáng	40	T23
+tut.t24	Tới cửa neo cùng số, {interact} giao	40	T24
+tut.t25	Giữ {interact} ở cửa neo để bơm khí	40	T25
+tut.t26	Hàng chưa bán sẽ về kho, không mất	40	T26
 tut.t27	Nâng cấp có tác dụng từ chuyến sau	40	T27
 tut.t28	Đặt hàng cuối ngày, hàng tới sáng mai	40	T28
 tut.t29	Manh mối đã ghi vào Sổ tay	40	T29
 tut.t30	Bấm {skip} để bỏ qua cảnh	40	T30
+tut.t37	Món đặt trước phải có trong danh mục	40	T37
+hud.shift.left	Ca còn {m}:{s}	16	HCH-01
+hud.tally.shift	Tally {n}	14	HCH-02
+hud.tip	Tip {n}	12	HCH-02
+hud.port_score	Điểm cảng {n}	16	HCH-03
+hud.ships	Tàu {a}/{b}	12	HCH-03
+hud.catalog.left	Danh mục còn	16	HCH-04
+hud.carry	Cầm {item}, cửa neo {n}	32	HCH-05
+lbl.dock	Cửa neo {n}	14	UI-40
+lbl.counter	Quầy cảng	12	UI-40
+lbl.preorder	Đặt trước	12	UI-41
+lbl.pump_ask	Bơm khí!	10	UI-42
+state.sold_out	Hết	8	HCH-04
+state.greeting	Đang chào hỏi	18	UI-41
+prompt.take	{key} nhặt thùng	20	HCH-11
+prompt.give	{key} giao thùng	20	HCH-11
+prompt.pump	Giữ {key} bơm khí	24	HCH-11
+err.hand_full	Tay đang bận, mỗi lần 1 thùng	36	HCH-11
+err.pump_hand	Giao thùng trước khi bơm khí	32	UI-42
+err.wrong_dock	Sai cửa neo, tàu gọi thùng khác	36	UI-41
+toast.ship_left	Tàu đã rời	16	UI-40
+toast.crate_back	Tàu đã rời, thùng về kho	32	UI-40
+toast.tally_tip	+{n} tip +{t}	20	UI-40
+toast.pump	+{n} bơm khí	16	UI-42
+lbl.catalog	Danh mục bán	16	UI-14
+lbl.catalog_count	{n}/{m} loại	14	UI-14
+lbl.catalog_empty	Chưa có món nào	20	UI-14
+lbl.catalog_full	Danh mục đầy	16	UI-14
+lbl.have	Có {n}	10	UI-14
+btn.add	Thêm	8	UI-14
+btn.remove	Bỏ	8	UI-14
+btn.added	Đã chọn	10	UI-14
+lbl.crates_total	Tổng {n} thùng cho {s} tàu	32	UI-14
+lbl.short_stock	Thiếu hàng: tối đa {n} tàu không tới	44	UI-14
+lbl.catalog_value	Giá trị danh mục {n} Tally	32	UI-14
+lbl.ship_skip	Không có {group}: tàu {ship} không tới	44	UI-14
+lbl.demand	Độ gọi	10	UI-14
+lbl.pre_line	{name} đặt 1 {item}, giá x{k}	44	UI-14
+lbl.pre_ok	Đã có trong danh mục	28	UI-14
+lbl.pre_missing	Chưa có trong danh mục, mất đơn đặt trước	48	UI-14
+lbl.ships_by_players	Số tàu theo số người đang chơi	40	UI-14
+lbl.packed_note	Thông dịch viên đóng thùng khi mở ca	44	UI-14
+lbl.res.served	Tàu phục vụ xong	24	UI-43
+lbl.res.left	Tàu rời khi chưa giao	28	UI-43
+lbl.res.skipped	Tàu không tới vì hết hàng	32	UI-43
+lbl.res.goods	Tally từ giá hàng	24	UI-43
+lbl.res.tip	Tip, kể cả bơm khí	24	UI-43
+lbl.res.total	Tổng Tally	14	UI-43
+lbl.res.score	Điểm cảng	14	UI-43
+lbl.res.pre	Đơn đặt trước	20	UI-43
+lbl.res.back	Hàng về kho	16	UI-43
+lbl.res.sold_out	Bán hết	10	UI-43
+state.pre_done	Đã giao	10	UI-43
+state.pre_nostock	Không có trong danh mục	28	UI-43
+lbl.res.end_time	Hết giờ ca	14	UI-43
+lbl.res.end_last	Tàu cuối đã rời	20	UI-43
+lbl.res.end_stock	Hết hàng trong danh mục	28	UI-43

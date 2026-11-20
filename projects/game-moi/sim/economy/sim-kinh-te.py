@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Sim kinh tế và tiến trình EMBER (GD-028). Một lệnh in lại mọi bảng số của GDD kinh tế.
+"""Sim kinh tế và tiến trình The Novent (GD-028, đợt 9 GD-055). Một lệnh in lại mọi bảng số của GDD kinh tế.
 
   python projects/game-moi/sim/economy/sim-kinh-te.py            in tóm tắt, ghi ket-qua.json
   python projects/game-moi/sim/economy/sim-kinh-te.py --ghi      như trên rồi đưa bảng vào GDD (economy_doc.py ghi)
-  python projects/game-moi/sim/economy/sim-kinh-te.py --do       dò B1 và g cho kịch bản trung bình 1 người
+  python projects/game-moi/sim/economy/sim-kinh-te.py --do       dò β cho kịch bản trung bình 1 người
+  python projects/game-moi/sim/economy/sim-kinh-te.py --tab      in lại tab ECONOMIC bản đọc (gdd/sheet/ECONOMIC.tsv)
   python projects/game-moi/sim/economy/sim-kinh-te.py --selftest tự kiểm
 
-Đầu vào: tham-so.json (cùng thư mục) và các bảng do script của gd-items sinh trong vat-pham.md (ITEM, REPAIR, NODE).
-Mô hình ở mức giá trị: lượng nhặt tính bằng GTĐ (đơn vị của gd-items), quy ra Tally bằng tally_moi_gtd.
-shortcut: lượng nhặt một chuyến là số ước từ map.md và vat-pham.md, thay bằng output sim-chuyen.mjs của gd-tech khi có.
+Đầu vào: tham-so.json (cùng thư mục), các bảng của gd-items trong vat-pham.md (ITEM, REPAIR, NODE, SPECIES, UPG),
+sim chuyến và sim ca cảng của gd-tech (tools/ket-qua/sim-chuyen.md, sim-ca-cang.md). Kiểu danh mục đo bằng do-danh-muc.mjs.
+Mô hình ở mức giá trị: lượng nhặt tính bằng GTĐ, ca cảng bán theo thùng (1 kiện = 2,5 thùng), giá thùng theo bậc giá.
 """
 import io
 import json
@@ -28,7 +29,7 @@ TS = json.load(open(os.path.join(HERE, "tham-so.json"), encoding="utf-8"))
 S = TS["sim"]
 TRUC = ["OXY", "TUI", "VO", "DAY", "DUNGCU"]
 TEN_TRUC = {"OXY": "T-OXY dung lượng Oxy", "TUI": "T-TUI sức chứa túi", "VO": "T-VO cấp môi trường", "DAY": "T-DAY bộ đẩy", "DUNGCU": "T-DUNGCU số ô dụng cụ",
-            "DUNGCU_KHAI_THAC": "Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)", "KHOANG_CAP": "Nâng cấp khoang", "BPR": "Bản thiết kế ở Shop", "KE_KIEN_2": "Kệ kiện cấp 2"}
+            "DUNGCU_KHAI_THAC": "Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)", "KHOANG_CAP": "Nâng cấp khoang", "BPR": "Bản thiết kế ở Shop", "CANG_2": "Nâng cấp cảng"}
 
 
 # ---------- đọc bảng của gd-items ----------
@@ -86,18 +87,22 @@ KIEN_THO = statistics.mean(GTD[k] for k in ("CGO-101", "CGO-102", "CGO-103", "CG
 
 # Lãi nuôi một ô một ngày: sản phẩm nuôi trừ thức ăn của dải (vat-pham.md)
 LAI_NUOI = {d: GTD[b] - GTD[fd] for d, b, fd in S["nuoi_dai"]}
-# Kiện giao được một ca, một người, kịch bản trung bình, không đóng sẵn (sim ca cảng gd-tech). Chương không có số lấy chương trước.
-KIEN_GIAO, PHUT_CA = {}, {}
+# Ca cảng khung Dave (sim ca cảng gd-tech, mục 4): theo số người N và trễ phản xạ, số tàu, cửa neo, phần tàu xong, giây một ca,
+# phần tip trong Tally, điểm cảng mỗi tàu phục vụ xong. Kịch bản tệ, trung bình, tốt ứng với trễ 3, 2, 1 giây (tham-so.json ca_cang).
+PORT = {}
 _pc = os.path.join(ROOT, S["sim_ca_cang_gd_tech"])
-if os.path.exists(_pc):
-    for _m in re.finditer(r"^\| Chương (\d)[^|]*\| trung bình \| 1 \| 0 \| (\d+) / \d+ \|(?:[^|]*\|){3}\s*([\d,]+) \|", open(_pc, encoding="utf-8").read(), re.M):
-        if int(_m.group(1)) not in KIEN_GIAO:
-            KIEN_GIAO[int(_m.group(1))] = so(_m.group(3))
-            PHUT_CA[int(_m.group(1))] = int(_m.group(2)) / 60
-for _c in range(1, 6):
-    KIEN_GIAO.setdefault(_c, KIEN_GIAO.get(_c - 1, 10.0))
-    PHUT_CA.setdefault(_c, PHUT_CA.get(_c - 1, S["phut_ca_cang"][_c - 1]))
+for _m in re.finditer(r"^\| (\d) \| (\d) \| (\d+) \| (\d) giây \| ([\d,]+) \(\d+%\) \| [\d,]+ \| (\d+) \| \d+% \| \d+ \| (\d+)% \| (\d+) \| \d+% \|", open(_pc, encoding="utf-8").read(), re.M):
+    _n, _tre, _tau, _xong = int(_m.group(1)), int(_m.group(4)), int(_m.group(3)), so(_m.group(5))
+    PORT[(_n, _tre)] = {"tau": _tau, "cua": int(_m.group(2)), "xong": _xong / _tau, "giay": int(_m.group(6)), "tip": int(_m.group(7)) / 100, "diem_tau": int(_m.group(8)) / _xong}
+if len(PORT) < 12:
+    raise SystemExit("sim-ca-cang.md mục 4 thiếu dòng (cần N 1 tới 4, trễ 1 tới 3), đọc được %d" % len(PORT))
 
+
+def port(N, kb):
+    return PORT[(N, S["ca_cang"]["tre_theo_kich_ban"][kb])]
+
+
+PHUT_CA = {c: port(1, "trung bình")["giay"] / 60 for c in range(1, 6)}  # shortcut: sim ca cảng chỉ có chương 1, chương sau dùng cùng số. Đo lại khi gd-quan đặt tàu chương 2 tới 5
 
 # Phút và GTĐ một chuyến (trung bình, một người, gồm Driftlife). Ưu tiên sim chuyến gd-tech khi cột Bình khớp thang hiện hành,
 # không khớp thì dùng số dự phòng trong tham-so.json (gd-world chạy cùng sim trên bản sao tham số, map.md mục 3.9).
@@ -109,6 +114,12 @@ if os.path.exists(_pt):
         if int(_m.group(2)) == S["oxy_theo_bac"][_c - 1]:
             TECH[_c] = (so(_m.group(3)), so(_m.group(4)))
             NGUON_CHUYEN[_c] = "sim chuyến gd-tech"
+# GTĐ mỗi người một chuyến theo (chương, kịch bản, số người), sim chuyến gd-tech, dùng cho kho thùng sau hai chuyến
+TRIP = {}
+if os.path.exists(_pt):
+    for _m in re.finditer(r"^\| (\d) \| [^|]+ \| (\d+) \| (tệ|trung bình|tốt) \| (\d) \| [^|]+ \| ([\d,]+) \|", open(_pt, encoding="utf-8").read(), re.M):
+        if int(_m.group(2)) == S["oxy_theo_bac"][int(_m.group(1)) - 1]:
+            TRIP[(int(_m.group(1)), _m.group(3), int(_m.group(4)))] = so(_m.group(5))
 # Mỗi người so với một mình theo số người (cột "Mỗi người so với một mình" của sim chuyến gd-tech)
 MOI_NGUOI = {}
 if os.path.exists(_pt):
@@ -145,18 +156,56 @@ def ngay_muc_tieu(c):
     return S["gio_muc_tieu_chuong"][c - 1] * 60 / phut_ngay_tham_chieu(c)
 
 
-def thu_nhap_tham_chieu(c):  # Tally một ngày: 2 chuyến đầy túi bậc theo chương, bán hết, có thưởng đủ đơn
+# ---------- giá thùng theo bậc giá (Shop là bảng giá duy nhất) ----------
+GT = S["gia_thung"]
+THUNG = S["ca_cang"]["thung_moi_kien"]
+SPECIES = bang(VP, "SPECIES")
+
+
+def bac_gia(cgo):
+    return GT["bac"][GT["kien"][cgo]]
+
+
+def gia_thung(cgo):  # Tally một thùng: GTĐ thùng x 10 x hệ số bậc, tròn số chẵn để giá kiện là số nguyên
+    return int(2 * round(GTD[cgo] / THUNG * S["tally_moi_gtd"] * bac_gia(cgo)["he_so"] / 2))
+
+
+def gia_kien(cgo):
+    return int(gia_thung(cgo) * THUNG)
+
+
+def gia_long(sp):  # lồng không chia: GTĐ mẫu sống x 10 x hệ số Hàng sống, tròn 5
+    cgo = {"Gần": "CGO-121", "Giữa": "CGO-221", "Xa": "CGO-321"}[sp["Dải"]]
+    return int(5 * round(so(sp["GTĐ mẫu bắt"]) * S["tally_moi_gtd"] * bac_gia(cgo)["he_so"] / 5))
+
+
+LONG_MVP = [sp for sp in SPECIES if sp["Bắt"] == "Sống (LIV)" and sp["Nhãn"] == "MVP"]
+GIA_LONG_TB = statistics.mean(gia_long(sp) for sp in LONG_MVP)
+GTD_LONG_TB = statistics.mean(so(sp["GTĐ mẫu bắt"]) for sp in LONG_MVP)
+
+
+def gia_don_vi(cgo):  # (Tally, GTĐ) một đơn vị bán: thùng, hoặc lồng loài MVP trung bình
+    if cgo in ("CGO-121", "CGO-221", "CGO-321"):
+        return GIA_LONG_TB, GTD_LONG_TB
+    return gia_thung(cgo), GTD[cgo] / THUNG
+
+
+def chi_so_gia(kb):  # Tally trên (GTĐ x 10) của danh mục đại diện của kịch bản: 1,0 là giá cũ một GTĐ 10 Tally
+    dm = S["danh_muc_kich_ban"][kb]
+    return sum(q * gia_don_vi(k)[0] for k, q in dm.items()) / sum(q * gia_don_vi(k)[1] * S["tally_moi_gtd"] for k, q in dm.items())
+
+
+def he_so_tip(N, kb):  # Tally ca chia Tally giá thùng: tip là phần p của Tally ca nên nhân 1 / (1 - p)
+    return 1 / (1 - port(N, kb)["tip"])
+
+
+def thu_nhap_tham_chieu(c):  # Tally một ngày: 2 chuyến đầy túi bậc theo chương, bán hết theo chỉ số giá và tip của kịch bản trung bình
     dai = S["dai_theo_chuong"][c - 1]
-    return 2 * S["tui_theo_bac"][c - 1] * MAT_DO[dai] * S["he_so_mat_do_them"][c - 1] * he_so_tech(c) * S["tally_moi_gtd"] * (1 + S["thuong_du_don"])
+    return 2 * S["tui_theo_bac"][c - 1] * MAT_DO[dai] * S["he_so_mat_do_them"][c - 1] * he_so_tech(c) * S["tally_moi_gtd"] * chi_so_gia("trung bình") * he_so_tip(1, "trung bình")
 
 
 def ngan_sach(c, beta=None):  # tổng giá Tally mọi thứ mở ở chương c
     return (beta or S["beta_ngan_sach"]) * ngay_muc_tieu(c) * thu_nhap_tham_chieu(c)
-
-
-def don_goc_gtd(c):  # GTĐ đơn đòi một ca khi chơi một mình: ti_le_cang nhân 2 chuyến đầy túi bậc theo chương
-    dai = S["dai_theo_chuong"][c - 1]
-    return S["ti_le_cang"] * 2 * S["tui_theo_bac"][c - 1] * MAT_DO[dai] * S["he_so_mat_do_them"][c - 1] * he_so_tech(c)
 
 
 def kien_tb(c):
@@ -166,25 +215,8 @@ def kien_tb(c):
     return KIEN_THO if c == 1 else KIEN[S["dai_theo_chuong"][c - 1]]
 
 
-def diem_ngay_tham_chieu(c):  # điểm cảng một ngày, một người, kịch bản trung bình
-    K = S["kich_ban"]["trung bình"]
-    return S["tau_moi_ca"][c - 1] * K["ky_nang_ca"] * (S["diem_du_don"] + S["diem_nhanh"] * K["p_nhanh"])
-
-
-def nguong_de_xuat():
-    """Ngưỡng hạng trần của chương c = tổng điểm tới phần ti_le_hang của ngày mục tiêu, chương 1 trừ ngày chưa có cảng."""
-    tran = []
-    tong = 0.0
-    for c in range(1, 5):
-        ngay = ngay_muc_tieu(c) - (S["ngay_chua_co_cang"] if c == 1 else 0)
-        tong += S["ti_le_hang"] * ngay * diem_ngay_tham_chieu(c)
-        tran.append(5 * round(tong / 5))
-    h3, h5, h7, h8 = tran
-    return [0, 5 * round(h3 / 2 / 5), h3, 5 * round((h3 + h5) / 2 / 5), h5, 5 * round((h5 + h7) / 2 / 5), h7, h8]
-
-
-def gia_kien(id_kien):
-    return tron(S["tally_moi_gtd"] * GTD[id_kien])
+def gtd_thung(c):  # GTĐ trung bình một đơn vị bán của chương
+    return kien_tb(c) / THUNG
 
 
 def vat_lieu_nang_cap(bac):  # bậc theo nguoi-choi.md 1..4, công thức gd-items 25 x 1,8^(bậc vat-pham - 2), bậc vat-pham = bậc nguoi-choi + 1
@@ -209,7 +241,7 @@ def danh_sach_mua(beta=None):
         hang.append({"id": uid, "ten": uid, "c": c, "loai": TRUC_UPG[uid.split("-")[1]], "bac": int(u["Bậc"]), "vl": so(u["Σ GTĐ vào"]),
                      "mien_phi": "Quest" in u["Mở bằng"], "nhan": u["Nhãn"], "mo": u["Mở bằng"]})
     for uid, ten, loai, c in S["mua_them"]:
-        hang.append({"id": uid, "ten": ten, "c": c, "loai": loai, "bac": 0, "vl": 0.0, "mien_phi": False, "nhan": "MVP" if c == 1 else "Sau MVP", "mo": "Shop" if loai in ("BPR", "KE_KIEN_2") else "Xưởng"})
+        hang.append({"id": uid, "ten": ten, "c": c, "loai": loai, "bac": 0, "vl": 0.0, "mien_phi": False, "nhan": "MVP" if c == 1 else "Sau MVP", "mo": "Shop" if loai in ("BPR", "CANG_2") else "Xưởng"})
     for c in range(1, 5):
         hang.append({"id": "ENG-10%d" % c, "ten": "Linh kiện động cơ", "c": c, "loai": "ENG", "bac": c, "vl": 0.0, "mien_phi": False, "nhan": "MVP" if c == 1 else "Sau MVP",
                      "mo": "Shop, cần Hạng cảng %d" % S["hang_mo_eng"][c - 1]})
@@ -224,15 +256,12 @@ def danh_sach_mua(beta=None):
     return hang
 
 
-NGUONG = None  # đặt sau khi có MAT_DO
-
-
 # ---------- một lần chạy ----------
-def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False):
-    global NGUONG
-    if NGUONG is None:
-        NGUONG = nguong_de_xuat() if S["dung_nguong_de_xuat"] else S["nguong_hang"]
+def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
+    NGUONG = nguong or S["nguong_hang"]
     K = S["kich_ban"][kb]
+    P = port(N, kb)
+    gia_gtd = S["tally_moi_gtd"] * chi_so_gia(kb) * he_so_tip(N, kb)  # Tally một GTĐ bán ở ca, gồm tip
     mua = sorted(danh_sach_mua(beta), key=lambda m: (m["c"], 0 if m["loai"] in S["uu_tien_mua"] else 1))
     bac = {t: 0 for t in TRUC}
     tally = 0.0
@@ -245,7 +274,8 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False):
     moc = []
     nhat_ca_game = 0.0
     tally_thu = 0.0
-    tally_thuong = 0.0
+    tally_tip = 0.0
+    ban_ch1 = []  # thùng bán mỗi ca chương 1
     tally_chi = {}
     mat_ngat = 0.0
     nhat_ch1 = 0.0
@@ -304,24 +334,21 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False):
             cang_mo = True
         # ca cảng
         phut_ca = 0.0
+        thu = ban = 0.0
         if cang_mo:
-            phut_ca = PHUT_CA[c]
-            tau = S["tau_moi_ca"][i]
-            can_gtd = don_goc_gtd(c) * (1 + S["he_so_don_coop"][i] * (N - 1))  # quy mô đơn theo số người (gd-quan)
-            if S.get("tran_kien_hien_tai"):  # thu một ca không vượt sức chở: số kiện sim ca cảng giao được nhân GTĐ một kiện hiện tại
-                can_gtd = min(can_gtd, KIEN_GIAO[c] * kien_tb(c) * (1 + S["he_so_don_coop"][i] * (N - 1)))
+            # ca khung Dave: mỗi tàu gọi 1 thùng. Bán được số nhỏ hơn giữa tàu phục vụ xong và thùng có trong kho sau khi giữ phần để xây (D8)
             con_xay = sua_con > 0 or any(m["c"] <= c and m["vl"] > 0 for m in mua)
-            co_the = kho * (1 - (S["du_tru_vat_lieu_khi_con_xay"] if con_xay else 0.0))
-            giao = min(can_gtd, co_the) * K["ky_nang_ca"]
-            kho -= giao
-            ti_le = giao / can_gtd
-            du = tau * ti_le
-            thu = giao * S["tally_moi_gtd"] * (1 + S["thuong_du_don"] * min(1, ti_le) + S["thuong_nhanh"] * K["p_nhanh"] * min(1, ti_le))
+            co_the = kho * (1 - (S["du_tru_vat_lieu_khi_con_xay"] if con_xay else 0.0)) / gtd_thung(c)
+            ban = min(P["tau"] * P["xong"], co_the)
+            kho -= ban * gtd_thung(c)
+            thu = ban * gtd_thung(c) * gia_gtd
+            phut_ca = P["giay"] / 60 * ban / (P["tau"] * P["xong"])  # hết hàng thì ca kết thúc sớm
             tally += thu
             tally_thu += thu
-            tally_thuong += thu - giao * S["tally_moi_gtd"]
-            q = (N + 1) / 2 if S["diem_theo_quy_mo_don"] else 1  # gd-quan làm tròn lên
-            diem += du * (math.ceil(S["diem_du_don"] * q) + math.ceil(S["diem_nhanh"] * q) * K["p_nhanh"])
+            tally_tip += thu * P["tip"]
+            diem += ban * P["diem_tau"]
+            if c == 1:
+                ban_ch1.append(ban)
             while hang < S["tran_hang_theo_chuong"][i] and diem >= NGUONG[hang]:
                 hang += 1
         # mua theo lộ trình, chương đã mở, đủ Tally và vật liệu
@@ -344,7 +371,7 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False):
         phut_ngay = (trip_phut + phut_ca + S["phut_chuan_bi_cuoi_ngay"]) * K["phut_them"] * (1 + S["he_so_ngay_coop_moi_nguoi"] * (N - 1))
         phut += phut_ngay
         if ghi_ngay:
-            dong.append((ngay, c, nhat, thu if cang_mo else 0.0, tally, hang, phut, mua_ngay, tally_truoc_mua - (thu if cang_mo else 0.0)))
+            dong.append((ngay, c, nhat, thu, tally, hang, phut, mua_ngay, tally_truoc_mua - thu, diem, ban))
         # điều kiện qua chương
         bat_buoc = [m for m in mua if m["c"] == c and m["loai"] == "ENG"]
         if sua_con <= 0 and chuyen_nhanh == 0 and vot_con == 0 and all(m.get("xong") for m in bat_buoc) and ngay - ngay_dau_chuong + 1 >= S["san_ngay_truyen"][i]:
@@ -356,12 +383,28 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False):
                 chuyen_nhanh = S["chuyen_nhanh_theo_chuong"][c - 1]
                 vot_con = S["nguoi_vot_theo_chuong"][c - 1]
                 kho *= 0.3  # hàng dải cũ vẫn bán được nhưng ít đơn đòi, giữ 30% giá trị cho dải mới
-    return {"moc": moc, "tally_thuong": tally_thuong, "tally_thu": tally_thu, "tally_chi": tally_chi, "mat_ngat": mat_ngat, "nhat": nhat_ca_game, "nhat_ch1": nhat_ch1, "dong": dong, "tally_du": tally, "bac": bac}
+    return {"moc": moc, "tally_tip": tally_tip, "ban_ch1": ban_ch1, "tally_thu": tally_thu, "tally_chi": tally_chi, "mat_ngat": mat_ngat, "nhat": nhat_ca_game, "nhat_ch1": nhat_ch1, "dong": dong, "tally_du": tally, "bac": bac}
+
+
+def ngay_du(runs, nguong):  # ngày đủ điểm trung bình cho một ngưỡng, chưa tính trần chương
+    v = [next((x[0] for x in r["dong"] if x[9] >= nguong), r["dong"][-1][0] + 1) for r in runs]
+    return tb(v)
+
+
+def nguong_theo_ngay_cu(vong=2, n=100):
+    """Ngưỡng Hạng 2 tới 8 sao cho ngày đủ điểm trung bình (một người, kịch bản trung bình) gần ngày đủ điểm của bản trước đợt 9 nhất."""
+    ng = list(S["nguong_hang"])
+    for _ in range(vong):
+        rng = random.Random(S["seed"])
+        runs = [chay("trung bình", 1, rng, ghi_ngay=True, nguong=ng) for _ in range(n)]
+        tran = max(x[9] for r in runs for x in r["dong"])
+        ng = [0] + [min(range(5, int(tran) + 5, 5), key=lambda t: abs(ngay_du(runs, t) - d)) for d in S["ngay_du_diem_cu"]]
+    return ng
 
 
 def nhieu(kb, N, beta=None, giu_mon=1, n=None):
     rng = random.Random(S["seed"] + N * 1000 + list(S["kich_ban"]).index(kb) * 10 + giu_mon)
-    return [chay(kb, N, rng, beta, giu_mon) for _ in range(n or S["so_lan_chay"])]
+    return [chay(kb, N, rng, beta, giu_mon, ghi_ngay=True) for _ in range(n or S["so_lan_chay"])]
 
 
 def tb(ds):
@@ -397,6 +440,80 @@ def do_num():
 
 
 # ---------- in mọi bảng ----------
+def tally_ha(sp):  # một lần hạ: mô sinh học bán theo thùng mô, phần đặc sản đóng kiện đặc sản (hệ số chế 1,1 của công thức đóng kiện đặc sản)
+    n_mo = so(sp["Nguyên liệu chung mỗi lần hạ"].split(" x ")[0])
+    mo = n_mo * GTD["SMP-101"]
+    dac = so(sp["E[GTĐ] khi hạ"]) - mo
+    p_mo = gia_thung("CGO-105") / (GTD["CGO-105"] / THUNG)
+    p_dac = gia_thung("CGO-106") / (GTD["CGO-106"] / THUNG)
+    return mo * p_mo + dac * 1.1 * p_dac
+
+
+_DM = None
+
+
+def do_danh_muc():  # chạy do-danh-muc.mjs một lần: kiểu danh mục trên mô hình ca của gd-tech, giá và độ gọi của file này
+    global _DM
+    if _DM is None:
+        D = S["do_danh_muc"]
+        gia = {m: (round(GIA_LONG_TB) if c == "CGO-121" else gia_thung(c)) for m, c in D["ma"].items()}
+        do_goi = {m: bac_gia(c)["do_goi"] for m, c in D["ma"].items()}
+        tau = {n: port(n, "trung bình")["tau"] for n in S["so_nguoi"]}
+        dm = {ten: {n: {m: max(1, round(q * tau[n] / 25)) for m, q in k.items()} for n in S["so_nguoi"]} for ten, k in D["kieu"].items()}
+        vao = {"gia": gia, "doGoi": do_goi, "hang": D["ma"], "khongChia": ["long"], "danhMuc": dm, "tau": tau,
+               "cua": {n: port(n, "trung bình")["cua"] for n in S["so_nguoi"]}, "tre": D["tre"], "lan": D["lan"], "seed": D["seed"]}
+        r = subprocess.run(["node", os.path.join(HERE, "do-danh-muc.mjs")], input=json.dumps(vao, ensure_ascii=False), capture_output=True, text=True, encoding="utf-8", check=True)
+        _DM = (json.loads(r.stdout), dm, gia)
+    return _DM
+
+
+def bang_danh_muc():
+    out, dm, gia = do_danh_muc()
+    goc = {x["N"]: x for x in out if x["ten"] == "Chuẩn bị kỹ"}
+    rows, V = [], {}
+    for x in out:
+        ban = x["served"]
+        gtd = sum(q * (GTD_LONG_TB if S["do_danh_muc"]["ma"][m] == "CGO-121" else GTD[S["do_danh_muc"]["ma"][m]] / THUNG) for m, q in dm[x["ten"]][x["N"]].items()) * min(1, ban / x["thung"])
+        rows.append([x["N"], x["ten"], ", ".join("%s %d" % (ITEM[S["do_danh_muc"]["ma"][m]]["Tên (VI / EN [TẠM])"].split(" / ")[0], q) for m, q in dm[x["ten"]][x["N"]].items()),
+                     "%s / %s" % (f(ban, 1), f(x["skipped"], 1)), f(x["tally"], 0), "%+d%%" % round(100 * (x["tally"] / goc[x["N"]]["tally"] - 1)), "%d%%" % round(100 * x["tipPhan"]),
+                     "%d%%" % round(100 * x["pre"]), f(x["tally"] / max(1, ban), 0), f(x["tally"] / max(1e-9, gtd), 1)])
+    t1 = {x["ten"]: x for x in out if x["N"] == 1}
+    V["dm-cho"] = "%+d%%" % round(100 * (t1["Hàng chợ, không chuẩn bị"]["tally"] / t1["Chuẩn bị kỹ"]["tally"] - 1))
+    V["dm-thua"] = "%+d%%" % round(100 * (t1["Chuẩn bị kỹ nhưng bày thừa hàng chợ"]["tally"] / t1["Chuẩn bị kỹ"]["tally"] - 1))
+    V["dm-it"] = "%+d%%" % round(100 * (t1["Ít mà đắt"]["tally"] / t1["Chuẩn bị kỹ"]["tally"] - 1))
+    V["dm-bo-td"] = "%+d%%" % round(100 * (t1["Chuẩn bị kỹ, bỏ đồ Trái Đất"]["tally"] / t1["Chuẩn bị kỹ"]["tally"] - 1))
+    V["dm-tip"] = "%d%% đến %d%%" % (round(100 * min(x["tipPhan"] for x in out)), round(100 * max(x["tipPhan"] for x in out)))
+    return tbl(["Số người", "Kiểu danh mục", "Thùng bày (lồng tính 1)", "Tàu xong / không tới", "Tally một ca", "So với Chuẩn bị kỹ", "Tip trong Tally", "Đơn đặt trước đạt", "Tally mỗi tàu", "Tally mỗi GTĐ đã bán"], rows), V
+
+
+def bang_ca_theo_n():
+    """Tally một ca chương 1 theo số người so với giá trị hai chuyến đầy túi của cả nhóm (mốc cũ 60%), và kho thùng sau hai chuyến so với số tàu."""
+    rows, V = [], {}
+    for kb in S["kich_ban"]:
+        for n in S["so_nguoi"]:
+            P = port(n, kb)
+            ca = P["tau"] * P["xong"] * gtd_thung(1) * S["tally_moi_gtd"] * chi_so_gia(kb) * he_so_tip(n, kb)
+            hai = 2 * TRIP[(1, kb, n)] * n / S["kich_ban"][kb]["day_tui"] * S["tally_moi_gtd"] * chi_so_gia(kb) * he_so_tip(n, kb)
+            rows.append([kb, n, P["tau"], f(P["tau"] * P["xong"], 1), f(ca, 0), f(hai, 0), "%d%%" % round(100 * ca / hai), f(P["diem_tau"] * P["tau"] * P["xong"], 0)])
+            if kb == "trung bình":
+                V["tally-ca-%d" % n] = f(ca, 0)
+                V["moc-%d" % n] = "%d%%" % round(100 * ca / hai)
+    t1 = tbl(["Kịch bản", "Số người", "Số tàu", "Tàu xong (sim ca cảng)", "Tally một ca, kho đủ", "Hai chuyến đầy túi của nhóm, quy ra Tally", "Mốc: phần hai chuyến bán ở một ca", "Điểm cảng một ca"], rows)
+    rows = []
+    for c in range(1, 6):
+        for kb in (S["kich_ban"] if c == 1 else ["trung bình"]):
+            o = []
+            for n in S["so_nguoi"]:
+                th = 2 * TRIP[(c, kb, n)] * n / gtd_thung(c)
+                o.append("%s / %d %s" % (f(th, 0), port(n, kb)["tau"], "đủ" if th >= port(n, kb)["tau"] else "thiếu"))
+            rows.append([c, kb, f(gtd_thung(c), 1)] + o)
+    th1 = 2 * TRIP[(1, "trung bình", 1)] / gtd_thung(1)
+    V["kho-ch1-1"] = f(th1, 0)
+    V["kho-ch1-1-xay"] = f(th1 * (1 - S["du_tru_vat_lieu_khi_con_xay"]), 0)
+    t2 = tbl(["Chương", "Kịch bản", "GTĐ một thùng trung bình"] + ["%d người: thùng sau hai chuyến / số tàu" % n for n in S["so_nguoi"]], rows)
+    return t1, t2, V
+
+
 def bao_cao():
     K = {}
     V = {}
@@ -405,15 +522,31 @@ def bao_cao():
     rows = []
     for k, v in ITEM.items():
         if k.startswith("CGO-") and GTD[k]:
-            rows.append([k, v["Tên (VI / EN [TẠM])"].split(" / ")[0], v["Dải"], f(GTD[k]), gia_kien(k), v["Nhãn"]])
-    K["gia_kien"] = tbl(["ID kiện", "Tên", "Dải", "GTĐ (gd-items)", "Giá Tally một kiện", "Nhãn"], rows)
+            b = GT["kien"][k]
+            rows.append([k, v["Tên (VI / EN [TẠM])"].split(" / ")[0], v["Dải"], f(GTD[k]), gia_kien(k), gia_thung(k), b, f(GT["bac"][b]["he_so"], 2), f(GT["bac"][b]["do_goi"], 1), v["Nhãn"]])
+    K["gia_kien"] = tbl(["ID kiện", "Tên", "Dải", "GTĐ kiện (gd-items)", "Giá Tally một kiện", "Giá Tally một thùng", "Bậc giá", "Hệ số giá", "Độ gọi", "Nhãn"], rows)
     rows = []
-    for sp in bang(VP, "SPECIES"):
+    for sp in SPECIES:
         if sp["Bắt"] != "Sống (LIV)":
             continue
         cgo = {"Gần": "CGO-121", "Giữa": "CGO-221", "Xa": "CGO-321"}[sp["Dải"]]
-        rows.append([cgo, "%s %s" % (sp["Mã gd-combat"], sp["Tên"]), sp["Dải"], sp["GTĐ mẫu bắt"], tron(S["tally_moi_gtd"] * so(sp["GTĐ mẫu bắt"])), sp["Nhãn"]])
+        rows.append([cgo, "%s %s" % (sp["Mã gd-combat"], sp["Tên"]), sp["Dải"], sp["GTĐ mẫu bắt"], gia_long(sp), sp["Nhãn"]])
     K["gia-song"] = tbl(["Lồng", "Loài bên trong", "Dải", "GTĐ mẫu sống (gd-items)", "Giá Tally một lồng", "Nhãn"], rows)
+    rows = []
+    for b, d in GT["bac"].items():
+        mvp = [k for k, x in GT["kien"].items() if x == b and ITEM.get(k, {}).get("Nhãn") == "MVP"]
+        gia = ", ".join("%s %d" % (ITEM[k]["Tên (VI / EN [TẠM])"].split(" / ")[0], gia_thung(k)) for k in mvp if GTD[k]) or ", ".join("lồng %s %d" % (sp["Tên"], gia_long(sp)) for sp in LONG_MVP)
+        rows.append([b, f(d["he_so"], 2), f(d["do_goi"], 1), d["y_do"], gia])
+    K["bac-gia"] = tbl(["Bậc giá", "Hệ số giá", "Độ gọi", "Ý đồ", "Giá chương 1 (MVP, Tally một thùng hoặc lồng)"], rows)
+    rows = []
+    for kb in kbs:
+        dm = S["danh_muc_kich_ban"][kb]
+        rows.append([kb, ", ".join("%s %d" % (ITEM[k]["Tên (VI / EN [TẠM])"].split(" / ")[0], q) for k, q in dm.items()), sum(dm.values()), f(sum(q * gia_don_vi(k)[0] for k, q in dm.items()), 0), f(chi_so_gia(kb), 2)])
+        V["chi-so-" + {"tệ": "te", "trung bình": "tb", "tốt": "tot"}[kb]] = f(chi_so_gia(kb), 2)
+    K["chi-so-gia"] = tbl(["Kịch bản", "Danh mục đại diện, chương 1, một người (đơn vị)", "Đơn vị", "Tally giá thùng", "Chỉ số giá (Tally trên GTĐ x 10)"], rows)
+    V["gia-thung-phe"] = str(gia_thung("CGO-101"))
+    K["danh-muc"], dm_v = bang_danh_muc()
+    V.update(dm_v)
     # 2. Bảng giá nâng cấp, ENG, mục Shop
     rows = []
     for m in sorted(danh_sach_mua(), key=lambda x: (x["c"], x["loai"], x["id"])):
@@ -480,8 +613,29 @@ def bao_cao():
     V["coop4_ch1"] = r4[3]
     # 3d. Tally theo ngày, trung bình 1 người, một lượt chạy có seed
     one = chay("trung bình", 1, random.Random(S["seed"]), ghi_ngay=True)
-    rows = [[x[0], x[1], f(x[2], 0), f(x[3], 0), f(x[4], 0), x[5], f(x[6] / 60, 2)] for x in one["dong"]]
-    K["tally_ngay"] = tbl(["Ngày", "Chương", "Nhặt cả ngày (GTĐ)", "Tally thu ở ca cảng", "Tally còn cuối ngày", "Hạng cảng", "Giờ chơi cộng dồn"], rows)
+    rows = [[x[0], x[1], f(x[2], 0), f(x[10], 1), f(x[3], 0), f(x[4], 0), f(x[9], 0), x[5], f(x[6] / 60, 2)] for x in one["dong"]]
+    K["tally_ngay"] = tbl(["Ngày", "Chương", "Nhặt cả ngày (GTĐ)", "Thùng bán ở ca", "Tally thu ở ca cảng", "Tally còn cuối ngày", "Điểm cảng cộng dồn", "Hạng cảng", "Giờ chơi cộng dồn"], rows)
+    # 3e2. Thùng bán mỗi ca theo chương so với số tàu (kho có chặn không)
+    rows = []
+    for kb in kbs:
+        for N in S["so_nguoi"]:
+            o = []
+            for c in range(1, 6):
+                v = [x[10] for r in R[(kb, N)] for x in r["dong"] if x[1] == c and x[3] > 0]
+                o.append("%s (%d%%)" % (f(tb(v), 1), round(100 * tb(v) / port(N, kb)["tau"])))
+            rows.append([kb, N, port(N, kb)["tau"]] + o)
+    K["ban-chuong"] = tbl(["Kịch bản", "Số người", "Số tàu"] + ["Chương %d: thùng bán mỗi ca (phần số tàu)" % c for c in range(1, 6)], rows)
+    # 3f. Ngưỡng Hạng cảng: ngày đủ điểm giữ như bản trước đợt 9
+    rr1 = R[("trung bình", 1)]
+    rows = []
+    for h in range(2, 9):
+        nlen = tb([next((x[0] for x in r["dong"] if x[5] >= h), float("nan")) for r in rr1])
+        rows.append([h, S["tran_chuong_cua_hang"][h - 1], S["nguong_hang"][h - 1], f(S["ngay_du_diem_cu"][h - 2], 1), f(ngay_du(rr1, S["nguong_hang"][h - 1]), 1), f(nlen, 1)])
+    K["nguong-hang"] = tbl(["Hạng", "Trần ở chương", "Ngưỡng điểm (sim dùng số này)", "Ngày đủ điểm, bản trước đợt 9", "Ngày đủ điểm, đo lại", "Ngày lên hạng (có trần chương)"], rows)
+    V["nguong-de-xuat"] = ", ".join(str(x) for x in nguong_theo_ngay_cu()[1:])
+    V["nguong-hien-hanh"] = ", ".join(str(x) for x in S["nguong_hang"][1:])
+    V["ban-ch1"] = f(tb([tb(r["ban_ch1"]) for r in rr1]), 1)
+    V["diem-ca-1"] = f(port(1, "trung bình")["diem_tau"] * port(1, "trung bình")["tau"] * port(1, "trung bình")["xong"], 0)
     # 3e. Source và sink Tally
     rows = []
     for kb in kbs:
@@ -494,13 +648,12 @@ def bao_cao():
                     chi[k2] = chi.get(k2, 0) + v2 / len(runs)
             tong_chi = sum(chi.values())
             du = tb([r["tally_du"] for r in runs])
-            rows.append([kb, N, f(thu, 0), "100%", f(chi.get("ENG", 0) / tong_chi * 100, 0) + "%", f(sum(chi.get(t, 0) for t in TRUC) / tong_chi * 100, 0) + "%",
+            rows.append([kb, N, f(thu, 0), "%d%%" % round(100 * tb([r["tally_tip"] / r["tally_thu"] for r in runs])), f(chi.get("ENG", 0) / tong_chi * 100, 0) + "%", f(sum(chi.get(t, 0) for t in TRUC) / tong_chi * 100, 0) + "%",
                          f((tong_chi - chi.get("ENG", 0) - sum(chi.get(t, 0) for t in TRUC)) / tong_chi * 100, 0) + "%", f(du, 0), f(du / thu * 100, 0) + "%"])
-    V["thuong-phan"] = "%d%%" % round(100 * tb([r["tally_thuong"] / r["tally_thu"] for r in R[("trung bình", 1)]]))
-    V["thuong-te"] = "%d%%" % round(100 * tb([r["tally_thuong"] / r["tally_thu"] for r in R[("tệ", 1)]]))
-    V["thuong-tot"] = "%d%%" % round(100 * tb([r["tally_thuong"] / r["tally_thu"] for r in R[("tốt", 1)]]))
+    for kb in kbs:
+        V["tip-" + {"tệ": "te", "trung bình": "tb", "tốt": "tot"}[kb]] = "%d%%" % round(100 * tb([r["tally_tip"] / r["tally_thu"] for r in R[(kb, 1)]]))
     V["du_tb"] = [x for x in rows if x[0] == "trung bình" and x[1] == 1][0][-1]
-    K["source_sink"] = tbl(["Kịch bản", "Số người", "Tally thu cả game", "Phần từ ca cảng", "Chi cho ENG", "Chi cho bộ đồ", "Chi cho dụng cụ, khoang, Shop khác", "Tally dư cuối game", "Dư so với thu"], rows)
+    K["source_sink"] = tbl(["Kịch bản", "Số người", "Tally thu cả game", "Phần tip trong thu", "Chi cho ENG", "Chi cho bộ đồ", "Chi cho dụng cụ, khoang, Shop khác", "Tally dư cuối game", "Dư so với thu"], rows)
     # 4. Log 40: giữ 1 món hay 3 món ở chương 1
     rows = []
     for kb in kbs:
@@ -528,13 +681,13 @@ def bao_cao():
     # 5. Log 53: bắt sống, chi phí lưới
     luoi = GTD["CON-102"]
     rows = []
-    for sp in bang(VP, "SPECIES"):
+    for sp in SPECIES:
         if "CON-102" not in sp["Vật tiêu hao mỗi lần bắt"] or sp["Hạ được"] != "Có":
             continue
-        ha, song = so(sp["E[GTĐ] khi hạ"]), so(sp["GTĐ mẫu bắt"])
-        r = [(song - luoi / n) / ha for n in S["phan_tich"]["so_con_moi_phat_luoi"]]
-        rows.append(["%s %s" % (sp["Mã gd-combat"], sp["Tên"]), sp["Dải"], f(ha, 2), f(song, 2), f(song / ha, 2)] + [f(x, 2) for x in r] + [sp["Nhãn"]])
-    K["bat_song"] = tbl(["Loài cỡ S", "Dải", "Hạ (GTĐ kỳ vọng)", "Mẫu sống (GTĐ, gd-items)", "Sống trên hạ, bắt tay sau choáng", "Ròng trên hạ, lưới trúng 1 con", "2 con", "3 con", "Nhãn"], rows)
+        ha, song = tally_ha(sp), gia_long(sp)
+        r = [(song - luoi * S["tally_moi_gtd"] / n) / ha for n in S["phan_tich"]["so_con_moi_phat_luoi"]]
+        rows.append(["%s %s" % (sp["Mã gd-combat"], sp["Tên"]), sp["Dải"], f(ha, 1), song, f(song / ha, 2)] + [f(x, 2) for x in r] + [sp["Nhãn"]])
+    K["bat_song"] = tbl(["Loài cỡ S", "Dải", "Hạ (Tally kỳ vọng, bán mô sinh học và đặc sản)", "Lồng sống (Tally)", "Sống trên hạ, bắt tay sau choáng", "Ròng trên hạ, lưới trúng 1 con", "2 con", "3 con", "Nhãn"], rows)
     V["luoi_gtd"] = f(luoi, 2)
     rr = [[so(x) for x in r[5:8]] + [so(r[4])] for r in rows]
     V["luoi_min"] = f(min(min(x[0:3]) for x in rr), 2)
@@ -542,31 +695,17 @@ def bao_cao():
     V["luoi_min2"] = f(min(min(x[1:3]) for x in rr), 2)
     V["tay_min"] = f(min(x[3] for x in rr), 2)
     V["tay_max"] = f(max(x[3] for x in rr), 2)
-    # Log 53: chương 1 cần bao nhiêu chuyến đầy túi, ca cảng thiếu hàng
-    can = VAT_LIEU_SUA[0] + sum(m["vl"] for m in danh_sach_mua() if m["c"] == 1)
-    V["vl_ch1"] = f(can, 0)
-    V["chuyen_ch1"] = f(can / (S["tui_theo_bac"][0] * MAT_DO["Gần"]), 1)
-    rows = []
-    for c in range(1, 6):
-        moi = don_goc_gtd(c)
-        rows.append([c, f(moi, 0), f(kien_tb(c), 1), f(moi / kien_tb(c), 1), f(KIEN_GIAO[c], 1), f(moi / S["kien_muc_tieu_moi_ca"], 1)])
-    K["quy_mo_don"] = tbl(["Chương", "Đơn một ca, một người (GTĐ)", "GTĐ một kiện trung bình hiện tại (gd-items)", "Kiện mỗi ca với kiện hiện tại", "Kiện giao được một ca (sim ca cảng gd-tech)", "GTĐ một kiện cần để đơn là %d kiện" % S["kien_muc_tieu_moi_ca"]], rows)
-    V["kien-can-ch1"] = f(don_goc_gtd(1) / S["kien_muc_tieu_moi_ca"], 1)
-    V["kien-cu-ch1"] = f(don_goc_gtd(1) / kien_tb(1), 1)
+    K["tally-ca"], K["kho-thung"], tc_v = bang_ca_theo_n()
+    V.update(tc_v)
     S["san_ngay_truyen"], san_cu = S["san_ngay_truyen_ha"], S["san_ngay_truyen"]
     a1 = tb([r["moc"][4][1] for r in nhieu("trung bình", 1, n=60)])
     a4 = tb([r["moc"][4][1] for r in nhieu("trung bình", 4, n=60)])
     V["coop4-san-ha"] = "%d%%" % round(100 * a4 / a1)
     V["san-ha-tong"] = str(sum(S["san_ngay_truyen_ha"]))
     S["san_ngay_truyen"] = san_cu
-    S["tran_kien_hien_tai"] = False
-    rk = nhieu("trung bình", 1, n=60)
-    V["gio-game-khong-chan"] = f(tb([r["moc"][4][1] for r in rk if len(r["moc"]) == 5]), 1)
-    S["tran_kien_hien_tai"] = True
     V["sua_ch1_goc"] = f(VAT_LIEU_SUA_GOC[0], 0)
     V["sua_ch1_moi"] = f(VAT_LIEU_SUA[0], 0)
     V["xa_gan"] = f(MAT_DO["Xa"] / MAT_DO["Gần"], 1)
-    V["gia_cgo101"] = str(gia_kien("CGO-101"))
     V["gia_tui1"] = str([m for m in danh_sach_mua() if m["id"] == "UPG-BAG-1"][0]["gia"])
     kc = S["k_coop"]
     V["moi-nguoi-4"] = "%d%% đến %d%%" % (round(100 * min(MOI_NGUOI.get((c, 4), 1) for c in range(1, 6))), round(100 * max(MOI_NGUOI.get((c, 4), 0) for c in range(1, 6))))
@@ -574,15 +713,10 @@ def bao_cao():
         ["Ví Tally, giá, Hạng cảng", "Chung", "Chung", "Chung", "Chung"],
         ["Hệ số khe điểm sinh k(N) (gd-world), Gần, Giữa, Xa"] + ["%s, %s, %s" % (f(1 + kc[0] * (n - 1), 2), f(1 + kc[1] * (n - 1), 2), f(1 + kc[4] * (n - 1), 2)) for n in range(1, 5)],
         ["Mỗi người so với chơi một mình, sim chuyến gd-tech, chương 1 tới 5"] + [", ".join("%d%%" % round(100 * MOI_NGUOI.get((c, n), (1 + kc[c - 1] * (n - 1)) / n)) for c in range(1, 6)) for n in range(1, 5)],
-        ["Quy mô đơn chương 1 và 2, chương 3 tới 5 (gd-quan C8)"] + ["%s, %s" % (f(1 + S["he_so_don_coop"][0] * (n - 1), 1), f(1 + S["he_so_don_coop"][4] * (n - 1), 1)) for n in range(1, 5)],
-        ["Điểm cảng mỗi đơn đủ (gd-quan đã nhận)"] + [str(math.ceil(S["diem_du_don"] * (n + 1) / 2)) for n in range(1, 5)],
+        ["Số tàu một ca và cửa neo (sim ca cảng gd-tech, C8)"] + ["%d tàu, %d cửa neo" % (port(n, "trung bình")["tau"], port(n, "trung bình")["cua"]) for n in range(1, 5)],
+        ["Điểm cảng một ca, kịch bản trung bình, kho đủ"] + [f(port(n, "trung bình")["diem_tau"] * port(n, "trung bình")["tau"] * port(n, "trung bình")["xong"], 0) for n in range(1, 5)],
         ["Giá nâng cấp, sửa khoang", "Không đổi", "Không đổi", "Không đổi", "Không đổi"]])
-    # số phụ: điểm cố định, khoảng β, sàn chương 1
-    S["diem_theo_quy_mo_don"], cu = False, S["diem_theo_quy_mo_don"]
-    a1 = tb([r["moc"][4][1] for r in nhieu("trung bình", 1, n=60)])
-    a4 = tb([r["moc"][4][1] for r in nhieu("trung bình", 4, n=60)])
-    S["diem_theo_quy_mo_don"] = cu
-    V["coop4_diem_co_dinh"] = "%d%%" % round(100 * a4 / a1)
+    # số phụ: khoảng β, sàn chương 1
     for ten, b in (("beta_lo", S["beta_ngan_sach"] - 0.05), ("beta_hi", S["beta_ngan_sach"] + 0.05)):
         V[ten] = f(sum(gio_chuong(nhieu("trung bình", 1, b, n=60))), 1)
     V["san_ch1_moi"] = f(gio_chuong(nhieu("trung bình", 1, 0.02, n=60))[0], 1)
@@ -617,105 +751,64 @@ def bao_cao():
         rows.append([i + 1, dai, oxy, S["tui_theo_bac"][i], f(TECH[i + 1][1], 0), f(TECH[i + 1][1] * S["tally_moi_gtd"], 0), tron(ngan_sach(i + 1)) if i < 4 else "-", f(2 * TECH[i + 1][0], 1)])
     K["suc_manh"] = tbl(["Chương", "Dải", "Oxy (bậc theo chương)", "Túi (Khối)", "GTĐ một chuyến (gồm Driftlife)", "Quy ra Tally", "Ngân sách Tally của chương", "Phút ra ngoài một ngày"], rows)
     # 7. Balance sheet
-    K["nguong-hang"] = tbl(["Hạng", "Trần ở chương", "Ngưỡng điểm (gd-quan đã nhận, sim dùng số này)"], [[h + 1, S["tran_chuong_cua_hang"][h], S["nguong_hang"][h]] for h in range(1, 8)])
     K["balance"] = tbl(["Tham số", "Nơi giữ", "Cũ", "Kết quả thử", "Mới", "Vai sửa"], S["lich_su_doi_so"])
     V["mat_do"] = ", ".join("%s %s" % (d, f(MAT_DO[d], 2)) for d in MAT_DO)
     V["vl_sua"] = ", ".join("chương %d: %s" % (i + 1, f(x, 0)) for i, x in enumerate(VAT_LIEU_SUA))
     return {"khoi": K, "bien": V}, R
 
 
-def bang_md(md, tieu_de):
-    """bảng markdown ngay sau dòng tiêu đề"""
-    a = md.index(tieu_de)
-    dong = []
-    for l in md[a:].splitlines()[1:]:
-        if l.startswith("|"):
-            dong.append([c.strip() for c in l.strip("|").split("|")])
-        elif dong:
-            break
-    return dong[0], dong[2:]
+TEN_DOC = {"UPG-OXY": "Bình Oxy bậc %s", "UPG-BAG": "Túi đồ bậc %s", "UPG-THR": "Bộ đẩy bậc %s", "UPG-ENV": "Vỏ bộ đồ cấp %s", "UPG-RACK": "Đai dụng cụ bậc %s",
+           "UPG-MIN": "Dụng cụ khai thác bậc %s", "UPG-HAR": "Lao từ bậc %s", "UPG-NET": "Súng lưới bậc %s",
+           "ENG-101": "Van tiết lưu (động cơ giai đoạn 1)", "ENG-102": "Buồng đốt tái chế (động cơ giai đoạn 2)", "ENG-103": "Cuộn ổn định từ (động cơ giai đoạn 3)",
+           "ENG-104": "Bơm nhiên liệu Veyl (động cơ giai đoạn 4)", "KH07-C2": "Cảng cấp 2", "KH05-C2": "Xưởng cấp 2", "KHxx-C3": "Cấp 3 các khoang",
+           "BPR-103": "Bản thiết kế Máy quét xung", "BPR-105": "Bản thiết kế Máy cắt thân tàu", "BPR-106": "Bản thiết kế tiện ích cảng"}
 
 
-def sheet():
-    kq, R_ = bao_cao()
-    md = open(GDD, encoding="utf-8").read()
-    ref = "projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md"
-    out = {}
-    # ECONOMIC: theo ngày, trung bình một người, một lượt có seed. Surplus do sim in.
+def ten_doc(i):
+    if i in TEN_DOC:
+        return TEN_DOC[i]
+    k, b = i.rsplit("-", 1)
+    return TEN_DOC[k] % b
+
+
+def tab_economic():
+    """Tab ECONOMIC bản đọc (luật đợt 8: không mã, cột Ngày là số). Một lượt seed, kịch bản trung bình, một người."""
     one = chay("trung bình", 1, random.Random(S["seed"]), ghi_ngay=True)
-    rows = [["Day ID", "Source (vật phẩm)", "Source (Tally)", "Sink Type", "Sink Quality", "Surplus", "Note"]]
-    for x in one["dong"]:
-        ngay, c, nhat, thu, tl, hang, phut, mua, dau = x
+    rows = [["Ngày", "Source (vật phẩm)", "Source (Tally)", "Sink Type", "Sink Quality", "Surplus", "Note"]]
+    for ngay, c, nhat, thu, tl, hang, phut, mua, dau, diem, ban in one["dong"]:
         chi = sum(m["gia"] for m in mua)
-        rows.append(["D%02d" % ngay, "Nhặt %s GTĐ (gồm Driftlife, nuôi)" % f(nhat, 0), f(thu, 0) if thu else "0 (chưa có ca cảng)" if c == 1 and not thu else f(thu, 0),
-                     ", ".join(m["id"] for m in mua) or "-", ", ".join("%s %s Tally" % (m["id"], m["gia"]) for m in mua) or "Không mua",
-                     "Tally: %s + %s - %s = %s" % (f(dau, 0), f(thu, 0), chi, f(tl, 0)), "Chương %d, Hạng cảng %d, giờ chơi cộng dồn %s" % (c, hang, f(phut / 60, 2))])
-    rows.append(["Ghi chú", "Kịch bản trung bình, một người, một lượt seed %d" % S["seed"], "Tally = GTĐ kiện x %d, cộng thưởng" % S["tally_moi_gtd"], "ID theo tab Shop và Upgrade", "Giá theo tab Shop và Upgrade", "Surplus do sim in, không gõ tay", "Bản đủ: %s mục 8, sinh bằng sim-kinh-te.py --sheet" % ref])
-    out["ECONOMIC"] = rows
-    # Shop: bảng giá duy nhất
-    rows = [["ID", "Item List", "Quantity", "Unit", "Value", "Price (Tally)", "New Price (Tally)", "Note"]]
-    for k, v in ITEM.items():
-        if k.startswith("CGO-") and GTD[k] and k not in ("CGO-121", "CGO-221", "CGO-321"):
-            rows.append([k, v["Tên (VI / EN [TẠM])"].split(" / ")[0], 1, "kiện", f(GTD[k]), gia_kien(k), "", "Tàu trả khi bốc kiện. %s" % v["Nhãn"]])
-    for sp in bang(VP, "SPECIES"):
-        if sp["Bắt"] == "Sống (LIV)":
-            cgo = {"Gần": "CGO-121", "Giữa": "CGO-221", "Xa": "CGO-321"}[sp["Dải"]]
-            rows.append(["%s %s" % (cgo, sp["Mã gd-combat"]), "Lồng sinh vật sống, %s" % sp["Tên"], 1, "lồng", sp["GTĐ mẫu bắt"], tron(S["tally_moi_gtd"] * so(sp["GTĐ mẫu bắt"])), "", "Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. %s" % sp["Nhãn"]])
-    for m in danh_sach_mua():
-        if m["loai"] in ("ENG", "BPR", "KE_KIEN_2"):
-            dk = "Cần Hạng cảng %d. " % S["hang_mo_eng"][m["c"] - 1] if m["loai"] == "ENG" else ""
-            rows.append([m["id"], m["ten"], 1, "cái", "-", m["gia"], "", "Shop bán. %sMở chương %d. %s" % (dk, m["c"], m["nhan"])])
-    out["Shop"] = rows
-    # Upgrade: khuôn khối, mỗi trục một khối
-    rows = [["Issue ID", "Task", "Sub Task", "Short Description", "Ref"]]
-    nhom = [("OXY", "T-OXY dung lượng Oxy (UPG-OXY)", "Chỉ là số: chuyến dài hơn"), ("TUI", "T-TUI sức chứa túi (UPG-BAG)", "Chỉ là số: mang về nhiều hơn"),
-            ("DAY", "T-DAY bộ đẩy (UPG-THR)", "Chỉ là số: chuyến gọn hơn"), ("VO", "T-VO cấp môi trường (UPG-ENV)", "Mở khả năng: vào dải mới không bị hao Oxy gấp 2,5 hoặc 4 (K6). Không chặn chương"),
-            ("DUNGCU", "T-DUNGCU số ô dụng cụ (UPG-RACK)", "Mở khả năng: mang thêm một dụng cụ"), ("DUNGCU_KHAI_THAC", "Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)", "Chỉ là số, cổng mềm: khai thác điểm cứng không chậm gấp 4"),
-            ("KHOANG_CAP", "Nâng cấp khoang (KH05-C2, KHxx-C3)", "Khoang thêm tính năng theo gd-quan")]
-    ds = danh_sach_mua()
-    for i, (loai, ten, kieu) in enumerate(nhom, 1):
-        iid = "UP-%02d" % i
-        rows.append([iid, ten, "Type", kieu, ref + " mục 3.2"])
-        rows.append([iid, ten, "Characteristic", "Hiệu ứng từng bậc ở nguoi-choi.md mục 2.6 (bộ đồ) hoặc vat-pham.md (dụng cụ), tram-va-cang.md (khoang). Mua một lần cho cả nhóm (C4), làm ở Xưởng, xong qua đêm", ""])
-        for m in sorted([m for m in ds if m["loai"] == loai], key=lambda x: (x["c"], x["id"])):
-            gia = "0 Tally (quest Kỹ sư)" if m["mien_phi"] else "%s Tally" % m["gia"]
-            vl = "vật liệu %s GTĐ (vat-pham.md)" % f(m["vl"]) if m["vl"] else "không vật liệu"
-            rows.append([iid, ten, m["id"], "%s, %s, mở chương %d (%s). %s" % (gia, vl, m["c"], m["mo"], m["nhan"]), ""])
-    out["Upgrade"] = rows
-    # PROCESSING: theo chương, số ngày do sim in
-    dau, data = bang_md(md, "### PROCESSING (tab Sheet, theo chương)")
-    runs = R_[("trung bình", 1)]
-    rows = [["Day ID", "User Progression", "Salvage Unlock", "Zone Unlock", "Recipe Unlock", "Enemy Unlock", "Customer Unlock", "Power Growth", "Design Intent", "Note"]]
-    truoc = 0
-    for r in data:
-        c = int(r[0])
-        het = round(tb([x["moc"][c - 1][0] for x in runs]))
-        rows.append(["Chương %d (ngày %d tới %d)" % (c, truoc + 1, het), r[1], r[2], r[3], r[4], r[5], S["tau_theo_chuong"][str(c)], r[6] + ". GTĐ một chuyến %s" % f(TECH[c][1], 0), r[7],
-                     "Sàn ngày truyện %d. Ngân sách Tally %s. Bản đủ: %s" % (S["san_ngay_truyen"][c - 1], tron(ngan_sach(c)) if c <= 4 else "không", ref)])
-        truoc = het
-    out["PROCESSING"] = rows
-    # Balance Sheet: lịch sử đổi số
-    rows = [["Feature", "Category", "Current Value", "Test Result", "Issue Found", "Adjustment Plan", "New Value", "Result After Change", "Decision", "Notes"]]
-    for t, noi, cu, kq_thu, moi, vai in S["lich_su_doi_so"]:
-        rows.append([t, noi, cu, "Sim GD-028", kq_thu, "Vai sửa: %s" % vai, moi, "Bảng 8.1 của %s" % ref, "Keep" if vai == "Giữ" else "Pass", ""])
-    out["Balance Sheet"] = rows
-    thu_muc = os.path.join(ROOT, "projects", "game-moi", "gdd", "sheet")
-    os.makedirs(thu_muc, exist_ok=True)
-    for ten, rows in out.items():
-        with open(os.path.join(thu_muc, ten + ".tsv"), "w", encoding="utf-8", newline="\n") as fh:
-            for r in rows:
-                fh.write("\t".join(str(c).replace("\t", " ").replace("\n", " ") for c in r) + "\n")
-    json.dump(out, open(os.path.join(HERE, "sheet.json"), "w", encoding="utf-8"), ensure_ascii=False)
-    print({k: len(v) - 1 for k, v in out.items()})
+        rows.append([ngay, "%s GTĐ" % f(nhat, 0), f(thu, 0), ", ".join(ten_doc(m["id"]) for m in mua) or "Không mua",
+                     " + ".join("0 (thưởng quest Kỹ sư)" if m["mien_phi"] else str(m["gia"]) for m in mua) or "0",
+                     "%s + %s - %s = %s" % (f(dau, 0), f(thu, 0), chi, f(tl, 0)),
+                     "Chương %d, Hạng cảng %d, đã chơi %s giờ. %s" % (c, hang, f(phut / 60, 2), "Bán %s thùng, điểm cảng cộng dồn %s" % (f(ban, 0), f(diem, 0)) if ban else "Cảng chưa mở")])
+    rows.append(["", "Ghi chú: kịch bản trung bình, một người, một lượt sim. Nhặt gồm cả Driftlife bắt, hạ và con nuôi",
+                 "Tally thu bằng giá thùng cộng tip. Cảng mở từ ngày %d" % S["ngay_mo_cang_ch1"], "Tên thứ mua theo tab Shop và Upgrade", "Tally chi, giá theo tab Shop và Upgrade",
+                 "Tally đầu ngày + thu - chi = Tally cuối ngày. Sim in, không gõ tay",
+                 "Một lượt nên ngày qua chương có thể lệch 1 ngày so với tab PROCESSING (trung bình nhiều lượt). Bản đủ: kinh-te-tien-trinh.md Phụ lục"])
+    p = os.path.join(ROOT, "projects", "game-moi", "gdd", "sheet", "ECONOMIC.tsv")
+    with open(p, "w", encoding="utf-8", newline="\n") as fh:
+        for r in rows:
+            fh.write("\t".join(str(x) for x in r) + "\n")
+    print("ghi %s: %d ngày" % (p, len(rows) - 2))
 
 
 def selftest():
     assert tron(37) == 35 and tron(372) == 370 and tron(3720) == 3700
     assert abs(vat_lieu_nang_cap(1) - 25) < 1e-9
+    assert gia_kien("CGO-101") == gia_thung("CGO-101") * THUNG and gia_kien("CGO-101") == int(gia_kien("CGO-101")), "giá kiện = giá thùng x 2,5, số nguyên"
+    assert gia_thung("CGO-109") > gia_thung("CGO-113") > gia_thung("CGO-105") > gia_thung("CGO-101"), "bậc giá: hiếm > chế > sinh học > chợ"
+    for sp in LONG_MVP:  # K9 theo Tally: bắt tay sau choáng hơn hạ, trong trần 2 của khung mục 9
+        assert 1.2 <= gia_long(sp) / tally_ha(sp) <= 2.0, sp["Tên"]
+    cc = json.load(open(os.path.join(ROOT, "projects", "game-moi", "tools", "tham-so", "ca-cang.json"), encoding="utf-8"))["giaThung"]
+    ma = S["do_danh_muc"]["ma"]
+    assert all(cc["thung"][m] == gia_thung(ma[m]) and cc["doGoi"][m] == bac_gia(ma[m])["do_goi"] for m in cc["thung"]), "ca-cang.json giaThung lệch bảng giá"
+    assert all(cc["long"]["LIV-%s" % sp["Số"]] == gia_long(sp) for sp in LONG_MVP), "ca-cang.json giaThung.long lệch bảng giá lồng"
+    assert abs(he_so_tip(1, "trung bình") - 1 / (1 - port(1, "trung bình")["tip"])) < 1e-12
     a = chay("trung bình", 1, random.Random(1))
     b = chay("trung bình", 1, random.Random(1))
     assert a["moc"] == b["moc"], "cùng seed phải cùng kết quả"
     assert len(a["moc"]) == 5, "kịch bản trung bình một người phải xong game"
+    assert all(x <= port(1, "trung bình")["tau"] + 1e-9 for x in a["ban_ch1"]), "không bán quá số tàu"
     t = chay("tệ", 1, random.Random(1))
     g = chay("tốt", 1, random.Random(1))
     assert t["moc"][-1][1] > a["moc"][-1][1] > g["moc"][-1][1], "tệ chậm hơn trung bình chậm hơn tốt"
@@ -727,9 +820,10 @@ if __name__ == "__main__":
     if "--selftest" in sys.argv:
         selftest()
         sys.exit(0)
-    if "--sheet" in sys.argv:
-        # Từ đợt 8 (2026-11-20) 5 tab kinh tế là bản đọc sửa tay, không ghi đè bằng bản có mã.
-        sys.exit("--sheet đã tắt: tab Sheet là bản đọc sửa tay (DECISIONS 2026-11-20 đợt 8). Số mới thì sửa TSV tay rồi chạy tools/kiem-de-doc.mjs")
+    if "--tab" in sys.argv:
+        # Tab Sheet là bản đọc (DECISIONS đợt 8). Chỉ ECONOMIC sinh lại được vì cả tab là số theo ngày. Tab khác sửa tay rồi chạy tools/kiem-de-doc.mjs
+        tab_economic()
+        sys.exit(0)
     if "--do" in sys.argv:
         do_num()
         sys.exit(0)

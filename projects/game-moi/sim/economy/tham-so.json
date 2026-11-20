@@ -1,10 +1,11 @@
 {
   "game": "game-moi",
-  "cap_nhat": "2026-11-20",
+  "cap_nhat": "2026-11-20 (đợt 9, GD-055)",
   "nguon_so_hien_hanh": "projects/game-moi/so-hien-hanh.md",
   "bo_qua_tieu_de": [
     "Lịch sử thay đổi",
-    "Phụ lục"
+    "Phụ lục",
+    "Balance Sheet"
   ],
   "ghi_chu": "Mọi số của sim kinh tế nằm ở đây. Mục tham_so là số doc phải viết đúng (economy_doc.py kiem bắt). Mục sim là cấu hình sim. Mục nguon ghi gốc của từng nhóm số.",
   "tham_so": {
@@ -18,35 +19,52 @@
       ],
       "cam": []
     },
-    "thuong_du_don": {
-      "gia_tri": 25,
-      "nguon": "gd-quan khởi điểm, giữ sau sim",
-      "nhan": "đề xuất",
-      "bat": [
-        "[Tt]hưởng đủ đơn (\\d+)%",
-        "[Tt]hưởng đủ đơn \\| (\\d+)%"
-      ],
-      "cam": []
-    },
-    "thuong_nhanh": {
-      "gia_tri": 15,
-      "nguon": "gd-quan khởi điểm, giữ sau sim",
-      "nhan": "đề xuất",
-      "bat": [
-        "[Tt]hưởng nhanh (\\d+)%",
-        "[Tt]hưởng nhanh \\| (\\d+)%"
-      ],
-      "cam": []
-    },
     "beta_ngan_sach": {
-      "gia_tri": 0.4,
-      "gia_tri_doc": "0,40",
+      "gia_tri": 0.54,
+      "gia_tri_doc": "0,54",
       "nguon": "sim, núm gap",
       "nhan": "đề xuất",
       "bat": [
         "hệ số ngân sách β bằng (\\d+,\\d+)"
       ],
       "cam": []
+    },
+    "tip_toi_da": {
+      "gia_tri": 30,
+      "nguon": "Lead chốt 2026-11-20 (K13, de-xuat-ca-cang-kieu-dave.md mục 4)",
+      "nhan": "Lead chốt",
+      "bat": [
+        "[Tt]ip tối đa (\\d+)%"
+      ],
+      "cam": []
+    },
+    "thung_moi_kien": {
+      "gia_tri": 2.5,
+      "nguon": "Lead chốt 2026-11-20 (D0)",
+      "nhan": "Lead chốt",
+      "bat": [
+        "1 kiện = (\\d+,\\d+) thùng",
+        "1 kiện bằng (\\d+,\\d+) thùng"
+      ],
+      "cam": []
+    },
+    "bo_luat_ca_cu": {
+      "gia_tri": 0,
+      "nguon": "Lead chốt ca cảng khung Dave 2026-11-20: bỏ đơn nhiều dòng và thưởng theo đơn",
+      "nhan": "Lead chốt",
+      "bat": [],
+      "cam": [
+        "[Tt]hưởng đủ đơn",
+        "[Tt]hưởng nhanh",
+        "[Qq]uy mô đơn",
+        "[Đđ]ơn đủ",
+        "[Đđ]ủ đơn",
+        "[Đđ]ơn trượt",
+        "10 kiện mỗi ca",
+        "[Gg]iá trị đơn",
+        "[Kk]ệ kiện",
+        "[Đđ]óng kiện trong ca"
+      ]
     }
   },
   "sim": {
@@ -56,22 +74,19 @@
     "so_nguoi": [
       1,
       2,
+      3,
       4
     ],
     "tally_moi_gtd": 10,
-    "thuong_du_don": 0.25,
-    "thuong_nhanh": 0.15,
-    "diem_du_don": 2,
-    "diem_nhanh": 1,
     "nguong_hang": [
       0,
-      10,
-      20,
-      45,
       70,
-      100,
       135,
-      195
+      285,
+      400,
+      560,
+      680,
+      910
     ],
     "tran_hang_theo_chuong": [
       3,
@@ -96,7 +111,7 @@
       "DUNGCU_KHAI_THAC": 0.15,
       "KHOANG_CAP": 0.4,
       "BPR": 0.3,
-      "KE_KIEN_2": 0.2
+      "CANG_2": 0.2
     },
     "ghi_chu_chuong": "Chỉ số 0 là chương 1",
     "gio_muc_tieu_chuong": [
@@ -156,14 +171,6 @@
       0,
       0
     ],
-    "tau_moi_ca": [
-      3,
-      4,
-      5,
-      6,
-      6
-    ],
-    "kien_moi_dong_goc": 2,
     "o_nuoi_theo_chuong": [
       0,
       4,
@@ -214,24 +221,18 @@
         "day_tui": 0.75,
         "mat_do": 0.9,
         "p_ngat": 0.25,
-        "ky_nang_ca": 0.7,
-        "p_nhanh": 0.1,
         "phut_them": 1.15
       },
       "trung bình": {
         "day_tui": 0.9,
         "mat_do": 1.0,
         "p_ngat": 0.15,
-        "ky_nang_ca": 0.85,
-        "p_nhanh": 0.3,
         "phut_them": 1.0
       },
       "tốt": {
         "day_tui": 1.0,
         "mat_do": 1.15,
         "p_ngat": 0.07,
-        "ky_nang_ca": 0.95,
-        "p_nhanh": 0.6,
         "phut_them": 0.9
       }
     },
@@ -313,7 +314,7 @@
         "tram-va-cang.md (gd-quan)",
         "25%, 15%",
         "Không thấy vấn đề",
-        "25%, 15%",
+        "25%, 15%, rồi bỏ từ đợt 9 (Lead chốt ca cảng khung Dave), thay bằng tip",
         "Giữ"
       ],
       [
@@ -419,17 +420,49 @@
         "Lưới trúng 1 con của loài rẻ cho 1,28 lần",
         "1,2 đến 2 lần cho cỡ S và M, sau khi trừ vật tiêu hao (khung sửa lần 5)",
         "GDM"
+      ],
+      [
+        "Đơn vị bán ở ca cảng và giá",
+        "kinh-te-tien-trinh.md mục 3.1 (gd-economy)",
+        "Giá kiện bằng GTĐ x 10, một thùng bằng giá kiện chia 2,5: thùng chương 1 từ 48 tới 56 Tally",
+        "Sim ca cảng GD-054: giữ hàng cho đơn đặt trước chỉ chênh dưới 2,5% Tally, lập danh mục không có thế cân",
+        "Giá thùng theo 5 bậc giá: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75",
+        "gd-economy"
+      ],
+      [
+        "Thưởng theo đơn",
+        "tram-va-cang.md (gd-quan), kinh-te-tien-trinh.md",
+        "Thưởng đủ đơn 25%, thưởng nhanh 15%",
+        "Lead chốt ca cảng khung Dave 2026-11-20, bỏ đơn nhiều dòng",
+        "Tip tối đa 30% giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally",
+        "Lead"
+      ],
+      [
+        "Điểm cảng",
+        "tram-va-cang.md (gd-quan)",
+        "2 mỗi đơn đủ, thêm 1 khi nhanh, nhân (N cộng 1) chia 2",
+        "Luật mới không còn đơn",
+        "1 mỗi tàu phục vụ xong, thêm 1 nếu còn trên 2/3 kiên nhẫn. Một ca một người tới 50 điểm, nhóm 3 và 4 người tới 140",
+        "Lead"
+      ],
+      [
+        "Ngưỡng điểm Hạng cảng 2 tới 8",
+        "tram-va-cang.md mục 3 (gd-quan)",
+        "10, 20, 45, 70, 100, 135, 195",
+        "Điểm mới gấp 7 tới 8 lần mỗi ca, ngưỡng cũ thì Hạng không còn chặn ENG",
+        "70, 135, 285, 400, 560, 680, 910, giữ ngày đủ điểm của bản trước (5, 7, 13, 16, 20, 24, 31). Chờ gd-quan nhận",
+        "gd-economy"
+      ],
+      [
+        "Hệ số ngân sách β",
+        "GD-028",
+        "0,40",
+        "Ca khung Dave bán gần đủ 25 thùng mỗi ca và có tip: giữ 0,40 thì cả game 11,0 giờ",
+        "0,54, cả game trung bình 13,8 giờ, nhóm 4 bằng 72% thời gian một mình",
+        "gd-economy"
       ]
     ],
-    "beta_ngan_sach": 0.4,
-    "dong_moi_don_cu": [
-      1.5,
-      2.0,
-      2.5,
-      2.5,
-      2.5
-    ],
-    "ti_le_cang": 0.6,
+    "beta_ngan_sach": 0.54,
     "he_so_vat_lieu_sua_de_xuat": [
       1,
       1,
@@ -437,11 +470,7 @@
       1,
       1
     ],
-    "diem_theo_quy_mo_don": true,
     "sim_chuyen_gd_tech": "projects/game-moi/tools/ket-qua/sim-chuyen.md",
-    "dung_nguong_de_xuat": false,
-    "ti_le_hang": 0.7,
-    "ngay_chua_co_cang": 3,
     "tran_chuong_cua_hang": [
       1,
       1,
@@ -453,13 +482,6 @@
       4
     ],
     "dung_gtd_gd_tech": true,
-    "he_so_don_coop": [
-      0.6,
-      0.6,
-      0.4,
-      0.4,
-      0.4
-    ],
     "chuyen_du_phong": {
       "nguon": "gd-world, map.md mục 3.9 (sim GD-030 trên bản sao tham số)",
       "so": {
@@ -510,15 +532,14 @@
       ]
     ],
     "sim_ca_cang_gd_tech": "projects/game-moi/tools/ket-qua/sim-ca-cang.md",
-    "kien_muc_tieu_moi_ca": 10,
     "chuong_mo_thieu": {
       "UPG-NET-2": 2
     },
     "mua_them": [
       [
         "KH07-C2",
-        "Kệ kiện cấp 2 (cảng cấp 2)",
-        "KE_KIEN_2",
+        "Cảng cấp 2 (đề xuất: cửa neo thứ 4, gd-quan chốt)",
+        "CANG_2",
         1
       ],
       [
@@ -561,6 +582,9 @@
       "san_ngay_truyen": "cot-truyen.md mục 5 (gd-story): sàn ngày của chuỗi mốc truyện mỗi chương, không đổi theo số người",
       "san_ngay_truyen_ha": "cot-truyen.md mục 5: bốn chỗ hạ sàn gd-story đề xuất, chưa áp",
       "kien_theo_chuong": "vat-pham.md: CGO-411 Kiện linh kiện Cradle (chương 4), CGO-511 Kiện linh kiện Warden (chương 5)",
+      "ngay_du_diem_cu": "Sim kinh tế bản trước đợt 9 (commit 1cefb3f, luật đơn cũ), trung bình 200 lượt, một người: ngày đủ điểm cho Hạng 2 tới 8, chưa tính trần chương. Đợt 9 đặt ngưỡng mới để ngày đủ điểm giữ như cũ",
+      "ca_cang": "tools/ket-qua/sim-ca-cang.md mục 4 (gd-tech, GD-054). Sim kinh tế đọc số tàu, phần tàu xong, giây một ca, phần tip, điểm mỗi tàu theo số người và trễ phản xạ",
+      "gia_thung": "gd-economy đợt 9 (GD-055). Giá thùng = GTĐ một thùng (vat-pham.md 2.6b, GTĐ kiện chia 2,5) x 10 x hệ số bậc giá, làm tròn tới số chẵn để giá kiện (2,5 thùng) là số nguyên. Lồng: GTĐ mẫu sống x 10 x hệ số Hàng sống, làm tròn 5",
       "tau_theo_chuong": "tram-va-cang.md bảng loại tàu"
     },
     "giay_lam_viec_ch1_tham_chieu": 190,
@@ -571,7 +595,6 @@
       3,
       3
     ],
-    "tran_kien_hien_tai": true,
     "san_ngay_truyen_ha": [
       6,
       4,
@@ -593,6 +616,162 @@
       "3": "TA06, TA07, TA08, TA09 (Hạng 6), TA10",
       "4": "Không thêm loại tàu",
       "5": "Không thêm loại tàu"
-    }
+    },
+    "ca_cang": {
+      "nguon": "tools/ket-qua/sim-ca-cang.md mục 4 (gd-tech, GD-054). Sim kinh tế đọc số tàu, phần tàu xong, giây một ca, phần tip, điểm mỗi tàu theo số người và trễ phản xạ",
+      "tre_theo_kich_ban": {
+        "tệ": 3,
+        "trung bình": 2,
+        "tốt": 1
+      },
+      "thung_moi_kien": 2.5,
+      "moc_cu": 0.6,
+      "ghi_chu": "Kho thật: sim bán min(số tàu x phần tàu xong, thùng có trong kho sau khi giữ phần để xây). Hết hàng thì ca ngắn lại theo phần tàu được phục vụ (D8)"
+    },
+    "gia_thung": {
+      "nguon": "gd-economy đợt 9 (GD-055). Giá thùng = GTĐ một thùng (vat-pham.md 2.6b, GTĐ kiện chia 2,5) x 10 x hệ số bậc giá, làm tròn tới số chẵn để giá kiện (2,5 thùng) là số nguyên. Lồng: GTĐ mẫu sống x 10 x hệ số Hàng sống, làm tròn 5",
+      "bac": {
+        "Hàng chợ": {
+          "he_so": 0.75,
+          "do_goi": 3,
+          "y_do": "Hàng khối lớn của dải, cũng là vật liệu xây. Rẻ, tàu nào cũng gọi"
+        },
+        "Hàng sinh học": {
+          "he_so": 1.0,
+          "do_goi": 2,
+          "y_do": "Phụ phẩm khi hạ Driftlife, sản phẩm nuôi. Giá gốc"
+        },
+        "Hàng chế": {
+          "he_so": 1.35,
+          "do_goi": 1.5,
+          "y_do": "Kiện tinh dải Gần phải chế ở Xưởng trước ca. Trả công chế"
+        },
+        "Hàng sống": {
+          "he_so": 1.3,
+          "do_goi": 1,
+          "y_do": "Lồng Driftlife bắt sống. Giữ K9 trong 1,2 tới 2 lần hạ"
+        },
+        "Hàng hiếm": {
+          "he_so": 1.5,
+          "do_goi": 1,
+          "y_do": "Đồ ít gặp, không dùng để xây. Đắt, ít tàu gọi"
+        }
+      },
+      "kien": {
+        "CGO-101": "Hàng chợ",
+        "CGO-102": "Hàng chợ",
+        "CGO-103": "Hàng chợ",
+        "CGO-104": "Hàng chợ",
+        "CGO-211": "Hàng chợ",
+        "CGO-212": "Hàng chợ",
+        "CGO-213": "Hàng chợ",
+        "CGO-311": "Hàng chợ",
+        "CGO-312": "Hàng chợ",
+        "CGO-313": "Hàng chợ",
+        "CGO-411": "Hàng chợ",
+        "CGO-511": "Hàng chợ",
+        "CGO-105": "Hàng sinh học",
+        "CGO-107": "Hàng sinh học",
+        "CGO-207": "Hàng sinh học",
+        "CGO-307": "Hàng sinh học",
+        "CGO-111": "Hàng chế",
+        "CGO-112": "Hàng chế",
+        "CGO-113": "Hàng chế",
+        "CGO-121": "Hàng sống",
+        "CGO-221": "Hàng sống",
+        "CGO-321": "Hàng sống",
+        "CGO-106": "Hàng hiếm",
+        "CGO-206": "Hàng hiếm",
+        "CGO-306": "Hàng hiếm",
+        "CGO-109": "Hàng hiếm",
+        "CGO-131": "Hàng hiếm",
+        "CGO-141": "Hàng hiếm",
+        "CGO-421": "Hàng hiếm"
+      }
+    },
+    "danh_muc_kich_ban": {
+      "ghi_chu": "[GIẢ ĐỊNH] gd-economy: tệ không chuẩn bị (lồng bắt được cộng hàng chợ), trung bình có 2 thùng đồ Trái Đất và 3 thùng nước, tốt chuẩn bị đủ. Số lồng theo bắt mỗi chuyến của sim chuyến gd-tech (tệ 2,1, trung bình 2,7, tốt 2,9, hai chuyến)",
+      "tệ": {
+        "CGO-121": 4,
+        "CGO-101": 9,
+        "CGO-102": 6,
+        "CGO-103": 6
+      },
+      "trung bình": {
+        "CGO-121": 5,
+        "CGO-109": 2,
+        "CGO-113": 3,
+        "CGO-101": 15
+      },
+      "tốt": {
+        "CGO-121": 6,
+        "CGO-109": 3,
+        "CGO-113": 5,
+        "CGO-101": 11
+      }
+    },
+    "do_danh_muc": {
+      "ghi_chu": "Kiểu danh mục đo bằng mô hình ca của gd-tech. Số thùng cho 1 người, N người nhân số tàu chia 25 (làm tròn), lồng cũng nhân vì nhóm bắt nhiều hơn. Trễ phản xạ 2 giây",
+      "ma": {
+        "phe": "CGO-101",
+        "cap": "CGO-102",
+        "quang": "CGO-103",
+        "bang": "CGO-104",
+        "mo": "CGO-105",
+        "dacsan": "CGO-106",
+        "td": "CGO-109",
+        "nuoc": "CGO-113",
+        "long": "CGO-121"
+      },
+      "kieu": {
+        "Hàng chợ, không chuẩn bị": {
+          "phe": 9,
+          "cap": 8,
+          "quang": 8
+        },
+        "Như demo, thêm đồ Trái Đất": {
+          "phe": 10,
+          "cap": 8,
+          "quang": 8,
+          "td": 5
+        },
+        "Chuẩn bị kỹ": {
+          "long": 5,
+          "td": 3,
+          "nuoc": 5,
+          "phe": 12
+        },
+        "Ít mà đắt": {
+          "long": 5,
+          "td": 3,
+          "nuoc": 5,
+          "dacsan": 2
+        },
+        "Chuẩn bị kỹ nhưng bày thừa hàng chợ": {
+          "long": 5,
+          "td": 3,
+          "nuoc": 5,
+          "phe": 30
+        },
+        "Chuẩn bị kỹ, bỏ đồ Trái Đất": {
+          "long": 5,
+          "nuoc": 5,
+          "dacsan": 3,
+          "phe": 12
+        }
+      },
+      "tre": 2,
+      "lan": 300,
+      "seed": 1
+    },
+    "ngay_du_diem_cu": [
+      5.02,
+      7.0,
+      12.51,
+      16.14,
+      20.05,
+      24.32,
+      30.51
+    ]
   }
 }

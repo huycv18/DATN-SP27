@@ -4,7 +4,8 @@
 // Mô hình: một trục ngang như demo ca-cang-dave.html. Quầy cảng (3 ô) bên trái, cửa neo bên phải. N người chia việc,
 // mỗi người nghĩ rồi chọn việc gần nhất chưa ai nhận theo ưu tiên: mang thùng đang cầm tới cửa neo, nhặt thùng ở quầy, bơm khí.
 // "Trễ phản xạ" là thời gian chờ trước mỗi lần đi, tính là bận (khớp cách đo của demo). Rảnh = thời gian không có việc nào để làm.
-// Không mô phỏng: sự cố, Driftlife sổng, tàu có tên ngoài hai loại của demo, hàng sống theo loài, cửa neo đổi theo Hạng cảng, kho đủ hàng cho danh mục.
+// Luật theo tram-va-cang.md đợt 9: ca 300 giây (luật 34), 50% tàu bật bơm khí ngay lúc cập (luật 28), chọn món theo độ gọi của bậc giá nhân hàng hay gọi (luật 24), ca đầu 2 tàu Loose Bolt (luật 67).
+// Không mô phỏng: sự cố, Driftlife sổng, tàu có tên ngoài Loose Bolt và Tàu vội, cửa neo đổi theo Hạng cảng, kho đủ hàng cho danh mục.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -14,19 +15,17 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const GDD = join(HERE, '..', 'gdd', 'he-thong');
 export const CFG = JSON.parse(readFileSync(join(HERE, 'tham-so', 'ca-cang.json'), 'utf8'));
 
-// Giá thùng = giá kiện chia heSoThung, đọc từ khối gia-kien của kinh-te-tien-trinh.md (gd-economy giữ, sẽ đặt lại giá thùng sau).
-export function docGiaKien(file) {
-  const m = readFileSync(file, 'utf8').match(/<!--khoi:gia-kien-->([\s\S]*?)(?:<!--\/khoi:gia-kien-->|\n\n|$)/);
-  if (!m) throw new Error(`Không thấy khối gia-kien trong ${file}`);
-  const out = {};
-  for (const l of m[1].split(/\r?\n/)) {
-    const c = l.trim().replace(/^\||\|$/g, '').split('|').map((x) => x.trim());
-    if (/^CGO-\d{3}$/.test(c[0])) out[c[0]] = Number(c[4]);
+// Giá thùng, độ gọi và lồng theo loài đọc từ khối giaThung của ca-cang.json (gd-economy giữ, khớp bảng giá kinh-te-tien-trinh.md mục 3.1).
+// Lồng sống: mỗi lần giao rút một loài trong giaThung.long. gia của lồng là trung bình để bên ngoài (do-danh-muc.mjs) thay được.
+{
+  const GT = CFG.giaThung;
+  for (const [id, cgo] of Object.entries(GT.cgo)) CFG.hang[id] ??= { cgo };
+  for (const [id, it] of Object.entries(CFG.hang)) {
+    it.doGoi = GT.doGoi[id] ?? 1;
+    if (id === 'long') { it.loai = Object.values(GT.long); it.gia = Math.round(it.loai.reduce((a, b) => a + b, 0) / it.loai.length); }
+    else it.gia = GT.thung[id];
   }
-  return out;
 }
-const GIA_KIEN = docGiaKien(join(GDD, 'kinh-te-tien-trinh.md'));
-for (const it of Object.values(CFG.hang)) it.gia = it.giaCoDinh ?? Math.round(GIA_KIEN[it.cgo] / CFG.heSoThung);
 
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 
@@ -46,30 +45,34 @@ export function chayCa(cfg, o, rng) {
   for (let i = 0, t = cfg.tauDau; i < o.soTau; i++) {
     const pre = i === dp.thuTu;
     const wb = cfg.tau.bolt.w, wv = cfg.tau.voi.w;
-    plan.push({ at: t, type: pre ? 'bolt' : rng() < wb / (wb + wv) ? 'bolt' : 'voi', pre });
+    plan.push({ at: t, idx: i, type: pre || o.chiBolt ? 'bolt' : rng() < wb / (wb + wv) ? 'bolt' : 'voi', pre });
     t += tbCach * (1 - loSong + 2 * loSong * rng());
   }
+  if (o.caDau) { plan.length = 0; plan.push({ at: cfg.tauDau, type: 'bolt', pre: false, noPump: true }, { at: Infinity, type: 'bolt', pre: false, forcePump: true }); }
   const S = { t: 0, next: 0, ships: [], docks: Array(cua).fill(null), counter: Array(cua).fill(null), tally: 0, tip: 0, tipBom: 0, diem: 0, served: 0, left: 0, skipped: 0, giaoTheo: {}, kn: [] };
   const ps = Array.from({ length: N }, (_, i) => ({ x: cfg.nguoiX + i * cfg.nguoiCach, carry: null, st: 'idle', timer: 0, job: null, pumpT: 0, idle: 0 }));
   const availTotal = () => Object.values(cat).reduce((a, c) => a + c.avail, 0);
   const pickItem = (type) => {
-    const pool = Object.entries(cat).filter(([, c]) => c.avail > 0);
+    const chi = cfg.tau[type].chiGoi; // luật 24: loại tàu có cột chỉ gọi thì chỉ chọn trong các nhóm đó
+    const pool = Object.entries(cat).filter(([id, c]) => c.avail > 0 && (!chi || chi.includes(id)));
     if (!pool.length) return null;
     const like = cfg.tau[type].thich;
-    let sum = 0; const w = pool.map(([id]) => (sum += like[id] || 1));
+    let sum = 0; const w = pool.map(([id]) => (sum += (like[id] || 1) * (cfg.hang[id].doGoi ?? 1)));
     const r = rng() * sum;
     return pool[w.findIndex((x) => r < x)][0];
   };
   const rand = (a, b) => a + rng() * (b - a);
   const spawn = (pl) => {
+    if (pl.idx === dp.thuTu) { S.tdConLai9 = cat[dp.item]?.avail ?? 0; S.tdBan9 = cat[dp.item]?.sold ?? 0; }
     let item, pre = false;
     if (pl.pre) { if (preReserved) { item = dp.item; pre = true; preReserved = false; } else preKet = 'trượt (không có trong danh mục)'; }
-    if (!item) { item = pickItem(pl.type); if (!item) { S.skipped++; return; } cat[item].avail--; }
+    if (!item) { item = pickItem(pl.type); if (!item) { S.skipped++; if (pl.pre) preKet = 'trượt (không có trong danh mục)'; return; } cat[item].avail--; }
     const ty = cfg.tau[pl.type];
-    S.ships.push({ type: pl.type, item, pre, state: 'vao', t: 0, dock: -1, kn: ty.kn, knMax: ty.kn, wait: 0, pumpReq: false, pumpNext: rand(...cfg.bom.sau), crateMade: false, dead: false });
+    S.ships.push({ type: pl.type, item, pre, state: 'vao', t: 0, dock: -1, kn: ty.kn, knMax: ty.kn, wait: 0, pumpReq: false, pumpNext: rand(...cfg.bom.sau), noPump: !!pl.noPump, forcePump: !!pl.forcePump, crateMade: false, dead: false });
   };
   const fail = (sh) => {
     sh.state = 'roi'; sh.t = 0; S.left++;
+    if (o.caDau && plan[1].at === Infinity) S.next = plan.length; // tàu 1 chưa giao thì tàu 2 không tới
     const k = sh.dock;
     if (k >= 0 && S.counter[k]?.ship === sh) S.counter[k] = null;
     for (const p of ps) if (p.carry?.ship === sh) p.carry = null;
@@ -99,7 +102,7 @@ export function chayCa(cfg, o, rng) {
   };
   const giao = (sh) => {
     const it = cfg.hang[sh.item], ty = cfg.tau[sh.type];
-    const gia = Math.round(it.gia * (sh.pre ? dp.heSo : 1));
+    const gia = Math.round((it.loai ? it.loai[Math.floor(rng() * it.loai.length)] : it.gia) * (sh.pre ? dp.heSo : 1));
     const frac = clamp(sh.kn / sh.knMax, 0, 1);
     const love = ty.mePhan && ty.mePhan === sh.item ? cfg.tip.meGap : 1;
     const tip = Math.round(gia * cfg.tip.toiDa * frac * ty.tipX * love);
@@ -107,6 +110,7 @@ export function chayCa(cfg, o, rng) {
     cat[sh.item].sold++; S.giaoTheo[sh.item] = (S.giaoTheo[sh.item] || 0) + 1; S.kn.push(frac);
     if (sh.pre) preKet = 'đạt';
     sh.state = 'roi'; sh.t = 0;
+    if (o.caDau && plan[1].at === Infinity) plan[1].at = S.t; // tàu 2 cập khi tay người chơi trống sau lần giao đầu
   };
 
   let xong = false;
@@ -120,7 +124,7 @@ export function chayCa(cfg, o, rng) {
         const k = S.docks.indexOf(null);
         if (k >= 0) { S.docks[k] = sh; sh.dock = k; sh.state = 'cap'; sh.t = 0; }
         else { sh.wait += dt; if (sh.wait >= cfg.choNgoai) fail(sh); }
-      } else if (sh.state === 'cap') { if (sh.t >= cfg.cap) { sh.state = 'o'; sh.t = 0; } }
+      } else if (sh.state === 'cap') { if (sh.t >= cfg.cap) { sh.state = 'o'; sh.t = 0; sh.pumpReq = !sh.noPump && (sh.forcePump || rng() < cfg.bom.batLucCap); if (sh.noPump) sh.pumpNext = Infinity; } }
       else if (sh.state === 'o') {
         sh.kn -= dt;
         if (!sh.crateMade && sh.t >= cfg.quay) { S.counter[sh.dock] = { ship: sh, claim: null }; sh.crateMade = true; }
@@ -166,7 +170,7 @@ export function chayCa(cfg, o, rng) {
   }
   S.skipped += plan.length - S.next;
   const idles = ps.map((p) => p.idle / S.t);
-  return { giay: S.t, served: S.served, left: S.left, skipped: S.skipped, tally: S.tally, tip: S.tip, tipBom: S.tipBom, diem: S.diem, ranh: tb(idles), ranhMax: Math.max(...idles), pre: preKet, knTb: tb(S.kn), giaoTheo: S.giaoTheo, thungCan: Object.values(cat).reduce((a, c) => a + c.qty, 0), thungDu: Object.values(cat).reduce((a, c) => a + c.qty - c.sold, 0) };
+  return { giay: S.t, served: S.served, left: S.left, skipped: S.skipped, tally: S.tally, tip: S.tip, tipBom: S.tipBom, diem: S.diem, ranh: tb(idles), ranhMax: Math.max(...idles), pre: preKet, knTb: tb(S.kn), giaoTheo: S.giaoTheo, thungCan: Object.values(cat).reduce((a, c) => a + c.qty, 0), tdHet: S.tdConLai9 === 0, tdBan9: S.tdBan9 ?? 0, thungDu: Object.values(cat).reduce((a, c) => a + c.qty - c.sold, 0) };
 }
 
 // Chạy lan ca, seed cố định theo (seed, lần). Trả trung bình.
@@ -178,103 +182,149 @@ export function moPhong(cfg, o, seed, lan) {
     giay: m((x) => x.giay), xong: m((x) => x.served / o.soTau), served: m((x) => x.served), left: m((x) => x.left), skipped: m((x) => x.skipped),
     tally: m((x) => x.tally), tip: m((x) => x.tip), tipPhan: m((x) => x.tip) / m((x) => x.tally), bomPhan: m((x) => x.tipBom) / m((x) => x.tally),
     diem: m((x) => x.diem), ranh: m((x) => x.ranh), ranhMax: m((x) => x.ranhMax), pre: r.filter((x) => x.pre === 'đạt').length / lan, knTb: m((x) => x.knTb),
-    tran: r.filter((x) => x.giay >= cfg.caToiDa - cfg.dt).length / lan, thungDu: m((x) => x.thungDu), p90Giay: r.map((x) => x.giay).sort((a, b) => a - b)[Math.floor(0.9 * lan)],
+    tran: r.filter((x) => x.giay >= cfg.caToiDa - cfg.dt).length / lan, thungDu: m((x) => x.thungDu), tdHet: r.filter((x) => x.tdHet).length / lan, tdBan9: m((x) => x.tdBan9), p90Giay: r.map((x) => x.giay).sort((a, b) => a - b)[Math.floor(0.9 * lan)],
   };
 }
 
 const DM0 = Object.keys(CFG.danhMuc).find((k) => !k.startsWith('_'));
-const dat = (N, tre, soTau, danhMuc = DM0, cua) => ({ N, tre, soTau, danhMuc, cua });
-const dung = (r, m) => r.ranh <= m.ranhToiDa && r.xong >= m.xongToiThieu && r.giay >= m.caMin && r.giay <= m.caMax && r.tipPhan >= m.tipMin && r.tipPhan <= m.tipMax;
+const dat = (N, tre, soTau, danhMuc = DM0, cua, extra = {}) => ({ N, tre, soTau, danhMuc, cua, ...extra });
+const dung = (r, m) => r.ranh <= m.ranhToiDa && r.xong >= m.xongToiThieu && r.giay >= m.caMin && r.giay <= m.caMax; // tip không phụ thuộc số tàu nên xét riêng ở cột Tip và mục 6
+const NS = [1, 2, 3, 4];
+const nhan = (v) => `${vn(v, 0)}`;
+const doc = (rel) => JSON.parse(readFileSync(join(HERE, '..', rel), 'utf8'));
 
 export function baoCao(cfg, seed, lan) {
-  const M = cfg.muc, out = [];
-  const nhan = (v) => `${vn(v, 0)}`;
-  out.push(`# Kết quả sim ca cảng khung Dave\n\nSinh bởi \`tools/sim-ca-cang.mjs\` ${dauChay(cfg)}, seed ${seed}, ${lan} ca mỗi ô. Tham số \`tools/tham-so/ca-cang.json\`. Luật nguồn: \`de-xuat-ca-cang-kieu-dave.md\` mục 2, khung K13, C8.`);
-  out.push('\nSim thay hẳn bản GD-030 (đơn nhiều dòng, đóng kiện, kệ). Số trong file này là số sim, không phải số chốt. Giá thùng là giá kiện chia 2,5, gd-economy sẽ đặt lại. Mục tiêu do Lead và gd-quan đặt: rảnh mỗi người tối đa 30% ở trễ 2 giây, ca 180 tới 300 giây, tàu phục vụ xong 85 tới 100% (chương 1), tip 20 tới 30% Tally.');
+  const M = cfg.muc, out = [], QL = Math.min(lan, cfg.quet.lan);
+  const dai = (cfgX, cua) => { // quét số tàu theo N, trả { N: { s: r } }
+    const B = {};
+    for (const N of NS) for (let s = cfg.quet.tu; s <= cfg.quet.den; s += cfg.quet.buoc) B[`${N}|${s}`] = moPhong(cfgX, dat(N, 2, s, DM0, cua), seed, QL);
+    return B;
+  };
+  const okS = (B, N) => { const ok = []; for (let s = cfg.quet.tu; s <= cfg.quet.den; s += cfg.quet.buoc) if (dung(B[`${N}|${s}`], M)) ok.push(s); return ok; };
+  const deXuat = (cfgX, cua, B, N) => { // số tàu lớn nhất trong dải mà trễ 3 giây vẫn còn từ 85% tàu xong
+    const ok = okS(B, N);
+    const ben = ok.filter((s) => moPhong(cfgX, dat(N, 3, s, DM0, cua), seed, QL).xong >= M.xongToiThieu);
+    return { s: ben.length ? ben[ben.length - 1] : ok[0] ?? null, dai: ok.length ? `${ok[0]} tới ${ok[ok.length - 1]}` : 'không có' };
+  };
+  const loiDai = (B, N) => okS(B, N).length;
+  out.push(`# Kết quả sim ca cảng khung Dave\n\nSinh bởi \`tools/sim-ca-cang.mjs\` ${dauChay(cfg)}, seed ${seed}, ${lan} ca mỗi ô (quét: ${QL} ca). Tham số \`tools/tham-so/ca-cang.json\`. Luật nguồn: \`tram-va-cang.md\` mục 2 (luật 24, 28, 34, 67) và bảng 2.4, khung K13, C8.`);
+  out.push('\nSim thay hẳn bản GD-030 (đơn nhiều dòng, đóng kiện, kệ). Số trong file này là số sim, không phải số chốt. Giá thùng, độ gọi và lồng theo loài đọc từ khối giaThung của gd-economy. Mục tiêu do Lead và gd-quan đặt: rảnh mỗi người tối đa 30% ở trễ 2 giây, ca 180 tới 300 giây, tàu phục vụ xong 85 tới 100% (chương 1), tip kể cả bơm khí 20 tới 30% Tally.');
   out.push(`\nGiả định gd-tech: ${cfg._gia_dinh}`);
   out.push(`\nNguồn số: ${cfg._nguon_so}`);
 
-  // 1. Đối chiếu demo
+  // 1. Đối chiếu demo và ca đầu
   const dc = [];
-  for (const tre of [1, 2, 3]) { const r = moPhong(cfg, dat(1, tre, 25), seed, lan); dc.push([`${tre} giây`, `${vn(r.served)}/25`, vn(r.left, 2), nhan(r.giay), pt(r.ranh), nhan(r.tally), pt(r.tipPhan)]); }
-  out.push('\n## 1. Đối chiếu demo (N = 1, 25 tàu, danh mục đủ hàng)\n');
-  out.push(bangMd(['Trễ phản xạ', 'Tàu giao xong', 'Tàu rời', 'Ca (giây)', 'Rảnh', 'Tally', 'Tip trong Tally'], dc));
-  out.push('\nMốc demo bot 2026-11-20 (de-xuat mục 4): trễ 1 giây rảnh 45%, ca 230, Tally 1796, tip 26%. Trễ 2 giây rảnh 24%, ca 231, Tally 1769, tip 25%. Trễ 3 giây rảnh 5%, 24,1/25, ca 235, Tally 1663, tip 23%.');
+  for (const tre of [1, 2, 3]) { const r = moPhong(cfg, dat(1, tre, 25), seed, lan); dc.push([`${tre} giây`, `${vn(r.served)}/25`, vn(r.left, 2), nhan(r.giay), pt(r.ranh), nhan(r.tally), pt(r.tipPhan), pt(r.bomPhan)]); }
+  out.push('\n## 1. Đối chiếu demo (N = 1, 25 tàu, 3 cửa neo, danh mục đủ hàng) theo luật mới\n');
+  out.push(bangMd(['Trễ phản xạ', 'Tàu giao xong', 'Tàu rời', 'Ca (giây)', 'Rảnh', 'Tally', 'Tip kể cả bơm khí', 'Bơm khí trong Tally'], dc));
+  out.push('\nMốc demo bot 2026-11-20 (luật cũ: giá thùng chia 2,5, bơm khí chỉ sau 10 tới 18 giây, trần ca 240, Tikko đồ Trái Đất 3): trễ 1 giây rảnh 45%, ca 230, Tally 1796, tip 26%. Trễ 2 giây rảnh 24%, ca 231, Tally 1769, tip 25%. Trễ 3 giây rảnh 5%, 24,1/25, ca 235, Tally 1663, tip 23%. Tally khác mốc vì giá thùng mới (gd-economy) và bơm khí lúc cập. Số tàu, ca và rảnh phải gần mốc.');
+  out.push('\nCa đầu tiên của thế giới (luật 67): 2 tàu Loose Bolt, danh mục phế liệu, tàu 1 không bơm khí, tàu 2 cập khi tay trống sau lần giao đầu và bật bơm khí ngay, một người:\n');
+  const rc = [];
+  for (const tre of [1, 2, 3]) { const r = moPhong({ ...cfg, soTauGoc: 2, danhMuc: { ...cfg.danhMuc, caDau: { phe: 5 } }, datTruoc: { ...cfg.datTruoc, item: 'bang' } }, dat(1, tre, 2, 'caDau', cfg.cua, { caDau: true }), seed, lan); rc.push([`${tre} giây`, `${vn(r.served)}/2`, nhan(r.giay), nhan(r.tally), pt(r.tipPhan)]); }
+  out.push(bangMd(['Trễ phản xạ', 'Tàu giao xong', 'Ca (giây)', 'Tally', 'Tip kể cả bơm khí'], rc));
 
-  // 2. Quét số tàu theo N ở trễ 2 giây, 3 cửa neo (luật D3)
-  const quet = (cua) => {
-    const bang = {};
-    for (const N of [1, 2, 3, 4]) for (let s = cfg.quet.tu; s <= cfg.quet.den; s += cfg.quet.buoc) bang[`${N}|${s}`] = moPhong(cfg, dat(N, 2, s, DM0, cua), seed, Math.min(lan, cfg.quet.lan));
-    return bang;
-  };
-  const B3 = quet(cfg.cua);
-  const soTauMuc = (B, N) => { const ok = []; for (let s = cfg.quet.tu; s <= cfg.quet.den; s += cfg.quet.buoc) if (dung(B[`${N}|${s}`], M)) ok.push(s); return ok; };
-  out.push(`\n## 2. Quét số tàu theo N, ${cfg.cua} cửa neo, trễ 2 giây, danh mục đủ hàng (kho co giãn theo số tàu)\n`);
-  out.push(`Cột "Đạt mục tiêu" là có đủ 4 điều kiện: rảnh tối đa ${pt(M.ranhToiDa)} (trung bình mọi người), tàu xong từ ${pt(M.xongToiThieu)}, ca ${M.caMin} tới ${M.caMax} giây, tip ${pt(M.tipMin)} tới ${pt(M.tipMax)}.\n`);
+  // 2. Quét luật hiện hành (3 cửa, thùng hiện sau 3 giây)
+  const B3 = dai(cfg, cfg.cua), c4 = { ...cfg, cua: 4 }, B4 = dai(c4, 4);
+  out.push(`\n## 2. Quét số tàu theo N, ${cfg.cua} cửa neo (luật hiện hành), trễ 2 giây, danh mục đủ hàng (kho co giãn theo số tàu)\n`);
+  out.push(`Cột "Đạt mục tiêu" là đủ 3 điều kiện: rảnh tối đa ${pt(M.ranhToiDa)} (trung bình mọi người), tàu xong từ ${pt(M.xongToiThieu)}, ca ${M.caMin} tới ${M.caMax} giây. Tip kể cả bơm khí (mục tiêu ${pt(M.tipMin)} tới ${pt(M.tipMax)}) gần như không đổi theo số tàu nên xét riêng, xem cột Tip và mục 6.\n`);
   const rows2 = [];
-  for (const N of [1, 2, 3, 4]) for (let s = cfg.quet.tu; s <= cfg.quet.den; s += cfg.quet.buoc) {
+  for (const N of NS) for (let s = cfg.quet.tu; s <= cfg.quet.den; s += cfg.quet.buoc) {
     const r = B3[`${N}|${s}`];
     rows2.push([N, s, `${vn(r.served)} (${pt(r.xong)})`, vn(r.left, 1), nhan(r.giay), pt(r.ranh), pt(r.ranhMax), nhan(r.tally), pt(r.tipPhan), dung(r, M) ? 'có' : '']);
   }
   out.push(bangMd(['N', 'Số tàu', 'Tàu xong', 'Tàu rời', 'Ca (giây)', 'Rảnh TB', 'Rảnh người rảnh nhất', 'Tally', 'Tip', 'Đạt mục tiêu'], rows2));
 
-  // 3. Cần bao nhiêu cửa neo
-  out.push('\n## 3. Cửa neo cần cho N (trễ 2 giây, dải số tàu đạt mục tiêu)\n');
-  const rows3 = [], choN = {}; choN[cfg.cua] = B3;
-  for (const cua of cfg.quet.cua) {
-    const B = choN[cua] || (choN[cua] = quet(cua));
-    for (const N of [1, 2, 3, 4]) { const ok = soTauMuc(B, N); rows3.push([cua, N, ok.length ? `${ok[0]} tới ${ok[ok.length - 1]}` : 'không có']); }
-  }
-  out.push(bangMd(['Cửa neo', 'N', 'Số tàu đạt mục tiêu'], rows3));
-  // Giữ 3 cửa nhưng rút thời gian thùng hiện và tàu rời giữ cửa
-  const rowsQ = [];
-  for (const [q, ro] of [[3, 1.3], [2, 1.3], [1, 1.3], [1, 0.5]]) for (const N of [3, 4]) {
-    const c2 = { ...cfg, quay: q, roi: ro }, ok = [];
-    for (let s = 45; s <= 75; s += 5) if (dung(moPhong(c2, dat(N, 2, s), seed, Math.min(lan, cfg.quet.lan)), M)) ok.push(s);
-    rowsQ.push([q, vn(ro, 1), N, ok.length ? `${ok[0]} tới ${ok[ok.length - 1]}` : 'không có']);
-  }
-  out.push(`\nGiữ ${cfg.cua} cửa neo, đổi thời gian thùng hiện ở quầy (mặc định ${cfg.quay} giây) và thời gian tàu rời giữ cửa (mặc định ${cfg.roi} giây), quét số tàu 45 tới 75:\n`);
-  out.push(bangMd(['Thùng hiện sau (giây)', 'Tàu rời giữ cửa (giây)', 'N', 'Số tàu đạt mục tiêu'], rowsQ));
-
-  // 4. Đề xuất số tàu theo N: cửa neo ít nhất có dải đạt mục tiêu, số tàu lớn nhất còn giữ 85% xong ở trễ 3 giây
-  out.push('\n## 4. Số tàu đề xuất theo N và độ nhạy với trễ phản xạ\n');
-  out.push('Với mỗi N lấy số cửa neo nhỏ nhất có dải đạt mục tiêu ở mục 3. Trong dải đó lấy số tàu lớn nhất mà người chơi trễ 3 giây vẫn có từ 85% tàu xong (để không bị phạt khi chậm hơn).\n');
+  // 4 (tính trước mục 3 để mục 3 so sánh ở cùng số tàu). Đề xuất theo luật hiện hành: cửa neo ít nhất có dải đạt mục tiêu (economy đọc bảng mục 4)
   const de = {}, rows4 = [];
-  for (const N of [1, 2, 3, 4]) {
-    const cua = cfg.quet.cua.find((c) => soTauMuc(choN[c], N).length) ?? cfg.quet.cua[cfg.quet.cua.length - 1];
-    const ok = soTauMuc(choN[cua], N);
-    const ben = ok.filter((s) => moPhong(cfg, dat(N, 3, s, DM0, cua), seed, Math.min(lan, cfg.quet.lan)).xong >= M.xongToiThieu);
-    const s = ben.length ? ben[ben.length - 1] : ok[0] ?? 50;
-    de[N] = { s, cua };
+  for (const N of NS) {
+    const cua = loiDai(B3, N) ? 3 : 4, cx = cua === 3 ? cfg : c4, B = cua === 3 ? B3 : B4;
+    const d = deXuat(cx, cua, B, N);
+    de[N] = { s: d.s ?? 50, cua };
     for (const tre of [1, 2, 3]) {
-      const r = moPhong(cfg, dat(N, tre, s, DM0, cua), seed, lan);
-      rows4.push([N, cua, s, `${tre} giây`, `${vn(r.served)} (${pt(r.xong)})`, vn(r.left, 1), nhan(r.giay), pt(r.ranh), nhan(r.tally), pt(r.tipPhan), vn(r.diem, 0), pt(r.tran)]);
+      const r = moPhong(cx, dat(N, tre, de[N].s, DM0, cua), seed, lan);
+      rows4.push([N, cua, de[N].s, `${tre} giây`, `${vn(r.served)} (${pt(r.xong)})`, vn(r.left, 1), nhan(r.giay), pt(r.ranh), nhan(r.tally), pt(r.tipPhan), vn(r.diem, 0), pt(r.tran)]);
     }
   }
-  out.push(bangMd(['N', 'Cửa neo', 'Số tàu', 'Trễ', 'Tàu xong', 'Tàu rời', 'Ca (giây)', 'Rảnh TB', 'Tally', 'Tip', 'Điểm cảng', 'Ca chạm trần 240'], rows4));
 
-  // 5. Ba kiểu danh mục
-  out.push('\n## 5. Ba kiểu danh mục, trễ 2 giây, số tàu và cửa neo đề xuất theo N (lập danh mục có tạo chênh lệch không)\n');
-  const rows5 = [], kieu = Object.keys(cfg.danhMuc).filter((k) => !k.startsWith('_'));
-  for (const N of [1, 2, 3, 4]) {
-    const { s, cua } = de[N], goc = moPhong(cfg, dat(N, 2, s, kieu[0], cua), seed, lan);
-    for (const k of kieu) {
-      const r = moPhong(cfg, dat(N, 2, s, k, cua), seed, lan);
-      rows5.push([N, s, k, `${vn(r.served)} / ${vn(r.skipped, 1)} không tới`, nhan(r.giay), nhan(r.tally), `${r.tally >= goc.tally ? '+' : ''}${vn((r.tally / goc.tally - 1) * 100, 1)}%`, pt(r.pre)]);
+  // 3. Hai phương án cửa neo so với luật hiện hành, cùng số tàu theo N của mục 4
+  out.push('\n## 3. Cửa neo: luật hiện hành và hai phương án (Lead chọn), N = 1 tới 4, trễ 1, 2, 3 giây\n');
+  out.push('Hiện hành: 3 cửa neo, thùng ra quầy sau 3 giây. Phương án a: 4 cửa neo cho mọi số người, thùng sau 3 giây. Phương án b: 3 cửa neo, thùng ra quầy sau 1 giây. Cả ba chạy cùng số tàu theo N của mục 4 để so sánh công bằng. Bơm khí theo luật 28 mới.\n');
+  const cb = { ...cfg, quay: 1 }, Bb = dai(cb, cfg.cua);
+  const PA = [['hiện hành: 3 cửa, thùng 3 giây', cfg, cfg.cua, B3], ['a: 4 cửa, thùng 3 giây', c4, 4, B4], ['b: 3 cửa, thùng 1 giây', cb, cfg.cua, Bb]];
+  out.push(bangMd(['Phương án', 'N', 'Dải số tàu đạt mục tiêu (trễ 2 giây)'], PA.flatMap(([ten, , , B]) => NS.map((N) => { const ok = okS(B, N); return [ten, N, ok.length ? `${ok[0]} tới ${ok[ok.length - 1]}` : 'không có']; }))));
+  const rows3 = [];
+  for (const [ten, cx, cua] of PA) for (const N of NS) for (const tre of [1, 2, 3]) {
+    const s = de[N].s, r = moPhong(cx, dat(N, tre, s, DM0, cua), seed, lan);
+    rows3.push([ten, N, s, `${tre} giây`, pt(r.ranh), `${vn(r.served)} (${pt(r.xong)})`, nhan(r.giay), nhan(r.tally), pt(r.bomPhan), pt(r.tipPhan), pt(r.tran)]);
+  }
+  out.push('');
+  out.push(bangMd(['Phương án', 'N', 'Số tàu', 'Trễ', 'Rảnh TB', 'Tàu xong', 'Ca (giây)', 'Tally', 'Bơm khí trong Tally', 'Tip kể cả bơm khí', 'Ca chạm trần 300'], rows3));
+
+  out.push('\n## 4. Số tàu đề xuất theo N và độ nhạy với trễ phản xạ\n');
+  out.push('Với mỗi N lấy số cửa neo nhỏ nhất (3 rồi 4) có dải đạt mục tiêu ở trễ 2 giây, thùng ra quầy sau 3 giây. Trong dải đó lấy số tàu lớn nhất mà trễ 3 giây vẫn có từ 85% tàu xong. Phương án cửa neo của Lead nằm ở mục 3.\n');
+  out.push(bangMd(['N', 'Cửa neo', 'Số tàu', 'Trễ', 'Tàu xong', 'Tàu rời', 'Ca (giây)', 'Rảnh TB', 'Tally', 'Tip', 'Điểm cảng', 'Ca chạm trần 300'], rows4));
+
+  // 5. Sáu kiểu danh mục của gd-economy
+  const DMK = doc('sim/economy/tham-so.json').sim.do_danh_muc.kieu;
+  out.push('\n## 5. Sáu kiểu danh mục (khóa do_danh_muc của gd-economy), trễ 2 giây, số tàu và cửa neo theo mục 4\n');
+  out.push('Số thùng là số cho 1 người nhân số tàu chia 25, làm tròn, tối thiểu 1 (lồng cũng nhân). Cách tính trùng `sim/economy/do-danh-muc.mjs`, nên bảng này phải gần bảng trong `kinh-te-tien-trinh.md` (lệch do lồng rút loài ngẫu nhiên thay cho giá trung bình).\n');
+  const rows5 = [], kt = Object.keys(DMK);
+  for (const N of NS) {
+    const { s, cua } = de[N], cx = { ...cfg, soTauGoc: s, danhMuc: Object.fromEntries(kt.map((k) => [k, Object.fromEntries(Object.entries(DMK[k]).map(([m, q]) => [m, Math.max(1, Math.round((q * s) / 25))]))])) };
+    const rs = Object.fromEntries(kt.map((k) => [k, moPhong(cx, dat(N, 2, s, k, cua), seed, lan)]));
+    for (const k of kt) {
+      const r = rs[k];
+      rows5.push([N, s, k, Object.entries(cx.danhMuc[k]).map(([m, q]) => `${m} ${q}`).join(', '), `${vn(r.served)} / ${vn(r.skipped, 1)} không tới`, nhan(r.tally), `${r.tally >= rs['Chuẩn bị kỹ'].tally ? '+' : ''}${vn((r.tally / rs['Chuẩn bị kỹ'].tally - 1) * 100, 1)}%`, pt(r.tipPhan), pt(r.pre)]);
     }
   }
-  out.push(bangMd(['N', 'Số tàu', 'Danh mục', 'Tàu xong / không tới', 'Ca (giây)', 'Tally', 'So với đủ hàng', 'Đơn đặt trước đạt'], rows5));
-  out.push(`\nSố trong kho và kiểu danh mục: ${cfg._danh_muc}`);
+  out.push(bangMd(['N', 'Số tàu', 'Kiểu danh mục', 'Thùng bày', 'Tàu xong / không tới', 'Tally', 'So với Chuẩn bị kỹ', 'Tip', 'Đơn đặt trước đạt'], rows5));
 
-  // 6. Bơm khí có xảy ra không
-  out.push('\n## 6. Bơm khí (việc phụ D6) có xảy ra không, trễ 2 giây, số tàu và cửa neo đề xuất\n');
+  // 6. Bơm khí
+  out.push('\n## 6. Bơm khí lúc cập (luật 28), trễ 2 giây, số tàu và cửa neo theo mục 4\n');
   const rows6 = [];
-  for (const sau of [[10, 18], [6, 10], [4, 7]]) for (const N of [1, 2, 4]) {
-    const { s, cua } = de[N], r = moPhong({ ...cfg, bom: { ...cfg.bom, sau } }, dat(N, 2, s, DM0, cua), seed, lan);
-    rows6.push([`${sau[0]} tới ${sau[1]}`, N, s, `${vn(r.bomPhan * 100, 1)}%`, vn(r.tally / s, 1), pt(r.ranh), `${vn(r.served)} (${pt(r.xong)})`, nhan(r.tally)]);
+  for (const [tenb, bom] of [['không bơm khí', { ...cfg.bom, batLucCap: 0, sau: [1e9, 1e9] }], ['luật 28 (50% lúc cập, sau đó 10 tới 18 giây)', cfg.bom], ['tất cả tàu bật lúc cập', { ...cfg.bom, batLucCap: 1 }]]) for (const N of [1, 2, 4]) {
+    const { s, cua } = de[N], r = moPhong({ ...cfg, bom }, dat(N, 2, s, DM0, cua), seed, lan);
+    rows6.push([tenb, N, s, `${vn(r.bomPhan * 100, 1)}%`, pt(r.tipPhan), pt(r.ranh), `${vn(r.served)} (${pt(r.xong)})`, nhan(r.giay), nhan(r.tally)]);
   }
-  out.push(bangMd(['Bơm khí bật sau (giây ở cửa neo)', 'N', 'Số tàu', 'Bơm khí trong Tally', 'Tally mỗi tàu', 'Rảnh TB', 'Tàu xong', 'Tally'], rows6));
-  out.push('\nBơm khí chỉ là tip, không phải việc bắt buộc. Nếu tỉ lệ gần 0 thì D6 chỉ còn là trang trí khi người chơi giao kịp.');
+  for (const N of NS) {
+    const { s, cua } = de[N], r = moPhong({ ...cfg, tip: { ...cfg.tip, toiDa: 0.25 } }, dat(N, 2, s, DM0, cua), seed, lan);
+    rows6.push(['luật 28 và tip tối đa 25% (thử)', N, s, vn(r.bomPhan * 100, 1) + '%', pt(r.tipPhan), pt(r.ranh), vn(r.served) + ' (' + pt(r.xong) + ')', nhan(r.giay), nhan(r.tally)]);
+  }
+  out.push(bangMd(['Bơm khí', 'N', 'Số tàu', 'Bơm khí trong Tally', 'Tip kể cả bơm khí', 'Rảnh TB', 'Tàu xong', 'Ca (giây)', 'Tally'], rows6));
+
+  // 7. Tàu vội chỉ gọi băng và khoáng (luật 24)
+  out.push('\n## 7. Tàu vội chỉ gọi băng và khoáng (Hạng 2), trễ 2 giây, số tàu và cửa neo theo mục 4\n');
+  const K7 = { 'có băng và quặng': { phe: 10, cap: 8, quang: 8, bang: 5, td: 5 }, 'chỉ quặng, không băng': { phe: 10, cap: 8, quang: 8, td: 5 }, 'không băng, không quặng': { phe: 10, cap: 8, td: 5, long: 1 } };
+  const rows7 = [];
+  for (const N of NS) {
+    const { s, cua } = de[N], cx = { ...cfg, danhMuc: K7 }, rs = Object.fromEntries(Object.keys(K7).map((k) => [k, moPhong(cx, dat(N, 2, s, k, cua), seed, lan)]));
+    for (const k of Object.keys(K7)) { const r = rs[k]; rows7.push([N, s, k, vn(r.skipped, 1), `${vn(r.served)} (${pt(r.xong)})`, nhan(r.tally), `${r.tally >= rs['có băng và quặng'].tally ? '+' : ''}${vn((r.tally / rs['có băng và quặng'].tally - 1) * 100, 1)}%`, pt(r.tipPhan), pt(r.ranh)]); }
+  }
+  out.push(bangMd(['N', 'Số tàu', 'Danh mục (số thùng nhân số tàu chia 25)', 'Tàu không tới', 'Tàu xong', 'Tally', 'So với có cả băng và quặng', 'Tip', 'Rảnh TB'], rows7));
+  out.push('\nMục tiêu của gd-quan: danh mục thiếu băng và khoáng hụt Tally từ 5% mà ca vẫn trong mục tiêu rảnh. Tàu vội không tới không làm ca ngắn đi (số tàu trong lịch giữ nguyên), nên rảnh có thể tăng.');
+
+  // 8. Đồ Trái Đất và đơn đặt trước (Tikko hệ số 6)
+  out.push('\n## 8. Đồ Trái Đất bán hết trước tàu thứ 9 và đơn đặt trước (Tikko đồ Trái Đất hệ số 6), trễ 2 giây\n');
+  const rows8 = [];
+  for (const N of [1, 2]) for (const td of [2, 3, 5]) {
+    const { s, cua } = de[N], cx = { ...cfg, danhMuc: { x: { phe: 10, cap: 8, quang: 8, td } } }, r = moPhong(cx, dat(N, 2, s, 'x', cua), seed, lan);
+    const thung = Math.ceil((td * s) / cfg.soTauGoc);
+    rows8.push([N, s, thung, pt(r.tdHet), vn(r.tdBan9, 1), pt(r.pre), vn(r.tally, 0)]);
+  }
+  out.push(bangMd(['N', 'Số tàu', 'Thùng đồ Trái Đất bày (gồm 1 giữ cho đơn đặt trước)', 'Hết thùng thường trước tàu thứ 9', 'Đã bán trước tàu thứ 9', 'Đơn đặt trước đạt', 'Tally'], rows8));
+  out.push('\n"Hết thùng thường" là phần ca mà lúc tàu thứ 9 cập không còn thùng đồ Trái Đất nào ngoài thùng giữ cho đơn đặt trước. Đơn đặt trước đạt là tàu thứ 9 nhận được thùng đã giữ.');
+
+  // 9. Hạng 1 chỉ có Loose Bolt
+  out.push('\n## 9. Hạng 1 chỉ có Loose Bolt so với có thêm Tàu vội, trễ 2 giây, số tàu và cửa neo theo mục 4\n');
+  const rows9 = [];
+  for (const N of NS) {
+    const { s, cua } = de[N], cx = cua === 3 ? cfg : c4;
+    for (const [ten, ex] of [['có Tàu vội', {}], ['chỉ Loose Bolt', { chiBolt: true }]]) {
+      const r = moPhong(cx, dat(N, 2, s, DM0, cua, ex), seed, lan);
+      rows9.push([N, s, ten, `${vn(r.served)} (${pt(r.xong)})`, nhan(r.giay), pt(r.ranh), nhan(r.tally), pt(r.tipPhan)]);
+    }
+  }
+  out.push(bangMd(['N', 'Số tàu', 'Lịch tàu', 'Tàu xong', 'Ca (giây)', 'Rảnh TB', 'Tally', 'Tip kể cả bơm khí'], rows9));
   return { txt: out.join('\n'), de };
 }
 

@@ -2,7 +2,7 @@
   "_ghi_chu": "Tham số sim ca cảng khung Dave (GD-054, đợt 9). Thay hẳn bản GD-030. Số ghi demo bot 2026-11-20 lấy từ prototype/ca-cang-dave.html (CFG, ITEMS, SHIPS). Số [GIẢ ĐỊNH] là gd-tech đặt vì GDD chưa có.",
   "dt": 0.05,
   "lan": 300,
-  "caToiDa": 240,
+  "caToiDa": 300,
   "cua": 3,
   "tocDo": 280,
   "quayX": 96,
@@ -20,32 +20,123 @@
   "soTauGoc": 25,
   "cuaSoDen": 225,
   "lechGian": 0.22,
-  "heSoThung": 2.5,
   "diemNguong": 0.6666666667,
-  "bom": { "sau": [10, 18], "giu": 1, "hoi": 0.25, "tally": 10 },
-  "tip": { "toiDa": 0.3, "meGap": 2 },
-  "datTruoc": { "thuTu": 8, "item": "td", "heSo": 1.5 },
+  "bom": {
+    "sau": [10, 18],
+    "giu": 1,
+    "hoi": 0.25,
+    "tally": 10,
+    "batLucCap": 0.5
+  },
+  "tip": {
+    "toiDa": 0.25,
+    "meGap": 2
+  },
+  "datTruoc": {
+    "thuTu": 8,
+    "item": "td",
+    "heSo": 1.5
+  },
   "tau": {
-    "bolt": { "kn": 60, "tipX": 1, "w": 3, "mePhan": "td", "thich": { "td": 3, "phe": 2 } },
-    "voi": { "kn": 30, "tipX": 2, "w": 1, "thich": { "bang": 2, "quang": 2 } }
+    "bolt": {
+      "kn": 60,
+      "tipX": 1,
+      "w": 3,
+      "mePhan": "td",
+      "thich": {
+        "td": 6
+      }
+    },
+    "voi": {
+      "kn": 30,
+      "tipX": 2,
+      "w": 1,
+      "chiGoi": ["bang", "nuoc", "quang"],
+      "thich": {}
+    }
   },
   "hang": {
-    "phe": { "cgo": "CGO-101" },
-    "cap": { "cgo": "CGO-102" },
-    "quang": { "cgo": "CGO-103" },
-    "bang": { "cgo": "CGO-104" },
-    "td": { "cgo": "CGO-109" },
-    "nuoc": { "cgo": "CGO-113" },
-    "long": { "cgo": "CGO-121", "giaCoDinh": 50, "khongChia": true }
+    "phe": {
+      "cgo": "CGO-101"
+    },
+    "cap": {
+      "cgo": "CGO-102"
+    },
+    "quang": {
+      "cgo": "CGO-103"
+    },
+    "bang": {
+      "cgo": "CGO-104"
+    },
+    "td": {
+      "cgo": "CGO-109"
+    },
+    "nuoc": {
+      "cgo": "CGO-113"
+    },
+    "long": {
+      "cgo": "CGO-121",
+      "khongChia": true
+    }
   },
   "danhMuc": {
-    "đủ hàng, có đồ Trái Đất": { "phe": 10, "cap": 8, "quang": 8, "td": 5 },
-    "bỏ cáp và quặng, lấy băng và lồng": { "phe": 10, "td": 5, "bang": 5, "long": 1 },
-    "không có đồ Trái Đất": { "phe": 10, "cap": 8, "quang": 8, "bang": 5 }
+    "đủ hàng, có băng, quặng, đồ Trái Đất": {
+      "phe": 10,
+      "cap": 8,
+      "quang": 8,
+      "bang": 5,
+      "td": 5
+    }
   },
-  "quet": { "tu": 10, "den": 90, "buoc": 5, "lan": 100, "cua": [3, 4, 5, 6] },
-  "muc": { "ranhToiDa": 0.3, "xongToiThieu": 0.85, "caMin": 180, "caMax": 300, "tipMin": 0.2, "tipMax": 0.3 },
-  "_nguon_so": "de-xuat-ca-cang-kieu-dave.md mục 4 (demo bot 2026-11-20): 3 cửa neo, ca tối đa 240 giây, chờ ngoài 20, kiên nhẫn Loose Bolt 60 và Tàu vội 30 (tip gấp đôi), thùng hiện ở quầy sau 3 giây, tip tối đa 30% giá thùng nhân phần kiên nhẫn còn lại (Tikko gọi đồ Trái Đất tip gấp đôi), bơm khí bật sau 10 tới 18 giây giữ 1 giây hồi 25% cộng 10 Tally, đơn đặt trước tàu thứ 9 đồ Trái Đất giá gấp 1,5, điểm cảng 1 cộng 1 nếu còn trên 2/3 kiên nhẫn. Kho danh mục và độ ưa của tàu theo ITEMS và SHIPS trong demo. Giá thùng đọc từ khối gia-kien của kinh-te-tien-trinh.md mục 3.1 chia 2,5 (lồng sống giữ 50 như demo, không chia). Mục tiêu (rảnh tối đa 30% ở trễ 2 giây, ca 180 tới 300, tàu xong 85 tới 100%, tip 20 tới 30%) theo brief GD-054",
+  "giaThung": {
+    "_ghi_chu": "gd-economy GD-055 (đợt 9). Giá Tally một thùng, lồng không chia. Nguồn: kinh-te-tien-trinh.md mục 3.1 (khối gia-kien cột Giá Tally một thùng, khối gia-song). doGoi là độ gọi của món, nhân với thich của loại tàu khi tàu chọn món. Đã nối vào sim-ca-cang.mjs (GD-054 vòng 2): giá thùng, lồng rút loài, độ gọi nhân hệ số hàng hay gọi của loại tàu. sim-kinh-te.py --selftest kiểm khối này khớp bảng giá",
+    "thung": {
+      "phe": 42,
+      "cap": 40,
+      "quang": 40,
+      "bang": 42,
+      "mo": 54,
+      "dacsan": 80,
+      "td": 76,
+      "nuoc": 64
+    },
+    "long": {
+      "LIV-111": 65,
+      "LIV-112": 75,
+      "LIV-113": 55
+    },
+    "doGoi": {
+      "phe": 3,
+      "cap": 3,
+      "quang": 3,
+      "bang": 3,
+      "mo": 2,
+      "nuoc": 1.5,
+      "long": 1,
+      "dacsan": 1,
+      "td": 1
+    },
+    "cgo": {
+      "mo": "CGO-105",
+      "dacsan": "CGO-106"
+    }
+  },
+  "quet": {
+    "tu": 10,
+    "den": 110,
+    "buoc": 5,
+    "lan": 200,
+    "cua": [3, 4, 5, 6]
+  },
+  "muc": {
+    "ranhToiDa": 0.3,
+    "xongToiThieu": 0.85,
+    "caMin": 180,
+    "caMax": 300,
+    "tipMin": 0.2,
+    "tipMax": 0.3
+  },
+  "_nguon_so": "tram-va-cang.md đợt 9 (luật 24, 28, 34, 67, bảng 2.4) và de-xuat-ca-cang-kieu-dave.md mục 4 (demo bot 2026-11-20): 3 cửa neo, ca tối đa 300 giây, chờ ngoài 20, kiên nhẫn Loose Bolt 60 và Tàu vội 30 (tip gấp đôi), thùng hiện ở quầy sau 3 giây, tip tối đa 25% giá thùng (GDM hạ từ 30% đợt 9 vòng 2 vì tip kể cả bơm khí vượt 30% ở 3 và 4 người) nhân phần kiên nhẫn còn lại (Tikko gọi đồ Trái Đất tip gấp đôi), bơm khí: 50% tàu bật ngay lúc cập, bật tiếp sau 10 tới 18 giây, giữ 1 giây, hồi 25%, cộng 10 Tally tính vào tip, đơn đặt trước tàu thứ 9 đồ Trái Đất giá gấp 1,5, điểm cảng 1 cộng 1 nếu còn trên 2/3 kiên nhẫn. Tikko (Loose Bolt) hệ số đồ Trái Đất 6, phế liệu 1. Tàu vội chỉ gọi băng và khoáng (băng HC03 gồm băng và nước tinh, khoáng HC02 là quặng), không còn thì không tới. Trọng số chọn món bằng độ gọi của bậc giá (khối giaThung) nhân hệ số hàng hay gọi. Giá thùng và lồng theo loài từ khối giaThung của gd-economy. Mục tiêu (rảnh tối đa 30% ở trễ 2 giây, ca 180 tới 300, tàu xong 85 tới 100%, tip kể cả bơm khí 20 tới 30%) theo brief GD-054",
   "_gia_dinh": "[GIẢ ĐỊNH] Bố cục một trục như demo: quầy ba ô cách nhau 60 px, cửa neo cách nhau 170 px, người đi 280 px mỗi giây. Khi quét cửa neo khác 3, bố cục nén vào cùng độ dài. Số tàu N bất kỳ nằm trong cửa sổ đến 225 giây, giãn cách trung bình bằng 225 chia số tàu, lệch ngẫu nhiên 22% (khớp 7 tới 11 giây ở 25 tàu). Kho co giãn theo số tàu (số thùng trong danh mục nhân số tàu chia 25, lồng sống không co giãn) để kho không phải nút cổ chai, kho thật do gd-economy và gd-items đặt. N người chia việc, mỗi người chọn việc gần nhất chưa ai nhận theo ưu tiên: mang thùng đang cầm, nhặt thùng ở quầy, bơm khí. Trễ phản xạ là thời gian chờ trước mỗi lần đi và tính là bận. Người chơi xuất phát cách nhau 40 px. Một đơn đặt trước mỗi ca bất kể số tàu",
-  "_danh_muc": "kiểu 1 là danh mục của demo (phế liệu 10, cáp 8, quặng 8, đồ Trái Đất 5 ở 25 tàu). Kiểu 2 bỏ cáp và quặng, lấy băng 5 và 1 lồng sống, thiếu hàng ở 25 tàu và đặt trước còn. Kiểu 3 bỏ đồ Trái Đất, lấy băng 5, đơn đặt trước của Tikko trượt. Số thùng nhân số tàu chia 25 (lồng không nhân)"
+  "_danh_muc": "Danh mục mặc định cho mục 2 tới 4 là kho demo thêm băng 5 (phế liệu 10, cáp 8, quặng 8, băng 5, đồ Trái Đất 5 ở 25 tàu) để Tàu vội có hàng gọi. Số thùng nhân số tàu chia 25 (lồng không nhân). Sáu kiểu danh mục của mục 5 đọc từ khóa do_danh_muc trong sim/economy/tham-so.json"
 }
