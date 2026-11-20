@@ -1,0 +1,51 @@
+{
+  "_ghi_chu": "Mẫu khung chung cho mọi Puzzle. Thay chữ trong <> bằng câu trả lời của người dùng ở bước hỏi 3 câu (gameplay thế nào, win khi nào, thua khi nào). Câu chưa có trả lời thì ghi \"- chờ Lead chọn\". Tên mục riêng do game đặt, gợi ý theo dạng Puzzle ở references/khuon-va-bai-hoc.md mục 2. Game thuộc họ drop thì dùng drop.json.",
+  "ten_game": "<Tên game>",
+  "vat": "<tên vật người chơi chạm>",
+  "gameplay": [
+    {
+      "muc": "Cách chơi",
+      "dong": [
+        "- <người chơi chạm gì, làm gì để tiến>",
+        "- <mục tiêu của một ván>"
+      ]
+    },
+    {
+      "muc": "<Mục riêng 1>",
+      "dong": [
+        "- <vật đi đâu, ai lấy, vùng nào đầy thì sao>"
+      ]
+    },
+    {
+      "muc": "<Mục riêng 2>",
+      "dong": [
+        "- <luật lớn tiếp theo, viết thành câu đầy đủ>"
+      ]
+    },
+    {
+      "muc": "Win",
+      "dong": [
+        "- <điều kiện thắng theo lời người dùng>"
+      ]
+    },
+    {
+      "muc": "Lose",
+      "dong": [
+        "- <điều kiện thua theo lời người dùng, bằng điều người chơi thấy>"
+      ]
+    }
+  ],
+  "luat_loi_scope": "Cách chơi, <tên các mục riêng>, Win, Lose",
+  "so_level": 15,
+  "level_tag": "<level khó và nhịp mở thứ mới>",
+  "tutorial_scope": "Onboarding L1, mechanic",
+  "demo_scope": "<những gì có trên màn gameplay>",
+  "ui_scope": "Gameplay, Win, Lose",
+  "background": "1 background",
+  "object_scope": "<số loại vật, cách chia>\n<yêu cầu nhận ra ở cỡ nhỏ nhất>",
+  "dev_hang_muc": "Core gameplay + 1 mechanic hidden + Diễn hoạt anim <vật>",
+  "dev_scope": "<từng mục luật của tab Gameplay>\n<anim của vật>",
+  "sfx_scope": "<từng âm theo khoảnh khắc, tối đa 5 dòng>",
+  "vfx_scope": "<từng hiệu ứng theo khoảnh khắc, tối đa 5 dòng>",
+  "ref": ""
+}

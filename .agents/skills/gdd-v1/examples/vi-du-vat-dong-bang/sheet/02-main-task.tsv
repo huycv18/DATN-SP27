@@ -1,0 +1,16 @@
+STT	Hạng mục	Scope	Người thực hiện	Trạng thái	Phụ thuộc	Ghi chú/Ref
+	2D ART
+#1	Lớp băng trên quân	Lớp băng trong suốt phủ mặt quân, vẫn đọc được chữ; 2 trạng thái thoáng (trắng) và bị đè (xám)	2D Artist	Cần update		Ref: prototype viền xanh băng và glow (GDD markdown V20)
+#2	Số băng	Số 1 đến 6 ở đáy quân, chữ trắng viền xanh đậm, đọc được ở cỡ quân 44 px	2D Artist	Cần update	#1
+	VFX
+#3	Băng tan	Lớp băng vỡ ngắn khi số về 0, không khóa input	VFX	Cần update	#1	0,2 đến 0,4 giây [GIẢ ĐỊNH]
+#4	Rung khi bấm quân băng	Quân rung ngang nhẹ, biên độ nhỏ hơn rung khay	VFX		#1	[GIẢ ĐỊNH]
+	SFX
+#5	Băng tan	Tiếng băng vỡ nhỏ, nhỏ hơn tiếng nhặt đúng	SFX		#3	[GIẢ ĐỊNH]
+	DEV
+#6	Logic quân băng	Luật đánh số: 1. Quân có số băng lớn hơn 0 không nhặt được kể cả khi thoáng. 2. Mỗi quân khác được nhặt thành công làm số băng của mọi quân băng giảm 1, kể cả quân còn bị đè; nhóm Link N quân giảm N. 3. Nước bị từ chối và chuộc khay không giảm. 4. Về 0 thành quân thường, vẫn phải hết bị đè mới nhặt được. 5. Số băng tính từ tổng số quân đã nhặt, không lưu bộ đếm riêng. 6. Nam châm không rút quân còn băng [GIẢ ĐỊNH]. 7. Xáo giữ số băng tại vị trí [GIẢ ĐỊNH].	Dev	Đã làm		Prototype đã cài 29/09; Unity làm theo đúng 7 luật, đếm theo nước nhặt, không theo thời gian
+#7	Validator băng	Chặn băng không bao giờ tan; cảnh báo băng tan trước khi lộ; chặn tầng ngoài 2 tầng trên (bàn 2 tầng cho cả đáy)	Dev	Đã làm	#6	Chủ dự án chốt tầng 30/09
+#8	Tutorial băng L16	Tối màn, sáng quân băng và một quân nhặt được, bàn tay chỉ quân nhặt được, text box TB3 kèm nút Got it!	Dev		#6	Text ở tab Tutorials
+	GD
+#9	Dựng lại L16 đến L18 theo mốc	L16 băng 1 quân từ đầu ván; L17 và L18 băng 2 quân (1 từ 10%, 1 từ 50%); giữ layout vẽ tay	GD		#7	File hiện có 4 đến 5 quân băng số 5 và 6, lệch mốc 30/09; chờ Lead quyết
+#10	Hiệu chuẩn lại thành phần Băng	Đo lại L16 đến L25 sau khi dựng lại; điểm trong dung sai 4 đến 5	GD		#9	Thang v2 trọng số 7

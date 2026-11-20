@@ -1,0 +1,43 @@
+{
+  "_ghi_chu": "Mẫu đã điền cho một game Puzzle trung lập (sort ống nước), dùng để xem khung chung ra sao và làm bài kiểm sau khi cài phòng. Game thật thì chép chung.json rồi điền theo câu trả lời của người dùng.",
+  "ten_game": "Sort Ống Nước",
+  "vat": "lớp nước",
+  "gameplay": [
+    {
+      "muc": "Cách chơi",
+      "dong": [
+        "- Chạm 1 ống rồi chạm ống khác để rót lớp nước trên cùng sang",
+        "- Mục tiêu: xếp để mỗi ống chỉ còn một màu"
+      ]
+    },
+    {
+      "muc": "Ống nước",
+      "dong": [
+        "- Mỗi ống chứa tối đa 4 lớp nước",
+        "- Chỉ rót được khi lớp trên cùng cùng màu với ống đích hoặc ống đích rỗng",
+        "- Rót hết các lớp cùng màu liền nhau ở trên cùng, tới khi ống đích đầy"
+      ]
+    },
+    {
+      "muc": "Win",
+      "dong": [
+        "- Mỗi ống chỉ còn một màu hoặc rỗng là win"
+      ]
+    },
+    {
+      "muc": "Lose",
+      "dong": [
+        "- Không còn nước rót nào hợp lệ là thua",
+        "- Không có đồng hồ"
+      ]
+    }
+  ],
+  "so_level": 15,
+  "level_tag": "2 level khó 10, 15. Mở thêm ống rỗng ở level 6",
+  "demo_scope": "Màn gameplay: hàng ống nước, nút chơi lại",
+  "object_scope": "8 màu nước, mỗi màu 4 lớp\nNhận ra màu ngay ở ống nhỏ nhất",
+  "dev_scope": "Rót nước, kiểm ống đích, Win, Lose\nAnim nước chảy giữa hai ống",
+  "sfx_scope": "Rót nước, ống đầy một màu, win, lose",
+  "vfx_scope": "Nước chảy, ống đủ màu sáng lên, win",
+  "ref": ""
+}

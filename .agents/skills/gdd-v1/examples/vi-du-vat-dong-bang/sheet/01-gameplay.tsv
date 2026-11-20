@@ -1,0 +1,10 @@
+Ảnh	Mục	Mô tả
+	Cách chơi	- Nhìn ảnh order, nhặt các quân chữ đang thoáng để điền từ.\n- Quân thoáng: không bị quân tầng trên đè. Quân bị đè tối màu.\n- Chữ không order nào cần rơi xuống khay. Điền hết order là dọn sạch bàn và thắng.
+	Onboarding	- L1: tối màn, sáng order đầu và quân cần bấm, bàn tay chỉ, một text box suốt luồng, tắt sau khi ăn xong order đầu.\n- Cảnh báo khay: lần đầu khay có 3 quân, dừng game, text box kèm nút Got it!.
+	Order	- 2 order mở song song, luôn hiện order kế tiếp.\n- Mỗi order một từ 3 đến 6 chữ, có chữ gợi ý lộ sẵn, chữ đầu luôn ẩn.\n- Nhặt tự do trong các từ đang mở.\n- Chữ khớp cả 2 order: vào order còn thiếu ít chữ nhất, bằng nhau thì order sinh trước.\n- Từ từ 6 chữ chiếm cả hai ô order (bộ hiện tại chưa dùng).
+	Khay	- 5 ô. Chữ chưa cần vào khay theo thứ tự nhặt.\n- Order mới xuất hiện thì chữ trong khay khớp order mới tự bay lên (chuộc khay); không chuộc giữa chừng.\n- Cảnh báo đỏ nhấp từ 4 chữ.
+	Mechanic	- Quân úp (Hidden): không thấy chữ; tự lật khi hết bị đè. Dạy L6.\n- Quân băng (Ice): có số băng 1 đến 6; không lấy được khi số lớn hơn 0; mỗi quân khác được nhặt thì số trừ 1 (nhóm Link N quân trừ N); về 0 thành quân thường, vẫn phải thoáng mới nhặt được. Đặt ở 2 tầng trên cùng, bàn 2 tầng được cả đáy. Dạy L16.\n- Quân Link: băng keo nối 2 quân sát nhau cùng tầng; nhặt 1 là lấy cả nhóm; khay phải còn đủ ô cho cả nhóm. Dạy L26.
+	Booster	- +1 ô khay: mở ô "+" khóa ở cuối khay, 2 lần mỗi level; đầy khay vẫn thua.\n- Nam châm: tự nhặt 1 quân chữ đang cần, ưu tiên quân thoáng; không rút quân còn số băng [GIẢ ĐỊNH].\n- Xáo: hoán vị chữ giữa các quân, vị trí giữ nguyên, số băng ở lại vị trí [GIẢ ĐỊNH]; hoán vị phải còn đường thắng và có order giải được ngay.
+	Revive	- Xem ads 1 lần mỗi level: vợt dọn chữ trong khay sang hàng giữ riêng; chữ tự bay vào order khi trùng. Không đổi số băng.
+	Win	- Hoàn thành toàn bộ order. Bàn sạch. Không sao, không điểm; chuỗi thắng cộng 1.
+	Lose	- Khay đạt 5 trên 5, tính sau khi cả lượt vào chỗ và order mới đã chuộc. Không thua vì hết giờ. Chuỗi thắng về 0.

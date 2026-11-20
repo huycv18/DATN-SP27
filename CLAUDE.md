@@ -29,6 +29,22 @@ Vì là dự án Unity: việc cần Unity Editor làm ở phiên cục bộ ho�
 - 2026-11-19: Giai đoạn hiện tại chỉ làm GDD trên Google Sheet (connector Google Sheets), chưa tạo Unity project.
 - 2026-11-19: Làm từ xa bằng Remote Control vào máy công ty (desktop, không pin). Phiên mới tự nối Remote Control. Tắt sleep khi cắm điện (standby-timeout-ac 0) để lúc nào cũng remote được.
 - 2026-11-19: Cài phòng Game Designer (skill gd-department) vào repo, chuyển khung Puzzle mobile sang game indie. Quyết định của phòng ghi tiếp ở `production/DECISIONS.md`, của game ở `projects/space-salvage/DECISIONS.md`.
+- 2026-11-20: Tách nhánh theo máy và công cụ (Lead: "tách 3 nhánh cho 1 Claude trên công ty, 1 Claude trên Laptop Ahy G15, 1 CodeX trên công ty"). Bảng và luật ở mục Nhánh theo máy dưới đây.
+
+## Nhánh theo máy
+
+| Nhánh | Ai làm | Máy | Thư mục |
+|---|---|---|---|
+| `main` | Nhánh gộp. Phiên GDM cũ làm nốt đợt 7 ở đây | Công ty | `D:\DATN SP27` |
+| `claude-cty` | Claude Code | Công ty | `D:\DATN-SP27-claude` (worktree) |
+| `codex-cty` | Codex | Công ty | `D:\DATN-SP27-codex` (worktree) |
+| `claude-g15` | Claude Code | Laptop Ahy G15 | bản clone trên laptop |
+
+- Mỗi phiên chỉ commit vào nhánh của mình. Mở phiên: kiểm `git branch --show-current` đúng nhánh trong bảng, rồi `git merge main` để lấy việc mới.
+- Mỗi việc GD-### chỉ một nhánh làm. Ghi tên nhánh vào cột Agent của `production/BACKLOG.md` khi nhận việc. Một tab Sheet chỉ một nhánh dán tại một thời điểm.
+- Gộp vào `main` khi việc đã qua cổng máy (`selftest.mjs`, `validate-gdd.mjs`, `doi-chieu-sheet.mjs` cho tab vừa dán) và gd-qa ĐẠT. Xung đột ở file luật thì dừng, báo Lead, không tự chọn một bên.
+- Laptop và máy công ty trao đổi qua GitHub, nên mỗi lần push nhánh hay `main` phải được Lead bảo.
+- Hai worktree trên máy công ty dùng chung một `.git`. Không checkout nhánh của phiên khác. Không xóa worktree khi chưa hỏi Lead.
 
 ---
 
