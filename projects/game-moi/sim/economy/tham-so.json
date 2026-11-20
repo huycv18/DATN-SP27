@@ -30,8 +30,8 @@
       "cam": []
     },
     "tip_toi_da": {
-      "gia_tri": 30,
-      "nguon": "Lead chốt 2026-11-20 (K13, de-xuat-ca-cang-kieu-dave.md mục 4)",
+      "gia_tri": 25,
+      "nguon": "Lead chốt 30% (K13), GDM hạ 25% ở đợt 9 vòng 2 vì tip kể cả bơm khí vượt 30% ở 3 và 4 người",
       "nhan": "Lead chốt",
       "bat": [
         "[Tt]ip tối đa (\\d+)%"
@@ -434,7 +434,7 @@
         "tram-va-cang.md (gd-quan), kinh-te-tien-trinh.md",
         "Thưởng đủ đơn 25%, thưởng nhanh 15%",
         "Lead chốt ca cảng khung Dave 2026-11-20, bỏ đơn nhiều dòng",
-        "Tip tối đa 30% giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally",
+        "Tip tối đa 30% (sau hạ 25%) giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally",
         "Lead"
       ],
       [
@@ -460,6 +460,22 @@
         "Ca khung Dave bán gần đủ 25 thùng mỗi ca và có tip: giữ 0,40 thì cả game 11,0 giờ",
         "0,54, cả game trung bình 13,8 giờ, nhóm 4 bằng 72% thời gian một mình",
         "gd-economy"
+      ],
+      [
+        "Tip tối đa",
+        "ca-cang.json (GDM)",
+        "30% giá thùng nhân kiên nhẫn còn lại",
+        "Bơm khí bật lúc cập (luật 28): tip kể cả bơm khí vượt 30% Tally ở 3 và 4 người",
+        "25%, tip kể cả bơm khí 26 tới 29% ở trễ 2 giây",
+        "GDM"
+      ],
+      [
+        "Số tàu một ca theo số người và cửa neo",
+        "tram-va-cang.md (gd-quan), sim ca cảng gd-tech",
+        "25, 50, 70, 70 tàu, 4 cửa neo khi 3 và 4 người",
+        "Luật mới 3 cửa neo cho mọi số người (không mở nội dung theo số người)",
+        "25, 55, 55, 60 tàu, 3 cửa neo. Kho sau hai chuyến vẫn đủ ở mọi chương",
+        "gd-quan, gd-tech"
       ]
     ],
     "beta_ngan_sach": 0.54,
@@ -538,9 +554,9 @@
     "mua_them": [
       [
         "KH07-C2",
-        "Cảng cấp 2 (đề xuất: cửa neo thứ 4, gd-quan chốt)",
+        "Cảng cấp 2 (cửa neo thứ 4 của bến 1, Hạng 4)",
         "CANG_2",
-        1
+        2
       ],
       [
         "KH05-C2",

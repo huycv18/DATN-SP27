@@ -21,7 +21,7 @@ Trạm và cảng là nửa ở nhà của The Novent: người chơi sửa từ
 | Hạng cảng | 8 hạng, điểm cảng theo tàu phục vụ xong, có trần theo chương, không bao giờ giảm. Ngưỡng chờ gd-economy | MVP tới hạng 3 |
 | Nuôi Driftlife | 4 ô lên 9 ô, cặp cùng loài sinh con non, cho ăn thì ra sản phẩm, không cho ăn không chết | Sau MVP |
 | Sự cố | Từ chương 3: rò khí ở cửa neo, chập điện ở quầy, Driftlife sổng ôm thùng | Sau MVP |
-| Co-op | Mọi luật đúng với 1 đến 4 người. Số tàu một ca 25, 50, 70, 70 cho 1 tới 4 người (sim GD-054). 3 và 4 người cần 4 cửa neo, chờ Lead | MVP 2 người |
+| Co-op | Mọi luật đúng với 1 đến 4 người. Bến 1 luôn 3 cửa neo. Số tàu một ca 25, 55, 55, 60 cho 1 tới 4 người (sim GD-054 vòng 2 mục 4) | MVP 2 người |
 
 ## Danh mục
 
@@ -98,7 +98,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 2. Khoang Hỏng không dùng được chức năng, vẫn đi qua được. `MVP`
 3. Sửa khoang: mọi vật liệu trong danh sách sửa phải nằm trong kho, người chơi đứng ở khoang và giữ phím sửa trong thời gian sửa. Bắt đầu giữ phím thì vật liệu bị trừ khỏi kho. Thả phím giữa chừng thì tiến độ giữ nguyên, vật liệu không hoàn lại, giữ phím lại thì làm tiếp. `MVP`
 4. Sửa xong thì khoang sang Hoạt động cấp 1, mặt cắt trạm đổi hình khoang đó và hiện người vớt phụ trách (nếu có). `MVP`
-5. Nâng cấp khoang lên cấp 2 và cấp 3 theo cùng cách sửa, cần vật liệu và Tally theo bảng của gd-economy. Trong lúc nâng cấp khoang vẫn dùng được. ID nâng cấp là ID khoang cộng cấp: KH05-C2 là xưởng cấp 2, KH07-C2 là cửa neo thứ 4 của bến 1 (mua ở shop, Hạng 4, chờ Lead cùng câu hỏi cửa neo ở mục 10), KH12-KP là quầy phụ cạnh bến 2 và bến 3, KHxx-C3 là cấp 3 của khoang xx. Xưởng cấp 2 mở ở chương 2. Mọi nâng cấp khoang `Sau MVP`
+5. Nâng cấp khoang lên cấp 2 và cấp 3 theo cùng cách sửa, cần vật liệu và Tally theo bảng của gd-economy. Trong lúc nâng cấp khoang vẫn dùng được. ID nâng cấp là ID khoang cộng cấp: KH05-C2 là xưởng cấp 2, KH07-C2 là Cảng cấp 2: cửa neo thứ 4 của bến 1 (mua ở shop, Hạng 4), là nâng cấp, không theo số người, KH12-KP là quầy phụ cạnh bến 2 và bến 3, KHxx-C3 là cấp 3 của khoang xx. Xưởng cấp 2 mở ở chương 2. Mọi nâng cấp khoang `Sau MVP`
 6. Khoang neo là khoang đầu tiên sửa được. Trước khi khoang neo Hoạt động, chỉ cửa khí, kho, buồng ngủ đông dùng được, và Ember trôi chậm (hình nền trôi, không ảnh hưởng luật). Sửa xong khoang neo thì Ember đứng yên tới hết game. `MVP`
 7. Một khoang chỉ sửa được khi chương của khoang đã mở (bảng 2.6). Khoang có người vớt phụ trách (xưởng, khoang liên lạc, cảng, khoang dẫn đường, bến Skiff, phòng nghiên cứu, khoang sinh quyển, bến 2, bến 3) chỉ sửa được sau khi người vớt đó tỉnh và giao quest (luật 15). Khoang chưa sửa được hiện khung tối và một dòng gợi ý truyện. `MVP`
 8. Kho không giới hạn số lượng. Đồ trong túi đồ tự vào kho khi người chơi qua cửa khí về trạm. `MVP`
@@ -125,7 +125,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 20. Danh mục bán: trước khi Mở ca, người chơi lập danh mục ở bảng tàu. Danh mục gồm tối đa M loại hàng, mỗi loại hàng là một ID kiện đã mở (bảng Nhóm hàng cảng). Mỗi loại đặt số thùng từ 1 tới số thùng kho làm được. M theo Hạng cảng (mục 3). Danh mục rỗng thì không Mở ca được. Danh mục chốt lúc Mở ca, không sửa trong ca. `MVP`
 21. Thùng là đơn vị bán trong ca, bằng 0,4 kiện. Số thùng kho làm được của một ID kiện bằng số kiện làm được theo công thức của gd-items nhân 2,5, làm tròn xuống. Lồng sinh vật sống, bản sao dữ liệu và kiện tin mật không chia: một đơn vị là một thùng. `MVP` (bản sao, tin mật `Sau MVP`)
 22. Lúc Mở ca, Thông dịch viên đóng thùng tự động cho cả danh mục và trừ hàng khỏi kho ngay, không tốn thời gian ca. Hàng cần chế phải chế xong ở xưởng trước khi Mở ca (luật 53). Trong ca không chế, không đóng gì. `MVP`
-23. Bến 1 có 3 cửa neo, mỗi cửa neo chứa một tàu. Số cửa neo khi 3 và 4 người chờ Lead (mục 10). Tàu tới mà có cửa neo trống thì cập cửa neo trống có số nhỏ nhất. Mọi cửa neo bận thì tàu chờ ngoài, xếp hàng ở mép màn hình kèm đồng hồ chờ ngoài. Có cửa neo trống thì tàu chờ lâu nhất cập trước. Hết đồng hồ chờ ngoài thì tàu bỏ đi. `MVP`
+23. Bến 1 có 3 cửa neo, mỗi cửa neo chứa một tàu. Số cửa neo không đổi theo số người (GDM chốt đợt 9, sim GD-054 vòng 2 đạt mục tiêu ở 1 tới 4 người). Cửa neo thứ 4 chỉ có qua nâng cấp KH07-C2. Tàu tới mà có cửa neo trống thì cập cửa neo trống có số nhỏ nhất. Mọi cửa neo bận thì tàu chờ ngoài, xếp hàng ở mép màn hình kèm đồng hồ chờ ngoài. Có cửa neo trống thì tàu chờ lâu nhất cập trước. Hết đồng hồ chờ ngoài thì tàu bỏ đi. `MVP`
 24. Lúc tới, mỗi tàu chọn đúng 1 thùng trong các loại hàng còn thùng của danh mục, theo trọng số bằng độ gọi của bậc giá (gd-economy, `kinh-te-tien-trinh.md` mục 3.1: Hàng chợ 3, Hàng sinh học 2, Hàng chế 1,5, Hàng sống 1, Hàng hiếm 1) nhân hệ số hàng hay gọi của loại tàu (bảng 2.4, loại hàng không ghi có hệ số 1). Tàu có cột "chỉ gọi" ở bảng 2.4 chỉ chọn trong các nhóm đó. Thùng đó giữ riêng cho tàu từ lúc chọn. Tàu có đơn đặt trước chọn đúng thùng đã đặt (luật 72). Danh mục không còn thùng nào tàu đó gọi được thì tàu không tới. Đây là cải thiện theo ý Lead "cần làm cho nó tốt hơn" (GDM duyệt đợt 9): từ chương 1, TA02 chỉ gọi băng hoặc khoáng, nên danh mục không có hai nhóm đó thì Tàu vội không tới và mất tip gấp đôi của nó. Lập danh mục thành quyết định thật: bán hàng đắt hay giữ chỗ cho hàng tàu tip cao gọi. Tàu cập cửa neo thì hiện món gọi bằng bong bóng trên tàu. `MVP`
 25. Quầy cảng có 3 ô, mỗi ô cùng màu một cửa neo. 3 giây sau khi tàu cập, thùng tàu gọi hiện ở ô quầy cùng màu cửa neo đó. `MVP`
 26. Mang thùng: người chơi tay trống nhặt thùng ở ô quầy bằng tương tác. Mỗi lần mang 1 thùng, tốc độ chạy không đổi khi mang. Tới cửa neo nhấn tương tác để giao. Thùng giao vào cửa neo khác thì tàu từ chối, thùng ở lại tay. Thùng đã nhặt không đặt xuống được, chỉ giao (GDM chốt cho MVP). Thứ tự xử lý ở mục "Thứ tự xử lý khi giao thùng". `MVP`
@@ -133,7 +133,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 28. Bơm khí: lúc cập, mỗi tàu có 50% bật yêu cầu bơm khí ngay. Tàu chưa giao thì bật yêu cầu nữa sau 10 tới 18 giây kể từ lúc cập hoặc lần bơm trước. Người chơi tay trống đứng ở cửa neo đó giữ tương tác 1 giây. Xong thì kiên nhẫn hồi 25% kiên nhẫn tối đa, không vượt tối đa, và cộng 10 Tally tính vào tip. Rời cửa neo trước 1 giây thì không tính, làm lại từ đầu. Bỏ qua yêu cầu không bị trừ gì. Lý do bật lúc cập: sim GD-054 cho thấy tàu thường được giao trong 10 giây, bơm khí bật sau 10 giây thì người chơi một mình không bao giờ gặp. Bật lúc cập thì bơm khí tranh 3 giây chờ thùng ra quầy với việc chạy về quầy. Số 50% là ước, gd-tech đo lại. `MVP`
 29. Giao đúng thì tàu nhận thùng, trả Tally ngay bằng giá thùng cộng tip (luật 30, 31), cộng điểm cảng (luật 40), rồi rời cửa neo. Cửa neo trống khi tàu khuất. `MVP`
 30. Giá thùng bằng giá ID kiện chia 2,5, gd-economy đặt (`kinh-te-tien-trinh.md` mục 3.1). Hàng không chia (luật 21) giữ giá một đơn vị. Lồng tính giá theo loài bên trong. Thùng của đơn đặt trước nhân 1,5 (luật 71). Giá không nhân theo Hạng cảng, không nhân theo số người. `MVP`
-31. Tip bằng giá thùng nhân 30%, nhân phần kiên nhẫn còn lại lúc giao (0 tới 1), nhân hệ số tip của loại tàu, nhân 2 nếu là món mê của tàu đó (bảng 2.4), làm tròn. Bơm khí cộng thêm 10 Tally mỗi lần (luật 28). Tip là chỗ duy nhất tốc độ đổi ra Tally. `MVP`
+31. Tip bằng giá thùng nhân 25%, nhân phần kiên nhẫn còn lại lúc giao (0 tới 1), nhân hệ số tip của loại tàu, nhân 2 nếu là món mê của tàu đó (bảng 2.4), làm tròn. Bơm khí cộng thêm 10 Tally mỗi lần (luật 28). Tip là chỗ duy nhất tốc độ đổi ra Tally. `MVP`
 32. Tàu rời chưa giao khi hết kiên nhẫn hoặc hết giờ ca. Tàu bỏ đi khi hết đồng hồ chờ ngoài. Cả hai chỉ mất món của tàu đó: không có giá, tip, điểm cảng cho tàu đó, không trừ gì. Thùng của tàu (ở quầy hay trên tay) về lại danh mục, tàu sau gọi được. `MVP`
 33. Tàu không bán gì trong ca. Mua hàng chỉ ở shop của khoang liên lạc vào cuối ngày (K20). `MVP`
 34. Ca kết thúc ở điều tới trước trong ba điều: hết giờ ca (300 giây), tàu cuối của lịch đã rời, hoặc danh mục hết thùng (kể cả thùng giữ cho đơn đặt trước) và không còn tàu ở cửa neo hay chờ ngoài. Hết danh mục thì tàu còn lại trong lịch không tới. Hết giờ ca thì mọi tàu ở cửa neo rời ngay và tàu chờ ngoài bỏ đi, áp luật 32. `MVP`
@@ -194,7 +194,7 @@ Cam kết với người chơi: không mất hàng vì tàu rời, không trừ 
 65. Mỗi ngày có đúng một ca cảng. Ca đã kết thúc hoặc đã bỏ thì không mở lại trong ngày. Mở ca hoặc Bỏ ca thì cửa khí khóa tới ngày mới (luật 63), vì ca cảng là pha sau các chuyến (K22). `MVP`
 66. Khi có từ 2 người online: Bỏ ca, và Mở ca lúc nhóm chưa đi đủ 2 chuyến, cần mọi người online xác nhận, không trả lời trong 30 giây tính là đồng ý (cùng cách K23). Mở ca sau khi đã đi đủ 2 chuyến không cần xác nhận. `MVP`
 67. Ca cảng đầu tiên của thế giới cố định để dạy: danh mục chọn sẵn một loại là thùng phế liệu CGO-101 với mọi thùng kho làm được, người chơi chỉ bấm Mở ca. Lịch có 2 tàu TA01 kiên nhẫn Dài, không có đơn đặt trước. Tàu 1 tới đầu ca, không bật bơm khí. Tàu 2 cập khi tay người chơi trống sau lần giao đầu và bật yêu cầu bơm khí ngay. Kho làm được 1 thùng phế liệu thì chỉ có tàu 1. Ca này ngắn hơn mục tiêu thời lượng ca, chủ ý. Kho không có phế liệu thì nút Mở ca xám kèm gợi ý mang phế liệu về, Bỏ ca vẫn được. Ca này tính Tally, tip và điểm cảng như mọi ca. Ca thứ hai là ca đầu tiên người chơi tự lập danh mục, từ ca thứ hai lịch sinh theo luật 68 tới 70. `MVP`
-68. Cấu hình lịch (số tàu, giãn cách, chờ ngoài) lấy theo chương, số cửa neo Hoạt động và N, ở bảng "Cấu hình lịch" mục 3. Số tàu tăng theo N, giãn cách co lại để tàu vẫn tới trong cửa sổ đến (C8). Số cửa neo theo N chờ Lead (mục 10). `MVP` cho chương 1
+68. Cấu hình lịch (số tàu, giãn cách, chờ ngoài) lấy theo chương, số cửa neo Hoạt động và N, ở bảng "Cấu hình lịch" mục 3. Số tàu tăng theo N, giãn cách co lại để tàu vẫn tới trong cửa sổ đến (C8). Số cửa neo không đổi theo N. `MVP` cho chương 1
 69. Chọn loại tàu cho từng chỗ trong lịch: chỗ đầu dành cho tàu có điều kiện truyện đang chờ, tối đa 2 chỗ mỗi ca, theo thứ tự mốc truyện. Chỗ của đơn đặt trước gắn đúng loại tàu đã đặt (luật 71). Chỗ còn lại rút từ túi trộn: mỗi loại tàu đã mở (theo chương, Hạng cảng, mốc truyện, không gồm TA08 và TA11) góp số thẻ bằng trọng số ở bảng 2.4, rút không hoàn lại, hết túi thì trộn lại túi mới. Món mỗi tàu gọi không chọn lúc sinh lịch mà lúc tàu tới, theo danh mục còn lại (luật 24). Tàu có điều kiện truyện (TA03 cho mốc C2.3, TA06 cho mốc C3.2, TA08 hai lần cập bến, TA11 cho mốc C4.7 và C5.2) có trong lịch mỗi ngày tới khi điều kiện truyện đó xong. `MVP`
 70. Giờ đến: tàu đầu tới ở giây thứ 2 của ca. Mọi tàu tới trong cửa sổ đến 225 giây đầu ca: giãn cách trung bình bằng 225 chia số tàu, mỗi khoảng lệch ngẫu nhiên tới 22% (25 tàu là 7 tới 11 giây). Ca kéo tới 300 giây để tàu cập cuối cửa sổ còn đủ kiên nhẫn được phục vụ. Hai tàu cùng giờ đến xếp theo thứ tự trong lịch. `MVP`
 71. Đơn đặt trước: lịch của ngày có đơn đặt trước, hiện ở bảng tàu từ pha chuẩn bị: tàu nào, tàu thứ mấy trong lịch, loại hàng, giá thùng nhân 1,5. Chương 1 có 1 đơn mỗi ngày, ở tàu thứ 9 của lịch, là TA01. Loại hàng chương 1 là thùng đồ Trái Đất CGO-109. Từ ngày có Súng lưới, ngày chẵn đặt 1 lồng sống CGO-121 thay cho đồ Trái Đất. Từ chương 2 có 1 tới 2 đơn mỗi ngày, loại hàng rút từ hàng tàu đó hay gọi đã mở, ưu tiên hàng phải ra ngoài mới có. `MVP`
@@ -259,7 +259,7 @@ Kiên nhẫn: Dài 60 giây, Vừa 45 giây, Ngắn 30 giây (mục 3). Hệ s�
 | 1 | 1 | TA01, bến 1 với 3 cửa neo, danh mục 4 loại, shop danh mục cơ bản | MVP |
 | 2 | 1 | TA02 | MVP |
 | 3 | 1 | Danh mục bán được kiện mẫu HC05 và đặc sản CGO-106. Mục shop ENG-101 | MVP |
-| 4 | 2 | Danh mục 5 loại, TA03 gọi thùng thứ hai, mục shop bản thiết kế dải Giữa, mục shop cửa neo thứ 4 của bến 1 (KH07-C2, chờ Lead) | Sau MVP |
+| 4 | 2 | Danh mục 5 loại, TA03 gọi thùng thứ hai, mục shop bản thiết kế dải Giữa, mục shop Cảng cấp 2 KH07-C2 (cửa neo thứ 4 của bến 1) | Sau MVP |
 | 5 | 2 | Danh mục bán được sản phẩm nuôi HC07, mục shop ENG-102 | Sau MVP |
 | 6 | 3 | TA09, danh mục 6 loại, mục shop tiện ích cảng | Sau MVP |
 | 7 | 3 | TA06 và TA10 gọi được kiện tinh dải Xa HC13, mục shop ENG-103 | Sau MVP |
@@ -272,7 +272,7 @@ Trần ở chương nghĩa là hạng đó đạt được sớm nhất ở chư
 | Chương | Khoang sửa được | Người vớt | Giai đoạn động cơ | Nhãn |
 |---|---|---|---|---|
 | 1 | Khoang neo, kho cấp 2, xưởng, khoang liên lạc, cảng bến 1 (3 cửa neo, quầy cảng) | Kỹ sư, Thông dịch viên | 1 | MVP |
-| 2 | Khoang dẫn đường, bến Skiff, phòng nghiên cứu, khoang sinh quyển cấp 1 và 2, xưởng cấp 2, cửa neo thứ 4 của bến 1 (chờ Lead) | Hoa tiêu, Nhà sinh học | 2 | Sau MVP |
+| 2 | Khoang dẫn đường, bến Skiff, phòng nghiên cứu, khoang sinh quyển cấp 1 và 2, xưởng cấp 2, Cảng cấp 2 (cửa neo thứ 4 của bến 1) | Hoa tiêu, Nhà sinh học | 2 | Sau MVP |
 | 3 | Bến 2, tiện ích cảng, khoang sinh quyển cấp 3 (môi trường dải Xa) | Trưởng cảng | 3 | Sau MVP |
 | 4 | Bến 3, quầy phụ, cấp 3 các khoang còn lại | Không | 4 | Sau MVP |
 | 5 | Không có khoang mới | Không | 5 | Sau MVP |
@@ -345,15 +345,15 @@ Bảng tàu ở khoang liên lạc, mở được từ pha chuẩn bị tới kh
 | Thời gian giữ phím sửa khoang | 5 giây | 3 đến 8 | Sửa thấy công sức hơn | Sửa nhanh, ít cảm giác | Trạm | ước |
 | Thùng so với kiện | 0,4 kiện (giá kiện chia 2,5, số trong kho nhân 2,5) | 0,25 đến 0,5 | Ít tàu hơn, rảnh hơn | Nhiều tàu hơn, ca vội | Cảng, kinh tế | demo bot 2026-11-20: 10 tàu mỗi tàu 1 kiện thì rảnh 76% |
 | Số loại tối đa trong danh mục M | 4 ở Hạng 1 tới 3 (chương 1), 5 từ Hạng 4, 6 từ Hạng 6 | 3 đến 7 | Lập danh mục dễ, ít thế cân | Phải bỏ bớt hàng | Cảng | Chương 1 theo `de-xuat-ca-cang-kieu-dave.md` mục 4. Hạng 4 và 6 ước |
-| Cửa neo ở bến 1 | 3 cho 1 và 2 người. 3 và 4 người chờ Lead (mục 10). Cửa neo thứ 4 ở shop từ Hạng 4 (KH07-C2) cũng chờ Lead | 2 đến 4 | Ít tàu chờ ngoài, nhiều việc song song | Tàu chờ ngoài nhiều | Cảng | Lead chốt 3 (DECISIONS đợt 9). Sim GD-054 bảng 3: 3 cửa neo không có số tàu đạt mục tiêu ở 3 và 4 người |
+| Cửa neo ở bến 1 | 3 ở mọi số người. Cửa neo thứ 4 qua nâng cấp Cảng cấp 2 KH07-C2 từ Hạng 4 | 2 đến 4 | Ít tàu chờ ngoài, nhiều việc song song | Tàu chờ ngoài nhiều | Cảng | Lead chốt 3 (DECISIONS đợt 9). GDM chốt 3 cho mọi số người sau sim GD-054 vòng 2 mục 4 |
 | Cửa neo ở bến 2, bến 3 | 2 mỗi bến | 1 đến 3 | Ca rộng hơn | Bến xa ít tác dụng | Cảng | ước, chờ sim |
-| Số tàu một ca, chương 1 | 25, 50, 70, 70 cho 1, 2, 3, 4 người | 1 người 25 đến 30, 2 người 40 đến 60 | Bận hơn, Tally theo hàng | Rảnh hơn | Cảng | sim GD-054 bảng 4 |
+| Số tàu một ca, chương 1 | 25, 55, 55, 60 cho 1, 2, 3, 4 người | 1 người 20 đến 35, 2 người 35 đến 65 | Bận hơn, Tally theo hàng | Rảnh hơn | Cảng | sim GD-054 vòng 2 mục 4, mục 3 cho dải đạt |
 | Cửa sổ đến và giãn cách | Mọi tàu tới trong 225 giây đầu ca. Giãn cách trung bình 225 chia số tàu, lệch tới 22% (25 tàu là 7 tới 11 giây) | 200 đến 240 giây | Ca thưa, rảnh | Tàu dồn, chờ ngoài nhiều | Cảng | sim GD-054, khớp demo |
 | Giờ đến của tàu đầu | Giây thứ 2 của ca | 0 đến 5 | | | Cảng | demo |
 | Chờ ngoài tối đa | 20 giây | 10 đến 30 | Ít tàu bỏ đi | Phải phục vụ nhanh để giải phóng cửa neo | Cảng | demo bot 2026-11-20 |
 | Kiên nhẫn Dài, Vừa, Ngắn | 60, 45, 30 giây | 20 đến 90 | Ca dễ, tip cao | Ca căng, nhiều tàu rời | Cảng | Dài và Ngắn demo bot 2026-11-20. Vừa ước |
 | Thùng ra quầy sau khi tàu cập | 3 giây | 1 đến 5 | Có khoảng trống để bơm khí | Ca dồn dập | Cảng | demo bot 2026-11-20 |
-| Tip tối đa | 30% giá thùng nhân phần kiên nhẫn còn lại | 15% đến 40% | Tốc độ đáng tiền hơn | Tốc độ ít ý nghĩa | Kinh tế | demo bot, gd-economy duyệt |
+| Tip tối đa | 25% giá thùng nhân phần kiên nhẫn còn lại (trước là 30%) | 15% đến 35% | Tốc độ đáng tiền hơn | Tốc độ ít ý nghĩa | Kinh tế | GDM hạ đợt 9 vì tip kể cả bơm khí vượt 30% ở 3, 4 người. Sau khi hạ: tip 26 tới 29% Tally ở trễ 2 giây (sim GD-054 vòng 2 mục 4) |
 | Độ gọi theo bậc giá | Hàng chợ 3, Hàng sinh học 2, Hàng chế 1,5, Hàng sống 1, Hàng hiếm 1. Nhân với hệ số hàng hay gọi ở bảng 2.4 | | Hàng đó bán nhanh hơn | Hàng đó ít được gọi | Cảng, kinh tế | gd-economy GD-055 mục 3.1 |
 | Hệ số tip | TA02 gấp 2. TA01 với đồ Trái Đất gấp 2. TA05 với lồng sống gấp 2. TA09 bằng 0 | 0 đến 2 | | | Kinh tế | TA01, TA02 demo bot. TA05, TA09 ước |
 | Bơm khí | Lúc cập 50% tàu bật yêu cầu ngay, tàu chưa giao bật lại sau 10 tới 18 giây. Giữ 1 giây, hồi 25% kiên nhẫn tối đa, cộng 10 Tally | Tỉ lệ lúc cập 30% đến 70% | Bơm khí chiếm nhiều Tally hơn | Bơm khí hiếm gặp | Cảng, kinh tế | Giữ, hồi, Tally theo demo bot. Bật lúc cập 50% ước (sim GD-054 bảng 6: bật sau 10 tới 18 giây thì 0% Tally ở mọi số người) |
@@ -362,7 +362,7 @@ Bảng tàu ở khoang liên lạc, mở được từ pha chuẩn bị tới kh
 | Ngưỡng điểm Hạng cảng 2 tới 8 | 70, 135, 285, 400, 560, 680, 910 | | Chậm mở nội dung | Nhanh mở nội dung | Hạng cảng | gd-economy GD-055 mục 3.5 |
 | Thời lượng ca tối đa | 300 giây (trước là 240) | 240 đến 300 | Người chậm phục vụ hết tàu đã cập | Tàu bị đuổi vì hết giờ | Cảng, một ngày | Khung mục 9 cho 3 tới 5 phút. Sim GD-054 bảng 4: ở 240 giây, người trễ 3 giây chạm trần 54% số ca ở 1 người, 100% từ 2 người. Ca của người trễ 2 giây vẫn dài 231 tới 239 giây vì cửa sổ đến 225 giây không đổi. 300 là ước, gd-tech đo lại |
 | Cấu hình lịch | Bảng "Cấu hình lịch" ngay dưới | | | | Cảng | sim GD-054 |
-| Tally một ca | Khoảng 60% giá trị hai chuyến đầy túi của chương. Tip khoảng 20 tới 30% Tally một ca | 40% đến 80% | Thiếu hàng để sửa trạm | Cảng yếu | Cảng, kinh tế | gd-economy mục 8.4, khung mục 9. Sim GD-054, 1 người trễ 2 giây: Tally 1774, tip 25% chưa có bơm khí lúc cập |
+| Tally một ca | Khoảng 60% giá trị hai chuyến đầy túi của chương. Tip khoảng 20 tới 30% Tally một ca | 40% đến 80% | Thiếu hàng để sửa trạm | Cảng yếu | Cảng, kinh tế | gd-economy mục 8.4, khung mục 9. Sim GD-054 vòng 2, trễ 2 giây: Tally 1654, 3602, 3760, 3996 cho 1 tới 4 người, tip kể cả bơm khí 26 tới 29% |
 | Tốc độ chạy khi mang thùng | Bằng tốc độ thường | | | | Cảng | demo |
 | Hàng đợi chế của xưởng, cấp 1 | 2 mẻ | 1 đến 4 | Chế qua đêm nhiều, danh mục rộng | Ít hàng chế | Xưởng | ước, gd-items đề xuất |
 | Thời gian chế ở xưởng một mẻ | 10 giây | 8 đến 20 | Chế trước tốn thời gian hơn | Chế dễ | Xưởng | ước |
@@ -376,15 +376,15 @@ Bảng tàu ở khoang liên lạc, mở được từ pha chuẩn bị tới kh
 - Cấu hình lịch theo luật 68 (trễ phản xạ 2 giây, danh mục đủ hàng):
 | Chương | Số người N | Cửa neo | Số tàu | Giãn cách trung bình | Kết quả sim | Nguồn | Nhãn |
 |---|---|---|---|---|---|---|---|
-| 1 | 1 | 3 | 25 | 9 giây | 100% tàu xong, rảnh 23%, ca 231 giây, tip 25% | sim GD-054 bảng 4 | MVP |
-| 1 | 2 | 3 | 50 | 4,5 giây | 100% tàu xong, rảnh 17%, ca 238 giây, tip 25% | sim GD-054 bảng 4 | MVP |
-| 1 | 3 | 4, chờ Lead | 70 | 3,2 giây | 100% tàu xong, rảnh 16%, ca 239 giây | sim GD-054 bảng 4 | Sau MVP |
-| 1 | 4 | 4, chờ Lead | 70 | 3,2 giây | 100% tàu xong, rảnh 25%, ca 238 giây | sim GD-054 bảng 4 | Sau MVP |
+| 1 | 1 | 3 | 25 | 9 giây | 99% tàu xong, rảnh 14%, ca 230 giây, tip 26% | sim GD-054 vòng 2 mục 4 | MVP |
+| 1 | 2 | 3 | 55 | 4,1 giây | 99% tàu xong, rảnh 6%, ca 251 giây, tip 26% | sim GD-054 vòng 2 mục 4 | MVP |
+| 1 | 3 | 3 | 55 | 4,1 giây | 99% tàu xong, rảnh 19%, ca 241 giây, tip 29% | sim GD-054 vòng 2 mục 4 | Sau MVP |
+| 1 | 4 | 3 | 60 | 3,8 giây | 97% tàu xong, rảnh 27%, ca 252 giây, tip 29% | sim GD-054 vòng 2 mục 4 | Sau MVP |
 | 2 tới 5 | 1 tới 4 | Theo bến đã sửa | Chưa đo | Chưa đo | | Chờ sim | Sau MVP |
 
 Núm co-op (C8):
 - Số tàu tăng theo N, cửa sổ đến giữ 225 giây nên giãn cách co lại. Kiên nhẫn, chờ ngoài không đổi theo N.
-- Mục tiêu: rảnh mỗi người không quá 30% ở trễ phản xạ 2 giây, tàu phục vụ xong 85 tới 100% ở chương 1 (khung mục 9). Sim GD-054: 3 và 4 người với 3 cửa neo không có số tàu nào đạt, rảnh trung bình không xuống dưới 31% và 38% vì 3 ô quầy và 3 cửa neo thành nút thắt.
+- Mục tiêu: rảnh mỗi người không quá 30% ở trễ phản xạ 2 giây, tàu phục vụ xong 85 tới 100% ở chương 1 (khung mục 9). Sim GD-054 vòng 2: có bơm khí lúc cập thì 3 cửa neo đạt ở mọi số người (vòng đầu không có bơm khí lúc cập thì 3 và 4 người không đạt). Ở 240 giây trần, ca 2 tới 4 người dài 241 tới 252 giây, nên trần 300 giây là cần. Trễ 3 giây: tàu xong 85 tới 95%, 0% ca chạm trần 300.
 - N lấy lúc Mở ca. Người vào giữa ca không đổi lịch ca đó.
 
 ## 4. Trường hợp biên
@@ -439,7 +439,7 @@ Núm co-op (C8):
 | Ràng buộc | Số hoặc lý do |
 |---|---|
 | Thông lượng một người | Một tàu cần ít nhất 3 giây chờ thùng ra quầy, cộng đường chạy quầy tới cửa neo 1,1 tới 2,3 giây và quay về. Sim GD-054: một người với 25 tàu rảnh 44%, 23%, 4% ở trễ 1, 2, 3 giây. Tới 30 tàu vẫn đạt, từ 35 tàu thì tàu rời chưa giao tăng nhanh vì một người không giao nhanh hơn khoảng 29 tàu mỗi ca |
-| Thông lượng 3 cửa neo | Một tàu chiếm cửa neo từ lúc cập tới lúc khuất, ít nhất khoảng 6 giây. Sim GD-054: 2 người đạt tới 60 tàu. 3 và 4 người dừng ở khoảng 55 tàu dù lịch nhiều hơn, mỗi người rảnh từ 31% trở lên. Nút thắt là 3 ô quầy và 3 cửa neo, không phải người |
+| Thông lượng 3 cửa neo | Một tàu chiếm cửa neo từ lúc cập tới lúc khuất, ít nhất khoảng 6 giây. Sim GD-054 vòng 2: 3 cửa neo đạt mục tiêu ở 1 tới 4 người với 25, 55, 55, 60 tàu. 3 và 4 người dừng ở khoảng 55 tới 60 tàu vì 3 ô quầy và 3 cửa neo chung, bơm khí lấp phần rảnh |
 | Trần thời gian | Cửa sổ đến 225 giây, ca tối đa 300 giây. Tàu cập cuối cửa sổ với kiên nhẫn Dài 60 giây vẫn kịp phục vụ |
 | Kho không giới hạn | Không có ràng buộc kho trong ca. Ràng buộc nằm ở trần M loại và lượng hàng mang về. Sim GD-054 bảng 5: danh mục thiếu hàng làm Tally hụt 13 tới 16% |
 | Tải mặt cắt | Quầy tới cửa neo 3 dưới 2,5 giây chạy. Bến 2, bến 3 khác tầng, xa hơn, là cách tạo độ khó mới ở chương 3, 4 mà không đổi luật |
@@ -460,18 +460,18 @@ Núm co-op (C8):
 
 ### Đề sim ca cảng cho gd-tech (GD-054 đã chạy, việc vòng sau)
 
-Kết quả vòng đầu ở `tools/ket-qua/sim-ca-cang.md`: số tàu theo N, cửa neo theo N, ba kiểu danh mục, bơm khí. Vòng sau đo:
+Kết quả vòng 1 và vòng 2 ở `tools/ket-qua/sim-ca-cang.md`. Kết quả vòng 2 cho các mục gd-quan đề:
 
 | Phần | Nội dung |
 |---|---|
-| Bơm khí lúc cập | Luật 28 mới: 50% tàu bật yêu cầu ngay lúc cập. Đo phần Tally của bơm khí ở 1, 2 người, rảnh, tàu xong. Mục tiêu: người một mình gặp bơm khí, tip cộng bơm khí vẫn trong 20 tới 30% Tally hoặc báo gd-economy hạ tip tối đa |
-| Trần ca 300 giây | Lặp bảng 4 với ca 300, cửa sổ đến 225. Đo tỉ lệ chạm trần ở trễ 3 giây và tàu xong |
-| Ca đầu tiên | 2 tàu TA01 theo luật 67, đo thời lượng |
-| Trọng số theo bậc giá | Luật 24 mới: độ gọi bậc giá nhân hệ số bảng 2.4 (Tikko đồ Trái Đất 6). Đo phần thùng đồ Trái Đất bán hết trước tàu thứ 9 (đơn đặt trước đã giữ 1 thùng) |
-| Tàu vội chỉ gọi băng, khoáng | Ở Hạng 2, so ba danh mục: có cả băng và quặng, chỉ một trong hai, không có. Đo số Tàu vội không tới, Tally, tip. Mục tiêu: danh mục thiếu băng và khoáng hụt Tally rõ (từ 5%) mà ca vẫn trong mục tiêu rảnh |
+| Bơm khí lúc cập | Đã đo vòng 2: bơm khí chiếm 3,5%, 3,9%, 7,2% Tally ở 1, 2, 4 người. Người một mình có gặp. Tip kể cả bơm khí 26 tới 29% sau khi hạ tip tối đa xuống 25% |
+| Trần ca 300 giây | Đã đo vòng 2: 0% ca chạm trần ở mọi số người, kể cả trễ 3 giây |
+| Ca đầu tiên | Đã đo vòng 2: 2 tàu xong trong 13 tới 17 giây |
+| Trọng số theo bậc giá | Đã đo vòng 2: danh mục 5 thùng đồ Trái Đất bán hết trước tàu thứ 9 ở 22% số ca một người. Đơn đặt trước vẫn đạt 100% vì thùng đặt được giữ riêng lúc Mở ca |
+| Tàu vội chỉ gọi băng, khoáng | Đã đo vòng 2: thiếu cả băng và quặng thì hụt 16,6 tới 20,6% Tally. Chỉ thiếu băng thì hụt dưới 5%. Đạt ý đồ: bỏ hẳn hai nhóm thì mất Tàu vội và tip gấp đôi |
+| Còn mở | Chương 2 tới 5, kiên nhẫn Vừa 45 giây, Hạng 1 chỉ có TA01 |
 | Hạng 1 chỉ có TA01 | So với có TA02 (sim vòng đầu có TA02 từ đầu) |
 | Kiên nhẫn Vừa 45 giây | Một cấu hình thử cho tàu chương 2 |
-| Cửa neo cho 3, 4 người | Khi Lead chọn phương án ở mục 10, chạy lại đúng phương án đó |
 | Chạy | Tối thiểu 200 seed mỗi cấu hình, in bảng theo N và trễ phản xạ |
 
 ## 7. Yêu cầu cho art, UI, tutorial, audio
@@ -509,8 +509,9 @@ Chỉ số kết quả: tỉ lệ tàu phục vụ xong, Tally mỗi ca, phần 
 Tiêu chí nghiệm thu:
 
 Ca cảng:
-- Sim chương 1, trễ phản xạ 2 giây: tàu phục vụ xong 85 tới 100%, rảnh không quá 30%, ca 180 tới 300 giây, tip 20 tới 30% Tally. Sim GD-054 bảng 4: 1 người 25 tàu đạt (100%, rảnh 23%, ca 231 giây, tip 25%). 2 người 50 tàu đạt (100%, rảnh 17%, ca 238 giây). 3 và 4 người chỉ đạt khi có 4 cửa neo, chờ Lead.
-- Sim vòng sau: luật bơm khí lúc cập và ca 300 giây giữ được các mục tiêu trên. Chưa đo.
+- Sim chương 1, trễ phản xạ 2 giây: tàu phục vụ xong 85 tới 100%, rảnh không quá 30%, ca 180 tới 300 giây, tip 20 tới 30% Tally. sim GD-054 vòng 2 mục 4, 3 cửa neo: 1 người 25 tàu (99%, rảnh 14%, ca 230 giây, tip 26%), 2 người 55 tàu (99%, rảnh 6%, ca 251 giây, tip 26%), 3 người 55 tàu (99%, rảnh 19%, ca 241 giây, tip 29%), 4 người 60 tàu (97%, rảnh 27%, ca 252 giây, tip 29%). Đạt.
+- Bơm khí lúc cập: người một mình gặp, bơm khí chiếm 3,5% Tally ở 1 người (sim vòng 2). Trần ca 300 giây: 0% ca chạm trần. Ca đầu 2 tàu xong trong 13 tới 17 giây. Đạt.
+- Lập danh mục: thiếu cả băng và quặng hụt 16,6 tới 20,6% Tally, thiếu một trong hai hụt dưới 5%. Đồ Trái Đất 5 thùng hết trước tàu thứ 9 ở 22% số ca một người, đơn đặt trước đạt 100% (sim vòng 2).
 - Tàu rời chưa giao hoặc bỏ đi: Tally không giảm, thùng về danh mục, hết ca thùng về kho đúng số, Hạng cảng không đổi (log event).
 - Danh mục: không vượt M loại, không vượt số thùng kho làm được. Mở ca trừ kho đúng số thùng nhân 0,4 kiện. Hết ca số thùng chưa bán về kho đúng (log).
 - Bỏ ca: tàu không tới, kho không đổi, không có dòng log trừ gì, cửa khí khóa tới ngày mới.
@@ -563,7 +564,6 @@ Sau MVP:
 
 | Câu hỏi | Phương án đề xuất | Ai quyết |
 |---|---|---|
-| Số cửa neo khi 3 và 4 người (tham số người chơi nhìn thấy) | Sim GD-054 bảng 3: 3 cửa neo không có số tàu đạt mục tiêu ở 3, 4 người. Cho cửa neo theo số người thì trái câu "không nội dung nào mở khóa theo số người" của C8, nên GDM trình Lead hai phương án: (a) 4 cửa neo ở mọi số người, (b) 3 cửa neo và thùng ra quầy sau 1 giây thay 3 ở mọi số người (sim bảng 3: đạt 55 tới 75 tàu ở 3 người, 60 tới 70 ở 4 người). Cả hai cần sim lại 1 và 2 người. Mục shop cửa neo thứ 4 (KH07-C2) theo phương án Lead chọn | Lead |
 | Danh mục có sửa được giữa ca không | Không, chốt lúc Mở ca. Sửa giữa ca làm mất quyết định trước ca | GDM |
 | Ca đầu tiên khi kho không có phế liệu | Nút Mở ca xám kèm gợi ý (luật 67). Không cho Tikko mang hàng bù để không sinh hàng miễn phí | GDM, gd-ux |
 | Trần ca 300 giây thay 240 | Nâng (luật 34, mục 3). Cửa sổ đến giữ 225 giây nên người chơi thường không thấy khác, người chậm không bị đuổi tàu vì đồng hồ | GDM duyệt, sửa `so-hien-hanh.md` |
@@ -575,8 +575,8 @@ Sau MVP:
 | Phần | 1 người | 2 người | 3 người | 4 người |
 |---|---|---|---|---|
 | Sửa khoang | Một người giữ phím | Nhiều người giữ cùng khoang: tốc độ nhân (1 + 0,5 nhân số người thêm), trần 2 lần | Như 2 người, trần 2 lần | Như 2 người, trần 2 lần |
-| Số tàu chương 1 | 25 | 50 | 70 | 70 |
-| Cửa neo bến 1 | 3 | 3 | 4, chờ Lead | 4, chờ Lead |
+| Số tàu chương 1 | 25 | 55 | 55 | 60 |
+| Cửa neo bến 1 | 3 | 3 | 3 | 3 |
 | Danh mục | Một danh mục | Một danh mục chung, ai ở khoang liên lạc cũng sửa, người Mở ca chốt | Như 2 người | Như 2 người |
 | Mang thùng | 1 thùng | Mỗi người 1 thùng | Như 2 người | Như 2 người |
 | Bơm khí | Một người | Một người mỗi cửa neo một lúc | Như 2 người | Như 2 người |
@@ -616,7 +616,7 @@ Không có luật nào cần đúng N người: một người phục vụ đư�
 | Nuôi cần cho ăn | Có, không cho ăn thì không ra sản phẩm, không chết | Một quyết định nhỏ mỗi ngày, đúng K16 và K17 | Không cần cho ăn | Rẻ |
 | Số ô nuôi | 4, 6, 9 | Giữ khung Dave 4 lên 9 đã chứng minh | 6 lên 12 | Rẻ |
 | Sự cố hết khi hết ca | Có | Hậu quả chỉ trong ca, không có hư hại lâu dài, đúng K17 | Khoang hỏng lại sau sự cố | Rẻ |
-| Co-op: tăng gì theo N | Số tàu 25, 50, 70, 70, giãn cách co lại. Kiên nhẫn không đổi. Cửa neo ở 3, 4 người chờ Lead | C8 đợt 9, sim GD-054 | Tăng số món mỗi tàu | Vừa |
+| Co-op: tăng gì theo N | Số tàu 25, 55, 55, 60, giãn cách co lại. Cửa neo, kiên nhẫn không đổi | C8 đợt 9. sim GD-054 vòng 2 mục 4: 3 cửa neo đạt ở mọi số người khi có bơm khí lúc cập. Không mở nội dung theo số người | Thêm cửa neo theo số người | Vừa |
 | Hàng Driftlife sống ở chương 1 | Lồng sống bán được trong danh mục chương 1. Từ ngày có Súng lưới, ngày chẵn đơn đặt trước là lồng sống | Log 49: MVP phải thử được bắt sống đáng hơn hạ. Đơn đặt trước kéo người chơi đi bắt sống mà không ép mỗi ca | Ép mỗi ca có tàu gọi lồng | Rẻ |
 | TA06 gọi bằng gợi ý | Thùng không tự ra quầy, người chơi chọn ở quầy theo gợi ý. Bảng tàu ghi rõ | Thùng tự ra theo màu thì gợi ý vô nghĩa. Giữ cam kết bảng tàu không nói dối | Thùng tự ra như tàu khác | Rẻ |
 | Bán vật kể chuyện | Không bán vật gốc. Tàu mua bản sao dữ liệu (HC09) | gd-items ghi vật kể chuyện không bán, và bán vật gốc làm mất manh mối. Vẫn giữ mốc truyện bán hàng cho kẻ thù | Bán vật gốc | Rẻ |
@@ -638,7 +638,7 @@ Không có luật nào cần đúng N người: một người phục vụ đư�
 
 | Luật khung | Vấn đề | Lý do và bằng chứng | Phương án thay |
 |---|---|---|---|
-| C8 "số tàu trong ca cảng tăng theo số người" và "không nội dung nào mở khóa theo số người" (đợt 9) | Với 3 cửa neo, nhóm 3 và 4 người không đạt rảnh 30% ở bất kỳ số tàu nào. Thêm cửa neo theo số người thì trái câu sau của C8 | Sim GD-054 bảng 2 và 3: 3 người rảnh thấp nhất 31%, 4 người 38%, tàu xong dừng ở khoảng 55 dù lịch có 70 | GDM trình Lead (mục 10): (a) 4 cửa neo mọi số người, (b) 3 cửa neo và thùng ra quầy sau 1 giây |
+| C8 "số tàu trong ca cảng tăng theo số người" và "không nội dung nào mở khóa theo số người" (đợt 9) | Sim vòng đầu: 3 cửa neo không đạt ở 3 và 4 người, thêm cửa neo theo số người thì trái C8 | Sim GD-054 vòng 2: có bơm khí lúc cập thì 3 cửa neo đạt ở mọi số người | Đã xử: GDM chốt 3 cửa neo cho mọi số người, không đổi C8 |
 | C10, K23 "host thoát thì về đầu ngày" | Host rớt giữa ca làm cả nhóm mất hai chuyến và việc trạm của ngày | GDM đã xử, log dòng 65: K23 tự lưu ở ba điểm | Đã áp ở mục biên và mục 6 |
 | K19 sink "đóng kiện bán" | Từ đợt 9 người chơi không đóng kiện, Thông dịch viên đóng thùng lúc Mở ca | Chữ cũ, không sai luật | GDM sửa thành "bán ở ca cảng" khi rảnh |
 | Khung mục 4 pha 1 "chăm khoang nuôi" và khung mục 12 MVP không có khoang sinh quyển | Không trái, chỉ ghi để QA không bắt nhầm: pha 1 ở MVP không có việc chăm nuôi | K16 mở nuôi ở chương 2, MVP là chương 1 | Không cần đổi |
@@ -687,3 +687,4 @@ Không có luật nào cần đúng N người: một người phục vụ đư�
 | 2026-11-20 | Đợt 9 GD-051: viết lại ca cảng theo khung bán sushi của Dave. Luật 18 tới 36 mới (danh mục bán, thùng 0,4 kiện, 3 cửa neo, gọi 1 thùng, quầy cảng, kiên nhẫn, bơm khí, tip). Luật 40 điểm cảng theo tàu phục vụ xong, không nhân N, ngưỡng chờ gd-economy. Luật 43 tới 46 sự cố ở cửa neo và quầy. Luật 53 tới 58 thành chế trước và lập danh mục. Luật 67 tới 73 ca đầu 5 tàu để dạy, lịch theo danh mục, đơn đặt trước. Bảng 2.4 theo kiên nhẫn, hàng hay gọi, luật riêng. Bỏ đơn nhiều dòng, đơn đủ, đơn trượt, thưởng đủ đơn, thưởng nhanh, máy đóng kiện, kệ kiện, cỡ kiện và tốc độ mang, quy mô đơn, cấu hình lịch sim GD-030 | Lead chốt (DECISIONS mục "Ca cảng theo khung Dave"), số từ demo bot 2026-11-20 | gd-quan |
 | 2026-11-20 | Đợt 9 GD-051 vòng 2: số tàu 25, 50, 70, 70 theo số người và cửa neo 3 và 4 người chờ Lead theo sim GD-054. Bơm khí bật lúc cập 50%. Trần ca 300 giây, cửa sổ đến 225 giây. Ca đầu 2 tàu theo gd-ux. Thùng đã nhặt không đặt xuống (GDM chốt). Bảng 2.4 thêm cột hệ số tip và món mê khớp ShipTypeData | Tin GDM sau GD-053, GD-054 | gd-quan |
 | 2026-11-20 | Đợt 9 GD-051 vòng 3: nhận ngưỡng Hạng 70 tới 910 và độ gọi theo bậc giá của gd-economy GD-055. Tikko đồ Trái Đất hệ số 6. Tàu vội chỉ gọi băng, khoáng (cải thiện GDM duyệt). Luật 58 ghi rõ Hàng chế 1,35 là giá. KH07-C2 chờ Lead | Tin GDM sau GD-055 | gd-quan |
+| 2026-11-20 | Đợt 9 GD-051 vòng 4: 3 cửa neo cho mọi số người, KH07-C2 là cửa neo thứ 4 qua nâng cấp. Số tàu 25, 55, 55, 60. Tip tối đa 25%. Chép kết quả sim GD-054 vòng 2 vào mục 6 và mục 8. Bỏ câu hỏi cửa neo ở mục 10 | GDM chốt sau sim GD-054 vòng 2 | gd-quan |

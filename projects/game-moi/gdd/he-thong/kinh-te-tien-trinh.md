@@ -16,12 +16,12 @@ Mọi bảng số giữa dấu `<!--khoi:...-->` và mọi số giữa dấu `<!
 | Đồng tiền | Tally duy nhất, chỉ đến từ ca cảng (K18) | MVP |
 | Đơn vị bán | Thùng. 1 kiện = 2,5 thùng, lồng sinh vật sống là một đơn vị không chia (Lead chốt, D0) | MVP |
 | Giá thùng | GTĐ một thùng nhân 10 nhân hệ số bậc giá. 5 bậc: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75 (mục 3.1) | MVP |
-| Tip | Tip tối đa 30% giá thùng nhân phần kiên nhẫn còn lại. Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 Tally (Lead chốt, K13). Sim đo tip chiếm <!--v:tip-tb-->25%<!--/v--> Tally (tệ <!--v:tip-te-->22%<!--/v-->, tốt <!--v:tip-tot-->26%<!--/v-->) | MVP |
-| Điểm cảng | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn trên 2/3 kiên nhẫn (Lead chốt). Một ca một người trung bình <!--v:diem-ca-1-->44<!--/v--> điểm | MVP |
+| Tip | Tip tối đa 25% giá thùng nhân phần kiên nhẫn còn lại. Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 Tally (Lead chốt K13 ở 30%, GDM hạ 25% ở đợt 9 vòng 2). Sim đo tip chiếm <!--v:tip-tb-->26%<!--/v--> Tally (tệ <!--v:tip-te-->21%<!--/v-->, tốt <!--v:tip-tot-->30%<!--/v-->) | MVP |
+| Điểm cảng | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn trên 2/3 kiên nhẫn (Lead chốt). Một ca một người trung bình <!--v:diem-ca-1-->46<!--/v--> điểm | MVP |
 | Ngưỡng Hạng cảng 2 tới 8 | <!--v:nguong-hien-hanh-->70, 135, 285, 400, 560, 680, 910<!--/v--> (mục 3.5, gd-quan đã nhận (luật 41)) | MVP hạng 2, 3 |
 | Giá Tally của nâng cấp, ENG, Shop | Ngân sách chương chia theo tỉ lệ. Ngân sách chương bằng β nhân ngày mục tiêu nhân thu nhập tham chiếu một ngày, hệ số ngân sách β bằng <!--v:beta-->0,54<!--/v--> | MVP |
-| Thời lượng đo được, trung bình, một người | Chương 1 <!--v:gio-ch1-tb-->1,89<!--/v--> giờ, cả game <!--v:gio-game-tb-->13,8<!--/v--> giờ (mục tiêu 1,5 đến 2 và 12 đến 15) | MVP |
-| Co-op | Số tàu một ca 25, 50, 70, 70 cho 1 tới 4 người (sim ca cảng gd-tech, C8). k(N) bằng 1 cộng a nhân (N trừ 1), a bằng <!--v:kc-->0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa<!--/v--> (gd-world). Nhóm 4 tới hết game bằng <!--v:coop4-game-->72%<!--/v--> thời gian một mình, trong mục tiêu 60 đến 75% (GDM, log 69) | MVP 2 người |
+| Thời lượng đo được, trung bình, một người | Chương 1 <!--v:gio-ch1-tb-->1,89<!--/v--> giờ, cả game <!--v:gio-game-tb-->13,9<!--/v--> giờ (mục tiêu 1,5 đến 2 và 12 đến 15) | MVP |
+| Co-op | Số tàu một ca 25, 55, 55, 60 cho 1 tới 4 người, 3 cửa neo (luật gd-quan, sim ca cảng gd-tech, C8). k(N) bằng 1 cộng a nhân (N trừ 1), a bằng <!--v:kc-->0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa<!--/v--> (gd-world). Nhóm 4 tới hết game bằng <!--v:coop4-game-->73%<!--/v--> thời gian một mình, trong mục tiêu 60 đến 75% (GDM, log 69) | MVP 2 người |
 | Túi và bình | Túi 80, 100, 126, 168, 216 Khối, bình 330, 450, 600, 780, 1000 (GDM chốt, log 54). Phút và GTĐ một chuyến đọc từ sim chuyến gd-tech (mục 8.5) | MVP bậc 0 và 1 |
 
 ## 1. Mục đích với người chơi
@@ -29,7 +29,7 @@ Mọi bảng số giữa dấu `<!--khoi:...-->` và mọi số giữa dấu `<!
 - Người chơi cảm thấy: mỗi ca cảng là ngày lương, mỗi nâng cấp mua về làm chuyến sau khác đi thấy rõ (túi to hơn, Oxy dài hơn, vào được dải mới). Tally không bao giờ thành số vô nghĩa trước chương 5.
 - Quyết định chính: đem hàng trong kho đi sửa trạm hay lập danh mục bán (P2). Lập danh mục nào: hàng chợ rẻ mà tàu nào cũng gọi, hay hàng chuẩn bị trước (bắt sống, chế nước, đồ Trái Đất) đắt mà ít. Mua nâng cấp nào trước.
 - Pillar: P2 (mọi thứ mang về có hai chỗ tiêu nhìn thấy được: trạm và cảng, giá theo bậc làm hai chỗ tiêu kéo ngược nhau), P1 (giữ 1 món khi ngạt là mất thật, đo ở mục 8), P3 (một mình vẫn xong game trong 12 đến 15 giờ, có bạn thì nhanh hơn mà không ai nghèo).
-- 30 giây đầu của ca cảng đầu tiên: thùng phế liệu đầu tiên lên tàu, số Tally nhảy lên <!--v:gia-thung-phe-->42<!--/v--> cộng tip. Lồng Driftmoth bắt sống ở chuyến sáng lên tàu được 65. Cuối ngày đó người chơi mở Xưởng thấy T-TUI bậc 1 giá <!--v:gia-tui1-->1350<!--/v--> Tally cộng 24,2 GTĐ vật liệu, biết phải để dành Tally qua vài ca cảng.
+- 30 giây đầu của ca cảng đầu tiên: thùng phế liệu đầu tiên lên tàu, số Tally nhảy lên <!--v:gia-thung-phe-->42<!--/v--> cộng tip. Lồng Driftmoth bắt sống ở chuyến sáng lên tàu được 65. Cuối ngày đó người chơi mở Xưởng thấy T-TUI bậc 1 giá <!--v:gia-tui1-->1450<!--/v--> Tally cộng 24,2 GTĐ vật liệu, biết phải để dành Tally qua vài ca cảng.
 
 ## 2. Luật
 
@@ -39,7 +39,7 @@ Mọi bảng số giữa dấu `<!--khoi:...-->` và mọi số giữa dấu `<!
 3. Đơn vị bán là thùng: 1 kiện = 2,5 thùng (D0). Giá một kiện bằng giá một thùng nhân 2,5. Lồng sinh vật sống không chia, giá theo loài bên trong. `MVP`
 4. Giá một thùng bằng GTĐ một thùng (GTĐ kiện của gd-items chia 2,5, `vat-pham.md` mục 2.6b) nhân 10 Tally mỗi GTĐ nhân hệ số bậc giá của kiện (mục 3.1), làm tròn tới số chẵn để giá kiện là số nguyên. Giá lồng bằng GTĐ mẫu sống nhân 10 nhân hệ số Hàng sống, làm tròn 5. Không nhân theo Hạng cảng, không nhân theo số người. `MVP`
 5. Bậc giá gắn với độ gọi: hàng rẻ thì độ gọi cao, hàng đắt thì độ gọi thấp. Khi tàu chọn món trong danh mục, trọng số của món là độ gọi nhân độ ưa của loại tàu (gd-quan giữ độ ưa). `MVP`
-6. Tip một tàu bằng giá thùng nhân 30% nhân phần kiên nhẫn còn lại lúc giao. Tàu vội nhân 2. Tikko (Loose Bolt) nhận đồ Trái Đất nhân 2. Bơm khí xong cộng 10 Tally. Tàu hết kiên nhẫn rời đi thì không trả gì, thùng về kho (luật ca của gd-quan). `MVP`
+6. Tip một tàu bằng giá thùng nhân 25% nhân phần kiên nhẫn còn lại lúc giao. Tàu vội nhân 2. Tikko (Loose Bolt) nhận đồ Trái Đất nhân 2. Bơm khí xong cộng 10 Tally. Tàu hết kiên nhẫn rời đi thì không trả gì, thùng về kho (luật ca của gd-quan). `MVP`
 7. Đơn đặt trước trả giá thùng nhân 1,5 (gd-quan giữ luật đơn đặt trước, file này giữ hệ số). `MVP`
 
 ### 2.2 Shop là bảng giá duy nhất (K20)
@@ -47,7 +47,7 @@ Mọi bảng số giữa dấu `<!--khoi:...-->` và mọi số giữa dấu `<!
 9. Giá Tally của mọi thứ mua mở ở chương c lấy từ ngân sách chương: Ngân sách(c) = β x Ngày mục tiêu(c) x Thu nhập tham chiếu một ngày(c). Giá một thứ = Ngân sách(c) x Tỉ lệ của loại / Tổng tỉ lệ các thứ mở ở chương c. Công thức đủ ở mục 3.3. `MVP`
 10. Nâng cấp bộ đồ (5 trục của `nguoi-choi.md` mục 2.6) và nâng cấp dụng cụ tốn hai phần: vật liệu đúng bằng cột Σ GTĐ vào của bảng UPG trong `vat-pham.md` và Tally theo luật 9. Chương mở lấy từ cột Mở bằng của bảng UPG. UPG-RACK-1 không tốn Tally vì là thưởng quest Kỹ sư đi kèm Dùi xung. Làm ở Xưởng, xong qua đêm (`vat-pham.md` luật C2). `MVP` bậc 1
 11. Linh kiện động cơ ENG-101 tới ENG-104 chỉ mua ở Shop. ENG-10c mở khi Hạng cảng đạt hạng trần của chương c: ENG-101 hạng 3, ENG-102 hạng 5, ENG-103 hạng 7, ENG-104 hạng 8. ENG-105 không bán (`vat-pham.md` luật E1). `MVP` ENG-101
-12. Shop bán thêm: cảng cấp 2 KH07-C2 (Hạng 2, đề xuất là cửa neo thứ 4, gd-quan chốt nội dung), bản thiết kế BPR-103 (Hạng 4), BPR-106 (Hạng 6), BPR-105 (chương 3, cũng có ở hòm Station Flint). Danh mục mở theo Hạng cảng và chương (K20). Shop không bán tài nguyên, kiện, vật tiêu hao. `MVP` cảng cấp 2
+12. Shop bán thêm: cảng cấp 2 KH07-C2 (cửa neo thứ 4 của bến 1, Hạng 4, chương 2, không theo số người), bản thiết kế BPR-103 (Hạng 4), BPR-106 (Hạng 6), BPR-105 (chương 3, cũng có ở hòm Station Flint). Danh mục mở theo Hạng cảng và chương (K20). Shop không bán tài nguyên, kiện, vật tiêu hao. `Sau MVP` cảng cấp 2
 13. Giá không đổi theo số người (C8). Giá không giảm và không tăng theo thời gian. `MVP`
 
 ### 2.3 Tiến trình và mở khóa
@@ -153,33 +153,33 @@ Kiểu danh mục có khác nhau thật không. Đo bằng mô hình ca của gd
 <!--khoi:danh-muc-->
 | Số người | Kiểu danh mục | Thùng bày (lồng tính 1) | Tàu xong / không tới | Tally một ca | So với Chuẩn bị kỹ | Tip trong Tally | Đơn đặt trước đạt | Tally mỗi tàu | Tally mỗi GTĐ đã bán |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | Hàng chợ, không chuẩn bị | Kiện phế liệu 9, Kiện cáp 8, Kiện quặng 8 | 25,0 / 0,0 | 1305 | -30% | 22% | 0% | 52 | 9,7 |
-| 2 | Hàng chợ, không chuẩn bị | Kiện phế liệu 18, Kiện cáp 16, Kiện quặng 16 | 49,8 / 0,0 | 2594 | -29% | 22% | 0% | 52 | 9,7 |
-| 3 | Hàng chợ, không chuẩn bị | Kiện phế liệu 25, Kiện cáp 22, Kiện quặng 22 | 69,0 / 1,0 | 3609 | -29% | 22% | 0% | 52 | 9,7 |
-| 4 | Hàng chợ, không chuẩn bị | Kiện phế liệu 25, Kiện cáp 22, Kiện quặng 22 | 69,0 / 1,0 | 3611 | -29% | 22% | 0% | 52 | 9,7 |
-| 1 | Như demo, thêm đồ Trái Đất | Kiện phế liệu 10, Kiện cáp 8, Kiện quặng 8, Kiện đồ Trái Đất 5 | 25,0 / 0,0 | 1642 | -12% | 26% | 100% | 66 | 12,3 |
-| 2 | Như demo, thêm đồ Trái Đất | Kiện phế liệu 20, Kiện cáp 16, Kiện quặng 16, Kiện đồ Trái Đất 10 | 49,8 / 0,0 | 3202 | -12% | 26% | 100% | 64 | 12,1 |
-| 3 | Như demo, thêm đồ Trái Đất | Kiện phế liệu 28, Kiện cáp 22, Kiện quặng 22, Kiện đồ Trái Đất 14 | 69,7 / 0,0 | 4454 | -13% | 26% | 100% | 64 | 12,0 |
-| 4 | Như demo, thêm đồ Trái Đất | Kiện phế liệu 28, Kiện cáp 22, Kiện quặng 22, Kiện đồ Trái Đất 14 | 69,7 / 0,0 | 4482 | -12% | 26% | 100% | 64 | 12,0 |
-| 1 | Chuẩn bị kỹ | Lồng sinh vật sống Gần 5, Kiện đồ Trái Đất 3, Kiện nước tinh khiết 5, Kiện phế liệu 12 | 25,0 / 0,0 | 1872 | +0% | 25% | 100% | 75 | 14,3 |
-| 2 | Chuẩn bị kỹ | Lồng sinh vật sống Gần 10, Kiện đồ Trái Đất 6, Kiện nước tinh khiết 10, Kiện phế liệu 24 | 49,8 / 0,0 | 3660 | +0% | 24% | 100% | 74 | 14,0 |
-| 3 | Chuẩn bị kỹ | Lồng sinh vật sống Gần 14, Kiện đồ Trái Đất 8, Kiện nước tinh khiết 14, Kiện phế liệu 34 | 69,7 / 0,0 | 5094 | +0% | 24% | 100% | 73 | 13,9 |
-| 4 | Chuẩn bị kỹ | Lồng sinh vật sống Gần 14, Kiện đồ Trái Đất 8, Kiện nước tinh khiết 14, Kiện phế liệu 34 | 69,7 / 0,0 | 5107 | +0% | 24% | 100% | 73 | 14,0 |
-| 1 | Ít mà đắt | Lồng sinh vật sống Gần 5, Kiện đồ Trái Đất 3, Kiện nước tinh khiết 5, Kiện đặc sản Gần 2 | 15,0 / 10,0 | 1432 | -24% | 25% | 100% | 95 | 19,2 |
-| 2 | Ít mà đắt | Lồng sinh vật sống Gần 10, Kiện đồ Trái Đất 6, Kiện nước tinh khiết 10, Kiện đặc sản Gần 4 | 30,0 / 20,0 | 2805 | -23% | 25% | 100% | 93 | 18,8 |
-| 3 | Ít mà đắt | Lồng sinh vật sống Gần 14, Kiện đồ Trái Đất 8, Kiện nước tinh khiết 14, Kiện đặc sản Gần 6 | 42,0 / 28,0 | 3911 | -23% | 25% | 100% | 93 | 18,8 |
-| 4 | Ít mà đắt | Lồng sinh vật sống Gần 14, Kiện đồ Trái Đất 8, Kiện nước tinh khiết 14, Kiện đặc sản Gần 6 | 42,0 / 28,0 | 3911 | -23% | 25% | 100% | 93 | 18,8 |
-| 1 | Chuẩn bị kỹ nhưng bày thừa hàng chợ | Lồng sinh vật sống Gần 5, Kiện đồ Trái Đất 3, Kiện nước tinh khiết 5, Kiện phế liệu 30 | 25,0 / 0,0 | 1781 | -5% | 25% | 100% | 71 | 13,2 |
-| 2 | Chuẩn bị kỹ nhưng bày thừa hàng chợ | Lồng sinh vật sống Gần 10, Kiện đồ Trái Đất 6, Kiện nước tinh khiết 10, Kiện phế liệu 60 | 49,8 / 0,0 | 3497 | -4% | 24% | 100% | 70 | 13,0 |
-| 3 | Chuẩn bị kỹ nhưng bày thừa hàng chợ | Lồng sinh vật sống Gần 14, Kiện đồ Trái Đất 8, Kiện nước tinh khiết 14, Kiện phế liệu 84 | 69,7 / 0,0 | 4873 | -4% | 24% | 100% | 70 | 13,0 |
-| 4 | Chuẩn bị kỹ nhưng bày thừa hàng chợ | Lồng sinh vật sống Gần 14, Kiện đồ Trái Đất 8, Kiện nước tinh khiết 14, Kiện phế liệu 84 | 69,7 / 0,0 | 4886 | -4% | 24% | 100% | 70 | 13,0 |
-| 1 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 5, Kiện nước tinh khiết 5, Kiện đặc sản Gần 3, Kiện phế liệu 12 | 25,0 / 0,0 | 1781 | -5% | 22% | 0% | 71 | 13,5 |
-| 2 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 10, Kiện nước tinh khiết 10, Kiện đặc sản Gần 6, Kiện phế liệu 24 | 49,8 / 0,0 | 3539 | -3% | 22% | 0% | 71 | 13,5 |
-| 3 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 14, Kiện nước tinh khiết 14, Kiện đặc sản Gần 8, Kiện phế liệu 34 | 69,6 / 0,0 | 4950 | -3% | 22% | 0% | 71 | 13,5 |
-| 4 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 14, Kiện nước tinh khiết 14, Kiện đặc sản Gần 8, Kiện phế liệu 34 | 69,8 / 0,0 | 4966 | -3% | 22% | 0% | 71 | 13,5 |
+| 1 | Hàng chợ, không chuẩn bị | Kiện phế liệu 9, Kiện cáp 8, Kiện quặng 8 | 22,9 / 2,1 | 1203 | -28% | 23% | 0% | 53 | 9,8 |
+| 2 | Hàng chợ, không chuẩn bị | Kiện phế liệu 20, Kiện cáp 18, Kiện quặng 18 | 50,2 / 4,7 | 2659 | -27% | 23% | 0% | 53 | 9,8 |
+| 3 | Hàng chợ, không chuẩn bị | Kiện phế liệu 20, Kiện cáp 18, Kiện quặng 18 | 50,3 / 4,7 | 2782 | -25% | 27% | 0% | 55 | 10,3 |
+| 4 | Hàng chợ, không chuẩn bị | Kiện phế liệu 22, Kiện cáp 19, Kiện quặng 19 | 54,0 / 5,5 | 2988 | -26% | 26% | 0% | 55 | 10,2 |
+| 1 | Như demo, thêm đồ Trái Đất | Kiện phế liệu 10, Kiện cáp 8, Kiện quặng 8, Kiện đồ Trái Đất 5 | 23,6 / 1,4 | 1589 | -5% | 26% | 100% | 67 | 12,6 |
+| 2 | Như demo, thêm đồ Trái Đất | Kiện phế liệu 22, Kiện cáp 18, Kiện quặng 18, Kiện đồ Trái Đất 11 | 52,1 / 2,8 | 3454 | -5% | 26% | 100% | 66 | 12,4 |
+| 3 | Như demo, thêm đồ Trái Đất | Kiện phế liệu 22, Kiện cáp 18, Kiện quặng 18, Kiện đồ Trái Đất 11 | 52,1 / 2,9 | 3592 | -4% | 29% | 100% | 69 | 12,9 |
+| 4 | Như demo, thêm đồ Trái Đất | Kiện phế liệu 24, Kiện cáp 19, Kiện quặng 19, Kiện đồ Trái Đất 12 | 55,6 / 3,5 | 3841 | -4% | 29% | 100% | 69 | 13,0 |
+| 1 | Chuẩn bị kỹ | Lồng sinh vật sống Gần 5, Kiện đồ Trái Đất 3, Kiện nước tinh khiết 5, Kiện phế liệu 12 | 22,1 / 2,9 | 1666 | +0% | 24% | 100% | 76 | 14,4 |
+| 2 | Chuẩn bị kỹ | Lồng sinh vật sống Gần 11, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 11, Kiện phế liệu 26 | 48,6 / 6,4 | 3629 | +0% | 25% | 100% | 75 | 14,3 |
+| 3 | Chuẩn bị kỹ | Lồng sinh vật sống Gần 11, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 11, Kiện phế liệu 26 | 48,3 / 6,7 | 3732 | +0% | 27% | 100% | 77 | 14,8 |
+| 4 | Chuẩn bị kỹ | Lồng sinh vật sống Gần 12, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 12, Kiện phế liệu 29 | 52,5 / 7,3 | 4021 | +0% | 27% | 100% | 77 | 14,6 |
+| 1 | Ít mà đắt | Lồng sinh vật sống Gần 5, Kiện đồ Trái Đất 3, Kiện nước tinh khiết 5, Kiện đặc sản Gần 2 | 15,0 / 10,0 | 1414 | -15% | 24% | 100% | 94 | 19,0 |
+| 2 | Ít mà đắt | Lồng sinh vật sống Gần 11, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 11, Kiện đặc sản Gần 4 | 33,0 / 22,0 | 3059 | -16% | 25% | 100% | 93 | 18,7 |
+| 3 | Ít mà đắt | Lồng sinh vật sống Gần 11, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 11, Kiện đặc sản Gần 4 | 33,0 / 22,0 | 3137 | -16% | 26% | 100% | 95 | 19,2 |
+| 4 | Ít mà đắt | Lồng sinh vật sống Gần 12, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 12, Kiện đặc sản Gần 5 | 36,0 / 24,0 | 3412 | -15% | 26% | 100% | 95 | 19,1 |
+| 1 | Chuẩn bị kỹ nhưng bày thừa hàng chợ | Lồng sinh vật sống Gần 5, Kiện đồ Trái Đất 3, Kiện nước tinh khiết 5, Kiện phế liệu 30 | 22,1 / 2,9 | 1658 | -1% | 24% | 100% | 75 | 13,9 |
+| 2 | Chuẩn bị kỹ nhưng bày thừa hàng chợ | Lồng sinh vật sống Gần 11, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 11, Kiện phế liệu 66 | 48,6 / 6,4 | 3621 | +0% | 25% | 100% | 75 | 13,8 |
+| 3 | Chuẩn bị kỹ nhưng bày thừa hàng chợ | Lồng sinh vật sống Gần 11, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 11, Kiện phế liệu 66 | 48,3 / 6,7 | 3728 | +0% | 27% | 100% | 77 | 14,3 |
+| 4 | Chuẩn bị kỹ nhưng bày thừa hàng chợ | Lồng sinh vật sống Gần 12, Kiện đồ Trái Đất 7, Kiện nước tinh khiết 12, Kiện phế liệu 72 | 52,5 / 7,3 | 4016 | +0% | 27% | 100% | 76 | 14,2 |
+| 1 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 5, Kiện nước tinh khiết 5, Kiện đặc sản Gần 3, Kiện phế liệu 12 | 21,9 / 3,1 | 1551 | -7% | 22% | 0% | 71 | 13,4 |
+| 2 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 11, Kiện nước tinh khiết 11, Kiện đặc sản Gần 7, Kiện phế liệu 26 | 48,0 / 7,0 | 3437 | -5% | 22% | 0% | 72 | 13,6 |
+| 3 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 11, Kiện nước tinh khiết 11, Kiện đặc sản Gần 7, Kiện phế liệu 26 | 47,7 / 7,3 | 3522 | -6% | 25% | 0% | 74 | 14,0 |
+| 4 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 12, Kiện nước tinh khiết 12, Kiện đặc sản Gần 7, Kiện phế liệu 29 | 52,1 / 7,8 | 3834 | -5% | 25% | 0% | 74 | 13,9 |
 <!--/khoi-->
 
-- Kết quả, một người: bày hàng chợ không chuẩn bị kém Chuẩn bị kỹ <!--v:dm-cho-->-30%<!--/v--> Tally một ca. Ít mà đắt kém <!--v:dm-it-->-24%<!--/v--> vì 10 tàu không tới, nhưng Tally mỗi GTĐ gấp đôi hàng chợ, nghĩa là giữ được hàng chợ để xây. Bày thừa hàng chợ cạnh hàng chuẩn bị kém <!--v:dm-thua-->-5%<!--/v--> vì tàu gọi hàng chợ trước, hàng đắt ở lại kho. Bỏ đồ Trái Đất (trượt đơn đặt trước, mất tip gấp đôi của Tikko) kém <!--v:dm-bo-td-->-5%<!--/v-->. Tip ở mọi kiểu nằm trong <!--v:dm-tip-->22% đến 26%<!--/v-->, trong mục tiêu 20 đến 30%.
+- Kết quả, một người: bày hàng chợ không chuẩn bị kém Chuẩn bị kỹ <!--v:dm-cho-->-28%<!--/v--> Tally một ca. Ít mà đắt kém <!--v:dm-it-->-15%<!--/v--> vì 10 tàu không tới, nhưng Tally mỗi GTĐ gấp đôi hàng chợ, nghĩa là giữ được hàng chợ để xây. Bày thừa hàng chợ cạnh hàng chuẩn bị kém <!--v:dm-thua-->-1%<!--/v--> vì tàu gọi hàng chợ trước, hàng đắt ở lại kho. Bỏ đồ Trái Đất (trượt đơn đặt trước, mất tip gấp đôi của Tikko) kém <!--v:dm-bo-td-->-7%<!--/v-->. Tip ở mọi kiểu nằm trong <!--v:dm-tip-->22% đến 29%<!--/v-->, trong mục tiêu 20 đến 30%.
 - Trước đợt 9 (giá thùng sát nhau 48 tới 56), sim ca cảng GD-054 đo chênh tối đa 13%, giữ hàng cho đơn đặt trước dưới 2,5%. Thế cân bây giờ là: chuẩn bị trước ca (bắt sống, chế nước, giữ đồ Trái Đất) thêm khoảng 30% Tally một ca, hoặc bán ít mà đắt để giữ hàng chợ cho trạm.
 - Cách gd-tech đo lại khi nối khối giaThung vào `sim-ca-cang.mjs`: chạy mục 5 của sim ca cảng với 6 kiểu danh mục ở tham-so.json khóa do_danh_muc, so cột Tally và Tip với bảng trên, lệch quá 3% thì báo gd-economy.
 
@@ -190,37 +190,37 @@ Kiểu danh mục có khác nhau thật không. Đo bằng mô hình ca của gd
 <!--khoi:gia-mua-->
 | Chương mở | ID | Tên | Trục bộ đồ (nguoi-choi.md) | Mở bằng hoặc nơi | Vật liệu (GTĐ, gd-items) | Giá Tally | Nhãn |
 |---|---|---|---|---|---|---|---|
-| 1 | KH07-C2 | Cảng cấp 2 (đề xuất: cửa neo thứ 4, gd-quan chốt) | Nâng cấp cảng | Shop | - | 540 | MVP |
-| 1 | UPG-THR-1 | - | T-DAY bộ đẩy bậc 1 | Kỹ sư (chương 1) | 26,2 | 940 | MVP |
+| 1 | UPG-THR-1 | - | T-DAY bộ đẩy bậc 1 | Kỹ sư (chương 1) | 26,2 | 1000 | MVP |
 | 1 | UPG-RACK-1 | - | T-DUNGCU số ô dụng cụ bậc 1 | Quest Kỹ sư (chương 1), đi kèm Dùi xung | 23,1 | 0 (quest Kỹ sư) | MVP |
-| 1 | UPG-HAR-2 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | Kỹ sư (chương 1) | 27,0 | 400 | MVP |
-| 1 | UPG-MIN-2 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | Kỹ sư (chương 1) | 24,4 | 400 | MVP |
-| 1 | ENG-101 | Linh kiện động cơ | - | Shop, cần Hạng cảng 3 | - | 2700 | MVP |
-| 1 | UPG-OXY-1 | - | T-OXY dung lượng Oxy bậc 1 | Kỹ sư (chương 1) | 26,0 | 1350 | MVP |
-| 1 | UPG-BAG-1 | - | T-TUI sức chứa túi bậc 1 | Kỹ sư (chương 1) | 24,2 | 1350 | MVP |
-| 2 | BPR-103 | Bản thiết kế Máy quét xung | Bản thiết kế ở Shop | Shop | - | 3100 | Sau MVP |
-| 2 | UPG-THR-2 | - | T-DAY bộ đẩy bậc 2 | Chương 2 | 43,4 | 3600 | Sau MVP |
-| 2 | UPG-RACK-2 | - | T-DUNGCU số ô dụng cụ bậc 2 | Chương 2 | 37,4 | 4150 | Sau MVP |
-| 2 | UPG-HAR-3 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | Chương 2 | 43,4 | 1550 | Sau MVP |
-| 2 | UPG-MIN-3 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | Chương 2 | 44,3 | 1550 | Sau MVP |
-| 2 | UPG-NET-2 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | BPR-101 | 25,7 | 1550 | Sau MVP |
-| 2 | ENG-102 | Linh kiện động cơ | - | Shop, cần Hạng cảng 5 | - | 10300 | Sau MVP |
-| 2 | KH05-C2 | Xưởng cấp 2 | Nâng cấp khoang | Xưởng | - | 4150 | Sau MVP |
-| 2 | UPG-OXY-2 | - | T-OXY dung lượng Oxy bậc 2 | Chương 2 | 49,4 | 5150 | Sau MVP |
-| 2 | UPG-BAG-2 | - | T-TUI sức chứa túi bậc 2 | Chương 2 | 40,6 | 5150 | Sau MVP |
-| 2 | UPG-ENV-1 | - | T-VO cấp môi trường bậc 1 | Chương 2 (dải Giữa) | 48,1 | 6200 | Sau MVP |
-| 3 | BPR-105 | Bản thiết kế Máy cắt thân tàu (cũng có ở hòm Station Flint) | Bản thiết kế ở Shop | Shop | - | 10850 | Sau MVP |
-| 3 | BPR-106 | Bản thiết kế tiện ích cảng | Bản thiết kế ở Shop | Shop | - | 10850 | Sau MVP |
-| 3 | UPG-THR-3 | - | T-DAY bộ đẩy bậc 3 | Chương 3 | 75,4 | 12650 | Sau MVP |
-| 3 | ENG-103 | Linh kiện động cơ | - | Shop, cần Hạng cảng 7 | - | 36200 | Sau MVP |
-| 3 | UPG-OXY-3 | - | T-OXY dung lượng Oxy bậc 3 | Chương 3 | 74,4 | 18100 | Sau MVP |
-| 3 | UPG-BAG-3 | - | T-TUI sức chứa túi bậc 3 | Chương 3 | 79,4 | 18100 | Sau MVP |
-| 3 | UPG-ENV-2 | - | T-VO cấp môi trường bậc 2 | Chương 3 (dải Xa) | 90,6 | 21700 | Sau MVP |
-| 4 | ENG-104 | Linh kiện động cơ | - | Shop, cần Hạng cảng 8 | - | 45200 | Sau MVP |
-| 4 | KHxx-C3 | Cấp 3 các khoang (KHxx-C3 từng khoang, giá ở đây là tổng, gd-quan chốt danh sách khoang) | Nâng cấp khoang | Xưởng | - | 18100 | Sau MVP |
-| 4 | UPG-OXY-4 | - | T-OXY dung lượng Oxy bậc 4 | Chương 4 đến 5 | 133,2 | 22600 | Sau MVP |
-| 4 | UPG-BAG-4 | - | T-TUI sức chứa túi bậc 4 | Chương 4 đến 5 | 121,2 | 22600 | Sau MVP |
-| 4 | UPG-ENV-3 | - | T-VO cấp môi trường bậc 3 | Chương 4 (Cradle) | 126,6 | 27150 | Sau MVP |
+| 1 | UPG-HAR-2 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | Kỹ sư (chương 1) | 27,0 | 440 | MVP |
+| 1 | UPG-MIN-2 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | Kỹ sư (chương 1) | 24,4 | 440 | MVP |
+| 1 | ENG-101 | Linh kiện động cơ | - | Shop, cần Hạng cảng 3 | - | 2900 | MVP |
+| 1 | UPG-OXY-1 | - | T-OXY dung lượng Oxy bậc 1 | Kỹ sư (chương 1) | 26,0 | 1450 | MVP |
+| 1 | UPG-BAG-1 | - | T-TUI sức chứa túi bậc 1 | Kỹ sư (chương 1) | 24,2 | 1450 | MVP |
+| 2 | BPR-103 | Bản thiết kế Máy quét xung | Bản thiết kế ở Shop | Shop | - | 3000 | Sau MVP |
+| 2 | KH07-C2 | Cảng cấp 2 (cửa neo thứ 4 của bến 1, Hạng 4) | Nâng cấp cảng | Shop | - | 2000 | Sau MVP |
+| 2 | UPG-THR-2 | - | T-DAY bộ đẩy bậc 2 | Chương 2 | 43,4 | 3500 | Sau MVP |
+| 2 | UPG-RACK-2 | - | T-DUNGCU số ô dụng cụ bậc 2 | Chương 2 | 37,4 | 4000 | Sau MVP |
+| 2 | UPG-HAR-3 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | Chương 2 | 43,4 | 1500 | Sau MVP |
+| 2 | UPG-MIN-3 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | Chương 2 | 44,3 | 1500 | Sau MVP |
+| 2 | UPG-NET-2 | - | Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET) | BPR-101 | 25,7 | 1500 | Sau MVP |
+| 2 | ENG-102 | Linh kiện động cơ | - | Shop, cần Hạng cảng 5 | - | 10050 | Sau MVP |
+| 2 | KH05-C2 | Xưởng cấp 2 | Nâng cấp khoang | Xưởng | - | 4000 | Sau MVP |
+| 2 | UPG-OXY-2 | - | T-OXY dung lượng Oxy bậc 2 | Chương 2 | 49,4 | 5000 | Sau MVP |
+| 2 | UPG-BAG-2 | - | T-TUI sức chứa túi bậc 2 | Chương 2 | 40,6 | 5000 | Sau MVP |
+| 2 | UPG-ENV-1 | - | T-VO cấp môi trường bậc 1 | Chương 2 (dải Giữa) | 48,1 | 6000 | Sau MVP |
+| 3 | BPR-105 | Bản thiết kế Máy cắt thân tàu (cũng có ở hòm Station Flint) | Bản thiết kế ở Shop | Shop | - | 11000 | Sau MVP |
+| 3 | BPR-106 | Bản thiết kế tiện ích cảng | Bản thiết kế ở Shop | Shop | - | 11000 | Sau MVP |
+| 3 | UPG-THR-3 | - | T-DAY bộ đẩy bậc 3 | Chương 3 | 75,4 | 12850 | Sau MVP |
+| 3 | ENG-103 | Linh kiện động cơ | - | Shop, cần Hạng cảng 7 | - | 36700 | Sau MVP |
+| 3 | UPG-OXY-3 | - | T-OXY dung lượng Oxy bậc 3 | Chương 3 | 74,4 | 18350 | Sau MVP |
+| 3 | UPG-BAG-3 | - | T-TUI sức chứa túi bậc 3 | Chương 3 | 79,4 | 18350 | Sau MVP |
+| 3 | UPG-ENV-2 | - | T-VO cấp môi trường bậc 2 | Chương 3 (dải Xa) | 90,6 | 22050 | Sau MVP |
+| 4 | ENG-104 | Linh kiện động cơ | - | Shop, cần Hạng cảng 8 | - | 45850 | Sau MVP |
+| 4 | KHxx-C3 | Cấp 3 các khoang (KHxx-C3 từng khoang, giá ở đây là tổng, gd-quan chốt danh sách khoang) | Nâng cấp khoang | Xưởng | - | 18350 | Sau MVP |
+| 4 | UPG-OXY-4 | - | T-OXY dung lượng Oxy bậc 4 | Chương 4 đến 5 | 133,2 | 22950 | Sau MVP |
+| 4 | UPG-BAG-4 | - | T-TUI sức chứa túi bậc 4 | Chương 4 đến 5 | 121,2 | 22950 | Sau MVP |
+| 4 | UPG-ENV-3 | - | T-VO cấp môi trường bậc 3 | Chương 4 (Cradle) | 126,6 | 27500 | Sau MVP |
 <!--/khoi-->
 
 Nâng cấp nào mở khả năng mới, nâng cấp nào chỉ là số:
@@ -229,7 +229,7 @@ Nâng cấp nào mở khả năng mới, nâng cấp nào chỉ là số:
 |---|---|---|
 | T-VO cấp môi trường | Mở khả năng | Vào dải Giữa, Xa, Cradle mà không hao Oxy gấp 2,5 hoặc 4 (K6). Không chặn chương, thiếu thì làm việc còn khoảng 27% |
 | T-DUNGCU số ô dụng cụ | Mở khả năng | Thêm một kiểu chơi mang theo cùng lúc (khai thác, hạ, bắt) |
-| Cảng cấp 2 | Mở khả năng (đề xuất) | Cửa neo thứ 4: nhóm 3 và 4 người cần 4 cửa neo để rảnh không quá 30% (sim ca cảng mục 3). gd-quan chốt |
+| Cảng cấp 2 | Mở khả năng | Cửa neo thứ 4 của bến 1, Hạng 4, chương 2 (gd-quan). Luật hiện hành 3 cửa neo đã đạt mục tiêu rảnh ở mọi số người (sim ca cảng mục 4), nên cửa thứ 4 là tiện, không bắt buộc |
 | T-OXY, T-TUI | Chỉ là số | Chuyến dài hơn, mang về nhiều hơn. Đây là đòn bẩy thu nhập chính |
 | T-DAY bộ đẩy | Chỉ là số | Chuyến gọn hơn, tăng nhỏ để không đổi cảm giác tay (`nguoi-choi.md`) |
 | Dụng cụ khai thác bậc 2, 3 | Chỉ là số, có cổng mềm | Khai thác điểm cứng hơn không bị chậm gấp 4 (`vat-pham.md` luật S3) |
@@ -239,29 +239,29 @@ Nâng cấp nào mở khả năng mới, nâng cấp nào chỉ là số:
 | Tên | Khởi điểm | Khoảng an toàn | Tăng thì | Giảm thì | Nhóm tác động | Nguồn |
 |---|---|---|---|---|---|---|
 | Tally mỗi GTĐ | 10 | cố định | Mọi giá Tally phình theo | | Đơn vị | gd-economy tự quyết |
-| Hệ số ngân sách β | 0,54 | 0,49 đến 0,59 (cả game <!--v:beta-lo-->12,7<!--/v--> đến <!--v:beta-hi-->14,6<!--/v--> giờ) | Chương dài hơn | Chương ngắn hơn, Tally dư | Thời lượng mọi chương | Sim, dò bằng `--do` |
+| Hệ số ngân sách β | 0,54 | 0,49 đến 0,59 (cả game <!--v:beta-lo-->12,8<!--/v--> đến <!--v:beta-hi-->14,8<!--/v--> giờ) | Chương dài hơn | Chương ngắn hơn, Tally dư | Thời lượng mọi chương | Sim, dò bằng `--do` |
 | Giờ dùng tính ngân sách từng chương | 1,25, 2,75, 3,5, 3,0, 1,5 | Tổng 12 đến 15 | | | Ngân sách từng chương | Không phải giờ đo. Giờ đo và lệch ở bảng ngay dưới công thức |
 | Tỉ lệ giá trong ngân sách chương | ENG 1,0, T-VO 0,6, T-OXY 0,5, T-TUI 0,5, T-DUNGCU 0,4, khoang cấp 0,4, T-DAY 0,35, bản thiết kế 0,3, cảng cấp 2 0,2, mỗi nâng cấp dụng cụ 0,15 | | Thứ đó đắt hơn trong chương | | Thứ tự mua | gd-economy tự quyết |
 | Hệ số bậc giá | Chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5 | Sống 1,1 đến 1,4 (giữ K9 trong 1,2 đến 2 lần hạ), chợ 0,7 đến 0,85 | Bậc đó đắt hơn, danh mục nghiêng về nó | Danh mục bỏ bậc đó | Lập danh mục, chỉ số giá | gd-economy, đợt 9 |
 | Độ gọi | Chợ 3, sinh học 2, chế 1,5, sống 1, hiếm 1 | 1 đến 4 | Hàng đó bán trước khi bày thừa | | Thế cân bày thừa | gd-economy, đợt 9. gd-quan giữ độ ưa của loại tàu |
-| Tip tối đa | 30% giá thùng | Lead chốt | Tip lớn hơn phần Tally | | Ca cảng | Lead chốt (K13) |
+| Tip tối đa | 25% giá thùng | 20 đến 30% (tip kể cả bơm khí trong 20 đến 30% Tally ca) | Tip lớn hơn phần Tally | | Ca cảng | Lead chốt 30% (K13), GDM hạ 25% |
 | Hệ số co-op k(N), phần thêm mỗi người | 0,30 ở Gần, 0,25 ở Giữa, 0,38 ở Xa | | Co-op nhanh, mỗi người giàu | Co-op chậm | Co-op | gd-world giữ, sim xác nhận |
 
 Công thức:
-- Ngày mục tiêu(c) = Giờ mục tiêu(c) x 60 / Phút một ngày tham chiếu(c). Phút một ngày tham chiếu(c) = 2 x Phút một chuyến đo được của chương (mục 8.5) + phút ca cảng + 3 phút chuẩn bị và cuối ngày. Phút ca cảng lấy từ sim ca cảng gd-tech (một người, trễ 2 giây): <!--v:phut-ca-->3,85, 3,85, 3,85, 3,85, 3,85<!--/v--> phút. Sim ca cảng mới chỉ có chương 1, chương 2 tới 5 dùng cùng số.
+- Ngày mục tiêu(c) = Giờ mục tiêu(c) x 60 / Phút một ngày tham chiếu(c). Phút một ngày tham chiếu(c) = 2 x Phút một chuyến đo được của chương (mục 8.5) + phút ca cảng + 3 phút chuẩn bị và cuối ngày. Phút ca cảng lấy từ sim ca cảng gd-tech (một người, trễ 2 giây): <!--v:phut-ca-->3,83, 3,83, 3,83, 3,83, 3,83<!--/v--> phút. Sim ca cảng mới chỉ có chương 1, chương 2 tới 5 dùng cùng số.
 - Thu nhập tham chiếu một ngày(c) = 2 chuyến x (GTĐ một chuyến đo được của chương chia 0,9) x 10 x chỉ số giá kịch bản trung bình x 1 / (1 trừ phần tip). Chia 0,9 vì sim chuyến đo ở mức túi đầy 90% của kịch bản trung bình. Chia (1 trừ phần tip) vì tip là phần của Tally ca, không phải phần cộng thêm trên giá.
 - Tally một ca trong sim = thùng bán x GTĐ một thùng x 10 x chỉ số giá của kịch bản / (1 trừ phần tip của kịch bản và số người). Thùng bán = số nhỏ hơn giữa tàu phục vụ xong (sim ca cảng) và thùng còn trong kho sau khi giữ phần để xây.
 - Mật độ GTĐ mỗi Khối lấy trung bình bảng NODE của gd-items: <!--v:mat-do-->Gần 1,16, Giữa 3,09, Xa 7,78<!--/v-->. Chương 4 và 5 dùng mật độ dải Xa, khớp sim chuyến của gd-tech (mục 8.5).
-- Ví dụ chương 1: Phút một ngày = 2 x <!--v:vd-chuyen-->4,4<!--/v--> + <!--v:vd-ca-->3,9<!--/v--> + 3 = <!--v:vd-phut-->15,7<!--/v-->. Ngày mục tiêu = 1,25 x 60 chia Phút một ngày = <!--v:vd-ngay-->4,8<!--/v-->. Thu nhập tham chiếu = 2 x (<!--v:vd-gtd-->102,1<!--/v--> chia 0,9) x 10 x <!--v:chi-so-tb-->0,97<!--/v--> chia (1 trừ <!--v:tip-tb-->25%<!--/v-->) = <!--v:vd-thu-->2950<!--/v-->. Ngân sách = β x Ngày mục tiêu x Thu nhập tham chiếu = <!--v:vd-ngan-sach-->7650<!--/v--> Tally.
+- Ví dụ chương 1: Phút một ngày = 2 x <!--v:vd-chuyen-->4,4<!--/v--> + <!--v:vd-ca-->3,8<!--/v--> + 3 = <!--v:vd-phut-->15,6<!--/v-->. Ngày mục tiêu = 1,25 x 60 chia Phút một ngày = <!--v:vd-ngay-->4,8<!--/v-->. Thu nhập tham chiếu = 2 x (<!--v:vd-gtd-->102,1<!--/v--> chia 0,9) x 10 x <!--v:chi-so-tb-->0,97<!--/v--> chia (1 trừ <!--v:tip-tb-->26%<!--/v-->) = <!--v:vd-thu-->3000<!--/v-->. Ngân sách = β x Ngày mục tiêu x Thu nhập tham chiếu = <!--v:vd-ngan-sach-->7750<!--/v--> Tally.
 
 <!--khoi:ngan-sach-->
 | Chương | Giờ dùng tính ngân sách | Phút một ngày tham chiếu | Ngày mục tiêu | Thu nhập tham chiếu một ngày (Tally) | Ngân sách Tally của chương |
 |---|---|---|---|---|---|
-| 1 | 1,25 | 15,7 | 4,8 | 2950 | 7650 |
-| 2 | 2,75 | 17,6 | 9,3 | 9200 | 46450 |
-| 3 | 3,50 | 19,9 | 10,6 | 22500 | 128500 |
-| 4 | 3,00 | 23,2 | 7,7 | 32450 | 135650 |
-| 5 | 1,50 | 27,7 | 3,3 | 43100 | không có thứ mua mới |
+| 1 | 1,25 | 15,6 | 4,8 | 3000 | 7750 |
+| 2 | 2,75 | 17,6 | 9,4 | 9350 | 47100 |
+| 3 | 3,50 | 19,8 | 10,6 | 22800 | 130350 |
+| 4 | 3,00 | 23,2 | 7,7 | 32900 | 137600 |
+| 5 | 1,50 | 27,6 | 3,3 | 43700 | không có thứ mua mới |
 <!--/khoi-->
 
 Giờ dùng tính ngân sách so với giờ đo:
@@ -270,10 +270,10 @@ Giờ dùng tính ngân sách so với giờ đo:
 | Chương | Giờ dùng tính ngân sách | Giờ đo (trung bình, một người) | Lệch |
 |---|---|---|---|
 | 1 | 1,25 | 1,89 | +51% |
-| 2 | 2,75 | 3,46 | +26% |
-| 3 | 3,50 | 3,97 | +13% |
-| 4 | 3,00 | 3,09 | +3% |
-| 5 | 1,50 | 1,36 | -9% |
+| 2 | 2,75 | 3,55 | +29% |
+| 3 | 3,50 | 3,99 | +14% |
+| 4 | 3,00 | 3,12 | +4% |
+| 5 | 1,50 | 1,37 | -9% |
 <!--/khoi-->
 
 Núm gap: β (một núm cho cả 5 chương). Mọi giá Tally đi theo thu nhập của chương nên khi gd-items hoặc gd-character đổi mật độ, túi, Oxy thì giá tự đổi theo, chạy lại sim là xong. Giá thùng và hệ số bậc không đổi thời lượng nhiều vì ngân sách chương đọc chỉ số giá, chúng đổi cách người chơi lập danh mục.
@@ -295,19 +295,19 @@ Núm gap: β (một núm cho cả 5 chương). Mọi giá Tally đi theo thu nh�
 
 ### 3.5 Ngưỡng Hạng cảng (gd-quan đã nhận, luật 41)
 
-- Cách tính (đợt 9): điểm mới gấp 7 tới 8 lần mỗi ca so với điểm theo đơn cũ, nên ngưỡng cũ (10, 20, 45, 70, 100, 135, 195) không còn chặn ENG. Ngưỡng mới đặt để ngày đủ điểm trung bình (một người, kịch bản trung bình, chưa tính trần chương) bằng ngày đủ điểm của sim bản trước đợt 9, tức giữ nguyên nhịp mở theo chương cũ. Hàm `nguong_theo_ngay_cu()` của sim dò từng ngưỡng theo bước 5 điểm, lặp tới khi đứng yên. Sim in lại đề xuất mỗi lần chạy: <!--v:nguong-de-xuat-->70, 135, 285, 400, 560, 680, 910<!--/v-->. Đổi ngưỡng thì gd-quan đổi ở `tram-va-cang.md` rồi gd-economy sửa tham-so.json.
+- Cách tính (đợt 9): điểm mới gấp 7 tới 8 lần mỗi ca so với điểm theo đơn cũ, nên ngưỡng cũ (10, 20, 45, 70, 100, 135, 195) không còn chặn ENG. Ngưỡng mới đặt để ngày đủ điểm trung bình (một người, kịch bản trung bình, chưa tính trần chương) bằng ngày đủ điểm của sim bản trước đợt 9, tức giữ nguyên nhịp mở theo chương cũ. Hàm `nguong_theo_ngay_cu()` của sim dò từng ngưỡng theo bước 5 điểm, lặp tới khi đứng yên. Sim in lại đề xuất mỗi lần chạy: <!--v:nguong-de-xuat-->85, 140, 300, 415, 585, 715, 960<!--/v-->. Đổi ngưỡng thì gd-quan đổi ở `tram-va-cang.md` rồi gd-economy sửa tham-so.json.
 - Hạng 2 cần 2 ca (một ca một người tới 50 điểm). Hạng 6 và 8 lên ở ngày mở chương vì trần chương, như bản cũ.
 
 <!--khoi:nguong-hang-->
 | Hạng | Trần ở chương | Ngưỡng điểm (sim dùng số này) | Ngày đủ điểm, bản trước đợt 9 | Ngày đủ điểm, đo lại | Ngày lên hạng (có trần chương) |
 |---|---|---|---|---|---|
 | 2 | 1 | 70 | 5,0 | 5,0 | 5,0 |
-| 3 | 1 | 135 | 7,0 | 7,0 | 7,0 |
-| 4 | 2 | 285 | 12,5 | 12,4 | 12,4 |
-| 5 | 2 | 400 | 16,1 | 16,0 | 16,0 |
-| 6 | 3 | 560 | 20,1 | 19,8 | 21,5 |
-| 7 | 3 | 680 | 24,3 | 24,0 | 24,0 |
-| 8 | 4 | 910 | 30,5 | 30,3 | 34,0 |
+| 3 | 1 | 135 | 7,0 | 6,0 | 6,0 |
+| 4 | 2 | 285 | 12,5 | 11,9 | 11,9 |
+| 5 | 2 | 400 | 16,1 | 15,8 | 15,8 |
+| 6 | 3 | 560 | 20,1 | 19,6 | 22,0 |
+| 7 | 3 | 680 | 24,3 | 23,2 | 23,2 |
+| 8 | 4 | 910 | 30,5 | 29,6 | 34,5 |
 <!--/khoi-->
 
 ## 4. Trường hợp biên
@@ -329,7 +329,7 @@ Núm gap: β (một núm cho cả 5 chương). Mọi giá Tally đi theo thu nh�
 
 ## 5. Ràng buộc vật lý của luật
 
-- Tally tối đa một ca bằng số tàu nhân giá thùng đắt nhất trong danh mục nhân 1,6 (tip tối đa 30%, gấp đôi là 60%), cộng phần 0,5 thêm của đơn đặt trước, cộng 10 Tally mỗi lần bơm khí. K22 cho một ca mỗi ngày nên ngân sách chương luôn đo được bằng số ngày.
+- Tally tối đa một ca bằng số tàu nhân giá thùng đắt nhất trong danh mục nhân 1,5 (tip tối đa 25%, gấp đôi là 50%), cộng phần 0,5 thêm của đơn đặt trước, cộng 10 Tally mỗi lần bơm khí. K22 cho một ca mỗi ngày nên ngân sách chương luôn đo được bằng số ngày.
 - Không có vòng tiền vô hạn: nuôi có trần ô (4, 6, 9) và lãi ròng 2,2 / 5,0 / 9,5 GTĐ mỗi ô mỗi ngày, khoảng 3 đến 4% thu nhập. Shop không bán tài nguyên, kiện, vật tiêu hao nên không có mua rẻ bán đắt. Chế rồi bán có biên lợi (hàng chế 1,35) nhưng nguyên liệu gốc chỉ đến từ chuyến ngoài, bị chặn bởi Oxy và túi, còn số thùng một ca bị chặn bởi số tàu. Giá không đổi theo số người và thời gian.
 - Thời gian một chương có sàn không phụ thuộc giá: chuyến map nhánh, đêm chờ người vớt, sửa khoang, Hạng cảng. Sim đo sàn chương 1 khi giá Tally gần 0 là <!--v:san-ch1-goc-->1,6<!--/v--> giờ. Chương 5 gần như chỉ có sàn (bảng 8.1).
 - Co-op không thể nhanh hơn sàn: chương 5 của nhóm 4 dài gần bằng chơi một mình (bảng 8.1).
@@ -349,8 +349,8 @@ Núm gap: β (một núm cho cả 5 chương). Mọi giá Tally đi theo thu nh�
 | Ví Tally, giá, Hạng cảng | Chung | Chung | Chung | Chung |
 | Hệ số khe điểm sinh k(N) (gd-world), Gần, Giữa, Xa | 1,00, 1,00, 1,00 | 1,30, 1,25, 1,38 | 1,60, 1,50, 1,76 | 1,90, 1,75, 2,14 |
 | Mỗi người so với chơi một mình, sim chuyến gd-tech, chương 1 tới 5 | 100%, 100%, 100%, 100%, 100% | 85%, 92%, 95%, 92%, 85% | 73%, 85%, 91%, 87%, 75% | 66%, 80%, 89%, 83%, 69% |
-| Số tàu một ca và cửa neo (sim ca cảng gd-tech, C8) | 25 tàu, 3 cửa neo | 50 tàu, 3 cửa neo | 70 tàu, 4 cửa neo | 70 tàu, 4 cửa neo |
-| Điểm cảng một ca, kịch bản trung bình, kho đủ | 44 | 88 | 126 | 128 |
+| Số tàu một ca và cửa neo (sim ca cảng gd-tech, C8) | 25 tàu, 3 cửa neo | 55 tàu, 3 cửa neo | 55 tàu, 3 cửa neo | 60 tàu, 3 cửa neo |
+| Điểm cảng một ca, kịch bản trung bình, kho đủ | 46 | 102 | 105 | 111 |
 | Giá nâng cấp, sửa khoang | Không đổi | Không đổi | Không đổi | Không đổi |
 <!--/khoi-->
 
@@ -359,18 +359,18 @@ Không luật nào cần đúng N người. Bảng đo:
 <!--khoi:coop-->
 | Kịch bản | Số người | Mỗi người nhặt so với một mình | Tới hết chương 1 (cộng dồn) | Tới hết chương 2 (cộng dồn) | Tới hết chương 3 (cộng dồn) | Tới hết chương 4 (cộng dồn) | Hết game |
 |---|---|---|---|---|---|---|---|
-| tệ | 2 | 90% | 72% | 57% | 56% | 56% | 59% |
-| tệ | 3 | 82% | 75% | 46% | 48% | 45% | 49% |
-| tệ | 4 | 77% | 79% | 48% | 50% | 48% | 53% |
-| trung bình | 2 | 90% | 91% | 60% | 63% | 60% | 65% |
-| trung bình | 3 | 82% | 95% | 63% | 67% | 64% | 68% |
-| trung bình | 4 | 77% | 100% | 66% | 71% | 67% | 72% |
-| tốt | 2 | 90% | 105% | 72% | 78% | 75% | 79% |
-| tốt | 3 | 82% | 111% | 75% | 81% | 79% | 83% |
-| tốt | 4 | 77% | 115% | 79% | 86% | 83% | 87% |
+| tệ | 2 | 90% | 71% | 55% | 54% | 54% | 57% |
+| tệ | 3 | 82% | 75% | 46% | 47% | 45% | 49% |
+| tệ | 4 | 77% | 78% | 48% | 50% | 47% | 52% |
+| trung bình | 2 | 90% | 92% | 59% | 63% | 60% | 64% |
+| trung bình | 3 | 82% | 96% | 62% | 67% | 64% | 69% |
+| trung bình | 4 | 77% | 101% | 66% | 71% | 68% | 73% |
+| tốt | 2 | 90% | 106% | 74% | 79% | 77% | 81% |
+| tốt | 3 | 82% | 111% | 78% | 84% | 81% | 85% |
+| tốt | 4 | 77% | 116% | 82% | 88% | 85% | 89% |
 <!--/khoi-->
 
-- Số tàu một ca tăng theo số người (C8) nên điểm cảng một ca tăng theo, không cần hệ số riêng. Mỗi người nhóm 4 nhặt <!--v:moi-nguoi-4-->66% đến 89%<!--/v--> so với một mình (sim chuyến gd-tech), từ 60% như mục tiêu. Nhóm 4 tới hết game bằng <!--v:coop4-game-->72%<!--/v--> thời gian một mình, hết chương 1 (cộng dồn) bằng <!--v:coop4-ch1-->100%<!--/v-->, hết chương 2 (cộng dồn) bằng <!--v:coop4-ch2-->66%<!--/v-->. Nguyên nhân là sàn ngày của chuỗi mốc truyện (`cot-truyen.md` mục 5): tổng <!--v:san-tong-->26<!--/v--> ngày, không đổi theo số người. Nhóm đông đi chạm sàn ở mọi chương. Phương án hạ sàn không áp: nếu áp thì sàn còn <!--v:san-ha-tong-->22<!--/v--> ngày và nhóm 4 xuống <!--v:coop4-san-ha-->62%<!--/v-->.
+- Số tàu một ca tăng theo số người (C8) nên điểm cảng một ca tăng theo, không cần hệ số riêng. Mỗi người nhóm 4 nhặt <!--v:moi-nguoi-4-->66% đến 89%<!--/v--> so với một mình (sim chuyến gd-tech), từ 60% như mục tiêu. Nhóm 4 tới hết game bằng <!--v:coop4-game-->73%<!--/v--> thời gian một mình, hết chương 1 (cộng dồn) bằng <!--v:coop4-ch1-->101%<!--/v-->, hết chương 2 (cộng dồn) bằng <!--v:coop4-ch2-->66%<!--/v-->. Nguyên nhân là sàn ngày của chuỗi mốc truyện (`cot-truyen.md` mục 5): tổng <!--v:san-tong-->26<!--/v--> ngày, không đổi theo số người. Nhóm đông đi chạm sàn ở mọi chương. Phương án hạ sàn không áp: nếu áp thì sàn còn <!--v:san-ha-tong-->22<!--/v--> ngày và nhóm 4 xuống <!--v:coop4-san-ha-->62%<!--/v-->.
 - Ở kịch bản tốt, nhóm đông xong chương 1 chậm hơn chơi một mình (trên 100% ở bảng trên): người chơi tốt một mình cũng chạm sàn ngày truyện, mà một ngày co-op dài hơn 5% mỗi người thêm (chờ người về cuối, `[GIẢ ĐỊNH]`). Cùng số ngày, ngày dài hơn thì giờ nhiều hơn.
 
 ## 7. Yêu cầu cho art, UI, tutorial, audio
@@ -401,63 +401,63 @@ Mỗi ô là ngày thứ mấy xong chương và số giờ chơi của riêng c
 <!--khoi:moc-chuong-->
 | Kịch bản | Số người | Chương 1 | Chương 2 | Chương 3 | Chương 4 | Chương 5 | Cả game (giờ) | Lượt chạy xong game |
 |---|---|---|---|---|---|---|---|---|
-| tệ | 1 | 10 ngày, 2,76 giờ | 28 ngày, 5,56 giờ | 46 ngày, 6,50 giờ | 58 ngày, 5,18 giờ | 61 ngày, 1,52 giờ | 21,5 | 100% |
-| tệ | 2 | 7 ngày, 1,98 giờ | 15 ngày, 2,78 giờ | 25 ngày, 3,56 giờ | 31 ngày, 2,83 giờ | 34 ngày, 1,60 giờ | 12,7 | 100% |
-| tệ | 3 | 7 ngày, 2,08 giờ | 12 ngày, 1,74 giờ | 20 ngày, 3,24 giờ | 24 ngày, 1,89 giờ | 27 ngày, 1,66 giờ | 10,6 | 100% |
-| tệ | 4 | 7 ngày, 2,17 giờ | 12 ngày, 1,86 giờ | 20 ngày, 3,45 giờ | 24 ngày, 2,05 giờ | 27 ngày, 1,77 giờ | 11,3 | 100% |
-| trung bình | 1 | 8 ngày, 1,89 giờ | 21 ngày, 3,46 giờ | 33 ngày, 3,97 giờ | 41 ngày, 3,09 giờ | 44 ngày, 1,36 giờ | 13,8 | 100% |
-| trung bình | 2 | 7 ngày, 1,72 giờ | 12 ngày, 1,47 giờ | 20 ngày, 2,68 giờ | 24 ngày, 1,60 giờ | 27 ngày, 1,42 giờ | 8,9 | 100% |
-| trung bình | 3 | 7 ngày, 1,81 giờ | 12 ngày, 1,56 giờ | 20 ngày, 2,87 giờ | 24 ngày, 1,70 giờ | 27 ngày, 1,48 giờ | 9,4 | 100% |
-| trung bình | 4 | 7 ngày, 1,89 giờ | 12 ngày, 1,66 giờ | 20 ngày, 3,03 giờ | 24 ngày, 1,79 giờ | 27 ngày, 1,59 giờ | 10,0 | 100% |
-| tốt | 1 | 7 ngày, 1,47 giờ | 17 ngày, 2,59 giờ | 27 ngày, 2,89 giờ | 33 ngày, 2,16 giờ | 36 ngày, 1,24 giờ | 10,3 | 100% |
-| tốt | 2 | 7 ngày, 1,55 giờ | 12 ngày, 1,37 giờ | 20 ngày, 2,48 giờ | 24 ngày, 1,47 giờ | 27 ngày, 1,31 giờ | 8,2 | 100% |
-| tốt | 3 | 7 ngày, 1,62 giờ | 12 ngày, 1,43 giờ | 20 ngày, 2,60 giờ | 24 ngày, 1,54 giờ | 27 ngày, 1,37 giờ | 8,6 | 100% |
-| tốt | 4 | 7 ngày, 1,70 giờ | 12 ngày, 1,51 giờ | 20 ngày, 2,74 giờ | 24 ngày, 1,61 giờ | 27 ngày, 1,43 giờ | 9,0 | 100% |
+| tệ | 1 | 10 ngày, 2,81 giờ | 29 ngày, 5,77 giờ | 47 ngày, 6,67 giờ | 60 ngày, 5,31 giờ | 63 ngày, 1,52 giờ | 22,1 | 100% |
+| tệ | 2 | 7 ngày, 2,00 giờ | 15 ngày, 2,72 giờ | 25 ngày, 3,54 giờ | 31 ngày, 2,76 giờ | 34 ngày, 1,58 giờ | 12,6 | 100% |
+| tệ | 3 | 7 ngày, 2,10 giờ | 12 ngày, 1,81 giờ | 20 ngày, 3,32 giờ | 24 ngày, 1,96 giờ | 27 ngày, 1,71 giờ | 10,9 | 100% |
+| tệ | 4 | 7 ngày, 2,20 giờ | 12 ngày, 1,93 giờ | 20 ngày, 3,51 giờ | 24 ngày, 2,08 giờ | 27 ngày, 1,84 giờ | 11,6 | 100% |
+| trung bình | 1 | 8 ngày, 1,89 giờ | 21 ngày, 3,55 giờ | 33 ngày, 3,99 giờ | 42 ngày, 3,12 giờ | 45 ngày, 1,37 giờ | 13,9 | 100% |
+| trung bình | 2 | 7 ngày, 1,74 giờ | 12 ngày, 1,47 giờ | 20 ngày, 2,68 giờ | 24 ngày, 1,58 giờ | 27 ngày, 1,41 giờ | 8,9 | 100% |
+| trung bình | 3 | 7 ngày, 1,81 giờ | 12 ngày, 1,59 giờ | 20 ngày, 2,90 giờ | 24 ngày, 1,72 giờ | 27 ngày, 1,53 giờ | 9,5 | 100% |
+| trung bình | 4 | 7 ngày, 1,91 giờ | 12 ngày, 1,70 giờ | 20 ngày, 3,08 giờ | 24 ngày, 1,81 giờ | 27 ngày, 1,61 giờ | 10,1 | 100% |
+| tốt | 1 | 7 ngày, 1,47 giờ | 17 ngày, 2,47 giờ | 27 ngày, 2,84 giờ | 33 ngày, 2,09 giờ | 36 ngày, 1,24 giờ | 10,1 | 100% |
+| tốt | 2 | 7 ngày, 1,55 giờ | 12 ngày, 1,36 giờ | 20 ngày, 2,47 giờ | 24 ngày, 1,47 giờ | 27 ngày, 1,31 giờ | 8,2 | 100% |
+| tốt | 3 | 7 ngày, 1,62 giờ | 12 ngày, 1,45 giờ | 20 ngày, 2,62 giờ | 24 ngày, 1,54 giờ | 27 ngày, 1,37 giờ | 8,6 | 100% |
+| tốt | 4 | 7 ngày, 1,70 giờ | 12 ngày, 1,53 giờ | 20 ngày, 2,75 giờ | 24 ngày, 1,61 giờ | 27 ngày, 1,43 giờ | 9,0 | 100% |
 <!--/khoi-->
 
 | Mục tiêu khung mục 9 | Mục tiêu | Đo (trung bình, một người trừ khi ghi) | Đạt |
 |---|---|---|---|
 | Chương 1 | 1,5 đến 2 giờ | <!--v:gio-ch1-tb-->1,89<!--/v--> giờ | Đạt |
-| Cả game | 12 đến 15 giờ | <!--v:gio-game-tb-->13,8<!--/v--> giờ | Đạt |
-| Độ dài một ngày (khung mục 9) | Chương 1: 15 đến 20 phút. Chương 5: 25 đến 30 phút | Chương 1 <!--v:phut-ngay-ch1-->15,7<!--/v--> phút, chương 5 <!--v:phut-ngay-ch5-->27,7<!--/v--> phút (2 chuyến đo được, ca cảng, 3 phút chuẩn bị) | Đạt |
-| Số ngày tới hết game | Không đặt | <!--v:ngay-game-tb-->44<!--/v--> ngày | Để tham khảo |
-| Nhóm 4 so với một mình, tới hết game | 60 đến 75% (GDM, log 69) | <!--v:coop4-game-->72%<!--/v--> | Đạt |
+| Cả game | 12 đến 15 giờ | <!--v:gio-game-tb-->13,9<!--/v--> giờ | Đạt |
+| Độ dài một ngày (khung mục 9) | Chương 1: 15 đến 20 phút. Chương 5: 25 đến 30 phút | Chương 1 <!--v:phut-ngay-ch1-->15,6<!--/v--> phút, chương 5 <!--v:phut-ngay-ch5-->27,6<!--/v--> phút (2 chuyến đo được, ca cảng, 3 phút chuẩn bị) | Đạt |
+| Số ngày tới hết game | Không đặt | <!--v:ngay-game-tb-->45<!--/v--> ngày | Để tham khảo |
+| Nhóm 4 so với một mình, tới hết game | 60 đến 75% (GDM, log 69) | <!--v:coop4-game-->73%<!--/v--> | Đạt |
 | Mỗi người nhóm 4 nhặt so với một mình | từ 60% | <!--v:moi-nguoi-4-->66% đến 89%<!--/v--> | Đạt |
-| Tip trong Tally ca cảng (khung mục 9) | 20 đến 30% | <!--v:tip-tb-->25%<!--/v--> (tệ <!--v:tip-te-->22%<!--/v-->, tốt <!--v:tip-tot-->26%<!--/v-->), mọi kiểu danh mục <!--v:dm-tip-->22% đến 26%<!--/v--> | Đạt |
+| Tip trong Tally ca cảng (khung mục 9) | 20 đến 30% | <!--v:tip-tb-->26%<!--/v--> (tệ <!--v:tip-te-->21%<!--/v-->, tốt <!--v:tip-tot-->30%<!--/v-->), mọi kiểu danh mục <!--v:dm-tip-->22% đến 29%<!--/v--> | Đạt |
 | Sống so với hạ, cỡ S và M, sau khi trừ vật tiêu hao, tính bằng Tally | 1,2 đến 2 lần (khung mục 9) | <!--v:luoi-min-->1,44<!--/v--> đến <!--v:luoi-max-->1,81<!--/v--> qua lưới, <!--v:tay-min-->1,50<!--/v--> đến <!--v:tay-max-->1,94<!--/v--> bắt tay (mục 8.4) | Đạt |
-| Kiểu danh mục khác nhau rõ (Lead "cần làm cho nó tốt hơn") | Không đặt số | Hàng chợ <!--v:dm-cho-->-30%<!--/v-->, ít mà đắt <!--v:dm-it-->-24%<!--/v--> so với Chuẩn bị kỹ (mục 3.1) | Để GDM xem |
+| Kiểu danh mục khác nhau rõ (Lead "cần làm cho nó tốt hơn") | Không đặt số | Hàng chợ <!--v:dm-cho-->-28%<!--/v-->, ít mà đắt <!--v:dm-it-->-15%<!--/v--> so với Chuẩn bị kỹ (mục 3.1) | Để GDM xem |
 
-- Kịch bản tệ một người dài <!--v:gio-game-te-->21,5<!--/v--> giờ, kịch bản tốt <!--v:gio-game-tot-->10,3<!--/v--> giờ. Tệ dài hơn bản trước (19,5 giờ) vì người không chuẩn bị chỉ bán hàng chợ, chỉ số giá 0,84. Đây là chủ ý của giá theo bậc: chuẩn bị danh mục rút ngắn game. Chương 2 trung bình dài <!--v:gio-ch2-tb-->3,5<!--/v--> giờ so với 2,75 giờ đặt ra (lệch <!--v:lech-ch2-->26%<!--/v-->) vì chương 2 có 3 chuyến map nhánh và hai người vớt. Tổng vẫn trong mục tiêu nên không chỉnh thêm, ghi ở mục 10.
+- Kịch bản tệ một người dài <!--v:gio-game-te-->22,1<!--/v--> giờ, kịch bản tốt <!--v:gio-game-tot-->10,1<!--/v--> giờ. Tệ dài hơn bản trước (19,5 giờ) vì người không chuẩn bị chỉ bán hàng chợ, chỉ số giá 0,84. Đây là chủ ý của giá theo bậc: chuẩn bị danh mục rút ngắn game. Chương 2 trung bình dài <!--v:gio-ch2-tb-->3,6<!--/v--> giờ so với 2,75 giờ đặt ra (lệch <!--v:lech-ch2-->29%<!--/v-->) vì chương 2 có 3 chuyến map nhánh và hai người vớt. Tổng vẫn trong mục tiêu nên không chỉnh thêm, ghi ở mục 10.
 
 ### 8.2 Source và sink Tally
 
 <!--khoi:source-sink-->
 | Kịch bản | Số người | Tally thu cả game | Phần tip trong thu | Chi cho ENG | Chi cho bộ đồ | Chi cho dụng cụ, khoang, Shop khác | Tally dư cuối game | Dư so với thu |
 |---|---|---|---|---|---|---|---|---|
-| tệ | 1 | 364125 | 22% | 30% | 54% | 17% | 45895 | 13% |
-| tệ | 2 | 404127 | 23% | 30% | 54% | 17% | 85897 | 21% |
-| tệ | 3 | 449778 | 24% | 30% | 54% | 17% | 131548 | 29% |
-| tệ | 4 | 553411 | 24% | 30% | 54% | 17% | 235181 | 42% |
-| trung bình | 1 | 397387 | 25% | 30% | 54% | 17% | 79157 | 20% |
-| trung bình | 2 | 483800 | 25% | 30% | 54% | 17% | 165570 | 34% |
-| trung bình | 3 | 734170 | 25% | 30% | 54% | 17% | 415940 | 57% |
-| trung bình | 4 | 809617 | 25% | 30% | 54% | 17% | 491387 | 61% |
-| tốt | 1 | 415135 | 26% | 30% | 54% | 17% | 96905 | 23% |
-| tốt | 2 | 638793 | 25% | 30% | 54% | 17% | 320563 | 50% |
-| tốt | 3 | 896666 | 25% | 30% | 54% | 17% | 578436 | 65% |
-| tốt | 4 | 913647 | 25% | 30% | 54% | 17% | 595417 | 65% |
+| tệ | 1 | 369517 | 21% | 30% | 53% | 17% | 46887 | 13% |
+| tệ | 2 | 404083 | 23% | 30% | 53% | 17% | 81453 | 20% |
+| tệ | 3 | 459510 | 29% | 30% | 53% | 17% | 136880 | 30% |
+| tệ | 4 | 525723 | 29% | 30% | 53% | 17% | 203093 | 39% |
+| trung bình | 1 | 404143 | 26% | 30% | 53% | 17% | 81513 | 20% |
+| trung bình | 2 | 496717 | 26% | 30% | 53% | 17% | 174087 | 35% |
+| trung bình | 3 | 668570 | 29% | 30% | 53% | 17% | 345940 | 52% |
+| trung bình | 4 | 721942 | 29% | 30% | 53% | 17% | 399312 | 55% |
+| tốt | 1 | 426941 | 30% | 30% | 53% | 17% | 104311 | 24% |
+| tốt | 2 | 740140 | 30% | 30% | 53% | 17% | 417510 | 56% |
+| tốt | 3 | 766409 | 30% | 30% | 53% | 17% | 443779 | 58% |
+| tốt | 4 | 844505 | 30% | 30% | 53% | 17% | 521875 | 62% |
 <!--/khoi-->
 
-- Tally không phải cổng ở chương 3 và 4 (cổng là vật liệu, Hạng và chuyến map nhánh), nên Tally trong ví có lúc lên vài ngày lương (Phụ lục). Dư cuối game phần lớn đến từ chương 5 (không có thứ mua mới, GDM chấp nhận). Nhóm 3 và 4 người dư hơn nửa thu vì 70 tàu một ca bán gấp 2,8 lần một người mà giá không đổi theo số người (C8).
+- Tally không phải cổng ở chương 3 và 4 (cổng là vật liệu, Hạng và chuyến map nhánh), nên Tally trong ví có lúc lên vài ngày lương (Phụ lục). Dư cuối game phần lớn đến từ chương 5 (không có thứ mua mới, GDM chấp nhận). Nhóm 3 và 4 người dư nhiều vì 55 và 60 tàu một ca bán hơn gấp đôi một người mà giá không đổi theo số người (C8).
 
 ### 8.3 Điểm treo log 40: giữ 1 món khi ngạt có quá đau ở chương 1
 
 <!--khoi:log40-->
 | Kịch bản | Tỉ lệ chuyến ngạt (đầu vào) | Phần nhặt mất vì ngạt, cả game | Giờ chương 1, giữ 1 món | Giờ chương 1, giữ 3 món | Chênh (phút) |
 |---|---|---|---|---|---|
-| tệ | 25% | 22,9% | 2,76 | 2,66 | 6 |
-| trung bình | 15% | 14,2% | 1,89 | 1,89 | 0 |
-| tốt | 7% | 6,8% | 1,47 | 1,47 | 0 |
+| tệ | 25% | 22,5% | 2,81 | 2,72 | 5 |
+| trung bình | 15% | 13,8% | 1,89 | 1,89 | 0 |
+| tốt | 7% | 6,3% | 1,47 | 1,47 | 0 |
 <!--/khoi-->
 
 <!--khoi:mon-giu-->
@@ -470,7 +470,7 @@ Mỗi ô là ngày thứ mấy xong chương và số giờ chơi của riêng c
 | 5 | Xa | 1681 | 18,0 | 1% |
 <!--/khoi-->
 
-- Kết luận: với túi 80 Khối, giữ 1 món là mất thật: món giữ lại chỉ bằng <!--v:giu-ch1-->5%<!--/v--> túi đầy ở chương 1 và <!--v:giu-ch5-->1%<!--/v--> ở chương 5. Nhưng ngạt hiếm, nên đổi sang giữ 3 món chỉ đổi chương 1 khoảng <!--v:chenh-tb-->0<!--/v--> phút ở kịch bản trung bình và <!--v:chenh-te-->6<!--/v--> phút ở kịch bản tệ. GDM đã chốt giữ 1 món (log 57).
+- Kết luận: với túi 80 Khối, giữ 1 món là mất thật: món giữ lại chỉ bằng <!--v:giu-ch1-->5%<!--/v--> túi đầy ở chương 1 và <!--v:giu-ch5-->1%<!--/v--> ở chương 5. Nhưng ngạt hiếm, nên đổi sang giữ 3 món chỉ đổi chương 1 khoảng <!--v:chenh-tb-->0<!--/v--> phút ở kịch bản trung bình và <!--v:chenh-te-->5<!--/v--> phút ở kịch bản tệ. GDM đã chốt giữ 1 món (log 57).
 - Lồng mẫu: trước khi sửa, lồng 3 con đắt nhất dải Gần trị <!--v:long-3-->92,1<!--/v--> GTĐ, ngang túi đầy chương 1 (<!--v:tui-ch1-->92,6<!--/v--> GTĐ), nên ngạt với lồng đầy gần như không mất gì. gd-combat đã sửa luật 25, GDM chốt ở log 57: chọn lồng làm món giữ lại thì chỉ giữ con sao cao nhất.
 
 ### 8.4 Bắt sống so với hạ, tính bằng Tally (K9)
@@ -497,55 +497,55 @@ Tally một ca chương 1 khi kho đủ (tàu xong theo sim ca cảng, giá theo
 <!--khoi:tally-ca-->
 | Kịch bản | Số người | Số tàu | Tàu xong (sim ca cảng) | Tally một ca, kho đủ | Hai chuyến đầy túi của nhóm, quy ra Tally | Mốc: phần hai chuyến bán ở một ca | Điểm cảng một ca |
 |---|---|---|---|---|---|---|---|
-| tệ | 1 | 25 | 23,6 | 1357 | 2425 | 56% | 41 |
-| tệ | 2 | 50 | 44,0 | 2562 | 4629 | 55% | 77 |
-| tệ | 3 | 70 | 61,4 | 3622 | 6181 | 59% | 108 |
-| tệ | 4 | 70 | 63,2 | 3728 | 7420 | 50% | 112 |
-| trung bình | 1 | 25 | 25,0 | 1742 | 2949 | 59% | 44 |
-| trung bình | 2 | 50 | 49,8 | 3469 | 4991 | 70% | 88 |
-| trung bình | 3 | 70 | 69,7 | 4855 | 6472 | 75% | 126 |
-| trung bình | 4 | 70 | 69,7 | 4855 | 7786 | 62% | 128 |
-| tốt | 1 | 25 | 25,0 | 1944 | 3023 | 64% | 50 |
-| tốt | 2 | 50 | 50,0 | 3835 | 4539 | 84% | 100 |
-| tốt | 3 | 70 | 69,9 | 5362 | 5933 | 90% | 140 |
-| tốt | 4 | 70 | 70,0 | 5369 | 7247 | 74% | 140 |
+| tệ | 1 | 25 | 23,7 | 1345 | 2394 | 56% | 42 |
+| tệ | 2 | 55 | 49,5 | 2882 | 4629 | 62% | 88 |
+| tệ | 3 | 55 | 50,6 | 3195 | 6617 | 48% | 93 |
+| tệ | 4 | 60 | 51,2 | 3233 | 7942 | 41% | 95 |
+| trung bình | 1 | 25 | 24,7 | 1744 | 2989 | 58% | 46 |
+| trung bình | 2 | 55 | 54,5 | 3848 | 5058 | 76% | 102 |
+| trung bình | 3 | 55 | 54,7 | 4025 | 6837 | 59% | 105 |
+| trung bình | 4 | 60 | 57,9 | 4261 | 8225 | 52% | 111 |
+| tốt | 1 | 25 | 24,8 | 2038 | 3195 | 64% | 50 |
+| tốt | 2 | 55 | 54,7 | 4495 | 4864 | 92% | 109 |
+| tốt | 3 | 55 | 54,8 | 4504 | 6357 | 71% | 110 |
+| tốt | 4 | 60 | 59,8 | 4915 | 7764 | 63% | 120 |
 <!--/khoi-->
 
-- Mốc mới, kịch bản trung bình: một người <!--v:moc-1-->59%<!--/v-->, 2 người <!--v:moc-2-->70%<!--/v-->, 3 người <!--v:moc-3-->75%<!--/v-->, 4 người <!--v:moc-4-->62%<!--/v--> giá trị hai chuyến đầy túi. Tally một ca <!--v:tally-ca-1-->1742<!--/v-->, <!--v:tally-ca-2-->3469<!--/v-->, <!--v:tally-ca-3-->4855<!--/v-->, <!--v:tally-ca-4-->4855<!--/v-->. Nhóm 2 và 3 người bán phần kho lớn hơn một mình vì vật liệu xây không nhân theo số người, nên nhóm có nhiều hàng rảnh để bán. 3 và 4 người cùng 70 tàu nên 4 người bán phần nhỏ hơn.
+- Mốc mới, kịch bản trung bình: một người <!--v:moc-1-->58%<!--/v-->, 2 người <!--v:moc-2-->76%<!--/v-->, 3 người <!--v:moc-3-->59%<!--/v-->, 4 người <!--v:moc-4-->52%<!--/v--> giá trị hai chuyến đầy túi. Tally một ca <!--v:tally-ca-1-->1744<!--/v-->, <!--v:tally-ca-2-->3848<!--/v-->, <!--v:tally-ca-3-->4025<!--/v-->, <!--v:tally-ca-4-->4261<!--/v-->. Nhóm 2 người bán phần kho lớn hơn một mình vì vật liệu xây không nhân theo số người, nên nhóm có nhiều hàng rảnh để bán. 3 và 4 người có 55 và 60 tàu nên bán phần kho nhỏ dần.
 
 Kho thùng sau hai chuyến (kịch bản theo cột, sim chuyến gd-tech) so với số tàu một ca, chưa trừ phần giữ để xây:
 
 <!--khoi:kho-thung-->
 | Chương | Kịch bản | GTĐ một thùng trung bình | 1 người: thùng sau hai chuyến / số tàu | 2 người: thùng sau hai chuyến / số tàu | 3 người: thùng sau hai chuyến / số tàu | 4 người: thùng sau hai chuyến / số tàu |
 |---|---|---|---|---|---|---|
-| 1 | tệ | 5,4 | 32 / 25 đủ | 60 / 50 đủ | 79 / 70 đủ | 94 / 70 đủ |
-| 1 | trung bình | 5,4 | 38 / 25 đủ | 64 / 50 đủ | 84 / 70 đủ | 101 / 70 đủ |
-| 1 | tốt | 5,4 | 39 / 25 đủ | 59 / 50 đủ | 77 / 70 đủ | 94 / 70 đủ |
-| 2 | trung bình | 16,5 | 39 / 25 đủ | 71 / 50 đủ | 98 / 70 đủ | 123 / 70 đủ |
-| 3 | trung bình | 41,0 | 38 / 25 đủ | 72 / 50 đủ | 104 / 70 đủ | 135 / 70 đủ |
-| 4 | trung bình | 64,4 | 35 / 25 đủ | 64 / 50 đủ | 91 / 70 đủ | 116 / 70 đủ |
-| 5 | trung bình | 77,3 | 39 / 25 đủ | 66 / 50 đủ | 87 / 70 đủ | 107 / 70 đủ |
+| 1 | tệ | 5,4 | 32 / 25 đủ | 60 / 55 đủ | 79 / 55 đủ | 94 / 60 đủ |
+| 1 | trung bình | 5,4 | 38 / 25 đủ | 64 / 55 đủ | 84 / 55 đủ | 101 / 60 đủ |
+| 1 | tốt | 5,4 | 39 / 25 đủ | 59 / 55 đủ | 77 / 55 đủ | 94 / 60 đủ |
+| 2 | trung bình | 16,5 | 39 / 25 đủ | 71 / 55 đủ | 98 / 55 đủ | 123 / 60 đủ |
+| 3 | trung bình | 41,0 | 38 / 25 đủ | 72 / 55 đủ | 104 / 55 đủ | 135 / 60 đủ |
+| 4 | trung bình | 64,4 | 35 / 25 đủ | 64 / 55 đủ | 91 / 55 đủ | 116 / 60 đủ |
+| 5 | trung bình | 77,3 | 39 / 25 đủ | 66 / 55 đủ | 87 / 55 đủ | 107 / 60 đủ |
 <!--/khoi-->
 
-- Mọi ô đủ. Một người chương 1 có <!--v:kho-ch1-1-->38<!--/v--> thùng sau hai chuyến, còn <!--v:kho-ch1-1-xay-->23<!--/v--> nếu giữ 40% để xây, dưới 25 tàu. Hàng tồn từ ngày 1 tới 3 (cảng chưa mở) bù phần thiếu: sim đo một người chương 1 bán trung bình <!--v:ban-ch1-->25,0<!--/v--> thùng mỗi ca.
+- Mọi ô đủ. Một người chương 1 có <!--v:kho-ch1-1-->38<!--/v--> thùng sau hai chuyến, còn <!--v:kho-ch1-1-xay-->23<!--/v--> nếu giữ 40% để xây, dưới 25 tàu. Hàng tồn từ ngày 1 tới 3 (cảng chưa mở) bù phần thiếu: sim đo một người chương 1 bán trung bình <!--v:ban-ch1-->24,6<!--/v--> thùng mỗi ca.
 
 Thùng bán thật mỗi ca trong sim (sau khi giữ phần để xây, kho mang sang 30% khi qua chương):
 
 <!--khoi:ban-chuong-->
 | Kịch bản | Số người | Số tàu | Chương 1: thùng bán mỗi ca (phần số tàu) | Chương 2: thùng bán mỗi ca (phần số tàu) | Chương 3: thùng bán mỗi ca (phần số tàu) | Chương 4: thùng bán mỗi ca (phần số tàu) | Chương 5: thùng bán mỗi ca (phần số tàu) |
 |---|---|---|---|---|---|---|---|
-| tệ | 1 | 25 | 20,1 (81%) | 15,6 (62%) | 16,6 (66%) | 16,4 (65%) | 15,4 (62%) |
-| tệ | 2 | 50 | 43,9 (88%) | 28,3 (57%) | 33,6 (67%) | 31,4 (63%) | 29,2 (58%) |
-| tệ | 3 | 70 | 61,4 (88%) | 41,9 (60%) | 49,3 (70%) | 43,3 (62%) | 37,4 (53%) |
-| tệ | 4 | 70 | 63,2 (90%) | 48,9 (70%) | 56,1 (80%) | 60,3 (86%) | 47,4 (68%) |
-| trung bình | 1 | 25 | 25,0 (100%) | 17,9 (72%) | 19,9 (80%) | 20,3 (81%) | 22,7 (91%) |
-| trung bình | 2 | 50 | 49,8 (100%) | 38,3 (77%) | 39,7 (79%) | 41,6 (83%) | 39,8 (80%) |
-| trung bình | 3 | 70 | 69,7 (100%) | 55,7 (80%) | 62,5 (89%) | 67,0 (96%) | 54,5 (78%) |
-| trung bình | 4 | 70 | 69,7 (100%) | 62,4 (89%) | 66,1 (94%) | 69,7 (100%) | 69,0 (99%) |
-| tốt | 1 | 25 | 25,0 (100%) | 20,3 (81%) | 22,6 (90%) | 24,1 (96%) | 24,9 (100%) |
-| tốt | 2 | 50 | 50,0 (100%) | 45,1 (90%) | 47,0 (94%) | 50,0 (100%) | 49,7 (99%) |
-| tốt | 3 | 70 | 69,9 (100%) | 63,3 (90%) | 66,3 (95%) | 69,9 (100%) | 69,8 (100%) |
-| tốt | 4 | 70 | 70,0 (100%) | 67,0 (96%) | 68,7 (98%) | 70,0 (100%) | 70,0 (100%) |
+| tệ | 1 | 25 | 19,9 (80%) | 15,3 (61%) | 16,7 (67%) | 16,4 (66%) | 15,9 (64%) |
+| tệ | 2 | 55 | 48,3 (88%) | 28,5 (52%) | 34,4 (63%) | 31,5 (57%) | 28,4 (52%) |
+| tệ | 3 | 55 | 50,6 (92%) | 39,1 (71%) | 43,6 (79%) | 44,9 (82%) | 37,8 (69%) |
+| tệ | 4 | 60 | 51,2 (85%) | 44,6 (74%) | 47,1 (78%) | 51,2 (85%) | 48,4 (81%) |
+| trung bình | 1 | 25 | 24,6 (99%) | 17,3 (69%) | 19,8 (79%) | 20,1 (80%) | 23,2 (93%) |
+| trung bình | 2 | 55 | 54,5 (99%) | 39,4 (72%) | 41,3 (75%) | 41,3 (75%) | 39,3 (71%) |
+| trung bình | 3 | 55 | 54,7 (99%) | 48,2 (88%) | 51,6 (94%) | 54,7 (99%) | 54,1 (98%) |
+| trung bình | 4 | 60 | 57,9 (96%) | 54,6 (91%) | 56,4 (94%) | 57,9 (96%) | 57,9 (96%) |
+| tốt | 1 | 25 | 24,8 (99%) | 19,9 (79%) | 22,4 (90%) | 24,2 (97%) | 24,7 (99%) |
+| tốt | 2 | 55 | 54,7 (99%) | 48,2 (88%) | 50,6 (92%) | 54,6 (99%) | 53,7 (98%) |
+| tốt | 3 | 55 | 54,8 (100%) | 52,8 (96%) | 53,7 (98%) | 54,8 (100%) | 54,8 (100%) |
+| tốt | 4 | 60 | 59,8 (100%) | 59,6 (99%) | 59,8 (100%) | 59,8 (100%) | 59,8 (100%) |
 <!--/khoi-->
 
 - Từ chương 2 một người chỉ lấp khoảng 70 tới 90% số tàu vì vật liệu sửa khoang chương mới lớn và kho mang sang chỉ còn 30%. Tàu không tới khi hết hàng (D8), không phải tàu bỏ đi, nên không trái mục tiêu tàu phục vụ xong của khung. Nếu gd-quan muốn ca chương 2 đầy hơn thì bớt tàu hoặc giảm GTĐ một thùng chương 2, không đổi giá.
@@ -591,7 +591,7 @@ Tiêu chí đo được khi có build:
 | Tally là nguồn duy nhất | Kinh tế | Mọi event `tally_nhan` có nguồn là thùng, tip, bơm khí hoặc đơn đặt trước, không nguồn khác trong 100 phiên thử | MVP |
 | Giá một thùng | Kinh tế | Giá hiển thị bằng cột Giá Tally một thùng ở bảng 3.1, giá kiện bằng thùng nhân 2,5 | MVP |
 | Giá lồng sống | Kinh tế | Giá bằng bảng Lồng theo loài nhân hệ số sao, bảng tàu hiện "từ" giá loài rẻ nhất | MVP |
-| Tip | Kinh tế | Tip bằng giá thùng x 30% x phần kiên nhẫn còn lại, Tàu vội và Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 | MVP |
+| Tip | Kinh tế | Tip bằng giá thùng x 25% x phần kiên nhẫn còn lại, Tàu vội và Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 | MVP |
 | Phần tip trong thu | Kinh tế | 20 đến 30% tổng Tally ca cảng trong cả phiên | MVP |
 | Giá nâng cấp và Shop | Kinh tế | Bằng bảng 3.2, không đổi khi số người đổi từ 1 đến 4 kể cả giữa phiên (C8) | MVP |
 | Điểm cảng | Tiến trình | Mỗi tàu xong cộng 1, cộng thêm 1 khi còn trên 2/3 kiên nhẫn, tàu rời không cộng | MVP |
@@ -601,7 +601,7 @@ Tiêu chí đo được khi có build:
 | Thời lượng cả game | Tiến trình | 12 đến 15 giờ trung bình, nhóm 4 bằng 60 đến 75% thời gian một mình tới hết game (log 69) | Sau MVP |
 | Lập danh mục có tác động | Kinh tế | Event `danh_muc_lap`: ca có từ 3 thùng hàng chế, sống hoặc hiếm cho Tally mỗi tàu cao hơn ca chỉ hàng chợ từ 20% | MVP |
 | Không mất Tally | Kinh tế | Ngạt, bị kéo về, thoát giữa chuyến không làm Tally giảm (K2) | MVP |
-| Không có vòng tiền | Kinh tế | Tally một ca không vượt số tàu x giá thùng đắt nhất trong danh mục x 1,6 cộng phần đơn đặt trước và bơm khí | MVP |
+| Không có vòng tiền | Kinh tế | Tally một ca không vượt số tàu x giá thùng đắt nhất trong danh mục x 1,5 cộng phần đơn đặt trước và bơm khí | MVP |
 
 ## 9. Lệch khỏi tham chiếu (Dave the Diver)
 
@@ -618,10 +618,9 @@ Tiêu chí đo được khi có build:
 
 | Câu hỏi | Phương án đề xuất | Ai quyết |
 |---|---|---|
-| Chương 2 dài hơn giờ đặt ra <!--v:lech-ch2-->26%<!--/v--> | Giữ, tổng game trong mục tiêu. Muốn rút thì bớt 1 chuyến map nhánh chương 2 | GDM, gd-world |
+| Chương 2 dài hơn giờ đặt ra <!--v:lech-ch2-->29%<!--/v--> | Giữ, tổng game trong mục tiêu. Muốn rút thì bớt 1 chuyến map nhánh chương 2 | GDM, gd-world |
 | Nguồn RES-401 và RES-305 mỗi ngày có đủ cho khoảng 25 thùng CGO-411, CGO-511 một ca không | gd-world và gd-combat đo số RES mỗi chuyến chương 4, 5 | gd-world, gd-combat |
-| Cảng cấp 2 KH07-C2 là gì | Đề xuất cửa neo thứ 4: sim ca cảng mục 3 cho thấy nhóm 3 và 4 người cần 4 cửa neo. Giá ở bảng 3.2 giữ tỉ lệ 0,2 | gd-quan |
-| Số tàu và phút ca chương 2 tới 5 | Sim dùng số chương 1 (25, 50, 70, 70 tàu, 3,85 phút). Cần sim ca cảng của gd-tech cho tàu chương sau | gd-quan, gd-tech |
+| Số tàu và phút ca chương 2 tới 5 | Sim dùng số chương 1 (25, 55, 55, 60 tàu). Cần sim ca cảng của gd-tech cho tàu chương sau | gd-quan, gd-tech |
 | Tally dư ở nhóm 3, 4 người (bảng 8.2) | Chấp nhận như chương 5, hoặc thêm sink tùy chọn cho nhóm đông khi Lead mở phạm vi | GDM |
 
 ## Số hiện hành đề xuất (GDM chép sang `so-hien-hanh.md`)
@@ -633,16 +632,16 @@ Tiêu chí đo được khi có build:
 | Hệ số bậc giá | Chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5 | GD-055 mục 3.1 |
 | Độ gọi | Chợ 3, sinh học 2, chế 1,5, sống 1, hiếm 1 | GD-055 mục 3.1 |
 | Giá thùng chương 1 (MVP) | Phế liệu 42, cáp 40, quặng 40, băng 42, mô sinh học 54, nước tinh khiết 64, đồ Trái Đất 76, đặc sản Gần 80. Lồng Driftmoth 65, Skitter Ray 75, Sting Krill 55 | GD-055 mục 3.1 |
-| Tip | Tip tối đa 30% giá thùng nhân phần kiên nhẫn còn lại, Tàu vội và Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 | Lead chốt (K13) |
+| Tip | Tip tối đa 25% giá thùng nhân phần kiên nhẫn còn lại, Tàu vội và Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 | Lead chốt (K13), GDM hạ 30% xuống 25% |
 | Điểm cảng | 1 mỗi tàu xong, thêm 1 nếu còn trên 2/3 kiên nhẫn | Lead chốt |
 | Ngưỡng điểm Hạng cảng 2 tới 8 | 70, 135, 285, 400, 560, 680, 910 | GD-055 mục 3.5, gd-quan đã nhận (luật 41) |
 | Hệ số ngân sách β | 0,54 | GD-055 mục 3.3 |
 | Giờ mục tiêu chương 1 tới 5 trong công thức | 1,25, 2,75, 3,5, 3,0, 1,5 | GDM chốt chương 1, log 55 |
 | Túi và bình bậc 0 tới 4 | Túi 80, 100, 126, 168, 216. Bình 330, 450, 600, 780, 1000 | GDM chốt, log 54 |
-| Tally một ca theo số người, kịch bản trung bình | <!--v:tally-ca-1-->1742<!--/v-->, <!--v:tally-ca-2-->3469<!--/v-->, <!--v:tally-ca-3-->4855<!--/v-->, <!--v:tally-ca-4-->4855<!--/v-->, bằng <!--v:moc-1-->59%<!--/v-->, <!--v:moc-2-->70%<!--/v-->, <!--v:moc-3-->75%<!--/v-->, <!--v:moc-4-->62%<!--/v--> hai chuyến đầy túi | GD-055 mục 8.4b |
+| Tally một ca theo số người, kịch bản trung bình | <!--v:tally-ca-1-->1744<!--/v-->, <!--v:tally-ca-2-->3848<!--/v-->, <!--v:tally-ca-3-->4025<!--/v-->, <!--v:tally-ca-4-->4261<!--/v-->, bằng <!--v:moc-1-->58%<!--/v-->, <!--v:moc-2-->76%<!--/v-->, <!--v:moc-3-->59%<!--/v-->, <!--v:moc-4-->52%<!--/v--> hai chuyến đầy túi | GD-055 mục 8.4b |
 | k(N) phần thêm mỗi người | 0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa | gd-world, map.md 3.8 |
 | ENG mở theo Hạng cảng | 3, 5, 7, 8 | GD-028 luật 11 |
-| Đo được (trung bình, một người) | Chương 1 <!--v:gio-ch1-tb-->1,89<!--/v--> giờ, cả game <!--v:gio-game-tb-->13,8<!--/v--> giờ. Nhóm 4 xong game bằng <!--v:coop4-game-->72%<!--/v--> thời gian một mình. Tip chiếm <!--v:tip-tb-->25%<!--/v--> Tally ca | Sim GD-055 |
+| Đo được (trung bình, một người) | Chương 1 <!--v:gio-ch1-tb-->1,89<!--/v--> giờ, cả game <!--v:gio-game-tb-->13,9<!--/v--> giờ. Nhóm 4 xong game bằng <!--v:coop4-game-->73%<!--/v--> thời gian một mình. Tip chiếm <!--v:tip-tb-->26%<!--/v--> Tally ca | Sim GD-055 |
 
 ## Balance Sheet (lịch sử đổi số, tab Balance Sheet)
 
@@ -672,10 +671,12 @@ Tiêu chí đo được khi có build:
 | Mục tiêu nhóm 4 so với một mình, hết game | khung mục 9 (GDM) | 45 đến 60% | Sàn ngày truyện 26 ngày không đổi theo số người, đo được 72% | 60 đến 75%, giữ sàn ngày truyện (GDM, log 69) | GDM |
 | Mục tiêu sống so với hạ | khung mục 9 (GDM) | 1,5 đến 2 lần | Lưới trúng 1 con của loài rẻ cho 1,28 lần | 1,2 đến 2 lần cho cỡ S và M, sau khi trừ vật tiêu hao (khung sửa lần 5) | GDM |
 | Đơn vị bán ở ca cảng và giá | kinh-te-tien-trinh.md mục 3.1 (gd-economy) | Giá kiện bằng GTĐ x 10, một thùng bằng giá kiện chia 2,5: thùng chương 1 từ 48 tới 56 Tally | Sim ca cảng GD-054: giữ hàng cho đơn đặt trước chỉ chênh dưới 2,5% Tally, lập danh mục không có thế cân | Giá thùng theo 5 bậc giá: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75 | gd-economy |
-| Thưởng theo đơn | tram-va-cang.md (gd-quan), kinh-te-tien-trinh.md | Thưởng đủ đơn 25%, thưởng nhanh 15% | Lead chốt ca cảng khung Dave 2026-11-20, bỏ đơn nhiều dòng | Tip tối đa 30% giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally | Lead |
+| Thưởng theo đơn | tram-va-cang.md (gd-quan), kinh-te-tien-trinh.md | Thưởng đủ đơn 25%, thưởng nhanh 15% | Lead chốt ca cảng khung Dave 2026-11-20, bỏ đơn nhiều dòng | Tip tối đa 30% (sau hạ 25%) giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally | Lead |
 | Điểm cảng | tram-va-cang.md (gd-quan) | 2 mỗi đơn đủ, thêm 1 khi nhanh, nhân (N cộng 1) chia 2 | Luật mới không còn đơn | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn trên 2/3 kiên nhẫn. Một ca một người tới 50 điểm, nhóm 3 và 4 người tới 140 | Lead |
 | Ngưỡng điểm Hạng cảng 2 tới 8 | tram-va-cang.md mục 3 (gd-quan) | 10, 20, 45, 70, 100, 135, 195 | Điểm mới gấp 7 tới 8 lần mỗi ca, ngưỡng cũ thì Hạng không còn chặn ENG | 70, 135, 285, 400, 560, 680, 910, giữ ngày đủ điểm của bản trước (5, 7, 13, 16, 20, 24, 31). Chờ gd-quan nhận | gd-economy |
 | Hệ số ngân sách β | GD-028 | 0,40 | Ca khung Dave bán gần đủ 25 thùng mỗi ca và có tip: giữ 0,40 thì cả game 11,0 giờ | 0,54, cả game trung bình 13,8 giờ, nhóm 4 bằng 72% thời gian một mình | gd-economy |
+| Tip tối đa | ca-cang.json (GDM) | 30% giá thùng nhân kiên nhẫn còn lại | Bơm khí bật lúc cập (luật 28): tip kể cả bơm khí vượt 30% Tally ở 3 và 4 người | 25%, tip kể cả bơm khí 26 tới 29% ở trễ 2 giây | GDM |
+| Số tàu một ca theo số người và cửa neo | tram-va-cang.md (gd-quan), sim ca cảng gd-tech | 25, 50, 70, 70 tàu, 4 cửa neo khi 3 và 4 người | Luật mới 3 cửa neo cho mọi số người (không mở nội dung theo số người) | 25, 55, 55, 60 tàu, 3 cửa neo. Kho sau hai chuyến vẫn đủ ở mọi chương | gd-quan, gd-tech |
 <!--/khoi-->
 
 ## Điểm tự quyết
@@ -727,49 +728,49 @@ Tiêu chí đo được khi có build:
 | 1 | 1 | 153 | 0,0 | 0 | 0 | 0 | 1 | 0,20 |
 | 2 | 1 | 153 | 0,0 | 0 | 0 | 0 | 1 | 0,39 |
 | 3 | 1 | 10 | 0,0 | 0 | 0 | 0 | 1 | 0,59 |
-| 4 | 1 | 107 | 25,0 | 1742 | 392 | 44 | 1 | 0,85 |
-| 5 | 1 | 107 | 19,9 | 1383 | 25 | 79 | 2 | 1,10 |
-| 6 | 1 | 255 | 25,0 | 1742 | 426 | 123 | 2 | 1,36 |
-| 7 | 1 | 255 | 25,0 | 1742 | 1628 | 167 | 3 | 1,62 |
-| 8 | 1 | 255 | 25,0 | 1742 | 669 | 211 | 3 | 1,88 |
-| 9 | 2 | 189 | 2,8 | 609 | 1279 | 216 | 3 | 2,12 |
-| 10 | 2 | 259 | 10,5 | 2264 | 443 | 234 | 3 | 2,38 |
-| 11 | 2 | 259 | 11,1 | 2381 | 1274 | 254 | 3 | 2,63 |
-| 12 | 2 | 339 | 15,1 | 3256 | 930 | 281 | 3 | 2,90 |
-| 13 | 2 | 339 | 16,8 | 3606 | 386 | 310 | 4 | 3,18 |
-| 14 | 2 | 189 | 12,2 | 2628 | 3014 | 332 | 4 | 3,44 |
-| 15 | 2 | 189 | 11,8 | 2528 | 393 | 352 | 4 | 3,70 |
-| 16 | 2 | 478 | 20,3 | 4355 | 598 | 388 | 4 | 3,98 |
-| 17 | 2 | 478 | 25,0 | 5375 | 823 | 432 | 5 | 4,27 |
-| 18 | 2 | 478 | 25,0 | 5375 | 3098 | 476 | 5 | 4,57 |
-| 19 | 2 | 259 | 20,7 | 4453 | 1351 | 512 | 5 | 4,85 |
-| 20 | 2 | 823 | 25,0 | 5375 | 6726 | 556 | 5 | 5,14 |
-| 21 | 2 | 431 | 25,0 | 5375 | 1801 | 600 | 5 | 5,44 |
-| 22 | 3 | 664 | 8,5 | 4542 | 6343 | 615 | 6 | 5,73 |
-| 23 | 3 | 664 | 13,1 | 6996 | 689 | 639 | 6 | 6,03 |
-| 24 | 3 | 867 | 16,8 | 8968 | 9657 | 668 | 6 | 6,34 |
-| 25 | 3 | 867 | 19,4 | 10345 | 1901 | 702 | 7 | 6,65 |
-| 26 | 3 | 93 | 8,0 | 4283 | 6184 | 716 | 7 | 6,94 |
-| 27 | 3 | 1191 | 20,6 | 11000 | 6334 | 753 | 7 | 7,26 |
-| 28 | 3 | 642 | 17,7 | 9406 | 4890 | 784 | 7 | 7,57 |
-| 29 | 3 | 1191 | 24,5 | 13049 | 17938 | 827 | 7 | 7,90 |
-| 30 | 3 | 642 | 19,2 | 10225 | 6464 | 861 | 7 | 8,22 |
-| 31 | 3 | 1615 | 25,0 | 13319 | 1682 | 905 | 7 | 8,55 |
-| 32 | 3 | 1113 | 25,0 | 13319 | 15001 | 949 | 7 | 8,88 |
-| 33 | 3 | 1113 | 25,0 | 13319 | 28320 | 993 | 7 | 9,21 |
-| 34 | 3 | 93 | 17,8 | 9471 | 1591 | 1024 | 7 | 9,52 |
-| 35 | 4 | 707 | 7,2 | 6053 | 7644 | 1037 | 8 | 9,87 |
-| 36 | 4 | 707 | 9,5 | 7931 | 15575 | 1053 | 8 | 10,21 |
-| 37 | 4 | 990 | 13,0 | 10892 | 3867 | 1076 | 8 | 10,57 |
-| 38 | 4 | 1312 | 16,2 | 13546 | 17413 | 1105 | 8 | 10,93 |
-| 39 | 4 | 1720 | 22,5 | 18834 | 9097 | 1144 | 8 | 11,32 |
-| 40 | 4 | 2332 | 25,0 | 20924 | 7422 | 1188 | 8 | 11,70 |
-| 41 | 4 | 1548 | 25,0 | 20924 | 10246 | 1232 | 8 | 12,09 |
-| 42 | 4 | 2975 | 25,0 | 20924 | 31170 | 1276 | 8 | 12,48 |
-| 43 | 4 | 2975 | 25,0 | 20924 | 6895 | 1320 | 8 | 12,87 |
-| 44 | 5 | 2324 | 25,0 | 25109 | 32004 | 1364 | 8 | 13,33 |
-| 45 | 5 | 2324 | 25,0 | 25109 | 57113 | 1408 | 8 | 13,79 |
-| 46 | 5 | 2324 | 25,0 | 25109 | 82222 | 1452 | 8 | 14,25 |
+| 4 | 1 | 107 | 24,7 | 1744 | 294 | 46 | 1 | 0,85 |
+| 5 | 1 | 107 | 20,0 | 1415 | 259 | 83 | 2 | 1,10 |
+| 6 | 1 | 255 | 24,7 | 1744 | 123 | 129 | 2 | 1,36 |
+| 7 | 1 | 255 | 24,7 | 1744 | 1866 | 175 | 3 | 1,62 |
+| 8 | 1 | 255 | 24,7 | 1744 | 710 | 221 | 3 | 1,88 |
+| 9 | 2 | 189 | 2,9 | 630 | 1341 | 227 | 3 | 2,12 |
+| 10 | 2 | 259 | 10,6 | 2300 | 641 | 246 | 3 | 2,38 |
+| 11 | 2 | 259 | 11,1 | 2415 | 1556 | 267 | 3 | 2,63 |
+| 12 | 2 | 339 | 15,1 | 3301 | 1357 | 295 | 4 | 2,90 |
+| 13 | 2 | 339 | 16,8 | 3656 | 12 | 326 | 4 | 3,18 |
+| 14 | 2 | 259 | 14,3 | 3119 | 1132 | 353 | 4 | 3,44 |
+| 15 | 2 | 259 | 15,1 | 3295 | 427 | 381 | 4 | 3,71 |
+| 16 | 2 | 478 | 22,0 | 4802 | 229 | 422 | 5 | 4,00 |
+| 17 | 2 | 478 | 24,7 | 5379 | 1607 | 468 | 5 | 4,29 |
+| 18 | 2 | 478 | 24,7 | 5383 | 990 | 514 | 5 | 4,59 |
+| 19 | 2 | 431 | 24,7 | 5383 | 3373 | 560 | 5 | 4,88 |
+| 20 | 2 | 823 | 24,7 | 5383 | 8755 | 606 | 5 | 5,18 |
+| 21 | 2 | 431 | 24,7 | 5383 | 4088 | 652 | 5 | 5,47 |
+| 22 | 3 | 664 | 9,2 | 4949 | 9037 | 669 | 6 | 5,76 |
+| 23 | 3 | 664 | 13,4 | 7229 | 3416 | 694 | 7 | 6,06 |
+| 24 | 3 | 867 | 16,9 | 9144 | 1561 | 726 | 7 | 6,37 |
+| 25 | 3 | 867 | 19,5 | 10507 | 1067 | 762 | 7 | 6,69 |
+| 26 | 3 | 93 | 9,1 | 4938 | 6005 | 779 | 7 | 6,98 |
+| 27 | 3 | 867 | 16,3 | 8824 | 14829 | 810 | 7 | 7,29 |
+| 28 | 3 | 480 | 13,6 | 7321 | 100 | 835 | 7 | 7,59 |
+| 29 | 3 | 1615 | 24,7 | 13337 | 13437 | 881 | 7 | 7,92 |
+| 30 | 3 | 854 | 24,7 | 13337 | 8424 | 927 | 7 | 8,25 |
+| 31 | 3 | 1615 | 24,7 | 13337 | 3411 | 973 | 7 | 8,58 |
+| 32 | 3 | 1113 | 24,7 | 13337 | 16747 | 1019 | 7 | 8,91 |
+| 33 | 3 | 1113 | 24,7 | 13337 | 30084 | 1065 | 7 | 9,24 |
+| 34 | 3 | 93 | 21,5 | 11590 | 4974 | 1105 | 7 | 9,56 |
+| 35 | 4 | 707 | 7,5 | 6374 | 11348 | 1119 | 8 | 9,91 |
+| 36 | 4 | 707 | 9,6 | 8133 | 1131 | 1137 | 8 | 10,26 |
+| 37 | 4 | 990 | 13,1 | 11078 | 12209 | 1161 | 8 | 10,61 |
+| 38 | 4 | 990 | 14,4 | 12255 | 1514 | 1188 | 8 | 10,97 |
+| 39 | 4 | 1720 | 20,6 | 17446 | 18960 | 1226 | 8 | 11,35 |
+| 40 | 4 | 1720 | 24,3 | 20575 | 12036 | 1271 | 8 | 11,74 |
+| 41 | 4 | 1227 | 20,0 | 16927 | 6013 | 1308 | 8 | 12,11 |
+| 42 | 4 | 2975 | 24,7 | 20953 | 26965 | 1354 | 8 | 12,50 |
+| 43 | 4 | 2975 | 24,7 | 20953 | 2068 | 1400 | 8 | 12,89 |
+| 44 | 5 | 2324 | 24,7 | 25143 | 27211 | 1446 | 8 | 13,35 |
+| 45 | 5 | 2324 | 24,7 | 25143 | 52354 | 1492 | 8 | 13,81 |
+| 46 | 5 | 2324 | 24,7 | 25143 | 77497 | 1538 | 8 | 14,27 |
 <!--/khoi-->
 
 ### Sức mạnh theo chương (đầu vào cho PROCESSING)
@@ -777,10 +778,10 @@ Tiêu chí đo được khi có build:
 <!--khoi:suc-manh-->
 | Chương | Dải | Oxy (bậc theo chương) | Túi (Khối) | GTĐ một chuyến (gồm Driftlife) | Quy ra Tally | Ngân sách Tally của chương | Phút ra ngoài một ngày |
 |---|---|---|---|---|---|---|---|
-| 1 | Gần | 330 | 80 | 102 | 1021 | 7650 | 8,8 |
-| 2 | Giữa | 450 | 100 | 319 | 3186 | 46450 | 10,8 |
-| 3 | Xa | 600 | 126 | 779 | 7788 | 128500 | 13,0 |
-| 4 | Xa | 780 | 168 | 1124 | 11235 | 135650 | 16,4 |
+| 1 | Gần | 330 | 80 | 102 | 1021 | 7750 | 8,8 |
+| 2 | Giữa | 450 | 100 | 319 | 3186 | 47100 | 10,8 |
+| 3 | Xa | 600 | 126 | 779 | 7788 | 130350 | 13,0 |
+| 4 | Xa | 780 | 168 | 1124 | 11235 | 137600 | 16,4 |
 | 5 | Xa | 1000 | 216 | 1492 | 14923 | - | 20,8 |
 <!--/khoi-->
 
