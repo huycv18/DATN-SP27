@@ -40,7 +40,7 @@ gd-combat giữ tên Driftlife, kẻ địch, boss. Nhóm rơi ghi theo từ đi
 | BS-2 | Tempest Gulper | Map nhánh Station Lantern (Giữa), vành ngoài trạm | Boss | Gulper đầu đàn vây Lantern, cắt đường tiếp tế | Hai cách kết | Không | Theo cách kết | Sau MVP |
 | BS-3 | Reaper Harvester | Map nhánh Station Flint (Xa), khoang hàng bị biến thành trạm thu, nơi có manh mối cú lật Driftlife | Boss | Máy săn bắt Driftlife của quân The Wardens | Hạ | Không | Linh kiện Warden hiếm | Sau MVP |
 | BS-4 | Silent Custodian | Map nhánh Bên trong Cradle (Xa), Lõi máy | Boss | Hệ an ninh Cradle bị The Wardens cài lại | Hạ | Không | Linh kiện Cradle | Sau MVP |
-| BS-5 | Serith | Map nhánh Warden Rig (Xa), Command Deck | Boss | Độc tài của Sennar, đứng đầu The Wardens (tên của gd-story). Tự tới bãi vỡ để bắt Sevra Ilvane | Khuất phục và bắt giữ, không hạ chết | Không | Không rơi trực tiếp, vật truyện mở sau trận theo `vat-pham.md` và `cot-truyen.md` | Sau MVP |
+| BS-5 | Daskel | Map nhánh Warden Rig (Xa), Command Deck | Boss | Độc tài của Sennar, đứng đầu The Wardens (tên của gd-story). Tự tới bãi vỡ để bắt Sevra Ilvane | Khuất phục và bắt giữ, không hạ chết | Không | Không rơi trực tiếp, vật truyện mở sau trận theo `vat-pham.md` và `cot-truyen.md` | Sau MVP |
 
 Dụng cụ combat theo `vat-pham.md` (gd-items giữ danh mục và bậc, gd-combat giữ hành vi và chỉ số combat): Lao từ TOL-211, Dùi xung TOL-201, Súng lưới TOL-202 (tốn Lưới cuộn CON-102), Súng gây mê TOL-203 (tốn Ống gây mê CON-103), Phao kéo CON-106, Kim sinh thiết CON-107, Lồng mẫu TOL-501. Lao từ và Dùi xung dùng cooldown. Dụng cụ không có độ bền.
 
@@ -81,7 +81,7 @@ Kết nhanh (hạ con đang bất lực) giữ nguyên số lượng, chỉ nân
 | BS-2 Tempest Gulper | 2 | Station Lantern, vành ngoài trạm | SMP-291 Đặc sản Tempest Gulper, cộng phế liệu nó đã nuốt | SMP-292 Mẫu boss Giữa |
 | BS-3 Reaper Harvester | 3 | Station Flint, khoang hàng thành trạm thu | RES-305 Linh kiện Warden | Không có xua đi |
 | BS-4 Silent Custodian | 4 | Bên trong Cradle, Lõi máy | RES-401 Linh kiện Cradle | Không có xua đi |
-| BS-5 Serith | 5 | Warden Rig, Command Deck | Không rơi trực tiếp, vật truyện mở sau trận theo `vat-pham.md` và `cot-truyen.md` | Không có xua đi. Kết là khuất phục và bắt giữ |
+| BS-5 Daskel | 5 | Warden Rig, Command Deck | Không rơi trực tiếp, vật truyện mở sau trận theo `vat-pham.md` và `cot-truyen.md` | Không có xua đi. Kết là khuất phục và bắt giữ |
 
 ## Tóm tắt
 
@@ -156,11 +156,11 @@ Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh
 27. (MVP) Loài gắn với dải (K5). Một loài chỉ sinh ở dải của nó và ở map nhánh trong dải đó.
 28. (MVP) Driftlife sinh lại mỗi chuyến, không cạn (K8). Không có luật phạt khi hạ nhiều.
 29. (MVP) Mỗi loài có đúng một kiểu hành vi chính trong 6 kiểu: Hiền, Chạy trốn, Giữ lãnh thổ, Săn mồi, Đi bầy, Phục kích. Kiểu quyết định nó làm gì khi thấy người chơi (bảng mục 2.7).
-30. (Sau MVP, chương 3) Một phần cá thể ở dải Giữa và Xa mang Dấu săn bắt (vết lưới năng lượng và vết cắt của quân The Wardens, hình art). Ở dải Xa dấu luôn có: mọi DL-X05 Brood Spawn mang thẻ đánh dấu của quân The Wardens, mọi DL-X04 Brood Mother có sẹo cắt mô theo quy luật. Dấu này không đổi chỉ số, chỉ là chi tiết truyện cho cú lật Driftlife (B6 sửa lần 6): bằng chứng chế độ của Serith cướp bóc tràn lan, trái với hình ảnh chúng tự dựng. Manh mối chính vẫn ở map nhánh (K7).
+30. (Sau MVP, chương 3) Một phần cá thể ở dải Giữa và Xa mang Dấu săn bắt (vết lưới năng lượng và vết cắt của quân The Wardens, hình art). Ở dải Xa dấu luôn có: mọi DL-X05 Brood Spawn mang thẻ đánh dấu của quân The Wardens, mọi DL-X04 Brood Mother có sẹo cắt mô theo quy luật. Dấu này không đổi chỉ số, chỉ là chi tiết truyện cho cú lật Driftlife (B6 sửa lần 6): bằng chứng chế độ của Daskel cướp bóc tràn lan, trái với hình ảnh chúng tự dựng. Manh mối chính vẫn ở map nhánh (K7).
 
 ### 2.5 The Wardens
 
-31. (Sau MVP) The Wardens là chế độ và quân đội của Serith, độc tài của Sennar. Lính là người Sennari mặc giáp chế độ, không phải cả chủng tộc (log GDM dòng 84). Quân The Wardens xuất hiện ở dải Xa từ chương 3, theo sự kiện do gd-world đặt (điểm sinh SP-W). Khác Driftlife ở 5 điểm: dùng vũ khí bắn xa, phối hợp nhóm (một đơn vị gọi thêm drone), có khiên hướng, không bắt sống được, miễn mê.
+31. (Sau MVP) The Wardens là chế độ và quân đội của Daskel, độc tài của Sennar. Lính là người Sennari mặc giáp chế độ, không phải cả chủng tộc (log GDM dòng 84). Quân The Wardens xuất hiện ở dải Xa từ chương 3, theo sự kiện do gd-world đặt (điểm sinh SP-W). Khác Driftlife ở 5 điểm: dùng vũ khí bắn xa, phối hợp nhóm (một đơn vị gọi thêm drone), có khiên hướng, không bắt sống được, miễn mê.
 32. (Sau MVP) Hạ đơn vị The Wardens cho RES-305 Linh kiện Warden và RES-301 Hợp kim Warden. Đây là nguồn duy nhất của hai vật phẩm này.
 33. (Sau MVP) Harvester Drone đang giữ một Driftlife trong lưới năng lượng. Hạ drone thì con Driftlife được thả, ở trạng thái Choáng 6 giây, bắt sống được ngay.
 34. (Sau MVP) Snare Hunter bắn lưới lên người chơi: người trúng bị trói tối đa 2 giây rồi lưới tự tan, không bay được, mỗi giây trừ 2 điểm Oxy. Thoát sớm bằng Lướt 3 lần liên tiếp, hoặc đồng đội bắn Lao từ vào lưới để cắt. Người đang kéo vật lớp Nặng (không Lướt được theo `nguoi-choi.md`) thì chờ lưới tự tan, hoặc thả vật rồi Lướt. Một mình luôn thoát được (C1).
@@ -178,7 +178,7 @@ Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh
 35. (MVP cho BS-1) Mỗi chương có đúng một boss, chỉ ở map nhánh (K7). Boss không sinh lại. Đánh lại boss đã kết không có. Trạng thái boss đã kết (hạ hay xua đi) ghi vào lần tự lưu sau chuyến (K23). Boss chưa kết thì không lưu tiến độ trận, lần sau vào đánh lại từ đầu.
 36. (MVP) Cửa phòng boss không khóa. Boss và mọi Driftlife do boss sinh ra trong trận (ví dụ Sting Krill do Scrapmaw phun) không rời phòng boss, để beacon cố định ngoài phòng luôn kích được. Lối đi tiếp phía sau phòng (BS-1: vách C6 sang C7) đóng tới khi boss kết thúc, theo `map.md`. Người chơi rút ra được bất cứ lúc nào bằng lối vào rồi kích Recall Beacon cố định đặt ngay ngoài phòng, phía lối vào (luật 2.5.7 của `map.md`, BS-1: beacon B3 trong C2, cách cửa D1 vài u). Người ngạt trong phòng theo K2. Khi không còn người chơi nào trong phòng quá 10 giây, hoặc cả nhóm đã về trạm, boss hồi đầy và về pha 1.
 37. (MVP) Boss Driftlife (BS-1, BS-2) có hai cách kết. Hạ: Sinh lực về 0, rơi nhiều nguyên liệu. Xua đi: làm boss Bất lực ở pha cuối rồi Tương tác giữ 3 giây ở điểm yếu (ngắt khỏi tổ hoặc tiêm an thần, theo bảng 3.7) thì boss bỏ đi, rơi một Mẫu boss. Công dụng của Mẫu boss theo `vat-pham.md` (SMP-192, SMP-292: sửa khoang dẫn đường, thay được vật rơi khi hạ). Vật rơi boss chưa có chỗ dùng ở chương đang chơi thì nằm trong kho, trạm báo "dùng được khi mở khoang dẫn đường". Cả hai cách đều mở tiếp tiến trình chương. Boss miễn Dùi xung và Súng gây mê, chỉ Bất lực theo cơ chế của từng pha (bảng 3.7).
-38. (Sau MVP) Boss The Wardens (BS-3 đến BS-5) chỉ có một cách kết. Với BS-5 Serith, Sinh lực về 0 nghĩa là Serith gục và bị bắt, giao cho The Kindling, không hạ chết (mốc C5.5 của gd-story).
+38. (Sau MVP) Boss The Wardens (BS-3 đến BS-5) chỉ có một cách kết. Với BS-5 Daskel, Sinh lực về 0 nghĩa là Daskel gục và bị bắt, giao cho The Kindling, không hạ chết (mốc C5.5 của gd-story).
 39. (MVP) Boss có pha. Chuyển pha theo mốc Sinh lực. Lúc chuyển pha boss miễn sát thương 2 giây và có báo trước rõ.
 
 ### 2.7 Hành vi theo kiểu
@@ -378,7 +378,7 @@ Giữ lãnh thổ bị bắn từ ngoài vùng phát hiện (ví dụ Lao từ b
 | BS-2 Tempest Gulper | Station Lantern, bến cập hàng ở vành ngoài | 900 | 2 | Pha 1: nuốt kiện hàng tiếp tế trôi quanh vành ngoài Lantern. Khi nó há miệng hút (báo trước 1,2 s), người chơi phóng Lao từ kéo kiện nổ vào miệng thì nó choáng 5 s. Pha 2: hút liên tục, người chơi bám mảnh vỡ hoặc dây neo, đánh 2 túi khí bên sườn | Hạ, hoặc Xua đi: choáng ở pha 2 rồi tiêm an thần vào túi khí | 3 đến 5 phút | Sau MVP |
 | BS-3 Reaper Harvester | Station Flint, khoang hàng bị biến thành trạm thu | 1200 | 2 | Pha 1: máy hút Driftlife vào 3 khoang chứa. Phá mỗi khoang (200) thì thả Driftlife, chúng quay sang đánh máy. Đòn: lưỡi gặt quét (18, 1,0, 5), drone WD-01. Pha 2: khiên năng lượng, chỉ hạ khiên bằng cách kéo lõi nổ (vật trong phòng) vào máy bằng Lao từ | Hạ | 4 đến 6 phút | Sau MVP |
 | BS-4 Silent Custodian | Bên trong Cradle, Lõi máy | 1000 | 3 | Hệ an ninh chặn đường tới hộp ghi hành trình, điều khiển cửa khoang và tia quét. Báo trước bằng đường quét đỏ 1,0 s. Người chơi phá 4 rơ le theo thứ tự hiện trên bảng điều khiển trong phòng. Mỗi rơ le phá xong mở một đoạn hành lang. Pha 3: lõi Custodian lộ ra | Hạ | 4 đến 6 phút | Sau MVP |
-| BS-5 Serith | Warden Rig, Command Deck | 1500 | 3 | Pha 1: khiên được nuôi bằng Driftlife bị nhốt trong ống chứa. Giải thoát hết ống (4 ống) thì khiên tắt. Pha 2: Serith dùng lưới The Wardens bắt người chơi như bắt Driftlife (bị trói như luật 34, tối đa 5 s). Pha 3 (Sinh lực Serith dưới 30%): Rig quá tải, sàn vỡ dần theo đoạn trong 90 s nên chỗ đứng thu hẹp, Serith vẫn nhận sát thương bình thường. Hết 90 s mà chưa xong thì sàn dừng vỡ ở vùng nhỏ nhất, trận tiếp tục, không có thua do hết giờ. Serith có mặt vì tự tới bãi vỡ bắt Sevra, tổ Ember giữ chân hắn trong lúc The Kindling nổi dậy ở Sennar | Khuất phục: Sinh lực về 0 thì Serith gục và bị bắt, giao cho The Kindling | 6 đến 9 phút | Sau MVP |
+| BS-5 Daskel | Warden Rig, Command Deck | 1500 | 3 | Pha 1: khiên được nuôi bằng Driftlife bị nhốt trong ống chứa. Giải thoát hết ống (4 ống) thì khiên tắt. Pha 2: Daskel dùng lưới The Wardens bắt người chơi như bắt Driftlife (bị trói như luật 34, tối đa 5 s). Pha 3 (Sinh lực Daskel dưới 30%): Rig quá tải, sàn vỡ dần theo đoạn trong 90 s nên chỗ đứng thu hẹp, Daskel vẫn nhận sát thương bình thường. Hết 90 s mà chưa xong thì sàn dừng vỡ ở vùng nhỏ nhất, trận tiếp tục, không có thua do hết giờ. Daskel có mặt vì tự tới bãi vỡ bắt Sevra, tổ Ember giữ chân hắn trong lúc The Kindling nổi dậy ở Sennar | Khuất phục: Sinh lực về 0 thì Daskel gục và bị bắt, giao cho The Kindling | 6 đến 9 phút | Sau MVP |
 
 Kết quả S5 lần đầu cho BS-1 (sim của gd-tech, bản số cũ) và các thay đổi, chờ gd-tech chạy lại S5:
 
@@ -670,7 +670,7 @@ Dữ kiện Dave the Diver từ `docs/knowledge/indie/06-dave-the-diver-cau-truc
 | Q2 | Có nên cho Lồng mẫu làm chậm người kéo để thêm cái giá cho bắt sống cỡ S | Không, giữ lớp Nhẹ của `nguoi-choi.md`. Xem lại khi có playtest | gd-combat, gd-character |
 | Q3 | Xua đi boss có cho thưởng truyện khác không | Có một dòng thoại khác của Nhà sinh học, không đổi nhánh truyện | gd-story |
 | Q4 | Driftlife bị Harvester Drone kéo về Barge có mất hẳn không | Đã chốt với gd-world: mất khỏi chuyến đó, không ảnh hưởng gì khác | Xong |
-| Q5 | Sim cho BS-5 Serith, toán bắt cóc C3.8 và hộ tống kén C5.1 khi nào chạy | Chưa đo, ghi backlog vì cả ba là Sau MVP (nguyên tắc 12). Khi GDM mở phạm vi thì gd-tech chạy theo thứ tự BS-5, toán bắt cóc, hộ tống. Hộ tống cần thêm mô hình kéo vật vào sim | GDM |
+| Q5 | Sim cho BS-5 Daskel, toán bắt cóc C3.8 và hộ tống kén C5.1 khi nào chạy | Chưa đo, ghi backlog vì cả ba là Sau MVP (nguyên tắc 12). Khi GDM mở phạm vi thì gd-tech chạy theo thứ tự BS-5, toán bắt cóc, hộ tống. Hộ tống cần thêm mô hình kéo vật vào sim | GDM |
 
 ## Driftlife trong trạm (sự cố sổng khoang nuôi, K14)
 
@@ -731,7 +731,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 2026-11-20 | Tạo bản đủ đầu tiên | GD-024 | gd-combat |
 | 2026-11-20 | Mục 2.8 và luật 42 khớp `map.md` đã chốt: C3.8 về Ember qua beacon hoặc cửa khí, C5.1 từ cửa N4 tới cửa The Hearth, kén không theo beacon khi hộ tống, lưu ở beacon gần nhất giữa các chuyến | Tin gd-world, QA map L2 L3 | gd-combat |
 | 2026-11-20 | QA GD-033: luật 34 lưới trói tự tan sau 2 giây, người kéo vật Nặng chờ hoặc thả vật, thêm E20. Luật 40 ghi BNG-102 và gỡ kén 2 giây. BS-5 pha 3 bỏ "đánh lõi", ghi rõ sàn vỡ không gây thua. Sửa sót "dấu thu hoạch" | Phiếu `qa/GD-033-combat-driftlife.md` | gd-combat |
-| 2026-11-20 | Đợt 6, tên của gd-story: X là Serith (độc tài Sennar), Y là Sevra Ilvane. Toán bắt cóc do Maro chỉ huy ở C3.8. Mục 2.8 đổi thành kéo kén của Sevra (vật kéo lớp Nặng, không bị nhắm). BS-5 ở Command Deck, kết là khuất phục và bắt giữ, bỏ đồ rơi bản đồ sao và bản khảo sát | Tin gd-story GD-033 | gd-combat |
+| 2026-11-20 | Đợt 6, tên của gd-story: X là Daskel (độc tài Sennar), Y là Sevra Ilvane. Toán bắt cóc do Maro chỉ huy ở C3.8. Mục 2.8 đổi thành kéo kén của Sevra (vật kéo lớp Nặng, không bị nhắm). BS-5 ở Command Deck, kết là khuất phục và bắt giữ, bỏ đồ rơi bản đồ sao và bản khảo sát | Tin gd-story GD-033 | gd-combat |
 | 2026-11-20 | Đợt 6 phản diện mới (phần không cần tên): Dấu săn bắt theo B6 mới, The Wardens là quân của X, toán bắt cóc Y chương 3 (luật 44), Y trong combat khi hộ tống (luật 40 đến 43) | Brief đợt 6, khung sửa lần 6, log 84 đến 92 | gd-combat |
 | 2026-11-20 | Đợt 4: K9 sửa lần 5 (sinh thiết ngoài K9, log 66), K27 cho Lồng mẫu khi Ngạt, C10 cho rớt mạng, K23 lưu trạng thái boss | Brief đợt 4, khung sửa lần 5 | gd-combat |
 | 2026-11-20 | BS-1 húc pha 2 từ 12 xuống 10 Oxy để người tệ một mình đạt Oxy P50 dưới 330 | Tin gd-tech, sim S5 tách nguồn Oxy | gd-combat |

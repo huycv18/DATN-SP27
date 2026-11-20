@@ -171,3 +171,11 @@ Lead đưa Five Core Pillars của Dave the Diver, rồi chốt: "tôi muốn gi
 Đã chốt: năm pillar theo đúng tên, thứ tự và Player Experience của Dave: 1 Exploration & Discovery, 2 Risk & Reward, 3 Management & Optimization, 4 Progression & Growth, 5 Variety & Delight. Nội dung từng pillar viết cho game này (bãi vỡ, Oxy, trạm và ca cảng, nâng cấp, truyện Serith và Sevra).
 Thay thế: log GDM dòng 95 (5 pillar tự đặt) và bộ P1 đến P4 cũ.
 GDM tự quyết: co-op (Lead chốt là cách chơi chính) không mất đi mà thành "nguyên tắc nền Solo or Together" mọi pillar phải tuân theo. Mã cũ P1 đến P5 trong các GDD đọc theo bảng ánh xạ ở khung mục 2, mã mới là CP1 đến CP5, để 10 GDD không phải sửa chéo (log dòng 96).
+
+## 2026-11-20 - Sửa hệ thống tên nhân vật
+
+Lead duyệt: "Oke sửa lại hệ thống tên nhân vật".
+
+- Đổi tên làm việc của phản diện từ Serith thành Daskel, đọc DAS-kel. Âm đầu và vần tách khỏi Sevra khi hai người được nhắc cùng cảnh. Danh xưng vẫn là First Warden. Mã nhân vật WD-P1, boss BS-5 và mã câu thoại VO_SER giữ giá trị cũ.
+- Dùng Sevra Ilvane và First Warden Daskel khi lộ danh tính ở C3.8. Ilsume vẫn là tên giả của Sevra trước cảnh đó.
+- Quy tắc âm theo nhóm, cách đọc và hình tượng của dàn The Veyl nằm ở GDD cốt truyện mục 12. Tên các nhân vật còn lại tiếp tục dùng cách viết hiện có.

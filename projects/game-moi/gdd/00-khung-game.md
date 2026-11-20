@@ -9,7 +9,7 @@ Mọi tên riêng tiếng Anh là [TẠM]. Số trong file này là mục tiêu 
 ## 1. Một câu, fantasy, người chơi
 
 - Một câu: tỉnh dậy trên một trạm hỏng giữa bãi vỡ của tàu mẹ, mỗi ngày đổi oxy lấy thứ làm trạm sống lại, buôn bán với thương nhân ngoài hành tinh ở cảng, một mình hoặc cùng tối đa ba người bạn, cho tới khi trạm đủ sức rời neo.
-- Mục tiêu người chơi theo chặng (L, G): chương 1 đến 3 là sống sót và tìm đường tới Solace, cuối chương 3 cứu Sevra. Chương 4 lộ ra Solace là mồi do Serith dựng và giúp mạng lưới của Sevra. Chương 5 hộ tống Sevra, nối tình báo, cách mạng thành công, nhận tọa độ hành tinh có sự sống thật và rời neo. Kết mở: hành trình tới hành tinh thật để cho phần sau.
+- Mục tiêu người chơi theo chặng (L, G): chương 1 đến 3 là sống sót và tìm đường tới Solace, cuối chương 3 cứu Sevra. Chương 4 lộ ra Solace là mồi do Daskel dựng và giúp mạng lưới của Sevra. Chương 5 hộ tống Sevra, nối tình báo, cách mạng thành công, nhận tọa độ hành tinh có sự sống thật và rời neo. Kết mở: hành trình tới hành tinh thật để cho phần sau.
 - Fantasy (G): tôi là người sống sót giỏi nghề, tự tay kéo một trạm chết sống lại. Mỗi chuyến ra ngoài là một lần liều có tính toán, mỗi lần về là thấy trạm đổi khác.
 - Người chơi mục tiêu (G): người chơi PC thích Dave the Diver, Subnautica, Core Keeper, Stardew Valley co-op. Chơi phiên 30 đến 60 phút. Chơi một mình là chính, rủ bạn vào giữa chừng được.
 - Thể loại (L): hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý. Bán đứt. Unity, PC.
@@ -73,7 +73,7 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 
 | Mục | Nội dung |
 |---|---|
-| Mô tả | Cốt truyện có chiều sâu (vụ The Scattering, tên độc tài Serith, người thừa kế Sevra), nhân vật độc đáo (người vớt về, thương nhân The Veyl mỗi loài một tính cách), hài nhẹ từ tính cách nhân vật, và cơ chế mới liên tục xuất hiện theo chương (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống) giúp người chơi không thấy lặp lại |
+| Mô tả | Cốt truyện có chiều sâu (vụ The Scattering, tên độc tài Daskel, người thừa kế Sevra), nhân vật độc đáo (người vớt về, thương nhân The Veyl mỗi loài một tính cách), hài nhẹ từ tính cách nhân vật, và cơ chế mới liên tục xuất hiện theo chương (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống) giúp người chơi không thấy lặp lại |
 | Player Experience | Surprise, Humor, Relaxation |
 | Giữ bằng luật | K21 mỗi chương thêm một đến hai kiểu chơi mới, K25 qua chương theo mốc truyện, B8 dấu vết phản diện lộ dần, B9 giọng nền nghiêm hài nhẹ |
 | Đo bằng | mỗi chương có ít nhất 3 mốc truyện và 2 vật manh mối có nơi đặt cố định. Mỗi chương có kiểu chơi mới |
@@ -95,12 +95,12 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 |---|---|---|
 | B1 | Trái Đất cạn kiệt, Hệ Mặt Trời sụp đổ. United Accord đóng tàu mẹ Cradle chở người được chọn lọc đi định cư ở Solace | L |
 | B2 | Loài người đã giao thương với người ngoài hành tinh từ sớm. The Veyl là tên gọi chung, gồm nhiều chủng tộc, phần lớn trung lập và không biết âm mưu | L |
-| B3 | Phản diện chính là Serith [TẠM], tên độc tài của một chủng tộc trong The Veyl. Hắn đảo chính lật đổ người cai trị cũ (người chủ trương chung sống hòa bình với các chủng tộc sau chiến tranh vũ trụ), rồi hướng sự chú ý sang Trái Đất để giữ quyền và đoàn kết chủng tộc. Hắn phát tín hiệu giả dụ đoàn di cư rồi phục kích. Vụ đó gọi là The Scattering. Chế độ và quân đội của Serith gọi là The Wardens [TẠM] | L 2026-11-20 sửa phản diện, tên G |
-| B4 | Solace là thông tin mồi. Hồ sơ về một hành tinh sống được tên Solace và đường tới đó do chế độ của Serith dựng lên, phát qua mạng tin của thương nhân The Veyl trung lập, dẫn Cradle vào điểm phục kích | L, kênh phát G |
-| B5 | Cái nhìn "loài người tham lam, xấu tính" là cái nhìn phiến diện của Serith, sinh từ hận thù vì cha hắn là sĩ quan hy sinh trong chiến tranh vũ trụ. Serith không tham lam hơn loài người. Dưới Serith, hành tinh từng hòa bình thành hiếu chiến: ép lính, dung túng cướp bóc và tệ nạn, khơi mào chiến tranh | L |
-| B6 | Driftlife là sinh vật bản địa của vùng chân không nơi bãi vỡ trôi vào. Cú lật giữa game: nhà sinh học tìm thấy dấu săn bắt của quân The Wardens trên Driftlife, bằng chứng chế độ của Serith cướp bóc tràn lan, trái với hình ảnh chúng tự dựng | G, sửa theo B5 |
+| B3 | Phản diện chính là Daskel [TẠM], tên độc tài của một chủng tộc trong The Veyl. Hắn đảo chính lật đổ người cai trị cũ (người chủ trương chung sống hòa bình với các chủng tộc sau chiến tranh vũ trụ), rồi hướng sự chú ý sang Trái Đất để giữ quyền và đoàn kết chủng tộc. Hắn phát tín hiệu giả dụ đoàn di cư rồi phục kích. Vụ đó gọi là The Scattering. Chế độ và quân đội của Daskel gọi là The Wardens [TẠM] | L 2026-11-20 sửa phản diện, tên G |
+| B4 | Solace là thông tin mồi. Hồ sơ về một hành tinh sống được tên Solace và đường tới đó do chế độ của Daskel dựng lên, phát qua mạng tin của thương nhân The Veyl trung lập, dẫn Cradle vào điểm phục kích | L, kênh phát G |
+| B5 | Cái nhìn "loài người tham lam, xấu tính" là cái nhìn phiến diện của Daskel, sinh từ hận thù vì cha hắn là sĩ quan hy sinh trong chiến tranh vũ trụ. Daskel không tham lam hơn loài người. Dưới Daskel, hành tinh từng hòa bình thành hiếu chiến: ép lính, dung túng cướp bóc và tệ nạn, khơi mào chiến tranh | L |
+| B6 | Driftlife là sinh vật bản địa của vùng chân không nơi bãi vỡ trôi vào. Cú lật giữa game: nhà sinh học tìm thấy dấu săn bắt của quân The Wardens trên Driftlife, bằng chứng chế độ của Daskel cướp bóc tràn lan, trái với hình ảnh chúng tự dựng | G, sửa theo B5 |
 | B7 | Cradle phóng các Seed Station, mỗi trạm 4 buồng ngủ đông. Phần lớn vỡ theo tàu mẹ. Người chơi tỉnh dậy trên Station Ember đang trôi vì hỏng. Chơi N người thì N người tỉnh, buồng còn lại hỏng do không may | L |
-| B8 | Dấu vết phản diện lộ dần theo tiến trình. Sevra Ilvane [TẠM], con gái người cai trị cũ và người thừa kế hợp pháp, giả làm thương nhân. Người chơi cứu Sevra khỏi một cuộc tấn công bắt cóc, Sevra lộ danh tính và xin giúp. Sevra cùng mạng lưới quân cách mạng và người nằm vùng chuẩn bị lật đổ Serith | L |
+| B8 | Dấu vết phản diện lộ dần theo tiến trình. Sevra Ilvane [TẠM], con gái người cai trị cũ và người thừa kế hợp pháp, giả làm thương nhân. Người chơi cứu Sevra khỏi một cuộc tấn công bắt cóc, Sevra lộ danh tính và xin giúp. Sevra cùng mạng lưới quân cách mạng và người nằm vùng chuẩn bị lật đổ Daskel | L |
 | B9 | Giọng: nền nghiêm, hài nhẹ từ tính cách người vớt về và thương nhân. Kết: cách mạng thành công, Sevra lên nắm quyền, lập lại hòa bình, giúp loài người tìm người sống sót và trao tọa độ một hành tinh có sự sống thật. Ember rời neo lên đường. Hành trình tới hành tinh đó để cho phần sau | L |
 | B10 | Không phạt khai thác. Chủ đề nói qua nhân vật, cú lật Driftlife và lựa chọn nuôi thay vì săn | L |
 | B11 | Móc cho phần sau: tọa độ hành tinh thật Sevra trao. Phần sau là hành trình tới đó và xây dựng lại. Không trả lời trong game này | L, G |
@@ -174,8 +174,8 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 | 1 | Tỉnh dậy | Dải Gần, xác Seed Station đầu tiên | Kỹ sư, Thông dịch viên | Khai thác, bắt sống loài nhỏ bằng lưới, ca cảng | Neo trạm, sửa cảng, tàu buôn đầu tiên ghé, bắt được sóng của Lantern |
 | 2 | Không cô độc | Dải Giữa, Station Lantern | Hoa tiêu, Nhà sinh học | Nuôi Driftlife, bắt sống cỡ M (gây mê, Phao kéo), lấy mẫu sinh thiết cỡ L | Gặp người sống ở Lantern, dấu vết phá từ ngoài vào trên các xác trạm |
 | 3 | Kẻ canh giữ | Dải Xa, Veyl Waypost, The Remainers | Trưởng cảng | Sự cố trong ca cảng, kẻ địch có vũ khí | Tàu lạ ghé cảng, cú lật Driftlife, quân The Wardens lộ mặt. Cuối chương: cứu Sevra khỏi cuộc tấn công bắt cóc, Sevra lộ danh tính |
-| 4 | Tâm vụ nổ | Bên trong Cradle | Không | Map nhánh lớn trong nội thất tàu | Hộp ghi hành trình: Solace là thông tin mồi do chế độ Serith dựng. Sevra kể chuyện đảo chính. Mục tiêu đổi từ "tới Solace" sang "giúp Sevra lật đổ Serith". Chuyển tin cho mạng lưới qua ca cảng |
-| 5 | Rời neo | Warden Rig | Không | Hộ tống Sevra, trận đối đầu cuối | Hộ tống Sevra về căn cứ, nối tình báo, đánh Warden Rig (đầu não của Serith ở bãi vỡ) khi cách mạng nổ ra. Sevra lên nắm quyền, trao tọa độ hành tinh thật. Sửa xong động cơ chính, rời neo |
+| 4 | Tâm vụ nổ | Bên trong Cradle | Không | Map nhánh lớn trong nội thất tàu | Hộp ghi hành trình: Solace là thông tin mồi do chế độ Daskel dựng. Sevra kể chuyện đảo chính. Mục tiêu đổi từ "tới Solace" sang "giúp Sevra lật đổ Daskel". Chuyển tin cho mạng lưới qua ca cảng |
+| 5 | Rời neo | Warden Rig | Không | Hộ tống Sevra, trận đối đầu cuối | Hộ tống Sevra về căn cứ, nối tình báo, đánh Warden Rig (đầu não của Daskel ở bãi vỡ) khi cách mạng nổ ra. Sevra lên nắm quyền, trao tọa độ hành tinh thật. Sửa xong động cơ chính, rời neo |
 
 ## 8. Hệ thống và chủ sở hữu
 
@@ -236,7 +236,7 @@ Chủ tên gọi: gd-items giữ tên và ID vật phẩm, gd-combat giữ tên 
 | Người vớt | Người sống sót đưa về trạm, mở tính năng |
 | Recall Beacon | Điểm thoát kéo về trạm |
 | Skiff | Xuồng đi thẳng tới map nhánh đã tìm ra |
-| The Veyl, The Wardens, Serith, Sevra, Sennari | Tên chung người ngoài hành tinh, chế độ và quân của tên độc tài, tên độc tài (First Warden), người thừa kế hợp pháp (giả làm thương nhân Ilsume), chủng tộc của hai người |
+| The Veyl, The Wardens, Daskel, Sevra, Sennari | Tên chung người ngoài hành tinh, chế độ và quân của tên độc tài, tên độc tài (First Warden), người thừa kế hợp pháp (giả làm thương nhân Ilsume), chủng tộc của hai người |
 | Cradle, Seed Station, Solace, The Scattering, United Accord, Lantern, The Remainers, Veyl Waypost, Warden Rig | Tên riêng trong truyện, xem GDD cốt truyện |
 
 ## 11. Không làm (G)

@@ -20,7 +20,7 @@ const SAI = [
   ['The Sundering', /The Sundering/],
   ['X hoặc Y còn là tên giữ chỗ', /\b(X|Y)\b \[TẠM\]/],
 ];
-const TEN = ['Serith', 'Sevra', 'Ilvane', 'Sennari', 'Ilsume', 'The Kindling', 'The Hearth', 'The Meeting War', 'Maro', 'The Wardens'];
+const TEN = ['Daskel', 'Sevra', 'Ilvane', 'Sennari', 'Ilsume', 'The Kindling', 'The Hearth', 'The Meeting War', 'Maro', 'The Wardens'];
 
 const files = [];
 const walk = (d) => {

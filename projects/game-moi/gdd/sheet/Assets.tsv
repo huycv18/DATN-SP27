@@ -61,7 +61,7 @@ AST-059	[MVP] Hộp thoại truyện 2 dòng có tên và chân dung, dòng radi
 AST-060	[Sau MVP] Skin người chơi thứ 3 và 4, biến thể B của 4 preset cho người vào sau		Nguồn: ho-so-nhan-vat.md mục 7, CHR-PC, CHR-FACE-B
 AST-061	[Sau MVP] Người vớt Rafael, Amara, Yusuf (3 người còn lại)		Nguồn: ho-so-nhan-vat.md mục 7, CHR-RS
 AST-062	[Sau MVP] Thương nhân Bram, Sennari, Aelith, Brakk, Kesh (4 còn lại trong 5 tổng) và người phụ (4)		Nguồn: ho-so-nhan-vat.md mục 7, CHR-TR, CHR-NP
-AST-063	[Sau MVP] Serith và Maro (hai biến thể The Wardens)		Nguồn: ho-so-nhan-vat.md mục 7, CHR-WD
+AST-063	[Sau MVP] Daskel và Maro (hai biến thể The Wardens)		Nguồn: ho-so-nhan-vat.md mục 7, CHR-WD
 AST-064	[Sau MVP] Mảnh bộ đồ còn lại: bình bậc 2 đến 4, vỏ cấp 1 đến 3, bộ đẩy bậc 2 đến 3, túi bậc 2 đến 4, đai 3 ô		Nguồn: ho-so-nhan-vat.md mục 7, CHR-PART
 AST-065	[Sau MVP] Clip bước xuống từ xuồng hoặc Skiff (Amara, Yusuf)		Nguồn: ho-so-nhan-vat.md mục 7
 AST-066	[Sau MVP] Rig trẻ em (Wren)		Nguồn: ho-so-nhan-vat.md mục 7, CHR-RIG
@@ -69,7 +69,7 @@ AST-067	[Sau MVP] Driftlife dải Gần còn lại: DL-G03 Barnacle Maw		Nguồn
 AST-068	[Sau MVP] Driftlife dải Giữa: DL-M01 Shepherd Whale, M02 Lumen Jelly, M03 Ore Grazer, M04 Needle Shoal, M05 Gulper		Nguồn: combat-driftlife.md mục 7
 AST-069	[Sau MVP] Driftlife dải Xa: DL-X01 Prism Wisp, X02 Mirror Mantis, X03 Storm Siphon, X04 Brood Mother, X05 Brood Spawn		Nguồn: combat-driftlife.md mục 7
 AST-070	[Sau MVP] The Wardens: WD-01 Harvester Drone, WD-02 Warden Lancer, WD-03 Snare Hunter, WD-04 Collector Barge		Nguồn: combat-driftlife.md mục 7
-AST-071	[Sau MVP] Boss BS-2 Tempest Gulper, BS-3 Reaper Harvester, BS-4 Silent Custodian, BS-5 Serith		Nguồn: combat-driftlife.md mục 7
+AST-071	[Sau MVP] Boss BS-2 Tempest Gulper, BS-3 Reaper Harvester, BS-4 Silent Custodian, BS-5 Daskel		Nguồn: combat-driftlife.md mục 7
 AST-072	[Sau MVP] VFX ngủ, bắt được (súng lưới co lại, lồng mẫu, số sao), Phao kéo bay về		Nguồn: combat-driftlife.md mục 7
 AST-073	[Sau MVP] VFX bị lưới The Wardens trói và dấu săn bắt của quân The Wardens (vết cắt máy trên cá thể)		Nguồn: combat-driftlife.md mục 7
 AST-074	[Sau MVP] Kit map tổng dải Giữa và dải Xa		Nguồn: map.md mục 7

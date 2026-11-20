@@ -51,7 +51,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 | TA05 | Tàu sưu tầm | Aelith, thương nhân Vaeth | Mốc C2.4 | Sau MVP |
 | TA06 | Tàu không nói giá | Brakk, thương nhân Dromm | Mốc C3.1 | Sau MVP |
 | TA07 | Tàu The Remainers | The Remainers, Elias Vance | Mốc C3.5 | Sau MVP |
-| TA08 | Tàu lạ | Maro, gián điệp của Serith (The Wardens) cải trang, săn Sevra | Mốc C3.3, hai lần cập bến | Sau MVP |
+| TA08 | Tàu lạ | Maro, gián điệp của Daskel (The Wardens) cải trang, săn Sevra | Mốc C3.3, hai lần cập bến | Sau MVP |
 | TA09 | Tàu đơn gấp | Người đưa hàng gấp của thương hội Sennari, không tên riêng | Hạng cảng 6 | Sau MVP |
 | TA10 | Tàu buôn tin | Kesh, thương nhân Nhem, giữ The Lattice | Mốc C3.1 | Sau MVP |
 | TA11 | Tàu của mạng lưới | The Kindling, mạng lưới cách mạng | Ngày kế tiếp sau mốc C3.8 | Sau MVP |
@@ -642,7 +642,7 @@ Không có luật nào cần đúng N người: một người hoàn tất đư�
 | 2026-11-20 | TA08 lần 3 cần giai đoạn 3 động cơ đã lắp (K25). TA06 là tàu truyện cho C5.1 từ ngày kế tiếp sau C4.7 | gd-story sau đợt 4 | gd-quan |
 | 2026-11-20 | QA vòng cuối F1: mục 3 và mục 5 bỏ số sim chép tay, trỏ bảng 2 của sim. Quy mô đơn sửa thành 1, 1,6, 2,2, 2,8 mọi chương. Luật 12 theo K24 mới, header K10 đến K27 | Phiếu `qa/GD-031-tram-va-cang.md` vòng cuối | gd-quan |
 | 2026-11-20 | Đợt 6 phần một: thêm HC15 Kiện tin mật (CGO-421) và TA11 tàu của mạng lưới. Phần Y và Maro chờ tên của gd-story | Log 87, tin gd-items | gd-quan |
-| 2026-11-20 | Đợt 6 phần hai theo tên mới của gd-story: Ilsume (TA04) là Sevra Ilvane giả danh, ngừng ghé sau C3.8. Maro là gián điệp của Serith, còn 2 lần cập bến, ngừng sau C3.8. TA11 là tàu của The Kindling, vào lịch sau C4.6, đơn tin mật cho C4.7 (1 đơn) và C5.2 (2 đơn). TA06 bỏ khỏi điều kiện C5.1 | Log 86 tới 90, `cot-truyen.md` mục Tên mới | gd-quan |
+| 2026-11-20 | Đợt 6 phần hai theo tên mới của gd-story: Ilsume (TA04) là Sevra Ilvane giả danh, ngừng ghé sau C3.8. Maro là gián điệp của Daskel, còn 2 lần cập bến, ngừng sau C3.8. TA11 là tàu của The Kindling, vào lịch sau C4.6, đơn tin mật cho C4.7 (1 đơn) và C5.2 (2 đơn). TA06 bỏ khỏi điều kiện C5.1 | Log 86 tới 90, `cot-truyen.md` mục Tên mới | gd-quan |
 | 2026-11-20 | QA GD-033: dòng HC15 không nhân quy mô đơn (1 gói tin mỗi ngày), luật 35 liệt kê C4.7 và C5.2 thay C3.8 | Phiếu `qa/GD-033-tram-va-cang.md` G3, G4 | gd-quan |
 | 2026-11-20 | TA11 luôn 2 dòng, trọng số TA06 lên 3 và TA09 lên 2 từ chương 4 để bù việc chế của TA04 | Sim GD-033: bỏ TA04 làm rảnh chương 4, 5 vượt trần 40% | gd-quan |
 | 2026-11-20 | TA11 vào lịch từ ngày kế tiếp sau C3.8, có mặt ngày đầu chương 4 và chương 5 | gd-story đính chính | gd-quan |
