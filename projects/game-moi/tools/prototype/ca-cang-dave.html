@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ca cảng nháp</title>
+<style>
+:root{--bg:#0b0f1a;--panel:#151c2c;--line:#2b3650;--text:#e8ecf4;--muted:#93a0b8;--accent:#f0b44c;--good:#6fd18f;--bad:#e36b5b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,"Segoe UI",sans-serif;display:flex;justify-content:center;padding:16px}
+#app{position:relative;width:960px;max-width:100%}
+canvas{display:block;width:100%;aspect-ratio:16/9;background:#070a12;border:1px solid var(--line);border-radius:10px}
+.panel{position:absolute;inset:0;background:rgba(11,15,26,.97);border:1px solid var(--line);border-radius:10px;padding:20px 24px;overflow:auto}
+.hidden{display:none}
+h1{font-size:20px;font-weight:600;margin:0 0 4px}
+h2{font-size:15px;font-weight:600;margin:0 0 8px;color:var(--accent)}
+.sub{color:var(--muted);margin:0 0 14px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.row{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.chip{width:14px;height:14px;border-radius:3px;flex:none}
+.grow{flex:1}
+.muted{color:var(--muted)}
+button{font:inherit;color:var(--text);background:#22304a;border:1px solid #3a4a6a;border-radius:6px;padding:3px 10px;cursor:pointer}
+button:hover{background:#2c3d5e}
+button:disabled{opacity:.4;cursor:default}
+.big{font-size:16px;padding:8px 22px;background:#7a5212;border-color:#c8902e}
+.big:hover{background:#68460f}
+.note{border-left:3px solid var(--accent);padding:6px 10px;background:#1b2234;margin-top:10px;border-radius:0}
+.warn{color:var(--bad)}
+.ok{color:var(--good)}
+table{border-collapse:collapse;width:100%}
+td{padding:4px 6px;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right}
+.foot{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:12px}
+kbd{background:#22304a;border:1px solid #3a4a6a;border-radius:4px;padding:0 5px;font-size:13px}
+</style>
+</head>
+<body>
+<div id="app">
+  <canvas id="cv" width="960" height="540"></canvas>
+
+  <div id="prep" class="panel">
+    <h1>Bảng tàu hôm nay - lập danh mục bán</h1>
+    <p class="sub">Chọn tối đa 4 loại hàng từ kho để bán trong ca. Thông dịch viên tự đóng thùng khi mở ca. Tàu chỉ gọi món có trong danh mục.</p>
+    <div class="cols">
+      <div class="box"><h2>Kho (sau 2 chuyến)</h2><div id="khoList"></div></div>
+      <div class="box">
+        <h2>Danh mục bán <span id="catCount"></span></h2>
+        <div id="catList"></div>
+        <div class="note" id="preNote"></div>
+        <div class="note muted">Lịch: <b>25 tàu</b>, mỗi tàu gọi 1 thùng, gồm Loose Bolt (Tikko, kiên nhẫn 60 giây, mê đồ Trái Đất nên tip gấp đôi khi gọi món đó) và Tàu vội (kiên nhẫn 30 giây, tip gấp đôi). Bến 1 có 3 cửa neo.</div>
+      </div>
+    </div>
+    <div class="foot">
+      <div class="muted">Điều khiển: <kbd>A</kbd><kbd>D</kbd> hoặc mũi tên để chạy, <kbd>E</kbd> hoặc <kbd>Space</kbd> để nhặt, giao, bơm khí. Hoặc bấm chuột vào quầy, cửa neo. <kbd>P</kbd> tạm dừng.</div>
+      <button class="big" id="btnOpen">Mở ca</button>
+    </div>
+  </div>
+
+  <div id="result" class="panel hidden">
+    <h1>Kết ca</h1>
+    <p class="sub" id="resLine"></p>
+    <div class="cols">
+      <div class="box"><h2>Kết quả</h2><table id="resTable"></table></div>
+      <div class="box"><h2>Hàng còn lại về kho</h2><div id="resKho"></div><div class="note" id="resQuote"></div></div>
+    </div>
+    <div class="foot">
+      <div class="muted">Bản nháp để thử luồng. Số đều là số ước, chưa qua sim.</div>
+      <div><button id="btnAgain">Chơi lại với danh mục này</button> <button class="big" id="btnBack">Lập danh mục khác</button></div>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+// Số theo de-xuat-ca-cang-kieu-dave.md mục 4 (ước, chờ sim). Giá kiện theo kinh-te-tien-trinh.md mục 3.1.
+const CFG = {
+  M: 4, soTau: 25, gianCach: [7, 11], choNgoai: 20, quay: 3, tipMax: 0.30,
+  bomHoi: 0.25, bomTally: 10, bomGiu: 1, bomSau: [10, 18], ca: 240, tocDo: 280,
+  datTruoc: { thuTu: 8, item: "td", heSo: 1.5 }
+};
+// Đơn vị bán là thùng = 0,4 kiện (giá kiện chia 2,5, số trong kho nhân 2,5). Bot đo: 10 tàu một kiện thì rảnh 76% ca.
+// Lồng sống không chia được, giữ 1 lồng giá cũ.
+const ITEMS = [
+  { id: "phe",   ten: "Thùng phế liệu",        ngan: "Phế liệu",    gia: 56, mau: "#c99a5b", kho: 10 },
+  { id: "cap",   ten: "Thùng cáp",             ngan: "Cáp",         gia: 52, mau: "#d16a4a", kho: 8 },
+  { id: "quang", ten: "Thùng quặng",           ngan: "Quặng",       gia: 52, mau: "#9a94b8", kho: 8 },
+  { id: "bang",  ten: "Thùng băng",            ngan: "Băng",        gia: 56, mau: "#7cc6e0", kho: 5 },
+  { id: "td",    ten: "Thùng đồ Trái Đất",     ngan: "Đồ Trái Đất", gia: 48, mau: "#e3c85a", kho: 5 },
+  { id: "nuoc",  ten: "Thùng nước tinh khiết", ngan: "Nước tinh",   gia: 48, mau: "#5fa8f5", kho: 3 },
+  { id: "long",  ten: "Lồng Driftmoth sống",   ngan: "Lồng sống",   gia: 50, mau: "#7fd18b", kho: 1 }
+];
+const IT = Object.fromEntries(ITEMS.map(i => [i.id, i]));
+const SHIPS = {
+  bolt: { ten: "Loose Bolt", chu: "Tikko", kn: 60, tipX: 1, mau: "#b98a4e", w: 3, thich: { td: 3, phe: 2 } },
+  voi:  { ten: "Tàu vội", chu: "Oru vãng lai", kn: 30, tipX: 2, mau: "#c0503c", w: 1, thich: { bang: 2, quang: 2 } }
+};
+const W = 960, H = 540, FLOOR = 452, WALL = 330;
+const SLOT_X = [96, 156, 216];
+const DOCK_X = [470, 640, 810];
+const DOCK_COL = ["#f0b44c", "#6fd1c4", "#c58cf0"];
+
+const cv = document.getElementById("cv"), g = cv.getContext("2d");
+const $ = id => document.getElementById(id);
+const rand = (a, b) => a + Math.random() * (b - a);
+const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+const fmt = n => Math.round(n).toLocaleString("vi-VN");
+
+// ---------- Lập danh mục ----------
+let catalog = {}; // id -> số kiện đưa vào danh mục
+function renderPrep() {
+  const used = Object.keys(catalog).length;
+  $("catCount").textContent = `(${used}/${CFG.M})`;
+  $("khoList").innerHTML = ITEMS.map(i => {
+    const inCat = i.id in catalog;
+    return `<div class="row"><span class="chip" style="background:${i.mau}"></span>
+      <span class="grow">${i.ten}<br><span class="muted">${i.gia} Tally, có ${i.kho}</span></span>
+      <button data-add="${i.id}" ${inCat || used >= CFG.M ? "disabled" : ""}>${inCat ? "Đã chọn" : "Thêm"}</button></div>`;
+  }).join("");
+  $("catList").innerHTML = used ? Object.entries(catalog).map(([id, q]) => {
+    const i = IT[id];
+    return `<div class="row"><span class="chip" style="background:${i.mau}"></span>
+      <span class="grow">${i.ten}</span>
+      <button data-dec="${id}">-</button><b style="min-width:22px;text-align:center">${q}</b><button data-inc="${id}" ${q >= i.kho ? "disabled" : ""}>+</button>
+      <button data-del="${id}">Bỏ</button></div>`;
+  }).join("") : `<p class="muted">Chưa có món nào.</p>`;
+  const total = Object.values(catalog).reduce((a, b) => a + b, 0);
+  const hasPre = (catalog[CFG.datTruoc.item] || 0) > 0;
+  $("preNote").innerHTML = `<b>Đơn đặt trước:</b> Tikko đặt 1 ${IT[CFG.datTruoc.item].ten}, giá gấp ${String(CFG.datTruoc.heSo).replace(".", ",")}. ` +
+    (hasPre ? `<span class="ok">Đã có trong danh mục.</span>` : `<span class="warn">Chưa có trong danh mục, Tikko sẽ thất vọng.</span>`) +
+    `<br>Tổng thùng bán: <b>${total}</b> cho ${CFG.soTau} tàu` + (total < CFG.soTau ? ` <span class="warn">(thiếu hàng, ca có thể kết thúc sớm)</span>` : "");
+  $("btnOpen").disabled = total === 0;
+}
+$("prep").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const d = b.dataset;
+  if (d.add) catalog[d.add] = IT[d.add].kho;
+  if (d.inc) catalog[d.inc] = Math.min(IT[d.inc].kho, catalog[d.inc] + 1);
+  if (d.dec) { catalog[d.dec]--; if (catalog[d.dec] <= 0) delete catalog[d.dec]; }
+  if (d.del) delete catalog[d.del];
+  renderPrep();
+});
+$("btnOpen").onclick = () => startShift();
+$("btnAgain").onclick = () => startShift();
+$("btnBack").onclick = () => { $("result").classList.add("hidden"); $("prep").classList.remove("hidden"); S = null; renderPrep(); };
+
+// ---------- Ca cảng ----------
+let S = null;
+const stars = Array.from({ length: 90 }, () => [Math.random() * W, Math.random() * WALL, Math.random() * 1.4 + .3]);
+
+function startShift() {
+  const cat = {};
+  for (const [id, q] of Object.entries(catalog)) cat[id] = { qty: q, avail: q, sold: 0 };
+  let preReserved = false;
+  if (cat[CFG.datTruoc.item] && cat[CFG.datTruoc.item].avail > 0) { cat[CFG.datTruoc.item].avail--; preReserved = true; }
+  const plan = []; let t = 2;
+  for (let i = 0; i < CFG.soTau; i++) {
+    const pre = i === CFG.datTruoc.thuTu;
+    plan.push({ at: t, type: pre ? "bolt" : (Math.random() < SHIPS.bolt.w / (SHIPS.bolt.w + SHIPS.voi.w) ? "bolt" : "voi"), pre });
+    t += rand(...CFG.gianCach);
+  }
+  S = {
+    t: 0, paused: false, over: false, cat, plan, next: 0, preReserved, preResult: "chưa tới",
+    tally: 0, tip: 0, diem: 0, served: 0, left: 0, skipped: 0, ships: [], docks: [null, null, null],
+    counter: [null, null, null], floats: [], toasts: [],
+    p: { x: 300, carry: null, target: null, act: null, face: 1, pump: null }
+  };
+  $("prep").classList.add("hidden"); $("result").classList.add("hidden");
+}
+
+function availTotal() { return Object.values(S.cat).reduce((a, c) => a + c.avail, 0); }
+function pickItem(type) {
+  const pool = Object.entries(S.cat).filter(([, c]) => c.avail > 0);
+  if (!pool.length) return null;
+  const like = SHIPS[type].thich;
+  let sum = 0; const w = pool.map(([id]) => (sum += (like[id] || 1)));
+  const r = Math.random() * sum;
+  return pool[w.findIndex(x => r < x)][0];
+}
+function toast(msg, col) { S.toasts.push({ msg, col: col || "#e8ecf4", t: 3 }); if (S.toasts.length > 4) S.toasts.shift(); }
+function float(x, y, msg, col) { S.floats.push({ x, y, msg, col, t: 1.4 }); }
+
+function spawn(pl) {
+  let item, pre = false;
+  if (pl.pre) {
+    if (S.preReserved) { item = CFG.datTruoc.item; pre = true; S.preReserved = false; }
+    else { toast("Tikko: \"Không có đồ Trái Đất à, thôi lấy gì cũng được.\"", "#e36b5b"); S.preResult = "trượt (không có trong danh mục)"; }
+  }
+  if (!item) { item = pickItem(pl.type); if (!item) { S.skipped++; return; } S.cat[item].avail--; }
+  const ty = SHIPS[pl.type];
+  S.ships.push({ type: pl.type, item, pre, state: "vao", t: 0, x: W + 80, y: 70, dock: -1, kn: ty.kn, knMax: ty.kn,
+    wait: 0, pumpReq: false, pumpNext: rand(...CFG.bomSau), crateMade: false, done: false });
+}
+
+function freeDock() { return S.docks.findIndex(d => d === null); }
+function returnItem(sh) {
+  if (sh.pre) { S.preResult = "trượt (tàu bỏ đi)"; }
+  if (S.cat[sh.item]) S.cat[sh.item].avail++;
+}
+function shipFail(sh, why) {
+  sh.state = "roi"; sh.t = 0; sh.ok = false; S.left++;
+  const k = sh.dock;
+  if (k >= 0 && S.counter[k] && S.counter[k].ship === sh) S.counter[k] = null;
+  if (S.p.carry && S.p.carry.ship === sh) { S.p.carry = null; toast("Tàu đã rời, thùng trên tay về kho", "#93a0b8"); }
+  returnItem(sh);
+  toast(`${SHIPS[sh.type].ten} ${why}`, "#e36b5b");
+}
+
+function update(dt) {
+  if (!S || S.over || S.paused) return;
+  S.t += dt;
+  while (S.next < S.plan.length && S.plan[S.next].at <= S.t) spawn(S.plan[S.next++]);
+  const waiting = S.ships.filter(s => s.state === "cho");
+  for (const sh of S.ships) {
+    sh.t += dt;
+    if (sh.state === "vao") {
+      const qi = waiting.length; const tx = W - 70 - qi * 70;
+      sh.x += (tx - sh.x) * Math.min(1, dt * 3);
+      if (sh.t > 1) { sh.state = "cho"; sh.t = 0; }
+    } else if (sh.state === "cho") {
+      const k = freeDock();
+      if (k >= 0) { S.docks[k] = sh; sh.dock = k; sh.state = "cap"; sh.t = 0; sh.fx = sh.x; sh.fy = sh.y; }
+      else { sh.wait += dt; if (sh.wait >= CFG.choNgoai) { shipFail(sh, "chờ ngoài quá lâu, bỏ đi"); } }
+    } else if (sh.state === "cap") {
+      const u = clamp(sh.t / 1, 0, 1), e = u * u * (3 - 2 * u);
+      sh.x = sh.fx + (DOCK_X[sh.dock] - sh.fx) * e; sh.y = sh.fy + (235 - sh.fy) * e;
+      if (u >= 1) { sh.state = "o"; sh.t = 0; }
+    } else if (sh.state === "o") {
+      sh.kn -= dt;
+      if (!sh.crateMade && sh.t >= CFG.quay) { S.counter[sh.dock] = { ship: sh, item: sh.item }; sh.crateMade = true; }
+      if (!sh.pumpReq && sh.t >= sh.pumpNext) sh.pumpReq = true;
+      if (sh.kn <= 0) shipFail(sh, "hết kiên nhẫn, rời bến");
+    } else if (sh.state === "roi") {
+      sh.y -= dt * 160; sh.x += dt * 120;
+      if (sh.t > 1.3) { if (sh.dock >= 0 && S.docks[sh.dock] === sh) S.docks[sh.dock] = null; sh.dead = true; }
+    }
+  }
+  // tàu đang chờ ngoài xếp hàng trên cao
+  S.ships.filter(s => s.state === "cho").forEach((s, i) => { s.x += (W - 70 - i * 70 - s.x) * Math.min(1, dt * 4); });
+  S.ships = S.ships.filter(s => !s.dead);
+
+  // người chơi
+  const p = S.p; let mv = 0;
+  if (keys.left) mv -= 1; if (keys.right) mv += 1;
+  if (mv) { p.target = null; p.act = null; p.pump = null; p.x += mv * CFG.tocDo * dt; p.face = mv; }
+  else if (p.target !== null) {
+    const d = p.target - p.x;
+    if (Math.abs(d) < 4) { p.x = p.target; p.target = null; if (p.act) { const a = p.act; p.act = null; interact(a); } }
+    else { p.x += Math.sign(d) * Math.min(Math.abs(d), CFG.tocDo * dt); p.face = Math.sign(d); }
+  }
+  p.x = clamp(p.x, 40, W - 40);
+  if (p.pump) {
+    const sh = S.docks[p.pump.k];
+    if (!sh || sh.state !== "o" || !sh.pumpReq || Math.abs(p.x - DOCK_X[p.pump.k]) > 40) p.pump = null;
+    else {
+      p.pump.t += dt;
+      if (p.pump.t >= CFG.bomGiu) {
+        sh.kn = Math.min(sh.knMax, sh.kn + CFG.bomHoi * sh.knMax); sh.pumpReq = false; sh.pumpNext = sh.t + rand(...CFG.bomSau);
+        S.tally += CFG.bomTally; S.tip += CFG.bomTally; float(DOCK_X[p.pump.k], 300, `+${CFG.bomTally} bơm khí`, "#6fd1c4"); p.pump = null;
+      }
+    }
+  }
+  for (const f of S.floats) { f.t -= dt; f.y -= dt * 30; }
+  S.floats = S.floats.filter(f => f.t > 0);
+  for (const t of S.toasts) t.t -= dt;
+  S.toasts = S.toasts.filter(t => t.t > 0);
+
+  // kết ca
+  const active = S.ships.some(s => s.state !== "roi");
+  const noMore = S.next >= S.plan.length || (availTotal() === 0 && !S.preReserved);
+  if (S.t >= CFG.ca) { for (const sh of S.ships) if (sh.state !== "roi") shipFail(sh, "rời vì hết giờ ca"); endShift("Hết giờ ca"); }
+  else if (noMore && !active && S.ships.length === 0) endShift(S.next >= S.plan.length ? "Tàu cuối đã rời" : "Hết hàng trong danh mục");
+}
+
+function nearest(x) {
+  let best = null;
+  SLOT_X.forEach((sx, k) => { const d = Math.abs(x - sx); if (d < 30 && (!best || d < best.d)) best = { kind: "slot", k, d }; });
+  DOCK_X.forEach((dx, k) => { const d = Math.abs(x - dx); if (d < 40 && (!best || d < best.d)) best = { kind: "dock", k, d }; });
+  return best;
+}
+function interact(a) {
+  const p = S.p; a = a || nearest(p.x); if (!a) return;
+  if (a.kind === "slot") {
+    const c = S.counter[a.k];
+    if (!c) return;
+    if (p.carry) { toast("Tay đang bận, mỗi lần mang 1 thùng", "#93a0b8"); return; }
+    p.carry = c; S.counter[a.k] = null;
+  } else {
+    const sh = S.docks[a.k];
+    if (p.carry) {
+      if (sh && sh.state === "o" && p.carry.ship === sh) deliver(sh);
+      else toast("Sai cửa neo: tàu này không gọi thùng đó", "#e36b5b");
+    } else if (sh && sh.state === "o" && sh.pumpReq) { p.pump = { k: a.k, t: 0 }; }
+  }
+}
+function deliver(sh) {
+  const it = IT[sh.item], ty = SHIPS[sh.type];
+  const price = Math.round(it.gia * (sh.pre ? CFG.datTruoc.heSo : 1));
+  const frac = clamp(sh.kn / sh.knMax, 0, 1);
+  const love = sh.type === "bolt" && sh.item === "td" ? 2 : 1;
+  const tip = Math.round(price * CFG.tipMax * frac * ty.tipX * love);
+  S.tally += price + tip; S.tip += tip; S.served++; S.diem += 1 + (frac >= 2 / 3 ? 1 : 0);
+  S.cat[sh.item].sold++;
+  if (sh.pre) S.preResult = "đạt";
+  float(DOCK_X[sh.dock], 210, `+${price}  tip +${tip}`, "#f0b44c");
+  S.p.carry = null; sh.state = "roi"; sh.t = 0; sh.ok = true;
+}
+
+function endShift(why) {
+  S.over = true; S.skipped += S.plan.length - S.next; S.next = S.plan.length;
+  $("resLine").textContent = why + ".";
+  const rows = [
+    ["Tàu phục vụ xong", `${S.served}/${CFG.soTau}`], ["Tàu rời khi chưa giao", S.left],
+    ["Tàu không tới vì hết hàng", S.skipped], ["Tally từ giá hàng", fmt(S.tally - S.tip)],
+    ["Tip (kể cả bơm khí)", fmt(S.tip)], ["Tổng Tally", fmt(S.tally)], ["Điểm cảng", S.diem], ["Đơn đặt trước của Tikko", S.preResult]
+  ];
+  $("resTable").innerHTML = rows.map(r => `<tr><td>${r[0]}</td><td><b>${r[1]}</b></td></tr>`).join("");
+  const back = ITEMS.map(i => { const c = S.cat[i.id]; const left = c ? c.qty - c.sold : i.kho; return left ? `<div class="row"><span class="chip" style="background:${i.mau}"></span><span class="grow">${i.ten}</span><b>${left}</b></div>` : ""; }).join("");
+  $("resKho").innerHTML = back || `<p class="muted">Bán hết.</p>`;
+  const q = S.preResult === "đạt" ? "Tikko: \"Đồ Trái Đất thật! Mai ta ghé nữa.\"" : S.served >= CFG.soTau * 0.8 ? "Tikko: \"Cảng này chạy nhanh đấy.\"" : "Tikko: \"Hôm nay hơi chậm, mai cố lên nhé.\"";
+  $("resQuote").textContent = q;
+  setTimeout(() => $("result").classList.remove("hidden"), 600);
+}
+
+// ---------- Input ----------
+const keys = { left: false, right: false };
+addEventListener("keydown", e => {
+  if (!S || S.over) return;
+  const k = e.key.toLowerCase();
+  if (k === "a" || k === "arrowleft") keys.left = true;
+  if (k === "d" || k === "arrowright") keys.right = true;
+  if ((k === "e" || k === " ") && !e.repeat) { e.preventDefault(); interact(); }
+  if (k === "p") S.paused = !S.paused;
+});
+addEventListener("keyup", e => {
+  const k = e.key.toLowerCase();
+  if (k === "a" || k === "arrowleft") keys.left = false;
+  if (k === "d" || k === "arrowright") keys.right = false;
+});
+cv.addEventListener("click", e => {
+  if (!S || S.over) return;
+  const r = cv.getBoundingClientRect(); const x = (e.clientX - r.left) * W / r.width;
+  const a = nearest(x) || (Math.abs(x - SLOT_X[1]) < 90 ? null : null);
+  S.p.pump = null;
+  if (a) { S.p.target = a.kind === "slot" ? SLOT_X[a.k] : DOCK_X[a.k]; S.p.act = a; }
+  else { S.p.target = clamp(x, 40, W - 40); S.p.act = null; }
+});
+
+// ---------- Vẽ ----------
+function rr(x, y, w, h, r) { g.beginPath(); g.roundRect(x, y, w, h, r); }
+function text(s, x, y, col, size, align, weight) {
+  g.fillStyle = col; g.font = `${weight || 400} ${size || 13}px system-ui,"Segoe UI",sans-serif`; g.textAlign = align || "center"; g.fillText(s, x, y);
+}
+function crate(x, y, item, dockK, s) {
+  s = s || 24; const it = IT[item];
+  g.fillStyle = it.mau; rr(x - s / 2, y - s, s, s, 3); g.fill();
+  g.strokeStyle = DOCK_COL[dockK]; g.lineWidth = 3; g.stroke();
+  g.strokeStyle = "rgba(0,0,0,.35)"; g.lineWidth = 1; g.beginPath(); g.moveTo(x - s / 2, y - s / 2); g.lineTo(x + s / 2, y - s / 2); g.stroke();
+}
+function drawShip(sh) {
+  const ty = SHIPS[sh.type]; const small = sh.state === "vao" || sh.state === "cho";
+  const sc = small ? .55 : 1; const x = sh.x, y = sh.y;
+  if (sh.state === "o") { g.fillStyle = "#3a4558"; g.fillRect(x - 8, y + 26, 16, WALL - y - 26); }
+  g.save(); g.translate(x, y); g.scale(sc, sc);
+  g.fillStyle = ty.mau; rr(-70, -26, 140, 52, 18); g.fill();
+  g.fillStyle = "rgba(255,255,255,.18)"; rr(-56, -16, 40, 14, 6); g.fill();
+  g.fillStyle = "#1a2232"; g.beginPath(); g.moveTo(70, -14); g.lineTo(92, 0); g.lineTo(70, 14); g.fill();
+  g.restore();
+  text(ty.ten, x, y + (small ? 26 : 8), small ? "#cfd6e4" : "#1a1f2b", small ? 11 : 13, "center", 600);
+  if (sh.state === "cho") {
+    const f = 1 - sh.wait / CFG.choNgoai;
+    g.strokeStyle = f > .4 ? "#93a0b8" : "#e36b5b"; g.lineWidth = 3;
+    g.beginPath(); g.arc(x, y - 30, 9, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * f); g.stroke();
+  }
+  if (sh.state === "o" || sh.state === "cap") {
+    const k = sh.dock;
+    if (sh.state === "o") {
+      const f = clamp(sh.kn / sh.knMax, 0, 1);
+      g.fillStyle = "#222b3c"; rr(x - 60, y - 52, 120, 8, 4); g.fill();
+      g.fillStyle = f > .66 ? "#6fd18f" : f > .33 ? "#f0b44c" : "#e36b5b"; rr(x - 60, y - 52, 120 * f, 8, 4); g.fill();
+      // bong bóng gọi món
+      const it = IT[sh.item];
+      g.fillStyle = "#f4f1e8"; rr(x - 70, y - 98, 140, 36, 8); g.fill();
+      g.beginPath(); g.moveTo(x - 6, y - 62); g.lineTo(x + 6, y - 62); g.lineTo(x, y - 54); g.fill();
+      g.fillStyle = it.mau; rr(x - 62, y - 90, 20, 20, 3); g.fill();
+      text(it.ngan + (sh.pre ? " (đặt trước)" : ""), x - 36, y - 75, "#1a1f2b", 12, "left", 600);
+      if (sh.pumpReq) {
+        g.fillStyle = "#6fd1c4"; rr(x + 30, y - 26, 62, 22, 6); g.fill();
+        text("Bơm khí!", x + 61, y - 11, "#062a26", 12, "center", 600);
+      }
+    }
+    void k;
+  }
+}
+function draw() {
+  g.clearRect(0, 0, W, H);
+  g.fillStyle = "#070a12"; g.fillRect(0, 0, W, WALL);
+  for (const [sx, sy, r] of stars) { g.fillStyle = "rgba(220,230,255,.6)"; g.fillRect(sx, sy, r, r); }
+  // xác tàu mẹ xa xa
+  g.fillStyle = "#121a29"; g.beginPath(); g.moveTo(0, 300); g.lineTo(120, 250); g.lineTo(200, 280); g.lineTo(260, 240); g.lineTo(330, 300); g.lineTo(330, WALL); g.lineTo(0, WALL); g.fill();
+  // thân trạm
+  g.fillStyle = "#232c3e"; g.fillRect(0, WALL, W, H - WALL);
+  g.fillStyle = "#1a2131"; g.fillRect(0, WALL + 14, W, FLOOR - WALL - 14);
+  g.fillStyle = "#2f3a52"; g.fillRect(0, FLOOR, W, 10);
+  g.fillStyle = "#151b28"; g.fillRect(0, FLOOR + 10, W, H - FLOOR - 10);
+  // kho và quầy
+  g.fillStyle = "#2a3448"; g.fillRect(20, 368, 40, 84);
+  for (let i = 0; i < 3; i++) for (let j = 0; j < 2; j++) { g.fillStyle = ITEMS[(i * 2 + j) % ITEMS.length].mau + "aa"; g.fillRect(24 + j * 18, 374 + i * 26, 14, 18); }
+  text("Kho", 40, 362, "#93a0b8", 12);
+  g.fillStyle = "#3b4762"; rr(70, 420, 172, 32, 4); g.fill();
+  text("Quầy cảng", 156, 476, "#cfd6e4", 13, "center", 600);
+  SLOT_X.forEach((sx, k) => {
+    g.strokeStyle = DOCK_COL[k]; g.lineWidth = 2; g.setLineDash([4, 3]); rr(sx - 16, 388, 32, 32, 4); g.stroke(); g.setLineDash([]);
+    text(String(k + 1), sx, 440, DOCK_COL[k], 12, "center", 600);
+  });
+  // cửa neo
+  DOCK_X.forEach((dx, k) => {
+    g.fillStyle = "#0f1420"; g.fillRect(dx - 26, WALL - 2, 52, 18);
+    g.fillStyle = DOCK_COL[k]; g.fillRect(dx - 26, WALL + 14, 52, 4);
+    g.fillStyle = "#2a3448"; g.fillRect(dx - 22, 360, 44, 92);
+    g.fillStyle = "#11161f"; g.fillRect(dx - 16, 368, 32, 84);
+    text(`Cửa neo ${k + 1}`, dx, 476, DOCK_COL[k], 13, "center", 600);
+  });
+  text("Danh mục còn:", 300, 500, "#93a0b8", 12, "left");
+  if (S) {
+    let cx = 390;
+    for (const [id, c] of Object.entries(S.cat)) { g.fillStyle = IT[id].mau; rr(cx, 489, 12, 12, 2); g.fill(); text(`${IT[id].ngan} ${c.avail}`, cx + 17, 500, "#cfd6e4", 12, "left"); cx += 30 + g.measureText(`${IT[id].ngan} ${c.avail}`).width; }
+    for (const sh of S.ships) drawShip(sh);
+    S.counter.forEach((c, k) => { if (c) crate(SLOT_X[k], 418, c.item, k); });
+    // người chơi
+    const p = S.p, bob = (p.target !== null || keys.left || keys.right) ? Math.sin(S.t * 14) * 2 : 0;
+    g.fillStyle = "#d9dde6"; rr(p.x - 12, FLOOR - 40 + bob, 24, 32, 6); g.fill();
+    g.fillStyle = "#e8ecf4"; g.beginPath(); g.arc(p.x, FLOOR - 48 + bob, 11, 0, Math.PI * 2); g.fill();
+    g.fillStyle = "#2b6f8f"; rr(p.x - 7 + p.face * 2, FLOOR - 54 + bob, 14, 9, 4); g.fill();
+    g.fillStyle = "#9aa3b5"; g.fillRect(p.x - 10, FLOOR - 8, 8, 8); g.fillRect(p.x + 2, FLOOR - 8, 8, 8);
+    if (p.carry) crate(p.x, FLOOR - 62 + bob, p.carry.item, p.carry.ship.dock);
+    if (p.pump) { g.fillStyle = "#222b3c"; rr(p.x - 20, FLOOR - 82, 40, 6, 3); g.fill(); g.fillStyle = "#6fd1c4"; rr(p.x - 20, FLOOR - 82, 40 * p.pump.t / CFG.bomGiu, 6, 3); g.fill(); }
+    const nb = nearest(p.x);
+    if (nb && !p.target) {
+      const ok = nb.kind === "slot" ? (S.counter[nb.k] && !p.carry) : (S.docks[nb.k] && S.docks[nb.k].state === "o" && (p.carry || S.docks[nb.k].pumpReq));
+      if (ok) text("[E]", p.x, FLOOR - 92, "#f0b44c", 12, "center", 600);
+    }
+    for (const f of S.floats) { g.globalAlpha = clamp(f.t, 0, 1); text(f.msg, f.x, f.y, f.col, 15, "center", 700); g.globalAlpha = 1; }
+    // HUD
+    const left = Math.max(0, CFG.ca - S.t);
+    g.fillStyle = "rgba(10,14,24,.82)"; rr(12, 10, 470, 34, 8); g.fill();
+    text(`Ca còn ${Math.floor(left / 60)}:${String(Math.floor(left % 60)).padStart(2, "0")}`, 26, 32, left < 30 ? "#e36b5b" : "#e8ecf4", 14, "left", 600);
+    text(`Tally ${fmt(S.tally)}`, 136, 32, "#f0b44c", 14, "left", 600);
+    text(`Tip ${fmt(S.tip)}`, 246, 32, "#cfd6e4", 14, "left");
+    text(`Điểm cảng ${S.diem}`, 322, 32, "#cfd6e4", 14, "left");
+    text(`Tàu ${S.served}/${CFG.soTau}`, 420, 32, "#cfd6e4", 14, "left");
+    S.toasts.forEach((t, i) => { g.globalAlpha = clamp(t.t, 0, 1); text(t.msg, W / 2 + 120, 30 + i * 18, t.col, 13, "center"); g.globalAlpha = 1; });
+    if (S.paused) { g.fillStyle = "rgba(0,0,0,.55)"; g.fillRect(0, 0, W, H); text("Tạm dừng - nhấn P để chơi tiếp", W / 2, H / 2, "#e8ecf4", 20, "center", 600); }
+  }
+}
+
+let last = performance.now();
+function loop(now) { const dt = Math.min(.05, (now - last) / 1000); last = now; update(dt); draw(); requestAnimationFrame(loop); }
+renderPrep(); requestAnimationFrame(loop);
+// Cho kiểm tự động: window.__ca trả trạng thái ca hiện tại.
+window.__ca = () => S;
+</script>
+</body>
+</html>
