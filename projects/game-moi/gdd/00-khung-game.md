@@ -275,11 +275,13 @@ Chương 1 trọn vẹn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông d
 
 ## 15. USP (G)
 
-- Oxy là thời gian và cũng là máu trong không gian 2D: mỗi chuyến là một phép tính liều, có vạch "đủ về" để người chơi tự quyết
-- Ca cảng giao thương thay cho nhà hàng: cuối ngày bốc kiện lên tàu của thương nhân ngoài hành tinh, mỗi loài một tính cách, có lúc phải chuyển tin mật cho cách mạng
-- Co-op có lý do trong truyện: mỗi trạm con có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh dậy. Chơi một mình vẫn trọn
-- Kéo một trạm chết sống lại: mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng, người vớt về mở tính năng mới
-- Truyện về định kiến: kẻ thù là cái nhìn phiến diện của một tên độc tài, người chơi cùng người thừa kế hợp pháp làm cách mạng và nhận về hành tinh thật
+Viết theo khung USP của Dave the Diver Lead đưa 2026-11-20 (lai ghép thể loại, nội dung đa dạng, thế giới và truyện, mở rộng). Ý mở rộng bằng cập nhật và DLC không áp được (bán đứt, nhóm 6 người, chưa ra mắt) nên thay bằng co-op. Ý "nhịp thư giãn không áp lực" của Dave trái CP2 nên viết thành nhịp căng ngoài, thả lỏng trong trạm (log dòng 98).
+
+- Lai ghép hai nửa trong một vòng ngày rõ rệt: ban ngày bay ra bãi vỡ của tàu mẹ Cradle (hành động phiêu lưu 2D, bay 8 hướng), cuối ngày mở ca cảng bán hàng cho tàu thương nhân ngoài hành tinh (mô phỏng quản lý). Thứ vớt được vừa là hàng bán vừa là vật liệu sửa trạm, mỗi khoang sửa xong đổi hình trạm Ember và trả lại một chức năng
+- Oxy là thời gian và cũng là máu: mỗi chuyến là một phép tính liều có vạch "đủ về", hết Oxy chỉ giữ 1 món chứ không mất trắng. Căng ở ngoài, thả lỏng khi về trạm (sửa khoang, nuôi Driftlife, nói chuyện với người vớt về)
+- Nội dung đa dạng, không lặp: mỗi chương thêm một kiểu chơi mới (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống). Thương nhân The Veyl mỗi loài một tính cách, có lúc phải chuyển tin mật cho cách mạng. Hài nhẹ từ tính cách nhân vật thay cho cắt cảnh dài
+- Thế giới và truyện cuốn hút: bãi vỡ đổi bố cục mỗi chuyến, mở dần ba dải Gần, Giữa, Xa. Bí ẩn vụ The Scattering và Solace dẫn tới cuộc cách mạng cùng Sevra chống định kiến của Daskel, kết bằng tọa độ một hành tinh có sự sống thật
+- Co-op có lý do trong truyện: mỗi Seed Station có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh. Chơi một mình vẫn trọn, 2 đến 4 người chia việc ở cả chuyến bay lẫn ca cảng
 
 ## 16. Target Audience (G)
 
