@@ -206,3 +206,7 @@ Lead: "tách nhỏ GDD to này ra thành các bản Modul", "kiểu tạo ra nhi
 - Nguồn luật vẫn là GDD hệ thống markdown trong repo. Sheet con là bản hiển thị của hệ thống đó. Đổi luật: sửa markdown, sinh TSV, dán vào file con, ghi TRACKING ở GDD chính.
 - `tools/tham-so/sheet.json` có khóa `file` ghi tab nào nằm ở file con nào, `doi-chieu-sheet.mjs` tải từ đúng file.
 - File con do tài khoản iKame của Lead tạo (connector), nằm trong thư mục Drive dùng chung. File con dùng locale Việt: công thức phân cách bằng ";".
+
+## 2026-11-20 - Dùng bản tóm tắt truyện trong GDD Story
+
+Dùng đoạn tóm tắt theo hành trình của Noor và tổ Ember, không có hội thoại, làm nội dung mở đầu của tab GAME STORY. Bản truyện minh họa vẫn nằm trong tài liệu riêng.

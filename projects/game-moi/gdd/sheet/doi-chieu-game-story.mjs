@@ -4,7 +4,9 @@ import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const day = dirname(fileURLToPath(import.meta.url));
-const URL_CSV = 'https://docs.google.com/spreadsheets/d/1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs/export?format=csv&gid=101';
+const config = JSON.parse(readFileSync(join(day, '../../tools/tham-so/sheet.json'), 'utf8'));
+const tab = 'GAME STORY';
+const URL_CSV = `https://docs.google.com/spreadsheets/d/${config.file[tab]}/export?format=csv&gid=${config.gid[tab]}`;
 const csv = (await (await fetch(URL_CSV)).text()).replace(/\r\n/g, '\n');
 // Parser CSV có ô trong ngoặc kép chứa xuống dòng và dấu phẩy
 const rows = []; let row = [], o = '', q = false;

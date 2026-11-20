@@ -1191,23 +1191,7 @@ Hiện khi người chơi bấm vào một buồng tắt (mục 2.7). Hồ sơ n
 
 ## 14. Khối GAME STORY (dán vào một ô Sheet)
 
-Tương lai xa. Các hành tinh đã phát hiện ra nhau, đánh nhau trong The Meeting War, rồi học cách buôn bán với nhau. Loài người gọi chung các chủng tộc ngoài hành tinh là The Veyl. Trong lúc đó loài người vắt kiệt Trái Đất, Hệ Mặt Trời sụp đổ. Thứ họ thiếu là một hành tinh để ở.
-
-Trên hành tinh Sennar, Steward Ilvane chủ trương chung sống hòa bình với mọi chủng tộc. Daskel, con trai một sĩ quan chết trong cuộc chiến năm xưa, nuôi hận thù với loài người. Hắn đảo chính, lật đổ Ilvane, rồi hướng mọi bất ổn của Sennar sang một kẻ thù bên ngoài để giữ ghế. Chế độ và quân đội của hắn tên The Wardens. Dưới tay hắn, một hành tinh từng to đẹp và hòa bình thành hiếu chiến: ép lính, dung túng cướp bóc, khơi mào chiến tranh. Với Daskel, loài người là loài tham lam và xấu tính. Đó là cái nhìn phiến diện của một kẻ mất cha.
-
-Biết Trái Đất đang tìm nơi di cư, Daskel cho dựng một hồ sơ khảo sát giả: một hành tinh sống được tên Solace, kèm đường tới đó. Các quốc gia lập United Accord, đóng tàu mẹ Cradle, chở những người được chọn lọc, ngủ đông, lên đường. Đường trong hồ sơ dẫn Cradle vào điểm phục kích và tàu mẹ nổ tung. Vụ đó gọi là The Scattering. Cradle chỉ kịp phóng ra các Seed Station, mỗi trạm bốn buồng ngủ đông. Phần lớn vỡ theo.
-
-Nhiều năm sau, trên Station Ember, người chơi tỉnh dậy: một mình, hoặc cùng tối đa ba người nữa. Buồng nào không may hỏng sau vụ nổ thì người bên trong đã chết. Trạm đang trôi giữa bãi vỡ, mất liên lạc, không biết Solace ở hướng nào.
-
-Mỗi ngày họ mặc bộ đồ, mang bình Oxy ra ngoài: nhặt phế liệu của Cradle, khai khoáng, bắt sống hoặc hạ Driftlife, những sinh vật trôi trong chân không. Oxy là sợi dây buộc họ vào trạm. Thứ mang về dùng để sửa từng khoang, chế trang bị, nuôi Driftlife, và đóng kiện bán cho tàu thương nhân The Veyl cập bến Ember, đổi lấy Tally.
-
-Trong xác các trạm con khác còn những buồng ngủ đông đang chạy, và ở những nơi còn người sống có những người muốn sang Ember. Mỗi người vớt về là một chuyên gia và trả lại cho trạm một năng lực: xưởng, liên lạc, dẫn đường, nghiên cứu, cảng.
-
-Càng đi xa, sự thật càng lộ. Vết phá đến từ bên ngoài. Một thương nhân lạ ghé cảng chỉ để dò hỏi. Driftlife mang thẻ và sẹo cắt mô: quân The Wardens tự xưng canh giữ bãi vỡ, thật ra đang cướp nó. Rồi trong một chuyến ra ngoài, tổ Ember bắt gặp một cuộc tấn công bắt cóc và cứu được nạn nhân: Ilsume, một thương nhân quen. Biết họ là loài người đang đi tìm lời giải, cô xưng tên thật: Sevra Ilvane, con gái người cai trị cũ, người thừa kế hợp pháp của Sennar. Cô cùng mạng lưới The Kindling, gồm quân cách mạng và người nằm vùng, đang chuẩn bị lật đổ Daskel, và xin Ember giúp.
-
-Hộp ghi hành trình của Cradle xác nhận điều tệ nhất: ở chỗ lẽ ra có Solace không có gì cả. Tổ Ember hộ tống Sevra về căn cứ, chuyển tin cho mạng lưới qua những chuyến hàng ở cảng, và đánh vào Warden Rig, đầu não của Daskel ở bãi vỡ, đúng lúc Sennar nổi dậy. Cách mạng thành công. Sevra lên nắm quyền, lập lại hòa bình, cho người đi tìm những người còn sống sót trong bãi vỡ, và trao cho Ember tọa độ một hành tinh có sự sống thật.
-
-Ember sửa xong động cơ chính và rời neo. Game kết ở đó: có một đích thật, một chặng đường dài, và một lời hứa: tới nơi, sẽ dựng khác đi.
+Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đang trôi giữa xác Cradle, con tàu mẹ từng đưa đoàn di cư rời Trái Đất để đến Solace. Cùng những người sống sót, Noor thu hồi vật liệu để sửa trạm và tìm cách tiếp tục hành trình. Khi lần theo tọa độ cũ, họ phát hiện The Wardens đang phong tỏa bãi vỡ. Trong một chuyến đi, cả nhóm cứu được Sevra Ilvane, người thừa kế của Sennar đang sống dưới vỏ bọc thương nhân. Cô tiết lộ rằng Daskel, kẻ đã lật đổ cha cô, dùng một hồ sơ khảo sát giả để dụ Cradle vào ổ phục kích. Mang mối hận từ cuộc chiến cũ, hắn biến đoàn di cư thành kẻ thù chung để củng cố quyền lực ở Sennar. Tổ Ember quay lại Cradle và tìm được bản ghi xác nhận con tàu đã phát hiện tọa độ giả ngay trước khi bị tấn công. Họ chuyển bằng chứng cho Sevra, rồi giữ chân Daskel tại Warden Rig để lực lượng của cô có thời gian giành quyền kiểm soát ở Sennar. Daskel bị bắt, vòng phong tỏa được dỡ bỏ và những con tàu cứu hộ bắt đầu tìm kiếm các buồng ngủ đông còn tín hiệu. Sevra trao cho Ember tọa độ của một hành tinh có sự sống. Sau khi tự kiểm tra tọa độ trên bản đồ sao thu được ở Warden Rig, cả kíp nhả neo, đưa trạm rời bãi vỡ để tiếp tục hành trình tìm một nơi định cư.
 
 ## Lệch với vai khác (cập nhật ở vòng QA 2, 2026-11-20)
 
