@@ -23,6 +23,7 @@ Vai đổi số: sửa GDD hoặc file tham số, chạy lại lệnh sim, đọ
 | Lệnh (chạy ở gốc repo) | Làm gì |
 |---|---|
 | `node projects/game-moi/tools/xuat-event-tracking.mjs` | Sinh `gdd/sheet/Event Tracking.tsv` từ bảng sự kiện của `ky-thuat.md` mục 2.4. Thêm `--kiem` để chỉ báo TSV có cũ hơn GDD không |
+| `python -P projects/game-moi/tools/dung-gdd-con.py <story\|combat\|vat-pham\|tat-ca> --ra <thư mục>` | Dựng xlsx tab khuôn của GDD con từ GDD hệ thống. Tải lên Drive, chép tab vào file con. Dừng khi có mục "## " chưa có tab khuôn |
 | `node projects/game-moi/tools/doi-chieu-sheet.mjs` | So mọi `gdd/sheet/<Tab>.tsv` với tab cùng tên trên Sheet qua export CSV, in bảng ô lệch và hàng thừa. Thoát 1 khi có tab lệch |
 | `node projects/game-moi/tools/doi-chieu-sheet.mjs --tab "Customer" --ra <file.md>` | Chỉ một tab, ghi kết quả ra file |
 

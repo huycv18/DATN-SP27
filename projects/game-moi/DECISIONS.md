@@ -210,3 +210,17 @@ Lead: "tách nhỏ GDD to này ra thành các bản Modul", "kiểu tạo ra nhi
 ## 2026-11-20 - Dùng bản tóm tắt truyện trong GDD Story
 
 Dùng đoạn tóm tắt theo hành trình của Noor và tổ Ember, không có hội thoại, làm nội dung mở đầu của tab GAME STORY. Bản truyện minh họa vẫn nằm trong tài liệu riêng.
+
+Sửa cùng ngày, Lead: "GDD không phải là tách hết ra mà những hệ thống nào lớn quá và cần tách riêng ra thì mới tách. Và đảm bảo các GDD modul này được trình bày khoa học đầy đủ. GDD chính vẫn giữ được yếu tố tổng quát cốt lõi."
+
+- Bỏ cách tách cả 9 hệ thống ở trên. Chỉ hệ thống lớn và cần tách mới có GDD con. Danh sách chờ Lead chốt.
+- GDD con phải đủ như một GDD hệ thống (mục đích, luật, tham số, biên, yêu cầu, nghiệm thu), không chỉ là tab dữ liệu chép sang.
+- GDD chính giữ phần tổng quát cốt lõi của mọi hệ thống, kể cả hệ thống đã tách (tóm tắt và link).
+- Chưa xóa tab nào ở GDD chính.
+
+Chốt cùng ngày, Lead chọn "Tách 3 lớn nhất":
+
+- GDD con chỉ có 3: 01 Story (cot-truyen.md, tab GAME STORY), 02 Combat và Driftlife (combat-driftlife.md, tab Enemy), 03 Vật phẩm (vat-pham.md, tab Salvage, ITEM LIST, Recipe). Thư mục Drive: https://drive.google.com/drive/folders/1y7pgu2TOxUScoCcNl40OAn3D1362NqRt. 6 file con của lần tách đầu đã chuyển vào thùng rác.
+- Khuôn GDD con: TỔNG QUAN, LUẬT, THAM SỐ, các bảng dữ liệu, (TÊN RIÊNG, VOICE SHEET với Story), TRƯỜNG HỢP BIÊN, YÊU CẦU, NGHIỆM THU, CÂU HỎI VÀ LỊCH SỬ. Tab khuôn sinh bằng `tools/dung-gdd-con.py` từ GDD hệ thống, mỗi mục "## " vào đúng một tab, script tự kiểm mỗi dòng nội dung thành một hàng. Không sửa tay trên Sheet.
+- GDD chính bỏ 5 tab GAME STORY, Enemy, Salvage, ITEM LIST, Recipe (còn trong lịch sử phiên bản của Sheet). Tab GDD CON đứng sau OVERVIEW giữ tóm tắt từng hệ thống đã tách và link. 6 hệ thống còn lại (Nhân vật, Map, Trạm và cảng, Kinh tế, UX UI, Kỹ thuật) giữ đủ trong GDD chính.
+- 3 file con bật "ai có link được xem" để `doi-chieu-sheet.mjs` đọc được.

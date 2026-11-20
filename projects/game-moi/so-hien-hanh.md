@@ -16,7 +16,7 @@ Cập nhật lần cuối: 2026-11-20, sau QA GD-031 vòng cuối và đợt 4.
 | Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý | (L) |
 | Nhóm | 1 GD, 4 dev, 1 artist 2D | (L) |
 | Sheet GDD | https://docs.google.com/spreadsheets/d/1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs (Lead đưa 2026-11-20). 25 tab theo khuôn indie, 17 tab `v0.1` cũ đã ẩn. Từ 2026-11-20 là GDD chính: giữ tổng quan, core loop, sản xuất và kiểm, tab GDD CON link tới GDD con | (L) DECISIONS 2026-11-20 Sheet GDD |
-| GDD con | 9 Sheet trong thư mục Drive https://drive.google.com/drive/folders/1y7pgu2TOxUScoCcNl40OAn3D1362NqRt, mỗi hệ thống một file, tab INFO link về GDD chính. Danh sách và link: `gdd/sheet/GDD CON.tsv`, tab nào ở file nào: `tools/tham-so/sheet.json` khóa `file` | (L) DECISIONS 2026-11-20 Tách GDD con |
+| GDD con | 3 Sheet: 01 Story, 02 Combat và Driftlife, 03 Vật phẩm, trong thư mục Drive https://drive.google.com/drive/folders/1y7pgu2TOxUScoCcNl40OAn3D1362NqRt. Tab khuôn sinh bằng `tools/dung-gdd-con.py`. Danh sách, tóm tắt và link: `gdd/sheet/GDD CON.tsv` (tab GDD CON của GDD chính). Tab nào ở file nào: `tools/tham-so/sheet.json` khóa `file` | (L) DECISIONS 2026-11-20 Tách GDD con |
 
 ## Luật và nội dung
 
