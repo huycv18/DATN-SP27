@@ -275,13 +275,16 @@ Chương 1 trọn vẹn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông d
 
 ## 15. USP (G)
 
-Viết theo khung USP của Dave the Diver Lead đưa 2026-11-20 (lai ghép thể loại, nội dung đa dạng, thế giới và truyện, mở rộng). Ý mở rộng bằng cập nhật và DLC không áp được (bán đứt, nhóm 6 người, chưa ra mắt) nên thay bằng co-op. Ý "nhịp thư giãn không áp lực" của Dave trái CP2 nên viết thành nhịp căng ngoài, thả lỏng trong trạm (log dòng 98).
+Khung theo USP của Dave the Diver Lead đưa 2026-11-20, bản viết lại lần 2 cùng ngày (log dòng 98, 99). Mỗi USP trả lời: người chơi nhận được gì, và khác game tham chiếu ở đâu.
+Ngày và đêm trong game: là nhịp sinh hoạt của trạm, không có đồng hồ thật (K23). Ngày là pha Chuyến 1 và Chuyến 2, đêm là pha Ca cảng. Ngày mới bắt đầu khi người chơi vào buồng ngủ đông.
+Oxy là thời gian và cũng là máu không còn là USP: Dave cũng dùng O2 làm máu và cũng cho giữ 1 món khi hết O2, nên đây là điểm mượn, giữ ở CP2 và Core Gameplay.
 
-- Lai ghép hai nửa trong một vòng ngày rõ rệt: ban ngày bay ra bãi vỡ của tàu mẹ Cradle (hành động phiêu lưu 2D, bay 8 hướng), cuối ngày mở ca cảng bán hàng cho tàu thương nhân ngoài hành tinh (mô phỏng quản lý). Thứ vớt được vừa là hàng bán vừa là vật liệu sửa trạm, mỗi khoang sửa xong đổi hình trạm Ember và trả lại một chức năng
-- Oxy là thời gian và cũng là máu: mỗi chuyến là một phép tính liều có vạch "đủ về", hết Oxy chỉ giữ 1 món chứ không mất trắng. Căng ở ngoài, thả lỏng khi về trạm (sửa khoang, nuôi Driftlife, nói chuyện với người vớt về)
-- Nội dung đa dạng, không lặp: mỗi chương thêm một kiểu chơi mới (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống). Thương nhân The Veyl mỗi loài một tính cách, có lúc phải chuyển tin mật cho cách mạng. Hài nhẹ từ tính cách nhân vật thay cho cắt cảnh dài
-- Thế giới và truyện cuốn hút: bãi vỡ đổi bố cục mỗi chuyến, mở dần ba dải Gần, Giữa, Xa. Bí ẩn vụ The Scattering và Solace dẫn tới cuộc cách mạng cùng Sevra chống định kiến của Daskel, kết bằng tọa độ một hành tinh có sự sống thật
-- Co-op có lý do trong truyện: mỗi Seed Station có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh. Chơi một mình vẫn trọn, 2 đến 4 người chia việc ở cả chuyến bay lẫn ca cảng
+| # | USP | Người chơi nhận được | Khác Dave the Diver |
+|---|---|---|---|
+| 1 | Salvage by Day, Trade by Night - Ngày vớt, đêm buôn | Ngày: rời trạm Ember, bay 8 hướng trong bãi vỡ của tàu mẹ Cradle để nhặt phế liệu, khai khoáng, bắt sống Driftlife (hành động phiêu lưu 2D). Đêm: mở ca cảng, tàu thương nhân ngoài hành tinh cập cửa neo, mang thùng hàng tới đúng tàu trước khi tàu hết kiên nhẫn để lấy Tally (mô phỏng quản lý). Hai nửa nuôi nhau: thứ vớt ban ngày là hàng bán ban đêm | Lặn trong nước thành bay không trọng lực. Phục vụ bàn sushi thành bán thùng hàng cho tàu, mỗi loài thương nhân một tính cách. Hàng còn là vật liệu sửa trạm, nên mỗi món vớt về phải chọn bán hay giữ |
+| 2 | Rebuild a Dead Station - Kéo trạm chết sống lại | Mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng chơi. Người sống sót vớt về vận hành khoang và mở tính năng mới. Tiến trình thấy được bằng mắt, không chỉ bằng số | Nhà hàng của Dave là nơi kiếm tiền. Trạm Ember là đích của cả game: sửa xong động cơ thì rời neo |
+| 3 | A Wreckfield Full of Secrets - Bãi vỡ đầy bí ẩn | Bố cục sinh lại mỗi chuyến, ba dải Gần, Giữa, Xa mở theo chương, map nhánh dựng tay giữ người sống sót và manh mối. Mỗi chương thêm một kiểu chơi mới (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống). Truyện 5 chương từ vụ The Scattering tới cuộc cách mạng cùng Sevra lật đổ Daskel, đích là một hành tinh có sự sống thật | Bí ẩn người biển thành truyện sinh tồn và chính trị: kẻ thù là định kiến của một tên độc tài. Hài nhẹ đến từ tính cách nhân vật, không dùng cắt cảnh dài |
+| 4 | Wake Up Together - Cùng nhau tỉnh dậy | Co-op online 2 đến 4 người có lý do trong truyện: mỗi Seed Station có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh. Chơi một mình vẫn trọn vẹn, thêm người là thêm tay chia việc ở cả ngày lẫn đêm | Dave chỉ chơi một mình. Ở đây co-op là cách chơi chính ngang chơi đơn |
 
 ## 16. Target Audience (G)
 
