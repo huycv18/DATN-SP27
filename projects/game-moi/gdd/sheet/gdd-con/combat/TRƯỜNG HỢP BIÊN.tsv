@@ -1,0 +1,26 @@
+Tình huống	Xử lý
+# Người chơi bị đánh (MVP)
+Oxy còn 3, trúng đòn 8	Oxy về 0, vào Ngạt. Không có Oxy âm.
+Hai đòn trúng cùng khung hình	Đòn đầu trừ Oxy và kích miễn sát thương. Đòn sau chỉ đẩy lùi.
+Đang kích Recall Beacon thì bầy lao tới	Bị đánh là hủy kích. Phải dọn hoặc né rồi kích lại.
+Giữ lãnh thổ bị bắn từ ngoài vùng phát hiện (Lao từ bắn Arc Eel từ xa)	Vẫn chuyển sang Tấn công và đuổi người gây đòn tới khi người đó ra ngoài khoảng bỏ đuổi tính từ điểm neo.
+# Choáng và bắt (MVP)
+4 người cùng Dùi xung liên tục một con	Giảm dần chặn khóa: tỉnh xong miễn 2 giây, ngưỡng nhân 1,5 tới trần 3. Không khóa được mãi.
+Súng lưới trúng 5 con S cùng vùng	Bắt 3 con gần tâm nhất. 2 con còn lại chạy theo kiểu.
+Lồng còn 1 chỗ, Súng lưới trúng 3 con	Bắt 1 con gần tâm nổ nhất, tiêu 1 Lưới cuộn. Hai con còn lại chạy theo kiểu.
+Lồng đã đủ 3 con khi bắt S	Không bắt được, con vật vẫn bất lực, báo lồng đầy. Súng lưới không tiêu Lưới cuộn khi mọi con trong vùng không vào được lồng.
+Hai người cùng Tương tác bắt một con	Người bắt đầu trước được. Người sau nhận thông báo "đang có người bắt".
+Con S bất lực, người chơi giữ cả phím Tương tác và phím Kết nhanh	Thao tác bấm trước được thực hiện, thao tác sau bị bỏ qua tới khi thả phím.
+Bấm Kết nhanh lên con vừa tỉnh	Không làm được, Kết nhanh chỉ áp cho con đang Bất lực.
+Người bắt rớt mạng giữa lúc giữ Tương tác	Việc bắt hủy, con vật vẫn bất lực tới hết thời gian. Mất kết nối quá 15 giây thì tính như bị kéo về, Lồng mẫu theo luật ghim.
+Lao từ trúng đồng đội đang Ngạt	Kéo người ngạt về phía người bắn để chia Oxy nhanh hơn. Không kéo theo Lồng mẫu của người ngạt.
+# Boss và co-op (MVP)
+Người chơi ngạt trong phòng boss, đồng đội còn đánh	Người ngạt không bị boss nhắm, không nhận sát thương, chờ cứu hoặc bị kéo về. Boss không hồi, chỉ hồi khi phòng trống quá 10 giây hoặc cả nhóm đã về trạm.
+Boss về 0 Sinh lực đúng lúc đủ điều kiện Xua đi	Hạ thắng vì kiểm Sinh lực xử lý trước. Xua đi chỉ hoàn tất bằng Tương tác 3 giây.
+Ba người đã về trạm hoặc bị kéo về, người cuối còn ngoài không gian	Driftlife chưa giao chiến tính lại hệ số theo số người còn ngoài, con đang giao chiến giữ hệ số tới hết trận. Mật độ Driftlife giữ như lúc sinh.
+# Sau MVP
+Đang gắn Phao kéo thì bị đánh	Hủy gắn, phao không mất.
+Con đang Ngủ bị đồng đội bắn	Tỉnh ngay, đòn đầu gây gấp đôi sát thương. Trong co-op nên báo đồng đội trước khi bắt.
+Mirror Mantis dội Lao từ về người bắn	Đòn dội gây 50% sát thương của đòn gốc vào Oxy người bắn, có miễn sát thương như đòn thường.
+Warden Harvester bị hạ khi đang giữ Driftlife cỡ L	Con L được thả, Choáng 6 giây, chỉ sinh thiết được.
+Một mình đang kéo kén của Sevra thì bị Warden Snarer trói	Không Lướt được khi kéo vật lớp Nặng nên lưới tự tan sau tối đa 2 giây. Muốn thoát sớm thì thả kén, Lướt, rồi kéo lại.

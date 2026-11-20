@@ -1,0 +1,67 @@
+Mã	Luật	Phạm vi
+# Quy ước, túi, kho và bị kéo về
+Q1	Mã vật phẩm theo tiền tố: RES tài nguyên thô, SMP mẫu đã hạ, LIV mẫu sống, COM vật liệu chế, CON vật tiêu hao, CGO kiện, ENG linh kiện động cơ, BPR bản thiết kế, STY vật kể chuyện, TOL dụng cụ, UPG nâng cấp, RCP công thức.	MVP
+Q2	GTĐ là giá trị tương đối của vật phẩm, RES-101 bằng 1,0. GTĐ không phải Tally, Economy quy đổi GTĐ ra Tally.	MVP
+V3	Túi tính bằng Khối, tài nguyên thô, mẫu đã hạ và vật tiêu hao chiếm Khối, túi đầy thì không nhặt thêm. Thả đồ tạo vật nhặt được tại chỗ trong 30 giây, tối đa 1 lần mỗi giây.	MVP
+V2	Kho ở trạm dùng chung cả nhóm, tối đa 999 đơn vị mỗi loại, không giới hạn số loại. Về trạm thì túi chuyển sang kho.	MVP
+K2	Bị kéo về (Oxy về 0 rồi hết khoảng ngạt) thì mất túi, chỉ giữ 1 món. Món giữ do người chơi ghim, mặc định là vật hiếm nhất vừa nhặt.	MVP
+V1	Món giữ là 1 đơn vị của một loại hoặc 1 vật đang kéo. Lồng mẫu được ghim thì chỉ giữ con sao cao nhất.	MVP
+V6	Dụng cụ và nâng cấp bộ đồ là mở khóa cho cả nhóm, không có dạng vật và không chiếm túi. Kiện mang tay trong trạm, không vào túi.	MVP
+V7	Mẫu sống cỡ S đi trong Lồng mẫu kéo theo (tối đa 3 con, mỗi người 1 lồng), cỡ M gửi về kho bằng Phao kéo. Buồng ngủ đông là vật kéo, không vào túi.	MVP
+# Vật kể chuyện
+V4	Vật manh mối tự ghi vào Sổ tay, không chiếm túi và không mất. Vật nhiệm vụ gồm 6 thứ, chiếm 1 Khối như vật thường và ghim làm món giữ được.	MVP
+V4b	Vật nhiệm vụ mất túi hoặc bị thả thì về vị trí gốc ở map nhánh, có lại ở chuyến sau. STY-701 không có vị trí gốc, mất thì nhận lại ở khoang liên lạc vào ngày sau (tối đa 1 gói mỗi ngày).	MVP
+V4c	Nộp vật nhiệm vụ là bỏ vào kho ở nơi nhận, không tiêu vật. Chỉ tiêu khi nằm trong vật liệu của việc sửa hoặc công thức: STY-102 ở KH08, STY-401 và STY-501 ở RCP-207.	MVP
+V5	Vật kể chuyện không bán cho tàu. Dữ liệu STY-101 và STY-401 được sao thành CGO-131 để bán (RCP-141), vật gốc ở lại trạm và mỗi vật gốc chỉ sao một lần.	Sau MVP
+# Tài nguyên và điểm khai thác
+S1	Tài nguyên thô gắn với dải, mỗi dải có ít nhất 2 tài nguyên riêng: Gần 6, Giữa 4, Xa 5 (kèm 1 tài nguyên Cradle). Vật phẩm dải trước vẫn có chỗ tiêu ở mọi giai đoạn.	MVP
+S2	Tài nguyên và Driftlife sinh lại mỗi chuyến, không cạn. Điểm khai thác chỉ biến mất trong chuyến sau khi khai thác xong.	MVP
+S3	Điểm khai thác có độ cứng 0 đến 3 (vật liệu) hoặc cấp khóa 1 đến 3 (hòm), khoan và nạy dùng chung một Dụng cụ khai thác bậc 1 đến 3. Bậc thấp hơn thì vẫn làm được nhưng lâu gấp 4, bậc bằng hoặc cao hơn thì thời gian chia cho hệ số bậc.	MVP
+S4	Mỗi điểm có bảng rơi theo trọng số, mỗi lần quay chọn một dòng rồi cho số lượng ghi ở dòng đó. Số lần quay cố định theo loại điểm.	MVP
+S5	Độ hiếm có 4 bậc: Thường, Ít gặp, Hiếm, Đặc biệt. Giá trị mỗi Khối tăng theo bậc để món hiếm đáng chỗ trong túi.	MVP
+S6	Mỗi điểm một người khai thác cùng lúc, người đến trước giữ. Không có tiến độ trong 10 giây thì thả điểm, phần thưởng vào túi người khai thác.	MVP
+# Mẫu Driftlife và boss
+M1	Hạ một Driftlife cho nguyên liệu sinh học của dải, có xác suất rơi đặc sản của loài. Đặc sản loài Gần dùng ở MVP là Kiện đặc sản Gần (CGO-106, 1 đặc sản mỗi kiện).	MVP
+M1b	Bắt sống chỉ với loài cỡ S và M, cho mẫu sống. Giá mẫu sống bằng 1,5 đến 2,0 lần giá trị kỳ vọng khi hạ (cỡ M dùng 1,5).	MVP
+M1c	Loài cỡ L chỉ lấy mẫu sinh thiết bằng Kim sinh thiết, giá 0,45 lần khi hạ. Shepherd Whale (DL-M01) không hạ được, không có đặc sản, giá cố định.	Sau MVP
+M2	Mẫu sống giao đơn cảng bằng lồng sinh vật sống. Mẫu đã hạ chỉ có nguồn tiêu thô: kiện mô, kiện đặc sản, vật liệu cho vật tiêu hao.	MVP
+M2b	Mẫu sống còn được nuôi trong khoang sinh quyển hoặc nghiên cứu ra bản thiết kế, cả hai mở ở chương 2. Mẫu sinh thiết đi vào kiện đặc sản và nghiên cứu Hồ sơ loài.	Sau MVP
+M3	Chất lượng mẫu 1 đến 3 sao. Mẫu sống theo Sinh lực còn lại lúc bắt: từ 70% là 3 sao, 30% đến dưới 70% là 2 sao, dưới 30% là 1 sao.	MVP
+M3b	Hạ cho 1 sao, Kết nhanh (hạ con đang bất lực) cho 2 sao, mẫu sinh thiết luôn 3 sao. Hệ số giá theo sao là 1,0 / 1,25 / 1,5, mẫu sống 1 sao không rẻ hơn nguyên liệu hạ 2 sao cùng loài.	MVP
+M3c	Kiện sinh học lấy sao thấp nhất trong đầu vào. Đơn hàng có thể đòi phẩm cấp tối thiểu.	MVP
+M4	Boss dải Gần (BS-1) có hai cách kết: hạ rơi SMP-191 cộng 5 SMP-101, xua đi rơi SMP-192 cộng 2 SMP-101. Hạch và mẫu boss chưa dùng được thì nằm trong kho và chỉ dùng để sửa khoang, không để nghiên cứu.	MVP
+M4b	BS-2 (dải Giữa): hạ rơi SMP-291, xua đi rơi SMP-292. BS-3 và BS-4 chỉ hạ được, rơi RES-305 và RES-401.	Sau MVP
+M4c	BS-5 không rơi vật phẩm. Sau khi khuất phục Daskel, Data Core của Warden Rig mở ra, trong đó có STY-501 và STY-502.	Sau MVP
+M5	Con nuôi bỏ vào lồng giao đơn tính là mẫu sống nhưng lồng có giá 0,5 lần lồng bắt thật cùng loài. Mỗi ngày tối đa 1 lồng từ nuôi cho mỗi loài.	Sau MVP
+# Dụng cụ và bộ đồ
+T1	Dụng cụ chế một lần ở Xưởng, cả nhóm dùng được, mỗi người tự chọn dụng cụ mang theo. Dụng cụ không có độ bền và không tốn Oxy.	MVP
+T2	Chi phí dùng dụng cụ là vật tiêu hao (Lưới cuộn, Ống gây mê, Phao kéo, Kim sinh thiết) hoặc cooldown (Lao từ, Dùi xung).	MVP
+T7	Chìa mở lối map nhánh (Bộ kích nguồn, Máy cắt thân tàu) là cổng cứng, không có chế độ chậm, không chiếm ô và không cần mang theo. Nhóm đã mở khóa thì ai tương tác với cửa cũng mở được.	MVP
+T7b	Bộ kích nguồn là công thức đầu tiên của Xưởng sau khi vớt Kỹ sư (RCP-205), chỉ dùng tài nguyên thô.	MVP
+T6	Ô dụng cụ theo Đai: bậc 0 có 3 ô, bậc 1 có 4 ô (chương 1, đi kèm Dùi xung). Bộ khởi điểm: ô 1 Dụng cụ khai thác, ô 2 Lao từ, ô 3 trống cho Dùi xung hoặc Súng lưới.	MVP
+T6b	Đai dụng cụ bậc 2 có 5 ô (chương 2).	Sau MVP
+T3	Dụng cụ nâng cấp bậc 1 đến 3 bằng công thức ở Xưởng (UPG-MIN, UPG-HAR, UPG-NET). Mỗi nâng cấp là một công thức riêng, tốn vật liệu và Tally.	MVP
+T4	Bộ đồ có 5 trục nâng cấp: Bình Oxy (bậc 0 đến 4), Túi đồ (0 đến 4), Bộ đẩy (0 đến 3), Vỏ bộ đồ theo dải (cấp 0 đến 3), Đai dụng cụ (0 đến 2). Bậc 0 là khởi điểm, không có công thức.	MVP
+T5	Vật liệu nâng cấp luôn gồm ít nhất một COM của dải vừa mở. Phải tới dải mới mới nâng được bậc kế tiếp.	Sau MVP
+T8	Bình Oxy nhỏ hồi 40 Oxy, không dùng khi đang ngạt, không hồi vượt dung lượng. Mỗi người mang tối đa 2 bình mỗi chuyến, tổng Oxy hồi từ vật tiêu hao không quá 25% dung lượng bình.	MVP
+# Công thức
+C1	Có 4 nơi chế: Xưởng, Cảng, Phòng nghiên cứu, khoang sinh quyển. Xưởng (Kỹ sư mở) và Cảng (Thông dịch viên mở ca cảng) có từ chương 1, hai nơi sau mở ở chương 2.	MVP
+C2	Chế nhanh (không quá 20 giây) đứng tại chỗ làm, được chế trong ca cảng. Chế qua đêm đặt vào hàng đợi, hoàn thành khi ngủ, nhận ở pha chuẩn bị.	MVP
+C2b	Nâng cấp và dụng cụ luôn chế qua đêm. Hàng đợi có 2 chỗ, mẻ xếp theo thứ tự đặt, mẻ thiếu vật liệu không bắt đầu và không trừ nguyên liệu.	MVP
+C3	Công thức COM và kiện mở theo vai và chương, không cần bản thiết kế (BPR). Dụng cụ mới cần BPR, học một lần cho cả nhóm, trừ Súng lưới bậc 1, Dùi xung, Lồng mẫu mở bằng quest Kỹ sư.	MVP
+C4	BPR có ba nguồn: nghiên cứu mẫu sống (BPR-101 từ Driftmoth, BPR-102 từ Sting Krill), Shop, hòm cố định ở map nhánh. Học BPR thì tiêu BPR đó.	Sau MVP
+C5	Biên lợi: COM 1,25 đến 1,5, kiện thô 1,0, kiện tinh 1,1 đến 1,25, bản sao dữ liệu 1,5 đến 2,5, vật tiêu hao 1,0 và không bán. Không công thức nào cho ra nguyên liệu thô.	MVP
+C6	Mọi công thức chỉ dùng vật phẩm có trong ITEM LIST. Thức ăn nuôi rẻ hơn sản phẩm nuôi từ 1,5 lần để nuôi có lời.	MVP
+C7	Kiện tin mật CGO-421 đóng bằng RCP-422: 1 gói tin mật STY-701 cộng 1 kiện vỏ bọc dải Xa. Giá bằng kiện vỏ bọc rẻ nhất nên không sinh thêm Tally.	Sau MVP
+# Kiện hàng cảng
+G1	Ca cảng do hệ thống Trạm và cảng giữ luật, Vật phẩm cấp loại kiện, nguyên liệu, thời gian đóng và cỡ. Tàu chỉ mua, giá Tally do Economy đặt.	MVP
+G2	Ba loại kiện: thô (hệ số 1,0, đóng 5 đến 6 giây, từ tài nguyên thô hoặc mô sinh học), tinh (từ COM, phải qua bước chế ở Xưởng trước khi đóng), sinh học và đặc biệt (đặc sản, sản phẩm nuôi, lồng sống, bản sao dữ liệu, vật tư).	MVP
+G2b	Cỡ kiện theo tổng Khối đầu vào: tối đa 10 Khối là Nhỏ, 11 đến 20 là Vừa, trên 20 là Lớn. Kiện làm từ kiện khác tính mỗi kiện đầu vào 5 Khối cộng Khối vật nhiệm vụ đi kèm.	MVP
+G3	Tốc độ mang kiện: Nhỏ 90%, Vừa 80%, Lớn 65%, chồng hàng thô 90%. Nhiều người khiêng một kiện Lớn thì mỗi người thêm cộng 15 điểm phần trăm, trần 95%.	MVP
+G5	Lồng sinh vật sống nhớ loài và sao. Giá trị lồng bằng mẫu sống bên trong nhân hệ số sao 1,0 / 1,25 / 1,5, các kiện khác không nhớ nguồn gốc.	MVP
+# Sửa khoang, vòng đời và co-op
+E1	Linh kiện lõi động cơ ENG-101 đến ENG-104 không tự làm được, mua ở Shop bằng Tally. ENG-105 không mua được, chế từ vật kể chuyện theo RCP-207 (Bản đồ sao thật, Hộp ghi hành trình Cradle, 2 Mạch cảm biến).	MVP
+E2	Động cơ chính lắp theo thứ tự ENG-101 (chương 1) đến ENG-105 (chương 5), mỗi giai đoạn cộng vật liệu của dải mới. Hai việc sửa đầu chương 1 (khoang neo, Xưởng) chỉ dùng tài nguyên thô vì chưa chế được COM.	MVP
+L1	Thứ tự một chuyến: nhặt hoặc khai thác, hạ hoặc bắt Driftlife, về trạm (túi sang kho), chế, đóng kiện, bốc lên tàu (nhận Tally). Cuối ngày: nâng cấp, học BPR, đặt hàng ở Shop.	MVP
+L2	Kho, bản thiết kế, cấp dụng cụ, cấp nâng cấp bộ đồ và hàng đợi chế dùng chung cả nhóm, túi và dụng cụ đang mang là riêng từng người. Người vào sau nhận mọi nâng cấp đã mua, túi rỗng.	MVP
+L3	Chơi 1 người thì xưởng và cảng một người làm hết, mọi kiện mang được một mình. Không luật nào cần đúng N người, số điểm khai thác theo số người do hệ thống Map giữ.	MVP

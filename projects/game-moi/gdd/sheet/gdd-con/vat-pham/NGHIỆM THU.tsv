@@ -1,0 +1,15 @@
+Tiêu chí	Cách đo	Ngưỡng đạt
+Dữ liệu nhất quán	Chạy script kiểm vật phẩm	Thoát mã 0, 0 lỗi
+Mọi vật phẩm có nguồn nhận và nguồn tiêu	Script kiểm ITEM LIST	Không vật phẩm nào thiếu một trong hai
+Công thức chỉ dùng vật phẩm có thật	Script kiểm Recipe với ITEM LIST	Mọi đầu vào có trong ITEM LIST
+Tài nguyên riêng mỗi dải	Script đếm	Tối thiểu 2 tài nguyên mỗi dải
+Biên lợi công thức	Script kiểm từng công thức	Nằm trong khoảng ở luật biên lợi chuỗi giá trị
+Không có vòng tạo giá trị	Script kiểm	Không công thức nào cho ra nguyên liệu thô
+Tỉ lệ mẫu sống trên hạ	Script kiểm từng loài	1,5 đến 2,0 cho loài cỡ S và M. Mẫu sinh thiết cỡ L khoảng 0,4 đến 0,5
+Không ghi giá Tally	Tìm "Tally" trong GDD Vật phẩm	Chỉ thấy trong ngữ cảnh giá do Economy giữ
+Đủ nội dung MVP chương 1	Đếm theo nhãn MVP	6 tài nguyên, 7 điểm khai thác, 5 COM, 9 kiện, 6 nâng cấp, 2 vật tiêu hao, 5 dụng cụ cộng chìa Bộ kích nguồn, 4 loài Driftlife (3 loài cỡ S bắt sống được)
+Thời gian làm đầy túi chương 1	Đo bằng bản chơi thử có số liệu	60 đến 70% thời gian chuyến
+Chuyến dùng cả khoan, nạy hòm và hạ	Đo bằng bản chơi thử có số liệu	Trên 90% chuyến ở chương 1
+Kiện tinh trên kiện thô khi đủ nguyên liệu	Đo bằng bản chơi thử có số liệu	Trên 50% sau chương 1
+Chơi 1 người	Chơi thử	Mọi công thức, kiện và điểm khai thác chạy đúng với 1 người
+Người chơi hiểu vì sao đồ đáng nhặt	Playtest	Người chơi nói được bỏ gì khi túi đầy

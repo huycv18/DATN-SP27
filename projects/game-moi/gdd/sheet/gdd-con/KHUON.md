@@ -12,6 +12,8 @@ Lead 2026-11-20: GDD con cũ "rườm rà, rối rắm, không gọn gàng, khô
 6. Nhóm hàng bằng hàng nhóm: ô đầu bắt đầu bằng "# ", các ô còn lại trống. Mỗi tab tối đa khoảng 8 nhóm.
 7. Phạm vi chỉ ghi `MVP` hoặc `Sau MVP`.
 8. Không ký hiệu markdown, không gạch dài, không emoji, không dấu chấm phẩy. Xuống dòng trong ô ghi `\n`.
+9. Cỡ tab: LUẬT tối đa 70 hàng (kể cả hàng nhóm), tab khác tối đa 45. Vượt thì gộp luật cùng ý, bỏ chi tiết nhỏ dev không cần ngay. Chi tiết đó vẫn ở bản đủ, có link ở TỔNG QUAN.
+10. Mã giữ nguyên mã trong GDD hệ thống để các GDD khác trỏ tới không lệch. Chỉ đặt mã mới cho luật GDD chưa đánh mã. Pillar viết bằng tên, không dùng mã.
 
 ## Tab và cột
 

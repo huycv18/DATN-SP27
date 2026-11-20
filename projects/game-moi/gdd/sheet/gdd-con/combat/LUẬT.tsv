@@ -1,0 +1,70 @@
+Mã	Luật	Phạm vi
+# Sát thương lên người chơi
+1	Sát thương lên người chơi trừ thẳng vào Oxy, không có thanh máu riêng. Oxy về 0 thì người đó vào Ngạt rồi bị kéo về trạm, combat không có thắng thua riêng.	MVP
+2	Trúng đòn thì bị đẩy lùi theo hướng đòn và mất điều khiển 0,25 giây. Trong 0,8 giây tính từ lúc trúng, đòn khác vẫn đẩy lùi nhưng không trừ Oxy.	MVP
+3	Trúng đòn hủy mọi thao tác giữ phím đang làm: kích Recall Beacon, bắt bằng tay, gắn Phao kéo, Kim sinh thiết, cạy. Dụng cụ đang nạp không mất đạn.	MVP
+4	0,2 giây đầu của Lướt được miễn sát thương, đây là cách né chủ động duy nhất.	MVP
+5	Ngắm tự do bằng chuột hoặc cần phải của gamepad, không khóa mục tiêu. Gamepad có hỗ trợ ngắm: đạn lệch tối đa 6 độ về mục tiêu gần tâm ngắm nhất.	MVP
+6	Dùi xung, Súng lưới, Súng gây mê không tác dụng lên người chơi, không có sát thương lên đồng đội. Lao từ trúng đồng đội thì móc dây kéo người đó về phía người bắn, không trừ Oxy.	MVP
+7	Dụng cụ combat chỉ dùng được ngoài không gian và trong map nhánh, không dùng trong trạm.	MVP
+# Báo trước, vé tấn công, chọn mục tiêu
+8	Mọi đòn của kẻ địch có ba pha Báo trước, Đánh, Hồi, Báo trước có cả hình và tiếng. Ngoại lệ duy nhất: người chơi tự lao vào con có gai hoặc bỏng thì bị sát thương tiếp xúc không báo trước, tối đa 5 Oxy mỗi lần.	MVP
+8	Báo trước tối thiểu: đòn hẹp dưới 15 Oxy 0,7 giây, đòn hẹp từ 15 Oxy 0,8 giây, đòn vùng bán kính 2 đến 3 u (1 u bằng chiều cao nhân vật) 1,0 giây, đòn vùng trên 3 đến 4 u 1,3 giây. Đòn vùng lớn hơn 4 u phải có cách chống khác ngoài bay ra, ví dụ bám mảnh vỡ hoặc chỗ núp.	MVP
+8	Kẻ địch ngoài màn hình ra đòn thì có thêm mũi tên ở mép màn và âm định hướng ngay từ đầu pha Báo trước. Báo trước tính từ lúc chỉ báo hiện vẫn phải đủ mức tối thiểu.	MVP
+9	Mỗi người có vé tấn công riêng: 2 vé ở dải Gần, 3 vé ở dải Giữa và Xa. Kẻ địch phải giữ một vé của người bị nhắm mới được ra đòn, hết vé thì lượn quanh cách 4 u chờ (đòn tiếp xúc và đòn vùng không cần vé).	MVP
+10	Kẻ địch nhắm người gây sát thương, choáng hoặc mê cho nó gần nhất trong 3 giây vừa qua, không có thì nhắm người gần nhất trong vùng phát hiện. Mục tiêu ra khỏi khoảng bỏ đuổi thì nó quay về chỗ cũ.	MVP
+10	Người đang Ngạt hoặc Được cứu không bị nhắm và không nhận sát thương, kể cả đòn vùng. Kẻ địch đang nhắm người đó trả vé và chọn lại mục tiêu, không còn ai thì về Trôi.	MVP
+# Choáng và Mê
+12, 15	Mỗi Driftlife có Sinh lực, Ngưỡng choáng, Ngưỡng mê, Sinh lực về 0 thì bị hạ. Choáng và Ngủ gọi chung là Bất lực: con bất lực không tự di chuyển, không ra đòn, trôi chậm theo quán tính.	MVP
+13	Dùi xung cộng điểm vào thanh Choáng, thanh đầy thì con vật Choáng 4 giây. Không bị trúng thêm 1 giây thì thanh tụt 20% ngưỡng mỗi giây, Dùi xung nóng tính riêng cho từng người cầm.	MVP
+14	Súng gây mê (từ chương 2) cộng điểm vào thanh Mê sau 1,5 giây kể từ lúc trúng, thanh đầy thì con vật Ngủ 12 giây. Sau 3 giây không trúng thêm thì thanh tụt 10% ngưỡng mỗi giây.	Sau MVP
+16	Sát thương lên con đang Ngủ đánh thức nó ngay và đòn đó gây gấp đôi sát thương. Sát thương lên con đang Choáng không làm nó tỉnh.	Sau MVP
+17	Giảm dần: mỗi con có hệ số Choáng và hệ số Mê riêng, khởi đầu 1, tỉnh khỏi loại nào thì hệ số loại đó nhân 1,5, trần 3. Ngưỡng hiệu lực bằng ngưỡng gốc nhân hệ số.	MVP
+17	Hệ số một loại về 1 sau 20 giây kể từ lần tỉnh gần nhất khỏi loại đó. Vừa tỉnh khỏi Choáng hoặc Ngủ thì con vật miễn cả choáng lẫn mê trong 2 giây.	MVP
+18	Loài miễn choáng thì Dùi xung không cộng thanh Choáng, loài miễn mê thì Súng gây mê không cộng thanh Mê. Máy của The Wardens miễn mê.	MVP
+# Bắt sống và hạ
+19	Cỡ S bắt bằng Súng lưới (không cần Bất lực) hoặc Tương tác giữ 1,5 giây khi con đang Bất lực. Bắt tay chậm hơn nhưng không tốn vật tiêu hao.	MVP
+20	Súng lưới bắt tối đa 3 con cỡ S trong vùng nổ bán kính 1,5 u, ưu tiên con gần tâm nổ nhất. Trúng con cỡ M trở lên thì chỉ quấn nó 2 giây, giảm 70% tốc độ.	MVP
+21	Mẫu sống cỡ S không vào túi mà vào Lồng mẫu của người bắt, lồng mở khi bắt con đầu tiên, chứa tối đa 3 con, mỗi người kéo tối đa 1 lồng. Lồng là vật kéo lớp Nhẹ: không làm chậm người kéo, không chiếm túi, không chiếm ô đai dụng cụ.	MVP
+19	Cỡ M: làm Bất lực rồi gắn Phao kéo (Tương tác giữ 1 giây), 3 giây sau phao đưa con vật về kho trạm. Latchjaw phải cạy (giữ 1,5 giây) rồi mới gắn được phao.	Sau MVP
+19	Cỡ L không bắt sống: Kim sinh thiết (Tương tác giữ 2 giây) lấy mẫu sinh thiết vào túi, con vật phải Bất lực trừ loài hiền. Con vật không bị hạ, tỉnh dậy và bỏ đi.	Sau MVP
+22	Chất lượng mẫu sống theo Sinh lực còn lại lúc bắt: từ 70% là 3 sao, từ 30% tới dưới 70% là 2 sao, dưới 30% là 1 sao. Mẫu sinh thiết luôn 3 sao.	MVP
+23	Hạ thường cho nguyên liệu 1 sao. Kết nhanh (giữ 0,6 giây, không cần dụng cụ) hạ con đang Bất lực cho 2 sao cùng số lượng, dùng phím riêng không chung với Tương tác để người chơi luôn chọn rõ bắt hay hạ.	MVP
+24	Mẫu sống cỡ S, M đáng hơn hạ: trừ vật tiêu hao vẫn bằng 1,5 đến 2 lần giá trị một lần hạ cùng loài. Mẫu sống 1 sao không thấp hơn nguyên liệu 2 sao cùng loài.	MVP
+25	Mẫu sống trong lồng không chết trong chuyến. Người bị kéo về được ghim Lồng mẫu làm món giữ lại nhưng chỉ giữ 1 con (sao cao nhất, bằng sao thì con bắt trước), các con còn lại mất cùng túi.	MVP
+25	Người vào Ngạt nhả dây lồng, lồng bị khóa tại chỗ, đồng đội không kéo đi được, được cứu thì Tương tác để nối lại. Rời phiên hoặc mất kết nối quá 15 giây giữa chuyến thì tính như bị kéo về.	MVP
+# Driftlife và hành vi
+26-29	Loài gắn với dải, chỉ sinh ở dải đó và map nhánh trong dải, sinh lại mỗi chuyến, không phạt khi hạ nhiều. Mỗi loài cho mẫu dùng được ở trạm và có đúng một kiểu hành vi trong 6 kiểu dưới đây.	MVP
+HV1	Hiền: trôi theo đường và ăn, thấy người thì bỏ qua. Bị tấn công thì bơi ra xa 6 u rồi trôi tiếp, không bao giờ đuổi.	MVP
+HV2	Chạy trốn: thấy người hoặc bị tấn công thì lướt ra xa với tốc độ 1,3 lần người chơi bậc 0 trong 3 giây, nghỉ 2 giây rồi lặp lại. Không bao giờ đánh.	MVP
+HV3	Giữ lãnh thổ: tuần quanh điểm neo, thấy người thì đe dọa, người còn trong vùng sau 2 giây thì tấn công. Bị đánh kể cả từ ngoài vùng phát hiện thì đuổi người gây đòn, cách điểm neo 10 u thì quay về.	MVP
+HV4	Săn mồi: lượn tìm mồi, thấy người thì đuổi và tấn công, bỏ đuổi khi cách chỗ phát hiện 18 u.	Sau MVP
+HV5	Đi bầy: cả bầy trôi và bỏ qua người nếu không bị tấn công. Một con bị tấn công thì cả bầy trong 8 u chuyển sang tấn công, bỏ đuổi ở 12 u.	MVP
+HV6	Phục kích: bám vào mảnh vỡ, trông như vật salvage hoặc đá, người tới gần 2 u thì ra đòn rồi bám lại. Không đuổi.	Sau MVP
+TS1	Trạng thái: Trôi, Cảnh giác (2 giây), Tấn công (cần vé), Chờ vé, Chạy, Choáng, Ngủ, Bỏ đuổi (quay về, không nhận vé), Bị bắt, Bị hạ. Mọi trạng thái trừ Bị bắt và Bị hạ đều có lối ra theo thời gian.	MVP
+30	Từ chương 3 một phần cá thể dải Giữa và Xa mang Dấu săn bắt (vết lưới và vết cắt của The Wardens), mọi Shardbrood Hatchling mang thẻ đánh dấu, mọi Shardbrood Queen có sẹo cắt mô. Dấu chỉ là hình, không đổi chỉ số.	Sau MVP
+SK1	Driftlife sổng trong trạm không gây sát thương, không chết và không mất, nó nuốt và giữ hàng trong khoang nó đứng. Tóm được thì hàng về chỗ cũ, bỏ mặc thì hết ca con tự về và hàng về kho.	Sau MVP
+SK2	Cách tóm con sổng: Hiền đi lang thang thì tới tóm (giữ 0,8 giây), Chạy trốn né người trong 3 u thì dồn góc hoặc chặn cửa, Đi bầy tách 3 con ra 3 khoang thì tóm từng con, Giữ lãnh thổ chặn cửa và đẩy người ra thì dụ bằng mồi rồi tóm.	Sau MVP
+# Thứ tự xử lý trong một khung hình
+TT1	Bước 1: đòn người chơi trúng thì tính miễn, cộng thanh Choáng hoặc Mê, trừ Sinh lực. Bước 2: Sinh lực về 0 thì bị hạ, kể cả khi thanh Choáng vừa đầy cùng khung.	MVP
+TT2	Bước 3: thanh đầy thì vào Choáng hoặc Ngủ, hai thanh cùng đầy thì vào Ngủ. Bước 4: đòn kẻ địch trúng người chơi thì kiểm miễn sát thương, trừ Oxy, đẩy lùi, hủy thao tác giữ phím.	MVP
+TT3	Bước 5: Oxy người chơi về 0 thì vào Ngạt. Bước 6: bắt hoàn tất trong khung mà người bắt vừa trúng đòn ở bước 4 thì việc bắt bị hủy.	MVP
+# Boss
+35	Mỗi chương có đúng một boss ở map nhánh, không sinh lại và không đánh lại. Boss đã kết lưu ở lần tự lưu sau chuyến, boss chưa kết thì lần sau đánh lại từ đầu.	MVP
+36	Cửa phòng boss không khóa, người chơi rút được bất cứ lúc nào qua Recall Beacon cố định đặt ngay ngoài phòng. Boss và Driftlife nó sinh ra không rời phòng, lối đi tiếp sau phòng đóng tới khi boss kết thúc.	MVP
+36	Không còn người chơi nào trong phòng quá 10 giây, hoặc cả nhóm đã về trạm, thì boss hồi đầy và về pha 1.	MVP
+37, 39	Boss chuyển pha theo mốc Sinh lực, lúc chuyển miễn sát thương 2 giây và có báo trước rõ. Boss miễn Dùi xung và Súng gây mê, chỉ Bất lực theo cơ chế của từng pha ghi ở tab Enemy.	MVP
+37	Boss Driftlife có hai cách kết: Hạ (Sinh lực về 0, rơi nhiều nguyên liệu) hoặc Xua đi (làm boss Bất lực ở pha cuối rồi Tương tác giữ 3 giây ở điểm yếu, boss bỏ đi và rơi một Mẫu boss). Cả hai cách đều mở tiếp tiến trình chương.	MVP
+37	Vật rơi boss chưa có chỗ dùng ở chương đang chơi thì nằm trong kho, trạm báo "dùng được khi mở khoang dẫn đường".	MVP
+38	Boss The Wardens (BS-3 đến BS-5) chỉ có một cách kết. Daskel (BS-5) về 0 Sinh lực thì gục và bị bắt, giao cho The Kindling, không hạ chết.	Sau MVP
+# The Wardens và kén của Sevra
+31, 32	Quân The Wardens xuất hiện ở dải Xa từ chương 3: bắn xa, phối hợp nhóm, có khiên hướng, không bắt sống được, miễn mê. Hạ chúng là nguồn duy nhất của RES-305 Linh kiện Warden và RES-301 Hợp kim Warden.	Sau MVP
+11, 33	Driftlife kiểu Giữ lãnh thổ và Săn mồi tấn công The Wardens trong vùng phát hiện, ưu tiên hơn người chơi. Hạ Warden Harvester thì Driftlife nó đang giữ được thả, Choáng 6 giây.	Sau MVP
+34	Lưới của Warden Snarer trói người chơi tối đa 2 giây rồi tự tan: không bay được, mỗi giây trừ 2 Oxy. Thoát sớm bằng Lướt 3 lần liên tiếp hoặc đồng đội bắn Lao từ cắt lưới.	Sau MVP
+40-44	Toán bắt cóc Sevra ở chương 3 và việc kéo kén của Sevra theo tab Enemy, dòng EN-01. Kén không bị nhắm, không nhận sát thương, Sevra không chết.	Sau MVP
+# Co-op 1 đến 4 người
+CO1	N là số người ở ngoài không gian trong cùng map lúc kẻ địch sinh ra hoặc lúc vào phòng boss. Người rời phiên giữa trận thì hệ số giữ nguyên tới hết trận đó.	MVP
+CO2	Sinh lực và hai ngưỡng của Driftlife tăng theo N, bù cho số Driftlife mỗi chuyến cũng tăng theo N, nên mỗi người gánh như chơi một mình. Hệ số từng dải ở tab THAM SỐ.	MVP
+CO3	Sinh lực boss, Sinh lực và ngưỡng choáng The Wardens nhân 1 + 0,6 x (N - 1). Sát thương lên người chơi không đổi theo N.	MVP
+CO4	Người hoàn tất bắt nhận mẫu vào lồng mình kéo, đồng đội nhận lồng bằng Trao đồ, Phao kéo gửi về kho chung. Vật rơi khi hạ ai nhặt trước thì được, trôi 60 giây rồi biến mất.	MVP
+CO5	Không luật nào cần đúng N người: lùa Skitter Ray, đánh lạc hướng Warden Lancer, cắt lưới cho đồng đội đều có cách làm một mình. Không cơ chế boss nào cần hai người đứng hai chỗ cùng lúc.	MVP

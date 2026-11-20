@@ -1,0 +1,30 @@
+Bộ phận	Yêu cầu	Phạm vi
+# Dev
+Dev	Bảng dữ liệu mốc: mã mốc, chương, mốc đứng trước, danh sách điều kiện (loại và tham số, tất cả cùng đúng), nơi, mã cảnh, danh sách thứ được mở.	MVP
+Dev	Bảng cảnh: mã cảnh, mốc sở hữu, loại (ngắn, dài), kênh, danh sách mã câu. Hai cảnh mở chương 4 và 5 có điều kiện riêng.	MVP
+Dev	Bảng vật truyện: mã truyện, ID vật, loại (manh mối, nhiệm vụ), map nhánh, khe, mốc làm nó hiện, mã mục Sổ tay, khoang nhận nếu là vật nhiệm vụ.	MVP
+Dev	Điều kiện mốc cần đủ các loại: bắt đầu thế giới, tới một lối vào, khoang Hoạt động, buồng qua cửa khí, boss xong, nhặt hoặc nộp vật, số ca cảng, giao đủ đơn, tàu cập bến lần thứ n, ngày kế tiếp, giai đoạn động cơ, mọi người xác nhận.	MVP
+Dev	Lưu theo thế giới của host: trạng thái mọi mốc và vật truyện, số lần cập bến, số lần giao đủ hàng của từng tàu có tên. Mỗi người chơi lưu thêm hàng chờ cảnh và cảnh đã xem.	MVP
+Dev	Đồng bộ co-op: mốc và vật truyện là trạng thái chung, host quyết. Hàng chờ cảnh là của từng người, cảnh phát riêng từng máy.	MVP
+Dev	Bộ đếm đơn tin mật giao đủ của thế giới, cộng dồn qua chương. Sự kiện bắt cóc ở N4 cần mốc C3.7 và động cơ giai đoạn 3, nơi ở của Sevra đổi theo mốc.	Sau MVP
+# Tool
+Tool	Chuỗi văn bản: mỗi câu một mã, tách khỏi code, dùng bảng dịch của Unity Localization. Chừa khung gấp đôi độ dài bản gốc.	MVP
+Tool	Validator: mỗi vật truyện có ID, khe và mốc hiện hợp lệ. Mỗi mốc có ít nhất một điều kiện và có mốc đứng trước, không câu nào vượt ký tự của kênh hay chứa chữ số.	MVP
+Tool	Sự kiện theo dõi: mốc xong, cảnh được xem hoặc bị bỏ qua, vật manh mối được nhặt, vật nhiệm vụ rơi về khe, người vớt mở tính năng.	MVP
+# Art
+Art	Tỉnh dậy: buồng mở, hơi lạnh, buồng bên tắt đèn, bãi vỡ xoay ngoài cửa sổ. Neo trạm: bãi vỡ ngừng xoay, đèn trạm sáng thêm.	MVP
+Art	Buồng ngủ đông còn chạy trong map nhánh: đèn nhịp chậm, khác buồng tắt. Buồng về trạm vào khu hồi sức, đèn đổi màu.	MVP
+Art	Vật manh mối: phát sáng nhẹ, có một dấu riêng dùng chung cả game. Khoang mở tính năng sáng đèn, có người đứng trong.	MVP
+Art	Tàu Oru nhỏ chắp vá cập bến lệch. Đèn khoang liên lạc nhấp theo giọng nói ở cuối chương 1.	MVP
+Art	Không thêm chủng tộc. Lính The Wardens là người Sennari mặc giáp, Sevra dùng chung dáng với Ilsume, thêm trạng thái gỡ mạng che, Steward Ilvane không cần hình.	Sau MVP
+Art	Cảnh đặc biệt: ảnh phóng to thẻ và vết cắt mô trên Driftlife, kén của Sevra có đèn tín hiệu riêng, Cryo Deck dãy buồng tắt hết màn hình, khoảng trống chỗ lẽ ra có Solace.	Sau MVP
+Art	Cảnh cuối: bộ neo nhả, hàng tàu The Veyl đứng nhìn, bầu trời sao sạch không mảnh vỡ, màn hình tên các buồng đã tắt.	Sau MVP
+# UI
+UI	Hộp thoại 2 dòng có tên và chân dung người nói. Radio ở mép màn hình, bong bóng trên đầu nhân vật, dấu báo có cảnh chờ ở nhân vật hoặc khoang.	MVP
+UI	Sổ tay có 3 phần: mục tiêu, mốc đã xong, vật manh mối. Một dòng Sổ tay tối đa 60 ký tự, thông báo một dòng khi nhặt vật manh mối.	MVP
+UI	Cảnh hiện ngay khi vào điểm nghỉ, không chờ. Bỏ qua là hết ngay, không mờ dần dài, không hộp thoại chân dung nối nhau quá 8 câu.	MVP
+# Audio
+Audio	Báo động yếu và tiếng buồng xả khí lúc tỉnh dậy. Tiếng bộ neo bắt vào xác khi neo, nhịp bíp đều cho buồng còn chạy, một tiếng chuông ngắn khi nhặt vật manh mối.	MVP
+Audio	Mốc mất mát (C1.1, C3.6, C4.2, C4.6) không có nhạc cảng. Cú lật Driftlife im lặng, bỏ nhạc nền, nhạc chủ đề vào khẽ ở C5.6 và đủ bài ở C5.8.	Sau MVP
+# Tutorial
+Tutorial	Cách bỏ qua cảnh dạy ở bước hướng dẫn T30. Cách mở Sổ tay dạy ở bước T02 và T29, dấu vật manh mối dạy ở bước T29, dùng nhật ký trạm ở khe M4 của Station Cinder làm vật đầu tiên.	MVP

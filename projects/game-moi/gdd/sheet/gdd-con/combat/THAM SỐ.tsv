@@ -1,0 +1,41 @@
+Tham số	Giá trị	Đơn vị	Ghi chú
+# Người chơi khi trúng đòn
+Mất điều khiển khi trúng	0,25	giây	Bị đẩy lùi theo hướng đòn
+Miễn sát thương sau khi trúng	0,8	giây	Tính từ lúc trúng, vẫn bị đẩy lùi
+Miễn sát thương đầu Lướt	0,2	giây	Cách né chủ động duy nhất
+Hỗ trợ ngắm gamepad	6	độ	Lệch về mục tiêu gần tâm ngắm nhất
+Sát thương tiếp xúc tối đa	5	Oxy mỗi lần	Chạm con có gai hoặc bỏng, không báo trước
+# Báo trước và vé tấn công
+Báo trước tối thiểu, đòn hẹp dưới 15 Oxy	0,7	giây	Đòn hẹp nhẹ
+Báo trước tối thiểu, đòn hẹp từ 15 Oxy	0,8	giây	Đòn hẹp nặng
+Báo trước tối thiểu, đòn vùng bán kính 2 đến 3 u	1,0	giây	1 u bằng chiều cao nhân vật
+Báo trước tối thiểu, đòn vùng bán kính trên 3 đến 4 u	1,3	giây	Lớn hơn 4 u phải có chỗ bám hoặc núp
+Vé tấn công, dải Gần	2	vé mỗi người	Hết vé thì kẻ địch lượn cách 4 u chờ
+Vé tấn công, dải Giữa và Xa	3	vé mỗi người	Đòn tiếp xúc và đòn vùng không cần vé
+# Choáng, Mê, giảm dần
+Thời gian Choáng	4	giây	Sát thương không làm tỉnh
+Thời gian Ngủ	12	giây	Bị sát thương thì tỉnh ngay
+Trễ tác dụng Súng gây mê	1,5	giây	Tính từ lúc trúng
+Thanh Choáng tụt	20% ngưỡng	mỗi giây	Sau 1 giây không trúng
+Thanh Mê tụt	10% ngưỡng	mỗi giây	Sau 3 giây không trúng
+Hệ số giảm dần mỗi lần tỉnh	1,5	lần	Trần 3, riêng cho Choáng và Mê
+Đặt lại hệ số giảm dần	20	giây	Tính từ lần tỉnh gần nhất khỏi loại đó
+Miễn choáng và mê sau khi tỉnh	2	giây	Áp cho cả hai loại
+# Bắt sống và hạ
+Bắt cỡ S bằng tay	1,5	giây	Con phải đang Bất lực
+Vùng Súng lưới	1,5	u bán kính	Tối đa 3 con cỡ S
+Súng lưới trúng cỡ M trở lên	2	giây	Quấn, giảm 70% tốc độ, không bắt
+Sức chứa Lồng mẫu	3	con	1 lồng mỗi người
+Gắn Phao kéo	1	giây	Phao bay về sau 3 giây
+Cạy Latchjaw	1,5	giây	Trước khi gắn Phao kéo
+Kim sinh thiết	2	giây	Chỉ cỡ L
+Kết nhanh	0,6	giây	Chỉ con đang Bất lực, cho 2 sao
+Ngưỡng sao mẫu sống	3 sao từ 70%, 2 sao từ 30%	% Sinh lực còn lại	Dưới 30% là 1 sao
+# Boss và co-op (N là số người chơi)
+Xua đi boss	3	giây	Tương tác ở điểm yếu khi boss Bất lực ở pha cuối
+Miễn sát thương khi boss chuyển pha	2	giây	Có báo trước rõ
+Boss hồi khi phòng trống	10	giây	Hoặc khi cả nhóm đã về trạm
+Sinh lực và ngưỡng Driftlife, dải Gần	1 / 1,54 / 1,88 / 2,11	lần	N = 1 / 2 / 3 / 4
+Sinh lực và ngưỡng Driftlife, dải Giữa	1 / 1,6 / 2 / 2,29	lần	N = 1 / 2 / 3 / 4
+Sinh lực và ngưỡng Driftlife, dải Xa	1 / 1,45 / 1,7 / 1,87	lần	N = 1 / 2 / 3 / 4
+Sinh lực boss và The Wardens	1 / 1,6 / 2,2 / 2,8	lần	N = 1 / 2 / 3 / 4, bằng 1 + 0,6 x (N - 1)

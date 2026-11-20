@@ -1,0 +1,19 @@
+Tình huống	Xử lý
+Túi rỗng, bị kéo về	Không có món nào để giữ. Chuyến vẫn tính là kết thúc.
+Túi đầy, nhặt thêm	Không nhặt được. Hiện cảnh báo "túi đầy" và số Khối đang thiếu.
+Túi đầy khi đang khai thác	Điểm giữ nguyên. Người chơi thả đồ rồi quay lại, nếu bỏ đi thì tiến độ khai thác bị hủy.
+Kho đạt 999 một loại	Phần thừa bị bỏ tự động khi về trạm và hiện thông báo.
+Hai người cùng khai thác một điểm	Người đến trước giữ. Người sau thấy điểm xám.
+Thả vật nhiệm vụ	Thả được. Vật nằm 30 giây rồi về vị trí gốc nếu không ai nhặt.
+Spam nhặt và thả	Thả tối đa 1 lần mỗi giây. Không nhân đôi vì vật trừ khỏi túi ngay.
+Khách mất kết nối giữa chuyến	Giữ chỗ 15 giây. Quá hạn hoặc chủ động rời thì tính như bị kéo về, chỉ giữ 1 món.
+Chủ phòng (host) thoát giữa chuyến	Thế giới về điểm lưu gần nhất. Chơi một mình mà thoát giữa chuyến thì mất chuyến.
+Hai mẫu cùng loài, một sống một hạ	Là hai vật phẩm khác ID, không gộp.
+Công thức đòi "một trong n loài"	Người chơi chọn loài dùng. Giá trị đầu vào tính theo loài rẻ nhất trong nhóm.
+Hết nguyên liệu giữa lúc đóng kiện	Công thức không bắt đầu và không trừ nguyên liệu.
+Ngủ khi hàng đợi chưa xong	Hàng đợi hoàn thành khi ngủ. Không có hàng đợi chạy khi người chơi offline.
+Nâng cấp bậc cao hơn dải đã mở	Không cho. Công thức bậc đó mở khi dải mở.
+Người vào sau trong co-op	Nhận trang bị theo cấp nhóm, túi rỗng.
+Kén buồng ngủ đông BNG-102 (vật kéo lớp Nặng) rơi	Nằm lại chỗ thả, lưu ở beacon cố định gần nhất đã qua. Chưa qua beacon nào thì ở cửa N4, không tính vào luật giữ 1 món.
+Buồng ngủ đông khác bị kéo về	Bỏ lại chỗ cũ, chuyến sau còn ở điểm cũ vì là map nhánh.
+Vật rơi boss chưa dùng được	Nằm trong kho, trạm báo "dùng được khi mở khoang dẫn đường".

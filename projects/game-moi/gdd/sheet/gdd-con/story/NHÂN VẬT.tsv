@@ -1,0 +1,29 @@
+Tên	Vai trò	Tính cách và giọng	Phạm vi
+# Nhân vật người chơi
+Tổ Ember (Noor Haddad, Jonas Weber, Mei Tanaka, Tariq Bello)	Bốn hồ sơ mặc định, kíp vận hành trạm, không ai là chuyên gia. Người chơi chọn một hồ sơ và đổi tên được.	Không có lời thoại riêng. Nhân vật khác gọi bằng tên người chơi đặt hoặc gọi chung là "Ember".	MVP
+# Người vớt
+Ingrid Halvorsen	Kỹ sư, Na Uy, từng làm giàn khoan. Mở xưởng, phải nhìn lại chính nghề khai thác của mình.	Khô, gọn, thực tế. Câu mệnh lệnh, đùa không đổi nét mặt, không nói thẳng về cảm xúc của mình.	MVP
+Linh Tran	Thông dịch viên, Việt Nam. Mở khoang liên lạc và cảng, là một trong những người dịch Lodestar Survey, giấu tới chương 4.	Khéo, nhanh, giữ thể diện. Hay chữa lời người khác, đôi khi dịch quá trung thực, không nói thẳng điều đang giấu.	MVP
+Rafael Ortega (Rafa)	Hoa tiêu, Chile. Mở khoang dẫn đường và Skiff, bản đồ từng giết cả tàu, tới chương 5 anh phải tin một tọa độ do người khác trao.	Mơ mộng, vòng vo, ấm. Ẩn dụ sao và biển, nói vòng rồi mới vào ý, không hứa chắc một con đường là an toàn.	Sau MVP
+Amara Okafor	Nhà sinh học, Nigeria. Mở phòng nghiên cứu và khoang sinh quyển, phải chọn nhìn Driftlife là tài nguyên hay sinh vật.	Chậm, chính xác, dịu. Dùng tên bộ phận sinh vật, nói "nhẹ tay", không bao giờ gọi sinh vật là "hàng".	Sau MVP
+Yusuf Demir	Trưởng cảng, Thổ Nhĩ Kỳ. Mở bến và tiện ích cảng, tin buôn bán với ai cũng được, và chính ông đã mời Maro trà.	Ồn ào, thân mật, hiếu khách. Nói to, hay nhắc trà và bến, không bao giờ nói nhỏ.	Sau MVP
+# Thương nhân The Veyl
+Tikko (Oru, TA01)	Khách đầu tiên của cảng. Sang chương 5 vẫn ghé đều khi phần lớn tàu đã bỏ bãi vỡ.	Tò mò, líu lo, tự xưng bằng tên. Mê đồ Trái Đất và hiểu sai công dụng, không bao giờ mặc cả gắt.	MVP
+Ilsume (Sennari, TA04)	Tên giả của Sevra Ilvane. Hết là Ilsume sau C3.8, tàu TA04 không ghé nữa.	Trịnh trọng, chậm rãi, coi nghi thức là hàng quý nhất. Lễ nghi dài dòng khi tàu sắp rời bến.	Sau MVP
+Vaeth (Aelith, TA05)	Nhà sưu tầm sinh vật, người mua cho việc bắt sống và nuôi. Sau cú lật là thương nhân đầu tiên tin Amara.	Say mê, lơ đãng, chỉ nhìn sinh vật không nhìn người. Khen con vật trong kiện, quên trả lời người bán.	Sau MVP
+Dromm (Brakk, TA06)	Xem hộ Yusuf cảng Ember. Sang chương 5 vẫn chở hàng tới giữa vòng phong tỏa.	Ít lời, chắc chắn, mặc cả bằng im lặng. Nói ngắn, đánh giá bằng mắt.	Sau MVP
+Nhem (Kesh, TA10)	Người buôn tin, đã chuyển Lodestar Survey mà không biết nguồn. Sau đó đưa sự thật ngược lại theo đúng con đường đó.	Điềm đạm, nặng lòng, mang nỗi áy náy. Hay nói "tin là hàng", câu ngắn hai vế, không bao giờ đùa.	Sau MVP
+# Người khác
+Odile Laurent	Trưởng trạm Lantern. Tin Solace có thật tới C4.7, sau đó mất đích cho tới khi có tọa độ bà tự kiểm được.	Cứng, kỷ luật, mệt. Nói bằng mệnh lệnh và nghĩa vụ, không bao giờ nói "tôi sợ".	Sau MVP
+Bram Kowalski	Trưởng xuồng tiếp tế của Lantern, tàu TA03. Ở chương 1 chỉ có giọng qua sóng.	Hay than, tốt bụng, lắm lời. Lần nào cũng xin thêm một thứ ngoài danh sách, không bao giờ từ chối giúp.	MVP
+Elias Vance	Thủ lĩnh The Remainers, cựu sĩ quan an ninh của Cradle. Giữ người còn lại sống bằng cách không đi đâu cả.	Khắc nghiệt, ít lời, nỗi sợ giấu sau kỷ luật. Hay nói đếm, giữ, ở lại, không nói về hy vọng.	Sau MVP
+Wren	Đứa trẻ sinh ra trên The Raft sau The Scattering. Chưa từng thấy một hành tinh.	Hỏi thẳng, tò mò. Muốn biết bên ngoài có gì.	Sau MVP
+Sevra Ilvane (NP-5)	Con gái Steward Ilvane, người thừa kế hợp pháp của Sennar. Giả làm Ilsume tới C3.8, rồi dẫn The Kindling lật đổ Daskel.	Dưới tên Ilsume: trịnh trọng. Khi là chính mình: giữ nghi thức nhưng nói thẳng, nhận lỗi thay Sennar mà không xin tha.	Sau MVP
+Maro	Gián điệp của Daskel, giả làm thương nhân (tàu TA08), chỉ huy toán bắt cóc. Không tự đánh.	Vồn vã, hào phóng, hỏi quá nhiều. Khi lộ mặt thì phẳng lặng, không bao giờ nói về bản thân.	Sau MVP
+Daskel	Độc tài của Sennar, tự phong First Warden, boss BS-5. Con trai một sĩ quan chết trong The Meeting War.	Phẳng, từ tốn, chắc nịch. Nói trật tự, hy sinh, người cha, "tàn dư", không bao giờ lên giọng hay xin lỗi.	Sau MVP
+Steward Ilvane	Người cai trị cũ của Sennar, cha của Sevra. Chết trong giam cầm trước game.	Không xuất hiện, không cần art. Có mặt qua lời Sevra và nghi thức cô giữ.	Sau MVP
+# Giọng chung và điều cấm
+Giọng chung	Nền nghiêm: sinh tồn, mất mát, việc phải làm. Câu ngắn, nói việc trước, cảm xúc nằm ở điều không nói.	Hài nhẹ đến từ tính cách và lệch văn hóa giữa các loài, không từ câu đùa. Không có hài ở mốc mất mát.	MVP
+Điều cấm về chữ	Không chữ số, tên phím, tên nút, tên biến, thuật ngữ luật chơi, từ chỉ số người chơi, emoji, tiếng lóng, thương hiệu thật.	Hộp thoại tối đa 80 ký tự một câu. Bong bóng và radio tối đa 60, nhân vật không tự kể tiểu sử thành đoạn.	MVP
+Điều cấm về nội dung	Không trách người chơi vì săn Driftlife. Không nói cả chủng tộc Sennari là xấu, không kể Daskel như kẻ tham của.	Kẻ xấu là Daskel và chế độ của hắn. Động cơ của hắn là hận thù và giữ quyền.	MVP
+Điều cấm về Solace	Trước C3.8 không nhân vật nào nói thẳng Solace không có thật.	Nghi ngờ về hồ sơ và nguồn của nó thì được gieo dần.	Sau MVP

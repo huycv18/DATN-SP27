@@ -65,6 +65,7 @@ def kiem(key):
             if len(r) != len(cot): loi.append(f'{tab} hàng {i}: {len(r)} cột, cần {len(cot)}'); continue
             for j, c in enumerate(r):
                 if len(c) > DAI_TOI_DA: loi.append(f'{tab} hàng {i} cột {cot[j]}: {len(c)} ký tự, tối đa {DAI_TOI_DA}')
+                if len(re.findall(r'[.!?](?=\s|$)', c)) > 2: loi.append(f'{tab} hàng {i} cột {cot[j]}: quá 2 câu, tách hàng')
                 for mau, ly_do in CAM:
                     if re.search(mau, c) and not (tab == 'TỔNG QUAN' and r[0] == 'Vai giữ'): loi.append(f'{tab} hàng {i}: {ly_do} ("{c[:50]}")')
                 for so in re.findall(r'\d+(?:[.,]\d+)?', c):
@@ -72,6 +73,8 @@ def kiem(key):
                         loi.append(f'{tab} hàng {i}: số {so} không có trong {", ".join(m["md"])}')
             if 'Phạm vi' in cot and r[cot.index('Phạm vi')] not in ('MVP', 'Sau MVP'):
                 loi.append(f'{tab} hàng {i}: Phạm vi phải là MVP hoặc Sau MVP')
+        tran = 70 if tab == 'LUẬT' else 45  # bản đọc phải gọn: chi tiết nhỏ để ở bản đủ trong repo
+        if len(rows) - 1 > tran: loi.append(f'{tab}: {len(rows) - 1} hàng, tối đa {tran} (gộp luật nhỏ, chi tiết để ở bản đủ)')
         if tab == 'TỔNG QUAN':
             co = [r[0] for r in rows[1:]]
             loi += [f'TỔNG QUAN: thiếu hàng "{x}"' for x in TONG_QUAN_BAT_BUOC if x not in co]
@@ -120,8 +123,8 @@ def dung(key, ra):
                 x.alignment = Alignment(wrap_text=True, vertical='top', horizontal='center' if giua else 'left', indent=0 if giua else 1)
                 v = str(r[j - 1]) if j - 1 < len(r) else ''
                 if not v.startswith('='):
-                    dong = max(dong, sum(max(1, math.ceil(len(p) * 6.4 / (px - 24))) for p in v.split('\n')))
-            ws.row_dimensions[rr].height = 16 * dong + 8
+                    dong = max(dong, sum(max(1, math.ceil(len(p) * 5.8 / (px - 24))) for p in v.split('\n')))
+            ws.row_dimensions[rr].height = 16 * dong + 6
         ws.freeze_panes = 'A3'
         ws.sheet_view.showGridLines = False
     out = Path(ra) / f'{key}.xlsx'; wb.save(out)

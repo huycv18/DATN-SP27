@@ -1,0 +1,30 @@
+Bộ phận	Yêu cầu	Phạm vi
+# Dữ liệu và tool
+Dev	Mỗi vật phẩm một bản ghi tĩnh ItemData: id, tên, nhóm, độ hiếm, khối, GTĐ tham chiếu, dải, cờ MVP. Bản ghi động ItemInstance có id, số lượng, phẩm cấp (1 đến 3 sao cho mẫu và kiện sinh học), loài (cho kiện sống).	MVP
+Dev	RecipeData: id, nơi chế, đầu vào (id hoặc nhóm id, số lượng), đầu ra, thời gian hoặc "qua đêm", cờ mở bằng vai, chương hoặc BPR.	MVP
+Dev	SalvageNodeData: id, độ cứng hoặc cấp khóa, dụng cụ, thời gian bậc 1, số lần quay, bảng rơi.	MVP
+Dev	Kho, hàng đợi chế, bản thiết kế, nâng cấp là trạng thái dùng chung, đồng bộ qua host. Túi và khóa điểm khai thác là trạng thái riêng của người chơi, có xác nhận từ host để chống nhân đôi.	MVP
+Dev	Điểm khai thác mới sinh theo hạt giống chuyến, giống nhau cho mọi người trong nhóm.	MVP
+Tool	Xuất dữ liệu sang JSON cho Unity. Script kiểm ID duy nhất, nguồn nhận và nguồn tiêu, đầu vào công thức, biên lợi, chi phí nâng cấp, tỉ lệ mẫu sống trên hạ, thoát mã 1 khi có lỗi.	MVP
+Tool	Sự kiện cần ghi: item_pickup (id, số lượng, nguồn), item_craft (recipe id, nơi chế), cargo_pack (kiện id, phẩm cấp), item_lost_on_recall (danh sách mất).	MVP
+Tool	Đổi luật thì sửa cùng lúc Salvage, ITEM LIST, Recipe, Shop, Upgrade và GDD Nhân vật, Combat, Map, Trạm và cảng.	MVP
+# Hình, giao diện và âm thanh
+Art	Icon vector cho mọi ID trong ITEM LIST (khoảng 130), nhóm theo hình khối: phế liệu góc cạnh, khoáng là tinh thể, băng là khối trong, linh kiện là bo mạch, mẫu là thể sinh học, kiện là hộp.	MVP
+Art	Bậc hiếm phân biệt bằng viền và hình dạng biểu tượng, không chỉ bằng màu, để người mù màu phân biệt được.	MVP
+Art	Bộ đồ đổi hình theo trục nâng cấp. Trạm đổi hình khi sửa xong khoang.	MVP
+UI	Nhặt: vật bay vào người, số đếm cộng lên HUD. Khai thác: thanh tiến độ trên điểm, tia khoan, mảnh vụn bay.	MVP
+UI	Chế tại xưởng: máy ép, lò, hàng đợi. Đóng kiện: hộp gấp lại, nhãn loại và phẩm cấp.	MVP
+UI	Túi đầy: thanh Khối đổi màu đỏ, vật phẩm thừa bật ra. Cổng mềm: thanh tiến độ chậm, biểu tượng khóa nửa mở, gợi ý "cần bậc cao hơn để nhanh".	MVP
+UI	Bị kéo về: màn chọn 1 món, các món còn lại mờ đi. Kho có chú giải độ hiếm.	MVP
+UI	Học bản thiết kế: bản vẽ mở ra, dụng cụ mới hiện.	Sau MVP
+UI	Khoan 6 đến 14 giây ở bậc 1 cần rung nhẹ và mảnh vụn. Nhặt phản hồi dưới 0,1 giây và không kéo dài quá 1 giây.	MVP
+UI	Hoàn thành khai thác hiện hiệu ứng trong 0,2 giây. Đóng kiện gấp hộp trong 0,5 giây.	MVP
+Audio	Tiếng nhặt cao độ tăng theo độ hiếm. Tiếng khoan và tiếng vỡ.	MVP
+Audio	Tiếng khoan ì ạch ở cổng mềm. Cảnh báo ngắn khi túi đầy, tiếng ngắt nhẹ khi bị kéo về.	MVP
+Audio	Tiếng máy theo loại công thức. Tiếng dán và thả hộp khi đóng kiện, tiếng khởi động khi nâng cấp xong.	MVP
+Audio	Tiếng mở khóa khi học bản thiết kế.	Sau MVP
+# Tutorial
+Tutorial	Sáu bước: nhặt Mảnh vỡ trôi bằng tay, khoan quặng và băng, nạy hòm. Rồi thả đồ khi túi đầy, chế COM đầu tiên, đóng kiện ở cảng.	MVP
+Tutorial	Lần đầu bị kéo về có giải thích luật giữ 1 món.	MVP
+Tutorial	30 giây đầu: nhặt Mảnh vỡ trôi bằng tay, khoan một mạch quặng, nạy một hòm bằng Dụng cụ khai thác. Rồi dùng Lao từ khi gặp Driftlife.	MVP
+Tutorial	Dụng cụ mới (học bản thiết kế) có tutorial riêng khi mở.	Sau MVP

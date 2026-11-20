@@ -1,0 +1,8 @@
+Mục	Nội dung
+Hệ thống làm gì	Ngoài không gian người chơi gặp Driftlife, từ chương 3 gặp thêm quân The Wardens. Combat là cách lấy mẫu và giữ Oxy, mỗi lần gặp Driftlife người chơi chọn bắt sống, hạ hay né.
+Người chơi nhận được gì	Cảm giác là người sống sót khéo tay, không phải lính: đọc con vật, chọn đúng dụng cụ, lấy thứ mình cần với ít Oxy nhất. Bắt sống cho mẫu giá trị hơn hạ nhưng tốn vật tiêu hao và chỗ trong Lồng mẫu.
+Pillar phục vụ	Risk & Reward (mỗi đòn trúng là mất giây thở), Management & Optimization (mẫu sống thành con nuôi, nghiên cứu, hàng ở ca cảng), Exploration & Discovery và Variety & Delight (The Wardens và Dấu săn bắt kể chuyện). Nguyên tắc nền Solo or Together: mọi luật đúng 1 đến 4 người.
+Trong MVP	Combat chung, Choáng, Kết nhanh, bắt sống cỡ S bằng Súng lưới hoặc bằng tay, Lồng mẫu, co-op 2 người. 4 loài dải Gần (Driftmoth, Skitter Ray, Sting Krill, Arc Eel chỉ hạ) và boss BS-1 Scrapmaw với hai cách kết.
+Sau MVP	Mê, bắt cỡ M bằng Phao kéo, sinh thiết cỡ L, Latchjaw và các loài dải Giữa, Xa, boss BS-2 đến BS-5, Driftlife sổng trong trạm. Quân The Wardens và kéo kén của Sevra từ chương 3.
+Liên quan hệ thống khác	Nhân vật (Oxy, Lướt, Kéo vật, Ngạt), Vật phẩm (dụng cụ, vật tiêu hao, vật rơi, giá trị mẫu), Map (điểm sinh, mật độ, phòng boss, Recall Beacon), Trạm và cảng (nuôi, sự cố sổng), Cốt truyện (boss, The Wardens, Sevra). Chỉ số, đòn và cơ chế boss từng loài ở tab Enemy.
+Vai giữ	gd-combat

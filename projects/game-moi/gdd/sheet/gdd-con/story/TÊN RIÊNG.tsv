@@ -1,0 +1,40 @@
+Tên	Loại	Nghĩa và ghi chú
+# Quy ước
+The Novent	Tên game	Đọc gần đúng NÔ-ven(t), ghép Nova và Venture. Mọi tên riêng tiếng Anh khác là tên tạm.
+# Thế giới
+United Accord	Tổ chức	Liên minh các quốc gia đóng đoàn di cư.
+Cradle	Tàu mẹ	Con tàu di cư bị phục kích. Chương 4 vào trong tàu.
+The Wake	Bãi vỡ	Bãi vỡ của Cradle, là map tổng.
+Solace	Hành tinh	Hành tinh đích trong hồ sơ. Là mồi, không có thật.
+The Scattering	Sự kiện	Vụ phục kích làm nổ Cradle.
+Lodestar Survey	Hồ sơ	Hồ sơ mồi tả Solace và đường tới đó, do chế độ của Daskel dựng.
+The Lattice	Mạng tin	Mạng tin của thương nhân The Veyl trung lập.
+The Veyl	Tên chung	Tên chung các chủng tộc ngoài hành tinh.
+Driftlife	Sinh vật	Sinh vật bản địa của vùng chân không.
+Tally	Tiền	Đồng tiền duy nhất.
+# Sennar và các phe
+Sennar	Hành tinh	Quê của người Sennari. Người chơi không tới.
+The Meeting War	Sự kiện	Cuộc chiến nổ ra khi các hành tinh phát hiện ra nhau, đã kết thúc từ lâu.
+The Wardens	Chế độ	Chế độ và quân đội của Daskel. Không phải một chủng tộc, lính là người Sennari mặc giáp.
+The Kindling	Phe	Mạng lưới cách mạng của Sevra: quân cách mạng và người nằm vùng.
+The Hearth	Nơi	Căn cứ của The Kindling, khoang ẩn có khí trong Veyl Waypost.
+The Remainers	Phe	Người sống sót chọn ở lại, thủ lĩnh Elias Vance.
+# Chủng tộc
+Oru, Sennari, Aelith, Brakk, Kesh	Chủng tộc	Oru gom phế liệu (Tikko), Sennari thương hội lớn (Daskel, Maro, Sevra), Aelith sưu tầm sinh vật (Vaeth), Brakk chở hàng nặng (Dromm), Kesh buôn tin (Nhem).
+# Trạm con
+Station Ember	Trạm	Trạm của người chơi.
+Station Cinder	Trạm	Xác. Buồng của Ingrid và Linh, map nhánh N1.
+Station Wick	Trạm	Xác. Buồng của Rafa, vết phá từ ngoài vào, map nhánh N2.
+Station Lantern	Trạm	Còn người sống: Odile, Bram, Amara. Map nhánh N3.
+Station Flint	Trạm	Xác, bị lính The Wardens chiếm làm trạm săn bắt. Map nhánh N6.
+The Raft	Trạm	Cụm trạm con ghép của The Remainers. Map nhánh N5.
+# Cách đọc mã		
+C1.9	Mã mốc	Chữ C, số chương, số thứ tự mốc. C1.9 là mốc 9 của chương 1.
+MM1.3, V1.1	Mã vật truyện	MM là vật manh mối, V là vật nhiệm vụ. Số đầu là chương.
+Khe M, khe V	Chỗ đặt vật	Khe M là chỗ đặt vật manh mối, khe V là chỗ đặt vật nhiệm vụ trong map nhánh.
+N1 đến N8	Mã map nhánh	Map nhánh theo thứ tự chương, từ N1 Station Cinder tới N8 Warden Rig.
+KH06, KH07	Mã khoang	Khoang của trạm Ember. KH06 là khoang liên lạc, KH07 là cảng.
+TA01, TA11	Mã tàu	Tàu của thương nhân. TA01 là tàu của Tikko, TA11 là tàu của The Kindling.
+BS-1 đến BS-5	Mã boss	Boss theo chương. BS-5 là Daskel.
+Host	Thuật ngữ	Người chủ thế giới trong co-op.
+Điểm nghỉ	Thuật ngữ	Nơi và lúc cảnh được phát: pha Chuẩn bị, lúc vừa về tới trạm, pha Cuối ngày, khu có khí của map nhánh.

@@ -1,0 +1,34 @@
+Tham số	Giá trị	Đơn vị	Ghi chú
+# Túi và kho
+Thời gian làm đầy túi chương 1	60 đến 70	% thời gian chuyến	Khoảng 2,5 đến 3 phút làm việc trong chuyến 4 đến 6 phút
+Kho tối đa mỗi loại	999	đơn vị	Không giới hạn số loại
+Thời gian vật thả tồn tại	30	giây	Thả tối đa 1 lần mỗi giây
+Số ô dụng cụ theo Đai bậc 0, 1, 2	3, 4, 5	ô	Chìa và Lồng mẫu không chiếm ô
+# Khai thác
+Độ cứng điểm vật liệu	0 đến 3	bậc	Hòm dùng cấp khóa 1 đến 3
+Hệ số chậm khi bậc dụng cụ thấp hơn	4	lần	Bậc bằng hoặc cao hơn thì chia cho hệ số tốc độ
+Hệ số tốc độ khai thác bậc 1, 2, 3	1,0, 1,4, 1,9	lần	Theo bậc Dụng cụ khai thác
+Giá trị mỗi Khối: Thường	1,0 đến 1,5	GTĐ mỗi Khối	Giá trị tương đối trên mỗi Khối túi
+Giá trị mỗi Khối: Ít gặp	2,5 đến 5,0	GTĐ mỗi Khối	
+Giá trị mỗi Khối: Hiếm	7 đến 20	GTĐ mỗi Khối	
+Giá trị mỗi Khối: Đặc biệt	từ 12	GTĐ mỗi Khối	
+Thời gian khoan ở bậc 1	6 đến 14	giây	Cần rung nhẹ và mảnh vụn để không thành thời gian chết
+Giữ điểm khai thác không có tiến độ	10	giây	Quá hạn thì thả điểm
+# Mẫu Driftlife
+Hệ số mẫu sống so với hạ	1,5 đến 2,0	lần	Theo loài, cỡ M dùng 1,5
+Hệ số mẫu sinh thiết cỡ L	0,45	lần	So với giá trị kỳ vọng khi hạ cùng loài
+Hệ số giá theo sao 1, 2, 3	1,0, 1,25, 1,5	lần	Mẫu sống tính theo Sinh lực còn lại lúc bắt
+Ngưỡng sao mẫu sống	70 và 30	% Sinh lực còn lại	Từ 70% là 3 sao, từ 30% là 2 sao, dưới 30% là 1 sao
+Sản phẩm nuôi	1	đơn vị mỗi con mỗi ngày	Mỗi con cần 1 thức ăn nuôi mỗi ngày
+Giá lồng từ con nuôi	0,5	lần giá lồng bắt thật	Tối đa 1 lồng mỗi ngày mỗi loài
+# Dụng cụ và bộ đồ
+Vật liệu nâng cấp bậc 1 (Bình Oxy, Túi, Bộ đẩy, Đai)	25	GTĐ	Mỗi bậc sau đắt gấp 1,8 lần, sai số 20%
+Vỏ bộ đồ và dụng cụ	lệch 1 lớp	bậc giá	Vỏ bộ đồ đắt hơn 1 lớp, dụng cụ rẻ hơn 1 lớp so với các trục trên
+Bình Oxy nhỏ	40	Oxy mỗi bình	Khoảng 12% bình bậc 0, tối đa 2 bình mỗi chuyến
+# Chế và kiện
+Hệ số COM	1,25 đến 1,5	lần	Luyện 8 đến 20 giây
+Hệ số kiện thô, kiện tinh	1,0, 1,1 đến 1,25	lần	Kiện thô đóng 5 đến 6 giây
+Ngưỡng chế nhanh	20	giây	Nhanh hơn thì được chế trong ca cảng
+Chỗ hàng đợi qua đêm	2	chỗ	Mở rộng do Trạm và cảng
+Cỡ kiện theo tổng Khối đầu vào	10 và 20	Khối	Tối đa 10 là Nhỏ, 11 đến 20 là Vừa, trên 20 là Lớn
+Tốc độ mang kiện Nhỏ, Vừa, Lớn	90, 80, 65	% tốc độ	Chồng hàng thô 90%. Mỗi người khiêng thêm cộng 15 điểm phần trăm, trần 95%

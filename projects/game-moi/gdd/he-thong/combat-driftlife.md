@@ -525,7 +525,7 @@ Hai thước đo khác nhau, không lẫn:
 
 ## 5. Ràng buộc vật lý của luật
 
-- Trần khóa liên tục: với hệ số DR 1,5 và trần 3, thời gian Choáng một con trên một phút giảm dần. Ước một người với Dùi xung bậc 1 giữ con DL-G05 không thể vì miễn choáng, giữ DL-M03 bất lực tối đa khoảng 40% thời gian. 4 người cao hơn nhưng không 100%. Số thật: chưa đo, đề sim S3.
+- Trần khóa liên tục: với hệ số DR 1,5 và trần 3, thời gian Choáng một con trên một phút giảm dần. Ước một người với Dùi xung bậc 1 giữ con DL-G05 không thể vì miễn choáng, giữ DL-M03 bất lực tối đa khoảng 40% thời gian. Đã đo bằng sim S3 (kết quả ở cuối mục 3.8): 4 người dùng Dùi xung liên tục giữ một con Bất lực 18 đến 32% thời gian trong 60 giây, dưới mục tiêu 70%.
 - Vé tấn công giới hạn số đòn cùng lúc: một người ở dải Gần chịu tối đa 2 đòn có vé trong một chu kỳ, cộng đòn vùng. Trần Oxy mất do combat mỗi giây vì vậy có giới hạn, sim S1 đo.
 - Súng lưới bắt tối đa 3 con một phát, nên bầy 8 con cần 3 phát. Số con bắt được một chuyến bị chặn bởi số Lưới cuộn mang theo và 1 lồng 3 con mỗi người.
 - Cỡ L không bắt sống được bằng luật, nên khoang sinh quyển chỉ chứa S và M.
@@ -597,7 +597,7 @@ Luật co-op:
 | Lao từ trúng | Hitstop 3 khung, tia lửa, dây căng | Âm xuyên, dây rít | Không | MVP |
 | Choáng | Vòng xanh dương quanh con vật, sao quay, đồng hồ vòng đếm ngược | Âm điện xẹt rồi ù | Tutorial: "Con vật choáng, lại gần để bắt hoặc Kết nhanh" | MVP |
 | Ngủ | Vòng tím, bong bóng Z, đồng hồ vòng | Âm ngáy nhẹ | Tutorial chương 2 | Sau MVP |
-| Bắt được | Súng lưới co lại, mẫu bay vào lồng, hiện số sao | Âm "pốp" vui, hợp âm ngắn theo số sao | Lần đầu: "Mẫu sống giá trị hơn" | Sau MVP |
+| Bắt được | Súng lưới co lại, mẫu bay vào lồng, hiện số sao | Âm "pốp" vui, hợp âm ngắn theo số sao | Lần đầu: "Mẫu sống giá trị hơn" | MVP |
 | Phao kéo bay về | Phao bật đèn, kéo con vật bay về hướng trạm, có vệt | Âm động cơ nhỏ xa dần | Không | Sau MVP |
 | Hạ | Con vật vỡ, nguyên liệu trôi ra có viền sáng | Âm vỡ trầm | Không | MVP |
 | Miễn choáng (Arc Eel) | Dùi xung làm nó sáng thêm, biểu tượng "miễn" | Âm dội | Lần đầu ở chương 1: "Con này không choáng được, chưa có cách bắt" | MVP |
@@ -729,6 +729,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | Ngày | Thay đổi | Lý do | Ai |
 |---|---|---|---|
 | 2026-11-20 | Tạo bản đủ đầu tiên | GD-024 | gd-combat |
+| 2026-11-20 | Mục 7 hàng "Bắt được" thành MVP khớp luật 19 đến 21. Mục 5 câu khóa choáng ghi kết quả S3 đã đo thay cho "chưa đo" | Soát khi viết GDD con bản đọc GD-036 | gd-combat |
 | 2026-11-20 | Mục 2.8 và luật 42 khớp `map.md` đã chốt: C3.8 về Ember qua beacon hoặc cửa khí, C5.1 từ cửa N4 tới cửa The Hearth, kén không theo beacon khi hộ tống, lưu ở beacon gần nhất giữa các chuyến | Tin gd-world, QA map L2 L3 | gd-combat |
 | 2026-11-20 | QA GD-033: luật 34 lưới trói tự tan sau 2 giây, người kéo vật Nặng chờ hoặc thả vật, thêm E20. Luật 40 ghi BNG-102 và gỡ kén 2 giây. BS-5 pha 3 bỏ "đánh lõi", ghi rõ sàn vỡ không gây thua. Sửa sót "dấu thu hoạch" | Phiếu `qa/GD-033-combat-driftlife.md` | gd-combat |
 | 2026-11-20 | Đợt 6, tên của gd-story: X là Daskel (độc tài Sennar), Y là Sevra Ilvane. Toán bắt cóc do Maro chỉ huy ở C3.8. Mục 2.8 đổi thành kéo kén của Sevra (vật kéo lớp Nặng, không bị nhắm). BS-5 ở Command Deck, kết là khuất phục và bắt giữ, bỏ đồ rơi bản đồ sao và bản khảo sát | Tin gd-story GD-033 | gd-combat |

@@ -8,9 +8,9 @@ Bối cảnh: 3 GDD con (Story, Combat và Driftlife, Vật phẩm) đang là b�
 
 | Mã | Vai | Phiên | Module | Nguồn | Ghi vào |
 |---|---|---|---|---|---|
-| GD-035 | gd-story | gd-story | story | `gdd/he-thong/cot-truyen.md` | `gdd/sheet/gdd-con/story/*.tsv` |
-| GD-036 | gd-combat | gd-combat | combat | `gdd/he-thong/combat-driftlife.md` | `gdd/sheet/gdd-con/combat/*.tsv` |
-| GD-037 | gd-items | gd-items | vat-pham | `gdd/he-thong/vat-pham.md` | `gdd/sheet/gdd-con/vat-pham/*.tsv` |
+| GD-035 | gd-story | subagent máy GDM | story | `gdd/he-thong/cot-truyen.md` | `gdd/sheet/gdd-con/story/*.tsv` |
+| GD-036 | gd-combat | subagent máy GDM | combat | `gdd/he-thong/combat-driftlife.md` | `gdd/sheet/gdd-con/combat/*.tsv` |
+| GD-037 | gd-items | subagent máy GDM | vat-pham | `gdd/he-thong/vat-pham.md` | `gdd/sheet/gdd-con/vat-pham/*.tsv` |
 | GD-038 | gd-qa | subagent | cả 3 | 3 thư mục trên | `qa/GD-038-gdd-con-gon.md` |
 
 ## Đọc trước
