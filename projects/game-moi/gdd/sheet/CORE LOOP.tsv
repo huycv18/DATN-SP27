@@ -47,3 +47,12 @@ STT	Task	Sub Task	Short Description	Ref	Ref 2
 		Cân bằng theo số người	Không gian giữ nguyên. Lượng tài nguyên, sức chịu của Driftlife và boss, số tàu trong ca cảng tăng theo số người. Giá sửa khoang và nâng cấp không đổi. Không nội dung nào mở theo số người	00-khung-game.md mục 6	map.md
 		Người đã về không ra lại	Người đã về trạm không ra lại trong cùng chuyến. Trong lúc chờ thì làm việc ở trạm và xem được vị trí đồng đội. Chi tiết ở tab Day	00-khung-game.md mục 6	nguoi-choi.md
 		Mất kết nối	Mất kết nối được giữ chỗ 15 giây, quá hạn thì tính như bị kéo về (chỉ giữ 1 món). Tự rời giữa chuyến cũng vậy. Host thoát thì phiên kết thúc, thế giới về điểm lưu gần nhất	00-khung-game.md mục 6	ky-thuat.md
+8	Mục lục tab chi tiết	Vai trò	CORE LOOP giữ luật chung của vòng chơi. Nội dung và chỉ số riêng của từng thực thể nằm ở 8 tab dưới đây. Bấm tên tab ở cột Ref để mở.
+		Player	Chặng Ra ngoài thu thập. Nhân vật người chơi, Oxy và Ngạt, túi đồ và dụng cụ, 5 trục bộ đồ, co-op, hồ sơ nhân vật cho art.	Tab Player	nguoi-choi.md
+		Enemy	Chặng Ra ngoài thu thập. Luật combat và bắt sống, rồi từng loài Driftlife: dải, cỡ, kiểu hành vi, ngưỡng choáng, rơi gì.	Tab Enemy	combat-driftlife.md
+		Salvage	Chặng Ra ngoài thu thập và Mang về kho. Điểm khai thác và vật nhặt được: dải, độ cứng, sản lượng, điểm sinh.	Tab Salvage	vat-pham.md
+		Recipe	Chặng Sửa trạm, chế đồ. Công thức ở Xưởng và các khoang: nguyên liệu vào, thành phẩm, thời gian, mở khóa.	Tab Recipe	vat-pham.md
+		Customer	Chặng Ca cảng. Từng tàu thương nhân: ai, hay gọi hàng gì, hệ số tip, mở ở chương nào.	Tab Customer	tram-va-cang.md
+		Upgrade	Chặng Nâng cấp. Luật mua và các trục: Bình Oxy, Túi đồ, Bộ đẩy, Vỏ bộ đồ, Đai dụng cụ, dụng cụ, Lao từ, Súng lưới, khoang.	Tab Upgrade	kinh-te-tien-trinh.md
+		Day	Nhịp một ngày. 5 pha, luật ngày, độ dài mục tiêu một chuyến, 5 chương.	Tab Day	00-khung-game.md
+		Zone	Chặng Ra ngoài thu thập. Map tổng The Wake, 3 dải, các map nhánh, hazard và nhịp chuyến.	Tab Zone	map.md

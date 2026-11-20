@@ -286,4 +286,4 @@ Lead: "Sửa lại sheet Game Story, trình bày nó khoa học, đầy đủ v�
 - Tab chia 11 khối, mỗi khối có dòng tiêu đề (kèm nguồn) và dòng tên cột riêng, STT đánh lại từ 1 trong từng khối: Tóm tắt, Bối cảnh theo dòng thời gian, Năm chương, Mốc truyện, Nhân vật, Chủng tộc The Veyl, Trạm con có truyện, Tên riêng, Luật kể chuyện, Giọng văn, Quy ước đặt tên.
 - Ô văn xuôi "Điều kiện / Nơi / Mở" cũ tách ra thành cột riêng. Thêm 3 khối lấy từ `cot-truyen.md`: bối cảnh (mục 2.4), luật kể chuyện (mục 2.1, bản tóm), giọng văn (mục 13).
 - Định dạng: tiêu đề khối nền tím vừa chữ trắng, tên cột nền tím nhạt, viền xám, Lexend 10, cố định 1 hàng. Tab này có nhiều hàng tên cột nên `kiem-de-doc.mjs` không kiểm cột ID của nó.
-
+- CORE LOOP là mục lục của 8 tab Player, Enemy, Salvage, Recipe, Customer, Upgrade, Day, Zone (Lead chọn "Mục lục, giữ tab"): khối 8 "Mục lục tab chi tiết" mỗi tab một dòng, cột Ref bấm sang tab. 8 tab và CORE LOOP cùng màu #B4A7D6. Không gộp nội dung vào một tab.

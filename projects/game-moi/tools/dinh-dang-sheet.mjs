@@ -6,7 +6,7 @@ const { docTsv } = await import(pathToFileURL(`${root}/projects/game-moi/tools/d
 const cfg = JSON.parse(readFileSync(`${root}/projects/game-moi/tools/tham-so/sheet.json`, 'utf8'));
 const hex = (h) => ({ red: +(parseInt(h.slice(1, 3), 16) / 255).toFixed(3), green: +(parseInt(h.slice(3, 5), 16) / 255).toFixed(3), blue: +(parseInt(h.slice(5, 7), 16) / 255).toFixed(3) });
 const vien = (w, c) => ({ style: w, colorStyle: { rgbColor: hex(c) } });
-const NHOM_A = ['ECONOMIC'], NHOM_D = ['TRACKING', 'Assets', 'AUDIO ASSETS LIST', 'Event Tracking', 'MVP Criteria Checklist', 'Balance Sheet', 'Playtest Report', 'Bugs Report'];
+const NHOM_C = ['CORE LOOP', 'Player', 'Enemy', 'Salvage', 'Recipe', 'Customer', 'Upgrade', 'Day', 'Zone'], NHOM_A = ['ECONOMIC'], NHOM_D = ['TRACKING', 'Assets', 'AUDIO ASSETS LIST', 'Event Tracking', 'MVP Criteria Checklist', 'Balance Sheet', 'Playtest Report', 'Bugs Report'];
 const req = [];
 for (const [tab, sheetId] of Object.entries(cfg.gid)) {
   if (tab === 'OVERVIEW') continue;
@@ -31,7 +31,7 @@ for (const [tab, sheetId] of Object.entries(cfg.gid)) {
       req.push({ mergeCells: { range: { sheetId, startRowIndex: d + 1, endRowIndex: k + 2, startColumnIndex: j, endColumnIndex: j + 1 }, mergeType: 'MERGE_ALL' } });
   }
   req.push({ autoResizeDimensions: { dimensions: { sheetId, dimension: 'ROWS', startIndex: thanTu, endIndex: cuoi } } });
-  const mau = NHOM_A.includes(tab) ? '#351C75' : NHOM_D.includes(tab) ? '#8E7CC3' : null;
+  const mau = NHOM_C.includes(tab) ? '#B4A7D6' : NHOM_A.includes(tab) ? '#351C75' : NHOM_D.includes(tab) ? '#8E7CC3' : null;
   req.push({ updateSheetProperties: { properties: { sheetId, gridProperties: { hideGridlines: true }, ...(mau && { tabColorStyle: { rgbColor: hex(mau) } }) },
     fields: 'gridProperties.hideGridlines' + (mau ? ',tabColorStyle' : '') } });
 }
