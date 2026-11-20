@@ -1,6 +1,6 @@
 # Đề xuất: ca cảng theo khung bán sushi của Dave the Diver
 
-Trạng thái: ĐỀ XUẤT, chờ Lead chốt bằng lời. Chưa sửa khung, GDD hệ thống, sim, Sheet. File này là nơi duy nhất giữ đề xuất tới khi chốt.
+Trạng thái: ĐÃ CHỐT 2026-11-20 (Lead: "Oke phần này luồng oke rồi cần làm cho nó tốt hơn thôi là được. Update vào GDD đi"). Luật chuẩn từ nay ở `gdd/he-thong/tram-va-cang.md`, file này chỉ để tra lý do và số đo demo.
 Nguồn: Lead 2026-11-20: "tôi muốn làm phần này giống phần bán sushi trong Dave the Diver để nó được đơn giản và game vẫn vui". Lead chọn hướng "Khung Dave, giữ cảng" ở câu hỏi của GDM (nút gợi sẵn, chưa tính là chốt luật lõi).
 
 ## 1. Ý đồ

@@ -2,7 +2,7 @@
 
 Mục đích: mọi việc có pipeline (nhiều hơn một agent hoặc nhiều hơn một lượt) có một dòng ở đây. Việc nhỏ GDM làm thẳng không cần dòng.
 Trạng thái: `todo` / `doing` / `review` / `done` / `blocked`. Chỉ GDM đặt `done`. Mã `GD-###` tăng dần, không tái dùng.
-Mã lớn nhất đã cấp: GD-050
+Mã lớn nhất đã cấp: GD-057
 
 | ID | Project | Việc | Agent | Phụ thuộc | Trạng thái | Tiêu chí hoàn thành |
 |---|---|---|---|---|---|---|
@@ -56,3 +56,10 @@ Mã lớn nhất đã cấp: GD-050
 | GD-048 | game-moi | Viết lại WIREFRAME, Tutorials dễ đọc, ID số (đợt 8) | gd-ux, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-049 | game-moi | Viết lại Event Tracking, TRACKING, Assets, AUDIO dễ đọc, ID số (đợt 8) | gd-tech, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-050 | game-moi | Viết lại MVP Criteria Checklist, nghiệm thu chéo 23 tab (đợt 8) | gd-qa, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
+| GD-051 | game-moi | Viết lại ca cảng theo khung Dave trong GDD trạm và cảng, tab Customer (đợt 9) | gd-quan, claude-cty | Lead 2026-11-20 | doing | `briefs/dot9-ca-cang-kieu-dave.md`, kiem-de-doc ĐẠT, gd-qa ĐẠT |
+| GD-052 | game-moi | Thùng, bỏ cỡ kiện, đóng thùng tự động trong vật phẩm, ITEM LIST, Recipe (đợt 9) | gd-items, claude-cty | Lead 2026-11-20 | doing | như trên |
+| GD-053 | game-moi | Màn lập danh mục, HUD ca cảng, tutorial ca đầu, WIREFRAME, Tutorials (đợt 9) | gd-ux, claude-cty | Lead 2026-11-20 | doing | như trên |
+| GD-054 | game-moi | Sim ca cảng mới 1 tới 4 người, event tracking ca cảng (đợt 9) | gd-tech, claude-cty | Lead 2026-11-20 | doing | sim in bảng, selftest ĐẠT, rảnh không quá 30% ở trễ 2 giây |
+| GD-055 | game-moi | Giá thùng, tip, Tally một ca, ngưỡng Hạng cảng, sim kinh tế (đợt 9) | gd-economy, claude-cty | GD-052, GD-054 | todo | sim kinh tế in bảng, giữ mốc 60% hai chuyến |
+| GD-056 | game-moi | Review GDD ca cảng mới, MVP Criteria Checklist phần ca cảng (đợt 9) | gd-qa, claude-cty | GD-051 tới GD-055 | todo | `qa/GD-056-ca-cang-dave.md` ĐẠT |
+| GD-057 | game-moi | CORE LOOP, Day, dán Sheet các tab đổi, đối chiếu (đợt 9) | GDM, claude-cty | GD-056 | todo | doi-chieu-sheet KHỚP các tab đổi |

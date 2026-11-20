@@ -108,16 +108,16 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 
 ## 4. Core loop và một ngày
 
-Vòng lớn: ra ngoài thu thập -> mang về kho -> sửa trạm, chế đồ, nuôi -> đóng kiện bán ở ca cảng lấy Tally -> nâng cấp bộ đồ và trạm, mua thứ không tự làm được -> đi xa hơn, lâu hơn, gặp thứ mới -> lộ thêm truyện.
+Vòng lớn: ra ngoài thu thập -> mang về kho -> sửa trạm, chế đồ, nuôi -> lập danh mục, bán ở ca cảng lấy Tally -> nâng cấp bộ đồ và trạm, mua thứ không tự làm được -> đi xa hơn, lâu hơn, gặp thứ mới -> lộ thêm truyện.
 
 Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm):
 
 | Pha | Người chơi làm gì | Kết thúc khi | Bỏ qua được |
 |---|---|---|---|
-| 1. Chuẩn bị | Xem bảng tàu sẽ cập bến hôm nay và hàng họ cần, chọn dụng cụ mang theo, nhận đồ chế xong, chăm khoang nuôi | Người chơi ra cửa khí | Có |
+| 1. Chuẩn bị | Xem bảng tàu hôm nay và đơn đặt trước, chọn dụng cụ mang theo, nhận đồ chế xong, chăm khoang nuôi | Người chơi ra cửa khí | Có |
 | 2. Chuyến 1 | Ra ngoài: nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh, vớt người, tìm manh mối | Mọi người đã về trạm (cửa khí, Recall Beacon) hoặc bị kéo về | Có |
 | 3. Chuyến 2 | Như chuyến 1. Giữa hai chuyến được vào kho, xưởng | Như trên | Có |
-| 4. Ca cảng | Tàu cập bến theo lịch, người chơi lấy hàng trong kho, chế thêm, đóng kiện, bốc lên tàu trước khi tàu rời, nhận Tally | Hết giờ ca hoặc tàu cuối rời bến | Có, không bị phạt |
+| 4. Ca cảng | Lập danh mục bán, mở ca. Tàu cập vào cửa neo, mỗi tàu gọi 1 thùng, người chơi mang thùng từ quầy tới đúng tàu, bơm khí cho tàu đang chờ, nhận Tally và tip | Hết giờ ca, tàu cuối rời, hoặc hết hàng trong danh mục | Có, không bị phạt |
 | 5. Cuối ngày | Nâng cấp, nghiên cứu, đặt hàng ở shop, nói chuyện với người trong trạm, nhận quest, xem truyện. Ngủ thì lưu và sang ngày mới | Người chơi vào buồng ngủ | Không |
 
 ## 5. Luật khung
@@ -137,7 +137,7 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 - K10 (L, G): Ember neo cố định suốt game. Việc sửa đầu tiên là hãm trôi và neo. Sửa động cơ chính là mục tiêu dài nhất, xong thì Ember rời neo, lên đường tới hành tinh thật Sevra trao tọa độ, và game kết (kết mở, chưa tới hành tinh đó trong game này).
 - K11 (G): trạm gồm các khoang. Khoang hỏng phải sửa bằng vật liệu mới dùng được. Mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng.
 - K12 (L, G): mỗi người vớt về mở một tính năng của trạm qua một quest nhỏ hoặc mốc chương. Năm người: Kỹ sư (xưởng: chế và nâng cấp trang bị), Thông dịch viên (khoang liên lạc: gọi tàu, mở ca cảng, shop), Hoa tiêu (khoang dẫn đường: mở dải Xa, Skiff. Dải Giữa mở khi xong chương 1), Nhà sinh học (nghiên cứu và nuôi Driftlife), Trưởng cảng (thêm bến, tiện ích cảng). Không có bếp trưởng.
-- K13 (L, G): ca cảng là nửa chơi tay thứ hai. Mỗi tàu có danh sách hàng và giờ rời bến. Người chơi chạy trong mặt cắt trạm để lấy hàng, chế thêm, đóng kiện, bốc lên tàu. Giao đúng và kịp thì nhận Tally. Tàu chỉ mua, không bán trong ca.
+- K13 (L, 2026-11-20 đổi theo khung bán sushi của Dave the Diver): ca cảng là nửa chơi tay thứ hai. Trước ca người chơi lập danh mục bán từ hàng trong kho, Thông dịch viên tự đóng thùng. Trong ca tàu cập vào các cửa neo, mỗi tàu gọi 1 thùng trong danh mục. Người chơi nhặt thùng ở quầy cảng, mang tới đúng cửa neo trước khi tàu hết kiên nhẫn, và bơm khí cho tàu đang chờ. Giao xong nhận giá thùng cộng tip theo kiên nhẫn còn lại. Không chế, không đóng kiện trong ca. Tàu chỉ mua, không bán trong ca. Bản luật đủ: `gdd/he-thong/tram-va-cang.md`, nguồn đề xuất: `de-xuat-ca-cang-kieu-dave.md`.
 - K14 (G): từ chương 3, ca cảng có sự cố trạm chen ngang (rò khí, chập điện, Driftlife sổng khoang nuôi). Trước chương 3 không có sự cố.
 - K15 (G): có một thang Hạng cảng duy nhất, tăng theo kết quả các ca. Hạng cảng mở thêm loại tàu, đơn giá trị cao và danh mục shop. Không có danh tiếng riêng từng phe.
 - K16 (L, G): nuôi Driftlife trong khoang sinh quyển là nguồn hàng đều, mở ở chương 2. Nuôi là lựa chọn có lợi, không phải nghĩa vụ.
@@ -163,10 +163,10 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 - C4 (G): nâng cấp trang bị mua một lần cho cả nhóm, mọi bộ đồ cùng lên cấp. Lý do: bạn vào giữa chừng không bị yếu, một ví chung, ít màn hình.
 - C5 (G): chuyến bắt đầu khi mọi người đang online đã xác nhận ở cửa khí. Ai không đi thì chọn ở lại trạm và vẫn dùng được xưởng, khoang nuôi. Ai không trả lời trong 30 giây thì tính là ở lại. Ngoài không gian mỗi người tự do tách nhau, mỗi người một màn hình.
 - C6 (G): mỗi người kết thúc chuyến riêng. Người ngạt được đồng đội chia Oxy để cứu. Chuyến kết thúc khi người cuối cùng đã về hoặc bị kéo về.
-- C9 (G): người đã về trạm (về sớm hoặc bị kéo về) không ra lại trong cùng chuyến. Trong lúc chờ, người đó làm việc trạm: xưởng, khoang nuôi, đóng kiện trước cho ca cảng, và xem được vị trí đồng đội. Lý do không cho ra lại: về trạm nạp đầy Oxy rồi ra lại sẽ phá giới hạn Oxy (K1).
+- C9 (G): người đã về trạm (về sớm hoặc bị kéo về) không ra lại trong cùng chuyến. Trong lúc chờ, người đó làm việc trạm: xưởng (chế trước hàng cần chế cho danh mục), khoang nuôi, sửa khoang, và xem được vị trí đồng đội. Lý do không cho ra lại: về trạm nạp đầy Oxy rồi ra lại sẽ phá giới hạn Oxy (K1).
 - C10 (G): rời phiên hoặc mất kết nối giữa chuyến không phải là đường về an toàn. Khách mất kết nối được giữ chỗ 15 giây, quá hạn thì tính như bị kéo về (K2, chỉ giữ 1 món). Khách chủ động rời giữa chuyến cũng tính như bị kéo về. Host thoát thì phiên kết thúc và thế giới trở về điểm lưu gần nhất (K23). Chơi một mình thoát giữa chuyến thì mất chuyến đó theo K23.
 - C7 (G): không tạm dừng toàn cục khi có từ 2 người. Mở menu không dừng thời gian. Chơi một mình được tạm dừng.
-- C8 (G): cân bằng theo số người: không gian chơi giữ nguyên, lượng tài nguyên một chuyến và sức chịu của Driftlife, boss (máu, ngưỡng choáng) tăng theo số người, quy mô đơn trong ca cảng và điểm cảng của đơn tăng theo số người đang chơi (không bắt buộc tăng số tàu), bảng tàu ghi rõ điều này. Giá sửa khoang và nâng cấp không đổi theo số người, vì số người đổi được giữa các phiên. Không nội dung nào mở khóa theo số người. Hệ số do sim đặt. Mục tiêu ý đồ ở mục 9.
+- C8 (G): cân bằng theo số người: không gian chơi giữ nguyên, lượng tài nguyên một chuyến và sức chịu của Driftlife, boss (máu, ngưỡng choáng) tăng theo số người, số tàu trong ca cảng tăng theo số người đang chơi lúc mở ca, bảng tàu ghi rõ điều này. Giá sửa khoang và nâng cấp không đổi theo số người, vì số người đổi được giữa các phiên. Không nội dung nào mở khóa theo số người. Hệ số do sim đặt. Mục tiêu ý đồ ở mục 9.
 
 ## 7. Tiến trình 5 chương (G)
 
@@ -210,9 +210,10 @@ Chủ tên gọi: gd-items giữ tên và ID vật phẩm, gd-combat giữ tên 
 | Thứ kết thúc chuyến | Chương 1 túi đầy trước ở khoảng 60% chuyến, từ chương 2 Oxy là giới hạn chính | gd-world, gd-tech |
 | Thời gian tới hết game của nhóm 4 người so với chơi một mình | 60 đến 75% (bị chặn dưới bởi số ngày tối thiểu của chuỗi mốc truyện) | gd-economy, gd-tech |
 | Lượng nhặt được của mỗi người trong nhóm 4 so với khi chơi một mình | từ 60% trở lên | gd-world, gd-tech |
-| Phần Tally đến từ thưởng đủ đơn và thưởng nhanh | 15 đến 25% tổng thu | gd-economy |
+| Phần Tally của ca cảng đến từ tip (kể cả bơm khí) | 20 đến 30% (demo bot 2026-11-20: 23 đến 26%) | gd-economy |
 | Giá trị Driftlife sống so với đã hạ (cỡ S và M, sau khi trừ vật tiêu hao) | 1,2 đến 2 lần | gd-items, gd-economy |
-| Tỉ lệ đơn giao đủ trong ca cảng | Chương 1: 70 đến 95%. Từ chương 2: 70 đến 90% | gd-quan, gd-tech |
+| Tỉ lệ tàu phục vụ xong trong ca cảng | Chương 1: 85 đến 100%. Từ chương 2: 75 đến 95% | gd-quan, gd-tech |
+| Thời gian rảnh mỗi người trong ca cảng | Không quá 30% ở người chơi trễ phản xạ 2 giây, mọi số người | gd-quan, gd-tech |
 
 ## 10. Từ điển (dùng đúng từ này trong mọi GDD)
 
@@ -229,9 +230,13 @@ Chủ tên gọi: gd-items giữ tên và ID vật phẩm, gd-combat giữ tên 
 | Kho | Chỗ chứa đồ chung của trạm |
 | Driftlife | Sinh vật trôi trong chân không. Bắt sống hoặc hạ |
 | Phế liệu, khoáng, băng, linh kiện, mẫu | Các nhóm tài nguyên. Chi tiết do gd-items giữ |
-| Kiện | Hàng đã đóng để bốc lên tàu |
-| Bến, tàu, danh sách hàng | Chỗ tàu cập, tàu thương nhân, thứ tàu cần mua |
-| Ca cảng | Pha bốc hàng lên tàu để lấy Tally |
+| Kiện | Đơn vị hàng hóa trong kho và trong kinh tế (giá kiện) |
+| Thùng | Đơn vị bán trong ca cảng, bằng 0,4 kiện. Lồng sinh vật sống là một đơn vị riêng, không chia |
+| Danh mục bán | Các loại hàng và số thùng người chơi đưa ra bán trước ca |
+| Bến, cửa neo, tàu | Khu cảng, chỗ một tàu cập (bến có nhiều cửa neo), tàu thương nhân |
+| Kiên nhẫn, tip, bơm khí | Thanh thời gian của tàu ở cửa neo, tiền thêm theo kiên nhẫn còn lại, việc phụ hồi kiên nhẫn |
+| Đơn đặt trước | Thùng một tàu cụ thể đặt từ đầu ngày, giá cao, hiện ở bảng tàu |
+| Ca cảng | Pha bán hàng cho tàu để lấy Tally |
 | Tally | Đồng tiền duy nhất |
 | Hạng cảng | Thang tiến trình của cảng |
 | Người vớt | Người sống sót đưa về trạm, mở tính năng |

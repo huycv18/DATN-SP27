@@ -27,9 +27,9 @@ Cập nhật lần cuối: 2026-11-20, sau QA GD-031 vòng cuối và đợt 4.
 | Cốt truyện | `gdd/he-thong/cot-truyen.md`. Phản diện The Wardens, vụ tai nạn The Scattering, Solace là thông tin mồi, kết mở | (L) DECISIONS 2026-11-20. Tên: (G) log 4, 75 |
 | Tên game | The Novent | (L) DECISIONS 2026-11-20, mục Chốt tên game The Novent |
 | Đồng tiền | Tally, duy nhất | (L) vấn đề 7. (G) log 17 |
-| Nửa chơi tay thứ hai | Ca cảng giao thương | (L) DECISIONS 2026-11-20 |
+| Nửa chơi tay thứ hai | Ca cảng giao thương theo khung bán sushi của Dave: lập danh mục trước ca, tàu cập 3 cửa neo, mỗi tàu gọi 1 thùng, mang thùng, bơm khí, tip theo kiên nhẫn | (L) DECISIONS 2026-11-20, mục "Ca cảng theo khung Dave" |
 | Một ngày | Tối đa 2 chuyến, rồi ca cảng, rồi cuối ngày. Tự lưu sau mỗi chuyến, sau ca cảng, lúc ngủ | (G) log 12, 62, 65 |
-| Phạm vi MVP | Chương 1 trọn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến có 1 loại kiện phải chế (CGO-113) và 1 loại hàng Driftlife sống, bắt sống cỡ S bằng lưới, 1 boss nhỏ, co-op 2 người | (G) log 29, 49, 67. Lead nên xem lại vì chạm thời hạn |
+| Phạm vi MVP | Chương 1 trọn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến 3 cửa neo, có 1 loại hàng phải chế trước ca (CGO-113) và 1 loại hàng Driftlife sống, bắt sống cỡ S bằng lưới, 1 boss nhỏ, co-op 2 người | (G) log 29, 49, 67. Lead nên xem lại vì chạm thời hạn |
 
 ## Số cân bằng
 
@@ -40,7 +40,7 @@ Cập nhật lần cuối: 2026-11-20, sau QA GD-031 vòng cuối và đợt 4.
 | Ngạt | 12 giây chờ cứu, sau đó bị kéo về và giữ 1 món. Chia Oxy không xuống dưới sàn 20 | `nguoi-choi.md`, (G) log 11, 41, 57 |
 | Oxy hồi từ vật tiêu hao | Không quá 25% dung lượng bình mỗi chuyến, tối đa 2 bình Oxy nhỏ | (G) log 72 |
 | Hệ số co-op lượng nhặt k(N) | 1 cộng a nhân (N trừ 1). a bằng 0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa | (S) `map.md` 3.8 |
-| Hệ số kiện co-op ở ca cảng | 0,6 ở chương 1 và 2, 0,4 ở chương 3 đến 5 | (S) `tram-va-cang.md`, sim ca cảng |
+| Ca cảng chương 1, 1 người | Thùng = 0,4 kiện. Danh mục tối đa 4 loại hàng. 25 tàu, giãn cách 7 đến 11 giây, chờ ngoài 20 giây. Kiên nhẫn Loose Bolt 60, Tàu vội 30 giây. Tip tối đa 30% giá thùng nhân kiên nhẫn còn lại. Bơm khí hồi 25% kiên nhẫn, cộng 10 Tally | (G) demo bot 2026-11-20, chờ sim gd-tech đợt 9. Số tàu theo số người: chờ sim |
 | Tally mỗi đơn vị giá trị (GTĐ) | 10 | `kinh-te-tien-trinh.md` 2.1 |
 | Thưởng đủ đơn, thưởng nhanh | 25%, 15% | `kinh-te-tien-trinh.md` |
 | Hệ số ngân sách kinh tế | 0,40 | (S), (G) log 70 |
@@ -59,7 +59,8 @@ Chạy lại: `node projects/game-moi/tools/selftest.mjs`, các lệnh sim trong
 | Mỗi người nhóm 4 nhặt so với một mình | Từ 61% | Từ 60% | Có |
 | Thưởng trong tổng thu Tally | 20% | 15 đến 25% | Có |
 | Sống so với hạ, cỡ S, sau khi trừ vật tiêu hao | 1,28 đến 1,90 lần | 1,2 đến 2 lần | Có |
-| Đơn giao đủ ở ca cảng chương 1, 1 đến 4 người | 92, 93, 93, 80% | 70 đến 95% | Có |
+| Đơn giao đủ ở ca cảng chương 1, 1 đến 4 người (luật cũ, hết hiệu lực 2026-11-20) | 92, 93, 93, 80% | 70 đến 95% | Bỏ, đo lại theo luật mới ở đợt 9 |
+| Ca cảng kiểu Dave chương 1, 1 người, bot trễ 2 giây (demo) | 24,9 trên 25 tàu, rảnh 24%, ca 231 giây, Tally 1769, tip 25% | Rảnh không quá 30%, ca 180 đến 300 giây | Có, chờ sim chính thức |
 | Phút một chuyến, một người, chương 1 và chương 5 | 4,4 và 10,4 phút | 4 đến 6 và 10 đến 12 phút | Có |
 | Tỉ lệ bị kéo về, người chơi cẩn thận, chương 1 đến 5 | 1, 1, 3, 0, 0% | Dưới 5% | Có |
 | Tỉ lệ bị kéo về, người chơi tham, chương 1 đến 5 | 10, 36, 41, 29, 13% | 15 đến 40% | Chương 2, 4 đạt. Chương 1, 3, 5 lệch 1 đến 5 điểm, chấp nhận, đo lại ở playtest |

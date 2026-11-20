@@ -265,3 +265,16 @@ Lead: "GDD bị mất cột số thứ tự rồi ý tôi là Thay cột ID bằ
 - MVP Criteria Checklist trước đây để mã trong ô tên, nay có cột STT riêng ở đầu (1 đến 130).
 - Lead sửa tay OVERVIEW trên Sheet, đã kéo về repo: Age Rating là E+10, bỏ dòng "Quyền" ở Define GDD.
 
+
+## 2026-11-20 - Ca cảng theo khung Dave (đợt 9)
+
+Lead: "tôi muốn làm phần này giống phần bán sushi trong Dave the Diver để nó được đơn giản và game vẫn vui", chọn hướng "Khung Dave, giữ cảng", xem demo rồi chốt: "Oke phần này luồng oke rồi cần làm cho nó tốt hơn thôi là được. Update vào GDD đi".
+
+- K13 đổi: trước ca lập danh mục bán (tối đa 4 loại hàng ở chương 1), Thông dịch viên tự đóng thùng. Trong ca tàu cập 3 cửa neo của bến 1, mỗi tàu gọi 1 thùng, người chơi mang thùng từ quầy tới đúng cửa neo, bơm khí cho tàu đang chờ. Trả giá thùng cộng tip theo kiên nhẫn còn lại. Tàu hết kiên nhẫn thì chỉ mất món đó, hàng về kho.
+- Bỏ khỏi ca: đơn nhiều dòng, đơn đủ và đơn trượt, thưởng đủ đơn, thưởng nhanh, máy đóng kiện chạy tay, chế trong ca, kệ kiện, tốc độ chạy theo cỡ kiện.
+- Thùng = 0,4 kiện. Lý do: bot ở demo đo bản 10 tàu, mỗi tàu 1 kiện thì rảnh 76% ca. Bản 25 tàu, mỗi tàu 1 thùng: rảnh 24% ở trễ phản xạ 2 giây, Tally một ca gần như không đổi.
+- Giữ đơn đặt trước (1 tới 2 mỗi ngày, giá cao, hiện ở bảng tàu) để còn mối nối "đọc bảng tàu rồi chọn dải".
+- Co-op (C8): số tàu trong ca tăng theo số người, thay cho quy mô đơn. C9: người về trạm sớm chế trước ở xưởng thay cho đóng kiện trước.
+- Giữ nguyên: một ca mỗi ngày, mở ca khóa cửa khí, bỏ ca không phạt, không trừ Tally, Hạng cảng không giảm, tàu theo mốc truyện, sự cố từ chương 3, K17 không nấu ăn.
+- Lead: "cần làm cho nó tốt hơn". Việc cải thiện mở ở đợt 9: giãn giá hàng để lập danh mục có thế cân, đặt lại ngưỡng Hạng cảng (một ca cho tới 50 điểm), sim co-op.
+- Nguồn: `de-xuat-ca-cang-kieu-dave.md` (đã chốt), demo `tools/prototype/ca-cang-dave.html`. Khung, `so-hien-hanh.md` đã sửa. Brief `briefs/dot9-ca-cang-kieu-dave.md`.
