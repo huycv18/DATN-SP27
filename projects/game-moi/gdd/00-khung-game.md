@@ -2,6 +2,7 @@
 
 Project: game-moi | Chủ sở hữu: GDM | Trạng thái: đã chốt 2026-11-20 theo ủy quyền của Lead, sửa lần 2 sau phản biện đợt 1 (log dòng 39 đến 53), sửa lần 3 sau sim đợt 2 (log dòng 54 đến 60), sửa lần 4 sau QA vòng 1 (log dòng 61 đến 64), sửa lần 5 sau QA vòng 2 (log dòng 65 đến 80), sửa lần 6 theo Lead sửa phản diện (log dòng 84 đến 92) | Nguồn: `DECISIONS.md` mục "2026-11-20 - Lead giao toàn quyền cho GDM", `log-gdm-tu-quyet.md`
 
+Define GDD và Game Vision & Concept bản cho người đọc ngoài phòng: tab OVERVIEW của Sheet (nguồn `gdd/sheet/OVERVIEW.tsv`).
 Cách đọc: mọi vai đọc file này trước khi viết GDD hệ thống của mình. Luật khung đánh mã K. GDD hệ thống không được trái luật K. Thấy luật K có vấn đề thì phản biện trong báo cáo (luật 12 giao thức chung), không tự đổi.
 Nhãn nguồn: (L) Lead chốt bằng lời, (G) GDM tự quyết theo ủy quyền, có dòng trong `log-gdm-tu-quyet.md`.
 Mọi tên riêng tiếng Anh là [TẠM]. Số trong file này là mục tiêu ý đồ, chưa đo. Số hiện hành chỉ có sau khi gd-economy và gd-tech chạy sim.
@@ -246,3 +247,39 @@ PvP. Chơi chung một máy. Tiền thứ hai. XP và cấp nhân vật. Hệ đ
 ## 12. Phạm vi MVP đề xuất (G, Lead nên xem lại vì chạm thời hạn)
 
 Chương 1 trọn vẹn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến, 3 đến 4 loài Driftlife, bắt sống loài nhỏ bằng lưới và 1 loại hàng Driftlife sống ở cảng, 1 boss nhỏ, co-op 2 người chạy được. GDD viết cho cả game, mỗi mục ghi nhãn MVP hoặc Sau MVP.
+
+## 13. Art Direction (L phong cách, G phần còn lại)
+
+- Phong cách: 2D vector, nhìn ngang ở mọi nơi (Lead chốt). Thêm 3D thành 2.5D: chưa chốt, chờ Lead
+- Không khí: khoa học viễn tưởng sinh tồn, nền nghiêm, hài nhẹ từ tính cách nhân vật. Bãi vỡ tối và lạnh, trạm Ember ấm dần lên theo từng khoang sửa xong (thấy được tiến trình bằng mắt)
+- Màu: không gian xanh than, tím đậm. Ánh sáng trạm cam ấm. Driftlife phát quang để đọc được trên nền tối. Giáp chế độ The Wardens trắng xương EDEBE0 và lục acid 7CFC3A, không ai khác dùng. 4 slot người chơi mỗi slot một màu kèm một hình: cam ○, lam ngọc △, vàng chanh □, hồng tím ◇
+- Nhân vật: silhouette đọc được ở 72 điểm ảnh mỗi u (720p). Mỗi nhân vật tối đa 6 màu chính cộng 2 nhấn. Người chơi bão hòa từ 70%, NPC tới 45%. Rig xương chung cho nhân loại, mảnh bộ đồ hoán đổi theo 5 trục nâng cấp
+- Môi trường: map tổng ghép từ kho mảnh dựng tay (tái dùng tối đa), trạm là mặt cắt ngang nhìn thấy các khoang, mỗi dải một bảng màu và loại mảnh vỡ riêng
+- UI: 16:9, chữ đọc được ở 1280x720, mỗi trạng thái quan trọng có tín hiệu hình kèm màu
+- Tham chiếu cảm giác: Dave the Diver (đọc rõ, vui mắt, nhân vật nhiều biểu cảm). Chỉ lấy cảm giác, không lấy asset
+- Chi tiết: tab Assets, ho-so-nhan-vat.md mục 7
+
+## 14. Project Scope (G, mốc thời gian chờ Lead)
+
+- Nhóm: 1 Game Designer, 4 Game Developer, 1 Artist 2D. Unity, PC, co-op online 2 đến 4 người
+- Cả game: 5 chương, 3 dải map tổng, 8 map nhánh, 15 loài Driftlife, 4 đơn vị The Wardens, 5 boss, khoảng 150 vật phẩm, 5 người vớt, 5 thương nhân, 12 đến 15 giờ chơi một mình
+- MVP: trọn chương 1. Dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến có 1 loại kiện phải chế và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Khoảng 1,5 đến 2 giờ chơi
+- Ngoài phạm vi: PvP, chơi chung một máy, tiền thứ hai, XP, sinh map thủ tục hoàn toàn, chọn chặng trên bản đồ, vùng chơi trên hành tinh Sennar hay hành tinh đích
+- Mốc thời gian: chưa có, chờ Lead. Phạm vi art tính lại khi có mốc
+- Chi tiết: tab TRACKING, MVP Criteria Checklist
+
+## 15. USP (G)
+
+- Oxy là thời gian và cũng là máu trong không gian 2D: mỗi chuyến là một phép tính liều, có vạch "đủ về" để người chơi tự quyết
+- Ca cảng giao thương thay cho nhà hàng: cuối ngày bốc kiện lên tàu của thương nhân ngoài hành tinh, mỗi loài một tính cách, có lúc phải chuyển tin mật cho cách mạng
+- Co-op có lý do trong truyện: mỗi trạm con có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh dậy. Chơi một mình vẫn trọn
+- Kéo một trạm chết sống lại: mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng, người vớt về mở tính năng mới
+- Truyện về định kiến: kẻ thù là cái nhìn phiến diện của một tên độc tài, người chơi cùng người thừa kế hợp pháp làm cách mạng và nhận về hành tinh thật
+
+## 16. Target Audience (G)
+
+- Người chơi PC thích Dave the Diver, Subnautica, Core Keeper, Stardew Valley chơi chung
+- Thích khám phá, tối ưu và tự tay dựng lại một thứ. Thích truyện có chiều sâu nhưng không muốn xem cắt cảnh dài
+- Chơi phiên 30 đến 60 phút (2 đến 3 ngày trong game). Chơi một mình là chính, rủ 1 đến 3 bạn vào giữa chừng
+- Kỹ năng hành động vừa phải: thử thách đến từ quyết định quản lý Oxy, không đòi phản xạ cao
+- Độ tuổi: chưa chốt

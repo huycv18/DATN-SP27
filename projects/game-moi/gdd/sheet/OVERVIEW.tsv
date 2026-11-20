@@ -1,5 +1,5 @@
 GAME DESIGN DOCUMENT - THE NOVENT
-Version: 0.3.0	Date: 20/11/2026
+Version: 0.4.0	Date: 20/11/2026
 Designed by Huy
 
 INFORMATION	"Game Title: The Novent
@@ -10,7 +10,18 @@ Engine: Unity
 Age Rating: Chưa chốt
 Platform: PC, chơi đơn hoặc co-op online 2 đến 4 người"
 
-IDEA	Người chơi tỉnh dậy trên Station Ember, một trạm hỏng đang trôi giữa bãi vỡ của tàu mẹ Cradle sau vụ The Scattering. Mỗi ngày có tối đa 2 chuyến ra ngoài không gian, mặt phẳng bay 8 hướng nhìn ngang. Oxy vừa là thời gian vừa là máu: đi tiếp hay quay về luôn là lựa chọn. Người chơi nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối, rồi mang về kho. Ở trạm họ sửa khoang, chế đồ, nuôi Driftlife, rồi chạy trong mặt cắt trạm để lấy hàng, đóng kiện và bốc lên tàu của thương nhân The Veyl trong ca cảng, đổi lấy Tally, đồng tiền duy nhất. Tally mua nâng cấp bộ đồ, nâng cấp trạm và thứ Ember không tự làm được, để đi xa hơn qua 3 dải Gần, Giữa, Xa. Mỗi người vớt về mở một tính năng của trạm. Truyện qua 5 chương: sống sót, tìm đường tới Solace, cứu Sevra (người thừa kế hợp pháp của hành tinh Sennar), biết Solace là mồi do tên độc tài Daskel dựng để phục kích đoàn di cư, rồi giúp mạng lưới của Sevra lật đổ Daskel. Sevra trao tọa độ một hành tinh có sự sống thật, Ember rời neo lên đường. Kết mở. Chơi một mình trọn vẹn, có bạn thì vui hơn.
+DEFINE GDD	"- Tài liệu: Game Design Document của game The Novent, phiên bản 0.4.0. Nguồn chuẩn duy nhất về luật, số và nội dung cho dev, art, PM
+- Hai lớp: Sheet này là bản làm việc tóm gọn. Bản đủ nằm ở repo github.com/huycv18/DATN-SP27, thư mục projects/game-moi/gdd (khung game và 10 GDD hệ thống). Sheet và repo được đối chiếu bằng máy (tools/doi-chieu-sheet.mjs)
+- Cấu trúc 25 tab, 4 nhóm. Tổng quan: OVERVIEW, ECONOMIC. Spec thực thể: CORE LOOP, Day, Player, Enemy, Salvage, Customer, Zone, Upgrade. Bảng dữ liệu: GAME STORY, ITEM LIST, Recipe, Shop, PROCESSING, Tutorials, WIREFRAME. Sản xuất và kiểm: TRACKING, Assets, AUDIO ASSETS LIST, Event Tracking, MVP Criteria Checklist, Balance Sheet, Playtest Report, Bugs Report
+- Quy ước: một con số chỉ ghi ở một nơi (giá ở Shop và Upgrade, tab khác trỏ về), mỗi nội dung có nhãn MVP hoặc Sau MVP, tên riêng tiếng Anh là tên tạm, số cân bằng do sim in ra
+- Quyền: Lead (Huy) duyệt luật lõi và phạm vi. Phòng Game Designer giữ từng tab theo hệ thống. Mọi thay đổi ghi ở TRACKING GDD bên dưới"
+
+GAME VISION & CONCEPT	"- Vision: tự tay kéo một trạm chết sống lại giữa bãi vỡ của tàu mẹ. Mỗi chuyến ra ngoài là một lần liều có tính toán, một mình hay cùng bạn
+- Fantasy: tôi là người sống sót giỏi nghề. Mỗi lần ra ngoài là đổi Oxy lấy hy vọng, mỗi lần về là thấy trạm đổi khác
+- Bối cảnh: Trái Đất cạn kiệt, đoàn di cư của United Accord trên tàu mẹ Cradle đi tìm hành tinh mới. Tên độc tài Daskel của hành tinh Sennar phát tín hiệu giả về hành tinh Solace để dụ và phục kích đoàn di cư (vụ The Scattering). Người chơi tỉnh dậy trên Station Ember, một trạm con hỏng đang trôi giữa bãi vỡ
+- Concept: mỗi ngày tối đa 2 chuyến ra ngoài không gian (2D nhìn ngang, bay 8 hướng). Oxy vừa là thời gian vừa là máu. Nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối. Về trạm sửa khoang, chế đồ, nuôi Driftlife, rồi bốc kiện lên tàu thương nhân The Veyl trong ca cảng để lấy Tally. Tally nâng cấp bộ đồ và trạm để đi xa hơn
+- Truyện 5 chương: sống sót, tìm đường tới Solace, cứu Sevra (người thừa kế hợp pháp của Sennar), biết Solace là mồi, giúp mạng lưới của Sevra lật đổ Daskel. Sevra trao tọa độ hành tinh có sự sống thật, Ember rời neo. Kết mở cho phần sau
+- Thể loại: hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý, cấu trúc tham khảo Dave the Diver (ngày khám phá, cuối ngày quản lý). Chơi đơn hoặc co-op online 2 đến 4 người"
 
 CORE PILLARS	Five Core Pillars theo Dave the Diver, game follow đúng năm pillar này. Mỗi tính năng phải phục vụ ít nhất một pillar và không phạm cột Cấm. Khi hai pillar xung đột, ưu tiên theo thứ tự 1 đến 5. Bản đủ: projects/game-moi/gdd/00-khung-game.md mục 2
 Pillar	Mô tả	Player Experience	Giữ bằng luật và cách đo	Cấm
@@ -34,6 +45,42 @@ Solo or Together
 Một mình vẫn trọn, có bạn thì vui hơn"	Nguyên tắc nền, không phải pillar, nhưng mọi pillar phải tuân theo. Mọi luật đúng với 1 đến 4 người. Chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay để chia việc, không mở khóa nội dung	Freedom, Cooperation, Belonging	"Luật: C1 đến C10, K23 lưu game
 Đo: mỗi người trong nhóm 4 nhặt được từ 60% so với chơi một mình. Nhóm 4 hết game bằng 60 đến 75% thời gian chơi một mình"	Luật chỉ đúng khi có đúng N người. Nội dung chỉ co-op mới có. Mở thêm bến, vùng hay tính năng theo số người. Tạm dừng toàn cục khi co-op
 
+CORE GAMEPLAY	"- Vòng lớn: ra ngoài thu thập, mang về kho, sửa trạm và chế đồ và nuôi Driftlife, bốc kiện ở ca cảng lấy Tally, nâng cấp bộ đồ và trạm, đi xa hơn và lâu hơn, lộ thêm truyện
+- Một ngày (5 pha): Chuẩn bị (xem bảng tàu, chọn dụng cụ), Chuyến 1, Chuyến 2, Ca cảng, Cuối ngày (nâng cấp, nghiên cứu, nói chuyện, ngủ để lưu). Tối đa 2 chuyến mỗi ngày
+- Nửa hành động: bay 8 hướng có quán tính nhẹ, Oxy là chỉ số duy nhất, khai thác điểm tài nguyên, combat và bắt sống Driftlife, map nhánh dựng tay, về bằng cửa khí hoặc Recall Beacon. Hết Oxy thì ngạt, không ai cứu thì bị kéo về và chỉ giữ 1 món
+- Nửa quản lý: sửa khoang trạm (mỗi khoang đổi hình và trả lại một chức năng), người vớt về mở tính năng, nuôi Driftlife, ca cảng chơi tay có áp lực thời gian (lấy hàng, chế thêm, đóng kiện, bốc lên tàu trước giờ rời), Hạng cảng
+- Co-op 1 đến 4: dùng chung trạm, kho, Tally, cấp trang bị. Riêng từng người Oxy và túi đồ. Không tạm dừng khi co-op
+- Thời lượng mục tiêu: chuyến 4 đến 12 phút, ca cảng 3 đến 5 phút, một ngày 15 đến 30 phút
+- Chi tiết: tab CORE LOOP, Day, Player, Customer"
+
+ART DIRECTION	"- Phong cách: 2D vector, nhìn ngang ở mọi nơi (Lead chốt). Thêm 3D thành 2.5D: chưa chốt, chờ Lead
+- Không khí: khoa học viễn tưởng sinh tồn, nền nghiêm, hài nhẹ từ tính cách nhân vật. Bãi vỡ tối và lạnh, trạm Ember ấm dần lên theo từng khoang sửa xong (thấy được tiến trình bằng mắt)
+- Màu: không gian xanh than, tím đậm. Ánh sáng trạm cam ấm. Driftlife phát quang để đọc được trên nền tối. Giáp chế độ The Wardens trắng xương EDEBE0 và lục acid 7CFC3A, không ai khác dùng. 4 slot người chơi mỗi slot một màu kèm một hình: cam ○, lam ngọc △, vàng chanh □, hồng tím ◇
+- Nhân vật: silhouette đọc được ở 72 điểm ảnh mỗi u (720p). Mỗi nhân vật tối đa 6 màu chính cộng 2 nhấn. Người chơi bão hòa từ 70%, NPC tới 45%. Rig xương chung cho nhân loại, mảnh bộ đồ hoán đổi theo 5 trục nâng cấp
+- Môi trường: map tổng ghép từ kho mảnh dựng tay (tái dùng tối đa), trạm là mặt cắt ngang nhìn thấy các khoang, mỗi dải một bảng màu và loại mảnh vỡ riêng
+- UI: 16:9, chữ đọc được ở 1280x720, mỗi trạng thái quan trọng có tín hiệu hình kèm màu
+- Tham chiếu cảm giác: Dave the Diver (đọc rõ, vui mắt, nhân vật nhiều biểu cảm). Chỉ lấy cảm giác, không lấy asset
+- Chi tiết: tab Assets, ho-so-nhan-vat.md mục 7"
+
+PROJECT SCOPE	"- Nhóm: 1 Game Designer, 4 Game Developer, 1 Artist 2D. Unity, PC, co-op online 2 đến 4 người
+- Cả game: 5 chương, 3 dải map tổng, 8 map nhánh, 15 loài Driftlife, 4 đơn vị The Wardens, 5 boss, khoảng 150 vật phẩm, 5 người vớt, 5 thương nhân, 12 đến 15 giờ chơi một mình
+- MVP: trọn chương 1. Dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến có 1 loại kiện phải chế và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Khoảng 1,5 đến 2 giờ chơi
+- Ngoài phạm vi: PvP, chơi chung một máy, tiền thứ hai, XP, sinh map thủ tục hoàn toàn, chọn chặng trên bản đồ, vùng chơi trên hành tinh Sennar hay hành tinh đích
+- Mốc thời gian: chưa có, chờ Lead. Phạm vi art tính lại khi có mốc
+- Chi tiết: tab TRACKING, MVP Criteria Checklist"
+
+TARGET AUDIENCE	"- Người chơi PC thích Dave the Diver, Subnautica, Core Keeper, Stardew Valley chơi chung
+- Thích khám phá, tối ưu và tự tay dựng lại một thứ. Thích truyện có chiều sâu nhưng không muốn xem cắt cảnh dài
+- Chơi phiên 30 đến 60 phút (2 đến 3 ngày trong game). Chơi một mình là chính, rủ 1 đến 3 bạn vào giữa chừng
+- Kỹ năng hành động vừa phải: thử thách đến từ quyết định quản lý Oxy, không đòi phản xạ cao
+- Độ tuổi: chưa chốt"
+
+USP	"- Oxy là thời gian và cũng là máu trong không gian 2D: mỗi chuyến là một phép tính liều, có vạch ""đủ về"" để người chơi tự quyết
+- Ca cảng giao thương thay cho nhà hàng: cuối ngày bốc kiện lên tàu của thương nhân ngoài hành tinh, mỗi loài một tính cách, có lúc phải chuyển tin mật cho cách mạng
+- Co-op có lý do trong truyện: mỗi trạm con có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh dậy. Chơi một mình vẫn trọn
+- Kéo một trạm chết sống lại: mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng, người vớt về mở tính năng mới
+- Truyện về định kiến: kẻ thù là cái nhìn phiến diện của một tên độc tài, người chơi cùng người thừa kế hợp pháp làm cách mạng và nhận về hành tinh thật"
+
 TRACKING GDD
 Version	Content	In charge	Note
 v0.1.0 - 19/10/2026	Khởi tạo GDD: concept, core loop, 26 hệ thống, 3 tầng, vật phẩm, hiểm họa, luật vũ khí, công thức, quán, kinh tế, nâng cấp	Huy	Bản nháp do Claude hỗ trợ soạn
@@ -42,3 +89,4 @@ v0.3.0 - 20/11/2026	Định nghĩa lại game từ đầu (mã tạm EMBER), b�
 v0.3.1 - 20/11/2026	Core Pillars viết đầy đủ, mỗi pillar một hàng	GDM
 v0.3.2 - 20/11/2026	Phản diện mới theo Lead (Daskel độc tài, Sevra người thừa kế, cách mạng)	GDM
 v0.3.3 - 20/11/2026	Core Pillars theo đúng Five Core Pillars của Dave the Diver (Lead chốt). Co-op chuyển thành nguyên tắc nền	GDM
+v0.4.0 - 20/11/2026	OVERVIEW thêm Define GDD, Game Vision & Concept, Core Gameplay, Art Direction, Project Scope, Target Audience, USP	GDM
