@@ -4,7 +4,7 @@ Q1	Mã vật phẩm theo tiền tố: RES tài nguyên thô, SMP mẫu đã hạ
 Q2	GTĐ là giá trị tương đối của vật phẩm, RES-101 bằng 1,0. GTĐ không phải Tally, Economy quy đổi GTĐ ra Tally.	MVP
 V3	Túi tính bằng Khối, tài nguyên thô, mẫu đã hạ và vật tiêu hao chiếm Khối, túi đầy thì không nhặt thêm. Thả đồ tạo vật nhặt được tại chỗ trong 30 giây, tối đa 1 lần mỗi giây.	MVP
 V2	Kho ở trạm dùng chung cả nhóm, tối đa 999 đơn vị mỗi loại, không giới hạn số loại. Về trạm thì túi chuyển sang kho.	MVP
-K2	Bị kéo về (Oxy về 0 rồi hết khoảng ngạt) thì mất túi, chỉ giữ 1 món. Món giữ do người chơi ghim, mặc định là vật hiếm nhất vừa nhặt.	MVP
+K2	Bị kéo về (luật K2 của khung game, Oxy về 0 rồi hết khoảng ngạt) thì mất túi, chỉ giữ 1 món. Món giữ do người chơi ghim, mặc định là vật hiếm nhất vừa nhặt.	MVP
 V1	Món giữ là 1 đơn vị của một loại hoặc 1 vật đang kéo. Lồng mẫu được ghim thì chỉ giữ con sao cao nhất.	MVP
 V6	Dụng cụ và nâng cấp bộ đồ là mở khóa cho cả nhóm, không có dạng vật và không chiếm túi. Kiện mang tay trong trạm, không vào túi.	MVP
 V7	Mẫu sống cỡ S đi trong Lồng mẫu kéo theo (tối đa 3 con, mỗi người 1 lồng), cỡ M gửi về kho bằng Phao kéo. Buồng ngủ đông là vật kéo, không vào túi.	MVP
@@ -13,6 +13,7 @@ V4	Vật manh mối tự ghi vào Sổ tay, không chiếm túi và không mất
 V4b	Vật nhiệm vụ mất túi hoặc bị thả thì về vị trí gốc ở map nhánh, có lại ở chuyến sau. STY-701 không có vị trí gốc, mất thì nhận lại ở khoang liên lạc vào ngày sau (tối đa 1 gói mỗi ngày).	MVP
 V4c	Nộp vật nhiệm vụ là bỏ vào kho ở nơi nhận, không tiêu vật. Chỉ tiêu khi nằm trong vật liệu của việc sửa hoặc công thức: STY-102 ở KH08, STY-401 và STY-501 ở RCP-207.	MVP
 V5	Vật kể chuyện không bán cho tàu. Dữ liệu STY-101 và STY-401 được sao thành CGO-131 để bán (RCP-141), vật gốc ở lại trạm và mỗi vật gốc chỉ sao một lần.	Sau MVP
+V5b	Thẻ tên buồng ngủ đông (STY-601) treo ở khoang buồng ngủ đông, đổi hình trạm. Không có công dụng chơi.	Sau MVP
 # Tài nguyên và điểm khai thác
 S1	Tài nguyên thô gắn với dải, mỗi dải có ít nhất 2 tài nguyên riêng: Gần 6, Giữa 4, Xa 5 (kèm 1 tài nguyên Cradle). Vật phẩm dải trước vẫn có chỗ tiêu ở mọi giai đoạn.	MVP
 S2	Tài nguyên và Driftlife sinh lại mỗi chuyến, không cạn. Điểm khai thác chỉ biến mất trong chuyến sau khi khai thác xong.	MVP
@@ -62,6 +63,7 @@ G5	Lồng sinh vật sống nhớ loài và sao. Giá trị lồng bằng mẫu 
 # Sửa khoang, vòng đời và co-op
 E1	Linh kiện lõi động cơ ENG-101 đến ENG-104 không tự làm được, mua ở Shop bằng Tally. ENG-105 không mua được, chế từ vật kể chuyện theo RCP-207 (Bản đồ sao thật, Hộp ghi hành trình Cradle, 2 Mạch cảm biến).	MVP
 E2	Động cơ chính lắp theo thứ tự ENG-101 (chương 1) đến ENG-105 (chương 5), mỗi giai đoạn cộng vật liệu của dải mới. Hai việc sửa đầu chương 1 (khoang neo, Xưởng) chỉ dùng tài nguyên thô vì chưa chế được COM.	MVP
+E3	Khoang dẫn đường nhận hạch hoặc mẫu boss BS-1, một trong hai.	Sau MVP
 L1	Thứ tự một chuyến: nhặt hoặc khai thác, hạ hoặc bắt Driftlife, về trạm (túi sang kho), chế, đóng kiện, bốc lên tàu (nhận Tally). Cuối ngày: nâng cấp, học BPR, đặt hàng ở Shop.	MVP
 L2	Kho, bản thiết kế, cấp dụng cụ, cấp nâng cấp bộ đồ và hàng đợi chế dùng chung cả nhóm, túi và dụng cụ đang mang là riêng từng người. Người vào sau nhận mọi nâng cấp đã mua, túi rỗng.	MVP
 L3	Chơi 1 người thì xưởng và cảng một người làm hết, mọi kiện mang được một mình. Không luật nào cần đúng N người, số điểm khai thác theo số người do hệ thống Map giữ.	MVP

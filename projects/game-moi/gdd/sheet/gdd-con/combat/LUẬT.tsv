@@ -38,9 +38,8 @@ Mã	Luật	Phạm vi
 HV1	Hiền: trôi theo đường và ăn, thấy người thì bỏ qua. Bị tấn công thì bơi ra xa 6 u rồi trôi tiếp, không bao giờ đuổi.	MVP
 HV2	Chạy trốn: thấy người hoặc bị tấn công thì lướt ra xa với tốc độ 1,3 lần người chơi bậc 0 trong 3 giây, nghỉ 2 giây rồi lặp lại. Không bao giờ đánh.	MVP
 HV3	Giữ lãnh thổ: tuần quanh điểm neo, thấy người thì đe dọa, người còn trong vùng sau 2 giây thì tấn công. Bị đánh kể cả từ ngoài vùng phát hiện thì đuổi người gây đòn, cách điểm neo 10 u thì quay về.	MVP
-HV4	Săn mồi: lượn tìm mồi, thấy người thì đuổi và tấn công, bỏ đuổi khi cách chỗ phát hiện 18 u.	Sau MVP
+HV4	Săn mồi: lượn tìm mồi, thấy người thì đuổi và tấn công, bỏ đuổi khi cách chỗ phát hiện 18 u. Phục kích: bám vào mảnh vỡ, trông như vật salvage hoặc đá, người tới gần 2 u thì ra đòn rồi bám lại, không đuổi.	Sau MVP
 HV5	Đi bầy: cả bầy trôi và bỏ qua người nếu không bị tấn công. Một con bị tấn công thì cả bầy trong 8 u chuyển sang tấn công, bỏ đuổi ở 12 u.	MVP
-HV6	Phục kích: bám vào mảnh vỡ, trông như vật salvage hoặc đá, người tới gần 2 u thì ra đòn rồi bám lại. Không đuổi.	Sau MVP
 TS1	Trạng thái: Trôi, Cảnh giác (2 giây), Tấn công (cần vé), Chờ vé, Chạy, Choáng, Ngủ, Bỏ đuổi (quay về, không nhận vé), Bị bắt, Bị hạ. Mọi trạng thái trừ Bị bắt và Bị hạ đều có lối ra theo thời gian.	MVP
 30	Từ chương 3 một phần cá thể dải Giữa và Xa mang Dấu săn bắt (vết lưới và vết cắt của The Wardens), mọi Shardbrood Hatchling mang thẻ đánh dấu, mọi Shardbrood Queen có sẹo cắt mô. Dấu chỉ là hình, không đổi chỉ số.	Sau MVP
 SK1	Driftlife sổng trong trạm không gây sát thương, không chết và không mất, nó nuốt và giữ hàng trong khoang nó đứng. Tóm được thì hàng về chỗ cũ, bỏ mặc thì hết ca con tự về và hàng về kho.	Sau MVP
@@ -61,7 +60,8 @@ TT3	Bước 5: Oxy người chơi về 0 thì vào Ngạt. Bước 6: bắt hoà
 31, 32	Quân The Wardens xuất hiện ở dải Xa từ chương 3: bắn xa, phối hợp nhóm, có khiên hướng, không bắt sống được, miễn mê. Hạ chúng là nguồn duy nhất của RES-305 Linh kiện Warden và RES-301 Hợp kim Warden.	Sau MVP
 11, 33	Driftlife kiểu Giữ lãnh thổ và Săn mồi tấn công The Wardens trong vùng phát hiện, ưu tiên hơn người chơi. Hạ Warden Harvester thì Driftlife nó đang giữ được thả, Choáng 6 giây.	Sau MVP
 34	Lưới của Warden Snarer trói người chơi tối đa 2 giây rồi tự tan: không bay được, mỗi giây trừ 2 Oxy. Thoát sớm bằng Lướt 3 lần liên tiếp hoặc đồng đội bắn Lao từ cắt lưới.	Sau MVP
-40-44	Toán bắt cóc Sevra ở chương 3 và việc kéo kén của Sevra theo tab Enemy, dòng EN-01. Kén không bị nhắm, không nhận sát thương, Sevra không chết.	Sau MVP
+40, 41, 44	Chương 3: hạ hết toán bắt cóc (thành phần ở tab Enemy) thì Tương tác giữ 2 giây để gỡ kén của Sevra khỏi tàu TA04, kéo về Ember qua Recall Beacon hoặc cửa khí. Kén là vật kéo lớp Nặng, không bị nhắm, không nhận sát thương, Warden Snarer ưu tiên người đang kéo vật.	Sau MVP
+42, 43	Người kéo vào Ngạt thì thả kén tại chỗ cho đồng đội kéo tiếp, kén không ghim được, không mất theo túi, Sevra không chết. Hộ tống chương 5 từ cửa N4 tới cửa The Hearth: kén không theo Recall Beacon, giữa các chuyến lưu ở beacon cố định gần nhất đã qua, chưa qua thì ở cửa N4.	Sau MVP
 # Co-op 1 đến 4 người
 CO1	N là số người ở ngoài không gian trong cùng map lúc kẻ địch sinh ra hoặc lúc vào phòng boss. Người rời phiên giữa trận thì hệ số giữ nguyên tới hết trận đó.	MVP
 CO2	Sinh lực và hai ngưỡng của Driftlife tăng theo N, bù cho số Driftlife mỗi chuyến cũng tăng theo N, nên mỗi người gánh như chơi một mình. Hệ số từng dải ở tab THAM SỐ.	MVP

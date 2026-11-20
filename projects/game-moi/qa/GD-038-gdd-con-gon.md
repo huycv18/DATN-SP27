@@ -75,3 +75,38 @@ Số THAM SỐ không đọc tay hết từng hàng: dựa vào cổng máy "m�
 | vat-pham | TRẢ LẠI | 2 (N1, N2) | 8 nhóm |
 
 Đề xuất cho GDM: trước khi đưa lên Sheet, sửa N1 và N2 ở `vat-pham.md` rồi TSV. Giới hạn 2 câu mỗi ô là luật KHUON nhưng cổng máy chưa kiểm: cân nhắc thêm vào `dung-gdd-con.py` (gd-tech) để khỏi dựa vào mắt người.
+
+## Vòng 2 (chấm lại sau khi 3 vai sửa)
+Cổng máy: `python -P -X utf8 projects/game-moi/tools/dung-gdd-con.py kiem tat-ca` ra story ĐẠT, combat ĐẠT, vat-pham ĐẠT (đã gồm luật tối đa 2 câu mỗi ô và trần hàng). LUẬT: story 61, combat 70, vat-pham 67 hàng (trần 70).
+
+### Lỗi vòng 1
+| Lỗi | Kết quả |
+|---|---|
+| N1 vat-pham M9 nhãn MVP | Đã sửa. `vat-pham/LUẬT.tsv` hàng 33, 34 (M4b, M4c) nay `Sau MVP`, khớp `combat/LUẬT` BO8. `vat-pham.md` luật M4 và Lịch sử thay đổi đã đổi |
+| N2 vat-pham biên "lần lưu đầu ngày" | Đã sửa. `vat-pham/TRƯỜNG HỢP BIÊN.tsv` hàng 10 ghi "điểm lưu gần nhất", khớp K23, C10 và story biên hàng 22. `vat-pham.md` dòng 525 đã đổi |
+| S1 VT6 lệch nhãn | Đã sửa, gộp luật 20 thành MVP |
+| S2, C3, V6 ô quá 2 câu | Đã sửa, cổng máy chặn |
+| S3, C2, V3, V8 mã và viết tắt | Phần lớn đã sửa: khe M, khe V, Host có giải thích (TÊN RIÊNG hàng 34, 39), pillar viết bằng tên, GTĐ định nghĩa ở Q2, bỏ k(N), P90, ping, CP. Còn mã khung "K2" trần ở `vat-pham/LUẬT.tsv` hàng 7 (Nhẹ) |
+| S4, C4, V5 lý do chọn số, trùng tab dữ liệu | Đã sửa (story THAM SỐ hết ghi chú lý do, combat bỏ số prototype, vat-pham bỏ túi, Lao từ, giá kiện, công thức mũ, công thức nâng cấp viết lại và tính lại đúng: bậc 1 = 25 GTĐ, mỗi bậc nhân 1,8, vỏ lệch +1 lớp, dụng cụ lệch -1 lớp) |
+| S5, V7 nhắc sim | Đã sửa. Còn "GDM" ở cột "Ai trả lời" `combat/CÂU HỎI MỞ.tsv` hàng 4 (Nhẹ) |
+| S6, C5 biên không phân Phạm vi | Đã sửa bằng nhóm "(MVP)" và "# Sau MVP" trong tab Biên. Vat-pham biên không có hàng Sau MVP |
+| V1, V2 phạm vi trộn, mã lệch GDD | Đã sửa. M6 đến M8, T5, T6 tách hàng. Mã trở về mã gốc (V1 đến V7, T1 đến T8, C1 đến C7, G1 đến G5, E1, E2) |
+| S7 TÊN RIÊNG "tên tạm" | Chưa giải quyết: câu "Mọi tên riêng tiếng Anh khác là tên tạm" vẫn không có trong `cot-truyen.md` (chỉ có cột "Tên tạm" của bảng chương). Nhẹ |
+| S8 mã trùng giữa module | Không đổi, Nhẹ, chỉ rối nếu chung Sheet |
+
+### Lớp 2 "không mất luật"
+- vat-pham (105 xuống 67 hàng): đối chiếu từng luật V, S, M, T, C, G, E, L gốc, đều còn (gộp). Mất nhỏ: E3 "khoang dẫn đường nhận hạch hoặc mẫu boss BS-1, một trong hai" (Sau MVP, ý còn lại ở M4 và V4c), STY-601 (như vòng 1). Câu "trạm báo dùng được khi mở khoang dẫn đường" còn ở Biên hàng 19. Đạt.
+- story: không đổi số hàng, đủ 26 luật. Đạt.
+- combat: **mất luật Sau MVP** (lỗi Nặng mới, N3). `LUẬT.tsv` hàng 64 (mã "40-44") gộp luật 40 đến 44 thành một câu dẫn "theo tab Enemy, dòng EN-01". Dòng EN-01 (`gdd/sheet/Enemy.tsv` hàng 124) chỉ có thành phần toán bắt cóc, Maro rút lui, toán không sinh lại. Không có trong LUẬT lẫn EN-01: gỡ kén bằng Tương tác giữ 2 giây; kén là vật kéo lớp Nặng; Warden Snarer ưu tiên người đang kéo vật; trong hộ tống chương 5 kén không đi theo Recall Beacon (người kích beacon thì kén nằm lại). Còn ở Biên: thả kén khi ngạt, trói Snarer khi kéo kén. Dẫn chiếu EN-01 vì thế sai. Nguồn: `combat-driftlife.md` luật 40 đến 43 và mục 2.8.
+
+### GDD hệ thống các vai sửa
+`git diff HEAD~1` cho cot-truyen.md, combat-driftlife.md, vat-pham.md: chỉ đổi nhãn (M4, hàng "Bắt được" thành MVP khớp luật 19 đến 21), bỏ bộ sim cũ 6, 5, 8, 3, 3 và 6, 5, 8, 3, 4, sửa câu "lần lưu đầu ngày", cộng dòng Lịch sử. Không đổi luật hay số. Khớp lời nói của các vai.
+
+### Kết luận vòng 2
+| Module | Kết luận | Nặng | Nhẹ còn |
+|---|---|---|---|
+| story | ĐẠT | 0 | 2 (S7, S8) |
+| combat | TRẢ LẠI | 1 (N3 mất luật kén Sevra, dẫn chiếu EN-01 sai) | 1 (GDM ở Câu hỏi mở) |
+| vat-pham | ĐẠT | 0 | 3 (mã K2 trần, E3, STY-601) |
+
+Đề xuất cho gd-combat: tách `LUẬT.tsv` hàng 64 thành 2 hàng Sau MVP, ghi lại 4 ý bị mất (gỡ kén 2 giây, lớp Nặng, Snarer ưu tiên người kéo, không đi theo Recall Beacon trong hộ tống). Combat đang 70 hàng nên cần gộp bớt hàng khác hoặc GDM nới trần.
