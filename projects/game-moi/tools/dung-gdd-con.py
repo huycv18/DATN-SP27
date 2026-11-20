@@ -1,187 +1,140 @@
 #!/usr/bin/env python
-# Dựng file xlsx cho một GDD con (Sheet) từ GDD hệ thống markdown trong repo, theo khuôn GDD con (DECISIONS 2026-11-20 Tách GDD con).
-# Mỗi mục "## " của markdown vào đúng một tab khuôn. Mục không có chỗ thì dừng, để không mất nội dung.
-# Chạy: python -P projects/game-moi/tools/dung-gdd-con.py <story|combat|vat-pham|tat-ca> --ra <thư mục>
-# File xlsx tải lên Drive (đổi sang Google Sheet) rồi chép tab vào GDD con bằng connector. Tab dữ liệu (GAME STORY, Enemy...) giữ nguyên ở file con, không dựng ở đây.
+# GDD con bản đọc (DECISIONS 2026-11-20 "GDD con gọn"): kiểm và dựng xlsx từ TSV của vai giữ hệ thống.
+# Nguồn: projects/game-moi/gdd/sheet/gdd-con/<module>/<TAB>.tsv, khuôn ở gdd/sheet/gdd-con/KHUON.md.
+# Chạy:  python -P projects/game-moi/tools/dung-gdd-con.py kiem <story|combat|vat-pham|tat-ca>      (thoát 1 khi có lỗi)
+#        python -P projects/game-moi/tools/dung-gdd-con.py dung <module|tat-ca> --ra <thư mục>       (kiểm rồi ghi <module>.xlsx)
+# xlsx tải lên Drive, chép tab vào GDD con bằng connector. Tab dữ liệu (GAME STORY, Enemy...) không dựng ở đây.
 import re, sys, math, argparse
 from pathlib import Path
-from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 
 GOC = Path(__file__).resolve().parents[1]
+NGUON = GOC / 'gdd' / 'sheet' / 'gdd-con'
 HT = GOC / 'gdd' / 'he-thong'
 REPO = 'https://github.com/huycv18/DATN-SP27/blob/main/projects/game-moi/gdd/he-thong/'
 GDD_CHINH = 'https://docs.google.com/spreadsheets/d/1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs/edit'
 
-TAB_KHUON = [  # (tên tab, nội dung, tiền tố tiêu đề mục "## " thuộc tab). Tiền tố cụ thể đặt trước tiền tố chung.
-    ('TỔNG QUAN', 'Thông tin module, tóm tắt, số hiện hành, mục đích với người chơi, danh mục', ['Tóm tắt', 'Hiện hành', '1. ', 'Danh mục']),
-    ('LUẬT', 'Luật, trạng thái, thứ tự xử lý, co-op 1 đến 4 người', ['6b.', '11. Co-op', 'Co-op', '2. ', 'Driftlife trong trạm']),
-    ('THAM SỐ', 'Tham số và số cân bằng', ['3. ']),
-    ('TRƯỜNG HỢP BIÊN', 'Trường hợp biên và ràng buộc của luật', ['4. ', '5. ']),
-    ('YÊU CẦU', 'Yêu cầu cho engineer, tool, art, UI, tutorial, audio và cảm giác', ['7b.', '6. ', '7. ']),
-    ('NGHIỆM THU', 'Cách đo thành công, tiêu chí nghiệm thu, lệch khỏi tham chiếu', ['8. ', '9. ']),
-    ('TÊN RIÊNG', 'Bảng tên riêng và tên game', ['12. ']),
-    ('VOICE SHEET', 'Giọng văn từng nhân vật, câu mẫu', ['13. ']),
-    ('CÂU HỎI VÀ LỊCH SỬ', 'Câu hỏi mở, điểm tự quyết, phản biện, lệch với vai khác, lịch sử thay đổi', ['10. ', 'Điểm tự quyết', 'Phản biện', 'Lịch sử', 'Lệch', 'Tên mới']),
-]
-BO_QUA = {'14. ': 'Khối GAME STORY: đã là tab GAME STORY trong file này'}
-
-MODULE = {
-    'story': dict(so='01', ten='Story', md=['cot-truyen.md'], vai='gd-story', data=['GAME STORY'],
-                  pham_vi='Bối cảnh, mạch truyện 5 chương, nhân vật truyện, tên riêng, voice sheet, lời thoại'),
-    'combat': dict(so='02', ten='Combat và Driftlife', md=['combat-driftlife.md'], vai='gd-combat', data=['Enemy'],
-                   pham_vi='Combat chung, choáng và mê, bắt sống, Driftlife, The Wardens, boss, Driftlife trong trạm'),
-    'vat-pham': dict(so='03', ten='Vật phẩm', md=['vat-pham.md'], vai='gd-items', data=['Salvage', 'ITEM LIST', 'Recipe'],
-                     pham_vi='Tài nguyên, mẫu Driftlife, dụng cụ, công thức, hàng hóa cảng, vật liệu sửa khoang, vòng đời vật phẩm'),
+# Tab -> [(cột, độ rộng px)]. Tên cột phải khớp đúng hàng đầu TSV.
+KHUON = {
+    'TỔNG QUAN': [('Mục', 200), ('Nội dung', 760)],
+    'LUẬT': [('Mã', 70), ('Luật', 720), ('Phạm vi', 90)],
+    'CHƯƠNG': [('Chương', 170), ('Tóm tắt', 500), ('Mốc chính', 360), ('Phạm vi', 90)],
+    'NHÂN VẬT': [('Tên', 170), ('Vai trò', 280), ('Tính cách và giọng', 460), ('Phạm vi', 90)],
+    'THAM SỐ': [('Tham số', 300), ('Giá trị', 150), ('Đơn vị', 110), ('Ghi chú', 420)],
+    'TÊN RIÊNG': [('Tên', 220), ('Loại', 160), ('Nghĩa và ghi chú', 580)],
+    'TRƯỜNG HỢP BIÊN': [('Tình huống', 360), ('Xử lý', 620)],
+    'YÊU CẦU': [('Bộ phận', 110), ('Yêu cầu', 760), ('Phạm vi', 90)],
+    'NGHIỆM THU': [('Tiêu chí', 360), ('Cách đo', 400), ('Ngưỡng đạt', 220)],
+    'CÂU HỎI MỞ': [('Câu hỏi', 620), ('Ai trả lời', 160), ('Cần trước', 200)],
 }
-DATA_MO_TA = {'GAME STORY': 'Khối truyện dán Sheet', 'Enemy': 'Bảng Driftlife, The Wardens, boss',
-              'Salvage': 'Tài nguyên và điểm khai thác', 'ITEM LIST': 'Danh sách vật phẩm', 'Recipe': 'Công thức chế'}
+TONG_QUAN_BAT_BUOC = ['Hệ thống làm gì', 'Người chơi nhận được gì', 'Pillar phục vụ', 'Trong MVP', 'Sau MVP', 'Liên quan hệ thống khác', 'Vai giữ']
+TUY_CHON = {'CÂU HỎI MỞ'}
+MODULE = {
+    'story': dict(so='01', ten='Story', md=['cot-truyen.md'],
+                  tab=['TỔNG QUAN', 'LUẬT', 'CHƯƠNG', 'NHÂN VẬT', 'THAM SỐ', 'TÊN RIÊNG', 'TRƯỜNG HỢP BIÊN', 'YÊU CẦU', 'NGHIỆM THU', 'CÂU HỎI MỞ']),
+    'combat': dict(so='02', ten='Combat và Driftlife', md=['combat-driftlife.md'],
+                   tab=['TỔNG QUAN', 'LUẬT', 'THAM SỐ', 'TRƯỜNG HỢP BIÊN', 'YÊU CẦU', 'NGHIỆM THU', 'CÂU HỎI MỞ']),
+    'vat-pham': dict(so='03', ten='Vật phẩm', md=['vat-pham.md'],
+                     tab=['TỔNG QUAN', 'LUẬT', 'THAM SỐ', 'TRƯỜNG HỢP BIÊN', 'YÊU CẦU', 'NGHIỆM THU', 'CÂU HỎI MỞ']),
+}
+DAI_TOI_DA = 280  # ký tự một ô: dài hơn thì tách hàng
+CAM = [(r'\blog\b', 'nhắc log nội bộ'), (r'\bQA\b|gd-qa|GD-0\d\d', 'nhắc QA hoặc mã việc'), (r'tự quyết', 'nhắc điểm tự quyết'),
+       (r'xem mục|mục \d', 'trỏ mục của file khác'), (r'\bgd-[a-z]+', 'tên vai (chỉ được ở hàng Vai giữ)'), (r'[—–]', 'gạch dài'),
+       (r'\*\*|`', 'ký hiệu markdown'), (r'\[GIẢ ĐỊNH\]', 'còn giả định chưa chốt')]
 
-# ---------- đọc markdown ----------
-def sach(s):
-    s = re.sub(r'`(Sau MVP|MVP)`', r'[\1]', s)
-    s = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'\1 (\2)', s)
-    s = s.replace('**', '').replace('`', '').replace('<br>', '\n')
-    return s.strip()
+def doc_tsv(p):
+    rows = [l.split('\t') for l in p.read_text(encoding='utf-8').replace('\r\n', '\n').strip('\n').split('\n')]
+    return [[c.replace('\\n', '\n').strip() for c in r] for r in rows]
 
-def tach_muc(text):
-    dau, muc, cur = [], [], None
-    for ln in text.replace('\r\n', '\n').split('\n'):
-        if ln.startswith('## '):
-            cur = (sach(ln[3:]), []); muc.append(cur)
-        elif cur is None:
-            dau.append(ln)
-        else:
-            cur[1].append(ln)
-    return dau, muc
+def la_nhom(r):
+    return r[0].startswith('# ') and all(not c for c in r[1:])
 
-def hang_cua(tieu, dong):
-    """Trả danh sách (loại, ô). Loại: H1 tiêu đề mục, H2, H3, TH đầu bảng, TR hàng bảng, P đoạn."""
-    out = [('H1', [tieu])]
-    i = 0
-    while i < len(dong):
-        ln = dong[i].rstrip()
-        if not ln.strip():
-            i += 1; continue
-        if ln.startswith('#### '): out.append(('H3', [sach(ln[5:])]))
-        elif ln.startswith('### '): out.append(('H2', [sach(ln[4:])]))
-        elif ln.lstrip().startswith('|'):
-            bang = []
-            while i < len(dong) and dong[i].lstrip().startswith('|'):
-                bang.append(dong[i].strip()); i += 1
-            for k, b in enumerate(bang):
-                o = [sach(c) for c in re.split(r'(?<!\\)\|', b.strip('|'))]
-                if k == 1 and all(re.fullmatch(r':?-{2,}:?', c.replace(' ', '')) for c in o): continue
-                out.append(('TH' if k == 0 else 'TR', o))
+def kiem(key):
+    m, loi = MODULE[key], []
+    nguon = '\n'.join((HT / f).read_text(encoding='utf-8') for f in m['md'])
+    so_nguon = set(re.findall(r'\d+(?:[.,]\d+)?', nguon))
+    bang = {}
+    for tab in m['tab']:
+        p = NGUON / key / f'{tab}.tsv'
+        if not p.exists():
+            if tab not in TUY_CHON: loi.append(f'{tab}: thiếu file {p.relative_to(GOC)}')
             continue
-        else:
-            out.append(('P', [sach(re.sub(r'^>\s?', '', ln))]))
-        i += 1
-    return out
-
-def dem_dong_noi_dung(dong):
-    return sum(1 for l in dong if l.strip() and not re.fullmatch(r'\|?[\s:|-]+\|?', l.strip()))
+        rows = doc_tsv(p); cot = [c for c, _ in KHUON[tab]]
+        if rows[0] != cot: loi.append(f'{tab}: hàng đầu phải là {" | ".join(cot)}, đang là {" | ".join(rows[0])}'); continue
+        for i, r in enumerate(rows[1:], 2):
+            if la_nhom(r): continue
+            if len(r) != len(cot): loi.append(f'{tab} hàng {i}: {len(r)} cột, cần {len(cot)}'); continue
+            for j, c in enumerate(r):
+                if len(c) > DAI_TOI_DA: loi.append(f'{tab} hàng {i} cột {cot[j]}: {len(c)} ký tự, tối đa {DAI_TOI_DA}')
+                for mau, ly_do in CAM:
+                    if re.search(mau, c) and not (tab == 'TỔNG QUAN' and r[0] == 'Vai giữ'): loi.append(f'{tab} hàng {i}: {ly_do} ("{c[:50]}")')
+                for so in re.findall(r'\d+(?:[.,]\d+)?', c):
+                    if so not in so_nguon and so.replace(',', '.') not in so_nguon and so.replace('.', ',') not in so_nguon:
+                        loi.append(f'{tab} hàng {i}: số {so} không có trong {", ".join(m["md"])}')
+            if 'Phạm vi' in cot and r[cot.index('Phạm vi')] not in ('MVP', 'Sau MVP'):
+                loi.append(f'{tab} hàng {i}: Phạm vi phải là MVP hoặc Sau MVP')
+        if tab == 'TỔNG QUAN':
+            co = [r[0] for r in rows[1:]]
+            loi += [f'TỔNG QUAN: thiếu hàng "{x}"' for x in TONG_QUAN_BAT_BUOC if x not in co]
+        bang[tab] = rows
+    return bang, loi
 
 # ---------- dựng ----------
-TIM = '351C75'
-KIEU = {
-    'H1': (PatternFill('solid', fgColor='674EA7'), Font(name='Arial', size=12, bold=True, color='FFFFFF')),
-    'H2': (PatternFill('solid', fgColor='D9D2E9'), Font(name='Arial', size=11, bold=True)),
-    'H3': (PatternFill('solid', fgColor='EFEBF7'), Font(name='Arial', size=10, bold=True, italic=True)),
-    'TH': (PatternFill('solid', fgColor='F3F3F3'), Font(name='Arial', size=10, bold=True)),
-    'TR': (None, Font(name='Arial', size=10)),
-    'P': (None, Font(name='Arial', size=10)),
-}
-VIEN = Border(*(Side(style='thin', color='BFBFBF'),) * 4)
-CANH = Alignment(wrap_text=True, vertical='top')
-PX_KY_TU = 6.3  # Arial 10: khoảng 7 px một ký tự, dùng ước chiều cao hàng (ô gộp không tự giãn)
-
-def do_rong(ncol):
-    if ncol == 1: return [1100]
-    khac = max(140, min(320, int(980 / (ncol - 1))))
-    return [200] + [khac] * (ncol - 1)
-
-def so_dong(text, px):
-    return sum(max(1, math.ceil(len(p) * PX_KY_TU / max(px - 10, 40))) for p in str(text).split('\n'))
-
-def ghi_tab(ws, tieu_de, ghi_chu, hang):
-    ncol = max([4] + [len(o) for k, o in hang if k in ('TH', 'TR')])
-    w = do_rong(ncol)
-    for j, px in enumerate(w):
-        ws.column_dimensions[chr(65 + j) if j < 26 else 'A' + chr(65 + j - 26)].width = px / 7
-    tong = sum(w)
-    ws.append([tieu_de]); ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=ncol)
-    c = ws.cell(1, 1); c.fill = PatternFill('solid', fgColor=TIM); c.font = Font(name='Arial', size=16, bold=True, color='FFFFFF')
-    c.alignment = Alignment(horizontal='center', vertical='center'); ws.row_dimensions[1].height = 36
-    ws.append([ghi_chu]); ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=ncol)
-    c = ws.cell(2, 1); c.font = Font(name='Arial', size=9, italic=True, color='666666'); c.alignment = CANH
-    ws.row_dimensions[2].height = 15 * so_dong(ghi_chu, tong) + 4
-    ws.freeze_panes = 'A2'
-    for k, o in hang:
-        ws.append(o); r = ws.max_row
-        nen, font = KIEU[k]
-        if k in ('H1', 'H2', 'H3', 'P'):
-            ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=ncol)
-            n = so_dong(o[0], tong)
-            for j in range(1, ncol + 1):
-                cc = ws.cell(r, j); cc.font = font; cc.alignment = CANH
-                if nen: cc.fill = nen
-            ws.row_dimensions[r].height = 15 * n + (8 if k == 'H1' else 4)
-        else:
-            n = 1
-            for j in range(1, ncol + 1):
-                cc = ws.cell(r, j); cc.font = font; cc.alignment = CANH; cc.border = VIEN
-                if nen: cc.fill = nen
-                if j - 1 < len(o): n = max(n, so_dong(o[j - 1], w[j - 1]))
-            ws.row_dimensions[r].height = 15 * n + 4
-    return ncol
-
 def dung(key, ra):
+    from openpyxl import Workbook
+    from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+    bang, loi = kiem(key)
+    if loi: sys.exit('DỪNG, sửa TSV trước:\n' + '\n'.join(loi))
     m = MODULE[key]
-    nhom = {t[0]: [] for t in TAB_KHUON}
-    nguon_dem = 0
-    for f in m['md']:
-        dau, muc = tach_muc((HT / f).read_text(encoding='utf-8'))
-        for tieu, dong in muc:
-            if any(tieu.startswith(p) for p in BO_QUA): continue
-            tab = next((t for t, _, ps in TAB_KHUON if any(tieu.startswith(p) for p in ps)), None)
-            if tab is None: sys.exit(f'DỪNG: mục "{tieu}" ở {f} chưa có tab khuôn. Thêm tiền tố vào TAB_KHUON.')
-            h = hang_cua(tieu, dong)
-            nguon_dem += dem_dong_noi_dung(dong) + 1
-            nhom[tab].append((f, tieu, h))
-    tabs = [t for t in TAB_KHUON if nhom[t[0]]]
+    vien = Border(*(Side(style='thin', color='CCCCCC'),) * 4)
+    f = lambda **k: Font(name='Arial', **{'size': 10, **k})
+    nen = lambda h: PatternFill('solid', fgColor=h)
     wb = Workbook(); wb.remove(wb.active)
-    ten_file = f"GDD - The Novent - {m['so']} {m['ten']}"
-    da_ghi = 0
-    for ten, mo_ta, _ in tabs:
-        hang = []
-        if ten == 'TỔNG QUAN':
-            hang += [('H1', ['Thông tin module']), ('TH', ['Mục', 'Nội dung']),
-                     ('TR', ['GDD chính', f'=HYPERLINK("{GDD_CHINH}","GDD - The Novent (bản chính)")']),
-                     ('TR', ['Phạm vi module', m['pham_vi']]),
-                     ('TR', ['Vai giữ', m['vai']]),
-                     ('TR', ['Nguồn (bản đủ)', ', '.join(f'projects/game-moi/gdd/he-thong/{f}' for f in m['md'])]),
-                     ('TR', ['Link nguồn', f'=HYPERLINK("{REPO}{m["md"][0]}","{m["md"][0]} trên GitHub")']),
-                     ('TR', ['Quy ước', 'Nguồn luật là GDD hệ thống trong repo. Sheet này sinh bằng tools/dung-gdd-con.py, không sửa tay. Đổi luật: sửa markdown, chạy lại script, cập nhật Sheet, ghi một dòng ở tab TRACKING của GDD chính. GDD chính giữ tóm tắt và link của module này ở tab GDD CON'])]
-            hang += [('H1', ['Danh mục tab']), ('TH', ['Tab', 'Nội dung'])]
-            for t, mt, _ in tabs:  # thứ tự như tab trong file: bảng dữ liệu đứng sau THAM SỐ
-                hang.append(('TR', [t, mt]))
-                if t == 'THAM SỐ': hang += [('TR', [d, DATA_MO_TA[d] + ' (bảng dữ liệu)']) for d in m['data']]
-        for f, tieu, h in nhom[ten]:
-            hang += h
-            da_ghi += sum(1 for k, _ in h)
-        nguon = '; '.join(f'{f} mục "{t}"' for f, t, _ in nhom[ten])
-        ws = wb.create_sheet(ten)
-        ghi_tab(ws, f"{m['ten'].upper()} - {ten}", f'Nguồn: {nguon}. Sinh bằng tools/dung-gdd-con.py, sửa ở repo trước.', hang)
-    # tự kiểm: mỗi dòng nội dung của markdown (trừ dòng kẻ bảng) thành đúng một hàng
-    assert da_ghi == nguon_dem, f'{key}: {da_ghi} hàng ghi, {nguon_dem} dòng nguồn'
-    out = Path(ra) / f'{key}.xlsx'
-    wb.save(out)
-    print(f'{key}: {out} | {len(tabs)} tab khuôn | {da_ghi} hàng nội dung | tab: {", ".join(t for t, _, _ in tabs)}')
-    return ten_file
+    for tab, rows in bang.items():
+        if tab == 'TỔNG QUAN':
+            rows = rows + [['GDD chính', f'=HYPERLINK("{GDD_CHINH}","GDD - The Novent (bản chính)")'],
+                           ['Bản đủ', f'=HYPERLINK("{REPO}{m["md"][0]}","{", ".join(m["md"])} trên GitHub")']]
+        ws = wb.create_sheet(tab); khuon = KHUON[tab]; n = len(khuon)
+        for j, (_, px) in enumerate(khuon): ws.column_dimensions[chr(65 + j)].width = px / 7
+        ws.append([f'{m["ten"].upper()}  |  {tab}']); ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=n)
+        c = ws.cell(1, 1); c.fill = nen('351C75'); c.font = f(size=14, bold=True, color='FFFFFF')
+        c.alignment = Alignment(horizontal='left', vertical='center', indent=1); ws.row_dimensions[1].height = 34
+        for i, r in enumerate(rows):
+            ws.append(r); rr = ws.max_row
+            if i == 0:  # header
+                for j in range(1, n + 1):
+                    x = ws.cell(rr, j); x.fill = nen('D9D2E9'); x.font = f(bold=True); x.border = vien
+                    x.alignment = Alignment(vertical='center', horizontal='center' if khuon[j - 1][0] == 'Phạm vi' else 'left', indent=0 if khuon[j - 1][0] == 'Phạm vi' else 1)
+                ws.row_dimensions[rr].height = 24; continue
+            if la_nhom(r):
+                ws.cell(rr, 1).value = r[0][2:]
+                ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=n)
+                for j in range(1, n + 1):
+                    x = ws.cell(rr, j); x.fill = nen('EFEBF7'); x.font = f(bold=True, color='351C75'); x.border = vien
+                    x.alignment = Alignment(vertical='center', indent=1)
+                ws.row_dimensions[rr].height = 22; continue
+            dong = 1
+            for j, (ten, px) in enumerate(khuon, 1):
+                x = ws.cell(rr, j); x.border = vien
+                giua = ten in ('Phạm vi', 'Mã')
+                x.font = f(bold=(j == 1 and tab in ('TỔNG QUAN', 'NHÂN VẬT', 'CHƯƠNG', 'TÊN RIÊNG')), color='38761D' if ten == 'Phạm vi' and r[j - 1] == 'MVP' else '000000')
+                x.alignment = Alignment(wrap_text=True, vertical='top', horizontal='center' if giua else 'left', indent=0 if giua else 1)
+                v = str(r[j - 1]) if j - 1 < len(r) else ''
+                if not v.startswith('='):
+                    dong = max(dong, sum(max(1, math.ceil(len(p) * 6.4 / (px - 24))) for p in v.split('\n')))
+            ws.row_dimensions[rr].height = 16 * dong + 8
+        ws.freeze_panes = 'A3'
+        ws.sheet_view.showGridLines = False
+    out = Path(ra) / f'{key}.xlsx'; wb.save(out)
+    print(f'{key}: {out} | tab: {", ".join(bang)}')
 
 if __name__ == '__main__':
     sys.stdout.reconfigure(encoding='utf-8')
-    a = argparse.ArgumentParser(); a.add_argument('module'); a.add_argument('--ra', default='.')
+    a = argparse.ArgumentParser(); a.add_argument('lenh', choices=['kiem', 'dung']); a.add_argument('module'); a.add_argument('--ra', default='.')
     x = a.parse_args()
-    for k in (MODULE if x.module == 'tat-ca' else [x.module]): dung(k, x.ra)
+    ds = list(MODULE) if x.module == 'tat-ca' else [x.module]
+    sai = 0
+    for k in ds:
+        if x.lenh == 'dung': dung(k, x.ra); continue
+        _, loi = kiem(k)
+        print(f'{k}: {"ĐẠT" if not loi else f"{len(loi)} lỗi"}'); print('\n'.join('  - ' + l for l in loi[:60])); sai += bool(loi)
+    sys.exit(1 if sai else 0)

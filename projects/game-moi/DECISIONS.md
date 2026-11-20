@@ -225,3 +225,10 @@ Chốt cùng ngày, Lead chọn "Tách 3 lớn nhất":
 - GDD chính bỏ 5 tab GAME STORY, Enemy, Salvage, ITEM LIST, Recipe (còn trong lịch sử phiên bản của Sheet). Tab GDD CON đứng sau OVERVIEW giữ tóm tắt từng hệ thống đã tách và link. 6 hệ thống còn lại (Nhân vật, Map, Trạm và cảng, Kinh tế, UX UI, Kỹ thuật) giữ đủ trong GDD chính.
 - 3 file con bật "ai có link được xem" để `doi-chieu-sheet.mjs` đọc được.
 - GDD chính có lối tắt trong cùng thư mục Drive với 3 GDD con (Lead: "Đưa GDD Chính vào trong Drive luôn"). Là lối tắt vì file gốc thuộc nguyenplus2005@gmail.com, tài khoản sửa không di chuyển được. Muốn chuyển hẳn thì chủ file chuyển hoặc chuyển quyền sở hữu.
+
+## 2026-11-20 - GDD con bản đọc
+
+Lead: "Cách tập con rườm rà, rối rắm không gọn gàng không dễ hiểu và hơi thừa những thông tin không cần thiết. Giao cho các phiên con sửa lại formats của GDD cho nó dễ đọc, gọn gàng, nội dung dễ hiểu, căn chỉnh đẹp cho tôi."
+
+- Bỏ cách chép nguyên văn GDD hệ thống sang GDD con. GDD con là bản đọc cho dev, art, PM theo `gdd/sheet/gdd-con/KHUON.md`: một hàng một ý, bỏ lịch sử, tự quyết, phản biện, lệch với vai khác.
+- Vai giữ hệ thống viết TSV ở `gdd/sheet/gdd-con/<module>/`. Trình bày do `tools/dung-gdd-con.py` lo (cổng `kiem`: đúng cột, ô tối đa 280 ký tự, chữ cấm, mọi số phải có trong GDD hệ thống). Đợt 7: `briefs/dot7-gdd-con-gon.md`.
