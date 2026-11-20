@@ -354,10 +354,11 @@ for (let pass = 0; pass < 8; pass++) {
     it.gtd = Math.round((r.vao.reduce((s, v) => s + inGtd(v), 0) * r.m * 100) / r.ra[1]) / 100;
   }
 }
-const LONG = ['CGO-121', 'CGO-221', 'CGO-321'], THUNG = 2.5; // 1 kiện = 2,5 thùng (K13, đợt 9)
+const LONG = ['CGO-121', 'CGO-221', 'CGO-321'], NGUYEN = ['CGO-131', 'CGO-421'], THUNG = 2.5; // 1 kiện = 2,5 thùng (K13, đợt 9). Lồng sống, Bản sao dữ liệu, Kiện tin mật bán nguyên cái (Lead 2026-11-20)
+for (const it of items) if (NGUYEN.includes(it.id)) it.sink = 'Bán nguyên cái ở ca cảng (K13)';
 // Đợt 9: đóng kiện thành đóng thùng tự động lúc Mở ca, không tốn thời gian ca. Lồng sống làm tay ngoài ca, xong trước Mở ca.
 for (const r of rec) if (r.noi === CA) { if (r.loai === 'CGOL') r.noi = 'Cảng (trước Mở ca)'; else { r.noi = 'Cảng (tự động lúc Mở ca)'; r.t = 0; } }
-const thung = (id) => (!id.startsWith('CGO-') ? '' : LONG.includes(id) ? ' (1 đơn vị bán)' : ` (${String(THUNG).replace('.', ',')} thùng)`);
+const thung = (id) => (!id.startsWith('CGO-') ? '' : LONG.includes(id) || NGUYEN.includes(id) ? ' (1 đơn vị bán)' : ` (${String(THUNG).replace('.', ',')} thùng)`);
 const RANGE = { COM: [1.25, 1.5], CGOT: [1, 1], CGOF: [1.1, 1.25], CGOD: [1.5, 2.5], CON: [1, 1], FOD: [1, 1] };
 for (const r of rec) {
   for (const v of r.vao) for (const id of idsOf(v)) if (!byId.has(id)) err(`${r.id}: đầu vào ${id} không có trong ITEM LIST`);
@@ -373,7 +374,7 @@ for (const r of rec) {
     if (Math.abs(r.sum / tgt - 1) > 0.2) err(`${r.id}: chi phí ${r.sum.toFixed(1)} lệch quá 20% so mục tiêu ${tgt.toFixed(1)}`);
   }
 }
-for (const it of items) { if (!it.id.startsWith('CGO-')) continue; const rest = (it.ghi ?? '').replace(/^Cỡ \S+(, | )?/, ''); const base = LONG.includes(it.id) ? 'Một lồng là một đơn vị bán, không chia thùng' : '1 kiện = 2,5 thùng'; it.ghi = rest ? `${base}${rest.startsWith('(') ? ' ' : '. '}${rest}` : base; }
+for (const it of items) { if (!it.id.startsWith('CGO-')) continue; const rest = (it.ghi ?? '').replace(/^Cỡ \S+(, | )?/, ''); const base = LONG.includes(it.id) ? 'Một lồng là một đơn vị bán, không chia thùng' : NGUYEN.includes(it.id) ? 'Một cái là một đơn vị bán, không chia thùng' : '1 kiện = 2,5 thùng'; it.ghi = rest ? `${base}${rest.startsWith('(') ? ' ' : '. '}${rest}` : base; }
 const nguonRec = new Map(), sinkRec = new Map(), nguonNode = new Map();
 const add = (m, k, v) => m.set(k, [...(m.get(k) ?? []), v]);
 for (const r of rec) { if (r.ra?.[0] && !r.ra.tol && !r.ra.nc) add(nguonRec, r.ra[0], r.id); for (const v of r.vao) for (const id of idsOf(v)) add(sinkRec, id, r.id); }
@@ -430,7 +431,7 @@ parts.REPAIR = tbl(['Khoang hoặc mốc', 'Ghi chú', 'Vật liệu đề xuấ
 const rawEq = (id) => { if (Array.isArray(id)) return Math.min(...id.map(rawEq)); if (/^(RES|SMP)/.test(id)) return byId.get(id).gtd; const r = rec.find((x) => x.ra?.[0] === id); if (!r || /^(ENG|STY|BPR)/.test(id)) return 0; return r.vao.reduce((s, v) => s + rawEq(v[0]) * v[1], 0) / r.ra[1]; };
 const mvpRep = repairs.filter((r) => r[3] === MVP), mvpUpg = rec.filter((r) => r.ra?.nc && r.nhan === MVP);
 const mvpRaw = [...mvpRep.flatMap((r) => r[2]), ...mvpUpg.flatMap((r) => r.vao)].reduce((s, [id, n]) => s + rawEq(id) * n, 0);
-parts.CGOTHUNG = tbl(["Kiện", "GTĐ kiện", "Thùng mỗi kiện", "GTĐ mỗi thùng"], items.filter((i) => i.id.startsWith("CGO-")).map((i) => LONG.includes(i.id) ? [i.id, "theo loài", "1 đơn vị, không chia", "bằng GTĐ lồng"] : [i.id, f(i.gtd), f(THUNG, 1), f(+f(i.gtd).replace(",", ".") / THUNG, 2)]));
+parts.CGOTHUNG = tbl(["Kiện", "GTĐ kiện", "Thùng mỗi kiện", "GTĐ mỗi thùng"], items.filter((i) => i.id.startsWith("CGO-")).map((i) => LONG.includes(i.id) ? [i.id, "theo loài", "1 đơn vị, không chia", "bằng GTĐ lồng"] : NGUYEN.includes(i.id) ? [i.id, f(i.gtd), "1 đơn vị, không chia", f(i.gtd)] : [i.id, f(i.gtd), f(THUNG, 1), f(+f(i.gtd).replace(",", ".") / THUNG, 2)]));
 const stamp = new Date().toISOString().slice(0, 16).replace('T', ' ');
 parts.CHECK = `- Sinh bởi \`projects/game-moi/sim/vat-pham.mjs\` lúc ${stamp} UTC. Số vật phẩm: ${items.length}. Công thức: ${rec.length}. Điểm khai thác: ${nodes.length}. Trang bị: ${tools.length}. Kiện nhãn MVP: ${items.filter((i) => i.id.startsWith('CGO-') && i.nhan === MVP).length}. Lỗi kiểm: ${errs.length}.
 - Vật liệu nhãn MVP (${mvpRep.length} việc sửa khoang và ${mvpUpg.length} nâng cấp) quy ra tài nguyên thô: ${f(mvpRaw)} GTĐ, tương đương ${f(mvpRaw / (80 * 1.1))} chuyến đầy túi (túi bậc 0 là 80 Khối, mật độ 1,1 GTĐ mỗi Khối), chưa tính nguyên liệu đóng kiện bán lấy Tally. Đây là kiểm nhất quán, không phải sim cân bằng.`;

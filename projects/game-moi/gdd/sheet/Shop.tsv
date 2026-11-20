@@ -11,7 +11,7 @@ STT	Item List	Quantity	Unit	Value	Price (Tally)	New Price (Tally)	Note
 10	Thùng đặc sản Gần	1	thùng	5,28	80		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 200. Dải Gần. MVP
 11	Thùng sản phẩm nuôi Gần	1	thùng	17,16	172		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 430. Dải Gần. Sau MVP
 12	Thùng vật tư	1	thùng	18,76	282		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 705. Dải Gần. Sau MVP
-13	Thùng bản sao dữ liệu	1	thùng	8,36	126		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 315. Dải Gần. Sau MVP
+13	Bản sao dữ liệu	1	cái	20,90	315		Tàu trả. Hàng hiếm, độ gọi 1. Bán nguyên cái, không chia thùng. Dải Gần. Sau MVP
 14	Thùng hợp kim	1	thùng	16,16	122		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 305. Dải Giữa. Sau MVP
 15	Thùng cảm biến	1	thùng	12,52	94		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 235. Dải Giữa. Sau MVP
 16	Thùng dung dịch lạnh	1	thùng	17,96	134		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 335. Dải Giữa. Sau MVP
@@ -23,7 +23,7 @@ STT	Item List	Quantity	Unit	Value	Price (Tally)	New Price (Tally)	Note
 22	Thùng đặc sản Xa	1	thùng	39,60	594		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 1485. Dải Xa. Sau MVP
 23	Thùng sản phẩm nuôi Xa	1	thùng	43,12	432		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 1080. Dải Xa. Sau MVP
 24	Thùng linh kiện Cradle	1	thùng	64,40	484		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 1210. Dải Cradle. Sau MVP
-25	Thùng tin mật	1	thùng	34,76	522		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 1305. Dải Xa. Sau MVP
+25	Kiện tin mật	1	cái	86,90	1305		Tàu trả. Hàng hiếm, độ gọi 1. Bán nguyên cái, không chia thùng. Dải Xa. Sau MVP
 26	Thùng linh kiện Warden	1	thùng	77,28	580		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 1450. Dải Xa. Sau MVP
 27	Lồng sinh vật sống: Driftmoth	1	lồng	5,14	65		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Dải Gần. MVP
 28	Lồng sinh vật sống: Skitter Ray	1	lồng	5,74	75		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Dải Gần. MVP

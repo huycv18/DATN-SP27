@@ -96,7 +96,7 @@ STT	Item name	Type	Nguồn nhận	Nguồn tiêu	Note
 95	Kiện sản phẩm nuôi Gần	Kiện	Đóng kiện sản phẩm nuôi Gần	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng
 96	Lồng sinh vật sống Gần	Kiện	Đưa sinh vật sống cỡ S Gần vào lồng giao, Đưa sinh vật sống cỡ M Gần vào lồng giao	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Gần, MVP. Một lồng là một đơn vị bán, không chia thùng. Mang nguyên lồng, nhớ loài để khớp đơn
 97	Kiện vật tư	Kiện	Đóng kiện vật tư	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng (đồ chế)
-98	Bản sao dữ liệu	Kiện	Sao bản dữ liệu	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng. Sao từ vật kể chuyện loại dữ liệu, vật gốc ở lại
+98	Bản sao dữ liệu	Kiện	Sao bản dữ liệu	Bán nguyên cái ở ca cảng	Hiếm, Khối kho, Gần, Sau MVP. Một cái là một đơn vị bán, không chia thùng. Sao từ vật kể chuyện loại dữ liệu, vật gốc ở lại
 99	Kiện hợp kim	Kiện	Đóng kiện hợp kim	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
 100	Kiện cảm biến	Kiện	Đóng kiện cảm biến	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
 101	Kiện dung dịch lạnh	Kiện	Đóng kiện dung dịch lạnh	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
@@ -110,7 +110,7 @@ STT	Item name	Type	Nguồn nhận	Nguồn tiêu	Note
 109	Kiện sản phẩm nuôi Xa	Kiện	Đóng kiện sản phẩm nuôi Xa	Đóng kiện tin mật, Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
 110	Lồng sinh vật sống Xa	Kiện	Đưa sinh vật sống Xa vào lồng giao	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. Một lồng là một đơn vị bán, không chia thùng
 111	Kiện linh kiện Cradle	Kiện	Đóng kiện linh kiện Cradle	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Cradle, Sau MVP. 1 kiện = 2,5 thùng
-112	Kiện tin mật	Kiện	Đóng kiện tin mật	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng. Giao cho tàu của mạng lưới, giá trị bằng kiện vỏ bọc
+112	Kiện tin mật	Kiện	Đóng kiện tin mật	Bán nguyên cái ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. Một cái là một đơn vị bán, không chia thùng. Giao cho tàu của mạng lưới, giá trị bằng kiện vỏ bọc
 113	Kiện linh kiện Warden	Kiện	Đóng kiện linh kiện Warden	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
 114	Van tiết lưu	Linh kiện lõi	Shop, mở ở Hạng cảng 3	Lắp động cơ chính, giai đoạn 1	Hiếm, Khối kho, Gần, MVP
 115	Buồng đốt tái chế	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 2	Hiếm, Khối kho, Giữa, Sau MVP

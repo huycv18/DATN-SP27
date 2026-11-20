@@ -199,7 +199,7 @@ Thời gian: đóng lúc Mở ca, không tốn thời gian ca"
 38	Sao bản dữ liệu	Type	Khoang liên lạc	vat-pham.md mục 3
 		Ingredients	"1 x Mạch phục hồi
 Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (Nhật ký trạm, Hộp ghi hành trình Cradle), mỗi vật gốc sao một lần"	
-		Output	"1 x Bản sao dữ liệu
+		Output	"1 x Bản sao dữ liệu (1 đơn vị bán)
 Thời gian: 10 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
 39	Đóng kiện hợp kim	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
@@ -265,7 +265,7 @@ Thời gian: đóng lúc Mở ca, không tốn thời gian ca"
 51	Đóng kiện tin mật	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
 		Ingredients	"1 x một trong Kiện đặc sản Xa, Kiện sản phẩm nuôi Xa, Kiện giáp, Kiện plasma, Kiện lõi nguội
 1 x Gói tin mật"	
-		Output	"1 x Kiện tin mật (2,5 thùng)
+		Output	"1 x Kiện tin mật (1 đơn vị bán)
 Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
 		Unlock	Chương 4. Nhãn: Sau MVP	
 52	Đóng kiện linh kiện Warden	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3

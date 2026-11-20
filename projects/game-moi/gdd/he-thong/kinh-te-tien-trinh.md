@@ -104,7 +104,7 @@ Cam kết với người chơi: giá in trên Shop không đổi, không có chi
 | CGO-106 | Kiện đặc sản Gần | Gần | 13,2 | 200 | 80 | Hàng hiếm | 1,50 | 1,0 | MVP |
 | CGO-107 | Kiện sản phẩm nuôi Gần | Gần | 42,9 | 430 | 172 | Hàng sinh học | 1,00 | 2,0 | Sau MVP |
 | CGO-141 | Kiện vật tư | Gần | 46,9 | 705 | 282 | Hàng hiếm | 1,50 | 1,0 | Sau MVP |
-| CGO-131 | Bản sao dữ liệu | Gần | 20,9 | 315 | 126 | Hàng hiếm | 1,50 | 1,0 | Sau MVP |
+| CGO-131 | Bản sao dữ liệu | Gần | 20,9 | 315 | 315 (bán nguyên cái) | Hàng hiếm | 1,50 | 1,0 | Sau MVP |
 | CGO-211 | Kiện hợp kim | Giữa | 40,4 | 305 | 122 | Hàng chợ | 0,75 | 3,0 | Sau MVP |
 | CGO-212 | Kiện cảm biến | Giữa | 31,3 | 235 | 94 | Hàng chợ | 0,75 | 3,0 | Sau MVP |
 | CGO-213 | Kiện dung dịch lạnh | Giữa | 44,9 | 335 | 134 | Hàng chợ | 0,75 | 3,0 | Sau MVP |
@@ -116,7 +116,7 @@ Cam kết với người chơi: giá in trên Shop không đổi, không có chi
 | CGO-306 | Kiện đặc sản Xa | Xa | 99,0 | 1485 | 594 | Hàng hiếm | 1,50 | 1,0 | Sau MVP |
 | CGO-307 | Kiện sản phẩm nuôi Xa | Xa | 107,8 | 1080 | 432 | Hàng sinh học | 1,00 | 2,0 | Sau MVP |
 | CGO-411 | Kiện linh kiện Cradle | Cradle | 161,0 | 1210 | 484 | Hàng chợ | 0,75 | 3,0 | Sau MVP |
-| CGO-421 | Kiện tin mật | Xa | 86,9 | 1305 | 522 | Hàng hiếm | 1,50 | 1,0 | Sau MVP |
+| CGO-421 | Kiện tin mật | Xa | 86,9 | 1305 | 1305 (bán nguyên cái) | Hàng hiếm | 1,50 | 1,0 | Sau MVP |
 | CGO-511 | Kiện linh kiện Warden | Xa | 193,2 | 1450 | 580 | Hàng chợ | 0,75 | 3,0 | Sau MVP |
 <!--/khoi-->
 

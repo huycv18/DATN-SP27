@@ -174,6 +174,9 @@ def gia_kien(cgo):
     return int(gia_thung(cgo) * THUNG)
 
 
+NGUYEN_CAI = ("CGO-131", "CGO-421")  # Lead 2026-11-20: bán nguyên cái, một cái là một đơn vị bán, giá bằng giá kiện
+
+
 def gia_long(sp):  # lồng không chia: GTĐ mẫu sống x 10 x hệ số Hàng sống, tròn 5
     cgo = {"Gần": "CGO-121", "Giữa": "CGO-221", "Xa": "CGO-321"}[sp["Dải"]]
     return int(5 * round(so(sp["GTĐ mẫu bắt"]) * S["tally_moi_gtd"] * bac_gia(cgo)["he_so"] / 5))
@@ -523,7 +526,7 @@ def bao_cao():
     for k, v in ITEM.items():
         if k.startswith("CGO-") and GTD[k]:
             b = GT["kien"][k]
-            rows.append([k, v["Tên (VI / EN [TẠM])"].split(" / ")[0], v["Dải"], f(GTD[k]), gia_kien(k), gia_thung(k), b, f(GT["bac"][b]["he_so"], 2), f(GT["bac"][b]["do_goi"], 1), v["Nhãn"]])
+            rows.append([k, v["Tên (VI / EN [TẠM])"].split(" / ")[0], v["Dải"], f(GTD[k]), gia_kien(k), ("%d (bán nguyên cái)" % gia_kien(k)) if k in NGUYEN_CAI else gia_thung(k), b, f(GT["bac"][b]["he_so"], 2), f(GT["bac"][b]["do_goi"], 1), v["Nhãn"]])
     K["gia_kien"] = tbl(["ID kiện", "Tên", "Dải", "GTĐ kiện (gd-items)", "Giá Tally một kiện", "Giá Tally một thùng", "Bậc giá", "Hệ số giá", "Độ gọi", "Nhãn"], rows)
     rows = []
     for sp in SPECIES:

@@ -87,7 +87,7 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 ### 2.6 Hàng hóa cảng (kiện)
 
 - Luật G1 (K13): ca cảng là nửa chơi tay thứ hai. gd-quan sở hữu luật ca, đơn và tàu. Hệ thống này cung cấp loại kiện, nguyên liệu và quy đổi thùng. Ca không có bước chế hay đóng. (Nhãn: MVP.)
-- Luật G2: đơn vị bán trong ca là thùng, 1 kiện = 2,5 thùng (Lead chốt 2026-11-20, D0). Giá trị một thùng bằng GTĐ kiện chia 2,5 (bảng ở mục 2.6b). Giá Tally của thùng do gd-economy đặt, file này không ghi giá. Lồng sinh vật sống không chia: một lồng là một đơn vị. Có ba loại kiện. Kiện thô (CGO-101..105 và CGO-109 Kiện đồ Trái Đất): đóng thẳng từ tài nguyên thô hoặc mô sinh học, hệ số 1,0. Kiện tinh (CGO-111..113 và các kiện sau): làm từ COM, COM luyện ở Xưởng phải xong trước Mở ca (hàng đợi qua đêm hoặc chế nhanh ban ngày). CGO-113 là kiện duy nhất ở chương 1 có bước chế trước. Kiện sinh học và đặc biệt (CGO-106, 107, 121, 131, 141 và các bản dải sau): đặc sản, sản phẩm nuôi, lồng sinh vật sống, bản sao dữ liệu, kiện vật tư (nhóm đồ chế HC08 của gd-quan). Khớp nhóm hàng cảng HC01 đến HC09 của gd-quan: HC07 là CGO-107, 207, 307, HC08 là CGO-141, HC09 là CGO-131. Cách đóng: các công thức đóng kiện (RCP-111 đến RCP-128 và các bản dải sau) chạy tự động lúc Mở ca, Thông dịch viên làm, không tốn thời gian ca. Mỗi lần đóng cho 2,5 thùng, đóng đủ số thùng danh mục còn thiếu, làm tròn lên số kiện. Thùng thừa và thùng chưa bán ở lại kho cho ca sau. Lồng giao Driftlife sống (RCP-126, 128, 226, 326) do người chơi làm ở cảng trước Mở ca, 8 giây, nhớ loài và sao. Giá trị một kiện bằng khoảng một phần mười giá trị đơn một ca của chương (khoảng 13,6 GTĐ chương 1, 42,5 chương 2, 104 chương 3, gd-economy đặt), nên một ca một người khoảng 10 kiện, tức 25 thùng (demo bot 2026-11-20). Số đơn vị đầu vào mỗi kiện từ 1 đến 14. (Nhãn: MVP.)
+- Luật G2: đơn vị bán trong ca là thùng, 1 kiện = 2,5 thùng (Lead chốt 2026-11-20, D0). Giá trị một thùng bằng GTĐ kiện chia 2,5 (bảng ở mục 2.6b). Giá Tally của thùng do gd-economy đặt, file này không ghi giá. Lồng sinh vật sống, Bản sao dữ liệu (CGO-131) và Kiện tin mật (CGO-421) không chia: một cái là một đơn vị bán (Lead chốt 2026-11-20). Có ba loại kiện. Kiện thô (CGO-101..105 và CGO-109 Kiện đồ Trái Đất): đóng thẳng từ tài nguyên thô hoặc mô sinh học, hệ số 1,0. Kiện tinh (CGO-111..113 và các kiện sau): làm từ COM, COM luyện ở Xưởng phải xong trước Mở ca (hàng đợi qua đêm hoặc chế nhanh ban ngày). CGO-113 là kiện duy nhất ở chương 1 có bước chế trước. Kiện sinh học và đặc biệt (CGO-106, 107, 121, 131, 141 và các bản dải sau): đặc sản, sản phẩm nuôi, lồng sinh vật sống, bản sao dữ liệu, kiện vật tư (nhóm đồ chế HC08 của gd-quan). Khớp nhóm hàng cảng HC01 đến HC09 của gd-quan: HC07 là CGO-107, 207, 307, HC08 là CGO-141, HC09 là CGO-131. Cách đóng: các công thức đóng kiện (RCP-111 đến RCP-128 và các bản dải sau) chạy tự động lúc Mở ca, Thông dịch viên làm, không tốn thời gian ca. Mỗi lần đóng cho 2,5 thùng, đóng đủ số thùng danh mục còn thiếu, làm tròn lên số kiện. Thùng thừa và thùng chưa bán ở lại kho cho ca sau. Lồng giao Driftlife sống (RCP-126, 128, 226, 326) do người chơi làm ở cảng trước Mở ca, 8 giây, nhớ loài và sao. Giá trị một kiện bằng khoảng một phần mười giá trị đơn một ca của chương (khoảng 13,6 GTĐ chương 1, 42,5 chương 2, 104 chương 3, gd-economy đặt), nên một ca một người khoảng 10 kiện, tức 25 thùng (demo bot 2026-11-20). Số đơn vị đầu vào mỗi kiện từ 1 đến 14. (Nhãn: MVP.)
 - Luật G3: không có cỡ kiện. Trong ca mọi thùng và lồng mang như nhau: một lần một thứ, tốc độ chạy không đổi, không khiêng chung (gd-quan, `tram-va-cang.md`). Hệ số 0,75 và 0,50 ở `nguoi-choi.md` là tốc độ kéo vật ngoài không gian, không phải mang hàng. (Nhãn: MVP.)
 - Luật G4: tàu chỉ mua (K13). Mỗi tàu gọi 1 thùng còn trong danh mục bán, loại thùng lấy từ danh sách kiện của mục này. Luật ca, danh mục, giao sai cửa neo do gd-quan. Giá Tally của thùng do gd-economy. (Nhãn: MVP.)
 - Luật G5: lồng sinh vật sống nhớ loài và sao: GTĐ của lồng bằng GTĐ mẫu sống bên trong nhân hệ số sao (1,0 / 1,25 / 1,5), nên giá theo loài, không có một giá phẳng. gd-economy ghi giá lồng theo loài. Các kiện khác không nhớ nguồn gốc. Lồng không chia thùng. (Nhãn: MVP.)
@@ -110,7 +110,7 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 | CGO-107 | 42,9 | 2,5 | 17,16 |
 | CGO-121 | theo loài | 1 đơn vị, không chia | bằng GTĐ lồng |
 | CGO-141 | 46,9 | 2,5 | 18,76 |
-| CGO-131 | 20,9 | 2,5 | 8,36 |
+| CGO-131 | 20,9 | 1 đơn vị, không chia | 20,9 |
 | CGO-211 | 40,4 | 2,5 | 16,16 |
 | CGO-212 | 31,3 | 2,5 | 12,52 |
 | CGO-213 | 44,9 | 2,5 | 17,96 |
@@ -124,7 +124,7 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 | CGO-307 | 107,8 | 2,5 | 43,12 |
 | CGO-321 | theo loài | 1 đơn vị, không chia | bằng GTĐ lồng |
 | CGO-411 | 161,0 | 2,5 | 64,40 |
-| CGO-421 | 86,9 | 2,5 | 34,76 |
+| CGO-421 | 86,9 | 1 đơn vị, không chia | 86,9 |
 | CGO-511 | 193,2 | 2,5 | 77,28 |
 <!--/B:CGOTHUNG-->
 
@@ -352,7 +352,7 @@ Công thức (RCP):
 | RCP-126 | Đưa sinh vật sống cỡ S Gần vào lồng giao | Cảng (trước Mở ca) | 1 x một trong LIV-111..113 | 1 x CGO-121 (1 đơn vị bán) | 8 | Thông dịch viên (chương 1) | 4,0 | - | - | MVP |
 | RCP-128 | Đưa sinh vật sống cỡ M Gần vào lồng giao | Cảng (trước Mở ca) | 1 x một trong LIV-114..115 | 1 x CGO-121 (1 đơn vị bán) | 8 | Chương 2 | 16,9 | - | - | Sau MVP |
 | RCP-127 | Đóng kiện vật tư | Cảng (tự động lúc Mở ca) | 4 x CON-101, 4 x CON-102 | 1 x CGO-141 (2,5 thùng) | lúc Mở ca | Chương 2 | 40,8 | 46,9 | 1,15 | Sau MVP |
-| RCP-141 | Sao bản dữ liệu | Khoang liên lạc | 1 x COM-104. Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (STY-101, STY-401), mỗi vật gốc sao một lần | 1 x CGO-131 (2,5 thùng) | 10 | Chương 3 | 10,4 | 20,9 | 2,00 | Sau MVP |
+| RCP-141 | Sao bản dữ liệu | Khoang liên lạc | 1 x COM-104. Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (STY-101, STY-401), mỗi vật gốc sao một lần | 1 x CGO-131 (1 đơn vị bán) | 10 | Chương 3 | 10,4 | 20,9 | 2,00 | Sau MVP |
 | RCP-221 | Đóng kiện hợp kim | Cảng (tự động lúc Mở ca) | 3 x COM-201 | 1 x CGO-211 (2,5 thùng) | lúc Mở ca | Chương 2 | 35,1 | 40,4 | 1,15 | Sau MVP |
 | RCP-222 | Đóng kiện cảm biến | Cảng (tự động lúc Mở ca) | 1 x COM-203 | 1 x CGO-212 (2,5 thùng) | lúc Mở ca | Chương 2 | 27,2 | 31,3 | 1,15 | Sau MVP |
 | RCP-223 | Đóng kiện dung dịch lạnh | Cảng (tự động lúc Mở ca) | 3 x COM-204 | 1 x CGO-213 (2,5 thùng) | lúc Mở ca | Chương 2 | 39,0 | 44,9 | 1,15 | Sau MVP |
@@ -365,7 +365,7 @@ Công thức (RCP):
 | RCP-324 | Đóng kiện đặc sản Xa | Cảng (tự động lúc Mở ca) | 5 x một trong SMP-311..315 hoặc BPS-313..314 | 1 x CGO-306 (2,5 thùng) | lúc Mở ca | Chương 3 | 90,0 | 99,0 | 1,10 | Sau MVP |
 | RCP-325 | Đóng kiện sản phẩm nuôi Xa | Cảng (tự động lúc Mở ca) | 7 x một trong BIO-311, 315 | 1 x CGO-307 (2,5 thùng) | lúc Mở ca | Chương 3 | 98,0 | 107,8 | 1,10 | Sau MVP |
 | RCP-421 | Đóng kiện linh kiện Cradle | Cảng (tự động lúc Mở ca) | 7 x RES-401 | 1 x CGO-411 (2,5 thùng) | lúc Mở ca | Chương 4 | 140,0 | 161,0 | 1,15 | Sau MVP |
-| RCP-422 | Đóng kiện tin mật | Cảng (tự động lúc Mở ca) | 1 x một trong CGO-306..307, 311..313, 1 x STY-701 | 1 x CGO-421 (2,5 thùng) | lúc Mở ca | Chương 4 | 86,9 | 86,9 | 1,00 | Sau MVP |
+| RCP-422 | Đóng kiện tin mật | Cảng (tự động lúc Mở ca) | 1 x một trong CGO-306..307, 311..313, 1 x STY-701 | 1 x CGO-421 (1 đơn vị bán) | lúc Mở ca | Chương 4 | 86,9 | 86,9 | 1,00 | Sau MVP |
 | RCP-521 | Đóng kiện linh kiện Warden | Cảng (tự động lúc Mở ca) | 14 x RES-305 | 1 x CGO-511 (2,5 thùng) | lúc Mở ca | Chương 5 | 168,0 | 193,2 | 1,15 | Sau MVP |
 | RCP-326 | Đưa sinh vật sống Xa vào lồng giao | Cảng (trước Mở ca) | 1 x một trong LIV-311..312, 315 | 1 x CGO-321 (1 đơn vị bán) | 8 | Chương 3 | 23,0 | - | - | Sau MVP |
 | RCP-301 | Phân tích DL-G01 | Phòng nghiên cứu | 1 x LIV-111, 2 x COM-105 | 1 x BPR-101 | qua đêm | Nhà sinh học (chương 2) | 15,5 | - | - | Sau MVP |
@@ -482,7 +482,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | CGO-107 | Kiện sản phẩm nuôi Gần / Near Farm Crate | Kiện | Ít gặp | kho | 42,9 | Gần | RCP-125 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
 | CGO-121 | Lồng sinh vật sống Gần / Near Live Cage | Kiện | Hiếm | kho | theo loài | Gần | RCP-126, RCP-128 | Bán theo thùng ở ca cảng (K13) | MVP |
 | CGO-141 | Kiện vật tư / Supply Crate | Kiện | Ít gặp | kho | 46,9 | Gần | RCP-127 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
-| CGO-131 | Bản sao dữ liệu / Data Copy | Kiện | Hiếm | kho | 20,9 | Gần | RCP-141 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-131 | Bản sao dữ liệu / Data Copy | Kiện | Hiếm | kho | 20,9 | Gần | RCP-141 | Bán nguyên cái ở ca cảng (K13) | Sau MVP |
 | CGO-211 | Kiện hợp kim / Alloy Crate | Kiện | Ít gặp | kho | 40,4 | Giữa | RCP-221 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
 | CGO-212 | Kiện cảm biến / Sensor Crate | Kiện | Hiếm | kho | 31,3 | Giữa | RCP-222 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
 | CGO-213 | Kiện dung dịch lạnh / Coolant Crate | Kiện | Ít gặp | kho | 44,9 | Giữa | RCP-223 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
@@ -496,7 +496,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | CGO-307 | Kiện sản phẩm nuôi Xa / Far Farm Crate | Kiện | Hiếm | kho | 107,8 | Xa | RCP-325 | RCP-422, Bán theo thùng ở ca cảng (K13) | Sau MVP |
 | CGO-321 | Lồng sinh vật sống Xa / Far Live Cage | Kiện | Hiếm | kho | theo loài | Xa | RCP-326 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
 | CGO-411 | Kiện linh kiện Cradle / Cradle Parts Crate | Kiện | Hiếm | kho | 161,0 | Cradle | RCP-421 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
-| CGO-421 | Kiện tin mật / Dispatch Crate | Kiện | Hiếm | kho | 86,9 | Xa | RCP-422 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-421 | Kiện tin mật / Dispatch Crate | Kiện | Hiếm | kho | 86,9 | Xa | RCP-422 | Bán nguyên cái ở ca cảng (K13) | Sau MVP |
 | CGO-511 | Kiện linh kiện Warden / Warden Parts Crate | Kiện | Hiếm | kho | 193,2 | Xa | RCP-521 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
 | ENG-101 | Van tiết lưu / Throttle Valve | Linh kiện lõi | Hiếm | kho | - | Gần | Shop (K19), mở ở Hạng cảng 3 (kinh-te-tien-trinh.md) | Lắp động cơ chính, giai đoạn 1 | MVP |
 | ENG-102 | Buồng đốt tái chế / Recycled Combustor | Linh kiện lõi | Hiếm | kho | - | Giữa | Shop (K19) | Lắp động cơ chính, giai đoạn 2 | Sau MVP |
@@ -534,7 +534,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 <!--/B:ITEM-->
 
 <!--B:CHECK-->
-- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-20 10:30 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
+- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-20 10:34 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
 - Vật liệu nhãn MVP (6 việc sửa khoang và 6 nâng cấp) quy ra tài nguyên thô: 272,2 GTĐ, tương đương 3,1 chuyến đầy túi (túi bậc 0 là 80 Khối, mật độ 1,1 GTĐ mỗi Khối), chưa tính nguyên liệu đóng kiện bán lấy Tally. Đây là kiểm nhất quán, không phải sim cân bằng.
 <!--/B:CHECK-->
 
