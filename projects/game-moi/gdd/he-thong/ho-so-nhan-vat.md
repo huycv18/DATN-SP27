@@ -221,8 +221,8 @@ Clip trong trạm:
 | 1 | Idle | 2,0 | Có | MVP |
 | 2 | Đi | 0,8 | Có | MVP |
 | 3 | Leo thang | 0,8 | Có | MVP |
-| 4 | Mang kiện (đi) | 0,8 | Có | MVP |
-| 5 | Nhặt và đặt kiện | 0,4 | Không | MVP |
+| 4 | Mang thùng (đi) | 0,8 | Có | MVP |
+| 5 | Nhặt và giao thùng | 0,4 | Không | MVP |
 | 6 | Tương tác | 0,5 | Không | MVP |
 | 7 | Mặc bộ đồ | 1,0 | Không | MVP |
 | 8 | Thức dậy từ buồng ngủ đông | 3,0 | Không | MVP |

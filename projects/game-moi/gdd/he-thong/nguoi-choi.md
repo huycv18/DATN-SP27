@@ -102,14 +102,14 @@ Thêm người cùng kéo một vật nặng hoặc vừa: mỗi người thêm 
 4. Được cứu: một đồng đội ở trong 1,5 u giữ Chia Oxy (V, X) chuyển Oxy với tốc độ 10 điểm/giây. Khi người ngạt đạt từ 30 Oxy thì sang Được cứu (2 giây i-frame, rồi Bay). Trong lúc đang được chia Oxy thì đồng hồ ngạt tạm dừng.
 5. Tự thoát (không cần đồng đội): nếu người ngạt chạm cửa khí của trạm trong 12 giây (chỉ ở dải Gần mới khả thi: 12 giây ở tốc độ 2,4 u/s đi tối đa 28,8 u) thì tính là kết thúc chuyến bằng cửa khí (K4), giữ nguyên túi. Recall Beacon cần kích 5 giây nên không dùng được khi ngạt.
 6. Hết 12 giây không ai cứu và chưa về: Bị kéo về. Nhân vật về buồng cửa khí của trạm. Túi chỉ giữ đúng 1 món ghim (một đơn vị vật phẩm, một lồng mẫu đang kéo hoặc một vật nhiệm vụ cũng được ghim. Ghim lồng mẫu thì chỉ giữ con có sao cao nhất trong lồng, các con còn lại mất, khớp luật 25 của `combat-driftlife.md`). Phần còn lại của túi biến mất, không rơi ra map. Ngoại lệ: vật nhiệm vụ không ghim thì trở về vị trí gốc (2.4 điểm 10), vật manh mối không nằm trong túi nên không mất. Dụng cụ mang theo trên đai không mất. Không mất Tally, không phí, không nợ (K2).
-7. Bị kéo về, cũng như Về an toàn sớm, là kết thúc chuyến của riêng người đó (C6). Người đã về trạm không ra lại trong cùng chuyến (C9, vì về trạm nạp đầy Oxy rồi ra lại sẽ phá giới hạn Oxy K1). Trong lúc chờ người đó làm việc trạm: xưởng, khoang nuôi, đóng kiện trước cho ca cảng, và xem vị trí đồng đội. Chuyến chung kết thúc khi người cuối cùng đã về hoặc bị kéo về.
+7. Bị kéo về, cũng như Về an toàn sớm, là kết thúc chuyến của riêng người đó (C6). Người đã về trạm không ra lại trong cùng chuyến (C9, vì về trạm nạp đầy Oxy rồi ra lại sẽ phá giới hạn Oxy K1). Trong lúc chờ người đó làm việc trạm: xưởng (chế trước cho ca cảng), khoang nuôi, và xem vị trí đồng đội. Chuyến chung kết thúc khi người cuối cùng đã về hoặc bị kéo về.
 8. K27: người đang ngạt không trao và không thả được đồ. Đồng đội cứu bằng chia Oxy, không vét túi hộ. Muốn giữ đồ cho nhóm, người chơi phải trao trước khi Oxy chạm 0.
 
 Bảng trạng thái và chuyển tiếp ngoài không gian:
 
 | Trạng thái | Vào khi | Ra khi | Hành vi | Người chơi thấy gì |
 |---|---|---|---|---|
-| Ở trạm | Vào game, về an toàn, bị kéo về, người vào sau hoàn tất cảnh đến | Qua cửa khí khi cả nhóm xác nhận (C5), chỉ tối đa 2 chuyến mỗi ngày (K22). Người về giữa chuyến phải chờ chuyến chung kết thúc (C9), trong lúc chờ làm xưởng, khoang nuôi, đóng kiện, xem vị trí đồng đội | Đi bộ trong trạm (mục 2.8), Oxy đầy, không hao | Cảnh trong trạm |
+| Ở trạm | Vào game, về an toàn, bị kéo về, người vào sau hoàn tất cảnh đến | Qua cửa khí khi cả nhóm xác nhận (C5), chỉ tối đa 2 chuyến mỗi ngày (K22). Người về giữa chuyến phải chờ chuyến chung kết thúc (C9), trong lúc chờ làm xưởng (chế trước), khoang nuôi, xem vị trí đồng đội | Đi bộ trong trạm (mục 2.8), Oxy đầy, không hao | Cảnh trong trạm |
 | Bay | Qua cửa khí, hết Lướt, hết Trúng đòn, hết Được cứu, thả Kích Recall | Lướt, Kéo vật, Kích Recall, Trúng đòn, Oxy chạm 0, về cửa khí | Bay 8 hướng, nhặt, dùng dụng cụ | Thanh Oxy, bộ đẩy phụt |
 | Lướt | Bấm Lướt, hết hồi chiêu, Oxy đủ chi phí, không Ngạt | Hết 0,22 giây thì về Bay | Xung lực 15 u/s, miễn sát thương 0,2 giây đầu | Vệt lướt, tiếng xì |
 | Kéo vật | Giữ E ở tầm 1,5 u với vật kéo được | Bấm E thả, vào Ngạt (thả), Về an toàn (vật đi theo nếu trong 3 u) | Tốc độ theo lớp vật, Oxy hao theo lớp vật | Dây nối, vật bám theo |
@@ -205,14 +205,14 @@ Quan hệ trục: T-OXY quyết định độ dài chuyến, T-VO quyết địn
 | Ping (mở bánh) | T | D-pad lên |
 | Menu | Esc | Start |
 
-Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ cảnh (ngoài không gian, trong trạm). Trong túi mở, Ghim món dùng R3 nên không đụng Y (Kích Recall) và X (Chia Oxy). Trong trạm: Tab là Xem kho nhanh, J (Y) là Sổ tay, E là Tương tác và mang kiện. Bảng đầy đủ của trạm và menu nằm ở `ux-ui.md` mục 2.9, bảng này là phần ngoài không gian và luật. Mọi phím gán lại được. Giữ E cũng dùng để vá điểm rò trong sự cố cảng (gd-quan). Một mình tạm dừng được từ menu, co-op không tạm dừng (C7). Chi tiết HUD, wireframe, FTUE ở `ux-ui.md`.
+Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ cảnh (ngoài không gian, trong trạm). Trong túi mở, Ghim món dùng R3 nên không đụng Y (Kích Recall) và X (Chia Oxy). Trong trạm: Tab là Xem kho nhanh, J (Y) là Sổ tay, E hoặc Space là Tương tác, nhặt và giao thùng (giữ 1 giây để bơm khí), chuột trái vào ô quầy hay cửa neo để tự chạy tới. Bảng đầy đủ của trạm và menu nằm ở `ux-ui.md` mục 2.9, bảng này là phần ngoài không gian và luật. Mọi phím gán lại được. Giữ E cũng dùng để vá điểm rò trong sự cố cảng (gd-quan). Một mình tạm dừng được từ menu, co-op không tạm dừng (C7). Chi tiết HUD, wireframe, FTUE ở `ux-ui.md`.
 
 ### 2.8 Trong trạm (MVP)
 
 1. Trạm là mặt cắt ngang, có trọng lực nhân tạo. Nhân vật đi bộ trái phải trên sàn, leo thang giữa các tầng bằng W hoặc S. Không có nhảy.
 2. Tốc độ đi 5,5 u/s, leo thang 3,5 u/s. Không chạy riêng, vì ca cảng (K13) có áp lực thời gian nên tốc độ cố định cho dễ đọc.
 3. Trong trạm nhân vật không có Oxy, không Ngạt. Không dùng dụng cụ trong trạm trừ sự cố do gd-quan quy định.
-4. Mang kiện: E giữ nhặt, E đặt. Mỗi người mang 1 kiện hoặc một chồng hàng thô bằng số đơn vị của một kiện. Tốc độ khi mang theo cỡ kiện (gd-quan, gd-items gán cỡ): Nhỏ 90%, Vừa 80%, Lớn 65% tốc độ đi thường.
+4. Mang thùng trong ca cảng: bấm E hoặc Space để nhặt ở ô quầy và giao ở cửa neo. Mỗi người mang 1 thùng (hoặc 1 lồng) một lần, tốc độ chạy không đổi khi mang, không cùng mang một thùng, không đặt thùng xuống. Giữ E 1 giây ở cửa neo để bơm khí. Bấm chuột trái vào ô quầy hay cửa neo để tự chạy tới, giữ A D giữa đường thì hủy. Luật đầy đủ ở `tram-va-cang.md` luật 26 tới 28.
 5. Sự cố ca cảng (K14, gd-quan): không đặt trạng thái lên người chơi. Rò khí đóng cửa một khoang bắt đi vòng, chập điện và Driftlife sổng xử bằng giữ phím. Trong trạm không có Oxy nên không trừ Oxy và không có sát thương (khớp `combat-driftlife.md`).
 6. Qua cửa khí từ trong ra cần cả nhóm đang online xác nhận (C5). 30 giây tính từ lúc người đầu tiên xác nhận (khớp `ux-ui.md`), ai không trả lời trong 30 giây thì tính là ở lại trạm và chuyến vẫn đi. Ở trong ra, bộ đồ tự mặc (cảnh 1,0 giây có thể bỏ qua).
 7. Người chơi không qua cửa khí thì ở lại trạm và dùng xưởng, khoang nuôi (C5).
@@ -271,9 +271,6 @@ Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ c�
 | Giữ chỗ khi rớt mạng | 15 giây | 10 đến 30 | Tha thứ mạng | Treo nhóm | Co-op | ước |
 | Tốc độ đi trong trạm | 5,5 u/s | 4,5 đến 7 | Ca cảng dễ | Ca cảng khó | Ca cảng | ước, gd-quan lấy làm tốc độ thường |
 | Tốc độ leo thang | 3,5 u/s | 2,5 đến 5 | Nhanh giữa tầng | Chậm | Ca cảng | ước |
-| Tốc độ mang kiện Nhỏ | 90% tốc độ đi | 80% đến 100% | Mang dễ | Mang khổ | Ca cảng | `tram-va-cang.md` |
-| Tốc độ mang kiện Vừa | 80% tốc độ đi | 70% đến 90% | Mang dễ | Mang khổ | Ca cảng | `tram-va-cang.md` |
-| Tốc độ mang kiện Lớn | 65% tốc độ đi | 60% đến 80% | Mang dễ | Mang khổ | Ca cảng | `tram-va-cang.md` |
 | Số ô dụng cụ bậc 0 đến 2 | 3, 4, 5 | 3 đến 6 | Nhiều lựa chọn | Hạn chế | Kiểu chơi | ước |
 | Miễn sát thương sau khi trúng đòn | 0,8 giây | gd-combat đặt | Đòn ít dồn | Đòn dồn | Combat | gd-combat |
 | Mất điều khiển khi trúng đòn | 0,25 giây | 0,15 đến 0,4 | Đòn nặng tay | Đòn nhẹ | Combat | gd-combat |
@@ -314,7 +311,7 @@ Núm gap: ba tham số nối ý đồ với số đo: dung lượng Oxy bậc 0 
 | Ngạt khi đang kéo buồng ngủ đông | Thả buồng, buồng trôi tại chỗ, người nào khác kéo về được. Một mình bị kéo về thì buồng nằm lại ở chỗ thả và kéo lại được ở chuyến sau (buồng thuộc map nhánh không sinh lại, K7) |
 | Nhặt vật manh mối | Ghi vào Sổ tay tức thì, túi đầy cũng nhặt được, ngạt rồi bị kéo về không mất |
 | Bị kéo về khi đang giữ vật nhiệm vụ không ghim | Vật về vị trí gốc, chuyến sau lấy lại |
-| Người đã về trạm muốn ra lại trong cùng chuyến | Không cho (C9), cửa khí báo "chờ nhóm về" và mở xưởng, khoang nuôi, đóng kiện, xem vị trí đồng đội |
+| Người đã về trạm muốn ra lại trong cùng chuyến | Không cho (C9), cửa khí báo "chờ nhóm về" và mở xưởng, khoang nuôi, xem vị trí đồng đội |
 | Ngạt khi đang kéo lồng mẫu | Thả. Nếu đang ghim lồng đó thì bị kéo về chỉ giữ con có sao cao nhất trong lồng (luật 25 của gd-combat) |
 | Hai người cùng ngạt, cạnh nhau | Không ai chia được (người cho phải từ 20 Oxy), cả hai bị kéo về nếu hết giờ |
 | Người cho tụt xuống 20 Oxy đang chia | Dừng chia, người nhận còn ngạt, đồng hồ tiếp tục |
@@ -493,7 +490,7 @@ Ca đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng 
 | Va chạm người chơi | Đi xuyên nhau | Tránh kẹt hành lang, tránh phá bạn, hợp cứu nhau | Va chạm cứng | Rẻ |
 | Nâng cấp bộ đồ | 5 trục, tốc độ tăng tối đa 8% mỗi bậc | Giữ cảm giác tay không đổi mỗi bậc | Tăng tốc lớn | Vừa |
 | Đai dụng cụ | 3, 4, 5 ô, đổi ở trạm | Hợp bắt sống ở chương 2, không đổi giữa chuyến để giữ chuẩn bị là một pha | Đổi ngoài không gian | Rẻ |
-| Trong trạm | Không nhảy, không chạy, 5,5 u/s, 1 kiện mỗi người | Ca cảng cần đọc dễ, nhân vật tập trung nhiệm vụ | Có nhảy, nhiều kiện | Vừa |
+| Trong trạm | Không nhảy, không chạy, 5,5 u/s, 1 thùng mỗi người, tốc độ không đổi khi mang | Ca cảng cần đọc dễ, nhân vật tập trung nhiệm vụ | Có nhảy, nhiều thùng | Vừa |
 | Vào sau | Thế giới giữ tối đa 4 nhân vật, người mới chiếm slot trống | Đơn giản hóa dữ liệu, 4 buồng ngủ đông | Không giới hạn nhân vật | Vừa |
 | Rớt mạng | Giữ chỗ 15 giây, rồi tính như Bị kéo về (giữ 1 món), theo C10 | Không treo nhóm, không biến thoát thành Recall tức thì | Recall tức thì giữ cả túi (trái K4 và C10) | Rẻ |
 | Ping | 4 loại, 3 ping mỗi người, 8 giây | Giao tiếp tối thiểu khi không có voice chat | Chat chữ đầy đủ | Rẻ |
@@ -503,7 +500,7 @@ Ca đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng 
 
 | Luật khung | Vấn đề | Lý do | Bằng chứng | Phương án thay | Trạng thái |
 |---|---|---|---|---|---|
-| C5, C6 (người về sớm phải chờ) | Người bị kéo về ở phút đầu chờ tới 8 phút | Chuyến chương 5 dài 11 phút | Phép ước đã ghi ở bản đầu | Đã xử: GDM thêm C9 (không ra lại, được làm xưởng, khoang nuôi, đóng kiện, xem vị trí đồng đội), bỏ đề xuất "ra lại một lần" | Đã đóng |
+| C5, C6 (người về sớm phải chờ) | Người bị kéo về ở phút đầu chờ tới 8 phút | Chuyến chương 5 dài 11 phút | Phép ước đã ghi ở bản đầu | Đã xử: GDM thêm C9 (không ra lại, được làm xưởng (chế trước), khoang nuôi, xem vị trí đồng đội), bỏ đề xuất "ra lại một lần" | Đã đóng |
 | K2 (giữ 1 món) với K3 | Sim GD-030 cho món giữ lại bằng 22% túi đầy ở chương 1, đổi sang giữ 3 món chỉ lệch 10 đến 18 phút, trong nhiễu | Người mới ngạt nhiều ở chương 1 | Sim GD-030 | GDM giữ 1 món (log 57). Vá lỗ hổng: chọn lồng mẫu thì chỉ giữ con có sao cao nhất | Đã đóng |
 | C6 (chia Oxy) | Người cứu cũng thấp Oxy, có thể cùng ngạt | Hai bên đều thấp | Chưa đo | GDM giữ sàn 20 Oxy của người cho. Nếu sim vẫn thấy cao thì chỉ cho chia khi người cho còn trên 40% dung lượng | Giữ sàn 20 |
 
@@ -527,3 +524,4 @@ Ca đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng 
 | 2026-11-20 | Khớp lượt 1b: K2 ngoại lệ (vật manh mối, vật nhiệm vụ), C9, Solace là mồi, gỡ dấu chờ các vai đã có file, đai dụng cụ 3, 4, 5 ô, đơn vị Khối | GD-023 1b | gd-character |
 | 2026-11-20 | Lượt 2b: túi 80, 100, 126, 168, 216 Khối, bình 330, 450, 600, 780, 1000, ghim lồng mẫu giữ con sao cao nhất, C5 30 giây, mục tiêu bị kéo về hai mức, đổi ID theo gd-items (bỏ TOL-101) | GD-023 2b, log 54 đến 60 | gd-character |
 | 2026-11-20 | Đợt 4 sau GD-031: C10 và K23 thay "Về an toàn giữ nguyên túi" khi thoát hoặc mất kết nối, K26 trần CON-101 kèm thao tác Dùng vật tiêu hao (phím G), K27 cấm trao và thả đồ khi ngạt, K22 tối đa 2 chuyến mỗi ngày, bảng phím khớp ux-ui (Q, M, J, Tab, ghim R3), Lướt và trần 12 u/s, Oxy chạm 0 giữa Recall, thả vật 30 giây, gỡ mọi dấu chờ, sửa số lỗi nhẹ | GD-023 Đ4 | gd-character |
+| 2026-11-20 | Đợt 9 ca cảng kiểu Dave (GD-051): bỏ luật mang kiện và 3 hàng tốc độ mang kiện theo cỡ, thay bằng mang 1 thùng, tốc độ không đổi, không khiêng chung, không đặt xuống, nhặt giao bằng E hoặc Space, giữ E 1 giây bơm khí, bấm chuột tự chạy tới. Người về sớm (C9) chế trước ở xưởng, bỏ đóng kiện trước | Lead chốt ca cảng theo khung bán sushi của Dave | gd-character |
