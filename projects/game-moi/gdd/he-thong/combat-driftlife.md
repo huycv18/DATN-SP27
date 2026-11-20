@@ -17,21 +17,21 @@ gd-combat giữ tên Driftlife, kẻ địch, boss. Nhóm rơi ghi theo từ đi
 
 | ID | Tên | Dải | Cỡ | Kiểu | Bắt sống | Nuôi | Rơi khi hạ (nhóm) | Nhãn |
 |---|---|---|---|---|---|---|---|---|
-| DL-G01 | Driftmoth | Gần | S | Hiền, trôi thành đám | Có | Có | Mẫu mô, phấn sinh học | MVP |
-| DL-G02 | Skitter Ray | Gần | S | Chạy trốn | Có | Có | Mẫu màng | MVP |
-| DL-G03 | Latchjaw | Gần | M | Phục kích, bám mảnh vỡ | Có (cạy khi bất lực) | Không | Vỏ khoáng, tuyến keo | Sau MVP |
-| DL-G04 | Sting Krill | Gần | S | Đi bầy | Có | Có | Vỏ giáp nhỏ | MVP |
-| DL-G05 | Arc Eel | Gần | M | Giữ lãnh thổ | Có (chỉ khi ngủ, Sau MVP) | Có (Sau MVP) | Tuyến điện, mẫu mô | MVP (chỉ hạ) |
+| DL-G01 | Driftmoth | Gần | S | Hiền, trôi thành đám | Có | Có | Mô sinh học Gần, Đặc sản Driftmoth (mẫu mô, phấn sinh học) | MVP |
+| DL-G02 | Skitter Ray | Gần | S | Chạy trốn | Có | Có | Mô sinh học Gần, Đặc sản Skitter Ray (mẫu màng) | MVP |
+| DL-G03 | Latchjaw | Gần | M | Phục kích, bám mảnh vỡ | Có (cạy khi bất lực) | Không | Mô sinh học Gần, Đặc sản Latchjaw (vỏ khoáng, tuyến keo) | Sau MVP |
+| DL-G04 | Sting Krill | Gần | S | Đi bầy | Có | Có | Mô sinh học Gần, Đặc sản Sting Krill (vỏ giáp nhỏ) | MVP |
+| DL-G05 | Arc Eel | Gần | M | Giữ lãnh thổ | Có (chỉ khi ngủ, Sau MVP) | Có (Sau MVP) | Mô sinh học Gần, Đặc sản Arc Eel (tuyến điện, mẫu mô) | MVP (chỉ hạ) |
 | DL-M01 | Shepherd Whale | Giữa | L | Hiền khổng lồ, không hạ được | Không, chỉ sinh thiết | Không | Không hạ được | Sau MVP |
-| DL-M02 | Lumen Jelly | Giữa | M | Hiền, chạm thì bỏng | Có | Có | Gel phát quang | Sau MVP |
-| DL-M03 | Orebiter | Giữa | M | Giữ lãnh thổ, ăn khoáng | Có | Có | Khoáng tinh, mẫu mô | Sau MVP |
-| DL-M04 | Needlefin | Giữa | S | Đi bầy, săn mồi | Có | Có | Gai, vỏ giáp nhỏ | Sau MVP |
-| DL-M05 | Gulper | Giữa | L | Săn mồi, nuốt | Không, chỉ sinh thiết | Không | Túi tiêu hóa (chứa phế liệu, linh kiện nó đã nuốt) | Sau MVP |
-| DL-X01 | Prism Wisp | Xa | S | Chạy trốn, ẩn trong mây khí | Có | Có | Tinh thể lăng kính | Sau MVP |
-| DL-X02 | Mirror Mantis | Xa | M | Phục kích, phản xạ đạn mặt trước | Có (chỉ khi ngủ) | Không | Vỏ gương, mẫu mô | Sau MVP |
-| DL-X03 | Storm Siphon | Xa | L | Giữ lãnh thổ, hút Oxy | Không, chỉ sinh thiết | Không | Lõi khí, mẫu mô | Sau MVP |
-| DL-X04 | Shardbrood Queen | Xa | L | Đẻ bầy liên tục | Không, chỉ sinh thiết | Không | Túi trứng, mẫu mô | Sau MVP |
-| DL-X05 | Shardbrood Hatchling | Xa | S | Đi bầy, con của DL-X04 | Có | Có | Vỏ giáp nhỏ | Sau MVP |
+| DL-M02 | Lumen Jelly | Giữa | M | Hiền, chạm thì bỏng | Có | Có | Mô sinh học Giữa, Đặc sản Lumen Jelly (gel phát quang) | Sau MVP |
+| DL-M03 | Orebiter | Giữa | M | Giữ lãnh thổ, ăn khoáng | Có | Có | Mô sinh học Giữa, Đặc sản Orebiter (khoáng tinh, mẫu mô) | Sau MVP |
+| DL-M04 | Needlefin | Giữa | S | Đi bầy, săn mồi | Có | Có | Mô sinh học Giữa, Đặc sản Needlefin (gai, vỏ giáp nhỏ) | Sau MVP |
+| DL-M05 | Gulper | Giữa | L | Săn mồi, nuốt | Không, chỉ sinh thiết | Không | Mô sinh học Giữa, Đặc sản Gulper (túi tiêu hóa (chứa phế liệu, linh kiện nó đã nuốt)) | Sau MVP |
+| DL-X01 | Prism Wisp | Xa | S | Chạy trốn, ẩn trong mây khí | Có | Có | Mô sinh học Xa, Đặc sản Prism Wisp (tinh thể lăng kính) | Sau MVP |
+| DL-X02 | Mirror Mantis | Xa | M | Phục kích, phản xạ đạn mặt trước | Có (chỉ khi ngủ) | Không | Mô sinh học Xa, Đặc sản Mirror Mantis (vỏ gương, mẫu mô) | Sau MVP |
+| DL-X03 | Storm Siphon | Xa | L | Giữ lãnh thổ, hút Oxy | Không, chỉ sinh thiết | Không | Mô sinh học Xa, Đặc sản Storm Siphon (lõi khí, mẫu mô) | Sau MVP |
+| DL-X04 | Shardbrood Queen | Xa | L | Đẻ bầy liên tục | Không, chỉ sinh thiết | Không | Mô sinh học Xa, Đặc sản Shardbrood Queen (túi trứng, mẫu mô) | Sau MVP |
+| DL-X05 | Shardbrood Hatchling | Xa | S | Đi bầy, con của DL-X04 | Có | Có | Mô sinh học Xa, Đặc sản Shardbrood Hatchling (vỏ giáp nhỏ) | Sau MVP |
 | WD-01 | Warden Harvester | Xa, từ chương 3 | M | Máy The Wardens bắt Driftlife | Không (máy) | Không | Linh kiện Warden, thả Driftlife đang bị giữ | Sau MVP |
 | WD-02 | Warden Lancer | Xa, từ chương 3 | M | Lính có khiên trước | Không | Không | Linh kiện Warden | Sau MVP |
 | WD-03 | Warden Snarer | Xa, từ chương 3 | M | Lính bắn lưới vào người chơi | Không | Không | Linh kiện Warden, lưới năng lượng | Sau MVP |

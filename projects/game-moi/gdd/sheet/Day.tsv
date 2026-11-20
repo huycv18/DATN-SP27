@@ -1,5 +1,5 @@
 Issue ID	Task	Sub Task	Short Description	Ref
-1	Cấu trúc một ngày	Pha 1 Chuẩn bị	"Làm gì: xem tàu nào cập bến hôm nay và họ cần hàng gì, chọn dụng cụ mang theo, nhận đồ chế xong, chăm khoang nuôi
+1	Cấu trúc một ngày	Pha 1 Chuẩn bị	"Làm gì: xem tàu nào cập bến hôm nay và họ cần hàng gì, chọn dụng cụ mang theo, nhận đồ chế xong, chăm khoang sinh quyển
 Kết thúc khi: người chơi ra cửa khí
 Bỏ qua được: Có"	00-khung-game.md mục 4
 		Pha 2 Chuyến 1	"Làm gì: ra ngoài nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh, vớt người, tìm manh mối
@@ -16,8 +16,8 @@ Kết thúc khi: người chơi vào buồng ngủ đông. Ngủ thì lưu và s
 Bỏ qua được: Không"	00-khung-game.md mục 4
 2	Luật ngày	Tối đa 2 chuyến	Một ngày tối đa 2 chuyến, đi Skiff cũng tính một chuyến. Sau chuyến thứ hai cửa khí khóa tới ngày mới. Ca cảng luôn sau các chuyến, đã mở ca cảng thì không ra ngoài nữa\nLý do: nếu về nạp đầy Oxy rồi ra lại không giới hạn thì Oxy không còn là giới hạn	00-khung-game.md mục 5
 		Ngày không đồng hồ	Ngày chỉ sang khi vào buồng ngủ đông. Co-op: vào buồng là đồng ý ngủ, đếm 30 giây từ người đầu tiên, ai chưa vào thì tự tính là đồng ý\nTự lưu ở 3 lúc: sau mỗi chuyến khi mọi người đã về, sau ca cảng, lúc ngủ. Thoát giữa chuyến hoặc giữa ca thì vào lại ở điểm lưu gần nhất, mất phần đang làm dở\nBố cục map của từng chuyến lưu theo ngày và chuyến thứ mấy	00-khung-game.md mục 5, ky-thuat.md
-		Xác nhận ra chuyến	Chuyến bắt đầu khi mọi người đang online đã xác nhận ở cửa khí. Ai không đi thì ở lại trạm, vẫn dùng được xưởng và khoang nuôi. Ai không trả lời trong 30 giây thì tính là ở lại\nRa ngoài rồi mỗi người tự do tách nhau, mỗi người một màn hình	00-khung-game.md mục 6
-		Người đã về không ra lại	Người đã về trạm (về sớm hoặc bị kéo về) không ra lại trong cùng chuyến. Trong lúc chờ thì làm việc trạm: xưởng, khoang nuôi, đóng kiện trước cho ca cảng, xem vị trí đồng đội\nLý do: ra lại thì Oxy không còn là giới hạn	00-khung-game.md mục 6
+		Xác nhận ra chuyến	Chuyến bắt đầu khi mọi người đang online đã xác nhận ở cửa khí. Ai không đi thì ở lại trạm, vẫn dùng được xưởng và khoang sinh quyển. Ai không trả lời trong 30 giây thì tính là ở lại\nRa ngoài rồi mỗi người tự do tách nhau, mỗi người một màn hình	00-khung-game.md mục 6
+		Người đã về không ra lại	Người đã về trạm (về sớm hoặc bị kéo về) không ra lại trong cùng chuyến. Trong lúc chờ thì làm việc trạm: xưởng, khoang sinh quyển, đóng kiện trước cho ca cảng, xem vị trí đồng đội\nLý do: ra lại thì Oxy không còn là giới hạn	00-khung-game.md mục 6
 3	Độ dài mục tiêu	Một chuyến, chương 1	Mục tiêu 4 đến 6 phút. Sim đo được 4,4 phút (một người)	00-khung-game.md mục 9, so-hien-hanh.md
 		Một chuyến, chương 5	Mục tiêu 10 đến 12 phút. Sim đo được 10,4 phút (một người)	00-khung-game.md mục 9, so-hien-hanh.md
 		Ca cảng	Mục tiêu 3 đến 5 phút	00-khung-game.md mục 9

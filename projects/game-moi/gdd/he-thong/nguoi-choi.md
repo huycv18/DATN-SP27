@@ -178,7 +178,7 @@ Mua một lần cho cả nhóm, mọi bộ đồ lên cấp cùng lúc (C4). Kh�
 |---|---|---|---|---|---|---|
 | T-OXY dung lượng Oxy | 330 | 450 | 600 | 780 | 1000 | Chương 1 đến 5 (xấp xỉ một bậc mỗi chương) |
 | T-VO cấp môi trường, giảm đòn | 0, 0% | 1, 5% | 2, 10% | 3, 15% | không có | Cấp bằng cấp dải: Gần 0, Giữa 1, Xa 2, Cradle và Warden Rig 3 (E3 trong `map.md`) |
-| T-DAY vmax, gia tốc, chi phí lướt, hồi chiêu | 6,0 u/s, 18, 4, 1,2 s | 6,5, 20, 4, 1,1 s | 7,0, 22, 3,5, 1,0 s | 7,5, 24, 3, 0,9 s | không có | Chương 2 đến 4 |
+| T-DAY vmax, gia tốc, chi phí lướt, hồi chiêu | 6,0 u/s, 18, 4, 1,2 s | 6,5, 20, 4, 1,1 s | 7,0, 22, 3,5, 1,0 s | 7,5, 24, 3, 0,9 s | không có | Bậc 1 chương 1, bậc 2 chương 2, bậc 3 chương 3 (theo `kinh-te-tien-trinh.md` mục 3.2) |
 | T-TUI sức chứa (Khối) | 80 | 100 | 126 | 168 | 216 | Chương 1 đến 5 |
 | T-DUNGCU số ô dụng cụ | 3 | 4 | 5 | không có | không có | Bậc 1 ở chương 1 (Dùi xung), bậc 2 ở chương 2 (bắt sống) |
 

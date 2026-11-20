@@ -56,7 +56,7 @@ Thời gian: 12 giây"
 		Output	"1 x Phiến kính
 Thời gian: 18 giây"	
 		Unlock	Kỹ sư, dải Xa mở. Nhãn: Sau MVP	
-12	Cuộn plasma	Type	Xưởng	vat-pham.md mục 3
+12	Ép cuộn plasma	Type	Xưởng	vat-pham.md mục 3
 		Ingredients	2 x Băng plasma	
 		Output	"1 x Cuộn plasma
 Thời gian: 18 giây"	
@@ -171,22 +171,22 @@ Thời gian: 5 giây"
 Thời gian: 5 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
 33	Đóng kiện đặc sản Gần	Type	Cảng	vat-pham.md mục 3
-		Ingredients	3 x một trong Đặc sản Driftmoth..115	
+		Ingredients	3 x một trong Đặc sản Driftmoth, Skitter Ray, Sting Krill, Arc Eel, Latchjaw	
 		Output	"1 x Kiện đặc sản Gần
 Thời gian: 5 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
 34	Đóng kiện sản phẩm nuôi Gần	Type	Cảng	vat-pham.md mục 3
-		Ingredients	13 x một trong Sản phẩm nuôi Driftmoth..114	
+		Ingredients	13 x một trong Sản phẩm nuôi Driftmoth, Skitter Ray, Sting Krill, Arc Eel	
 		Output	"1 x Kiện sản phẩm nuôi Gần
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
 35	Đưa sinh vật sống cỡ S Gần vào lồng giao	Type	Cảng	vat-pham.md mục 3
-		Ingredients	1 x một trong Mẫu sống Driftmoth..113	
+		Ingredients	1 x một trong Mẫu sống Driftmoth, Skitter Ray, Sting Krill	
 		Output	"1 x Lồng sinh vật sống Gần
 Thời gian: 8 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
 36	Đưa sinh vật sống cỡ M Gần vào lồng giao	Type	Cảng	vat-pham.md mục 3
-		Ingredients	1 x một trong Mẫu sống Arc Eel..115	
+		Ingredients	1 x một trong Mẫu sống Arc Eel, Latchjaw	
 		Output	"1 x Lồng sinh vật sống Gần
 Thời gian: 8 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
@@ -218,17 +218,17 @@ Thời gian: 5 giây"
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
 42	Đóng kiện đặc sản Giữa	Type	Cảng	vat-pham.md mục 3
-		Ingredients	4 x một trong Đặc sản Lumen Jelly..215 hoặc Mẫu sinh thiết Shepherd Whale, 215	
+		Ingredients	4 x một trong Đặc sản Lumen Jelly, Orebiter, Needlefin, Gulper hoặc Mẫu sinh thiết Shepherd Whale, Gulper	
 		Output	"1 x Kiện đặc sản Giữa
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
 43	Đóng kiện sản phẩm nuôi Giữa	Type	Cảng	vat-pham.md mục 3
-		Ingredients	6 x một trong Sản phẩm nuôi Lumen Jelly..214	
+		Ingredients	6 x một trong Sản phẩm nuôi Lumen Jelly, Orebiter, Needlefin	
 		Output	"1 x Kiện sản phẩm nuôi Giữa
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
 44	Đưa sinh vật sống Giữa vào lồng giao	Type	Cảng	vat-pham.md mục 3
-		Ingredients	1 x một trong Mẫu sống Lumen Jelly..214	
+		Ingredients	1 x một trong Mẫu sống Lumen Jelly, Orebiter, Needlefin	
 		Output	"1 x Lồng sinh vật sống Giữa
 Thời gian: 8 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
@@ -248,12 +248,12 @@ Thời gian: 5 giây"
 Thời gian: 5 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
 48	Đóng kiện đặc sản Xa	Type	Cảng	vat-pham.md mục 3
-		Ingredients	5 x một trong Đặc sản Prism Wisp..315 hoặc Mẫu sinh thiết Storm Siphon..314	
+		Ingredients	5 x một trong Đặc sản Prism Wisp, Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling hoặc Mẫu sinh thiết Storm Siphon, Shardbrood Queen	
 		Output	"1 x Kiện đặc sản Xa
 Thời gian: 5 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
 49	Đóng kiện sản phẩm nuôi Xa	Type	Cảng	vat-pham.md mục 3
-		Ingredients	7 x một trong Sản phẩm nuôi Prism Wisp, 315	
+		Ingredients	7 x một trong Sản phẩm nuôi Prism Wisp, Shardbrood Hatchling	
 		Output	"1 x Kiện sản phẩm nuôi Xa
 Thời gian: 5 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
@@ -263,7 +263,7 @@ Thời gian: 5 giây"
 Thời gian: 6 giây"	
 		Unlock	Chương 4. Nhãn: Sau MVP	
 51	Đóng kiện tin mật	Type	Cảng	vat-pham.md mục 3
-		Ingredients	"1 x một trong Kiện đặc sản Xa..307, 311..313
+		Ingredients	"1 x một trong Kiện đặc sản Xa, Kiện sản phẩm nuôi Xa, Kiện giáp, Kiện plasma, Kiện lõi nguội
 1 x Gói tin mật"	
 		Output	"1 x Kiện tin mật
 Thời gian: 6 giây"	
@@ -274,7 +274,7 @@ Thời gian: 6 giây"
 Thời gian: 6 giây"	
 		Unlock	Chương 5. Nhãn: Sau MVP	
 53	Đưa sinh vật sống Xa vào lồng giao	Type	Cảng	vat-pham.md mục 3
-		Ingredients	1 x một trong Mẫu sống Prism Wisp..312, 315	
+		Ingredients	1 x một trong Mẫu sống Prism Wisp, Mirror Mantis, Shardbrood Hatchling	
 		Output	"1 x Lồng sinh vật sống Xa
 Thời gian: 8 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
@@ -297,49 +297,49 @@ Thời gian: qua đêm"
 		Output	"1 x Lõi dẫn hướng rời bãi vỡ
 Thời gian: qua đêm"	
 		Unlock	Chương 5. Nhãn: Sau MVP	
-57	Chế Bộ kích nguồn (Bộ kích nguồn)	Type	Xưởng	vat-pham.md mục 3
+57	Chế Bộ kích nguồn	Type	Xưởng	vat-pham.md mục 3
 		Ingredients	"6 x Mảnh vỏ Cradle
 3 x Dây cáp đứt
 1 x Bo mạch cháy"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Xưởng, công thức đầu tiên sau khi vớt Kỹ sư. Nhãn: MVP	
-58	Chế Súng lưới (Súng lưới)	Type	Xưởng	vat-pham.md mục 3
+58	Chế Súng lưới	Type	Xưởng	vat-pham.md mục 3
 		Ingredients	"2 x Thỏi sắt
 1 x Dây dẫn bện
 1 x Mạch phục hồi"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-59	Chế Súng gây mê (Súng gây mê)	Type	Xưởng	vat-pham.md mục 3
+59	Chế Súng gây mê	Type	Xưởng	vat-pham.md mục 3
 		Ingredients	"1 x Thỏi sắt
 1 x Mạch phục hồi
 2 x Khối nước tinh khiết"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Bản thiết kế Súng gây mê. Nhãn: Sau MVP	
-60	Chế Máy quét xung (Máy quét xung)	Type	Xưởng	vat-pham.md mục 3
+60	Chế Máy quét xung	Type	Xưởng	vat-pham.md mục 3
 		Ingredients	"1 x Mạch phục hồi
 1 x Dây dẫn bện
 2 x Tấm thép nén"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Bản thiết kế Máy quét xung. Nhãn: Sau MVP	
-61	Chế Dùi xung (Dùi xung)	Type	Xưởng	vat-pham.md mục 3
+61	Chế Dùi xung	Type	Xưởng	vat-pham.md mục 3
 		Ingredients	"2 x Thỏi sắt
 1 x Mạch phục hồi
 1 x Tấm thép nén"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-62	Chế Máy cắt thân tàu (Máy cắt thân tàu)	Type	Xưởng	vat-pham.md mục 3
+62	Chế Máy cắt thân tàu	Type	Xưởng	vat-pham.md mục 3
 		Ingredients	"1 x Tấm giáp Warden
 1 x Cuộn plasma
 1 x Mạch phục hồi"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Bản thiết kế Máy cắt thân tàu. Nhãn: Sau MVP	
-63	Chế Lồng mẫu (Lồng mẫu)	Type	Xưởng	vat-pham.md mục 3
+63	Chế Lồng mẫu	Type	Xưởng	vat-pham.md mục 3
 		Ingredients	"2 x Tấm thép nén
 1 x Thỏi sắt
 1 x Dây dẫn bện

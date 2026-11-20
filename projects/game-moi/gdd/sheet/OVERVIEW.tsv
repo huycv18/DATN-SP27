@@ -20,6 +20,7 @@ DEFINE GDD	"- Tài liệu: Game Design Document của game The Novent, phiên b�
 - Sản xuất và kiểm: TRACKING, Assets, AUDIO ASSETS LIST, Event Tracking, MVP Criteria Checklist, Balance Sheet, Playtest Report, Bugs Report
 - Quy ước: một con số chỉ ghi ở một nơi (giá ở Shop và Upgrade, tab khác trỏ về). Mỗi nội dung có nhãn MVP hoặc Sau MVP. Tên riêng tiếng Anh là tên tạm. Số cân bằng do sim in ra
 - Cột ID của mọi tab là số thứ tự. Nhắc tới thứ ở tab khác thì ghi bằng tên, không bằng mã
+- Đơn vị: GTĐ là giá trị đồ, thước đo chung để so giá trị vật phẩm (bán kiện được 10 Tally mỗi GTĐ). u là đơn vị độ dài, nhân vật cao 1 u. Khối là đơn vị sức chứa của túi
 - Quyền: Lead (Huy) duyệt luật lõi và phạm vi. Phòng Game Designer giữ từng tab theo hệ thống. Mọi thay đổi ghi ở TRACKING GDD bên dưới"
 
 GAME VISION & CONCEPT	"- Vision: tự tay kéo một trạm chết sống lại giữa bãi vỡ của tàu mẹ. Mỗi chuyến ra ngoài là một lần liều có tính toán, một mình hay cùng bạn

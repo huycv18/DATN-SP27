@@ -46,7 +46,7 @@ Tên ngắn khi cần trỏ tới luật khung:
 | Mã cũ | Ghi là |
 |---|---|
 | K1 | Oxy vừa là thời gian vừa là máu |
-| K2 | Ngất và bị kéo về, giữ 1 món |
+| K2 | Ngạt và bị kéo về, giữ 1 món |
 | K3 | Giới hạn túi đồ |
 | K4 | Kết thúc chuyến bằng cửa khí hoặc Recall Beacon |
 | K5 | Map tổng 3 dải, sinh lại mỗi chuyến |
@@ -71,7 +71,7 @@ Tên ngắn khi cần trỏ tới luật khung:
 | K24 | Sau cảnh kết |
 | K25 | Qua chương |
 | K26 | Trần hồi Oxy 25% mỗi chuyến |
-| K27 | Đang ngất không trao đồ |
+| K27 | Đang ngạt không trao đồ |
 | C1 đến C10 | "luật co-op" kèm nội dung: dùng chung và riêng, nâng cấp một lần cả nhóm, xác nhận ra chuyến, không tạm dừng khi co-op, cân bằng theo số người, mất kết nối... |
 | P1 | pillar Rủi ro và phần thưởng |
 | P2 | pillar Quản lý và tối ưu |

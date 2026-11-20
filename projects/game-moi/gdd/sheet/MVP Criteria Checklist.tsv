@@ -60,7 +60,7 @@ Tài nguyên riêng mỗi dải	Dữ liệu	Mỗi dải có ít nhất 2 tài ng
 Biên lợi công thức	Cân bằng	Hệ số lợi nằm trong khoảng cho phép. Đạt trừ công thức Lồng cỡ M (0,24, loại hàng sống không có kiểm)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 Mẫu sống trên hạ	Cân bằng	Mẫu sống chia hạ từ 1,5 đến 2,0 cho cỡ S và M. Sinh thiết cỡ L đứng ngoài luật này	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 Không ghi giá Tally trong tab vật phẩm	Quy tắc	Chữ "Tally" chỉ xuất hiện ở chỗ phần kinh tế giữ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
-Đủ số lượng nhãn MVP	Phạm vi	6 tài nguyên, 5 COM, 9 kiện (Kiện nước tinh khiết là kiện chế duy nhất), 6 nâng cấp, 2 vật tiêu hao, 5 dụng cụ cộng chìa, 4 loài với 3 loài cỡ S bắt sống	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Đủ số lượng nhãn MVP	Phạm vi	6 tài nguyên, 5 linh kiện chế, 9 kiện (Kiện nước tinh khiết là kiện chế duy nhất), 6 nâng cấp, 2 vật tiêu hao, 5 dụng cụ cộng chìa, 4 loài với 3 loài cỡ S bắt sống	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 Không còn dấu chờ	Quy tắc	Dấu chờ chỉ còn ở phần kinh tế giữ, không còn dấu chờ nào ở món đã có giá	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 Sim vật phẩm	Cân bằng	Sim in ra: thời gian làm đầy túi, thu nhập một ngày của chuỗi thô và chuỗi tinh, mức trội của chiến lược nhặt, giá trị lồng ròng mỗi loài bằng 1,5 đến 2,0 lần giá trị hạ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 Giá trị đồ mỗi chuyến	Cân bằng	Giá trị đồ mỗi chuyến đo ở sim chuyến (sim-chuyen.md)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
@@ -108,7 +108,7 @@ HUD ở cỡ 200%	Layout	Ở 1280x720, 5 phần tử HUD đầu nằm trong lề
 Đổi phím	Input	Mọi hành động trong bảng phím đổi được, Esc cố định	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
 Esc và Start	Input	Esc đóng màn con trước rồi mới mở menu. Start luôn mở menu. Ở HUD bay không có màn con thì Esc không làm gì	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
 Gợi ý không chặn	FTUE	Không hộp thoại chặn khi Driftlife trong 10 u, hazard báo trước, hoặc Oxy dưới 25%. Dưới 25% chỉ cho phép 3 gợi ý: về khi đủ, thoát cố định, ngạt không phải thua	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
-FTUE kích được	FTUE	Bot của gd-tech: mỗi bước tutorial (35 bước) được kích ít nhất 1 lần	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+FTUE kích được	FTUE	Bot tự chơi: mỗi bước tutorial (36 bước) được kích ít nhất 1 lần	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
 Âm lượng và chú thích âm	Accessibility	4 thanh âm lượng tách riêng, chú thích âm bật tắt được trong màn Âm thanh	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
 Thoát giữa chuyến (UX)	Dữ liệu	Luôn qua hộp xác nhận nêu rõ hệ quả. Màn lỗi lưu có lối ra	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
 Ca cảng không có chữ Thua	Tone	Không chuỗi nào chứa "Thất bại" hay "Thua"	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md

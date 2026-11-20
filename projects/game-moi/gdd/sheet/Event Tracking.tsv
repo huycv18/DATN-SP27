@@ -54,7 +54,7 @@ No	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 53	Trip	hazard_warn	Hazard bắt đầu báo trước gần người chơi	hazard_id\nwarn_seconds	Báo trước đo trên build từ 1 giây (map.md tiêu chí)	string\nfloat
 54	Combat	creature_wake	Driftlife tỉnh khỏi Choáng hoặc Ngủ	creature_id\nkind	Driftlife tỉnh sau bao lâu	string\nstring
 55	Combat	attack_ticket	Vé tấn công cấp hoặc trả	creature_id\nplayer_id\nstate	Áp lực mỗi người	string\nstring\nstring
-56	Station	creature_born	Con non sinh ở khoang nuôi	species_id	Nhịp nuôi	string
+56	Station	creature_born	Con non sinh ở khoang sinh quyển	species_id	Nhịp nuôi	string
 57	Story	clue_picked	Nhặt vật manh mối	clue_id\nitem_id	Manh mối có bị bỏ sót không	string\nstring
 58	Story	quest_item_dropped	Vật nhiệm vụ rơi khi bị kéo về	item_id\nbranch_id	Vật nhiệm vụ bị rơi khi bị kéo về	string\nstring
 59	Story	survivor_feature_open	Người vớt mở tính năng	survivor_id\nroom_id	Nhịp mở tính năng của trạm	string\nstring

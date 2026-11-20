@@ -1,57 +1,57 @@
 Issue ID	Task	Sub Task	Short Description	Ref
 1	Loose Bolt (Tàu gom phế liệu)	Type	- Ai: Tikko, thương nhân người Oru, khách quen đầu tiên\n- Nhãn: MVP	tram-va-cang.md mục 2.4
 		Characteristic	Hay hỏi Kiện đồ Trái Đất. Tikko mê đồ Trái Đất	
-		Attribute	- Lưu bến: Dài (90 giây)\n- Trọng số túi trộn: 3	
+		Attribute	- Lưu bến: Dài (90 giây)\n- Tần suất ghé: 3 (số càng lớn tàu càng hay có trong lịch ngày)	
 		Order	- 1 đến 2 dòng từ nhóm Kiện phế liệu, Kiện khoáng, Kiện đồ Trái Đất, cộng Lồng sinh vật sống Gần và Kiện nước tinh khiết\n- Kiện nước tinh khiết chỉ có từ khi xưởng Hoạt động, tối đa 1 dòng mỗi ca\n- Từ Hạng 3 thêm Kiện mô sinh học và Kiện đặc sản Gần\n- Từ ngày có Súng lưới, mỗi lịch có ít nhất 1 dòng Lồng sinh vật sống Gần ở một tàu Loose Bolt	
 		Unlock	Chương 1, từ ngày sau khi sửa xong khoang liên lạc và cảng	
 2	Tàu vội	Type	- Ai: Dân Oru vãng lai, không tên riêng\n- Nhãn: MVP	tram-va-cang.md mục 2.4
 		Characteristic	Thưởng nhanh gấp đôi	
-		Attribute	- Lưu bến: Ngắn (45 giây)\n- Trọng số túi trộn: 1	
+		Attribute	- Lưu bến: Ngắn (45 giây)\n- Tần suất ghé: 1	
 		Order	1 dòng từ nhóm Kiện phế liệu, Kiện khoáng, Kiện đồ Trái Đất, hoặc Kiện băng	
 		Unlock	Chương 1, Hạng 2	
 3	Lamplighter (Xuồng tiếp tế Lantern)	Type	- Ai: Bram Kowalski, xuồng tiếp tế của Station Lantern\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
 		Characteristic	- Có trong lịch mỗi ngày tới khi giao đủ một đơn. Đơn đủ đầu tiên đưa Amara sang Ember (mốc Chuyến xuồng đặc biệt)\n- Dòng tùy chọn: 1 loại kiện rút từ nhóm của tàu, kiện gốc 1\n- Dòng tùy chọn không tính vào đơn đủ và tổng giá đơn. Kiện giao vào dòng này trả gấp rưỡi	
-		Attribute	- Lưu bến: Vừa (70 giây)\n- Trọng số túi trộn: 2	
+		Attribute	- Lưu bến: Vừa (70 giây)\n- Tần suất ghé: 2	
 		Order	2 dòng từ nhóm Kiện băng, Kiện sản phẩm nuôi, Kiện vật tư. Từ Hạng 4 thêm 1 dòng tùy chọn	
 		Unlock	Chương 2, từ ngày sau mốc Phá vây	
 4	Vellune (Tàu trọng nghi thức)	Type	- Ai: Ilsume, thương nhân người Sennari. Thật ra là Sevra Ilvane giả danh\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
 		Characteristic	15 giây đầu là nghi lễ chào, tàu chưa nhận kiện. Đồng hồ lưu bến vẫn chạy	
-		Attribute	- Lưu bến: Dài (90 giây)\n- Trọng số túi trộn: 2	
+		Attribute	- Lưu bến: Dài (90 giây)\n- Tần suất ghé: 2	
 		Order	2 dòng từ nhóm Kiện linh kiện, Kiện tinh dải Giữa	
 		Unlock	Chương 2, mốc Không nổ từ trong ra. Sau mốc Người thừa kế thì không ghé nữa (Sevra ở ẩn trên Ember)	
 5	Glasswing (Tàu sưu tầm)	Type	- Ai: Vaeth, thương nhân người Aelith\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
 		Characteristic	Chỉ hỏi Driftlife sống và đặc sản (loại kiện đắt). Chê kiện mẫu đã hạ qua lời thoại	
-		Attribute	- Lưu bến: Vừa (70 giây)\n- Trọng số túi trộn: 2	
+		Attribute	- Lưu bến: Vừa (70 giây)\n- Tần suất ghé: 2	
 		Order	1 đến 2 dòng từ nhóm Lồng sinh vật sống, Kiện đặc sản Driftlife	
 		Unlock	Chương 2, mốc Mẫu sống cho Amara	
 6	Iron Keel (Tàu không nói giá)	Type	- Ai: Dromm, thương nhân người Brakk\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
 		Characteristic	- Một dòng chỉ hiện gợi ý (ví dụ "thứ lạnh") thay vì tên kiện. Giao đúng kiện thì dòng lộ tên. Bảng tàu ghi rõ đơn có dòng ẩn\n- Có trong lịch mỗi ngày tới khi xong một ca có Iron Keel cập bến (mốc Trưởng cảng về bến)	
-		Attribute	- Lưu bến: Vừa (70 giây)\n- Trọng số túi trộn: 2, từ chương 4 là 3	
+		Attribute	- Lưu bến: Vừa (70 giây)\n- Tần suất ghé: 2, từ chương 4 là 3	
 		Order	2 dòng từ nhóm Kiện khoáng, Kiện tinh dải Giữa, Kiện tinh dải Xa	
 		Unlock	Chương 3, từ ngày sau mốc Bến của The Veyl	
 7	Stayfast (Tàu The Remainers)	Type	- Ai: Elias Vance và The Remainers\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
 		Characteristic	Hỏi thêm về vị trí xác trạm qua lời thoại, không đổi luật	
-		Attribute	- Lưu bến: Vừa (70 giây)\n- Trọng số túi trộn: 2	
+		Attribute	- Lưu bến: Vừa (70 giây)\n- Tần suất ghé: 2	
 		Order	2 dòng từ nhóm Lồng sinh vật sống, Kiện vật tư, Kiện đặc sản Driftlife, Kiện linh kiện đặc biệt	
 		Unlock	Chương 3, mốc Những người ở lại	
 8	Tàu lạ	Type	- Ai: Maro, gián điệp của Daskel (The Wardens) cải trang, săn Sevra\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
-		Characteristic	- Không vào túi trộn. Cập bến đúng 2 lần, mỗi ngày tối đa 1 lần\n- Lần 1 vào lịch từ ngày sau khi bến 2 Hoạt động. Lần cập bến này là mốc Tàu lạ\n- Lần 2 vào lịch từ ngày sau mốc Sự cố đầu tiên. Maro hỏi mua bản sao nhật ký trạm, dò hỏi về các thương hội Sennari ghé Ember\n- Giao hay không giao đều không đổi truyện. Bán bản sao không mất vật gốc, không mất manh mối\n- Sau mốc Người thừa kế thì không ghé nữa	
-		Attribute	- Lưu bến: Dài (90 giây)\n- Trọng số túi trộn: Không	
+		Characteristic	- Không ghé theo lịch ngẫu nhiên. Cập bến đúng 2 lần, mỗi ngày tối đa 1 lần\n- Lần 1 vào lịch từ ngày sau khi bến 2 Hoạt động. Lần cập bến này là mốc Tàu lạ\n- Lần 2 vào lịch từ ngày sau mốc Sự cố đầu tiên. Maro hỏi mua bản sao nhật ký trạm, dò hỏi về các thương hội Sennari ghé Ember\n- Giao hay không giao đều không đổi truyện. Bán bản sao không mất vật gốc, không mất manh mối\n- Sau mốc Người thừa kế thì không ghé nữa	
+		Attribute	- Lưu bến: Dài (90 giây)\n- Tần suất ghé: Không	
 		Order	- Lần 1: 1 đến 2 dòng từ mọi nhóm đã mở, trừ Kiện tin mật\n- Lần 2: 1 dòng Bản sao dữ liệu	
 		Unlock	Chương 3, từ ngày sau khi bến 2 Hoạt động	
 9	Tàu đơn gấp	Type	- Ai: Người đưa hàng gấp của thương hội Sennari, không tên riêng\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
 		Characteristic	Chỉ hỏi kiện tinh (loại kiện đắt), không có thưởng nhanh	
-		Attribute	- Lưu bến: Ngắn (45 giây)\n- Trọng số túi trộn: 1, từ chương 4 là 2	
+		Attribute	- Lưu bến: Ngắn (45 giây)\n- Tần suất ghé: 1, từ chương 4 là 2	
 		Order	2 đến 3 dòng từ nhóm Kiện linh kiện, Kiện tinh dải Giữa, Kiện tinh dải Xa, Kiện linh kiện đặc biệt	
 		Unlock	Hạng 6	
 10	Backchannel (Tàu buôn tin)	Type	- Ai: Nhem, thương nhân người Kesh, giữ The Lattice\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
 		Characteristic	Mua bản sao dữ liệu giá vừa. Lời thoại kể tin trên The Lattice, gợi manh mối hành lang an toàn	
-		Attribute	- Lưu bến: Vừa (70 giây)\n- Trọng số túi trộn: 1	
+		Attribute	- Lưu bến: Vừa (70 giây)\n- Tần suất ghé: 1	
 		Order	2 dòng: 1 dòng Bản sao dữ liệu, 1 dòng Kiện tinh dải Giữa hoặc Kiện tinh dải Xa	
 		Unlock	Chương 3, từ ngày sau mốc Bến của The Veyl	
 11	Pilot Light (Tàu của mạng lưới)	Type	- Ai: The Kindling, mạng lưới cách mạng\n- Nhãn: Sau MVP	tram-va-cang.md mục 2.4
 		Characteristic	- Tàu truyện, không vào túi trộn\n- Có trong lịch mỗi ngày từ ngày sau mốc Người thừa kế tới khi xong mốc Lời nói dối đi đường nào. Luôn có trong lịch ngày đầu chương 4 và ngày đầu chương 5\n- Giao đủ dòng Kiện tin mật là một đơn tin mật tới nơi\n- Mốc Đường dây thứ nhất cần ít nhất 1 đơn. Mốc Lời nói dối đi đường nào cần tổng 2 đơn, tính từ chương 4\n- Kiện tin mật không cho thêm Tally so với kiện vỏ bọc	
-		Attribute	- Lưu bến: Vừa (70 giây)\n- Trọng số túi trộn: Không	
+		Attribute	- Lưu bến: Vừa (70 giây)\n- Tần suất ghé: Không	
 		Order	2 dòng: 1 dòng Kiện tin mật luôn đúng 1 kiện ở mọi số người, 1 dòng Kiện tinh dải Xa kiện gốc 1	
 		Unlock	Từ ngày sau mốc Người thừa kế (mốc đóng chương 3)	
 12	Nhóm hàng cảng	Luật	- Nhóm hàng chỉ dùng khi sinh lịch tàu. Mỗi nhóm gồm một hoặc nhiều loại kiện\n- Mỗi dòng đơn ghi đúng một loại kiện. Giá từng kiện ở tab Shop, lồng sống giá theo loài bên trong	tram-va-cang.md mục Danh mục
@@ -72,7 +72,7 @@ Issue ID	Task	Sub Task	Short Description	Ref
 		Kiện tin mật	- Gồm: Kiện tin mật\n- Làm từ: 1 Gói tin mật và 1 kiện vỏ bọc dải Xa. Khoang liên lạc nhận Gói tin mật từ mạng lưới, tối đa 1 gói mỗi ngày\n- Trước khi bốc: Đóng kiện\n- Mở: Chương 4, Sau MVP. Chỉ tàu Pilot Light hỏi	
 13	Luật ca cảng (tóm tắt)	Mở ca	- Ca cảng chỉ có khi khoang liên lạc và bến 1 đều Hoạt động. Trước đó pha ca cảng tự bỏ qua\n- Một người chọn Mở ca ở bảng tàu của khoang liên lạc. Chọn Bỏ ca thì không phạt, tàu hôm đó không tới\n- Chỉ mở ca được khi không còn ai ở ngoài chuyến\n- Mỗi ngày có đúng một ca. Ca đã xong hoặc đã bỏ thì không mở lại trong ngày\n- Mở ca hoặc Bỏ ca thì cửa khí khóa tới ngày mới\n- Từ 2 người online: Bỏ ca, hoặc Mở ca khi nhóm chưa đi đủ 2 chuyến, cần mọi người xác nhận. Không trả lời trong 30 giây tính là đồng ý	tram-va-cang.md mục 2
 		Ca đầu tiên	Ca cảng đầu tiên có lịch cố định: 1 tàu Loose Bolt, lưu bến dài, tới ngay đầu ca, 1 dòng Kiện phế liệu kiện gốc 2. Ca này tính Tally và điểm cảng như mọi ca	
-		Lịch tàu	- Lịch tàu sinh lúc bắt đầu ngày, hiện ở bảng tàu từ pha chuẩn bị. Mỗi tàu có loại tàu, giờ đến, danh sách hàng, thời gian lưu bến\n- Loại tàu, giờ đến và loại kiện không đổi trong ngày\n- Số kiện mỗi dòng bằng kiện gốc nhân quy mô đơn theo số người online, làm tròn lên. Bảng tàu tính lại khi số người đổi, chốt lúc Mở ca\n- Chương 1: 4 tàu, giãn cách 42 giây, kiện gốc 1 đến 3 mỗi dòng. Quy mô đơn 1, 1,6, 2,2, 2,8 lần cho 1 đến 4 người\n- Chỗ đầu lịch dành cho tàu truyện đang chờ, tối đa 2 chỗ mỗi ca\n- Chỗ còn lại rút từ túi trộn: mỗi loại tàu đã mở góp số thẻ bằng trọng số, rút không hoàn lại, hết túi thì trộn túi mới\n- Dòng kiện phải chế ở xưởng và dòng lồng sống luôn có kiện gốc 1\n- Tàu truyện (Lamplighter, Iron Keel, Tàu lạ, Pilot Light) có trong lịch mỗi ngày tới khi điều kiện truyện của nó xong\n- Giờ đến tàu thứ i (đếm từ 0) bằng i nhân giãn cách, cộng lệch ngẫu nhiên 0 đến 10 giây. Tàu phải rời trước khi hết thời lượng ca 240 giây	
+		Lịch tàu	- Lịch tàu sinh lúc bắt đầu ngày, hiện ở bảng tàu từ pha chuẩn bị. Mỗi tàu có loại tàu, giờ đến, danh sách hàng, thời gian lưu bến\n- Loại tàu, giờ đến và loại kiện không đổi trong ngày\n- Số kiện mỗi dòng bằng kiện gốc (số kiện khi chơi một mình) nhân quy mô đơn (hệ số theo số người) online, làm tròn lên. Bảng tàu tính lại khi số người đổi, chốt lúc Mở ca\n- Chương 1: 4 tàu, giãn cách 42 giây, kiện gốc 1 đến 3 mỗi dòng. Quy mô đơn 1, 1,6, 2,2, 2,8 lần cho 1 đến 4 người\n- Chỗ đầu lịch dành cho tàu truyện đang chờ, tối đa 2 chỗ mỗi ca\n- Chỗ còn lại rút từ túi trộn: mỗi loại tàu đã mở góp số thẻ bằng trọng số, rút không hoàn lại, hết túi thì trộn túi mới\n- Dòng kiện phải chế ở xưởng và dòng lồng sống luôn có kiện gốc 1\n- Tàu truyện (Lamplighter, Iron Keel, Tàu lạ, Pilot Light) có trong lịch mỗi ngày tới khi điều kiện truyện của nó xong\n- Giờ đến tàu thứ i (đếm từ 0) bằng i nhân giãn cách, cộng lệch ngẫu nhiên 0 đến 10 giây. Tàu phải rời trước khi hết thời lượng ca 240 giây	
 		Bến và tàu	- Mỗi bến chứa một tàu. Tới giờ mà bến trống thì tàu cập ngay\n- Bến bận thì tàu chờ ngoài ở mép màn hình, kèm đồng hồ chờ 30 giây. Hết giờ chờ thì tàu bỏ đi, đơn tính là trượt\n- Tàu cập bến thì đồng hồ lưu bến chạy. Hết giờ thì tàu rời	
 		Dòng đơn	- Danh sách hàng có 1 đến 4 dòng. Mỗi dòng là một loại kiện và số kiện. Một đơn không có hai dòng cùng loại kiện\n- Chương 1 chỉ có kiện thô (phế liệu, cáp, quặng, băng, mô sinh học, đồ Trái Đất), Kiện đặc sản Gần và Lồng sinh vật sống Gần\n- Chương 1 có tối đa 1 dòng kiện tinh mỗi ca, chỉ là Kiện nước tinh khiết, kiện gốc 1, trong đơn Loose Bolt từ khi xưởng Hoạt động	
 		Đóng kiện	- Người chơi lấy hàng ở kệ kho, mỗi lần đúng số đơn vị của một kiện, bỏ vào máy đóng kiện\n- Máy chạy 5 đến 8 giây theo công thức rồi nhả một kiện. Một máy đóng một kiện một lúc\n- Đưa Driftlife sống vào lồng giao cũng làm ở máy đóng kiện\n- Kiện cần chế thêm (Kiện nước tinh khiết, Kiện linh kiện, Kiện vật tư, kiện tinh dải Giữa và dải Xa) phải chế ở xưởng trước rồi mới đóng kiện\n- Xưởng chạy một mẻ một lúc, giữ thêm mẻ chờ trong hàng đợi. Mẻ chạy theo thời gian thực, kể cả khi người chơi ra chuyến. Mẻ còn lúc ngủ thì xong khi sang ngày\n- Máy nhả kiện lên kệ kiện cạnh máy. Kệ đầy thì máy giữ kiện, chờ kệ có chỗ hoặc người chơi lấy tay\n- Kệ kiện chứa 6 kiện ở cấp 1, 12 kiện ở cấp 2	

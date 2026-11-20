@@ -25,7 +25,7 @@ Issue ID	Task	Sub Task	Short Description	Ref	Ref 2
 		Khoang	Khoang hỏng phải sửa bằng vật liệu mang về. Mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng	tram-va-cang.md
 		Người vớt mở tính năng	Mỗi người vớt mở một tính năng qua quest nhỏ hoặc mốc chương: Kỹ sư mở xưởng, Thông dịch viên mở khoang liên lạc, ca cảng và Shop, Hoa tiêu mở dải Xa và Skiff, Nhà sinh học mở nghiên cứu và nuôi, Trưởng cảng mở bến và tiện ích cảng	tram-va-cang.md
 		Ca cảng	Nửa chơi tay thứ hai. Mỗi tàu có danh sách hàng và giờ rời bến. Người chơi chạy trong trạm lấy hàng, chế thêm, đóng kiện, bốc lên tàu. Giao đúng và kịp thì nhận Tally. Tàu chỉ mua, không bán	tram-va-cang.md
-		Sự cố trạm	Từ chương 3, ca cảng có sự cố chen ngang: rò khí, chập điện, Driftlife sổng khoang nuôi. Trước chương 3 không có	tram-va-cang.md
+		Sự cố trạm	Từ chương 3, ca cảng có sự cố chen ngang: rò khí, chập điện, Driftlife sổng khoang sinh quyển. Trước chương 3 không có	tram-va-cang.md
 		Hạng cảng	Một thang Hạng cảng duy nhất, tăng theo kết quả các ca. Hạng cao mở thêm loại tàu, đơn giá trị cao, hàng ở Shop. Không có danh tiếng riêng từng phe	tram-va-cang.md
 		Nuôi Driftlife	Khoang sinh quyển là nguồn hàng đều, mở ở chương 2. Nuôi là lựa chọn có lợi, không bắt buộc	tram-va-cang.md
 		Không hệ đói	Không đói, không tốn chi phí nuôi người trong trạm, không nấu ăn. Trạm không xấu đi khi người chơi nghỉ	tram-va-cang.md
