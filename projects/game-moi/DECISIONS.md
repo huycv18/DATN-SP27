@@ -241,3 +241,7 @@ Lead: "chuyển GDD về 1 bản không tách GDD con nữa".
 - Tab GDD CON ở GDD chính ẩn, không xóa. 3 file con trên Drive để nguyên, không cập nhật nữa, không chuyển vào thùng rác khi Lead chưa bảo.
 - Bản đọc của 3 module (`gdd/sheet/gdd-con/`, `tools/dung-gdd-con.py`, `gdd/sheet/gdd-con/KHUON.md`) giữ trong repo để tra, không đưa vào GDD chính. Nguồn luật vẫn là GDD hệ thống markdown.
 - Xóa hẳn cùng ngày (Lead: "Vậy tôi xóa bỏ các GDD con nhé"): 3 file con chuyển vào thùng rác Drive, xóa tab GDD CON ở GDD chính, xóa khỏi repo `gdd/sheet/gdd-con/`, `gdd/sheet/GDD CON.tsv` và `.html`, `tools/dung-gdd-con.py`. Bản cũ còn trong lịch sử git và thùng rác Drive 30 ngày.
+
+## 2026-11-20 - Định dạng GDD chính
+
+Lead: "sửa formats cho GDD, căn chỉnh, kẻ viền cho đẹp". 22 tab (trừ OVERVIEW) theo khuôn indie mục 2: thân chữ Lexend 10, wrap, căn giữa dọc, viền ngoài #351C75 đậm vừa, viền trong #B4A7D6, cao dòng tự co, ẩn lưới. Màu tab: ECONOMIC #351C75, nhóm D #8E7CC3. Tab thêm hàng thì chạy lại `tools/dinh-dang-sheet.mjs`.
