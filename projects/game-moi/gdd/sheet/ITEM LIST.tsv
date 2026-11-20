@@ -1,4 +1,4 @@
-Item ID	Item name	Type	Nguồn nhận	Nguồn tiêu	Note
+STT	Item name	Type	Nguồn nhận	Nguồn tiêu	Note
 1	Mảnh vỏ Cradle	Phế liệu	Mảnh vỡ trôi, Hòm kỹ thuật vỡ, Tấm vỏ lớn, Hòm kỹ thuật Seed (nhánh)	Ép tấm thép, Đóng kiện phế liệu, Chế Bộ kích nguồn, Sửa khoang	Hull Shard. Thường, Khối 1, Gần, MVP
 2	Dây cáp đứt	Phế liệu	Mảnh vỡ trôi, Hòm kỹ thuật vỡ, Hòm kỹ thuật Seed (nhánh)	Bện dây dẫn, Phục hồi mạch, Đóng kiện cáp, Chế Bộ kích nguồn, nâng cấp Túi đồ bậc 1, Sửa khoang	Frayed Cable. Thường, Khối 1, Gần, MVP
 3	Quặng sắt thiên thạch	Khoáng	Mạch quặng sắt, Kho hàng Seed (nhánh)	Luyện thỏi sắt, Đóng kiện quặng, Sửa khoang	Meteoric Iron Ore. Thường, Khối 2, Gần, MVP

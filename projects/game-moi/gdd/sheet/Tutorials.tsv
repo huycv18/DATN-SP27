@@ -1,4 +1,4 @@
-ID	Design Intent	Trigger (When)	Level Design Setup	Interaction	Ref 1
+STT	Design Intent	Trigger (When)	Level Design Setup	Interaction	Ref 1
 1	Biết mình điều khiển được và trạm đang hỏng	Sau cảnh Tỉnh dậy, hoặc sau Cảnh tỉnh dậy với người vào sau	Trạm tối, chỉ buồng ngủ đông, cửa khí, kho dùng được. Điểm sáng ở khoang kho	Đi A D, leo thang W S tới điểm sáng. Tắt khi: tới điểm sáng. Chữ gợi ý: {move} đi trái phải, {climb} leo thang.	ux-ui.md mục 2.10, nguoi-choi.md mục 2.8
 2	Luôn biết việc kế tiếp	Đã tới điểm sáng ở bước 1	HUD hiện mục tiêu "Sửa Khoang neo"	Mở Sổ tay một lần (tùy chọn). Tắt khi: sau 8 giây. Chữ gợi ý: Mục tiêu ở góc phải, {notebook} Sổ tay.	ux-ui.md mục 2.10, cot-truyen.md luật 10
 3	Ra ngoài là quyết định có xác nhận	Đứng trong 1,0 u của cửa khí	Hai dụng cụ khởi điểm đã trong đai	Bấm E ở cửa khí, chọn dụng cụ, xác nhận. Tắt khi: xác nhận xong. Chữ gợi ý: {interact} ở cửa khí để ra ngoài.	ux-ui.md mục 2.10, 00-khung-game.md

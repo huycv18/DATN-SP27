@@ -256,3 +256,12 @@ Lead: "Soát nội dung của GDD, có nhiều lỗi không khớp như Core Pil
 - Mã dữ liệu giữ ở GDD hệ thống markdown và JSON cho tool, Unity. Sheet không mang mã.
 - Cổng máy `tools/kiem-de-doc.mjs` chặn mã, ID không phải số, gạch dài, chấm phẩy, emoji, đường dẫn dài, dòng quá 300 ký tự. Chạy trước mỗi lần dán Sheet.
 - TSV của Sheet từ nay sửa tay. Xóa 5 script sinh TSV cũ (`sinh-customer.py`, `sinh-enemy.py`, `sinh-game-story.mjs`, `doi-chieu-game-story.mjs`, `sim/sinh_zone.py`) vì chạy lại sẽ ghi đè bản đọc. `xuat-event-tracking.mjs` giữ cho selftest, không dùng ghi tab.
+
+## 2026-11-20 - Cột STT thay cột ID (đợt 8, vòng 3)
+
+Lead: "GDD bị mất cột số thứ tự rồi ý tôi là Thay cột ID bằng cột thứ tự mà".
+
+- Header cột ID ở 18 tab đổi thành "STT" (Issue ID, ID, Item ID, No, Task của TRACKING, Mã của GAME STORY). ECONOMIC "Day ID" thành "Ngày", PROCESSING "Day ID" thành "Chương" vì cột đó ghi ngày và chương, không phải số thứ tự.
+- MVP Criteria Checklist trước đây để mã trong ô tên, nay có cột STT riêng ở đầu (1 đến 130).
+- Lead sửa tay OVERVIEW trên Sheet, đã kéo về repo: Age Rating là E+10, bỏ dòng "Quyền" ở Define GDD.
+

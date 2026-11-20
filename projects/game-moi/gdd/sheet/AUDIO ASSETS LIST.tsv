@@ -1,4 +1,4 @@
-Issue ID	Name	Link	Note	Web Ref
+STT	Name	Link	Note	Web Ref
 1	BGM_Station_Day		Nhạc nền trong trạm, ấm hơn so với bên ngoài. MVP. Hài chỉ ở trong trạm và ca cảng. Nguồn: cot-truyen.md mục 7b	
 2	BGM_Port_Shift		Nhạc ca cảng, nhịp nhanh vừa phải, không đếm ngược hét lên. Tắt giữa chừng ở mốc Maro lộ mặt. MVP. Nguồn: tram-va-cang.md mục 7b, cot-truyen.md mục 7	
 3	BGM_Wake_Near		Nhạc nền dải Gần (Ember Anchorage). Đổi tầng nhạc khi qua ranh dải. MVP. Nguồn: map.md mục 7	

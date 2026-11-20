@@ -1,4 +1,4 @@
-ID	Issue	Ref 1	Ref 2	Note
+STT	Issue	Ref 1	Ref 2	Note
 1	Menu chính	ux-ui.md mục 2.4 và 2.5		Màn mở đầu. Làm: chơi tiếp, tạo thế giới mới, tham gia bạn, cài đặt, thoát game. Nút chính: Chơi tiếp thế giới gần nhất. Vào từ: mở game. Ra tới: màn Tạo thế giới, màn Tham gia thế giới, màn Cài đặt. Nhãn: MVP.
 2	Tạo thế giới	ux-ui.md mục 2.4 và 2.5		Đặt tên và chọn 1 hoặc 2 người tỉnh dậy. Ô 3 và 4 khóa, ghi "Sắp có". Bạn vào sau vẫn được. Nút chính: Tạo. Thoát: Esc về Menu chính, chưa tạo gì. Vào từ: Menu chính. Ra tới: màn Sảnh co-op hoặc Cảnh tỉnh dậy. Nhãn: MVP.
 3	Sảnh co-op	ux-ui.md mục 2.4 và 2.5		Sảnh chờ trước khi vào trạm. Xem ai đã vào, ai sẵn sàng, mời thêm. Nút chính: Sẵn sàng. Thoát: rời sảnh, thế giới vẫn còn. Vào từ: màn Tạo thế giới khi từ 2 người, hoặc nút Mời bạn ở màn Menu. Ra tới: Cảnh tỉnh dậy. Nhãn: MVP (2 người).

@@ -1,4 +1,4 @@
-Issue ID	Task	Sub Task	Short Description	Ref	Ref 2
+STT	Task	Sub Task	Short Description	Ref	Ref 2
 1	Vòng lớn	Vai trò	Khung vòng chơi của cả game. Ra ngoài thu thập, về trạm biến đồ nhặt được thành thứ dùng được, bán ở cảng lấy Tally, nâng cấp để đi xa hơn và mở thêm truyện	00-khung-game.md mục 4
 		Các bước	Ra ngoài thu thập -> Mang về kho -> Sửa trạm, chế đồ, nuôi Driftlife -> Đóng kiện bán ở ca cảng lấy Tally -> Nâng cấp bộ đồ và trạm, mua ở Shop thứ trạm không tự làm được -> Đi xa hơn, lâu hơn -> Mở thêm truyện	00-khung-game.md mục 4
 		Phạm vi MVP	Trọn chương 1: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến, 3 đến 4 loài Driftlife, bắt sống loài nhỏ bằng lưới, 1 boss nhỏ, co-op 2 người. GDD viết cho cả game, mỗi mục có nhãn MVP hoặc Sau MVP	so-hien-hanh.md

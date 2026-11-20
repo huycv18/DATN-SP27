@@ -1,4 +1,4 @@
-No	Group	Event Name	When To Send	Event Params Key	Description	Value Type
+STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 1	Session	session_start	Mở thế giới	world_id\nis_host\ninput_device	Đếm phiên, thiết bị	string\nbool\nstring
 2	Session	session_end	Thoát hoặc rớt	reason (quit, host_lost, crash)\nminutes	Phiên dài bao lâu, rớt mạng bao nhiêu	string\nfloat
 3	Session	player_join	Người vào giữa chừng	player_id\nphase	Vào giữa chừng có chờ lâu không	string\nstring
