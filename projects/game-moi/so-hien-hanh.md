@@ -3,7 +3,7 @@
 Một nơi duy nhất cho số và phạm vi đã chốt. Các vai đọc ở đây, không lấy từ tin nhắn. Cột Nguồn trỏ mục DECISIONS, dòng log GDM hoặc file sim.
 Nhãn: (L) Lead chốt bằng lời. (G) GDM chốt theo ủy quyền của Lead 2026-11-20, có dòng trong `log-gdm-tu-quyet.md`, Lead đổi được. (S) số do sim in ra, đổi số thì chạy lại sim, không sửa tay.
 
-Cập nhật lần cuối: 2026-11-20, sau QA GD-031 vòng cuối và đợt 4.
+Cập nhật lần cuối: 2026-11-20, sau đợt 9 (ca cảng khung Dave, QA GD-056).
 
 ## Ràng buộc nền
 
@@ -54,14 +54,14 @@ Chạy lại: `node projects/game-moi/tools/selftest.mjs`, các lệnh sim trong
 
 | Chỉ số | Đo được | Mục tiêu khung mục 9 | Đạt |
 |---|---|---|---|
-| Chương 1, một người, kịch bản trung bình | 1,82 giờ | 1,5 đến 2 giờ | Có |
-| Cả game, một người, kịch bản trung bình | 13,4 giờ | 12 đến 15 giờ | Có |
+| Chương 1, một người, kịch bản trung bình | 1,89 giờ | 1,5 đến 2 giờ | Có |
+| Cả game, một người, kịch bản trung bình | 13,9 giờ | 12 đến 15 giờ | Có |
 | Nhóm 4 hết game so với một mình | 73% thời gian | 60 đến 75% | Có |
 | Mỗi người nhóm 4 nhặt so với một mình | Từ 61% | Từ 60% | Có |
-| Thưởng trong tổng thu Tally | 20% | 15 đến 25% | Có |
+| Tip trong Tally của ca cảng (gồm bơm khí) | 26% (tệ 21%, tốt 30%) | 20 đến 30% | Có |
 | Sống so với hạ, cỡ S, sau khi trừ vật tiêu hao | 1,28 đến 1,90 lần | 1,2 đến 2 lần | Có |
 | Đơn giao đủ ở ca cảng chương 1, 1 đến 4 người (luật cũ, hết hiệu lực 2026-11-20) | 92, 93, 93, 80% | 70 đến 95% | Bỏ, đo lại theo luật mới ở đợt 9 |
-| Ca cảng kiểu Dave chương 1, 1 người, bot trễ 2 giây (demo) | 24,9 trên 25 tàu, rảnh 24%, ca 231 giây, Tally 1769, tip 25% | Rảnh không quá 30%, ca 180 đến 300 giây | Có, chờ sim chính thức |
+| Ca cảng khung Dave chương 1, trễ 2 giây, 1 đến 4 người (sim GD-054 vòng 2) | Tàu xong 99, 99, 99, 97%. Rảnh 14, 6, 19, 27%. Ca 230, 251, 241, 252 giây | Rảnh không quá 30%, tàu xong 85 đến 100%, ca 180 đến 300 giây | Có |
 | Phút một chuyến, một người, chương 1 và chương 5 | 4,4 và 10,4 phút | 4 đến 6 và 10 đến 12 phút | Có |
 | Tỉ lệ bị kéo về, người chơi cẩn thận, chương 1 đến 5 | 1, 1, 3, 0, 0% | Dưới 5% | Có |
 | Tỉ lệ bị kéo về, người chơi tham, chương 1 đến 5 | 10, 36, 41, 29, 13% | 15 đến 40% | Chương 2, 4 đạt. Chương 1, 3, 5 lệch 1 đến 5 điểm, chấp nhận, đo lại ở playtest |

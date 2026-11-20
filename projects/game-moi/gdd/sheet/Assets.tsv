@@ -28,7 +28,7 @@ STT	Asset Name	Link	Note
 27	[MVP] Icon vector kiện (hộp, 3 cỡ Nhỏ, Vừa, Lớn, nhãn phẩm cấp)		Nguồn: vat-pham.md mục 7, ux-ui.md mục 7
 28	[MVP] Bậc hiếm 4 bậc: khác nhau cả màu, viền và hình		Nguồn: vat-pham.md và ux-ui.md mục 7. Cho người mù màu
 29	[MVP] VFX nhặt vật, khai thác điểm (thanh tiến độ, tia khoan, mảnh vụn), cổng mềm, túi đầy		Nguồn: vat-pham.md mục 7
-30	[MVP] Hoạt ảnh xưởng chế (máy ép, lò, hàng đợi) và đóng kiện (hộp gấp lại)		Nguồn: vat-pham.md mục 7
+30	[MVP] Hoạt ảnh xưởng chế (máy ép, lò, hàng đợi) và Thông dịch viên đóng thùng lúc Mở ca (hộp gấp lại)		Nguồn: vat-pham.md mục 7
 31	[MVP] Bộ đồ đổi hình theo trục nâng cấp và trạm đổi hình khi sửa xong khoang		Nguồn: vat-pham.md và kinh-te-tien-trinh.md mục 7
 32	[MVP] Kit map tổng dải Gần: khối vỏ tàu, thiên thạch, băng, mây khí (một kit dùng chung cho các mảnh)		Nguồn: map.md mục 7. Mối nối che bằng vật trôi và mảnh vỡ
 33	[MVP] Kit nội thất xác Seed Station (Station Cinder, dùng chung các xác)		Nguồn: map.md mục 7
@@ -42,7 +42,7 @@ STT	Asset Name	Link	Note
 41	[MVP] Khoang mặt cắt trạm 3 trạng thái (Hỏng, Hoạt động, Đang nâng cấp) cho 8 khoang MVP: Buồng ngủ đông, Cửa khí, Kho, Khoang neo, Xưởng, Khoang liên lạc, Cảng, Động cơ chính		Nguồn: ux-ui.md và tram-va-cang.md mục 7
 42	[MVP] Tàu Loose Bolt (tàu gom phế liệu của Tikko) và Tàu vội, hoạt ảnh cập bến lệch, kẹp neo		Nguồn: tram-va-cang.md và cot-truyen.md mục 7
 43	[MVP] Chân dung thương nhân Tikko và khách Tàu vội		Nguồn: ux-ui.md mục 7
-44	[MVP] Hiệu ứng ca cảng: kiện trượt vào khoang hàng, đồng hồ lưu bến vòng quanh chân dung, Tally bay lên, đơn đủ (pháo sáng nhỏ), đơn trượt (tô xám)		Nguồn: tram-va-cang.md mục 7
+44	[MVP] Hiệu ứng ca cảng: thùng trượt vào tàu, thanh kiên nhẫn trên tàu, bong bóng gọi món, Tally và tip bay lên, hơi khí khi bơm, tàu rời khi chưa giao (tô xám)		Nguồn: tram-va-cang.md mục 7
 45	[MVP] Kiện bị từ chối bật nhẹ về tay, thương nhân lắc đầu		Nguồn: tram-va-cang.md mục 7
 46	[MVP] Bảng kết ca, bảng đơn trên cửa bến, bảng hạng cảng		Nguồn: tram-va-cang.md và kinh-te-tien-trinh.md mục 7
 47	[MVP] Bộ kit UI: khung, nút 5 trạng thái, thanh, danh sách, bảng, vòng tiến độ		Nguồn: ux-ui.md mục 7

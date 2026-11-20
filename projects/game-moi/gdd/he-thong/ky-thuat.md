@@ -25,7 +25,7 @@ Số và kết luận của sim chỉ nằm ở file kết quả (`tools/ket-qua
 ## 1. Mục đích với người chơi
 
 Người chơi không thấy hệ thống này trực tiếp. Họ thấy kết quả của nó:
-- Co-op mượt: bạn vào giữa chừng không phải chờ, đồng đội bay không giật, kiện không bị nhân đôi hay biến mất khi hai người cùng bốc.
+- Co-op mượt: bạn vào giữa chừng không phải chờ, đồng đội bay không giật, thùng không bị nhân đôi hay biến mất khi hai người cùng nhặt hoặc giao.
 - Luật mạng rõ ràng: rời phiên hay mất kết nối giữa chuyến không phải đường về an toàn (C10), host thoát thì thế giới về điểm lưu gần nhất (K23).
 - Số trong game khớp số trong GDD vì dữ liệu đi một đường từ Sheet vào game, có máy kiểm.
 
@@ -333,7 +333,7 @@ Không có khoảnh khắc riêng. Mục tiêu là người chơi không nhận 
 | Validator bắt các loại lỗi đã có ca cài trong selftest | Selftest có ca cố ý cho: ID lạ, thiếu nhãn MVP, dấu chờ, tên cũ, tên riêng, tên loài, CGO thuộc nhóm, số túi cũ, câu trái C10, vật truyện, ID trùng trong bảng định nghĩa (RCP, UPG, SLV, KH), ID lạ họ N, MM, T- |
 | Schema phủ mọi bảng dữ liệu các GDD xin | Đối chiếu mục 6 của 10 GDD với bảng mục 2.1. Loại còn thiếu ghi ở câu hỏi mở |
 | Khi có build, co-op: hai người cùng nhặt một node | 1000 lần thử, đúng 1 người nhận mỗi lần |
-| Khi có build, co-op: kiện không nhân đôi hay mất | 100 lần thả, nhặt, bốc có rớt mạng giữa chừng, tổng kiện không đổi |
+| Khi có build, co-op: thùng không nhân đôi hay mất | 100 lần nhặt, giao có rớt mạng giữa chừng, tổng thùng không đổi |
 | Khi có build, mất kết nối 15 giây | Vào lại đúng nhân vật theo mã slot. Quá 15 giây thì bị tính như kéo về (C10) |
 | Khi có build, host thoát | Thoát ở 4 thời điểm (giữa chuyến 1, sau chuyến 1, giữa ca, sau ca): mở lại đúng điểm lưu gần nhất (K23), bố cục chuyến kế giống lần trước |
 | Khi có build, vào giữa chừng | Thử ở 3 pha (chuyến, ca, cuối ngày), người mới vào đúng luật 13 |

@@ -16,7 +16,7 @@ Mọi bảng số giữa dấu `<!--khoi:...-->` và mọi số giữa dấu `<!
 | Đồng tiền | Tally duy nhất, chỉ đến từ ca cảng (K18) | MVP |
 | Đơn vị bán | Thùng. 1 kiện = 2,5 thùng, lồng sinh vật sống là một đơn vị không chia (Lead chốt, D0) | MVP |
 | Giá thùng | GTĐ một thùng nhân 10 nhân hệ số bậc giá. 5 bậc: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75 (mục 3.1) | MVP |
-| Tip | Tip tối đa 25% giá thùng nhân phần kiên nhẫn còn lại. Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 Tally (Lead chốt K13 ở 30%, GDM hạ 25% ở đợt 9 vòng 2). Sim đo tip chiếm <!--v:tip-tb-->26%<!--/v--> Tally (tệ <!--v:tip-te-->21%<!--/v-->, tốt <!--v:tip-tot-->30%<!--/v-->) | MVP |
+| Tip | Tip tối đa 25% giá thùng nhân phần kiên nhẫn còn lại. Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 Tally (đề xuất demo 30%, GDM hạ 25% ở đợt 9 vòng 2). Sim đo tip chiếm <!--v:tip-tb-->26%<!--/v--> Tally (tệ <!--v:tip-te-->21%<!--/v-->, tốt <!--v:tip-tot-->30%<!--/v-->) | MVP |
 | Điểm cảng | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn trên 2/3 kiên nhẫn (Lead chốt). Một ca một người trung bình <!--v:diem-ca-1-->46<!--/v--> điểm | MVP |
 | Ngưỡng Hạng cảng 2 tới 8 | <!--v:nguong-hien-hanh-->70, 135, 285, 400, 560, 680, 910<!--/v--> (mục 3.5, gd-quan đã nhận (luật 41)) | MVP hạng 2, 3 |
 | Giá Tally của nâng cấp, ENG, Shop | Ngân sách chương chia theo tỉ lệ. Ngân sách chương bằng β nhân ngày mục tiêu nhân thu nhập tham chiếu một ngày, hệ số ngân sách β bằng <!--v:beta-->0,54<!--/v--> | MVP |
@@ -244,7 +244,7 @@ Nâng cấp nào mở khả năng mới, nâng cấp nào chỉ là số:
 | Tỉ lệ giá trong ngân sách chương | ENG 1,0, T-VO 0,6, T-OXY 0,5, T-TUI 0,5, T-DUNGCU 0,4, khoang cấp 0,4, T-DAY 0,35, bản thiết kế 0,3, cảng cấp 2 0,2, mỗi nâng cấp dụng cụ 0,15 | | Thứ đó đắt hơn trong chương | | Thứ tự mua | gd-economy tự quyết |
 | Hệ số bậc giá | Chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5 | Sống 1,1 đến 1,4 (giữ K9 trong 1,2 đến 2 lần hạ), chợ 0,7 đến 0,85 | Bậc đó đắt hơn, danh mục nghiêng về nó | Danh mục bỏ bậc đó | Lập danh mục, chỉ số giá | gd-economy, đợt 9 |
 | Độ gọi | Chợ 3, sinh học 2, chế 1,5, sống 1, hiếm 1 | 1 đến 4 | Hàng đó bán trước khi bày thừa | | Thế cân bày thừa | gd-economy, đợt 9. gd-quan giữ độ ưa của loại tàu |
-| Tip tối đa | 25% giá thùng | 20 đến 30% (tip kể cả bơm khí trong 20 đến 30% Tally ca) | Tip lớn hơn phần Tally | | Ca cảng | Lead chốt 30% (K13), GDM hạ 25% |
+| Tip tối đa | 25% giá thùng | 20 đến 30% (tip kể cả bơm khí trong 20 đến 30% Tally ca) | Tip lớn hơn phần Tally | | Ca cảng | Đề xuất demo 30%, GDM hạ 25% ở đợt 9 vòng 2 |
 | Hệ số co-op k(N), phần thêm mỗi người | 0,30 ở Gần, 0,25 ở Giữa, 0,38 ở Xa | | Co-op nhanh, mỗi người giàu | Co-op chậm | Co-op | gd-world giữ, sim xác nhận |
 
 Công thức:
@@ -672,9 +672,9 @@ Tiêu chí đo được khi có build:
 | Mục tiêu sống so với hạ | khung mục 9 (GDM) | 1,5 đến 2 lần | Lưới trúng 1 con của loài rẻ cho 1,28 lần | 1,2 đến 2 lần cho cỡ S và M, sau khi trừ vật tiêu hao (khung sửa lần 5) | GDM |
 | Đơn vị bán ở ca cảng và giá | kinh-te-tien-trinh.md mục 3.1 (gd-economy) | Giá kiện bằng GTĐ x 10, một thùng bằng giá kiện chia 2,5: thùng chương 1 từ 48 tới 56 Tally | Sim ca cảng GD-054: giữ hàng cho đơn đặt trước chỉ chênh dưới 2,5% Tally, lập danh mục không có thế cân | Giá thùng theo 5 bậc giá: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75 | gd-economy |
 | Thưởng theo đơn | tram-va-cang.md (gd-quan), kinh-te-tien-trinh.md | Thưởng đủ đơn 25%, thưởng nhanh 15% | Lead chốt ca cảng khung Dave 2026-11-20, bỏ đơn nhiều dòng | Tip tối đa 30% (sau hạ 25%) giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally | Lead |
-| Điểm cảng | tram-va-cang.md (gd-quan) | 2 mỗi đơn đủ, thêm 1 khi nhanh, nhân (N cộng 1) chia 2 | Luật mới không còn đơn | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn trên 2/3 kiên nhẫn. Một ca một người tới 50 điểm, nhóm 3 và 4 người tới 140 | Lead |
+| Điểm cảng | tram-va-cang.md (gd-quan) | 2 mỗi đơn đủ, thêm 1 khi nhanh, nhân (N cộng 1) chia 2 | Luật mới không còn đơn | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn trên 2/3 kiên nhẫn. Sim trễ 2 giây: một ca 46, 102, 105, 111 điểm cho 1 tới 4 người | Lead |
 | Ngưỡng điểm Hạng cảng 2 tới 8 | tram-va-cang.md mục 3 (gd-quan) | 10, 20, 45, 70, 100, 135, 195 | Điểm mới gấp 7 tới 8 lần mỗi ca, ngưỡng cũ thì Hạng không còn chặn ENG | 70, 135, 285, 400, 560, 680, 910, giữ ngày đủ điểm của bản trước (5, 7, 13, 16, 20, 24, 31). Chờ gd-quan nhận | gd-economy |
-| Hệ số ngân sách β | GD-028 | 0,40 | Ca khung Dave bán gần đủ 25 thùng mỗi ca và có tip: giữ 0,40 thì cả game 11,0 giờ | 0,54, cả game trung bình 13,8 giờ, nhóm 4 bằng 72% thời gian một mình | gd-economy |
+| Hệ số ngân sách β | GD-028 | 0,40 | Ca khung Dave bán gần đủ 25 thùng mỗi ca và có tip: giữ 0,40 thì cả game 11,0 giờ | 0,54, cả game trung bình 13,9 giờ, nhóm 4 bằng 73% thời gian một mình | gd-economy |
 | Tip tối đa | ca-cang.json (GDM) | 30% giá thùng nhân kiên nhẫn còn lại | Bơm khí bật lúc cập (luật 28): tip kể cả bơm khí vượt 30% Tally ở 3 và 4 người | 25%, tip kể cả bơm khí 26 tới 29% ở trễ 2 giây | GDM |
 | Số tàu một ca theo số người và cửa neo | tram-va-cang.md (gd-quan), sim ca cảng gd-tech | 25, 50, 70, 70 tàu, 4 cửa neo khi 3 và 4 người | Luật mới 3 cửa neo cho mọi số người (không mở nội dung theo số người) | 25, 55, 55, 60 tàu, 3 cửa neo. Kho sau hai chuyến vẫn đủ ở mọi chương | gd-quan, gd-tech |
 <!--/khoi-->

@@ -57,7 +57,7 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 | Mô tả | Thứ mang về trở thành vật liệu sửa trạm và hàng hóa cho ca cảng. Người chơi chọn sửa khoang nào trước, nuôi Driftlife nào, bán gì ở ca cảng, mang hàng lên tàu thương nhân kịp giờ, để người vớt về vận hành các khoang, và tối ưu thu nhập Tally |
 | Player Experience | Ownership, Strategy, Efficiency |
 | Giữ bằng luật | K11 khoang sửa xong đổi hình trạm, K12 người vớt vận hành khoang, K13 ca cảng, K14 sự cố, K15 Hạng cảng, K16 nuôi Driftlife, K19 nguồn tiêu của tài nguyên |
-| Đo bằng | đơn giao đủ ở ca cảng 70 đến 95%. Thưởng đủ đơn và nhanh chiếm 15 đến 25% thu Tally. 100% vật phẩm có ít nhất một nguồn tiêu |
+| Đo bằng | tàu phục vụ xong ở ca cảng 85 đến 100% (chương 1). Tip chiếm 20 đến 30% Tally của ca cảng. 100% vật phẩm có ít nhất một nguồn tiêu |
 | Cấm | Tài nguyên chỉ để bán lấy số. Vật phẩm không có nguồn tiêu. Hệ đói, chi phí duy trì làm trạm xấu đi khi người chơi nghỉ |
 
 ### CP4. Progression & Growth - Phát triển liên tục
@@ -131,7 +131,7 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 - K6 (G): dải mở theo chương truyện. Mỗi dải có một điều kiện môi trường cần cấp bộ đồ tương ứng. Thiếu cấp vẫn vào được nhưng Oxy hao nhanh hơn nhiều (đi được nhưng đắt). Dải chưa mở theo chương thì bị chặn cứng bằng vật cản do gd-world định.
 - K7 (L, G): map nhánh là khu dựng tay, không sinh lại, vào qua một lối trong map tổng. Người để vớt, vật manh mối, boss chỉ nằm ở map nhánh. Mốc truyện thì được diễn ra cả ở trạm và cảng. Skiff đưa người chơi từ trạm thẳng tới map nhánh đã tìm ra, tính là một chuyến.
 - K8 (L): Driftlife và tài nguyên sinh lại mỗi chuyến. Không có luật cạn kiệt, không phạt khai thác.
-- K9 (G): với loài bắt sống được (cỡ S và M), bắt sống luôn có giá trị hơn hạ. Driftlife sống dùng để nuôi, nghiên cứu và giao đơn cảng giá cao. Driftlife đã hạ chỉ cho nguyên liệu. Loài cỡ L không bắt sống được: mẫu sinh thiết là cách lấy mẫu nghiên cứu mà không hạ, đứng ngoài luật này.
+- K9 (G): với loài bắt sống được (cỡ S và M), bắt sống luôn có giá trị hơn hạ. Driftlife sống dùng để nuôi, nghiên cứu và bán ở ca cảng giá cao. Driftlife đã hạ chỉ cho nguyên liệu. Loài cỡ L không bắt sống được: mẫu sinh thiết là cách lấy mẫu nghiên cứu mà không hạ, đứng ngoài luật này.
 
 ### Trạm và cảng
 - K10 (L, G): Ember neo cố định suốt game. Việc sửa đầu tiên là hãm trôi và neo. Sửa động cơ chính là mục tiêu dài nhất, xong thì Ember rời neo, lên đường tới hành tinh thật Sevra trao tọa độ, và game kết (kết mở, chưa tới hành tinh đó trong game này).
@@ -139,7 +139,7 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 - K12 (L, G): mỗi người vớt về mở một tính năng của trạm qua một quest nhỏ hoặc mốc chương. Năm người: Kỹ sư (xưởng: chế và nâng cấp trang bị), Thông dịch viên (khoang liên lạc: gọi tàu, mở ca cảng, shop), Hoa tiêu (khoang dẫn đường: mở dải Xa, Skiff. Dải Giữa mở khi xong chương 1), Nhà sinh học (nghiên cứu và nuôi Driftlife), Trưởng cảng (thêm bến, tiện ích cảng). Không có bếp trưởng.
 - K13 (L, 2026-11-20 đổi theo khung bán sushi của Dave the Diver): ca cảng là nửa chơi tay thứ hai. Trước ca người chơi lập danh mục bán từ hàng trong kho, Thông dịch viên tự đóng thùng. Trong ca tàu cập vào các cửa neo, mỗi tàu gọi 1 thùng trong danh mục. Người chơi nhặt thùng ở quầy cảng, mang tới đúng cửa neo trước khi tàu hết kiên nhẫn, và bơm khí cho tàu đang chờ. Giao xong nhận giá thùng cộng tip theo kiên nhẫn còn lại. Không chế, không đóng kiện trong ca. Tàu chỉ mua, không bán trong ca. Bản luật đủ: `gdd/he-thong/tram-va-cang.md`, nguồn đề xuất: `de-xuat-ca-cang-kieu-dave.md`.
 - K14 (G): từ chương 3, ca cảng có sự cố trạm chen ngang (rò khí, chập điện, Driftlife sổng khoang nuôi). Trước chương 3 không có sự cố.
-- K15 (G): có một thang Hạng cảng duy nhất, tăng theo kết quả các ca. Hạng cảng mở thêm loại tàu, đơn giá trị cao và danh mục shop. Không có danh tiếng riêng từng phe.
+- K15 (G): có một thang Hạng cảng duy nhất, tăng theo kết quả các ca. Hạng cảng mở thêm loại tàu, loại hàng giá cao, trần danh mục bán và danh mục shop. Không có danh tiếng riêng từng phe.
 - K16 (L, G): nuôi Driftlife trong khoang sinh quyển là nguồn hàng đều, mở ở chương 2. Nuôi là lựa chọn có lợi, không phải nghĩa vụ.
 - K17 (G): không có hệ đói, không có chi phí duy trì cư dân, không nấu ăn. Trạm không xấu đi khi người chơi nghỉ.
 

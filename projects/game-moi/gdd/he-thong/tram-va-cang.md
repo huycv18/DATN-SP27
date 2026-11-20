@@ -18,7 +18,7 @@ Trạm và cảng là nửa ở nhà của The Novent: người chơi sửa từ
 | Ca cảng | Bến 1 có 3 cửa neo. Tàu cập theo nhịp, mỗi tàu gọi 1 thùng. Mang thùng từ quầy cảng tới đúng cửa neo, bơm khí cho tàu đang chờ. Trả giá thùng cộng tip theo kiên nhẫn còn lại | MVP |
 | Thất bại trong ca | Tàu hết kiên nhẫn thì rời, chỉ mất món đó. Thùng về kho, không trừ Tally, không giảm Hạng cảng | MVP |
 | Đơn đặt trước | 1 đơn mỗi ngày ở chương 1, hiện ở bảng tàu, giá thùng nhân 1,5 | MVP |
-| Hạng cảng | 8 hạng, điểm cảng theo tàu phục vụ xong, có trần theo chương, không bao giờ giảm. Ngưỡng chờ gd-economy | MVP tới hạng 3 |
+| Hạng cảng | 8 hạng, điểm cảng theo tàu phục vụ xong, có trần theo chương, không bao giờ giảm. Ngưỡng 70, 135, 285, 400, 560, 680, 910 (GD-055) | MVP tới hạng 3 |
 | Nuôi Driftlife | 4 ô lên 9 ô, cặp cùng loài sinh con non, cho ăn thì ra sản phẩm, không cho ăn không chết | Sau MVP |
 | Sự cố | Từ chương 3: rò khí ở cửa neo, chập điện ở quầy, Driftlife sổng ôm thùng | Sau MVP |
 | Co-op | Mọi luật đúng với 1 đến 4 người. Bến 1 luôn 3 cửa neo. Số tàu một ca 25, 55, 55, 60 cho 1 tới 4 người (sim GD-054 vòng 2 mục 4) | MVP 2 người |
@@ -466,7 +466,7 @@ Kết quả vòng 1 và vòng 2 ở `tools/ket-qua/sim-ca-cang.md`. Kết quả 
 |---|---|
 | Bơm khí lúc cập | Đã đo vòng 2: bơm khí chiếm 3,5%, 3,9%, 7,2% Tally ở 1, 2, 4 người. Người một mình có gặp. Tip kể cả bơm khí 26 tới 29% sau khi hạ tip tối đa xuống 25% |
 | Trần ca 300 giây | Đã đo vòng 2: 0% ca chạm trần ở mọi số người, kể cả trễ 3 giây |
-| Ca đầu tiên | Đã đo vòng 2: 2 tàu xong trong 13 tới 17 giây |
+| Ca đầu tiên | Đã đo vòng 2: 2 tàu xong trong 23 tới 33 giây (sim GD-054 vòng 2 mục 1) |
 | Trọng số theo bậc giá | Đã đo vòng 2: danh mục 5 thùng đồ Trái Đất bán hết trước tàu thứ 9 ở 22% số ca một người. Đơn đặt trước vẫn đạt 100% vì thùng đặt được giữ riêng lúc Mở ca |
 | Tàu vội chỉ gọi băng, khoáng | Đã đo vòng 2: thiếu cả băng và quặng thì hụt 16,6 tới 20,6% Tally. Chỉ thiếu băng thì hụt dưới 5%. Đạt ý đồ: bỏ hẳn hai nhóm thì mất Tàu vội và tip gấp đôi |
 | Còn mở | Chương 2 tới 5, kiên nhẫn Vừa 45 giây, Hạng 1 chỉ có TA01 |
@@ -510,7 +510,7 @@ Tiêu chí nghiệm thu:
 
 Ca cảng:
 - Sim chương 1, trễ phản xạ 2 giây: tàu phục vụ xong 85 tới 100%, rảnh không quá 30%, ca 180 tới 300 giây, tip 20 tới 30% Tally. sim GD-054 vòng 2 mục 4, 3 cửa neo: 1 người 25 tàu (99%, rảnh 14%, ca 230 giây, tip 26%), 2 người 55 tàu (99%, rảnh 6%, ca 251 giây, tip 26%), 3 người 55 tàu (99%, rảnh 19%, ca 241 giây, tip 29%), 4 người 60 tàu (97%, rảnh 27%, ca 252 giây, tip 29%). Đạt.
-- Bơm khí lúc cập: người một mình gặp, bơm khí chiếm 3,5% Tally ở 1 người (sim vòng 2). Trần ca 300 giây: 0% ca chạm trần. Ca đầu 2 tàu xong trong 13 tới 17 giây. Đạt.
+- Bơm khí lúc cập: người một mình gặp, bơm khí chiếm 3,5% Tally ở 1 người (sim vòng 2). Trần ca 300 giây: 0% ca chạm trần. Ca đầu 2 tàu xong trong 23 tới 33 giây (sim GD-054 vòng 2 mục 1). Đạt.
 - Lập danh mục: thiếu cả băng và quặng hụt 16,6 tới 20,6% Tally, thiếu một trong hai hụt dưới 5%. Đồ Trái Đất 5 thùng hết trước tàu thứ 9 ở 22% số ca một người, đơn đặt trước đạt 100% (sim vòng 2).
 - Tàu rời chưa giao hoặc bỏ đi: Tally không giảm, thùng về danh mục, hết ca thùng về kho đúng số, Hạng cảng không đổi (log event).
 - Danh mục: không vượt M loại, không vượt số thùng kho làm được. Mở ca trừ kho đúng số thùng nhân 0,4 kiện. Hết ca số thùng chưa bán về kho đúng (log).
@@ -554,7 +554,7 @@ Sau MVP:
 | Gọi món | Khách ngồi ghế, món hiện bằng bong bóng (theo đề xuất đã chốt mục 2 luật D3, chưa có nguồn kho) | 3 cửa neo, bong bóng trên tàu, thùng ra ô quầy cùng màu cửa neo | Màu cửa neo thay cho việc nhớ ghế nào gọi gì |
 | Việc phụ | Rót trà cho khách đang chờ (đề xuất mục 2 luật D6, chưa có nguồn kho) | Bơm khí: hồi kiên nhẫn, cộng tip nhỏ | Đúng chủ đề trạm không gian |
 | Nhân lực | Thuê nhân viên có chỉ số [S24 kho 35] | Không có nhân viên. Co-op là thêm tay. Trưởng cảng thêm quầy phụ | P3: thêm người là thêm tay. Bớt một hệ quản lý cho 4 dev |
-| Chỉ số tiến trình | Hạng Cooksta quyết số khách mỗi tối [S10 kho 35] | Hạng cảng quyết loại tàu, trần danh mục, loại hàng bán được, mục shop | Giống: một chỉ số dễ hiểu. Khác: số tàu theo chương và số người để ca giữ trong 240 giây |
+| Chỉ số tiến trình | Hạng Cooksta quyết số khách mỗi tối [S10 kho 35] | Hạng cảng quyết loại tàu, trần danh mục, loại hàng bán được, mục shop | Giống: một chỉ số dễ hiểu. Khác: số tàu theo chương và số người để ca giữ trong 300 giây |
 | Thất bại | Khách bỏ đi mất doanh thu khách đó | Tàu rời chưa giao mất món đó, thùng về kho | Giống: thất bại ở mức khách lẻ. Khác: hàng không mất vì hàng là công cả chuyến |
 | Bản cũ của Ember trước đợt 9 | | Tàu đưa đơn nhiều dòng theo lịch biết trước, đơn đủ và đơn trượt, thưởng đủ đơn, thưởng nhanh, máy đóng kiện chạy trong ca, kệ kiện, tốc độ chạy theo cỡ kiện, quy mô đơn theo số người | Lead muốn ca cảng đơn giản mà vẫn vui (DECISIONS đợt 9). Bản cũ chỉ còn trong lịch sử thay đổi |
 | Nuôi | Fish Farm 9 ô mỗi khu, bắt đầu 4 ô, cần một cặp cùng loài, roe ấp 1 ngày [D8][D15] | Một khoang sinh quyển, 4 lên 9 ô, cặp cùng loài sinh con non, cần cho ăn để ra sản phẩm | Giữ số ô của Dave. Một khoang thay vì nhiều khu để gọn mặt cắt. Thêm cho ăn để nuôi có một quyết định mỗi ngày mà không phạt |

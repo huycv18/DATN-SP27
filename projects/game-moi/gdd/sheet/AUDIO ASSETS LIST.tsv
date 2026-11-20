@@ -27,7 +27,7 @@ STT	Name	Link	Note	Web Ref
 26	SFX_Mine_Drill		Tiếng khoan khi khai thác điểm, ì ạch ở cổng mềm. MVP. Nguồn: vat-pham.md mục 7	
 27	SFX_Mine_Break		Tiếng vỡ khi hoàn thành khai thác. MVP. Nguồn: vat-pham.md mục 7	
 28	SFX_Craft_Machine		Tiếng máy theo loại công thức ở xưởng. MVP. Nguồn: vat-pham.md mục 7	
-29	SFX_Pack_Crate		Tiếng dán, thả hộp khi đóng kiện. MVP. Nguồn: vat-pham.md mục 7	
+29	SFX_Pack_Crate		Tiếng dán, thả hộp khi Thông dịch viên đóng thùng lúc Mở ca. MVP. Nguồn: vat-pham.md mục 7	
 30	SFX_Rarity_Chime		Nhạc nhặt tăng cao độ theo 4 bậc hiếm. MVP. Nguồn: vat-pham.md mục 7	
 31	SFX_Upgrade_Start		Tiếng khởi động và máy Xưởng khi nhận đồ nâng cấp. MVP. Nguồn: vat-pham.md, kinh-te-tien-trinh.md mục 7	
 32	SFX_Enemy_Telegraph		Âm tích ngắn, cao dần báo trước đòn, phát theo hướng stereo. MVP. Nguồn: combat-driftlife.md mục 7	
@@ -47,15 +47,15 @@ STT	Name	Link	Note	Web Ref
 46	SFX_Skiff_Engine		Động cơ Skiff tách bến. Sau MVP. Nguồn: map.md mục 7	
 47	SFX_Room_Online		Máy khởi động và tiếng ù nền của khoang khi sửa xong. MVP. Nguồn: tram-va-cang.md, cot-truyen.md mục 7	
 48	SFX_Ship_Dock		Kẹp neo, chuông bến khi tàu cập. MVP. Nguồn: tram-va-cang.md mục 7	
-49	SFX_Dock_Timer		Tích tắc nhanh dần khi đồng hồ lưu bến dưới 20 phần trăm. MVP. Nguồn: tram-va-cang.md mục 7	
-50	SFX_Crate_Accepted		Tiếng nhận hàng và tiếng xu khi bốc kiện được nhận. MVP. Nguồn: tram-va-cang.md mục 7	
+49	SFX_Dock_Timer		Tích tắc nhanh dần khi kiên nhẫn của tàu dưới 1/3. MVP. Nguồn: tram-va-cang.md mục 7	
+50	SFX_Crate_Accepted		Tiếng nhận hàng và tiếng xu khi giao thùng đúng tàu. MVP. Nguồn: tram-va-cang.md mục 7	
 51	SFX_Crate_Rejected		Tiếng từ chối trầm. MVP. Nguồn: tram-va-cang.md mục 7	
-52	SFX_Order_Complete		Hợp âm đi lên, cao dần theo số đơn đủ liên tiếp trong ca. MVP. Nguồn: tram-va-cang.md mục 7, 7b	
+52	SFX_Order_Complete		Hợp âm đi lên, cao dần theo số tàu giao liên tiếp khi còn từ 2/3 kiên nhẫn. MVP. Nguồn: tram-va-cang.md mục 7, 7b	
 53	SFX_Order_Missed		Hợp âm trung tính, không chói, không có chữ thất bại. MVP. Nguồn: tram-va-cang.md mục 7	
 54	SFX_Ship_Waiting		Còi xa khi tàu chờ ngoài. MVP. Nguồn: tram-va-cang.md mục 7	
 55	SFX_Port_Rank_Up		Chuông dài khi lên Hạng cảng. Sau MVP. Nguồn: tram-va-cang.md mục 7	
 56	SFX_Incident_Alarm		Còi báo động ngắn, không lặp liên tục khi có sự cố. Sau MVP. Nguồn: tram-va-cang.md mục 7	
-57	SFX_Tally_Coin		Tiếng xu khi nhận Tally, cao dần theo đơn đủ liên tiếp. MVP. Nguồn: kinh-te-tien-trinh.md mục 7	
+57	SFX_Tally_Coin		Tiếng xu khi nhận Tally, cao dần theo số tàu giao liên tiếp. MVP. Nguồn: kinh-te-tien-trinh.md mục 7	
 58	SFX_Shop_Unlock		Tiếng mở khóa khi học bản thiết kế. Sau MVP. Nguồn: vat-pham.md mục 7	
 59	SFX_UI_Click		Click, hover, xác nhận, hủy của bộ kit UI. MVP. Nguồn: ux-ui.md mục 7	
 60	SFX_Ping_Go		Ping Tới đây, mỗi ping một âm ngắn khác nhau. MVP. Nguồn: ux-ui.md mục 7	

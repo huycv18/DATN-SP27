@@ -79,26 +79,26 @@ STT	Feature/Metric	Category	Acceptance Criteria	Status	Actual Result	Notes
 78	Lối ra map nhánh	Luồng	Mỗi map nhánh có ít nhất một lối ra (kiểm tay trên greybox)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho Cinder. Cách kiểm: Máy. Nguồn: map.md
 79	Nhóm 4 người	Cân bằng	Mỗi người nhặt từ 60% so với chơi một mình ở mọi chương và kịch bản. Đo được thấp nhất 61%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
 80	Thoát giữa chuyến (map)	Dữ liệu	Chơi một mình: mất chuyến, về lần lưu. Host thoát: phiên dừng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
-81	Ca chương 1 một người	Sim, chơi thật	Lịch 4 tàu, giao đủ ít nhất 3 đơn trong 240 giây, không đơn nào đóng sẵn	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-82	Giờ đến tàu	Sim	Không tàu nào có giờ đến cộng thời gian lưu bến vượt 240 giây	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-83	Ca chương 1 với 1 đến 4 người	Sim	Ca dài 190 đến 191 giây, rảnh 21 đến 26%. Kiện mỗi người: 10,8, 10,2, 9,5, 7,8. Đơn đủ: 91, 94, 96, 86%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-84	Thời lượng ca	Sim	Trung bình 170 đến 300 giây với mọi số người, chương 1 đến 4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-85	Số tàu theo số người	Sim	Số tàu bằng nhau với 1 đến 4 người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-86	Đơn trượt	Log	Tally không giảm, kiện còn đúng, Hạng không đổi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-87	Bỏ ca	Chơi, log	Tàu không tới, kiện còn đủ, cửa khí khóa	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-88	Bốc đồng thời, 2 người	Co-op	Đúng 1 người nhận được kiện	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-89	Ca đầu tiên	Chơi, log	Đúng 1 tàu Tikko, 1 dòng Kiện phế liệu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+81	Ca chương 1 một người	Sim, chơi thật	25 tàu, 3 cửa neo, người chơi trễ phản xạ 2 giây: tàu phục vụ xong 85 đến 100%, rảnh tối đa 30%, ca 180 đến 300 giây. Sim đo 24,7 tàu xong, rảnh 14%, ca 230 giây	FALSE	Sim đạt, chạy lại cùng seed ra cùng số (QA đợt 9). Chưa chấm trên build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md mục 8
+82	Giờ đến tàu	Sim	Tàu đầu tới giây thứ 2. Mọi tàu tới trong 225 giây đầu ca. Ca không vượt 300 giây	FALSE	Sim đạt, chạy lại cùng seed ra cùng số (QA đợt 9). Chưa chấm trên build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md mục 3
+83	Ca chương 1 với 1 đến 4 người	Sim	Người chơi trễ 2 giây. Ca 230, 251, 241, 252 giây. Rảnh 14, 6, 19, 27%. Tàu xong 99, 99, 99, 97%. Tally một ca 1654, 3602, 3760, 3996	FALSE	Sim đạt, chạy lại cùng seed ra cùng số (QA đợt 9). Chưa chấm trên build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md mục 8
+84	Thời lượng ca	Sim	Từ 180 đến 300 giây với mọi số người. Chương 1 đo được 230 đến 252 giây, không ca nào chạm trần 300 giây. Chương 2 đến 5 chưa đo	FALSE	Sim đạt, chạy lại cùng seed ra cùng số (QA đợt 9). Chưa chấm trên build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md mục 3
+85	Số tàu theo số người	Sim	Số tàu một ca là 25, 55, 55, 60 cho 1 đến 4 người. Bến 1 luôn 3 cửa neo ở mọi số người	FALSE	Sim đạt, chạy lại cùng seed ra cùng số (QA đợt 9). Chưa chấm trên build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md mục 3
+86	Tàu rời chưa giao	Log	Tàu hết kiên nhẫn, hết giờ ca hoặc chờ ngoài quá 20 giây thì rời. Chỉ mất món đó. Tally không giảm, thùng về danh mục, Hạng không đổi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 32
+87	Bỏ ca	Chơi, log	Tàu hôm đó không tới, kho không đổi, không trừ gì, cửa khí khóa tới ngày mới	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 19
+88	Nhặt thùng đồng thời, 2 người	Co-op	Hai người nhặt cùng một thùng cùng khung hình thì đúng 1 người cầm thùng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md mục Thứ tự xử lý khi giao thùng
+89	Ca đầu tiên	Chơi, log	Danh mục chọn sẵn thùng phế liệu, người chơi chỉ bấm Mở ca. Đúng 2 tàu Loose Bolt kiên nhẫn dài, không đơn đặt trước, tàu thứ hai bật bơm khí ngay. Sim: 2 tàu xong, ca 23 đến 33 giây	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 67
 90	Mở ca	Log	Còn người ngoài chuyến thì không mở được. Một ca mỗi ngày. Sau khi mở ca cửa khí khóa	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: tram-va-cang.md
-91	Điểm cảng	Sim, log	Đơn đủ nhanh được 3, 5, 6, 8 điểm với 1, 2, 3, 4 người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-92	Lồng sinh vật sống ở chương 1	Sim 100 lịch	Mọi lịch từ ngày có Súng lưới đều có 1 dòng Lồng sinh vật sống	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+91	Điểm cảng	Sim, log	1 điểm mỗi tàu xong, thêm 1 khi giao lúc còn từ 2/3 kiên nhẫn. Không nhân theo số người. Sim trễ 2 giây: 46, 102, 105, 111 điểm một ca với 1 đến 4 người	FALSE	Sim đạt, chạy lại cùng seed ra cùng số (QA đợt 9). Chưa chấm trên build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 40
+92	Lồng sinh vật sống ở chương 1	Sim 100 lịch	Từ ngày có Súng lưới, ngày chẵn có 1 đơn đặt trước lồng sống ở tàu thứ 9. Ngày lẻ đặt thùng đồ Trái Đất	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 71
 93	Nhóm hàng	Validator	Mỗi loại kiện thuộc đúng một nhóm hàng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
 94	Sửa khoang	Chơi, log	Thiếu vật liệu thì không bắt đầu được, thả phím giữ tiến độ, vật liệu không hoàn lại	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
 95	Người vớt	Chơi, log	Kéo buồng về, tỉnh dậy đầu ngày kế, khoang chỉ sửa được sau khi tỉnh	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-96	Hạng cảng	Sim, log	Điểm đúng công thức, không giảm, phần dư dồn sang hạng sau	FALSE	Chưa chấm, chưa có build	Nhãn: MVP tới hạng 3. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+96	Hạng cảng	Sim, log	Điểm đúng luật, không giảm, phần dư dồn sang hạng sau. Ngưỡng hạng 2 đến 8: 70, 135, 285, 400, 560, 680, 910	FALSE	Chưa chấm, chưa có build	Nhãn: MVP tới hạng 3. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 41
 97	Sang ngày khi co-op	Chơi 2 người	Người treo máy thì sang ngày sau 30 giây	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
 98	Ra chuyến khi co-op	Chơi 2 người	Người treo máy thì chuyến bắt đầu sau 30 giây, tính là ở lại	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
 99	Chuyến thứ 3 bị chặn	Chơi, log	Cửa khí chặn chuyến thứ 3 trong ngày	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
-100	Đóng kiện trước khi co-op ra chuyến	Chơi 2 người	Người về sớm đóng được kiện, không phải ra lại, kiện vẫn được nhận	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+100	Chế trước khi co-op ra chuyến	Chơi 2 người	Người về sớm chế được ở xưởng, sửa danh mục nháp, không phải ra lại. Hàng chế xong trước Mở ca vào được danh mục cùng ngày	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 54
 101	Người vào sau	Chơi	Có chỗ ngủ ở khu hồi sức, buồng tắt vẫn tắt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
 102	Cổng máy UX	Quy trình	Script kiem-ux.mjs thoát 0 (đạt lúc chấm). Có kiểm thêm chuỗi in nháy ở bảng chuỗi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
 103	Đường ra mỗi màn	Điều hướng	Mỗi màn đi được bằng bàn phím chuột và gamepad	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: ux-ui.md
@@ -123,9 +123,15 @@ STT	Feature/Metric	Category	Acceptance Criteria	Status	Actual Result	Notes
 122	Validator	Tool	Bắt đúng các loại lỗi đã cài ca thử trong selftest	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
 123	Schema	Dữ liệu	Phủ mọi bảng dữ liệu mà các GDD yêu cầu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
 124	Nhặt trùng khi co-op	Co-op	1000 lần hai máy cùng nhặt một món: đúng 1 người nhận	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
-125	Kiện khi co-op	Co-op	100 lần thả, nhặt, bốc có rớt mạng: tổng số kiện không đổi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+125	Thùng khi co-op	Co-op	100 lần nhặt và giao thùng có rớt mạng giữa chừng: tổng thùng (kho, quầy, tay, đã bán) không đổi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
 126	Mất kết nối	Co-op	Vào lại đúng nhân vật theo slot, quá 15 giây thì bị kéo về	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
 127	Host thoát	Co-op	Host thoát rồi mở lại: thế giới về điểm lưu gần nhất (3 điểm lưu), không mất ngày trước	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
 128	Vào giữa chừng	Co-op	Thử ở 3 pha, đúng luật vào giữa chừng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
 129	File save	Lưu	Cắt điện giữa lúc ghi vẫn mở lại được bản trước	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
 130	Xuất nhập dữ liệu	Dữ liệu	Xuất rồi nhập lại, 0 trường lệch	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+131	Danh mục bán	Ca cảng	Danh mục không vượt 4 loại ở chương 1, không vượt số thùng kho làm được. Danh mục rỗng thì không Mở ca được. Mở ca trừ kho đúng số thùng nhân 0,4 kiện	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 20 đến 22
+132	Giao sai cửa neo	Ca cảng	Tàu từ chối, thùng ở lại tay, kiên nhẫn không bị trừ thêm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 26
+133	Bơm khí	Ca cảng	Giữ 1 giây ở cửa neo khi tay trống thì hồi 25% kiên nhẫn và cộng 10 Tally. Thả sớm hoặc rời cửa neo thì hủy. Bỏ qua không bị trừ gì. Lúc cập khoảng 50% tàu bật yêu cầu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 28
+134	Tip	Ca cảng	Tip tối đa 25% giá thùng nhân kiên nhẫn còn lại. Sim trễ 2 giây: tip kể cả bơm khí 26 đến 29% Tally một ca, trong mục tiêu 20 đến 30%	FALSE	Sim đạt, chạy lại cùng seed ra cùng số (QA đợt 9). Chưa chấm trên build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 31
+135	Giá thùng chương 1	Kinh tế	Thùng 40 đến 80 Tally, lồng 55 đến 75. Giá theo 5 bậc: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Giá Shop khớp bảng giá thùng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: kinh-te-tien-trinh.md mục 3.1
+136	Cửa neo thứ 4	Ca cảng	Chỉ có sau khi mua Cảng cấp 2 ở Shop, cần Hạng cảng 4. Không theo số người	FALSE	Chưa chấm, chưa có build	Nhãn: Sau MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md luật 23
