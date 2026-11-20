@@ -40,7 +40,7 @@ Cập nhật lần cuối: 2026-11-20, sau QA GD-031 vòng cuối và đợt 4.
 | Ngạt | 12 giây chờ cứu, sau đó bị kéo về và giữ 1 món. Chia Oxy không xuống dưới sàn 20 | `nguoi-choi.md`, (G) log 11, 41, 57 |
 | Oxy hồi từ vật tiêu hao | Không quá 25% dung lượng bình mỗi chuyến, tối đa 2 bình Oxy nhỏ | (G) log 72 |
 | Hệ số co-op lượng nhặt k(N) | 1 cộng a nhân (N trừ 1). a bằng 0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa | (S) `map.md` 3.8 |
-| Ca cảng chương 1, 1 người | Thùng = 0,4 kiện. Danh mục tối đa 4 loại hàng. 25 tàu, giãn cách 7 đến 11 giây, chờ ngoài 20 giây. Kiên nhẫn Loose Bolt 60, Tàu vội 30 giây. Tip tối đa 30% giá thùng nhân kiên nhẫn còn lại. Bơm khí hồi 25% kiên nhẫn, cộng 10 Tally | (G) demo bot 2026-11-20, chờ sim gd-tech đợt 9. Số tàu theo số người: chờ sim |
+| Ca cảng chương 1, 1 người | Thùng = 0,4 kiện. Danh mục tối đa 4 loại hàng. Số tàu theo số người 1, 2, 3, 4: 25, 50, 70, 70, đến trong cửa sổ 225 giây. Chờ ngoài 20 giây. Trần ca 300 giây. Kiên nhẫn Loose Bolt 60, Vừa 45, Tàu vội 30 giây. Tip tối đa 30% giá thùng nhân kiên nhẫn còn lại. Bơm khí: 50% tàu bật lúc cập, hồi 25% kiên nhẫn, cộng 10 Tally. Ca đầu tiên 2 tàu Loose Bolt | (S) sim GD-054 cho số tàu, (G) GD-051 cho trần ca, bơm khí, ca đầu (ước). Cửa neo cho 3 và 4 người: chờ Lead |
 | Tally mỗi đơn vị giá trị (GTĐ) | 10 | `kinh-te-tien-trinh.md` 2.1 |
 | Thưởng đủ đơn, thưởng nhanh | 25%, 15% | `kinh-te-tien-trinh.md` |
 | Hệ số ngân sách kinh tế | 0,40 | (S), (G) log 70 |

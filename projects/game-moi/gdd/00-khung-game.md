@@ -54,7 +54,7 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 
 | Mục | Nội dung |
 |---|---|
-| Mô tả | Thứ mang về trở thành vật liệu sửa trạm và hàng hóa cho ca cảng. Người chơi chọn sửa khoang nào trước, nuôi Driftlife nào, nhận đơn nào, đóng kiện và bốc lên tàu thương nhân kịp giờ, để người vớt về vận hành các khoang, và tối ưu thu nhập Tally |
+| Mô tả | Thứ mang về trở thành vật liệu sửa trạm và hàng hóa cho ca cảng. Người chơi chọn sửa khoang nào trước, nuôi Driftlife nào, bán gì ở ca cảng, mang hàng lên tàu thương nhân kịp giờ, để người vớt về vận hành các khoang, và tối ưu thu nhập Tally |
 | Player Experience | Ownership, Strategy, Efficiency |
 | Giữ bằng luật | K11 khoang sửa xong đổi hình trạm, K12 người vớt vận hành khoang, K13 ca cảng, K14 sự cố, K15 Hạng cảng, K16 nuôi Driftlife, K19 nguồn tiêu của tài nguyên |
 | Đo bằng | đơn giao đủ ở ca cảng 70 đến 95%. Thưởng đủ đơn và nhanh chiếm 15 đến 25% thu Tally. 100% vật phẩm có ít nhất một nguồn tiêu |
@@ -145,7 +145,7 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 
 ### Kinh tế và tiến trình
 - K18 (L, G): Tally là đồng tiền duy nhất. Nguồn chính là ca cảng. Không có tiền thứ hai, không có XP. Nghiên cứu tiêu mẫu vật và vật liệu.
-- K19 (G): sink của tài nguyên: sửa khoang, chế trang bị, nghiên cứu, nuôi, đóng kiện bán. Sink của Tally: nâng cấp bộ đồ và trạm, mua ở shop thứ Ember không tự làm được (linh kiện động cơ, bản thiết kế).
+- K19 (G): sink của tài nguyên: sửa khoang, chế trang bị, nghiên cứu, nuôi, bán ở ca cảng. Sink của Tally: nâng cấp bộ đồ và trạm, mua ở shop thứ Ember không tự làm được (linh kiện động cơ, bản thiết kế).
 - K20 (G): Shop là bảng giá duy nhất, nằm ở khoang liên lạc, đặt hàng cuối ngày. Danh mục mở theo Hạng cảng và chương.
 - K21 (G): tiến trình đi theo 5 chương. Mỗi chương mở một dải hoặc map nhánh lớn và thêm một hoặc hai kiểu chơi mới.
 - K22 (G): một ngày có tối đa 2 chuyến. Đi bằng Skiff cũng tính là một chuyến. Sau chuyến thứ hai cửa khí khóa tới ngày mới. Ca cảng luôn sau các chuyến: đã mở ca cảng thì không ra ngoài được nữa trong ngày đó. Lý do: về trạm nạp đầy Oxy rồi ra lại không giới hạn sẽ phá K1.

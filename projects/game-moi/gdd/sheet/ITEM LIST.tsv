@@ -83,35 +83,35 @@ STT	Item name	Type	Nguồn nhận	Nguồn tiêu	Note
 82	Thức ăn nuôi Gần	Thức ăn nuôi	Pha thức ăn nuôi Gần	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Gần, Sau MVP
 83	Thức ăn nuôi Giữa	Thức ăn nuôi	Pha thức ăn nuôi Giữa	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Giữa, Sau MVP
 84	Thức ăn nuôi Xa	Thức ăn nuôi	Pha thức ăn nuôi Xa	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Xa, Sau MVP
-85	Kiện phế liệu	Kiện	Đóng kiện phế liệu	Bốc lên tàu ở ca cảng	Thường, Khối mang, Gần, MVP. Cỡ Vừa
-86	Kiện cáp	Kiện	Đóng kiện cáp	Bốc lên tàu ở ca cảng	Thường, Khối mang, Gần, MVP. Cỡ Vừa
-87	Kiện quặng	Kiện	Đóng kiện quặng	Bốc lên tàu ở ca cảng	Thường, Khối mang, Gần, MVP. Cỡ Vừa
-88	Kiện băng	Kiện	Đóng kiện băng	Bốc lên tàu ở ca cảng	Thường, Khối mang, Gần, MVP. Cỡ Vừa
-89	Kiện mô sinh học	Kiện	Đóng kiện mô sinh học	Bốc lên tàu ở ca cảng	Thường, Khối mang, Gần, MVP. Cỡ Nhỏ
-90	Kiện đồ Trái Đất	Kiện	Đóng kiện đồ Trái Đất	Bốc lên tàu ở ca cảng	Thường, Khối mang, Gần, MVP. Cỡ Nhỏ. Tàu của người mê đồ Trái Đất hỏi
-91	Kiện cơ khí	Kiện	Đóng kiện cơ khí	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Gần, Sau MVP. Cỡ Nhỏ
-92	Kiện điện tử	Kiện	Đóng kiện điện tử	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Gần, Sau MVP. Cỡ Nhỏ
-93	Kiện nước tinh khiết	Kiện	Đóng kiện nước tinh khiết	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Gần, MVP. Cỡ Nhỏ
-94	Kiện đặc sản Gần	Kiện	Đóng kiện đặc sản Gần	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Gần, MVP. Cỡ Nhỏ
-95	Kiện sản phẩm nuôi Gần	Kiện	Đóng kiện sản phẩm nuôi Gần	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Gần, Sau MVP. Cỡ Vừa
-96	Lồng sinh vật sống Gần	Kiện	Đưa sinh vật sống cỡ S Gần vào lồng giao, Đưa sinh vật sống cỡ M Gần vào lồng giao	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Gần, MVP. Cỡ Lớn mang nguyên lồng, nhớ loài để khớp đơn
-97	Kiện vật tư	Kiện	Đóng kiện vật tư	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Gần, Sau MVP. Cỡ Vừa (đồ chế)
-98	Bản sao dữ liệu	Kiện	Sao bản dữ liệu	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Gần, Sau MVP. Cỡ Nhỏ, sao từ vật kể chuyện loại dữ liệu, vật gốc ở lại
-99	Kiện hợp kim	Kiện	Đóng kiện hợp kim	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
-100	Kiện cảm biến	Kiện	Đóng kiện cảm biến	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
-101	Kiện dung dịch lạnh	Kiện	Đóng kiện dung dịch lạnh	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
-102	Kiện đặc sản Giữa	Kiện	Đóng kiện đặc sản Giữa	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
-103	Kiện sản phẩm nuôi Giữa	Kiện	Đóng kiện sản phẩm nuôi Giữa	Bốc lên tàu ở ca cảng	Ít gặp, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
-104	Lồng sinh vật sống Giữa	Kiện	Đưa sinh vật sống Giữa vào lồng giao	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Giữa, Sau MVP. Cỡ Lớn
-105	Kiện giáp	Kiện	Đóng kiện giáp	Đóng kiện tin mật, Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-106	Kiện plasma	Kiện	Đóng kiện plasma	Đóng kiện tin mật, Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-107	Kiện lõi nguội	Kiện	Đóng kiện lõi nguội	Đóng kiện tin mật, Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-108	Kiện đặc sản Xa	Kiện	Đóng kiện đặc sản Xa	Đóng kiện tin mật, Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-109	Kiện sản phẩm nuôi Xa	Kiện	Đóng kiện sản phẩm nuôi Xa	Đóng kiện tin mật, Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-110	Lồng sinh vật sống Xa	Kiện	Đưa sinh vật sống Xa vào lồng giao	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Lớn
-111	Kiện linh kiện Cradle	Kiện	Đóng kiện linh kiện Cradle	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Cradle, Sau MVP. Cỡ Nhỏ
-112	Kiện tin mật	Kiện	Đóng kiện tin mật	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ. Giao cho tàu của mạng lưới, giá trị bằng kiện vỏ bọc
-113	Kiện linh kiện Warden	Kiện	Đóng kiện linh kiện Warden	Bốc lên tàu ở ca cảng	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Vừa
+85	Kiện phế liệu	Kiện	Đóng kiện phế liệu	Bán theo thùng ở ca cảng	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
+86	Kiện cáp	Kiện	Đóng kiện cáp	Bán theo thùng ở ca cảng	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
+87	Kiện quặng	Kiện	Đóng kiện quặng	Bán theo thùng ở ca cảng	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
+88	Kiện băng	Kiện	Đóng kiện băng	Bán theo thùng ở ca cảng	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
+89	Kiện mô sinh học	Kiện	Đóng kiện mô sinh học	Bán theo thùng ở ca cảng	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
+90	Kiện đồ Trái Đất	Kiện	Đóng kiện đồ Trái Đất	Bán theo thùng ở ca cảng	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng. Tàu của người mê đồ Trái Đất hỏi
+91	Kiện cơ khí	Kiện	Đóng kiện cơ khí	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng
+92	Kiện điện tử	Kiện	Đóng kiện điện tử	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng
+93	Kiện nước tinh khiết	Kiện	Đóng kiện nước tinh khiết	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
+94	Kiện đặc sản Gần	Kiện	Đóng kiện đặc sản Gần	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
+95	Kiện sản phẩm nuôi Gần	Kiện	Đóng kiện sản phẩm nuôi Gần	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng
+96	Lồng sinh vật sống Gần	Kiện	Đưa sinh vật sống cỡ S Gần vào lồng giao, Đưa sinh vật sống cỡ M Gần vào lồng giao	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Gần, MVP. Một lồng là một đơn vị bán, không chia thùng. Mang nguyên lồng, nhớ loài để khớp đơn
+97	Kiện vật tư	Kiện	Đóng kiện vật tư	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng (đồ chế)
+98	Bản sao dữ liệu	Kiện	Sao bản dữ liệu	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng. Sao từ vật kể chuyện loại dữ liệu, vật gốc ở lại
+99	Kiện hợp kim	Kiện	Đóng kiện hợp kim	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
+100	Kiện cảm biến	Kiện	Đóng kiện cảm biến	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
+101	Kiện dung dịch lạnh	Kiện	Đóng kiện dung dịch lạnh	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
+102	Kiện đặc sản Giữa	Kiện	Đóng kiện đặc sản Giữa	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
+103	Kiện sản phẩm nuôi Giữa	Kiện	Đóng kiện sản phẩm nuôi Giữa	Bán theo thùng ở ca cảng	Ít gặp, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
+104	Lồng sinh vật sống Giữa	Kiện	Đưa sinh vật sống Giữa vào lồng giao	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Giữa, Sau MVP. Một lồng là một đơn vị bán, không chia thùng
+105	Kiện giáp	Kiện	Đóng kiện giáp	Đóng kiện tin mật, Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
+106	Kiện plasma	Kiện	Đóng kiện plasma	Đóng kiện tin mật, Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
+107	Kiện lõi nguội	Kiện	Đóng kiện lõi nguội	Đóng kiện tin mật, Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
+108	Kiện đặc sản Xa	Kiện	Đóng kiện đặc sản Xa	Đóng kiện tin mật, Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
+109	Kiện sản phẩm nuôi Xa	Kiện	Đóng kiện sản phẩm nuôi Xa	Đóng kiện tin mật, Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
+110	Lồng sinh vật sống Xa	Kiện	Đưa sinh vật sống Xa vào lồng giao	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. Một lồng là một đơn vị bán, không chia thùng
+111	Kiện linh kiện Cradle	Kiện	Đóng kiện linh kiện Cradle	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Cradle, Sau MVP. 1 kiện = 2,5 thùng
+112	Kiện tin mật	Kiện	Đóng kiện tin mật	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng. Giao cho tàu của mạng lưới, giá trị bằng kiện vỏ bọc
+113	Kiện linh kiện Warden	Kiện	Đóng kiện linh kiện Warden	Bán theo thùng ở ca cảng	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
 114	Van tiết lưu	Linh kiện lõi	Shop, mở ở Hạng cảng 3	Lắp động cơ chính, giai đoạn 1	Hiếm, Khối kho, Gần, MVP
 115	Buồng đốt tái chế	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 2	Hiếm, Khối kho, Giữa, Sau MVP
 116	Cuộn ổn định từ	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 3	Hiếm, Khối kho, Xa, Sau MVP

@@ -1,5 +1,5 @@
 STT	Task	Sub Task	Short Description	Ref
-1	Cấu trúc một ngày	Pha 1 Chuẩn bị	"Làm gì: xem tàu nào cập bến hôm nay và họ cần hàng gì, chọn dụng cụ mang theo, nhận đồ chế xong, chăm khoang sinh quyển
+1	Cấu trúc một ngày	Pha 1 Chuẩn bị	"Làm gì: xem bảng tàu hôm nay và đơn đặt trước, chọn dụng cụ mang theo, nhận đồ chế xong, chăm khoang sinh quyển
 Kết thúc khi: người chơi ra cửa khí
 Bỏ qua được: Có"	00-khung-game.md mục 4
 		Pha 2 Chuyến 1	"Làm gì: ra ngoài nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh, vớt người, tìm manh mối
@@ -8,8 +8,8 @@ Bỏ qua được: Có"	00-khung-game.md mục 4
 		Pha 3 Chuyến 2	"Làm gì: như chuyến 1. Giữa hai chuyến được vào kho và xưởng
 Kết thúc khi: như chuyến 1
 Bỏ qua được: Có"	00-khung-game.md mục 4
-		Pha 4 Ca cảng	"Làm gì: tàu cập bến theo lịch, lấy hàng trong kho, chế thêm, đóng kiện, bốc lên tàu trước khi tàu rời, nhận Tally
-Kết thúc khi: hết giờ ca hoặc tàu cuối rời bến
+		Pha 4 Ca cảng	"Làm gì: lập danh mục bán từ hàng trong kho rồi mở ca. Tàu cập vào cửa neo, mỗi tàu gọi 1 thùng. Mang thùng từ quầy tới đúng tàu trước khi tàu hết kiên nhẫn, bơm khí cho tàu đang chờ, nhận Tally và tip
+Kết thúc khi: hết giờ ca, tàu cuối rời, hoặc hết hàng trong danh mục
 Bỏ qua được: Có, không bị phạt"	00-khung-game.md mục 4
 		Pha 5 Cuối ngày	"Làm gì: nâng cấp, nghiên cứu, đặt hàng ở Shop, nói chuyện với người trong trạm, nhận quest, xem truyện
 Kết thúc khi: người chơi vào buồng ngủ đông. Ngủ thì lưu và sang ngày mới
@@ -17,7 +17,7 @@ Bỏ qua được: Không"	00-khung-game.md mục 4
 2	Luật ngày	Tối đa 2 chuyến	Một ngày tối đa 2 chuyến, đi Skiff cũng tính một chuyến. Sau chuyến thứ hai cửa khí khóa tới ngày mới. Ca cảng luôn sau các chuyến, đã mở ca cảng thì không ra ngoài nữa\nLý do: nếu về nạp đầy Oxy rồi ra lại không giới hạn thì Oxy không còn là giới hạn	00-khung-game.md mục 5
 		Ngày không đồng hồ	Ngày chỉ sang khi vào buồng ngủ đông. Co-op: vào buồng là đồng ý ngủ, đếm 30 giây từ người đầu tiên, ai chưa vào thì tự tính là đồng ý\nTự lưu ở 3 lúc: sau mỗi chuyến khi mọi người đã về, sau ca cảng, lúc ngủ. Thoát giữa chuyến hoặc giữa ca thì vào lại ở điểm lưu gần nhất, mất phần đang làm dở\nBố cục map của từng chuyến lưu theo ngày và chuyến thứ mấy	00-khung-game.md mục 5, ky-thuat.md
 		Xác nhận ra chuyến	Chuyến bắt đầu khi mọi người đang online đã xác nhận ở cửa khí. Ai không đi thì ở lại trạm, vẫn dùng được xưởng và khoang sinh quyển. Ai không trả lời trong 30 giây thì tính là ở lại\nRa ngoài rồi mỗi người tự do tách nhau, mỗi người một màn hình	00-khung-game.md mục 6
-		Người đã về không ra lại	Người đã về trạm (về sớm hoặc bị kéo về) không ra lại trong cùng chuyến. Trong lúc chờ thì làm việc trạm: xưởng, khoang sinh quyển, đóng kiện trước cho ca cảng, xem vị trí đồng đội\nLý do: ra lại thì Oxy không còn là giới hạn	00-khung-game.md mục 6
+		Người đã về không ra lại	Người đã về trạm (về sớm hoặc bị kéo về) không ra lại trong cùng chuyến. Trong lúc chờ thì làm việc trạm: chế trước ở xưởng cho danh mục bán, khoang sinh quyển, sửa khoang, xem vị trí đồng đội\nLý do: ra lại thì Oxy không còn là giới hạn	00-khung-game.md mục 6
 3	Độ dài mục tiêu	Một chuyến, chương 1	Mục tiêu 4 đến 6 phút. Sim đo được 4,4 phút (một người)	00-khung-game.md mục 9, so-hien-hanh.md
 		Một chuyến, chương 5	Mục tiêu 10 đến 12 phút. Sim đo được 10,4 phút (một người)	00-khung-game.md mục 9, so-hien-hanh.md
 		Ca cảng	Mục tiêu 3 đến 5 phút	00-khung-game.md mục 9

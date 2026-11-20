@@ -7,14 +7,14 @@ Máy chấm GDD và sim. Node 18 trở lên, không cần cài thư viện. Ch�
 | `node projects/game-moi/tools/selftest.mjs` | Selftest mọi tool (ca tính tay, cùng seed cùng kết quả, bộ lỗi cố ý). Chạy trước khi báo xong | thoát 0 khi đạt |
 | `node projects/game-moi/tools/validate-gdd.mjs [--ra projects/game-moi/tools/ket-qua/validate-gdd.md]` | Kiểm chéo mọi file `gdd/he-thong/*.md`, in bảng lỗi theo vai, file, dòng | thoát 1 khi có lỗi |
 | `node projects/game-moi/tools/sim-chuyen.mjs [--seed 1] [--lan 2000] [--ra projects/game-moi/tools/ket-qua/sim-chuyen.md]` | Sim chuyến: thời lượng, lượng nhặt, ngạt, beacon theo chương, kịch bản, số người. Độ nhạy túi và mật độ, tìm k(N) | `tools/ket-qua/sim-chuyen.md` |
-| `node projects/game-moi/tools/sim-ca-cang.mjs [--seed 1] [--lan 300] [--ra projects/game-moi/tools/ket-qua/sim-ca-cang.md]` | Sim ca cảng theo đề của `tram-va-cang.md` | `tools/ket-qua/sim-ca-cang.md` |
+| `node projects/game-moi/tools/sim-ca-cang.mjs [--seed 1] [--lan 300] [--ra projects/game-moi/tools/ket-qua/sim-ca-cang.md]` | Sim ca cảng khung Dave (đợt 9): 1 tới 4 người, số tàu theo N, cửa neo, 3 kiểu danh mục, bơm khí | `tools/ket-qua/sim-ca-cang.md` |
 | `node projects/game-moi/tools/sim-combat.mjs [--seed 1] [--lan 2000] [--ra projects/game-moi/tools/ket-qua/sim-combat.md]` | Sim combat S1 phần trận, S2, S3, S4, S5 boss BS-1 | `tools/ket-qua/sim-combat.md` |
 
-Prototype bay: `prototype/bay.html`, mở qua http trên cổng riêng (`python -m http.server 8791 --bind 127.0.0.1` trong thư mục `prototype/`, tắt đúng tiến trình đó khi xong). Thanh chỉnh bên phải, nút Xuất JSON, phím T thử né.
+Prototype ca cảng khung Dave: `prototype/ca-cang-dave.html`, mở thẳng bằng trình duyệt. Prototype bay: `prototype/bay.html`, mở qua http trên cổng riêng (`python -m http.server 8791 --bind 127.0.0.1` trong thư mục `prototype/`, tắt đúng tiến trình đó khi xong). Thanh chỉnh bên phải, nút Xuất JSON, phím T thử né.
 
 Cờ `--khong-gio` bỏ giờ chạy khỏi file kết quả để so hai lần chạy bằng diff (hash tham số vẫn in).
 
-Tham số: `tham-so/chuyen.json`, `tham-so/ca-cang.json`, `tham-so/combat.json`. Mỗi khóa có `_nguon`. Số gd-tech tự đặt có nhãn `[GIẢ ĐỊNH]` và được in ở đầu file kết quả. Số của vai khác được đọc thẳng từ GDD, không chép tay: khối NODE, SPECIES, ITEM, CGOSIZE của `vat-pham.md`, bảng Danh mục, 3.4 và 3.4b của `combat-driftlife.md`, bảng a theo dải ở `map.md` 3.8, bảng Nhóm hàng của `tram-va-cang.md`.
+Tham số: `tham-so/chuyen.json`, `tham-so/ca-cang.json`, `tham-so/combat.json`. Mỗi khóa có `_nguon`. Số gd-tech tự đặt có nhãn `[GIẢ ĐỊNH]` và được in ở đầu file kết quả. Số của vai khác được đọc thẳng từ GDD, không chép tay: khối NODE, SPECIES, ITEM, CGOTHUNG của `vat-pham.md`, khối gia-kien của `kinh-te-tien-trinh.md`, bảng Danh mục, 3.4 và 3.4b của `combat-driftlife.md`, bảng a theo dải ở `map.md` 3.8.
 
 Vai đổi số: sửa GDD hoặc file tham số, chạy lại lệnh sim, đọc file kết quả. Không chép số từ file kết quả vào GDD bằng tay, trỏ tới file.
 

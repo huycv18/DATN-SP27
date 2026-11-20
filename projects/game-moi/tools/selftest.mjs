@@ -102,38 +102,43 @@ t('sim-chuyen: K26 Oxy hồi từ Bình Oxy nhỏ một chuyến không quá 25%
   assert.ok(r.daHoi > 0 && r.daHoi <= 0.25 * SC.CFG.chuong['1'].binh + 1e-9, `daHoi ${r.daHoi}`);
 });
 
-// sim-ca-cang: ca tính tay một tàu một kiện, và tất định.
+// sim-ca-cang (khung Dave, GD-054): ca tính tay một tàu một thùng, trễ phản xạ, chia việc co-op, hết hàng, tất định.
 const CC = await import('./sim-ca-cang.mjs');
 const { rngTu } = await import('./lib.mjs');
-const mot = (g, id, kg = [1, 1]) => ({ ...CC.CFG, lechGioDen: 0, tau: { [id]: { luu: 'vừa', dong: [1, 1], nhom: [g], trongSo: 1, tu: 1, hang: 1 } }, cauHinh: { t: { ch: 1, ben: 1, soTau: 1, gianCach: 0, kienGoc: kg, heSoKien: 0.6, hang: 1, suCo: [0, 0] } } });
-t('sim-ca-cang: ca tính tay một tàu, một dòng CGO-109 (HC10, Nhỏ) một kiện, một người', () => {
-  // Tàu đến 0 giây. Nghĩ 1,5, kho tới máy 2,0, đóng 5,0, máy tới bến 2,0 / 0,9 = 2,22: giao lúc khoảng 10,7. Rời sau 3 giây: ca khoảng 13,7 đến 14,5.
-  const r = CC.chayCa(mot('HC10', 'TA03'), 't', 'trung bình', 1, 0, rngTu(1));
-  assert.ok(r.giay >= 13.5 && r.giay <= 14.5, `giây ${r.giay}`);
-  assert.equal(r.du, 1); assert.equal(r.kien, 1); assert.equal(r.nhanh, 1); assert.equal(r.diem, 3);
+// Chỉ có tàu Loose Bolt, đơn đặt trước trỏ vào món không có trong danh mục, danh mục chỉ một loại.
+const ccx = (so, dm) => ({ ...CC.CFG, cuaSoDen: 0, soTauGoc: so, tau: { ...CC.CFG.tau, voi: { ...CC.CFG.tau.voi, w: 0 } }, datTruoc: { ...CC.CFG.datTruoc, item: 'bang' }, danhMuc: { x: dm } });
+const ca = (cfg, N, tre, soTau) => CC.chayCa(cfg, { N, tre, soTau, danhMuc: 'x' }, rngTu(1));
+t('sim-ca-cang: giá thùng đọc từ kinh-te-tien-trinh.md chia 2,5 (CGO-109 120 ra 48, CGO-101 140 ra 56)', () => {
+  assert.equal(CC.CFG.hang.td.gia, 48); assert.equal(CC.CFG.hang.phe.gia, 56);
 });
-t('sim-ca-cang: luật TA01 ép dòng CGO-121, cho con vào lồng ở máy 8 giây, lồng Lớn: 1,5 + 2 + 8 + 2 / 0,65, rời sau 3 giây', () => {
-  const r = CC.chayCa(mot('HC10', 'TA01'), 't', 'trung bình', 1, 0, rngTu(1));
-  assert.ok(r.giay >= 17.3 && r.giay <= 18.3, `giây ${r.giay}`);
+t('sim-ca-cang: ca tính tay một tàu Loose Bolt gọi 1 thùng đồ Trái Đất, một người, trễ 0: giao khoảng 9,2 giây, rời, ca khoảng 10,5 giây', () => {
+  // Tàu tới 2,0, vào 1, cập 1, thùng hiện sau 3 (7,1), đi quầy 204 px / 280 = 0,73, đi cửa neo 374 / 280 = 1,34, rời 1,3.
+  const r = ca(ccx(1, { td: 1 }), 1, 0, 1);
+  assert.ok(r.giay >= 10.0 && r.giay <= 11.2, `giây ${r.giay}`);
+  assert.equal(r.served, 1); assert.equal(r.left, 0);
+  assert.ok(r.tally >= 66 && r.tally <= 76, `tally ${r.tally}`); // 48 cộng tip 48 x 0,3 x phần kiên nhẫn x 2 (mê đồ Trái Đất)
 });
-t('sim-ca-cang: điểm cảng làm tròn lên tích (luật 40): 2 người, một đơn đủ nhanh ra 3 + 2 = 5', () => {
-  const r = CC.chayCa(mot('HC10', 'TA03'), 't', 'trung bình', 2, 0, rngTu(1));
-  assert.equal(r.du, 1); assert.equal(r.nhanh, 1); assert.equal(r.diem, 5);
+t('sim-ca-cang: trễ phản xạ 2 giây thêm 4 giây cho một tàu (hai lần đi: nhặt rồi giao)', () => {
+  const d = ca(ccx(1, { td: 1 }), 1, 2, 1).giay - ca(ccx(1, { td: 1 }), 1, 0, 1).giay;
+  assert.ok(d >= 3.8 && d <= 4.4, `chênh ${d}`);
 });
-t('sim-ca-cang: cùng seed cùng kết quả', () => assert.deepEqual(CC.moPhong(CC.CFG, '2', 'tệ', 3, 0, 5, 50), CC.moPhong(CC.CFG, '2', 'tệ', 3, 0, 5, 50)));
-t('sim-ca-cang: co-op tăng kiện mỗi dòng theo hệ số 0,6, làm tròn lên (dòng gốc 2: 2, 4, 5, 6)', () => {
-  assert.deepEqual([1, 2, 3, 4].map((N) => CC.sinhLich(mot('HC10', 'TA03', [2, 2]), 't', N, rngTu(3))[0].dong[0].can), [2, 4, 5, 6]);
+t('sim-ca-cang: hai người chia việc cho hai tàu đến cùng lúc, nhanh hơn một người và không ai nhặt trùng thùng', () => {
+  const cfg = ccx(2, { td: 4 });
+  const mot = ca(cfg, 1, 1, 2), hai = ca(cfg, 2, 1, 2);
+  assert.equal(hai.served, 2); assert.ok(hai.giay < mot.giay - 1, `1 người ${mot.giay}, 2 người ${hai.giay}`);
 });
-t('sim-ca-cang: một đơn không có hai dòng cùng ID, chương 1 tối đa một dòng kiện tinh 1 kiện', () => {
-  const rng = rngTu(9);
-  for (let i = 0; i < 300; i++) for (const ck of ['1', '1-h3', '3', '5']) {
-    const lich = CC.sinhLich(CC.CFG, ck, 4, rng);
-    for (const x of lich) assert.equal(new Set(x.dong.map((d) => d.id)).size, x.dong.length);
-    if (CC.CFG.cauHinh[ck].ch === 1) {
-      const tinh = lich.flatMap((x) => x.dong).filter((d) => CC.kien(CC.CFG, d.id).tinh);
-      assert.ok(tinh.length <= 1 && tinh.every((d) => d.can === 1));
-    }
-  }
+t('sim-ca-cang: danh mục chỉ 3 thùng cho 6 tàu thì 3 tàu không tới, ca kết thúc sớm, Tally không âm', () => {
+  const r = ca(ccx(6, { td: 3 }), 1, 1, 6);
+  assert.equal(r.served, 3); assert.equal(r.skipped, 3); assert.ok(r.giay < CC.CFG.caToiDa);
+});
+t('sim-ca-cang: hết kiên nhẫn thì tàu rời, thùng quay về danh mục (tàu 30 giây, người chơi trễ 40 giây)', () => {
+  const cfg = ccx(1, { td: 2 }); cfg.tau = { ...cfg.tau, bolt: { ...cfg.tau.bolt, kn: 5 } };
+  const r = ca(cfg, 1, 40, 1);
+  assert.equal(r.served, 0); assert.equal(r.left, 1); assert.equal(r.thungDu, 2);
+});
+t('sim-ca-cang: cùng seed cùng kết quả', () => {
+  const o = { N: 3, tre: 2, soTau: 40, danhMuc: Object.keys(CC.CFG.danhMuc)[0], cua: 4 };
+  assert.deepEqual(CC.moPhong(CC.CFG, o, 5, 5), CC.moPhong(CC.CFG, o, 5, 5));
 });
 
 // sim-combat: ca tính tay, đọc đúng bảng 3.4.

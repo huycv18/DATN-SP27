@@ -51,7 +51,7 @@ Nguồn: Lead 2026-11-20: "tôi muốn làm phần này giống phần bán sush
 | Bơm khí | Bật sau 10 tới 18 giây ở cửa neo, giữ 1 giây, hồi 25% kiên nhẫn, cộng 10 Tally | |
 | Đơn đặt trước | 1 thùng đồ Trái Đất của Tikko, giá gấp 1,5, tàu thứ 9 | |
 | Điểm cảng | 1 mỗi tàu, thêm 1 nếu còn trên 2/3 kiên nhẫn | Ngưỡng hạng phải đặt lại vì một ca cho tới 50 điểm |
-| Thời lượng ca tối đa | 240 giây | Giữ |
+| Thời lượng ca tối đa | 240 giây | Đợt 9 đổi thành 300 giây (GD-051), xem `tram-va-cang.md` |
 | Số tàu theo N | 1 người 25, mỗi người thêm (chưa đo) | Co-op chưa có trong demo |
 
 Bot trong demo (30 ca mỗi dòng, danh mục phế liệu 10, cáp 8, quặng 8, đồ Trái Đất 5, bot chơi đúng, trễ phản xạ là thời gian chờ trước mỗi lần đi):

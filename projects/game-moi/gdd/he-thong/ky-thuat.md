@@ -12,12 +12,12 @@ Cầu nối giữa GDD và 4 dev Unity. File này chốt cách dữ liệu đi t
 |---|---|---|
 | Validator chéo GDD | Chạy được, 10 file, thoát 1 khi lỗi | `tools/validate-gdd.mjs`, kết quả `tools/ket-qua/validate-gdd.md` |
 | Sim chuyến | Chạy được, theo chương 1 đến 5, 4 kịch bản (tệ, trung bình, tốt, tham), 1 đến 4 người | `tools/sim-chuyen.mjs`, `tools/ket-qua/sim-chuyen.md` |
-| Sim ca cảng | Chạy được, chương 1 đến 5 theo số bến đang hoạt động | `tools/sim-ca-cang.mjs`, `tools/ket-qua/sim-ca-cang.md` |
+| Sim ca cảng | Chạy được, theo khung Dave (đợt 9, thay bản GD-030): 1 đến 4 người chia việc, quét số tàu và số cửa neo theo N, trễ phản xạ 1 đến 3 giây, 3 kiểu danh mục, bơm khí | `tools/sim-ca-cang.mjs`, `tools/ket-qua/sim-ca-cang.md` |
 | Sim combat | Chạy được, S1 phần trận, S2 phần thời gian và ròng, S3, S4, S5 cho BS-1. S6 lý thuyết ở prototype | `tools/sim-combat.mjs`, `tools/ket-qua/sim-combat.md` |
 | Schema dữ liệu | Bản của gd-tech ở mục 2.1 (schema thuộc thẩm quyền gd-tech, GDM duyệt khi giao dev) | file này |
 | Đồng bộ co-op | Mô hình host nắm quyền, mục 2.2 | file này |
 | Netcode | So sánh để dev chọn, mục 6.3. Phòng không chọn thay | file này |
-| Event Tracking | 71 sự kiện, mục 2.4 (46 gộp từ các GDD, 20 thêm sau QA GD-031, 5 của `ux-ui.md`). Tab Sheet là bản đọc sửa tay từ 2026-11-20 (đợt 8), không sinh lại bằng `tools/xuat-event-tracking.mjs` | file này, tab Event Tracking |
+| Event Tracking | 73 sự kiện, mục 2.4 (46 gộp từ các GDD, 20 thêm sau QA GD-031, 5 của `ux-ui.md`, 2 của ca cảng khung Dave đợt 9, và sự kiện ca cảng 30, 32 tới 37 viết lại). Tab Sheet là bản đọc sửa tay từ 2026-11-20 (đợt 8), không sinh lại bằng `tools/xuat-event-tracking.mjs` | file này, tab Event Tracking |
 | Prototype bay | Chạy được: bay 8 hướng, hãm, lướt, Oxy, túi, thử né S6, 16 thanh chỉnh, xuất JSON. Số bậc 0 khớp `nguoi-choi.md` (đo trong trình duyệt: buông từ vmax dừng sau 0,51 giây và 1,5 u, hãm dừng sau 0,18 giây, lướt 15 u/s) | `tools/prototype/bay.html` |
 
 Số và kết luận của sim chỉ nằm ở file kết quả (`tools/ket-qua/sim-chuyen.md`, `sim-ca-cang.md`, `sim-combat.md`), mỗi file có mục đối chiếu mục tiêu. File này không chép kết luận để không lệch khi số đổi.
@@ -61,8 +61,8 @@ Schema đề xuất (mỗi bảng một loại ScriptableObject, một asset m�
 | `HazardData` | id (H01..), loai, dmgOxy, choang (giây), lucDay, baoTruoc, giayBat, giayTat, kichThuocVung, soManh, daiMo, nhan | `map.md` 3.5 | MVP |
 | `BranchMapData` (map nhánh) | id (N1..), scene, dai, chuong, nguoiVot (RS id), boss (BS id), khoa (list {cua, chia: TOL id}), thoiLuongMoiLanVao, khe (list {ma M1.. hoặc V1.., viTri}), trangThaiLuu (list khóa: cửa, vách, đường tắt), nhan | `map.md` 2.10, `vat-pham.md` luật T7, `cot-truyen.md` | MVP cho N1 |
 | `ClueData` (vật truyện) | ma (MM hoặc V), itemId (STY), chuong, mocHien, branchMapId, khe, mucSoTay | `cot-truyen.md` mục 2.5, mục 6 | MVP cho chương 1 |
-| `ShipTypeData` | id (TA01..), luuBen (enum), soDongMin, soDongMax, nhomHang (list HC id), chiId (theo nhóm), trongSo, moChuong, moHang, mocMo (C id), lanCapBenDeMo (TA08), thuongNhan (TR id), luatRieng ({kieu, thamSo}: chào 15 giây TA04, dòng tùy chọn nhân 1,5 TA03, dòng ẩn TA06, không thưởng nhanh TA09), nhan | `tram-va-cang.md` 2.4, luật 69 | MVP cho TA01, TA02 |
-| `CargoGroupData` | id (HC01..), kien (list CGO id), moChuong (int). Cỡ, cần chế, giây đóng thuộc từng CGO ở `ItemData` | `tram-va-cang.md` Nhóm hàng | MVP |
+| `ShipTypeData` | id (TA01..), luuBen bỏ, kienNhan (giây kiên nhẫn), tipHeSo, trongSo, thichHang (list {thungId, trongSo}), mePhan (thungId tip gấp đôi), moChuong, moHang, thuongNhan (TR id), luatRieng ({kieu, thamSo}), nhan. Đề xuất của gd-tech theo khung Dave, chờ gd-quan khớp với tab Customer | `tram-va-cang.md` loại tàu | MVP cho tàu mở đầu |
+| `CargoGroupData` | id (HC01..), kien (list CGO id), moChuong (int). Thùng là kiện chia hệ số thùng, giá thùng đọc từ giá kiện, lồng sống không chia | `tram-va-cang.md` Nhóm hàng, `vat-pham.md` | MVP |
 | `RoomData` (khoang) | id (KH01..), ten, chuongMo, nguoiVot (RS id), capSua (list {vatLieu, giay}), viTriMatCat ({tang, cot}) | `tram-va-cang.md` Danh mục, 2.6, 2.6b | MVP |
 | `PortRankData` | hang (int), nguongDiem, tranChuong, mo (list) | `tram-va-cang.md` 2.5 | MVP |
 | `StoryBeatData` | id (C1.x), chuong, dongChuong (bool, K25: chỉ mốc đóng chương mở dải mới), giaiDoanDongCo (giai đoạn động cơ phải lắp xong, chỉ khi dongChuong), truoc (list), dieuKien (list {loai, thamSo}, mọi điều kiện cùng đúng, không có "hoặc"), noi, canh, mo (list) | `cot-truyen.md` mục 6 (18 loại điều kiện) | MVP cho chương 1 |
@@ -71,7 +71,7 @@ Schema đề xuất (mỗi bảng một loại ScriptableObject, một asset m�
 | `PlayerTuning`, `PortTuning`, `CombatTuning`, `EconomyTuning` (một asset mỗi loại) | tham số mục 3 của `nguoi-choi.md`, `tram-va-cang.md`, `combat-driftlife.md` 3.1, 3.2, 6b, `kinh-te-tien-trinh.md` | các file đó | MVP |
 | Chuỗi và bước tutorial | Không thành SO ở bản này. gd-ux giữ `strings/strings.tsv` và bảng bước T01.. ở `ux-ui.md`, dev đọc thẳng. Câu hỏi mở 3 | `ux-ui.md` | MVP |
 
-Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 đến 3, loaiBenTrong cho lồng sống), đơn hàng và lịch tàu sinh đầu ngày từ `ShipTypeData` và seed của ngày (luật 20, 69 của `tram-va-cang.md`). `OrderInstance`: tauId (TA id), cho (thứ tự trong lịch), gioDen, trangThai (chờ ngoài, ở bến, rời đủ, rời trượt, bỏ), dong (list `OrderLine`). `OrderLine`: kienId (CGO id), can (int, đã nhân quy mô N), xong (int), loaiNhan (list DL id, chỉ dòng lồng sống, mặc định mọi loài của dải), giaMoiKien (int, tính lúc giao với lồng sống theo loài bên trong). Cả hai nằm trong file save (mục 2.3b).
+Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 đến 3, loaiBenTrong cho lồng sống). Đầu ca: `CatalogEntry` (thungId, soLuong, daBan), tối đa M loại, lập ở khoang liên lạc trước ca. Lịch tàu sinh lúc mở ca từ `ShipTypeData`, danh mục và seed của ngày. `ShipInstance`: tauId (TA id), thuTu, gioDen, trangThai (vào, chờ ngoài, cập, giao xong, rời chưa giao), cuaNeo, thungId (một thùng mỗi tàu), datTruoc (bool), kienNhanCon (float). Thùng ở quầy: `CounterCrate` (cuaNeo, thungId, ai đang giữ chỗ). Danh mục và lịch tàu nằm trong file save (mục 2.3b), `ShipInstance` và `CounterCrate` chỉ sống trong ca.
 
 ### 2.2 Đồng bộ co-op: ai nắm quyền `MVP`
 
@@ -92,8 +92,8 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 | Combat | Sinh lực, thanh Choáng, thanh Mê, trạng thái, vé tấn công của mọi kẻ địch | Host | 10 lần mỗi giây và sự kiện | Máy người bắn hiện hiệu ứng trúng ngay, host xác nhận (theo `combat-driftlife.md`) |
 | Combat | Vị trí kẻ địch | Host | 10 lần mỗi giây, nội suy | |
 | Trạm | Cấp và trạng thái khoang, giai đoạn động cơ, kho, hàng đợi xưởng, ô nuôi | Host | Sự kiện tin cậy | |
-| Ca cảng | Đồng hồ ca và lưu bến, lịch tàu, đơn, thứ tự bốc, máy đóng kiện, kệ kiện | Host | Sự kiện tin cậy, đồng hồ theo giờ host | |
-| Ca cảng | Kiện trên tay | Người mang giữ vị trí, host giữ sự tồn tại | Nhặt, đặt, bốc là yêu cầu gửi host | Trả lời điểm chờ gd-tech của `tram-va-cang.md`. Hai người cùng bốc một dòng thiếu 1: yêu cầu tới host trước được nhận (luật bốc kiện bước 5) |
+| Ca cảng | Đồng hồ ca và chờ ngoài, danh mục và số thùng còn, lịch tàu, trạng thái từng tàu và thanh kiên nhẫn, thùng ở quầy, bơm khí đang giữ | Host | Sự kiện tin cậy, đồng hồ theo giờ host, thanh kiên nhẫn host tính và máy người chơi nội suy | Chi tiết ở mục 2.5 |
+| Ca cảng | Thùng trên tay | Người mang giữ vị trí, host giữ sự tồn tại | Nhặt, giao, bắt đầu bơm khí là yêu cầu gửi host | Hai người cùng nhặt một thùng: yêu cầu tới host trước được nhận, người sau bị từ chối và đi tiếp việc khác. Tàu rời lúc đang cầm thùng của nó thì thùng về danh mục và tay trống |
 | Kinh tế | Tally, điểm cảng, Hạng cảng, thứ đã mua, cấp trang bị chung | Host | Sự kiện tin cậy | Một ví chung (C3, C4) |
 | Truyện | Mốc đã xong, vật manh mối đã nhặt, người vớt đã tỉnh | Host | Sự kiện tin cậy | Mốc là trạng thái thế giới. Cảnh là trình bày: mỗi máy có hàng chờ cảnh và danh sách cảnh đã xem riêng, phát ở điểm nghỉ (theo `cot-truyen.md` mục 6) |
 | Giao tiếp | Ghim món, Ping | Máy của người đó | Sự kiện, không tin cậy | |
@@ -104,14 +104,14 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 ### 2.3 Vào giữa chừng, số người N, rời phiên, mất kết nối `MVP`
 
 12. Vào phiên: host cấp cho mỗi người một mã slot (1 đến 4) lúc vào lần đầu, lưu trong thế giới. Người vào lại được nhận ra bằng mã slot gắn với tài khoản của người đó. Tài khoản là ID người chơi của nền tảng mà netcode dùng (Steam ID nếu bán trên Steam, hoặc ID của dịch vụ lobby được chọn ở mục 6.3), không phải tài khoản riêng của game. Người mới lấy slot trống thấp nhất. Hết 4 slot thì từ chối với lời báo "Phòng đầy". Host xóa được nhân vật của người đã rời (theo `nguoi-choi.md` 2.9).
-13. Người mới vào giữa chừng: buồng của người đó được đưa về trạm ở điểm nghỉ kế tiếp (cảnh của `cot-truyen.md` 2.7), không lấp buồng đã tắt của Ember. Trong lúc chờ, người đó ở trạng thái Chờ vào: xem được, chưa điều khiển. Nếu đang ca cảng thì vào ca ngay khi buồng về, quy mô đơn đang chạy không đổi.
+13. Người mới vào giữa chừng: buồng của người đó được đưa về trạm ở điểm nghỉ kế tiếp (cảnh của `cot-truyen.md` 2.7), không lấp buồng đã tắt của Ember. Trong lúc chờ, người đó ở trạng thái Chờ vào: xem được, chưa điều khiển. Nếu đang ca cảng thì vào ca ngay khi buồng về, số tàu của ca đang chạy không đổi.
 14. Số người N cho hệ số theo số người lấy lúc sinh và không đổi tới hết thứ đó:
 
 | Ngữ cảnh | N là | Nguồn |
 |---|---|---|
 | Chuyến (k(N) của dải) | Số người đã xác nhận ra chuyến lúc chuyến bắt đầu (C5), không tính người ở lại | `map.md` 3.8, C5 |
 | Kẻ địch (Sinh lực, ngưỡng) | Số người đang ở ngoài trong cùng map lúc kẻ địch sinh hoặc lúc vào phòng boss | `combat-driftlife.md` 6b |
-| Ca cảng (quy mô đơn, điểm) | Số người online lúc mở ca | `tram-va-cang.md` luật 64 |
+| Ca cảng (số tàu trong ca, số cửa neo, điểm) | Số người online lúc mở ca | `tram-va-cang.md` mục ca cảng, `sim-ca-cang.md` mục 4 |
 
 15. Người rời phiên chủ động: nhân vật ở lại trạm (C2). Rời khi đang ngoài chuyến thì tính như bị kéo về (K2, chỉ giữ 1 món), theo C10. Rời phiên không phải đường về an toàn.
 16. Mất kết nối: mất gói liên tục quá thời gian phát hiện (mục 3) mới tính là rớt. Người rớt giữa chuyến vào Giữ chỗ 15 giây theo `nguoi-choi.md` 2.9 (đề xuất gửi gd-character: Giữ chỗ tối đa 1 lần mỗi chuyến cho mỗi người, lần thứ hai tính như bị kéo về ngay, để không dùng rút mạng dừng đồng hồ ngạt). Quá 15 giây thì tính như bị kéo về (K2), theo C10. Vào lại trong 15 giây bằng cùng mã slot thì nhận lại nhân vật. Người rớt là người cuối còn ngoài thì chuyến chung chờ tối đa 15 giây đó. Trong trạm và ca cảng dùng cùng cửa sổ 15 giây: hết hạn thì kiện trên tay rơi tại chỗ, host giữ.
@@ -133,8 +133,8 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 | Người chơi theo slot | maSlot, ten, mau, preset, viTriTrongTram, daRoi | | C2, `nguoi-choi.md` 2.9 |
 | Trang bị chung | cấp từng UPG đã mua, bản thiết kế, dụng cụ đã mở | list | C4, `vat-pham.md` |
 | Kho | list `ItemInstance` | | `vat-pham.md` |
-| Trạm | trạng thái và cấp từng khoang, giai đoạn động cơ, kệ kiện và kệ phụ, hàng đợi xưởng (gồm mẻ qua đêm), ô nuôi {loài, tuổi, đã cho ăn} | | `tram-va-cang.md` mục 6 |
-| Cảng | Tally, điểm cảng, Hạng cảng, thứ đã mua, số lần cập bến của tàu có tên (TA03, TA06, TA08), lịch tàu và đơn của ngày (sinh lại từ daySeed được, lưu để kiểm) | | `kinh-te-tien-trinh.md` mục 6, `tram-va-cang.md` |
+| Trạm | trạng thái và cấp từng khoang, giai đoạn động cơ, hàng đợi xưởng (gồm mẻ qua đêm), ô nuôi {loài, tuổi, đã cho ăn} | | `tram-va-cang.md` mục 6 |
+| Cảng | Tally, điểm cảng, Hạng cảng, thứ đã mua, số lần cập bến của tàu có tên, danh mục bán đã lập, lịch tàu của ngày (sinh lại từ daySeed được, lưu để kiểm) | | `kinh-te-tien-trinh.md` mục 6, `tram-va-cang.md` |
 | Truyện | mốc đã xong, vật manh mối đã nhặt, người vớt đã tỉnh, quest đã mở. Theo từng slot: hàng chờ cảnh, danh sách cảnh đã xem | | `cot-truyen.md` mục 6 |
 | Map nhánh | theo từng N: cửa, vách, đường tắt đã mở, buồng đã vớt, boss đã kết và cách kết | | `map.md` 6.1 |
 
@@ -177,18 +177,18 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 | 27 | Combat | capture_failed | Bắt hỏng | creature_id, reason | Bắt có quá khó không | string, string | `bat_that_bai` |
 | 28 | Combat | boss_phase | Boss chuyển pha | boss_id, phase, seconds | S5 thời lượng boss | string, int, float | `boss_chuyen_pha` |
 | 29 | Combat | boss_end | Boss kết | boss_id, ending (defeat, drive_off), seconds, n_players | S5, S4 | string, string, float, int | `boss_ket` |
-| 30 | Port | port_shift_start | Mở ca | ships, n_players, prepacked | Đóng sẵn bao nhiêu (C9) | int, int, int | `tram-va-cang.md` |
+| 30 | Port | port_shift_start | Mở ca | ships, n_players, docks, catalog_types, crates_total | Số tàu theo N, danh mục lúc mở có đủ không | int, int, int, int, int | `tram-va-cang.md` |
 | 31 | Port | port_shift_skip | Bỏ ca | day | Ca có bị bỏ nhiều không | int | `tram-va-cang.md` |
-| 32 | Port | ship_docked | Tàu cập bến | ship_type, berth, waited | | string, int, float | `tram-va-cang.md` |
-| 33 | Port | cargo_packed | Đóng kiện xong | cargo_id, stars, in_shift | | string, int, bool | `cargo_pack` của `vat-pham.md` |
-| 34 | Port | cargo_loaded | Bốc kiện được nhận | ship_type, cargo_id, tally | | string, string, int | `tram-va-cang.md` |
-| 35 | Port | cargo_rejected | Tàu từ chối kiện | ship_type, cargo_id | Người chơi có đọc nhầm đơn không | string, string | `tram-va-cang.md` |
-| 36 | Port | order_end | Tàu rời | ship_type, result (full, fast, failed, left_waiting), seconds_docked | Tỉ lệ đơn đủ (sim ca cảng) | string, string, float | `tram-va-cang.md` |
-| 37 | Port | port_shift_end | Hết ca | seconds, full, failed, tally, port_points | Ca dài bao lâu (khung mục 9) | float, int, int, int, int | `tram-va-cang.md` |
+| 32 | Port | ship_docked | Tàu cập cửa neo | ship_type, dock, waited | Tàu chờ ngoài bao lâu mới cập | string, int, float | `tram-va-cang.md` |
+| 33 | Port | port_catalog_set | Bấm Mở ca sau khi lập danh mục | items (list item_id và số thùng), crates_total, has_preorder, seconds_on_screen | Người chơi lập danh mục thế nào, mất bao lâu, có giữ hàng cho đơn đặt trước không | string, int, bool, float | `tram-va-cang.md` |
+| 34 | Port | ship_called | Tàu cập cửa neo và hiện món gọi | ship_type, item_id, preorder, patience_max | Món nào hay được gọi, tàu nào gọi gì | string, string, bool, float | `tram-va-cang.md` |
+| 35 | Port | crate_delivered | Giao thùng được nhận | ship_type, item_id, price, tip, patience_left_pct, player_id | Tally và tip mỗi lần giao, ai giao | string, string, int, int, float, string | `tram-va-cang.md` |
+| 36 | Port | ship_left_unserved | Tàu rời khi chưa giao | ship_type, item_id, reason (patience, waited_out, shift_end), seconds_docked | Tỉ lệ tàu phục vụ xong (sim ca cảng) | string, string, string, float | `tram-va-cang.md` |
+| 37 | Port | port_shift_end | Kết ca | seconds, served, left, not_arrived, tally, tip, port_points, end_reason (timeout, last_ship, out_of_stock) | Ca dài bao lâu, ca có kết sớm vì hết hàng không | float, int, int, int, int, int, int, string | `tram-va-cang.md` |
 | 38 | Port | incident | Sự cố bắt đầu hoặc xong | incident_id, state, seconds | | string, string, float | `tram-va-cang.md` |
 | 39 | Station | room_repaired | Khoang sửa xong | room_id, level | Nhịp sửa trạm theo ngày | string, int | `tram-va-cang.md` |
 | 40 | Station | survivor_awake | Người vớt tỉnh | survivor_id | | string | `tram-va-cang.md`, `cot-truyen.md` |
-| 41 | Economy | tally_gain | Nhận Tally | source (cargo, full_bonus, fast_bonus, ship), amount | Tỉ lệ Tally từ cảng (khung mục 9) | string, int | `tally_nhan` của `kinh-te-tien-trinh.md` |
+| 41 | Economy | tally_gain | Nhận Tally | source (crate, tip, air_pump, ship), amount | Tỉ lệ Tally từ cảng (khung mục 9) | string, int | `tally_nhan` của `kinh-te-tien-trinh.md` |
 | 42 | Economy | tally_spend | Tiêu Tally | item_id, amount | | string, int | `kinh-te-tien-trinh.md` sự kiện tally_chi |
 | 43 | Economy | port_rank_up | Lên Hạng cảng | rank, day | Số ngày tới Hạng 3 | int, int | `hang_cang_len` |
 | 44 | Story | story_beat_done | Mốc truyện xong | beat_id | Thời lượng chương (khung mục 9) | string | `cot-truyen.md`, `chuong_xong` của `kinh-te-tien-trinh.md` gộp (mốc đóng chương) |
@@ -224,8 +224,19 @@ Sự kiện bổ sung sau QA GD-031 (đánh số tiếp):
 | 69 | UX | ux_input_device_change | Đổi giữa bàn phím chuột và gamepad | from, to | Tỉ lệ dùng gamepad | string, string | `ux-ui.md` mục 6 |
 | 70 | UX | ux_settings_change | Đổi một cài đặt | key, value | Cài đặt nào hay bị đổi | string, string | `ux-ui.md` mục 6 |
 | 71 | UX | ux_dead_end | Đứng yên ở một màn trên 20 giây | screen_id, idle_seconds | Màn nào làm người chơi bí | string, float | `ux-ui.md` mục 6 |
+| 72 | Port | air_pump_done | Bơm khí xong | player_id, ship_type, patience_gain_pct, tally | Việc phụ có được làm không (sim ca cảng mục 6) | string, string, float, int | `tram-va-cang.md` |
+| 73 | Port | port_player_idle | Kết ca, mỗi người một dòng | player_id, idle_seconds, shift_seconds | Rảnh mỗi người tối đa 30% ở người chơi trễ 2 giây (sim ca cảng). Rảnh là thời gian không có thùng ở quầy chưa ai nhận, không đang cầm thùng, không có tàu đang chờ bơm khí | string, float, float | `tram-va-cang.md` |
 
-Sự kiện 67 đến 71 lấy từ bảng sự kiện của `ux-ui.md` mục 6, tham số đổi sang tên tiếng Anh snake_case theo luật 26. Tab Event Tracking sinh bằng `tools/xuat-event-tracking.mjs` từ hai bảng sự kiện của file này.
+Sự kiện 72 và 73 thêm ở đợt 9 cho ca cảng khung Dave (cùng với việc viết lại 30 đến 37). Sự kiện 67 đến 71 lấy từ bảng sự kiện của `ux-ui.md` mục 6, tham số đổi sang tên tiếng Anh snake_case theo luật 26. Tab Event Tracking sinh bằng `tools/xuat-event-tracking.mjs` từ hai bảng sự kiện của file này.
+
+### 2.5 Ca cảng khung Dave: cách đo, đồng bộ, sự kiện `MVP`
+
+28. Cách đo (`tools/sim-ca-cang.mjs`): N người chia việc, mỗi người chọn việc gần nhất chưa ai nhận theo thứ tự mang thùng đang cầm tới cửa neo, nhặt thùng ở quầy, bơm khí. Trễ phản xạ là thời gian chờ trước mỗi lần đi và tính là bận. Rảnh là thời gian không có việc nào để làm. Số tàu một ca, số cửa neo, rảnh, tip, Tally nằm ở `tools/ket-qua/sim-ca-cang.md`, file này không chép để không lệch khi số đổi.
+29. Host nắm toàn bộ trạng thái ca: đồng hồ, danh mục và số thùng còn, lịch tàu (sinh lúc mở ca từ seed ngày, số tàu theo số người N lúc mở ca), trạng thái từng tàu, kiên nhẫn từng tàu, thùng ở quầy. Máy người chơi chỉ gửi ba yêu cầu: nhặt thùng ở ô quầy, giao thùng ở cửa neo, bắt đầu hoặc dừng giữ bơm khí.
+30. Hai người cùng nhặt một thùng hay cùng giữ bơm khí một tàu: yêu cầu tới host trước được nhận. Người sau nhận từ chối, máy đó hiện lại tay trống và đi việc khác, không mất gì. Giao thùng vào đúng lúc tàu hết kiên nhẫn: host quyết, máy người chơi lùi lại như luật 11.
+31. Người vào giữa ca không đổi lịch ca đó (luật 13). Người rớt giữa ca khi đang cầm thùng: thùng rơi tại chỗ, host giữ, người khác nhặt được, hết Giữ chỗ mà tàu đã rời thì thùng về danh mục.
+32. Sự kiện một ca theo thứ tự: `port_catalog_set` (trước ca), `port_shift_start`, rồi mỗi tàu `ship_docked`, `ship_called`, `crate_delivered` hoặc `ship_left_unserved`, thêm `air_pump_done` khi có, cuối ca `port_shift_end` và `port_player_idle` mỗi người một dòng. Sự kiện 30, 32 tới 37 do host ghi, 73 do máy của người đó ghi (luật 25). Tỉ lệ tàu phục vụ xong tính bằng số `crate_delivered` chia số tàu trong lịch (`ships` của `port_shift_start`). Tip trong Tally tính bằng tổng `tip` và `patience_gain` của bơm khí chia tổng Tally ca.
+33. `PortTuning` cần các khóa: soTauTheoN (4 giá trị), cuaNeoTheoN (4 giá trị), caToiDa, choNgoai, thungHienSau, tuoiRoiGiuCua, kienNhan theo loại tàu, tipToiDa, bom {sau, giu, hoi, tally}, heSoThung, datTruoc {thuTu, heSo}. Giá trị đặt theo kết quả sim, gd-economy đặt giá thùng.
 
 ## 3. Tham số
 
@@ -251,7 +262,7 @@ Tham số của từng sim nằm ở `tools/tham-so/chuyen.json`, `ca-cang.json`
 | Hai người cùng nhặt một node hay một kiện cùng khung hình | Yêu cầu tới host trước được nhận, người sau nhận từ chối và vật ở lại |
 | Người vào giữa chừng khi cả nhóm đang ngạt hết | Ở trạng thái Chờ vào tới điểm nghỉ kế (luật 13) |
 | Host rớt khi khách đang chia Oxy | Phiên kết thúc, thế giới về điểm lưu gần nhất (luật 17, 18, K23). Người được chia Oxy không giữ gì của chuyến đó |
-| Khách rớt giữa ca cảng khi đang cầm kiện | Kiện rơi xuống sàn tại chỗ, host giữ, người khác nhặt được |
+| Khách rớt giữa ca cảng khi đang cầm thùng | Thùng rơi xuống sàn tại chỗ, host giữ, người khác nhặt được |
 | Khách rớt rồi vào lại trong 15 giây | Nhận lại nhân vật đang Giữ chỗ, không mất gì |
 | Seed chuyến cho map khác nhau trên hai máy | Không xảy ra nếu mọi máy cùng phiên bản dữ liệu. Snapshot lúc vào phiên có hash dữ liệu, lệch hash thì không cho vào, báo cập nhật |
 | Validator đỏ khi cần xuất gấp | Không xuất. Sửa nguồn hoặc xuất bản cũ trong repo |
@@ -328,7 +339,7 @@ Không có khoảnh khắc riêng. Mục tiêu là người chơi không nhận 
 | Khi có build, vào giữa chừng | Thử ở 3 pha (chuyến, ca, cuối ngày), người mới vào đúng luật 13 |
 | Khi có build, file save | Cắt điện giữa lúc ghi: mở lại được bản trước (luật 20) |
 | Khi có build, dữ liệu | Xuất rồi nhập lại: 0 trường lệch |
-| Khi có build, số playtest khớp sim | Thời lượng chuyến (`trip_end.minutes`), đơn đủ (`order_end`), tỉ lệ kéo về (`player_choking_end`) lệch không quá 20% so với file kết quả sim cùng cấu hình |
+| Khi có build, số playtest khớp sim | Thời lượng chuyến (`trip_end.minutes`), tỉ lệ tàu phục vụ xong, tip, rảnh mỗi người (`crate_delivered`, `ship_left_unserved`, `port_player_idle`), tỉ lệ kéo về (`player_choking_end`) lệch không quá 20% so với file kết quả sim cùng cấu hình |
 
 ## 9. Lệch khỏi tham chiếu
 
@@ -380,3 +391,4 @@ File này là phần co-op kỹ thuật của mọi hệ thống: mục 2.2 và 
 | 2026-11-20 | Sửa theo QA GD-031 vòng 2: bỏ câu kết luận sim, chỉ trỏ file kết quả. `ItemGroupData` thành MVP. Thêm giá lồng theo loài ở `ItemData`, cấu trúc `OrderInstance`, `OrderLine`. Định nghĩa tài khoản của mã slot. 64 sự kiện, sự kiện UX đánh số từ 65. Mô tả validator và exporter theo nguồn markdown | `qa/GD-031-ky-thuat.md` | gd-tech |
 | 2026-11-20 | Đợt 4 theo khung sửa lần 5: K23 ba điểm tự lưu (sau chuyến, sau ca, lúc ngủ) và seed bố cục theo ngày và số thứ tự chuyến (luật 18, 18b), host thoát về điểm lưu gần nhất (C10), host chặn trao và thả đồ khi ngạt (K27), host giữ trần Oxy hồi từ vật tiêu hao (K26). Sim chuyến áp trần K26. Validator thêm kiểm Sundering và chữ chờ GDM | `briefs/dot4-gdm-chot-sau-qa.md`, log 62 đến 75 | gd-tech |
 | 2026-11-20 | Sửa nhẹ vòng cuối V1 đến V6: biên file save hỏng, trường vật tiêu hao ở `ItemData`, `dongChuong` ở `StoryBeatData`, `AreaData` cho A01 đến A05, sự kiện save_written và save_failed, câu hỏi mở Giữ chỗ về trạng thái đề xuất | `qa/GD-031-ky-thuat.md` vòng cuối | gd-tech |
+| 2026-11-20 | Đợt 9 (GD-054): ca cảng theo khung Dave. Sim ca cảng viết lại (N người chia việc, quét số tàu và cửa neo, 3 kiểu danh mục, bơm khí). Mục 2.5 mới. Sự kiện ca cảng 30 đến 37 viết lại, thêm 72 và 73. Schema ShipTypeData, dữ liệu động của ca đổi sang thùng, danh mục | Lead chốt ca cảng theo khung Dave | gd-tech |

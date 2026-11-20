@@ -1,428 +1,51 @@
 {
-  "_ghi_chu": "Tham số sim ca cảng. Nguồn chính tram-va-cang.md mục 2 (luật 18 đến 58), 2.4, 2.5, 2.6b, 3, mục Co-op. Số có [GIẢ ĐỊNH] là gd-tech đặt vì GDD chưa có.",
-  "dt": 0.25,
-  "caToiDa": 240,
-  "dongKien": 5,
-  "cheXuong": 10,
-  "keKien": 6,
-  "roiSauKhiDu": 3,
-  "nguongNhanh": 0.5,
-  "diemDu": 2,
-  "diemNhanh": 1,
-  "nguongHang": [
-    0,
-    10,
-    20,
-    45,
-    70,
-    100,
-    135,
-    195
-  ],
-  "luuBen": {
-    "dài": 90,
-    "vừa": 70,
-    "ngắn": 45
-  },
-  "choNgoai": 30,
-  "_nguon_so": "tram-va-cang.md mục 3 và luật 23, 40, 64 tới 70 (sau QA GD-031, 2026-11-20): đóng kiện 5 giây, đưa con vào lồng giao 8 giây (RCP-126), chế 10 giây, kệ cấp 1 6 chỗ, lưu bến 90 / 70 / 45, chờ ngoài 30, ca 240, ngưỡng nhanh 50%, điểm đơn đủ trần(2 x (N + 1) / 2), điểm nhanh trần((N + 1) / 2), ngưỡng hạng 10, 20, 45, 70, 100, 135, 195, xử lý sự cố 4 giây cộng đường đi, thêm 1 sự cố mỗi ca khi N từ 3. Nhóm hàng đọc từ bảng Nhóm hàng cảng của tram-va-cang.md, cỡ kiện đọc khối CGOSIZE của vat-pham.md",
-  "viTri": {
-    "xuong": -1,
-    "kho": 0,
-    "may": 1,
-    "ben": [
-      2,
-      3.5,
-      3.5
-    ],
-    "giayMoiO": 2,
-    "_nguon": "Thứ tự ô theo sơ đồ 2.6b (xưởng, kho, máy và kệ, bến 1 cùng tầng giữa). Giây mỗi ô 2,0 (gd-quan nhận) để kho tới bến 1 là 4 giây (mục tiêu dưới 4 giây ở mục 5). Bến 2, 3 khác tầng thêm 1,5 ô cho thang (gd-quan nhận)"
-  },
-  "tocDoMang": {
-    "Nhỏ": 0.9,
-    "Vừa": 0.8,
-    "Lớn": 0.65,
-    "_nguon": "tram-va-cang.md 3, cỡ kiện theo vat-pham.md khối CGOSIZE"
-  },
-  "tau": {
-    "_nguon": "tram-va-cang.md bảng 2.4 (trọng số túi trộn, số dòng, nhóm). TA08 không vào túi trộn. TA03 dòng tùy chọn không tính vào đơn đủ nên không mô phỏng. TA06 dòng ẩn không mô phỏng. TA10 gộp 1 dòng HC09 và 1 dòng HC12 hoặc HC13 thành rút từ 3 nhóm [GIẢ ĐỊNH]. TA01 có HC04 và CGO-113 từ khi xưởng hoạt động (gd-quan, QA vòng 2 R2), sim coi xưởng luôn hoạt động ở chương 1. Bớt dòng theo luật 69 mới: TA03, TA04, TA06 còn 2 dòng, TA09 2 đến 3 dòng. Dòng kiện cần chế và dòng lồng sống luôn kiện gốc 1. Đợt 4 (log 67): TA01 bỏ HC04, kiện tinh duy nhất chương 1 là CGO-113 (HC03), HC04 mở từ chương 2 theo bảng Nhóm hàng. Đợt 6 (GD-033, bảng 2.4): TA04 ngừng ghé sau C3.8 nên den 3. TA11 tàu của The Kindling không vào túi trộn, chiếm chỗ đầu lịch ở chương 4, 5: 1 dòng CGO-421 đúng 1 kiện ở mọi N, có thể thêm 1 dòng HC13. Sim cho TA11 có mặt mọi ca chương 4, 5 [GIẢ ĐỊNH, trường hợp nặng nhất]. TA08 vốn không mô phỏng (không vào túi trộn, chỉ chương 3). gd-quan chốt (GD-033, cấu hình b): TA11 luôn 2 dòng (HC15 1 kiện, HC13 kiện gốc 1), TA06 trọng số 3 và TA09 trọng số 2 từ chương 4 thay phần TA04",
-    "TA01": {
-      "luu": "dài",
-      "dong": [
-        1,
-        2
-      ],
-      "nhom": [
-        "HC01",
-        "HC02",
-        "HC10",
-        "HC06",
-        "HC03"
-      ],
-      "nhomTuHang": {
-        "3": [
-          "HC05",
-          "HC11"
-        ]
-      },
-      "chiId": {
-        "HC06": [
-          "CGO-121"
-        ],
-        "HC11": [
-          "CGO-106"
-        ],
-        "HC03": [
-          "CGO-113"
-        ]
-      },
-      "trongSo": 3,
-      "tu": 1,
-      "hang": 1
-    },
-    "TA02": {
-      "luu": "ngắn",
-      "dong": [
-        1,
-        1
-      ],
-      "nhom": [
-        "HC01",
-        "HC02",
-        "HC10"
-      ],
-      "themId": [
-        "CGO-104"
-      ],
-      "trongSo": 1,
-      "tu": 1,
-      "hang": 2
-    },
-    "TA03": {
-      "luu": "vừa",
-      "dong": [
-        2,
-        2
-      ],
-      "nhom": [
-        "HC03",
-        "HC07",
-        "HC08"
-      ],
-      "trongSo": 2,
-      "tu": 2,
-      "hang": 1
-    },
-    "TA04": {
-      "luu": "dài",
-      "dong": [
-        2,
-        2
-      ],
-      "nhom": [
-        "HC04",
-        "HC12"
-      ],
-      "trongSo": 2,
-      "tu": 2,
-      "hang": 1,
-      "chao": 15,
-      "den": 3
-    },
-    "TA05": {
-      "luu": "vừa",
-      "dong": [
-        1,
-        2
-      ],
-      "nhom": [
-        "HC06",
-        "HC11"
-      ],
-      "trongSo": 2,
-      "tu": 2,
-      "hang": 1
-    },
-    "TA06": {
-      "luu": "vừa",
-      "dong": [
-        2,
-        2
-      ],
-      "nhom": [
-        "HC02",
-        "HC12",
-        "HC13"
-      ],
-      "trongSo": 2,
-      "tu": 3,
-      "hang": 1,
-      "trongSoTuChuong": {
-        "4": 3
-      }
-    },
-    "TA07": {
-      "luu": "vừa",
-      "dong": [
-        2,
-        2
-      ],
-      "nhom": [
-        "HC06",
-        "HC08",
-        "HC11"
-      ],
-      "trongSo": 2,
-      "tu": 3,
-      "hang": 1
-    },
-    "TA09": {
-      "luu": "ngắn",
-      "dong": [
-        2,
-        3
-      ],
-      "nhom": [
-        "HC04",
-        "HC12",
-        "HC13"
-      ],
-      "trongSo": 1,
-      "tu": 3,
-      "hang": 6,
-      "trongSoTuChuong": {
-        "4": 2
-      }
-    },
-    "TA10": {
-      "luu": "vừa",
-      "dong": [
-        2,
-        2
-      ],
-      "nhom": [
-        "HC09",
-        "HC12",
-        "HC13"
-      ],
-      "trongSo": 1,
-      "tu": 3,
-      "hang": 1
-    },
-    "TA11": {
-      "luu": "vừa",
-      "dong": [
-        2,
-        2
-      ],
-      "dongCoDinh": [
-        "CGO-421"
-      ],
-      "nhom": [
-        "HC13"
-      ],
-      "trongSo": 0,
-      "tu": 4,
-      "hang": 1
-    }
-  },
-  "lechGioDen": 10,
-  "suCoGiay": 4,
-  "_gia_dinh": "[GIẢ ĐỊNH] Hạng cảng của từng ô, TA10 rút dòng từ 3 nhóm. Kho đủ hàng",
-  "kichBan": {
-    "_nguon": "[GIẢ ĐỊNH] nghi: giây nghĩ trước mỗi việc. thamLam: ưu tiên dòng của tàu sắp rời. dongTruocTau: đóng kiện cho tàu chưa cập bến",
-    "tệ": {
-      "nghi": 3,
-      "thamLam": false,
-      "dongTruocTau": false
-    },
-    "trung bình": {
-      "nghi": 1.5,
-      "thamLam": true,
-      "dongTruocTau": false
-    },
-    "tốt": {
-      "nghi": 0.5,
-      "thamLam": true,
-      "dongTruocTau": true
-    }
-  },
+  "_ghi_chu": "Tham số sim ca cảng khung Dave (GD-054, đợt 9). Thay hẳn bản GD-030. Số ghi demo bot 2026-11-20 lấy từ prototype/ca-cang-dave.html (CFG, ITEMS, SHIPS). Số [GIẢ ĐỊNH] là gd-tech đặt vì GDD chưa có.",
+  "dt": 0.05,
   "lan": 300,
-  "_gio_den": "Luật 70: tàu thứ i đến ở i x giãn cách cộng lệch 0 tới 10 giây, giờ đến cộng lưu bến vượt 240 thì kéo về 240 trừ lưu bến",
-  "kePhu": {
-    "cho": 4,
-    "tuChuong": 4,
-    "_nguon": "gd-quan chốt 2026-11-20: tiện ích Trưởng cảng chương 4, kệ kiện phụ 4 chỗ cạnh bến 2 và 3. Kiện lấy từ kệ phụ đi tới bến xa bằng quãng máy tới bến 1 (một ô). Bật bằng tham số coKePhu khi chạy"
+  "caToiDa": 240,
+  "cua": 3,
+  "tocDo": 280,
+  "quayX": 96,
+  "quayDai": 120,
+  "neoX": 470,
+  "neoDai": 340,
+  "nguoiX": 300,
+  "nguoiCach": 40,
+  "vao": 1,
+  "cap": 1,
+  "roi": 1.3,
+  "quay": 3,
+  "choNgoai": 20,
+  "tauDau": 2,
+  "soTauGoc": 25,
+  "cuaSoDen": 225,
+  "lechGian": 0.22,
+  "heSoThung": 2.5,
+  "diemNguong": 0.6666666667,
+  "bom": { "sau": [10, 18], "giu": 1, "hoi": 0.25, "tally": 10 },
+  "tip": { "toiDa": 0.3, "meGap": 2 },
+  "datTruoc": { "thuTu": 8, "item": "td", "heSo": 1.5 },
+  "tau": {
+    "bolt": { "kn": 60, "tipX": 1, "w": 3, "mePhan": "td", "thich": { "td": 3, "phe": 2 } },
+    "voi": { "kn": 30, "tipX": 2, "w": 1, "thich": { "bang": 2, "quang": 2 } }
   },
-  "suCoThemTuN": 3,
-  "dongLong": 8,
-  "cauHinh": {
-    "1": {
-      "ten": "Chương 1, Hạng 1",
-      "ch": 1,
-      "ben": 1,
-      "soTau": 4,
-      "gianCach": 42,
-      "kienGoc": [
-        1,
-        3
-      ],
-      "heSoKien": 0.6,
-      "hang": 1,
-      "suCo": [
-        0,
-        0
-      ],
-      "xuong": 1,
-      "may": 1
-    },
-    "2": {
-      "ten": "Chương 2",
-      "ch": 2,
-      "ben": 1,
-      "soTau": 4,
-      "gianCach": 45,
-      "kienGoc": [
-        1,
-        3
-      ],
-      "heSoKien": 0.6,
-      "hang": 4,
-      "suCo": [
-        0,
-        0
-      ],
-      "xuong": 2,
-      "may": 1
-    },
-    "3": {
-      "ten": "Chương 3, 2 bến",
-      "ch": 3,
-      "ben": 2,
-      "soTau": 4,
-      "gianCach": 45,
-      "kienGoc": [
-        1,
-        2
-      ],
-      "heSoKien": 0.6,
-      "hang": 5,
-      "suCo": [
-        1,
-        1
-      ],
-      "xuong": 2,
-      "may": 2
-    },
-    "4": {
-      "ten": "Chương 4, 3 bến",
-      "ch": 4,
-      "ben": 3,
-      "soTau": 5,
-      "gianCach": 45,
-      "kienGoc": [
-        1,
-        2
-      ],
-      "heSoKien": 0.6,
-      "hang": 7,
-      "suCo": [
-        1,
-        2
-      ],
-      "xuong": 2,
-      "may": 2,
-      "truyen": [
-        "TA11"
-      ]
-    },
-    "5": {
-      "ten": "Chương 5, 3 bến",
-      "ch": 5,
-      "ben": 3,
-      "soTau": 5,
-      "gianCach": 45,
-      "kienGoc": [
-        1,
-        2
-      ],
-      "heSoKien": 0.6,
-      "hang": 7,
-      "suCo": [
-        1,
-        2
-      ],
-      "xuong": 2,
-      "may": 2,
-      "truyen": [
-        "TA11"
-      ]
-    },
-    "_nguon": "tram-va-cang.md bảng Cấu hình lịch mục 3 (luật 68). hang là Hạng cảng giả định cho mỗi ô: chương 1 có hai ô Hạng 1 và Hạng 3 (gd-quan xin). Chương 2 Hạng 4, chương 3 Hạng 5, chương 4 và 5 Hạng 7 theo trần hạng bảng 2.5 [GIẢ ĐỊNH]. Sự cố theo tham số mục 3. xuong: số mẻ chế song song (xưởng cấp 2 từ chương 2, bảng 2.7). may: số máy đóng kiện (máy thứ hai của Trưởng cảng từ chương 3 khi có 2 bến). 2026-11-20 gd-quan: hệ số kiện co-op 0,6 mọi chương, chương 2 giãn cách 45 và kiện gốc 1 đến 3, chương 1 giãn cách 42. gd-quan chốt: chương 3 hai bến giãn cách 45, chương 3 một bến như chương 2 (45 giây, kiện gốc 1 đến 3)",
-    "1-h3": {
-      "ten": "Chương 1, Hạng 3 (có TA02, TA01 có HC05, HC11)",
-      "ch": 1,
-      "ben": 1,
-      "soTau": 4,
-      "gianCach": 42,
-      "kienGoc": [
-        1,
-        3
-      ],
-      "heSoKien": 0.6,
-      "hang": 3,
-      "suCo": [
-        0,
-        0
-      ],
-      "xuong": 1,
-      "may": 1
-    },
-    "3-1ben": {
-      "ten": "Chương 3, 1 bến",
-      "ch": 3,
-      "ben": 1,
-      "soTau": 4,
-      "gianCach": 45,
-      "kienGoc": [
-        1,
-        3
-      ],
-      "heSoKien": 0.6,
-      "hang": 5,
-      "suCo": [
-        1,
-        1
-      ],
-      "xuong": 2,
-      "may": 1
-    },
-    "4-2ben": {
-      "ten": "Chương 4, 2 bến",
-      "ch": 4,
-      "ben": 2,
-      "soTau": 4,
-      "gianCach": 42,
-      "kienGoc": [
-        1,
-        2
-      ],
-      "heSoKien": 0.6,
-      "hang": 7,
-      "suCo": [
-        1,
-        2
-      ],
-      "xuong": 2,
-      "may": 2,
-      "truyen": [
-        "TA11"
-      ]
-    }
+  "hang": {
+    "phe": { "cgo": "CGO-101" },
+    "cap": { "cgo": "CGO-102" },
+    "quang": { "cgo": "CGO-103" },
+    "bang": { "cgo": "CGO-104" },
+    "td": { "cgo": "CGO-109" },
+    "nuoc": { "cgo": "CGO-113" },
+    "long": { "cgo": "CGO-121", "giaCoDinh": 50, "khongChia": true }
   },
-  "cheQuaDem": 2,
-  "giayMayRieng": {
-    "CGO-421": 11,
-    "_nguon": "RCP-422 6 giây cộng đóng 1 kiện vỏ bọc dải Xa (dongKien 5 giây), hai lượt máy liền nhau. STY-701 lấy ở kho"
-  }
+  "danhMuc": {
+    "đủ hàng, có đồ Trái Đất": { "phe": 10, "cap": 8, "quang": 8, "td": 5 },
+    "bỏ cáp và quặng, lấy băng và lồng": { "phe": 10, "td": 5, "bang": 5, "long": 1 },
+    "không có đồ Trái Đất": { "phe": 10, "cap": 8, "quang": 8, "bang": 5 }
+  },
+  "quet": { "tu": 10, "den": 90, "buoc": 5, "lan": 100, "cua": [3, 4, 5, 6] },
+  "muc": { "ranhToiDa": 0.3, "xongToiThieu": 0.85, "caMin": 180, "caMax": 300, "tipMin": 0.2, "tipMax": 0.3 },
+  "_nguon_so": "de-xuat-ca-cang-kieu-dave.md mục 4 (demo bot 2026-11-20): 3 cửa neo, ca tối đa 240 giây, chờ ngoài 20, kiên nhẫn Loose Bolt 60 và Tàu vội 30 (tip gấp đôi), thùng hiện ở quầy sau 3 giây, tip tối đa 30% giá thùng nhân phần kiên nhẫn còn lại (Tikko gọi đồ Trái Đất tip gấp đôi), bơm khí bật sau 10 tới 18 giây giữ 1 giây hồi 25% cộng 10 Tally, đơn đặt trước tàu thứ 9 đồ Trái Đất giá gấp 1,5, điểm cảng 1 cộng 1 nếu còn trên 2/3 kiên nhẫn. Kho danh mục và độ ưa của tàu theo ITEMS và SHIPS trong demo. Giá thùng đọc từ khối gia-kien của kinh-te-tien-trinh.md mục 3.1 chia 2,5 (lồng sống giữ 50 như demo, không chia). Mục tiêu (rảnh tối đa 30% ở trễ 2 giây, ca 180 tới 300, tàu xong 85 tới 100%, tip 20 tới 30%) theo brief GD-054",
+  "_gia_dinh": "[GIẢ ĐỊNH] Bố cục một trục như demo: quầy ba ô cách nhau 60 px, cửa neo cách nhau 170 px, người đi 280 px mỗi giây. Khi quét cửa neo khác 3, bố cục nén vào cùng độ dài. Số tàu N bất kỳ nằm trong cửa sổ đến 225 giây, giãn cách trung bình bằng 225 chia số tàu, lệch ngẫu nhiên 22% (khớp 7 tới 11 giây ở 25 tàu). Kho co giãn theo số tàu (số thùng trong danh mục nhân số tàu chia 25, lồng sống không co giãn) để kho không phải nút cổ chai, kho thật do gd-economy và gd-items đặt. N người chia việc, mỗi người chọn việc gần nhất chưa ai nhận theo ưu tiên: mang thùng đang cầm, nhặt thùng ở quầy, bơm khí. Trễ phản xạ là thời gian chờ trước mỗi lần đi và tính là bận. Người chơi xuất phát cách nhau 40 px. Một đơn đặt trước mỗi ca bất kể số tàu",
+  "_danh_muc": "kiểu 1 là danh mục của demo (phế liệu 10, cáp 8, quặng 8, đồ Trái Đất 5 ở 25 tàu). Kiểu 2 bỏ cáp và quặng, lấy băng 5 và 1 lồng sống, thiếu hàng ở 25 tàu và đặt trước còn. Kiểu 3 bỏ đồ Trái Đất, lấy băng 5, đơn đặt trước của Tikko trượt. Số thùng nhân số tàu chia 25 (lồng không nhân)"
 }
