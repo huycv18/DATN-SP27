@@ -278,3 +278,12 @@ Lead: "tôi muốn làm phần này giống phần bán sushi trong Dave the Div
 - Giữ nguyên: một ca mỗi ngày, mở ca khóa cửa khí, bỏ ca không phạt, không trừ Tally, Hạng cảng không giảm, tàu theo mốc truyện, sự cố từ chương 3, K17 không nấu ăn.
 - Lead: "cần làm cho nó tốt hơn". Việc cải thiện mở ở đợt 9: giãn giá hàng để lập danh mục có thế cân, đặt lại ngưỡng Hạng cảng (một ca cho tới 50 điểm), sim co-op.
 - Nguồn: `de-xuat-ca-cang-kieu-dave.md` (đã chốt), demo `tools/prototype/ca-cang-dave.html`. Khung, `so-hien-hanh.md` đã sửa. Brief `briefs/dot9-ca-cang-kieu-dave.md`.
+
+## 2026-11-20 - Tab GAME STORY trình bày theo khối
+
+Lead: "Sửa lại sheet Game Story, trình bày nó khoa học, đầy đủ và dễ nhìn dễ hiểu".
+
+- Tab chia 11 khối, mỗi khối có dòng tiêu đề (kèm nguồn) và dòng tên cột riêng, STT đánh lại từ 1 trong từng khối: Tóm tắt, Bối cảnh theo dòng thời gian, Năm chương, Mốc truyện, Nhân vật, Chủng tộc The Veyl, Trạm con có truyện, Tên riêng, Luật kể chuyện, Giọng văn, Quy ước đặt tên.
+- Ô văn xuôi "Điều kiện / Nơi / Mở" cũ tách ra thành cột riêng. Thêm 3 khối lấy từ `cot-truyen.md`: bối cảnh (mục 2.4), luật kể chuyện (mục 2.1, bản tóm), giọng văn (mục 13).
+- Định dạng: tiêu đề khối nền tím vừa chữ trắng, tên cột nền tím nhạt, viền xám, Lexend 10, cố định 1 hàng. Tab này có nhiều hàng tên cột nên `kiem-de-doc.mjs` không kiểm cột ID của nó.
+
