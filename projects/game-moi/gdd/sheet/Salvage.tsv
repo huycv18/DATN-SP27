@@ -56,7 +56,7 @@ Số lần quay bảng rơi: 3"
 		Resource Output	"- RES-104 Bo mạch cháy: trọng số 35, số lượng 1
 - RES-103 Quặng sắt thiên thạch: trọng số 35, số lượng 1
 - RES-106 Đồ Trái Đất vụn: trọng số 30, số lượng 1"	
-		Spawn Point	Xác Seed Station: Cinder 1 (C6, sau boss), Wick 1. Bên trong Cradle 2 mỗi khu (map.md mục 2.10)	
+		Spawn Point	Xác Seed Station: Cinder 1 (C6, sau boss), Wick 1. Cradle Interior 2 mỗi khu (map.md mục 2.10)	
 SLV-201	Mạch quặng cobalt	Type	Điểm khai thác, Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
 		Characteristic	"Dụng cụ: TOL-102
 Độ cứng hoặc cấp khóa: 2. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
@@ -188,4 +188,4 @@ RES-401	Linh kiện Cradle	Type	Tài nguyên thô, Linh kiện, dải Cradle. Nh
 		Characteristic	Độ hiếm: Đặc biệt. Cradle Part	
 		Attribute	Khối: 1	
 		Resource Output	RCP-421, UPG-OXY-4, UPG-BAG-4, UPG-ENV-3, Lắp động cơ chính giai đoạn 4 và 5	
-		Spawn Point	Boss BS-4 và map nhánh Bên trong Cradle (gd-combat, gd-world)	
+		Spawn Point	Boss BS-4 và map nhánh Cradle Interior (gd-combat, gd-world)	

@@ -1,5 +1,5 @@
 Issue ID	Task	Sub Task	Short Description	Ref
-TA01	Tàu gom phế liệu	Type	- Ai: Oru, thương nhân Tikko, khách quen đầu tiên\n- Nhãn: MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+TA01	Loose Bolt (Tàu gom phế liệu)	Type	- Ai: Oru, thương nhân Tikko, khách quen đầu tiên\n- Nhãn: MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
 		Characteristic	Hay hỏi HC10, lời thoại Tikko mê đồ Trái Đất	
 		Attribute	- Lưu bến: Dài\n- Trọng số túi trộn: 3	
 		Order	1 đến 2 dòng: HC01, HC02, HC10, HC06 (chỉ CGO-121), CGO-113 (kiện tinh duy nhất chương 1, từ khi xưởng Hoạt động, theo trần luật 23). Từ Hạng 3 thêm HC05 và HC11 (chỉ CGO-106). Từ ngày có Súng lưới, mỗi lịch có ít nhất một dòng CGO-121 ở một tàu TA01	
@@ -9,27 +9,27 @@ TA02	Tàu vội	Type	- Ai: Dân Oru vãng lai, không tên riêng\n- Nhãn: MVP	
 		Attribute	- Lưu bến: Ngắn\n- Trọng số túi trộn: 1	
 		Order	1 dòng: HC01, HC02, HC10, CGO-104	
 		Unlock	Chương 1, Hạng 2	
-TA03	Xuồng tiếp tế Lantern	Type	- Ai: Bram Kowalski, Station Lantern\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+TA03	Lamplighter (Xuồng tiếp tế Lantern)	Type	- Ai: Bram Kowalski, Station Lantern\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
 		Characteristic	Dòng tùy chọn: 1 ID rút từ cùng nhóm của tàu, kiện gốc 1 nhân quy mô đơn. Không tính vào đơn đủ và tổng giá đơn, kiện giao vào dòng đó trả gấp rưỡi	
 		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 2	
 		Order	2 dòng: HC03, HC07, HC08. Thêm 1 dòng tùy chọn	
 		Unlock	Sau mốc C2.2	
-TA04	Tàu trọng nghi thức	Type	- Ai: Sennari, thương nhân Ilsume. Thật ra là Sevra Ilvane (Y) giả danh\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+TA04	Vellune (Tàu trọng nghi thức)	Type	- Ai: Sennari, thương nhân Ilsume. Thật ra là Sevra Ilvane (Y) giả danh\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
 		Characteristic	15 giây đầu là nghi lễ chào, chưa nhận kiện. Đồng hồ lưu bến vẫn chạy	
 		Attribute	- Lưu bến: Dài\n- Trọng số túi trộn: 2	
 		Order	2 dòng: HC04, HC12	
 		Unlock	Mốc C2.7. Sau mốc C3.8 ra khỏi túi trộn, không ghé nữa (Sevra ở ẩn trên Ember)	
-TA05	Tàu sưu tầm	Type	- Ai: Aelith, thương nhân Vaeth\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+TA05	Glasswing (Tàu sưu tầm)	Type	- Ai: Aelith, thương nhân Vaeth\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
 		Characteristic	Chỉ hỏi Driftlife sống và đặc sản (loại kiện đắt), chê kiện mẫu đã hạ qua lời thoại	
 		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 2	
 		Order	1 đến 2 dòng: HC06, HC11	
 		Unlock	Mốc C2.4	
-TA06	Tàu không nói giá	Type	- Ai: Brakk, thương nhân Dromm\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+TA06	Iron Keel (Tàu không nói giá)	Type	- Ai: Brakk, thương nhân Dromm\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
 		Characteristic	Một dòng chỉ hiện gợi ý (ví dụ "thứ lạnh") thay vì tên ID. Giao đúng ID thì dòng lộ tên. Bảng tàu ghi rõ có dòng ẩn	
 		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 2, từ chương 4 là 3	
 		Order	2 dòng: HC02, HC12, HC13	
 		Unlock	Mốc C3.1	
-TA07	Tàu The Remainers	Type	- Ai: The Remainers, Elias Vance\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+TA07	Stayfast (Tàu The Remainers)	Type	- Ai: The Remainers, Elias Vance\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
 		Characteristic	Hỏi thêm về vị trí xác trạm qua lời thoại, không đổi luật	
 		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 2	
 		Order	2 dòng: HC06, HC08, HC11, HC14	
@@ -44,12 +44,12 @@ TA09	Tàu đơn gấp	Type	- Ai: Người đưa hàng gấp của thương hội
 		Attribute	- Lưu bến: Ngắn\n- Trọng số túi trộn: 1, từ chương 4 là 2	
 		Order	2 đến 3 dòng: HC04, HC12, HC13, HC14	
 		Unlock	Hạng 6	
-TA10	Tàu buôn tin	Type	- Ai: Kesh, thương nhân Nhem, giữ The Lattice\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+TA10	Backchannel (Tàu buôn tin)	Type	- Ai: Kesh, thương nhân Nhem, giữ The Lattice\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
 		Characteristic	Mua bản sao dữ liệu giá vừa. Lời thoại kể tin trên The Lattice, gợi manh mối hành lang an toàn	
 		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 1	
 		Order	2 dòng: 1 dòng HC09, 1 dòng HC12 hoặc HC13	
 		Unlock	Mốc C3.1	
-TA11	Tàu của mạng lưới	Type	- Ai: The Kindling, mạng lưới cách mạng\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+TA11	Pilot Light (Tàu của mạng lưới)	Type	- Ai: The Kindling, mạng lưới cách mạng\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
 		Characteristic	Tàu có điều kiện truyện, không vào túi trộn. Có trong lịch mỗi ngày từ ngày kế tiếp sau mốc C3.8 tới khi mốc C5.2 xong, và luôn có trong lịch ngày đầu chương 4 và ngày đầu chương 5. Giao đủ dòng HC15 là một đơn tin mật tới nơi. Mốc C4.7 cần ít nhất 1 đơn, mốc C5.2 cần tổng 2 đơn cộng dồn từ chương 4 (cot-truyen.md). Kiện tin mật không sinh thêm Tally so với kiện vỏ bọc (log 87)	
 		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: Không	
 		Order	2 dòng: 1 dòng HC15 đúng 1 kiện ở mọi số người (không nhân quy mô đơn, luật 69) và 1 dòng HC13 kiện gốc 1	

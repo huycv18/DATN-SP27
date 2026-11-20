@@ -41,20 +41,22 @@ Trạm và cảng là nửa ở nhà của The Novent: người chơi sửa từ
 | KH13 | Động cơ chính | Tiến độ rời neo, 5 giai đoạn | Có sẵn (hỏng) | 1 đến 5 | MVP giai đoạn 1 |
 
 ### Loại tàu và thương nhân
+
+Tên gọi bám vào người đặt. Loose Bolt là tên Tikko đặt cho tàu gom phế liệu, Lamplighter theo hệ tên ánh sáng của các trạm con, Vellune là tên đăng ký của tàu dưới vỏ bọc thương nhân Ilsume. Glasswing gợi sự mong manh của mẫu vật sống Vaeth chở, Iron Keel là cách gọi nặng và thẳng của Dromm, Stayfast gợi chủ trương bám trụ của The Remainers. Backchannel là tên tàu của người buôn tin Nhem, Pilot Light là mật danh The Kindling dùng cho chuyến tàu chuyển tin.
 Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 | ID | Tàu | Ai (tên theo `cot-truyen.md` sơ bộ) | Mở | Nhãn |
 |---|---|---|---|---|
-| TA01 | Tàu gom phế liệu | Oru, thương nhân Tikko, khách quen đầu tiên | Mốc C1.8 | MVP |
+| TA01 | Loose Bolt (Tàu gom phế liệu) | Oru, thương nhân Tikko, khách quen đầu tiên | Mốc C1.8 | MVP |
 | TA02 | Tàu vội | Dân Oru vãng lai, không tên riêng | Chương 1, Hạng cảng 2 | MVP |
-| TA03 | Xuồng tiếp tế Lantern | Bram Kowalski, Station Lantern | Sau mốc C2.2 | Sau MVP |
-| TA04 | Tàu trọng nghi thức | Sennari, thương nhân Ilsume. Thật ra là Sevra Ilvane (Y) giả danh | Mốc C2.7 tới mốc C3.8 | Sau MVP |
-| TA05 | Tàu sưu tầm | Aelith, thương nhân Vaeth | Mốc C2.4 | Sau MVP |
-| TA06 | Tàu không nói giá | Brakk, thương nhân Dromm | Mốc C3.1 | Sau MVP |
-| TA07 | Tàu The Remainers | The Remainers, Elias Vance | Mốc C3.5 | Sau MVP |
+| TA03 | Lamplighter (Xuồng tiếp tế Lantern) | Bram Kowalski, Station Lantern | Sau mốc C2.2 | Sau MVP |
+| TA04 | Vellune (Tàu trọng nghi thức) | Sennari, thương nhân Ilsume. Thật ra là Sevra Ilvane (Y) giả danh | Mốc C2.7 tới mốc C3.8 | Sau MVP |
+| TA05 | Glasswing (Tàu sưu tầm) | Aelith, thương nhân Vaeth | Mốc C2.4 | Sau MVP |
+| TA06 | Iron Keel (Tàu không nói giá) | Brakk, thương nhân Dromm | Mốc C3.1 | Sau MVP |
+| TA07 | Stayfast (Tàu The Remainers) | The Remainers, Elias Vance | Mốc C3.5 | Sau MVP |
 | TA08 | Tàu lạ | Maro, gián điệp của Daskel (The Wardens) cải trang, săn Sevra | Mốc C3.3, hai lần cập bến | Sau MVP |
 | TA09 | Tàu đơn gấp | Người đưa hàng gấp của thương hội Sennari, không tên riêng | Hạng cảng 6 | Sau MVP |
-| TA10 | Tàu buôn tin | Kesh, thương nhân Nhem, giữ The Lattice | Mốc C3.1 | Sau MVP |
-| TA11 | Tàu của mạng lưới | The Kindling, mạng lưới cách mạng | Ngày kế tiếp sau mốc C3.8 | Sau MVP |
+| TA10 | Backchannel (Tàu buôn tin) | Kesh, thương nhân Nhem, giữ The Lattice | Mốc C3.1 | Sau MVP |
+| TA11 | Pilot Light (Tàu của mạng lưới) | The Kindling, mạng lưới cách mạng | Ngày kế tiếp sau mốc C3.8 | Sau MVP |
 
 ### Nhóm hàng cảng (ID kiện theo `vat-pham.md` luật G2)
 - Nhóm hàng chỉ dùng khi sinh lịch (luật 69), từ HC01 tới HC15. Một nhóm gồm một hoặc nhiều ID kiện CGO của gd-items. Mỗi dòng đơn ghi đúng một ID kiện, giá dòng là giá ID đó (luật 23 và luật 30). Mọi ID kiện trong ITEM LIST thuộc đúng một nhóm.

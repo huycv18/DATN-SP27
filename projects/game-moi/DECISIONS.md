@@ -187,3 +187,11 @@ Lead chốt: "thôi để là The Novent đi".
 Tên chính thức: **The Novent**, đọc gần đúng **NÔ-ven(t)**. Ghép **Nova** và **Venture**, gợi chuyến đi mở đầu một kỷ nguyên mới cho nhân loại.
 
 Station Ember là tên trạm trong truyện. Slug kỹ thuật vẫn là `projects/game-moi/` để giữ các đường dẫn và công cụ hiện có.
+
+## 2026-11-20 - Chốt tên Driftlife, kẻ địch, địa danh và tàu
+
+- Dân thu hồi The Veyl gọi Driftlife theo dáng và hành vi. Chốt Latchjaw, Orebiter, Needlefin, Shardbrood Queen và Shardbrood Hatchling. Giữ các tên đã hợp thế giới như Driftmoth, Arc Eel, Shepherd Whale, Scrapmaw và Tempest Gulper.
+- The Wardens gọi đơn vị theo nhiệm vụ: Warden Harvester, Warden Lancer, Warden Snarer, Warden Collector và Warden Reaper. Tên hệ an ninh tàu mẹ là Cradle Custodian.
+- Giữ bản đồ The Wake và ba dải Ember Anchorage, Shepherd Belt, Glass Nebula. Chốt các tên Ember Mooring, Shatterline, Lantern Berth, Cradle Interior, Broken Hold, Cryo Deck và Bridge Archive. Hazard đặc trưng là Glassflare, Dead Air và Warden Cutline.
+- Tàu trong tab Customer: Loose Bolt của Tikko, Lamplighter của Station Lantern, Vellune của Ilsume, Glasswing của Vaeth, Iron Keel của Dromm, Stayfast của The Remainers, Backchannel của Nhem và Pilot Light là mật danh tàu chuyển tin của The Kindling.
+- Dùng tên mới làm tên hiển thị theo tab Enemy, Zone và Customer. Giữ mã thực thể và nhãn chức năng phục vụ production.

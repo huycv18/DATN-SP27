@@ -56,10 +56,10 @@ khoi("Map tổng The Wake",
      o("Map tổng, sinh lại mỗi chuyến bằng ghép mảnh dựng tay", "3 dải nối tiếp theo trục ngang: Gần, Giữa, Xa", "MVP: dải Gần"),
      o("- Mặt phẳng 2D nhìn ngang, Ember ở mép trái, đi sang phải là xa trạm",
        "- Lưới mảnh 40 x 24 u, cao 3 hàng. Gần 4 cột, Giữa 6, Xa 8",
-       "- Mỗi cạnh mảnh có cổng mở (8 u) hoặc đóng. Ô cố định giữ mảnh qua mọi chuyến",
+       "- Mỗi cạnh mảnh có cổng mở (8 u) hoặc đóng. Các ô cố định như Ember Mooring giữ mảnh qua mọi chuyến",
        "- Seed chuyến sinh từ thế giới, số ngày, số thứ tự chuyến: nạp lại ra đúng bố cục (K23)",
        "- Đường chính đi được qua mọi cột, mỗi dải có ít nhất một vòng, trùng mảnh cùng ô với chuyến trước tối đa 5 trên 10",
-       "- Dải chưa mở bị chặn bằng Rạn vụn (dải va chạm 8 u ở đầu cột 1 của dải đó)"),
+       "- Dải chưa mở bị chặn bằng rạn vụn Shatterline (dải va chạm 8 u ở đầu cột 1 của dải đó)"),
      o("- Nơi lấy tài nguyên và Driftlife sinh lại mỗi chuyến (K5, K8)",
        "- Oxy là đồng hồ: đi xa đổi được hàng hiếm, đường về dài hơn, chỗ thoát ít hơn (P1)",
        "- Không lạc: Ember, xác lớn cố định, lối vào map nhánh luôn ở chỗ cũ"),
@@ -103,7 +103,8 @@ for n in ("N2", "N3", "N4", "N5", "N6", "N7", "N8"):
 
 # 4. Hazard
 for h in haz:
-    khoi(f"Hazard {h['Mã']} {h['Tên']}",
+    ten_en = dm[h['Mã']]['Tên'].split(' / ', 1)[1]
+    khoi(f"Hazard {h['Mã']} {h['Tên']} / {ten_en}",
          o(f"Loại: {h['Loại']}", f"Dải, chương: {h['Dải, chương']}", h["Nhãn"]),
          o(f"- Tác động: {h['Tác động']}", f"- Báo trước: {h['Báo trước']}", f"- Chu kỳ: {h['Chu kỳ']}"),
          o(f"- Cách né: {h['Cách né']}", "- Mọi hazard gây hại báo trước ít nhất 1 giây tính từ lúc người chơi thấy tín hiệu"),

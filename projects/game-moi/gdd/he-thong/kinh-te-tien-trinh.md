@@ -113,13 +113,13 @@ Giá lồng sinh vật sống theo loài:
 | CGO-121 | DL-G02 Skitter Ray | Gần | 5,74 | 55 | MVP |
 | CGO-121 | DL-G04 Sting Krill | Gần | 4,04 | 40 | MVP |
 | CGO-121 | DL-G05 Arc Eel | Gần | 30,71 | 310 | MVP (hạ), Sau MVP (bắt) |
-| CGO-121 | DL-G03 Barnacle Maw | Gần | 16,91 | 170 | Sau MVP |
+| CGO-121 | DL-G03 Latchjaw | Gần | 16,91 | 170 | Sau MVP |
 | CGO-221 | DL-M02 Lumen Jelly | Giữa | 25,91 | 260 | Sau MVP |
-| CGO-221 | DL-M03 Ore Grazer | Giữa | 28,91 | 290 | Sau MVP |
-| CGO-221 | DL-M04 Needle Shoal | Giữa | 10,26 | 100 | Sau MVP |
+| CGO-221 | DL-M03 Orebiter | Giữa | 28,91 | 290 | Sau MVP |
+| CGO-221 | DL-M04 Needlefin | Giữa | 10,26 | 100 | Sau MVP |
 | CGO-321 | DL-X01 Prism Wisp | Xa | 33,49 | 330 | Sau MVP |
 | CGO-321 | DL-X02 Mirror Mantis | Xa | 69,51 | 700 | Sau MVP |
-| CGO-321 | DL-X05 Brood Spawn | Xa | 23,04 | 230 | Sau MVP |
+| CGO-321 | DL-X05 Shardbrood Hatchling | Xa | 23,04 | 230 | Sau MVP |
 <!--/khoi-->
 
 ### 3.2 Giá mua bằng Tally (tab Upgrade và Shop)
@@ -408,9 +408,9 @@ Mỗi ô là ngày thứ mấy xong chương và số giờ chơi của riêng c
 | DL-G01 Driftmoth | Gần | 2,70 | 5,14 | 1,90 | 1,50 | 1,70 | 1,77 | MVP |
 | DL-G02 Skitter Ray | Gần | 3,10 | 5,74 | 1,85 | 1,50 | 1,67 | 1,73 | MVP |
 | DL-G04 Sting Krill | Gần | 2,30 | 4,04 | 1,76 | 1,28 | 1,52 | 1,60 | MVP |
-| DL-M04 Needle Shoal | Giữa | 5,50 | 10,26 | 1,87 | 1,67 | 1,77 | 1,80 | Sau MVP |
+| DL-M04 Needlefin | Giữa | 5,50 | 10,26 | 1,87 | 1,67 | 1,77 | 1,80 | Sau MVP |
 | DL-X01 Prism Wisp | Xa | 18,00 | 33,49 | 1,86 | 1,80 | 1,83 | 1,84 | Sau MVP |
-| DL-X05 Brood Spawn | Xa | 12,60 | 23,04 | 1,83 | 1,74 | 1,78 | 1,80 | Sau MVP |
+| DL-X05 Shardbrood Hatchling | Xa | 12,60 | 23,04 | 1,83 | 1,74 | 1,78 | 1,80 | Sau MVP |
 <!--/khoi-->
 
 - Kết luận: qua lưới, ròng trên hạ từ <!--v:luoi-min-->1,28<!--/v--> tới <!--v:luoi-max-->1,84<!--/v-->, thấp nhất khi một phát chỉ trúng 1 con của loài rẻ. Bắt tay sau choáng không tốn vật tiêu hao nên được <!--v:tay-min-->1,76<!--/v--> đến <!--v:tay-max-->1,90<!--/v--> lần, trong trần 2,0 của khung. Bắt sống luôn đáng hơn hạ (K9) mà không vượt trần.
@@ -658,7 +658,7 @@ Tiêu chí đo được khi có build (rút từ GD-031):
 | 1 | Bay, Oxy, nhặt, khoan, nạy, hạ, bắt sống loài nhỏ, sửa khoang, đóng kiện, ca cảng, mua nâng cấp đầu tiên | Tài nguyên dải Gần | Dải Gần, Station Cinder | Dùi xung, Súng lưới, Bộ kích nguồn, bậc 1 bộ đồ | 4 loài Gần, BS-1 | T-TUI và T-OXY lên bậc 1, T-DAY bậc 1, thêm ô dụng cụ (quest) | Dạy trọn vòng lặp trong 2 giờ |
 | 2 | Nuôi, bắt loài lớn, nghiên cứu, Skiff | Tài nguyên dải Giữa | Dải Giữa, Wick, Lantern | Súng gây mê, Phao kéo, Kim sinh thiết, Lồng mẫu, bậc 2 | Loài Giữa, BS-2 | T-TUI, T-OXY, T-DAY lên bậc 2, T-VO bậc 1, thêm ô dụng cụ | Nhịp chậm lại, trạm lớn lên rõ |
 | 3 | Sự cố trong ca, kẻ địch có vũ khí, nhiều bến | Tài nguyên dải Xa | Dải Xa, Flint, Veyl Waypost | Máy quét xung, bậc 3 | Loài Xa, The Wardens, BS-3 | T-TUI, T-OXY, T-DAY lên bậc 3, T-VO bậc 2 | Chương dài nhất, giữa game |
-| 4 | Map nhánh lớn nhiều chuyến | Linh kiện Cradle | Bên trong Cradle | Máy cắt thân tàu, bậc 4 | BS-4 | T-TUI, T-OXY lên bậc 4, T-VO bậc 3 | Lộ sự thật, chuẩn bị trận cuối |
+| 4 | Map nhánh lớn nhiều chuyến | Linh kiện Cradle | Cradle Interior | Máy cắt thân tàu, bậc 4 | BS-4 | T-TUI, T-OXY lên bậc 4, T-VO bậc 3 | Lộ sự thật, chuẩn bị trận cuối |
 | 5 | Trận cuối nhiều chuyến | Linh kiện Warden | Warden Rig | Không | BS-5 | Không thêm | Kết, Tally không còn vai trò |
 
 ## Lịch sử thay đổi

@@ -124,14 +124,14 @@ for id_, r in dm.items():
         items.append(('Skill 1', '- Không có đòn'))
     items.append(('Capture', j(f"- Lý do bắt: {h['Lý do bắt sống']}", f"- Lý do hạ: {h['Lý do hạ']}",
                                f"- Khắc chế: {h['Khắc chế bằng']}")))
-    khoi(id_, f"{r['Tên']} [TẠM]", items, REF + ' mục 3.4, 3.4b, 3.5')
+    khoi(id_, r["Tên"], items, REF + ' mục 3.4, 3.4b, 3.5')
 
 # The Wardens
 for id_, r in dm.items():
     if not id_.startswith('WD-'):
         continue
     w = wd[id_]
-    khoi(id_, f"{r['Tên']} [TẠM]", [
+    khoi(id_, r["Tên"], [
         ('Type', j(f"- Phe The Wardens, dải {r['Dải']}, cỡ {r['Cỡ']}", f"- Nhãn: {r['Nhãn']}",
                    '- Không bắt sống, miễn mê', f"- Rơi khi hạ: {r['Rơi khi hạ (nhóm)']}")),
         ('Characteristic', j(f"- {r['Kiểu']}", f"- Hành vi: {w['Hành vi']}", f"- Khác Driftlife: {w['Khác Driftlife']}")),
@@ -145,7 +145,7 @@ for id_, r in dm.items():
         continue
     b = bs[id_]
     d = bsr[id_]
-    khoi(id_, f"{r['Tên']} [TẠM]", [
+    khoi(id_, r["Tên"], [
         ('Type', j(f"- Boss chương {d['Chương']}. {r['Kiểu']}", f"- Nơi: {b['Nơi']}", f"- Nhãn: {b['Nhãn']}",
                    f"- Rơi khi hạ: {d['Rơi khi hạ']}", f"- Rơi khi xua đi: {d['Rơi khi xua đi']}")),
         ('Attribute', j(f"- Sinh lực (một mình): {b['Sinh lực (một mình)']}", f"- Số pha: {b['Pha']}",
@@ -165,8 +165,8 @@ khoi('EN-01', 'Sự kiện combat theo truyện', [
                                          '- Nhãn: Sau MVP')),
     ('Kén của Sevra (C3.8, C5.1)', j('- Kén thoát hiểm BNG-102 là vật kéo lớp Nặng, cùng luật với buồng ngủ đông',
                                     '- C3.8: hạ hết toán rồi Tương tác giữ 2 s để gỡ kén khỏi mạn tàu TA04',
-                                    '- Người kéo bị Snare Hunter trói thì chờ lưới tự tan sau tối đa 2 s, hoặc thả kén rồi Lướt',
-                                    '- Kén không bị nhắm, không nhận sát thương. Snare Hunter ưu tiên người đang kéo kén',
+                                    '- Người kéo bị Warden Snarer trói thì chờ lưới tự tan sau tối đa 2 s, hoặc thả kén rồi Lướt',
+                                    '- Kén không bị nhắm, không nhận sát thương. Warden Snarer ưu tiên người đang kéo kén',
                                     '- Người kéo ngạt thì thả kén, đồng đội kéo tiếp. Cả nhóm về trạm thì kén nằm lại, chuyến sau kéo tiếp',
                                     '- C3.8: kén đi theo người kích Recall Beacon. C5.1: kén không theo beacon, giữa các chuyến lưu ở beacon cố định gần nhất đã qua, chưa qua thì ở cửa N4 (map.md)',
                                     '- Không ghim được, không mất theo túi. Sevra không chết',

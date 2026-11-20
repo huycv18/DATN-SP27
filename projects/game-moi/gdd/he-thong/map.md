@@ -2,43 +2,43 @@
 
 Project: game-moi (The Novent) | Chủ sở hữu: gd-world | Trạng thái: bản đủ, số là khởi điểm ước, chưa sim (2026-11-20, GD-026) | Nguồn: `../00-khung-game.md` (K1 đến K9, C1 đến C8, mục 7, 9, 12), `../../log-gdm-tu-quyet.md`, brief `../../briefs/dot1-gdd-he-thong.md`
 
-Tên riêng tiếng Anh đều [TẠM]. Khu hiện như địa danh trên bản đồ dùng tên tiếng Anh [TẠM], gd-story duyệt (log 74). Danh từ chung (Rạn vụn, khoang lái, buồng ngủ đông) và tên phòng trong spec greybox giữ tiếng Việt. Tên vùng, môi trường, hazard do gd-world giữ. Tên trạm con, nhân vật do gd-story giữ. Tên Driftlife, kẻ địch, boss do gd-combat giữ. Tên vật phẩm do gd-items giữ.
+Tên hiển thị đã chốt cho The Novent. The Veyl gọi các dải theo điểm neo Ember, đàn Shepherd Whale và ánh tinh thể trong Glass Nebula. Tên các khoang giữ cách gọi theo công dụng của thủy thủ đoàn hoặc của The Wardens. Tên phòng trong spec greybox vẫn dùng tiếng Việt.
 Số trong file sinh từ `projects/game-moi/sim/ngan_sach_oxy.py` (bảng ở `projects/game-moi/sim/ngan-sach-oxy.md`). Đó là phép tính tất định, không phải sim nhiều seed. Sim là việc của gd-tech ở đợt 2.
 
-## Danh mục sơ bộ
+## Danh mục
 
 | Mã | Loại | Tên | Ghi chú | Nhãn |
 |---|---|---|---|---|
 | Z1 | Dải | Dải Gần, Ember Anchorage | Mở từ đầu chương 1. Môi trường E0 | MVP |
 | Z2 | Dải | Dải Giữa, Shepherd Belt | Mở ở mốc đóng chương 1. Môi trường E1 | Sau MVP |
 | Z3 | Dải | Dải Xa, Glass Nebula | Mở ở mốc đóng chương 2. Môi trường E2 | Sau MVP |
-| E0 | Môi trường | Chân không sạch / Clear Vacuum [TẠM] | Không cần cấp vỏ bộ đồ | MVP |
-| E1 | Môi trường | Lạnh sâu / Deep Cold [TẠM] | Cần vỏ bộ đồ (T-VO) cấp 1 | Sau MVP |
-| E2 | Môi trường | Bức xạ tinh vân / Nebula Radiation [TẠM] | Cần vỏ bộ đồ (T-VO) cấp 2 | Sau MVP |
-| E3 | Môi trường | Lõi rò / Core Leak [TẠM] | Cần vỏ bộ đồ (T-VO) cấp 3. Chỉ trong Bên trong Cradle và Warden Rig | Sau MVP |
-| R0 | Ranh | Rạn vụn / Debris Reef [TẠM] | Dải va chạm dày 8 u ở 8 u đầu cột 1 của dải chưa mở (ranh trong của dải đó). Không phải ô, không tính vào ô cố định | MVP |
-| H01 | Hazard | Mảnh trôi / Drifting Debris [TẠM] | Gần trở đi | MVP |
-| H02 | Hazard | Cáp chập / Live Cable [TẠM] | Gần trở đi, có trong map nhánh | MVP |
-| H03 | Hazard | Ống xì / Vent Jet [TẠM] | Gần trở đi, đẩy người chơi, không trừ Oxy | MVP |
-| H04 | Hazard | Dòng đá vụn / Rubble Stream [TẠM] | Giữa trở đi | Sau MVP |
-| H05 | Hazard | Băng nứt / Cracking Ice [TẠM] | Giữa | Sau MVP |
-| H06 | Hazard | Dòng trôi / Drift Current [TẠM] | Giữa trở đi, đẩy người chơi, không trừ Oxy | Sau MVP |
-| H07 | Hazard | Bùng tinh vân / Nebula Flare [TẠM] | Xa | Sau MVP |
-| H08 | Hazard | Vùng nhiễu / Static Zone [TẠM] | Xa, tắt la bàn, ping, tín hiệu Recall Beacon | Sau MVP |
-| H09 | Hazard | Hàng rào cắt / Cutter Fence [TẠM] | Xa, công trình tĩnh của The Wardens, từ chương 3 | Sau MVP |
+| E0 | Môi trường | Chân không sạch / Clear Vacuum | Không cần cấp vỏ bộ đồ | MVP |
+| E1 | Môi trường | Lạnh sâu / Deep Cold | Cần vỏ bộ đồ (T-VO) cấp 1 | Sau MVP |
+| E2 | Môi trường | Bức xạ tinh vân / Nebula Radiation | Cần vỏ bộ đồ (T-VO) cấp 2 | Sau MVP |
+| E3 | Môi trường | Lõi rò / Core Leak | Cần vỏ bộ đồ (T-VO) cấp 3. Chỉ trong Cradle Interior và Warden Rig | Sau MVP |
+| R0 | Ranh | Rạn vụn / Shatterline | Dải va chạm dày 8 u ở 8 u đầu cột 1 của dải chưa mở (ranh trong của dải đó). Không phải ô, không tính vào ô cố định | MVP |
+| H01 | Hazard | Mảnh trôi / Drifting Debris | Gần trở đi | MVP |
+| H02 | Hazard | Cáp chập / Live Cable | Gần trở đi, có trong map nhánh | MVP |
+| H03 | Hazard | Ống xì / Vent Jet | Gần trở đi, đẩy người chơi, không trừ Oxy | MVP |
+| H04 | Hazard | Dòng đá vụn / Rubble Stream | Giữa trở đi | Sau MVP |
+| H05 | Hazard | Băng nứt / Cracking Ice | Giữa | Sau MVP |
+| H06 | Hazard | Dòng trôi / Drift Current | Giữa trở đi, đẩy người chơi, không trừ Oxy | Sau MVP |
+| H07 | Hazard | Bùng tinh vân / Glassflare | Xa | Sau MVP |
+| H08 | Hazard | Vùng nhiễu / Dead Air | Xa, tắt la bàn, ping, tín hiệu Recall Beacon | Sau MVP |
+| H09 | Hazard | Hàng rào cắt / Warden Cutline | Xa, công trình tĩnh của The Wardens, từ chương 3 | Sau MVP |
 | N1 | Map nhánh | Station Cinder (xác Seed Station) | Gần, chương 1. Ingrid (Kỹ sư), Linh (Thông dịch viên), boss BS-1 | MVP |
 | N2 | Map nhánh | Station Wick (xác Seed Station) | Giữa, chương 2. Rafa (Hoa tiêu) | Sau MVP |
 | N3 | Map nhánh | Station Lantern (trạm còn người) | Giữa, chương 2. Amara (Nhà sinh học), boss BS-2 | Sau MVP |
 | N4 | Map nhánh | Veyl Waypost | Xa, chương 3 đến 5. Yusuf (Trưởng cảng). Nơi cứu Sevra Ilvane (mốc C3.8) và căn cứ The Hearth của mạng lưới The Kindling (đích hộ tống, mốc C5.1). Không boss | Sau MVP |
 | N5 | Map nhánh | The Raft (nơi ở của The Remainers) | Xa, chương 3. Không boss | Sau MVP |
 | N6 | Map nhánh | Station Flint (xác Seed Station) | Xa, chương 3. Manh mối cú lật Driftlife, boss BS-3 | Sau MVP |
-| N7 | Map nhánh | Bên trong Cradle | Xa, chương 4. Boss BS-4 | Sau MVP |
+| N7 | Map nhánh | Cradle Interior | Xa, chương 4. Boss BS-4 | Sau MVP |
 | N8 | Map nhánh | Warden Rig | Xa, chương 5. Nơi Daskel chỉ huy ở bãi vỡ, căn cứ của The Wardens. Boss BS-5 | Sau MVP |
-| A01 | Địa danh | Ember Apron [TẠM] (tên làm việc cũ: Bến ngoài) | Ô cố định cột 1 hàng giữa dải Gần | MVP |
-| A02 | Địa danh | Lantern Outer Ring, Cargo Berth, Lantern Core [TẠM] | Ba khu của Station Lantern | Sau MVP |
-| A03 | Địa danh | Waypost Outer Ring, Waypost Concourse, The Hearth [TẠM] | Ba khu của Veyl Waypost. The Hearth là khoang ẩn của The Kindling (tên của gd-story), cửa mở khi kén của Sevra chạm tới | Sau MVP |
-| A04 | Địa danh | Collapsed Hold, Main Cryo Deck, Engine Core, Bridge and Archive [TẠM] | Bốn khu của Bên trong Cradle (tên làm việc cũ: Khoang hàng sập, Khu ngủ đông chính, Lõi máy, Buồng lái và kho lưu trữ) | Sau MVP |
-| A05 | Địa danh | Rig Landing, Holding Pens, Command Deck, Data Core [TẠM] | Bốn khu của Warden Rig | Sau MVP |
+| A01 | Địa danh | Ember Mooring | Ô cố định cột 1 hàng giữa dải Gần | MVP |
+| A02 | Địa danh | Lantern Outer Ring, Lantern Berth, Lantern Core | Ba khu của Station Lantern | Sau MVP |
+| A03 | Địa danh | Waypost Outer Ring, Waypost Concourse, The Hearth | Ba khu của Veyl Waypost. The Hearth là khoang ẩn của The Kindling (tên của gd-story), cửa mở khi kén của Sevra chạm tới | Sau MVP |
+| A04 | Địa danh | Broken Hold, Cryo Deck, Engine Core, Bridge Archive | Bốn khu của Cradle Interior (tên làm việc cũ: Khoang hàng sập, Khu ngủ đông chính, Lõi máy, Buồng lái và kho lưu trữ) | Sau MVP |
+| A05 | Địa danh | Rig Landing, Holding Pens, Command Deck, Data Core | Bốn khu của Warden Rig | Sau MVP |
 | SP-R | Điểm sinh | Tài nguyên | Nhóm theo dải, gd-items cấp | MVP |
 | SP-D | Điểm sinh | Driftlife (đơn, đàn, tổ) | Loài theo dải, gd-combat cấp | MVP |
 | SP-W | Điểm sinh | Đơn vị The Wardens | Xa, từ chương 3, gd-combat cấp | Sau MVP |
@@ -72,7 +72,7 @@ Quyết định người chơi đưa ra trong hệ thống này:
 
 - Pillar phục vụ: P1 (Oxy là đồng hồ của không gian), P3 (mọi luật đúng với 1 đến 4 người), P4 (truyện chỉ ở chỗ dựng tay).
 
-30 giây đầu của chuyến đầu tiên: ra cửa khí vào mảnh Ember Apron (ô cố định, không hazard, không Driftlife săn mồi). Thấy phế liệu trôi trong tầm tay, nhặt món đầu. Thấy xác Station Cinder lớn ở phía phải trên làm mốc. Thấy Mảnh trôi đầu tiên đi chậm qua đường bay, có vệt bụi báo trước.
+30 giây đầu của chuyến đầu tiên: ra cửa khí vào mảnh Ember Mooring (ô cố định, không hazard, không Driftlife săn mồi). Thấy phế liệu trôi trong tầm tay, nhặt món đầu. Thấy xác Station Cinder lớn ở phía phải trên làm mốc. Thấy Mảnh trôi đầu tiên đi chậm qua đường bay, có vệt bụi báo trước.
 
 ## 2. Luật
 
@@ -82,12 +82,12 @@ Quyết định người chơi đưa ra trong hệ thống này:
 2. Map tổng gồm ba dải nối tiếp theo trục ngang: Gần, Giữa, Xa. Mỗi dải là một lưới mảnh, số cột theo bảng tham số, cao 3 hàng. (MVP cho Gần)
 3. Mảnh là khối dựng tay cùng kích thước. Mỗi cạnh của mảnh khai báo một cổng: mở (lỗ rộng bằng tham số cổng mảnh, ở giữa cạnh) hoặc đóng. Hai mảnh cạnh nhau chỉ thông nhau khi cả hai cạnh chạm nhau đều mở. (MVP)
 4. Mỗi mảnh thuộc đúng một dải và một loại: Mở, Hành lang, Ổ, Xác lớn, Thưởng, Cố định. Định nghĩa loại ở bảng 3.3. (MVP)
-5. Ô cố định giữ nguyên mảnh qua mọi chuyến: ô Ember Apron (cột 1 hàng giữa của Gần, cổng Trái, Phải, Trên, Dưới đều mở) và ô lối vào của mỗi map nhánh (cổng ghi ở mục 6.4). Rạn vụn không phải ô (luật 2.2.2). (MVP)
+5. Ô cố định giữ nguyên mảnh qua mọi chuyến: ô Ember Mooring (cột 1 hàng giữa của Gần, cổng Trái, Phải, Trên, Dưới đều mở) và ô lối vào của mỗi map nhánh (cổng ghi ở mục 6.4). Rạn vụn không phải ô (luật 2.2.2). (MVP)
 6. Bố cục mới được sinh khi chuyến bắt đầu, theo thứ tự xử lý ở 2.9. Seed của chuyến sinh từ thế giới, số ngày và số thứ tự chuyến trong ngày (1 hoặc 2), nên nạp lại cùng ngày cùng chuyến ra đúng bố cục cũ (K23). Trong một chuyến, bố cục không đổi. (MVP)
 7. Trong một chuyến, một mảnh xuất hiện tối đa một lần. Trùng mảnh là cùng một mảnh ở cùng một ô với chuyến liền trước, chỉ tính ô ghép. Số ô trùng không vượt tham số trùng tối đa. (MVP)
 8. Cờ nửa ngoài của mảnh: "Có" là mảnh chỉ đặt ở nửa ngoài của dải (cột lớn hơn nửa số cột, dải Gần là cột 3 và 4), "Không" là mảnh đặt ở mọi cột. Mảnh Thưởng luôn có cờ "Có". (MVP)
 9. Mỗi dải có đường chính đi được từ ranh trong tới ranh ngoài mà không cần dụng cụ phá vật cản. Mỗi dải có ít nhất một vòng: hai đường khác nhau nối cùng hai cột. (MVP)
-10. Mọi ô lối vào map nhánh, mọi Recall Beacon của chuyến và ô Ember Apron đều nối được với đường chính. (MVP)
+10. Mọi ô lối vào map nhánh, mọi Recall Beacon của chuyến và ô Ember Mooring đều nối được với đường chính. (MVP)
 11. Biên trên và biên dưới của map là ranh vô hình có hình mảnh vỡ dày. Người chơi chạm ranh thì dừng lại, không mất Oxy. (MVP)
 
 ### 2.2 Dải, mở dải và môi trường
@@ -96,7 +96,7 @@ Quyết định người chơi đưa ra trong hệ thống này:
 2. Dải chưa mở có Rạn vụn chiếm 8 u đầu cột 1 của dải đó, suốt chiều cao map. Rạn vụn là va chạm cứng, không phá được bằng mọi dụng cụ. Khi dải mở, Rạn vụn mở một khe cao bằng cổng mảnh ở đúng hàng đường chính đi từ dải trước sang (mục 2.9 bước 4), phần còn lại giữ làm cảnh. (MVP)
 3. Mỗi dải có một môi trường: Gần E0, Giữa E1, Xa E2. Môi trường E0 không đòi gì. Môi trường E1, E2, E3 đòi cấp vỏ bộ đồ (trục T-VO của gd-character) bằng số trong mã. (MVP cho E0)
 4. Người chơi ở trong dải có môi trường cao hơn cấp vỏ bộ đồ thì hao nền Oxy nhân hệ số thiếu cấp. Hệ số do gd-character giữ (thiếu 1 cấp và thiếu từ 2 cấp). Hệ số tính theo khu người đó đang ở, đổi ngay khi qua ranh dải. (Sau MVP)
-5. Map nhánh dùng môi trường của dải chứa lối vào, trừ khu có khí (luật 2.7.4). Bên trong Cradle và Warden Rig dùng E3. (Sau MVP)
+5. Map nhánh dùng môi trường của dải chứa lối vào, trừ khu có khí (luật 2.7.4). Cradle Interior và Warden Rig dùng E3. (Sau MVP)
 6. Tài nguyên và loài Driftlife gắn với dải, không trộn giữa các dải (K5). Mỗi dải có loài và nhóm tài nguyên chỉ dải đó có, danh sách do gd-items và gd-combat giữ. (MVP)
 
 ### 2.3 Hazard
@@ -108,7 +108,7 @@ Quyết định người chơi đưa ra trong hệ thống này:
 5. Hazard đẩy (Ống xì, Dòng trôi) không trừ Oxy. Bay xuôi chiều được cộng tốc độ, bay ngược bị trừ tốc độ. (MVP cho Ống xì)
 6. Vùng nhiễu tắt la bàn, ping co-op và tín hiệu Recall Beacon cho người đứng trong vùng. Beacon nằm trong Vùng nhiễu vẫn kích được bằng tay. (Sau MVP)
 7. Hàng rào cắt có một máy phát. Phá máy phát thì hàng rào tắt tới hết chuyến. Máy phát có máu theo bảng hazard, tăng theo số người theo C8. (Sau MVP)
-8. Hazard trong map tổng không xuất hiện ở ô Ember Apron và ở mảnh chứa Recall Beacon trong bán kính an toàn của beacon. (MVP)
+8. Hazard trong map tổng không xuất hiện ở ô Ember Mooring và ở mảnh chứa Recall Beacon trong bán kính an toàn của beacon. (MVP)
 Chi tiết từng hazard ở bảng 3.5.
 
 ### 2.4 Điểm sinh và mật độ
@@ -125,7 +125,7 @@ Chi tiết từng hazard ở bảng 3.5.
 ### 2.5 Recall Beacon
 
 1. Mỗi chuyến có số Recall Beacon trong mỗi dải theo bảng tham số. Beacon chỉ đặt ở khe SP-B của mảnh. Beacon của chuyến không nằm ở ô nào đã có beacon trong chuyến liền trước (K4). (MVP)
-2. Luật đặt: không đặt ở ô Ember Apron, hai beacon cách nhau ít nhất số cột theo tham số, mỗi dải có ít nhất một beacon ở nửa ngoài của dải, mọi beacon nằm trên đường chính hoặc ở ô kề đường chính. (MVP)
+2. Luật đặt: không đặt ở ô Ember Mooring, hai beacon cách nhau ít nhất số cột theo tham số, mỗi dải có ít nhất một beacon ở nửa ngoài của dải, mọi beacon nằm trên đường chính hoặc ở ô kề đường chính. (MVP)
 3. Beacon phát tín hiệu trong bán kính phát hiện. Người chơi bay vào bán kính thì beacon hiện trên la bàn của cả nhóm tới hết chuyến. (MVP)
 4. Kích beacon: đứng trong bán kính kích, giữ phím Kích Recall đủ thời gian giữ. Trong lúc giữ, Oxy vẫn hao. Trúng đòn hoặc thả phím thì hủy, phải giữ lại từ đầu. Thử lại không giới hạn. (MVP)
 5. Kích xong: người đó về trạm, giữ nguyên túi đồ. Vật đang kéo (buồng ngủ đông, Driftlife sống, kiện) trong bán kính kéo theo đi cùng. (MVP)
@@ -158,7 +158,7 @@ Sơ đồ từng map nhánh ở mục 2.10.
 ### 2.8 Nhịp chuyến
 
 1. Thời lượng chuyến khi Oxy là giới hạn bằng dung lượng bình trừ phần dự trù quay về. Bình quyết chuyến dài bao lâu, dải quyết phần nào của chuyến là bay và phần nào là làm việc. (MVP)
-2. Đường áp lực của một chuyến: nhẹ ở Ember Apron, tăng dần theo cột, có mảnh Mở hoặc Xác lớn sau mỗi mảnh Ổ hoặc Thưởng trên đường chính để người chơi thở. Máy sinh không đặt hai mảnh Ổ hoặc Thưởng liền nhau trên đường chính. (MVP)
+2. Đường áp lực của một chuyến: nhẹ ở Ember Mooring, tăng dần theo cột, có mảnh Mở hoặc Xác lớn sau mỗi mảnh Ổ hoặc Thưởng trên đường chính để người chơi thở. Máy sinh không đặt hai mảnh Ổ hoặc Thưởng liền nhau trên đường chính. (MVP)
 3. Phần thưởng tăng theo rủi ro: tỉ lệ khe SP-R hạng hiếm tăng theo cột, mảnh Thưởng chỉ ở nửa ngoài của dải. (MVP)
 4. Chuyến kết thúc với từng người khi người đó về cửa khí, kích beacon xong hoặc bị kéo về. Chuyến của nhóm kết thúc khi người cuối cùng xong (C6). (MVP)
 5. Một ngày có tối đa hai chuyến, chuyến Skiff cũng tính (K22). Ngân sách một ngày ở khung mục 9 do GDM giữ, thời lượng mỗi chuyến đo ở mục 3.9. (MVP)
@@ -166,8 +166,8 @@ Sơ đồ từng map nhánh ở mục 2.10.
 ### 2.9 Thứ tự xử lý khi sinh một chuyến
 
 1. Đọc chương, dải đã mở, map nhánh đã mở, số người N, seed của chuyến (từ thế giới, số ngày, số thứ tự chuyến, K23).
-2. Đặt ô cố định (Ember Apron, ô lối vào map nhánh đã biết) và Rạn vụn ở dải chưa mở.
-3. Mỗi dải: chọn đường chính đi qua mọi cột từ trái sang phải. Trong một cột đường chính đổi tối đa một hàng, và chỉ sang hàng kề (hàng 1 sang 2, hàng 2 sang 1 hoặc 3, hàng 3 sang 2), rồi sang cột kế ở hàng đó. Dải Gần bắt đầu ở ô Ember Apron.
+2. Đặt ô cố định (Ember Mooring, ô lối vào map nhánh đã biết) và Rạn vụn ở dải chưa mở.
+3. Mỗi dải: chọn đường chính đi qua mọi cột từ trái sang phải. Trong một cột đường chính đổi tối đa một hàng, và chỉ sang hàng kề (hàng 1 sang 2, hàng 2 sang 1 hoặc 3, hàng 3 sang 2), rồi sang cột kế ở hàng đó. Dải Gần bắt đầu ở ô Ember Mooring.
 4. Hàng đường chính đi vào cột 1 của dải sau bằng hàng đường chính ra khỏi cột cuối của dải trước. Khe Rạn vụn (khi dải sau đã mở) đặt ở hàng đó.
 5. Đặt mảnh cho các ô trên đường chính: cổng phải khớp hướng đường. Áp luật nhịp 2.8.2.
 6. Chọn một cặp cột cho vòng, đặt mảnh ô phụ tạo đường thứ hai.
@@ -191,12 +191,12 @@ Lối vào mỗi map nhánh mở theo mốc truyện (bảng mốc ở `cot-truy
 | N4 Veyl Waypost | C2.8 (cửa The Hearth mở khi kén của Sevra chạm tới, mốc C5.1) |
 | N5 The Raft | C3.4 |
 | N6 Station Flint | C3.5 |
-| N7 Bên trong Cradle | C3.8 (cứu Sevra ở N4) |
+| N7 Cradle Interior | C3.8 (cứu Sevra ở N4) |
 | N8 Warden Rig | C4.7 |
 
 **N1 Station Cinder (MVP).**
 - Xác Seed Station đầu tiên, dải Gần, chương 1.
-- Ô lối vào cố định ở Gần cột 3 hàng trên, vỏ xác nhìn thấy từ Ember Apron làm mốc.
+- Ô lối vào cố định ở Gần cột 3 hàng trên, vỏ xác nhìn thấy từ Ember Mooring làm mốc.
 
 | Khu | Vị trí | Có gì |
 |---|---|---|
@@ -223,11 +223,11 @@ Các map nhánh sau MVP (sơ đồ chi tiết làm ở đợt dựng chương t�
 | Nhánh | Dải, chương | Khu | Khóa và chìa | Người vớt | Boss | Khe manh mối | Thời lượng mỗi chuyến (giây) |
 |---|---|---|---|---|---|---|---|
 | N2 Station Wick | Giữa, 2 | Cửa khí, hành lang băng phủ (Băng nứt), khoang ngủ đông, khoang lái. Chung bộ nội thất với Cinder, đổi bố trí và hư hại | Khoang ngủ đông mất điện, mở bằng Bộ kích nguồn (dụng cụ cũ dùng lại) | Rafa (Hoa tiêu) | Không | M1, M2, M3 ở khoang ngủ đông (M3 là thẻ tên STY-601), V1 ở khoang lái (STY-103) | 150 |
-| N3 Station Lantern | Giữa, 2 | Lantern Outer Ring gồm Cargo Berth (chân không, đấu boss giữa các kiện hàng trôi), Lantern Core (khu có khí: Odile, Bram, Amara, chợ đổi tin) | Cửa cập chỉ mở sau khi đuổi BS-2 lần đầu (chìa là hạ boss). Sau đó là điểm ghé | Amara (Nhà sinh học) | BS-2 Tempest Gulper | M1, M2 ở Lantern Core | 180 lần đầu, 60 các lần ghé sau |
+| N3 Station Lantern | Giữa, 2 | Lantern Outer Ring gồm Lantern Berth (chân không, đấu boss giữa các kiện hàng trôi), Lantern Core (khu có khí: Odile, Bram, Amara, chợ đổi tin) | Cửa cập chỉ mở sau khi đuổi BS-2 lần đầu (chìa là hạ boss). Sau đó là điểm ghé | Amara (Nhà sinh học) | BS-2 Tempest Gulper | M1, M2 ở Lantern Core | 180 lần đầu, 60 các lần ghé sau |
 | N4 Veyl Waypost | Xa, 3 đến 5 (ô lối vào cố định ở Xa cột 1) | Waypost Outer Ring (chân không, nơi tàu TA04 của Ilsume bị toán của Maro áp mạn ở C3.8), Waypost Concourse có khí (thương nhân, Yusuf đang làm ở bến), The Hearth (khoang ẩn có khí của The Kindling, sâu trong Waypost, cửa mở khi kén của Sevra chạm tới). Đường hộ tống từ cửa N4 tới cửa The Hearth dài khoảng 120 u, qua hai đoạn phong tỏa, beacon cố định ở khoảng 40 u và 90 u (ước, chốt khi dựng greybox) | Cứu Sevra (C3.8): sự kiện áp mạn tàu TA04 ở Waypost Outer Ring chỉ sinh khi mốc C3.7 đã xong và giai đoạn 3 của động cơ đã lắp (K25). Hạ toán của Maro, kéo kén về Ember bằng beacon hoặc cửa khí. Hộ tống (C5.1, luật 2.7.9): Skiff chở kén tới cửa N4, kéo kén qua vòng phong tỏa của The Wardens (Hàng rào cắt và đơn vị The Wardens) tới cửa The Hearth. Yusuf về Ember bằng mốc C3.2 | Yusuf (Trưởng cảng), còn thức. Sevra Ilvane trong kén thoát hiểm (không phải người vớt mở tính năng) | Không boss. Toán của Maro (gd-combat) | M1, M2 | 150 lần thường, 180 lúc cứu Sevra, 210 lúc hộ tống |
 | N5 The Raft | Xa, 3 | Cụm trạm con ghép của The Remainers, phần lớn có khí. Một khu ngoài có Hàng rào cắt cũ để dạy phá máy phát | Mốc truyện gặp Elias | Không | Không | M1 (Elias, Wren) | 120 |
-| N6 Station Flint | Xa, 3 | Xác Seed Station chung bộ nội thất, khoang nghiên cứu, khoang hàng bị The Wardens biến thành trạm thu (Driftlife bị giữ, đấu trường boss) | Khoang nghiên cứu mở sau khi hạ BS-3 | Không | BS-3 Reaper Harvester | M1 nhật ký Flint, M2 manh mối lõi dẫn đường STY-104, V1 mẫu STY-301 ở khoang nghiên cứu (mở sau BS-3) | 210 |
-| N7 Bên trong Cradle | Xa, 4 | Bốn khu nối tiếp: Collapsed Hold, Main Cryo Deck, Engine Core, Bridge and Archive (hộp ghi hành trình lộ ra Solace là thông tin mồi). Mỗi khu xong mở đường tắt về cửa vào và một beacon cố định | Vách thân tàu mở bằng TOL-402 Máy cắt thân tàu (bản thiết kế BPR-105 ở hòm cố định của Station Flint hoặc Shop) | Không | BS-4 Silent Custodian ở Engine Core | M1 ở Collapsed Hold (STY-411), M2 ở Main Cryo Deck (STY-412), M3 ở Engine Core (STY-105). Khu cuối có M4 bản gốc Lodestar Survey và V1 hộp ghi hành trình STY-401. Mang hộp về trạm là mốc C4.5 của gd-story | 240, đi trọn trong 3 đến 4 chuyến |
+| N6 Station Flint | Xa, 3 | Xác Seed Station chung bộ nội thất, khoang nghiên cứu, khoang hàng bị The Wardens biến thành trạm thu (Driftlife bị giữ, đấu trường boss) | Khoang nghiên cứu mở sau khi hạ BS-3 | Không | BS-3 Warden Reaper | M1 nhật ký Flint, M2 manh mối lõi dẫn đường STY-104, V1 mẫu STY-301 ở khoang nghiên cứu (mở sau BS-3) | 210 |
+| N7 Cradle Interior | Xa, 4 | Bốn khu nối tiếp: Broken Hold, Cryo Deck, Engine Core, Bridge Archive (hộp ghi hành trình lộ ra Solace là thông tin mồi). Mỗi khu xong mở đường tắt về cửa vào và một beacon cố định | Vách thân tàu mở bằng TOL-402 Máy cắt thân tàu (bản thiết kế BPR-105 ở hòm cố định của Station Flint hoặc Shop) | Không | BS-4 Cradle Custodian ở Engine Core | M1 ở Broken Hold (STY-411), M2 ở Cryo Deck (STY-412), M3 ở Engine Core (STY-105). Khu cuối có M4 bản gốc Lodestar Survey và V1 hộp ghi hành trình STY-401. Mang hộp về trạm là mốc C4.5 của gd-story | 240, đi trọn trong 3 đến 4 chuyến |
 | N8 Warden Rig | Xa, 5 (chỉ vào bằng Skiff) | Rig Landing (Hàng rào cắt, đơn vị The Wardens), Holding Pens (thả để chúng đánh lại The Wardens), Command Deck (đấu boss), Data Core sau Command Deck (bản đồ sao thật và lệnh phục kích Cradle mang dấu Daskel). Nơi Daskel chỉ huy ở bãi vỡ, đánh khi cách mạng nổ ra | Vào Warden Rig: mốc đóng chương 4. Data Core: mở sau khi hạ BS-5 | Không | BS-5 (gd-combat đặt tên Daskel) | V1 bản đồ sao thật STY-501, M1 lệnh phục kích Cradle mang dấu Daskel STY-502, cả hai ở Data Core | 300, hai beacon cố định giữa các khu để chia trận cuối nhiều chuyến |
 
 
@@ -236,9 +236,9 @@ Phòng boss (kích thước theo thời lượng trận ước, cơ chế do gd-
 | Boss | Nơi | Kích thước (u) | Điểm dựng cho cơ chế | Lối ra sau trận |
 |---|---|---|---|---|
 | BS-1 Scrapmaw | Cinder, C6 Khoang máy | 16 x 12 | 3 điểm neo xúc tu trên tường, lõi năng lượng ở giữa, 2 Cáp chập | Cửa không khóa. Rút giữa trận: qua D1 về C2, beacon B3 cách D1 6 u. Sau trận: beacon B2 ở C7 |
-| BS-2 Tempest Gulper | Lantern, Cargo Berth, Lantern Outer Ring | 32 x 20 | Kiện hàng trôi (Vụn, đẩy được), 2 cửa cập làm chỗ nấp | Cửa cập Lantern mở, beacon cố định ở bến. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
-| BS-3 Reaper Harvester | Flint, khoang hàng thành trạm thu | 28 x 16 | Lồng giữ Driftlife phá được, băng chuyền thu hoạch | Khoang nghiên cứu mở, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
-| BS-4 Silent Custodian | Cradle, Engine Core | 32 x 24 | Hai tầng sàn kỹ thuật, Engine Core làm tâm | Đường tắt về cửa vào, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
+| BS-2 Tempest Gulper | Lantern, Lantern Berth, Lantern Outer Ring | 32 x 20 | Kiện hàng trôi (Vụn, đẩy được), 2 cửa cập làm chỗ nấp | Cửa cập Lantern mở, beacon cố định ở bến. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
+| BS-3 Warden Reaper | Flint, khoang hàng thành trạm thu | 28 x 16 | Lồng giữ Driftlife phá được, băng chuyền thu hoạch | Khoang nghiên cứu mở, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
+| BS-4 Cradle Custodian | Cradle, Engine Core | 32 x 24 | Hai tầng sàn kỹ thuật, Engine Core làm tâm | Đường tắt về cửa vào, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
 | BS-5 (Daskel) | Warden Rig, Command Deck | 36 x 24 | Hàng rào cắt bật theo pha, Holding Pens kề bên | Data Core mở, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
 
 Hòm và vật kể chuyện trong map nhánh (hòm là điểm khai thác SLV của gd-items, độ cứng theo bảng của gd-items):
@@ -251,7 +251,7 @@ Hòm và vật kể chuyện trong map nhánh (hòm là điểm khai thác SLV c
 | Veyl Waypost | Không | STY-311 (M1), STY-312 (M2) | Waypost Concourse |
 | The Raft | Không | STY-313 (M1) | Khu có khí |
 | Station Flint | 3 SLV-111, 1 hòm cố định chứa BPR-105 | STY-301 ở khoang nghiên cứu (V1), STY-104 (M2), nhật ký Flint (M1) | Hòm BPR-105 trong khoang nghiên cứu, mở sau BS-3 |
-| Bên trong Cradle | 2 SLV-112 mỗi khu | STY-411 (M1, Collapsed Hold), STY-412 (M2, Main Cryo Deck), STY-105 (M3, Engine Core), bản gốc Lodestar Survey (M4) và STY-401 hộp ghi hành trình (V1) ở Bridge and Archive | Mỗi khu 2 hòm |
+| Cradle Interior | 2 SLV-112 mỗi khu | STY-411 (M1, Broken Hold), STY-412 (M2, Cryo Deck), STY-105 (M3, Engine Core), bản gốc Lodestar Survey (M4) và STY-401 hộp ghi hành trình (V1) ở Bridge Archive | Mỗi khu 2 hòm |
 | Warden Rig | Không | STY-501 bản đồ sao thật (V1), STY-502 lệnh phục kích Cradle mang dấu Daskel (M1) | Data Core, mở sau BS-5 |
 
 ## 3. Tham số
@@ -322,7 +322,7 @@ Núm gap: Hệ số đường vòng và Dự trù quay về là hai núm nối s
 | Ổ | Driftlife tập trung | 2 | 4 | 4 | 0 đến 1 | 0 | 20% |
 | Xác lớn | Vật cản lớn có túi khai thác bên trong, che tầm nhìn | 2 | 10 | 1 | 1 | 1 | 20% |
 | Thưởng | Hàng hiếm, rủi ro cao, chỉ nửa ngoài dải | 1 | 6 (có hạng hiếm) | 2 | 2 | 0 | 10% |
-| Cố định | Ember Apron, lối vào map nhánh, Rạn vụn | theo thiết kế | theo thiết kế | theo thiết kế | 0 | 0 | ngoài kho |
+| Cố định | Ember Mooring, lối vào map nhánh, Rạn vụn | theo thiết kế | theo thiết kế | theo thiết kế | 0 | 0 | ngoài kho |
 
 
 Điểm khai thác (mã SLV của gd-items) theo loại mảnh, dải Gần (MVP):
@@ -354,7 +354,7 @@ Hazard làm node khó lấy:
 
 | Dải | Số ô | Ô cố định | Ô ghép | Kho mảnh MVP | Kho mảnh đủ | Tỉ lệ kho trên ô ghép (đủ) |
 |---|---|---|---|---|---|---|
-| Gần | 12 | 2 (Ember Apron, lối vào Cinder) | 10 | 16 | 22 | 2,2 |
+| Gần | 12 | 2 (Ember Mooring, lối vào Cinder) | 10 | 16 | 22 | 2,2 |
 | Giữa | 18 | 2 (lối vào Wick, Lantern) | 16 | không có | 32 | 2,0 |
 | Xa | 24 | 4 (lối vào Waypost, Raft, Flint, Cradle) | 20 | không có | 40 | 2,0 |
 
@@ -391,7 +391,7 @@ Hazard làm node khó lấy:
 | Tỉ lệ kích hoạt khe SP-D (một người) | 40% | 40% | 40% | ước, trần 100% ở 4 người |
 | Tỉ lệ khe SP-R hạng hiếm (loại hòm của dải, luật 2.4.5), nửa trong và nửa ngoài dải | 5% và 15% | 10% và 20% | 15% và 30% | ước |
 | Phần mảnh có hazard được kích hoạt | 30% | 50% | 70% | ước |
-| Số loài chủ động tấn công trên tổng loài của dải | MVP 1 trên 4 (Arc Eel). Đủ 2 trên 5 (Barnacle Maw, Arc Eel) | 3 trên 5 (Ore Grazer, Needle Shoal, Gulper) | 4 trên 5 (Mirror Mantis, Storm Siphon, Brood Mother, Brood Spawn) | cột Kiểu của `combat-driftlife.md` |
+| Số loài chủ động tấn công trên tổng loài của dải | MVP 1 trên 4 (Arc Eel). Đủ 2 trên 5 (Latchjaw, Arc Eel) | 3 trên 5 (Orebiter, Needlefin, Gulper) | 4 trên 5 (Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling) | cột Kiểu của `combat-driftlife.md` |
 | Tỉ lệ kích hoạt khe SP-W (từ chương 3) | 0% | 0% | 25% | ước |
 | Recall Beacon mỗi chuyến | 1 | 2 | 3 | ước |
 | Khoảng cách tối thiểu giữa hai beacon | 2 cột | 2 cột | 2 cột | ước |
@@ -548,7 +548,7 @@ Chuyến bắt đầu (seed, N, chương), vào dải, ra dải, thấy beacon, 
 |---|---|---|
 | Ember (vỏ ngoài) | x từ âm 40 tới 0, y từ 24 tới 48 | Không vào lưới. Cửa khí ở (0, 36) |
 | Lưới Gần | x từ 0 tới 160, y từ 0 tới 72 | 4 cột x 3 hàng, mỗi ô 40 x 24 |
-| Ô Ember Apron (cố định) | Cột 1 hàng giữa: x từ 0 tới 40, y từ 24 tới 48 | Cổng 1111. 6 SP-R phế liệu và 1 SP-D loài hiền luôn kích hoạt (không nhân tỉ lệ), không hazard, không loài săn mồi |
+| Ô Ember Mooring (cố định) | Cột 1 hàng giữa: x từ 0 tới 40, y từ 24 tới 48 | Cổng 1111. 6 SP-R phế liệu và 1 SP-D loài hiền luôn kích hoạt (không nhân tỉ lệ), không hazard, không loài săn mồi |
 | Ô lối vào Station Cinder (cố định) | Cột 3 hàng trên: x từ 80 tới 120, y từ 48 tới 72 | Cổng 1101 (Trái, Phải, Dưới mở, Trên là biên map). Vỏ xác 32 x 16 u, cửa vào ở cạnh dưới vỏ |
 | Rạn vụn chương 1 | x từ 160 tới 168, y từ 0 tới 72 | 8 u đầu cột 1 dải Giữa. Va chạm cứng, khe mở ở chương 2 tại hàng đường chính ra khỏi cột 4 của Gần |
 | Biên trên, biên dưới | y = 0 và y = 72 | Va chạm vô hình kèm lớp hình mảnh vỡ dày |
@@ -591,7 +591,7 @@ Lớp va chạm:
 | Hàng | Cột 1 | Cột 2 | Cột 3 | Cột 4 |
 |---|---|---|---|---|
 | 3 (trên) | G-H03 | G-X01 | Lối vào Cinder | G-M04 (beacon nếu chuyến trước không ở đây) |
-| 2 (giữa) | Ember Apron | G-H01 | G-X03 | G-M01 |
+| 2 (giữa) | Ember Mooring | G-H01 | G-X03 | G-M01 |
 | 1 (dưới) | G-M05 | G-H02 | G-O03 | G-X02 (beacon thay thế) |
 
 ### 6.5 Spec greybox MVP: Station Cinder
@@ -622,7 +622,7 @@ Lớp va chạm:
 | Giữ beacon bị hủy | Vòng vỡ | Tiếng tắt | | MVP |
 | Báo trước từng hazard | Theo bảng 3.5. Chỉ báo ở mép màn hình cho H01, H04, H07 (mũi tên theo hướng tới) | Mỗi hazard một tiếng báo riêng, tiếng chỉ báo mép có hướng trái phải | Lần đầu gặp mỗi hazard: một dòng gợi ý | MVP cho H01 đến H03 |
 | Rạn vụn | Tường mảnh vỡ dày, chớp nhẹ ở khe khi dải mở | | Khi chạm lần đầu ở chương 1: chưa có đường qua | MVP |
-| Bản đồ chuyến (phím M, không dừng thời gian) | Lưới mảnh, ô đã vào sáng, ô chưa vào tối, ghim beacon đã thấy, lối vào map nhánh, vị trí đồng đội | | Tutorial lần đầu ở Ember Apron | MVP |
+| Bản đồ chuyến (phím M, không dừng thời gian) | Lưới mảnh, ô đã vào sáng, ô chưa vào tối, ghim beacon đã thấy, lối vào map nhánh, vị trí đồng đội | | Tutorial lần đầu ở Ember Mooring | MVP |
 | Mốc cố định | Silhouette lớn, đèn nháy riêng của mỗi xác | | | MVP |
 | Kéo buồng ngủ đông | Dây kéo, buồng phát sáng nhịp tim | Tiếng máy buồng | Tutorial lần 1 ở Cinder | MVP |
 | Skiff đi | Cảnh xuồng tách bến, bay qua các dải | Động cơ | | Sau MVP |
@@ -708,7 +708,7 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | W2 | Đơn vị ghép | Lưới mảnh 40 x 24 u, cao 3 hàng | Mỗi mảnh khoảng 2 x 2 màn hình, đủ chỗ cho một ý | Mảnh tự do không lưới | Vừa |
 | W3 | Bảo đảm đường | Đường chính kiểu một hàng mỗi cột, ít nhất một vòng mỗi dải | Không sinh bố cục hỏng, có lựa chọn đường | Cây phân nhánh | Rẻ |
 | W4 | Mở dải | Rạn vụn chặn dải chưa mở, mở theo mốc chương. Giữa mở bởi mốc đóng chương 1, Xa bởi mốc đóng chương 2 | Khớp K6 (mở theo chương) và gd-story (Hoa tiêu ở Wick trong dải Giữa, mở dải Xa) | Hoa tiêu mở Giữa (Hoa tiêu nằm trong Giữa nên không tới được) | Rẻ |
-| W5 | Cấp môi trường từng dải | Gần 0, Giữa 1, Xa 2, Bên trong Cradle và Warden Rig 3 (môi trường E3 Lõi rò). Hệ số thiếu cấp dùng của gd-character | Mỗi chương lớn cần một bậc vỏ, khớp bảng T-VO của gd-character. Thiếu 1 cấp còn 29 đến 33% thời gian làm việc: đi được nhưng đắt (K6) | Cradle dùng E2 của dải Xa (cấp 3 của T-VO không có chỗ dùng) | Rẻ |
+| W5 | Cấp môi trường từng dải | Gần 0, Giữa 1, Xa 2, Cradle Interior và Warden Rig 3 (môi trường E3 Lõi rò). Hệ số thiếu cấp dùng của gd-character | Mỗi chương lớn cần một bậc vỏ, khớp bảng T-VO của gd-character. Thiếu 1 cấp còn 29 đến 33% thời gian làm việc: đi được nhưng đắt (K6) | Cradle dùng E2 của dải Xa (cấp 3 của T-VO không có chỗ dùng) | Rẻ |
 | W6 | Sinh lại trong chuyến | Không | Chống farm tại chỗ, K8 áp ở mức chuyến | Làm mới theo thời gian | Rẻ |
 | W7 | Số beacon | Gần 1, Giữa 2, Xa 3, phải thấy mới ghim | Beacon là núm của P1, giới hạn để còn quyết định quay về | Không giới hạn như Escape Pod | Rẻ |
 | W8 | Beacon dùng lại | Nhiều lần, nhiều người, mỗi người kích riêng | P3, không có luật cần đúng N người | Một lần mỗi beacon | Rẻ |
@@ -721,10 +721,10 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | W15 | Đặt người vớt | Ingrid, Linh ở Cinder, Rafa ở Wick, Amara ở Lantern, Yusuf ở Waypost | Khớp bảng của gd-story | Mỗi người một xác riêng | Rẻ |
 | W16 | Hệ số số người | k(N) = 1 + a x (N trừ 1), a theo dải: Gần 0,30, Giữa 0,25, Xa 0,38 | Sim gd-tech: a tối thiểu khác nhau giữa chương 1 và chương 5. Một a chung không đạt cả hai mục tiêu ở mọi chương | a chung 0,47 (nhóm 4 qua chương đầu quá nhanh), a chung 0,25 (chương 5 dưới 60% mỗi người) | Rẻ |
 | W20 | Hướng sửa thời lượng chuyến | Không đổi map. Giây khai thác nhân 2 (gd-items đã làm). Túi bậc 0 đến 4 là 80, 100, 126, 168, 216 và bình 330, 450, 600, 780, 1000 (GDM đã chốt, log 54) | Sim: diện tích, mật độ, hazard không kéo dài chuyến đủ. Túi quyết đầu game, bình quyết cuối game | Tăng số hàng, mật độ, giảm hazard (sim cho ngắn hơn hoặc thêm dưới 1 phút) | Vừa |
-| W21 | Định nghĩa để dựng bộ sinh mảnh | Trùng mảnh là cùng mảnh cùng ô. Cờ nửa ngoài "Có" là chỉ cột 3, 4. Cổng ô cố định Ember Apron 1111, Cinder 1101. Beacon không cùng ô chuyến trước. Đường chính nối liền giữa hai dải. Bố cục dự phòng dựng tay. Kiểm bằng `sim/bo_cuc.py` | QA GD-031: các luật cũ chưa dựng được, cách đọc khác nhau lệch tỉ lệ hợp lệ hàng nghìn lần | Trùng tính theo tập mảnh (kho 16 không đạt tiêu chí) | Rẻ |
+| W21 | Định nghĩa để dựng bộ sinh mảnh | Trùng mảnh là cùng mảnh cùng ô. Cờ nửa ngoài "Có" là chỉ cột 3, 4. Cổng ô cố định Ember Mooring 1111, Cinder 1101. Beacon không cùng ô chuyến trước. Đường chính nối liền giữa hai dải. Bố cục dự phòng dựng tay. Kiểm bằng `sim/bo_cuc.py` | QA GD-031: các luật cũ chưa dựng được, cách đọc khác nhau lệch tỉ lệ hợp lệ hàng nghìn lần | Trùng tính theo tập mảnh (kho 16 không đạt tiêu chí) | Rẻ |
 | W22 | Nơi cứu và hộ tống Sevra (lời Lead, GD-033) | Dùng lại N4 Veyl Waypost theo đề xuất của gd-story. Cứu ở Waypost Outer Ring, kén về Ember bằng beacon hoặc cửa khí (C3.8). Hộ tống: Skiff chở kén tới cửa N4, kéo tới cửa The Hearth (C5.1). Trong hộ tống kén không theo beacon, lưu ở beacon cố định gần nhất | Không thêm map nhánh và art mới. Một đích cho mỗi mốc. Kén không theo beacon để hộ tống không bị bỏ qua bằng một lần kích | Station Flint, kéo kén xuyên map tổng từ Ember | Rẻ |
 | W17 | Kho mảnh MVP | 16 mảnh Gần, 2 ô cố định | Tỉ lệ kho trên ô ghép 1,6, vừa sức 1 artist khi dựng bằng kit | 22 mảnh ngay MVP | Rẻ |
-| W19 | Nơi đặt vật kể chuyện chương 4 và 5 | Hộp ghi hành trình ở Bridge and Archive (khu cuối Bên trong Cradle). Bản đồ sao thật và lệnh phục kích mang dấu Daskel ở Data Core của Warden Rig, mở sau BS-5 | Thứ quan trọng nhất là phần thưởng của trận cuối, người chơi tự tay lấy | Rơi từ boss (dễ lỡ khi xua hoặc rớt mạng) | Rẻ |
+| W19 | Nơi đặt vật kể chuyện chương 4 và 5 | Hộp ghi hành trình ở Bridge Archive (khu cuối Cradle Interior). Bản đồ sao thật và lệnh phục kích mang dấu Daskel ở Data Core của Warden Rig, mở sau BS-5 | Thứ quan trọng nhất là phần thưởng của trận cuối, người chơi tự tay lấy | Rơi từ boss (dễ lỡ khi xua hoặc rớt mạng) | Rẻ |
 | W18 | Boss chương 2 và 3 | BS-2 ở Lantern Outer Ring, BS-3 ở Flint. Waypost và Wick không boss | BS-2 là Gulper vây Lantern (mô tả của gd-combat), lần đầu tới Lantern thành trận cứu trạm. BS-3 là máy thu hoạch, đặt ở Flint thì trận boss và manh mối cú lật Driftlife nói cùng một điều. Waypost trung lập giữ vai bến buôn | BS-2 ở Wick, BS-3 ở Waypost | Rẻ |
 
 ## Phản biện khung

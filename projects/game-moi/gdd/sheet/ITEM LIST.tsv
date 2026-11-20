@@ -14,7 +14,7 @@ RES-302	Kính nebula	Khoáng	SLV-301	RCP-162, Sửa khoang (tram-va-cang.md mụ
 RES-303	Băng plasma	Băng	SLV-302	RCP-163	Hiếm, Khối 2, Xa, Sau MVP
 RES-304	Lõi năng lượng nguội	Linh kiện	SLV-303	RCP-164, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 1, Xa, Sau MVP
 RES-305	Linh kiện Warden	Linh kiện	WD-01..04 và boss BS-3 (gd-combat)	RCP-521, Lắp động cơ chính giai đoạn 4 và 5	Hiếm, Khối 1, Xa, Sau MVP
-RES-401	Linh kiện Cradle	Linh kiện	Boss BS-4 và map nhánh Bên trong Cradle (gd-combat, gd-world)	RCP-421, UPG-OXY-4, UPG-BAG-4, UPG-ENV-3, Lắp động cơ chính giai đoạn 4 và 5	Đặc biệt, Khối 1, Cradle, Sau MVP
+RES-401	Linh kiện Cradle	Linh kiện	Boss BS-4 và map nhánh Cradle Interior (gd-combat, gd-world)	RCP-421, UPG-OXY-4, UPG-BAG-4, UPG-ENV-3, Lắp động cơ chính giai đoạn 4 và 5	Đặc biệt, Khối 1, Cradle, Sau MVP
 SMP-101	Mô sinh học Gần	Mẫu	Mọi loài Gần khi hạ	RCP-132, RCP-171, RCP-115	Thường, Khối 1, Gần, MVP
 SMP-201	Mô sinh học Giữa	Mẫu	Mọi loài Giữa khi hạ	RCP-271	Ít gặp, Khối 1, Giữa, Sau MVP
 SMP-301	Mô sinh học Xa	Mẫu	Mọi loài Xa khi hạ	RCP-371	Hiếm, Khối 1, Xa, Sau MVP
@@ -22,16 +22,16 @@ SMP-111	Đặc sản DL-G01 Driftmoth	Mẫu	DL-G01 khi hạ (xác suất 0,3)	RC
 SMP-112	Đặc sản DL-G02 Skitter Ray	Mẫu	DL-G02 khi hạ (xác suất 0,4)	RCP-124	Ít gặp, Khối 1, Gần, MVP
 SMP-113	Đặc sản DL-G04 Sting Krill	Mẫu	DL-G04 khi hạ (xác suất 0,2 mỗi con)	RCP-134, RCP-124	Ít gặp, Khối 1, Gần, MVP
 SMP-114	Đặc sản DL-G05 Arc Eel	Mẫu	DL-G05 khi hạ (xác suất 0,6)	RCP-135, RCP-124	Ít gặp, Khối 1, Gần, MVP
-SMP-115	Đặc sản DL-G03 Barnacle Maw	Mẫu	DL-G03 khi hạ (xác suất 0,6)	RCP-124	Ít gặp, Khối 1, Gần, Sau MVP
+SMP-115	Đặc sản DL-G03 Latchjaw	Mẫu	DL-G03 khi hạ (xác suất 0,6)	RCP-124	Ít gặp, Khối 1, Gần, Sau MVP
 SMP-212	Đặc sản DL-M02 Lumen Jelly	Mẫu	DL-M02 khi hạ (xác suất 0,4)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
-SMP-213	Đặc sản DL-M03 Ore Grazer	Mẫu	DL-M03 khi hạ (xác suất 0,6)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
-SMP-214	Đặc sản DL-M04 Needle Shoal	Mẫu	DL-M04 khi hạ (xác suất 0,15 mỗi con)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
+SMP-213	Đặc sản DL-M03 Orebiter	Mẫu	DL-M03 khi hạ (xác suất 0,6)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
+SMP-214	Đặc sản DL-M04 Needlefin	Mẫu	DL-M04 khi hạ (xác suất 0,15 mỗi con)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
 SMP-215	Đặc sản DL-M05 Gulper	Mẫu	DL-M05 khi hạ (xác suất 1)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
 SMP-311	Đặc sản DL-X01 Prism Wisp	Mẫu	DL-X01 khi hạ (xác suất 0,5)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
 SMP-312	Đặc sản DL-X02 Mirror Mantis	Mẫu	DL-X02 khi hạ (xác suất 0,6)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
 SMP-313	Đặc sản DL-X03 Storm Siphon	Mẫu	DL-X03 khi hạ (xác suất 1)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
-SMP-314	Đặc sản DL-X04 Brood Mother	Mẫu	DL-X04 khi hạ (xác suất 1)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
-SMP-315	Đặc sản DL-X05 Brood Spawn	Mẫu	DL-X05 khi hạ (xác suất 0,2 mỗi con)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
+SMP-314	Đặc sản DL-X04 Shardbrood Queen	Mẫu	DL-X04 khi hạ (xác suất 1)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
+SMP-315	Đặc sản DL-X05 Shardbrood Hatchling	Mẫu	DL-X05 khi hạ (xác suất 0,2 mỗi con)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
 SMP-191	Hạch thủ lĩnh Gần	Mẫu	BS-1 Scrapmaw bị hạ, cộng 5 SMP-101 (gd-combat)	Sửa khoang theo chương	Đặc biệt, Khối 2, Gần, MVP
 SMP-192	Mẫu boss Gần	Mẫu	BS-1 Scrapmaw bị xua đi, cộng 2 SMP-101 (gd-combat)	Sửa khoang theo chương, thay được SMP-191	Đặc biệt, Khối 2, Gần, MVP
 SMP-291	Đặc sản Tempest Gulper	Mẫu	BS-2 bị hạ, cộng phế liệu nó đã nuốt (gd-combat)	Sửa khoang theo chương	Đặc biệt, Khối 2, Giữa, Sau MVP
@@ -44,22 +44,22 @@ LIV-113	Mẫu sống DL-G04 Sting Krill	Mẫu sống	Bắt sống DL-G04 bằng 
 BIO-113	Sản phẩm nuôi DL-G04 Sting Krill	Sản phẩm nuôi	Khoang nuôi DL-G04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-125	Thường, Khối 1, Gần, Sau MVP
 LIV-114	Mẫu sống DL-G05 Arc Eel	Mẫu sống	Bắt sống DL-G05 bằng Súng gây mê rồi Phao kéo (K9, chương 2, miễn choáng)	RCP-128, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, Sau MVP
 BIO-114	Sản phẩm nuôi DL-G05 Arc Eel	Sản phẩm nuôi	Khoang nuôi DL-G05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-125	Thường, Khối 1, Gần, Sau MVP
-LIV-115	Mẫu sống DL-G03 Barnacle Maw	Mẫu sống	Bắt sống DL-G03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-128, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, Sau MVP
+LIV-115	Mẫu sống DL-G03 Latchjaw	Mẫu sống	Bắt sống DL-G03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-128, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, Sau MVP
 BPS-211	Mẫu sinh thiết DL-M01 Shepherd Whale	Mẫu sinh thiết	Kim sinh thiết trên DL-M01 (loài L, chương 2)	RCP-224, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Giữa, Sau MVP
 LIV-212	Mẫu sống DL-M02 Lumen Jelly	Mẫu sống	Bắt sống DL-M02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
 BIO-212	Sản phẩm nuôi DL-M02 Lumen Jelly	Sản phẩm nuôi	Khoang nuôi DL-M02 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-225	Ít gặp, Khối 1, Giữa, Sau MVP
-LIV-213	Mẫu sống DL-M03 Ore Grazer	Mẫu sống	Bắt sống DL-M03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
-BIO-213	Sản phẩm nuôi DL-M03 Ore Grazer	Sản phẩm nuôi	Khoang nuôi DL-M03 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-225	Ít gặp, Khối 1, Giữa, Sau MVP
-LIV-214	Mẫu sống DL-M04 Needle Shoal	Mẫu sống	Bắt sống DL-M04 bằng Súng lưới (K9, từ chương 1)	RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
-BIO-214	Sản phẩm nuôi DL-M04 Needle Shoal	Sản phẩm nuôi	Khoang nuôi DL-M04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-225	Ít gặp, Khối 1, Giữa, Sau MVP
+LIV-213	Mẫu sống DL-M03 Orebiter	Mẫu sống	Bắt sống DL-M03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
+BIO-213	Sản phẩm nuôi DL-M03 Orebiter	Sản phẩm nuôi	Khoang nuôi DL-M03 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-225	Ít gặp, Khối 1, Giữa, Sau MVP
+LIV-214	Mẫu sống DL-M04 Needlefin	Mẫu sống	Bắt sống DL-M04 bằng Súng lưới (K9, từ chương 1)	RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
+BIO-214	Sản phẩm nuôi DL-M04 Needlefin	Sản phẩm nuôi	Khoang nuôi DL-M04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-225	Ít gặp, Khối 1, Giữa, Sau MVP
 BPS-215	Mẫu sinh thiết DL-M05 Gulper	Mẫu sinh thiết	Kim sinh thiết trên DL-M05 (loài L, chương 2)	RCP-224, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Giữa, Sau MVP
 LIV-311	Mẫu sống DL-X01 Prism Wisp	Mẫu sống	Bắt sống DL-X01 bằng Súng lưới (K9, từ chương 1)	RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
 BIO-311	Sản phẩm nuôi DL-X01 Prism Wisp	Sản phẩm nuôi	Khoang nuôi DL-X01 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-325	Ít gặp, Khối 1, Xa, Sau MVP
 LIV-312	Mẫu sống DL-X02 Mirror Mantis	Mẫu sống	Bắt sống DL-X02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
 BPS-313	Mẫu sinh thiết DL-X03 Storm Siphon	Mẫu sinh thiết	Kim sinh thiết trên DL-X03 (loài L, chương 2)	RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Xa, Sau MVP
-BPS-314	Mẫu sinh thiết DL-X04 Brood Mother	Mẫu sinh thiết	Kim sinh thiết trên DL-X04 (loài L, chương 2)	RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Xa, Sau MVP
-LIV-315	Mẫu sống DL-X05 Brood Spawn	Mẫu sống	Bắt sống DL-X05 bằng Súng lưới (K9, từ chương 1)	RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
-BIO-315	Sản phẩm nuôi DL-X05 Brood Spawn	Sản phẩm nuôi	Khoang nuôi DL-X05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-325	Ít gặp, Khối 1, Xa, Sau MVP
+BPS-314	Mẫu sinh thiết DL-X04 Shardbrood Queen	Mẫu sinh thiết	Kim sinh thiết trên DL-X04 (loài L, chương 2)	RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Xa, Sau MVP
+LIV-315	Mẫu sống DL-X05 Shardbrood Hatchling	Mẫu sống	Bắt sống DL-X05 bằng Súng lưới (K9, từ chương 1)	RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
+BIO-315	Sản phẩm nuôi DL-X05 Shardbrood Hatchling	Sản phẩm nuôi	Khoang nuôi DL-X05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-325	Ít gặp, Khối 1, Xa, Sau MVP
 COM-101	Tấm thép nén	Vật liệu chế	RCP-101	RCP-131, RCP-134, RCP-121, RCP-203, RCP-204, RCP-208, UPG-OXY-1, UPG-BAG-1, UPG-THR-1, UPG-MIN-2, UPG-RACK-1, UPG-BAG-2	Thường, Khối 1, Gần, MVP
 COM-102	Dây dẫn bện	Vật liệu chế	RCP-102	RCP-132, RCP-136, RCP-122, RCP-201, RCP-203, RCP-208, UPG-BAG-1, UPG-MIN-2, UPG-HAR-2, UPG-RACK-1, UPG-NET-2, UPG-BAG-2, UPG-RACK-2	Thường, Khối 1, Gần, MVP
 COM-103	Thỏi sắt	Vật liệu chế	RCP-103	RCP-136, RCP-201, RCP-202, RCP-204, RCP-208, UPG-THR-1, UPG-MIN-2, UPG-HAR-2, UPG-RACK-1, UPG-NET-2, UPG-MIN-3, UPG-RACK-2	Thường, Khối 1, Gần, MVP
@@ -126,7 +126,7 @@ STY-101	Nhật ký trạm	Vật manh mối	Mỗi xác Seed Station một bản (
 STY-102	Mảnh lõi dẫn đường Cinder	Vật nhiệm vụ	Xác Seed Station Cinder (gd-world, gd-story)	Vật liệu sửa khoang dẫn đường KH08 (chương 2), bị tiêu ở việc sửa đó, ghép đường đi	Đặc biệt, Khối 1, Gần, MVP
 STY-103	Mảnh lõi dẫn đường Wick	Vật nhiệm vụ	Xác Seed Station Wick (gd-world, gd-story)	Nộp ở khoang dẫn đường (Hoa tiêu), không tiêu vật, vào kho, ghép đường đi	Đặc biệt, Khối 1, Giữa, Sau MVP
 STY-104	Manh mối lõi dẫn đường Flint	Vật manh mối	Xác Seed Station Flint (gd-world, gd-story)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
-STY-105	Manh mối lõi dẫn đường Cradle	Vật manh mối	Bên trong Cradle (gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
+STY-105	Manh mối lõi dẫn đường Cradle	Vật manh mối	Cradle Interior (gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
 STY-111	Bản tin trong máy liên lạc Cinder	Vật manh mối	Mã truyện MM1.2, máy liên lạc xác Seed Station Cinder (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Gần, MVP
 STY-211	Mảng vỏ thân Wick	Vật manh mối	Mã truyện MM2.1, xác Seed Station Wick (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Giữa, Sau MVP
 STY-212	Sổ trực Lantern	Vật manh mối	Mã truyện MM2.3, Station Lantern (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Giữa, Sau MVP
@@ -138,7 +138,7 @@ STY-411	Vết vũ khí trên vỏ Cradle	Vật manh mối	Mã truyện MM4.1, b�
 STY-412	Hiến chương định cư United Accord	Vật manh mối	Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
 STY-414	Bản gốc Lodestar Survey	Vật manh mối	Mã truyện MM4.4, bên trong Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
 STY-301	Mẫu mang dấu săn bắt Wardens	Vật nhiệm vụ	Station Flint (chương 3, gd-story)	Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife	Đặc biệt, Khối 1, Xa, Sau MVP
-STY-401	Hộp ghi hành trình Cradle	Vật nhiệm vụ	Bên trong Cradle (chương 4, gd-story)	RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6)	Đặc biệt, Khối 1, Cradle, Sau MVP
+STY-401	Hộp ghi hành trình Cradle	Vật nhiệm vụ	Cradle Interior (chương 4, gd-story)	RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6)	Đặc biệt, Khối 1, Cradle, Sau MVP
 STY-501	Bản đồ sao thật	Vật nhiệm vụ	Data Core ở Warden Rig, khe V1, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel. Tọa độ hành tinh thật do Sevra trao ở C5.6 là cảnh truyện, không phải vật	RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6)	Đặc biệt, Khối 1, Cradle, Sau MVP
 STY-701	Gói tin mật	Vật nhiệm vụ	Khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày từ khi mốc nối tình báo mở (chương 4 đến 5, gd-quan), không mua bán	RCP-422, Bị tiêu ở RCP-422 (đóng kiện tin mật). Mất khi rời phiên thì về lại khoang liên lạc (luật V4)	Đặc biệt, Khối 1, Xa, Sau MVP
 STY-502	Lệnh phục kích Cradle mang dấu Daskel	Vật manh mối	Data Core ở Warden Rig, khe M1, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel	Tự ghi vào Sổ tay, mở cảnh truyện. Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401)	Đặc biệt, Khối 0, Cradle, Sau MVP
@@ -152,5 +152,5 @@ TOL-202	Súng lưới	Dụng cụ (Bắt sống)	Quest Kỹ sư (chương 1), RC
 TOL-203	Súng gây mê	Dụng cụ (Bắt sống)	BPR-102, RCP-202	Không tiêu, chọn mang theo ở trạm	Gây mê, tốn CON-103. Chỉ số do gd-combat. Sau MVP
 TOL-301	Máy quét xung	Dụng cụ (Tiện ích)	BPR-103, RCP-203	Không tiêu, chọn mang theo ở trạm	Hiện điểm khai thác trong bán kính. Bậc 2 hiện hạng, bậc 3 hiện Driftlife. Bán kính do gd-world và gd-ux. Sau MVP
 TOL-401	Bộ kích nguồn	Dụng cụ (Chìa)	Xưởng, công thức đầu tiên sau khi vớt Kỹ sư (RCP-205, chỉ dùng tài nguyên thô)	Không tiêu, chọn mang theo ở trạm	Mở cửa D1 khóa nguồn trong Station Cinder (lần vớt thứ hai). Cổng cứng, không có chế độ chậm. Không cần mang theo (luật T7). MVP
-TOL-402	Máy cắt thân tàu	Dụng cụ (Chìa)	BPR-105, RCP-206	Không tiêu, chọn mang theo ở trạm	Mở vách Bên trong Cradle (chương 4). Cổng cứng, không cần mang theo (luật T7). Sau MVP
+TOL-402	Máy cắt thân tàu	Dụng cụ (Chìa)	BPR-105, RCP-206	Không tiêu, chọn mang theo ở trạm	Mở vách vào Cradle Interior (chương 4). Cổng cứng, không cần mang theo (luật T7). Sau MVP
 TOL-501	Lồng mẫu	Dụng cụ (Chứa)	Quest Kỹ sư (chương 1), RCP-208	Không tiêu, chọn mang theo ở trạm	Kéo theo, chứa tối đa 3 mẫu sống cỡ S, mỗi người 1 lồng (gd-combat). MVP

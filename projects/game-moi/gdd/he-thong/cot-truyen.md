@@ -139,7 +139,7 @@ Hệ thống cốt truyện giữ bối cảnh, năm chương, nhân vật truy�
 | 1 | Tỉnh dậy | N1 Station Cinder | Ingrid, Linh | Bắt được sóng của Lantern, mở dải Giữa |
 | 2 | Không cô độc | N3 Station Lantern, N2 Station Wick | Amara, Rafa | Thấy vết phá từ ngoài vào, mở dải Xa |
 | 3 | Kẻ canh giữ | N4 Veyl Waypost, N5 The Raft, N6 Station Flint | Yusuf | Cứu Sevra khỏi toán bắt cóc của The Wardens, Sevra lộ danh tính |
-| 4 | Tâm vụ nổ | N7 Bên trong Cradle | Không | Hộp ghi hành trình: Solace là mồi do Daskel dựng. Kiện tin mật đầu tiên tới The Kindling. Mục tiêu đổi thành giúp Sevra lật đổ Daskel để rời được bãi vỡ |
+| 4 | Tâm vụ nổ | N7 Cradle Interior | Không | Hộp ghi hành trình: Solace là mồi do Daskel dựng. Kiện tin mật đầu tiên tới The Kindling. Mục tiêu đổi thành giúp Sevra lật đổ Daskel để rời được bãi vỡ |
 | 5 | Rời neo | N8 Warden Rig | Không | Daskel thua ở Warden Rig, Sevra lên nắm quyền và trao tọa độ hành tinh thật. Ember rời neo |
 
 ## 1. Mục đích với người chơi
@@ -282,7 +282,7 @@ Lối vào map nhánh (luật 13):
 | N4 Veyl Waypost | C2.8 xong | `Sau MVP` |
 | N5 The Raft | C3.4 xong | `Sau MVP` |
 | N6 Station Flint | C3.5 xong | `Sau MVP` |
-| N7 Bên trong Cradle | C3.8 xong | `Sau MVP` |
+| N7 Cradle Interior | C3.8 xong | `Sau MVP` |
 | N8 Warden Rig | C4.7 xong, chỉ vào bằng Skiff | `Sau MVP` |
 
 #### Chương 1 - Tỉnh dậy `MVP`
@@ -362,7 +362,7 @@ Nhân vật xuất hiện: Odile Laurent, Bram Kowalski, Amara Okafor, Rafael Or
 
 Kiểu chơi mới và cách truyện đưa vào:
 - Bắt sống Driftlife cỡ M (gây mê, gắn Phao kéo): lưới của Ingrid chỉ bắt được cỡ S. Việc đầu tiên Amara nhờ là một con cỡ M còn sống. Cỡ L không bắt sống được, chỉ lấy mẫu sinh thiết (luật của gd-combat).
-- Dụng cụ cho C2.4, dòng mục tiêu Sổ tay ghi từng bước. Đường nhanh nhất theo `vat-pham.md` và `combat-driftlife.md`: chế Phao kéo CON-106 ở xưởng (chế nhanh), làm một con cỡ M bất lực bằng dụng cụ đã có rồi gắn phao, ví dụ Barnacle Maw DL-G03 ở dải Gần. Súng gây mê TOL-203 cần hai lần chế qua đêm (bản thiết kế BPR-102 rồi mới tới súng), dành cho loài phải gây mê mới bắt được.
+- Dụng cụ cho C2.4, dòng mục tiêu Sổ tay ghi từng bước. Đường nhanh nhất theo `vat-pham.md` và `combat-driftlife.md`: chế Phao kéo CON-106 ở xưởng (chế nhanh), làm một con cỡ M bất lực bằng dụng cụ đã có rồi gắn phao, ví dụ Latchjaw DL-G03 ở dải Gần. Súng gây mê TOL-203 cần hai lần chế qua đêm (bản thiết kế BPR-102 rồi mới tới súng), dành cho loài phải gây mê mới bắt được.
 - Nuôi: khoang sinh quyển sửa xong thì nhận những con cỡ S đã bắt bằng lưới từ chương 1. Mốc C2.4 không đòi con cỡ M đó phải là loài nuôi được. Vaeth, nhà sưu tầm Aelith từng nhờ Tikko gom hộ ở chương 1, tự tìm tới và trả giá cao cho Driftlife sống, cho việc nuôi một lý do kinh tế đúng K9.
 - Gieo trước cho cú lật Driftlife: ở dải Giữa một phần cá thể đã mang dấu lạ (luật 30 của `combat-driftlife.md`). Amara để ý và ghi lại, chưa ai hiểu nó là gì.
 
@@ -401,7 +401,7 @@ Mở chương: không có cảnh. Lần đầu vào dải Xa có một sự ki�
 | MM3.3 | Xác một máy thu hoạch | STY-313 | N5, khe M1 ở kho của Elias | C3.5 | Ký hiệu trên máy trùng với ký hiệu trên lời tuyên bố ở Veyl Waypost |
 | MM3.4 | Nhật ký trạm của Flint | STY-101 | N6, khe M1 | C3.5 | Flint sống sót sau vụ nổ, bốn người đã thức. Rồi lính mang giáp tới, lấy hết kho và bắt người đi. Dòng cuối: họ nói đây là khu bảo hộ, rồi họ tháo cả cửa khí |
 | MM3.5 | Manh mối lõi dẫn đường của Flint (không bắt buộc) | STY-104 | N6, khe M2 | C3.5 | Lõi của Flint cũng cháy đúng chỗ ghi đường tới Solace. Nhặt rồi thì Rafa có thêm một lời |
-| V3.1 | Mẫu Driftlife mang thẻ (vật nhiệm vụ). Loài: Brood Spawn DL-X05 theo gd-combat | STY-301 | N6, khe V1 ở khoang nghiên cứu, mở sau khi hạ BS-3 | C3.5 | Con vật mang thẻ kiểm hàng của lính The Wardens. Con mẹ của nó có sẹo cắt mô đều nhau: bị lấy mô đem bán nhiều lần. Nộp ở phòng nghiên cứu, là điều kiện của C3.6 |
+| V3.1 | Mẫu Driftlife mang thẻ (vật nhiệm vụ). Loài: Shardbrood Hatchling DL-X05 theo gd-combat | STY-301 | N6, khe V1 ở khoang nghiên cứu, mở sau khi hạ BS-3 | C3.5 | Con vật mang thẻ kiểm hàng của lính The Wardens. Con mẹ của nó có sẹo cắt mô đều nhau: bị lấy mô đem bán nhiều lần. Nộp ở phòng nghiên cứu, là điều kiện của C3.6 |
 
 - Khe của N4 (M1, M2), N5 (M1), N6 (M1, M2, V1) khớp `map.md`.
 
@@ -432,7 +432,7 @@ Hai lần cập bến của Maro (tàu TA08) và cuộc bắt cóc:
 - Bản sao dữ liệu chỉ sao được từ vật loại dữ liệu (nhật ký trạm, hộp ghi hành trình) theo `vat-pham.md`. Ở chương 3 chỉ có nhật ký trạm.
 - Nơi bắt cóc là đề xuất của gd-story, gd-world chốt. Toán bắt cóc là đơn vị của gd-combat.
 
-- Vai truyện của boss BS-3 Reaper Harvester: máy thu hoạch của lính The Wardens đang chạy trong khoang hàng của Flint, giữa những lồng nhốt Driftlife chờ đem bán. Phá lồng thì Driftlife quay sang đánh máy (cơ chế của gd-combat). Trận này và mẫu ở khe V1 nói cùng một điều.
+- Vai truyện của boss BS-3 Warden Reaper: máy thu hoạch của lính The Wardens đang chạy trong khoang hàng của Flint, giữa những lồng nhốt Driftlife chờ đem bán. Phá lồng thì Driftlife quay sang đánh máy (cơ chế của gd-combat). Trận này và mẫu ở khe V1 nói cùng một điều.
 
 Cuộc bắt cóc và cảnh đóng của chương:
 - Ngoài không gian, chỉ lời radio (luật 8): tới Waypost Outer Ring, người chơi thấy tàu TA04 bị áp mạn, một kén thoát hiểm bị lính The Wardens kéo đi. Maro lộ mặt trên sóng, đòi tổ Ember đứng ngoài. Maro không đánh, hắn rút lên tàu TA08 khi toán bị hạ.
@@ -451,10 +451,10 @@ Mục tiêu người chơi: vào bên trong Cradle lấy bằng chứng của ch
 
 | Mốc | Tên | Điều kiện | Nơi | Mở gì |
 |---|---|---|---|---|
-| C4.1 | Vào Cradle | Tới lối vào N7 | N7, Collapsed Hold | Map nhánh lớn trong nội thất tàu (kiểu chơi mới). Vật truyện của N7 hiện ra |
-| C4.2 | Những dãy buồng | Tới Main Cryo Deck | N7 | Sự kiện hình không lời: hàng dãy buồng đã tắt |
-| C4.3 | Kẻ đã vào trước | BS-4 Silent Custodian xong và đã nhặt MM4.3 | N7, Engine Core | Đường sang Bridge and Archive |
-| C4.4 | Tên người dịch | Đã nhặt MM4.4 | N7, Bridge and Archive | Lời thú nhận của Linh |
+| C4.1 | Vào Cradle | Tới lối vào N7 | N7, Broken Hold | Map nhánh lớn trong nội thất tàu (kiểu chơi mới). Vật truyện của N7 hiện ra |
+| C4.2 | Những dãy buồng | Tới Cryo Deck | N7 | Sự kiện hình không lời: hàng dãy buồng đã tắt |
+| C4.3 | Kẻ đã vào trước | BS-4 Cradle Custodian xong và đã nhặt MM4.3 | N7, Engine Core | Đường sang Bridge Archive |
+| C4.4 | Tên người dịch | Đã nhặt MM4.4 | N7, Bridge Archive | Lời thú nhận của Linh |
 | C4.5 | Hộp ghi hành trình | Đã nộp hộp ghi hành trình STY-401 ở khoang dẫn đường | Ember, khoang dẫn đường | Cảnh Rafa và Linh nhận hộp |
 | C4.6 | Không có gì ở đó | Ngày kế tiếp sau C4.5 | Ember, khoang dẫn đường | Sự thật: Solace là mồi. Sevra kể chuyện đảo chính. Dòng mục tiêu trong Sổ tay đổi |
 | C4.7 | Đường dây thứ nhất (đóng chương) | Số đơn tin mật của tàu TA11 đã giao đủ đạt ngưỡng chương 4 ở mục 3 và giai đoạn 4 của động cơ chính đã lắp (K25) | Ember, bến | The Kindling biết Sevra còn sống và nhận được bằng chứng của Cradle. Lối vào N8, chương 5 |
@@ -463,11 +463,11 @@ Mục tiêu người chơi: vào bên trong Cradle lấy bằng chứng của ch
 
 | Mã | Là gì | ID vật | Nơi | Hiện từ mốc | Nói điều gì |
 |---|---|---|---|---|---|
-| MM4.1 | Vết vũ khí trên vỏ Cradle | STY-411 | N7, khe M1 ở Collapsed Hold | C4.1 | Cùng ký hiệu với thẻ trên Driftlife và máy thu hoạch |
-| MM4.2 | Hiến chương định cư của United Accord | STY-412 | N7, khe M2 ở Main Cryo Deck | C4.1 | Bản phát cho người thức dậy: hạn mức khai thác, kho giống của Trái Đất, điều khoản không lặp lại những gì đã làm với Trái Đất. Loài người trong lời Daskel không có trong văn bản này |
+| MM4.1 | Vết vũ khí trên vỏ Cradle | STY-411 | N7, khe M1 ở Broken Hold | C4.1 | Cùng ký hiệu với thẻ trên Driftlife và máy thu hoạch |
+| MM4.2 | Hiến chương định cư của United Accord | STY-412 | N7, khe M2 ở Cryo Deck | C4.1 | Bản phát cho người thức dậy: hạn mức khai thác, kho giống của Trái Đất, điều khoản không lặp lại những gì đã làm với Trái Đất. Loài người trong lời Daskel không có trong văn bản này |
 | MM4.3 | Lõi dẫn đường của Cradle đã bị xóa, kèm nhật ký truy cập | STY-105 | N7, khe M3 ở Engine Core | C4.1 | Sau vụ nổ đã có kẻ lên tàu, cài lại hệ an ninh và xóa dữ liệu dẫn đường. Chúng không muốn ai đọc được Cradle đã thấy gì |
-| MM4.4 | Bản gốc Lodestar Survey | STY-414 | N7, khe M4 ở Bridge and Archive | C4.1 | Dấu của The Lattice, dấu nhận của phái bộ, và tên Linh Tran trong danh sách người dịch |
-| V4.1 | Hộp ghi hành trình (vật nhiệm vụ) | STY-401 | N7, khe V1 ở Bridge and Archive | C4.1 | Nộp ở khoang dẫn đường, là điều kiện của C4.5. Nội dung ở cảnh đóng |
+| MM4.4 | Bản gốc Lodestar Survey | STY-414 | N7, khe M4 ở Bridge Archive | C4.1 | Dấu của The Lattice, dấu nhận của phái bộ, và tên Linh Tran trong danh sách người dịch |
+| V4.1 | Hộp ghi hành trình (vật nhiệm vụ) | STY-401 | N7, khe V1 ở Bridge Archive | C4.1 | Nộp ở khoang dẫn đường, là điều kiện của C4.5. Nội dung ở cảnh đóng |
 
 Nhân vật xuất hiện: Sevra Ilvane, Rafael Ortega, Linh Tran, Nhem, Odile Laurent, người đưa tin của The Kindling (tàu TA11), Daskel (lời phát trên The Lattice).
 
@@ -476,7 +476,7 @@ Kiểu chơi mới và cách truyện đưa vào: map nhánh lớn trong nội t
 
 Người vớt của chương: không có (khung mục 7). Sevra ở ẩn trên Ember nhưng không phải người vớt: cô không mở tính năng nào. Hai chuyện riêng khép lại: Linh (người dịch hồ sơ) và Nhem (người chuyển hồ sơ).
 
-Vai truyện của boss BS-4 Silent Custodian: hệ an ninh của chính Cradle, bị The Wardens cài lại để giữ kho lưu trữ. Loài người bị chính con tàu của mình chặn đường.
+Vai truyện của boss BS-4 Cradle Custodian: hệ an ninh của chính Cradle, bị The Wardens cài lại để giữ kho lưu trữ. Loài người bị chính con tàu của mình chặn đường.
 
 Cảnh của C4.6 (cảnh dài):
 - Rafa và Linh mở hộp ghi. Trước vụ nổ ít lâu, đài quan sát của Cradle đã đủ gần để tự nhìn về phía Solace. Lời cuối của người trực: phổ không khớp hồ sơ, ở đó không có gì cả. Rồi tới ánh chớp. Solace là mồi, đúng như Sevra nói.
@@ -838,7 +838,7 @@ Nơi phải đổi cùng lúc khi đổi truyện: `map.md` (map nhánh, khe M v
 | Sevra lộ danh tính (C3.8), khi kén về tới Ember | Cô gỡ mạng che của thương hội. Cùng một nhân vật, hai trạng thái hình | Không nhạc | Cảnh 8 câu | `Sau MVP` |
 | Vào dải Giữa lần đầu | Một trạm để đèn sáng ở xa | Không | Một dòng radio của Bram | `Sau MVP` |
 | Vào dải Xa lần đầu | Liên lạc nhiễu, bóng một cỗ máy rất lớn đi ngang trong mây khí | Tiếng rè | Không lời | `Sau MVP` |
-| Những dãy buồng (C4.2) | Main Cryo Deck của Cradle, dãy buồng tắt kéo dài hết màn hình | Chỉ tiếng thở của người chơi | Không lời | `Sau MVP` |
+| Những dãy buồng (C4.2) | Cryo Deck của Cradle, dãy buồng tắt kéo dài hết màn hình | Chỉ tiếng thở của người chơi | Không lời | `Sau MVP` |
 | Không có gì ở đó (C4.6) | Màn hình khoang dẫn đường: chỗ lẽ ra có Solace là một khoảng trống. Sevra kể chuyện đảo chính bằng lời, không có cảnh hồi tưởng | Tiếng hộp ghi rè rồi tắt | Cảnh 8 câu, dòng mục tiêu trong Sổ tay đổi | `Sau MVP` |
 | Hộ tống (C5.1) | Kén của Sevra có đèn tín hiệu riêng, khác buồng ngủ đông | Tiếng thở của cô qua sóng | Lời radio một dòng | `Sau MVP` |
 | Tọa độ thật (C5.6) | Màn hình khoang dẫn đường: một điểm sáng lên trên bản đồ thật | Nhạc chủ đề vào khẽ | Cảnh 3 câu | `Sau MVP` |
@@ -941,7 +941,7 @@ Nguồn quyết định nằm ở `log-gdm-tu-quyet.md` và `DECISIONS.md`.
 
 - Mọi tên là [TẠM].
 - Tra trùng làm bằng tìm web ngày 2026-11-20, không phải tra cơ sở dữ liệu nhãn hiệu. Kết quả "không thấy" nghĩa là tìm web không ra, chưa phải bảo đảm pháp lý.
-- Tên các khu hiện như địa danh trong map nhánh (Lantern Outer Ring, Collapsed Hold, Holding Pens và các khu khác) do gd-world đặt ở bảng A01 đến A05 của `map.md`, gd-story đã duyệt (log GDM dòng 74). File này dùng đúng các tên đó, chưa tra trùng.
+- Tên các khu hiện như địa danh trong map nhánh (Lantern Outer Ring, Broken Hold, Holding Pens và các khu khác) do gd-world đặt ở bảng A01 đến A05 của `map.md`, gd-story đã duyệt (log GDM dòng 74). File này dùng đúng các tên đó, chưa tra trùng.
 
 ### Tên game: The Novent
 
@@ -1013,7 +1013,7 @@ Nguồn tra:
 | Trạm con | Station Ember, Station Lantern, Station Cinder, Station Wick, Station Flint, The Raft |
 | Nơi khác (tên vùng do gd-world giữ) | Ember Anchorage, Shepherd Belt, Glass Nebula, Veyl Waypost, Warden Rig, The Hearth |
 | Chủng tộc | The Veyl (tên chung), Oru, Sennari, Brakk, Aelith, Kesh |
-| Sinh vật | Driftlife. Tên từng loài và boss do gd-combat giữ |
+| Sinh vật | Driftlife. Tên loài và boss đã chốt ở combat-driftlife.md |
 | Tổ Ember | Noor Haddad, Jonas Weber, Mei Tanaka, Tariq Bello |
 | Người vớt | Ingrid Halvorsen, Linh Tran, Rafael Ortega, Amara Okafor, Yusuf Demir |
 | Người khác | Odile Laurent, Bram Kowalski, Elias Vance, Wren |
@@ -1231,7 +1231,7 @@ Ember sửa xong động cơ chính và rời neo. Game kết ở đó: có mộ
 
 Đã hết lệch:
 - gd-world: khe M4 cho nhật ký trạm ở C3 của Cinder, khe V1 cho vật nhiệm vụ ở N2, N6, N7, N8, STY-105 ở Engine Core, lối vào map nhánh theo mốc, mốc C4.5.
-- gd-world, đợt 4: hàng N7 của `map.md` đã gọi tên khe M1 ở Collapsed Hold và M2 ở Main Cryo Deck. Tên tiếng Anh các khu trong map nhánh đã chốt ở bảng A01 đến A05 của `map.md`, file này đã đổi theo (log GDM dòng 74).
+- gd-world, đợt 4: hàng N7 của `map.md` đã gọi tên khe M1 ở Broken Hold và M2 ở Cryo Deck. Tên tiếng Anh các khu trong map nhánh đã chốt ở bảng A01 đến A05 của `map.md`, file này đã đổi theo (log GDM dòng 74).
 - gd-items: đủ ID cho cả 23 vật truyện, nghĩa của nộp, bản sao dữ liệu chỉ từ STY-101 và STY-401, ENG-105 đổi tên, Súng lưới ở chương 1.
 - gd-quan: luật 38 (lần hai và lần ba của TA08 chờ mốc), luật 15 (quest của Linh là KH06 và KH07), luật 14 (Hồi sức), tên TA02 và TA09.
 - gd-ux: giới hạn ký tự của hộp thoại, radio, bong bóng, dòng Sổ tay và lời theo trạng thái, tên Sổ tay, cảnh sau ca cảng, bước T29, thẻ tên chương.

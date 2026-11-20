@@ -174,7 +174,7 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 | 1 | Tỉnh dậy | Dải Gần, xác Seed Station đầu tiên | Kỹ sư, Thông dịch viên | Khai thác, bắt sống loài nhỏ bằng lưới, ca cảng | Neo trạm, sửa cảng, tàu buôn đầu tiên ghé, bắt được sóng của Lantern |
 | 2 | Không cô độc | Dải Giữa, Station Lantern | Hoa tiêu, Nhà sinh học | Nuôi Driftlife, bắt sống cỡ M (gây mê, Phao kéo), lấy mẫu sinh thiết cỡ L | Gặp người sống ở Lantern, dấu vết phá từ ngoài vào trên các xác trạm |
 | 3 | Kẻ canh giữ | Dải Xa, Veyl Waypost, The Remainers | Trưởng cảng | Sự cố trong ca cảng, kẻ địch có vũ khí | Tàu lạ ghé cảng, cú lật Driftlife, quân The Wardens lộ mặt. Cuối chương: cứu Sevra khỏi cuộc tấn công bắt cóc, Sevra lộ danh tính |
-| 4 | Tâm vụ nổ | Bên trong Cradle | Không | Map nhánh lớn trong nội thất tàu | Hộp ghi hành trình: Solace là thông tin mồi do chế độ Daskel dựng. Sevra kể chuyện đảo chính. Mục tiêu đổi từ "tới Solace" sang "giúp Sevra lật đổ Daskel". Chuyển tin cho mạng lưới qua ca cảng |
+| 4 | Tâm vụ nổ | Cradle Interior | Không | Map nhánh lớn trong nội thất tàu | Hộp ghi hành trình: Solace là thông tin mồi do chế độ Daskel dựng. Sevra kể chuyện đảo chính. Mục tiêu đổi từ "tới Solace" sang "giúp Sevra lật đổ Daskel". Chuyển tin cho mạng lưới qua ca cảng |
 | 5 | Rời neo | Warden Rig | Không | Hộ tống Sevra, trận đối đầu cuối | Hộ tống Sevra về căn cứ, nối tình báo, đánh Warden Rig (đầu não của Daskel ở bãi vỡ) khi cách mạng nổ ra. Sevra lên nắm quyền, trao tọa độ hành tinh thật. Sửa xong động cơ chính, rời neo |
 
 ## 8. Hệ thống và chủ sở hữu

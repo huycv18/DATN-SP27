@@ -187,17 +187,17 @@ Thứ tự xử lý một chuyến:
 | 112 | DL-G02 | Skitter Ray | Gần | S | Có | Sống (LIV) | Có | 1 x SMP-101 | 0,40 | 3,10 | 1,50 | 1 x CON-102 | 5,74 | 1,50 | MVP |
 | 113 | DL-G04 | Sting Krill | Gần | S | Có | Sống (LIV) | Có | 1 x SMP-101 | 0,20 | 2,30 | 1,60 | 1/3 x CON-102 | 4,04 | 1,60 | MVP |
 | 114 | DL-G05 | Arc Eel | Gần | M | Có | Sống (LIV) | Có | 2 x SMP-101 | 0,60 | 6,00 | 1,50 | 3 x CON-103, 1 x CON-106 | 30,71 | 1,50 | MVP (hạ), Sau MVP (bắt) |
-| 115 | DL-G03 | Barnacle Maw | Gần | M | Có | Sống (LIV) | Không | 2 x SMP-101 | 0,60 | 6,00 | 1,50 | 1 x CON-106 | 16,91 | 1,50 | Sau MVP |
+| 115 | DL-G03 | Latchjaw | Gần | M | Có | Sống (LIV) | Không | 2 x SMP-101 | 0,60 | 6,00 | 1,50 | 1 x CON-106 | 16,91 | 1,50 | Sau MVP |
 | 211 | DL-M01 | Shepherd Whale | Giữa | L | Không | Sinh thiết (BPS) | Không | - | - | - | - | 1 x CON-107 | 25,00 | cố định | Sau MVP |
 | 212 | DL-M02 | Lumen Jelly | Giữa | M | Có | Sống (LIV) | Có | 2 x SMP-201 | 0,40 | 12,00 | 1,50 | 1 x CON-106 | 25,91 | 1,50 | Sau MVP |
-| 213 | DL-M03 | Ore Grazer | Giữa | M | Có | Sống (LIV) | Có | 2 x SMP-201 | 0,60 | 14,00 | 1,50 | 1 x CON-106 | 28,91 | 1,50 | Sau MVP |
-| 214 | DL-M04 | Needle Shoal | Giữa | S | Có | Sống (LIV) | Có | 1 x SMP-201 | 0,15 | 5,50 | 1,80 | 1/3 x CON-102 | 10,26 | 1,80 | Sau MVP |
+| 213 | DL-M03 | Orebiter | Giữa | M | Có | Sống (LIV) | Có | 2 x SMP-201 | 0,60 | 14,00 | 1,50 | 1 x CON-106 | 28,91 | 1,50 | Sau MVP |
+| 214 | DL-M04 | Needlefin | Giữa | S | Có | Sống (LIV) | Có | 1 x SMP-201 | 0,15 | 5,50 | 1,80 | 1/3 x CON-102 | 10,26 | 1,80 | Sau MVP |
 | 215 | DL-M05 | Gulper | Giữa | L | Có | Sinh thiết (BPS) | Không | 4 x SMP-201 | 1,00 | 26,00 | 0,45 | 1 x CON-107 | 19,52 | 0,45 | Sau MVP |
 | 311 | DL-X01 | Prism Wisp | Xa | S | Có | Sống (LIV) | Có | 1 x SMP-301 | 0,50 | 18,00 | 1,80 | 1 x CON-102 | 33,49 | 1,80 | Sau MVP |
 | 312 | DL-X02 | Mirror Mantis | Xa | M | Có | Sống (LIV) | Không | 2 x SMP-301 | 0,60 | 28,80 | 1,50 | 4 x CON-103, 1 x CON-106 | 69,51 | 1,50 | Sau MVP |
 | 313 | DL-X03 | Storm Siphon | Xa | L | Có | Sinh thiết (BPS) | Không | 4 x SMP-301 | 1,00 | 54,00 | 0,45 | 1 x CON-107 | 32,12 | 0,45 | Sau MVP |
-| 314 | DL-X04 | Brood Mother | Xa | L | Có | Sinh thiết (BPS) | Không | 4 x SMP-301 | 1,00 | 54,00 | 0,45 | 1 x CON-107 | 32,12 | 0,45 | Sau MVP |
-| 315 | DL-X05 | Brood Spawn | Xa | S | Có | Sống (LIV) | Có | 1 x SMP-301 | 0,20 | 12,60 | 1,80 | 1/3 x CON-102 | 23,04 | 1,80 | Sau MVP |
+| 314 | DL-X04 | Shardbrood Queen | Xa | L | Có | Sinh thiết (BPS) | Không | 4 x SMP-301 | 1,00 | 54,00 | 0,45 | 1 x CON-107 | 32,12 | 0,45 | Sau MVP |
+| 315 | DL-X05 | Shardbrood Hatchling | Xa | S | Có | Sống (LIV) | Có | 1 x SMP-301 | 0,20 | 12,60 | 1,80 | 1/3 x CON-102 | 23,04 | 1,80 | Sau MVP |
 <!--/B:SPECIES-->
 
 - Giá lồng sinh vật sống theo loài (CGO-121, 221, 321 nhớ loài, GTĐ bằng mẫu sống bên trong). Hệ số ròng bằng k của loài:
@@ -209,13 +209,13 @@ Thứ tự xử lý một chuyến:
 | CGO-121 | DL-G02 Skitter Ray | LIV-112 | 5,74 | 1,50 | MVP |
 | CGO-121 | DL-G04 Sting Krill | LIV-113 | 4,04 | 1,60 | MVP |
 | CGO-121 | DL-G05 Arc Eel | LIV-114 | 30,71 | 1,50 | Sau MVP |
-| CGO-121 | DL-G03 Barnacle Maw | LIV-115 | 16,91 | 1,50 | Sau MVP |
+| CGO-121 | DL-G03 Latchjaw | LIV-115 | 16,91 | 1,50 | Sau MVP |
 | CGO-221 | DL-M02 Lumen Jelly | LIV-212 | 25,91 | 1,50 | Sau MVP |
-| CGO-221 | DL-M03 Ore Grazer | LIV-213 | 28,91 | 1,50 | Sau MVP |
-| CGO-221 | DL-M04 Needle Shoal | LIV-214 | 10,26 | 1,80 | Sau MVP |
+| CGO-221 | DL-M03 Orebiter | LIV-213 | 28,91 | 1,50 | Sau MVP |
+| CGO-221 | DL-M04 Needlefin | LIV-214 | 10,26 | 1,80 | Sau MVP |
 | CGO-321 | DL-X01 Prism Wisp | LIV-311 | 33,49 | 1,80 | Sau MVP |
 | CGO-321 | DL-X02 Mirror Mantis | LIV-312 | 69,51 | 1,50 | Sau MVP |
-| CGO-321 | DL-X05 Brood Spawn | LIV-315 | 23,04 | 1,80 | Sau MVP |
+| CGO-321 | DL-X05 Shardbrood Hatchling | LIV-315 | 23,04 | 1,80 | Sau MVP |
 <!--/B:LONG-->
 
 Điểm khai thác (SLV). Cột GTĐ mỗi giây là chênh lệch hiệu quả giữa các điểm khi đã ở trước mặt người chơi, chưa tính thời gian bay tới. Đây là kiểm nhất quán, không phải sim cân bằng:
@@ -251,7 +251,7 @@ Dụng cụ (TOL). Trang bị, không vào kho. Chỉ số combat theo bậc do 
 | TOL-203 | Súng gây mê / Tranq Gun | Bắt sống | BPR-102, RCP-202 | Gây mê, tốn CON-103. Chỉ số do gd-combat | Sau MVP |
 | TOL-301 | Máy quét xung / Pulse Scanner | Tiện ích | BPR-103, RCP-203 | Hiện điểm khai thác trong bán kính. Bậc 2 hiện hạng, bậc 3 hiện Driftlife. Bán kính do gd-world và gd-ux | Sau MVP |
 | TOL-401 | Bộ kích nguồn / Power Primer | Chìa | Xưởng, công thức đầu tiên sau khi vớt Kỹ sư (RCP-205, chỉ dùng tài nguyên thô) | Mở cửa D1 khóa nguồn trong Station Cinder (lần vớt thứ hai). Cổng cứng, không có chế độ chậm. Không cần mang theo (luật T7) | MVP |
-| TOL-402 | Máy cắt thân tàu / Hull Cutter | Chìa | BPR-105, RCP-206 | Mở vách Bên trong Cradle (chương 4). Cổng cứng, không cần mang theo (luật T7) | Sau MVP |
+| TOL-402 | Máy cắt thân tàu / Hull Cutter | Chìa | BPR-105, RCP-206 | Mở vách vào Cradle Interior (chương 4). Cổng cứng, không cần mang theo (luật T7) | Sau MVP |
 | TOL-501 | Lồng mẫu / Specimen Cage | Chứa | Quest Kỹ sư (chương 1), RCP-208 | Kéo theo, chứa tối đa 3 mẫu sống cỡ S, mỗi người 1 lồng (gd-combat) | MVP |
 <!--/B:TOOL-->
 
@@ -373,7 +373,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | RES-303 | Băng plasma / Plasma Ice | Băng | Hiếm | 2 | 14,0 | Xa | SLV-302 | RCP-163 | Sau MVP |
 | RES-304 | Lõi năng lượng nguội / Cold Core | Linh kiện | Hiếm | 1 | 10,0 | Xa | SLV-303 | RCP-164, Sửa khoang (tram-va-cang.md mục 2.6c) | Sau MVP |
 | RES-305 | Linh kiện Warden / Warden Part | Linh kiện | Hiếm | 1 | 12,0 | Xa | WD-01..04 và boss BS-3 (gd-combat) | RCP-521, Lắp động cơ chính giai đoạn 4 và 5 | Sau MVP |
-| RES-401 | Linh kiện Cradle / Cradle Part | Linh kiện | Đặc biệt | 1 | 20,0 | Cradle | Boss BS-4 và map nhánh Bên trong Cradle (gd-combat, gd-world) | RCP-421, UPG-OXY-4, UPG-BAG-4, UPG-ENV-3, Lắp động cơ chính giai đoạn 4 và 5 | Sau MVP |
+| RES-401 | Linh kiện Cradle / Cradle Part | Linh kiện | Đặc biệt | 1 | 20,0 | Cradle | Boss BS-4 và map nhánh Cradle Interior (gd-combat, gd-world) | RCP-421, UPG-OXY-4, UPG-BAG-4, UPG-ENV-3, Lắp động cơ chính giai đoạn 4 và 5 | Sau MVP |
 | SMP-101 | Mô sinh học Gần / Near Biomass | Mẫu | Thường | 1 | 1,5 | Gần | Mọi loài Gần khi hạ | RCP-132, RCP-171, RCP-115 | MVP |
 | SMP-201 | Mô sinh học Giữa / Mid Biomass | Mẫu | Ít gặp | 1 | 4,0 | Giữa | Mọi loài Giữa khi hạ | RCP-271 | Sau MVP |
 | SMP-301 | Mô sinh học Xa / Far Biomass | Mẫu | Hiếm | 1 | 9,0 | Xa | Mọi loài Xa khi hạ | RCP-371 | Sau MVP |
@@ -381,16 +381,16 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | SMP-112 | Đặc sản DL-G02 Skitter Ray / DL-G02 Specialty | Mẫu | Ít gặp | 1 | 4,0 | Gần | DL-G02 khi hạ (xác suất 0,4) | RCP-124 | MVP |
 | SMP-113 | Đặc sản DL-G04 Sting Krill / DL-G04 Specialty | Mẫu | Ít gặp | 1 | 4,0 | Gần | DL-G04 khi hạ (xác suất 0,2 mỗi con) | RCP-134, RCP-124 | MVP |
 | SMP-114 | Đặc sản DL-G05 Arc Eel / DL-G05 Specialty | Mẫu | Ít gặp | 1 | 5,0 | Gần | DL-G05 khi hạ (xác suất 0,6) | RCP-135, RCP-124 | MVP |
-| SMP-115 | Đặc sản DL-G03 Barnacle Maw / DL-G03 Specialty | Mẫu | Ít gặp | 1 | 5,0 | Gần | DL-G03 khi hạ (xác suất 0,6) | RCP-124 | Sau MVP |
+| SMP-115 | Đặc sản DL-G03 Latchjaw / DL-G03 Specialty | Mẫu | Ít gặp | 1 | 5,0 | Gần | DL-G03 khi hạ (xác suất 0,6) | RCP-124 | Sau MVP |
 | SMP-212 | Đặc sản DL-M02 Lumen Jelly / DL-M02 Specialty | Mẫu | Hiếm | 1 | 10,0 | Giữa | DL-M02 khi hạ (xác suất 0,4) | RCP-224 | Sau MVP |
-| SMP-213 | Đặc sản DL-M03 Ore Grazer / DL-M03 Specialty | Mẫu | Hiếm | 1 | 10,0 | Giữa | DL-M03 khi hạ (xác suất 0,6) | RCP-224 | Sau MVP |
-| SMP-214 | Đặc sản DL-M04 Needle Shoal / DL-M04 Specialty | Mẫu | Hiếm | 1 | 10,0 | Giữa | DL-M04 khi hạ (xác suất 0,15 mỗi con) | RCP-224 | Sau MVP |
+| SMP-213 | Đặc sản DL-M03 Orebiter / DL-M03 Specialty | Mẫu | Hiếm | 1 | 10,0 | Giữa | DL-M03 khi hạ (xác suất 0,6) | RCP-224 | Sau MVP |
+| SMP-214 | Đặc sản DL-M04 Needlefin / DL-M04 Specialty | Mẫu | Hiếm | 1 | 10,0 | Giữa | DL-M04 khi hạ (xác suất 0,15 mỗi con) | RCP-224 | Sau MVP |
 | SMP-215 | Đặc sản DL-M05 Gulper / DL-M05 Specialty | Mẫu | Hiếm | 1 | 10,0 | Giữa | DL-M05 khi hạ (xác suất 1) | RCP-224 | Sau MVP |
 | SMP-311 | Đặc sản DL-X01 Prism Wisp / DL-X01 Specialty | Mẫu | Hiếm | 1 | 18,0 | Xa | DL-X01 khi hạ (xác suất 0,5) | RCP-324 | Sau MVP |
 | SMP-312 | Đặc sản DL-X02 Mirror Mantis / DL-X02 Specialty | Mẫu | Hiếm | 1 | 18,0 | Xa | DL-X02 khi hạ (xác suất 0,6) | RCP-324 | Sau MVP |
 | SMP-313 | Đặc sản DL-X03 Storm Siphon / DL-X03 Specialty | Mẫu | Hiếm | 1 | 18,0 | Xa | DL-X03 khi hạ (xác suất 1) | RCP-324 | Sau MVP |
-| SMP-314 | Đặc sản DL-X04 Brood Mother / DL-X04 Specialty | Mẫu | Hiếm | 1 | 18,0 | Xa | DL-X04 khi hạ (xác suất 1) | RCP-324 | Sau MVP |
-| SMP-315 | Đặc sản DL-X05 Brood Spawn / DL-X05 Specialty | Mẫu | Hiếm | 1 | 18,0 | Xa | DL-X05 khi hạ (xác suất 0,2 mỗi con) | RCP-324 | Sau MVP |
+| SMP-314 | Đặc sản DL-X04 Shardbrood Queen / DL-X04 Specialty | Mẫu | Hiếm | 1 | 18,0 | Xa | DL-X04 khi hạ (xác suất 1) | RCP-324 | Sau MVP |
+| SMP-315 | Đặc sản DL-X05 Shardbrood Hatchling / DL-X05 Specialty | Mẫu | Hiếm | 1 | 18,0 | Xa | DL-X05 khi hạ (xác suất 0,2 mỗi con) | RCP-324 | Sau MVP |
 | SMP-191 | Hạch thủ lĩnh Gần / Scrapmaw Core | Mẫu | Đặc biệt | 2 | 25,0 | Gần | BS-1 Scrapmaw bị hạ, cộng 5 SMP-101 (gd-combat) | Sửa khoang theo chương | MVP |
 | SMP-192 | Mẫu boss Gần / Scrapmaw Sample | Mẫu | Đặc biệt | 2 | 30,0 | Gần | BS-1 Scrapmaw bị xua đi, cộng 2 SMP-101 (gd-combat) | Sửa khoang theo chương, thay được SMP-191 | MVP |
 | SMP-291 | Đặc sản Tempest Gulper / Tempest Gulper Core | Mẫu | Đặc biệt | 2 | 60,0 | Giữa | BS-2 bị hạ, cộng phế liệu nó đã nuốt (gd-combat) | Sửa khoang theo chương | Sau MVP |
@@ -403,22 +403,22 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | BIO-113 | Sản phẩm nuôi DL-G04 Sting Krill / DL-G04 Farm Yield | Sản phẩm nuôi | Thường | 1 | 3,0 | Gần | Khoang nuôi DL-G04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-125 | Sau MVP |
 | LIV-114 | Mẫu sống DL-G05 Arc Eel / DL-G05 Live Specimen | Mẫu sống | Ít gặp | kéo | 30,7 | Gần | Bắt sống DL-G05 bằng Súng gây mê rồi Phao kéo (K9, chương 2, miễn choáng) | RCP-128, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BIO-114 | Sản phẩm nuôi DL-G05 Arc Eel / DL-G05 Farm Yield | Sản phẩm nuôi | Thường | 1 | 3,0 | Gần | Khoang nuôi DL-G05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-125 | Sau MVP |
-| LIV-115 | Mẫu sống DL-G03 Barnacle Maw / DL-G03 Live Specimen | Mẫu sống | Ít gặp | kéo | 16,9 | Gần | Bắt sống DL-G03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-128, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
+| LIV-115 | Mẫu sống DL-G03 Latchjaw / DL-G03 Live Specimen | Mẫu sống | Ít gặp | kéo | 16,9 | Gần | Bắt sống DL-G03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-128, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BPS-211 | Mẫu sinh thiết DL-M01 Shepherd Whale / DL-M01 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 25,0 | Giữa | Kim sinh thiết trên DL-M01 (loài L, chương 2) | RCP-224, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
 | LIV-212 | Mẫu sống DL-M02 Lumen Jelly / DL-M02 Live Specimen | Mẫu sống | Hiếm | kéo | 25,9 | Giữa | Bắt sống DL-M02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BIO-212 | Sản phẩm nuôi DL-M02 Lumen Jelly / DL-M02 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 7,0 | Giữa | Khoang nuôi DL-M02 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-225 | Sau MVP |
-| LIV-213 | Mẫu sống DL-M03 Ore Grazer / DL-M03 Live Specimen | Mẫu sống | Hiếm | kéo | 28,9 | Giữa | Bắt sống DL-M03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
-| BIO-213 | Sản phẩm nuôi DL-M03 Ore Grazer / DL-M03 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 7,0 | Giữa | Khoang nuôi DL-M03 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-225 | Sau MVP |
-| LIV-214 | Mẫu sống DL-M04 Needle Shoal / DL-M04 Live Specimen | Mẫu sống | Hiếm | kéo | 10,3 | Giữa | Bắt sống DL-M04 bằng Súng lưới (K9, từ chương 1) | RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
-| BIO-214 | Sản phẩm nuôi DL-M04 Needle Shoal / DL-M04 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 7,0 | Giữa | Khoang nuôi DL-M04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-225 | Sau MVP |
+| LIV-213 | Mẫu sống DL-M03 Orebiter / DL-M03 Live Specimen | Mẫu sống | Hiếm | kéo | 28,9 | Giữa | Bắt sống DL-M03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
+| BIO-213 | Sản phẩm nuôi DL-M03 Orebiter / DL-M03 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 7,0 | Giữa | Khoang nuôi DL-M03 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-225 | Sau MVP |
+| LIV-214 | Mẫu sống DL-M04 Needlefin / DL-M04 Live Specimen | Mẫu sống | Hiếm | kéo | 10,3 | Giữa | Bắt sống DL-M04 bằng Súng lưới (K9, từ chương 1) | RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
+| BIO-214 | Sản phẩm nuôi DL-M04 Needlefin / DL-M04 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 7,0 | Giữa | Khoang nuôi DL-M04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-225 | Sau MVP |
 | BPS-215 | Mẫu sinh thiết DL-M05 Gulper / DL-M05 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 19,5 | Giữa | Kim sinh thiết trên DL-M05 (loài L, chương 2) | RCP-224, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
 | LIV-311 | Mẫu sống DL-X01 Prism Wisp / DL-X01 Live Specimen | Mẫu sống | Hiếm | kéo | 33,5 | Xa | Bắt sống DL-X01 bằng Súng lưới (K9, từ chương 1) | RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BIO-311 | Sản phẩm nuôi DL-X01 Prism Wisp / DL-X01 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 14,0 | Xa | Khoang nuôi DL-X01 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-325 | Sau MVP |
 | LIV-312 | Mẫu sống DL-X02 Mirror Mantis / DL-X02 Live Specimen | Mẫu sống | Hiếm | kéo | 69,5 | Xa | Bắt sống DL-X02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BPS-313 | Mẫu sinh thiết DL-X03 Storm Siphon / DL-X03 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 32,1 | Xa | Kim sinh thiết trên DL-X03 (loài L, chương 2) | RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
-| BPS-314 | Mẫu sinh thiết DL-X04 Brood Mother / DL-X04 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 32,1 | Xa | Kim sinh thiết trên DL-X04 (loài L, chương 2) | RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
-| LIV-315 | Mẫu sống DL-X05 Brood Spawn / DL-X05 Live Specimen | Mẫu sống | Hiếm | kéo | 23,0 | Xa | Bắt sống DL-X05 bằng Súng lưới (K9, từ chương 1) | RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
-| BIO-315 | Sản phẩm nuôi DL-X05 Brood Spawn / DL-X05 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 14,0 | Xa | Khoang nuôi DL-X05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-325 | Sau MVP |
+| BPS-314 | Mẫu sinh thiết DL-X04 Shardbrood Queen / DL-X04 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 32,1 | Xa | Kim sinh thiết trên DL-X04 (loài L, chương 2) | RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
+| LIV-315 | Mẫu sống DL-X05 Shardbrood Hatchling / DL-X05 Live Specimen | Mẫu sống | Hiếm | kéo | 23,0 | Xa | Bắt sống DL-X05 bằng Súng lưới (K9, từ chương 1) | RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
+| BIO-315 | Sản phẩm nuôi DL-X05 Shardbrood Hatchling / DL-X05 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 14,0 | Xa | Khoang nuôi DL-X05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-325 | Sau MVP |
 | COM-101 | Tấm thép nén / Pressed Plate | Vật liệu chế | Thường | 1 | 3,9 | Gần | RCP-101 | RCP-131, RCP-134, RCP-121, RCP-203, RCP-204, RCP-208, UPG-OXY-1, UPG-BAG-1, UPG-THR-1, UPG-MIN-2, UPG-RACK-1, UPG-BAG-2 | MVP |
 | COM-102 | Dây dẫn bện / Braided Conductor | Vật liệu chế | Thường | 1 | 4,7 | Gần | RCP-102 | RCP-132, RCP-136, RCP-122, RCP-201, RCP-203, RCP-208, UPG-BAG-1, UPG-MIN-2, UPG-HAR-2, UPG-RACK-1, UPG-NET-2, UPG-BAG-2, UPG-RACK-2 | MVP |
 | COM-103 | Thỏi sắt / Iron Ingot | Vật liệu chế | Thường | 1 | 5,9 | Gần | RCP-103 | RCP-136, RCP-201, RCP-202, RCP-204, RCP-208, UPG-THR-1, UPG-MIN-2, UPG-HAR-2, UPG-RACK-1, UPG-NET-2, UPG-MIN-3, UPG-RACK-2 | MVP |
@@ -485,7 +485,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | STY-102 | Mảnh lõi dẫn đường Cinder / Cinder Nav Core Fragment | Vật nhiệm vụ | Đặc biệt | 1 | - | Gần | Xác Seed Station Cinder (gd-world, gd-story) | Vật liệu sửa khoang dẫn đường KH08 (chương 2), bị tiêu ở việc sửa đó, ghép đường đi | MVP |
 | STY-103 | Mảnh lõi dẫn đường Wick / Wick Nav Core Fragment | Vật nhiệm vụ | Đặc biệt | 1 | - | Giữa | Xác Seed Station Wick (gd-world, gd-story) | Nộp ở khoang dẫn đường (Hoa tiêu), không tiêu vật, vào kho, ghép đường đi | Sau MVP |
 | STY-104 | Manh mối lõi dẫn đường Flint / Flint Nav Core Clue | Vật manh mối | Đặc biệt | 0 | - | Xa | Xác Seed Station Flint (gd-world, gd-story) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
-| STY-105 | Manh mối lõi dẫn đường Cradle / Cradle Nav Core Clue | Vật manh mối | Đặc biệt | 0 | - | Cradle | Bên trong Cradle (gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
+| STY-105 | Manh mối lõi dẫn đường Cradle / Cradle Nav Core Clue | Vật manh mối | Đặc biệt | 0 | - | Cradle | Cradle Interior (gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
 | STY-111 | Bản tin trong máy liên lạc Cinder / Cinder Comm Message | Vật manh mối | Đặc biệt | 0 | - | Gần | Mã truyện MM1.2, máy liên lạc xác Seed Station Cinder (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | MVP |
 | STY-211 | Mảng vỏ thân Wick / Wick Hull Panel | Vật manh mối | Đặc biệt | 0 | - | Giữa | Mã truyện MM2.1, xác Seed Station Wick (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
 | STY-212 | Sổ trực Lantern / Lantern Watch Log | Vật manh mối | Đặc biệt | 0 | - | Giữa | Mã truyện MM2.3, Station Lantern (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
@@ -497,7 +497,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | STY-412 | Hiến chương định cư United Accord / United Accord Settlement Charter | Vật manh mối | Đặc biệt | 0 | - | Cradle | Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
 | STY-414 | Bản gốc Lodestar Survey / Original Lodestar Survey | Vật manh mối | Đặc biệt | 0 | - | Cradle | Mã truyện MM4.4, bên trong Cradle (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
 | STY-301 | Mẫu mang dấu săn bắt Wardens / Hunt-marked Sample | Vật nhiệm vụ | Đặc biệt | 1 | - | Xa | Station Flint (chương 3, gd-story) | Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife | Sau MVP |
-| STY-401 | Hộp ghi hành trình Cradle / Cradle Flight Recorder | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Bên trong Cradle (chương 4, gd-story) | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6) | Sau MVP |
+| STY-401 | Hộp ghi hành trình Cradle / Cradle Flight Recorder | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Cradle Interior (chương 4, gd-story) | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6) | Sau MVP |
 | STY-501 | Bản đồ sao thật / True Star Chart | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Data Core ở Warden Rig, khe V1, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel. Tọa độ hành tinh thật do Sevra trao ở C5.6 là cảnh truyện, không phải vật | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6) | Sau MVP |
 | STY-701 | Gói tin mật / Sealed Dispatch | Vật nhiệm vụ | Đặc biệt | 1 | - | Xa | Khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày từ khi mốc nối tình báo mở (chương 4 đến 5, gd-quan), không mua bán | RCP-422, Bị tiêu ở RCP-422 (đóng kiện tin mật). Mất khi rời phiên thì về lại khoang liên lạc (luật V4) | Sau MVP |
 | STY-502 | Lệnh phục kích Cradle mang dấu Daskel / Daskel-Marked Ambush Order | Vật manh mối | Đặc biệt | 0 | - | Cradle | Data Core ở Warden Rig, khe M1, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel | Tự ghi vào Sổ tay, mở cảnh truyện. Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401) | Sau MVP |

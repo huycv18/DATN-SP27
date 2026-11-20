@@ -30,7 +30,7 @@ I('RES-302', 'Kính nebula', 'Nebula Glass', 'Khoáng', HI, 2, 16.0, X, SAU, { s
 I('RES-303', 'Băng plasma', 'Plasma Ice', 'Băng', HI, 2, 14.0, X, SAU);
 I('RES-304', 'Lõi năng lượng nguội', 'Cold Core', 'Linh kiện', HI, 1, 10.0, X, SAU, { sink: SR });
 I('RES-305', 'Linh kiện Warden', 'Warden Part', 'Linh kiện', HI, 1, 12.0, X, SAU, { nguon: 'WD-01..04 và boss BS-3 (gd-combat)', sink: 'Lắp động cơ chính giai đoạn 4 và 5' });
-I('RES-401', 'Linh kiện Cradle', 'Cradle Part', 'Linh kiện', DB, 1, 20.0, CR, SAU, { nguon: 'Boss BS-4 và map nhánh Bên trong Cradle (gd-combat, gd-world)', sink: 'Lắp động cơ chính giai đoạn 4 và 5' });
+I('RES-401', 'Linh kiện Cradle', 'Cradle Part', 'Linh kiện', DB, 1, 20.0, CR, SAU, { nguon: 'Boss BS-4 và map nhánh Cradle Interior (gd-combat, gd-world)', sink: 'Lắp động cơ chính giai đoạn 4 và 5' });
 
 // Mẫu Driftlife. Thứ tự và loài theo gd-combat (`combat-driftlife.md`, mục Điểm sinh và rơi).
 I('SMP-101', 'Mô sinh học Gần', 'Near Biomass', 'Mẫu', TH, 1, 1.5, G, MVP, { nguon: 'Mọi loài Gần khi hạ' });
@@ -42,17 +42,17 @@ const SP = [
   [G, 112, 'DL-G02', 'Skitter Ray', 1, 1, 0.40, 'LIV', 1, 4, 1.5, MVP],
   [G, 113, 'DL-G04', 'Sting Krill', 1, 1, 0.20, 'LIV', 1, 4, 1.6, MVP],
   [G, 114, 'DL-G05', 'Arc Eel', 1, 2, 0.60, 'LIV', 1, 5, 1.75, MVP],
-  [G, 115, 'DL-G03', 'Barnacle Maw', 1, 2, 0.60, 'LIV', 0, 5, 1.7, SAU],
+  [G, 115, 'DL-G03', 'Latchjaw', 1, 2, 0.60, 'LIV', 0, 5, 1.7, SAU],
   [M, 211, 'DL-M01', 'Shepherd Whale', 0, 0, 0, 'BPS', 0, null, null, SAU, 25],
   [M, 212, 'DL-M02', 'Lumen Jelly', 1, 2, 0.40, 'LIV', 1, 10, 1.7, SAU],
-  [M, 213, 'DL-M03', 'Ore Grazer', 1, 2, 0.60, 'LIV', 1, 10, 1.8, SAU],
-  [M, 214, 'DL-M04', 'Needle Shoal', 1, 1, 0.15, 'LIV', 1, 10, 1.8, SAU],
+  [M, 213, 'DL-M03', 'Orebiter', 1, 2, 0.60, 'LIV', 1, 10, 1.8, SAU],
+  [M, 214, 'DL-M04', 'Needlefin', 1, 1, 0.15, 'LIV', 1, 10, 1.8, SAU],
   [M, 215, 'DL-M05', 'Gulper', 1, 4, 1.0, 'BPS', 0, 10, 1.8, SAU],
   [X, 311, 'DL-X01', 'Prism Wisp', 1, 1, 0.5, 'LIV', 1, 18, 1.8, SAU],
   [X, 312, 'DL-X02', 'Mirror Mantis', 1, 2, 0.6, 'LIV', 0, 18, 2.0, SAU],
   [X, 313, 'DL-X03', 'Storm Siphon', 1, 4, 1.0, 'BPS', 0, 18, 2.0, SAU],
-  [X, 314, 'DL-X04', 'Brood Mother', 1, 4, 1.0, 'BPS', 0, 18, 2.0, SAU],
-  [X, 315, 'DL-X05', 'Brood Spawn', 1, 1, 0.2, 'LIV', 1, 18, 1.8, SAU],
+  [X, 314, 'DL-X04', 'Shardbrood Queen', 1, 4, 1.0, 'BPS', 0, 18, 2.0, SAU],
+  [X, 315, 'DL-X05', 'Shardbrood Hatchling', 1, 1, 0.2, 'LIV', 1, 18, 1.8, SAU],
 ];
 const SIZE = { 111: 'S', 112: 'S', 113: 'S', 114: 'M', 115: 'M', 211: 'L', 212: 'M', 213: 'M', 214: 'S', 215: 'L', 311: 'S', 312: 'M', 313: 'L', 314: 'L', 315: 'S' };
 const NLS = { [G]: 'SMP-101', [M]: 'SMP-201', [X]: 'SMP-301' };
@@ -149,7 +149,7 @@ N('STY-101', 'Nhật ký trạm', 'Station Log', 'Vật manh mối', DB, 0, G, M
 N('STY-102', 'Mảnh lõi dẫn đường Cinder', 'Cinder Nav Core Fragment', 'Vật nhiệm vụ', DB, 1, G, MVP, { nguon: 'Xác Seed Station Cinder (gd-world, gd-story)', sink: 'Vật liệu sửa khoang dẫn đường KH08 (chương 2), bị tiêu ở việc sửa đó, ghép đường đi' });
 N('STY-103', 'Mảnh lõi dẫn đường Wick', 'Wick Nav Core Fragment', 'Vật nhiệm vụ', DB, 1, M, SAU, { nguon: 'Xác Seed Station Wick (gd-world, gd-story)', sink: 'Nộp ở khoang dẫn đường (Hoa tiêu), không tiêu vật, vào kho, ghép đường đi' });
 N('STY-104', 'Manh mối lõi dẫn đường Flint', 'Flint Nav Core Clue', 'Vật manh mối', DB, 0, X, SAU, { nguon: 'Xác Seed Station Flint (gd-world, gd-story)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
-N('STY-105', 'Manh mối lõi dẫn đường Cradle', 'Cradle Nav Core Clue', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Bên trong Cradle (gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
+N('STY-105', 'Manh mối lõi dẫn đường Cradle', 'Cradle Nav Core Clue', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Cradle Interior (gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
 N('STY-111', 'Bản tin trong máy liên lạc Cinder', 'Cinder Comm Message', 'Vật manh mối', DB, 0, G, MVP, { nguon: 'Mã truyện MM1.2, máy liên lạc xác Seed Station Cinder (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
 N('STY-211', 'Mảng vỏ thân Wick', 'Wick Hull Panel', 'Vật manh mối', DB, 0, M, SAU, { nguon: 'Mã truyện MM2.1, xác Seed Station Wick (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
 N('STY-212', 'Sổ trực Lantern', 'Lantern Watch Log', 'Vật manh mối', DB, 0, M, SAU, { nguon: 'Mã truyện MM2.3, Station Lantern (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
@@ -161,7 +161,7 @@ N('STY-411', 'Vết vũ khí trên vỏ Cradle', 'Weapon Scars on Cradle Hull', 
 N('STY-412', 'Hiến chương định cư United Accord', 'United Accord Settlement Charter', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
 N('STY-414', 'Bản gốc Lodestar Survey', 'Original Lodestar Survey', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Mã truyện MM4.4, bên trong Cradle (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
 N('STY-301', 'Mẫu mang dấu săn bắt Wardens', 'Hunt-marked Sample', 'Vật nhiệm vụ', DB, 1, X, SAU, { nguon: 'Station Flint (chương 3, gd-story)', sink: 'Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife' });
-N('STY-401', 'Hộp ghi hành trình Cradle', 'Cradle Flight Recorder', 'Vật nhiệm vụ', DB, 1, CR, SAU, { nguon: 'Bên trong Cradle (chương 4, gd-story)', sink: 'Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6)' });
+N('STY-401', 'Hộp ghi hành trình Cradle', 'Cradle Flight Recorder', 'Vật nhiệm vụ', DB, 1, CR, SAU, { nguon: 'Cradle Interior (chương 4, gd-story)', sink: 'Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6)' });
 N('STY-501', 'Bản đồ sao thật', 'True Star Chart', 'Vật nhiệm vụ', DB, 1, CR, SAU, { nguon: 'Data Core ở Warden Rig, khe V1, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel. Tọa độ hành tinh thật do Sevra trao ở C5.6 là cảnh truyện, không phải vật', sink: 'Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6)' });
 N('STY-701', 'Gói tin mật', 'Sealed Dispatch', 'Vật nhiệm vụ', DB, 1, X, SAU, { nguon: 'Khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày từ khi mốc nối tình báo mở (chương 4 đến 5, gd-quan), không mua bán', sink: 'Bị tiêu ở RCP-422 (đóng kiện tin mật). Mất khi rời phiên thì về lại khoang liên lạc (luật V4)' });
 N('STY-502', 'Lệnh phục kích Cradle mang dấu Daskel', 'Daskel-Marked Ambush Order', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Data Core ở Warden Rig, khe M1, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện. Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401)' });
@@ -282,7 +282,7 @@ const tools = [
   ['TOL-203', 'Súng gây mê', 'Tranq Gun', 'Bắt sống', 'BPR-102, RCP-202', SAU, 'Gây mê, tốn CON-103. Chỉ số do gd-combat'],
   ['TOL-301', 'Máy quét xung', 'Pulse Scanner', 'Tiện ích', 'BPR-103, RCP-203', SAU, 'Hiện điểm khai thác trong bán kính. Bậc 2 hiện hạng, bậc 3 hiện Driftlife. Bán kính do gd-world và gd-ux'],
   ['TOL-401', 'Bộ kích nguồn', 'Power Primer', 'Chìa', 'Xưởng, công thức đầu tiên sau khi vớt Kỹ sư (RCP-205, chỉ dùng tài nguyên thô)', MVP, 'Mở cửa D1 khóa nguồn trong Station Cinder (lần vớt thứ hai). Cổng cứng, không có chế độ chậm. Không cần mang theo (luật T7)'],
-  ['TOL-402', 'Máy cắt thân tàu', 'Hull Cutter', 'Chìa', 'BPR-105, RCP-206', SAU, 'Mở vách Bên trong Cradle (chương 4). Cổng cứng, không cần mang theo (luật T7)'],
+  ['TOL-402', 'Máy cắt thân tàu', 'Hull Cutter', 'Chìa', 'BPR-105, RCP-206', SAU, 'Mở vách vào Cradle Interior (chương 4). Cổng cứng, không cần mang theo (luật T7)'],
   ['TOL-501', 'Lồng mẫu', 'Specimen Cage', 'Chứa', 'Quest Kỹ sư (chương 1), RCP-208', MVP, 'Kéo theo, chứa tối đa 3 mẫu sống cỡ S, mỗi người 1 lồng (gd-combat)'],
 ];
 // Điểm khai thác. [id, tên, dải, dụng cụ, độ cứng hoặc cấp khóa, giây ở bậc 1, số lần quay, bảng rơi [id, trọng số, số lượng], nhãn]
@@ -453,7 +453,7 @@ const SPAWN = { // vị trí theo map.md (mục 2.10, 3.3): loại mảnh và đ
   'SLV-104': 'Dải Gần, mảnh Hành lang (cạnh Cáp chập) và Xác lớn. Khe SP-R hạng hiếm của dải Gần',
   'SLV-105': 'Dải Gần, chỉ mảnh Xác lớn',
   'SLV-111': 'Xác Seed Station: Cinder 3 hòm (C2, C3, C7), Wick 3, Flint 3 (map.md mục 2.10)',
-  'SLV-112': 'Xác Seed Station: Cinder 1 (C6, sau boss), Wick 1. Bên trong Cradle 2 mỗi khu (map.md mục 2.10)',
+  'SLV-112': 'Xác Seed Station: Cinder 1 (C6, sau boss), Wick 1. Cradle Interior 2 mỗi khu (map.md mục 2.10)',
   'SLV-201': 'Dải Giữa, mảnh Mở và Ổ (dòng đá vụn chạy ngang qua)',
   'SLV-202': 'Dải Giữa, mảnh Mở (băng nứt khi khoan mạnh)',
   'SLV-203': 'Dải Giữa, mảnh Xác lớn. Khe SP-R hạng hiếm của dải Giữa',
