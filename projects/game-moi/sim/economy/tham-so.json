@@ -1,0 +1,598 @@
+{
+  "game": "game-moi",
+  "cap_nhat": "2026-11-20",
+  "nguon_so_hien_hanh": "projects/game-moi/so-hien-hanh.md",
+  "bo_qua_tieu_de": [
+    "Lịch sử thay đổi",
+    "Phụ lục"
+  ],
+  "ghi_chu": "Mọi số của sim kinh tế nằm ở đây. Mục tham_so là số doc phải viết đúng (economy_doc.py kiem bắt). Mục sim là cấu hình sim. Mục nguon ghi gốc của từng nhóm số.",
+  "tham_so": {
+    "tally_moi_gtd": {
+      "gia_tri": 10,
+      "nguon": "gd-economy tự quyết, điểm tự quyết 1",
+      "nhan": "đề xuất",
+      "bat": [
+        "(\\d+) Tally mỗi GTĐ",
+        "1 GTĐ bằng (\\d+) Tally"
+      ],
+      "cam": []
+    },
+    "thuong_du_don": {
+      "gia_tri": 25,
+      "nguon": "gd-quan khởi điểm, giữ sau sim",
+      "nhan": "đề xuất",
+      "bat": [
+        "[Tt]hưởng đủ đơn (\\d+)%",
+        "[Tt]hưởng đủ đơn \\| (\\d+)%"
+      ],
+      "cam": []
+    },
+    "thuong_nhanh": {
+      "gia_tri": 15,
+      "nguon": "gd-quan khởi điểm, giữ sau sim",
+      "nhan": "đề xuất",
+      "bat": [
+        "[Tt]hưởng nhanh (\\d+)%",
+        "[Tt]hưởng nhanh \\| (\\d+)%"
+      ],
+      "cam": []
+    },
+    "beta_ngan_sach": {
+      "gia_tri": 0.4,
+      "gia_tri_doc": "0,40",
+      "nguon": "sim, núm gap",
+      "nhan": "đề xuất",
+      "bat": [
+        "hệ số ngân sách β bằng (\\d+,\\d+)"
+      ],
+      "cam": []
+    }
+  },
+  "sim": {
+    "seed": 20261120,
+    "so_lan_chay": 200,
+    "vat_pham_md": "projects/game-moi/gdd/he-thong/vat-pham.md",
+    "so_nguoi": [
+      1,
+      2,
+      4
+    ],
+    "tally_moi_gtd": 10,
+    "thuong_du_don": 0.25,
+    "thuong_nhanh": 0.15,
+    "diem_du_don": 2,
+    "diem_nhanh": 1,
+    "nguong_hang": [
+      0,
+      10,
+      20,
+      45,
+      70,
+      100,
+      135,
+      195
+    ],
+    "tran_hang_theo_chuong": [
+      3,
+      5,
+      7,
+      8,
+      8
+    ],
+    "hang_mo_eng": [
+      3,
+      5,
+      7,
+      8
+    ],
+    "ti_le_gia": {
+      "ENG": 1.0,
+      "VO": 0.6,
+      "OXY": 0.5,
+      "TUI": 0.5,
+      "DAY": 0.35,
+      "DUNGCU": 0.4,
+      "DUNGCU_KHAI_THAC": 0.15,
+      "KHOANG_CAP": 0.4,
+      "BPR": 0.3,
+      "KE_KIEN_2": 0.2
+    },
+    "ghi_chu_chuong": "Chỉ số 0 là chương 1",
+    "gio_muc_tieu_chuong": [
+      1.25,
+      2.75,
+      3.5,
+      3.0,
+      1.5
+    ],
+    "dai_theo_chuong": [
+      "Gần",
+      "Giữa",
+      "Xa",
+      "Xa",
+      "Xa"
+    ],
+    "he_so_mat_do_them": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "bay_ra_ve_giay": [
+      [
+        17,
+        17
+      ],
+      [
+        56,
+        24
+      ],
+      [
+        89,
+        24
+      ],
+      [
+        97,
+        24
+      ],
+      [
+        111,
+        24
+      ]
+    ],
+    "chuyen_nhanh_theo_chuong": [
+      2,
+      3,
+      2,
+      4,
+      3
+    ],
+    "nguoi_vot_theo_chuong": [
+      2,
+      2,
+      1,
+      0,
+      0
+    ],
+    "tau_moi_ca": [
+      3,
+      4,
+      5,
+      6,
+      6
+    ],
+    "kien_moi_dong_goc": 2,
+    "o_nuoi_theo_chuong": [
+      0,
+      4,
+      6,
+      9,
+      9
+    ],
+    "oxy_theo_bac": [
+      330,
+      450,
+      600,
+      780,
+      1000
+    ],
+    "tui_theo_bac": [
+      80,
+      100,
+      126,
+      168,
+      216
+    ],
+    "du_tru_ve": 0.15,
+    "du_tru_don": 0.1,
+    "ti_le_lam_viec_khi_day_tui": 0.65,
+    "phut_ca_cang": [
+      3.17,
+      3.47,
+      3.18,
+      3.87,
+      3.87
+    ],
+    "phut_chuan_bi_cuoi_ngay": 3,
+    "he_so_ngay_coop_moi_nguoi": 0.05,
+    "ti_le_tui_khi_ngat": 0.8,
+    "giam_ngat_coop": 0.5,
+    "du_tru_vat_lieu_khi_con_xay": 0.4,
+    "nang_suat_chuyen_nhanh": 0.5,
+    "k_coop": [
+      0.3,
+      0.25,
+      0.38,
+      0.38,
+      0.38
+    ],
+    "k_coop_cu": 0.13,
+    "kich_ban": {
+      "tệ": {
+        "day_tui": 0.75,
+        "mat_do": 0.9,
+        "p_ngat": 0.25,
+        "ky_nang_ca": 0.7,
+        "p_nhanh": 0.1,
+        "phut_them": 1.15
+      },
+      "trung bình": {
+        "day_tui": 0.9,
+        "mat_do": 1.0,
+        "p_ngat": 0.15,
+        "ky_nang_ca": 0.85,
+        "p_nhanh": 0.3,
+        "phut_them": 1.0
+      },
+      "tốt": {
+        "day_tui": 1.0,
+        "mat_do": 1.15,
+        "p_ngat": 0.07,
+        "ky_nang_ca": 0.95,
+        "p_nhanh": 0.6,
+        "phut_them": 0.9
+      }
+    },
+    "phan_tich": {
+      "giay_di_giua_hai_diem": 6,
+      "so_con_moi_phat_luoi": [
+        1,
+        2,
+        3
+      ]
+    },
+    "lich_su_doi_so": [
+      [
+        "Hệ số tài nguyên co-op k(N), phần thêm mỗi người",
+        "map.md 3.8 (gd-world)",
+        "0,13",
+        "Nhóm 4 mỗi người nhặt 35% so với một mình (log 50). Sim GD-028 với 0,47: mỗi người 60%, nhóm 4 hết game bằng 57% thời gian một mình (trung bình)",
+        "0,47 (gd-world đã đổi ở 1b, sim xác nhận)",
+        "Giữ"
+      ],
+      [
+        "Điểm cảng mỗi đơn đủ",
+        "tram-va-cang.md mục 3 (gd-quan)",
+        "2, thêm 1 khi nhanh, mọi số người",
+        "Điểm không theo quy mô đơn thì nhóm 4 hết game bằng 82% thời gian một mình, trượt mục tiêu 45 đến 60%",
+        "2 và 1 nhân (N cộng 1) chia 2, làm tròn lên (gd-quan đã nhận)",
+        "gd-quan"
+      ],
+      [
+        "Quy mô đơn một ca",
+        "tram-va-cang.md (gd-quan): 3 tàu, 1 đến 4 dòng, 2 kiện mỗi dòng gốc",
+        "Đơn đòi 146% (chương 1) tới 440% (chương 2) lượng nhặt một ngày",
+        "Hạng cảng chặn mọi chương, chương 2 và 3 kéo dài trên 6 giờ, Tally dư hàng chục lần",
+        "Giá trị đơn bằng 60% hai chuyến đầy túi (gd-quan đã nhận). Số kiện theo phương án B: kiện nhỏ hơn, khoảng 10 kiện mỗi ca một người",
+        "gd-quan, gd-items"
+      ],
+      [
+        "Ngưỡng điểm Hạng cảng 2 tới 8",
+        "tram-va-cang.md mục 3 (gd-quan)",
+        "8, 20, 36, 56, 80, 108, 140, rồi 18, 45, 85, 130, 185, 245, 310 sau sim ca cảng GD-030",
+        "Bản sau đặt theo ca đủ hàng (8,5 điểm một ca) nên chương 1 kéo tới 2,9 giờ vì cảng mở muộn và kho chưa đủ hàng",
+        "10, 20, 45, 70, 100, 135, 195 (gd-quan đã nhận)",
+        "gd-quan"
+      ],
+      [
+        "Vật liệu sửa khoang chương 1",
+        "vat-pham.md mục 2.7 (gd-items)",
+        "145 GTĐ",
+        "Vòng 3 thử nhân 0,7: chương 1 xuống 1,9 giờ. Sau khi đổi ngưỡng Hạng cảng thì chương 1 vào mục tiêu mà không cần",
+        "145 GTĐ, không đổi",
+        "Giữ"
+      ],
+      [
+        "Đơn vị quy đổi GTĐ sang Tally",
+        "chưa có",
+        "-",
+        "Cần một đơn vị để Shop là bảng giá duy nhất",
+        "10 Tally mỗi GTĐ",
+        "gd-economy"
+      ],
+      [
+        "Giá Tally theo chương",
+        "chưa có",
+        "Vòng 1: B1 600 nhân 2,4 mũ (chương trừ 1)",
+        "Tally dư 30 đến 100 lần chi, Hạng cảng chặn, cả game 22 giờ",
+        "Vòng 3: ngân sách chương bằng β nhân ngày mục tiêu nhân thu nhập tham chiếu một ngày, β 0,40",
+        "gd-economy"
+      ],
+      [
+        "Lưới cuộn mỗi mẻ RCP-132, mở ở",
+        "vat-pham.md (gd-items)",
+        "2 mỗi mẻ, chương 2",
+        "Bắt bằng lưới lỗ so với hạ khi trúng 1 con",
+        "4 mỗi mẻ, chương 1 (gd-items, 1b), rồi 10 mỗi mẻ (gd-items, sau QA). Sim xác nhận ròng 1,28 lần trở lên",
+        "Giữ"
+      ],
+      [
+        "Thưởng đủ đơn, thưởng nhanh",
+        "tram-va-cang.md (gd-quan)",
+        "25%, 15%",
+        "Không thấy vấn đề",
+        "25%, 15%",
+        "Giữ"
+      ],
+      [
+        "Giờ mục tiêu chương 1 trong công thức ngân sách",
+        "GD-028",
+        "1,75",
+        "Sau khi dùng lượng nhặt của sim chuyến gd-tech (có Driftlife, cao hơn 1,4 đến 2 lần), chương 1 dài 2,24 giờ với β 0,40",
+        "1,5, chương 1 đo được trong 1,5 đến 2 giờ",
+        "gd-economy"
+      ],
+      [
+        "Túi và bình bậc 0 tới 4",
+        "nguoi-choi.md (gd-character), map.md (gd-world)",
+        "Túi 20, 30, 42, 56, 72. Bình 300, 400, 520, 650, 800",
+        "Chuyến kết thúc vì đầy túi sau 1,5 phút ở chương 1 (sim GD-030)",
+        "Túi 80, 100, 126, 168, 216. Bình 330, 450, 600, 780, 1000 (GDM chốt, log 54)",
+        "gd-character, gd-world"
+      ],
+      [
+        "Hệ số ngân sách β và giờ mục tiêu chương 1 trong công thức",
+        "GD-028",
+        "0,40 và 1,5",
+        "Thang túi mới làm thu nhập một chuyến tăng 3 đến 4 lần, cả game còn 9,5 giờ với β 0,40",
+        "0,60 và 1,25 (GDM chốt, log 55)",
+        "gd-economy"
+      ],
+      [
+        "Hệ số k(N), phần thêm mỗi người",
+        "map.md 3.8 (gd-world)",
+        "0,47 mọi dải",
+        "Với thang túi mới, Oxy là giới hạn từ chương 2, mỗi người nhóm 4 nhặt 73 đến 91%, nhóm 4 hết chương 1 ở 31%, chương 2 ở 29%",
+        "0,30 ở Gần, 0,25 ở Giữa, 0,38 ở Xa (gd-world, sau QA GD-026)",
+        "gd-world"
+      ],
+      [
+        "Hệ số ngân sách β",
+        "GD-028",
+        "0,60 (GDM chốt, log 55)",
+        "Sau sửa QA GD-031 (cảng mở ngày 4, T-VO 1 sang chương 2, giá theo ID gd-items, chặn sức chở ca cảng, sàn ngày truyện, kiện chương 4 và 5): giữ 0,60 thì chương 1 2,33 giờ, cả game 18,9 giờ (gd-qa đo)",
+        "0,40, cả game trong 12 đến 15 giờ (bảng 8.1). GDM nhận lại ở log 70",
+        "gd-economy"
+      ],
+      [
+        "Ngày mở ca cảng chương 1 trong sim",
+        "GD-028",
+        "Ngày đầu đủ vật liệu 5 khoang (thường ngày 1)",
+        "QA GD-031: trái chuỗi vớt Thông dịch viên",
+        "Từ ngày 4 (tram-va-cang.md, mốc C1.8)",
+        "gd-economy"
+      ],
+      [
+        "T-VO là cổng chương",
+        "GD-028",
+        "T-VO bậc c chặn qua chương c, vật liệu 25, 45, 81",
+        "QA GD-031: trái vat-pham.md (UPG-ENV-1 mở chương 2, vật liệu 48,1 / 90,6 / 126,6)",
+        "Không chặn chương, mua đầu chương mở nó, vật liệu theo bảng UPG",
+        "gd-economy"
+      ],
+      [
+        "Sàn ngày truyện mỗi chương trong sim",
+        "cot-truyen.md mục 5 (gd-story)",
+        "Không có, chỉ đếm đêm chờ người vớt",
+        "QA GD-031 lỗi 4, 5 của truyện: nhóm xong chương 1 ở ngày 2 đến 4, dưới sàn 6",
+        "7, 5, 8, 3, 3 ngày (gd-story bản cuối sau QA vòng 2)",
+        "gd-story"
+      ],
+      [
+        "GTĐ một kiện",
+        "vat-pham.md (gd-items)",
+        "Chương 1 khoảng 2,5",
+        "Đơn một ca cần 54 kiện, ca chở khoảng 10",
+        "Chương 1 khoảng 13,4, chương 2 khoảng 41, chương 3 khoảng 102 (gd-items đã đổi). Chương 4 và 5 chưa có kiện riêng",
+        "gd-items"
+      ],
+      [
+        "Thu một ca trong sim",
+        "GD-028",
+        "Theo đơn, không chặn sức chở",
+        "QA GD-031 lỗi chặn",
+        "Chặn bằng số kiện sim ca cảng giao được nhân GTĐ một kiện. β dò lại 0,30, rồi 0,35 (sàn chương 5 còn 3 ngày), rồi 0,40 (có kiện chương 4 và 5)",
+        "gd-economy"
+      ],
+      [
+        "Kiện chương 4 và 5",
+        "vat-pham.md (gd-items)",
+        "Dùng kiện dải Xa, khoảng 102 GTĐ",
+        "Đơn chương 4, 5 cần khoảng 150 và 199 GTĐ mỗi kiện, chương 4 kéo dài",
+        "CGO-411 161,0 và CGO-511 193,2 GTĐ (gd-items thêm)",
+        "gd-items"
+      ],
+      [
+        "Mục tiêu nhóm 4 so với một mình, hết game",
+        "khung mục 9 (GDM)",
+        "45 đến 60%",
+        "Sàn ngày truyện 26 ngày không đổi theo số người, đo được 72%",
+        "60 đến 75%, giữ sàn ngày truyện (GDM, log 69)",
+        "GDM"
+      ],
+      [
+        "Mục tiêu sống so với hạ",
+        "khung mục 9 (GDM)",
+        "1,5 đến 2 lần",
+        "Lưới trúng 1 con của loài rẻ cho 1,28 lần",
+        "1,2 đến 2 lần cho cỡ S và M, sau khi trừ vật tiêu hao (khung sửa lần 5)",
+        "GDM"
+      ]
+    ],
+    "beta_ngan_sach": 0.4,
+    "dong_moi_don_cu": [
+      1.5,
+      2.0,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "ti_le_cang": 0.6,
+    "he_so_vat_lieu_sua_de_xuat": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "diem_theo_quy_mo_don": true,
+    "sim_chuyen_gd_tech": "projects/game-moi/tools/ket-qua/sim-chuyen.md",
+    "dung_nguong_de_xuat": false,
+    "ti_le_hang": 0.7,
+    "ngay_chua_co_cang": 3,
+    "tran_chuong_cua_hang": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      3,
+      3,
+      4
+    ],
+    "dung_gtd_gd_tech": true,
+    "he_so_don_coop": [
+      0.6,
+      0.6,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "chuyen_du_phong": {
+      "nguon": "gd-world, map.md mục 3.9 (sim GD-030 trên bản sao tham số)",
+      "so": {
+        "1": [
+          4.2,
+          99.1
+        ],
+        "2": [
+          5.4,
+          318.1
+        ],
+        "3": [
+          6.6,
+          801.2
+        ],
+        "4": [
+          8.3,
+          1137.1
+        ],
+        "5": [
+          10.6,
+          1540.1
+        ]
+      }
+    },
+    "uu_tien_mua": [
+      "ENG",
+      "VO"
+    ],
+    "ngay_mo_cang_ch1": 4,
+    "vl_mo_cang_ch1": 98,
+    "he_so_thieu_vo": 0.27,
+    "nuoi_dai": [
+      [
+        "Gần",
+        "BIO-111",
+        "FED-101"
+      ],
+      [
+        "Giữa",
+        "BIO-212",
+        "FED-201"
+      ],
+      [
+        "Xa",
+        "BIO-311",
+        "FED-301"
+      ]
+    ],
+    "sim_ca_cang_gd_tech": "projects/game-moi/tools/ket-qua/sim-ca-cang.md",
+    "kien_muc_tieu_moi_ca": 10,
+    "chuong_mo_thieu": {
+      "UPG-NET-2": 2
+    },
+    "mua_them": [
+      [
+        "KH07-C2",
+        "Kệ kiện cấp 2 (cảng cấp 2)",
+        "KE_KIEN_2",
+        1
+      ],
+      [
+        "KH05-C2",
+        "Xưởng cấp 2",
+        "KHOANG_CAP",
+        2
+      ],
+      [
+        "BPR-103",
+        "Bản thiết kế Máy quét xung",
+        "BPR",
+        2
+      ],
+      [
+        "BPR-105",
+        "Bản thiết kế Máy cắt thân tàu (cũng có ở hòm Station Flint)",
+        "BPR",
+        3
+      ],
+      [
+        "BPR-106",
+        "Bản thiết kế tiện ích cảng",
+        "BPR",
+        3
+      ],
+      [
+        "KHxx-C3",
+        "Cấp 3 các khoang (KHxx-C3 từng khoang, giá ở đây là tổng, gd-quan chốt danh sách khoang)",
+        "KHOANG_CAP",
+        4
+      ]
+    ],
+    "ghi_chu_nguon": {
+      "ngay_mo_cang_ch1": "tram-va-cang.md: ca cảng đầu ở mốc C1.8, khoảng ngày 4 (Thông dịch viên vớt ở lần 2 Station Cinder rồi tỉnh sau một đêm)",
+      "vl_mo_cang_ch1": "vat-pham.md mục 2.7: tổng vật liệu khoang neo, kho cấp 2, xưởng, khoang liên lạc, cảng bến 1",
+      "he_so_thieu_vo": "map.md mục 3.2: thiếu 1 cấp môi trường còn khoảng 27% thời gian làm việc",
+      "chuyen_nhanh_theo_chuong": "map.md mục 2.10: Cinder 2 lần, Wick và Lantern 3, Flint 2, Cradle 4, Warden Rig 3",
+      "nguoi_vot_theo_chuong": "khung K12, tram-va-cang.md 2.7",
+      "san_ngay_truyen": "cot-truyen.md mục 5 (gd-story): sàn ngày của chuỗi mốc truyện mỗi chương, không đổi theo số người",
+      "san_ngay_truyen_ha": "cot-truyen.md mục 5: bốn chỗ hạ sàn gd-story đề xuất, chưa áp",
+      "kien_theo_chuong": "vat-pham.md: CGO-411 Kiện linh kiện Cradle (chương 4), CGO-511 Kiện linh kiện Warden (chương 5)",
+      "tau_theo_chuong": "tram-va-cang.md bảng loại tàu"
+    },
+    "giay_lam_viec_ch1_tham_chieu": 190,
+    "san_ngay_truyen": [
+      7,
+      5,
+      8,
+      3,
+      3
+    ],
+    "tran_kien_hien_tai": true,
+    "san_ngay_truyen_ha": [
+      6,
+      4,
+      6,
+      3,
+      3
+    ],
+    "kien_theo_chuong": {
+      "4": [
+        "CGO-411"
+      ],
+      "5": [
+        "CGO-511"
+      ]
+    },
+    "tau_theo_chuong": {
+      "1": "TA01, TA02 (Hạng 2)",
+      "2": "TA03, TA04, TA05",
+      "3": "TA06, TA07, TA08, TA09 (Hạng 6), TA10",
+      "4": "Không thêm loại tàu",
+      "5": "Không thêm loại tàu"
+    }
+  }
+}

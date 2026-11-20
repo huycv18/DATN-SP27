@@ -1,14 +1,67 @@
-# Số hiện hành game mới
+# Số hiện hành game mới (mã tạm EMBER)
 
-Một nơi duy nhất cho số và phạm vi Lead đã chốt. Các vai đọc ở đây, không lấy từ tin nhắn. Cột Nguồn trỏ mục DECISIONS.
+Một nơi duy nhất cho số và phạm vi đã chốt. Các vai đọc ở đây, không lấy từ tin nhắn. Cột Nguồn trỏ mục DECISIONS, dòng log GDM hoặc file sim.
+Nhãn: (L) Lead chốt bằng lời. (G) GDM chốt theo ủy quyền của Lead 2026-11-20, có dòng trong `log-gdm-tu-quyet.md`, Lead đổi được. (S) số do sim in ra, đổi số thì chạy lại sim, không sửa tay.
 
-Cập nhật lần cuối: 2026-11-19.
+Cập nhật lần cuối: 2026-11-20, sau QA GD-031 vòng cuối và đợt 4.
+
+## Ràng buộc nền
 
 | Mục | Giá trị hiện hành | Nguồn |
 |---|---|---|
-| Engine / nền tảng | Unity, PC, 1 người chơi, để mở đa nền tảng và Multiplayer | DECISIONS 2026-11-19, concept.md bước 0 |
-| Art | 2D vector, có thể 2.5D (chưa chốt) | như trên |
-| Kinh doanh | Bán đứt, không gói bán | như trên |
-| Thể loại | Hành động nhập vai phiêu lưu + mô phỏng quản lý | như trên |
-| Nhóm | 1 GD, 4 dev, 1 artist 2D | như trên |
-| Concept, luật, số cân bằng | Chưa có | concept.md bước 1 trở đi |
+| Engine / nền tảng | Unity, PC, để mở đa nền tảng | (L) DECISIONS 2026-11-19 |
+| Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, cả hai là cách chơi chính. MVP có co-op 2 người | (L) DECISIONS 2026-11-20. MVP: (G) log 28 |
+| Art | 2D vector, có thể 2.5D (chưa chốt). Góc nhìn ngang ở mọi nơi | (L). Góc nhìn: (G) log 9 |
+| Kinh doanh | Bán đứt, không gói bán | (L) |
+| Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý | (L) |
+| Nhóm | 1 GD, 4 dev, 1 artist 2D | (L) |
+| Sheet GDD | https://docs.google.com/spreadsheets/d/1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs (Lead đưa 2026-11-20). 25 tab theo khuôn indie, 17 tab `v0.1` cũ đã ẩn | (L) DECISIONS 2026-11-20 Sheet GDD |
+
+## Luật và nội dung
+
+| Mục | Giá trị hiện hành | Nguồn |
+|---|---|---|
+| Khung game | `gdd/00-khung-game.md`: pillar P1 đến P4, bối cảnh B1 đến B11, luật K1 đến K27, co-op C1 đến C10, 5 chương | (L) và (G), log 1 đến 80 |
+| GDD hệ thống | 10 file ở `gdd/he-thong/` | Bảng hệ thống ở khung mục 8 |
+| Điểm các vai tự quyết | `log-vai-tu-quyet.md` (237 điểm, sinh bằng `tools/gom-tu-quyet.py`) | Từng GDD |
+| Cốt truyện | `gdd/he-thong/cot-truyen.md`. Phản diện The Wardens, vụ tai nạn The Scattering, Solace là thông tin mồi, kết mở | (L) DECISIONS 2026-11-20. Tên: (G) log 4, 75 |
+| Tên game | Chưa có, mã tạm EMBER. Đề xuất: Cradlefall, Wakebound, Breathline | Chờ Lead chọn |
+| Đồng tiền | Tally, duy nhất | (L) vấn đề 7. (G) log 17 |
+| Nửa chơi tay thứ hai | Ca cảng giao thương | (L) DECISIONS 2026-11-20 |
+| Một ngày | Tối đa 2 chuyến, rồi ca cảng, rồi cuối ngày. Tự lưu sau mỗi chuyến, sau ca cảng, lúc ngủ | (G) log 12, 62, 65 |
+| Phạm vi MVP | Chương 1 trọn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến có 1 loại kiện phải chế (CGO-113) và 1 loại hàng Driftlife sống, bắt sống cỡ S bằng lưới, 1 boss nhỏ, co-op 2 người | (G) log 29, 49, 67. Lead nên xem lại vì chạm thời hạn |
+
+## Số cân bằng
+
+| Mục | Giá trị hiện hành | Nguồn |
+|---|---|---|
+| Túi bậc 0 đến 4 (Khối) | 80, 100, 126, 168, 216 | (G) log 54, sim chuyến |
+| Bình Oxy bậc 0 đến 4 | 330, 450, 600, 780, 1000. 1 Oxy hao trong 1 giây ở mức nền | (G) log 54 |
+| Ngạt | 12 giây chờ cứu, sau đó bị kéo về và giữ 1 món. Chia Oxy không xuống dưới sàn 20 | `nguoi-choi.md`, (G) log 11, 41, 57 |
+| Oxy hồi từ vật tiêu hao | Không quá 25% dung lượng bình mỗi chuyến, tối đa 2 bình Oxy nhỏ | (G) log 72 |
+| Hệ số co-op lượng nhặt k(N) | 1 cộng a nhân (N trừ 1). a bằng 0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa | (S) `map.md` 3.8 |
+| Hệ số kiện co-op ở ca cảng | 0,6 ở chương 1 và 2, 0,4 ở chương 3 đến 5 | (S) `tram-va-cang.md`, sim ca cảng |
+| Tally mỗi đơn vị giá trị (GTĐ) | 10 | `kinh-te-tien-trinh.md` 2.1 |
+| Thưởng đủ đơn, thưởng nhanh | 25%, 15% | `kinh-te-tien-trinh.md` |
+| Hệ số ngân sách kinh tế | 0,40 | (S), (G) log 70 |
+| Số ngày tối thiểu của chuỗi mốc truyện, chương 1 đến 5 | 7, 5, 8, 3, 3 (tổng 26) | `cot-truyen.md` mục 5 |
+| Giá, công thức, chỉ số loài, tham số ca cảng | Ở GDD của vai giữ hệ thống. Giá chỉ ở `kinh-te-tien-trinh.md` mục 3 (tab Shop, Upgrade) | Từng GDD |
+
+## Kết quả sim (S), bản chạy 2026-11-20
+
+Chạy lại: `node projects/game-moi/tools/selftest.mjs`, các lệnh sim trong `projects/game-moi/tools/README.md`, `python projects/game-moi/sim/economy/sim-kinh-te.py`.
+
+| Chỉ số | Đo được | Mục tiêu khung mục 9 | Đạt |
+|---|---|---|---|
+| Chương 1, một người, kịch bản trung bình | 1,82 giờ | 1,5 đến 2 giờ | Có |
+| Cả game, một người, kịch bản trung bình | 13,4 giờ | 12 đến 15 giờ | Có |
+| Nhóm 4 hết game so với một mình | 73% thời gian | 60 đến 75% | Có |
+| Mỗi người nhóm 4 nhặt so với một mình | Từ 61% | Từ 60% | Có |
+| Thưởng trong tổng thu Tally | 20% | 15 đến 25% | Có |
+| Sống so với hạ, cỡ S, sau khi trừ vật tiêu hao | 1,28 đến 1,90 lần | 1,2 đến 2 lần | Có |
+| Đơn giao đủ ở ca cảng chương 1, 1 đến 4 người | 92, 93, 93, 80% | 70 đến 95% | Có |
+| Phút một chuyến, một người, chương 1 và chương 5 | 4,4 và 10,4 phút | 4 đến 6 và 10 đến 12 phút | Có |
+| Tỉ lệ bị kéo về, người chơi cẩn thận, chương 1 đến 5 | 1, 1, 3, 0, 0% | Dưới 5% | Có |
+| Tỉ lệ bị kéo về, người chơi tham, chương 1 đến 5 | 10, 36, 41, 29, 13% | 15 đến 40% | Chương 2, 4 đạt. Chương 1, 3, 5 lệch 1 đến 5 điểm, chấp nhận, đo lại ở playtest |
+
+Chưa đo được bằng sim, phải chờ build: cảm giác điều khiển, độ khó thật của boss, tỉ lệ bị kéo về của người chơi thật, người chơi có hiểu ca cảng không.

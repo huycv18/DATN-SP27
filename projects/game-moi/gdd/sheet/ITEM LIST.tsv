@@ -1,0 +1,153 @@
+Item ID	Item name	Type	Nguồn nhận	Nguồn tiêu	Note
+RES-101	Mảnh vỏ Cradle	Phế liệu	SLV-101, SLV-104, SLV-105, SLV-111	RCP-101, RCP-111, RCP-205, Sửa khoang (tram-va-cang.md mục 2.6c)	Thường, Khối 1, Gần, MVP
+RES-102	Dây cáp đứt	Phế liệu	SLV-101, SLV-104, SLV-111	RCP-102, RCP-104, RCP-112, RCP-205, UPG-BAG-1, Sửa khoang (tram-va-cang.md mục 2.6c)	Thường, Khối 1, Gần, MVP
+RES-103	Quặng sắt thiên thạch	Khoáng	SLV-102, SLV-112	RCP-103, RCP-113, Sửa khoang (tram-va-cang.md mục 2.6c)	Thường, Khối 2, Gần, MVP
+RES-104	Bo mạch cháy	Linh kiện	SLV-104, SLV-111, SLV-112, SLV-203	RCP-104, RCP-205, Sửa khoang (tram-va-cang.md mục 2.6c)	Ít gặp, Khối 1, Gần, MVP
+RES-105	Băng nước đục	Băng	SLV-103	RCP-105, RCP-114, Sửa khoang (tram-va-cang.md mục 2.6c)	Thường, Khối 2, Gần, MVP
+RES-106	Đồ Trái Đất vụn	Phế liệu	SLV-104, SLV-111, SLV-112	RCP-116	Ít gặp, Khối 1, Gần, MVP
+RES-201	Hợp kim nóng chảy	Phế liệu	SLV-203, SLV-204	RCP-151, Sửa khoang (tram-va-cang.md mục 2.6c)	Ít gặp, Khối 1, Giữa, Sau MVP
+RES-202	Quặng cobalt	Khoáng	SLV-201	RCP-152, Sửa khoang (tram-va-cang.md mục 2.6c)	Ít gặp, Khối 2, Giữa, Sau MVP
+RES-203	Băng tinh	Băng	SLV-202	RCP-154, Sửa khoang (tram-va-cang.md mục 2.6c)	Ít gặp, Khối 2, Giữa, Sau MVP
+RES-204	Lõi cảm biến	Linh kiện	SLV-203	RCP-153, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 1, Giữa, Sau MVP
+RES-301	Hợp kim Warden	Phế liệu	SLV-303, Đơn vị The Warden hạ được (WD-01..04, gd-combat)	RCP-161, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 1, Xa, Sau MVP
+RES-302	Kính nebula	Khoáng	SLV-301	RCP-162, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 2, Xa, Sau MVP
+RES-303	Băng plasma	Băng	SLV-302	RCP-163	Hiếm, Khối 2, Xa, Sau MVP
+RES-304	Lõi năng lượng nguội	Linh kiện	SLV-303	RCP-164, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 1, Xa, Sau MVP
+RES-305	Linh kiện Warden	Linh kiện	WD-01..04 và boss BS-3 (gd-combat)	RCP-521, Lắp động cơ chính giai đoạn 4 và 5	Hiếm, Khối 1, Xa, Sau MVP
+RES-401	Linh kiện Cradle	Linh kiện	Boss BS-4 và map nhánh Bên trong Cradle (gd-combat, gd-world)	RCP-421, UPG-OXY-4, UPG-BAG-4, UPG-ENV-3, Lắp động cơ chính giai đoạn 4 và 5	Đặc biệt, Khối 1, Cradle, Sau MVP
+SMP-101	Mô sinh học Gần	Mẫu	Mọi loài Gần khi hạ	RCP-132, RCP-171, RCP-115	Thường, Khối 1, Gần, MVP
+SMP-201	Mô sinh học Giữa	Mẫu	Mọi loài Giữa khi hạ	RCP-271	Ít gặp, Khối 1, Giữa, Sau MVP
+SMP-301	Mô sinh học Xa	Mẫu	Mọi loài Xa khi hạ	RCP-371	Hiếm, Khối 1, Xa, Sau MVP
+SMP-111	Đặc sản DL-G01 Driftmoth	Mẫu	DL-G01 khi hạ (xác suất 0,3)	RCP-133, RCP-124	Ít gặp, Khối 1, Gần, MVP
+SMP-112	Đặc sản DL-G02 Skitter Ray	Mẫu	DL-G02 khi hạ (xác suất 0,4)	RCP-124	Ít gặp, Khối 1, Gần, MVP
+SMP-113	Đặc sản DL-G04 Sting Krill	Mẫu	DL-G04 khi hạ (xác suất 0,2 mỗi con)	RCP-134, RCP-124	Ít gặp, Khối 1, Gần, MVP
+SMP-114	Đặc sản DL-G05 Arc Eel	Mẫu	DL-G05 khi hạ (xác suất 0,6)	RCP-135, RCP-124	Ít gặp, Khối 1, Gần, MVP
+SMP-115	Đặc sản DL-G03 Barnacle Maw	Mẫu	DL-G03 khi hạ (xác suất 0,6)	RCP-124	Ít gặp, Khối 1, Gần, Sau MVP
+SMP-212	Đặc sản DL-M02 Lumen Jelly	Mẫu	DL-M02 khi hạ (xác suất 0,4)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
+SMP-213	Đặc sản DL-M03 Ore Grazer	Mẫu	DL-M03 khi hạ (xác suất 0,6)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
+SMP-214	Đặc sản DL-M04 Needle Shoal	Mẫu	DL-M04 khi hạ (xác suất 0,15 mỗi con)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
+SMP-215	Đặc sản DL-M05 Gulper	Mẫu	DL-M05 khi hạ (xác suất 1)	RCP-224	Hiếm, Khối 1, Giữa, Sau MVP
+SMP-311	Đặc sản DL-X01 Prism Wisp	Mẫu	DL-X01 khi hạ (xác suất 0,5)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
+SMP-312	Đặc sản DL-X02 Mirror Mantis	Mẫu	DL-X02 khi hạ (xác suất 0,6)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
+SMP-313	Đặc sản DL-X03 Storm Siphon	Mẫu	DL-X03 khi hạ (xác suất 1)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
+SMP-314	Đặc sản DL-X04 Brood Mother	Mẫu	DL-X04 khi hạ (xác suất 1)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
+SMP-315	Đặc sản DL-X05 Brood Spawn	Mẫu	DL-X05 khi hạ (xác suất 0,2 mỗi con)	RCP-324	Hiếm, Khối 1, Xa, Sau MVP
+SMP-191	Hạch thủ lĩnh Gần	Mẫu	BS-1 Scrapmaw bị hạ, cộng 5 SMP-101 (gd-combat)	Sửa khoang theo chương	Đặc biệt, Khối 2, Gần, MVP
+SMP-192	Mẫu boss Gần	Mẫu	BS-1 Scrapmaw bị xua đi, cộng 2 SMP-101 (gd-combat)	Sửa khoang theo chương, thay được SMP-191	Đặc biệt, Khối 2, Gần, MVP
+SMP-291	Đặc sản Tempest Gulper	Mẫu	BS-2 bị hạ, cộng phế liệu nó đã nuốt (gd-combat)	Sửa khoang theo chương	Đặc biệt, Khối 2, Giữa, Sau MVP
+SMP-292	Mẫu boss Giữa	Mẫu	BS-2 bị xua đi (gd-combat)	Sửa khoang theo chương, thay được SMP-291	Đặc biệt, Khối 2, Giữa, Sau MVP
+LIV-111	Mẫu sống DL-G01 Driftmoth	Mẫu sống	Bắt sống DL-G01 bằng Súng lưới (K9, từ chương 1)	RCP-126, RCP-301, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, MVP
+BIO-111	Sản phẩm nuôi DL-G01 Driftmoth	Sản phẩm nuôi	Khoang nuôi DL-G01 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-125	Thường, Khối 1, Gần, Sau MVP
+LIV-112	Mẫu sống DL-G02 Skitter Ray	Mẫu sống	Bắt sống DL-G02 bằng Súng lưới (K9, từ chương 1)	RCP-126, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, MVP
+BIO-112	Sản phẩm nuôi DL-G02 Skitter Ray	Sản phẩm nuôi	Khoang nuôi DL-G02 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-125	Thường, Khối 1, Gần, Sau MVP
+LIV-113	Mẫu sống DL-G04 Sting Krill	Mẫu sống	Bắt sống DL-G04 bằng Súng lưới (K9, từ chương 1)	RCP-126, RCP-302, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, MVP
+BIO-113	Sản phẩm nuôi DL-G04 Sting Krill	Sản phẩm nuôi	Khoang nuôi DL-G04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-125	Thường, Khối 1, Gần, Sau MVP
+LIV-114	Mẫu sống DL-G05 Arc Eel	Mẫu sống	Bắt sống DL-G05 bằng Súng gây mê rồi Phao kéo (K9, chương 2, miễn choáng)	RCP-128, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, Sau MVP
+BIO-114	Sản phẩm nuôi DL-G05 Arc Eel	Sản phẩm nuôi	Khoang nuôi DL-G05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-125	Thường, Khối 1, Gần, Sau MVP
+LIV-115	Mẫu sống DL-G03 Barnacle Maw	Mẫu sống	Bắt sống DL-G03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-128, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, Sau MVP
+BPS-211	Mẫu sinh thiết DL-M01 Shepherd Whale	Mẫu sinh thiết	Kim sinh thiết trên DL-M01 (loài L, chương 2)	RCP-224, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Giữa, Sau MVP
+LIV-212	Mẫu sống DL-M02 Lumen Jelly	Mẫu sống	Bắt sống DL-M02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
+BIO-212	Sản phẩm nuôi DL-M02 Lumen Jelly	Sản phẩm nuôi	Khoang nuôi DL-M02 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-225	Ít gặp, Khối 1, Giữa, Sau MVP
+LIV-213	Mẫu sống DL-M03 Ore Grazer	Mẫu sống	Bắt sống DL-M03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
+BIO-213	Sản phẩm nuôi DL-M03 Ore Grazer	Sản phẩm nuôi	Khoang nuôi DL-M03 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-225	Ít gặp, Khối 1, Giữa, Sau MVP
+LIV-214	Mẫu sống DL-M04 Needle Shoal	Mẫu sống	Bắt sống DL-M04 bằng Súng lưới (K9, từ chương 1)	RCP-226, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
+BIO-214	Sản phẩm nuôi DL-M04 Needle Shoal	Sản phẩm nuôi	Khoang nuôi DL-M04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-225	Ít gặp, Khối 1, Giữa, Sau MVP
+BPS-215	Mẫu sinh thiết DL-M05 Gulper	Mẫu sinh thiết	Kim sinh thiết trên DL-M05 (loài L, chương 2)	RCP-224, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Giữa, Sau MVP
+LIV-311	Mẫu sống DL-X01 Prism Wisp	Mẫu sống	Bắt sống DL-X01 bằng Súng lưới (K9, từ chương 1)	RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
+BIO-311	Sản phẩm nuôi DL-X01 Prism Wisp	Sản phẩm nuôi	Khoang nuôi DL-X01 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-325	Ít gặp, Khối 1, Xa, Sau MVP
+LIV-312	Mẫu sống DL-X02 Mirror Mantis	Mẫu sống	Bắt sống DL-X02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)	RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
+BPS-313	Mẫu sinh thiết DL-X03 Storm Siphon	Mẫu sinh thiết	Kim sinh thiết trên DL-X03 (loài L, chương 2)	RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Xa, Sau MVP
+BPS-314	Mẫu sinh thiết DL-X04 Brood Mother	Mẫu sinh thiết	Kim sinh thiết trên DL-X04 (loài L, chương 2)	RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat)	Hiếm, Khối 1, Xa, Sau MVP
+LIV-315	Mẫu sống DL-X05 Brood Spawn	Mẫu sống	Bắt sống DL-X05 bằng Súng lưới (K9, từ chương 1)	RCP-326, Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
+BIO-315	Sản phẩm nuôi DL-X05 Brood Spawn	Sản phẩm nuôi	Khoang nuôi DL-X05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	RCP-325	Ít gặp, Khối 1, Xa, Sau MVP
+COM-101	Tấm thép nén	Vật liệu chế	RCP-101	RCP-131, RCP-134, RCP-121, RCP-203, RCP-204, RCP-208, UPG-OXY-1, UPG-BAG-1, UPG-THR-1, UPG-MIN-2, UPG-RACK-1, UPG-BAG-2	Thường, Khối 1, Gần, MVP
+COM-102	Dây dẫn bện	Vật liệu chế	RCP-102	RCP-132, RCP-136, RCP-122, RCP-201, RCP-203, RCP-208, UPG-BAG-1, UPG-MIN-2, UPG-HAR-2, UPG-RACK-1, UPG-NET-2, UPG-BAG-2, UPG-RACK-2	Thường, Khối 1, Gần, MVP
+COM-103	Thỏi sắt	Vật liệu chế	RCP-103	RCP-136, RCP-201, RCP-202, RCP-204, RCP-208, UPG-THR-1, UPG-MIN-2, UPG-HAR-2, UPG-RACK-1, UPG-NET-2, UPG-MIN-3, UPG-RACK-2	Thường, Khối 1, Gần, MVP
+COM-104	Mạch phục hồi	Vật liệu chế	RCP-104	RCP-153, RCP-135, RCP-137, RCP-141, RCP-201, RCP-202, RCP-203, RCP-204, RCP-206, UPG-THR-1, UPG-HAR-2, UPG-NET-2, UPG-BAG-3	Ít gặp, Khối 1, Gần, MVP
+COM-105	Khối nước tinh khiết	Vật liệu chế	RCP-105	RCP-131, RCP-133, RCP-136, RCP-137, RCP-123, RCP-301, RCP-302, RCP-202, RCP-208, UPG-OXY-1, UPG-ENV-1	Thường, Khối 1, Gần, MVP
+COM-201	Tấm hợp kim chịu nhiệt	Vật liệu chế	RCP-151	RCP-221, UPG-OXY-2, UPG-BAG-2, UPG-ENV-1	Ít gặp, Khối 1, Giữa, Sau MVP
+COM-202	Thỏi cobalt	Vật liệu chế	RCP-152	UPG-THR-2, UPG-MIN-3, UPG-HAR-3, UPG-RACK-2	Ít gặp, Khối 1, Giữa, Sau MVP
+COM-203	Mạch cảm biến	Vật liệu chế	RCP-153	RCP-222, RCP-207, UPG-THR-2, UPG-HAR-3, UPG-ENV-2	Hiếm, Khối 1, Giữa, Sau MVP
+COM-204	Dung dịch lạnh	Vật liệu chế	RCP-154	RCP-164, RCP-223, UPG-OXY-2, UPG-ENV-1	Ít gặp, Khối 1, Giữa, Sau MVP
+COM-301	Tấm giáp Warden	Vật liệu chế	RCP-161	RCP-321, RCP-206, UPG-OXY-3, UPG-BAG-3, UPG-ENV-2, UPG-BAG-4, UPG-ENV-3	Hiếm, Khối 1, Xa, Sau MVP
+COM-302	Phiến kính	Vật liệu chế	RCP-162	UPG-OXY-3, UPG-THR-3, UPG-OXY-4, UPG-ENV-3	Hiếm, Khối 1, Xa, Sau MVP
+COM-303	Cuộn plasma	Vật liệu chế	RCP-163	RCP-322, RCP-206, UPG-BAG-3, UPG-OXY-4, UPG-BAG-4	Hiếm, Khối 1, Xa, Sau MVP
+COM-304	Lõi nguội nạp	Vật liệu chế	RCP-164	RCP-323, UPG-THR-3, UPG-ENV-2, UPG-OXY-4, UPG-BAG-4, UPG-ENV-3	Hiếm, Khối 1, Xa, Sau MVP
+CON-101	Bình Oxy nhỏ	Vật tiêu hao	RCP-131	RCP-127, Dùng trong chuyến: hồi 40 điểm Oxy (khoảng 12% bình bậc 0) cho chính người dùng, dùng 1,5 giây, chiếm túi, tối đa 2 bình trong túi mỗi chuyến (trần chống nạp Oxy vô hạn, K22)	Ít gặp, Khối 2, Gần, MVP
+CON-102	Lưới cuộn	Vật tiêu hao	RCP-132	RCP-127, Dùng với Súng lưới	Thường, Khối 1, Gần, MVP
+CON-103	Ống gây mê	Vật tiêu hao	RCP-133	Dùng với Súng gây mê	Thường, Khối 1, Gần, Sau MVP
+CON-104	Keo vá	Vật tiêu hao	RCP-134	Xử lý sự cố rò khí, 1 mỗi lần (K14, gd-quan)	Thường, Khối 1, Gần, Sau MVP
+CON-105	Cầu chì dự phòng	Vật tiêu hao	RCP-135	Xử lý sự cố chập điện, 1 mỗi lần (K14, gd-quan)	Ít gặp, Khối 1, Gần, Sau MVP
+CON-106	Phao kéo	Vật tiêu hao	RCP-136	Gửi Driftlife cỡ M bất lực về kho (gd-combat)	Ít gặp, Khối 1, Gần, Sau MVP
+CON-107	Kim sinh thiết	Vật tiêu hao	RCP-137	Lấy mẫu sinh thiết loài cỡ L (gd-combat)	Ít gặp, Khối 1, Gần, Sau MVP
+FED-101	Thức ăn nuôi Gần	Thức ăn nuôi	RCP-171	Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)	Thường, Khối 1, Gần, Sau MVP
+FED-201	Thức ăn nuôi Giữa	Thức ăn nuôi	RCP-271	Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)	Thường, Khối 1, Giữa, Sau MVP
+FED-301	Thức ăn nuôi Xa	Thức ăn nuôi	RCP-371	Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)	Thường, Khối 1, Xa, Sau MVP
+CGO-101	Kiện phế liệu	Kiện	RCP-111	Bốc lên tàu ở ca cảng (K13)	Thường, Khối mang, Gần, MVP. Cỡ Vừa
+CGO-102	Kiện cáp	Kiện	RCP-112	Bốc lên tàu ở ca cảng (K13)	Thường, Khối mang, Gần, MVP. Cỡ Vừa
+CGO-103	Kiện quặng	Kiện	RCP-113	Bốc lên tàu ở ca cảng (K13)	Thường, Khối mang, Gần, MVP. Cỡ Vừa
+CGO-104	Kiện băng	Kiện	RCP-114	Bốc lên tàu ở ca cảng (K13)	Thường, Khối mang, Gần, MVP. Cỡ Vừa
+CGO-105	Kiện mô sinh học	Kiện	RCP-115	Bốc lên tàu ở ca cảng (K13)	Thường, Khối mang, Gần, MVP. Cỡ Nhỏ
+CGO-109	Kiện đồ Trái Đất	Kiện	RCP-116	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Gần, MVP. Cỡ Nhỏ tàu của người mê đồ Trái Đất hỏi (gd-story, gd-quan)
+CGO-111	Kiện cơ khí	Kiện	RCP-121	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Gần, Sau MVP. Cỡ Nhỏ
+CGO-112	Kiện điện tử	Kiện	RCP-122	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Gần, Sau MVP. Cỡ Nhỏ
+CGO-113	Kiện nước tinh khiết	Kiện	RCP-123	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Gần, MVP. Cỡ Nhỏ
+CGO-106	Kiện đặc sản Gần	Kiện	RCP-124	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Gần, MVP. Cỡ Nhỏ
+CGO-107	Kiện sản phẩm nuôi Gần	Kiện	RCP-125	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Gần, Sau MVP. Cỡ Vừa (HC07)
+CGO-121	Lồng sinh vật sống Gần	Kiện	RCP-126, RCP-128	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Gần, MVP. Cỡ Lớn mang nguyên lồng (HC06), nhớ loài để khớp đơn
+CGO-141	Kiện vật tư	Kiện	RCP-127	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Gần, Sau MVP. Cỡ Vừa (HC08, đồ chế)
+CGO-131	Bản sao dữ liệu	Kiện	RCP-141	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Gần, Sau MVP. Cỡ Nhỏ (HC09), sao từ vật kể chuyện loại dữ liệu, vật gốc ở lại
+CGO-211	Kiện hợp kim	Kiện	RCP-221	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
+CGO-212	Kiện cảm biến	Kiện	RCP-222	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
+CGO-213	Kiện dung dịch lạnh	Kiện	RCP-223	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
+CGO-206	Kiện đặc sản Giữa	Kiện	RCP-224	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
+CGO-207	Kiện sản phẩm nuôi Giữa	Kiện	RCP-225	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
+CGO-221	Lồng sinh vật sống Giữa	Kiện	RCP-226	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Giữa, Sau MVP. Cỡ Lớn
+CGO-311	Kiện giáp	Kiện	RCP-321	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-312	Kiện plasma	Kiện	RCP-322	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-313	Kiện lõi nguội	Kiện	RCP-323	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-306	Kiện đặc sản Xa	Kiện	RCP-324	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-307	Kiện sản phẩm nuôi Xa	Kiện	RCP-325	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-321	Lồng sinh vật sống Xa	Kiện	RCP-326	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Lớn
+CGO-411	Kiện linh kiện Cradle	Kiện	RCP-421	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Cradle, Sau MVP. Cỡ Nhỏ
+CGO-511	Kiện linh kiện Warden	Kiện	RCP-521	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Vừa
+ENG-101	Van tiết lưu	Linh kiện lõi	Shop (K19), mở ở Hạng cảng 3 (kinh-te-tien-trinh.md)	Lắp động cơ chính, giai đoạn 1	Hiếm, Khối kho, Gần, MVP
+ENG-102	Buồng đốt tái chế	Linh kiện lõi	Shop (K19)	Lắp động cơ chính, giai đoạn 2	Hiếm, Khối kho, Giữa, Sau MVP
+ENG-103	Cuộn ổn định từ	Linh kiện lõi	Shop (K19)	Lắp động cơ chính, giai đoạn 3	Hiếm, Khối kho, Xa, Sau MVP
+ENG-104	Bơm nhiên liệu Veyl	Linh kiện lõi	Shop (K19)	Lắp động cơ chính, giai đoạn 4	Hiếm, Khối kho, Xa, Sau MVP
+ENG-105	Lõi dẫn hướng rời bãi vỡ	Linh kiện lõi	RCP-207, Chế từ vật kể chuyện (RCP-207), không mua được (đường rời bãi vỡ không ai bán, R2 của truyện)	Lắp động cơ chính, giai đoạn 5	Đặc biệt, Khối kho, Cradle, Sau MVP
+BPR-101	Bản thiết kế Súng lưới bậc 2	Bản thiết kế	RCP-301, Nghiên cứu mẫu sống DL-G01 (RCP-301)	Học để mở UPG-NET-2 (vùng lưới rộng hơn, chỉ số do gd-combat)	Ít gặp, Khối 0, Gần, Sau MVP
+BPR-102	Bản thiết kế Súng gây mê	Bản thiết kế	RCP-302, Nghiên cứu mẫu sống DL-G04 (RCP-302)	Học để mở RCP-202	Ít gặp, Khối 0, Gần, Sau MVP
+BPR-103	Bản thiết kế Máy quét xung	Bản thiết kế	Shop (K19) và hòm nhánh Seed Station thứ hai	Học để mở RCP-203	Ít gặp, Khối 0, Gần, Sau MVP
+BPR-105	Bản thiết kế Máy cắt thân tàu	Bản thiết kế	Hòm cố định trong khoang nghiên cứu Station Flint, mở sau BS-3 (chương 3, gd-world), và Shop (K19)	Học để mở RCP-206	Hiếm, Khối 0, Xa, Sau MVP
+BPR-106	Bản thiết kế tiện ích cảng	Bản thiết kế	Shop (K19)	Sửa khoang Bến 2, bến 3 và tiện ích cảng	Hiếm, Khối 0, Xa, Sau MVP
+STY-101	Nhật ký trạm	Vật manh mối	Mỗi xác Seed Station một bản (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi. Loại dữ liệu, sao được thành CGO-131	Đặc biệt, Khối 0, Gần, MVP
+STY-102	Mảnh lõi dẫn đường Cinder	Vật nhiệm vụ	Xác Seed Station Cinder (gd-world, gd-story)	Vật liệu sửa khoang dẫn đường KH08 (chương 2), bị tiêu ở việc sửa đó, ghép đường đi	Đặc biệt, Khối 1, Gần, MVP
+STY-103	Mảnh lõi dẫn đường Wick	Vật nhiệm vụ	Xác Seed Station Wick (gd-world, gd-story)	Nộp ở khoang dẫn đường (Hoa tiêu), không tiêu vật, vào kho, ghép đường đi	Đặc biệt, Khối 1, Giữa, Sau MVP
+STY-104	Manh mối lõi dẫn đường Flint	Vật manh mối	Xác Seed Station Flint (gd-world, gd-story)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
+STY-105	Manh mối lõi dẫn đường Cradle	Vật manh mối	Bên trong Cradle (gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
+STY-111	Bản tin trong máy liên lạc Cinder	Vật manh mối	Mã truyện MM1.2, máy liên lạc xác Seed Station Cinder (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Gần, MVP
+STY-211	Mảng vỏ thân Wick	Vật manh mối	Mã truyện MM2.1, xác Seed Station Wick (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Giữa, Sau MVP
+STY-212	Sổ trực Lantern	Vật manh mối	Mã truyện MM2.3, Station Lantern (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Giữa, Sau MVP
+STY-213	Bản Lodestar Survey treo tường ở Lantern	Vật manh mối	Mã truyện MM2.4, Station Lantern (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Giữa, Sau MVP
+STY-311	Bản ghi chuyển tin The Lattice và sổ hải trình	Vật manh mối	Mã truyện MM3.1, Veyl Waypost (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
+STY-312	Lời tuyên bố khu bảo hộ	Vật manh mối	Mã truyện MM3.2 (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
+STY-313	Xác máy thu hoạch	Vật manh mối	Mã truyện MM3.3 (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
+STY-411	Vết vũ khí trên vỏ Cradle	Vật manh mối	Mã truyện MM4.1, bên trong và vỏ Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
+STY-412	Bản chào mừng người thức dậy	Vật manh mối	Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
+STY-414	Bản gốc Lodestar Survey	Vật manh mối	Mã truyện MM4.4, bên trong Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
+STY-301	Mẫu mang dấu thu hoạch Wardens	Vật nhiệm vụ	Station Flint (chương 3, gd-story)	Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife	Đặc biệt, Khối 1, Xa, Sau MVP
+STY-401	Hộp ghi hành trình Cradle	Vật nhiệm vụ	Bên trong Cradle (chương 4, gd-story)	RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6)	Đặc biệt, Khối 1, Cradle, Sau MVP
+STY-501	Bản đồ sao thật	Vật nhiệm vụ	Lõi dữ liệu Warden Rig, mở sau khi hạ BS-5 Serith (chương 5, gd-world)	RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6)	Đặc biệt, Khối 1, Cradle, Sau MVP
+STY-502	Dữ liệu bản khảo sát bị giấu	Vật manh mối	Lõi dữ liệu Warden Rig, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện (móc hậu bản B11). Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401)	Đặc biệt, Khối 0, Cradle, Sau MVP
+STY-601	Thẻ tên buồng ngủ đông	Vật manh mối	Xác Seed Station, mỗi buồng đã tắt một thẻ (gd-story)	Tự ghi vào Sổ tay, hiện trên tường khoang buồng ngủ đông (đổi hình trạm, P2), không có công dụng chơi	Đặc biệt, Khối 0, Gần, Sau MVP
+BNG-101	Buồng ngủ đông (có người)	Vật kéo	Map nhánh xác Seed Station, người vớt theo K12	Đưa về trạm, mở người vớt và tính năng	Đặc biệt, Khối kéo, Gần, MVP
+TOL-102	Dụng cụ khai thác	Dụng cụ (Khai thác)	Khởi đầu	Không tiêu, chọn mang theo ở trạm	Khoan khoáng và băng (độ cứng 1 đến 3), nạy hòm (cấp khóa 1 đến 3). Bậc thấp hơn độ cứng hoặc cấp khóa thì chậm gấp 4. MVP
+TOL-211	Lao từ	Dụng cụ (Hạ)	Khởi đầu	Không tiêu, chọn mang theo ở trạm	Đòn tầm xa dùng cooldown. Chỉ số theo bậc do gd-combat. MVP
+TOL-201	Dùi xung	Dụng cụ (Choáng)	Quest Kỹ sư, RCP-204	Không tiêu, chọn mang theo ở trạm	Làm choáng cận chiến, dùng cooldown. Chỉ số do gd-combat. MVP
+TOL-202	Súng lưới	Dụng cụ (Bắt sống)	Quest Kỹ sư (chương 1), RCP-201	Không tiêu, chọn mang theo ở trạm	Bắt sống cỡ S vào Lồng mẫu, tốn CON-102. Chỉ số do gd-combat. MVP
+TOL-203	Súng gây mê	Dụng cụ (Bắt sống)	BPR-102, RCP-202	Không tiêu, chọn mang theo ở trạm	Gây mê, tốn CON-103. Chỉ số do gd-combat. Sau MVP
+TOL-301	Máy quét xung	Dụng cụ (Tiện ích)	BPR-103, RCP-203	Không tiêu, chọn mang theo ở trạm	Hiện điểm khai thác trong bán kính. Bậc 2 hiện hạng, bậc 3 hiện Driftlife. Bán kính do gd-world và gd-ux. Sau MVP
+TOL-401	Bộ kích nguồn	Dụng cụ (Chìa)	Xưởng, công thức đầu tiên sau khi vớt Kỹ sư (RCP-205, chỉ dùng tài nguyên thô)	Không tiêu, chọn mang theo ở trạm	Mở cửa D1 khóa nguồn trong Station Cinder (lần vớt thứ hai). Cổng cứng, không có chế độ chậm. Không cần mang theo (luật T7). MVP
+TOL-402	Máy cắt thân tàu	Dụng cụ (Chìa)	BPR-105, RCP-206	Không tiêu, chọn mang theo ở trạm	Mở vách Bên trong Cradle (chương 4). Cổng cứng, không cần mang theo (luật T7). Sau MVP
+TOL-501	Lồng mẫu	Dụng cụ (Chứa)	Quest Kỹ sư (chương 1), RCP-208	Không tiêu, chọn mang theo ở trạm	Kéo theo, chứa tối đa 3 mẫu sống cỡ S, mỗi người 1 lồng (gd-combat). MVP

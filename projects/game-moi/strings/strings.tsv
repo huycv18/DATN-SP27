@@ -1,0 +1,244 @@
+key	text	gioi_han	man
+hud.oxy.label	Oxy	8	UI-30
+hud.oxy.time	còn ~{m}:{s}	14	UI-30
+hud.oxy.mult	x{n}	8	UI-30
+hud.oxy.low	THẤP	8	UI-30
+hud.oxy.back_ok	ĐỦ VỀ	10	UI-30
+hud.return.airlock	Về cửa khí	14	UI-30
+hud.return.beacon	Về Beacon	14	UI-30
+hud.bag.label	Túi	8	UI-30
+hud.bag.heavy	Nặng	8	UI-30
+hud.bag.full	Đầy	8	UI-30
+hud.bag.penalty	-{p}% tốc độ, hao +{p}%	28	UI-30
+hud.pin.label	Ghim	8	UI-30
+hud.pin.none	Chưa ghim	14	UI-30
+hud.pin.set	Đã ghim {item}	28	UI-30
+hud.tool.ammo	Lưới cuộn x{n}	18	UI-30
+hud.ping.left	Ping {n}	10	UI-30
+hud.zone.under	Thiếu cấp vỏ, hao Oxy x{n}	32	UI-30
+hud.goal.pinned	Cần: {group} x{n}	28	UI-30
+hud.team.choking	Ngạt {s} giây	14	UI-30
+hud.team.sharing	Đang chia Oxy	16	UI-30
+hud.team.home	Đã về trạm	14	UI-30
+hud.team.lost	Giữ chỗ	12	UI-30
+prompt.pull	{key} Kéo	14	UI-30
+prompt.recall	Giữ {key} về trạm	24	UI-30
+prompt.share	Giữ {key} chia Oxy	24	UI-30
+prompt.trade	Giữ {key} trao đồ	24	UI-30
+prompt.open_door	Giữ {key} mở lối	24	UI-30
+prompt.airlock	{key} vào cửa khí	24	UI-30
+prompt.finish	Giữ {key} kết nhanh	24	UI-30
+prompt.repair	Giữ {key} sửa	18	UI-17
+prompt.use	{key} dùng	14	UI-10
+prompt.load	{key} bốc kiện	18	UI-40
+prompt.carry	Giữ {key} nhấc kiện	24	UI-40
+prompt.put	{key} đặt kiện	18	UI-40
+prompt.release	Thả phím để hủy	20	UI-30
+toast.pick	+{n} {item}	32	UI-30
+toast.bag_full	Túi đầy	12	UI-30
+toast.recall_cancel	Recall bị hủy	20	UI-30
+toast.oxy_shared	Đã chia {n} Oxy	24	UI-30
+toast.tally	+{n} Tally	16	UI-40
+toast.craft_done	{item} đã chế xong	32	UI-10
+toast.room_fixed	{room} đã sửa xong	32	UI-10
+toast.goal_new	Mục tiêu mới	16	UI-10
+toast.joined	{name} đã vào	28	UI-10
+toast.left	{name} đã rời phiên	32	UI-10
+toast.home	{name} đã về trạm	32	UI-30
+toast.order_done	Đơn đủ	12	UI-40
+toast.order_missed	Tàu đã rời	16	UI-40
+btn.continue_world	Chơi tiếp	14	UI-01
+btn.new_world	Thế giới mới	16	UI-01
+btn.join	Tham gia	12	UI-01
+btn.settings	Cài đặt	12	UI-01
+btn.quit	Thoát	10	UI-01
+btn.create	Tạo	8	UI-02
+btn.ready	Sẵn sàng	12	UI-03
+btn.invite	Mời bạn	12	UI-03
+btn.enter	Vào	8	UI-04
+btn.skip	Bỏ qua	10	UI-05
+btn.continue	Tiếp tục	12	UI-35
+btn.back	Quay lại	12	UI-50
+btn.confirm	Xác nhận	12	UI-11
+btn.stay	Ở lại trạm	14	UI-11
+btn.craft	Chế	8	UI-13
+btn.upgrade	Nâng cấp	12	UI-16
+btn.order	Đặt hàng	12	UI-15
+btn.open_shift	Mở ca	8	UI-14
+btn.pin_group	Ghim kiện	18	UI-14
+btn.sleep	Vào buồng ngủ	18	UI-44
+btn.retry	Thử lại	10	UI-01
+btn.swap	Hoán đổi	12	UI-52
+btn.reset	Mặc định	12	UI-52
+title.create	Tạo thế giới	16	UI-02
+title.lobby	Sảnh	8	UI-03
+title.join	Tham gia thế giới	20	UI-04
+title.airlock	Cửa khí	12	UI-11
+title.storage	Kho	8	UI-12
+title.workshop	Xưởng	8	UI-13
+title.shipboard	Bảng tàu	12	UI-14
+title.shop	Shop	8	UI-15
+title.upgrade	Nâng cấp	12	UI-16
+title.repair	Sửa khoang	14	UI-17
+title.engine	Động cơ chính	16	UI-18
+title.notebook	Sổ tay	10	UI-19
+title.wait	Chờ nhóm	12	UI-20
+title.map	Bản đồ chuyến	16	UI-33
+title.choking	Ngạt	8	UI-34
+title.pulled	Bị kéo về	14	UI-35
+title.home	Về an toàn	14	UI-36
+title.shift_end	Kết ca	10	UI-43
+title.day_end	Cuối ngày	12	UI-44
+title.rank_up	Lên Hạng cảng	16	UI-45
+title.paused	Tạm dừng	12	UI-50
+title.menu	Menu	8	UI-50
+title.keys	Đổi phím	12	UI-52
+lbl.keep	Giữ	8	UI-35
+lbl.lose	Mất	8	UI-35
+lbl.empty_trip	Chuyến trống	14	UI-36
+lbl.none_lost	Không mất gì	16	UI-35
+lbl.room_full	Phòng đầy	12	UI-04
+lbl.clock_runs	Thời gian vẫn chạy	22	UI-50
+lbl.max	Tối đa	10	UI-16
+lbl.missing	Thiếu {n}	12	UI-17
+err.save_read	Không đọc được bản lưu	32	UI-01
+err.name_dup	Tên đã dùng	20	UI-02
+err.code_bad	Mã sai hoặc hết hạn	32	UI-04
+err.net_lost	Mất kết nối	20	UI-30
+err.host_lost	Mất kết nối chủ phòng	24	UI-10
+err.save_fail	Lưu lỗi, thử lại	24	UI-44
+err.not_enough	Không đủ {res}	24	UI-16
+err.wrong_cargo	Không có trong đơn	20	UI-41
+err.shelf_full	Kệ đầy, máy giữ kiện	28	UI-42
+err.queue_full	Hàng đợi đầy	20	UI-13
+err.locked	Chưa mở ở chương này	28	UI-10
+set.text_size	Cỡ chữ	12	UI-51
+set.reduce_flash	Giảm nhấp nháy và rung	28	UI-51
+set.aim_assist	Hỗ trợ ngắm	16	UI-51
+set.hints	Gợi ý hướng dẫn	20	UI-51
+set.rumble	Rung tay cầm	16	UI-51
+set.hold_toggle	Giữ thành bật	16	UI-51
+set.vol_master	Âm lượng tổng	20	UI-51
+set.vol_music	Nhạc	12	UI-51
+set.vol_sfx	Hiệu ứng	14	UI-51
+set.vol_alert	Cảnh báo	14	UI-51
+set.captions	Chú thích âm	20	UI-51
+state.storage_empty	Kho trống	14	UI-12
+state.bag_empty	Túi trống	14	UI-31
+state.no_ships	Hôm nay không có tàu	28	UI-14
+state.first_ship	Chờ tàu đầu tiên	24	UI-40
+state.no_ping	Hết ping	12	UI-32
+state.ping_wait	Chờ ping tự hết	18	UI-32
+state.shift_on	Ca đang chạy	16	UI-14
+state.unset	Chưa gán	12	UI-52
+state.fixed	Cố định	12	UI-52
+state.next_chapter	Chương sau	14	UI-18
+state.done	Xong	8	UI-18
+state.enough	Đủ	8	UI-41
+state.scheduled	Trong lịch	14	UI-40
+state.docked	Ở bến	10	UI-40
+state.waiting_out	Chờ ngoài	14	UI-40
+state.just_back	Nhóm vừa về	16	UI-20
+lbl.how_to	Cách chơi	12	UI-19
+state.saving	Đang lưu	12	UI-44
+state.saved	Đã lưu	10	UI-44
+state.no_signal	Mất tín hiệu	16	UI-33
+state.wait_friends	Chờ bạn	10	UI-03
+lbl.orders_by_players	Đơn theo số người đang chơi	32	UI-14
+hud.block	Chưa có đường qua	24	UI-30
+prompt.need_key	Cần {tool} để mở	24	UI-30
+hud.share.floor	Dừng chia: giữ lại {n} Oxy	32	UI-30
+hud.rank	Hạng {n} ({a}/{b})	24	UI-40
+hud.chapter	Chương {n}: {name}	40	UI-05
+hud.team.hold	Giữ chỗ {s} giây	18	UI-30
+net.ok	Mạng ổn	10	UI-30
+net.lag	Mạng trễ	12	UI-30
+lbl.last_save	Lần lưu: Ngày {n}	24	UI-01
+lbl.final_day	Ngày cuối	12	UI-01
+lbl.soon	Sắp có	10	UI-02
+lbl.no_friends	Chưa có bạn nào đang chơi	32	UI-04
+lbl.nothing_to_lose	Không có gì để mất	24	UI-34
+lbl.pin_one	Ghim giữ lại 1 đơn vị	28	UI-34
+lbl.being_shared	Đang được chia Oxy	24	UI-34
+lbl.quest_back	Vật nhiệm vụ về chỗ cũ	32	UI-35
+lbl.trip_of	Chuyến {n}/{m}	16	UI-11
+lbl.no_trips	Hôm nay hết chuyến ra ngoài	36	UI-11
+lbl.open_shift_warn	Mở ca là hết ra ngoài hôm nay	40	UI-14
+lbl.skip_shift_warn	Bỏ ca cũng hết ra ngoài hôm nay	40	UI-14
+lbl.for_group	Áp cho cả nhóm	20	UI-16
+lbl.shop_soon	Shop sắp có hàng	24	UI-15
+btn.skip_shift	Bỏ ca	8	UI-14
+btn.cancel	Hủy	8	HTR-01
+btn.leave_anyway	Vẫn thoát	12	UI-50
+btn.menu_main	Về menu chính	18	UI-50
+hud.confirm.go	Ra ngoài sau {s} giây	28	HTR-01
+hud.confirm.sleep	Ngủ sau {s} giây	24	HTR-01
+hud.confirm.wait	Chờ: {names}	32	HTR-01
+hud.trip_count	Chuyến {n}/{m}	16	HTR-02
+hud.saved	Đã lưu	10	HTR-03
+confirm.leave_trip	Thoát giữa chuyến tính như bị kéo về, chỉ giữ 1 món	64	UI-50
+confirm.leave_trip_solo	Thoát giữa chuyến sẽ mất chuyến này	40	UI-50
+confirm.leave_save	Lần sau vào lại ở lần lưu gần nhất	40	UI-50
+err.version	Khác phiên bản game	24	UI-04
+err.host_world	Thế giới về lần lưu gần nhất	40	UI-10
+err.save_menu	Lưu lỗi: thế giới về lần lưu gần nhất	56	UI-44
+tut.t31	Lướt tốn {n} Oxy, hồi {s} giây	40	T31
+tut.t32	{map} mở bản đồ chuyến	40	T32
+tut.t33	{ping} mở bánh ping cho đồng đội	40	T33
+tut.t34	Giữ {share} để chia Oxy cho bạn	40	T34
+tut.ping_oxy	Đồng đội ping Cần Oxy	30	T33
+tut.t35	Giữ {interact} để trao đồ cho bạn	40	T35
+state.engineer_wait	Kỹ sư chưa tới	24	UI-13
+state.wait_update	Chờ cập nhật	16	UI-20
+state.no_samples	Chưa có mẫu	14	UI-21
+state.no_blueprints	Hết bản thiết kế	20	UI-21
+state.shelf_full	Kệ đầy	10	UI-42
+lbl.shift_blocked	Còn người đang ở ngoài chuyến	36	UI-14
+state.shift_done	Hôm nay đã có ca	24	UI-14
+hud.confirm.shift	Mở ca sau {s} giây	28	HTR-01
+hud.confirm.skip	Bỏ ca sau {s} giây	28	HTR-01
+lbl.from_price	từ {n}	12	UI-14
+story.box	{câu thoại}	80	UI-53
+story.radio	{dòng radio}	60	UI-30
+story.bubble	{lời bong bóng}	60	UI-40
+notebook.line	{dòng Sổ tay}	60	UI-19
+lbl.lost_since	Mất việc từ: {point}	32	UI-44
+lbl.no_give_choking	Đang ngạt: không trao, không thả đồ	40	UI-34
+hud.oxy.refill	Còn hồi {n} Oxy	24	HUD-15
+hud.oxy.refill_max	Đã hồi tối đa chuyến này	32	HUD-15
+err.no_use_choking	Không dùng được khi ngạt	28	HUD-15
+prompt.use_item	{key} dùng {item}	28	UI-30
+confirm.leave_host	Chủ phòng thoát thì phiên kết thúc	44	UI-50
+confirm.leave_shift	Thoát giữa ca sẽ mất ca đang dở	40	UI-50
+tut.t36	{use} dùng vật tiêu hao hồi Oxy	40	T36
+story.line	{lời nhân vật}	60	UI-10
+tut.t01	{move} đi trái phải, {climb} leo thang	40	T01
+tut.t02	Mục tiêu ở góc phải, {notebook} Sổ tay	40	T02
+tut.t03	{interact} ở cửa khí để ra ngoài	40	T03
+tut.t04	{move} để bay tới vòng sáng	40	T04
+tut.t05	Giữ {brake} để dừng gọn	40	T05
+tut.t06	Oxy là thời gian, hết là bị kéo về	40	T06
+tut.t07	Bay lại gần để nhặt	40	T07
+tut.t08	Giữ {tool} lên điểm để khai thác	40	T08
+tut.t09	Oxy chạm vạch ĐỦ VỀ, quay về ngay	40	T09
+tut.t10	Túi nặng thì chậm và hao Oxy nhanh	40	T10
+tut.t11	{bag} mở túi, {pin} ghim món	40	T11
+tut.t12	Giữ {interact} để sửa khoang	40	T12
+tut.t13	{tool} để bắn Lao từ	40	T13
+tut.t14	Sáng đỏ là sắp đánh, {dash} để né	40	T14
+tut.t15	Giữ {recall} ở Beacon để về trạm	40	T15
+tut.t16	Giữ {interact} để kéo buồng ngủ	40	T16
+tut.t17	Chọn công thức rồi bấm Chế	40	T17
+tut.t18	Choáng rồi, giữ {finish} kết nhanh	40	T18
+tut.t19	Súng lưới bắt loài nhỏ còn sống	40	T19
+tut.t20	Chờ cứu hoặc bay tới cửa khí	40	T20
+tut.t21	Xem đơn của tàu, ghim hàng cần	40	T21
+tut.t22	Lấy hàng ở kho, bỏ vào máy đóng kiện	40	T22
+tut.t23	Mang kiện tới cửa bến, {interact} để bốc	40	T23
+tut.t24	Kiện này cần chế ở xưởng trước	40	T24
+tut.t25	Tàu chờ ngoài, bến trống sẽ cập	40	T25
+tut.t26	Đơn đủ mới có thưởng và điểm cảng	40	T26
+tut.t27	Nâng cấp có tác dụng từ chuyến sau	40	T27
+tut.t28	Đặt hàng cuối ngày, hàng tới sáng mai	40	T28
+tut.t29	Manh mối đã ghi vào Sổ tay	40	T29
+tut.t30	Bấm {skip} để bỏ qua cảnh	40	T30

@@ -1,0 +1,38 @@
+Issue ID	Task	Sub Task	Short Description	Ref
+UP-01	T-OXY dung lượng Oxy (UPG-OXY)	Type	Chỉ là số: chuyến dài hơn	projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md mục 3.2
+UP-01	T-OXY dung lượng Oxy (UPG-OXY)	Characteristic	Hiệu ứng từng bậc ở nguoi-choi.md mục 2.6 (bộ đồ) hoặc vat-pham.md (dụng cụ), tram-va-cang.md (khoang). Mua một lần cho cả nhóm (C4), làm ở Xưởng, xong qua đêm	
+UP-01	T-OXY dung lượng Oxy (UPG-OXY)	UPG-OXY-1	1000 Tally, vật liệu 26,0 GTĐ (vat-pham.md), mở chương 1 (Kỹ sư (chương 1)). MVP	
+UP-01	T-OXY dung lượng Oxy (UPG-OXY)	UPG-OXY-2	3800 Tally, vật liệu 49,4 GTĐ (vat-pham.md), mở chương 2 (Chương 2). Sau MVP	
+UP-01	T-OXY dung lượng Oxy (UPG-OXY)	UPG-OXY-3	13200 Tally, vật liệu 74,4 GTĐ (vat-pham.md), mở chương 3 (Chương 3). Sau MVP	
+UP-01	T-OXY dung lượng Oxy (UPG-OXY)	UPG-OXY-4	16050 Tally, vật liệu 133,2 GTĐ (vat-pham.md), mở chương 4 (Chương 4 đến 5). Sau MVP	
+UP-02	T-TUI sức chứa túi (UPG-BAG)	Type	Chỉ là số: mang về nhiều hơn	projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md mục 3.2
+UP-02	T-TUI sức chứa túi (UPG-BAG)	Characteristic	Hiệu ứng từng bậc ở nguoi-choi.md mục 2.6 (bộ đồ) hoặc vat-pham.md (dụng cụ), tram-va-cang.md (khoang). Mua một lần cho cả nhóm (C4), làm ở Xưởng, xong qua đêm	
+UP-02	T-TUI sức chứa túi (UPG-BAG)	UPG-BAG-1	1000 Tally, vật liệu 24,2 GTĐ (vat-pham.md), mở chương 1 (Kỹ sư (chương 1)). MVP	
+UP-02	T-TUI sức chứa túi (UPG-BAG)	UPG-BAG-2	3800 Tally, vật liệu 40,6 GTĐ (vat-pham.md), mở chương 2 (Chương 2). Sau MVP	
+UP-02	T-TUI sức chứa túi (UPG-BAG)	UPG-BAG-3	13200 Tally, vật liệu 79,4 GTĐ (vat-pham.md), mở chương 3 (Chương 3). Sau MVP	
+UP-02	T-TUI sức chứa túi (UPG-BAG)	UPG-BAG-4	16050 Tally, vật liệu 121,2 GTĐ (vat-pham.md), mở chương 4 (Chương 4 đến 5). Sau MVP	
+UP-03	T-DAY bộ đẩy (UPG-THR)	Type	Chỉ là số: chuyến gọn hơn	projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md mục 3.2
+UP-03	T-DAY bộ đẩy (UPG-THR)	Characteristic	Hiệu ứng từng bậc ở nguoi-choi.md mục 2.6 (bộ đồ) hoặc vat-pham.md (dụng cụ), tram-va-cang.md (khoang). Mua một lần cho cả nhóm (C4), làm ở Xưởng, xong qua đêm	
+UP-03	T-DAY bộ đẩy (UPG-THR)	UPG-THR-1	710 Tally, vật liệu 26,2 GTĐ (vat-pham.md), mở chương 1 (Kỹ sư (chương 1)). MVP	
+UP-03	T-DAY bộ đẩy (UPG-THR)	UPG-THR-2	2650 Tally, vật liệu 43,4 GTĐ (vat-pham.md), mở chương 2 (Chương 2). Sau MVP	
+UP-03	T-DAY bộ đẩy (UPG-THR)	UPG-THR-3	9250 Tally, vật liệu 75,4 GTĐ (vat-pham.md), mở chương 3 (Chương 3). Sau MVP	
+UP-04	T-VO cấp môi trường (UPG-ENV)	Type	Mở khả năng: vào dải mới không bị hao Oxy gấp 2,5 hoặc 4 (K6). Không chặn chương	projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md mục 3.2
+UP-04	T-VO cấp môi trường (UPG-ENV)	Characteristic	Hiệu ứng từng bậc ở nguoi-choi.md mục 2.6 (bộ đồ) hoặc vat-pham.md (dụng cụ), tram-va-cang.md (khoang). Mua một lần cho cả nhóm (C4), làm ở Xưởng, xong qua đêm	
+UP-04	T-VO cấp môi trường (UPG-ENV)	UPG-ENV-1	4600 Tally, vật liệu 48,1 GTĐ (vat-pham.md), mở chương 2 (Chương 2 (dải Giữa)). Sau MVP	
+UP-04	T-VO cấp môi trường (UPG-ENV)	UPG-ENV-2	15850 Tally, vật liệu 90,6 GTĐ (vat-pham.md), mở chương 3 (Chương 3 (dải Xa)). Sau MVP	
+UP-04	T-VO cấp môi trường (UPG-ENV)	UPG-ENV-3	19250 Tally, vật liệu 126,6 GTĐ (vat-pham.md), mở chương 4 (Chương 4 (Cradle)). Sau MVP	
+UP-05	T-DUNGCU số ô dụng cụ (UPG-RACK)	Type	Mở khả năng: mang thêm một dụng cụ	projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md mục 3.2
+UP-05	T-DUNGCU số ô dụng cụ (UPG-RACK)	Characteristic	Hiệu ứng từng bậc ở nguoi-choi.md mục 2.6 (bộ đồ) hoặc vat-pham.md (dụng cụ), tram-va-cang.md (khoang). Mua một lần cho cả nhóm (C4), làm ở Xưởng, xong qua đêm	
+UP-05	T-DUNGCU số ô dụng cụ (UPG-RACK)	UPG-RACK-1	0 Tally (quest Kỹ sư), vật liệu 23,1 GTĐ (vat-pham.md), mở chương 1 (Quest Kỹ sư (chương 1), đi kèm Dùi xung). MVP	
+UP-05	T-DUNGCU số ô dụng cụ (UPG-RACK)	UPG-RACK-2	3050 Tally, vật liệu 37,4 GTĐ (vat-pham.md), mở chương 2 (Chương 2). Sau MVP	
+UP-06	Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)	Type	Chỉ là số, cổng mềm: khai thác điểm cứng không chậm gấp 4	projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md mục 3.2
+UP-06	Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)	Characteristic	Hiệu ứng từng bậc ở nguoi-choi.md mục 2.6 (bộ đồ) hoặc vat-pham.md (dụng cụ), tram-va-cang.md (khoang). Mua một lần cho cả nhóm (C4), làm ở Xưởng, xong qua đêm	
+UP-06	Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)	UPG-HAR-2	300 Tally, vật liệu 27,0 GTĐ (vat-pham.md), mở chương 1 (Kỹ sư (chương 1)). MVP	
+UP-06	Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)	UPG-MIN-2	300 Tally, vật liệu 24,4 GTĐ (vat-pham.md), mở chương 1 (Kỹ sư (chương 1)). MVP	
+UP-06	Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)	UPG-HAR-3	1150 Tally, vật liệu 43,4 GTĐ (vat-pham.md), mở chương 2 (Chương 2). Sau MVP	
+UP-06	Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)	UPG-MIN-3	1150 Tally, vật liệu 44,3 GTĐ (vat-pham.md), mở chương 2 (Chương 2). Sau MVP	
+UP-06	Dụng cụ (UPG-MIN, UPG-HAR, UPG-NET)	UPG-NET-2	1150 Tally, vật liệu 25,7 GTĐ (vat-pham.md), mở chương 2 (BPR-101). Sau MVP	
+UP-07	Nâng cấp khoang (KH05-C2, KHxx-C3)	Type	Khoang thêm tính năng theo gd-quan	projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md mục 3.2
+UP-07	Nâng cấp khoang (KH05-C2, KHxx-C3)	Characteristic	Hiệu ứng từng bậc ở nguoi-choi.md mục 2.6 (bộ đồ) hoặc vat-pham.md (dụng cụ), tram-va-cang.md (khoang). Mua một lần cho cả nhóm (C4), làm ở Xưởng, xong qua đêm	
+UP-07	Nâng cấp khoang (KH05-C2, KHxx-C3)	KH05-C2	3050 Tally, không vật liệu, mở chương 2 (Xưởng). Sau MVP	
+UP-07	Nâng cấp khoang (KH05-C2, KHxx-C3)	KHxx-C3	12850 Tally, không vật liệu, mở chương 4 (Xưởng). Sau MVP	

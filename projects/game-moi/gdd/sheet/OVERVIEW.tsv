@@ -1,0 +1,24 @@
+GAME DESIGN DOCUMENT - EMBER (MÃ TẠM)
+Version: 0.3.0	Date: 20/11/2026
+Designed by Huy
+
+INFORMATION	"Game Title: Chưa đặt tên (mã tạm EMBER, đề xuất Cradlefall, Wakebound, Breathline, chờ Lead chọn)
+Genre: Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý
+Theme: Khoa học viễn tưởng sinh tồn
+Graphics: 2D vector, nhìn ngang
+Engine: Unity
+Age Rating: Chưa chốt
+Platform: PC, chơi đơn hoặc co-op online 2 đến 4 người"
+
+IDEA	Người chơi tỉnh dậy trên Station Ember, một trạm hỏng đang trôi giữa bãi vỡ của tàu mẹ Cradle sau vụ The Scattering. Mỗi ngày có tối đa 2 chuyến ra ngoài không gian, mặt phẳng bay 8 hướng nhìn ngang. Oxy vừa là thời gian vừa là máu: đi tiếp hay quay về luôn là lựa chọn. Người chơi nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối, rồi mang về kho. Ở trạm họ sửa khoang, chế đồ, nuôi Driftlife, rồi chạy trong mặt cắt trạm để lấy hàng, đóng kiện và bốc lên tàu của thương nhân The Veyl trong ca cảng, đổi lấy Tally, đồng tiền duy nhất. Tally mua nâng cấp bộ đồ, nâng cấp trạm và thứ Ember không tự làm được, để đi xa hơn qua 3 dải Gần, Giữa, Xa. Mỗi người vớt về mở một tính năng của trạm. Truyện qua 5 chương: sống sót, tìm đường tới Solace, lộ ra Solace là mồi của The Wardens, rồi sửa động cơ và rời neo. Kết mở. Chơi một mình trọn vẹn, có bạn thì vui hơn.
+
+PILLARS	"1. Mỗi hơi thở là một quyết định: Oxy vừa là thời gian vừa là máu, không có thanh máu riêng, không hồi Oxy miễn phí giữa chuyến.
+2. Mang về là để trạm sống lại: mọi thứ nhặt được đều có chỗ dùng nhìn thấy được trên trạm (sửa khoang, chế đồ, nuôi, bán ở cảng).
+3. Một mình vẫn trọn, có bạn thì vui hơn: mọi luật đúng với 1 đến 4 người, thêm người là thêm tay, không mở khóa nội dung.
+4. Vũ trụ kể chuyện qua thứ bạn vớt được: truyện đến từ xác trạm, người vớt về, thương nhân ghé cảng, chen vào điểm nghỉ của vòng ngày."
+
+TRACKING GDD
+Version	Content	In charge	Note
+v0.1.0 - 19/10/2026	Khởi tạo GDD: concept, core loop, 26 hệ thống, 3 tầng, vật phẩm, hiểm họa, luật vũ khí, công thức, quán, kinh tế, nâng cấp	Huy	Bản nháp do Claude hỗ trợ soạn
+v0.2.0 - 19/11/2026	Formats GDD theo khuôn Dungeon Builder: 25 tab, khuôn khối Issue ID / Task / Sub Task. Nội dung v0.1 giữ ở 17 tab ẩn (tiền tố v0.1), chờ chuyển sang tab mới	GDM
+v0.3.0 - 20/11/2026	Định nghĩa lại game từ đầu (mã tạm EMBER), bỏ concept Space Salvage. Khung game, 10 GDD hệ thống, sim và QA	GDM

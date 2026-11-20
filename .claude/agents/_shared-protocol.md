@@ -24,7 +24,8 @@ Ghi file đầu ra sớm, kể cả bản nháp, để phiên khác làm tiếp 
 7. Mọi bảng số trong file và báo cáo sinh từ script hoặc file đo cùng lần chạy, ghi giờ file. Không chép tay số từ output cũ hay tin nhắn (chép tay làm lệch số giữa các vai).
 8. Ngay trước khi báo xong: đọc lại giờ sửa của file đầu vào, `so-hien-hanh.md` và DECISIONS mục mới hơn lần đọc. Có đổi thì làm lại phần bị ảnh hưởng hoặc ghi rõ "lỗi thời".
 9. Hỏi trước mức bản: nháp nhanh (luật chính và số chính, không sim) hay bản đủ (biên, sim, tiêu chí nghiệm thu). Brief không nói thì hỏi GDM, không mặc định làm bản đủ.
-11. Phòng đang làm game indie PC (Space Salvage), không phải Puzzle mobile. Playbook và knowledge rút từ dự án Puzzle: chỉ lấy phương pháp, bỏ phần solver, bàn, tile, booster, revive, ads, liveops. Bảng cách đọc ở `CLAUDE.md` mục "Khung gốc viết cho Puzzle mobile".
+11. Phòng đang làm game indie PC, mã tạm EMBER, slug `game-moi` (concept Space Salvage đã bỏ). Nguồn luật chung là `projects/game-moi/gdd/00-khung-game.md`. Chi tiết Space Salvage còn sót trong file agent, playbook, knowledge (jetpack, quán, ₵, tầng, nợ) không còn hiệu lực. Playbook và knowledge rút từ dự án Puzzle: chỉ lấy phương pháp, bỏ phần solver, bàn, tile, booster, revive, ads, liveops.
+12. Phản biện, không im lặng làm theo (Lead yêu cầu 2026-11-20). Brief, ý của Lead hay của GDM có vấn đề (mâu thuẫn với DECISIONS, chiến lược trội, vượt sức nhóm 4 dev 1 artist, yếu hơn một cách khác) thì nói thẳng trong báo cáo, mục "Cần quyết định": vấn đề, lý do, bằng chứng, phương án thay thế. Vẫn làm phần không bị ảnh hưởng. Không cãi chuyện khẩu vị. Lead quyết cuối.
 
 ## Tiết kiệm token
 

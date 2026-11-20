@@ -1,0 +1,11 @@
+{
+  "_nguon": "Sheet GDD game-moi (so-hien-hanh.md). gid đọc bằng connector Google Sheets get_spreadsheet ngày 2026-11-20. Tab đổi gid thì sửa ở đây",
+  "spreadsheetId": "1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs",
+  "dongDau": 2,
+  "gid": {
+    "OVERVIEW": 100, "GAME STORY": 101, "TRACKING": 102, "WIREFRAME": 103, "CORE LOOP": 104, "Player": 105, "Enemy": 106,
+    "Salvage": 107, "Recipe": 108, "Customer": 109, "Upgrade": 110, "Day": 111, "Zone": 112, "PROCESSING": 113, "Shop": 114,
+    "ITEM LIST": 115, "Tutorials": 116, "ECONOMIC": 117, "Event Tracking": 118, "Assets": 119, "AUDIO ASSETS LIST": 120,
+    "MVP Criteria Checklist": 121, "Balance Sheet": 122, "Playtest Report": 123, "Bugs Report": 124
+  }
+}

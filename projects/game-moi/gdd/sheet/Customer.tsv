@@ -1,0 +1,116 @@
+Issue ID	Task	Sub Task	Short Description	Ref
+TA01	Tàu gom phế liệu	Type	- Ai: Oru, thương nhân Tikko, khách quen đầu tiên\n- Nhãn: MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Hay hỏi HC10, lời thoại Tikko mê đồ Trái Đất	
+		Attribute	- Lưu bến: Dài\n- Trọng số túi trộn: 3	
+		Order	1 đến 2 dòng: HC01, HC02, HC10, HC06 (chỉ CGO-121), CGO-113 (kiện tinh duy nhất chương 1, từ khi xưởng Hoạt động, theo trần luật 23). Từ Hạng 3 thêm HC05 và HC11 (chỉ CGO-106). Từ ngày có Súng lưới, mỗi lịch có ít nhất một dòng CGO-121 ở một tàu TA01	
+		Unlock	Chương 1	
+TA02	Tàu vội	Type	- Ai: Dân Oru vãng lai, không tên riêng\n- Nhãn: MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Thưởng nhanh gấp đôi	
+		Attribute	- Lưu bến: Ngắn\n- Trọng số túi trộn: 1	
+		Order	1 dòng: HC01, HC02, HC10, CGO-104	
+		Unlock	Chương 1, Hạng 2	
+TA03	Xuồng tiếp tế Lantern	Type	- Ai: Bram Kowalski, Station Lantern\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Dòng tùy chọn: 1 ID rút từ cùng nhóm của tàu, kiện gốc 1 nhân quy mô đơn. Không tính vào đơn đủ và tổng giá đơn, kiện giao vào dòng đó trả gấp rưỡi	
+		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 2	
+		Order	2 dòng: HC03, HC07, HC08. Thêm 1 dòng tùy chọn	
+		Unlock	Sau mốc C2.2	
+TA04	Tàu trọng nghi thức	Type	- Ai: Sennari, thương nhân Ilsume\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	15 giây đầu là nghi lễ chào, chưa nhận kiện. Đồng hồ lưu bến vẫn chạy	
+		Attribute	- Lưu bến: Dài\n- Trọng số túi trộn: 2	
+		Order	2 dòng: HC04, HC12	
+		Unlock	Mốc C2.7	
+TA05	Tàu sưu tầm	Type	- Ai: Aelith, thương nhân Vaeth\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Chỉ hỏi Driftlife sống và đặc sản (loại kiện đắt), chê kiện mẫu đã hạ qua lời thoại	
+		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 2	
+		Order	1 đến 2 dòng: HC06, HC11	
+		Unlock	Mốc C2.4	
+TA06	Tàu không nói giá	Type	- Ai: Brakk, thương nhân Dromm\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Một dòng chỉ hiện gợi ý (ví dụ "thứ lạnh") thay vì tên ID. Giao đúng ID thì dòng lộ tên. Bảng tàu ghi rõ có dòng ẩn	
+		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 2	
+		Order	2 dòng: HC02, HC12, HC13	
+		Unlock	Mốc C3.1	
+TA07	Tàu The Remainers	Type	- Ai: The Remainers, Elias Vance\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Hỏi thêm về vị trí xác trạm qua lời thoại, không đổi luật	
+		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 2	
+		Order	2 dòng: HC06, HC08, HC11, HC14	
+		Unlock	Mốc C3.5	
+TA08	Tàu lạ	Type	- Ai: Maro, The Wardens cải trang\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Luật 38. Không vào túi trộn	
+		Attribute	- Lưu bến: Dài\n- Trọng số túi trộn: Không	
+		Order	Lần 1: 1 đến 2 dòng từ HC01 tới HC14 đã mở. Lần 2: 1 dòng HC09	
+		Unlock	Mốc C3.3	
+TA09	Tàu đơn gấp	Type	- Ai: Người đưa hàng gấp của thương hội Sennari, không tên riêng\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Chỉ hỏi kiện tinh (loại kiện đắt), không có thưởng nhanh	
+		Attribute	- Lưu bến: Ngắn\n- Trọng số túi trộn: 1	
+		Order	2 đến 3 dòng: HC04, HC12, HC13, HC14	
+		Unlock	Hạng 6	
+TA10	Tàu buôn tin	Type	- Ai: Kesh, thương nhân Nhem, giữ The Lattice\n- Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.4
+		Characteristic	Mua bản sao dữ liệu giá vừa. Lời thoại kể tin trên The Lattice, gợi manh mối hành lang an toàn	
+		Attribute	- Lưu bến: Vừa\n- Trọng số túi trộn: 1	
+		Order	2 dòng: 1 dòng HC09, 1 dòng HC12 hoặc HC13	
+		Unlock	Mốc C3.1	
+HC	Nhóm hàng cảng	HC01 Kiện phế liệu	- ID kiện: CGO-101, CGO-102\n- Làm từ: Phế liệu thô\n- Trước khi bốc: Đóng kiện\n- Mở: Chương 1, MVP	projects/game-moi/gdd/he-thong/tram-va-cang.md mục Danh mục
+		HC02 Kiện khoáng	- ID kiện: CGO-103\n- Làm từ: Khoáng thô\n- Trước khi bốc: Đóng kiện\n- Mở: Chương 1, MVP	
+		HC03 Kiện băng	- ID kiện: CGO-104 (thô), CGO-113 (chế)\n- Làm từ: Băng, khối nước tinh khiết COM-105\n- Trước khi bốc: CGO-104 đóng thẳng, CGO-113 chế ở xưởng rồi đóng kiện\n- Mở: Chương 1, MVP. CGO-113 là kiện tinh duy nhất của chương 1 (log 67)	
+		HC04 Kiện linh kiện	- ID kiện: CGO-111, CGO-112\n- Làm từ: Vật liệu chế COM của xưởng\n- Trước khi bốc: Chế ở xưởng rồi đóng kiện\n- Mở: Chương 2, Sau MVP	
+		HC05 Kiện mẫu Driftlife	- ID kiện: CGO-105\n- Làm từ: Mẫu Driftlife đã hạ SMP\n- Trước khi bốc: Đóng kiện\n- Mở: Chương 1, MVP	
+		HC06 Lồng sinh vật sống	- ID kiện: CGO-121 dải Gần (RCP-126 cho LIV-111 tới 113 cỡ S, RCP-128 cho LIV-114, 115 cỡ M), CGO-221, CGO-321. Lồng nhớ loài bên trong: dòng đơn CGO-121 nhận mọi loài dải Gần, giá theo loài bên trong (luật 30)\n- Làm từ: Mẫu sống LIV\n- Trước khi bốc: Đưa con vào lồng giao ở máy đóng kiện, 8 giây (RCP-126, RCP-128). Mang nguyên lồng\n- Mở: CGO-121 chương 1, MVP (RCP-128 chương 2). CGO-221 chương 2, CGO-321 chương 3, Sau MVP	
+		HC07 Kiện sản phẩm nuôi	- ID kiện: CGO-107, CGO-207, CGO-307\n- Làm từ: Sản phẩm nuôi BIO\n- Trước khi bốc: Đóng kiện\n- Mở: Chương 2, Sau MVP	
+		HC08 Kiện vật tư	- ID kiện: CGO-141\n- Làm từ: 1 Bình Oxy nhỏ CON-101, 1 Lưới cuộn CON-102 (RCP-127)\n- Trước khi bốc: Chế vật tiêu hao ở xưởng rồi đóng kiện\n- Mở: Chương 2, Sau MVP	
+		HC09 Bản sao dữ liệu	- ID kiện: CGO-131 (sao bằng RCP-141)\n- Làm từ: Sao từ vật kể chuyện loại dữ liệu STY-101, STY-401 ở khoang liên lạc, vật gốc ở lại trạm\n- Trước khi bốc: Sao một lần mỗi vật gốc\n- Mở: Chương 3, Sau MVP	
+		HC10 Kiện đồ Trái Đất	- ID kiện: CGO-109 (RCP-116)\n- Làm từ: Đồ cũ của Cradle RES-106\n- Trước khi bốc: Đóng kiện\n- Mở: Chương 1, MVP	
+		HC11 Kiện đặc sản Driftlife	- ID kiện: CGO-106, CGO-206, CGO-306\n- Làm từ: Mẫu đặc sản từng loài SMP (CGO-106: 1 trong SMP-111 tới 115, RCP-124)\n- Trước khi bốc: Đóng kiện\n- Mở: CGO-106 chương 1, MVP. CGO-206 chương 2, CGO-306 chương 3, Sau MVP	
+		HC12 Kiện tinh dải Giữa	- ID kiện: CGO-211, CGO-212, CGO-213\n- Làm từ: Vật liệu chế COM dải Giữa\n- Trước khi bốc: Chế ở xưởng rồi đóng kiện\n- Mở: Chương 2, Sau MVP	
+		HC13 Kiện tinh dải Xa	- ID kiện: CGO-311, CGO-312, CGO-313\n- Làm từ: Vật liệu chế COM dải Xa\n- Trước khi bốc: Chế ở xưởng rồi đóng kiện\n- Mở: Chương 3, Sau MVP	
+		HC14 Kiện linh kiện đặc biệt	- ID kiện: CGO-411, CGO-511\n- Làm từ: Linh kiện Cradle RES-401 (RCP-421), linh kiện Warden RES-305 (RCP-521)\n- Trước khi bốc: Đóng kiện\n- Mở: CGO-411 chương 4, CGO-511 chương 5, Sau MVP	
+		Giá	Giá từng ID kiện ở tab Shop. Lồng sống giá theo loài bên trong	
+CC	Luật ca cảng (tóm tắt)	Mở ca	- Ca cảng chỉ có khi khoang liên lạc và bến 1 đều Hoạt động. Trước đó pha ca cảng tự bỏ qua.\n- Mở ca chỉ được khi không còn ai ở ngoài chuyến. N của ca là số người online lúc mở ca, số kiện mỗi dòng chốt theo N đó và không đổi tới hết ca (khớp ky-thuat.md luật 12).\n- Mỗi ngày có đúng một ca cảng. Ca đã kết thúc hoặc đã bỏ thì không mở lại trong ngày. Mở ca hoặc Bỏ ca thì cửa khí khóa tới ngày mới (luật 63), vì ca cảng là pha sau các chuyến (K22).	projects/game-moi/gdd/he-thong/tram-va-cang.md mục 2
+		Ca đầu tiên	Ca cảng đầu tiên của thế giới có lịch cố định: 1 tàu TA01, lưu bến dài, giờ đến 0, 1 dòng CGO-101 với số kiện 2 nhân quy mô đơn theo N, làm tròn lên. Ca này tính Tally và điểm cảng như mọi ca. Từ ca thứ hai lịch sinh theo luật 68 tới 70.	
+		Lịch tàu	- Lịch tàu của ngày sinh ra lúc bắt đầu ngày và hiện ở bảng tàu từ pha chuẩn bị. Lịch gồm cho mỗi tàu: loại tàu, giờ đến trong ca, danh sách hàng (ID kiện và kiện gốc), thời gian lưu bến. Loại tàu, giờ đến, ID kiện và kiện gốc không đổi trong ngày. Số kiện mỗi dòng bằng kiện gốc nhân quy mô đơn theo N, với N là số người đang online: bảng tàu tính lại mỗi khi số người online đổi, và chốt lúc Mở ca (luật 64). Cách sinh lịch ở luật 67 tới 70. Tàu có điều kiện truyện (TA03 cho mốc C2.3, TA06 cho mốc C3.2, TA08 ba lần cập bến, TA06 cho mốc C5.1 từ ngày kế tiếp sau C4.7) có trong lịch mỗi ngày tới khi điều kiện truyện đó xong.\n- Giờ đến của tàu thứ i, với i từ 0 theo thứ tự trong lịch, bằng i nhân giãn cách cộng lệch ngẫu nhiên từ 0 tới 10 giây. Nếu giờ đến cộng lưu bến của tàu vượt thời lượng ca tối đa thì giờ đến kéo về bằng thời lượng ca tối đa trừ lưu bến. Hai tàu cùng giờ đến thì xếp theo thứ tự trong lịch.	
+		Bến và tàu	- Mỗi bến chứa đúng một tàu. Tàu tới giờ đến mà bến trống thì cập bến ngay. Bến đang có tàu thì tàu mới chờ ngoài, hiện ở mép màn hình kèm đồng hồ chờ ngoài. Hết đồng hồ chờ ngoài thì tàu bỏ đi, đơn đó tính là trượt.\n- Tàu cập bến thì đồng hồ lưu bến bắt đầu chạy. Hết đồng hồ lưu bến thì tàu rời.	
+		Dòng đơn	Danh sách hàng gồm 1 đến 4 dòng. Mỗi dòng là một ID kiện và số kiện. Một đơn không có hai dòng cùng ID kiện. Ở chương 1, dòng đơn chỉ gồm kiện thô (CGO-101 tới CGO-105, CGO-109), kiện đặc sản CGO-106 và lồng sống CGO-121, mỗi ca có tối đa một dòng kiện tinh, và chương 1 chỉ có đúng một loại kiện tinh là CGO-113 (log 67, gd-items chọn) và dòng đó có kiện gốc 1 (nhân quy mô đơn theo N như mọi dòng). Kiện tinh có trong đơn TA01 từ khi xưởng Hoạt động, để chương 1 có bước chế thêm (K13). Lý do: kiện tinh qua xưởng là nút cổ chai của ca.	
+		Đóng kiện	- Kiện có từ máy đóng kiện: người chơi lấy hàng ở kệ kho bằng tương tác, mỗi lần lấy đúng số đơn vị đầu vào của một kiện theo công thức đóng kiện của gd-items (RCP-111 tới RCP-127), bỏ vào máy. Máy chạy trong thời gian của công thức (5 đến 8 giây) rồi nhả ra một kiện. Một máy chạy một kiện một lúc. Đưa Driftlife sống vào lồng giao (HC06) cũng làm ở máy đóng kiện.\n- Kiện cần chế thêm (CGO-113, HC04, HC08, HC12, HC13) phải chế vật liệu ở xưởng trước, ra hàng đã chế, rồi mới đóng kiện. Xưởng chạy một mẻ một lúc và giữ thêm mẻ chờ trong hàng đợi chế. Mẻ chạy theo thời gian thực kể cả khi người chơi ra chuyến. Mẻ còn trong hàng đợi lúc ngủ thì xong khi sang ngày (chế qua đêm).\n- Máy nhả kiện lên kệ kiện cạnh máy. Người chơi lấy kiện từ kệ để mang. Kệ kiện có sức chứa giới hạn. Kệ đầy thì máy giữ kiện trong máy, không nhả, cho tới khi kệ có chỗ hoặc người chơi lấy tay.	
+		Mang và bốc	- Mỗi người chơi mang một kiện hoặc một chồng hàng thô tối đa bằng số đơn vị của một kiện. Kiện có 3 cỡ Nhỏ, Vừa, Lớn (cỡ do gd-items gán cho từng ID kiện). Mang kiện thì tốc độ chạy giảm theo cỡ kiện ở bảng tham số. Nhiều người cùng giữ một kiện Lớn thì mỗi người thêm cộng 15 điểm phần trăm, trần 95%, cùng luật kéo chung của nguoi-choi.md.\n- Bốc kiện: người chơi mang kiện tới cửa bến đang có tàu và nhấn tương tác. Thứ tự xử lý ở mục "Thứ tự xử lý khi bốc kiện".	
+		Tally và thưởng	- Giá một kiện là giá của ID kiện do gd-economy đặt (kinh-te-tien-trinh.md mục 3.1). Lồng sinh vật sống tính giá theo loài bên trong theo cùng công thức giá của gd-economy, bảng tàu hiện giá loài rẻ nhất kèm chữ "từ". Mỗi kiện tàu nhận được trả Tally ngay theo giá đó.\n- Đơn đủ khi mọi dòng bắt buộc đã đủ số kiện. Tổng giá đơn là tổng giá các kiện đã nhận ở các dòng bắt buộc, thưởng đủ đơn và thưởng nhanh tính trên tổng đó. Đơn đủ thì cộng thưởng đủ đơn, cộng điểm cảng, và tàu rời sau 3 giây. Đơn đủ khi đồng hồ lưu bến còn trên ngưỡng nhanh thì cộng thêm thưởng nhanh và thêm điểm cảng.\n- Thưởng đủ đơn 25%, thưởng nhanh 15% tổng giá đơn, giá ở tab Shop	
+		Thất bại	Tàu rời khi đơn chưa đủ (hết giờ lưu bến hoặc hết giờ ca) là đơn trượt. Đơn trượt giữ nguyên Tally của các kiện đã bốc, không có thưởng, không có điểm cảng, không trừ gì. Kiện chưa bốc ở lại kệ hoặc trên tay.	
+		Kết thúc ca	- Ca kết thúc khi tàu cuối cùng của lịch đã rời hoặc khi hết giờ ca. Hết giờ ca thì mọi tàu còn ở bến rời ngay và tàu chờ ngoài bỏ đi, áp luật 32.\n- Cuối ca hiện bảng kết ca: số đơn đủ, đơn trượt, Tally nhận, điểm cảng nhận, lời thoại một thương nhân. Bảng kết ca không chặn người chơi khác trong co-op. Mốc truyện xảy ra trong ca (C1.8, C2.3, C3.3, C3.4, C3.8) chỉ hiện lời bong bóng trong ca, cảnh phát ở pha Cuối ngày, đồng hồ ca không dừng.	
+		Đóng kiện trước	- Đóng kiện trước là dùng máy đóng kiện và xưởng ngoài ca cảng. Làm được ở pha chuẩn bị, giữa hai chuyến, trong chuyến khi người đó đang ở trạm, và ở cuối ngày.\n- Kiện đóng trước không gắn với tàu nào. Kiện nằm trên kệ kiện và dùng được cho bất kỳ dòng đơn nào cùng ID kiện trong ca. Bảng tàu ở khoang liên lạc và màn hình máy đóng kiện cùng hiện đơn hôm nay kèm số kiện đã có trên kệ, để người đóng trước biết cần đóng gì.\n- Trần của đóng kiện trước là sức chứa kệ kiện (luật 26). Kệ đầy thì máy giữ kiện trong máy, người chơi giữ thêm một kiện trên tay. Không có thưởng riêng cho kiện đóng trước, thưởng là ca nhẹ hơn.	
+		Sự cố (Sau MVP)	- Trước chương 3 không có sự cố. Sự cố bắt đầu từ ca cảng kế tiếp sau lần đầu TA08 cập bến (lý do truyện: thiết bị Maro để lại làm trạm trục trặc, theo gd-story). Từ đó mỗi ca có số sự cố theo bảng tham số, giờ xảy ra ngẫu nhiên trong ca nhưng không trong 30 giây đầu ca.\n- Sự cố bỏ mặc chỉ gây hậu quả trong ca đó. Hết ca thì mọi sự cố tự hết, khoang về trạng thái trước đó, không có hư hại lâu dài, không mất hàng.\n- Driftlife sổng chỉ xảy ra khi khoang sinh quyển có Driftlife nuôi. Loài sổng là một loài đang nuôi. Hàng con sổng ăn không mất: hàng bị giữ trong con vật, tóm được thì hàng về chỗ cũ, hết ca thì hàng về kho (kiện về kệ).	
+HG	Hạng cảng	Luật	- Hạng cảng là một thang duy nhất từ hạng 1 tới hạng 8, chung cả nhóm.\n- Điểm cảng chỉ đến từ đơn đủ và thưởng nhanh. Điểm đơn đủ bằng 2 nhân (N + 1) chia 2, làm tròn lên tích. Điểm nhanh bằng 1 nhân (N + 1) chia 2, làm tròn lên tích. N là số người lúc mở ca. Kết quả: 1 người 2 và 1, 2 người 3 và 2, 3 người 4 và 2, 4 người 5 và 3. Điểm cảng không bao giờ giảm.\n- Đủ điểm ngưỡng thì lên hạng ngay sau bảng kết ca. Mỗi chương có trần hạng: đủ điểm nhưng chạm trần thì điểm vẫn cộng dồn, lên hạng khi chương sau mở.	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.5
+		Hạng 1	- Trần ở chương: 1\n- Mở: TA01, bến 1, shop danh mục cơ bản\n- Nhãn: MVP	
+		Hạng 2	- Trần ở chương: 1\n- Mở: TA02, kệ kiện cấp 2 ở shop\n- Nhãn: MVP	
+		Hạng 3	- Trần ở chương: 1\n- Mở: Đơn TA01 có dòng HC05, mục shop ENG-101\n- Nhãn: MVP	
+		Hạng 4	- Trần ở chương: 2\n- Mở: TA03 thêm dòng tùy chọn, mục shop bản thiết kế dải Giữa\n- Nhãn: Sau MVP	
+		Hạng 5	- Trần ở chương: 2\n- Mở: Đơn có dòng HC06 và HC07 (loại kiện đắt), mục shop ENG-102\n- Nhãn: Sau MVP	
+		Hạng 6	- Trần ở chương: 3\n- Mở: TA09, mục shop tiện ích cảng\n- Nhãn: Sau MVP	
+		Hạng 7	- Trần ở chương: 3\n- Mở: Đơn TA06 và TA10 có dòng HC13 (kiện tinh dải Xa), mục shop ENG-103\n- Nhãn: Sau MVP	
+		Hạng 8	- Trần ở chương: 4\n- Mở: Mục shop ENG-104, đơn có nhiều dòng kiện tinh dải Xa\n- Nhãn: Sau MVP	
+		Ngưỡng điểm	Hạng 2 tới 8: 10, 20, 45, 70, 100, 135, 195 điểm cảng	
+KH	Khoang trạm	Luật	- Sửa khoang: mọi vật liệu trong danh sách sửa phải nằm trong kho, người chơi đứng ở khoang và giữ phím sửa trong thời gian sửa. Bắt đầu giữ phím thì vật liệu bị trừ khỏi kho. Thả phím giữa chừng thì tiến độ giữ nguyên, vật liệu không hoàn lại, giữ phím lại thì làm tiếp.\n- Một khoang chỉ sửa được khi chương của khoang đã mở (bảng 2.6). Khoang có người vớt phụ trách (xưởng, khoang liên lạc, cảng, khoang dẫn đường, bến Skiff, phòng nghiên cứu, khoang sinh quyển, bến 2, bến 3) chỉ sửa được sau khi người vớt đó tỉnh và giao quest (luật 15). Khoang chưa sửa được hiện khung tối và một dòng gợi ý truyện.\n- Trạm không xấu đi theo thời gian: khoang Hoạt động không tự hỏng lại. Chỉ sự cố (từ chương 3) làm khoang tạm Đang sự cố trong ca cảng.	projects/game-moi/gdd/he-thong/tram-va-cang.md mục Danh mục, bảng 2.6
+		KH01 Buồng ngủ đông (4 buồng, N buồng chạy) và khu hồi sức	- Chức năng: Ngủ sang ngày, lưu. Khu hồi sức giữ buồng của người chơi vào sau và người vớt chờ tỉnh (luật 62)\n- Người vớt: Có sẵn\n- Mở ở chương: 1\n- Nhãn: MVP	
+		KH02 Cửa khí	- Chức năng: Ra và về chuyến, nạp đầy Oxy khi chuyến kết thúc, tối đa 2 chuyến mỗi ngày (luật 63, K22)\n- Người vớt: Có sẵn\n- Mở ở chương: 1\n- Nhãn: MVP	
+		KH03 Kho	- Chức năng: Chỗ chứa đồ chung\n- Người vớt: Có sẵn\n- Mở ở chương: 1\n- Nhãn: MVP	
+		KH04 Khoang neo	- Chức năng: Hãm trôi và neo Ember, việc sửa đầu tiên\n- Người vớt: Có sẵn\n- Mở ở chương: 1\n- Nhãn: MVP	
+		KH05 Xưởng	- Chức năng: Chế và nâng cấp trang bị, chế hàng cảng\n- Người vớt: Kỹ sư\n- Mở ở chương: 1\n- Nhãn: MVP	
+		KH06 Khoang liên lạc	- Chức năng: Gọi tàu, mở ca cảng, bảng tàu, shop\n- Người vớt: Thông dịch viên\n- Mở ở chương: 1\n- Nhãn: MVP	
+		KH07 Cảng (bến 1, máy đóng kiện, kệ kiện)	- Chức năng: Ca cảng\n- Người vớt: Thông dịch viên\n- Mở ở chương: 1\n- Nhãn: MVP	
+		KH08 Khoang dẫn đường	- Chức năng: Mở dải, đọc lõi dẫn đường\n- Người vớt: Hoa tiêu\n- Mở ở chương: 2\n- Nhãn: Sau MVP	
+		KH09 Bến Skiff	- Chức năng: Đi thẳng tới map nhánh\n- Người vớt: Hoa tiêu\n- Mở ở chương: 2\n- Nhãn: Sau MVP	
+		KH10 Phòng nghiên cứu	- Chức năng: Nghiên cứu mẫu Driftlife\n- Người vớt: Nhà sinh học\n- Mở ở chương: 2\n- Nhãn: Sau MVP	
+		KH11 Khoang sinh quyển	- Chức năng: Nuôi Driftlife\n- Người vớt: Nhà sinh học\n- Mở ở chương: 2\n- Nhãn: Sau MVP	
+		KH12 Bến 2, bến 3, tiện ích cảng	- Chức năng: Thêm bến, tăng tốc ca\n- Người vớt: Trưởng cảng\n- Mở ở chương: 3\n- Nhãn: Sau MVP	
+		KH13 Động cơ chính	- Chức năng: Tiến độ rời neo, 5 giai đoạn\n- Người vớt: Có sẵn (hỏng)\n- Mở ở chương: 1 đến 5\n- Nhãn: MVP giai đoạn 1	
+		Động cơ chính	- Động cơ chính có 5 giai đoạn. Mỗi chương mở đúng một giai đoạn. Mỗi giai đoạn cần một bộ vật liệu gồm tài nguyên của dải mới và một linh kiện động cơ. Giai đoạn 1 tới 4 dùng ENG-101 tới ENG-104 mua ở shop. Giai đoạn 5 dùng ENG-105 chế ở xưởng (RCP-207) từ bản đồ sao thật lấy ở Warden Rig và hộp ghi hành trình Cradle, không mua được.\n- Sửa một giai đoạn theo luật 3. Xong giai đoạn thì động cơ hiện thêm một phần sáng đèn. Mốc đóng chương của truyện chỉ kích hoạt khi giai đoạn động cơ của chương đã lắp, chương đóng khi mốc đó xong (K25). Trạm không có cổng chương riêng.	
+NV	Người vớt mở tính năng	Luật	- Mỗi người vớt nằm trong một buồng ngủ đông còn chạy (BNG-101) ở một map nhánh. Người chơi tìm buồng, kéo buồng về cửa khí của Ember (luật kéo vật của gd-character). Người vớt nào gd-story đặt ngoài buồng ngủ đông (ví dụ người đang sống ở Station Lantern) thì tới Ember theo mốc truyện, bỏ qua luật 13 và 14, vẫn áp luật 15.\n- Buồng kéo về qua cửa khí thì đặt vào khu hồi sức cạnh buồng ngủ đông, người vớt ở trạng thái Hồi sức. Mốc truyện của việc vớt xong lúc buồng qua cửa khí. Người vớt tỉnh vào đầu ngày kế tiếp và giao quest lúc tỉnh.\n- Người vớt tỉnh thì giao quest mở: sửa khoang của người đó (luật 3). Thông dịch viên có hai khoang, quest là sửa cả khoang liên lạc KH06 và cảng KH07 (khớp luật 18 và mốc C1.7). Sửa xong thì tính năng mở và người vớt đứng làm việc ở khoang đó.	projects/game-moi/gdd/he-thong/tram-va-cang.md bảng 2.7
+		Kỹ sư	- Khoang: Xưởng\n- Khi mở: Chế dụng cụ cơ bản, chế khối nước tinh khiết COM-105 cho CGO-113, nâng cấp bộ đồ bậc 1\n- Lớn dần: Cấp 2 (chương 2): chế 2 mẻ song song, bậc 2. Cấp 3: bậc cao nhất, chế HC08\n- Nhãn: MVP cấp 1	
+		Thông dịch viên	- Khoang: Khoang liên lạc, cảng\n- Khi mở: Bảng tàu, ca cảng, shop\n- Lớn dần: Chương 2: gọi xuồng Lantern, mở TA04, TA05. Chương 3: hiểu ngôn ngữ Veyl Waypost, mở TA06, TA07, TA10, dịch lời tàu lạ\n- Nhãn: MVP chương 1	
+		Hoa tiêu	- Khoang: Khoang dẫn đường, bến Skiff\n- Khi mở: Mở dải Xa (dải Giữa đã mở khi xong chương 1), Skiff tới map nhánh đã tìm ra\n- Lớn dần: Mỗi lõi dẫn đường đọc được mở một map nhánh hoặc một dải\n- Nhãn: Sau MVP	
+		Nhà sinh học (Amara Okafor)	- Khoang: Phòng nghiên cứu, khoang sinh quyển\n- Khi mở: Tới bằng xuồng TA03 sau ca đầu tiên giao đủ đơn TA03 (C2.3). Nghiên cứu mẫu, nuôi Driftlife\n- Lớn dần: Cấp 2: thêm ô, cấp 3: môi trường dải Xa. Mốc chương 3: cú lật Driftlife\n- Nhãn: Sau MVP	
+		Trưởng cảng (Yusuf Demir)	- Khoang: Bến 2, bến 3, tiện ích cảng\n- Khi mở: Về bằng Skiff sau ca đầu tiên có TA06 cập bến (C3.2). Bến 2\n- Lớn dần: Tiện ích: băng chuyền kho tới máy đóng kiện, máy đóng kiện thứ hai, bến 3 ở chương 4, kệ kiện phụ 4 chỗ cạnh bến 2 và bến 3 (đặt kiện đóng trước sát bến xa)\n- Nhãn: Sau MVP	
+ND	Nuôi Driftlife (Sau MVP)	Mở	Khoang sinh quyển mở ở chương 2 khi Nhà sinh học tỉnh và khoang được sửa. Khoang có số ô nuôi theo cấp khoang, mỗi ô chứa một con.	projects/game-moi/gdd/he-thong/tram-va-cang.md mục 2 nuôi
+		Thả	Thả Driftlife sống vào ô trống bằng cách mang lồng tới khoang. Chỉ loài gd-combat ghi "nuôi được" mới thả được.	
+		Cho ăn và sản phẩm	Cho ăn là bỏ 1 thức ăn đúng dải (FED-101, FED-201, FED-301, làm ở khoang sinh quyển từ mô sinh học) cho mỗi con. Mỗi ngày, mỗi con trưởng thành được cho ăn thì ra một sản phẩm nuôi (BIO của loài đó) vào đầu ngày kế tiếp. Không cho ăn thì không ra sản phẩm, con vật không chết, không yếu đi. Sản phẩm nuôi và Driftlife nuôi chỉ ra Tally qua dòng HC06, HC07, HC11 của đơn, nên lợi từ nuôi mỗi ngày bị chặn bởi số dòng đó trong lịch.	
+		Sinh con non	Hai con cùng loài cùng trưởng thành và được cho ăn trong ngày thì đầu ngày kế tiếp sinh một con non nếu khoang còn ô trống. Một cặp sinh tối đa một con non mỗi ngày. Con non trưởng thành sau số ngày theo tham số.	
+		Lấy ra	Lấy Driftlife trưởng thành ra khỏi ô bỏ vào lồng thì dùng được như Driftlife bắt sống: giao đơn HC06, nghiên cứu, thả ra ngoài. Lồng con nuôi có giá bằng 0,5 lần lồng bắt ngoài chuyến cùng loài, mỗi loài tối đa 1 lồng con nuôi mỗi ngày (luật M5 của vat-pham.md). Con non chưa trưởng thành không lấy ra được.	
+		Nâng cấp	Nâng cấp khoang sinh quyển thêm ô. Môi trường cho loài dải Xa có ở cấp 3, riêng khoang sinh quyển được nâng cấp 3 từ chương 3 (bảng 2.6). Loài dải Xa không thả được vào khoang chưa có môi trường đó.	
+		Số ô	Cấp 1, 2, 3: 4, 6, 9 ô. Con non trưởng thành sau 2 ngày	

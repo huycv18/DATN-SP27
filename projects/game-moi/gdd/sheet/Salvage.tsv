@@ -1,0 +1,191 @@
+Issue ID	Task	Sub Task	Short Description	Ref
+SLV-101	Mảnh vỡ trôi	Type	Điểm khai thác, Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: Nhặt tay, không cần dụng cụ
+Độ cứng hoặc cấp khóa: 0. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 1,6
+Số lần quay bảng rơi: 1"	
+		Resource Output	"- RES-101 Mảnh vỏ Cradle: trọng số 60, số lượng 1
+- RES-102 Dây cáp đứt: trọng số 40, số lượng 1"	
+		Spawn Point	Dải Gần, khe SP-R các mảnh Mở, Hành lang, Ổ. Tối đa 25% khe SP-R của một mảnh, hai khe cách nhau ít nhất 2 u	
+SLV-102	Mạch quặng sắt	Type	Điểm khai thác, Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 1. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 8,0
+Số lần quay bảng rơi: 1"	
+		Resource Output	- RES-103 Quặng sắt thiên thạch: trọng số 100, số lượng 2	
+		Spawn Point	Dải Gần, mảnh Mở và Ổ	
+SLV-103	Khối băng trôi	Type	Điểm khai thác, Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 1. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 7,0
+Số lần quay bảng rơi: 1"	
+		Resource Output	- RES-105 Băng nước đục: trọng số 100, số lượng 2	
+		Spawn Point	Dải Gần, mảnh Mở	
+SLV-104	Hòm kỹ thuật vỡ	Type	Điểm khai thác, Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 1. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 6,0
+Số lần quay bảng rơi: 2"	
+		Resource Output	"- RES-104 Bo mạch cháy: trọng số 30, số lượng 1
+- RES-102 Dây cáp đứt: trọng số 30, số lượng 2
+- RES-101 Mảnh vỏ Cradle: trọng số 25, số lượng 2
+- RES-106 Đồ Trái Đất vụn: trọng số 15, số lượng 1"	
+		Spawn Point	Dải Gần, mảnh Hành lang (cạnh Cáp chập) và Xác lớn. Khe SP-R hạng hiếm của dải Gần	
+SLV-105	Tấm vỏ lớn	Type	Điểm khai thác, Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 1. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 14,0
+Số lần quay bảng rơi: 3"	
+		Resource Output	- RES-101 Mảnh vỏ Cradle: trọng số 100, số lượng 2	
+		Spawn Point	Dải Gần, chỉ mảnh Xác lớn	
+SLV-111	Hòm kỹ thuật Seed (nhánh)	Type	Điểm khai thác, Nhánh Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 1. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 8,0
+Số lần quay bảng rơi: 3"	
+		Resource Output	"- RES-104 Bo mạch cháy: trọng số 35, số lượng 1
+- RES-102 Dây cáp đứt: trọng số 25, số lượng 2
+- RES-101 Mảnh vỏ Cradle: trọng số 25, số lượng 2
+- RES-106 Đồ Trái Đất vụn: trọng số 15, số lượng 1"	
+		Spawn Point	Xác Seed Station: Cinder 3 hòm (C2, C3, C7), Wick 3, Flint 3 (map.md mục 2.10)	
+SLV-112	Kho hàng Seed (nhánh)	Type	Điểm khai thác, Nhánh Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 2. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 12,0
+Số lần quay bảng rơi: 3"	
+		Resource Output	"- RES-104 Bo mạch cháy: trọng số 35, số lượng 1
+- RES-103 Quặng sắt thiên thạch: trọng số 35, số lượng 1
+- RES-106 Đồ Trái Đất vụn: trọng số 30, số lượng 1"	
+		Spawn Point	Xác Seed Station: Cinder 1 (C6, sau boss), Wick 1. Bên trong Cradle 2 mỗi khu (map.md mục 2.10)	
+SLV-201	Mạch quặng cobalt	Type	Điểm khai thác, Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 2. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 12,0
+Số lần quay bảng rơi: 1"	
+		Resource Output	- RES-202 Quặng cobalt: trọng số 100, số lượng 2	
+		Spawn Point	Dải Giữa, mảnh Mở và Ổ (dòng đá vụn chạy ngang qua)	
+SLV-202	Khối băng tinh	Type	Điểm khai thác, Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 2. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 11,0
+Số lần quay bảng rơi: 1"	
+		Resource Output	- RES-203 Băng tinh: trọng số 100, số lượng 2	
+		Spawn Point	Dải Giữa, mảnh Mở (băng nứt khi khoan mạnh)	
+SLV-203	Hòm Cradle	Type	Điểm khai thác, Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 2. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 8,0
+Số lần quay bảng rơi: 2"	
+		Resource Output	"- RES-204 Lõi cảm biến: trọng số 25, số lượng 1
+- RES-201 Hợp kim nóng chảy: trọng số 45, số lượng 2
+- RES-104 Bo mạch cháy: trọng số 30, số lượng 2"	
+		Spawn Point	Dải Giữa, mảnh Xác lớn. Khe SP-R hạng hiếm của dải Giữa	
+SLV-204	Tấm hợp kim trôi	Type	Điểm khai thác, Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 1. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 10,0
+Số lần quay bảng rơi: 3"	
+		Resource Output	- RES-201 Hợp kim nóng chảy: trọng số 100, số lượng 1	
+		Spawn Point	Dải Giữa, mảnh Hành lang và Xác lớn	
+SLV-301	Mạch kính nebula	Type	Điểm khai thác, Xa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 3. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 16,0
+Số lần quay bảng rơi: 1"	
+		Resource Output	- RES-302 Kính nebula: trọng số 100, số lượng 2	
+		Spawn Point	Dải Xa, mảnh Mở và Hành lang	
+SLV-302	Túi khí plasma đông	Type	Điểm khai thác, Xa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 3. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 14,0
+Số lần quay bảng rơi: 1"	
+		Resource Output	- RES-303 Băng plasma: trọng số 100, số lượng 2	
+		Spawn Point	Dải Xa, mảnh Mở và Ổ (trong mây khí, bùng tinh vân)	
+SLV-303	Hòm Warden	Type	Điểm khai thác, Xa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	"Dụng cụ: TOL-102
+Độ cứng hoặc cấp khóa: 3. Bậc dụng cụ thấp hơn thì chậm gấp 4"	
+		Attribute	"Thời gian khai thác ở bậc 1 (giây): 10,0
+Số lần quay bảng rơi: 2"	
+		Resource Output	"- RES-304 Lõi năng lượng nguội: trọng số 30, số lượng 1
+- RES-301 Hợp kim Warden: trọng số 70, số lượng 2"	
+		Spawn Point	Dải Xa, mảnh Xác lớn cạnh trạm thu (WD-02 canh, hàng rào cắt). Khe SP-R hạng hiếm của dải Xa	
+RES-101	Mảnh vỏ Cradle	Type	Tài nguyên thô, Phế liệu, dải Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Thường. Hull Shard	
+		Attribute	Khối: 1	
+		Resource Output	RCP-101, RCP-111, RCP-205, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-101, SLV-104, SLV-105, SLV-111	
+RES-102	Dây cáp đứt	Type	Tài nguyên thô, Phế liệu, dải Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Thường. Frayed Cable	
+		Attribute	Khối: 1	
+		Resource Output	RCP-102, RCP-104, RCP-112, RCP-205, UPG-BAG-1, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-101, SLV-104, SLV-111	
+RES-103	Quặng sắt thiên thạch	Type	Tài nguyên thô, Khoáng, dải Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Thường. Meteoric Iron Ore	
+		Attribute	Khối: 2	
+		Resource Output	RCP-103, RCP-113, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-102, SLV-112	
+RES-104	Bo mạch cháy	Type	Tài nguyên thô, Linh kiện, dải Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Ít gặp. Scorched Circuit	
+		Attribute	Khối: 1	
+		Resource Output	RCP-104, RCP-205, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-104, SLV-111, SLV-112, SLV-203	
+RES-105	Băng nước đục	Type	Tài nguyên thô, Băng, dải Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Thường. Murky Ice	
+		Attribute	Khối: 2	
+		Resource Output	RCP-105, RCP-114, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-103	
+RES-106	Đồ Trái Đất vụn	Type	Tài nguyên thô, Phế liệu, dải Gần. Nhãn: MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Ít gặp. Earth Trinkets	
+		Attribute	Khối: 1	
+		Resource Output	RCP-116	
+		Spawn Point	SLV-104, SLV-111, SLV-112	
+RES-201	Hợp kim nóng chảy	Type	Tài nguyên thô, Phế liệu, dải Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Ít gặp. Fused Alloy	
+		Attribute	Khối: 1	
+		Resource Output	RCP-151, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-203, SLV-204	
+RES-202	Quặng cobalt	Type	Tài nguyên thô, Khoáng, dải Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Ít gặp. Cobalt Ore	
+		Attribute	Khối: 2	
+		Resource Output	RCP-152, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-201	
+RES-203	Băng tinh	Type	Tài nguyên thô, Băng, dải Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Ít gặp. Clear Ice	
+		Attribute	Khối: 2	
+		Resource Output	RCP-154, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-202	
+RES-204	Lõi cảm biến	Type	Tài nguyên thô, Linh kiện, dải Giữa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Hiếm. Sensor Core	
+		Attribute	Khối: 1	
+		Resource Output	RCP-153, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-203	
+RES-301	Hợp kim Warden	Type	Tài nguyên thô, Phế liệu, dải Xa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Hiếm. Warden Alloy	
+		Attribute	Khối: 1	
+		Resource Output	RCP-161, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-303, Đơn vị The Warden hạ được (WD-01..04, gd-combat)	
+RES-302	Kính nebula	Type	Tài nguyên thô, Khoáng, dải Xa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Hiếm. Nebula Glass	
+		Attribute	Khối: 2	
+		Resource Output	RCP-162, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-301	
+RES-303	Băng plasma	Type	Tài nguyên thô, Băng, dải Xa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Hiếm. Plasma Ice	
+		Attribute	Khối: 2	
+		Resource Output	RCP-163	
+		Spawn Point	SLV-302	
+RES-304	Lõi năng lượng nguội	Type	Tài nguyên thô, Linh kiện, dải Xa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Hiếm. Cold Core	
+		Attribute	Khối: 1	
+		Resource Output	RCP-164, Sửa khoang (tram-va-cang.md mục 2.6c)	
+		Spawn Point	SLV-303	
+RES-305	Linh kiện Warden	Type	Tài nguyên thô, Linh kiện, dải Xa. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Hiếm. Warden Part	
+		Attribute	Khối: 1	
+		Resource Output	RCP-521, Lắp động cơ chính giai đoạn 4 và 5	
+		Spawn Point	WD-01..04 và boss BS-3 (gd-combat)	
+RES-401	Linh kiện Cradle	Type	Tài nguyên thô, Linh kiện, dải Cradle. Nhãn: Sau MVP	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Characteristic	Độ hiếm: Đặc biệt. Cradle Part	
+		Attribute	Khối: 1	
+		Resource Output	RCP-421, UPG-OXY-4, UPG-BAG-4, UPG-ENV-3, Lắp động cơ chính giai đoạn 4 và 5	
+		Spawn Point	Boss BS-4 và map nhánh Bên trong Cradle (gd-combat, gd-world)	

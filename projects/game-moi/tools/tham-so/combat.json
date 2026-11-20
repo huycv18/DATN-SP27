@@ -1,0 +1,137 @@
+{
+  "_ghi_chu": "Tham số sim combat. Chỉ số từng loài đọc thẳng từ combat-driftlife.md (Danh mục sơ bộ cho cỡ và nhãn, bảng 3.4 cho Sinh lực, ngưỡng, đòn). Dụng cụ và luật theo 2.2, 2.3, 3.1 đến 3.3, hệ số co-op theo mục Co-op. Số có [GIẢ ĐỊNH] là gd-tech đặt.",
+  "dt": 0.05,
+  "laoTu": {
+    "dmg": 10,
+    "nhip": 0.8,
+    "_nguon": "3.3 Lao từ bậc 1"
+  },
+  "duiXung": {
+    "choang": 20,
+    "nhip": 0.5,
+    "nongSau": 12,
+    "nghiNong": 4,
+    "_nguon": "3.3 Dùi xung (gd-combat chốt 20 điểm, 2026-11-20)"
+  },
+  "sungLuoi": {
+    "napLai": 3,
+    "_nguon": "3.3 Súng lưới, luật 20"
+  },
+  "sungMe": {
+    "me": 60,
+    "nhip": 3,
+    "tre": 1.5,
+    "_nguon": "3.3 Súng gây mê (gd-combat chốt 60 điểm mỗi 3,0 s, 2026-11-20)"
+  },
+  "choang": {
+    "giay": 4,
+    "tutSau": 1,
+    "tutMoiGiay": 0.2,
+    "_nguon": "luật 13, 3.2"
+  },
+  "ngu": {
+    "giay": 12,
+    "_nguon": "3.2"
+  },
+  "dr": {
+    "mien": 2,
+    "heSo": 1.5,
+    "tran": 3,
+    "datLai": 20,
+    "_nguon": "luật 17, 3.2"
+  },
+  "batTay": 1.5,
+  "phaoKeo": 1,
+  "kimSinhThiet": 2,
+  "ketNhanh": 0.6,
+  "mienSauTrung": 0.8,
+  "coop": {
+    "sinhLuc": 0.22,
+    "k": 0.47,
+    "_nguon": "combat-driftlife.md 6b: Sinh lực, ngưỡng choáng, ngưỡng mê Driftlife thường nhân N / k(N), a của k(N) theo dải đọc thẳng từ map.md 3.8. sinhLuc và k chỉ là dự phòng khi không đọc được hoặc loài không có dải"
+  },
+  "kichBan": {
+    "_nguon": "[GIẢ ĐỊNH] trung: xác suất một phát trúng. ne: xác suất né một đòn có báo trước (đòn không có báo trước thì né bằng nửa số này). Chưa có prototype bộ đẩy để đo S6",
+    "tệ": {
+      "trung": 0.5,
+      "ne": 0.35
+    },
+    "trung bình": {
+      "trung": 0.7,
+      "ne": 0.6
+    },
+    "tốt": {
+      "trung": 0.85,
+      "ne": 0.8
+    }
+  },
+  "lan": 2000,
+  "tiepCan": 3,
+  "cay": {
+    "DL-G03": 1.5
+  },
+  "vatTieuHao": {
+    "lưới": "CON-102",
+    "mê": "CON-103",
+    "phao": "CON-106",
+    "kim": "CON-107",
+    "_nguon": "Luật 19, 3.3. GTĐ đọc từ vat-pham.md khối ITEM"
+  },
+  "_tiep_can": "tiepCan: giây bay tới con vật cộng vào cả hạ và bắt (gd-combat đề nghị 3 giây). cay: giây cạy trước Phao kéo (luật 19, DL-G03)",
+  "chayTron": {
+    "heSoToc": 1.3,
+    "giay": 3,
+    "vungPhatHien": 6,
+    "vmaxNguoi": 6,
+    "tamLuoi": 7,
+    "tamLao": 8,
+    "_nguon": "combat-driftlife.md 2.7 kiểu Chạy trốn (lướt 1,3 lần người bậc 0 trong 3 giây, vùng phát hiện 6 u), nguoi-choi.md vmax 6, tầm Súng lưới 7 u, Lao từ 8 u. Mỗi phát trượt: con vật chạy 3 giây, khoảng cách tăng (1,3 - 1) x 6 x 3 = 5,4 u, người đuổi lại vào tầm trong lúc nó nghỉ"
+  },
+  "matTruocDoi": {
+    "DL-X02": 2.09,
+    "_nguon": "[GIẢ ĐỊNH] Mirror Mantis dội đạn mặt trước (combat-driftlife.md 3.5, E14). Giây vòng ra sau = nửa vòng tròn bán kính 4 u ở vmax 6 u/s (nguoi-choi.md). Vòng một lần lúc vào trận và sau mỗi đòn Chém (nó quay mặt về người)"
+  },
+  "boss": {
+    "BS-1": {
+      "sinhLuc": 600,
+      "heSoCoop": 0.6,
+      "neo": 3,
+      "giuNeo": 2,
+      "choangNeo": 4,
+      "nguongPha2": 0.5,
+      "quet": {
+        "dmg": 8,
+        "cd": 4
+      },
+      "phun": {
+        "con": 2,
+        "cd": 20,
+        "toiDa": 3
+      },
+      "krill": {
+        "dmg": 4,
+        "cd": 4
+      },
+      "huc": {
+        "dmg": 10,
+        "cd": 5
+      },
+      "dien": {
+        "dmg": 8,
+        "chuKy": 10,
+        "choang": 6
+      },
+      "xuaGiu": 3,
+      "_nguon": "combat-driftlife.md 3.7 dòng BS-1 (gd-combat sửa 2026-11-20 sau QA vòng 2): Sinh lực 600, quét 8, húc 12, phóng điện lõi 8 báo trước 1,3, thân chỉ nhận sát thương khi Choáng ở pha 1, pha 2 nhận mọi lúc (gd-combat chốt lại 2026-11-20), Xua đi cắt 2 đoạn Dây nối, đoạn 2 chỉ khi Sinh lực dưới 50%. Hệ số co-op boss 1 + 0,6 (N - 1) ở 6b. Krill phun ra dùng số DL-G04. Pha 1 phun 2 DL-G04 mỗi lần, hồi chiêu 20 s, tối đa 3 con sống (gd-combat 2026-11-20 sau S5). Húc pha 2 10 Oxy (gd-combat chốt 2026-11-20), mục tiêu thời lượng một mình 1 đến 2 phút",
+      "xuaDoan": 2,
+      "thanChiKhiChoang": false
+    },
+    "pDu": {
+      "tệ": 0.3,
+      "trung bình": 0.5,
+      "tốt": 0.7
+    },
+    "banKrillKhi": 3,
+    "_nguon": "[GIẢ ĐỊNH] pDu: xác suất người chơi dụ Scrapmaw vào vùng lõi khi lõi phóng điện ở pha 2. banKrillKhi: người chơi bắn Krill khi có từ 3 con sống. Pha 1 thân chỉ trúng đạn khi Choáng (đọc theo câu \"Mỗi Neo đứt thì Choáng 4 s, thân đánh được\"). Pha 2 thân trúng đạn bình thường"
+  }
+}

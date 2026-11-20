@@ -3,12 +3,14 @@
 Repo: github.com/huycv18/DATN-SP27 (public từ 2026-11-19). Làm việc nhiều thiết bị: máy cá nhân clone/pull, phiên Claude Đám mây trỏ vào repo này.
 
 ## Game
-Đang định nghĩa lại từ đầu (Lead 2026-11-19: "Hãy coi như chúng ta chưa có gì hết và cần xác định lại từ đầu về game này", bỏ cả ý tưởng Space Salvage).
-Không gian làm việc: `projects/game-moi/` (slug tạm, đổi khi có tên). Tiến độ định nghĩa: `projects/game-moi/concept.md`. Space Salvage (`projects/game-moi/`, Sheet GDD cũ) chỉ để tra, không dùng làm gốc.
+Mã tạm EMBER, slug `projects/game-moi/` (đổi khi có tên). Concept Space Salvage đã bỏ 2026-11-19, chỉ để tra.
+Lead giao toàn quyền cho GDM hoàn thiện GDD 2026-11-20. Nguồn luật chung: `projects/game-moi/gdd/00-khung-game.md`. Điểm GDM tự quyết: `projects/game-moi/log-gdm-tu-quyet.md`. GDD từng hệ thống: `projects/game-moi/gdd/he-thong/`.
+Một câu: tỉnh dậy trên trạm hỏng giữa bãi vỡ của tàu mẹ, mỗi ngày ra ngoài đổi oxy lấy tài nguyên và Driftlife, về sửa trạm, bán hàng ở ca cảng cho thương nhân ngoài hành tinh lấy Tally, nâng cấp để đi xa hơn, cho tới khi trạm rời neo.
 
 | Ràng buộc Lead đã chốt | Giá trị |
 |---|---|
-| Engine / nền tảng | Unity, PC (có thể mở rộng đa nền tảng), 1 người chơi (để mở Multiplayer) |
+| Engine / nền tảng | Unity, PC (có thể mở rộng đa nền tảng) |
+| Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, đều là cách chơi chính (chốt 2026-11-20). MVP có co-op 2 người (GDM đề xuất, log dòng 28) |
 | Art | 2D vector art, có thể thêm 3D thành 2.5D (chưa chốt) |
 | Kinh doanh | Bán đứt, không gói bán |
 | Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý (khá giống Dave the Diver) |
@@ -75,6 +77,7 @@ Playbook, knowledge và một số skill của phòng rút từ dự án Puzzle 
 10. **Song song, nhưng tiết kiệm token.** Việc độc lập của các vai giao cùng một lượt. Chỉ giao việc trên đường găng, không giao trước việc còn chờ Lead quyết. Vai đơn giản dùng Sonnet, không dùng Fable cho agent.
 11. **Tốc độ đến từ bớt vòng làm lại.** Số Lead chốt nằm ở `projects/game-moi/so-hien-hanh.md`. Đề xuất chỉ ở một file trình Lead tới khi chốt. Kiểm lặp phải là cổng máy. Vai giữ tab tự dán Sheet bằng `/gdd-sheet-sync`. Mỗi đợt GDM gửi tối đa số vai + 1 tin.
 12. **Bám mốc MVP.** Việc ngoài MVP (tầng 2, quái thứ 4, loài khách thứ 3...) chỉ ghi vào backlog, không làm khi Lead chưa mở phạm vi. Quyết định luật lõi chỉ tính là chốt khi Lead nói bằng lời. Tab Lead đã sửa tay: kéo bản Sheet về repo trước khi soạn bản sửa.
+13. **Phản biện, không im lặng làm theo.** Lead muốn mọi phiên cãi lại khi thấy ý của Lead hay của GDM có vấn đề (mâu thuẫn với điều đã chốt, chiến lược trội, vượt sức nhóm, phá pillar, yếu hơn một cách khác). Nói thẳng ngay lượt đó: vấn đề gì, vì sao, bằng chứng hay số nếu có, phương án thay thế. Không phản biện cho có, không cãi chuyện khẩu vị. Lead quyết cuối, Lead đã quyết lần hai sau khi nghe phản biện thì làm theo và ghi DECISIONS.
 
 ### Hệ thống phiên
 
@@ -91,7 +94,7 @@ Vai chia theo hệ thống của game (kiểu team indie), mỗi hệ thống m�
 | `gd-combat` | Combat | opus | Cắt, choáng, lưới bắt, sát thương, hit feel, quái và hành vi | Enemy |
 | `gd-items` | Vũ khí và vật phẩm | sonnet | Vũ khí, công cụ, đồ độ, salvage, nguyên liệu, món, công thức chế | Salvage, ITEM LIST, Recipe |
 | `gd-world` | Map và môi trường | opus | Tầng, zone, layout, hazard, điểm sinh, độ khó, nhịp chuyến bay, greybox | Zone |
-| `gd-quan` | Quán | opus | Ca bán, quầy, phục vụ, hàng đợi, hành vi khách, tip | Customer |
+| `gd-quan` | Trạm và cảng (trước là Quán) | opus | Khoang trạm, người vớt mở tính năng, ca cảng giao thương, Hạng cảng, nuôi Driftlife, sự cố | Customer (thương nhân và tàu) |
 | `gd-economy` | Economy và tiến độ | opus | ₵, bảng giá duy nhất, nâng cấp, phí cứu hộ, nhịp mở khóa theo ngày, lịch sử đổi số | ECONOMIC, Shop, Upgrade, PROCESSING, Balance Sheet |
 | `gd-ux` | UX / UI | sonnet | HUD, wireframe, FTUE, tutorial, input, game feel checklist, strings UI | WIREFRAME, Tutorials |
 | `gd-tech` | Technical design | sonnet | Sim, validator chéo tab, Sheet sang ScriptableObject, prototype thử feel, event tracking | Event Tracking |
@@ -139,7 +142,7 @@ Kho tri thức chuyên môn indie: `docs/knowledge/indie/` (đọc `docs/knowled
 | Quái mới | gd-combat (hành vi, chỉ số) -> gd-items (rơi gì) -> gd-world (đặt ở đâu) -> gd-tech (sim) -> gd-qa |
 | Tầng mới / hazard | gd-world (layout, hazard, độ khó) -> gd-combat, gd-items (nội dung) -> gd-tech (sim) -> gd-qa |
 | Vũ khí, item, công thức | gd-items (định nghĩa, chỉ số) -> gd-economy (giá, sim 3 kịch bản) -> gd-qa (kiểm chéo ITEM LIST, Recipe, Shop, ECONOMIC) |
-| Quán, khách | gd-quan (luật phục vụ) -> gd-character (hồ sơ) -> gd-economy (giá, tip) -> gd-story (lời thoại) -> gd-ux (màn quán) |
+| Trạm, cảng, thương nhân | gd-quan (luật ca cảng, khoang) -> gd-character (hồ sơ) -> gd-economy (giá, Tally) -> gd-story (lời thoại) -> gd-ux (màn cảng) |
 | Nhân vật chính | gd-character (di chuyển, năng lượng) -> gd-tech (prototype thử feel) -> gd-combat (kỹ năng) -> gd-qa |
 | Cốt truyện | gd-story -> gd-character (khớp hồ sơ) -> GDM (khớp core loop) -> gd-qa |
 | Wireframe, FTUE | gd-ux -> vai giữ hệ thống (khớp luật) -> gd-qa |

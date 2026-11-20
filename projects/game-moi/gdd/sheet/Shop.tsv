@@ -1,0 +1,45 @@
+ID	Item List	Quantity	Unit	Value	Price (Tally)	New Price (Tally)	Note
+CGO-101	Kiện phế liệu	1	kiện	14,0	140		Tàu trả khi bốc kiện. MVP
+CGO-102	Kiện cáp	1	kiện	13,2	130		Tàu trả khi bốc kiện. MVP
+CGO-103	Kiện quặng	1	kiện	13,2	130		Tàu trả khi bốc kiện. MVP
+CGO-104	Kiện băng	1	kiện	14,0	140		Tàu trả khi bốc kiện. MVP
+CGO-105	Kiện mô sinh học	1	kiện	13,5	140		Tàu trả khi bốc kiện. MVP
+CGO-109	Kiện đồ Trái Đất	1	kiện	12,5	120		Tàu trả khi bốc kiện. MVP
+CGO-111	Kiện cơ khí	1	kiện	13,4	130		Tàu trả khi bốc kiện. Sau MVP
+CGO-112	Kiện điện tử	1	kiện	16,1	160		Tàu trả khi bốc kiện. Sau MVP
+CGO-113	Kiện nước tinh khiết	1	kiện	12,0	120		Tàu trả khi bốc kiện. MVP
+CGO-106	Kiện đặc sản Gần	1	kiện	13,2	130		Tàu trả khi bốc kiện. MVP
+CGO-107	Kiện sản phẩm nuôi Gần	1	kiện	42,9	430		Tàu trả khi bốc kiện. Sau MVP
+CGO-141	Kiện vật tư	1	kiện	46,9	470		Tàu trả khi bốc kiện. Sau MVP
+CGO-131	Bản sao dữ liệu	1	kiện	20,9	210		Tàu trả khi bốc kiện. Sau MVP
+CGO-211	Kiện hợp kim	1	kiện	40,4	400		Tàu trả khi bốc kiện. Sau MVP
+CGO-212	Kiện cảm biến	1	kiện	31,3	310		Tàu trả khi bốc kiện. Sau MVP
+CGO-213	Kiện dung dịch lạnh	1	kiện	44,9	450		Tàu trả khi bốc kiện. Sau MVP
+CGO-206	Kiện đặc sản Giữa	1	kiện	44,0	440		Tàu trả khi bốc kiện. Sau MVP
+CGO-207	Kiện sản phẩm nuôi Giữa	1	kiện	46,2	460		Tàu trả khi bốc kiện. Sau MVP
+CGO-311	Kiện giáp	1	kiện	107,6	1100		Tàu trả khi bốc kiện. Sau MVP
+CGO-312	Kiện plasma	1	kiện	86,9	870		Tàu trả khi bốc kiện. Sau MVP
+CGO-313	Kiện lõi nguội	1	kiện	111,1	1100		Tàu trả khi bốc kiện. Sau MVP
+CGO-306	Kiện đặc sản Xa	1	kiện	99,0	990		Tàu trả khi bốc kiện. Sau MVP
+CGO-307	Kiện sản phẩm nuôi Xa	1	kiện	107,8	1100		Tàu trả khi bốc kiện. Sau MVP
+CGO-411	Kiện linh kiện Cradle	1	kiện	161,0	1600		Tàu trả khi bốc kiện. Sau MVP
+CGO-511	Kiện linh kiện Warden	1	kiện	193,2	1950		Tàu trả khi bốc kiện. Sau MVP
+CGO-121 DL-G01	Lồng sinh vật sống, Driftmoth	1	lồng	5,14	50		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. MVP
+CGO-121 DL-G02	Lồng sinh vật sống, Skitter Ray	1	lồng	5,74	55		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. MVP
+CGO-121 DL-G04	Lồng sinh vật sống, Sting Krill	1	lồng	4,04	40		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. MVP
+CGO-121 DL-G05	Lồng sinh vật sống, Arc Eel	1	lồng	30,71	310		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. MVP (hạ), Sau MVP (bắt)
+CGO-121 DL-G03	Lồng sinh vật sống, Barnacle Maw	1	lồng	16,91	170		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. Sau MVP
+CGO-221 DL-M02	Lồng sinh vật sống, Lumen Jelly	1	lồng	25,91	260		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. Sau MVP
+CGO-221 DL-M03	Lồng sinh vật sống, Ore Grazer	1	lồng	28,91	290		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. Sau MVP
+CGO-221 DL-M04	Lồng sinh vật sống, Needle Shoal	1	lồng	10,26	100		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. Sau MVP
+CGO-321 DL-X01	Lồng sinh vật sống, Prism Wisp	1	lồng	33,49	330		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. Sau MVP
+CGO-321 DL-X02	Lồng sinh vật sống, Mirror Mantis	1	lồng	69,51	700		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. Sau MVP
+CGO-321 DL-X05	Lồng sinh vật sống, Brood Spawn	1	lồng	23,04	230		Tàu trả theo loài bên trong. Con nuôi trả 0,5 lần. Sau MVP
+KH07-C2	Kệ kiện cấp 2 (cảng cấp 2)	1	cái	-	400		Shop bán. Mở chương 1. MVP
+BPR-103	Bản thiết kế Máy quét xung	1	cái	-	2300		Shop bán. Mở chương 2. Sau MVP
+BPR-105	Bản thiết kế Máy cắt thân tàu (cũng có ở hòm Station Flint)	1	cái	-	7900		Shop bán. Mở chương 3. Sau MVP
+BPR-106	Bản thiết kế tiện ích cảng	1	cái	-	7900		Shop bán. Mở chương 3. Sau MVP
+ENG-101	Linh kiện động cơ	1	cái	-	2000		Shop bán. Cần Hạng cảng 3. Mở chương 1. MVP
+ENG-102	Linh kiện động cơ	1	cái	-	7650		Shop bán. Cần Hạng cảng 5. Mở chương 2. Sau MVP
+ENG-103	Linh kiện động cơ	1	cái	-	26400		Shop bán. Cần Hạng cảng 7. Mở chương 3. Sau MVP
+ENG-104	Linh kiện động cơ	1	cái	-	32100		Shop bán. Cần Hạng cảng 8. Mở chương 4. Sau MVP

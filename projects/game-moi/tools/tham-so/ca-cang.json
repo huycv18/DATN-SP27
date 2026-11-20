@@ -1,0 +1,392 @@
+{
+  "_ghi_chu": "Tham số sim ca cảng. Nguồn chính tram-va-cang.md mục 2 (luật 18 đến 58), 2.4, 2.5, 2.6b, 3, mục Co-op. Số có [GIẢ ĐỊNH] là gd-tech đặt vì GDD chưa có.",
+  "dt": 0.25,
+  "caToiDa": 240,
+  "dongKien": 5,
+  "cheXuong": 10,
+  "keKien": 6,
+  "roiSauKhiDu": 3,
+  "nguongNhanh": 0.5,
+  "diemDu": 2,
+  "diemNhanh": 1,
+  "nguongHang": [
+    0,
+    10,
+    20,
+    45,
+    70,
+    100,
+    135,
+    195
+  ],
+  "luuBen": {
+    "dài": 90,
+    "vừa": 70,
+    "ngắn": 45
+  },
+  "choNgoai": 30,
+  "_nguon_so": "tram-va-cang.md mục 3 và luật 23, 40, 64 tới 70 (sau QA GD-031, 2026-11-20): đóng kiện 5 giây, đưa con vào lồng giao 8 giây (RCP-126), chế 10 giây, kệ cấp 1 6 chỗ, lưu bến 90 / 70 / 45, chờ ngoài 30, ca 240, ngưỡng nhanh 50%, điểm đơn đủ trần(2 x (N + 1) / 2), điểm nhanh trần((N + 1) / 2), ngưỡng hạng 10, 20, 45, 70, 100, 135, 195, xử lý sự cố 4 giây cộng đường đi, thêm 1 sự cố mỗi ca khi N từ 3. Nhóm hàng đọc từ bảng Nhóm hàng cảng của tram-va-cang.md, cỡ kiện đọc khối CGOSIZE của vat-pham.md",
+  "viTri": {
+    "xuong": -1,
+    "kho": 0,
+    "may": 1,
+    "ben": [
+      2,
+      3.5,
+      3.5
+    ],
+    "giayMoiO": 2,
+    "_nguon": "Thứ tự ô theo sơ đồ 2.6b (xưởng, kho, máy và kệ, bến 1 cùng tầng giữa). Giây mỗi ô 2,0 (gd-quan nhận) để kho tới bến 1 là 4 giây (mục tiêu dưới 4 giây ở mục 5). Bến 2, 3 khác tầng thêm 1,5 ô cho thang (gd-quan nhận)"
+  },
+  "tocDoMang": {
+    "Nhỏ": 0.9,
+    "Vừa": 0.8,
+    "Lớn": 0.65,
+    "_nguon": "tram-va-cang.md 3, cỡ kiện theo vat-pham.md khối CGOSIZE"
+  },
+  "tau": {
+    "_nguon": "tram-va-cang.md bảng 2.4 (trọng số túi trộn, số dòng, nhóm). TA08 không vào túi trộn. TA03 dòng tùy chọn không tính vào đơn đủ nên không mô phỏng. TA06 dòng ẩn không mô phỏng. TA10 gộp 1 dòng HC09 và 1 dòng HC12 hoặc HC13 thành rút từ 3 nhóm [GIẢ ĐỊNH]. TA01 có HC04 và CGO-113 từ khi xưởng hoạt động (gd-quan, QA vòng 2 R2), sim coi xưởng luôn hoạt động ở chương 1. Bớt dòng theo luật 69 mới: TA03, TA04, TA06 còn 2 dòng, TA09 2 đến 3 dòng. Dòng kiện cần chế và dòng lồng sống luôn kiện gốc 1. Đợt 4 (log 67): TA01 bỏ HC04, kiện tinh duy nhất chương 1 là CGO-113 (HC03), HC04 mở từ chương 2 theo bảng Nhóm hàng",
+    "TA01": {
+      "luu": "dài",
+      "dong": [
+        1,
+        2
+      ],
+      "nhom": [
+        "HC01",
+        "HC02",
+        "HC10",
+        "HC06",
+        "HC03"
+      ],
+      "nhomTuHang": {
+        "3": [
+          "HC05",
+          "HC11"
+        ]
+      },
+      "chiId": {
+        "HC06": [
+          "CGO-121"
+        ],
+        "HC11": [
+          "CGO-106"
+        ],
+        "HC03": [
+          "CGO-113"
+        ]
+      },
+      "trongSo": 3,
+      "tu": 1,
+      "hang": 1
+    },
+    "TA02": {
+      "luu": "ngắn",
+      "dong": [
+        1,
+        1
+      ],
+      "nhom": [
+        "HC01",
+        "HC02",
+        "HC10"
+      ],
+      "themId": [
+        "CGO-104"
+      ],
+      "trongSo": 1,
+      "tu": 1,
+      "hang": 2
+    },
+    "TA03": {
+      "luu": "vừa",
+      "dong": [
+        2,
+        2
+      ],
+      "nhom": [
+        "HC03",
+        "HC07",
+        "HC08"
+      ],
+      "trongSo": 2,
+      "tu": 2,
+      "hang": 1
+    },
+    "TA04": {
+      "luu": "dài",
+      "dong": [
+        2,
+        2
+      ],
+      "nhom": [
+        "HC04",
+        "HC12"
+      ],
+      "trongSo": 2,
+      "tu": 2,
+      "hang": 1,
+      "chao": 15
+    },
+    "TA05": {
+      "luu": "vừa",
+      "dong": [
+        1,
+        2
+      ],
+      "nhom": [
+        "HC06",
+        "HC11"
+      ],
+      "trongSo": 2,
+      "tu": 2,
+      "hang": 1
+    },
+    "TA06": {
+      "luu": "vừa",
+      "dong": [
+        2,
+        2
+      ],
+      "nhom": [
+        "HC02",
+        "HC12",
+        "HC13"
+      ],
+      "trongSo": 2,
+      "tu": 3,
+      "hang": 1
+    },
+    "TA07": {
+      "luu": "vừa",
+      "dong": [
+        2,
+        2
+      ],
+      "nhom": [
+        "HC06",
+        "HC08",
+        "HC11"
+      ],
+      "trongSo": 2,
+      "tu": 3,
+      "hang": 1
+    },
+    "TA09": {
+      "luu": "ngắn",
+      "dong": [
+        2,
+        3
+      ],
+      "nhom": [
+        "HC04",
+        "HC12",
+        "HC13"
+      ],
+      "trongSo": 1,
+      "tu": 3,
+      "hang": 6
+    },
+    "TA10": {
+      "luu": "vừa",
+      "dong": [
+        2,
+        2
+      ],
+      "nhom": [
+        "HC09",
+        "HC12",
+        "HC13"
+      ],
+      "trongSo": 1,
+      "tu": 3,
+      "hang": 1
+    }
+  },
+  "lechGioDen": 10,
+  "suCoGiay": 4,
+  "_gia_dinh": "[GIẢ ĐỊNH] Hạng cảng của từng ô, TA10 rút dòng từ 3 nhóm. Kho đủ hàng",
+  "kichBan": {
+    "_nguon": "[GIẢ ĐỊNH] nghi: giây nghĩ trước mỗi việc. thamLam: ưu tiên dòng của tàu sắp rời. dongTruocTau: đóng kiện cho tàu chưa cập bến",
+    "tệ": {
+      "nghi": 3,
+      "thamLam": false,
+      "dongTruocTau": false
+    },
+    "trung bình": {
+      "nghi": 1.5,
+      "thamLam": true,
+      "dongTruocTau": false
+    },
+    "tốt": {
+      "nghi": 0.5,
+      "thamLam": true,
+      "dongTruocTau": true
+    }
+  },
+  "lan": 300,
+  "_gio_den": "Luật 70: tàu thứ i đến ở i x giãn cách cộng lệch 0 tới 10 giây, giờ đến cộng lưu bến vượt 240 thì kéo về 240 trừ lưu bến",
+  "kePhu": {
+    "cho": 4,
+    "tuChuong": 4,
+    "_nguon": "gd-quan chốt 2026-11-20: tiện ích Trưởng cảng chương 4, kệ kiện phụ 4 chỗ cạnh bến 2 và 3. Kiện lấy từ kệ phụ đi tới bến xa bằng quãng máy tới bến 1 (một ô). Bật bằng tham số coKePhu khi chạy"
+  },
+  "suCoThemTuN": 3,
+  "dongLong": 8,
+  "cauHinh": {
+    "1": {
+      "ten": "Chương 1, Hạng 1",
+      "ch": 1,
+      "ben": 1,
+      "soTau": 4,
+      "gianCach": 42,
+      "kienGoc": [
+        1,
+        3
+      ],
+      "heSoKien": 0.6,
+      "hang": 1,
+      "suCo": [
+        0,
+        0
+      ],
+      "xuong": 1,
+      "may": 1
+    },
+    "2": {
+      "ten": "Chương 2",
+      "ch": 2,
+      "ben": 1,
+      "soTau": 4,
+      "gianCach": 45,
+      "kienGoc": [
+        1,
+        3
+      ],
+      "heSoKien": 0.6,
+      "hang": 4,
+      "suCo": [
+        0,
+        0
+      ],
+      "xuong": 2,
+      "may": 1
+    },
+    "3": {
+      "ten": "Chương 3, 2 bến",
+      "ch": 3,
+      "ben": 2,
+      "soTau": 4,
+      "gianCach": 45,
+      "kienGoc": [
+        1,
+        2
+      ],
+      "heSoKien": 0.6,
+      "hang": 5,
+      "suCo": [
+        1,
+        1
+      ],
+      "xuong": 2,
+      "may": 2
+    },
+    "4": {
+      "ten": "Chương 4, 3 bến",
+      "ch": 4,
+      "ben": 3,
+      "soTau": 5,
+      "gianCach": 45,
+      "kienGoc": [
+        1,
+        2
+      ],
+      "heSoKien": 0.6,
+      "hang": 7,
+      "suCo": [
+        1,
+        2
+      ],
+      "xuong": 2,
+      "may": 2
+    },
+    "5": {
+      "ten": "Chương 5, 3 bến",
+      "ch": 5,
+      "ben": 3,
+      "soTau": 5,
+      "gianCach": 45,
+      "kienGoc": [
+        1,
+        2
+      ],
+      "heSoKien": 0.6,
+      "hang": 7,
+      "suCo": [
+        1,
+        2
+      ],
+      "xuong": 2,
+      "may": 2
+    },
+    "_nguon": "tram-va-cang.md bảng Cấu hình lịch mục 3 (luật 68). hang là Hạng cảng giả định cho mỗi ô: chương 1 có hai ô Hạng 1 và Hạng 3 (gd-quan xin). Chương 2 Hạng 4, chương 3 Hạng 5, chương 4 và 5 Hạng 7 theo trần hạng bảng 2.5 [GIẢ ĐỊNH]. Sự cố theo tham số mục 3. xuong: số mẻ chế song song (xưởng cấp 2 từ chương 2, bảng 2.7). may: số máy đóng kiện (máy thứ hai của Trưởng cảng từ chương 3 khi có 2 bến). 2026-11-20 gd-quan: hệ số kiện co-op 0,6 mọi chương, chương 2 giãn cách 45 và kiện gốc 1 đến 3, chương 1 giãn cách 42. gd-quan chốt: chương 3 hai bến giãn cách 45, chương 3 một bến như chương 2 (45 giây, kiện gốc 1 đến 3)",
+    "1-h3": {
+      "ten": "Chương 1, Hạng 3 (có TA02, TA01 có HC05, HC11)",
+      "ch": 1,
+      "ben": 1,
+      "soTau": 4,
+      "gianCach": 42,
+      "kienGoc": [
+        1,
+        3
+      ],
+      "heSoKien": 0.6,
+      "hang": 3,
+      "suCo": [
+        0,
+        0
+      ],
+      "xuong": 1,
+      "may": 1
+    },
+    "3-1ben": {
+      "ten": "Chương 3, 1 bến",
+      "ch": 3,
+      "ben": 1,
+      "soTau": 4,
+      "gianCach": 45,
+      "kienGoc": [
+        1,
+        3
+      ],
+      "heSoKien": 0.6,
+      "hang": 5,
+      "suCo": [
+        1,
+        1
+      ],
+      "xuong": 2,
+      "may": 1
+    },
+    "4-2ben": {
+      "ten": "Chương 4, 2 bến",
+      "ch": 4,
+      "ben": 2,
+      "soTau": 4,
+      "gianCach": 42,
+      "kienGoc": [
+        1,
+        2
+      ],
+      "heSoKien": 0.6,
+      "hang": 7,
+      "suCo": [
+        1,
+        2
+      ],
+      "xuong": 2,
+      "may": 2
+    }
+  },
+  "cheQuaDem": 2
+}
