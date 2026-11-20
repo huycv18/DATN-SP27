@@ -1,492 +1,492 @@
 Issue ID	Task	Sub Task	Short Description	Ref
-RCP-101	Ép tấm thép	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x RES-101 Mảnh vỏ Cradle	
-		Output	"1 x COM-101 Tấm thép nén
+1	Ép tấm thép	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	3 x Mảnh vỏ Cradle	
+		Output	"1 x Tấm thép nén
 Thời gian: 10 giây"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-RCP-102	Bện dây dẫn	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x RES-102 Dây cáp đứt	
-		Output	"1 x COM-102 Dây dẫn bện
+2	Bện dây dẫn	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	3 x Dây cáp đứt	
+		Output	"1 x Dây dẫn bện
 Thời gian: 8 giây"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-RCP-103	Luyện thỏi sắt	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x RES-103 Quặng sắt thiên thạch	
-		Output	"1 x COM-103 Thỏi sắt
+3	Luyện thỏi sắt	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	2 x Quặng sắt thiên thạch	
+		Output	"1 x Thỏi sắt
 Thời gian: 15 giây"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-RCP-104	Phục hồi mạch	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x RES-104 Bo mạch cháy
-1 x RES-102 Dây cáp đứt"	
-		Output	"1 x COM-104 Mạch phục hồi
+4	Phục hồi mạch	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Bo mạch cháy
+1 x Dây cáp đứt"	
+		Output	"1 x Mạch phục hồi
 Thời gian: 20 giây"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-RCP-105	Lọc băng	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x RES-105 Băng nước đục	
-		Output	"1 x COM-105 Khối nước tinh khiết
+5	Lọc băng	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	2 x Băng nước đục	
+		Output	"1 x Khối nước tinh khiết
 Thời gian: 12 giây"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-RCP-151	Ép tấm hợp kim chịu nhiệt	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x RES-201 Hợp kim nóng chảy	
-		Output	"1 x COM-201 Tấm hợp kim chịu nhiệt
+6	Ép tấm hợp kim chịu nhiệt	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	3 x Hợp kim nóng chảy	
+		Output	"1 x Tấm hợp kim chịu nhiệt
 Thời gian: 10 giây"	
 		Unlock	Kỹ sư, dải Giữa mở. Nhãn: Sau MVP	
-RCP-152	Luyện thỏi cobalt	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x RES-202 Quặng cobalt	
-		Output	"1 x COM-202 Thỏi cobalt
+7	Luyện thỏi cobalt	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	2 x Quặng cobalt	
+		Output	"1 x Thỏi cobalt
 Thời gian: 15 giây"	
 		Unlock	Kỹ sư, dải Giữa mở. Nhãn: Sau MVP	
-RCP-153	Chế mạch cảm biến	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x RES-204 Lõi cảm biến
-1 x COM-104 Mạch phục hồi"	
-		Output	"1 x COM-203 Mạch cảm biến
+8	Chế mạch cảm biến	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Lõi cảm biến
+1 x Mạch phục hồi"	
+		Output	"1 x Mạch cảm biến
 Thời gian: 20 giây"	
 		Unlock	Kỹ sư, dải Giữa mở. Nhãn: Sau MVP	
-RCP-154	Pha dung dịch lạnh	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x RES-203 Băng tinh	
-		Output	"1 x COM-204 Dung dịch lạnh
+9	Pha dung dịch lạnh	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	2 x Băng tinh	
+		Output	"1 x Dung dịch lạnh
 Thời gian: 12 giây"	
 		Unlock	Kỹ sư, dải Giữa mở. Nhãn: Sau MVP	
-RCP-161	Ép tấm giáp Warden	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x RES-301 Hợp kim Warden	
-		Output	"1 x COM-301 Tấm giáp Warden
+10	Ép tấm giáp Warden	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	3 x Hợp kim Warden	
+		Output	"1 x Tấm giáp Warden
 Thời gian: 12 giây"	
 		Unlock	Kỹ sư, dải Xa mở. Nhãn: Sau MVP	
-RCP-162	Mài phiến kính	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x RES-302 Kính nebula	
-		Output	"1 x COM-302 Phiến kính
+11	Mài phiến kính	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	2 x Kính nebula	
+		Output	"1 x Phiến kính
 Thời gian: 18 giây"	
 		Unlock	Kỹ sư, dải Xa mở. Nhãn: Sau MVP	
-RCP-163	Cuộn plasma	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x RES-303 Băng plasma	
-		Output	"1 x COM-303 Cuộn plasma
+12	Cuộn plasma	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	2 x Băng plasma	
+		Output	"1 x Cuộn plasma
 Thời gian: 18 giây"	
 		Unlock	Kỹ sư, dải Xa mở. Nhãn: Sau MVP	
-RCP-164	Nạp lõi nguội	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x RES-304 Lõi năng lượng nguội
-1 x COM-204 Dung dịch lạnh"	
-		Output	"1 x COM-304 Lõi nguội nạp
+13	Nạp lõi nguội	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Lõi năng lượng nguội
+1 x Dung dịch lạnh"	
+		Output	"1 x Lõi nguội nạp
 Thời gian: 20 giây"	
 		Unlock	Kỹ sư, dải Xa mở. Nhãn: Sau MVP	
-RCP-131	Nạp Bình Oxy nhỏ	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-105 Khối nước tinh khiết
-1 x COM-101 Tấm thép nén"	
-		Output	"1 x CON-101 Bình Oxy nhỏ
+14	Nạp Bình Oxy nhỏ	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Khối nước tinh khiết
+1 x Tấm thép nén"	
+		Output	"1 x Bình Oxy nhỏ
 Thời gian: 10 giây"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-RCP-132	Quấn Lưới cuộn	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-102 Dây dẫn bện
-1 x SMP-101 Mô sinh học Gần"	
-		Output	"10 x CON-102 Lưới cuộn
+15	Quấn Lưới cuộn	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Dây dẫn bện
+1 x Mô sinh học Gần"	
+		Output	"10 x Lưới cuộn
 Thời gian: 10 giây"	
 		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-RCP-133	Chiết Ống gây mê	Type	Phòng nghiên cứu	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x SMP-111 Đặc sản DL-G01 Driftmoth
-1 x COM-105 Khối nước tinh khiết"	
-		Output	"2 x CON-103 Ống gây mê
+16	Chiết Ống gây mê	Type	Phòng nghiên cứu	vat-pham.md mục 3
+		Ingredients	"1 x Đặc sản Driftmoth
+1 x Khối nước tinh khiết"	
+		Output	"2 x Ống gây mê
 Thời gian: 10 giây"	
 		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP	
-RCP-134	Trộn Keo vá	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-101 Tấm thép nén
-1 x SMP-113 Đặc sản DL-G04 Sting Krill"	
-		Output	"2 x CON-104 Keo vá
+17	Trộn Keo vá	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Tấm thép nén
+1 x Đặc sản Sting Krill"	
+		Output	"2 x Keo vá
 Thời gian: 10 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-135	Lắp Cầu chì dự phòng	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-104 Mạch phục hồi
-1 x SMP-114 Đặc sản DL-G05 Arc Eel"	
-		Output	"2 x CON-105 Cầu chì dự phòng
+18	Lắp Cầu chì dự phòng	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Mạch phục hồi
+1 x Đặc sản Arc Eel"	
+		Output	"2 x Cầu chì dự phòng
 Thời gian: 10 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-136	Chế Phao kéo	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-103 Thỏi sắt
-1 x COM-102 Dây dẫn bện
-1 x COM-105 Khối nước tinh khiết"	
-		Output	"2 x CON-106 Phao kéo
+19	Chế Phao kéo	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Thỏi sắt
+1 x Dây dẫn bện
+1 x Khối nước tinh khiết"	
+		Output	"2 x Phao kéo
 Thời gian: 10 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-137	Chế Kim sinh thiết	Type	Phòng nghiên cứu	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-104 Mạch phục hồi
-1 x COM-105 Khối nước tinh khiết"	
-		Output	"2 x CON-107 Kim sinh thiết
+20	Chế Kim sinh thiết	Type	Phòng nghiên cứu	vat-pham.md mục 3
+		Ingredients	"1 x Mạch phục hồi
+1 x Khối nước tinh khiết"	
+		Output	"2 x Kim sinh thiết
 Thời gian: 10 giây"	
 		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP	
-RCP-171	Pha thức ăn nuôi Gần	Type	Khoang sinh quyển	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x SMP-101 Mô sinh học Gần	
-		Output	"4 x FED-101 Thức ăn nuôi Gần
+21	Pha thức ăn nuôi Gần	Type	Khoang sinh quyển	vat-pham.md mục 3
+		Ingredients	2 x Mô sinh học Gần	
+		Output	"4 x Thức ăn nuôi Gần
 Thời gian: 8 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-271	Pha thức ăn nuôi Giữa	Type	Khoang sinh quyển	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x SMP-201 Mô sinh học Giữa	
-		Output	"4 x FED-201 Thức ăn nuôi Giữa
+22	Pha thức ăn nuôi Giữa	Type	Khoang sinh quyển	vat-pham.md mục 3
+		Ingredients	2 x Mô sinh học Giữa	
+		Output	"4 x Thức ăn nuôi Giữa
 Thời gian: 8 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-371	Pha thức ăn nuôi Xa	Type	Khoang sinh quyển	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x SMP-301 Mô sinh học Xa	
-		Output	"4 x FED-301 Thức ăn nuôi Xa
+23	Pha thức ăn nuôi Xa	Type	Khoang sinh quyển	vat-pham.md mục 3
+		Ingredients	2 x Mô sinh học Xa	
+		Output	"4 x Thức ăn nuôi Xa
 Thời gian: 8 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-111	Đóng kiện phế liệu	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	14 x RES-101 Mảnh vỏ Cradle	
-		Output	"1 x CGO-101 Kiện phế liệu
+24	Đóng kiện phế liệu	Type	Cảng	vat-pham.md mục 3
+		Ingredients	14 x Mảnh vỏ Cradle	
+		Output	"1 x Kiện phế liệu
 Thời gian: 5 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-112	Đóng kiện cáp	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	11 x RES-102 Dây cáp đứt	
-		Output	"1 x CGO-102 Kiện cáp
+25	Đóng kiện cáp	Type	Cảng	vat-pham.md mục 3
+		Ingredients	11 x Dây cáp đứt	
+		Output	"1 x Kiện cáp
 Thời gian: 5 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-113	Đóng kiện quặng	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	6 x RES-103 Quặng sắt thiên thạch	
-		Output	"1 x CGO-103 Kiện quặng
+26	Đóng kiện quặng	Type	Cảng	vat-pham.md mục 3
+		Ingredients	6 x Quặng sắt thiên thạch	
+		Output	"1 x Kiện quặng
 Thời gian: 6 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-114	Đóng kiện băng	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	7 x RES-105 Băng nước đục	
-		Output	"1 x CGO-104 Kiện băng
+27	Đóng kiện băng	Type	Cảng	vat-pham.md mục 3
+		Ingredients	7 x Băng nước đục	
+		Output	"1 x Kiện băng
 Thời gian: 6 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-115	Đóng kiện mô sinh học	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	9 x SMP-101 Mô sinh học Gần	
-		Output	"1 x CGO-105 Kiện mô sinh học
+28	Đóng kiện mô sinh học	Type	Cảng	vat-pham.md mục 3
+		Ingredients	9 x Mô sinh học Gần	
+		Output	"1 x Kiện mô sinh học
 Thời gian: 5 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-116	Đóng kiện đồ Trái Đất	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	5 x RES-106 Đồ Trái Đất vụn	
-		Output	"1 x CGO-109 Kiện đồ Trái Đất
+29	Đóng kiện đồ Trái Đất	Type	Cảng	vat-pham.md mục 3
+		Ingredients	5 x Đồ Trái Đất vụn	
+		Output	"1 x Kiện đồ Trái Đất
 Thời gian: 5 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-121	Đóng kiện cơ khí	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x COM-101 Tấm thép nén	
-		Output	"1 x CGO-111 Kiện cơ khí
+30	Đóng kiện cơ khí	Type	Cảng	vat-pham.md mục 3
+		Ingredients	3 x Tấm thép nén	
+		Output	"1 x Kiện cơ khí
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-122	Đóng kiện điện tử	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x COM-102 Dây dẫn bện	
-		Output	"1 x CGO-112 Kiện điện tử
+31	Đóng kiện điện tử	Type	Cảng	vat-pham.md mục 3
+		Ingredients	3 x Dây dẫn bện	
+		Output	"1 x Kiện điện tử
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-123	Đóng kiện nước tinh khiết	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x COM-105 Khối nước tinh khiết	
-		Output	"1 x CGO-113 Kiện nước tinh khiết
+32	Đóng kiện nước tinh khiết	Type	Cảng	vat-pham.md mục 3
+		Ingredients	2 x Khối nước tinh khiết	
+		Output	"1 x Kiện nước tinh khiết
 Thời gian: 5 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-124	Đóng kiện đặc sản Gần	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x một trong SMP-111..115	
-		Output	"1 x CGO-106 Kiện đặc sản Gần
+33	Đóng kiện đặc sản Gần	Type	Cảng	vat-pham.md mục 3
+		Ingredients	3 x một trong Đặc sản Driftmoth..115	
+		Output	"1 x Kiện đặc sản Gần
 Thời gian: 5 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-125	Đóng kiện sản phẩm nuôi Gần	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	13 x một trong BIO-111..114	
-		Output	"1 x CGO-107 Kiện sản phẩm nuôi Gần
+34	Đóng kiện sản phẩm nuôi Gần	Type	Cảng	vat-pham.md mục 3
+		Ingredients	13 x một trong Sản phẩm nuôi Driftmoth..114	
+		Output	"1 x Kiện sản phẩm nuôi Gần
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-126	Đưa sinh vật sống cỡ S Gần vào lồng giao	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	1 x một trong LIV-111..113	
-		Output	"1 x CGO-121 Lồng sinh vật sống Gần
+35	Đưa sinh vật sống cỡ S Gần vào lồng giao	Type	Cảng	vat-pham.md mục 3
+		Ingredients	1 x một trong Mẫu sống Driftmoth..113	
+		Output	"1 x Lồng sinh vật sống Gần
 Thời gian: 8 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-RCP-128	Đưa sinh vật sống cỡ M Gần vào lồng giao	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	1 x một trong LIV-114..115	
-		Output	"1 x CGO-121 Lồng sinh vật sống Gần
+36	Đưa sinh vật sống cỡ M Gần vào lồng giao	Type	Cảng	vat-pham.md mục 3
+		Ingredients	1 x một trong Mẫu sống Arc Eel..115	
+		Output	"1 x Lồng sinh vật sống Gần
 Thời gian: 8 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-127	Đóng kiện vật tư	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"4 x CON-101 Bình Oxy nhỏ
-4 x CON-102 Lưới cuộn"	
-		Output	"1 x CGO-141 Kiện vật tư
+37	Đóng kiện vật tư	Type	Cảng	vat-pham.md mục 3
+		Ingredients	"4 x Bình Oxy nhỏ
+4 x Lưới cuộn"	
+		Output	"1 x Kiện vật tư
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-141	Sao bản dữ liệu	Type	Khoang liên lạc	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-104 Mạch phục hồi
-Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (STY-101, STY-401), mỗi vật gốc sao một lần"	
-		Output	"1 x CGO-131 Bản sao dữ liệu
+38	Sao bản dữ liệu	Type	Khoang liên lạc	vat-pham.md mục 3
+		Ingredients	"1 x Mạch phục hồi
+Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (Nhật ký trạm, Hộp ghi hành trình Cradle), mỗi vật gốc sao một lần"	
+		Output	"1 x Bản sao dữ liệu
 Thời gian: 10 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-221	Đóng kiện hợp kim	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x COM-201 Tấm hợp kim chịu nhiệt	
-		Output	"1 x CGO-211 Kiện hợp kim
+39	Đóng kiện hợp kim	Type	Cảng	vat-pham.md mục 3
+		Ingredients	3 x Tấm hợp kim chịu nhiệt	
+		Output	"1 x Kiện hợp kim
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-222	Đóng kiện cảm biến	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	1 x COM-203 Mạch cảm biến	
-		Output	"1 x CGO-212 Kiện cảm biến
+40	Đóng kiện cảm biến	Type	Cảng	vat-pham.md mục 3
+		Ingredients	1 x Mạch cảm biến	
+		Output	"1 x Kiện cảm biến
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-223	Đóng kiện dung dịch lạnh	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x COM-204 Dung dịch lạnh	
-		Output	"1 x CGO-213 Kiện dung dịch lạnh
+41	Đóng kiện dung dịch lạnh	Type	Cảng	vat-pham.md mục 3
+		Ingredients	3 x Dung dịch lạnh	
+		Output	"1 x Kiện dung dịch lạnh
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-224	Đóng kiện đặc sản Giữa	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	4 x một trong SMP-212..215 hoặc BPS-211, 215	
-		Output	"1 x CGO-206 Kiện đặc sản Giữa
+42	Đóng kiện đặc sản Giữa	Type	Cảng	vat-pham.md mục 3
+		Ingredients	4 x một trong Đặc sản Lumen Jelly..215 hoặc Mẫu sinh thiết Shepherd Whale, 215	
+		Output	"1 x Kiện đặc sản Giữa
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-225	Đóng kiện sản phẩm nuôi Giữa	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	6 x một trong BIO-212..214	
-		Output	"1 x CGO-207 Kiện sản phẩm nuôi Giữa
+43	Đóng kiện sản phẩm nuôi Giữa	Type	Cảng	vat-pham.md mục 3
+		Ingredients	6 x một trong Sản phẩm nuôi Lumen Jelly..214	
+		Output	"1 x Kiện sản phẩm nuôi Giữa
 Thời gian: 5 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-226	Đưa sinh vật sống Giữa vào lồng giao	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	1 x một trong LIV-212..214	
-		Output	"1 x CGO-221 Lồng sinh vật sống Giữa
+44	Đưa sinh vật sống Giữa vào lồng giao	Type	Cảng	vat-pham.md mục 3
+		Ingredients	1 x một trong Mẫu sống Lumen Jelly..214	
+		Output	"1 x Lồng sinh vật sống Giữa
 Thời gian: 8 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-RCP-321	Đóng kiện giáp	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x COM-301 Tấm giáp Warden	
-		Output	"1 x CGO-311 Kiện giáp
+45	Đóng kiện giáp	Type	Cảng	vat-pham.md mục 3
+		Ingredients	3 x Tấm giáp Warden	
+		Output	"1 x Kiện giáp
 Thời gian: 5 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-322	Đóng kiện plasma	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	2 x COM-303 Cuộn plasma	
-		Output	"1 x CGO-312 Kiện plasma
+46	Đóng kiện plasma	Type	Cảng	vat-pham.md mục 3
+		Ingredients	2 x Cuộn plasma	
+		Output	"1 x Kiện plasma
 Thời gian: 5 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-323	Đóng kiện lõi nguội	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	3 x COM-304 Lõi nguội nạp	
-		Output	"1 x CGO-313 Kiện lõi nguội
+47	Đóng kiện lõi nguội	Type	Cảng	vat-pham.md mục 3
+		Ingredients	3 x Lõi nguội nạp	
+		Output	"1 x Kiện lõi nguội
 Thời gian: 5 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-324	Đóng kiện đặc sản Xa	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	5 x một trong SMP-311..315 hoặc BPS-313..314	
-		Output	"1 x CGO-306 Kiện đặc sản Xa
+48	Đóng kiện đặc sản Xa	Type	Cảng	vat-pham.md mục 3
+		Ingredients	5 x một trong Đặc sản Prism Wisp..315 hoặc Mẫu sinh thiết Storm Siphon..314	
+		Output	"1 x Kiện đặc sản Xa
 Thời gian: 5 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-325	Đóng kiện sản phẩm nuôi Xa	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	7 x một trong BIO-311, 315	
-		Output	"1 x CGO-307 Kiện sản phẩm nuôi Xa
+49	Đóng kiện sản phẩm nuôi Xa	Type	Cảng	vat-pham.md mục 3
+		Ingredients	7 x một trong Sản phẩm nuôi Prism Wisp, 315	
+		Output	"1 x Kiện sản phẩm nuôi Xa
 Thời gian: 5 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-421	Đóng kiện linh kiện Cradle	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	7 x RES-401 Linh kiện Cradle	
-		Output	"1 x CGO-411 Kiện linh kiện Cradle
+50	Đóng kiện linh kiện Cradle	Type	Cảng	vat-pham.md mục 3
+		Ingredients	7 x Linh kiện Cradle	
+		Output	"1 x Kiện linh kiện Cradle
 Thời gian: 6 giây"	
 		Unlock	Chương 4. Nhãn: Sau MVP	
-RCP-422	Đóng kiện tin mật	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x một trong CGO-306..307, 311..313
-1 x STY-701 Gói tin mật"	
-		Output	"1 x CGO-421 Kiện tin mật
+51	Đóng kiện tin mật	Type	Cảng	vat-pham.md mục 3
+		Ingredients	"1 x một trong Kiện đặc sản Xa..307, 311..313
+1 x Gói tin mật"	
+		Output	"1 x Kiện tin mật
 Thời gian: 6 giây"	
 		Unlock	Chương 4. Nhãn: Sau MVP	
-RCP-521	Đóng kiện linh kiện Warden	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	14 x RES-305 Linh kiện Warden	
-		Output	"1 x CGO-511 Kiện linh kiện Warden
+52	Đóng kiện linh kiện Warden	Type	Cảng	vat-pham.md mục 3
+		Ingredients	14 x Linh kiện Warden	
+		Output	"1 x Kiện linh kiện Warden
 Thời gian: 6 giây"	
 		Unlock	Chương 5. Nhãn: Sau MVP	
-RCP-326	Đưa sinh vật sống Xa vào lồng giao	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	1 x một trong LIV-311..312, 315	
-		Output	"1 x CGO-321 Lồng sinh vật sống Xa
+53	Đưa sinh vật sống Xa vào lồng giao	Type	Cảng	vat-pham.md mục 3
+		Ingredients	1 x một trong Mẫu sống Prism Wisp..312, 315	
+		Output	"1 x Lồng sinh vật sống Xa
 Thời gian: 8 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-RCP-301	Phân tích DL-G01	Type	Phòng nghiên cứu	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x LIV-111 Mẫu sống DL-G01 Driftmoth
-2 x COM-105 Khối nước tinh khiết"	
-		Output	"1 x BPR-101 Bản thiết kế Súng lưới bậc 2
+54	Phân tích Driftmoth	Type	Phòng nghiên cứu	vat-pham.md mục 3
+		Ingredients	"1 x Mẫu sống Driftmoth
+2 x Khối nước tinh khiết"	
+		Output	"1 x Bản thiết kế Súng lưới bậc 2
 Thời gian: qua đêm"	
 		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP	
-RCP-302	Phân tích DL-G04	Type	Phòng nghiên cứu	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x LIV-113 Mẫu sống DL-G04 Sting Krill
-2 x COM-105 Khối nước tinh khiết"	
-		Output	"1 x BPR-102 Bản thiết kế Súng gây mê
+55	Phân tích Sting Krill	Type	Phòng nghiên cứu	vat-pham.md mục 3
+		Ingredients	"1 x Mẫu sống Sting Krill
+2 x Khối nước tinh khiết"	
+		Output	"1 x Bản thiết kế Súng gây mê
 Thời gian: qua đêm"	
 		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP	
-RCP-207	Ghép Lõi dẫn hướng rời bãi vỡ	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x STY-501 Bản đồ sao thật
-1 x STY-401 Hộp ghi hành trình Cradle
-2 x COM-203 Mạch cảm biến"	
-		Output	"1 x ENG-105 Lõi dẫn hướng rời bãi vỡ
+56	Ghép Lõi dẫn hướng rời bãi vỡ	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Bản đồ sao thật
+1 x Hộp ghi hành trình Cradle
+2 x Mạch cảm biến"	
+		Output	"1 x Lõi dẫn hướng rời bãi vỡ
 Thời gian: qua đêm"	
 		Unlock	Chương 5. Nhãn: Sau MVP	
-RCP-205	Chế Bộ kích nguồn (TOL-401)	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"6 x RES-101 Mảnh vỏ Cradle
-3 x RES-102 Dây cáp đứt
-1 x RES-104 Bo mạch cháy"	
+57	Chế Bộ kích nguồn (Bộ kích nguồn)	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"6 x Mảnh vỏ Cradle
+3 x Dây cáp đứt
+1 x Bo mạch cháy"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Xưởng, công thức đầu tiên sau khi vớt Kỹ sư. Nhãn: MVP	
-RCP-201	Chế Súng lưới (TOL-202)	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-103 Thỏi sắt
-1 x COM-102 Dây dẫn bện
-1 x COM-104 Mạch phục hồi"	
+58	Chế Súng lưới (Súng lưới)	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Thỏi sắt
+1 x Dây dẫn bện
+1 x Mạch phục hồi"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-RCP-202	Chế Súng gây mê (TOL-203)	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-103 Thỏi sắt
-1 x COM-104 Mạch phục hồi
-2 x COM-105 Khối nước tinh khiết"	
+59	Chế Súng gây mê (Súng gây mê)	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Thỏi sắt
+1 x Mạch phục hồi
+2 x Khối nước tinh khiết"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
-		Unlock	BPR-102. Nhãn: Sau MVP	
-RCP-203	Chế Máy quét xung (TOL-301)	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-104 Mạch phục hồi
-1 x COM-102 Dây dẫn bện
-2 x COM-101 Tấm thép nén"	
+		Unlock	Bản thiết kế Súng gây mê. Nhãn: Sau MVP	
+60	Chế Máy quét xung (Máy quét xung)	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Mạch phục hồi
+1 x Dây dẫn bện
+2 x Tấm thép nén"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
-		Unlock	BPR-103. Nhãn: Sau MVP	
-RCP-204	Chế Dùi xung (TOL-201)	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-103 Thỏi sắt
-1 x COM-104 Mạch phục hồi
-1 x COM-101 Tấm thép nén"	
-		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-RCP-206	Chế Máy cắt thân tàu (TOL-402)	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-301 Tấm giáp Warden
-1 x COM-303 Cuộn plasma
-1 x COM-104 Mạch phục hồi"	
-		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	BPR-105. Nhãn: Sau MVP	
-RCP-208	Chế Lồng mẫu (TOL-501)	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-101 Tấm thép nén
-1 x COM-103 Thỏi sắt
-1 x COM-102 Dây dẫn bện
-1 x COM-105 Khối nước tinh khiết"	
+		Unlock	Bản thiết kế Máy quét xung. Nhãn: Sau MVP	
+61	Chế Dùi xung (Dùi xung)	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Thỏi sắt
+1 x Mạch phục hồi
+1 x Tấm thép nén"	
 		Output	"Mở khóa dụng cụ cho cả nhóm
 Thời gian: qua đêm"	
 		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-UPG-OXY-1	Nâng cấp OXY bậc 1	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"4 x COM-101 Tấm thép nén
-2 x COM-105 Khối nước tinh khiết"	
-		Output	"Nâng cấp UPG-OXY-1 cho cả nhóm. Tally ở tab Upgrade
+62	Chế Máy cắt thân tàu (Máy cắt thân tàu)	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Tấm giáp Warden
+1 x Cuộn plasma
+1 x Mạch phục hồi"	
+		Output	"Mở khóa dụng cụ cho cả nhóm
+Thời gian: qua đêm"	
+		Unlock	Bản thiết kế Máy cắt thân tàu. Nhãn: Sau MVP	
+63	Chế Lồng mẫu (Lồng mẫu)	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Tấm thép nén
+1 x Thỏi sắt
+1 x Dây dẫn bện
+1 x Khối nước tinh khiết"	
+		Output	"Mở khóa dụng cụ cho cả nhóm
+Thời gian: qua đêm"	
+		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
+64	Nâng cấp Bình Oxy bậc 1	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"4 x Tấm thép nén
+2 x Khối nước tinh khiết"	
+		Output	"Nâng cấp Bình Oxy bậc 1 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-UPG-BAG-1	Nâng cấp BAG bậc 1	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"3 x COM-102 Dây dẫn bện
-2 x COM-101 Tấm thép nén
-2 x RES-102 Dây cáp đứt"	
-		Output	"Nâng cấp UPG-BAG-1 cho cả nhóm. Tally ở tab Upgrade
+65	Nâng cấp Túi đồ bậc 1	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"3 x Dây dẫn bện
+2 x Tấm thép nén
+2 x Dây cáp đứt"	
+		Output	"Nâng cấp Túi đồ bậc 1 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-UPG-THR-1	Nâng cấp THR bậc 1	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-103 Thỏi sắt
-1 x COM-104 Mạch phục hồi
-1 x COM-101 Tấm thép nén"	
-		Output	"Nâng cấp UPG-THR-1 cho cả nhóm. Tally ở tab Upgrade
+66	Nâng cấp Bộ đẩy bậc 1	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Thỏi sắt
+1 x Mạch phục hồi
+1 x Tấm thép nén"	
+		Output	"Nâng cấp Bộ đẩy bậc 1 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-UPG-MIN-2	Nâng cấp MIN bậc 2	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-103 Thỏi sắt
-2 x COM-101 Tấm thép nén
-1 x COM-102 Dây dẫn bện"	
-		Output	"Nâng cấp UPG-MIN-2 cho cả nhóm. Tally ở tab Upgrade
+67	Nâng cấp Dụng cụ khai thác bậc 2	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Thỏi sắt
+2 x Tấm thép nén
+1 x Dây dẫn bện"	
+		Output	"Nâng cấp Dụng cụ khai thác bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-UPG-HAR-2	Nâng cấp HAR bậc 2	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-103 Thỏi sắt
-1 x COM-104 Mạch phục hồi
-1 x COM-102 Dây dẫn bện"	
-		Output	"Nâng cấp UPG-HAR-2 cho cả nhóm. Tally ở tab Upgrade
+68	Nâng cấp Lao từ bậc 2	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Thỏi sắt
+1 x Mạch phục hồi
+1 x Dây dẫn bện"	
+		Output	"Nâng cấp Lao từ bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-UPG-RACK-1	Nâng cấp RACK bậc 1	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-101 Tấm thép nén
-2 x COM-102 Dây dẫn bện
-1 x COM-103 Thỏi sắt"	
-		Output	"Nâng cấp UPG-RACK-1 cho cả nhóm. Tally ở tab Upgrade
+69	Nâng cấp Đai dụng cụ bậc 1	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Tấm thép nén
+2 x Dây dẫn bện
+1 x Thỏi sắt"	
+		Output	"Nâng cấp Đai dụng cụ bậc 1 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Quest Kỹ sư (chương 1), đi kèm Dùi xung. Nhãn: MVP	
-UPG-NET-2	Nâng cấp NET bậc 2	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-103 Thỏi sắt
-2 x COM-102 Dây dẫn bện
-1 x COM-104 Mạch phục hồi"	
-		Output	"Nâng cấp UPG-NET-2 cho cả nhóm. Tally ở tab Upgrade
+70	Nâng cấp Súng lưới bậc 2	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Thỏi sắt
+2 x Dây dẫn bện
+1 x Mạch phục hồi"	
+		Output	"Nâng cấp Súng lưới bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
-		Unlock	BPR-101. Nhãn: Sau MVP	
-UPG-OXY-2	Nâng cấp OXY bậc 2	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-201 Tấm hợp kim chịu nhiệt
-2 x COM-204 Dung dịch lạnh"	
-		Output	"Nâng cấp UPG-OXY-2 cho cả nhóm. Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-UPG-BAG-2	Nâng cấp BAG bậc 2	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-201 Tấm hợp kim chịu nhiệt
-2 x COM-102 Dây dẫn bện
-2 x COM-101 Tấm thép nén"	
-		Output	"Nâng cấp UPG-BAG-2 cho cả nhóm. Tally ở tab Upgrade
+		Unlock	Bản thiết kế Súng lưới bậc 2. Nhãn: Sau MVP	
+71	Nâng cấp Bình Oxy bậc 2	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Tấm hợp kim chịu nhiệt
+2 x Dung dịch lạnh"	
+		Output	"Nâng cấp Bình Oxy bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-UPG-THR-2	Nâng cấp THR bậc 2	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-202 Thỏi cobalt
-1 x COM-203 Mạch cảm biến"	
-		Output	"Nâng cấp UPG-THR-2 cho cả nhóm. Tally ở tab Upgrade
+72	Nâng cấp Túi đồ bậc 2	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Tấm hợp kim chịu nhiệt
+2 x Dây dẫn bện
+2 x Tấm thép nén"	
+		Output	"Nâng cấp Túi đồ bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-UPG-MIN-3	Nâng cấp MIN bậc 3	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-202 Thỏi cobalt
-2 x COM-103 Thỏi sắt"	
-		Output	"Nâng cấp UPG-MIN-3 cho cả nhóm. Tally ở tab Upgrade
+73	Nâng cấp Bộ đẩy bậc 2	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Thỏi cobalt
+1 x Mạch cảm biến"	
+		Output	"Nâng cấp Bộ đẩy bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-UPG-HAR-3	Nâng cấp HAR bậc 3	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-203 Mạch cảm biến
-1 x COM-202 Thỏi cobalt"	
-		Output	"Nâng cấp UPG-HAR-3 cho cả nhóm. Tally ở tab Upgrade
+74	Nâng cấp Dụng cụ khai thác bậc 3	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Thỏi cobalt
+2 x Thỏi sắt"	
+		Output	"Nâng cấp Dụng cụ khai thác bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-UPG-ENV-1	Nâng cấp ENV bậc 1	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-204 Dung dịch lạnh
-1 x COM-201 Tấm hợp kim chịu nhiệt
-2 x COM-105 Khối nước tinh khiết"	
-		Output	"Nâng cấp UPG-ENV-1 cho cả nhóm. Tally ở tab Upgrade
+75	Nâng cấp Lao từ bậc 3	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Mạch cảm biến
+1 x Thỏi cobalt"	
+		Output	"Nâng cấp Lao từ bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
+Thời gian: qua đêm"	
+		Unlock	Chương 2. Nhãn: Sau MVP	
+76	Nâng cấp Vỏ bộ đồ cấp 1	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Dung dịch lạnh
+1 x Tấm hợp kim chịu nhiệt
+2 x Khối nước tinh khiết"	
+		Output	"Nâng cấp Vỏ bộ đồ cấp 1 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 2 (dải Giữa). Nhãn: Sau MVP	
-UPG-RACK-2	Nâng cấp RACK bậc 2	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"2 x COM-103 Thỏi sắt
-1 x COM-202 Thỏi cobalt
-2 x COM-102 Dây dẫn bện"	
-		Output	"Nâng cấp UPG-RACK-2 cho cả nhóm. Tally ở tab Upgrade
+77	Nâng cấp Đai dụng cụ bậc 2	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"2 x Thỏi sắt
+1 x Thỏi cobalt
+2 x Dây dẫn bện"	
+		Output	"Nâng cấp Đai dụng cụ bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-UPG-OXY-3	Nâng cấp OXY bậc 3	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-302 Phiến kính
-1 x COM-301 Tấm giáp Warden"	
-		Output	"Nâng cấp UPG-OXY-3 cho cả nhóm. Tally ở tab Upgrade
+78	Nâng cấp Bình Oxy bậc 3	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Phiến kính
+1 x Tấm giáp Warden"	
+		Output	"Nâng cấp Bình Oxy bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-UPG-BAG-3	Nâng cấp BAG bậc 3	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-303 Cuộn plasma
-1 x COM-301 Tấm giáp Warden
-1 x COM-104 Mạch phục hồi"	
-		Output	"Nâng cấp UPG-BAG-3 cho cả nhóm. Tally ở tab Upgrade
+79	Nâng cấp Túi đồ bậc 3	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Cuộn plasma
+1 x Tấm giáp Warden
+1 x Mạch phục hồi"	
+		Output	"Nâng cấp Túi đồ bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-UPG-THR-3	Nâng cấp THR bậc 3	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-304 Lõi nguội nạp
-1 x COM-302 Phiến kính"	
-		Output	"Nâng cấp UPG-THR-3 cho cả nhóm. Tally ở tab Upgrade
+80	Nâng cấp Bộ đẩy bậc 3	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Lõi nguội nạp
+1 x Phiến kính"	
+		Output	"Nâng cấp Bộ đẩy bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-UPG-ENV-2	Nâng cấp ENV bậc 2	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-301 Tấm giáp Warden
-1 x COM-304 Lõi nguội nạp
-1 x COM-203 Mạch cảm biến"	
-		Output	"Nâng cấp UPG-ENV-2 cho cả nhóm. Tally ở tab Upgrade
+81	Nâng cấp Vỏ bộ đồ cấp 2	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Tấm giáp Warden
+1 x Lõi nguội nạp
+1 x Mạch cảm biến"	
+		Output	"Nâng cấp Vỏ bộ đồ cấp 2 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 3 (dải Xa). Nhãn: Sau MVP	
-UPG-OXY-4	Nâng cấp OXY bậc 4	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-302 Phiến kính
-1 x COM-304 Lõi nguội nạp
-1 x COM-303 Cuộn plasma
-1 x RES-401 Linh kiện Cradle"	
-		Output	"Nâng cấp UPG-OXY-4 cho cả nhóm. Tally ở tab Upgrade
+82	Nâng cấp Bình Oxy bậc 4	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Phiến kính
+1 x Lõi nguội nạp
+1 x Cuộn plasma
+1 x Linh kiện Cradle"	
+		Output	"Nâng cấp Bình Oxy bậc 4 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 4 đến 5. Nhãn: Sau MVP	
-UPG-BAG-4	Nâng cấp BAG bậc 4	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-303 Cuộn plasma
-1 x COM-304 Lõi nguội nạp
-1 x COM-301 Tấm giáp Warden
-1 x RES-401 Linh kiện Cradle"	
-		Output	"Nâng cấp UPG-BAG-4 cho cả nhóm. Tally ở tab Upgrade
+83	Nâng cấp Túi đồ bậc 4	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Cuộn plasma
+1 x Lõi nguội nạp
+1 x Tấm giáp Warden
+1 x Linh kiện Cradle"	
+		Output	"Nâng cấp Túi đồ bậc 4 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 4 đến 5. Nhãn: Sau MVP	
-UPG-ENV-3	Nâng cấp ENV bậc 3	Type	Xưởng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
-		Ingredients	"1 x COM-301 Tấm giáp Warden
-1 x COM-302 Phiến kính
-1 x COM-304 Lõi nguội nạp
-1 x RES-401 Linh kiện Cradle"	
-		Output	"Nâng cấp UPG-ENV-3 cho cả nhóm. Tally ở tab Upgrade
+84	Nâng cấp Vỏ bộ đồ cấp 3	Type	Xưởng	vat-pham.md mục 3
+		Ingredients	"1 x Tấm giáp Warden
+1 x Phiến kính
+1 x Lõi nguội nạp
+1 x Linh kiện Cradle"	
+		Output	"Nâng cấp Vỏ bộ đồ cấp 3 cho cả nhóm. Giá Tally ở tab Upgrade
 Thời gian: qua đêm"	
 		Unlock	Chương 4 (Cradle). Nhãn: Sau MVP	

@@ -1,17 +1,17 @@
 Task	Description	Planned-In	In Charge	Done-In	Status	Updated	Update Details	Note
-GD-017	GAME STORY bản 2 (hướng vũ trụ rộng)	Đợt 0	gd-story	Đợt 0	Done	20/11/2026	projects/game-moi/story/game-story-v2.md	Bị thay bởi bản 3
-GD-018	GAME STORY bản 3 từ ý tưởng Lead 2026-11-20	Đợt 0	gd-story	Đợt 0	Done	20/11/2026	projects/game-moi/story/game-story-v3.md đủ 14 từ khóa	
-GD-019	Sửa bản 3 theo trả lời câu 2, 3, 4	Đợt 0	gd-story	Đợt 0	Done	20/11/2026	Không còn tín hiệu sự sống	
-GD-020	Sửa bản 3 theo 8 vấn đề bám Dave, ca cảng	Đợt 0	gd-story	Đợt 0	Done	20/11/2026	Không còn Bản án, H3, 4 lớp	
-GD-021	Khung game, log tự quyết, điều phối đợt 1	Đợt 1	GDM	Đợt 1	Done	20/11/2026	projects/game-moi/gdd/00-khung-game.md, log-gdm-tu-quyet.md	Lead giao toàn quyền
-GD-022	GDD cốt truyện bản đủ: The Wardens, 5 chương, nhân vật truyện, tên gọi	Đợt 1	gd-story	Đợt 1	Done	20/11/2026	gdd/he-thong/cot-truyen.md đủ khuôn, soát 0 lỗi	gd-qa ĐẠT
-GD-023	GDD người chơi và hồ sơ nhân vật	Đợt 1	gd-character	Đợt 4	Done	20/11/2026	gdd/he-thong/nguoi-choi.md, ho-so-nhan-vat.md	Sửa ở đợt 4, gd-qa chấm lại ĐẠT
-GD-024	GDD combat, bắt sống, Driftlife, The Wardens, boss	Đợt 1	gd-combat	Đợt 1	Done	20/11/2026	gdd/he-thong/combat-driftlife.md	gd-qa ĐẠT
-GD-025	GDD tài nguyên, vật phẩm, dụng cụ, công thức, hàng hóa	Đợt 1	gd-items	Đợt 1	Done	20/11/2026	gdd/he-thong/vat-pham.md	gd-qa ĐẠT
-GD-026	GDD map tổng, map nhánh, hazard, nhịp chuyến	Đợt 1	gd-world	Đợt 1	Done	20/11/2026	gdd/he-thong/map.md	gd-qa ĐẠT
-GD-027	GDD trạm và cảng: khoang, người vớt, ca cảng, Hạng cảng, nuôi	Đợt 1	gd-quan	Đợt 1	Done	20/11/2026	gdd/he-thong/tram-va-cang.md	gd-qa ĐẠT
-GD-028	GDD kinh tế và tiến trình, sim 3 kịch bản, 1 đến 4 người	Đợt 2	gd-economy	Đợt 2	Done	20/11/2026	gdd/he-thong/kinh-te-tien-trinh.md, sim in bảng	gd-qa ĐẠT
-GD-029	GDD UX / UI: HUD, màn, input, FTUE	Đợt 2	gd-ux	Đợt 2	Done	20/11/2026	gdd/he-thong/ux-ui.md	gd-qa ĐẠT
-GD-030	Sim chuyến và ca cảng, schema dữ liệu, yêu cầu đồng bộ co-op, event	Đợt 2	gd-tech	Đợt 2	Done	20/11/2026	gdd/he-thong/ky-thuat.md, tools/ có selftest	gd-qa ĐẠT
-GD-031	Review chéo toàn bộ GDD, MVP Criteria Checklist	Đợt 3	gd-qa	Đợt 4	Done	20/11/2026	projects/game-moi/qa/ mỗi GDD một file ĐẠT, validator 0 lỗi	Hoàn tất sau vòng chấm lại GD-023
-GD-032	Chuyển GDD sang TSV theo khuôn và dán 25 tab Sheet GDD, đối chiếu 0 dòng lệch	Đợt 5	GDM, mọi vai giữ tab		Doing	20/11/2026	projects/game-moi/gdd/sheet/<Tab>.tsv, mỗi tab đối chiếu 0 dòng lệch, qa/GD-032-sheet.md	Đang dán từng tab
+1	GAME STORY bản 2 (hướng vũ trụ rộng)	Đợt 0	gd-story	Đợt 0	Done	20/11/2026	story/game-story-v2.md	Bị thay bởi bản 3
+2	GAME STORY bản 3 từ ý tưởng Lead 2026-11-20	Đợt 0	gd-story	Đợt 0	Done	20/11/2026	story/game-story-v3.md đủ 14 từ khóa	
+3	Sửa bản 3 theo trả lời câu 2, 3, 4	Đợt 0	gd-story	Đợt 0	Done	20/11/2026	Không còn tín hiệu sự sống	
+4	Sửa bản 3 theo 8 vấn đề bám Dave, ca cảng	Đợt 0	gd-story	Đợt 0	Done	20/11/2026	Không còn Bản án, 4 lớp	
+5	Khung game, log tự quyết, điều phối đợt 1	Đợt 1	GDM	Đợt 1	Done	20/11/2026	00-khung-game.md, log-gdm-tu-quyet.md	Lead giao toàn quyền
+6	GDD cốt truyện bản đủ: The Wardens, 5 chương, nhân vật truyện, tên gọi	Đợt 1	gd-story	Đợt 1	Done	20/11/2026	gdd/he-thong/cot-truyen.md đủ khuôn, soát 0 lỗi	QA ĐẠT
+7	GDD người chơi và hồ sơ nhân vật	Đợt 1	gd-character	Đợt 4	Done	20/11/2026	gdd/he-thong/nguoi-choi.md, ho-so-nhan-vat.md	Sửa ở đợt 4, QA chấm lại ĐẠT
+8	GDD combat, bắt sống, Driftlife, The Wardens, boss	Đợt 1	gd-combat	Đợt 1	Done	20/11/2026	gdd/he-thong/combat-driftlife.md	QA ĐẠT
+9	GDD tài nguyên, vật phẩm, dụng cụ, công thức, hàng hóa	Đợt 1	gd-items	Đợt 1	Done	20/11/2026	gdd/he-thong/vat-pham.md	QA ĐẠT
+10	GDD map tổng, map nhánh, hazard, nhịp chuyến	Đợt 1	gd-world	Đợt 1	Done	20/11/2026	gdd/he-thong/map.md	QA ĐẠT
+11	GDD trạm và cảng: khoang, người vớt, ca cảng, Hạng cảng, nuôi	Đợt 1	gd-quan	Đợt 1	Done	20/11/2026	gdd/he-thong/tram-va-cang.md	QA ĐẠT
+12	GDD kinh tế và tiến trình, sim 3 kịch bản, 1 đến 4 người	Đợt 2	gd-economy	Đợt 2	Done	20/11/2026	gdd/he-thong/kinh-te-tien-trinh.md, sim in bảng	QA ĐẠT
+13	GDD UX / UI: HUD, màn, input, FTUE	Đợt 2	gd-ux	Đợt 2	Done	20/11/2026	gdd/he-thong/ux-ui.md	QA ĐẠT
+14	Sim chuyến và ca cảng, schema dữ liệu, yêu cầu đồng bộ co-op, event	Đợt 2	gd-tech	Đợt 2	Done	20/11/2026	gdd/he-thong/ky-thuat.md, tools/ có selftest	QA ĐẠT
+15	Review chéo toàn bộ GDD, MVP Criteria Checklist	Đợt 3	gd-qa	Đợt 4	Done	20/11/2026	Mỗi GDD một phiếu QA ĐẠT, validator 0 lỗi	Hoàn tất sau vòng chấm lại việc người chơi
+16	Chuyển GDD sang TSV theo khuôn và dán 25 tab Sheet GDD, đối chiếu 0 dòng lệch	Đợt 5	GDM, mọi vai giữ tab		Doing	20/11/2026	Mỗi tab đối chiếu 0 dòng lệch, phiếu QA ở qa/	Đang dán từng tab

@@ -17,7 +17,7 @@ Cầu nối giữa GDD và 4 dev Unity. File này chốt cách dữ liệu đi t
 | Schema dữ liệu | Bản của gd-tech ở mục 2.1 (schema thuộc thẩm quyền gd-tech, GDM duyệt khi giao dev) | file này |
 | Đồng bộ co-op | Mô hình host nắm quyền, mục 2.2 | file này |
 | Netcode | So sánh để dev chọn, mục 6.3. Phòng không chọn thay | file này |
-| Event Tracking | 71 sự kiện, mục 2.4 (46 gộp từ các GDD, 20 thêm sau QA GD-031, 5 của `ux-ui.md`). Tab Sheet sinh bằng `tools/xuat-event-tracking.mjs` | file này, tab Event Tracking |
+| Event Tracking | 71 sự kiện, mục 2.4 (46 gộp từ các GDD, 20 thêm sau QA GD-031, 5 của `ux-ui.md`). Tab Sheet là bản đọc sửa tay từ 2026-11-20 (đợt 8), không sinh lại bằng `tools/xuat-event-tracking.mjs` | file này, tab Event Tracking |
 | Prototype bay | Chạy được: bay 8 hướng, hãm, lướt, Oxy, túi, thử né S6, 16 thanh chỉnh, xuất JSON. Số bậc 0 khớp `nguoi-choi.md` (đo trong trình duyệt: buông từ vmax dừng sau 0,51 giây và 1,5 u, hãm dừng sau 0,18 giây, lướt 15 u/s) | `tools/prototype/bay.html` |
 
 Số và kết luận của sim chỉ nằm ở file kết quả (`tools/ket-qua/sim-chuyen.md`, `sim-ca-cang.md`, `sim-combat.md`), mỗi file có mục đối chiếu mục tiêu. File này không chép kết luận để không lệch khi số đổi.

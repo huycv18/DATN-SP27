@@ -728,8 +728,8 @@ if __name__ == "__main__":
         selftest()
         sys.exit(0)
     if "--sheet" in sys.argv:
-        sheet()
-        sys.exit(0)
+        # Từ đợt 8 (2026-11-20) 5 tab kinh tế là bản đọc sửa tay, không ghi đè bằng bản có mã.
+        sys.exit("--sheet đã tắt: tab Sheet là bản đọc sửa tay (DECISIONS 2026-11-20 đợt 8). Số mới thì sửa TSV tay rồi chạy tools/kiem-de-doc.mjs")
     if "--do" in sys.argv:
         do_num()
         sys.exit(0)

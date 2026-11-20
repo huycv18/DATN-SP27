@@ -1,135 +1,131 @@
 Feature/Metric	Category	Acceptance Criteria	Status	Actual Result	Notes
-CK-01 Một ngày chương 1	Nhịp	Một ngày đủ 2 chuyến và ca cảng dài 15 đến 20 phút ở chương 1 (sim chuyến cộng sim ca cảng, sai lệch cho phép 15%)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: khung
-CK-02 Trần chuyến mỗi ngày (K22)	Luật	Sau chuyến thứ hai hoặc khi đã mở ca cảng, cửa khí khóa. Skiff cũng tính một chuyến	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build. Nguồn: khung
-CK-03 Sang ngày và lưu (K23)	Luật	Ngày không có đồng hồ. Chỉ sang ngày khi ngủ và lúc ngủ tự lưu. Tắt game giữa ngày rồi mở lại về đầu ngày	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build. Nguồn: khung
-CK-04 Thoát giữa chuyến (C10)	Co-op, lưu	Rời phiên hoặc mất kết nối quá 15 giây giữa chuyến tính như bị kéo về, giữ 1 món. Một mình thoát giữa chuyến thì mất chuyến. Host thoát thì thế giới về lần lưu đầu ngày	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build. Nguồn: khung
-CK-05 Hết Oxy (K2)	Luật	Oxy về 0 rồi không ai cứu: bị kéo về, giữ đúng 1 món, 0 Tally bị trừ, không nợ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build. Nguồn: khung
-CK-06 Chơi một mình trọn chương 1 (P3)	Co-op	Một người chơi trọn chương 1 (mọi quest, ca cảng, sửa khoang) không cần người thứ hai và không có thứ chỉ co-op mới có	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Playtest. Nguồn: khung
-CK-07 Co-op 2 người (C1 đến C10)	Co-op	Hai người online chơi trọn một ngày: xác nhận cửa khí C5, kết chuyến riêng C6, người về sớm không ra lại C9, không tạm dừng toàn cục C7	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Playtest. Nguồn: khung
-CK-08 Chương 1 dài	Nhịp	Chơi trọn chương 1 từ 1,5 đến 2 giờ (sim kinh tế, sai lệch 15%)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: khung
-CK-09 Tally duy nhất (K18)	Kinh tế	Không có tiền thứ hai và không XP. Nguồn Tally chính là ca cảng. Grep GDD không thấy tiền khác	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: khung
-CK-10 Solace là mồi (L14)	Truyện	Grep GDD không còn chữ coi Solace là đích hay điểm kết của game. Chỉ còn là niềm tin của nhân vật	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: khung
-CT-01 Cấu trúc mốc và vật truyện	Data	Mỗi chương có ít nhất 3 mốc và ít nhất 2 vật truyện có khe trong map nhánh: 9, 8, 8, 7, 8 mốc và 4, 6, 6, 5, 2 vật	FALSE	Chưa chấm, chưa có build	Nhãn: MVP chương 1, Sau MVP chương 2 đến 5. Cách kiểm: Máy. Nguồn: GD-031-cot-truyen.md
-CT-02 Quest người vớt	Rule	Mỗi người vớt mở đúng tính năng K12 theo luật 15 tram-va-cang. Linh cần cả KH06 và KH07	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (Ingrid, Linh), Sau MVP (3 người). Cách kiểm: Máy. Nguồn: GD-031-cot-truyen.md
-CT-03 Không tên cũ	Content	grep 0 tên phản diện cũ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-cot-truyen.md
-CT-04 Giới hạn thoại	Content	0 câu vượt 80 hoặc 60 ký tự, 0 chữ số, 0 từ chỉ số người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-cot-truyen.md
-CT-05 Sổ tay chương 1	Playtest	Bỏ qua mọi cảnh: Sổ tay có 9 dòng tóm tắt và luôn có một dòng mục tiêu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-cot-truyen.md
-CT-06 Kéo buồng bị kéo về	Playtest	Bị kéo về khi đang kéo buồng Ingrid: chuyến sau buồng ở vị trí gốc	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-cot-truyen.md
-CT-07 Co-op vật manh mối	Playtest	Người 1 nhặt MM1.1 thì Sổ tay người 2 có MM1.1 ở lần mở kế tiếp	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-cot-truyen.md
-CT-08 Số người tỉnh dậy	Content	Không câu thoại nào sai với số người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-cot-truyen.md
-CT-09 Che tên người nói	Playtest	Đoán đúng ít nhất 2 trên 3 câu mẫu mỗi người vớt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (Ingrid, Linh), Sau MVP. Cách kiểm: Máy. Nguồn: GD-031-cot-truyen.md
-CT-10 Biết việc kế tiếp	Playtest	Sau C1.9, ít nhất 7 trên 10 người chơi nói được việc kế tiếp không mở Sổ tay	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-cot-truyen.md
-CT-11 Vật truyện đủ ID, khe, mốc	Data	Validator của gd-tech: mỗi vật truyện có ID trong vat-pham.md, khe trong map.md, mốc hiện	FALSE	Chưa chấm, chưa có build	Nhãn: MVP chương 1. Cách kiểm: Máy. Nguồn: GD-031-cot-truyen.md
-CT-12 Mốc xong một lần trong co-op	Playtest	Hai người: mốc xong từ người nào cũng ghi một lần, mỗi người thấy mỗi cảnh nhiều nhất một lần	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-cot-truyen.md
-CT-13 Sàn ngày chuỗi mốc	Data	Chương 1 không xong trước ngày 7 với mọi số người (sàn ngày 7, 5, 8, 3, 3). Sim kinh tế phải đạt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-cot-truyen.md
-NC-01 Di chuyển 8 hướng, Hãm	Điều khiển	Prototype: người thử dừng cách điểm đích tối đa 0,5 u ở trên 90 phần trăm lần thử bằng Hãm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-nguoi-choi.md
-NC-02 Hành lang hẹp	Điều khiển, va chạm	Hành lang 1,5 u dài 20 u, người thử mới không chạm tường sau 3 lần thử	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-nguoi-choi.md
-NC-03 Tham số trong khoảng an toàn	Cân bằng	Mọi số mục 3 nằm trong khoảng an toàn sau prototype, hoặc có ghi lý do lệch và ngày thử	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-nguoi-choi.md
-NC-04 Bảng trạng thái 2.3	Soft lock	Mô phỏng 1000 chuyến ngẫu nhiên, 0 người chơi ở trạng thái không thoát được.	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-05 Chia Oxy	Co-op	5 lần thử liền chạy, Oxy hai bên cộng bằng đúng số chuyển sai số dưới 1 điểm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-06 Bị kéo về	K2	Luôn giữ đúng 1 món ghim, 0 Tally bị trừ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-07 Thanh Oxy bậc 0 và 1	Nâng cấp	Chuyến với bậc 0 và 1 khớp bảng 2.6: 330, 450 Oxy và 80, 100 Khối	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-08 Tỉ lệ bị kéo về vì Ngạt	Chỉ số	Cẩn thận dưới 5 phần trăm, tham 15 đến 40 phần trăm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP, đo lại bằng playtest. Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-09 Chuyến chương 1	Chỉ số	4 đến 6 phút	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-10 Ghim món trước lần ngạt đầu	Chỉ số, FTUE	Trên 70 phần trăm người chơi mới sau tutorial	FALSE	Chưa chấm, chưa có build	Nhãn: MVP, đo bằng playtest. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-nguoi-choi.md
-NC-11 Cứu nhau	Chỉ số, co-op	Số lần được cứu trên số lần ngạt trên 40 phần trăm khi co-op 2 người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-12 Thoát giữa chuyến	Đề xuất QA	Ngạt rồi thoát game thì chỉ giữ đúng 1 món ghim	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-13 CON-101	Đề xuất QA	Sim: tỉ lệ chuyến dài vượt khung mục 9 khi mang bình không quá 5 phần trăm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-NC-14 K22	Đề xuất QA	Cửa khí khóa sau chuyến thứ hai và khi đã mở ca cảng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-nguoi-choi.md
-HS-01 Silhouette 4 preset người chơi	Art, nhận diện co-op	Tô đen 4 preset cạnh nhau ở 106 px một u, 5 người thử phân biệt đúng trong 1 giây ở ít nhất 90% lượt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho preset 1 và 2 (cặp), Sau MVP cho 4 preset. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-ho-so-nhan-vat.md
-HS-02 Silhouette người vớt và thương nhân	Art, nhận diện	Tô đen mỗi nhân vật nhận ra đúng vai ở ít nhất 80% lượt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho Ingrid, Linh, Tikko. Sau MVP cho 7 người còn lại. Cách kiểm: Máy. Nguồn: GD-031-ho-so-nhan-vat.md
-HS-03 Bảng màu mỗi nhân vật	Art, màu	1 đến 6 màu chính cộng tối đa 2 nhấn bằng công cụ lấy mẫu, bão hòa đúng mục 3	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho 5 nhân vật MVP, Sau MVP còn lại. Cách kiểm: Máy. Nguồn: GD-031-ho-so-nhan-vat.md
-HS-04 Lắp thử bộ đồ	Art, mảnh ghép	Bậc 0 và bậc cuối của mọi trục không mảnh nào che hoặc cắt mảnh khác	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho bậc 0 và 1 của bình, bộ đẩy, túi, đai, cấp 0 của vỏ. Sau MVP bậc còn lại. Cách kiểm: Máy. Nguồn: GD-031-ho-so-nhan-vat.md
-HS-05 Phân biệt màu trong cùng cảnh	Art, nhận diện	Hai nhân vật cùng cảnh cách 25 độ Hue hoặc 25 điểm bão hòa	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho cặp ở ca cảng đầu (Noor, Jonas, Ingrid, Linh, Tikko). Cách kiểm: Máy. Nguồn: GD-031-ho-so-nhan-vat.md
-HS-06 Đủ clip và biểu cảm MVP	Art, hoạt ảnh	Mọi nhân vật MVP đủ clip bảng mục 7 và 8 biểu cảm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ho-so-nhan-vat.md
-HS-07 Không hồ sơ nào đổi theo số người (P3)	Thiết kế	Bảng co-op: không hồ sơ nào đổi ngoài số preset hiển thị và số buồng tắt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ho-so-nhan-vat.md
-HS-08 Chiều cao không đổi va chạm (đề xuất thêm)	Gameplay, công bằng	Cả 4 preset có cùng bán kính va chạm 0,4 u trong build	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ho-so-nhan-vat.md
-CB-01 Báo trước đòn	Combat	Mọi đòn 3.4b: báo trước tối thiểu 0,7 s (hẹp dưới 15 Oxy), 0,8 s (từ 15 Oxy), 1,0 s (vùng bán kính từ 2 u). Có hình và tiếng. Hiện 0 vi phạm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-02 Miễn sát thương, Lướt	Combat	Hai đòn cùng khung chỉ trừ Oxy một lần. Miễn 0,8 s, Lướt miễn 0,2 s đầu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-03 Choáng và DR	Combat	Choáng 4 s, hệ số DR riêng Choáng và Mê, trần 3, về 1 sau 20 s. Sim S3 dưới 70% với 4 người (đạt, 18 đến 32%)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-04 Bắt sống cỡ S	Combat	Súng lưới tối đa 3 con trong 1,5 u, tiêu 1 Lưới cuộn. Bắt tay giữ 1,5 s (sửa R2). Lồng 3 con, không chiếm túi, không làm chậm. Lồng còn 1 chỗ bắt 1 con (E18)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-05 Chất lượng mẫu	Combat	70% là 3 sao, 30% là 2 sao, dưới 30% là 1 sao. Kết nhanh cho 2 sao	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-06 Ghim lồng	Combat	Bị kéo về giữ 1 con sao cao nhất	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-07 K9	Kinh tế	Giá trị mẫu sống sau trừ vật tiêu hao chia giá trị hạ từ 1,5 đến 2 (script của gd-items). Ròng mỗi phút từ 1,0, cỡ M không quá 1,6 (sim S2)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-08 Loài và boss MVP	Phạm vi	4 loài dải Gần (Arc Eel chỉ hạ) và BS-1. Không xuất hiện thứ Sau MVP	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-09 BS-1 một mình	Combat	Thắng được một mình bằng hạ và Xua đi trong 2 đến 4 phút. Cửa không khóa, rút qua B3, hồi đầy khi phòng trống quá 10 s. Cần số S5 (R10)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-10 Co-op hệ số	Co-op	Sinh lực và ngưỡng Driftlife N chia k(N), boss 1 + 0,6 (N - 1). Gánh mỗi người kiểu chia 1,00. Kiểu dồn đọc để biết, không mục tiêu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-CB-11 Tiêu chí 8 và 9	Hit feel	Prototype bay phím T: người mới né đòn hẹp 0,7 s và vùng 2,5 u báo trước 1,0 s ít nhất 70% sau 3 lần thử	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-combat-driftlife.md
-VP-01 Cổng kiểm máy	Dữ liệu	`node projects/game-moi/sim/vat-pham.mjs` thoát mã 0, 0 lỗi. Hiện đạt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-02 Nguồn nhận và nguồn tiêu	P2	Mọi vật phẩm nhãn MVP có nguồn nhận và nguồn tiêu nhãn MVP (script)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-03 Công thức dùng ID có thật	Dữ liệu	Mọi đầu vào công thức có trong ITEM LIST (script)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-04 Tài nguyên riêng mỗi dải	Dữ liệu	Mỗi dải có ít nhất 2 tài nguyên riêng. Gần 6, Giữa 4, Xa 5 cộng Cradle 1	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-05 Biên lợi công thức	Cân bằng	Hệ số trong khoảng C5. Đạt trừ RCP-128 (0,24, loại CGOL không có kiểm)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-06 Mẫu sống trên hạ	Cân bằng	Mẫu sống chia hạ từ 1,5 đến 2,0 cho cỡ S và M. Sinh thiết cỡ L đứng ngoài K9 (log 66)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-07 Không ghi giá Tally	Quy tắc	Tìm "Tally" chỉ thấy trong ngữ cảnh gd-economy giữ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-08 Đủ số lượng nhãn MVP	Phạm vi	6 tài nguyên, 5 COM, 9 kiện (CGO-113 là kiện chế duy nhất), 6 nâng cấp, 2 vật tiêu hao, 5 dụng cụ cộng chìa, 4 loài với 3 cỡ S bắt sống	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-09 Không còn dấu chờ	Quy tắc	Dấu chờ chỉ còn của gd-economy, không còn dấu chờ nào đã có giá	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-10 Sim đợt 2	Cân bằng	Sim: thời gian làm đầy túi, thu nhập chuỗi thô và chuỗi tinh một ngày, mức trội chiến lược nhặt (script in)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-11 Số GTĐ mỗi chuyến	Cân bằng	Số GTĐ mỗi chuyến đo ở sim gd-tech (tools/ket-qua/sim-chuyen.md)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-12 Thời gian làm đầy túi	Nhịp	60 đến 70% chuyến, chương 1 (kiểm tay ước 56 đến 63%, chờ sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-13 Tỉ lệ chuyến dùng cả khoan, nạy, hạ	Nhịp	Trên 90% chuyến chương 1 dùng cả khoan, nạy, hạ (sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-14 Tỉ lệ kiện tinh trên kiện thô	Cân bằng	Kiện tinh trên kiện thô trên 50% sau chương 1 khi đủ nguyên liệu (sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-15 Người chơi hiểu vì sao đồ đáng nhặt, bỏ gì khi túi đầy	Trải nghiệm	Playtest ghi lại, cần build	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-vat-pham.md
-VP-16 Bình Oxy nhỏ không phá P1	Cân bằng	Đề xuất bổ sung: trần số bình mỗi chuyến và sim Oxy có CON-101	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-VP-17 Giá lồng sống theo loài	Cân bằng	Đề xuất bổ sung: mỗi loài, GTĐ lồng ròng sau vật tiêu hao bằng 1,5 đến 2,0 lần E(hạ MVP bán được)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-vat-pham.md
-MP-01 Sinh bố cục dải Gần	Kỹ thuật	1000 chuyến liền nhau: 100% hợp lệ, dưới 1% dự phòng. Tham chiếu đo 0,00% ở 3 seed	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-02 Đa dạng bố cục	Kỹ thuật	Hai chuyến liền nhau: không quá 5 trên 10 ô ghép cùng mảnh cùng ô, không beacon cùng ô. Tham chiếu đo lớn nhất 5, beacon trùng 0%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-03 Thời lượng chuyến chương 1	Cân bằng	p50 trong 4 đến 6 phút. Đo 4,4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-04 Bị kéo về	Cân bằng	Cẩn thận dưới 5%, tham 15 đến 40%. Cẩn thận đạt, tham chưa (xem bảng mục tiêu lệch)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-05 Báo trước hazard	Cảm giác	Mỗi hazard gây hại có báo trước ít nhất 1 giây tính từ lúc thấy, H01 có chỉ báo mép màn hình	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho H01 đến H03. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-06 Chơi một mình Station Cinder	Luồng	Đi hết lần 1 và lần 2, vớt Ingrid và Linh, hạ hoặc xua BS-1. Thêm: rút giữa trận qua B3, không chạy ngang boss tới C7	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-07 Trạng thái sau lần 2	Dữ liệu	D1 mở, boss không còn, vách C6 sang C7 mở, beacon B2 bật	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-08 Lối ra map nhánh	Luồng	Mỗi map nhánh có ít nhất một lối ra, kiểm tay trên greybox	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho Cinder. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-09 Nhóm 4	Cân bằng	Mỗi người nhặt từ 60% so với một mình ở mọi chương và kịch bản. Đo 61% thấp nhất (a 0,30)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-10 Hazard Oxy	Cân bằng	H01 trừ 8, H02 trừ 12 một lần mỗi tia, H03 không trừ, qua event "trúng hazard"	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-MP-11 Thoát giữa chuyến	Dữ liệu	Một mình: mất chuyến, về lần lưu. Host thoát: phiên dừng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-map.md
-TC-01 Ca chương 1 một người	Sim, chơi thật	Lịch 4 tàu, giao đủ ít nhất 3 đơn trong 240 giây, 0 đóng sẵn	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-02 Giờ đến tàu	Sim	Không tàu nào có giờ đến cộng lưu bến vượt 240 giây (luật 70)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-03 Ca chương 1 N 1 tới 4	Sim	Ca 190 tới 191 giây, rảnh 21 tới 26%, kiện mỗi người 10,8, 10,2, 9,5, 7,8, đơn đủ 91, 94, 96, 86%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-04 Thời lượng ca	Sim	Trung bình 170 tới 300 giây mọi N, chương 1 tới 4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-05 Đơn trượt	Log	Tally không giảm, kiện còn đúng, Hạng không đổi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-06 Bỏ ca	Chơi, log	Tàu không tới, kiện còn đủ, cửa khí khóa	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-07 Bốc đồng thời, 2 người	Co-op	Đúng 1 kiện nhận	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-08 Ca đầu tiên	Chơi, log	Đúng 1 tàu TA01, 1 dòng CGO-101	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-09 Mở ca	Log	Còn người ngoài chuyến thì không mở. Một ca mỗi ngày. Sau mở ca cửa khí khóa	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-tram-va-cang.md
-TC-10 Điểm cảng	Sim, log	Đơn đủ nhanh 3, 5, 6, 8 điểm ở N 1 tới 4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-11 Số tàu theo N	Sim	Bằng nhau ở N 1 tới 4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-12 CGO-121 chương 1	Sim 100 lịch	Mọi lịch từ ngày có Súng lưới có 1 dòng CGO-121	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-13 Nhóm hàng	Validator	Mọi CGO thuộc đúng một nhóm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-14 Sửa khoang	Chơi, log	Thiếu vật liệu không bắt đầu, thả phím giữ tiến độ, vật liệu không hoàn	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-15 Người vớt	Chơi, log	Kéo buồng về, tỉnh đầu ngày kế, khoang chỉ sửa sau khi tỉnh	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-16 Hạng cảng	Sim, log	Điểm đúng công thức, không giảm, trần dồn	FALSE	Chưa chấm, chưa có build	Nhãn: MVP tới hạng 3. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-17 Sang ngày co-op	Chơi 2 người	Người treo máy: sang ngày sau 30 giây	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-18 Ra chuyến co-op	Chơi 2 người	Người treo máy: chuyến bắt đầu sau 30 giây, tính ở lại	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-19 Hai chuyến mỗi ngày	Chơi, log	Chuyến thứ 3 bị cửa khí chặn	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-20 Đóng kiện trước co-op	Chơi 2 người	Người về sớm đóng được kiện, không ra lại, kiện được nhận	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-TC-21 Người vào sau	Chơi	Có chỗ ngủ ở khu hồi sức, buồng tắt vẫn tắt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-tram-va-cang.md
-UX-01 Cổng máy UX	Process	`kiem-ux.mjs` thoát 0 (đạt lúc chấm), thêm kiểm chuỗi in nháy ở bảng 2.5	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-02 Đường ra mỗi màn	Navigation	Mỗi màn đi được bằng bàn phím chuột và gamepad	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: GD-031-ux-ui.md
-UX-03 Cảnh báo hai kênh	Accessibility	Mô phỏng mù màu 4 nhóm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-04 Chữ và tương phản	Accessibility	12 px ở 720p, 4,5:1, đo bằng script art	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-05 HUD ở 200 phần trăm	Layout	1280x720, HUD-01 đến HUD-05 trong lề 64 x 36 px	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-06 Đổi phím	Input	Mọi hành động bảng 2.9 đổi được, Esc cố định	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-07 Esc và Start	Input	Esc đóng màn con trước rồi mới mở menu, Start luôn mở, UI-34 Esc không làm gì	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-08 Gợi ý không chặn	FTUE	Không hộp thoại chặn khi Driftlife trong 10 u, hazard báo trước, Oxy dưới 25 phần trăm. Dưới 25 phần trăm chỉ T09, T15, T20	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-09 FTUE kích được	FTUE	Bot gd-tech: T01 đến T35 mỗi bước kích ít nhất 1 lần	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-10 Âm lượng và chú thích âm	Accessibility	4 thanh tách, chú thích bật tắt ở UI-51	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-11 Thoát giữa chuyến	Data	Luôn qua hộp xác nhận nêu hệ quả. Lưu lỗi ở UI-44 có lối ra	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-12 Ca cảng không chữ Thua	Tone	Không chuỗi nào chứa "Thất bại" hay "Thua"	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-13 Co-op 2 người	Co-op	HUD-07 trễ dưới 0,5 giây, Menu không dừng, một người online thì dừng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-14 Đồng hồ xác nhận chung	Co-op	HTR-01 hiện cho mọi người ở trạm: 30 giây ra chuyến, ngủ, mở ca sớm, bỏ ca	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-15 Đọc HUD Oxy	Playtest	3 trên 5 người mới nói được "còn đủ về không" trong 5 giây	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-UX-16 Ghim trước ngạt lần đầu	Playtest	Trên 70 phần trăm sau tutorial	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ux-ui.md
-KY-01 Selftest	Tool	`selftest.mjs` thoát 0 (hiện 25 phép ĐẠT)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-02 Tất định	Tool	Cùng seed cho cùng kết quả ở cả 3 sim (đã kiểm byte với `--khong-gio`)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-03 Ca tính tay	Tool	Có trong selftest cho cả 3 sim	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-04 Giả định in ra	Tool	Đầu mỗi file kết quả liệt kê `[GIẢ ĐỊNH]`	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-05 Validator	Tool	Bắt các loại lỗi có ca cài trong selftest	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-06 Schema	Dữ liệu	Phủ mọi bảng dữ liệu các GDD xin	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-07 Nhặt trùng	Co-op	1000 lần hai máy cùng nhặt: đúng 1 người nhận	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-08 Kiện	Co-op	100 lần thả, nhặt, bốc có rớt mạng: tổng kiện không đổi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-09 Mất kết nối	Co-op	Vào lại đúng nhân vật theo mã slot, quá 15 giây thì bị kéo về	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-10 Host thoát	Co-op	Host thoát rồi mở lại: thế giới về điểm lưu gần nhất (K23, ba điểm lưu), không mất ngày trước	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-11 Vào giữa chừng	Co-op	Thử ở 3 pha, đúng luật 13	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-12 File save	Lưu	Cắt điện giữa lúc ghi, mở lại được bản trước	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
-KY-13 Dữ liệu	Dữ liệu	Xuất rồi nhập lại, 0 trường lệch	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: GD-031-ky-thuat.md
+Một ngày chương 1	Nhịp	Một ngày đủ 2 chuyến và ca cảng dài 15 đến 20 phút ở chương 1 (sim chuyến cộng sim ca cảng, lệch tối đa 15%)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: 00-khung-game.md
+Tối đa 2 chuyến một ngày	Luật	Sau chuyến thứ hai hoặc khi đã mở ca cảng thì cửa khí khóa. Skiff cũng tính một chuyến	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build. Nguồn: 00-khung-game.md
+Sang ngày và lưu	Luật	Ngày không có đồng hồ. Chỉ sang ngày khi ngủ và lúc ngủ tự lưu. Tắt game giữa ngày rồi mở lại thì về đầu ngày	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build. Nguồn: 00-khung-game.md
+Thoát giữa chuyến	Co-op, lưu	Rời phiên hoặc mất kết nối quá 15 giây giữa chuyến thì tính như bị kéo về, giữ 1 món. Chơi một mình mà thoát giữa chuyến thì mất chuyến. Host thoát thì thế giới về lần lưu đầu ngày	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build. Nguồn: 00-khung-game.md
+Hết Oxy	Luật	Oxy về 0 mà không ai cứu thì bị kéo về, giữ đúng 1 món, không trừ Tally, không nợ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build. Nguồn: 00-khung-game.md
+Chơi một mình trọn chương 1	Co-op	Một người chơi trọn chương 1 (mọi quest, ca cảng, sửa khoang) không cần người thứ hai và không có thứ gì chỉ co-op mới có	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Playtest. Nguồn: 00-khung-game.md
+Co-op 2 người	Co-op	Hai người online chơi trọn một ngày. Xác nhận cửa khí chung, kết chuyến riêng từng người, người về sớm không bị gọi ra lại, không tạm dừng toàn cục	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Playtest. Nguồn: 00-khung-game.md
+Chương 1 dài	Nhịp	Chơi trọn chương 1 mất 1,5 đến 2 giờ (sim kinh tế, lệch tối đa 15%)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: 00-khung-game.md
+Tally là tiền duy nhất	Kinh tế	Không có tiền thứ hai và không có XP. Tally chủ yếu đến từ ca cảng. Tìm trong GDD không thấy loại tiền khác	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: 00-khung-game.md
+Solace chỉ là mồi	Truyện	Không chỗ nào trong GDD coi Solace là đích hay điểm kết của game. Solace chỉ là niềm tin của nhân vật	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: 00-khung-game.md
+Mốc và vật truyện mỗi chương	Dữ liệu	Mỗi chương có ít nhất 3 mốc và ít nhất 2 vật truyện có khe trong map nhánh. Số mốc 5 chương: 9, 8, 8, 7, 8. Số vật: 4, 6, 6, 5, 2	FALSE	Chưa chấm, chưa có build	Nhãn: MVP chương 1, Sau MVP chương 2 đến 5. Cách kiểm: Máy. Nguồn: cot-truyen.md
+Vật truyện đủ khe và mốc	Dữ liệu	Validator: mỗi vật truyện có mặt trong danh sách vật phẩm, có khe trong map nhánh, có mốc hiện ra	FALSE	Chưa chấm, chưa có build	Nhãn: MVP chương 1. Cách kiểm: Máy. Nguồn: cot-truyen.md
+Quest người vớt	Luật	Mỗi người vớt mở đúng tính năng đã định. Linh phải sửa cả khoang liên lạc và cảng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (Ingrid, Linh), Sau MVP (3 người còn lại). Cách kiểm: Máy. Nguồn: cot-truyen.md
+Không còn tên cũ	Nội dung	Không còn tên phản diện cũ trong GDD	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: cot-truyen.md
+Giới hạn thoại	Nội dung	Không câu nào vượt 80 hoặc 60 ký tự, không chữ số, không từ chỉ số người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: cot-truyen.md
+Thoại đúng số người tỉnh dậy	Nội dung	Không câu thoại nào sai với số người đang chơi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: cot-truyen.md
+Che tên người nói	Playtest	Đoán đúng ít nhất 2 trên 3 câu mẫu của mỗi người vớt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (Ingrid, Linh), Sau MVP. Cách kiểm: Playtest. Nguồn: cot-truyen.md
+Sổ tay chương 1	Playtest	Bỏ qua mọi cảnh thì Sổ tay vẫn có 9 dòng tóm tắt và luôn có một dòng mục tiêu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: cot-truyen.md
+Biết việc kế tiếp	Playtest	Sau mốc Sóng của Lantern, ít nhất 7 trên 10 người chơi nói được việc kế tiếp mà không mở Sổ tay	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: cot-truyen.md
+Bị kéo về khi đang kéo buồng	Playtest	Bị kéo về lúc đang kéo buồng của Ingrid thì chuyến sau buồng nằm ở vị trí gốc	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: cot-truyen.md
+Mốc và manh mối khi co-op	Playtest	Người 1 nhặt Nhật ký trạm của Cinder thì Sổ tay người 2 có manh mối đó ở lần mở kế tiếp. Mốc xong từ người nào cũng ghi một lần, mỗi người thấy mỗi cảnh nhiều nhất một lần	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: cot-truyen.md
+Ngày sớm nhất xong chuỗi mốc	Dữ liệu	Chương 1 không xong trước ngày 7 với mọi số người. Ngày sớm nhất 5 chương: 7, 5, 8, 3, 3. Sim kinh tế phải đạt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: cot-truyen.md
+Di chuyển 8 hướng và Hãm	Điều khiển	Prototype: người thử dừng cách điểm đích tối đa 0,5 u ở trên 90% lần thử bằng Hãm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: nguoi-choi.md
+Hành lang hẹp	Điều khiển	Hành lang rộng 1,5 u dài 20 u: người thử mới không chạm tường sau 3 lần thử	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: nguoi-choi.md
+Tham số trong khoảng an toàn	Cân bằng	Mọi số trong mục tham số nằm trong khoảng an toàn sau prototype, hoặc có ghi lý do lệch và ngày thử	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: nguoi-choi.md
+Không kẹt trạng thái	Soft lock	Mô phỏng 1000 chuyến ngẫu nhiên, không người chơi nào rơi vào trạng thái không thoát được	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Chia Oxy	Co-op	Thử 5 lần liền: tổng Oxy hai bên bằng đúng số chuyển, sai số dưới 1 điểm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Bị kéo về	Luật	Luôn giữ đúng 1 món ghim, không trừ Tally	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Thoát game khi đang ngạt	Luật	Ngạt rồi thoát game thì chỉ giữ đúng 1 món ghim	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Bình Oxy bậc 0 và 1	Nâng cấp	Chuyến với bình bậc 0 và 1 khớp bảng: 330 và 450 Oxy, 80 và 100 Khối	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Tỉ lệ bị kéo về vì ngạt	Chỉ số	Người chơi cẩn thận dưới 5%, người chơi tham 15 đến 40%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP, đo lại bằng playtest. Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Thời lượng chuyến chương 1	Chỉ số	Một chuyến chương 1 dài 4 đến 6 phút	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Ghim món trước lần ngạt đầu	Chỉ số, FTUE	Trên 70% người chơi mới ghim món sau tutorial	FALSE	Chưa chấm, chưa có build	Nhãn: MVP, đo bằng playtest. Cách kiểm: Build hoặc playtest. Nguồn: nguoi-choi.md
+Cứu nhau khi co-op	Chỉ số, co-op	Số lần được cứu chia số lần ngạt trên 40% khi chơi 2 người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Bình Oxy nhỏ không phá cân bằng	Cân bằng	Sim: tỉ lệ chuyến dài vượt khung khi mang bình không quá 5%. Có trần số bình mỗi chuyến	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: nguoi-choi.md
+Nhận diện 4 preset người chơi	Art, co-op	Tô đen 4 preset đặt cạnh nhau ở 106 px một u, 5 người thử phân biệt đúng trong 1 giây ở ít nhất 90% lượt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho 2 preset đầu, Sau MVP cho 4 preset. Cách kiểm: Build hoặc playtest. Nguồn: ho-so-nhan-vat.md
+Nhận diện người vớt và thương nhân	Art	Tô đen mỗi nhân vật vẫn nhận ra đúng vai ở ít nhất 80% lượt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho Ingrid, Linh, Tikko. Sau MVP cho 7 người còn lại. Cách kiểm: Máy. Nguồn: ho-so-nhan-vat.md
+Bảng màu mỗi nhân vật	Art	1 đến 6 màu chính cộng tối đa 2 màu nhấn (đo bằng công cụ lấy mẫu), độ bão hòa đúng mục màu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho 5 nhân vật MVP. Cách kiểm: Máy. Nguồn: ho-so-nhan-vat.md
+Lắp thử bộ đồ	Art	Bậc 0 và bậc cuối của mọi trục nâng cấp: không mảnh nào che hoặc cắt mảnh khác	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho bậc 0 và 1 của bình, bộ đẩy, túi, đai, vỏ bậc 0. Sau MVP bậc còn lại. Cách kiểm: Máy. Nguồn: ho-so-nhan-vat.md
+Phân biệt màu trong cùng cảnh	Art	Hai nhân vật cùng cảnh lệch ít nhất 25 độ Hue hoặc 25 điểm bão hòa	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho các cặp ở ca cảng đầu (Noor, Jonas, Ingrid, Linh, Tikko). Cách kiểm: Máy. Nguồn: ho-so-nhan-vat.md
+Đủ clip và biểu cảm MVP	Art	Mọi nhân vật MVP đủ clip hoạt ảnh trong bảng và 8 biểu cảm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ho-so-nhan-vat.md
+Hồ sơ không đổi theo số người	Thiết kế	Bảng co-op: không hồ sơ nào đổi ngoài số preset hiển thị và số buồng tắt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ho-so-nhan-vat.md
+Va chạm 4 preset bằng nhau	Công bằng	Cả 4 preset có cùng bán kính va chạm 0,4 u trong build	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ho-so-nhan-vat.md
+Báo trước đòn	Combat	Mọi đòn báo trước tối thiểu 0,7 giây (đòn hẹp dưới 15 Oxy), 0,8 giây (từ 15 Oxy), 1,0 giây (vùng bán kính từ 2 u). Có hình và tiếng. 0 vi phạm	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Miễn sát thương và Lướt	Combat	Hai đòn trong cùng một khung chỉ trừ Oxy một lần. Miễn 0,8 giây, Lướt miễn 0,2 giây đầu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Choáng và hệ số giảm	Combat	Choáng 4 giây. Hệ số giảm riêng cho Choáng và Mê, trần 3, về 1 sau 20 giây. Sim choáng với 4 người dưới 70% (đo được 18 đến 32%)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Bắt sống cỡ nhỏ	Combat	Súng lưới bắt tối đa 3 con trong 1,5 u, tiêu 1 Lưới cuộn. Bắt tay giữ 1,5 giây. Lồng chứa 3 con, không chiếm túi, không làm chậm. Lồng còn 1 chỗ thì bắt được 1 con	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Chất lượng mẫu	Combat	70% là 3 sao, 30% là 2 sao, dưới 30% là 1 sao. Kết nhanh cho 2 sao	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Ghim lồng	Combat	Bị kéo về thì giữ 1 con sao cao nhất	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Bắt sống giá trị hơn hạ	Kinh tế	Giá trị mẫu sống sau trừ vật tiêu hao chia giá trị hạ nằm trong 1,5 đến 2. Ròng mỗi phút từ 1,0, cỡ M không quá 1,6 (sim bắt sống)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Loài và boss MVP	Phạm vi	4 loài dải Gần (Arc Eel chỉ hạ) và boss Scrapmaw. Không xuất hiện thứ Sau MVP	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Boss Scrapmaw chơi một mình	Combat	Thắng được một mình bằng hạ và Xua đi trong 2 đến 4 phút. Cửa không khóa, rút lui qua beacon trong phòng, boss hồi đầy khi phòng trống quá 10 giây. Cần sim boss chạy lại	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Co-op chia hệ số	Co-op	Sinh lực và ngưỡng Driftlife chia theo số người, boss tăng 1 + 0,6 x (số người - 1). Gánh mỗi người kiểu chia là 1,00. Kiểu dồn chỉ để biết, không đặt mục tiêu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Né đòn trong prototype	Hit feel	Prototype bay phím T: người mới né đòn hẹp 0,7 giây và vùng 2,5 u báo trước 1,0 giây ít nhất 70% sau 3 lần thử	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+Cổng kiểm vật phẩm	Dữ liệu	Script vat-pham.mjs thoát mã 0, 0 lỗi. Hiện đạt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Nguồn nhận và nguồn tiêu	Kinh tế	Mọi vật phẩm nhãn MVP có nguồn nhận và nguồn tiêu nhãn MVP (script)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Công thức dùng vật phẩm có thật	Dữ liệu	Mọi đầu vào công thức đều có trong ITEM LIST (script)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Tài nguyên riêng mỗi dải	Dữ liệu	Mỗi dải có ít nhất 2 tài nguyên riêng. Gần 6, Giữa 4, Xa 5 cộng Cradle 1	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Biên lợi công thức	Cân bằng	Hệ số lợi nằm trong khoảng cho phép. Đạt trừ công thức Lồng cỡ M (0,24, loại hàng sống không có kiểm)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Mẫu sống trên hạ	Cân bằng	Mẫu sống chia hạ từ 1,5 đến 2,0 cho cỡ S và M. Sinh thiết cỡ L đứng ngoài luật này	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Không ghi giá Tally trong tab vật phẩm	Quy tắc	Chữ "Tally" chỉ xuất hiện ở chỗ phần kinh tế giữ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Đủ số lượng nhãn MVP	Phạm vi	6 tài nguyên, 5 COM, 9 kiện (Kiện nước tinh khiết là kiện chế duy nhất), 6 nâng cấp, 2 vật tiêu hao, 5 dụng cụ cộng chìa, 4 loài với 3 loài cỡ S bắt sống	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Không còn dấu chờ	Quy tắc	Dấu chờ chỉ còn ở phần kinh tế giữ, không còn dấu chờ nào ở món đã có giá	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Sim vật phẩm	Cân bằng	Sim in ra: thời gian làm đầy túi, thu nhập một ngày của chuỗi thô và chuỗi tinh, mức trội của chiến lược nhặt, giá trị lồng ròng mỗi loài bằng 1,5 đến 2,0 lần giá trị hạ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Giá trị đồ mỗi chuyến	Cân bằng	Giá trị đồ mỗi chuyến đo ở sim chuyến (sim-chuyen.md)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Thời gian làm đầy túi	Nhịp	Túi đầy sau 60 đến 70% thời gian chuyến ở chương 1 (ước tay 56 đến 63%, chờ sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Chuyến dùng đủ khoan, nạy, hạ	Nhịp	Trên 90% chuyến chương 1 dùng cả khoan, nạy, hạ (sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Kiện tinh trên kiện thô	Cân bằng	Kiện tinh chia kiện thô trên 50% sau chương 1 khi đủ nguyên liệu (sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+Hiểu vì sao đồ đáng nhặt	Trải nghiệm	Người chơi hiểu vì sao đồ đáng nhặt và bỏ gì khi túi đầy (cần build, ghi lại khi playtest)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: vat-pham.md
+Sinh bố cục dải Gần	Kỹ thuật	1000 chuyến liền nhau: 100% hợp lệ, dưới 1% dùng bố cục dự phòng. Đo được 0,00% ở 3 seed	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Đa dạng bố cục	Kỹ thuật	Hai chuyến liền nhau: không quá 5 trên 10 ô ghép cùng mảnh cùng ô, không beacon cùng ô. Đo được lớn nhất 5, beacon trùng 0%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Thời lượng chuyến chương 1 (map)	Cân bằng	Trung vị 4 đến 6 phút. Đo được 4,4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Tỉ lệ bị kéo về (map)	Cân bằng	Cẩn thận dưới 5%, tham 15 đến 40%. Cẩn thận đạt, tham chưa đạt (xem bảng mục tiêu lệch)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Báo trước hazard	Cảm giác	Mỗi hazard gây hại báo trước ít nhất 1 giây tính từ lúc thấy. Mảnh trôi có chỉ báo ở mép màn hình	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho Mảnh trôi, Cáp chập, Ống xì. Cách kiểm: Máy. Nguồn: map.md
+Hazard trừ Oxy	Cân bằng	Mảnh trôi trừ 8, Cáp chập trừ 12 (một lần mỗi tia), Ống xì không trừ. Ghi qua event trúng hazard	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Chơi một mình ở Station Cinder	Luồng	Đi hết lần 1 và lần 2, vớt Ingrid và Linh, hạ hoặc xua Scrapmaw. Rút giữa trận qua beacon được, không phải chạy ngang boss tới phòng sau	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Trạng thái sau lần 2	Dữ liệu	Cửa khoang máy mở, boss không còn, vách sang phòng sau mở, beacon thứ hai bật	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Lối ra map nhánh	Luồng	Mỗi map nhánh có ít nhất một lối ra (kiểm tay trên greybox)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho Cinder. Cách kiểm: Máy. Nguồn: map.md
+Nhóm 4 người	Cân bằng	Mỗi người nhặt từ 60% so với chơi một mình ở mọi chương và kịch bản. Đo được thấp nhất 61%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Thoát giữa chuyến (map)	Dữ liệu	Chơi một mình: mất chuyến, về lần lưu. Host thoát: phiên dừng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+Ca chương 1 một người	Sim, chơi thật	Lịch 4 tàu, giao đủ ít nhất 3 đơn trong 240 giây, không đơn nào đóng sẵn	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Giờ đến tàu	Sim	Không tàu nào có giờ đến cộng thời gian lưu bến vượt 240 giây	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Ca chương 1 với 1 đến 4 người	Sim	Ca dài 190 đến 191 giây, rảnh 21 đến 26%. Kiện mỗi người: 10,8, 10,2, 9,5, 7,8. Đơn đủ: 91, 94, 96, 86%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Thời lượng ca	Sim	Trung bình 170 đến 300 giây với mọi số người, chương 1 đến 4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Số tàu theo số người	Sim	Số tàu bằng nhau với 1 đến 4 người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Đơn trượt	Log	Tally không giảm, kiện còn đúng, Hạng không đổi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Bỏ ca	Chơi, log	Tàu không tới, kiện còn đủ, cửa khí khóa	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Bốc đồng thời, 2 người	Co-op	Đúng 1 người nhận được kiện	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Ca đầu tiên	Chơi, log	Đúng 1 tàu Tikko, 1 dòng Kiện phế liệu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Mở ca	Log	Còn người ngoài chuyến thì không mở được. Một ca mỗi ngày. Sau khi mở ca cửa khí khóa	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: tram-va-cang.md
+Điểm cảng	Sim, log	Đơn đủ nhanh được 3, 5, 6, 8 điểm với 1, 2, 3, 4 người	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Lồng sinh vật sống ở chương 1	Sim 100 lịch	Mọi lịch từ ngày có Súng lưới đều có 1 dòng Lồng sinh vật sống	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Nhóm hàng	Validator	Mỗi loại kiện thuộc đúng một nhóm hàng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Sửa khoang	Chơi, log	Thiếu vật liệu thì không bắt đầu được, thả phím giữ tiến độ, vật liệu không hoàn lại	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Người vớt	Chơi, log	Kéo buồng về, tỉnh dậy đầu ngày kế, khoang chỉ sửa được sau khi tỉnh	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Hạng cảng	Sim, log	Điểm đúng công thức, không giảm, phần dư dồn sang hạng sau	FALSE	Chưa chấm, chưa có build	Nhãn: MVP tới hạng 3. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Sang ngày khi co-op	Chơi 2 người	Người treo máy thì sang ngày sau 30 giây	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Ra chuyến khi co-op	Chơi 2 người	Người treo máy thì chuyến bắt đầu sau 30 giây, tính là ở lại	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Chuyến thứ 3 bị chặn	Chơi, log	Cửa khí chặn chuyến thứ 3 trong ngày	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Đóng kiện trước khi co-op ra chuyến	Chơi 2 người	Người về sớm đóng được kiện, không phải ra lại, kiện vẫn được nhận	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Người vào sau	Chơi	Có chỗ ngủ ở khu hồi sức, buồng tắt vẫn tắt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: tram-va-cang.md
+Cổng máy UX	Quy trình	Script kiem-ux.mjs thoát 0 (đạt lúc chấm). Có kiểm thêm chuỗi in nháy ở bảng chuỗi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Đường ra mỗi màn	Điều hướng	Mỗi màn đi được bằng bàn phím chuột và gamepad	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: ux-ui.md
+Cảnh báo hai kênh	Accessibility	Mô phỏng mù màu 4 nhóm vẫn đọc được cảnh báo	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Chữ và tương phản	Accessibility	Chữ cỡ 12 px ở 720p, tương phản 4,5:1, đo bằng script của art	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+HUD ở cỡ 200%	Layout	Ở 1280x720, 5 phần tử HUD đầu nằm trong lề 64 x 36 px	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Đổi phím	Input	Mọi hành động trong bảng phím đổi được, Esc cố định	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Esc và Start	Input	Esc đóng màn con trước rồi mới mở menu. Start luôn mở menu. Ở HUD bay không có màn con thì Esc không làm gì	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Gợi ý không chặn	FTUE	Không hộp thoại chặn khi Driftlife trong 10 u, hazard báo trước, hoặc Oxy dưới 25%. Dưới 25% chỉ cho phép 3 gợi ý: về khi đủ, thoát cố định, ngạt không phải thua	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+FTUE kích được	FTUE	Bot của gd-tech: mỗi bước tutorial (35 bước) được kích ít nhất 1 lần	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Âm lượng và chú thích âm	Accessibility	4 thanh âm lượng tách riêng, chú thích âm bật tắt được trong màn Âm thanh	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Thoát giữa chuyến (UX)	Dữ liệu	Luôn qua hộp xác nhận nêu rõ hệ quả. Màn lỗi lưu có lối ra	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Ca cảng không có chữ Thua	Tone	Không chuỗi nào chứa "Thất bại" hay "Thua"	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Co-op 2 người (UX)	Co-op	Khung đồng đội trễ dưới 0,5 giây. Menu không dừng game, chỉ dừng khi một người online	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: ux-ui.md
+Đồng hồ xác nhận chung	Co-op	Hiện cho mọi người ở trạm: 30 giây ra chuyến, ngủ, mở ca sớm, bỏ ca	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ux-ui.md
+Đọc HUD Oxy	Playtest	3 trên 5 người mới nói được "còn đủ để về không" trong 5 giây	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Playtest. Nguồn: ux-ui.md
+Ghim món trước lần ngạt đầu (UX)	Playtest	Trên 70% người chơi ghim món sau tutorial	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Playtest. Nguồn: ux-ui.md
+Selftest	Tool	Script selftest.mjs thoát 0 (hiện 25 phép đạt)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Kết quả tất định	Tool	Cùng seed cho cùng kết quả ở cả 3 sim (đã kiểm từng byte với --khong-gio)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Ca tính tay	Tool	Có trong selftest cho cả 3 sim	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Giả định in ra	Tool	Đầu mỗi file kết quả liệt kê các giả định	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Validator	Tool	Bắt đúng các loại lỗi đã cài ca thử trong selftest	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Schema	Dữ liệu	Phủ mọi bảng dữ liệu mà các GDD yêu cầu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Nhặt trùng khi co-op	Co-op	1000 lần hai máy cùng nhặt một món: đúng 1 người nhận	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Kiện khi co-op	Co-op	100 lần thả, nhặt, bốc có rớt mạng: tổng số kiện không đổi	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Mất kết nối	Co-op	Vào lại đúng nhân vật theo slot, quá 15 giây thì bị kéo về	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Host thoát	Co-op	Host thoát rồi mở lại: thế giới về điểm lưu gần nhất (3 điểm lưu), không mất ngày trước	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Vào giữa chừng	Co-op	Thử ở 3 pha, đúng luật vào giữa chừng	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+File save	Lưu	Cắt điện giữa lúc ghi vẫn mở lại được bản trước	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md
+Xuất nhập dữ liệu	Dữ liệu	Xuất rồi nhập lại, 0 trường lệch	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: ky-thuat.md

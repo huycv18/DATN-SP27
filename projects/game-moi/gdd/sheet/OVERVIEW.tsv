@@ -1,5 +1,5 @@
 GAME DESIGN DOCUMENT - THE NOVENT
-Version: 0.4.0	Date: 20/11/2026
+Version: 0.5.0	Date: 20/11/2026
 Designed by Huy
 
 INFORMATION	"Game Title: The Novent
@@ -10,39 +10,50 @@ Engine: Unity
 Age Rating: Chưa chốt
 Platform: PC, chơi đơn hoặc co-op online 2 đến 4 người"
 
-DEFINE GDD	"- Tài liệu: Game Design Document của game The Novent, phiên bản 0.4.0. Nguồn chuẩn duy nhất về luật, số và nội dung cho dev, art, PM
-- Hai lớp: Sheet này là bản làm việc tóm gọn. Bản đủ nằm ở repo github.com/huycv18/DATN-SP27, thư mục projects/game-moi/gdd (khung game và 10 GDD hệ thống). Sheet và repo được đối chiếu bằng máy (tools/doi-chieu-sheet.mjs)
-- Cấu trúc 25 tab, 4 nhóm. Tổng quan: OVERVIEW, ECONOMIC. Spec thực thể: CORE LOOP, Day, Player, Enemy, Salvage, Customer, Zone, Upgrade. Bảng dữ liệu: GAME STORY, ITEM LIST, Recipe, Shop, PROCESSING, Tutorials, WIREFRAME. Sản xuất và kiểm: TRACKING, Assets, AUDIO ASSETS LIST, Event Tracking, MVP Criteria Checklist, Balance Sheet, Playtest Report, Bugs Report
-- Quy ước: một con số chỉ ghi ở một nơi (giá ở Shop và Upgrade, tab khác trỏ về), mỗi nội dung có nhãn MVP hoặc Sau MVP, tên riêng tiếng Anh là tên tạm, số cân bằng do sim in ra
+DEFINE GDD	"- Tài liệu: Game Design Document của game The Novent, phiên bản 0.5.0. Nguồn chuẩn duy nhất về luật, số và nội dung cho dev, art, PM
+- Hai lớp: Sheet này là bản đọc tóm gọn. Bản đủ (khung game và 10 GDD hệ thống) nằm ở repo github.com/huycv18/DATN-SP27, thư mục projects/game-moi/gdd
+- Sheet và repo được đối chiếu bằng máy (tools/doi-chieu-sheet.mjs)
+- Cấu trúc 25 tab, 4 nhóm
+- Tổng quan: OVERVIEW, ECONOMIC
+- Spec thực thể: CORE LOOP, Day, Player, Enemy, Salvage, Customer, Zone, Upgrade
+- Bảng dữ liệu: GAME STORY, ITEM LIST, Recipe, Shop, PROCESSING, Tutorials, WIREFRAME
+- Sản xuất và kiểm: TRACKING, Assets, AUDIO ASSETS LIST, Event Tracking, MVP Criteria Checklist, Balance Sheet, Playtest Report, Bugs Report
+- Quy ước: một con số chỉ ghi ở một nơi (giá ở Shop và Upgrade, tab khác trỏ về). Mỗi nội dung có nhãn MVP hoặc Sau MVP. Tên riêng tiếng Anh là tên tạm. Số cân bằng do sim in ra
+- Cột ID của mọi tab là số thứ tự. Nhắc tới thứ ở tab khác thì ghi bằng tên, không bằng mã
 - Quyền: Lead (Huy) duyệt luật lõi và phạm vi. Phòng Game Designer giữ từng tab theo hệ thống. Mọi thay đổi ghi ở TRACKING GDD bên dưới"
 
 GAME VISION & CONCEPT	"- Vision: tự tay kéo một trạm chết sống lại giữa bãi vỡ của tàu mẹ. Mỗi chuyến ra ngoài là một lần liều có tính toán, một mình hay cùng bạn
 - Fantasy: tôi là người sống sót giỏi nghề. Mỗi lần ra ngoài là đổi Oxy lấy hy vọng, mỗi lần về là thấy trạm đổi khác
-- Bối cảnh: Trái Đất cạn kiệt, đoàn di cư của United Accord trên tàu mẹ Cradle đi tìm hành tinh mới. Tên độc tài Daskel của hành tinh Sennar phát tín hiệu giả về hành tinh Solace để dụ và phục kích đoàn di cư (vụ The Scattering). Người chơi tỉnh dậy trên Station Ember, một trạm con hỏng đang trôi giữa bãi vỡ
-- Concept: mỗi ngày tối đa 2 chuyến ra ngoài không gian (2D nhìn ngang, bay 8 hướng). Oxy vừa là thời gian vừa là máu. Nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối. Về trạm sửa khoang, chế đồ, nuôi Driftlife, rồi bốc kiện lên tàu thương nhân The Veyl trong ca cảng để lấy Tally. Tally nâng cấp bộ đồ và trạm để đi xa hơn
+- Bối cảnh: Trái Đất cạn kiệt, đoàn di cư của United Accord trên tàu mẹ Cradle đi tìm hành tinh mới
+- Tên độc tài Daskel của hành tinh Sennar phát tín hiệu giả về hành tinh Solace để dụ và phục kích đoàn di cư (vụ The Scattering)
+- Người chơi tỉnh dậy trên Station Ember, một trạm con hỏng đang trôi giữa bãi vỡ
+- Concept: mỗi ngày tối đa 2 chuyến ra ngoài không gian (2D nhìn ngang, bay 8 hướng). Oxy vừa là thời gian vừa là máu
+- Ngoài không gian: nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối
+- Về trạm: sửa khoang, chế đồ, nuôi Driftlife, rồi bốc kiện lên tàu thương nhân The Veyl trong ca cảng để lấy Tally. Tally dùng nâng cấp bộ đồ và trạm để đi xa hơn
 - Truyện 5 chương: sống sót, tìm đường tới Solace, cứu Sevra (người thừa kế hợp pháp của Sennar), biết Solace là mồi, giúp mạng lưới của Sevra lật đổ Daskel. Sevra trao tọa độ hành tinh có sự sống thật, Ember rời neo. Kết mở cho phần sau
 - Thể loại: hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý, cấu trúc tham khảo Dave the Diver (ngày khám phá, cuối ngày quản lý). Chơi đơn hoặc co-op online 2 đến 4 người"
 
-CORE PILLARS	Five Core Pillars theo Dave the Diver, game follow đúng năm pillar này. Mỗi tính năng phải phục vụ ít nhất một pillar và không phạm cột Cấm. Khi hai pillar xung đột, ưu tiên theo thứ tự 1 đến 5. Bản đủ: projects/game-moi/gdd/00-khung-game.md mục 2
+CORE PILLARS	Five Core Pillars theo Dave the Diver, game follow đúng năm pillar này. Mỗi tính năng phải phục vụ ít nhất một pillar và không phạm cột Cấm. Khi hai pillar xung đột, ưu tiên theo thứ tự 1 đến 5. Bản đủ: 00-khung-game.md mục 2. Tab CORE LOOP ghi chặng nào của vòng chơi gánh pillar nào
 Pillar	Mô tả	Player Experience	Giữ bằng luật và cách đo	Cấm
 "1. Exploration & Discovery
-Khám phá"	Khuyến khích người chơi khám phá bãi vỡ của tàu mẹ Cradle: ba dải Gần, Giữa, Xa, các map nhánh, loài Driftlife mới, tài nguyên hiếm, xác các trạm con, người còn sống để vớt và những điều bất ngờ. Mỗi chuyến bố cục đổi khác, mỗi chương mở vùng mới	Curiosity, Wonder, Discovery	"Luật: K5 map sinh lại mỗi chuyến, K6 dải mở theo chương, K7 map nhánh dựng tay giữ người vớt, vật manh mối, boss
+Khám phá"	Khuyến khích người chơi khám phá bãi vỡ của tàu mẹ Cradle: ba dải Gần, Giữa, Xa, các map nhánh, loài Driftlife mới, tài nguyên hiếm, xác các trạm con, người còn sống để vớt và những điều bất ngờ. Mỗi chuyến bố cục đổi khác, mỗi chương mở vùng mới	Curiosity, Wonder, Discovery	"Luật: map tổng sinh lại mỗi chuyến, dải mở theo chương, map nhánh dựng tay giữ người vớt, vật manh mối, boss
 Đo: mỗi dải có ít nhất 2 tài nguyên chỉ dải đó có. Mỗi chương mở ít nhất 1 vùng hoặc map nhánh mới"	Map cố định lặp lại y hệt. Nội dung một lần nằm ở chỗ sinh lại ngẫu nhiên. Vùng mới chỉ khác màu mà không có thứ mới
 "2. Risk & Reward
-Rủi ro và phần thưởng"	"Người chơi phải cân nhắc lượng Oxy, sức chứa túi đồ, Driftlife nguy hiểm và thời điểm quay về. Oxy vừa là thời gian vừa là máu. Đi càng xa càng có phần thưởng giá trị nhưng rủi ro cũng cao hơn. Lựa chọn luôn có thông tin để tính (vạch ""đủ về"", cảnh báo theo phần trăm)"	Tension, Challenge, Satisfaction	"Luật: K1 Oxy là chỉ số duy nhất, K2 hết Oxy giữ 1 món, K3 túi đồ, K4 Recall Beacon, K9 bắt sống giá trị hơn hạ, K22 tối đa 2 chuyến mỗi ngày, K26 trần Oxy hồi từ vật tiêu hao, K27 đang ngạt không trao đồ
+Rủi ro và phần thưởng"	"Người chơi phải cân nhắc lượng Oxy, sức chứa túi đồ, Driftlife nguy hiểm và thời điểm quay về. Oxy vừa là thời gian vừa là máu. Đi càng xa càng có phần thưởng giá trị nhưng rủi ro cũng cao hơn. Lựa chọn luôn có thông tin để tính (vạch ""đủ về"", cảnh báo theo phần trăm)"	Tension, Challenge, Satisfaction	"Luật: Oxy là chỉ số duy nhất, hết Oxy chỉ giữ 1 món, túi đồ có giới hạn, Recall Beacon, bắt sống giá trị hơn hạ, tối đa 2 chuyến mỗi ngày, Oxy hồi từ vật tiêu hao tối đa 25%, đang ngạt không trao đồ
 Đo: chuyến chương 1 dài 4 đến 6 phút, chương 5 dài 10 đến 12 phút. Bị kéo về: người cẩn thận dưới 5%, người tham 15 đến 40%"	Thanh máu riêng. Hồi Oxy miễn phí giữa chuyến. Chuyến đi không có giới hạn. Về trạm nạp Oxy rồi ra lại không giới hạn. Mất trắng khi hết Oxy
 "3. Management & Optimization
-Quản lý và tối ưu"	Thứ mang về trở thành vật liệu sửa trạm và hàng hóa cho ca cảng. Người chơi chọn sửa khoang nào trước, nuôi Driftlife nào, nhận đơn nào, đóng kiện và bốc lên tàu thương nhân kịp giờ, để người vớt về vận hành các khoang, và tối ưu thu nhập Tally	Ownership, Strategy, Efficiency	"Luật: K11 khoang sửa xong đổi hình trạm, K12 người vớt vận hành khoang, K13 ca cảng, K14 sự cố, K15 Hạng cảng, K16 nuôi Driftlife, K19 nguồn tiêu của tài nguyên
-Đo: đơn giao đủ ở ca cảng 70 đến 95%. Thưởng đủ đơn và nhanh chiếm 15 đến 25% thu Tally. 100% vật phẩm có ít nhất một nguồn tiêu"	Tài nguyên chỉ để bán lấy số. Vật phẩm không có nguồn tiêu. Hệ đói, chi phí duy trì làm trạm xấu đi khi người chơi nghỉ
+Quản lý và tối ưu"	Thứ mang về trở thành vật liệu sửa trạm và hàng hóa cho ca cảng. Người chơi chọn sửa khoang nào trước, nuôi Driftlife nào, nhận đơn nào, đóng kiện và bốc lên tàu thương nhân kịp giờ, để người vớt về vận hành các khoang, và tối ưu thu nhập Tally	Ownership, Strategy, Efficiency	"Luật: khoang sửa xong đổi hình trạm, người vớt vận hành khoang, ca cảng, sự cố trạm, Hạng cảng, nuôi Driftlife, mọi tài nguyên có nơi tiêu
+Đo: đơn giao đủ ở ca cảng 70 đến 95% (chương 1), 70 đến 90% (từ chương 2). Thưởng đủ đơn và nhanh chiếm 15 đến 25% thu Tally. 100% vật phẩm có ít nhất một nguồn tiêu"	Tài nguyên chỉ để bán lấy số. Vật phẩm không có nguồn tiêu. Hệ đói, chi phí duy trì làm trạm xấu đi khi người chơi nghỉ
 "4. Progression & Growth
-Phát triển liên tục"	Tally kiếm được giúp nâng cấp bộ đồ (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ), dụng cụ và trạm, từ đó mở ra khả năng mới (vào dải mới, chuyến dài hơn, bắt loài lớn hơn) và thúc đẩy người chơi tiếp tục khám phá. Đích của cả hành trình là sửa xong động cơ và rời neo	Achievement, Empowerment, Growth	"Luật: K6 cấp bộ đồ theo dải, K18 Tally là đồng tiền duy nhất, K20 Shop, K21 mỗi chương thêm kiểu chơi mới, K25 qua chương
+Phát triển liên tục"	Tally kiếm được giúp nâng cấp bộ đồ (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ), dụng cụ và trạm, từ đó mở ra khả năng mới (vào dải mới, chuyến dài hơn, bắt loài lớn hơn) và thúc đẩy người chơi tiếp tục khám phá. Đích của cả hành trình là sửa xong động cơ và rời neo	Achievement, Empowerment, Growth	"Luật: cấp bộ đồ theo dải, Tally là đồng tiền duy nhất, Shop, mỗi chương thêm kiểu chơi mới, qua chương theo mốc truyện
 Đo: chương 1 dài 1,5 đến 2 giờ, cả game 12 đến 15 giờ (một người, kịch bản trung bình)"	Nâng cấp chỉ tăng số mà không mở gì mới. Mất tiến trình (hết Oxy chỉ mất túi, không mất nâng cấp hay Tally). Tiền tệ thứ hai hay XP
 "5. Variety & Delight
-Đa dạng và bất ngờ"	Cốt truyện có chiều sâu (vụ The Scattering, tên độc tài Daskel, người thừa kế Sevra), nhân vật độc đáo (người vớt về, thương nhân The Veyl mỗi loài một tính cách), hài nhẹ từ tính cách nhân vật, và cơ chế mới liên tục xuất hiện theo chương (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống) giúp người chơi không thấy lặp lại	Surprise, Humor, Relaxation	"Luật: K21 mỗi chương thêm một đến hai kiểu chơi mới, K25 qua chương theo mốc truyện, B8 dấu vết phản diện lộ dần, B9 giọng nền nghiêm hài nhẹ
+Đa dạng và bất ngờ"	"Cốt truyện có chiều sâu (vụ The Scattering, tên độc tài Daskel, người thừa kế Sevra). Nhân vật độc đáo (người vớt về, thương nhân The Veyl mỗi loài một tính cách), hài nhẹ từ tính cách nhân vật
+Mỗi chương thêm cơ chế mới (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống) để người chơi không thấy lặp lại"	Surprise, Humor, Relaxation	"Luật: mỗi chương thêm một đến hai kiểu chơi mới, qua chương theo mốc truyện, dấu vết phản diện lộ dần, giọng nền nghiêm, hài nhẹ
 Đo: mỗi chương có ít nhất 3 mốc truyện và 2 vật manh mối có nơi đặt cố định. Mỗi chương có kiểu chơi mới"	Cắt cảnh dài chặn vòng chơi. Truyện chỉ kể qua chữ mà không qua thứ người chơi tự tìm thấy. Hài lấn át những mốc mất mát. Chương sau chỉ là chương trước với số lớn hơn
 "Nguyên tắc nền
 Solo or Together
-Một mình vẫn trọn, có bạn thì vui hơn"	Nguyên tắc nền, không phải pillar, nhưng mọi pillar phải tuân theo. Mọi luật đúng với 1 đến 4 người. Chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay để chia việc, không mở khóa nội dung	Freedom, Cooperation, Belonging	"Luật: C1 đến C10, K23 lưu game
+Một mình vẫn trọn, có bạn thì vui hơn"	Nguyên tắc nền, không phải pillar, nhưng mọi pillar phải tuân theo. Mọi luật đúng với 1 đến 4 người. Chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay để chia việc, không mở khóa nội dung	Freedom, Cooperation, Belonging	"Luật: 10 luật co-op ở tab CORE LOOP, lưu game theo ngày
 Đo: mỗi người trong nhóm 4 nhặt được từ 60% so với chơi một mình. Nhóm 4 hết game bằng 60 đến 75% thời gian chơi một mình"	Luật chỉ đúng khi có đúng N người. Nội dung chỉ co-op mới có. Mở thêm bến, vùng hay tính năng theo số người. Tạm dừng toàn cục khi co-op
 
 CORE GAMEPLAY	"- Vòng lớn: ra ngoài thu thập, mang về kho, sửa trạm và chế đồ và nuôi Driftlife, bốc kiện ở ca cảng lấy Tally, nâng cấp bộ đồ và trạm, đi xa hơn và lâu hơn, lộ thêm truyện
@@ -90,3 +101,4 @@ v0.3.1 - 20/11/2026	Core Pillars viết đầy đủ, mỗi pillar một hàng	G
 v0.3.2 - 20/11/2026	Phản diện mới theo Lead (Daskel độc tài, Sevra người thừa kế, cách mạng)	GDM
 v0.3.3 - 20/11/2026	Core Pillars theo đúng Five Core Pillars của Dave the Diver (Lead chốt). Co-op chuyển thành nguyên tắc nền	GDM
 v0.4.0 - 20/11/2026	OVERVIEW thêm Define GDD, Game Vision & Concept, Core Gameplay, Art Direction, Project Scope, Target Audience, USP	GDM
+v0.5.0 - 20/11/2026	Soát lệch giữa các tab (CORE LOOP theo 5 pillar của OVERVIEW). Viết lại 23 tab cho dễ đọc, gọn. Cột ID đổi sang số thứ tự, bỏ mã trong chữ	GDM

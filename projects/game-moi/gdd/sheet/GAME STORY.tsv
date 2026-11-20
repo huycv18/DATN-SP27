@@ -1,90 +1,89 @@
 Nội dung	Mã	Nhóm	Nhãn	Ref
-Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đang trôi giữa xác Cradle, con tàu mẹ từng đưa đoàn di cư rời Trái Đất để đến Solace. Cùng những người sống sót, Noor thu hồi vật liệu để sửa trạm và tìm cách tiếp tục hành trình. Khi lần theo tọa độ cũ, họ phát hiện The Wardens đang phong tỏa bãi vỡ. Trong một chuyến đi, cả nhóm cứu được Sevra Ilvane, người thừa kế của Sennar đang sống dưới vỏ bọc thương nhân. Cô tiết lộ rằng Daskel, kẻ đã lật đổ cha cô, dùng một hồ sơ khảo sát giả để dụ Cradle vào ổ phục kích. Mang mối hận từ cuộc chiến cũ, hắn biến đoàn di cư thành kẻ thù chung để củng cố quyền lực ở Sennar. Tổ Ember quay lại Cradle và tìm được bản ghi xác nhận con tàu đã phát hiện tọa độ giả ngay trước khi bị tấn công. Họ chuyển bằng chứng cho Sevra, rồi giữ chân Daskel tại Warden Rig để lực lượng của cô có thời gian giành quyền kiểm soát ở Sennar. Daskel bị bắt, vòng phong tỏa được dỡ bỏ và những con tàu cứu hộ bắt đầu tìm kiếm các buồng ngủ đông còn tín hiệu. Sevra trao cho Ember tọa độ của một hành tinh có sự sống. Sau khi tự kiểm tra tọa độ trên bản đồ sao thu được ở Warden Rig, cả kíp nhả neo, đưa trạm rời bãi vỡ để tiếp tục hành trình tìm một nơi định cư.	GS	Cốt truyện	Cả game	cot-truyen.md mục 14
-Chương 1 - Tỉnh dậy\n- Mục tiêu người chơi: hãm trôi và neo Ember, vớt hai người đầu tiên, sửa cảng, bán chuyến hàng đầu tiên, nghe được tiếng người khác.\n- Map nhánh có truyện: N1 Station Cinder\n- Người vớt: Ingrid, Linh\n- Đóng chương: Bắt được sóng của Lantern, mở dải Giữa	CH-1	Chương 1	MVP	cot-truyen.md mục 2.5
-Tỉnh dậy\n- Điều kiện: Bắt đầu thế giới\n- Nơi: Ember, buồng ngủ đông KH01\n- Mở: Cửa khí, dải Gần	C1.1	Chương 1	MVP	cot-truyen.md mục 2.5
-Hãm trôi và neo\n- Điều kiện: Khoang neo KH04 Hoạt động\n- Nơi: Ember\n- Mở: Trạm ngừng xoay. Lối vào N1	C1.2	Chương 1	MVP	cot-truyen.md mục 2.5
-Một trạm khác\n- Điều kiện: Tới lối vào N1\n- Nơi: N1, khu C1\n- Mở: Vật truyện của N1 hiện ra	C1.3	Chương 1	MVP	cot-truyen.md mục 2.5
-Người đầu tiên\n- Điều kiện: Buồng của Ingrid qua cửa khí của Ember\n- Nơi: Ember\n- Mở: Ingrid vào Hồi sức, tỉnh đầu ngày kế tiếp và giao quest sửa xưởng KH05	C1.4	Chương 1	MVP	cot-truyen.md mục 2.5
-Xưởng sáng đèn\n- Điều kiện: Xưởng KH05 Hoạt động\n- Nơi: Ember, xưởng\n- Mở: Xưởng (K12), chế được Bộ kích nguồn TOL-401 và Súng lưới cho loài nhỏ TOL-202 (log GDM dòng 49)	C1.5	Chương 1	MVP	cot-truyen.md mục 2.5
-Người thứ hai\n- Điều kiện: Buồng của Linh qua cửa khí của Ember\n- Nơi: Ember\n- Mở: Linh vào Hồi sức, tỉnh đầu ngày kế tiếp và giao quest sửa KH06 và KH07	C1.6	Chương 1	MVP	cot-truyen.md mục 2.5
-Lời gọi đầu tiên\n- Điều kiện: Khoang liên lạc KH06 Hoạt động và cảng KH07 Hoạt động\n- Nơi: Ember, khoang liên lạc\n- Mở: Khoang liên lạc, cảng, shop (K12, K20). Tàu TA01 vào lịch từ ngày kế tiếp	C1.7	Chương 1	MVP	cot-truyen.md mục 2.5
-Tàu đầu tiên\n- Điều kiện: Ngày kế tiếp sau C1.7 và tàu TA01 của Tikko cập bến\n- Nơi: Ember, bến 1\n- Mở: Ca cảng (kiểu chơi mới)	C1.8	Chương 1	MVP	cot-truyen.md mục 2.5
-Sóng của Lantern (đóng chương)\n- Điều kiện: Số ca cảng đã xong đạt ngưỡng ở mục 3 và giai đoạn 1 của động cơ chính đã lắp (K25)\n- Nơi: Ember, khoang liên lạc\n- Mở: Dải Giữa, lối vào N3, chương 2	C1.9	Chương 1	MVP	cot-truyen.md mục 2.5
-Chương 2 - Không cô độc\n- Mục tiêu người chơi: phá vây cho Lantern, đưa về Nhà sinh học và Hoa tiêu, học nuôi và bắt sống Driftlife cỡ M, tìm hiểu vì sao các trạm con vỡ.\n- Map nhánh có truyện: N3 Station Lantern, N2 Station Wick\n- Người vớt: Amara, Rafa\n- Đóng chương: Thấy vết phá từ ngoài vào, mở dải Xa	CH-2	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Đèn của Lantern\n- Điều kiện: Tới lối vào N3\n- Nơi: N3, Lantern Outer Ring\n- Mở: Trận BS-2 Tempest Gulper đang vây bến cập. Vật truyện của N3 hiện ra	C2.1	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Phá vây\n- Điều kiện: BS-2 xong (hạ hoặc xua)\n- Nơi: N3, Lantern Core\n- Mở: Cửa cập mở. Gặp Odile Laurent, Bram, Amara. Odile ra điều kiện cho Amara đi. Tàu TA03 của Bram vào lịch từ ngày kế tiếp	C2.2	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Chuyến xuồng đặc biệt\n- Điều kiện: Giao đủ đơn của tàu TA03 trong một ca cảng\n- Nơi: Ember, bến\n- Mở: Bram chở Amara sang Ember. Quest sửa phòng nghiên cứu KH10 và khoang sinh quyển KH11	C2.3	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Mẫu sống cho Amara\n- Điều kiện: KH10 và KH11 Hoạt động và một con Driftlife cỡ M còn sống về tới kho của trạm\n- Nơi: Ember, phòng nghiên cứu\n- Mở: Nuôi Driftlife (K16). Tàu TA05 của Vaeth	C2.4	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Nhịp buồng trong vành đai\n- Điều kiện: Ngày kế tiếp sau C2.4\n- Nơi: Ember, khoang liên lạc\n- Mở: Lối vào N2	C2.5	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Người chỉ đường\n- Điều kiện: Buồng của Rafa qua cửa khí của Ember\n- Nơi: Ember\n- Mở: Rafa vào Hồi sức, tỉnh đầu ngày kế tiếp và giao quest sửa khoang dẫn đường KH08	C2.6	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Không nổ từ trong ra\n- Điều kiện: Đã nhặt MM2.1 và đã nhặt MM2.2\n- Nơi: Ember, xưởng\n- Mở: Cảnh Ingrid xem mảng vỏ. Tàu TA04 của Ilsume	C2.7	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Bản đồ có một lỗ đen (đóng chương)\n- Điều kiện: Khoang dẫn đường KH08 Hoạt động, đã nộp mảnh lõi dẫn đường của Wick STY-103 và giai đoạn 2 của động cơ chính đã lắp (K25)\n- Nơi: Ember, khoang dẫn đường\n- Mở: Bến Skiff KH09, dải Xa, lối vào N4, chương 3	C2.8	Chương 2	Sau MVP	cot-truyen.md mục 2.5
-Chương 3 - Kẻ canh giữ\n- Mục tiêu người chơi: vào dải Xa, tới Veyl Waypost và The Raft, đón Trưởng cảng, biết ai đã đánh Cradle, cứu một thương nhân khỏi tay The Wardens.\n- Map nhánh có truyện: N4 Veyl Waypost, N5 The Raft, N6 Station Flint\n- Người vớt: Yusuf\n- Đóng chương: Cứu Sevra khỏi toán bắt cóc của The Wardens, Sevra lộ danh tính	CH-3	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Bến của The Veyl\n- Điều kiện: Tới lối vào N4\n- Nơi: N4, Waypost Concourse\n- Mở: Nhem, Dromm, Yusuf Demir. Tàu TA06 và TA10 vào lịch từ ngày kế tiếp. Vật truyện của N4 hiện ra	C3.1	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Trưởng cảng về bến\n- Điều kiện: Đã xong một ca cảng có tàu TA06 của Dromm cập bến và sau ca đó tới N4 bằng Skiff\n- Nơi: Ember, bến\n- Mở: Yusuf về Ember cùng chuyến Skiff. Quest sửa bến thuộc KH12	C3.2	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Tàu lạ\n- Điều kiện: Bến thuộc KH12 Hoạt động và tàu TA08 của Maro cập bến lần thứ nhất\n- Nơi: Ember, bến\n- Mở: Maro vào truyện	C3.3	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Sự cố đầu tiên\n- Điều kiện: Sự cố đầu tiên xảy ra, ở ca cảng kế tiếp sau C3.3 (luật 43 của tram-va-cang.md)\n- Nơi: Ember\n- Mở: Sự cố trong ca cảng (K14). Lối vào N5	C3.4	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Những người ở lại\n- Điều kiện: Tới lối vào N5\n- Nơi: N5\n- Mở: Elias Vance, Wren. Tàu TA07 của The Remainers. Lối vào N6	C3.5	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Trạm bị cướp\n- Điều kiện: Đã nộp mẫu Driftlife mang thẻ STY-301 ở phòng nghiên cứu\n- Nơi: Ember, phòng nghiên cứu\n- Mở: Cảnh Amara nhận mẫu	C3.6	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Dấu săn trộm\n- Điều kiện: Ngày kế tiếp sau C3.6\n- Nơi: Ember, phòng nghiên cứu\n- Mở: Cú lật Driftlife. Cuộc bắt cóc ở N4 sẵn sàng xảy ra từ ngày kế tiếp	C3.7	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Người thừa kế (đóng chương)\n- Điều kiện: Kén thoát hiểm của Ilsume BNG-102 về tới Ember, qua cửa khí hoặc bằng Recall Beacon. Cuộc bắt cóc chỉ xảy ra khi giai đoạn 3 của động cơ chính đã lắp (K25)\n- Nơi: N4, Waypost Outer Ring, rồi Ember\n- Mở: Sevra lộ danh tính. Tàu TA11 của The Kindling vào lịch từ ngày kế tiếp. Lối vào N7, chương 4	C3.8	Chương 3	Sau MVP	cot-truyen.md mục 2.5
-Chương 4 - Tâm vụ nổ\n- Mục tiêu người chơi: vào bên trong Cradle lấy bằng chứng của chính loài người, xem đường tới Solace có thật không. Thứ tìm được là sự thật: Solace là mồi do Daskel dựng. Mục tiêu đổi thành giúp Sevra lật đổ Daskel, vì đó là đường duy nhất để rời được bãi vỡ.\n- Map nhánh có truyện: N7 Cradle Interior\n- Người vớt: Không\n- Đóng chương: Hộp ghi hành trình: Solace là mồi do Daskel dựng. Kiện tin mật đầu tiên tới The Kindling. Mục tiêu đổi thành giúp Sevra lật đổ Daskel để rời được bãi vỡ	CH-4	Chương 4	Sau MVP	cot-truyen.md mục 2.5
-Vào Cradle\n- Điều kiện: Tới lối vào N7\n- Nơi: N7, Broken Hold\n- Mở: Map nhánh lớn trong nội thất tàu (kiểu chơi mới). Vật truyện của N7 hiện ra	C4.1	Chương 4	Sau MVP	cot-truyen.md mục 2.5
-Những dãy buồng\n- Điều kiện: Tới Cryo Deck\n- Nơi: N7\n- Mở: Sự kiện hình không lời: hàng dãy buồng đã tắt	C4.2	Chương 4	Sau MVP	cot-truyen.md mục 2.5
-Kẻ đã vào trước\n- Điều kiện: BS-4 Cradle Custodian xong và đã nhặt MM4.3\n- Nơi: N7, Engine Core\n- Mở: Đường sang Bridge Archive	C4.3	Chương 4	Sau MVP	cot-truyen.md mục 2.5
-Tên người dịch\n- Điều kiện: Đã nhặt MM4.4\n- Nơi: N7, Bridge Archive\n- Mở: Lời thú nhận của Linh	C4.4	Chương 4	Sau MVP	cot-truyen.md mục 2.5
-Hộp ghi hành trình\n- Điều kiện: Đã nộp hộp ghi hành trình STY-401 ở khoang dẫn đường\n- Nơi: Ember, khoang dẫn đường\n- Mở: Cảnh Rafa và Linh nhận hộp	C4.5	Chương 4	Sau MVP	cot-truyen.md mục 2.5
-Không có gì ở đó\n- Điều kiện: Ngày kế tiếp sau C4.5\n- Nơi: Ember, khoang dẫn đường\n- Mở: Sự thật: Solace là mồi. Sevra kể chuyện đảo chính. Dòng mục tiêu trong Sổ tay đổi	C4.6	Chương 4	Sau MVP	cot-truyen.md mục 2.5
-Đường dây thứ nhất (đóng chương)\n- Điều kiện: Số đơn tin mật của tàu TA11 đã giao đủ đạt ngưỡng chương 4 ở mục 3 và giai đoạn 4 của động cơ chính đã lắp (K25)\n- Nơi: Ember, bến\n- Mở: The Kindling biết Sevra còn sống và nhận được bằng chứng của Cradle. Lối vào N8, chương 5	C4.7	Chương 4	Sau MVP	cot-truyen.md mục 2.5
-Chương 5 - Rời neo\n- Mục tiêu người chơi: đưa Sevra về căn cứ của The Kindling, giữ đường dây tin thông suốt, đánh Warden Rig khi cách mạng nổ ra, lấy bản đồ sao thật, sửa xong động cơ chính và rời neo.\n- Map nhánh có truyện: N8 Warden Rig\n- Người vớt: Không\n- Đóng chương: Daskel thua ở Warden Rig, Sevra lên nắm quyền và trao tọa độ hành tinh thật. Ember rời neo	CH-5	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-Đưa người thừa kế về\n- Điều kiện: Kén của Sevra BNG-102 chạm cửa The Hearth\n- Nơi: N4, từ cửa vào tới The Hearth\n- Mở: Hộ tống, dùng luật kéo sẵn có: Skiff chở nhóm và kén từ Ember tới cửa N4, người chơi kéo kén qua vòng phong tỏa. Cửa The Hearth mở khi kén tới. Sevra nắm lại mạng lưới	C5.1	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-Lời nói dối đi đường nào\n- Điều kiện: Tổng số đơn tin mật của tàu TA11 đã giao đủ đạt ngưỡng chương 5 ở mục 3\n- Nơi: Ember, bến\n- Mở: Nhem mở The Lattice cho The Kindling: bằng chứng của Cradle tới Sennar. Ngày nổi dậy được định. Trong ca chỉ có lời bong bóng, cảnh ngắn phát sau ca	C5.2	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-Vào Warden Rig\n- Điều kiện: Tới N8 bằng Skiff\n- Nơi: N8, Rig Landing\n- Mở: Sennar nổi dậy. Tổ Ember giữ chân Daskel ở Rig. Vật truyện của N8 hiện ra	C5.3	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-Mở lồng\n- Điều kiện: Đã thả Driftlife ở Holding Pens\n- Nơi: N8, Holding Pens\n- Mở: Driftlife quay sang đánh lính The Wardens. Đường vào Command Deck	C5.4	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-First Warden\n- Điều kiện: BS-5 Daskel xong\n- Nơi: N8, Command Deck\n- Mở: Trận đối đầu cuối (kiểu chơi mới). Daskel bị khuất phục, bị bắt và giao cho The Kindling. Data Core mở	C5.5	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-Tọa độ thật\n- Điều kiện: Đã nộp bản đồ sao thật STY-501 ở khoang dẫn đường\n- Nơi: Ember, khoang dẫn đường\n- Mở: Sevra, vừa được tôn làm Steward of Sennar, trao tọa độ một hành tinh có sự sống thật. Công thức RCP-207: chế ENG-105 từ STY-501 và STY-401 đang nằm trong kho	C5.6	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-Rời neo\n- Điều kiện: Động cơ chính KH13 xong giai đoạn 5 và mọi người chơi đang có mặt xác nhận rời neo ở khoang dẫn đường\n- Nơi: Ember\n- Mở: Cảnh rời neo	C5.7	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-Ngoài bãi vỡ (kết)\n- Điều kiện: C5.7 xong\n- Nơi: Ember, ngoài Glass Nebula\n- Mở: Cảnh kết (mục 2.8), rồi về menu chính (luật 26)	C5.8	Chương 5	Sau MVP	cot-truyen.md mục 2.5
-Noor Haddad, Jonas Weber, Mei Tanaka, Tariq Bello\n- Vai: Bốn hồ sơ mặc định của tổ Ember: kíp vận hành trạm, không có nghề riêng (nhân vật người chơi, đổi tên được)\n- Xuất hiện: Chương 1	PC-1 đến PC-4	Nhân vật	MVP	cot-truyen.md mục 2.6
-Ingrid Halvorsen\n- Vai: Người vớt: Kỹ sư, xưởng\n- Xuất hiện: Chương 1, Station Cinder	RS-1	Nhân vật	MVP	cot-truyen.md mục 2.6
-Linh Tran\n- Vai: Người vớt: Thông dịch viên, khoang liên lạc và cảng\n- Xuất hiện: Chương 1, Station Cinder	RS-2	Nhân vật	MVP	cot-truyen.md mục 2.6
-Rafael Ortega (Rafa)\n- Vai: Người vớt: Hoa tiêu, khoang dẫn đường và bến Skiff\n- Xuất hiện: Chương 2, Station Wick	RS-3	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-Amara Okafor\n- Vai: Người vớt: Nhà sinh học, phòng nghiên cứu và khoang sinh quyển\n- Xuất hiện: Chương 2, Station Lantern	RS-4	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-Yusuf Demir\n- Vai: Người vớt: Trưởng cảng, thêm bến và tiện ích cảng\n- Xuất hiện: Chương 3, Veyl Waypost	RS-5	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-Odile Laurent\n- Vai: Trưởng trạm Lantern\n- Xuất hiện: Chương 2	NP-1	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-Bram Kowalski\n- Vai: Trưởng xuồng tiếp tế của Lantern\n- Xuất hiện: Chương 1 (chỉ giọng), chương 2	NP-2	Nhân vật	MVP (chỉ giọng), Sau MVP	cot-truyen.md mục 2.6
-Elias Vance\n- Vai: Thủ lĩnh The Remainers\n- Xuất hiện: Chương 3	NP-3	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-Wren\n- Vai: Đứa trẻ sinh ra trên The Raft sau The Scattering\n- Xuất hiện: Chương 3, kết	NP-4	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-Tikko, Ilsume, Dromm, Vaeth, Nhem\n- Vai: Thương nhân The Veyl\n- Xuất hiện: Chương 1 tới 5	TR-1 đến TR-5	Nhân vật	MVP: Tikko. Sau MVP: còn lại	cot-truyen.md mục 2.6
-Sevra Ilvane\n- Vai: Người thừa kế hợp pháp của Sennar, con gái Steward Ilvane. Giả làm thương nhân Ilsume tới mốc C3.8\n- Xuất hiện: Chương 2 (dưới tên Ilsume), chương 3 tới 5	NP-5	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-Daskel\n- Vai: Tên độc tài của Sennar, đứng đầu The Wardens, boss BS-5\n- Xuất hiện: Chương 3 và 4 (lời phát), chương 5	WD-P1	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-Maro\n- Vai: Gián điệp của Daskel, giả làm thương nhân để săn Sevra, chỉ huy toán bắt cóc\n- Xuất hiện: Chương 3	WD-P2	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
-United Accord: Liên minh các quốc gia đóng đoàn di cư		Tên riêng	Cả game	cot-truyen.md mục 12
-Cradle: Tàu mẹ		Tên riêng	Cả game	cot-truyen.md mục 12
-Seed Station: Loại trạm con, mỗi trạm 4 buồng ngủ đông		Tên riêng	Cả game	cot-truyen.md mục 12
-Station Ember: Trạm của người chơi		Tên riêng	Cả game	cot-truyen.md mục 12
-Solace: Hành tinh đích trong hồ sơ. Là thông tin mồi, không có thật. Hành tinh có sự sống thật do Sevra trao tọa độ ở kết, chưa đặt tên		Tên riêng	Cả game	cot-truyen.md mục 12
-The Scattering: Vụ phục kích làm nổ Cradle		Tên riêng	Cả game	cot-truyen.md mục 12
-The Wake: Bãi vỡ của Cradle, map tổng		Tên riêng	Cả game	cot-truyen.md mục 12
-The Veyl: Tên chung các chủng tộc ngoài hành tinh		Tên riêng	Cả game	cot-truyen.md mục 12
-The Wardens: Chế độ và quân đội của Daskel trên hành tinh Sennar. Không phải một chủng tộc		Tên riêng	Cả game	cot-truyen.md mục 12
-Sennar: Hành tinh quê của chủng tộc Sennari. Người chơi không tới		Tên riêng	Cả game	cot-truyen.md mục 12
-The Meeting War: Cuộc chiến nổ ra khi các hành tinh phát hiện ra nhau. Đã kết thúc từ lâu trước khi Cradle lên đường		Tên riêng	Cả game	cot-truyen.md mục 12
-The Kindling: Mạng lưới cách mạng của Sevra Ilvane: quân cách mạng và người nằm vùng		Tên riêng	Cả game	cot-truyen.md mục 12
-The Hearth: Căn cứ của The Kindling ở bãi vỡ, khoang ẩn trong Veyl Waypost		Tên riêng	Cả game	cot-truyen.md mục 12
-Driftlife: Sinh vật bản địa của vùng chân không		Tên riêng	Cả game	cot-truyen.md mục 12
-The Lattice: Mạng tin của thương nhân The Veyl trung lập		Tên riêng	Cả game	cot-truyen.md mục 12
-Lodestar Survey: Hồ sơ mồi: tả hành tinh Solace và đường tới đó		Tên riêng	Cả game	cot-truyen.md mục 12
-Tally: Đồng tiền duy nhất		Tên riêng	Cả game	cot-truyen.md mục 12
-Station Ember: Nhà của người chơi		Trạm con	MVP	cot-truyen.md mục 12
-Station Cinder: Xác\n- Truyện đặt ở đây: Buồng của Ingrid và Linh, hai buồng tắt	N1	Trạm con	MVP	cot-truyen.md mục 12
-Station Wick: Xác\n- Truyện đặt ở đây: Buồng của Rafa, vết phá từ ngoài vào	N2	Trạm con	Sau MVP	cot-truyen.md mục 12
-Station Lantern: Còn người sống\n- Truyện đặt ở đây: Odile, Bram, Amara đang thức ở đây	N3	Trạm con	Sau MVP	cot-truyen.md mục 12
-Station Flint: Xác, bị lính The Wardens chiếm làm trạm săn bắt\n- Truyện đặt ở đây: Không có người để vớt, manh mối cú lật Driftlife	N6	Trạm con	Sau MVP	cot-truyen.md mục 12
-The Raft: Cụm trạm con ghép của The Remainers\n- Truyện đặt ở đây: Elias, Wren	N5	Trạm con	Sau MVP	cot-truyen.md mục 12
-Oru: Dân gom phế liệu, tàu nhỏ, đi lẻ, tò mò\n- Thương nhân có tên: Tikko\n- Loại tàu: TA01. TA02 là dân Oru vãng lai, không có tên riêng		Chủng tộc	MVP	cot-truyen.md mục 2.6
-Sennari: Dân của hành tinh Sennar: thương hội lớn, trọng nghi thức. Chủng tộc của Daskel và Sevra\n- Thương nhân có tên: Ilsume (tên giả của Sevra Ilvane)\n- Loại tàu: TA04. TA09 là người đưa hàng gấp của một thương hội Sennari, không có tên riêng. TA11 là tàu của The Kindling. TA08 là tàu của Maro		Chủng tộc	Sau MVP	cot-truyen.md mục 2.6
-Aelith: Nhà sưu tầm sinh vật sống\n- Thương nhân có tên: Vaeth\n- Loại tàu: TA05		Chủng tộc	Sau MVP	cot-truyen.md mục 2.6
-Brakk: Dân chở hàng nặng, ít lời, không nói thẳng giá\n- Thương nhân có tên: Dromm\n- Loại tàu: TA06		Chủng tộc	Sau MVP	cot-truyen.md mục 2.6
-Kesh: Dân buôn tin, giữ The Lattice\n- Thương nhân có tên: Nhem\n- Loại tàu: TA10		Chủng tộc	Sau MVP	cot-truyen.md mục 2.6
-Bản đủ: projects/game-moi/gdd/he-thong/cot-truyen.md (luật kể chuyện, vật truyện, kết game, co-op, voice sheet). Tên game chính thức là The Novent.\nTên hiển thị đã chốt ở Enemy, Zone và Customer. Dân thu hồi gọi Driftlife theo dáng hoặc hành vi. The Wardens gọi đơn vị theo chức năng. Tàu có tên gắn với người lái hoặc phe vận hành.		Ref		cot-truyen.md
+Tóm tắt cả game\n- Noor Haddad tỉnh dậy khỏi giấc ngủ đông. Trạm Ember đang trôi giữa xác Cradle, con tàu mẹ chở đoàn di cư rời Trái Đất đi Solace.\n- Cùng những người sống sót, Noor thu hồi vật liệu để sửa trạm.\n- Họ lần theo tọa độ cũ thì gặp The Wardens đang phong tỏa bãi vỡ.\n- Cả nhóm cứu Sevra Ilvane, người thừa kế của Sennar đang giả làm thương nhân.\n- Sevra kể Daskel đã lật đổ cha cô, rồi dùng hồ sơ khảo sát giả để dụ Cradle vào ổ phục kích.\n- Tổ Ember quay lại Cradle, tìm bản ghi chứng minh tàu đã thấy tọa độ giả trước khi bị đánh.\n- Họ đưa bằng chứng cho Sevra, rồi giữ chân Daskel ở Warden Rig để lực lượng của cô giành quyền ở Sennar.\n- Daskel bị bắt, vòng phong tỏa được dỡ, tàu cứu hộ đi tìm các buồng ngủ đông còn tín hiệu.\n- Sevra trao tọa độ một hành tinh có sự sống. Cả kíp kiểm tra bằng bản đồ sao lấy ở Warden Rig, rồi nhả neo rời bãi vỡ đi tìm nơi định cư.	1	Cốt truyện	Cả game	cot-truyen.md mục 14
+Chương 1 - Tỉnh dậy\n- Mục tiêu: hãm trôi và neo Ember, vớt hai người đầu tiên, sửa cảng, bán chuyến hàng đầu, nghe được tiếng người khác.\n- Map nhánh có truyện: Station Cinder\n- Người vớt: Ingrid, Linh\n- Đóng chương: bắt được sóng của Lantern, mở dải Giữa	2	Chương 1	MVP	cot-truyen.md mục 2.5
+Tỉnh dậy\n- Điều kiện: bắt đầu game\n- Nơi: Ember, buồng ngủ đông\n- Mở: cửa khí, dải Gần	3	Chương 1	MVP	cot-truyen.md mục 2.5
+Hãm trôi và neo\n- Điều kiện: khoang neo hoạt động\n- Nơi: Ember\n- Mở: trạm ngừng xoay, lối vào Station Cinder	4	Chương 1	MVP	cot-truyen.md mục 2.5
+Một trạm khác\n- Điều kiện: tới lối vào Station Cinder\n- Nơi: Station Cinder, khu ngoài\n- Mở: vật truyện của Station Cinder hiện ra	5	Chương 1	MVP	cot-truyen.md mục 2.5
+Người đầu tiên\n- Điều kiện: buồng của Ingrid đã qua cửa khí của Ember\n- Nơi: Ember\n- Mở: Ingrid vào khu hồi sức, tỉnh vào đầu ngày kế tiếp và giao quest sửa xưởng	6	Chương 1	MVP	cot-truyen.md mục 2.5
+Xưởng sáng đèn\n- Điều kiện: xưởng hoạt động\n- Nơi: Ember, xưởng\n- Mở: xưởng chế được Bộ kích nguồn và Súng lưới cho loài nhỏ	7	Chương 1	MVP	cot-truyen.md mục 2.5
+Người thứ hai\n- Điều kiện: buồng của Linh đã qua cửa khí của Ember\n- Nơi: Ember\n- Mở: Linh vào khu hồi sức, tỉnh vào đầu ngày kế tiếp và giao quest sửa khoang liên lạc và cảng	8	Chương 1	MVP	cot-truyen.md mục 2.5
+Lời gọi đầu tiên\n- Điều kiện: khoang liên lạc và cảng đều hoạt động\n- Nơi: Ember, khoang liên lạc\n- Mở: khoang liên lạc, cảng, shop. Tàu Loose Bolt vào lịch từ ngày kế tiếp	9	Chương 1	MVP	cot-truyen.md mục 2.5
+Tàu đầu tiên\n- Điều kiện: ngày kế tiếp sau Lời gọi đầu tiên và tàu Loose Bolt của Tikko cập bến\n- Nơi: Ember, bến 1\n- Mở: ca cảng (kiểu chơi mới)	10	Chương 1	MVP	cot-truyen.md mục 2.5
+Sóng của Lantern (đóng chương)\n- Điều kiện: đủ số ca cảng đã xong theo ngưỡng chương 1, và động cơ chính đã lắp giai đoạn 1\n- Nơi: Ember, khoang liên lạc\n- Mở: dải Giữa, lối vào Station Lantern, chương 2	11	Chương 1	MVP	cot-truyen.md mục 2.5
+Chương 2 - Không cô độc\n- Mục tiêu: phá vây cho Lantern, đưa về Nhà sinh học và Hoa tiêu, học nuôi và bắt sống Driftlife cỡ M, tìm hiểu vì sao các trạm con vỡ.\n- Map nhánh có truyện: Station Lantern, Station Wick\n- Người vớt: Amara, Rafa\n- Đóng chương: thấy vết phá từ ngoài vào, mở dải Xa	12	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Đèn của Lantern\n- Điều kiện: tới lối vào Station Lantern\n- Nơi: Station Lantern, vành ngoài\n- Mở: trận Tempest Gulper đang vây bến cập. Vật truyện của Station Lantern hiện ra	13	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Phá vây\n- Điều kiện: trận Tempest Gulper xong (hạ hoặc xua)\n- Nơi: Station Lantern, lõi trạm\n- Mở: cửa cập mở. Gặp Odile Laurent, Bram, Amara. Odile ra điều kiện cho Amara đi. Tàu Lamplighter của Bram vào lịch từ ngày kế tiếp	14	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Chuyến xuồng đặc biệt\n- Điều kiện: giao đủ đơn của tàu Lamplighter trong một ca cảng\n- Nơi: Ember, bến\n- Mở: Bram chở Amara sang Ember. Quest sửa phòng nghiên cứu và khoang sinh quyển	15	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Mẫu sống cho Amara\n- Điều kiện: phòng nghiên cứu và khoang sinh quyển hoạt động, và một con Driftlife cỡ M còn sống đã về kho của trạm\n- Nơi: Ember, phòng nghiên cứu\n- Mở: nuôi Driftlife. Tàu Glasswing của Vaeth vào lịch	16	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Nhịp buồng trong vành đai\n- Điều kiện: ngày kế tiếp sau Mẫu sống cho Amara\n- Nơi: Ember, khoang liên lạc\n- Mở: lối vào Station Wick	17	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Người chỉ đường\n- Điều kiện: buồng của Rafa đã qua cửa khí của Ember\n- Nơi: Ember\n- Mở: Rafa vào khu hồi sức, tỉnh vào đầu ngày kế tiếp và giao quest sửa khoang dẫn đường	18	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Không nổ từ trong ra\n- Điều kiện: đã nhặt Mảng vỏ thân của Station Wick và Nhật ký trạm của Wick\n- Nơi: Ember, xưởng\n- Mở: cảnh Ingrid xem mảng vỏ. Tàu Vellune của Ilsume vào lịch	19	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Bản đồ có một lỗ đen (đóng chương)\n- Điều kiện: khoang dẫn đường hoạt động, đã nộp Mảnh lõi dẫn đường Wick, và động cơ chính đã lắp giai đoạn 2\n- Nơi: Ember, khoang dẫn đường\n- Mở: bến Skiff, dải Xa, lối vào Veyl Waypost, chương 3	20	Chương 2	Sau MVP	cot-truyen.md mục 2.5
+Chương 3 - Kẻ canh giữ\n- Mục tiêu: vào dải Xa, tới Veyl Waypost và The Raft, đón Trưởng cảng, biết ai đã đánh Cradle, cứu một thương nhân khỏi tay The Wardens.\n- Map nhánh có truyện: Veyl Waypost, The Raft, Station Flint\n- Người vớt: Yusuf\n- Đóng chương: cứu Sevra khỏi toán bắt cóc của The Wardens, Sevra lộ danh tính	21	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Bến của The Veyl\n- Điều kiện: tới lối vào Veyl Waypost\n- Nơi: Veyl Waypost, sảnh chính\n- Mở: Nhem, Dromm, Yusuf Demir. Tàu Iron Keel và Backchannel vào lịch từ ngày kế tiếp. Vật truyện của Veyl Waypost hiện ra	22	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Trưởng cảng về bến\n- Điều kiện: đã xong một ca cảng có tàu Iron Keel của Dromm cập bến, và sau ca đó tới Veyl Waypost bằng Skiff\n- Nơi: Ember, bến\n- Mở: Yusuf về Ember cùng chuyến Skiff. Quest sửa bến 2, bến 3 và tiện ích cảng	23	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Tàu lạ\n- Điều kiện: bến 2, bến 3 và tiện ích cảng hoạt động, và Tàu lạ của Maro cập bến lần thứ nhất\n- Nơi: Ember, bến\n- Mở: Maro vào truyện	24	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Sự cố đầu tiên\n- Điều kiện: sự cố đầu tiên xảy ra ở ca cảng kế tiếp sau Tàu lạ\n- Nơi: Ember\n- Mở: sự cố trong ca cảng, lối vào The Raft	25	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Những người ở lại\n- Điều kiện: tới lối vào The Raft\n- Nơi: The Raft\n- Mở: Elias Vance, Wren. Tàu Stayfast của The Remainers. Lối vào Station Flint	26	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Trạm bị cướp\n- Điều kiện: đã nộp Mẫu mang dấu săn bắt Wardens ở phòng nghiên cứu\n- Nơi: Ember, phòng nghiên cứu\n- Mở: cảnh Amara nhận mẫu	27	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Dấu săn trộm\n- Điều kiện: ngày kế tiếp sau Trạm bị cướp\n- Nơi: Ember, phòng nghiên cứu\n- Mở: cú lật Driftlife. Cuộc bắt cóc ở Veyl Waypost sẵn sàng xảy ra từ ngày kế tiếp	28	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Người thừa kế (đóng chương)\n- Điều kiện: Kén thoát hiểm của Ilsume về tới Ember (qua cửa khí hoặc bằng Recall Beacon). Cuộc bắt cóc chỉ xảy ra khi động cơ chính đã lắp giai đoạn 3\n- Nơi: Veyl Waypost, vành ngoài, rồi Ember\n- Mở: Sevra lộ danh tính. Tàu Pilot Light của The Kindling vào lịch từ ngày kế tiếp. Lối vào Cradle Interior, chương 4	29	Chương 3	Sau MVP	cot-truyen.md mục 2.5
+Chương 4 - Tâm vụ nổ\n- Mục tiêu: vào trong Cradle lấy bằng chứng của chính loài người, xem đường tới Solace có thật không.\n- Thứ tìm được là sự thật: Solace là mồi do Daskel dựng. Mục tiêu đổi thành giúp Sevra lật đổ Daskel, vì đó là đường duy nhất để rời bãi vỡ.\n- Map nhánh có truyện: Cradle Interior\n- Người vớt: không\n- Đóng chương: Hộp ghi hành trình xác nhận Solace là mồi. Kiện tin mật đầu tiên tới The Kindling	30	Chương 4	Sau MVP	cot-truyen.md mục 2.5
+Vào Cradle\n- Điều kiện: tới lối vào Cradle Interior\n- Nơi: Cradle Interior, Broken Hold\n- Mở: map nhánh lớn trong nội thất tàu (kiểu chơi mới). Vật truyện của Cradle Interior hiện ra	31	Chương 4	Sau MVP	cot-truyen.md mục 2.5
+Những dãy buồng\n- Điều kiện: tới Cryo Deck\n- Nơi: Cradle Interior\n- Mở: sự kiện hình không lời, hàng dãy buồng đã tắt	32	Chương 4	Sau MVP	cot-truyen.md mục 2.5
+Kẻ đã vào trước\n- Điều kiện: trận Cradle Custodian xong và đã nhặt Lõi dẫn đường của Cradle đã bị xóa\n- Nơi: Cradle Interior, Engine Core\n- Mở: đường sang Bridge Archive	33	Chương 4	Sau MVP	cot-truyen.md mục 2.5
+Tên người dịch\n- Điều kiện: đã nhặt Bản gốc Lodestar Survey\n- Nơi: Cradle Interior, Bridge Archive\n- Mở: lời thú nhận của Linh	34	Chương 4	Sau MVP	cot-truyen.md mục 2.5
+Hộp ghi hành trình\n- Điều kiện: đã nộp Hộp ghi hành trình Cradle ở khoang dẫn đường\n- Nơi: Ember, khoang dẫn đường\n- Mở: cảnh Rafa và Linh nhận hộp	35	Chương 4	Sau MVP	cot-truyen.md mục 2.5
+Không có gì ở đó\n- Điều kiện: ngày kế tiếp sau Hộp ghi hành trình\n- Nơi: Ember, khoang dẫn đường\n- Mở: sự thật Solace là mồi. Sevra kể chuyện đảo chính. Dòng mục tiêu trong Sổ tay đổi	36	Chương 4	Sau MVP	cot-truyen.md mục 2.5
+Đường dây thứ nhất (đóng chương)\n- Điều kiện: giao đủ số đơn tin mật của tàu Pilot Light theo ngưỡng chương 4, và động cơ chính đã lắp giai đoạn 4\n- Nơi: Ember, bến\n- Mở: The Kindling biết Sevra còn sống và nhận được bằng chứng của Cradle. Lối vào Warden Rig, chương 5	37	Chương 4	Sau MVP	cot-truyen.md mục 2.5
+Chương 5 - Rời neo\n- Mục tiêu: đưa Sevra về căn cứ của The Kindling, giữ đường dây tin thông suốt, đánh Warden Rig khi cách mạng nổ ra, lấy bản đồ sao thật, sửa xong động cơ chính và rời neo.\n- Map nhánh có truyện: Warden Rig\n- Người vớt: không\n- Đóng chương: Daskel thua ở Warden Rig, Sevra lên nắm quyền và trao tọa độ hành tinh thật. Ember rời neo	38	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+Đưa người thừa kế về\n- Điều kiện: Kén thoát hiểm của Sevra chạm cửa The Hearth\n- Nơi: Veyl Waypost, từ cửa vào tới The Hearth\n- Mở: hộ tống bằng luật kéo sẵn có. Skiff chở nhóm và kén từ Ember tới cửa Veyl Waypost, người chơi kéo kén qua vòng phong tỏa. Cửa The Hearth mở khi kén tới. Sevra nắm lại mạng lưới	39	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+Lời nói dối đi đường nào\n- Điều kiện: giao đủ tổng số đơn tin mật của tàu Pilot Light theo ngưỡng chương 5\n- Nơi: Ember, bến\n- Mở: Nhem mở The Lattice cho The Kindling, bằng chứng của Cradle tới Sennar. Ngày nổi dậy được định. Trong ca chỉ có lời bong bóng, cảnh ngắn phát sau ca	40	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+Vào Warden Rig\n- Điều kiện: tới Warden Rig bằng Skiff\n- Nơi: Warden Rig, bãi đáp\n- Mở: Sennar nổi dậy. Tổ Ember giữ chân Daskel ở Rig. Vật truyện của Warden Rig hiện ra	41	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+Mở lồng\n- Điều kiện: đã thả Driftlife ở Holding Pens\n- Nơi: Warden Rig, Holding Pens\n- Mở: Driftlife quay sang đánh lính The Wardens. Đường vào Command Deck	42	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+First Warden\n- Điều kiện: trận Daskel xong\n- Nơi: Warden Rig, Command Deck\n- Mở: trận đối đầu cuối (kiểu chơi mới). Daskel bị khuất phục, bị bắt và giao cho The Kindling. Data Core mở	43	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+Tọa độ thật\n- Điều kiện: đã nộp Bản đồ sao thật ở khoang dẫn đường\n- Nơi: Ember, khoang dẫn đường\n- Mở: Sevra, vừa được tôn làm Steward of Sennar, trao tọa độ một hành tinh có sự sống thật. Mở công thức chế Lõi dẫn hướng rời bãi vỡ từ Bản đồ sao thật và Hộp ghi hành trình Cradle đang nằm trong kho	44	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+Rời neo\n- Điều kiện: động cơ chính xong giai đoạn 5 và mọi người chơi đang có mặt xác nhận rời neo ở khoang dẫn đường\n- Nơi: Ember\n- Mở: cảnh rời neo	45	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+Ngoài bãi vỡ (kết)\n- Điều kiện: cảnh Rời neo xong\n- Nơi: Ember, ngoài Glass Nebula\n- Mở: cảnh kết, rồi về menu chính	46	Chương 5	Sau MVP	cot-truyen.md mục 2.5
+Noor Haddad, Jonas Weber, Mei Tanaka, Tariq Bello\n- Vai: bốn hồ sơ mặc định của tổ Ember, là kíp vận hành trạm, không có nghề riêng (nhân vật người chơi, đổi tên được)\n- Xuất hiện: chương 1	47	Nhân vật	MVP	cot-truyen.md mục 2.6
+Ingrid Halvorsen\n- Vai: người vớt, Kỹ sư, xưởng\n- Xuất hiện: chương 1, Station Cinder	48	Nhân vật	MVP	cot-truyen.md mục 2.6
+Linh Tran\n- Vai: người vớt, Thông dịch viên, khoang liên lạc và cảng\n- Xuất hiện: chương 1, Station Cinder	49	Nhân vật	MVP	cot-truyen.md mục 2.6
+Rafael Ortega (Rafa)\n- Vai: người vớt, Hoa tiêu, khoang dẫn đường và bến Skiff\n- Xuất hiện: chương 2, Station Wick	50	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+Amara Okafor\n- Vai: người vớt, Nhà sinh học, phòng nghiên cứu và khoang sinh quyển\n- Xuất hiện: chương 2, Station Lantern	51	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+Yusuf Demir\n- Vai: người vớt, Trưởng cảng, thêm bến và tiện ích cảng\n- Xuất hiện: chương 3, Veyl Waypost	52	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+Odile Laurent\n- Vai: Trưởng trạm Lantern\n- Xuất hiện: chương 2	53	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+Bram Kowalski\n- Vai: Trưởng xuồng tiếp tế của Lantern\n- Xuất hiện: chương 1 (chỉ giọng, MVP), chương 2	54	Nhân vật	MVP (chỉ giọng), Sau MVP	cot-truyen.md mục 2.6
+Elias Vance\n- Vai: thủ lĩnh The Remainers\n- Xuất hiện: chương 3	55	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+Wren\n- Vai: đứa trẻ sinh ra trên The Raft sau The Scattering\n- Xuất hiện: chương 3, kết	56	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+Tikko, Ilsume, Dromm, Vaeth, Nhem\n- Vai: thương nhân The Veyl\n- Xuất hiện: chương 1 tới 5 (MVP chỉ có Tikko)	57	Nhân vật	MVP: Tikko. Sau MVP: còn lại	cot-truyen.md mục 2.6
+Sevra Ilvane\n- Vai: người thừa kế hợp pháp của Sennar, con gái Steward Ilvane. Giả làm thương nhân Ilsume tới hết chương 3\n- Xuất hiện: chương 2 (dưới tên Ilsume), chương 3 tới 5	58	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+Daskel\n- Vai: tên độc tài của Sennar, đứng đầu The Wardens, boss cuối\n- Xuất hiện: chương 3 và 4 (lời phát), chương 5	59	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+Maro\n- Vai: gián điệp của Daskel, giả làm thương nhân để săn Sevra, chỉ huy toán bắt cóc\n- Xuất hiện: chương 3	60	Nhân vật	Sau MVP	cot-truyen.md mục 2.6
+United Accord: liên minh các quốc gia đóng đoàn di cư	61	Tên riêng	Cả game	cot-truyen.md mục 12
+Cradle: tàu mẹ	62	Tên riêng	Cả game	cot-truyen.md mục 12
+Seed Station: loại trạm con, mỗi trạm 4 buồng ngủ đông	63	Tên riêng	Cả game	cot-truyen.md mục 12
+Station Ember: trạm của người chơi, nhà của người chơi	64	Tên riêng	Cả game	cot-truyen.md mục 12
+Solace: hành tinh đích trong hồ sơ, là thông tin mồi, không có thật. Hành tinh có sự sống thật do Sevra trao tọa độ ở kết, chưa đặt tên	65	Tên riêng	Cả game	cot-truyen.md mục 12
+The Scattering: vụ phục kích làm nổ Cradle	66	Tên riêng	Cả game	cot-truyen.md mục 12
+The Wake: bãi vỡ của Cradle, map tổng	67	Tên riêng	Cả game	cot-truyen.md mục 12
+The Veyl: tên chung các chủng tộc ngoài hành tinh	68	Tên riêng	Cả game	cot-truyen.md mục 12
+The Wardens: chế độ và quân đội của Daskel trên hành tinh Sennar, không phải một chủng tộc	69	Tên riêng	Cả game	cot-truyen.md mục 12
+Sennar: hành tinh quê của chủng tộc Sennari, người chơi không tới	70	Tên riêng	Cả game	cot-truyen.md mục 12
+The Meeting War: cuộc chiến nổ ra khi các hành tinh phát hiện ra nhau, đã kết thúc từ lâu trước khi Cradle lên đường	71	Tên riêng	Cả game	cot-truyen.md mục 12
+The Kindling: mạng lưới cách mạng của Sevra Ilvane, gồm quân cách mạng và người nằm vùng	72	Tên riêng	Cả game	cot-truyen.md mục 12
+The Hearth: căn cứ của The Kindling ở bãi vỡ, khoang ẩn trong Veyl Waypost	73	Tên riêng	Cả game	cot-truyen.md mục 12
+Driftlife: sinh vật bản địa của vùng chân không	74	Tên riêng	Cả game	cot-truyen.md mục 12
+The Lattice: mạng tin của thương nhân The Veyl trung lập	75	Tên riêng	Cả game	cot-truyen.md mục 12
+Lodestar Survey: hồ sơ mồi, tả hành tinh Solace và đường tới đó	76	Tên riêng	Cả game	cot-truyen.md mục 12
+Tally: đồng tiền duy nhất	77	Tên riêng	Cả game	cot-truyen.md mục 12
+Station Cinder: xác\n- Truyện đặt ở đây: buồng của Ingrid và Linh, hai buồng tắt	78	Trạm con	MVP	cot-truyen.md mục 12
+Station Wick: xác\n- Truyện đặt ở đây: buồng của Rafa, vết phá từ ngoài vào	79	Trạm con	Sau MVP	cot-truyen.md mục 12
+Station Lantern: còn người sống\n- Truyện đặt ở đây: Odile, Bram, Amara đang thức ở đây	80	Trạm con	Sau MVP	cot-truyen.md mục 12
+Station Flint: xác, bị lính The Wardens chiếm làm trạm săn bắt\n- Truyện đặt ở đây: không có người để vớt, có manh mối cú lật Driftlife	81	Trạm con	Sau MVP	cot-truyen.md mục 12
+The Raft: cụm trạm con ghép của The Remainers\n- Truyện đặt ở đây: Elias, Wren	82	Trạm con	Sau MVP	cot-truyen.md mục 12
+Oru: dân gom phế liệu, tàu nhỏ, đi lẻ, tò mò\n- Thương nhân có tên: Tikko\n- Tàu: Loose Bolt. Ngoài ra có tàu vội của dân Oru vãng lai, không có tên riêng	83	Chủng tộc	MVP	cot-truyen.md mục 2.6
+Sennari: dân của hành tinh Sennar, thương hội lớn, trọng nghi thức. Là chủng tộc của Daskel và Sevra\n- Thương nhân có tên: Ilsume (tên giả của Sevra Ilvane)\n- Tàu: Vellune. Tàu đơn gấp là người đưa hàng gấp của một thương hội Sennari, không có tên riêng. Pilot Light là tàu của The Kindling. Tàu lạ là tàu của Maro	84	Chủng tộc	Sau MVP	cot-truyen.md mục 2.6
+Aelith: nhà sưu tầm sinh vật sống\n- Thương nhân có tên: Vaeth\n- Tàu: Glasswing	85	Chủng tộc	Sau MVP	cot-truyen.md mục 2.6
+Brakk: dân chở hàng nặng, ít lời, không nói thẳng giá\n- Thương nhân có tên: Dromm\n- Tàu: Iron Keel	86	Chủng tộc	Sau MVP	cot-truyen.md mục 2.6
+Kesh: dân buôn tin, giữ The Lattice\n- Thương nhân có tên: Nhem\n- Tàu: Backchannel	87	Chủng tộc	Sau MVP	cot-truyen.md mục 2.6
+Bản đủ: cot-truyen.md (luật kể chuyện, vật truyện, kết game, co-op, voice sheet). Tên game chính thức là The Novent.\nTên hiển thị đã chốt ở Enemy, Zone và Customer. Dân thu hồi gọi Driftlife theo dáng hoặc hành vi. The Wardens gọi đơn vị theo chức năng. Tàu có tên gắn với người lái hoặc phe vận hành.	88	Ref		cot-truyen.md

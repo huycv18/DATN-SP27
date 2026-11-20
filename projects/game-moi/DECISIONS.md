@@ -245,3 +245,14 @@ Lead: "chuyển GDD về 1 bản không tách GDD con nữa".
 ## 2026-11-20 - Định dạng GDD chính
 
 Lead: "sửa formats cho GDD, căn chỉnh, kẻ viền cho đẹp". 22 tab (trừ OVERVIEW) theo khuôn indie mục 2: thân chữ Lexend 10, wrap, căn giữa dọc, viền ngoài #351C75 đậm vừa, viền trong #B4A7D6, cao dòng tự co, ẩn lưới. Màu tab: ECONOMIC #351C75, nhóm D #8E7CC3. Tab thêm hàng thì chạy lại `tools/dinh-dang-sheet.mjs`.
+
+## 2026-11-20 - Sheet GDD là bản đọc: soát lệch, viết gọn, ID là số thứ tự (đợt 8)
+
+Lead: "Soát nội dung của GDD, có nhiều lỗi không khớp như Core Pillars chốt ở Overview nhưng bên Coreloop đang không khớp. Các nội dung viết khó hiểu, hãy sửa lại để người Việt Nam dễ đọc hiểu hơn, gọn gàng về nội dung hơn. Thay các ID phức tạp sang số thứ tự thôi."
+
+- CORE LOOP bỏ 4 pillar cũ (P1 đến P4), thay bằng 5 Core Pillars và nguyên tắc nền của OVERVIEW, mỗi pillar ghi chặng nào của vòng chơi gánh chính.
+- 23 tab viết lại theo `briefs/dot8-gdd-de-doc.md`: câu ngắn, một ý một dòng, bỏ ý lặp, không đổi luật và số.
+- Cột ID mọi tab là số thứ tự 1, 2, 3. Trong chữ không còn mã (K1, C3, RES-101, TA01, C1.1...): ghi bằng tên. Tham chiếu sang tab khác bằng tên, không bằng số.
+- Mã dữ liệu giữ ở GDD hệ thống markdown và JSON cho tool, Unity. Sheet không mang mã.
+- Cổng máy `tools/kiem-de-doc.mjs` chặn mã, ID không phải số, gạch dài, chấm phẩy, emoji, đường dẫn dài, dòng quá 300 ký tự. Chạy trước mỗi lần dán Sheet.
+- TSV của Sheet từ nay sửa tay. Xóa 5 script sinh TSV cũ (`sinh-customer.py`, `sinh-enemy.py`, `sinh-game-story.mjs`, `doi-chieu-game-story.mjs`, `sim/sinh_zone.py`) vì chạy lại sẽ ghi đè bản đọc. `xuat-event-tracking.mjs` giữ cho selftest, không dùng ghi tab.

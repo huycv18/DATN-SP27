@@ -2,73 +2,73 @@ No	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 1	Session	session_start	Mở thế giới	world_id\nis_host\ninput_device	Đếm phiên, thiết bị	string\nbool\nstring
 2	Session	session_end	Thoát hoặc rớt	reason (quit, host_lost, crash)\nminutes	Phiên dài bao lâu, rớt mạng bao nhiêu	string\nfloat
 3	Session	player_join	Người vào giữa chừng	player_id\nphase	Vào giữa chừng có chờ lâu không	string\nstring
-4	Session	player_leave	Người rời	player_id\nphase\nreason	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: ky-thuat.md (gd-tech thêm)	string\nstring\nstring
-5	Day	day_start	Thức dậy	ships_scheduled	Một ngày dài bao lâu (khung mục 9)	int
-6	Day	day_end	Vào buồng ngủ	minutes\ntrips\nport_shift_done	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: ky-thuat.md (gd-tech thêm)	float\nint\nbool
+4	Session	player_leave	Người rời	player_id\nphase\nreason	Ai rời, lúc nào, vì sao	string\nstring\nstring
+5	Day	day_start	Thức dậy	ships_scheduled	Một ngày dài bao lâu	int
+6	Day	day_end	Vào buồng ngủ	minutes\ntrips\nport_shift_done	Một ngày có mấy chuyến, ca cảng có xong không	float\nint\nbool
 7	Trip	trip_start	Cả nhóm xác nhận ở cửa khí	seed\nchapter\nzone_target\nn_players	Thời lượng chuyến theo chương	int\nint\nstring\nint
-8	Trip	player_trip_start	Mỗi người rời cửa khí	player_id\nslot\nsuit_tiers\ntools	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: nguoi-choi.md	string\nint\nstring\nstring
-9	Trip	zone_enter	Vào dải	player_id\nzone\nenv_ok	Người chơi có vào dải thiếu cấp không (K6)	string\nstring\nbool
+8	Trip	player_trip_start	Mỗi người rời cửa khí	player_id\nslot\nsuit_tiers\ntools	Bộ đồ và dụng cụ mang theo mỗi chuyến	string\nint\nstring\nstring
+9	Trip	zone_enter	Vào dải	player_id\nzone\nenv_ok	Người chơi có vào dải thiếu cấp bộ đồ không	string\nstring\nbool
 10	Trip	player_oxy_threshold	Oxy qua 50, 25, 10, 0%	player_id\nthreshold\ntrip_seconds\ncan_return	Ngưỡng cảnh báo có kịp không	string\nint\nfloat\nbool
-11	Trip	player_hit	Người chơi trúng đòn hoặc hazard	player_id\nsource_id\ndmg_raw\ndmg_final	Combat và hazard ăn bao nhiêu Oxy (S1)	string\nstring\nfloat\nfloat
+11	Trip	player_hit	Người chơi trúng đòn hoặc hazard	player_id\nsource_id\ndmg_raw\ndmg_final	Combat và hazard ăn bao nhiêu Oxy	string\nstring\nfloat\nfloat
 12	Trip	player_dash	Lướt	player_id\noxy_cost	Lướt có thành cách đi chính không	string\nfloat
-13	Trip	player_choking_start	Oxy về 0	player_id\nx\nbag_value	Tỉ lệ ngạt (khung mục 9)	string\nfloat\nfloat
+13	Trip	player_choking_start	Oxy về 0	player_id\nx\nbag_value	Tỉ lệ ngạt	string\nfloat\nfloat
 14	Trip	player_choking_end	Hết ngạt	player_id\nresult (rescued, recovered, pulled_back)\nkept_item	Co-op cứu được bao nhiêu	string\nstring\nstring
-15	Trip	player_oxy_share	Chia Oxy xong	from\nto\namount	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: nguoi-choi.md	string\nstring\nfloat
-16	Trip	recall_start	Bắt đầu giữ Recall Beacon	player_id\nbeacon_id	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: map.md, nguoi-choi.md	string\nstring
+15	Trip	player_oxy_share	Chia Oxy xong	from\nto\namount	Chia Oxy cho đồng đội nhiều hay ít	string\nstring\nfloat
+16	Trip	recall_start	Bắt đầu giữ Recall Beacon	player_id\nbeacon_id	Số lần giữ Recall Beacon	string\nstring
 17	Trip	recall_end	Xong hoặc hủy	player_id\ndone\ncancel_reason	Recall có bị hủy quá nhiều không	string\nbool\nstring
-18	Trip	branch_enter	Vào map nhánh	player_id\nbranch_id\nvia (gate, skiff)	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: map.md 6.2	string\nstring\nstring
+18	Trip	branch_enter	Vào map nhánh	player_id\nbranch_id\nvia (gate, skiff)	Vào map nhánh bằng cổng hay Skiff	string\nstring\nstring
 19	Trip	player_trip_end	Mỗi người kết thúc chuyến	player_id\nend_type (airlock, recall, pulled_back, left)\nload\nbag_value\noxy_left\nend_reason (bag_full, oxy, choice)	Chuyến về vì túi hay vì Oxy (sim chuyến)	string\nstring\nfloat\nfloat\nfloat\nstring
 20	Trip	trip_end	Người cuối cùng về	minutes\nteam_value	Thời lượng chuyến nhóm	float\nfloat
 21	Item	item_pickup	Nhặt hoặc khai thác xong	player_id\nitem_id\nqty\nsource_id	Lượng nhặt theo dải và theo người (k(N))	string\nstring\nint\nstring
-22	Item	item_lost_on_recall	Bị kéo về	player_id\nlost (list)\nkept	K2 đau tới đâu	string\nstring\nstring
+22	Item	item_lost_on_recall	Bị kéo về	player_id\nlost (list)\nkept	Bị kéo về mất bao nhiêu đồ	string\nstring\nstring
 23	Item	item_craft	Chế xong	recipe_id\nroom\nqty	Công thức nào được dùng	string\nstring\nint
-24	Combat	creature_disabled	Driftlife vào Choáng hoặc Ngủ	creature_id\nkind (stun, sleep)\nn_attackers	S3 khóa liên tục	string\nstring\nint
-25	Combat	creature_captured	Bắt sống xong	creature_id\nmethod\nstars\nseconds	S2 bắt so với hạ	string\nstring\nint\nfloat
-26	Combat	creature_killed	Hạ xong	creature_id\nfinisher (weapon, quick_finish)\nseconds	S2	string\nstring\nfloat
+24	Combat	creature_disabled	Driftlife vào Choáng hoặc Ngủ	creature_id\nkind (stun, sleep)\nn_attackers	Driftlife có bị khóa liên tục không	string\nstring\nint
+25	Combat	creature_captured	Bắt sống xong	creature_id\nmethod\nstars\nseconds	Bắt sống so với hạ	string\nstring\nint\nfloat
+26	Combat	creature_killed	Hạ xong	creature_id\nfinisher (weapon, quick_finish)\nseconds	Bắt sống so với hạ	string\nstring\nfloat
 27	Combat	capture_failed	Bắt hỏng	creature_id\nreason	Bắt có quá khó không	string\nstring
-28	Combat	boss_phase	Boss chuyển pha	boss_id\nphase\nseconds	S5 thời lượng boss	string\nint\nfloat
-29	Combat	boss_end	Boss kết	boss_id\nending (defeat, drive_off)\nseconds\nn_players	S5, S4	string\nstring\nfloat\nint
-30	Port	port_shift_start	Mở ca	ships\nn_players\nprepacked	Đóng sẵn bao nhiêu (C9)	int\nint\nint
+28	Combat	boss_phase	Boss chuyển pha	boss_id\nphase\nseconds	Thời lượng từng pha boss	string\nint\nfloat
+29	Combat	boss_end	Boss kết	boss_id\nending (defeat, drive_off)\nseconds\nn_players	Boss kết thúc ra sao, mất bao lâu	string\nstring\nfloat\nint
+30	Port	port_shift_start	Mở ca	ships\nn_players\nprepacked	Đóng sẵn bao nhiêu kiện trước ca	int\nint\nint
 31	Port	port_shift_skip	Bỏ ca	day	Ca có bị bỏ nhiều không	int
-32	Port	ship_docked	Tàu cập bến	ship_type\nberth\nwaited	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: tram-va-cang.md	string\nint\nfloat
-33	Port	cargo_packed	Đóng kiện xong	cargo_id\nstars\nin_shift	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: cargo_pack của vat-pham.md	string\nint\nbool
-34	Port	cargo_loaded	Bốc kiện được nhận	ship_type\ncargo_id\ntally	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: tram-va-cang.md	string\nstring\nint
+32	Port	ship_docked	Tàu cập bến	ship_type\nberth\nwaited	Tàu chờ bao lâu mới cập bến	string\nint\nfloat
+33	Port	cargo_packed	Đóng kiện xong	cargo_id\nstars\nin_shift	Đóng kiện trong ca hay trước ca	string\nint\nbool
+34	Port	cargo_loaded	Bốc kiện được nhận	ship_type\ncargo_id\ntally	Kiện nào được nhận, được bao nhiêu Tally	string\nstring\nint
 35	Port	cargo_rejected	Tàu từ chối kiện	ship_type\ncargo_id	Người chơi có đọc nhầm đơn không	string\nstring
 36	Port	order_end	Tàu rời	ship_type\nresult (full, fast, failed, left_waiting)\nseconds_docked	Tỉ lệ đơn đủ (sim ca cảng)	string\nstring\nfloat
-37	Port	port_shift_end	Hết ca	seconds\nfull\nfailed\ntally\nport_points	Ca dài bao lâu (khung mục 9)	float\nint\nint\nint\nint
-38	Port	incident	Sự cố bắt đầu hoặc xong	incident_id\nstate\nseconds	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: tram-va-cang.md	string\nstring\nfloat
+37	Port	port_shift_end	Hết ca	seconds\nfull\nfailed\ntally\nport_points	Ca dài bao lâu	float\nint\nint\nint\nint
+38	Port	incident	Sự cố bắt đầu hoặc xong	incident_id\nstate\nseconds	Sự cố kéo dài bao lâu	string\nstring\nfloat
 39	Station	room_repaired	Khoang sửa xong	room_id\nlevel	Nhịp sửa trạm theo ngày	string\nint
-40	Station	survivor_awake	Người vớt tỉnh	survivor_id	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: tram-va-cang.md, cot-truyen.md	string
-41	Economy	tally_gain	Nhận Tally	source (cargo, full_bonus, fast_bonus, ship)\namount	Tỉ lệ Tally từ cảng (khung mục 9)	string\nint
-42	Economy	tally_spend	Tiêu Tally	item_id\namount	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: kinh-te-tien-trinh.md sự kiện tally_chi	string\nint
+40	Station	survivor_awake	Người vớt tỉnh	survivor_id	Nhịp người vớt tỉnh theo ngày	string
+41	Economy	tally_gain	Nhận Tally	source (cargo, full_bonus, fast_bonus, ship)\namount	Tỉ lệ Tally từ cảng	string\nint
+42	Economy	tally_spend	Tiêu Tally	item_id\namount	Tiêu Tally vào đâu	string\nint
 43	Economy	port_rank_up	Lên Hạng cảng	rank\nday	Số ngày tới Hạng 3	int\nint
-44	Story	story_beat_done	Mốc truyện xong	beat_id	Thời lượng chương (khung mục 9)	string
-45	Story	cutscene_skipped	Bỏ qua cảnh	scene_id\nline_index	Cảnh có dài quá không (P4)	string\nint
+44	Story	story_beat_done	Mốc truyện xong	beat_id	Thời lượng từng chương	string
+45	Story	cutscene_skipped	Bỏ qua cảnh	scene_id\nline_index	Cảnh có dài quá không	string\nint
 46	UX	ux_tutorial_step	Bước tutorial hiện, xong hoặc bỏ	step_id\nstate\nseconds\ntrips_done	FTUE chương 1	string\nstring\nfloat\nint
 47	Trip	player_item_trade	Trao đồ xong	from\nto\nitem_id\nqty	Co-op có trao đồ không	string\nstring\nstring\nint
 48	Trip	player_pinned_item	Ghim món	player_id\nitem_id	Ghim món trước lần ngạt đầu (mục tiêu trên 70%)	string\nstring
 49	Trip	beacon_seen	Thấy Recall Beacon lần đầu trong chuyến	player_id\nbeacon_id	Thời gian từ thấy tới dùng beacon	string\nstring
-50	Trip	zone_exit	Ra dải	player_id\nzone	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: map.md mục 6.2	string\nstring
+50	Trip	zone_exit	Ra dải	player_id\nzone	Thời gian ở mỗi dải	string\nstring
 51	Trip	branch_exit	Ra map nhánh	player_id\nbranch_id\nminutes	Thời lượng mỗi lần vào map nhánh	string\nstring\nfloat
-52	Trip	branch_unlock	Mở khóa cửa hay vách map nhánh	branch_id\nlock_id	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: map.md mục 6.2	string\nstring
+52	Trip	branch_unlock	Mở khóa cửa hay vách map nhánh	branch_id\nlock_id	Mở cửa hoặc vách map nhánh	string\nstring
 53	Trip	hazard_warn	Hazard bắt đầu báo trước gần người chơi	hazard_id\nwarn_seconds	Báo trước đo trên build từ 1 giây (map.md tiêu chí)	string\nfloat
-54	Combat	creature_wake	Driftlife tỉnh khỏi Choáng hoặc Ngủ	creature_id\nkind	S3	string\nstring
+54	Combat	creature_wake	Driftlife tỉnh khỏi Choáng hoặc Ngủ	creature_id\nkind	Driftlife tỉnh sau bao lâu	string\nstring
 55	Combat	attack_ticket	Vé tấn công cấp hoặc trả	creature_id\nplayer_id\nstate	Áp lực mỗi người	string\nstring\nstring
 56	Station	creature_born	Con non sinh ở khoang nuôi	species_id	Nhịp nuôi	string
 57	Story	clue_picked	Nhặt vật manh mối	clue_id\nitem_id	Manh mối có bị bỏ sót không	string\nstring
-58	Story	quest_item_dropped	Vật nhiệm vụ rơi khi bị kéo về	item_id\nbranch_id	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: cot-truyen.md mục 6	string\nstring
-59	Story	survivor_feature_open	Người vớt mở tính năng	survivor_id\nroom_id	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: cot-truyen.md mục 6	string\nstring
+58	Story	quest_item_dropped	Vật nhiệm vụ rơi khi bị kéo về	item_id\nbranch_id	Vật nhiệm vụ bị rơi khi bị kéo về	string\nstring
+59	Story	survivor_feature_open	Người vớt mở tính năng	survivor_id\nroom_id	Nhịp mở tính năng của trạm	string\nstring
 60	Net	net_hold_start	Một người vào Giữ chỗ	player_id\nphase	Rớt mạng bao nhiêu	string\nstring
-61	Net	net_hold_end	Hết Giữ chỗ	player_id\nresult (rejoined, pulled_back)	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: ky-thuat.md luật 16	string\nstring
-62	Net	net_rollback	Máy người chơi lùi lại sau dự đoán sai	action\nms	Lùi lại có hiếm không (mục 7b)	string\nint
-63	Net	net_reject_hash	Từ chối vào phiên vì lệch hash dữ liệu	build_host\nbuild_client	Ghi nhận, ghép với sự kiện cùng nhóm. Nguồn: ky-thuat.md mục 4	string\nstring
+61	Net	net_hold_end	Hết Giữ chỗ	player_id\nresult (rejoined, pulled_back)	Giữ chỗ kết thúc ra sao	string\nstring
+62	Net	net_rollback	Máy người chơi lùi lại sau dự đoán sai	action\nms	Lùi lại có hiếm không	string\nint
+63	Net	net_reject_hash	Từ chối vào phiên vì lệch hash dữ liệu	build_host\nbuild_client	Từ chối vào phiên vì lệch dữ liệu giữa các máy	string\nstring
 64	Net	net_rtt	Mỗi 30 giây	player_id\nrtt_ms	Độ trễ thực tế	string\nint
-65	Session	save_written	Tự lưu xong ở một trong ba điểm (K23)	diem_luu (after_trip, after_shift, sleep)\nms	Lưu chậm hay không, người chơi thoát ở điểm nào	string\nint
-66	Session	save_failed	Một lần ghi lưu lỗi	diem_luu\nlan (1 đến 3)	Lưu lỗi bao nhiêu lần, lùi về điểm nào (UI-44)	string\nint
+65	Session	save_written	Tự lưu xong ở một trong ba điểm	diem_luu (after_trip, after_shift, sleep)\nms	Lưu chậm hay không, người chơi thoát ở điểm nào	string\nint
+66	Session	save_failed	Một lần ghi lưu lỗi	diem_luu\nlan (1 đến 3)	Lưu lỗi bao nhiêu lần, lùi về điểm nào	string\nint
 67	UX	ux_screen_open	Mở một màn	screen_id\ndevice\nday_phase	Màn nào hay mở, mở lúc nào trong ngày	string\nstring\nstring
 68	UX	ux_pin_changed	Đổi món ghim	item_id\nsource (auto, player)	Người chơi có tự ghim không	string\nstring
 69	UX	ux_input_device_change	Đổi giữa bàn phím chuột và gamepad	from\nto	Tỉ lệ dùng gamepad	string\nstring
 70	UX	ux_settings_change	Đổi một cài đặt	key\nvalue	Cài đặt nào hay bị đổi	string\nstring
 71	UX	ux_dead_end	Đứng yên ở một màn trên 20 giây	screen_id\nidle_seconds	Màn nào làm người chơi bí	string\nfloat
-Chung	Mọi nhóm	(trường chung)	Kèm mọi sự kiện ở trên	session_id\nworld_id\nworld_seed\nbuild\nt\nplay_seconds_total\nday\nchapter\nn_players\nslot	Ghi ra file JSON Lines cục bộ mỗi phiên, không gửi mạng. Sự kiện do host nắm chỉ máy host ghi, sự kiện của người chơi mỗi máy tự ghi, gộp theo session_id (luật 23 đến 25)	string\nstring\nint\nstring\nfloat\nfloat\nint\nint\nint\nint
-Ref					Bản đủ: projects/game-moi/gdd/he-thong/ky-thuat.md mục 2.4 (cột Nguồn ghi GDD sinh ra từng sự kiện). Sự kiện của tính năng Sau MVP chỉ ghi khi tính năng có trong build. Tab sinh bằng projects/game-moi/tools/xuat-event-tracking.mjs, không sửa tay	
+72	Mọi nhóm	(trường chung)	Kèm mọi sự kiện ở trên	session_id\nworld_id\nworld_seed\nbuild\nt\nplay_seconds_total\nday\nchapter\nn_players\nslot	Ghi ra file JSON Lines cục bộ mỗi phiên, không gửi mạng. Sự kiện do host nắm chỉ máy host ghi, sự kiện của người chơi mỗi máy tự ghi, gộp theo session_id	string\nstring\nint\nstring\nfloat\nfloat\nint\nint\nint\nint
+	Ref				Bản đủ: ky-thuat.md mục 2.4. Sự kiện của tính năng Sau MVP chỉ ghi khi tính năng có trong build	

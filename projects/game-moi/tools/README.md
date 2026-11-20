@@ -22,7 +22,8 @@ Vai đổi số: sửa GDD hoặc file tham số, chạy lại lệnh sim, đọ
 
 | Lệnh (chạy ở gốc repo) | Làm gì |
 |---|---|
-| `node projects/game-moi/tools/xuat-event-tracking.mjs` | Sinh `gdd/sheet/Event Tracking.tsv` từ bảng sự kiện của `ky-thuat.md` mục 2.4. Thêm `--kiem` để chỉ báo TSV có cũ hơn GDD không |
+| `node projects/game-moi/tools/xuat-event-tracking.mjs` | Sinh `gdd/sheet/Event Tracking.tsv` từ bảng sự kiện của `ky-thuat.md` mục 2.4. Thêm `--kiem` để chỉ báo TSV có cũ hơn GDD không. Từ đợt 8 (2026-11-20) tab là bản đọc sửa tay, không chạy lệnh ghi đè nữa |
+| `node projects/game-moi/tools/kiem-de-doc.mjs [--tab "<Tab>"] [--tat-ca]` | Cổng Sheet dễ đọc: cột ID là số thứ tự, không còn mã trong chữ, không gạch dài, chấm phẩy, emoji, đường dẫn dài, dòng quá 300 ký tự. Thoát 1 khi có lỗi. Luật ở `briefs/dot8-gdd-de-doc.md` |
 | `node projects/game-moi/tools/dinh-dang-sheet.mjs <ra.json>` | Sinh lệnh định dạng thân bảng mọi tab (viền, font, wrap, cao dòng, màu tab) theo số hàng TSV. Dán vào `update_spreadsheet` sau khi tab thêm hàng |
 | `node projects/game-moi/tools/doi-chieu-sheet.mjs` | So mọi `gdd/sheet/<Tab>.tsv` với tab cùng tên trên Sheet qua export CSV, in bảng ô lệch và hàng thừa. Thoát 1 khi có tab lệch |
 | `node projects/game-moi/tools/doi-chieu-sheet.mjs --tab "Customer" --ra <file.md>` | Chỉ một tab, ghi kết quả ra file |
