@@ -29,14 +29,14 @@ Số trong file sinh từ `projects/game-moi/sim/ngan_sach_oxy.py` (bảng ở `
 | N1 | Map nhánh | Station Cinder (xác Seed Station) | Gần, chương 1. Ingrid (Kỹ sư), Linh (Thông dịch viên), boss BS-1 | MVP |
 | N2 | Map nhánh | Station Wick (xác Seed Station) | Giữa, chương 2. Rafa (Hoa tiêu) | Sau MVP |
 | N3 | Map nhánh | Station Lantern (trạm còn người) | Giữa, chương 2. Amara (Nhà sinh học), boss BS-2 | Sau MVP |
-| N4 | Map nhánh | Veyl Waypost | Xa, chương 3. Yusuf (Trưởng cảng), không boss | Sau MVP |
+| N4 | Map nhánh | Veyl Waypost | Xa, chương 3 đến 5. Yusuf (Trưởng cảng). Nơi cứu Sevra Ilvane (mốc C3.8) và căn cứ The Hearth của mạng lưới The Kindling (đích hộ tống, mốc C5.1). Không boss | Sau MVP |
 | N5 | Map nhánh | The Raft (nơi ở của The Remainers) | Xa, chương 3. Không boss | Sau MVP |
 | N6 | Map nhánh | Station Flint (xác Seed Station) | Xa, chương 3. Manh mối cú lật Driftlife, boss BS-3 | Sau MVP |
 | N7 | Map nhánh | Bên trong Cradle | Xa, chương 4. Boss BS-4 | Sau MVP |
-| N8 | Map nhánh | Warden Rig | Xa, chương 5. Boss BS-5 | Sau MVP |
+| N8 | Map nhánh | Warden Rig | Xa, chương 5. Nơi Serith chỉ huy ở bãi vỡ, căn cứ của The Wardens. Boss BS-5 | Sau MVP |
 | A01 | Địa danh | Ember Apron [TẠM] (tên làm việc cũ: Bến ngoài) | Ô cố định cột 1 hàng giữa dải Gần | MVP |
 | A02 | Địa danh | Lantern Outer Ring, Cargo Berth, Lantern Core [TẠM] | Ba khu của Station Lantern | Sau MVP |
-| A03 | Địa danh | Waypost Outer Ring, Waypost Concourse [TẠM] | Hai khu của Veyl Waypost | Sau MVP |
+| A03 | Địa danh | Waypost Outer Ring, Waypost Concourse, The Hearth [TẠM] | Ba khu của Veyl Waypost. The Hearth là khoang ẩn của The Kindling (tên của gd-story), cửa mở khi kén của Sevra chạm tới | Sau MVP |
 | A04 | Địa danh | Collapsed Hold, Main Cryo Deck, Engine Core, Bridge and Archive [TẠM] | Bốn khu của Bên trong Cradle (tên làm việc cũ: Khoang hàng sập, Khu ngủ đông chính, Lõi máy, Buồng lái và kho lưu trữ) | Sau MVP |
 | A05 | Địa danh | Rig Landing, Holding Pens, Command Deck, Data Core [TẠM] | Bốn khu của Warden Rig | Sau MVP |
 | SP-R | Điểm sinh | Tài nguyên | Nhóm theo dải, gd-items cấp | MVP |
@@ -145,13 +145,14 @@ Chi tiết từng hazard ở bảng 3.5.
 ### 2.7 Map nhánh
 
 1. Map nhánh là khu dựng tay, không sinh lại (K7). Vào bằng cửa ở ô lối vào trong map tổng, hoặc bằng Skiff. Vào và ra qua màn chuyển cảnh ngắn. (MVP)
-2. Map nhánh giữ trạng thái giữa các chuyến: cửa đã mở, vách đã cắt, boss đã hạ, đường tắt đã mở, vật kể chuyện đã lấy. Tài nguyên và Driftlife thường trong map nhánh sinh lại mỗi chuyến như map tổng. (MVP)
+2. Map nhánh giữ trạng thái giữa các chuyến: cửa đã mở, vách đã cắt, boss đã hạ, đường tắt đã mở, vật kể chuyện đã lấy, vị trí kén hộ tống (luật 2.7.9). Tài nguyên và Driftlife thường trong map nhánh sinh lại mỗi chuyến như map tổng. (MVP)
 3. Mỗi map nhánh có ít nhất một lối vào và một lối ra rõ: cửa vào chính luôn là lối ra, cộng các beacon cố định. (MVP)
 4. Khu có khí (trạm còn người: Lantern, Waypost, The Raft) không hao nền Oxy và không nạp Oxy. Trúng đòn trong khu có khí vẫn trừ Oxy. (Sau MVP)
-5. Người vớt nằm trong buồng ngủ đông (vật kéo BNG của gd-items). Muốn vớt thì kéo buồng tới beacon hoặc tới cửa ra. Buồng không vào túi đồ. Người vớt còn thức (Amara ở Lantern, Yusuf ở Veyl Waypost) về trạm bằng mốc truyện (C2.3, C3.2 của gd-story), không kéo buồng. (MVP)
+5. Người vớt nằm trong buồng ngủ đông (vật kéo BNG của gd-items). Muốn vớt thì kéo buồng tới beacon hoặc tới cửa ra. Buồng không vào túi đồ. Người vớt còn thức (Amara ở Lantern, Yusuf ở Veyl Waypost) về trạm bằng mốc truyện (C2.3, C3.2 của gd-story), không kéo buồng. Sevra Ilvane nằm trong kén thoát hiểm, kéo theo đúng luật kéo buồng ngủ đông. Lúc cứu (C3.8), kén về tới Ember bằng Recall Beacon (kén trong bán kính kéo theo đi cùng, luật 2.5.5) hoặc qua cửa khí, hai cách đều tính là xong C3.8. (MVP cho luật kéo buồng, Sau MVP cho Sevra)
 6. Manh mối truyện, người vớt và boss chỉ nằm trong map nhánh (K7). Nội dung manh mối do gd-story đặt vào khe manh mối của sơ đồ. (MVP)
 7. Khóa trong map nhánh mở bằng một trong ba loại chìa: dụng cụ (do gd-items định nghĩa), mốc truyện (do gd-story), hạ boss. Mọi khóa đều mở được bởi một người. (MVP)
 8. Vật nhiệm vụ ở khe V bị mất khi người mang bị kéo về thì trở lại đúng khe V của nó ở chuyến sau. Vật manh mối ở khe M tự ghi khi chạm, không chiếm túi (log GDM dòng 46). (MVP)
+9. Hộ tống (C5.1) không có hệ thống riêng: kéo kén của Sevra qua một đoạn map nhánh có kẻ địch, dùng luật bay, kéo và combat sẵn có. Từ đầu chương 5 (sau C4.7), Skiff chở nhóm và kén từ Ember tới cửa N4, kén chỉ rời Ember bằng Skiff. Từ cửa N4, kéo kén qua vòng phong tỏa tới cửa The Hearth. Cửa The Hearth mở khi kén chạm cửa, đó là mốc C5.1. Trong hộ tống, kén không đi theo Recall Beacon: người kéo kích beacon thì kén nằm lại tại chỗ. Kén rơi khi người kéo ngạt, bị kéo về hoặc kích beacon. Giữa các chuyến, kén được lưu ở beacon cố định gần nhất đã đi qua trên đường hộ tống, chưa qua beacon nào thì ở cửa N4. (Sau MVP)
 Sơ đồ từng map nhánh ở mục 2.10.
 
 ### 2.8 Nhịp chuyến
@@ -187,10 +188,10 @@ Lối vào mỗi map nhánh mở theo mốc truyện (bảng mốc ở `cot-truy
 | N1 Station Cinder | C1.2 |
 | N3 Station Lantern | C1.9 |
 | N2 Station Wick | C2.5 |
-| N4 Veyl Waypost | C2.8 |
+| N4 Veyl Waypost | C2.8 (cửa The Hearth mở khi kén của Sevra chạm tới, mốc C5.1) |
 | N5 The Raft | C3.4 |
 | N6 Station Flint | C3.5 |
-| N7 Bên trong Cradle | C3.8 |
+| N7 Bên trong Cradle | C3.8 (cứu Sevra ở N4) |
 | N8 Warden Rig | C4.7 |
 
 **N1 Station Cinder (MVP).**
@@ -223,11 +224,11 @@ Các map nhánh sau MVP (sơ đồ chi tiết làm ở đợt dựng chương t�
 |---|---|---|---|---|---|---|---|
 | N2 Station Wick | Giữa, 2 | Cửa khí, hành lang băng phủ (Băng nứt), khoang ngủ đông, khoang lái. Chung bộ nội thất với Cinder, đổi bố trí và hư hại | Khoang ngủ đông mất điện, mở bằng Bộ kích nguồn (dụng cụ cũ dùng lại) | Rafa (Hoa tiêu) | Không | M1, M2, M3 ở khoang ngủ đông (M3 là thẻ tên STY-601), V1 ở khoang lái (STY-103) | 150 |
 | N3 Station Lantern | Giữa, 2 | Lantern Outer Ring gồm Cargo Berth (chân không, đấu boss giữa các kiện hàng trôi), Lantern Core (khu có khí: Odile, Bram, Amara, chợ đổi tin) | Cửa cập chỉ mở sau khi đuổi BS-2 lần đầu (chìa là hạ boss). Sau đó là điểm ghé | Amara (Nhà sinh học) | BS-2 Tempest Gulper | M1, M2 ở Lantern Core | 180 lần đầu, 60 các lần ghé sau |
-| N4 Veyl Waypost | Xa, 3 (ô lối vào cố định ở Xa cột 1) | Waypost Outer Ring (chân không), Waypost Concourse có khí (thương nhân, Yusuf đang làm ở bến) | Không khóa. Yusuf về Ember bằng mốc C3.2 của gd-story, nhóm đi Skiff tới đón | Yusuf (Trưởng cảng), còn thức | Không | M1, M2 | 150 |
+| N4 Veyl Waypost | Xa, 3 đến 5 (ô lối vào cố định ở Xa cột 1) | Waypost Outer Ring (chân không, nơi tàu TA04 của Ilsume bị toán của Maro áp mạn ở C3.8), Waypost Concourse có khí (thương nhân, Yusuf đang làm ở bến), The Hearth (khoang ẩn có khí của The Kindling, sâu trong Waypost, cửa mở khi kén của Sevra chạm tới). Đường hộ tống từ cửa N4 tới cửa The Hearth dài khoảng 120 u, qua hai đoạn phong tỏa, beacon cố định ở khoảng 40 u và 90 u (ước, chốt khi dựng greybox) | Cứu Sevra (C3.8): sự kiện áp mạn tàu TA04 ở Waypost Outer Ring chỉ sinh khi mốc C3.7 đã xong và giai đoạn 3 của động cơ đã lắp (K25). Hạ toán của Maro, kéo kén về Ember bằng beacon hoặc cửa khí. Hộ tống (C5.1, luật 2.7.9): Skiff chở kén tới cửa N4, kéo kén qua vòng phong tỏa của The Wardens (Hàng rào cắt và đơn vị The Wardens) tới cửa The Hearth. Yusuf về Ember bằng mốc C3.2 | Yusuf (Trưởng cảng), còn thức. Sevra Ilvane trong kén thoát hiểm (không phải người vớt mở tính năng) | Không boss. Toán của Maro (gd-combat) | M1, M2 | 150 lần thường, 180 lúc cứu Sevra, 210 lúc hộ tống |
 | N5 The Raft | Xa, 3 | Cụm trạm con ghép của The Remainers, phần lớn có khí. Một khu ngoài có Hàng rào cắt cũ để dạy phá máy phát | Mốc truyện gặp Elias | Không | Không | M1 (Elias, Wren) | 120 |
 | N6 Station Flint | Xa, 3 | Xác Seed Station chung bộ nội thất, khoang nghiên cứu, khoang hàng bị The Wardens biến thành trạm thu (Driftlife bị giữ, đấu trường boss) | Khoang nghiên cứu mở sau khi hạ BS-3 | Không | BS-3 Reaper Harvester | M1 nhật ký Flint, M2 manh mối lõi dẫn đường STY-104, V1 mẫu STY-301 ở khoang nghiên cứu (mở sau BS-3) | 210 |
 | N7 Bên trong Cradle | Xa, 4 | Bốn khu nối tiếp: Collapsed Hold, Main Cryo Deck, Engine Core, Bridge and Archive (hộp ghi hành trình lộ ra Solace là thông tin mồi). Mỗi khu xong mở đường tắt về cửa vào và một beacon cố định | Vách thân tàu mở bằng TOL-402 Máy cắt thân tàu (bản thiết kế BPR-105 ở hòm cố định của Station Flint hoặc Shop) | Không | BS-4 Silent Custodian ở Engine Core | M1 ở Collapsed Hold (STY-411), M2 ở Main Cryo Deck (STY-412), M3 ở Engine Core (STY-105). Khu cuối có M4 bản gốc Lodestar Survey và V1 hộp ghi hành trình STY-401. Mang hộp về trạm là mốc C4.5 của gd-story | 240, đi trọn trong 3 đến 4 chuyến |
-| N8 Warden Rig | Xa, 5 (chỉ vào bằng Skiff) | Rig Landing (Hàng rào cắt, đơn vị The Wardens), Holding Pens (thả để chúng đánh lại The Wardens), Command Deck (đấu boss), Data Core sau Command Deck (bản đồ sao thật và dữ liệu bản khảo sát The Wardens giấu, log GDM dòng 36 và 37) | Vào Warden Rig: mốc đóng chương 4. Data Core: mở sau khi hạ BS-5 | Không | BS-5 (gd-combat đặt tên Serith) | V1 bản đồ sao thật STY-501, M1 dữ liệu bản khảo sát bị giấu STY-502 (móc cho phần sau), cả hai ở Data Core | 300, hai beacon cố định giữa các khu để chia trận cuối nhiều chuyến |
+| N8 Warden Rig | Xa, 5 (chỉ vào bằng Skiff) | Rig Landing (Hàng rào cắt, đơn vị The Wardens), Holding Pens (thả để chúng đánh lại The Wardens), Command Deck (đấu boss), Data Core sau Command Deck (bản đồ sao thật và lệnh phục kích Cradle mang dấu Serith). Nơi Serith chỉ huy ở bãi vỡ, đánh khi cách mạng nổ ra | Vào Warden Rig: mốc đóng chương 4. Data Core: mở sau khi hạ BS-5 | Không | BS-5 (gd-combat đặt tên Serith) | V1 bản đồ sao thật STY-501, M1 lệnh phục kích Cradle mang dấu Serith STY-502, cả hai ở Data Core | 300, hai beacon cố định giữa các khu để chia trận cuối nhiều chuyến |
 
 
 Phòng boss (kích thước theo thời lượng trận ước, cơ chế do gd-combat giữ):
@@ -251,7 +252,7 @@ Hòm và vật kể chuyện trong map nhánh (hòm là điểm khai thác SLV c
 | The Raft | Không | STY-313 (M1) | Khu có khí |
 | Station Flint | 3 SLV-111, 1 hòm cố định chứa BPR-105 | STY-301 ở khoang nghiên cứu (V1), STY-104 (M2), nhật ký Flint (M1) | Hòm BPR-105 trong khoang nghiên cứu, mở sau BS-3 |
 | Bên trong Cradle | 2 SLV-112 mỗi khu | STY-411 (M1, Collapsed Hold), STY-412 (M2, Main Cryo Deck), STY-105 (M3, Engine Core), bản gốc Lodestar Survey (M4) và STY-401 hộp ghi hành trình (V1) ở Bridge and Archive | Mỗi khu 2 hòm |
-| Warden Rig | Không | STY-501 bản đồ sao thật (V1), STY-502 dữ liệu bản khảo sát bị giấu (M1) | Data Core, mở sau BS-5 |
+| Warden Rig | Không | STY-501 bản đồ sao thật (V1), STY-502 lệnh phục kích Cradle mang dấu Serith (M1) | Data Core, mở sau BS-5 |
 
 ## 3. Tham số
 
@@ -721,8 +722,9 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | W16 | Hệ số số người | k(N) = 1 + a x (N trừ 1), a theo dải: Gần 0,30, Giữa 0,25, Xa 0,38 | Sim gd-tech: a tối thiểu khác nhau giữa chương 1 và chương 5. Một a chung không đạt cả hai mục tiêu ở mọi chương | a chung 0,47 (nhóm 4 qua chương đầu quá nhanh), a chung 0,25 (chương 5 dưới 60% mỗi người) | Rẻ |
 | W20 | Hướng sửa thời lượng chuyến | Không đổi map. Giây khai thác nhân 2 (gd-items đã làm). Túi bậc 0 đến 4 là 80, 100, 126, 168, 216 và bình 330, 450, 600, 780, 1000 (GDM đã chốt, log 54) | Sim: diện tích, mật độ, hazard không kéo dài chuyến đủ. Túi quyết đầu game, bình quyết cuối game | Tăng số hàng, mật độ, giảm hazard (sim cho ngắn hơn hoặc thêm dưới 1 phút) | Vừa |
 | W21 | Định nghĩa để dựng bộ sinh mảnh | Trùng mảnh là cùng mảnh cùng ô. Cờ nửa ngoài "Có" là chỉ cột 3, 4. Cổng ô cố định Ember Apron 1111, Cinder 1101. Beacon không cùng ô chuyến trước. Đường chính nối liền giữa hai dải. Bố cục dự phòng dựng tay. Kiểm bằng `sim/bo_cuc.py` | QA GD-031: các luật cũ chưa dựng được, cách đọc khác nhau lệch tỉ lệ hợp lệ hàng nghìn lần | Trùng tính theo tập mảnh (kho 16 không đạt tiêu chí) | Rẻ |
+| W22 | Nơi cứu và hộ tống Sevra (lời Lead, GD-033) | Dùng lại N4 Veyl Waypost theo đề xuất của gd-story. Cứu ở Waypost Outer Ring, kén về Ember bằng beacon hoặc cửa khí (C3.8). Hộ tống: Skiff chở kén tới cửa N4, kéo tới cửa The Hearth (C5.1). Trong hộ tống kén không theo beacon, lưu ở beacon cố định gần nhất | Không thêm map nhánh và art mới. Một đích cho mỗi mốc. Kén không theo beacon để hộ tống không bị bỏ qua bằng một lần kích | Station Flint, kéo kén xuyên map tổng từ Ember | Rẻ |
 | W17 | Kho mảnh MVP | 16 mảnh Gần, 2 ô cố định | Tỉ lệ kho trên ô ghép 1,6, vừa sức 1 artist khi dựng bằng kit | 22 mảnh ngay MVP | Rẻ |
-| W19 | Nơi đặt vật kể chuyện chương 4 và 5 | Hộp ghi hành trình ở Bridge and Archive (khu cuối Bên trong Cradle). Bản đồ sao thật và dữ liệu bản khảo sát ở Data Core của Warden Rig, mở sau BS-5 | Lead chốt Solace là mồi, kết mở. Đặt sau boss để thứ quan trọng nhất là phần thưởng của trận cuối, và người chơi tự tay lấy móc cho phần sau | Rơi từ boss (dễ lỡ khi xua hoặc rớt mạng) | Rẻ |
+| W19 | Nơi đặt vật kể chuyện chương 4 và 5 | Hộp ghi hành trình ở Bridge and Archive (khu cuối Bên trong Cradle). Bản đồ sao thật và lệnh phục kích mang dấu Serith ở Data Core của Warden Rig, mở sau BS-5 | Thứ quan trọng nhất là phần thưởng của trận cuối, người chơi tự tay lấy | Rơi từ boss (dễ lỡ khi xua hoặc rớt mạng) | Rẻ |
 | W18 | Boss chương 2 và 3 | BS-2 ở Lantern Outer Ring, BS-3 ở Flint. Waypost và Wick không boss | BS-2 là Gulper vây Lantern (mô tả của gd-combat), lần đầu tới Lantern thành trận cứu trạm. BS-3 là máy thu hoạch, đặt ở Flint thì trận boss và manh mối cú lật Driftlife nói cùng một điều. Waypost trung lập giữ vai bến buôn | BS-2 ở Wick, BS-3 ở Waypost | Rẻ |
 
 ## Phản biện khung
@@ -738,6 +740,7 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | Ngày | Thay đổi | Lý do | Ai |
 |---|---|---|---|
 | 2026-11-20 | Ghi Danh mục sơ bộ | Luật đợt số 11 | gd-world |
+| 2026-11-20 | GD-033 phản diện mới: N4 thêm nơi cứu Sevra và The Hearth, luật hộ tống 2.7.9, Warden Rig là nơi Serith chỉ huy ở bãi vỡ, STY-502 đổi nội dung. Sửa theo QA GD-033 vòng 1: đích C3.8 là Ember, Skiff chở kén tới N4, kén không theo beacon khi hộ tống, lưu vị trí kén, khoảng cách đường hộ tống | Brief đợt 6, tên của gd-story, phiếu `qa/GD-033-map.md` | gd-world |
 | 2026-11-20 | Đợt 4: địa danh tiếng Anh [TẠM] (log 74), seed và lưu bố cục theo K23, ca biên thoát theo K23, trọng số độ khó đã duyệt (log 79), mục tiêu co-op 60 đến 75% (log 69) | Tin GDM, brief đợt 4 | gd-world |
 | 2026-11-20 | Sửa 5 lỗi nhẹ QA GD-031 vòng 2: chép lại sim 04:43, bỏ bảng chạy thử khỏi 3.9, khoảng cách khe tính theo vùng gây hại, beacon lối vào BS-2 đến BS-4 | Phiếu `qa/GD-031-map.md` | gd-world |
 | 2026-11-20 | Sửa theo QA GD-031 vòng 1: định nghĩa bộ sinh mảnh (W21), `sim/bo_cuc.py`, số 3.9 chép bằng `sim/dong_bo_sim.py`, a Gần 0,30, hình học hazard, cửa C6 sang C7, Amara, Skiff tới Warden Rig, ca biên theo C10 và K23 | Phiếu `qa/GD-031-map.md` | gd-world |

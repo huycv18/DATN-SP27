@@ -10,15 +10,35 @@ Engine: Unity
 Age Rating: Chưa chốt
 Platform: PC, chơi đơn hoặc co-op online 2 đến 4 người"
 
-IDEA	Người chơi tỉnh dậy trên Station Ember, một trạm hỏng đang trôi giữa bãi vỡ của tàu mẹ Cradle sau vụ The Scattering. Mỗi ngày có tối đa 2 chuyến ra ngoài không gian, mặt phẳng bay 8 hướng nhìn ngang. Oxy vừa là thời gian vừa là máu: đi tiếp hay quay về luôn là lựa chọn. Người chơi nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối, rồi mang về kho. Ở trạm họ sửa khoang, chế đồ, nuôi Driftlife, rồi chạy trong mặt cắt trạm để lấy hàng, đóng kiện và bốc lên tàu của thương nhân The Veyl trong ca cảng, đổi lấy Tally, đồng tiền duy nhất. Tally mua nâng cấp bộ đồ, nâng cấp trạm và thứ Ember không tự làm được, để đi xa hơn qua 3 dải Gần, Giữa, Xa. Mỗi người vớt về mở một tính năng của trạm. Truyện qua 5 chương: sống sót, tìm đường tới Solace, lộ ra Solace là mồi của The Wardens, rồi sửa động cơ và rời neo. Kết mở. Chơi một mình trọn vẹn, có bạn thì vui hơn.
+IDEA	Người chơi tỉnh dậy trên Station Ember, một trạm hỏng đang trôi giữa bãi vỡ của tàu mẹ Cradle sau vụ The Scattering. Mỗi ngày có tối đa 2 chuyến ra ngoài không gian, mặt phẳng bay 8 hướng nhìn ngang. Oxy vừa là thời gian vừa là máu: đi tiếp hay quay về luôn là lựa chọn. Người chơi nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối, rồi mang về kho. Ở trạm họ sửa khoang, chế đồ, nuôi Driftlife, rồi chạy trong mặt cắt trạm để lấy hàng, đóng kiện và bốc lên tàu của thương nhân The Veyl trong ca cảng, đổi lấy Tally, đồng tiền duy nhất. Tally mua nâng cấp bộ đồ, nâng cấp trạm và thứ Ember không tự làm được, để đi xa hơn qua 3 dải Gần, Giữa, Xa. Mỗi người vớt về mở một tính năng của trạm. Truyện qua 5 chương: sống sót, tìm đường tới Solace, cứu Sevra (người thừa kế hợp pháp của hành tinh Sennar), biết Solace là mồi do tên độc tài Serith dựng để phục kích đoàn di cư, rồi giúp mạng lưới của Sevra lật đổ Serith. Sevra trao tọa độ một hành tinh có sự sống thật, Ember rời neo lên đường. Kết mở. Chơi một mình trọn vẹn, có bạn thì vui hơn.
 
-PILLARS	"1. Mỗi hơi thở là một quyết định: Oxy vừa là thời gian vừa là máu, không có thanh máu riêng, không hồi Oxy miễn phí giữa chuyến.
-2. Mang về là để trạm sống lại: mọi thứ nhặt được đều có chỗ dùng nhìn thấy được trên trạm (sửa khoang, chế đồ, nuôi, bán ở cảng).
-3. Một mình vẫn trọn, có bạn thì vui hơn: mọi luật đúng với 1 đến 4 người, thêm người là thêm tay, không mở khóa nội dung.
-4. Vũ trụ kể chuyện qua thứ bạn vớt được: truyện đến từ xác trạm, người vớt về, thương nhân ghé cảng, chen vào điểm nghỉ của vòng ngày."
+CORE PILLARS	Five Core Pillars theo Dave the Diver, game follow đúng năm pillar này. Mỗi tính năng phải phục vụ ít nhất một pillar và không phạm cột Cấm. Khi hai pillar xung đột, ưu tiên theo thứ tự 1 đến 5. Bản đủ: projects/game-moi/gdd/00-khung-game.md mục 2
+Pillar	Mô tả	Player Experience	Giữ bằng luật và cách đo	Cấm
+"1. Exploration & Discovery
+Khám phá"	Khuyến khích người chơi khám phá bãi vỡ của tàu mẹ Cradle: ba dải Gần, Giữa, Xa, các map nhánh, loài Driftlife mới, tài nguyên hiếm, xác các trạm con, người còn sống để vớt và những điều bất ngờ. Mỗi chuyến bố cục đổi khác, mỗi chương mở vùng mới	Curiosity, Wonder, Discovery	"Luật: K5 map sinh lại mỗi chuyến, K6 dải mở theo chương, K7 map nhánh dựng tay giữ người vớt, vật manh mối, boss
+Đo: mỗi dải có ít nhất 2 tài nguyên chỉ dải đó có. Mỗi chương mở ít nhất 1 vùng hoặc map nhánh mới"	Map cố định lặp lại y hệt. Nội dung một lần nằm ở chỗ sinh lại ngẫu nhiên. Vùng mới chỉ khác màu mà không có thứ mới
+"2. Risk & Reward
+Rủi ro và phần thưởng"	"Người chơi phải cân nhắc lượng Oxy, sức chứa túi đồ, Driftlife nguy hiểm và thời điểm quay về. Oxy vừa là thời gian vừa là máu. Đi càng xa càng có phần thưởng giá trị nhưng rủi ro cũng cao hơn. Lựa chọn luôn có thông tin để tính (vạch ""đủ về"", cảnh báo theo phần trăm)"	Tension, Challenge, Satisfaction	"Luật: K1 Oxy là chỉ số duy nhất, K2 hết Oxy giữ 1 món, K3 túi đồ, K4 Recall Beacon, K9 bắt sống giá trị hơn hạ, K22 tối đa 2 chuyến mỗi ngày, K26 trần Oxy hồi từ vật tiêu hao, K27 đang ngạt không trao đồ
+Đo: chuyến chương 1 dài 4 đến 6 phút, chương 5 dài 10 đến 12 phút. Bị kéo về: người cẩn thận dưới 5%, người tham 15 đến 40%"	Thanh máu riêng. Hồi Oxy miễn phí giữa chuyến. Chuyến đi không có giới hạn. Về trạm nạp Oxy rồi ra lại không giới hạn. Mất trắng khi hết Oxy
+"3. Management & Optimization
+Quản lý và tối ưu"	Thứ mang về trở thành vật liệu sửa trạm và hàng hóa cho ca cảng. Người chơi chọn sửa khoang nào trước, nuôi Driftlife nào, nhận đơn nào, đóng kiện và bốc lên tàu thương nhân kịp giờ, để người vớt về vận hành các khoang, và tối ưu thu nhập Tally	Ownership, Strategy, Efficiency	"Luật: K11 khoang sửa xong đổi hình trạm, K12 người vớt vận hành khoang, K13 ca cảng, K14 sự cố, K15 Hạng cảng, K16 nuôi Driftlife, K19 nguồn tiêu của tài nguyên
+Đo: đơn giao đủ ở ca cảng 70 đến 95%. Thưởng đủ đơn và nhanh chiếm 15 đến 25% thu Tally. 100% vật phẩm có ít nhất một nguồn tiêu"	Tài nguyên chỉ để bán lấy số. Vật phẩm không có nguồn tiêu. Hệ đói, chi phí duy trì làm trạm xấu đi khi người chơi nghỉ
+"4. Progression & Growth
+Phát triển liên tục"	Tally kiếm được giúp nâng cấp bộ đồ (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ), dụng cụ và trạm, từ đó mở ra khả năng mới (vào dải mới, chuyến dài hơn, bắt loài lớn hơn) và thúc đẩy người chơi tiếp tục khám phá. Đích của cả hành trình là sửa xong động cơ và rời neo	Achievement, Empowerment, Growth	"Luật: K6 cấp bộ đồ theo dải, K18 Tally là đồng tiền duy nhất, K20 Shop, K21 mỗi chương thêm kiểu chơi mới, K25 qua chương
+Đo: chương 1 dài 1,5 đến 2 giờ, cả game 12 đến 15 giờ (một người, kịch bản trung bình)"	Nâng cấp chỉ tăng số mà không mở gì mới. Mất tiến trình (hết Oxy chỉ mất túi, không mất nâng cấp hay Tally). Tiền tệ thứ hai hay XP
+"5. Variety & Delight
+Đa dạng và bất ngờ"	Cốt truyện có chiều sâu (vụ The Scattering, tên độc tài Serith, người thừa kế Sevra), nhân vật độc đáo (người vớt về, thương nhân The Veyl mỗi loài một tính cách), hài nhẹ từ tính cách nhân vật, và cơ chế mới liên tục xuất hiện theo chương (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống) giúp người chơi không thấy lặp lại	Surprise, Humor, Relaxation	"Luật: K21 mỗi chương thêm một đến hai kiểu chơi mới, K25 qua chương theo mốc truyện, B8 dấu vết phản diện lộ dần, B9 giọng nền nghiêm hài nhẹ
+Đo: mỗi chương có ít nhất 3 mốc truyện và 2 vật manh mối có nơi đặt cố định. Mỗi chương có kiểu chơi mới"	Cắt cảnh dài chặn vòng chơi. Truyện chỉ kể qua chữ mà không qua thứ người chơi tự tìm thấy. Hài lấn át những mốc mất mát. Chương sau chỉ là chương trước với số lớn hơn
+"Nguyên tắc nền
+Solo or Together
+Một mình vẫn trọn, có bạn thì vui hơn"	Nguyên tắc nền, không phải pillar, nhưng mọi pillar phải tuân theo. Mọi luật đúng với 1 đến 4 người. Chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay để chia việc, không mở khóa nội dung	Freedom, Cooperation, Belonging	"Luật: C1 đến C10, K23 lưu game
+Đo: mỗi người trong nhóm 4 nhặt được từ 60% so với chơi một mình. Nhóm 4 hết game bằng 60 đến 75% thời gian chơi một mình"	Luật chỉ đúng khi có đúng N người. Nội dung chỉ co-op mới có. Mở thêm bến, vùng hay tính năng theo số người. Tạm dừng toàn cục khi co-op
 
 TRACKING GDD
 Version	Content	In charge	Note
 v0.1.0 - 19/10/2026	Khởi tạo GDD: concept, core loop, 26 hệ thống, 3 tầng, vật phẩm, hiểm họa, luật vũ khí, công thức, quán, kinh tế, nâng cấp	Huy	Bản nháp do Claude hỗ trợ soạn
 v0.2.0 - 19/11/2026	Formats GDD theo khuôn Dungeon Builder: 25 tab, khuôn khối Issue ID / Task / Sub Task. Nội dung v0.1 giữ ở 17 tab ẩn (tiền tố v0.1), chờ chuyển sang tab mới	GDM
 v0.3.0 - 20/11/2026	Định nghĩa lại game từ đầu (mã tạm EMBER), bỏ concept Space Salvage. Khung game, 10 GDD hệ thống, sim và QA	GDM
+v0.3.1 - 20/11/2026	Core Pillars viết đầy đủ, mỗi pillar một hàng	GDM
+v0.3.2 - 20/11/2026	Phản diện mới theo Lead (Serith độc tài, Sevra người thừa kế, cách mạng)	GDM
+v0.3.3 - 20/11/2026	Core Pillars theo đúng Five Core Pillars của Dave the Diver (Lead chốt). Co-op chuyển thành nguyên tắc nền	GDM

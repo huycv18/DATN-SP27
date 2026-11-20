@@ -45,7 +45,7 @@
     "_nguon": "tram-va-cang.md 3, cỡ kiện theo vat-pham.md khối CGOSIZE"
   },
   "tau": {
-    "_nguon": "tram-va-cang.md bảng 2.4 (trọng số túi trộn, số dòng, nhóm). TA08 không vào túi trộn. TA03 dòng tùy chọn không tính vào đơn đủ nên không mô phỏng. TA06 dòng ẩn không mô phỏng. TA10 gộp 1 dòng HC09 và 1 dòng HC12 hoặc HC13 thành rút từ 3 nhóm [GIẢ ĐỊNH]. TA01 có HC04 và CGO-113 từ khi xưởng hoạt động (gd-quan, QA vòng 2 R2), sim coi xưởng luôn hoạt động ở chương 1. Bớt dòng theo luật 69 mới: TA03, TA04, TA06 còn 2 dòng, TA09 2 đến 3 dòng. Dòng kiện cần chế và dòng lồng sống luôn kiện gốc 1. Đợt 4 (log 67): TA01 bỏ HC04, kiện tinh duy nhất chương 1 là CGO-113 (HC03), HC04 mở từ chương 2 theo bảng Nhóm hàng",
+    "_nguon": "tram-va-cang.md bảng 2.4 (trọng số túi trộn, số dòng, nhóm). TA08 không vào túi trộn. TA03 dòng tùy chọn không tính vào đơn đủ nên không mô phỏng. TA06 dòng ẩn không mô phỏng. TA10 gộp 1 dòng HC09 và 1 dòng HC12 hoặc HC13 thành rút từ 3 nhóm [GIẢ ĐỊNH]. TA01 có HC04 và CGO-113 từ khi xưởng hoạt động (gd-quan, QA vòng 2 R2), sim coi xưởng luôn hoạt động ở chương 1. Bớt dòng theo luật 69 mới: TA03, TA04, TA06 còn 2 dòng, TA09 2 đến 3 dòng. Dòng kiện cần chế và dòng lồng sống luôn kiện gốc 1. Đợt 4 (log 67): TA01 bỏ HC04, kiện tinh duy nhất chương 1 là CGO-113 (HC03), HC04 mở từ chương 2 theo bảng Nhóm hàng. Đợt 6 (GD-033, bảng 2.4): TA04 ngừng ghé sau C3.8 nên den 3. TA11 tàu của The Kindling không vào túi trộn, chiếm chỗ đầu lịch ở chương 4, 5: 1 dòng CGO-421 đúng 1 kiện ở mọi N, có thể thêm 1 dòng HC13. Sim cho TA11 có mặt mọi ca chương 4, 5 [GIẢ ĐỊNH, trường hợp nặng nhất]. TA08 vốn không mô phỏng (không vào túi trộn, chỉ chương 3). gd-quan chốt (GD-033, cấu hình b): TA11 luôn 2 dòng (HC15 1 kiện, HC13 kiện gốc 1), TA06 trọng số 3 và TA09 trọng số 2 từ chương 4 thay phần TA04",
     "TA01": {
       "luu": "dài",
       "dong": [
@@ -126,7 +126,8 @@
       "trongSo": 2,
       "tu": 2,
       "hang": 1,
-      "chao": 15
+      "chao": 15,
+      "den": 3
     },
     "TA05": {
       "luu": "vừa",
@@ -155,7 +156,10 @@
       ],
       "trongSo": 2,
       "tu": 3,
-      "hang": 1
+      "hang": 1,
+      "trongSoTuChuong": {
+        "4": 3
+      }
     },
     "TA07": {
       "luu": "vừa",
@@ -185,7 +189,10 @@
       ],
       "trongSo": 1,
       "tu": 3,
-      "hang": 6
+      "hang": 6,
+      "trongSoTuChuong": {
+        "4": 2
+      }
     },
     "TA10": {
       "luu": "vừa",
@@ -200,6 +207,22 @@
       ],
       "trongSo": 1,
       "tu": 3,
+      "hang": 1
+    },
+    "TA11": {
+      "luu": "vừa",
+      "dong": [
+        2,
+        2
+      ],
+      "dongCoDinh": [
+        "CGO-421"
+      ],
+      "nhom": [
+        "HC13"
+      ],
+      "trongSo": 0,
+      "tu": 4,
       "hang": 1
     }
   },
@@ -308,7 +331,10 @@
         2
       ],
       "xuong": 2,
-      "may": 2
+      "may": 2,
+      "truyen": [
+        "TA11"
+      ]
     },
     "5": {
       "ten": "Chương 5, 3 bến",
@@ -327,7 +353,10 @@
         2
       ],
       "xuong": 2,
-      "may": 2
+      "may": 2,
+      "truyen": [
+        "TA11"
+      ]
     },
     "_nguon": "tram-va-cang.md bảng Cấu hình lịch mục 3 (luật 68). hang là Hạng cảng giả định cho mỗi ô: chương 1 có hai ô Hạng 1 và Hạng 3 (gd-quan xin). Chương 2 Hạng 4, chương 3 Hạng 5, chương 4 và 5 Hạng 7 theo trần hạng bảng 2.5 [GIẢ ĐỊNH]. Sự cố theo tham số mục 3. xuong: số mẻ chế song song (xưởng cấp 2 từ chương 2, bảng 2.7). may: số máy đóng kiện (máy thứ hai của Trưởng cảng từ chương 3 khi có 2 bến). 2026-11-20 gd-quan: hệ số kiện co-op 0,6 mọi chương, chương 2 giãn cách 45 và kiện gốc 1 đến 3, chương 1 giãn cách 42. gd-quan chốt: chương 3 hai bến giãn cách 45, chương 3 một bến như chương 2 (45 giây, kiện gốc 1 đến 3)",
     "1-h3": {
@@ -385,8 +414,15 @@
         2
       ],
       "xuong": 2,
-      "may": 2
+      "may": 2,
+      "truyen": [
+        "TA11"
+      ]
     }
   },
-  "cheQuaDem": 2
+  "cheQuaDem": 2,
+  "giayMayRieng": {
+    "CGO-421": 11,
+    "_nguon": "RCP-422 6 giây cộng đóng 1 kiện vỏ bọc dải Xa (dongKien 5 giây), hai lượt máy liền nhau. STY-701 lấy ở kho"
+  }
 }

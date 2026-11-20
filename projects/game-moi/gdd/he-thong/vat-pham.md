@@ -1,6 +1,6 @@
 # GDD hệ thống: Vật phẩm, tài nguyên, dụng cụ, công thức, hàng hóa cảng
 
-Project: game-moi | Chủ sở hữu: gd-items | Trạng thái: nháp bản đủ, chờ gd-qa (GD-025, 2026-11-20) | Nguồn quyết định: `../00-khung-game.md` (K1 đến K21, C1 đến C8), `../../log-gdm-tu-quyet.md`
+Project: game-moi | Chủ sở hữu: gd-items | Trạng thái: bản đủ, ĐẠT GD-031, đã áp phản diện mới đợt 6 (GD-033), chờ gd-qa chấm lại (2026-11-20) | Nguồn quyết định: `../00-khung-game.md` (K1 đến K26, C1 đến C10, B3 đến B11), `../../log-gdm-tu-quyet.md`
 
 ## Tóm tắt
 
@@ -13,7 +13,7 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 - ID là khóa duy nhất. Tiền tố: RES tài nguyên thô, SLV điểm khai thác, SMP mẫu đã hạ, LIV mẫu sống, BIO sản phẩm nuôi, COM vật liệu chế, CON vật tiêu hao, CGO kiện, ENG linh kiện động cơ, BPR bản thiết kế, STY vật kể chuyện, BNG buồng ngủ đông, BPS mẫu sinh thiết, FED thức ăn nuôi, TOL dụng cụ và chìa, UPG nâng cấp, RCP công thức.
 - Đơn vị giá trị là GTĐ (giá trị tương đối, RES-101 bằng 1,0). Không phải Tally. gd-economy quy đổi GTĐ ra Tally (xem `kinh-te-tien-trinh.md` mục 3.1), file này không ghi giá.
 - Túi tính bằng Khối. Dụng cụ và nâng cấp là mở khóa cho cả nhóm, không vào kho. Kiện mang tay. Mẫu sống cỡ S đi trong Lồng mẫu (TOL-501) kéo theo, cỡ M gửi về kho bằng Phao kéo, buồng ngủ đông là vật kéo.
-- Mỗi dải có tài nguyên riêng. Chuỗi giá trị: thô, luyện thành COM (hệ số 1,25 đến 1,5), đóng kiện (thô hệ số 1,0, tinh 1,1 đến 1,25). Mẫu bắt (sống hoặc sinh thiết) bằng 1,5 đến 2,0 lần mẫu hạ. Chìa mở lối map nhánh là cổng cứng, không cần mang theo.
+- Mỗi dải có tài nguyên riêng. Chuỗi giá trị: thô, luyện thành COM (hệ số 1,25 đến 1,5), đóng kiện (thô hệ số 1,0, tinh 1,1 đến 1,25). Mẫu sống cỡ S và M bằng 1,5 đến 2,0 lần giá trị hạ, mẫu sinh thiết cỡ L bằng 0,45 lần (luật M1, log 66). Chìa mở lối map nhánh là cổng cứng, không cần mang theo.
 - MVP (chương 1): dải Gần, 6 tài nguyên, 7 điểm khai thác, 5 COM, 9 kiện (gồm 1 kiện đặc sản, 1 lồng sinh vật sống và đúng 1 kiện phải chế trước khi đóng là CGO-113, chốt cuối với gd-quan), 6 nâng cấp (OXY-1, BAG-1, THR-1, RACK-1, MIN-2, HAR-2), 2 vật tiêu hao (Bình Oxy nhỏ, Lưới cuộn), 5 dụng cụ (Dụng cụ khai thác, Lao từ, Dùi xung, Súng lưới, Lồng mẫu) cộng chìa Bộ kích nguồn, 4 loài Driftlife (3 loài cỡ S DL-G01, G02, G04 bắt sống được bằng Súng lưới, log 49). Phần còn lại nhãn Sau MVP.
 - Số trong file là khởi điểm ước, chưa đo. Cổng kiểm máy: 0 lỗi nhất quán (ID, nguồn, tiêu, biên lợi, chi phí nâng cấp). Chưa có sim cân bằng (đợt 2).
 
@@ -31,10 +31,10 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 | Nhóm | Ví dụ | Chứa ở đâu | Tính Khối | Mất khi bị kéo về (K2) |
 |---|---|---|---|---|
 | Tài nguyên thô, Mẫu hạ, Vật tiêu hao | RES, SMP, CON | Túi trong chuyến, kho ở trạm | Có | Mất trừ 1 món tự chọn |
-| Vật nhiệm vụ | STY-102, 103, 301, 401, 501 | Túi như vật thường | Có (1 Khối) | Mất cùng túi, nhưng không mất vĩnh viễn: về lại vị trí gốc ở chuyến sau (luật V4). Có thể chọn làm món giữ lại theo K2 |
+| Vật nhiệm vụ | STY-102, 103, 301, 401, 501, 701 | Túi như vật thường | Có (1 Khối) | Mất cùng túi, nhưng không mất vĩnh viễn: về lại vị trí gốc ở chuyến sau (luật V4). Có thể chọn làm món giữ lại theo K2 |
 | Vật manh mối | STY-101, 104, 105, 111, 211 đến 213, 311 đến 313, 411, 412, 414, 502, 601 | Tự ghi vào Sổ tay khi nhặt, không chiếm túi | Không | Không mất, đã ghi thì giữ |
 | Mẫu sống, mẫu sinh thiết | LIV (cỡ S vào Lồng mẫu kéo theo, cỡ M gửi về kho bằng Phao kéo), BPS (vào túi như mẫu thường) | Lồng mẫu (tối đa 3 con, mỗi người 1 lồng, gd-combat), kho | LIV không tính Khối (nằm trong lồng). BPS 1 Khối | LIV trong lồng mất cùng túi trừ 1 món. LIV đã gửi kho không mất |
-| Vật kéo | BNG (buồng ngủ đông) | Kéo theo người chơi, không vào túi | Không (gd-character định cách kéo) | Bỏ lại chỗ cũ, chuyến sau còn ở điểm cũ vì là map nhánh |
+| Vật kéo | BNG (buồng ngủ đông) | Kéo theo người chơi, không vào túi | Không (gd-character định cách kéo) | Bỏ lại chỗ cũ, chuyến sau còn ở điểm cũ vì là map nhánh. Riêng kén BNG-102 (vật kéo lớp Nặng): rơi thì nằm lại chỗ thả, lưu ở beacon cố định gần nhất đã qua, chưa qua beacon nào thì ở cửa N4, ngoài K2 (combat luật 42, 43, map 2.7.9) |
 | Kiện | CGO | Mang tay trong trạm, để trong kho kiện | Không | Không có ngoài trạm |
 | Vật liệu chế, Sản phẩm nuôi | COM, BIO | Kho ở trạm (không nhặt ngoài không gian, trừ COM trong hòm Seed) | Có nếu mang ra | Mất trừ 1 món |
 | Linh kiện động cơ, Bản thiết kế | ENG, BPR | Kho, học ngay (BPR) | Không | Không có ngoài trạm |
@@ -43,7 +43,7 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 - Luật V1 (log 57): Lồng mẫu chọn làm món giữ thì chỉ giữ con sao cao nhất trong lồng. Món giữ lại khi bị kéo về (K2) là món người chơi ghim (nguoi-choi.md điểm 5): 1 đơn vị vật phẩm của một loại, hoặc 1 vật đang kéo. Mặc định ghim vật có độ hiếm cao nhất vừa nhặt. Vật nhiệm vụ ghim được (luật V4). (Nhãn: MVP.)
 - Luật V2: kho có giới hạn 999 đơn vị mỗi loại và không giới hạn số loại. Kho dùng chung cả nhóm (C3). (Nhãn: MVP.)
 - Luật V3: túi tính bằng Khối. Tổng Khối của vật phẩm trong túi không vượt sức chứa (do gd-character quyết, giá trị tham chiếu ở mục 3). Túi đầy thì không nhặt thêm được, người chơi thả vật phẩm để nhặt vật khác. Thả vật phẩm xuống tạo vật nhặt được tại chỗ trong 30 giây. (Nhãn: MVP.)
-- Luật V4: vật manh mối tự ghi vào Sổ tay khi nhặt, không chiếm túi, không thể mất. Vật nhiệm vụ (chỉ 5 thứ: mảnh lõi Cinder và Wick, mẫu mang dấu thu hoạch, hộp ghi hành trình Cradle, bản đồ sao thật) chiếm túi như vật thường. Nếu người mang bị kéo về mất túi hoặc thả xuống thì vật nhiệm vụ nằm lại vị trí gốc ở map nhánh (nơi dựng tay cố định, K7) và có lại ở chuyến sau, không mất vĩnh viễn. Người chơi có thể chọn vật nhiệm vụ làm món được giữ khi bị kéo về (K2). Khớp luật 5 của gd-story. "Nộp" là bỏ vào kho ở nơi nhận, không tiêu vật, trừ khi vật nằm trong danh sách vật liệu của một việc sửa hoặc công thức (STY-102 ở sửa KH08, STY-401 và STY-501 ở RCP-207). RCP-141 chỉ sao từ STY-101 và STY-401, không sao từ STY-502. Lý do: P4 cấm manh mối bắt buộc nằm ở nơi mất được hoặc sinh lại ngẫu nhiên, và vẫn giữ áp lực của túi (P1). (Nhãn: MVP.)
+- Luật V4: vật manh mối tự ghi vào Sổ tay khi nhặt, không chiếm túi, không thể mất. Vật nhiệm vụ (chỉ 6 thứ: mảnh lõi Cinder và Wick, mẫu mang dấu săn bắt, hộp ghi hành trình Cradle, bản đồ sao thật, gói tin mật) chiếm túi như vật thường. Nếu người mang bị kéo về mất túi hoặc thả xuống thì vật nhiệm vụ nằm lại vị trí gốc ở map nhánh (nơi dựng tay cố định, K7) và có lại ở chuyến sau, không mất vĩnh viễn. Người chơi có thể chọn vật nhiệm vụ làm món được giữ khi bị kéo về (K2). Khớp luật 5 của gd-story. Ngoại lệ: STY-701 không có vị trí gốc ở map nhánh, mất thì về khoang liên lạc và nhận lại ngày sau (mỗi ngày tối đa 1 gói, luật C7). "Nộp" là bỏ vào kho ở nơi nhận, không tiêu vật, trừ khi vật nằm trong danh sách vật liệu của một việc sửa hoặc công thức (STY-102 ở sửa KH08, STY-401 và STY-501 ở RCP-207). RCP-141 chỉ sao từ STY-101 và STY-401, không sao từ STY-502. Lý do: P4 cấm manh mối bắt buộc nằm ở nơi mất được hoặc sinh lại ngẫu nhiên, và vẫn giữ áp lực của túi (P1). (Nhãn: MVP.)
 - Luật V5: vật kể chuyện không bán cho tàu. Với loại dữ liệu (STY-101, STY-401) khoang liên lạc sao ra Bản sao dữ liệu (CGO-131) để bán, vật gốc ở lại trạm (RCP-141, mỗi vật gốc sao một lần). Thẻ tên buồng ngủ đông (STY-601) treo ở khoang buồng ngủ đông, đổi hình trạm, không có công dụng chơi, vẫn thỏa P2 vì có chỗ dùng nhìn thấy được. (Nhãn: Sau MVP.)
 
 ### 2.2 Tài nguyên theo dải và điểm khai thác
@@ -60,7 +60,7 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 - Luật M1 (K9 đã sửa, log 66): hạ một Driftlife cho nguyên liệu sinh học của dải (SMP-101, 201, 301, số lượng theo loài) và có xác suất rơi đặc sản của loài (SMP-111 và các số tương ứng). Bắt sống cho mẫu sống (LIV), chỉ với loài cỡ S và M. K9 chỉ áp cho loài bắt sống được: giá mẫu sống bằng k nhân giá trị kỳ vọng khi hạ, k từ 1,5 đến 2,0 theo loài (cỡ M dùng 1,5), gồm cả GTĐ vật tiêu hao kỳ vọng của lần bắt, nên tỉ lệ ròng đúng bằng k. Loài cỡ L (DL-M01, DL-M05, DL-X03, DL-X04) không bắt sống được, chỉ lấy mẫu sinh thiết (BPS) bằng Kim sinh thiết, đứng ngoài K9: giá ròng 0,45 lần E(hạ) cùng loài (nhanh mà ít, hạ lâu mà nhiều). DL-M01 không hạ được nên không có đặc sản và giữ giá cố định. Thứ tự và mã loài theo gd-combat. (Nhãn: MVP, cỡ S.)
 - Luật M2: mẫu sống có 3 nơi tiêu: nuôi trong khoang sinh quyển (chương 2, BIO mỗi ngày, mỗi con cần 1 thức ăn nuôi FED mỗi ngày), nghiên cứu (chương 2, đổi ra bản thiết kế, RCP-301 và RCP-302), giao đơn cảng giá cao (lồng sinh vật sống, MVP chương 1). Mẫu sinh thiết đi vào kiện đặc sản và nghiên cứu Hồ sơ loài. Mẫu đã hạ chỉ có nguồn tiêu thô: kiện mô, kiện đặc sản, vật liệu cho vật tiêu hao. (Nhãn: Sau MVP.)
 - Luật M3: chất lượng mẫu 1 đến 3 sao do gd-combat định: mẫu sống theo Sinh lực còn lại lúc bắt (từ 70% là 3 sao, 30% đến dưới 70% là 2 sao, dưới 30% là 1 sao), mẫu sinh thiết luôn 3 sao, hạ thường cho 1 sao và Kết nhanh (hạ con đang bất lực) cho 2 sao. Hệ số giá trị 1,0 / 1,25 / 1,5. Ràng buộc K9 của gd-combat: mẫu sống 1 sao không thấp hơn nguyên liệu hạ 2 sao của cùng loài, script kiểm. Phẩm cấp kiện sinh học bằng sao thấp nhất trong đầu vào. Đơn hàng có thể đòi phẩm cấp tối thiểu (gd-quan). (Nhãn: MVP.)
-- Luật M4: boss có hai cách kết ở chương 1 và 2 (hạ hoặc xua đi). BS-1: hạ rơi Hạch thủ lĩnh Gần (SMP-191) cộng 5 SMP-101, xua đi rơi Mẫu boss Gần (SMP-192) cộng 2 SMP-101. BS-2: hạ rơi Đặc sản Tempest Gulper (SMP-291), xua đi rơi Mẫu boss Giữa (SMP-292). Chương 1 và 2 dùng một trong hai (khoang dẫn đường nhận SMP-191 hoặc SMP-192). Vật rơi boss chưa dùng được ở chương đang chơi (hạch, mẫu boss dùng cho khoang dẫn đường ở chương 2) nằm trong kho, trạm báo "dùng được khi mở khoang dẫn đường". Mẫu boss và hạch chỉ để sửa khoang, không dùng để nghiên cứu. Đặc sản loài Gần (SMP-111 đến 114) có chỗ dùng ở MVP là Kiện đặc sản Gần (CGO-106, RCP-124, 1 đặc sản mỗi kiện). BS-3 và BS-4 chỉ hạ: rơi Linh kiện Warden (RES-305) và Linh kiện Cradle (RES-401). BS-5 không rơi vật phẩm: sau khi hạ, lõi dữ liệu Warden Rig mở ra, trong đó có Bản đồ sao thật (STY-501) và Dữ liệu bản khảo sát bị giấu (STY-502). (Nhãn: MVP.)
+- Luật M4: boss có hai cách kết ở chương 1 và 2 (hạ hoặc xua đi). BS-1: hạ rơi Hạch thủ lĩnh Gần (SMP-191) cộng 5 SMP-101, xua đi rơi Mẫu boss Gần (SMP-192) cộng 2 SMP-101. BS-2: hạ rơi Đặc sản Tempest Gulper (SMP-291), xua đi rơi Mẫu boss Giữa (SMP-292). Chương 1 và 2 dùng một trong hai (khoang dẫn đường nhận SMP-191 hoặc SMP-192). Vật rơi boss chưa dùng được ở chương đang chơi (hạch, mẫu boss dùng cho khoang dẫn đường ở chương 2) nằm trong kho, trạm báo "dùng được khi mở khoang dẫn đường". Mẫu boss và hạch chỉ để sửa khoang, không dùng để nghiên cứu. Đặc sản loài Gần (SMP-111 đến 114) có chỗ dùng ở MVP là Kiện đặc sản Gần (CGO-106, RCP-124, 1 đặc sản mỗi kiện). BS-3 và BS-4 chỉ hạ: rơi Linh kiện Warden (RES-305) và Linh kiện Cradle (RES-401). BS-5 không rơi vật phẩm (gd-combat đã bỏ đồ rơi của Serith): sau khi khuất phục Serith, Data Core của Warden Rig mở ra, trong đó nhặt được Bản đồ sao thật (STY-501, khe V1) và Lệnh phục kích Cradle mang dấu Serith (STY-502, khe M1). Tọa độ hành tinh thật do Sevra trao ở mốc C5.6 là cảnh truyện, không phải vật phẩm. (Nhãn: MVP.)
 - Luật M5: con nuôi lấy ra khỏi ô bỏ vào lồng giao đơn (HC06) được tính là mẫu sống của loài đó nhưng lồng có giá bằng 0,5 lần giá lồng bắt thật cùng loài, và mỗi ngày tối đa 1 lồng từ nuôi cho mỗi loài, để nuôi rồi bán lồng không vượt giá bắt thật. gd-quan khớp `tram-va-cang.md`. (Nhãn: Sau MVP.)
 
 ### 2.4 Dụng cụ, bậc, nâng cấp bộ đồ
@@ -81,12 +81,13 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 - Luật C3: công thức vật liệu chế (COM) và kiện đều mở theo vai (Kỹ sư, Thông dịch viên, Nhà sinh học) và theo chương, không cần bản thiết kế. Dụng cụ mới và bản nghiên cứu cần bản thiết kế (BPR), học một lần cho cả nhóm. (Nhãn: MVP.)
 - Luật C4: bản thiết kế có ba nguồn: nghiên cứu mẫu sống (BPR-101 Súng lưới bậc 2 từ DL-G01, BPR-102 Súng gây mê từ DL-G04, chương 2), Shop (K19), hòm cố định trong map nhánh (gd-world). Học BPR tiêu BPR. Số bản thiết kế giữa 103 và 105 để trống, không tái dùng, vì Dùi xung mở bằng quest Kỹ sư thay vì bản thiết kế. Súng lưới bậc 1, Dùi xung, Lồng mẫu không cần BPR vì mở bằng quest Kỹ sư ở chương 1. (Nhãn: Sau MVP.)
 - Luật C5: biên lợi chuỗi giá trị (hệ số GTĐ đầu ra trên GTĐ đầu vào). COM từ 1,25 đến 1,5 (luyện tốn thời gian). Kiện thô đúng 1,0 (chỉ đóng gói, tiện, không thêm giá trị). Kiện tinh từ 1,1 đến 1,25. Lồng sinh vật sống mang đúng GTĐ của mẫu sống bên trong, theo loài (bảng giá lồng ở mục 3, khối LONG), nên hệ số k của mẫu sống không bị làm sập bởi một giá phẳng. Bản sao dữ liệu từ 1,5 đến 2,5 (thông tin đắt hơn vật liệu, giá do gd-economy). Vật tiêu hao bằng 1,0 (không bán). Kiểm bằng script. (Nhãn: MVP.)
+- Luật C7 (log 87, GD-033): kiện tin mật CGO-421 là loại kiện của nối tình báo. Đóng ở máy đóng kiện bằng RCP-422: 1 gói tin mật STY-701 cộng 1 kiện vỏ bọc là một kiện hàng thường dải Xa (CGO-311, 312, 313, 306 hoặc 307), tin đi lẫn trong hàng. STY-701 là vật nhiệm vụ không giá: khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày từ khi mốc nối tình báo mở, không mua bán, bị tiêu khi đóng. Giá trị CGO-421 bằng đúng kiện vỏ bọc rẻ nhất (hệ số 1,0), nên tin mật không sinh thêm Tally, chỉ thêm sức nặng truyện và một bước đóng. Đơn của mạng lưới thuộc nhóm hàng HC15 của gd-quan. (Nhãn: Sau MVP.)
 - Luật C6: mọi công thức chỉ dùng vật phẩm có trong ITEM LIST. Chiều ngược lại: thức ăn nuôi rẻ hơn sản phẩm nuôi từ 1,5 lần trở lên (script kiểm) để nuôi có lời. Nguyên liệu "một trong n loài" ghi dạng nhóm loài cùng dải, giá trị tính theo loài rẻ nhất. (Nhãn: MVP.)
 
 ### 2.6 Hàng hóa cảng (kiện)
 
 - Luật G1 (K13): ca cảng là nửa chơi tay thứ hai. gd-quan sở hữu luật ca, đơn và tàu. Hệ thống này cung cấp loại kiện, nguyên liệu, thời gian đóng và cỡ. (Nhãn: MVP.)
-- Luật G2: có ba loại kiện. Kiện thô (CGO-101..105 và CGO-109 Kiện đồ Trái Đất): đóng thẳng từ tài nguyên thô hoặc mô sinh học, hệ số 1,0, đóng 5 đến 6 giây. Giá trị một kiện bằng khoảng một phần mười giá trị đơn một ca của chương (khoảng 13,6 GTĐ chương 1, 42,5 chương 2, 104 chương 3, gd-economy đặt), nên mỗi ca cảng một người khoảng 10 kiện. Số đơn vị đầu vào vì thế từ 1 đến 14. Cỡ kiện tính từ tổng Khối đầu vào: tối đa 10 Khối là Nhỏ, 11 đến 20 Khối là Vừa, trên 20 Khối là Lớn. Kiện tinh (CGO-111..113 và các kiện sau): làm từ COM, có "bước chế trước khi đóng" ở Xưởng. Kiện sinh học và đặc biệt (CGO-106, 107, 121, 131, 141 và các bản dải sau): đặc sản, sản phẩm nuôi, lồng sinh vật sống, bản sao dữ liệu, kiện vật tư (nhóm đồ chế HC08 của gd-quan). Khớp nhóm hàng cảng HC01 đến HC09 của gd-quan: HC07 là CGO-107, 207, 307, HC08 là CGO-141, HC09 là CGO-131. (Nhãn: MVP.)
+- Luật G2: có ba loại kiện. Kiện thô (CGO-101..105 và CGO-109 Kiện đồ Trái Đất): đóng thẳng từ tài nguyên thô hoặc mô sinh học, hệ số 1,0, đóng 5 đến 6 giây. Giá trị một kiện bằng khoảng một phần mười giá trị đơn một ca của chương (khoảng 13,6 GTĐ chương 1, 42,5 chương 2, 104 chương 3, gd-economy đặt), nên mỗi ca cảng một người khoảng 10 kiện. Số đơn vị đầu vào vì thế từ 1 đến 14. Cỡ kiện tính từ tổng Khối đầu vào: tối đa 10 Khối là Nhỏ, 11 đến 20 Khối là Vừa, trên 20 Khối là Lớn. Kiện làm từ kiện khác (CGO-421) tính mỗi kiện đầu vào 5 Khối cộng Khối của vật nhiệm vụ đi kèm (STY-701 là 1), nên 6 Khối, cỡ Nhỏ. Kiện tinh (CGO-111..113 và các kiện sau): làm từ COM, có "bước chế trước khi đóng" ở Xưởng. Kiện sinh học và đặc biệt (CGO-106, 107, 121, 131, 141 và các bản dải sau): đặc sản, sản phẩm nuôi, lồng sinh vật sống, bản sao dữ liệu, kiện vật tư (nhóm đồ chế HC08 của gd-quan). Khớp nhóm hàng cảng HC01 đến HC09 của gd-quan: HC07 là CGO-107, 207, 307, HC08 là CGO-141, HC09 là CGO-131. (Nhãn: MVP.)
 - Luật G3: kiện có cỡ Nhỏ, Vừa, Lớn. Cỡ quyết định tốc độ khi mang trong trạm: Nhỏ 90%, Vừa 80%, Lớn 65%, chồng hàng thô 90% (gd-quan, `tram-va-cang.md` mục 3). Nhiều người cùng giữ một kiện Lớn: mỗi người thêm cộng 15 điểm phần trăm, trần 95% (2 người 80%, 3 người trở lên 95%). Cỡ từng kiện ở mục 2.6b. Hệ số 0,75 và 0,50 ở `nguoi-choi.md` là tốc độ kéo vật ngoài không gian, không phải mang kiện. (Nhãn: MVP.)
 - Luật G4: tàu chỉ mua (K13). Đơn do gd-quan ghép từ danh sách loại kiện của mục này. Giá Tally do gd-economy. Hàng giao sai loại hoặc trễ giờ do gd-quan. (Nhãn: MVP.)
 - Luật G5: lồng sinh vật sống nhớ loài và sao: GTĐ của lồng bằng GTĐ mẫu sống bên trong nhân hệ số sao (1,0 / 1,25 / 1,5), nên giá theo loài, không có một giá phẳng. gd-economy ghi giá lồng theo loài. Các kiện khác không nhớ nguồn gốc. (Nhãn: MVP.)
@@ -96,7 +97,7 @@ Nguồn dữ liệu duy nhất của mọi bảng số trong file này là `proj
 <!--B:CGOSIZE-->
 | Cỡ | Kiện | Tốc độ mang (gd-quan) |
 |---|---|---|
-| Nhỏ | CGO-105..106, 109, 111..113, 131, 206..207, 211..213, 306..307, 311..313, 411 | 90% |
+| Nhỏ | CGO-105..106, 109, 111..113, 131, 206..207, 211..213, 306..307, 311..313, 411, 421 | 90% |
 | Vừa | CGO-101..104, 107, 141, 511 | 80% |
 | Lớn | CGO-121, 221, 321 | 65% |
 <!--/B:CGOSIZE-->
@@ -337,11 +338,12 @@ Công thức (RCP):
 | RCP-324 | Đóng kiện đặc sản Xa | Cảng | 5 x một trong SMP-311..315 hoặc BPS-313..314 | 1 x CGO-306 | 5 | Chương 3 | 90,0 | 99,0 | 1,10 | Sau MVP |
 | RCP-325 | Đóng kiện sản phẩm nuôi Xa | Cảng | 7 x một trong BIO-311, 315 | 1 x CGO-307 | 5 | Chương 3 | 98,0 | 107,8 | 1,10 | Sau MVP |
 | RCP-421 | Đóng kiện linh kiện Cradle | Cảng | 7 x RES-401 | 1 x CGO-411 | 6 | Chương 4 | 140,0 | 161,0 | 1,15 | Sau MVP |
+| RCP-422 | Đóng kiện tin mật | Cảng | 1 x một trong CGO-306..307, 311..313, 1 x STY-701 | 1 x CGO-421 | 6 | Chương 4 | 86,9 | 86,9 | 1,00 | Sau MVP |
 | RCP-521 | Đóng kiện linh kiện Warden | Cảng | 14 x RES-305 | 1 x CGO-511 | 6 | Chương 5 | 168,0 | 193,2 | 1,15 | Sau MVP |
 | RCP-326 | Đưa sinh vật sống Xa vào lồng giao | Cảng | 1 x một trong LIV-311..312, 315 | 1 x CGO-321 | 8 | Chương 3 | 23,0 | - | - | Sau MVP |
 | RCP-301 | Phân tích DL-G01 | Phòng nghiên cứu | 1 x LIV-111, 2 x COM-105 | 1 x BPR-101 | qua đêm | Nhà sinh học (chương 2) | 15,5 | - | - | Sau MVP |
 | RCP-302 | Phân tích DL-G04 | Phòng nghiên cứu | 1 x LIV-113, 2 x COM-105 | 1 x BPR-102 | qua đêm | Nhà sinh học (chương 2) | 14,4 | - | - | Sau MVP |
-| RCP-207 | Ghép Lõi dẫn hướng rời bãi vỡ | Xưởng | 1 x STY-501, 1 x STY-401, 2 x COM-203 | 1 x ENG-105 | qua đêm | Chương 5 | - | - | - | Sau MVP |
+| RCP-207 | Ghép Lõi dẫn hướng rời bãi vỡ | Xưởng | 1 x STY-501, 1 x STY-401, 2 x COM-203 | 1 x ENG-105 | qua đêm | Chương 5 | 54,4 | - | - | Sau MVP |
 | RCP-205 | Chế Bộ kích nguồn (TOL-401) | Xưởng | 6 x RES-101, 3 x RES-102, 1 x RES-104 | Mở khóa dụng cụ cho nhóm | qua đêm | Xưởng, công thức đầu tiên sau khi vớt Kỹ sư | 12,6 | - | - | MVP |
 | RCP-201 | Chế Súng lưới (TOL-202) | Xưởng | 2 x COM-103, 1 x COM-102, 1 x COM-104 | Mở khóa dụng cụ cho nhóm | qua đêm | Quest Kỹ sư (chương 1) | 27,0 | - | - | MVP |
 | RCP-202 | Chế Súng gây mê (TOL-203) | Xưởng | 1 x COM-103, 1 x COM-104, 2 x COM-105 | Mở khóa dụng cụ cho nhóm | qua đêm | BPR-102 | 26,8 | - | - | Sau MVP |
@@ -366,7 +368,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | RES-202 | Quặng cobalt / Cobalt Ore | Khoáng | Ít gặp | 2 | 6,0 | Giữa | SLV-201 | RCP-152, Sửa khoang (tram-va-cang.md mục 2.6c) | Sau MVP |
 | RES-203 | Băng tinh / Clear Ice | Băng | Ít gặp | 2 | 5,0 | Giữa | SLV-202 | RCP-154, Sửa khoang (tram-va-cang.md mục 2.6c) | Sau MVP |
 | RES-204 | Lõi cảm biến / Sensor Core | Linh kiện | Hiếm | 1 | 9,0 | Giữa | SLV-203 | RCP-153, Sửa khoang (tram-va-cang.md mục 2.6c) | Sau MVP |
-| RES-301 | Hợp kim Warden / Warden Alloy | Phế liệu | Hiếm | 1 | 8,0 | Xa | SLV-303, Đơn vị The Warden hạ được (WD-01..04, gd-combat) | RCP-161, Sửa khoang (tram-va-cang.md mục 2.6c) | Sau MVP |
+| RES-301 | Hợp kim Warden / Warden Alloy | Phế liệu | Hiếm | 1 | 8,0 | Xa | SLV-303, Đơn vị The Wardens hạ được (WD-01..04, gd-combat) | RCP-161, Sửa khoang (tram-va-cang.md mục 2.6c) | Sau MVP |
 | RES-302 | Kính nebula / Nebula Glass | Khoáng | Hiếm | 2 | 16,0 | Xa | SLV-301 | RCP-162, Sửa khoang (tram-va-cang.md mục 2.6c) | Sau MVP |
 | RES-303 | Băng plasma / Plasma Ice | Băng | Hiếm | 2 | 14,0 | Xa | SLV-302 | RCP-163 | Sau MVP |
 | RES-304 | Lõi năng lượng nguội / Cold Core | Linh kiện | Hiếm | 1 | 10,0 | Xa | SLV-303 | RCP-164, Sửa khoang (tram-va-cang.md mục 2.6c) | Sau MVP |
@@ -460,13 +462,14 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | CGO-206 | Kiện đặc sản Giữa / Mid Specialty Crate | Kiện | Hiếm | mang | 44,0 | Giữa | RCP-224 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
 | CGO-207 | Kiện sản phẩm nuôi Giữa / Mid Farm Crate | Kiện | Ít gặp | mang | 46,2 | Giữa | RCP-225 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
 | CGO-221 | Lồng sinh vật sống Giữa / Mid Live Cage | Kiện | Hiếm | mang | theo loài | Giữa | RCP-226 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-311 | Kiện giáp / Armor Crate | Kiện | Hiếm | mang | 107,6 | Xa | RCP-321 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-312 | Kiện plasma / Plasma Crate | Kiện | Hiếm | mang | 86,9 | Xa | RCP-322 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-313 | Kiện lõi nguội / Cold Core Crate | Kiện | Hiếm | mang | 111,1 | Xa | RCP-323 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-306 | Kiện đặc sản Xa / Far Specialty Crate | Kiện | Hiếm | mang | 99,0 | Xa | RCP-324 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-307 | Kiện sản phẩm nuôi Xa / Far Farm Crate | Kiện | Hiếm | mang | 107,8 | Xa | RCP-325 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
+| CGO-311 | Kiện giáp / Armor Crate | Kiện | Hiếm | mang | 107,6 | Xa | RCP-321 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
+| CGO-312 | Kiện plasma / Plasma Crate | Kiện | Hiếm | mang | 86,9 | Xa | RCP-322 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
+| CGO-313 | Kiện lõi nguội / Cold Core Crate | Kiện | Hiếm | mang | 111,1 | Xa | RCP-323 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
+| CGO-306 | Kiện đặc sản Xa / Far Specialty Crate | Kiện | Hiếm | mang | 99,0 | Xa | RCP-324 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
+| CGO-307 | Kiện sản phẩm nuôi Xa / Far Farm Crate | Kiện | Hiếm | mang | 107,8 | Xa | RCP-325 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
 | CGO-321 | Lồng sinh vật sống Xa / Far Live Cage | Kiện | Hiếm | mang | theo loài | Xa | RCP-326 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
 | CGO-411 | Kiện linh kiện Cradle / Cradle Parts Crate | Kiện | Hiếm | mang | 161,0 | Cradle | RCP-421 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
+| CGO-421 | Kiện tin mật / Dispatch Crate | Kiện | Hiếm | mang | 86,9 | Xa | RCP-422 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
 | CGO-511 | Kiện linh kiện Warden / Warden Parts Crate | Kiện | Hiếm | mang | 193,2 | Xa | RCP-521 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
 | ENG-101 | Van tiết lưu / Throttle Valve | Linh kiện lõi | Hiếm | kho | - | Gần | Shop (K19), mở ở Hạng cảng 3 (kinh-te-tien-trinh.md) | Lắp động cơ chính, giai đoạn 1 | MVP |
 | ENG-102 | Buồng đốt tái chế / Recycled Combustor | Linh kiện lõi | Hiếm | kho | - | Giữa | Shop (K19) | Lắp động cơ chính, giai đoạn 2 | Sau MVP |
@@ -491,18 +494,20 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | STY-312 | Lời tuyên bố khu bảo hộ / Protected Zone Declaration | Vật manh mối | Đặc biệt | 0 | - | Xa | Mã truyện MM3.2 (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
 | STY-313 | Xác máy thu hoạch / Harvester Wreck | Vật manh mối | Đặc biệt | 0 | - | Xa | Mã truyện MM3.3 (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
 | STY-411 | Vết vũ khí trên vỏ Cradle / Weapon Scars on Cradle Hull | Vật manh mối | Đặc biệt | 0 | - | Cradle | Mã truyện MM4.1, bên trong và vỏ Cradle (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
-| STY-412 | Bản chào mừng người thức dậy / Wake-up Welcome Message | Vật manh mối | Đặc biệt | 0 | - | Cradle | Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
+| STY-412 | Hiến chương định cư United Accord / United Accord Settlement Charter | Vật manh mối | Đặc biệt | 0 | - | Cradle | Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
 | STY-414 | Bản gốc Lodestar Survey / Original Lodestar Survey | Vật manh mối | Đặc biệt | 0 | - | Cradle | Mã truyện MM4.4, bên trong Cradle (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
-| STY-301 | Mẫu mang dấu thu hoạch Wardens / Harvest-marked Sample | Vật nhiệm vụ | Đặc biệt | 1 | - | Xa | Station Flint (chương 3, gd-story) | Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife | Sau MVP |
+| STY-301 | Mẫu mang dấu săn bắt Wardens / Hunt-marked Sample | Vật nhiệm vụ | Đặc biệt | 1 | - | Xa | Station Flint (chương 3, gd-story) | Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife | Sau MVP |
 | STY-401 | Hộp ghi hành trình Cradle / Cradle Flight Recorder | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Bên trong Cradle (chương 4, gd-story) | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6) | Sau MVP |
-| STY-501 | Bản đồ sao thật / True Star Chart | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Lõi dữ liệu Warden Rig, mở sau khi hạ BS-5 Serith (chương 5, gd-world) | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6) | Sau MVP |
-| STY-502 | Dữ liệu bản khảo sát bị giấu / Hidden Survey Data | Vật manh mối | Đặc biệt | 0 | - | Cradle | Lõi dữ liệu Warden Rig, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện (móc hậu bản B11). Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401) | Sau MVP |
+| STY-501 | Bản đồ sao thật / True Star Chart | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Data Core ở Warden Rig, khe V1, mở sau BS-5 (chương 5, gd-world). Không rơi từ Serith. Tọa độ hành tinh thật do Sevra trao ở C5.6 là cảnh truyện, không phải vật | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6) | Sau MVP |
+| STY-701 | Gói tin mật / Sealed Dispatch | Vật nhiệm vụ | Đặc biệt | 1 | - | Xa | Khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày từ khi mốc nối tình báo mở (chương 4 đến 5, gd-quan), không mua bán | RCP-422, Bị tiêu ở RCP-422 (đóng kiện tin mật). Mất khi rời phiên thì về lại khoang liên lạc (luật V4) | Sau MVP |
+| STY-502 | Lệnh phục kích Cradle mang dấu Serith / Serith-Marked Ambush Order | Vật manh mối | Đặc biệt | 0 | - | Cradle | Data Core ở Warden Rig, khe M1, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world). Không rơi từ Serith | Tự ghi vào Sổ tay, mở cảnh truyện. Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401) | Sau MVP |
 | STY-601 | Thẻ tên buồng ngủ đông / Cryo Pod Nameplate | Vật manh mối | Đặc biệt | 0 | - | Gần | Xác Seed Station, mỗi buồng đã tắt một thẻ (gd-story) | Tự ghi vào Sổ tay, hiện trên tường khoang buồng ngủ đông (đổi hình trạm, P2), không có công dụng chơi | Sau MVP |
+| BNG-102 | Kén thoát hiểm của Ilsume / Ilsume Escape Pod | Vật kéo | Đặc biệt | kéo | - | Xa | Map nhánh N4 Waypost Outer Ring, cứu Sevra ở mốc C3.8 (gd-story, gd-world) | Đưa về trạm qua cửa khí (C3.8), sau đó kéo tới The Hearth ở N4 (C5.1). Không mở người vớt hay tính năng. Kén rơi thì nằm lại chỗ thả, lưu ở beacon cố định gần nhất đã qua (chưa qua beacon nào thì ở cửa N4), ngoài K2 (combat luật 42, 43, map 2.7.9) | Sau MVP |
 | BNG-101 | Buồng ngủ đông (có người) / Cryo Pod | Vật kéo | Đặc biệt | kéo | - | Gần | Map nhánh xác Seed Station, người vớt theo K12 | Đưa về trạm, mở người vớt và tính năng | MVP |
 <!--/B:ITEM-->
 
 <!--B:CHECK-->
-- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-20 02:11 UTC. Số vật phẩm: 143. Công thức: 83. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
+- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-20 03:40 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
 - Vật liệu nhãn MVP (6 việc sửa khoang và 6 nâng cấp) quy ra tài nguyên thô: 272,2 GTĐ, tương đương 3,1 chuyến đầy túi (túi bậc 0 là 80 Khối, mật độ 1,1 GTĐ mỗi Khối), chưa tính nguyên liệu đóng kiện bán lấy Tally. Đây là kiểm nhất quán, không phải sim cân bằng.
 <!--/B:CHECK-->
 
@@ -625,7 +630,7 @@ Dave làm thế nào (theo `docs/knowledge/indie/06-dave-the-diver-cau-truc.md`)
 | 7 | Nhu cầu vật liệu sửa khoang, số bước lắp động cơ chính | Bảng ở mục 2.7 | gd-quan |
 | 8 | Quy đổi GTĐ ra Tally, mức giá kiện, giá linh kiện ENG, giá nâng cấp | Hệ số GTĐ sang Tally là một số duy nhất theo chương hoặc Hạng cảng, gd-economy đặt | gd-economy |
 | 9 | Số điểm khai thác theo số người k(N), mật độ, vị trí | Do gd-world giữ ở `map.md`, vật phẩm không có núm riêng | gd-world, GDM (mục tiêu 70 đến 85%) |
-| 10 | Vật kể chuyện: tên riêng và nơi đặt | ID đã gán theo danh mục gd-story: STY-101 Nhật ký trạm, STY-102..104 Mảnh lõi dẫn đường (Cinder, Wick, Flint), STY-105 Lõi dẫn đường Cradle, STY-301 Mẫu mang dấu thu hoạch, STY-401 Hộp ghi hành trình, STY-501 Bản đồ sao thật, STY-601 Thẻ tên buồng ngủ đông | gd-story |
+| 10 | Vật kể chuyện: tên riêng và nơi đặt | ID đã gán theo danh mục gd-story: STY-101 Nhật ký trạm, STY-102..104 Mảnh lõi dẫn đường (Cinder, Wick, Flint), STY-105 Lõi dẫn đường Cradle, STY-301 Mẫu mang dấu săn bắt, STY-401 Hộp ghi hành trình, STY-501 Bản đồ sao thật, STY-601 Thẻ tên buồng ngủ đông | gd-story |
 | 11 | Bộ kích nguồn (TOL-401) từ đâu | Đã chốt với gd-world: công thức đầu của Xưởng sau khi vớt Kỹ sư (RCP-205). Nhịp khóa và chìa đầu game được giữ | gd-world (đã trả lời) |
 | 12 | Giai đoạn 5 động cơ dùng ENG-105 chế từ STY, không mua ở Shop | Giữ (lý do R2 của truyện). Nếu gd-quan cần 5 linh kiện mua được thì đổi RCP-207 thành mua | gd-quan |
 | 13 | Kiện đồ Trái Đất (CGO-109) cho thương nhân mê đồ Trái Đất (gd-story) | Đã thêm RES-106 Đồ Trái Đất vụn trong hòm kỹ thuật, kiện thô CGO-109 | gd-quan |
@@ -668,6 +673,8 @@ Dave làm thế nào (theo `docs/knowledge/indie/06-dave-the-diver-cau-truc.md`)
 | 32 | Con nuôi vào lồng giao đơn | Giá lồng nuôi bằng 0,5 lần lồng bắt thật, tối đa 1 lồng mỗi loài mỗi ngày | QA GD-031 lỗi 10: tránh vòng lặp nuôi rồi bán không tốn chuyến | Con nuôi không giao được | Rẻ |
 | 33 | SLV-112 nhả tài nguyên thô thay vì COM | RES-104, RES-103, RES-106 | QA GD-031 lỗi 21: nhả COM bỏ qua hệ số chuỗi 1,25 đến 1,5 và bước Xưởng, mật độ 4,87 trội | Giữ COM | Rẻ |
 | 34 | Rời phiên theo C10 | Giữ chỗ 15 giây rồi áp luật 1 món | QA GD-031 lỗi 1: bản trước cho giữ túi trong dữ liệu, trái C10 | Giữ túi | Rẻ |
+| 35 | Kiện tin mật ăn giá bằng kiện vỏ bọc | CGO-421 hệ số 1,0, gói tin STY-701 giá 0 | Nối tình báo là sức nặng truyện, không phải nguồn Tally mới (log 87, không thêm hệ thống). Một ngày tối đa 1 gói nên kiện tin mật chỉ là một dòng đơn | Kiện tin có giá riêng | Rẻ |
+| 36 | Kén của Sevra là vật kéo riêng BNG-102, không dùng chung BNG-101 | BNG-102 nhãn Sau MVP, dải Xa, kéo như BNG-101 nhưng không mở người vớt, kéo hai lần (C3.8 về trạm, C5.1 tới The Hearth) | BNG-101 gắn người vớt theo K12, dùng chung sẽ mở nhầm người vớt (gd-story đề nghị ID riêng hoặc dùng chung) | Dùng chung BNG-101 | Rẻ |
 
 ## Phản biện khung
 
@@ -687,3 +694,6 @@ Dave làm thế nào (theo `docs/knowledge/indie/06-dave-the-diver-cau-truc.md`)
 | Ngày | Thay đổi | Lý do | Ai |
 |---|---|---|---|
 | 2026-11-20 | Bản đủ đầu tiên, thay Danh mục sơ bộ | Brief GD-025 | gd-items |
+| 2026-11-20 | Đợt 4 sau QA GD-031: K9 sinh thiết 0,45, K26 bình Oxy, đúng 1 kiện chế (CGO-113), kiện lớn lại theo túi 80 Khối, The Scattering | Biên bản GD-031, brief đợt 4 | gd-items |
+| 2026-11-20 | Dán 3 tab Salvage, ITEM LIST, Recipe lên Sheet (GD-032), đối chiếu KHỚP | Brief đợt 5 | gd-items |
+| 2026-11-20 | Đợt 6 phản diện mới (GD-033): thêm STY-701, CGO-421, RCP-422 (luật C7), BNG-102, đổi STY-301, 412, 502, bỏ ý bản khảo sát bị giấu, sửa nguồn STY-501 và 502, kén ngoài K2 | Brief đợt 6, phiếu QA GD-033 | gd-items |

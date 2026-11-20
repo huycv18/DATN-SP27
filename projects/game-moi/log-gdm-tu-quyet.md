@@ -14,9 +14,9 @@ Muốn đổi dòng nào, Lead chỉ cần ghi số dòng và ý mới.
 |---|---|---|---|---|---|
 | 1 | ĐÃ BỊ LEAD ĐẢO 2026-11-20, xem dòng 36. Solace có thật không | Có thật, sống được. Thông tin giả là "hành lang an toàn" và hồ sơ đường đi dẫn Cradle vào điểm phục kích | Giữ mục tiêu cuối Lead chốt từ đầu: tới Solace dựng lại đế chế | Solace là mồi giả (phải đổi mục tiêu cuối) | Vừa |
 | 2 | Thông tin giả đi qua đâu | Qua mạng tin của thương nhân The Veyl trung lập, họ không biết | Khớp lời Lead: The Veyl trung lập không biết. Cho thương nhân một nỗi áy náy để viết truyện | United Accord mua từ phản diện (Lead đã bỏ) | Rẻ |
-| 3 | Động cơ phản diện, hai lời Lead lệch nhau | Giữ cả hai: tự xưng kẻ canh giữ, ghét loài người vì phá môi trường, nhưng chính chúng thu hoạch công nghiệp. Cuồng tín và đạo đức giả | Giữ gốc "lòng tham" Lead chốt, cho kết game câu hỏi thật: loài người có làm khác đi không | Chỉ ghét (mất chữ tham lam hơn), chỉ tham (mất động cơ mới) | Vừa |
+| 3 | ĐÃ BỊ LEAD ĐẢO 2026-11-20, xem Phần 8. Động cơ phản diện, hai lời Lead lệch nhau | Giữ cả hai: tự xưng kẻ canh giữ, ghét loài người vì phá môi trường, nhưng chính chúng thu hoạch công nghiệp. Cuồng tín và đạo đức giả | Giữ gốc "lòng tham" Lead chốt, cho kết game câu hỏi thật: loài người có làm khác đi không | Chỉ ghét (mất chữ tham lam hơn), chỉ tham (mất động cơ mới) | Vừa |
 | 4 | Tên phản diện | The Wardens [TẠM], thay The Hollowers. Hollower Rig thành Warden Rig | "Hollower" nghĩa là kẻ khoét rỗng, không còn khớp động cơ mới | Giữ tên cũ | Rẻ |
-| 5 | Driftlife là gì (câu 2 Lead chưa trả lời) | Sinh vật bản địa của vùng chân không. The Wardens gọi là đàn được bảo hộ để kết tội loài người. Cú lật: nhà sinh học thấy dấu thu hoạch của The Wardens trên Driftlife | Nối thẳng động cơ phản diện với việc người chơi làm mỗi ngày. Làm việc nuôi Driftlife có nghĩa | Chạy nạn khỏi kẻ khoét rỗng (hết khớp), nạn nhân của Cradle (trùng vai) | Vừa |
+| 5 | ĐÃ SỬA theo Phần 8. Driftlife là gì (câu 2 Lead chưa trả lời) | Sinh vật bản địa của vùng chân không. The Wardens gọi là đàn được bảo hộ để kết tội loài người. Cú lật: nhà sinh học thấy dấu thu hoạch của The Wardens trên Driftlife | Nối thẳng động cơ phản diện với việc người chơi làm mỗi ngày. Làm việc nuôi Driftlife có nghĩa | Chạy nạn khỏi kẻ khoét rỗng (hết khớp), nạn nhân của Cradle (trùng vai) | Vừa |
 | 6 | Phản diện cải trang làm thương nhân | Có, là một mốc truyện ở chương 3, không phải hệ thống | Lead không phản đối khi GDM nêu. Dùng luôn ca cảng để kể truyện | Không dùng | Rẻ |
 | 7 | Số chương | 5 chương, mỗi chương một vùng mới và một kiểu chơi mới | Dave có 7 chương, mỗi chương thêm một kiểu chơi. 5 vừa với 3 dải và 2 map nhánh lớn | 7 chương | Vừa |
 | 8 | Danh sách người vớt | Kỹ sư, Thông dịch viên, Hoa tiêu, Nhà sinh học, Trưởng cảng. Bỏ Bếp trưởng | Lead bỏ nhà ăn và chọn ca cảng. gd-story cũng đề xuất đổi | Giữ Bếp trưởng | Rẻ |
@@ -69,8 +69,8 @@ Lead: "Solace là một cái kết mở, sau khi biết được sự thật v�
 
 | # | Điểm | Chọn | Vì sao | Đã bỏ | Đảo |
 |---|---|---|---|---|---|
-| 36 | Sau khi biết Solace là mồi, người chơi còn mục tiêu gì | Chương 4 lộ sự thật. Chương 5 có mục tiêu mới cụ thể: lấy bản đồ sao thật ở Warden Rig, sửa xong động cơ, rời bãi vỡ trước khi The Wardens quét sạch người sống sót | Kết mở vẫn cần một cái kết cho game này. Lộ sự thật ở chương 4 thay vì cảnh cuối để người chơi còn một chương hành động theo sự thật đó, không thấy bị lừa mất mục tiêu 12 giờ | Lộ sự thật ở cảnh cuối cùng | Vừa |
-| 37 | Móc cho phần sau | Ở Warden Rig có dữ liệu cho thấy mồi Solace dựng từ một bản khảo sát có thật mà The Wardens giấu. Chưa kiểm chứng | Trả lời đúng câu Lead nêu: liệu có Solace thật. Cho hậu bản điểm bắt đầu | Không có manh mối nào, kết trắng | Rẻ |
+| 36 | ĐÃ BỊ LEAD ĐẢO, xem Phần 8. Sau khi biết Solace là mồi, người chơi còn mục tiêu gì | Chương 4 lộ sự thật. Chương 5 có mục tiêu mới cụ thể: lấy bản đồ sao thật ở Warden Rig, sửa xong động cơ, rời bãi vỡ trước khi The Wardens quét sạch người sống sót | Kết mở vẫn cần một cái kết cho game này. Lộ sự thật ở chương 4 thay vì cảnh cuối để người chơi còn một chương hành động theo sự thật đó, không thấy bị lừa mất mục tiêu 12 giờ | Lộ sự thật ở cảnh cuối cùng | Vừa |
+| 37 | ĐÃ BỊ LEAD ĐẢO, xem Phần 8. Móc cho phần sau | Ở Warden Rig có dữ liệu cho thấy mồi Solace dựng từ một bản khảo sát có thật mà The Wardens giấu. Chưa kiểm chứng | Trả lời đúng câu Lead nêu: liệu có Solace thật. Cho hậu bản điểm bắt đầu | Không có manh mối nào, kết trắng | Rẻ |
 | 38 | Lời hứa "dựng khác đi" | Giữ làm lời của nhân vật ở cảnh kết, không còn là kết quả | Giữ chủ đề lòng tham Lead đã chốt | Bỏ hẳn | Rẻ |
 
 ## Phần 2 - Điểm các vai tự quyết
@@ -170,3 +170,23 @@ Nguồn: `qa/GD-031-tong-hop.md` mục 5 (G1 đến G10) và các điểm vai gh
 | 83 | `nguoi-choi.md` M3: rút mạng rồi vào lại trong 15 giây nhiều lần thì nhân vật bất tử mãi, lách K2 và C10 | Giữ chỗ tối đa 1 lần mỗi người mỗi chuyến, mất kết nối lần thứ hai thì tính như bị kéo về | Rẻ |
 
 Hai lỗi nặng chéo còn lại (ghim món gamepad, bộ màu slot ở `ux-ui.md`) gd-ux đã sửa trước khi GDM kiểm.
+
+## Phần 8 - GDM quyết khi áp phản diện mới của Lead (2026-11-20)
+
+Lead sửa phản diện (DECISIONS cùng ngày): tên độc tài X đảo chính, Y người thừa kế giả làm thương nhân, cách mạng, Y trao tọa độ hành tinh thật. Các dòng dưới là phần Lead chưa nói mà GDM chốt để các vai làm tiếp.
+
+| # | Điểm | GDM quyết | Vì sao | Đảo |
+|---|---|---|---|---|
+| 84 | Tên The Wardens | Giữ, nay là tên chế độ và quân đội của X, không còn là tên cả chủng tộc. Chủng tộc của X và Y có tên riêng do gd-story đặt | Khớp lời Lead: chỉ X và chế độ của hắn xấu, chủng tộc thì không. Giữ tên đỡ sửa 30 chỗ ở combat, map, Warden Rig | Rẻ |
+| 85 | Tên X và Y | gd-story đặt tên tiếng Anh [TẠM] | Lead dùng chữ X, Y làm chỗ trống | Rẻ |
+| 86 (*) | Cứu Y ở đâu | Cuối chương 3, trong một map nhánh, là mốc đóng chương 3. Kẻ địch có vũ khí của chương 3 chính là toán bắt cóc | Đúng lúc quân The Wardens lộ mặt, không thêm vùng mới | Vừa |
+| 87 (*) | Hộ tống Y và nối tình báo có cần hệ thống mới không | Không. Hộ tống là nhiệm vụ trong map nhánh, dùng sẵn bay, kéo và combat. Nối tình báo đi qua ca cảng: đóng kiện có tin mật lên tàu của mạng lưới, giao đúng và kịp là tin tới nơi | Không thêm luật cho 4 dev. Ca cảng có thêm sức nặng truyện | Vừa |
+| 88 | Cách mạng diễn ra ở đâu | Trên hành tinh của X, người chơi không tới đó. Phần của người chơi ở bãi vỡ: hộ tống, chuyển tin, đánh Warden Rig khi cách mạng nổ ra | Không thêm vùng chơi và art hành tinh | Vừa |
+| 89 | Y giả làm thương nhân nào | gd-story chọn: dùng lại một thương nhân đã có hồ sơ hoặc thêm một người mới. GDM nghiêng về dùng lại để đỡ art | Lead chỉ nói Y giả làm thương nhân | Rẻ |
+| 90 | Maro (lính The Wardens cải trang ghé cảng) | Giữ, là gián điệp của X săn Y. Tạo đối trọng với Y cũng đang giả thương nhân | Không phải bỏ mốc đã viết | Rẻ |
+| 91 | Gốc chủ đề và kết | Gốc tai nạn là hận thù và định kiến của X, không phải lòng tham của loài người. Kết vẫn có câu "dựng lại khác đi" vì Trái Đất cạn kiệt là sự thật (B1). Cú lật Driftlife đổi thành bằng chứng chế độ X cướp bóc | Giữ được câu hỏi ở cảnh kết mà không trái lời Lead | Rẻ |
+| 92 (*) | Kết mở cũ ("liệu có Solace thật") | Lead nay cho Y trao tọa độ hành tinh có sự sống thật. GDM hiểu kết mở mới là: có tọa độ, Ember lên đường, hành trình tới đó để cho phần sau | Hai lời Lead (kết mở, Y trao tọa độ) cùng đúng theo cách hiểu này | Vừa |
+| 93 | Ca cảng chương 4 và 5 nhẹ đi khi Ilsume thôi ghé cảng sau chương 3 (gd-quan đã bù bằng tàu The Kindling và tăng trọng số TA06, TA09). Thời gian rảnh của nhóm 4 người là 42%, vượt trần 40% hai điểm | Chấp nhận như dòng 78, giữ 10 kiện mỗi ca. Đơn đủ 75 đến 85% vẫn đạt | Lệch nhỏ. Tăng kiện gốc thì vượt mức 10 kiện của gd-economy, phải tính lại kinh tế | Rẻ |
+| 94 | Tên chương 3 "Kẻ canh giữ" còn hợp khi chương 3 nay kết bằng cứu Sevra | Giữ. The Wardens là chế độ của Serith và lần đầu lộ mặt ở chương 3 | Không đổi chuỗi giao diện và file các vai | Rẻ |
+| 95 | ĐÃ BỊ LEAD ĐẢO, xem dòng 96. Lead đưa Five Core Pillars của Dave the Diver để tham khảo | Pillar thành 5 theo cấu trúc Dave (tên tiếng Anh, mô tả, Player Experience 3 từ), nội dung là của game này: P1 Survival & Risk, P2 Rebuild & Trade, P3 Solo or Together, P4 Exploration & Story, P5 Progression & Growth (mới). Giữ thêm hai cột của phòng: luật giữ và cách đo, cấm. Mã P1 đến P4 giữ nguyên nghĩa để 10 GDD không phải sửa. Không chép pillar Management của Dave (quán ăn đã bỏ) mà thay bằng Rebuild & Trade | Lấy cấu trúc, không dập khuôn (nguyên tắc 5 của phòng). Giữ mã để không phải sửa chéo | Rẻ |
+| 96 | Lead chốt pillar theo đúng Dave the Diver, vậy co-op và mã cũ để đâu | Co-op thành "nguyên tắc nền Solo or Together", đứng ngoài 5 pillar nhưng mọi pillar phải tuân theo. Mã mới CP1 đến CP5, mã cũ P1 đến P5 trong GDD đọc theo bảng ánh xạ ở khung mục 2 | Lead đã chốt co-op là cách chơi chính nên không được mất. Đổi mã mới thay vì đánh số lại để không phải sửa 10 GDD | Rẻ |

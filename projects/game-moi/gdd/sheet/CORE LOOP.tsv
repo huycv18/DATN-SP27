@@ -20,7 +20,7 @@ CL-03	Chuyến ra ngoài (K1 đến K9)	K1 Oxy	Oxy là một chỉ số duy nh�
 		K7 Map nhánh	Khu dựng tay, không sinh lại, vào qua một lối trong map tổng. Người để vớt, vật manh mối, boss chỉ ở map nhánh. Skiff đưa thẳng từ trạm tới map nhánh đã tìm ra, tính là một chuyến	projects/game-moi/gdd/he-thong/map.md	
 		K8 Sinh lại, không phạt	Driftlife và tài nguyên sinh lại mỗi chuyến. Không luật cạn kiệt, không phạt khai thác	projects/game-moi/gdd/he-thong/combat-driftlife.md	
 		K9 Bắt sống có giá trị hơn	Với loài bắt sống được (cỡ S và M), bắt sống luôn giá trị hơn hạ. Driftlife sống dùng để nuôi, nghiên cứu, giao đơn cảng giá cao. Đã hạ chỉ cho nguyên liệu. Cỡ L không bắt sống được, lấy mẫu sinh thiết	projects/game-moi/gdd/he-thong/combat-driftlife.md	
-CL-04	Trạm và cảng (K10 đến K17)	K10 Neo và rời neo	Ember neo cố định suốt game. Sửa đầu tiên là hãm trôi và neo. Sửa động cơ chính là mục tiêu dài nhất, xong thì rời neo và game kết (kết mở)	projects/game-moi/gdd/he-thong/tram-va-cang.md	
+CL-04	Trạm và cảng (K10 đến K17)	K10 Neo và rời neo	Ember neo cố định suốt game. Sửa đầu tiên là hãm trôi và neo. Sửa động cơ chính là mục tiêu dài nhất, xong thì rời neo lên đường tới hành tinh thật Sevra trao tọa độ, game kết (kết mở)	projects/game-moi/gdd/he-thong/tram-va-cang.md	
 		K11 Khoang	Khoang hỏng phải sửa bằng vật liệu mới dùng được. Mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng	projects/game-moi/gdd/he-thong/tram-va-cang.md	
 		K12 Người vớt mở tính năng	Mỗi người vớt mở một tính năng qua quest nhỏ hoặc mốc chương: Kỹ sư (xưởng), Thông dịch viên (khoang liên lạc, ca cảng, Shop), Hoa tiêu (dải Xa, Skiff), Nhà sinh học (nghiên cứu, nuôi), Trưởng cảng (bến, tiện ích cảng)	projects/game-moi/gdd/he-thong/tram-va-cang.md	
 		K13 Ca cảng	Nửa chơi tay thứ hai. Mỗi tàu có danh sách hàng và giờ rời bến. Chạy trong mặt cắt trạm lấy hàng, chế thêm, đóng kiện, bốc lên tàu. Giao đúng và kịp thì nhận Tally. Tàu chỉ mua, không bán	projects/game-moi/gdd/he-thong/tram-va-cang.md	
@@ -51,6 +51,6 @@ CL-06	Co-op (C1 đến C10)	C1 Phạm vi	1 đến 4 người, co-op online, khô
 CL-07	5 chương	Role	Mỗi chương mở một vùng hoặc map nhánh lớn, thêm người vớt và kiểu chơi mới. Chi tiết ở tab Day	projects/game-moi/gdd/00-khung-game.md mục 7	
 		Chương 1 Tỉnh dậy	Dải Gần, xác Seed Station đầu tiên. Kỹ sư, Thông dịch viên. Khai thác, bắt sống loài nhỏ, ca cảng. MVP	projects/game-moi/gdd/00-khung-game.md mục 7	
 		Chương 2 Không cô độc	Dải Giữa, Station Lantern. Hoa tiêu, Nhà sinh học. Nuôi Driftlife, bắt sống cỡ M, sinh thiết cỡ L	projects/game-moi/gdd/00-khung-game.md mục 7	
-		Chương 3 Kẻ canh giữ	Dải Xa, Veyl Waypost. Trưởng cảng. Sự cố ca cảng, kẻ địch có vũ khí. The Wardens lộ mặt	projects/game-moi/gdd/00-khung-game.md mục 7	
-		Chương 4 Tâm vụ nổ	Bên trong Cradle. Map nhánh lớn. Hộp ghi hành trình: Solace là thông tin mồi	projects/game-moi/gdd/00-khung-game.md mục 7	
-		Chương 5 Rời neo	Warden Rig. Trận đối đầu cuối, sửa xong động cơ chính, rời neo. Kết mở	projects/game-moi/gdd/00-khung-game.md mục 7	
+		Chương 3 Kẻ canh giữ	Dải Xa, Veyl Waypost. Trưởng cảng. Sự cố ca cảng, kẻ địch có vũ khí. Quân The Wardens của Serith lộ mặt, cứu Sevra	projects/game-moi/gdd/00-khung-game.md mục 7	
+		Chương 4 Tâm vụ nổ	Bên trong Cradle. Map nhánh lớn. Hộp ghi hành trình: Solace là thông tin mồi do chế độ Serith dựng. Giúp mạng lưới The Kindling của Sevra	projects/game-moi/gdd/00-khung-game.md mục 7	
+		Chương 5 Rời neo	Warden Rig. Hộ tống Sevra, nối tình báo, trận đối đầu cuối khi cách mạng nổ ra. Sevra trao tọa độ hành tinh thật, rời neo. Kết mở	projects/game-moi/gdd/00-khung-game.md mục 7	

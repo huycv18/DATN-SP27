@@ -47,16 +47,17 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 | TA01 | Tàu gom phế liệu | Oru, thương nhân Tikko, khách quen đầu tiên | Mốc C1.8 | MVP |
 | TA02 | Tàu vội | Dân Oru vãng lai, không tên riêng | Chương 1, Hạng cảng 2 | MVP |
 | TA03 | Xuồng tiếp tế Lantern | Bram Kowalski, Station Lantern | Sau mốc C2.2 | Sau MVP |
-| TA04 | Tàu trọng nghi thức | Sennari, thương nhân Ilsume | Mốc C2.7 | Sau MVP |
+| TA04 | Tàu trọng nghi thức | Sennari, thương nhân Ilsume. Thật ra là Sevra Ilvane (Y) giả danh | Mốc C2.7 tới mốc C3.8 | Sau MVP |
 | TA05 | Tàu sưu tầm | Aelith, thương nhân Vaeth | Mốc C2.4 | Sau MVP |
 | TA06 | Tàu không nói giá | Brakk, thương nhân Dromm | Mốc C3.1 | Sau MVP |
 | TA07 | Tàu The Remainers | The Remainers, Elias Vance | Mốc C3.5 | Sau MVP |
-| TA08 | Tàu lạ | Maro, The Wardens cải trang | Mốc C3.3, ba lần cập bến | Sau MVP |
+| TA08 | Tàu lạ | Maro, gián điệp của Serith (The Wardens) cải trang, săn Sevra | Mốc C3.3, hai lần cập bến | Sau MVP |
 | TA09 | Tàu đơn gấp | Người đưa hàng gấp của thương hội Sennari, không tên riêng | Hạng cảng 6 | Sau MVP |
 | TA10 | Tàu buôn tin | Kesh, thương nhân Nhem, giữ The Lattice | Mốc C3.1 | Sau MVP |
+| TA11 | Tàu của mạng lưới | The Kindling, mạng lưới cách mạng | Ngày kế tiếp sau mốc C3.8 | Sau MVP |
 
 ### Nhóm hàng cảng (ID kiện theo `vat-pham.md` luật G2)
-- Nhóm hàng chỉ dùng khi sinh lịch (luật 69), từ HC01 tới HC14. Một nhóm gồm một hoặc nhiều ID kiện CGO của gd-items. Mỗi dòng đơn ghi đúng một ID kiện, giá dòng là giá ID đó (luật 23 và luật 30). Mọi ID kiện trong ITEM LIST thuộc đúng một nhóm.
+- Nhóm hàng chỉ dùng khi sinh lịch (luật 69), từ HC01 tới HC15. Một nhóm gồm một hoặc nhiều ID kiện CGO của gd-items. Mỗi dòng đơn ghi đúng một ID kiện, giá dòng là giá ID đó (luật 23 và luật 30). Mọi ID kiện trong ITEM LIST thuộc đúng một nhóm.
 | ID nhóm | Nhóm hàng | ID kiện (gd-items) | Làm từ | Bước trước khi bốc | Mở |
 |---|---|---|---|---|---|
 | HC01 | Kiện phế liệu | CGO-101, CGO-102 | Phế liệu thô | Đóng kiện | Chương 1, MVP |
@@ -73,13 +74,14 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 | HC12 | Kiện tinh dải Giữa | CGO-211, CGO-212, CGO-213 | Vật liệu chế COM dải Giữa | Chế ở xưởng rồi đóng kiện | Chương 2, Sau MVP |
 | HC13 | Kiện tinh dải Xa | CGO-311, CGO-312, CGO-313 | Vật liệu chế COM dải Xa | Chế ở xưởng rồi đóng kiện | Chương 3, Sau MVP |
 | HC14 | Kiện linh kiện đặc biệt | CGO-411, CGO-511 | Linh kiện Cradle RES-401 (RCP-421), linh kiện Warden RES-305 (RCP-521) | Đóng kiện | CGO-411 chương 4, CGO-511 chương 5, Sau MVP |
+| HC15 | Kiện tin mật | CGO-421 | 1 Gói tin mật STY-701 (khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày) và 1 kiện vỏ bọc dải Xa (RCP-422) | Đóng kiện | Chương 4, Sau MVP. Chỉ tàu của mạng lưới (TA11) hỏi |
 
 ## 1. Mục đích với người chơi
 
 - Pillar P2 (mang về là để trạm sống lại): mỗi chuyến về là có thứ để sửa, mỗi khoang sửa xong đổi hình mặt cắt trạm và trả một chức năng.
 - Pillar P1 kéo dài sang nhà: bảng tàu cho biết hôm nay cần gì, nên quyết định đi dải nào và mang gì về bắt đầu từ cảng.
 - Pillar P3: ca cảng có đủ việc cho 4 người nhưng một người vẫn chơi trọn, vì đơn co giãn theo số người và giao một phần vẫn được trả.
-- Pillar P4: thương nhân ghé cảng là nơi kể truyện giữa hai nửa ngày, kể cả tàu lạ của The Wardens.
+- Pillar P4: thương nhân ghé cảng là nơi kể truyện giữa hai nửa ngày, kể cả tàu lạ của gián điệp Maro và Ilsume, người thừa kế Sevra giả danh.
 - Cảm giác ca cảng: bận tay có kế hoạch. Người chơi thấy rõ tàu nào sắp đi, kiện nào còn thiếu, tự chọn ưu tiên. Không phải phản xạ thuần.
 - 30 giây đầu của ca cảng đầu tiên (chương 1, lịch cố định theo luật 67): Thông dịch viên báo có tàu, TA01 cập bến 1, bảng đơn hiện 2 kiện phế liệu, người chơi chạy tới kho lấy phế liệu, bỏ vào máy đóng kiện, nhận kiện, bốc lên tàu, thấy Tally cộng ngay.
 
@@ -115,7 +117,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 
 18. Ca cảng chỉ có khi khoang liên lạc và bến 1 đều Hoạt động. Trước đó pha ca cảng tự bỏ qua. `MVP`
 19. Ca bắt đầu khi một người chơi tương tác với bảng tàu ở khoang liên lạc và chọn Mở ca, theo điều kiện ở luật 64 tới 66. Chọn Bỏ ca thì ca bỏ qua, không phạt, tàu hôm đó không tới. `MVP`
-20. Lịch tàu của ngày sinh ra lúc bắt đầu ngày và hiện ở bảng tàu từ pha chuẩn bị. Lịch gồm cho mỗi tàu: loại tàu, giờ đến trong ca, danh sách hàng (ID kiện và kiện gốc), thời gian lưu bến. Loại tàu, giờ đến, ID kiện và kiện gốc không đổi trong ngày. Số kiện mỗi dòng bằng kiện gốc nhân quy mô đơn theo N, với N là số người đang online: bảng tàu tính lại mỗi khi số người online đổi, và chốt lúc Mở ca (luật 64). Cách sinh lịch ở luật 67 tới 70. Tàu có điều kiện truyện (TA03 cho mốc C2.3, TA06 cho mốc C3.2, TA08 ba lần cập bến, TA06 cho mốc C5.1 từ ngày kế tiếp sau C4.7) có trong lịch mỗi ngày tới khi điều kiện truyện đó xong. `MVP`
+20. Lịch tàu của ngày sinh ra lúc bắt đầu ngày và hiện ở bảng tàu từ pha chuẩn bị. Lịch gồm cho mỗi tàu: loại tàu, giờ đến trong ca, danh sách hàng (ID kiện và kiện gốc), thời gian lưu bến. Loại tàu, giờ đến, ID kiện và kiện gốc không đổi trong ngày. Số kiện mỗi dòng bằng kiện gốc nhân quy mô đơn theo N, với N là số người đang online: bảng tàu tính lại mỗi khi số người online đổi, và chốt lúc Mở ca (luật 64). Cách sinh lịch ở luật 67 tới 70. Tàu có điều kiện truyện (TA03 cho mốc C2.3, TA06 cho mốc C3.2, TA08 hai lần cập bến, TA11 cho mốc C4.7 và C5.2 theo bảng 2.4) có trong lịch mỗi ngày tới khi điều kiện truyện đó xong. `MVP`
 21. Mỗi bến chứa đúng một tàu. Tàu tới giờ đến mà bến trống thì cập bến ngay. Bến đang có tàu thì tàu mới chờ ngoài, hiện ở mép màn hình kèm đồng hồ chờ ngoài. Hết đồng hồ chờ ngoài thì tàu bỏ đi, đơn đó tính là trượt. `MVP`
 22. Tàu cập bến thì đồng hồ lưu bến bắt đầu chạy. Hết đồng hồ lưu bến thì tàu rời. `MVP`
 23. Danh sách hàng gồm 1 đến 4 dòng. Mỗi dòng là một ID kiện và số kiện. Một đơn không có hai dòng cùng ID kiện. Ở chương 1, dòng đơn chỉ gồm kiện thô (CGO-101 tới CGO-105, CGO-109), kiện đặc sản CGO-106 và lồng sống CGO-121, mỗi ca có tối đa một dòng kiện tinh, và chương 1 chỉ có đúng một loại kiện tinh là CGO-113 (log 67, gd-items chọn) và dòng đó có kiện gốc 1 (nhân quy mô đơn theo N như mọi dòng). Kiện tinh có trong đơn TA01 từ khi xưởng Hoạt động, để chương 1 có bước chế thêm (K13). Lý do: kiện tinh qua xưởng là nút cổ chai của ca. `MVP`
@@ -130,7 +132,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 32. Tàu rời khi đơn chưa đủ (hết giờ lưu bến hoặc hết giờ ca) là đơn trượt. Đơn trượt giữ nguyên Tally của các kiện đã bốc, không có thưởng, không có điểm cảng, không trừ gì. Kiện chưa bốc ở lại kệ hoặc trên tay. `MVP`
 33. Tàu không bán gì trong ca. Mua hàng chỉ ở shop của khoang liên lạc vào cuối ngày (K20). `MVP`
 34. Ca kết thúc khi tàu cuối cùng của lịch đã rời hoặc khi hết giờ ca. Hết giờ ca thì mọi tàu còn ở bến rời ngay và tàu chờ ngoài bỏ đi, áp luật 32. `MVP`
-35. Cuối ca hiện bảng kết ca: số đơn đủ, đơn trượt, Tally nhận, điểm cảng nhận, lời thoại một thương nhân. Bảng kết ca không chặn người chơi khác trong co-op. Mốc truyện xảy ra trong ca (C1.8, C2.3, C3.3, C3.4, C3.8) chỉ hiện lời bong bóng trong ca, cảnh phát ở pha Cuối ngày, đồng hồ ca không dừng. `MVP`
+35. Cuối ca hiện bảng kết ca: số đơn đủ, đơn trượt, Tally nhận, điểm cảng nhận, lời thoại một thương nhân. Bảng kết ca không chặn người chơi khác trong co-op. Mốc truyện xảy ra trong ca (C1.8, C2.3, C3.3, C3.4, C4.7, C5.2) chỉ hiện lời bong bóng trong ca, cảnh phát ở pha Cuối ngày, đồng hồ ca không dừng. `MVP`
 36. Thời gian trong ca không dừng khi mở menu nếu có từ 2 người (C7). Chơi một mình thì tạm dừng được. `MVP`
 
 Thắng khi (ca): mọi đơn của lịch đủ. Không có trạng thái thua ca. Ca tệ nhất là mọi đơn trượt: người chơi vẫn giữ Tally của kiện đã bốc, giữ mọi hàng chưa bốc, Hạng cảng không đổi.
@@ -139,7 +141,7 @@ Cam kết với người chơi: không mất hàng vì trượt đơn, không tr
 ### Luật loại tàu (K13, chi tiết từng loại ở bảng 2.4)
 
 37. Mỗi loại tàu khác nhau ở tối đa ba trục: thời gian lưu bến, kiểu danh sách hàng, một luật riêng. Không loại nào chỉ khác nhau ở số. `MVP`
-38. TA08 tàu lạ không thuộc lịch ngẫu nhiên. TA08 cập bến đúng 3 lần, mỗi ngày tối đa 1 lần. Lần 1 vào lịch từ ngày kế tiếp sau khi bến 2 (KH12) Hoạt động, lần cập bến này hoàn thành mốc C3.3. Lần 2 từ ngày kế tiếp sau mốc C3.4, lần 3 từ ngày kế tiếp sau mốc C3.7 và chỉ khi giai đoạn 3 của động cơ chính đã lắp (K25, lần cập bến này là mốc đóng chương C3.8). Lần 1 đưa đơn bình thường 1 đến 2 dòng. Lần 2 hỏi mua bản sao dữ liệu (HC09) của nhật ký trạm (kiện đắt nhất chương 3 theo giá ID). Lần 3 là mốc lộ mặt, đóng chương 3. Truyện đếm lần cập bến, giao hay không giao đều không đổi truyện. Bán bản sao không mất vật gốc và không mất manh mối. `Sau MVP`
+38. TA08 tàu lạ không thuộc lịch ngẫu nhiên. TA08 cập bến đúng 2 lần, mỗi ngày tối đa 1 lần. Lần 1 vào lịch từ ngày kế tiếp sau khi bến 2 (KH12) Hoạt động, lần cập bến này hoàn thành mốc C3.3, đưa đơn bình thường 1 đến 2 dòng. Lần 2 vào lịch từ ngày kế tiếp sau mốc C3.4, hỏi mua bản sao dữ liệu (HC09) của nhật ký trạm và lời thoại dò hỏi về các thương hội Sennari ghé Ember. Sau mốc C3.8 TA08 không ghé nữa. Truyện đếm lần cập bến, giao hay không giao đều không đổi truyện. Bán bản sao không mất vật gốc và không mất manh mối. `Sau MVP`
 
 ### Luật Hạng cảng (K15)
 
@@ -188,7 +190,7 @@ Cam kết với người chơi: không mất hàng vì trượt đơn, không tr
 66. Khi có từ 2 người online: Bỏ ca, và Mở ca lúc nhóm chưa đi đủ 2 chuyến, cần mọi người online xác nhận, không trả lời trong 30 giây tính là đồng ý (cùng cách K23). Mở ca sau khi đã đi đủ 2 chuyến không cần xác nhận. `MVP`
 67. Ca cảng đầu tiên của thế giới có lịch cố định: 1 tàu TA01, lưu bến dài, giờ đến 0, 1 dòng CGO-101 với số kiện 2 nhân quy mô đơn theo N, làm tròn lên. Ca này tính Tally và điểm cảng như mọi ca. Từ ca thứ hai lịch sinh theo luật 68 tới 70. `MVP`
 68. Cấu hình lịch (số tàu, giãn cách, kiện gốc mỗi dòng, hệ số kiện) lấy theo chương và số bến đang Hoạt động, ở bảng "Cấu hình lịch" mục 3. Chương 3 trở đi mà bến 2 chưa sửa xong thì dùng cấu hình 1 bến. `MVP` cho chương 1
-69. Chọn tàu cho từng chỗ trong lịch: chỗ đầu dành cho tàu có điều kiện truyện đang chờ, tối đa 2 chỗ mỗi ca, theo thứ tự mốc truyện. Chỗ còn lại rút từ túi trộn: mỗi loại tàu đã mở (theo chương, Hạng cảng, mốc truyện, không gồm TA08) góp số thẻ bằng trọng số ở bảng 2.4, rút không hoàn lại, hết túi thì trộn lại túi mới. Số dòng rút đều trong khoảng của loại tàu. Mỗi dòng rút đều một nhóm trong danh sách nhóm của tàu, rồi rút đều một ID kiện của nhóm đó thuộc dải đã mở, không trùng ID trong đơn. Kiện gốc mỗi dòng rút đều trong khoảng của cấu hình, trừ dòng kiện cần chế ở xưởng (CGO-111 tới 113, HC04, HC08, HC12, HC13) và dòng lồng sống (HC06) luôn có kiện gốc 1. Số kiện hiển thị và số kiện chốt lúc Mở ca bằng kiện gốc nhân quy mô đơn theo N, làm tròn lên (luật 20). Sau cùng áp ràng buộc luật 23 và luật CGO-121 của TA01. `MVP`
+69. Chọn tàu cho từng chỗ trong lịch: chỗ đầu dành cho tàu có điều kiện truyện đang chờ, tối đa 2 chỗ mỗi ca, theo thứ tự mốc truyện. Chỗ còn lại rút từ túi trộn: mỗi loại tàu đã mở (theo chương, Hạng cảng, mốc truyện, không gồm TA08) góp số thẻ bằng trọng số ở bảng 2.4, rút không hoàn lại, hết túi thì trộn lại túi mới. Số dòng rút đều trong khoảng của loại tàu. Mỗi dòng rút đều một nhóm trong danh sách nhóm của tàu, rồi rút đều một ID kiện của nhóm đó thuộc dải đã mở, không trùng ID trong đơn. Kiện gốc mỗi dòng rút đều trong khoảng của cấu hình, trừ dòng kiện cần chế ở xưởng (CGO-111 tới 113, HC04, HC08, HC12, HC13) và dòng lồng sống (HC06) luôn có kiện gốc 1. Số kiện hiển thị và số kiện chốt lúc Mở ca bằng kiện gốc nhân quy mô đơn theo N, làm tròn lên (luật 20). Riêng dòng HC15 (kiện tin mật) luôn đúng 1 kiện ở mọi N, vì Gói tin mật STY-701 chỉ có 1 gói mỗi ngày. Sau cùng áp ràng buộc luật 23 và luật CGO-121 của TA01. `MVP`
 70. Giờ đến của tàu thứ i, với i từ 0 theo thứ tự trong lịch, bằng i nhân giãn cách cộng lệch ngẫu nhiên từ 0 tới 10 giây. Nếu giờ đến cộng lưu bến của tàu vượt thời lượng ca tối đa thì giờ đến kéo về bằng thời lượng ca tối đa trừ lưu bến. Hai tàu cùng giờ đến thì xếp theo thứ tự trong lịch. `MVP`
 
 ### Trạng thái và chuyển tiếp
@@ -229,13 +231,14 @@ Trọng số dùng cho túi trộn ở luật 69. Tàu chỉ vào túi khi đã 
 | TA01 | Dài | 1 đến 2 dòng: HC01, HC02, HC10, HC06 (chỉ CGO-121), CGO-113 (kiện tinh duy nhất chương 1, từ khi xưởng Hoạt động, theo trần luật 23). Từ Hạng 3 thêm HC05 và HC11 (chỉ CGO-106). Từ ngày có Súng lưới, mỗi lịch có ít nhất một dòng CGO-121 ở một tàu TA01 | Hay hỏi HC10, lời thoại Tikko mê đồ Trái Đất | 3 | Chương 1 | MVP |
 | TA02 | Ngắn | 1 dòng: HC01, HC02, HC10, CGO-104 | Thưởng nhanh gấp đôi | 1 | Chương 1, Hạng 2 | MVP |
 | TA03 | Vừa | 2 dòng: HC03, HC07, HC08. Thêm 1 dòng tùy chọn | Dòng tùy chọn: 1 ID rút từ cùng nhóm của tàu, kiện gốc 1 nhân quy mô đơn. Không tính vào đơn đủ và tổng giá đơn, kiện giao vào dòng đó trả gấp rưỡi | 2 | Sau mốc C2.2 | Sau MVP |
-| TA04 | Dài | 2 dòng: HC04, HC12 | 15 giây đầu là nghi lễ chào, chưa nhận kiện. Đồng hồ lưu bến vẫn chạy | 2 | Mốc C2.7 | Sau MVP |
+| TA04 | Dài | 2 dòng: HC04, HC12 | 15 giây đầu là nghi lễ chào, chưa nhận kiện. Đồng hồ lưu bến vẫn chạy | 2 | Mốc C2.7. Sau mốc C3.8 ra khỏi túi trộn, không ghé nữa (Sevra ở ẩn trên Ember) | Sau MVP |
 | TA05 | Vừa | 1 đến 2 dòng: HC06, HC11 | Chỉ hỏi Driftlife sống và đặc sản (loại kiện đắt), chê kiện mẫu đã hạ qua lời thoại | 2 | Mốc C2.4 | Sau MVP |
-| TA06 | Vừa | 2 dòng: HC02, HC12, HC13 | Một dòng chỉ hiện gợi ý (ví dụ "thứ lạnh") thay vì tên ID. Giao đúng ID thì dòng lộ tên. Bảng tàu ghi rõ có dòng ẩn | 2 | Mốc C3.1 | Sau MVP |
+| TA06 | Vừa | 2 dòng: HC02, HC12, HC13 | Một dòng chỉ hiện gợi ý (ví dụ "thứ lạnh") thay vì tên ID. Giao đúng ID thì dòng lộ tên. Bảng tàu ghi rõ có dòng ẩn | 2, từ chương 4 là 3 | Mốc C3.1 | Sau MVP |
 | TA07 | Vừa | 2 dòng: HC06, HC08, HC11, HC14 | Hỏi thêm về vị trí xác trạm qua lời thoại, không đổi luật | 2 | Mốc C3.5 | Sau MVP |
-| TA08 | Dài | Lần 1: 1 đến 2 dòng từ HC01 tới HC14 đã mở. Lần 2: 1 dòng HC09 | Luật 38. Không vào túi trộn | Không | Mốc C3.3 | Sau MVP |
-| TA09 | Ngắn | 2 đến 3 dòng: HC04, HC12, HC13, HC14 | Chỉ hỏi kiện tinh (loại kiện đắt), không có thưởng nhanh | 1 | Hạng 6 | Sau MVP |
+| TA08 | Dài | Lần 1: 1 đến 2 dòng từ HC01 tới HC14 đã mở (không gồm HC15). Lần 2: 1 dòng HC09 | Luật 38. Không vào túi trộn | Không | Mốc C3.3 | Sau MVP |
+| TA09 | Ngắn | 2 đến 3 dòng: HC04, HC12, HC13, HC14 | Chỉ hỏi kiện tinh (loại kiện đắt), không có thưởng nhanh | 1, từ chương 4 là 2 | Hạng 6 | Sau MVP |
 | TA10 | Vừa | 2 dòng: 1 dòng HC09, 1 dòng HC12 hoặc HC13 | Mua bản sao dữ liệu giá vừa. Lời thoại kể tin trên The Lattice, gợi manh mối hành lang an toàn | 1 | Mốc C3.1 | Sau MVP |
+| TA11 | Vừa | 2 dòng: 1 dòng HC15 đúng 1 kiện ở mọi số người (không nhân quy mô đơn, luật 69) và 1 dòng HC13 kiện gốc 1 | Tàu có điều kiện truyện, không vào túi trộn. Có trong lịch mỗi ngày từ ngày kế tiếp sau mốc C3.8 tới khi mốc C5.2 xong, và luôn có trong lịch ngày đầu chương 4 và ngày đầu chương 5. Giao đủ dòng HC15 là một đơn tin mật tới nơi. Mốc C4.7 cần ít nhất 1 đơn, mốc C5.2 cần tổng 2 đơn cộng dồn từ chương 4 (`cot-truyen.md`). Kiện tin mật không sinh thêm Tally so với kiện vỏ bọc (log 87) | Không | Ngày kế tiếp sau C3.8 | Sau MVP |
 
 ### 2.5 Bảng Hạng cảng
 
@@ -294,7 +297,7 @@ Số lượng do gd-economy đặt, bảng ID đầy đủ ở `vat-pham.md` m�
 | Người vớt | Khoang | Tính năng khi mở | Lớn dần theo cấp khoang và chương | Nhãn |
 |---|---|---|---|---|
 | Kỹ sư | Xưởng | Chế dụng cụ cơ bản, chế khối nước tinh khiết COM-105 cho CGO-113, nâng cấp bộ đồ bậc 1 | Cấp 2 (chương 2): chế 2 mẻ song song, bậc 2. Cấp 3: bậc cao nhất, chế HC08 | MVP cấp 1 |
-| Thông dịch viên | Khoang liên lạc, cảng | Bảng tàu, ca cảng, shop | Chương 2: gọi xuồng Lantern, mở TA04, TA05. Chương 3: hiểu ngôn ngữ Veyl Waypost, mở TA06, TA07, TA10, dịch lời tàu lạ | MVP chương 1 |
+| Thông dịch viên | Khoang liên lạc, cảng | Bảng tàu, ca cảng, shop | Chương 2: gọi xuồng Lantern, mở TA04, TA05. Chương 3: hiểu ngôn ngữ Veyl Waypost, mở TA06, TA07, TA10, dịch lời tàu lạ. Chương 4: liên lạc với The Kindling, nhận Gói tin mật STY-701 mỗi ngày | MVP chương 1 |
 | Hoa tiêu | Khoang dẫn đường, bến Skiff | Mở dải Xa (dải Giữa đã mở khi xong chương 1), Skiff tới map nhánh đã tìm ra | Mỗi lõi dẫn đường đọc được mở một map nhánh hoặc một dải | Sau MVP |
 | Nhà sinh học (Amara Okafor) | Phòng nghiên cứu, khoang sinh quyển | Tới bằng xuồng TA03 sau ca đầu tiên giao đủ đơn TA03 (C2.3). Nghiên cứu mẫu, nuôi Driftlife | Cấp 2: thêm ô, cấp 3: môi trường dải Xa. Mốc chương 3: cú lật Driftlife | Sau MVP |
 | Trưởng cảng (Yusuf Demir) | Bến 2, bến 3, tiện ích cảng | Về bằng Skiff sau ca đầu tiên có TA06 cập bến (C3.2). Bến 2 | Tiện ích: băng chuyền kho tới máy đóng kiện, máy đóng kiện thứ hai, bến 3 ở chương 4, kệ kiện phụ 4 chỗ cạnh bến 2 và bến 3 (đặt kiện đóng trước sát bến xa) | Sau MVP |
@@ -405,8 +408,8 @@ Núm gap co-op (C8, công thức cho sim dò):
 | Khoang sinh quyển đầy, cặp sinh sản đủ điều kiện | Không sinh con non, không mất gì |
 | Không cho ăn nhiều ngày | Không ra sản phẩm, không sinh con non, con vật không chết |
 | Chương chưa mở khoang của người vớt đã tỉnh | Không xảy ra: người vớt chỉ nằm ở map nhánh của chương mở khoang đó |
-| Người chơi chưa qua mốc C3.4 hoặc C3.7 | TA08 lần 2 hoặc lần 3 chưa vào lịch, Maro không lộ mặt trước khi người chơi tới nơi của mốc đó (luật 38) |
-| Tàu TA08 ghé lần 3 nhưng người chơi bỏ ca | Lần cập bến không tính, mốc lộ mặt dời sang ca kế tiếp người chơi mở, không mất mốc truyện |
+| Người chơi chưa qua mốc C3.4 | TA08 lần 2 chưa vào lịch (luật 38) |
+| Bỏ ca ở ngày có TA08 hoặc TA11 | Lần cập bến không tính, tàu có lại trong lịch ngày sau tới khi điều kiện truyện xong, không mất mốc |
 | Đơn TA03 trượt ở chương 2 | Amara chưa tới, TA03 có lại trong lịch ngày sau tới khi có một ca giao đủ |
 | Bỏ ca ở ngày có TA06 | TA06 không tính đã cập bến, Yusuf chưa về, TA06 có lại trong lịch ngày sau |
 | Đủ điểm cảng nhưng chạm trần hạng của chương | Điểm cộng dồn, lên hạng ngay khi chương sau mở |
@@ -436,7 +439,7 @@ Núm gap co-op (C8, công thức cho sim dò):
 | Đơn và kiện | Đơn gồm dòng (ID kiện, số cần, số đã nhận, bắt buộc hay tùy chọn). Kiện có ID. Kiện là vật thể có vị trí trong trạm (tay, kệ, sàn, máy) |
 | Sự kiện cho Event Tracking | Mở ca, bỏ ca, tàu cập bến, tàu bỏ đi, kiện bốc, kiện bị từ chối, đơn đủ, đơn trượt, đơn nhanh, lên hạng, sự cố bắt đầu, sự cố xử lý, khoang sửa xong, người vớt tỉnh, con non sinh ra |
 | Đồng bộ co-op | Máy chủ xử lý thứ tự bốc kiện, đồng hồ lưu bến, kệ kiện, máy đóng kiện. Kiện trên tay: người mang giữ vị trí, host giữ sự tồn tại, nhặt, đặt, bốc là yêu cầu gửi host (`ky-thuat.md` bảng đồng bộ và luật 15 tới 17) |
-| Lưu | Số đơn đủ của từng thương nhân có tên (mở chuyện riêng ở lần 3, 6, 10 theo `cot-truyen.md` mục 2.6). Bản lưu ngày cuối trước rời neo giữ sau cảnh kết (K24). Trạng thái và cấp mọi khoang, giai đoạn động cơ, kệ kiện, điểm và hạng cảng, ô nuôi (loài, tuổi, đã cho ăn), người vớt đã tỉnh, quest mở, số chuyến đã đi và ca đã mở trong ngày. Tự lưu sau mỗi chuyến khi mọi người đã về trạm, sau ca cảng, và lúc ngủ (K23). Ca cảng không lưu giữa chừng |
+| Lưu | Số đơn tin mật đã tới nơi (TA11). Số đơn đủ của từng thương nhân có tên (mở chuyện riêng ở lần 3, 6, 10 theo `cot-truyen.md` mục 2.6). Bản lưu ngày cuối trước rời neo giữ sau cảnh kết (K24). Trạng thái và cấp mọi khoang, giai đoạn động cơ, kệ kiện, điểm và hạng cảng, ô nuôi (loài, tuổi, đã cho ăn), người vớt đã tỉnh, quest mở, số chuyến đã đi và ca đã mở trong ngày. Tự lưu sau mỗi chuyến khi mọi người đã về trạm, sau ca cảng, và lúc ngủ (K23). Ca cảng không lưu giữa chừng |
 | Nơi phải cùng đổi khi đổi luật | GDD này, tab Customer, sim ca cảng, dữ liệu tàu và khoang, tab Shop (mục mở theo hạng), Tutorials |
 
 ### Đề sim hàng đợi ca cảng cho gd-tech (đợt 2)
@@ -484,7 +487,7 @@ Ca cảng:
 - Sim: không tàu nào có giờ đến cộng lưu bến vượt 240 giây (luật 70).
 - Chương 1 (Hạng 1 và Hạng 3): đơn đủ 70 tới 95% (log 78), rảnh không quá 30%. Kết quả ở bảng 2 của `tools/ket-qua/sim-ca-cang.md` bản cuối: đạt. Thời lượng ca chạm mép dưới 180 giây, lệch tối đa 3 giây, ghi như sai số, không đổi tham số.
 - Chương 2: đơn đủ 70 tới 90%, rảnh không quá 30%. Bảng 2 bản cuối: đạt.
-- Chương 3 một bến và hai bến: đơn đủ 70 tới 90%, rảnh không quá 30%. Bảng 2 bản cuối: đạt, trừ hai bến 4 người vượt trần 3 điểm, đã chấp nhận (log 78). Chương 4 hai bến là cấu hình chuyển tiếp, không đặt mục tiêu riêng. Chương 4 và 5 ba bến đo ở bảng 3 (kệ phụ, đóng sẵn một nửa): đơn đủ 70 tới 90%, rảnh không quá 40%, đạt. Ở bảng 2 (không chuẩn bị) chương 4 ba bến chạm trần 240 giây ở phần lớn số ca, đúng ý đồ phải chuẩn bị.
+- Chương 3 một bến và hai bến: đơn đủ 70 tới 90%, rảnh không quá 30%. Bảng 2 bản cuối: đạt, trừ hai bến 4 người vượt trần 3 điểm, đã chấp nhận (log 78). Chương 4 hai bến là cấu hình chuyển tiếp, không đặt mục tiêu riêng. Chương 4 và 5 ba bến đo ở bảng 3 (kệ phụ, đóng sẵn một nửa): đơn đủ 70 tới 90%, rảnh không quá 40%. Sau khi tàu Ilsume ngừng ghé từ chương 4, bù bằng TA11 hai dòng và tăng trọng số TA06, TA09 từ chương 4: đạt đơn đủ, rảnh 4 người vượt trần 2 điểm, GDM đã chấp nhận (log 93). Tăng kiện gốc thì đạt rảnh nhưng vượt mức 10 kiện mỗi ca của gd-economy, không chọn. Ở bảng 2 (không chuẩn bị) chương 4 ba bến chạm trần 240 giây ở phần lớn số ca, đúng ý đồ phải chuẩn bị.
 - Chương 5 cho kết quả giống chương 4 vì không mở tàu hay hàng mới, đúng thiết kế.
 - Thời lượng ca trung bình từ 180 tới 300 giây ở mọi N và chương 1 tới 4 (khung mục 9), đọc ở bảng 2 và 3 bản cuối.
 - Mọi tàu rời khi đơn còn thiếu: Tally không giảm, kiện còn lại đúng số, Hạng cảng không đổi (kiểm bằng log event).
@@ -498,7 +501,7 @@ Ca cảng:
 - Sim co-op: số tàu mỗi ca bằng nhau ở N bằng 1, 2, 3, 4, chỉ số kiện mỗi dòng đổi.
 - Chương 1, từ ngày có Súng lưới: 100 lịch sim đều có ít nhất 1 dòng CGO-121.
 - Mọi loại tàu có ít nhất một trục khác loại khác ngoài số (đọc bảng 2.4).
-- Mọi ID kiện CGO trong ITEM LIST thuộc đúng một nhóm hàng HC01 tới HC14 (validator gd-tech).
+- Mọi ID kiện CGO trong ITEM LIST thuộc đúng một nhóm hàng HC01 tới HC15 (validator gd-tech).
 
 Trạm, người vớt, Hạng:
 - Sửa khoang: thiếu một vật liệu thì không bắt đầu được. Thả phím giữa chừng giữ tiến độ, vật liệu không hoàn. Sửa xong thấy khoang đổi hình (chơi, log).
@@ -544,6 +547,7 @@ Sau MVP:
 | Sửa khoang | Một người giữ phím | Nhiều người giữ cùng khoang: tốc độ nhân (1 + 0,5 nhân số người thêm), trần 2 lần | Như 2 người, trần 2 lần | Như 2 người, trần 2 lần |
 | Số tàu chương 1 | 4 | 4 | 4 | 4 |
 | Kiện mỗi dòng gốc 2 | 2 | 4 | 5 | 6 |
+| Dòng kiện tin mật HC15 | 1 kiện | 1 kiện | 1 kiện | 1 kiện |
 | Máy đóng kiện | 1 máy, chia lượt tự nhiên | 1 máy, 2 khi có tiện ích Trưởng cảng | Như 2 người | Như 2 người |
 | Mang kiện Lớn | 65% | Giữ chung 80% | Giữ chung 95% | Giữ chung 95% (trần) |
 | Tạm dừng | Được | Không | Không | Không |
@@ -637,3 +641,8 @@ Không có luật nào cần đúng N người: một người hoàn tất đư�
 | 2026-11-20 | Đợt 4: chương 1 chỉ một loại kiện tinh CGO-113 theo lựa chọn của gd-items (log 67), K25 thay luật 11, K23 ba điểm tự lưu (log 65), mục tiêu đơn đủ chương 1 70 tới 95% (log 78), mục 8 trỏ bảng sim bản cuối thay số chép tay | Brief `briefs/dot4-gdm-chot-sau-qa.md` | gd-quan |
 | 2026-11-20 | TA08 lần 3 cần giai đoạn 3 động cơ đã lắp (K25). TA06 là tàu truyện cho C5.1 từ ngày kế tiếp sau C4.7 | gd-story sau đợt 4 | gd-quan |
 | 2026-11-20 | QA vòng cuối F1: mục 3 và mục 5 bỏ số sim chép tay, trỏ bảng 2 của sim. Quy mô đơn sửa thành 1, 1,6, 2,2, 2,8 mọi chương. Luật 12 theo K24 mới, header K10 đến K27 | Phiếu `qa/GD-031-tram-va-cang.md` vòng cuối | gd-quan |
+| 2026-11-20 | Đợt 6 phần một: thêm HC15 Kiện tin mật (CGO-421) và TA11 tàu của mạng lưới. Phần Y và Maro chờ tên của gd-story | Log 87, tin gd-items | gd-quan |
+| 2026-11-20 | Đợt 6 phần hai theo tên mới của gd-story: Ilsume (TA04) là Sevra Ilvane giả danh, ngừng ghé sau C3.8. Maro là gián điệp của Serith, còn 2 lần cập bến, ngừng sau C3.8. TA11 là tàu của The Kindling, vào lịch sau C4.6, đơn tin mật cho C4.7 (1 đơn) và C5.2 (2 đơn). TA06 bỏ khỏi điều kiện C5.1 | Log 86 tới 90, `cot-truyen.md` mục Tên mới | gd-quan |
+| 2026-11-20 | QA GD-033: dòng HC15 không nhân quy mô đơn (1 gói tin mỗi ngày), luật 35 liệt kê C4.7 và C5.2 thay C3.8 | Phiếu `qa/GD-033-tram-va-cang.md` G3, G4 | gd-quan |
+| 2026-11-20 | TA11 luôn 2 dòng, trọng số TA06 lên 3 và TA09 lên 2 từ chương 4 để bù việc chế của TA04 | Sim GD-033: bỏ TA04 làm rảnh chương 4, 5 vượt trần 40% | gd-quan |
+| 2026-11-20 | TA11 vào lịch từ ngày kế tiếp sau C3.8, có mặt ngày đầu chương 4 và chương 5 | gd-story đính chính | gd-quan |

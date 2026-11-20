@@ -100,6 +100,7 @@ Cam kết với người chơi: giá in trên Shop không đổi, không có chi
 | CGO-306 | Kiện đặc sản Xa | Xa | 99,0 | 990 | Sau MVP |
 | CGO-307 | Kiện sản phẩm nuôi Xa | Xa | 107,8 | 1100 | Sau MVP |
 | CGO-411 | Kiện linh kiện Cradle | Cradle | 161,0 | 1600 | Sau MVP |
+| CGO-421 | Kiện tin mật | Xa | 86,9 | 870 | Sau MVP |
 | CGO-511 | Kiện linh kiện Warden | Xa | 193,2 | 1950 | Sau MVP |
 <!--/khoi-->
 

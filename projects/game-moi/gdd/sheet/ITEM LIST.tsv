@@ -9,7 +9,7 @@ RES-201	Hợp kim nóng chảy	Phế liệu	SLV-203, SLV-204	RCP-151, Sửa khoa
 RES-202	Quặng cobalt	Khoáng	SLV-201	RCP-152, Sửa khoang (tram-va-cang.md mục 2.6c)	Ít gặp, Khối 2, Giữa, Sau MVP
 RES-203	Băng tinh	Băng	SLV-202	RCP-154, Sửa khoang (tram-va-cang.md mục 2.6c)	Ít gặp, Khối 2, Giữa, Sau MVP
 RES-204	Lõi cảm biến	Linh kiện	SLV-203	RCP-153, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 1, Giữa, Sau MVP
-RES-301	Hợp kim Warden	Phế liệu	SLV-303, Đơn vị The Warden hạ được (WD-01..04, gd-combat)	RCP-161, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 1, Xa, Sau MVP
+RES-301	Hợp kim Warden	Phế liệu	SLV-303, Đơn vị The Wardens hạ được (WD-01..04, gd-combat)	RCP-161, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 1, Xa, Sau MVP
 RES-302	Kính nebula	Khoáng	SLV-301	RCP-162, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 2, Xa, Sau MVP
 RES-303	Băng plasma	Băng	SLV-302	RCP-163	Hiếm, Khối 2, Xa, Sau MVP
 RES-304	Lõi năng lượng nguội	Linh kiện	SLV-303	RCP-164, Sửa khoang (tram-va-cang.md mục 2.6c)	Hiếm, Khối 1, Xa, Sau MVP
@@ -103,13 +103,14 @@ CGO-213	Kiện dung dịch lạnh	Kiện	RCP-223	Bốc lên tàu ở ca cảng (
 CGO-206	Kiện đặc sản Giữa	Kiện	RCP-224	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
 CGO-207	Kiện sản phẩm nuôi Giữa	Kiện	RCP-225	Bốc lên tàu ở ca cảng (K13)	Ít gặp, Khối mang, Giữa, Sau MVP. Cỡ Nhỏ
 CGO-221	Lồng sinh vật sống Giữa	Kiện	RCP-226	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Giữa, Sau MVP. Cỡ Lớn
-CGO-311	Kiện giáp	Kiện	RCP-321	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-CGO-312	Kiện plasma	Kiện	RCP-322	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-CGO-313	Kiện lõi nguội	Kiện	RCP-323	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-CGO-306	Kiện đặc sản Xa	Kiện	RCP-324	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
-CGO-307	Kiện sản phẩm nuôi Xa	Kiện	RCP-325	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-311	Kiện giáp	Kiện	RCP-321	RCP-422, Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-312	Kiện plasma	Kiện	RCP-322	RCP-422, Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-313	Kiện lõi nguội	Kiện	RCP-323	RCP-422, Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-306	Kiện đặc sản Xa	Kiện	RCP-324	RCP-422, Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
+CGO-307	Kiện sản phẩm nuôi Xa	Kiện	RCP-325	RCP-422, Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ
 CGO-321	Lồng sinh vật sống Xa	Kiện	RCP-326	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Lớn
 CGO-411	Kiện linh kiện Cradle	Kiện	RCP-421	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Cradle, Sau MVP. Cỡ Nhỏ
+CGO-421	Kiện tin mật	Kiện	RCP-422	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Nhỏ (giao cho tàu của mạng lưới, nhóm hàng HC15 của gd-quan, giá trị bằng kiện vỏ bọc)
 CGO-511	Kiện linh kiện Warden	Kiện	RCP-521	Bốc lên tàu ở ca cảng (K13)	Hiếm, Khối mang, Xa, Sau MVP. Cỡ Vừa
 ENG-101	Van tiết lưu	Linh kiện lõi	Shop (K19), mở ở Hạng cảng 3 (kinh-te-tien-trinh.md)	Lắp động cơ chính, giai đoạn 1	Hiếm, Khối kho, Gần, MVP
 ENG-102	Buồng đốt tái chế	Linh kiện lõi	Shop (K19)	Lắp động cơ chính, giai đoạn 2	Hiếm, Khối kho, Giữa, Sau MVP
@@ -134,13 +135,15 @@ STY-311	Bản ghi chuyển tin The Lattice và sổ hải trình	Vật manh mố
 STY-312	Lời tuyên bố khu bảo hộ	Vật manh mối	Mã truyện MM3.2 (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
 STY-313	Xác máy thu hoạch	Vật manh mối	Mã truyện MM3.3 (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
 STY-411	Vết vũ khí trên vỏ Cradle	Vật manh mối	Mã truyện MM4.1, bên trong và vỏ Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
-STY-412	Bản chào mừng người thức dậy	Vật manh mối	Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
+STY-412	Hiến chương định cư United Accord	Vật manh mối	Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
 STY-414	Bản gốc Lodestar Survey	Vật manh mối	Mã truyện MM4.4, bên trong Cradle (gd-story, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
-STY-301	Mẫu mang dấu thu hoạch Wardens	Vật nhiệm vụ	Station Flint (chương 3, gd-story)	Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife	Đặc biệt, Khối 1, Xa, Sau MVP
+STY-301	Mẫu mang dấu săn bắt Wardens	Vật nhiệm vụ	Station Flint (chương 3, gd-story)	Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife	Đặc biệt, Khối 1, Xa, Sau MVP
 STY-401	Hộp ghi hành trình Cradle	Vật nhiệm vụ	Bên trong Cradle (chương 4, gd-story)	RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6)	Đặc biệt, Khối 1, Cradle, Sau MVP
-STY-501	Bản đồ sao thật	Vật nhiệm vụ	Lõi dữ liệu Warden Rig, mở sau khi hạ BS-5 Serith (chương 5, gd-world)	RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6)	Đặc biệt, Khối 1, Cradle, Sau MVP
-STY-502	Dữ liệu bản khảo sát bị giấu	Vật manh mối	Lõi dữ liệu Warden Rig, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world)	Tự ghi vào Sổ tay, mở cảnh truyện (móc hậu bản B11). Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401)	Đặc biệt, Khối 0, Cradle, Sau MVP
+STY-501	Bản đồ sao thật	Vật nhiệm vụ	Data Core ở Warden Rig, khe V1, mở sau BS-5 (chương 5, gd-world). Không rơi từ Serith. Tọa độ hành tinh thật do Sevra trao ở C5.6 là cảnh truyện, không phải vật	RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6)	Đặc biệt, Khối 1, Cradle, Sau MVP
+STY-701	Gói tin mật	Vật nhiệm vụ	Khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày từ khi mốc nối tình báo mở (chương 4 đến 5, gd-quan), không mua bán	RCP-422, Bị tiêu ở RCP-422 (đóng kiện tin mật). Mất khi rời phiên thì về lại khoang liên lạc (luật V4)	Đặc biệt, Khối 1, Xa, Sau MVP
+STY-502	Lệnh phục kích Cradle mang dấu Serith	Vật manh mối	Data Core ở Warden Rig, khe M1, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world). Không rơi từ Serith	Tự ghi vào Sổ tay, mở cảnh truyện. Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401)	Đặc biệt, Khối 0, Cradle, Sau MVP
 STY-601	Thẻ tên buồng ngủ đông	Vật manh mối	Xác Seed Station, mỗi buồng đã tắt một thẻ (gd-story)	Tự ghi vào Sổ tay, hiện trên tường khoang buồng ngủ đông (đổi hình trạm, P2), không có công dụng chơi	Đặc biệt, Khối 0, Gần, Sau MVP
+BNG-102	Kén thoát hiểm của Ilsume	Vật kéo	Map nhánh N4 Waypost Outer Ring, cứu Sevra ở mốc C3.8 (gd-story, gd-world)	Đưa về trạm qua cửa khí (C3.8), sau đó kéo tới The Hearth ở N4 (C5.1). Không mở người vớt hay tính năng. Kén rơi thì nằm lại chỗ thả, lưu ở beacon cố định gần nhất đã qua (chưa qua beacon nào thì ở cửa N4), ngoài K2 (combat luật 42, 43, map 2.7.9)	Đặc biệt, Khối kéo, Xa, Sau MVP
 BNG-101	Buồng ngủ đông (có người)	Vật kéo	Map nhánh xác Seed Station, người vớt theo K12	Đưa về trạm, mở người vớt và tính năng	Đặc biệt, Khối kéo, Gần, MVP
 TOL-102	Dụng cụ khai thác	Dụng cụ (Khai thác)	Khởi đầu	Không tiêu, chọn mang theo ở trạm	Khoan khoáng và băng (độ cứng 1 đến 3), nạy hòm (cấp khóa 1 đến 3). Bậc thấp hơn độ cứng hoặc cấp khóa thì chậm gấp 4. MVP
 TOL-211	Lao từ	Dụng cụ (Hạ)	Khởi đầu	Không tiêu, chọn mang theo ở trạm	Đòn tầm xa dùng cooldown. Chỉ số theo bậc do gd-combat. MVP

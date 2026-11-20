@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Selftest mọi tool trong tools/. Chạy: node projects/game-moi/tools/selftest.mjs. Thoát 1 khi một phép kiểm sai.
-import { mkdtempSync, writeFileSync, rmSync, readFileSync } from 'node:fs';
+import { mkdtempSync, writeFileSync, rmSync, readFileSync, mkdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
@@ -193,5 +193,23 @@ t('lib: a theo dải ở map.md 3.8 có đủ Gần, Giữa, Xa, giá trị tron
     assert.deepEqual(r.lech.map((l) => l.o), ['B4']);
     assert.equal(r.thua, 1);
   });
+  t('doi-chieu-sheet: đọc ô ngoặc kép nhiều dòng, chuỗi \\n ở ô thường, 14 bằng 14,0', () => {
+    const rows = DC.docTsv('A\tB\n"dòng 1\ndòng 2 có ""trích"""\tx\\ny\n14,0\t2\n');
+    assert.deepEqual(rows, [['A', 'B'], ['dòng 1\ndòng 2 có "trích"', 'x\ny'], ['14,0', '2']]);
+    assert.ok(DC.giongO('14', '14,0') && !DC.giongO('14', '14,5') && !DC.giongO('a', 'b'));
+    assert.equal(DC.soBang(rows, [['T'], ['A', 'B'], ['dòng 1\ndòng 2 có "trích"', 'x\ny'], ['14', '2']], 2).lech.length, 0);
+  });
 }
+t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua Điểm tự quyết và Lịch sử', () => {
+  const goc = mkdtempSync(join(tmpdir(), 'vgdd-'));
+  const ht = join(goc, 'he-thong'), sh = join(goc, 'sheet');
+  for (const d of [ht, sh]) mkdirSync(d);
+  for (const [f, s] of Object.entries(SACH)) writeFileSync(join(ht, f), s);
+  writeFileSync(join(ht, 'map.md'), SACH['map.md'] + 'Họ tham lam hơn loài người.\n## 9. Điểm tự quyết\nBỏ cụm đạo đức giả.\n## Lịch sử thay đổi\n- Bỏ bản khảo sát.\n');
+  writeFileSync(join(sh, 'Enemy.tsv'), 'ID\tMô tả\nX\tTheo bản khảo sát\n');
+  try {
+    const kq = kiem(ht).loi.filter((e) => e.kiem.startsWith('Cụm phản diện')).map((e) => `${e.file}|${e.vai}`).sort();
+    assert.deepEqual(kq, ['map.md|gd-world', 'sheet/Enemy.tsv|gd-combat']);
+  } finally { rmSync(goc, { recursive: true }); }
+});
 console.log(`\n${ok} phép kiểm ĐẠT.`);

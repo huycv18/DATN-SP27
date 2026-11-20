@@ -1,7 +1,7 @@
 # Kết quả validate-gdd
 
-Chạy lúc 2026-11-20T02:03:48.081Z.
+Chạy lúc 2026-11-20T03:37:08.233Z.
 
-Đọc 10 file, 384 ID định nghĩa. Lỗi: 0 (không).
+Đọc 10 file, 391 ID định nghĩa. Lỗi: 0 (không).
 
 

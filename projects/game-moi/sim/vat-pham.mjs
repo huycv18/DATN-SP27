@@ -25,7 +25,7 @@ I('RES-201', 'Hợp kim nóng chảy', 'Fused Alloy', 'Phế liệu', IG, 1, 3.0
 I('RES-202', 'Quặng cobalt', 'Cobalt Ore', 'Khoáng', IG, 2, 6.0, M, SAU, { sink: SR });
 I('RES-203', 'Băng tinh', 'Clear Ice', 'Băng', IG, 2, 5.0, M, SAU, { sink: SR });
 I('RES-204', 'Lõi cảm biến', 'Sensor Core', 'Linh kiện', HI, 1, 9.0, M, SAU, { sink: SR });
-I('RES-301', 'Hợp kim Warden', 'Warden Alloy', 'Phế liệu', HI, 1, 8.0, X, SAU, { nguon: 'Đơn vị The Warden hạ được (WD-01..04, gd-combat)', sink: SR });
+I('RES-301', 'Hợp kim Warden', 'Warden Alloy', 'Phế liệu', HI, 1, 8.0, X, SAU, { nguon: 'Đơn vị The Wardens hạ được (WD-01..04, gd-combat)', sink: SR });
 I('RES-302', 'Kính nebula', 'Nebula Glass', 'Khoáng', HI, 2, 16.0, X, SAU, { sink: SR });
 I('RES-303', 'Băng plasma', 'Plasma Ice', 'Băng', HI, 2, 14.0, X, SAU);
 I('RES-304', 'Lõi năng lượng nguội', 'Cold Core', 'Linh kiện', HI, 1, 10.0, X, SAU, { sink: SR });
@@ -129,6 +129,7 @@ CG('CGO-306', 'Kiện đặc sản Xa', 'Far Specialty Crate', HI, X, SAU, { ghi
 CG('CGO-307', 'Kiện sản phẩm nuôi Xa', 'Far Farm Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ' });
 CG('CGO-321', 'Lồng sinh vật sống Xa', 'Far Live Cage', HI, X, SAU, { ghi: 'Cỡ Lớn' });
 CG('CGO-411', 'Kiện linh kiện Cradle', 'Cradle Parts Crate', HI, CR, SAU, { ghi: 'Cỡ Nhỏ' });
+CG('CGO-421', 'Kiện tin mật', 'Dispatch Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ (giao cho tàu của mạng lưới, nhóm hàng HC15 của gd-quan, giá trị bằng kiện vỏ bọc)' });
 CG('CGO-511', 'Kiện linh kiện Warden', 'Warden Parts Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ' });
 
 for (const id of ['CGO-121', 'CGO-221', 'CGO-321']) items.find((i) => i.id === id).gtd = 'theo loài';
@@ -157,13 +158,15 @@ N('STY-311', 'Bản ghi chuyển tin The Lattice và sổ hải trình', 'Lattic
 N('STY-312', 'Lời tuyên bố khu bảo hộ', 'Protected Zone Declaration', 'Vật manh mối', DB, 0, X, SAU, { nguon: 'Mã truyện MM3.2 (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
 N('STY-313', 'Xác máy thu hoạch', 'Harvester Wreck', 'Vật manh mối', DB, 0, X, SAU, { nguon: 'Mã truyện MM3.3 (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
 N('STY-411', 'Vết vũ khí trên vỏ Cradle', 'Weapon Scars on Cradle Hull', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Mã truyện MM4.1, bên trong và vỏ Cradle (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
-N('STY-412', 'Bản chào mừng người thức dậy', 'Wake-up Welcome Message', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
+N('STY-412', 'Hiến chương định cư United Accord', 'United Accord Settlement Charter', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Mã truyện MM4.2, bên trong Cradle (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
 N('STY-414', 'Bản gốc Lodestar Survey', 'Original Lodestar Survey', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Mã truyện MM4.4, bên trong Cradle (gd-story, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi' });
-N('STY-301', 'Mẫu mang dấu thu hoạch Wardens', 'Harvest-marked Sample', 'Vật nhiệm vụ', DB, 1, X, SAU, { nguon: 'Station Flint (chương 3, gd-story)', sink: 'Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife' });
+N('STY-301', 'Mẫu mang dấu săn bắt Wardens', 'Hunt-marked Sample', 'Vật nhiệm vụ', DB, 1, X, SAU, { nguon: 'Station Flint (chương 3, gd-story)', sink: 'Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife' });
 N('STY-401', 'Hộp ghi hành trình Cradle', 'Cradle Flight Recorder', 'Vật nhiệm vụ', DB, 1, CR, SAU, { nguon: 'Bên trong Cradle (chương 4, gd-story)', sink: 'Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6)' });
-N('STY-501', 'Bản đồ sao thật', 'True Star Chart', 'Vật nhiệm vụ', DB, 1, CR, SAU, { nguon: 'Lõi dữ liệu Warden Rig, mở sau khi hạ BS-5 Serith (chương 5, gd-world)', sink: 'Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6)' });
-N('STY-502', 'Dữ liệu bản khảo sát bị giấu', 'Hidden Survey Data', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Lõi dữ liệu Warden Rig, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world)', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện (móc hậu bản B11). Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401)' });
+N('STY-501', 'Bản đồ sao thật', 'True Star Chart', 'Vật nhiệm vụ', DB, 1, CR, SAU, { nguon: 'Data Core ở Warden Rig, khe V1, mở sau BS-5 (chương 5, gd-world). Không rơi từ Serith. Tọa độ hành tinh thật do Sevra trao ở C5.6 là cảnh truyện, không phải vật', sink: 'Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6)' });
+N('STY-701', 'Gói tin mật', 'Sealed Dispatch', 'Vật nhiệm vụ', DB, 1, X, SAU, { nguon: 'Khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày từ khi mốc nối tình báo mở (chương 4 đến 5, gd-quan), không mua bán', sink: 'Bị tiêu ở RCP-422 (đóng kiện tin mật). Mất khi rời phiên thì về lại khoang liên lạc (luật V4)' });
+N('STY-502', 'Lệnh phục kích Cradle mang dấu Serith', 'Serith-Marked Ambush Order', 'Vật manh mối', DB, 0, CR, SAU, { nguon: 'Data Core ở Warden Rig, khe M1, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world). Không rơi từ Serith', sink: 'Tự ghi vào Sổ tay, mở cảnh truyện. Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401)' });
 N('STY-601', 'Thẻ tên buồng ngủ đông', 'Cryo Pod Nameplate', 'Vật manh mối', DB, 0, G, SAU, { nguon: 'Xác Seed Station, mỗi buồng đã tắt một thẻ (gd-story)', sink: 'Tự ghi vào Sổ tay, hiện trên tường khoang buồng ngủ đông (đổi hình trạm, P2), không có công dụng chơi' });
+N('BNG-102', 'Kén thoát hiểm của Ilsume', 'Ilsume Escape Pod', 'Vật kéo', DB, 'kéo', X, SAU, { nguon: 'Map nhánh N4 Waypost Outer Ring, cứu Sevra ở mốc C3.8 (gd-story, gd-world)', sink: 'Đưa về trạm qua cửa khí (C3.8), sau đó kéo tới The Hearth ở N4 (C5.1). Không mở người vớt hay tính năng. Kén rơi thì nằm lại chỗ thả, lưu ở beacon cố định gần nhất đã qua (chưa qua beacon nào thì ở cửa N4), ngoài K2 (combat luật 42, 43, map 2.7.9)' });
 N('BNG-101', 'Buồng ngủ đông (có người)', 'Cryo Pod', 'Vật kéo', DB, 'kéo', G, MVP, { nguon: 'Map nhánh xác Seed Station, người vớt theo K12', sink: 'Đưa về trạm, mở người vớt và tính năng' });
 
 // Công thức. vao: [[id hoặc [id...], số]]. ra: [id, số] hoặc {nc} hoặc {tol}. giu: vật giữ nguyên, không tiêu.
@@ -230,6 +233,7 @@ R('RCP-323', 'Đóng kiện lõi nguội', CA, 'CGOF', [['COM-304', 3]], ['CGO-3
 R('RCP-324', 'Đóng kiện đặc sản Xa', CA, 'CGOF', [[SX, 5]], ['CGO-306', 1], 5, 'Chương 3', SAU, 1.1);
 R('RCP-325', 'Đóng kiện sản phẩm nuôi Xa', CA, 'CGOF', [[BX, 7]], ['CGO-307', 1], 5, 'Chương 3', SAU, 1.1);
 R('RCP-421', 'Đóng kiện linh kiện Cradle', CA, 'CGOF', [['RES-401', 7]], ['CGO-411', 1], 6, 'Chương 4', SAU, 1.15);
+R('RCP-422', 'Đóng kiện tin mật', CA, 'CGOT', [[['CGO-311', 'CGO-312', 'CGO-313', 'CGO-306', 'CGO-307'], 1], ['STY-701', 1]], ['CGO-421', 1], 6, 'Chương 4', SAU, 1.0);
 R('RCP-521', 'Đóng kiện linh kiện Warden', CA, 'CGOF', [['RES-305', 14]], ['CGO-511', 1], 6, 'Chương 5', SAU, 1.15);
 R('RCP-326', 'Đưa sinh vật sống Xa vào lồng giao', CA, 'CGOL', [[LX, 1]], ['CGO-321', 1], 8, 'Chương 3', SAU);
 // Nghiên cứu: mẫu sống đổi ra bản thiết kế
@@ -324,7 +328,7 @@ const byId = new Map(items.map((i) => [i.id, i]));
 const errs = [];
 const err = (s) => errs.push(s);
 { const seen = new Set(); for (const x of [...items.map((i) => i.id), ...rec.map((r) => r.id), ...tools.map((t) => t[0]), ...nodes.map((n) => n[0])]) { if (seen.has(x)) err(`ID trùng: ${x}`); seen.add(x); } }
-const gtdOf = (id) => byId.get(id)?.gtd;
+const gtdOf = (id) => (byId.get(id)?.nhom === 'Vật nhiệm vụ' ? 0 : byId.get(id)?.gtd); // vật nhiệm vụ không có giá, tính 0 khi làm đầu vào
 const idsOf = (v) => (Array.isArray(v[0]) ? v[0] : [v[0]]);
 const inGtd = (v) => Math.min(...idsOf(v).map(gtdOf)) * v[1];
 const USE = { // số ID loài: [[vật tiêu hao, số lượng mỗi lần bắt]]

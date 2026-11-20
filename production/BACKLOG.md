@@ -2,7 +2,7 @@
 
 Mục đích: mọi việc có pipeline (nhiều hơn một agent hoặc nhiều hơn một lượt) có một dòng ở đây. Việc nhỏ GDM làm thẳng không cần dòng.
 Trạng thái: `todo` / `doing` / `review` / `done` / `blocked`. Chỉ GDM đặt `done`. Mã `GD-###` tăng dần, không tái dùng.
-Mã lớn nhất đã cấp: GD-032
+Mã lớn nhất đã cấp: GD-033
 
 | ID | Project | Việc | Agent | Phụ thuộc | Trạng thái | Tiêu chí hoàn thành |
 |---|---|---|---|---|---|---|
@@ -28,7 +28,7 @@ Mã lớn nhất đã cấp: GD-032
 | GD-020 | game-moi | Sửa bản 3 theo 8 vấn đề bám Dave, ca cảng | gd-story | GD-019 | done | Không còn Bản án, H3, 4 lớp |
 | GD-021 | game-moi | Khung game, log tự quyết, điều phối đợt 1 | GDM | Lead giao toàn quyền | done | `projects/game-moi/gdd/00-khung-game.md`, `log-gdm-tu-quyet.md` |
 | GD-022 | game-moi | GDD cốt truyện bản đủ: The Wardens, 5 chương, nhân vật truyện, tên gọi | gd-story | GD-021 | done (gd-qa ĐẠT) | `gdd/he-thong/cot-truyen.md` đủ khuôn, soat 0 lỗi |
-| GD-023 | game-moi | GDD người chơi và hồ sơ nhân vật | gd-character | GD-021 | review (đã sửa đợt 4, chờ gd-qa chấm lại) | `gdd/he-thong/nguoi-choi.md`, `ho-so-nhan-vat.md` |
+| GD-023 | game-moi | GDD người chơi và hồ sơ nhân vật | gd-character | GD-021 | done | `gdd/he-thong/nguoi-choi.md`, `ho-so-nhan-vat.md` |
 | GD-024 | game-moi | GDD combat, bắt sống, Driftlife, The Wardens, boss | gd-combat | GD-021 | done (gd-qa ĐẠT) | `gdd/he-thong/combat-driftlife.md` |
 | GD-025 | game-moi | GDD tài nguyên, vật phẩm, dụng cụ, công thức, hàng hóa | gd-items | GD-021 | done (gd-qa ĐẠT) | `gdd/he-thong/vat-pham.md` |
 | GD-026 | game-moi | GDD map tổng, map nhánh, hazard, nhịp chuyến | gd-world | GD-021 | done (gd-qa ĐẠT) | `gdd/he-thong/map.md` |
@@ -36,5 +36,6 @@ Mã lớn nhất đã cấp: GD-032
 | GD-028 | game-moi | GDD kinh tế và tiến trình, sim 3 kịch bản, 1 đến 4 người | gd-economy | GD-022 tới GD-027 | done (gd-qa ĐẠT) | `gdd/he-thong/kinh-te-tien-trinh.md`, sim in bảng |
 | GD-029 | game-moi | GDD UX / UI: HUD, màn, input, FTUE | gd-ux | GD-022 tới GD-027 | done (gd-qa ĐẠT) | `gdd/he-thong/ux-ui.md` |
 | GD-030 | game-moi | Sim chuyến và ca cảng, schema dữ liệu, yêu cầu đồng bộ co-op, event | gd-tech | GD-022 tới GD-027 | done (gd-qa ĐẠT) | `gdd/he-thong/ky-thuat.md`, `tools/` có selftest |
-| GD-031 | game-moi | Review chéo toàn bộ GDD, MVP Criteria Checklist | gd-qa | GD-022 tới GD-030 | doing (9 trên 11 file ĐẠT, còn 2 file của gd-character) | `qa/` mỗi GDD một file ĐẠT hoặc TRẢ LẠI |
-| GD-032 | game-moi | Chuyển GDD sang TSV theo khuôn và dán 25 tab Sheet GDD, đối chiếu 0 dòng lệch | mọi vai giữ tab, GDM | GD-031 | doing | `projects/game-moi/gdd/sheet/<Tab>.tsv`, mỗi tab đối chiếu 0 dòng lệch, `qa/GD-032-sheet.md` |
+| GD-031 | game-moi | Review chéo toàn bộ GDD, MVP Criteria Checklist | gd-qa | GD-022 tới GD-030 | done (11 file ĐẠT, 3 lỗi nặng cuối của nguoi-choi GDM sửa, log 81 đến 83) | `qa/` mỗi GDD một file ĐẠT hoặc TRẢ LẠI |
+| GD-032 | game-moi | Chuyển GDD sang TSV theo khuôn và dán 25 tab Sheet GDD, đối chiếu 0 dòng lệch | mọi vai giữ tab, GDM | GD-031 | done (23 tab khớp) | `projects/game-moi/gdd/sheet/<Tab>.tsv`, mỗi tab đối chiếu 0 dòng lệch, `qa/GD-032-sheet.md` |
+| GD-033 | game-moi | Áp phản diện mới của Lead (X độc tài, Y người thừa kế, cách mạng) vào GDD và Sheet | gd-story, các vai chạm, gd-qa | Lead 2026-11-20 | done (gd-qa ĐẠT 6 trên 6 file) | `briefs/dot6-sua-phan-dien.md`, `qa/GD-033-phan-dien.md` ĐẠT, các tab bị đổi đối chiếu khớp |

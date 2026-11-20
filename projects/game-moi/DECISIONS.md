@@ -151,3 +151,23 @@ Lead: "Solace là một cái kết mở, sau khi biết được sự thật v�
 Thay thế: "kết vẫn tới Solace nhưng dựng khác đi" (mục 8 vấn đề), "Solace là điểm kết", log GDM dòng 1 (Solace có thật).
 GDM tự quyết thêm (log dòng 36 đến 38): sự thật lộ ở chương 4, chương 5 có mục tiêu mới là rời bãi vỡ, móc hậu bản là bản khảo sát thật bị The Wardens giấu.
 File đã sửa: `gdd/00-khung-game.md` (B4, B9, B11, K10, chương 4 và 5). gd-story và gd-world nhận tin gộp vào GD-022, GD-026.
+
+## 2026-11-20 - Lead sửa phản diện: tên độc tài đảo chính, người thừa kế Y, cách mạng
+
+Nguyên văn đủ ở cuối `story/lead-y-tuong-2026-11-20.md`.
+Đã chốt (Lead nói):
+- Bỏ "phản diện tham lam hơn loài người". Cái nhìn "loài người tham lam, xấu tính" là cái nhìn phiến diện của một tên độc tài (X), không phải sự thật của game.
+- Bối cảnh chủng tộc phản diện: từng có chiến tranh vũ trụ khi các hành tinh phát hiện sự sống của nhau. Sau chiến tranh, người cai trị cũ của hành tinh đó chủ trương chung sống hòa bình với nhiều chủng tộc.
+- X là con trai một sĩ quan hy sinh trong cuộc chiến đó, nuôi hận thù, đảo chính lật đổ người cai trị. Để ổn định quyền lực và đoàn kết chủng tộc sau đảo chính, hắn hướng sự chú ý sang Trái Đất. Biết Trái Đất đang tìm hành tinh để di cư, hắn phát tín hiệu giả dụ đoàn di cư rồi phục kích.
+- Dưới X, hành tinh từng đẹp và hòa bình thành hiếu chiến: ép lính, dung túng cướp bóc và tệ nạn, khơi mào chiến tranh.
+- Y là con gái người cai trị cũ, người thừa kế hợp pháp, đang giả làm thương nhân. Trong một chuyến ra ngoài, người chơi bắt gặp cuộc tấn công bắt cóc Y và cứu Y. Biết đoàn là loài người đang đi tìm lời giải, Y lộ danh tính và xin giúp. Y cùng mạng lưới quân cách mạng và người nằm vùng đã chuẩn bị lật đổ X.
+- Đoàn hộ tống Y về căn cứ và giúp kết nối tình báo, nhờ đó mạng lưới thông tin thông suốt và cách mạng thành công. Y lên nắm quyền, lập lại hòa bình, giúp loài người tìm người sống sót, và trao cho đoàn thông tin về một hành tinh có sự sống thực sự để xây dựng lại đế chế.
+Thay thế: khung B3, B5, B11 cũ, log GDM dòng 3 (đạo đức giả), 5 (Driftlife bị kết tội), 36 đến 38 (chương 5 và móc hậu bản). Gốc chủ đề "lòng tham của nhân loại gây ra tai nạn" đổi thành "hận thù và định kiến của một kẻ độc tài gây ra tai nạn". Trái Đất cạn kiệt vẫn là sự thật (B1).
+GDM tự quyết để làm tiếp: `log-gdm-tu-quyet.md` Phần 8 (dòng 84 đến 92).
+
+## 2026-11-20 - Core Pillars theo đúng Five Core Pillars của Dave the Diver
+
+Lead đưa Five Core Pillars của Dave the Diver, rồi chốt: "tôi muốn giữ giống như Dave the Diver đó là điểm mà game sẽ follow."
+Đã chốt: năm pillar theo đúng tên, thứ tự và Player Experience của Dave: 1 Exploration & Discovery, 2 Risk & Reward, 3 Management & Optimization, 4 Progression & Growth, 5 Variety & Delight. Nội dung từng pillar viết cho game này (bãi vỡ, Oxy, trạm và ca cảng, nâng cấp, truyện Serith và Sevra).
+Thay thế: log GDM dòng 95 (5 pillar tự đặt) và bộ P1 đến P4 cũ.
+GDM tự quyết: co-op (Lead chốt là cách chơi chính) không mất đi mà thành "nguyên tắc nền Solo or Together" mọi pillar phải tuân theo. Mã cũ P1 đến P5 trong các GDD đọc theo bảng ánh xạ ở khung mục 2, mã mới là CP1 đến CP5, để 10 GDD không phải sửa chéo (log dòng 96).

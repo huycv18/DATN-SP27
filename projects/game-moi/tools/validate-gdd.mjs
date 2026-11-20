@@ -33,6 +33,13 @@ const HO_ID = [
   { file: 'cot-truyen.md', re: /\b(MM)\d+\.\d+\b/g, khongNhan: true }, // nhãn MVP nằm ở STY đi kèm
 ];
 const CHO_DUOC = /^(gd-economy|gd-ux)\b/; // gd-tech đã trả lời mọi điểm chờ ở ky-thuat.md, chủ file phải gỡ dấu
+const PHAN_DIEN_CU = /tham lam hơn loài người|bản khảo sát|đạo đức giả/i; // Lead sửa phản diện (GD-033)
+// Vai giữ tab Sheet (briefs/dot5-dan-sheet.md), để lỗi trong TSV báo đúng người
+const TAB_VAI = {
+  'GAME STORY': 'gd-story', Player: 'gd-character', Enemy: 'gd-combat', Salvage: 'gd-items', 'ITEM LIST': 'gd-items', Recipe: 'gd-items',
+  Zone: 'gd-world', Customer: 'gd-quan', ECONOMIC: 'gd-economy', Shop: 'gd-economy', Upgrade: 'gd-economy', PROCESSING: 'gd-economy',
+  'Balance Sheet': 'gd-economy', WIREFRAME: 'gd-ux', Tutorials: 'gd-ux', 'Event Tracking': 'gd-tech', 'MVP Criteria Checklist': 'gd-qa',
+};
 const TU_CU = [/Hollower/i, /Bếp trưởng/i, /Sundering/i]; // Sundering đổi thành The Scattering (log 75)
 const BO_QUA_MUC = /^#+\s*(Lịch sử thay đổi|Balance Sheet)/; // số và tên cũ được nhắc trong lịch sử
 // Cụm trái luật khung đã đổi: số túi cũ trước log 54, đường về an toàn khi rời hoặc rớt giữa chuyến (trái C10).
@@ -51,10 +58,10 @@ function docThuMuc(dir) {
   const files = {};
   for (const f of readdirSync(dir).filter((f) => f.endsWith('.md')).sort()) {
     const lines = readFileSync(join(dir, f), 'utf8').split(/\r?\n/);
-    let boQua = false, boQuaTen = false;
+    let boQua = false, boQuaTen = false, tuQuyet = false;
     files[f] = lines.map((text, i) => {
-      if (/^#/.test(text)) { boQua = BO_QUA_MUC.test(text); boQuaTen = BO_QUA_TEN.test(text); }
-      return { n: i + 1, text, boQua, boQuaTen };
+      if (/^#/.test(text)) { boQua = BO_QUA_MUC.test(text); boQuaTen = BO_QUA_TEN.test(text); tuQuyet = /^#+[\s\d.]*Điểm tự quyết/i.test(text); }
+      return { n: i + 1, text, boQua, boQuaTen, tuQuyet };
     });
   }
   return files;
@@ -215,6 +222,17 @@ export function kiem(dir) {
   for (const [f, L] of Object.entries(files)) for (const l of L) {
     if (l.boQua) continue;
     for (const c of CUM_CU) if (c.re.test(l.text) && !c.tru?.test(l.text)) them(f, l.n, c.ten, l.text.match(c.re)[0].slice(0, 80));
+  }
+  // 8b. Cụm phản diện cũ Lead đã bỏ (GD-033), cả GDD hệ thống lẫn TSV của Sheet. Lịch sử và Điểm tự quyết được nhắc.
+  for (const [f, L] of Object.entries(files)) for (const l of L) {
+    if (l.boQua || l.tuQuyet) continue;
+    const m = l.text.match(PHAN_DIEN_CU); if (m) them(f, l.n, 'Cụm phản diện cũ (GD-033)', m[0]);
+  }
+  const sheetDir = join(dir, '..', 'sheet');
+  if (existsSync(sheetDir)) for (const f of readdirSync(sheetDir).filter((x) => x.endsWith('.tsv'))) {
+    readFileSync(join(sheetDir, f), 'utf8').split(/\r?\n/).forEach((text, i) => {
+      const m = text.match(PHAN_DIEN_CU); if (m) them(`sheet/${f}`, i + 1, 'Cụm phản diện cũ (GD-033)', m[0], TAB_VAI[f.slice(0, -4)]);
+    });
   }
   // 9. Mọi luật K và C của khung được ít nhất một GDD hệ thống nhắc tới.
   const khung = join(dir, '..', '00-khung-game.md');

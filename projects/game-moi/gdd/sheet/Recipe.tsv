@@ -262,6 +262,12 @@ RCP-421	Đóng kiện linh kiện Cradle	Type	Cảng	projects/game-moi/gdd/he-th
 		Output	"1 x CGO-411 Kiện linh kiện Cradle
 Thời gian: 6 giây"	
 		Unlock	Chương 4. Nhãn: Sau MVP	
+RCP-422	Đóng kiện tin mật	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
+		Ingredients	"1 x một trong CGO-306..307, 311..313
+1 x STY-701 Gói tin mật"	
+		Output	"1 x CGO-421 Kiện tin mật
+Thời gian: 6 giây"	
+		Unlock	Chương 4. Nhãn: Sau MVP	
 RCP-521	Đóng kiện linh kiện Warden	Type	Cảng	projects/game-moi/gdd/he-thong/vat-pham.md mục 3
 		Ingredients	14 x RES-305 Linh kiện Warden	
 		Output	"1 x CGO-511 Kiện linh kiện Warden

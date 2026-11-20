@@ -71,7 +71,7 @@ AST-069	[Sau MVP] Driftlife dải Xa: DL-X01 Prism Wisp, X02 Mirror Mantis, X03 
 AST-070	[Sau MVP] The Wardens: WD-01 Harvester Drone, WD-02 Warden Lancer, WD-03 Snare Hunter, WD-04 Collector Barge		Nguồn: combat-driftlife.md mục 7
 AST-071	[Sau MVP] Boss BS-2 Tempest Gulper, BS-3 Reaper Harvester, BS-4 Silent Custodian, BS-5 Serith		Nguồn: combat-driftlife.md mục 7
 AST-072	[Sau MVP] VFX ngủ, bắt được (súng lưới co lại, lồng mẫu, số sao), Phao kéo bay về		Nguồn: combat-driftlife.md mục 7
-AST-073	[Sau MVP] VFX bị lưới The Wardens trói và dấu thu hoạch (vết cắt máy trên cá thể)		Nguồn: combat-driftlife.md mục 7
+AST-073	[Sau MVP] VFX bị lưới The Wardens trói và dấu săn bắt của quân The Wardens (vết cắt máy trên cá thể)		Nguồn: combat-driftlife.md mục 7
 AST-074	[Sau MVP] Kit map tổng dải Giữa và dải Xa		Nguồn: map.md mục 7
 AST-075	[Sau MVP] Map nhánh Station Lantern, Station Flint, bên trong Cradle, Warden Rig		Nguồn: map.md mục 7, combat-driftlife.md
 AST-076	[Sau MVP] Hazard H04 Dòng đá vụn, H05 Băng nứt, H06 Dòng trôi, H07 Bùng tinh vân, H08 Vùng nhiễu, H09 Hàng rào cắt		Nguồn: map.md mục 7
@@ -87,3 +87,4 @@ AST-085	[Sau MVP] Cảnh Maro lộ mặt trong ca cảng và cảnh cả trạm 
 AST-086	[Sau MVP] Cảnh vào dải Giữa và dải Xa lần đầu (trạm đèn sáng, bóng cỗ máy lớn)		Nguồn: cot-truyen.md mục 7
 AST-087	[Sau MVP] Cảnh Main Cryo Deck của Cradle và cảnh không có gì ở đó (khoang dẫn đường, chỗ Solace trống)		Nguồn: cot-truyen.md mục 7, C4.2, C4.7
 AST-088	[Sau MVP] Cảnh rời neo và cảnh ngoài bãi vỡ (bầu trời sao sạch), màn hình tên game		Nguồn: cot-truyen.md mục 7, C5.7, C5.8
+AST-089	[Sau MVP] Sevra Ilvane trạng thái bỏ mạng (lớp phủ thứ hai trên rig của Ilsume, huy hiệu nhà Ilvane, 5 biểu cảm)		Nguồn: ho-so-nhan-vat.md mục 7, CHR-SEVRA

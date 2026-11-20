@@ -155,6 +155,24 @@ for id_, r in dm.items():
         ('Cách kết', b['Cách kết']),
     ], REF + ' mục 2.6, 3.7')
 
+# Sự kiện combat theo truyện (đặt cuối để không đẩy hàng các khối trên)
+toan = bang('| Toán bắt cóc Sevra Ilvane | Số lượng |')
+khoi('EN-01', 'Sự kiện combat theo truyện', [
+    ('Toán bắt cóc Sevra Ilvane (C3.8)', j('- Kẻ địch có vũ khí đầu tiên của chương 3, do Maro chỉ huy, áp mạn tàu TA04 trong map nhánh đóng chương 3 (gd-world chốt nơi)',
+                                         *[f"- {r['Toán bắt cóc Sevra Ilvane']}: {r['Số lượng']}" for r in toan],
+                                         '- Maro không chiến đấu, rút lên tàu TA08 khi toán bị hạ',
+                                         '- Hạ hết toán thì gỡ được kén của Sevra. Toán không sinh lại',
+                                         '- Nhãn: Sau MVP')),
+    ('Kén của Sevra (C3.8, C5.1)', j('- Kén thoát hiểm BNG-102 là vật kéo lớp Nặng, cùng luật với buồng ngủ đông',
+                                    '- C3.8: hạ hết toán rồi Tương tác giữ 2 s để gỡ kén khỏi mạn tàu TA04',
+                                    '- Người kéo bị Snare Hunter trói thì chờ lưới tự tan sau tối đa 2 s, hoặc thả kén rồi Lướt',
+                                    '- Kén không bị nhắm, không nhận sát thương. Snare Hunter ưu tiên người đang kéo kén',
+                                    '- Người kéo ngạt thì thả kén, đồng đội kéo tiếp. Cả nhóm về trạm thì kén nằm lại, chuyến sau kéo tiếp',
+                                    '- C3.8: kén đi theo người kích Recall Beacon. C5.1: kén không theo beacon, giữa các chuyến lưu ở beacon cố định gần nhất đã qua, chưa qua thì ở cửa N4 (map.md)',
+                                    '- Không ghim được, không mất theo túi. Sevra không chết',
+                                    '- Nhãn: Sau MVP')),
+], REF + ' mục 2.5 (luật 44), 2.8')
+
 with io.open(OUT, 'w', encoding='utf-8', newline='\n') as f:
     for r in rows:
         assert not any('\t' in c or '\n' in c for c in r), r

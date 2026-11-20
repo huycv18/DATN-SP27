@@ -24,29 +24,32 @@ export function kien(cfg, id) {
   return {
     id, g, dai: Math.floor(so / 100), co: cfg.coKien[id] || 'Nhỏ',
     tinh: duoi >= 11 && duoi <= 13, che: (duoi >= 11 && duoi <= 13) || id === 'CGO-141',
-    dong: g !== 'HC09', giayMay: g === 'HC06' ? cfg.dongLong : cfg.dongKien,
+    dong: g !== 'HC09', giayMay: cfg.giayMayRieng?.[id] ?? (g === 'HC06' ? cfg.dongLong : cfg.dongKien),
   };
 }
+
+// Trọng số túi trộn, đổi được từ một chương (trongSoTuChuong: {"4": 3}).
+const trongSo = (x, ch) => Object.entries(x.trongSoTuChuong || {}).filter(([c]) => Number(c) <= ch).reduce((w, [, v]) => v, x.trongSo);
 
 // Sinh lịch theo luật 68 tới 70. ck: khóa của cfg.cauHinh.
 export function sinhLich(cfg, ck, N, rng) {
   const C = cfg.cauHinh[ck];
-  const loai = Object.entries(cfg.tau).filter(([id, x]) => !id.startsWith('_') && x.tu <= C.ch && (x.hang || 1) <= C.hang && x.trongSo > 0);
+  const loai = Object.entries(cfg.tau).filter(([id, x]) => !id.startsWith('_') && x.tu <= C.ch && (x.den ?? 99) >= C.ch && (x.hang || 1) <= C.hang && trongSo(x, C.ch) > 0);
   const tui = [];
   const rut = () => { // túi trộn có trọng số, rút không hoàn lại, hết thì trộn túi mới
-    if (!tui.length) for (const [id, x] of loai) for (let i = 0; i < x.trongSo; i++) tui.push(id);
+    if (!tui.length) for (const [id, x] of loai) for (let i = 0; i < trongSo(x, C.ch); i++) tui.push(id);
     return tui.splice(rng.int(tui.length), 1)[0];
   };
   const moId = (x, g) => cfg.nhom[g].ids.filter((id) => cfg.nhom[g].tu <= C.ch && kien(cfg, id).dai <= Math.min(C.ch, 3) && (!x.chiId?.[g] || x.chiId[g].includes(id)));
   const tau = [];
   let coTinh = false;
   for (let i = 0; i < C.soTau; i++) {
-    const id = rut(), x = cfg.tau[id];
+    const id = C.truyen?.[i] ?? rut(), x = cfg.tau[id]; // tàu truyện chiếm chỗ đầu lịch (luật 69)
     const nhom = [...x.nhom, ...Object.entries(x.nhomTuHang || {}).filter(([h]) => Number(h) <= C.hang).flatMap(([, n]) => n)];
     const nguon = [...nhom.map((g) => moId(x, g)), ...(x.themId || []).map((k) => [k])].filter((l) => l.length);
     const soDong = x.dong[0] + rng.int(x.dong[1] - x.dong[0] + 1);
-    const dong = [], daDung = new Set();
-    for (let d = 0, thu = 0; d < soDong && thu < 30; thu++) {
+    const dong = (x.dongCoDinh || []).map((kid) => ({ id: kid, can: 1, xong: 0, giu: 0 })), daDung = new Set(x.dongCoDinh || []); // dòng đúng 1 kiện ở mọi N
+    for (let d = dong.length, thu = 0; d < soDong && thu < 30; thu++) {
       const kid = rng.chon(rng.chon(nguon));
       if (daDung.has(kid)) continue; // một đơn không có hai dòng cùng ID (luật 23)
       const k = kien(cfg, kid);

@@ -79,7 +79,7 @@ for d in ("Gần", "Giữa", "Xa"):
 KIEN = {}
 for d in ("Gần", "Giữa", "Xa"):
     rieng = {k for ks in S["kien_theo_chuong"].values() for k in ks}
-    ds = [GTD[k] for k, v in ITEM.items() if k.startswith("CGO-") and v["Dải"] == d and GTD[k] and not k.endswith(("21", "31", "41")) and k not in rieng]
+    ds = [GTD[k] for k, v in ITEM.items() if k.startswith("CGO-") and v["Dải"] == d and GTD[k] and k not in ("CGO-121", "CGO-221", "CGO-321", "CGO-131", "CGO-141", "CGO-421") and k not in rieng]  # bỏ lồng sống, dữ liệu, vật tư, tin mật khỏi trung bình kiện hàng
     KIEN[d] = sum(ds) / len(ds)
 KIEN_THO = statistics.mean(GTD[k] for k in ("CGO-101", "CGO-102", "CGO-103", "CGO-104", "CGO-105", "CGO-109"))  # đơn chương 1 chỉ đòi kiện thô (HC01, HC02, HC05, HC10)
 
@@ -655,7 +655,7 @@ def sheet():
     # Shop: bảng giá duy nhất
     rows = [["ID", "Item List", "Quantity", "Unit", "Value", "Price (Tally)", "New Price (Tally)", "Note"]]
     for k, v in ITEM.items():
-        if k.startswith("CGO-") and GTD[k] and not k.endswith("21"):
+        if k.startswith("CGO-") and GTD[k] and k not in ("CGO-121", "CGO-221", "CGO-321"):
             rows.append([k, v["Tên (VI / EN [TẠM])"].split(" / ")[0], 1, "kiện", f(GTD[k]), gia_kien(k), "", "Tàu trả khi bốc kiện. %s" % v["Nhãn"]])
     for sp in bang(VP, "SPECIES"):
         if sp["Bắt"] == "Sống (LIV)":

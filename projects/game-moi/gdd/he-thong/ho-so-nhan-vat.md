@@ -13,12 +13,13 @@ Hồ sơ cho art và cho gd-story: mỗi nhân vật có vai, ngoại hình, sil
 | Người chơi | 4 preset gắn 4 slot màu, mỗi preset một silhouette riêng, đổi tên được | Preset 1 và 2 MVP, preset 3 và 4 Sau MVP |
 | Người vớt | 5 người theo K12, tên theo gd-story | Ingrid và Linh MVP, ba người còn lại Sau MVP |
 | Thương nhân The Veyl | 5 chủng tộc, mỗi chủng một thương nhân có tên | Tikko MVP, bốn người còn lại Sau MVP |
-| The Wardens | Serith (thủ lĩnh), Maro (kẻ cải trang) | Sau MVP |
+| The Wardens (chế độ và quân của Serith, người Sennari) | Serith (độc tài Sennar, boss BS-5), Maro (gián điệp của Serith), lính The Wardens | Sau MVP |
+| Sevra Ilvane (người thừa kế, giả làm Ilsume) | Một nhân vật hai trạng thái: TR-2 thương nhân che mạng, NP-5 người thừa kế bỏ mạng | Sau MVP |
 | Người phụ | Odile, Bram, Elias, Wren | Sau MVP, Bram chỉ giọng qua sóng ở chương 1 |
 | Rig | Một rig xương chung cho nhân loại, 4 skin người chơi, người vớt dùng cùng rig | MVP |
 | Phong cách | 2D vector, bóng đổ phẳng 2 mức, nét viền theo màu tối của vùng | Chốt khung |
 
-Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-1 đến PC-4 (preset Noor, Jonas, Mei, Tariq), người vớt mã RS-1 đến RS-5 (Ingrid, Linh, Rafa, Amara, Yusuf), thương nhân mã TR-1 đến TR-5 (Tikko, Ilsume, Dromm, Vaeth, Nhem), The Wardens mã WD-P1 và WD-P2 (Serith, Maro, không trùng mã WD-01 đến WD-04 là đơn vị chiến đấu của gd-combat), người phụ mã NP-1 đến NP-4 (Odile, Bram, Elias, Wren).
+Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-1 đến PC-4 (preset Noor, Jonas, Mei, Tariq), người vớt mã RS-1 đến RS-5 (Ingrid, Linh, Rafa, Amara, Yusuf), thương nhân mã TR-1 đến TR-5 (Tikko, Ilsume, Dromm, Vaeth, Nhem), The Wardens mã WD-P1 và WD-P2 (Serith, Maro, không trùng mã WD-01 đến WD-04 là đơn vị chiến đấu của gd-combat), người phụ mã NP-1 đến NP-4 (Odile, Bram, Elias, Wren). NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Serith, Sevra, Maro và lính The Wardens, không thêm chủng mới. NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Serith, Sevra, Maro và lính The Wardens, không thêm chủng mới.
 
 ## 1. Mục đích với người chơi
 
@@ -31,7 +32,7 @@ Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-
 
 1. Thang tỉ lệ `MVP`: người trưởng thành cao 1 u. Mỗi hồ sơ ghi chiều cao theo u. Cỡ hiển thị mục tiêu 108 điểm ảnh một u trên màn 1080p, nguồn vẽ gấp 4 lần.
 2. Silhouette test `MVP`: tô đen cả nhóm trong cùng cảnh, ở cỡ hiển thị, phải phân biệt từng nhân vật trong 1 giây. Mỗi nhân vật có ít nhất hai đặc điểm ngoại hình nhận ra được khi tô đen (hình mũ, tỉ lệ thân, đồ mang sau lưng, phụ kiện).
-3. Màu `MVP`: mỗi nhân vật có một màu nhận diện (nhấn lớn) và tối đa 6 màu chính cộng 2 màu nhấn nhỏ. Bão hòa luôn là kênh S của HSV, đo bằng công cụ lấy mẫu màu. Người chơi dùng nhấn từ 70% ở bộ đồ ngoài. Người vớt và thương nhân dùng nhấn tới 45%. Wardens dùng cặp trắng xương và lục acid không ai khác dùng.
+3. Màu `MVP`: mỗi nhân vật có một màu nhận diện (nhấn lớn) và tối đa 6 màu chính cộng 2 màu nhấn nhỏ. Bão hòa luôn là kênh S của HSV, đo bằng công cụ lấy mẫu màu. Người chơi dùng nhấn từ 70% ở bộ đồ ngoài. Người vớt và thương nhân dùng nhấn tới 45%. Giáp và cờ của chế độ The Wardens dùng cặp trắng xương và lục acid, không ai khác dùng. Sevra khi bỏ mạng không dùng cặp này.
 4. Rig `MVP`: một bộ xương chung cho nhân loại. Chiều cao preset (0,9 đến 1,2 u) là scale đồng đều của rig, chênh tối đa 20% quanh 1,0 u, phần còn lại phân biệt bằng hoán đổi bộ phận (mũ, bình Oxy, túi, phụ kiện). Chủng tộc The Veyl mỗi chủng một rig riêng, mức độ đơn giản. Ngoại lệ ghi tên: Wren (0,6 u) dùng rig trẻ em riêng đơn giản.
 5. Bộ đồ `MVP bậc 0 và 1`: người chơi lắp mảnh theo 5 trục (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ) theo `nguoi-choi.md`, mỗi bậc là một biến thể mảnh, không vẽ lại cả nhân vật.
 6. Màu và hình slot `MVP`: slot gán cố định theo slot, không theo người, hiện trên HUD đồng đội và ping kèm hình để không chỉ dựa vào màu: Slot 1 ○ cam `#F26B1D`, Slot 2 △ lam ngọc `#1FB5D6`, Slot 3 □ vàng chanh `#D8E21F`, Slot 4 ◇ hồng tím `#D6309B`. Bảng này là nguồn duy nhất, `ux-ui.md` đọc từ đây.
@@ -102,27 +103,31 @@ Mỗi chủng một rig và hình khối riêng, để người chơi đọc ch�
 | Mã | Tên | Chủng | Chiều cao, tỉ lệ | Silhouette | Ngoại hình | Màu nhận diện | Tính cách (gd-story) | Biểu cảm cần có | Nhãn |
 |---|---|---|---|---|---|---|---|---|---|
 | TR-1 | Tikko | Oru | 0,7 u, tròn | Thân tròn nhỏ, bốn tay mảnh, đội thùng tôn làm mũ | Da nâu tro, bộ đồ vá chằng, túi đựng phế liệu đeo đầy | Hổ phách nhạt `#C2A77E` | Kẻ mê đồ Trái Đất, trả giá cao cho thứ con người coi là rác, hiểu sai công dụng | Tò mò, mê mẩn, bối rối, mặc cả, vui | MVP |
-| TR-2 | Ilsume | Sennari | 1,6 u, thon | Áo choàng dài nhiều lớp nghi lễ, mũ nhọn cao | Da trắng ngọc, tay dài, vòng cổ nghi thức | Hồng rượu trầm `#A5667A` | Trọng nghi thức, mỗi giao dịch có chuỗi lễ dài | Trang nghiêm, sốt ruột bị che giấu, hài lòng, bối rối khi lễ bị phá | Sau MVP |
+| TR-2 | Ilsume (tên giả của Sevra Ilvane, trạng thái 1: thương nhân che mạng) | Sennari | 1,6 u, thon | Áo choàng dài nhiều lớp nghi lễ, mũ nhọn cao, mạng che kín mặt | Da trắng ngọc, tay dài, vòng cổ nghi thức, giọng bà lão trang trọng (giả). Dưới áo là dáng người trẻ | Hồng rượu trầm `#A5667A` | Trọng nghi thức, mỗi giao dịch có chuỗi lễ dài (vỏ bọc). Sợ bị nhận ra, đúng mực, lo giấu sau lễ nghi | Trang nghiêm, sốt ruột bị che giấu, hài lòng, bối rối khi lễ bị phá, giật mình khi nghe tên Serith | Sau MVP |
 | TR-3 | Dromm | Brakk | 1,8 u cao, 1,6 u rộng, thân khối | Khối vuông lớn, giáp đá, đầu nhỏ chìm giữa vai | Một mắt lớn, da xám đá có vân kim loại | Xám đá `#6E6A66` nhấn đồng `#B87333` | Ít lời, không bao giờ nói thẳng giá, mặc cả bằng ánh nhìn | Im lặng, nhìn xuống, nhướng mắt, gật rất nhỏ | Sau MVP |
 | TR-4 | Vaeth | Aelith | 1,3 u, uyển chuyển | Tua mềm như sứa quanh thân, bể thủy tinh nhỏ đeo vai | Da trong mờ, tua phát sáng, bể chứa một sinh vật nhỏ sống | Oải hương `#CBA6E4` | Nhà sưu tầm sinh vật sống, quan tâm Driftlife còn sống hơn Tally | Mê say, thương cảm, giận khi thấy Driftlife bị hạ | Sau MVP |
 | TR-5 | Nhem | Kesh | 1,0 u, lơ lửng | Thân dẹt trôi, nhiều mắt nhỏ, bó dây cáp mạng buông dưới | Da xám đen, mắt trắng nhỏ như điểm sáng, dây cáp có đèn | Xám đen nhấn đỏ tươi nhỏ `#D8382C` | Dân buôn tin, giữ The Lattice, câu ngắn hai vế, áy náy về thông tin giả | Nhìn nghiêng, im lặng, sợ, dè dặt, thú nhận | Sau MVP |
 
-Ghé cảng từ: Tikko chương 1 (và TA02 là dân Oru vãng lai không tên, dùng rig Oru, biến thể màu), Ilsume chương 2, Vaeth chương 2, Dromm chương 3, Nhem chương 3, Maro chương 3.
+Sevra (NP-5, trạng thái 2, xem mục 2b.5) lộ ra ở cuối chương 3 (C3.8). Từ đó Ilsume không còn che mạng trong trạm.
+
+Sevra (NP-5, trạng thái 2, xem mục 2b.5) lộ ra ở cuối chương 3 (C3.8). Từ đó Ilsume không còn che mạng trong trạm.
+
+Ghé cảng từ: Tikko chương 1 (và TA02 là dân Oru vãng lai không tên, dùng rig Oru, biến thể màu), Ilsume chương 2, Vaeth chương 2, Dromm chương 3, Nhem chương 3, Maro chương 3 (hai lần cập bến khi còn cải trang, lộ mặt khi chỉ huy toán bắt cóc Sevra ở N4, mốc C3.8).
 
 Yêu cầu art thương nhân: tàu của mỗi chủng cần màu và hình khối ăn khớp với chủng (yêu cầu tab Assets cho tàu do gd-quan lấy từ hồ sơ này và danh sách tàu). Mỗi chủng cần 6 clip: Idle, Nói, Mặc cả (gật hoặc lắc), Vui, Bối rối, Rời đi.
 
-### 2b.4 The Wardens (WD-P1, WD-P2)
+### 2b.4 The Wardens: chế độ của Serith (WD-P1, WD-P2, lính)
 
-Đơn vị chiến đấu (WD-01 đến WD-04) do gd-combat giữ. File này chỉ giữ hai nhân vật có tên của gd-story. Ngôn ngữ hình: sạch, nhẵn, đối xứng, "thuần khiết" giả tạo, đối lập với thương nhân lấm lem. Màu chung: trắng xương `#EDEBE0` và lục acid `#7CFC3A` (đường sáng).
+Đơn vị chiến đấu (WD-01 đến WD-04) do gd-combat giữ, là lính Sennari mặc giáp của chế độ (không thêm chủng tộc, dùng rig Sennari, mặt che bằng mũ giáp). The Wardens là chế độ và quân của Serith, không còn là một chủng tộc. File này giữ Serith và Maro. Ngôn ngữ hình: sạch, nhẵn, đối xứng, kỷ luật, đối lập với thương nhân lấm lem và với mạng lưới cách mạng của Sevra (đồ chắp vá). Màu chung của chế độ: trắng xương `#EDEBE0` và lục acid `#7CFC3A` (đường sáng).
 
 | Mã | Tên | Vai | Chiều cao | Silhouette | Ngoại hình | Màu nhận diện | Biểu cảm cần có | Nhãn |
 |---|---|---|---|---|---|---|---|---|
-| WD-P1 | Serith | Thủ lĩnh The Wardens ở bãi vỡ, chương 3 đến 5 | 2,0 u, rất gầy | Cao, tay dài quá gối, vòng sáng tròn sau gáy (halo), mặt nạ nhẵn | Áo choàng trắng xương không một vết bẩn, đường lục acid chạy dọc áo, không thấy mắt | Trắng xương và lục acid | Bình thản, khinh miệt nhẹ, cuồng tín (mặt nạ nứt khi mất bình tĩnh), thương hại giả | Sau MVP |
-| WD-P2 | Maro | Kẻ cải trang làm thương nhân (chương 3), lộ mặt cuối chương | 1,7 u khi cải trang (khom người), 2,0 u sau khi lộ | Cải trang: giả thương nhân Sennari của một thương hội không có thật (tàu TA08), áo choàng nghi lễ rút gọn, che đầu bằng khăn, sạch hơn hẳn thương nhân thật. Lộ mặt: dáng cao gầy cùng kiểu Serith, ít chi tiết hơn | Khi cải trang: áo xám không vết, có một đường lục acid mờ 10 phần trăm ở gáy, chỉ là chi tiết thưởng cho người tinh ý, không phải manh mối bắt buộc (P4). Manh mối bắt buộc nằm ở hành vi hỏi mua của gd-story. Lộ mặt: đường lục 100 phần trăm, bỏ khăn | Xám nhạt `#A3A8A0`, lục acid mờ khi cải trang, lục acid sáng khi lộ | Vồn vã, hào phóng, hỏi quá nhiều, khi lộ mặt thì phẳng lặng | Sau MVP |
+| WD-P1 | Serith, danh xưng tự phong First Warden | Độc tài cầm quyền Sennar, đứng đầu The Wardens, boss BS-5 (chương 3 đến 5, qua lời Maro và tín hiệu, tới Warden Rig ở chương 5). Ghét loài người vì cha là sĩ quan chết trong cuộc chiến vũ trụ đầu tiên giữa các hành tinh (tên cuộc chiến ở `cot-truyen.md` mục Tên mới), cái nhìn phiến diện của hắn, không phải sự thật | 2,0 u (cao hơn Ilsume nhờ giáp và bục), rất gầy | Cao, tay dài quá gối, vòng sáng tròn sau gáy (halo), mặt nạ nhẵn, vai giáp nhọn đối xứng | Áo giáp choàng trắng xương không một vết bẩn, đường lục acid chạy dọc áo, huy hiệu chế độ trên ngực, không thấy mắt. Sạch vì hắn tin mình đang dọn dẹp | Trắng xương và lục acid | Bình thản, khinh miệt nhẹ, cuồng tín (mặt nạ nứt khi mất bình tĩnh), thương hại giả, giận lạnh khi nhắc tên Sevra hay cha mình | Sau MVP |
+| WD-P2 | Maro | Gián điệp của Serith săn Sevra, chỉ huy toán bắt cóc. Người Sennari, giả thương nhân của một thương hội Sennari không có thật (tàu TA08), hai lần cập bến khi còn cải trang, lộ mặt ở N4 khi chỉ huy toán bắt cóc (C3.8) | 1,7 u khi cải trang (khom người), 2,0 u sau khi lộ | Cải trang: dáng thương nhân Sennari, áo choàng nghi lễ rút gọn, che đầu bằng khăn, sạch hơn hẳn thương nhân thật. Lộ mặt: dáng cao gầy cùng kiểu Serith, ít chi tiết hơn, giáp chế độ | Khi cải trang: áo xám không vết, đường lục acid mờ 10 phần trăm ở gáy, chỉ là chi tiết thưởng cho người tinh ý, không phải manh mối bắt buộc (P4). Lộ mặt: đường lục 100 phần trăm, bỏ khăn, huy hiệu The Wardens | Xám nhạt `#A3A8A0`, lục acid mờ khi cải trang, lục acid sáng khi lộ | Vồn vã, hào phóng, hỏi quá nhiều, khi lộ mặt thì phẳng lặng, soi mói | Sau MVP |
 
-Yêu cầu art: Maro cần hai biến thể (cải trang và lộ mặt) dùng chung rig, đổi lớp phủ. Tàu của Maro cần sạch bất thường trong cảng (gd-quan lấy làm manh mối). Serith là boss BS-5 nên ngoài 6 clip hội thoại (Idle, Nói, Chỉ tay, Giận, Rút, Rời) cần danh sách clip chiến đấu và cỡ boss do gd-combat cấp (`combat-driftlife.md`), Sau MVP.
+Lính The Wardens: một bộ giáp trắng xương đường lục acid dùng chung rig Sennari, mũ giáp che mặt, 3 biến thể theo loại đơn vị (gd-combat cấp danh sách). Yêu cầu art: Maro cần hai biến thể (cải trang và lộ mặt) dùng chung rig Sennari, đổi lớp phủ. Tàu của Maro cần sạch bất thường trong cảng (gd-quan lấy làm manh mối). Serith là boss BS-5 nên ngoài 6 clip hội thoại (Idle, Nói, Chỉ tay, Giận, Rút, Rời) cần danh sách clip chiến đấu và cỡ boss do gd-combat cấp (`combat-driftlife.md`), Sau MVP.
 
-### 2b.5 Người phụ (NP-1 đến NP-4), Sau MVP
+### 2b.5 Người phụ (NP-1 đến NP-4) và Sevra (NP-5), Sau MVP
 
 | Mã | Tên | Vai | Chiều cao | Silhouette | Màu nhận diện | Biểu cảm tối thiểu | Nhãn |
 |---|---|---|---|---|---|---|---|
@@ -130,6 +135,7 @@ Yêu cầu art: Maro cần hai biến thể (cải trang và lộ mặt) dùng c
 | NP-2 | Bram Kowalski | Trưởng xuồng tiếp tế Lantern, tàu TA03, chương 1 qua sóng, chương 2 hiện hình | 1,2 u | Vóc to, râu, mũ nồi, thùng hàng sau lưng | Nâu sẫm `#6B5640` | Bình thường, than thở, vui, xin thêm | MVP (chỉ giọng), Sau MVP (hiện hình) |
 | NP-3 | Elias Vance | Thủ lĩnh The Remainers, chương 3 | 1,15 u | Cao gầy, áo bạc màu, băng tay cũ | Xám bạc `#8C95A0` | Bình thường, khắc nghiệt, sợ giấu | Sau MVP |
 | NP-4 | Wren | Đứa trẻ sinh trên The Raft, chương 3 và kết | 0,6 u | Rất nhỏ, đầu tròn, áo thùng thình vá | Xanh lá nhạt `#E4F0D0` | Bình thường, tò mò, ngạc nhiên, vui | Sau MVP |
+| NP-5 | Sevra Ilvane (trạng thái 2 của TR-2 Ilsume) | Người thừa kế hợp pháp của Ilvane (Steward of Sennar, cha của Sevra, bị Serith lật đổ, chết trong giam cầm). Giả làm Ilsume để trốn Serith. Người chơi cứu ở cuối chương 3 (C3.8), hộ tống ở chương 5, nhận tọa độ thật | 1,6 u | Bỏ mạng và mũ nhọn, thân thon cùng rig Sennari với Ilsume, khuôn mặt trẻ, tóc buộc gọn, dáng thẳng hơn dáng bà lão giả | Hồng rượu trầm `#A5667A` (cùng Ilsume), thêm nhấn nhỏ là huy hiệu nhà Ilvane ở cổ áo, không dùng trắng xương và lục acid | Bình thường, kiệt sức, sợ, quyết tâm, đau buồn khi nhắc cha, nhẹ nhõm khi được nhận ra | Sau MVP |
 
 ## 3. Tham số
 
@@ -155,7 +161,7 @@ Yêu cầu art: Maro cần hai biến thể (cải trang và lộ mặt) dùng c
 | Hai người chơi cùng chọn một màu | Không cho, màu gắn slot, slot gắn nhân vật |
 | Màu nhận diện trùng giữa NPC và Driftlife | Đề xuất gd-combat dùng gam lục lam phát quang và tím sẫm cho Driftlife, tránh cam, vàng chanh, hồng tím và cặp trắng xương lục acid. gd-combat chưa xác nhận, nếu không đổi thì chấp nhận và kiểm ở review art |
 | Vỏ bộ đồ cấp cao đổi màu bộ đồ | Không đổi màu slot, chỉ thêm tấm giáp xám |
-| Maro lộ mặt giữa ca cảng | Hiện biến thể lộ mặt, tàu đổi màu theo cùng lúc (gd-quan) |
+| Maro lộ mặt ở N4 (C3.8) | Hiện biến thể lộ mặt khi chỉ huy toán bắt cóc. Ở cảng Maro chỉ xuất hiện trong dáng cải trang (gd-quan, TA08 hai lần cập bến) |
 | Người chơi đổi tên | Tên đổi được, hồ sơ không đổi (màu, silhouette, nghề không đổi theo tên) |
 | Hai nhân vật người chơi chồng lên nhau khi cùng ở cảng | Đi xuyên nhau (xem `nguoi-choi.md`), màu slot phân biệt |
 | Bộ đồ nhiều biến thể cùng lúc | 5 trục độc lập, mỗi mảnh vẽ không che mảnh khác (kiểm lắp thử mọi tổ hợp bậc đầu và bậc cuối) |
@@ -247,7 +253,8 @@ Danh sách yêu cầu để GDM đưa vào tab Assets:
 | CHR-PC | Skin người chơi (rig chung) | 2 MVP, 4 tổng | MVP |
 | CHR-RS | Người vớt (Ingrid, Linh MVP) | 2 MVP, 5 tổng | MVP |
 | CHR-TR | Thương nhân (Tikko MVP) | 1 MVP, 5 tổng | MVP |
-| CHR-WD | Serith, Maro (hai biến thể) | 3 | Sau MVP |
+| CHR-WD | Serith, Maro (hai biến thể), giáp lính The Wardens (3 biến thể) | 6 | Sau MVP |
+| CHR-SEVRA | Sevra và Ilsume: một rig Sennari, hai lớp phủ (che mạng, bỏ mạng), 5 biểu cảm trạng thái 2, clip Idle, Nói, Chạy trốn, Kiệt sức, Bị kéo trong kén | 2 lớp phủ, 4 clip | Sau MVP |
 | CHR-NP | Người phụ | 4 | Sau MVP |
 | CHR-FACE | Biểu cảm người chơi | 8 | MVP |
 | CHR-PART | Mảnh bộ đồ theo 5 trục | 21 biến thể tổng (5, 4, 4, 5, 3), MVP cần 9 (bình 2, vỏ 1, bộ đẩy 2, túi 2, đai 2) | MVP |
@@ -316,8 +323,9 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | NPC bão hòa thấp | Nhấn trầm tới 45% | Không nhầm người chơi với NPC | Mọi nhân vật cùng bão hòa | Rẻ |
 | Rig chung | Một xương cho nhân loại, ghép mảnh | Một artist không đủ cho rig riêng mỗi người | Rig riêng từng người | Đắt |
 | Chủng The Veyl | Rig riêng, mức đơn giản | Đọc chủng tộc từ xa, hài đến từ lệch văn hóa | Dùng chung rig nhân loại | Vừa |
-| Wardens | Trắng xương cộng lục acid, sạch và đối xứng | Đối lập thương nhân lấm lem, gợi "đạo đức giả sạch sẽ" (B5) | Đen đỏ kiểu phản diện thường | Rẻ |
-| Maro cải trang | Sạch hơn thương nhân thật, đường lục mờ ở gáy | Manh mối cho người tinh ý, đúng P4 | Cải trang hoàn hảo | Rẻ |
+| Giáp The Wardens | Trắng xương cộng lục acid, sạch và đối xứng | Đối lập thương nhân lấm lem và mạng lưới cách mạng chắp vá, gợi chế độ kỷ luật tự cho mình là sạch | Đen đỏ kiểu phản diện thường | Rẻ |
+| Sevra và Ilsume | Một nhân vật, hai lớp phủ trên rig Sennari. Mã TR-2 (che mạng) và NP-5 (bỏ mạng), chốt NP-5 | Người chơi nhận ra Ilsume khi lộ mặt nhờ dáng và màu cùng gốc, không cần rig thứ hai | Hai nhân vật tách rời | Rẻ |
+| Maro cải trang | Sạch hơn thương nhân thật, đường lục mờ ở gáy, là người Sennari của Serith | Manh mối cho người tinh ý, đúng P4 | Cải trang hoàn hảo | Rẻ |
 | Preset người chơi | Dùng 4 tên gd-story, vai truyện là kíp vận hành trạm, không nghề | gd-story ghi đây không phải chuyên gia, chuyên gia là người vớt | Gán nghề cho preset | Rẻ |
 | Người vớt gọi bằng tên gd-story | Ingrid, Linh, Rafa, Amara, Yusuf | Khớp `cot-truyen.md` | Tên khác | Rẻ |
 | Clip người chơi ngoài và trong | 17 và 8 | Đủ phản hồi cho mọi trạng thái trong `nguoi-choi.md`, không thừa | Ít hơn (thiếu phản hồi) | Rẻ |
@@ -341,4 +349,5 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 |---|---|---|---|
 | 2026-11-20 | Bản đủ đầu tiên | GD-023 | gd-character |
 | 2026-11-20 | Khớp lượt 1b: preset người chơi là kíp vận hành trạm, tính cách và tàu theo gd-story, Maro giả Sennari, Solace là mồi, gỡ dấu chờ gd-story | GD-023 1b | gd-character |
-| 2026-11-20 | Đợt 4 sau GD-031: bộ màu sinh lại và kiểm bằng script (HSV), hình slot, luật slot và người vào sau, luật chiều cao không đổi va chạm, Odile giữ niềm tin tới chương 4 (log 73), clip bắt sống MVP, bảng clip và biểu cảm NPC MVP, 108 điểm ảnh một u, nhãn MVP | GD-023 Đ4 | gd-character |
+| 2026-11-20 | Đợt 4 sau GD-031: bộ màu sinh lại và kiểm bằng script (HSV), hình slot, luật slot và người vào sau, luật chiều cao không đổi va chạm, Odile giữ niềm tin tới chương 4, clip bắt sống MVP, bảng clip và biểu cảm NPC MVP, 108 điểm ảnh một u, nhãn MVP | GD-023 Đ4 | gd-character |
+| 2026-11-20 | Đợt 6 phản diện mới: Serith là độc tài Sennar, Sevra (NP-5) gộp với Ilsume hai trạng thái, Maro là gián điệp của Serith, lính The Wardens là người Sennari, bỏ ý tham lam hơn loài người và đạo đức giả | GD-033 | gd-character |
