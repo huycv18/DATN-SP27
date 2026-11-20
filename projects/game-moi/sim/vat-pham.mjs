@@ -2,7 +2,7 @@
 // Chạy: node projects/game-moi/sim/vat-pham.mjs        -> kiểm, in tóm tắt, thoát 1 nếu lỗi
 //       node projects/game-moi/sim/vat-pham.mjs --ghi  -> ghi bảng vào gdd/he-thong/vat-pham.md giữa các cặp <!--B:TÊN-->
 // GTĐ = giá trị tương đối (RES-101 = 1,0). Không phải Tally. gd-economy quy đổi.
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -71,7 +71,7 @@ I('SMP-292', 'Mẫu boss Giữa', 'Tempest Gulper Sample', 'Mẫu', DB, 2, 65, M
 const eHa = (s) => s.n * items.find((i) => i.id === s.nlsId).gtd + s.p * items.find((i) => i.id === s.dacId).gtd;
 const r2 = (x) => Math.round(x * 100) / 100;
 for (const s of species) {
-  if (s.bat === 'LIV') I(s.livId, `Mẫu sống ${s.ma} ${s.ten}`, `${s.ma} Live Specimen`, 'Mẫu sống', s.dai === G ? IG : HI, 'kéo', null, s.dai, [111, 112, 113].includes(s.so) ? MVP : SAU, { nguon: s.size === 'S' ? `Bắt sống ${s.ma} bằng Súng lưới (K9, từ chương 1)` : s.so === 114 ? `Bắt sống ${s.ma} bằng Súng gây mê rồi Phao kéo (K9, chương 2, miễn choáng)` : `Bắt sống ${s.ma} bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)`, sink: 'Nuôi (chương 2), giao đơn cảng (lồng sinh vật sống), nghiên cứu (chương 2)' });
+  if (s.bat === 'LIV') I(s.livId, `Mẫu sống ${s.ma} ${s.ten}`, `${s.ma} Live Specimen`, 'Mẫu sống', s.dai === G ? IG : HI, 'kéo', null, s.dai, [111, 112, 113].includes(s.so) ? MVP : SAU, { nguon: s.size === 'S' ? `Bắt sống ${s.ma} bằng Súng lưới (K9, từ chương 1)` : s.so === 114 ? `Bắt sống ${s.ma} bằng Súng gây mê rồi Phao kéo (K9, chương 2, miễn choáng)` : `Bắt sống ${s.ma} bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)`, sink: 'Nuôi (chương 2), bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2)' });
   if (s.bat === 'BPS') I(s.bpsId, `Mẫu sinh thiết ${s.ma} ${s.ten}`, `${s.ma} Biopsy`, 'Mẫu sinh thiết', HI, 1, s.bpsFix ?? null, s.dai, SAU, { nguon: `Kim sinh thiết trên ${s.ma} (loài L, chương 2)`, sink: 'Nghiên cứu (Hồ sơ loài, gd-combat)' });
   if (s.nuoi) I(s.bioId, `Sản phẩm nuôi ${s.ma} ${s.ten}`, `${s.ma} Farm Yield`, 'Sản phẩm nuôi', s.dai === G ? TH : IG, 1, s.dai === G ? 3 : s.dai === M ? 7 : 14, s.dai, SAU, { nguon: `Khoang nuôi ${s.ma} (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)` });
 }
@@ -101,7 +101,7 @@ D('CON-107', 'Kim sinh thiết', 'Biopsy Needle', 'Vật tiêu hao', IG, 1, G, S
 D('FED-101', 'Thức ăn nuôi Gần', 'Near Feed', 'Thức ăn nuôi', TH, 1, G, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
 D('FED-201', 'Thức ăn nuôi Giữa', 'Mid Feed', 'Thức ăn nuôi', TH, 1, M, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
 D('FED-301', 'Thức ăn nuôi Xa', 'Far Feed', 'Thức ăn nuôi', TH, 1, X, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
-const CG = (id, ten, en, hiem, dai, nhan, o = {}) => D(id, ten, en, 'Kiện', hiem, 'mang', dai, nhan, { sink: 'Bốc lên tàu ở ca cảng (K13)', ...o });
+const CG = (id, ten, en, hiem, dai, nhan, o = {}) => D(id, ten, en, 'Kiện', hiem, 'kho', dai, nhan, { sink: 'Bán theo thùng ở ca cảng (K13)', ...o });
 CG('CGO-101', 'Kiện phế liệu', 'Scrap Crate', TH, G, MVP, { ghi: 'Cỡ Vừa' });
 CG('CGO-102', 'Kiện cáp', 'Cable Crate', TH, G, MVP, { ghi: 'Cỡ Nhỏ' });
 CG('CGO-103', 'Kiện quặng', 'Ore Crate', TH, G, MVP, { ghi: 'Cỡ Lớn' });
@@ -311,7 +311,7 @@ const repairs = [
   ['Kho cấp 2 (KH03)', 'Chương 1', [['RES-101', 8], ['RES-103', 3]], MVP],
   ['Xưởng (KH05, Kỹ sư mở)', 'Chương 1, chỉ tài nguyên thô vì chưa chế được COM', [['RES-101', 8], ['RES-103', 4], ['RES-104', 2], ['RES-102', 3]], MVP],
   ['Khoang liên lạc (KH06, Thông dịch viên mở)', 'Chương 1, linh kiện và khoáng Gần', [['RES-104', 3], ['RES-103', 4], ['RES-102', 2]], MVP],
-  ['Cảng bến 1, máy đóng kiện, kệ kiện (KH07)', 'Chương 1, phế liệu và linh kiện Gần', [['RES-101', 8], ['RES-102', 4], ['RES-104', 2]], MVP],
+  ['Cảng bến 1 (KH07)', 'Chương 1, phế liệu và linh kiện Gần', [['RES-101', 8], ['RES-102', 4], ['RES-104', 2]], MVP],
   ['Động cơ chính, giai đoạn 1 (KH13)', 'Chương 1, linh kiện ENG mua ở Shop cộng vật liệu Gần cộng hạch hoặc mẫu boss BS-1', [['ENG-101', 1], ['COM-101', 6], ['COM-103', 4], [['SMP-191', 'SMP-192'], 1]], MVP],
   ['Khoang dẫn đường và bến Skiff (KH08, KH09)', 'Chương 2, hạch hoặc mẫu boss BS-1 cộng mảnh lõi dẫn đường', [['RES-204', 1], ['RES-202', 3], ['STY-102', 1], [['SMP-191', 'SMP-192'], 1]], SAU],
   ['Phòng nghiên cứu (KH10)', 'Chương 2, băng, khoáng Giữa, mẫu Driftlife', [['RES-203', 3], ['RES-202', 2], ['SMP-201', 2]], SAU],
@@ -354,6 +354,10 @@ for (let pass = 0; pass < 8; pass++) {
     it.gtd = Math.round((r.vao.reduce((s, v) => s + inGtd(v), 0) * r.m * 100) / r.ra[1]) / 100;
   }
 }
+const LONG = ['CGO-121', 'CGO-221', 'CGO-321'], THUNG = 2.5; // 1 kiện = 2,5 thùng (K13, đợt 9)
+// Đợt 9: đóng kiện thành đóng thùng tự động lúc Mở ca, không tốn thời gian ca. Lồng sống làm tay ngoài ca, xong trước Mở ca.
+for (const r of rec) if (r.noi === CA) { if (r.loai === 'CGOL') r.noi = 'Cảng (trước Mở ca)'; else { r.noi = 'Cảng (tự động lúc Mở ca)'; r.t = 0; } }
+const thung = (id) => (!id.startsWith('CGO-') ? '' : LONG.includes(id) ? ' (1 đơn vị bán)' : ` (${String(THUNG).replace('.', ',')} thùng)`);
 const RANGE = { COM: [1.25, 1.5], CGOT: [1, 1], CGOF: [1.1, 1.25], CGOD: [1.5, 2.5], CON: [1, 1], FOD: [1, 1] };
 for (const r of rec) {
   for (const v of r.vao) for (const id of idsOf(v)) if (!byId.has(id)) err(`${r.id}: đầu vào ${id} không có trong ITEM LIST`);
@@ -369,7 +373,7 @@ for (const r of rec) {
     if (Math.abs(r.sum / tgt - 1) > 0.2) err(`${r.id}: chi phí ${r.sum.toFixed(1)} lệch quá 20% so mục tiêu ${tgt.toFixed(1)}`);
   }
 }
-for (const r of rec) { const o = r.ra?.[0]; const it = o && byId.get(o); if (!it || !o.startsWith('CGO-')) continue; const kh = r.vao.reduce((t, v) => t + Math.min(...idsOf(v).map((x) => (typeof byId.get(x).khoi === 'number' ? byId.get(x).khoi : 5))) * v[1], 0); const c = r.loai === 'CGOL' ? 'Lớn' : r.loai === 'CGOD' ? 'Nhỏ' : kh <= 10 ? 'Nhỏ' : kh <= 20 ? 'Vừa' : 'Lớn'; it.ghi = it.ghi.replace(/^Cỡ \S+/, `Cỡ ${c}`); }
+for (const it of items) { if (!it.id.startsWith('CGO-')) continue; const rest = (it.ghi ?? '').replace(/^Cỡ \S+(, | )?/, ''); const base = LONG.includes(it.id) ? 'Một lồng là một đơn vị bán, không chia thùng' : '1 kiện = 2,5 thùng'; it.ghi = rest ? `${base}${rest.startsWith('(') ? ' ' : '. '}${rest}` : base; }
 const nguonRec = new Map(), sinkRec = new Map(), nguonNode = new Map();
 const add = (m, k, v) => m.set(k, [...(m.get(k) ?? []), v]);
 for (const r of rec) { if (r.ra?.[0] && !r.ra.tol && !r.ra.nc) add(nguonRec, r.ra[0], r.id); for (const v of r.vao) for (const id of idsOf(v)) add(sinkRec, id, r.id); }
@@ -409,7 +413,7 @@ const parts = {};
 parts.ITEM = tbl(['Item ID', 'Tên (VI / EN [TẠM])', 'Nhóm', 'Độ hiếm', 'Khối', 'GTĐ', 'Dải', 'Nguồn nhận', 'Nguồn tiêu', 'Nhãn'],
   items.map((i) => [i.id, `${i.ten} / ${i.en}`, i.nhom, i.hiem, f(i.khoi, 0), f(i.gtd), i.dai, i.nguonAuto || '-', i.sinkAuto || '-', i.nhan]));
 parts.RECIPE = tbl(['Recipe ID', 'Tên', 'Nơi chế', 'Đầu vào', 'Đầu ra', 'Thời gian (giây)', 'Mở bằng', 'Σ GTĐ vào', 'GTĐ ra', 'Hệ số', 'Nhãn'],
-  rec.filter((r) => !r.ra?.nc).map((r) => [r.id, r.ten, r.noi, r.vao.map(idList).join(', ') + (r.giu ? `. Giữ nguyên, không tiêu: ${r.giu}` : ''), r.ra.tol ? 'Mở khóa dụng cụ cho nhóm' : `${r.ra[1]} x ${r.ra[0]}`, r.t === 'đêm' ? 'qua đêm' : f(r.t, 0), r.mo, f(r.sum), f(r.out), r.mReal ? f(r.mReal, 2) : '-', r.nhan]));
+  rec.filter((r) => !r.ra?.nc).map((r) => [r.id, r.ten, r.noi, r.vao.map(idList).join(', ') + (r.giu ? `. Giữ nguyên, không tiêu: ${r.giu}` : ''), r.ra.tol ? 'Mở khóa dụng cụ cho nhóm' : `${r.ra[1]} x ${r.ra[0]}${thung(r.ra[0])}`, r.t === 'đêm' ? 'qua đêm' : r.t === 0 ? 'lúc Mở ca' : f(r.t, 0), r.mo, f(r.sum), f(r.out), r.mReal ? f(r.mReal, 2) : '-', r.nhan]));
 parts.UPG = tbl(['Nâng cấp', 'Bậc', 'Lớp chi phí', 'Đầu vào (vật liệu)', 'Σ GTĐ vào', 'Mục tiêu 25 x 1,8^(lớp-2)', 'Mở bằng', 'Nhãn'],
   rec.filter((r) => r.ra?.nc).map((r) => [r.id, r.id.split('-')[2], r.ra.bac, r.vao.map(idList).join(', '), f(r.sum), f(r.tgt), r.mo, r.nhan]));
 parts.TOOL = tbl(['ID', 'Tên (VI / EN [TẠM])', 'Vai trò', 'Cách có', 'Công dụng và gating', 'Nhãn'], tools.map((t) => [t[0], `${t[1]} / ${t[2]}`, t[3], t[4], t[6], t[5]]));
@@ -426,8 +430,7 @@ parts.REPAIR = tbl(['Khoang hoặc mốc', 'Ghi chú', 'Vật liệu đề xuấ
 const rawEq = (id) => { if (Array.isArray(id)) return Math.min(...id.map(rawEq)); if (/^(RES|SMP)/.test(id)) return byId.get(id).gtd; const r = rec.find((x) => x.ra?.[0] === id); if (!r || /^(ENG|STY|BPR)/.test(id)) return 0; return r.vao.reduce((s, v) => s + rawEq(v[0]) * v[1], 0) / r.ra[1]; };
 const mvpRep = repairs.filter((r) => r[3] === MVP), mvpUpg = rec.filter((r) => r.ra?.nc && r.nhan === MVP);
 const mvpRaw = [...mvpRep.flatMap((r) => r[2]), ...mvpUpg.flatMap((r) => r.vao)].reduce((s, [id, n]) => s + rawEq(id) * n, 0);
-const SPD = { Nhỏ: "90%", Vừa: "80%", Lớn: "65%" };
-parts.CGOSIZE = tbl(["Cỡ", "Kiện", "Tốc độ mang (gd-quan)"], Object.keys(SPD).map((c) => [c, runs(items.filter((i) => i.id.startsWith("CGO-") && i.ghi?.startsWith(`Cỡ ${c}`)).map((i) => i.id)), SPD[c]]));
+parts.CGOTHUNG = tbl(["Kiện", "GTĐ kiện", "Thùng mỗi kiện", "GTĐ mỗi thùng"], items.filter((i) => i.id.startsWith("CGO-")).map((i) => LONG.includes(i.id) ? [i.id, "theo loài", "1 đơn vị, không chia", "bằng GTĐ lồng"] : [i.id, f(i.gtd), f(THUNG, 1), f(+f(i.gtd).replace(",", ".") / THUNG, 2)]));
 const stamp = new Date().toISOString().slice(0, 16).replace('T', ' ');
 parts.CHECK = `- Sinh bởi \`projects/game-moi/sim/vat-pham.mjs\` lúc ${stamp} UTC. Số vật phẩm: ${items.length}. Công thức: ${rec.length}. Điểm khai thác: ${nodes.length}. Trang bị: ${tools.length}. Kiện nhãn MVP: ${items.filter((i) => i.id.startsWith('CGO-') && i.nhan === MVP).length}. Lỗi kiểm: ${errs.length}.
 - Vật liệu nhãn MVP (${mvpRep.length} việc sửa khoang và ${mvpUpg.length} nâng cấp) quy ra tài nguyên thô: ${f(mvpRaw)} GTĐ, tương đương ${f(mvpRaw / (80 * 1.1))} chuyến đầy túi (túi bậc 0 là 80 Khối, mật độ 1,1 GTĐ mỗi Khối), chưa tính nguyên liệu đóng kiện bán lấy Tally. Đây là kiểm nhất quán, không phải sim cân bằng.`;
@@ -466,7 +469,8 @@ if (process.argv.includes('--tsv')) {
   const cell = (x) => { const t = String(x ?? ''); return /[\t\n"]/.test(t) ? '"' + t.replaceAll('"', '""') + '"' : t; };
   const row = (a) => a.map(cell).join('\t');
   const nm = (id) => byId.get(id)?.ten ?? id;
-  const dirOut = join(here, '..', 'gdd', 'sheet');
+  // Từ đợt 8 TSV của Sheet là bản đọc sửa tay (DECISIONS 2026-11-20). --tsv chỉ ghi ra sim/out-tsv để tra, không ghi đè gdd/sheet.
+  const dirOut = join(here, 'out-tsv'); mkdirSync(dirOut, { recursive: true });
   const REF = 'projects/game-moi/gdd/he-thong/vat-pham.md';
   const H = {
     Salvage: ['Issue ID', 'Task', 'Sub Task', 'Short Description', 'Ref'],
@@ -502,11 +506,11 @@ if (process.argv.includes('--tsv')) {
   }
   const ing = (v) => (Array.isArray(v[0]) ? `${v[1]} x một trong ${runs(v[0])}` : `${v[1]} x ${v[0]} ${nm(v[0])}`);
   for (const r of rec) {
-    const outTxt = r.ra.tol ? 'Mở khóa dụng cụ cho cả nhóm' : r.ra.nc ? `Nâng cấp ${r.ra.nc} cho cả nhóm. Tally ở tab Upgrade` : `${r.ra[1]} x ${r.ra[0]} ${nm(r.ra[0])}`;
+    const outTxt = r.ra.tol ? 'Mở khóa dụng cụ cho cả nhóm' : r.ra.nc ? `Nâng cấp ${r.ra.nc} cho cả nhóm. Tally ở tab Upgrade` : `${r.ra[1]} x ${r.ra[0]} ${nm(r.ra[0])}${thung(r.ra[0])}`;
     const rows = [
       ['Type', r.noi],
       ['Ingredients', r.vao.map(ing).join('\n') + (r.giu ? `\nGiữ nguyên, không tiêu: ${r.giu}` : '')],
-      ['Output', `${outTxt}\nThời gian: ${r.t === 'đêm' ? 'qua đêm' : f(r.t, 0) + ' giây'}`],
+      ['Output', `${outTxt}\nThời gian: ${r.t === 'đêm' ? 'qua đêm' : r.t === 0 ? 'đóng lúc Mở ca, không tốn thời gian ca' : f(r.t, 0) + ' giây'}`],
       ['Unlock', `${r.mo}. Nhãn: ${r.nhan}`],
     ];
     rows.forEach((rw, k) => T.Recipe.push([k === 0 ? r.id : '', k === 0 ? r.ten : '', rw[0], rw[1], k === 0 ? REF + ' mục 3' : '']));

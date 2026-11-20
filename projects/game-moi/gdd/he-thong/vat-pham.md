@@ -352,7 +352,7 @@ Công thức (RCP):
 | RCP-126 | Đưa sinh vật sống cỡ S Gần vào lồng giao | Cảng (trước Mở ca) | 1 x một trong LIV-111..113 | 1 x CGO-121 (1 đơn vị bán) | 8 | Thông dịch viên (chương 1) | 4,0 | - | - | MVP |
 | RCP-128 | Đưa sinh vật sống cỡ M Gần vào lồng giao | Cảng (trước Mở ca) | 1 x một trong LIV-114..115 | 1 x CGO-121 (1 đơn vị bán) | 8 | Chương 2 | 16,9 | - | - | Sau MVP |
 | RCP-127 | Đóng kiện vật tư | Cảng (tự động lúc Mở ca) | 4 x CON-101, 4 x CON-102 | 1 x CGO-141 (2,5 thùng) | lúc Mở ca | Chương 2 | 40,8 | 46,9 | 1,15 | Sau MVP |
-| RCP-141 | Sao bản dữ liệu | Khoang liên lạc | 1 x COM-104. Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (STY-101, STY-401), mỗi vật gốc sao một lần | 1 x CGO-131 | 10 | Chương 3 | 10,4 | 20,9 | 2,00 | Sau MVP |
+| RCP-141 | Sao bản dữ liệu | Khoang liên lạc | 1 x COM-104. Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (STY-101, STY-401), mỗi vật gốc sao một lần | 1 x CGO-131 (2,5 thùng) | 10 | Chương 3 | 10,4 | 20,9 | 2,00 | Sau MVP |
 | RCP-221 | Đóng kiện hợp kim | Cảng (tự động lúc Mở ca) | 3 x COM-201 | 1 x CGO-211 (2,5 thùng) | lúc Mở ca | Chương 2 | 35,1 | 40,4 | 1,15 | Sau MVP |
 | RCP-222 | Đóng kiện cảm biến | Cảng (tự động lúc Mở ca) | 1 x COM-203 | 1 x CGO-212 (2,5 thùng) | lúc Mở ca | Chương 2 | 27,2 | 31,3 | 1,15 | Sau MVP |
 | RCP-223 | Đóng kiện dung dịch lạnh | Cảng (tự động lúc Mở ca) | 3 x COM-204 | 1 x CGO-213 (2,5 thùng) | lúc Mở ca | Chương 2 | 39,0 | 44,9 | 1,15 | Sau MVP |
@@ -469,35 +469,35 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | FED-101 | Thức ăn nuôi Gần / Near Feed | Thức ăn nuôi | Thường | 1 | 0,8 | Gần | RCP-171 | Khoang sinh quyển, 1 mỗi con mỗi ngày (K16) | Sau MVP |
 | FED-201 | Thức ăn nuôi Giữa / Mid Feed | Thức ăn nuôi | Thường | 1 | 2,0 | Giữa | RCP-271 | Khoang sinh quyển, 1 mỗi con mỗi ngày (K16) | Sau MVP |
 | FED-301 | Thức ăn nuôi Xa / Far Feed | Thức ăn nuôi | Thường | 1 | 4,5 | Xa | RCP-371 | Khoang sinh quyển, 1 mỗi con mỗi ngày (K16) | Sau MVP |
-| CGO-101 | Kiện phế liệu / Scrap Crate | Kiện | Thường | mang | 14,0 | Gần | RCP-111 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-102 | Kiện cáp / Cable Crate | Kiện | Thường | mang | 13,2 | Gần | RCP-112 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-103 | Kiện quặng / Ore Crate | Kiện | Thường | mang | 13,2 | Gần | RCP-113 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-104 | Kiện băng / Ice Crate | Kiện | Thường | mang | 14,0 | Gần | RCP-114 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-105 | Kiện mô sinh học / Biomass Crate | Kiện | Thường | mang | 13,5 | Gần | RCP-115 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-109 | Kiện đồ Trái Đất / Earth Trinket Crate | Kiện | Ít gặp | mang | 12,5 | Gần | RCP-116 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-111 | Kiện cơ khí / Mechanical Crate | Kiện | Ít gặp | mang | 13,4 | Gần | RCP-121 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-112 | Kiện điện tử / Electronics Crate | Kiện | Ít gặp | mang | 16,1 | Gần | RCP-122 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-113 | Kiện nước tinh khiết / Purified Water Crate | Kiện | Ít gặp | mang | 12,0 | Gần | RCP-123 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-106 | Kiện đặc sản Gần / Near Specialty Crate | Kiện | Ít gặp | mang | 13,2 | Gần | RCP-124 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-107 | Kiện sản phẩm nuôi Gần / Near Farm Crate | Kiện | Ít gặp | mang | 42,9 | Gần | RCP-125 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-121 | Lồng sinh vật sống Gần / Near Live Cage | Kiện | Hiếm | mang | theo loài | Gần | RCP-126, RCP-128 | Bốc lên tàu ở ca cảng (K13) | MVP |
-| CGO-141 | Kiện vật tư / Supply Crate | Kiện | Ít gặp | mang | 46,9 | Gần | RCP-127 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-131 | Bản sao dữ liệu / Data Copy | Kiện | Hiếm | mang | 20,9 | Gần | RCP-141 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-211 | Kiện hợp kim / Alloy Crate | Kiện | Ít gặp | mang | 40,4 | Giữa | RCP-221 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-212 | Kiện cảm biến / Sensor Crate | Kiện | Hiếm | mang | 31,3 | Giữa | RCP-222 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-213 | Kiện dung dịch lạnh / Coolant Crate | Kiện | Ít gặp | mang | 44,9 | Giữa | RCP-223 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-206 | Kiện đặc sản Giữa / Mid Specialty Crate | Kiện | Hiếm | mang | 44,0 | Giữa | RCP-224 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-207 | Kiện sản phẩm nuôi Giữa / Mid Farm Crate | Kiện | Ít gặp | mang | 46,2 | Giữa | RCP-225 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-221 | Lồng sinh vật sống Giữa / Mid Live Cage | Kiện | Hiếm | mang | theo loài | Giữa | RCP-226 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-311 | Kiện giáp / Armor Crate | Kiện | Hiếm | mang | 107,6 | Xa | RCP-321 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-312 | Kiện plasma / Plasma Crate | Kiện | Hiếm | mang | 86,9 | Xa | RCP-322 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-313 | Kiện lõi nguội / Cold Core Crate | Kiện | Hiếm | mang | 111,1 | Xa | RCP-323 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-306 | Kiện đặc sản Xa / Far Specialty Crate | Kiện | Hiếm | mang | 99,0 | Xa | RCP-324 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-307 | Kiện sản phẩm nuôi Xa / Far Farm Crate | Kiện | Hiếm | mang | 107,8 | Xa | RCP-325 | RCP-422, Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-321 | Lồng sinh vật sống Xa / Far Live Cage | Kiện | Hiếm | mang | theo loài | Xa | RCP-326 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-411 | Kiện linh kiện Cradle / Cradle Parts Crate | Kiện | Hiếm | mang | 161,0 | Cradle | RCP-421 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-421 | Kiện tin mật / Dispatch Crate | Kiện | Hiếm | mang | 86,9 | Xa | RCP-422 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
-| CGO-511 | Kiện linh kiện Warden / Warden Parts Crate | Kiện | Hiếm | mang | 193,2 | Xa | RCP-521 | Bốc lên tàu ở ca cảng (K13) | Sau MVP |
+| CGO-101 | Kiện phế liệu / Scrap Crate | Kiện | Thường | kho | 14,0 | Gần | RCP-111 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-102 | Kiện cáp / Cable Crate | Kiện | Thường | kho | 13,2 | Gần | RCP-112 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-103 | Kiện quặng / Ore Crate | Kiện | Thường | kho | 13,2 | Gần | RCP-113 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-104 | Kiện băng / Ice Crate | Kiện | Thường | kho | 14,0 | Gần | RCP-114 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-105 | Kiện mô sinh học / Biomass Crate | Kiện | Thường | kho | 13,5 | Gần | RCP-115 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-109 | Kiện đồ Trái Đất / Earth Trinket Crate | Kiện | Ít gặp | kho | 12,5 | Gần | RCP-116 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-111 | Kiện cơ khí / Mechanical Crate | Kiện | Ít gặp | kho | 13,4 | Gần | RCP-121 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-112 | Kiện điện tử / Electronics Crate | Kiện | Ít gặp | kho | 16,1 | Gần | RCP-122 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-113 | Kiện nước tinh khiết / Purified Water Crate | Kiện | Ít gặp | kho | 12,0 | Gần | RCP-123 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-106 | Kiện đặc sản Gần / Near Specialty Crate | Kiện | Ít gặp | kho | 13,2 | Gần | RCP-124 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-107 | Kiện sản phẩm nuôi Gần / Near Farm Crate | Kiện | Ít gặp | kho | 42,9 | Gần | RCP-125 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-121 | Lồng sinh vật sống Gần / Near Live Cage | Kiện | Hiếm | kho | theo loài | Gần | RCP-126, RCP-128 | Bán theo thùng ở ca cảng (K13) | MVP |
+| CGO-141 | Kiện vật tư / Supply Crate | Kiện | Ít gặp | kho | 46,9 | Gần | RCP-127 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-131 | Bản sao dữ liệu / Data Copy | Kiện | Hiếm | kho | 20,9 | Gần | RCP-141 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-211 | Kiện hợp kim / Alloy Crate | Kiện | Ít gặp | kho | 40,4 | Giữa | RCP-221 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-212 | Kiện cảm biến / Sensor Crate | Kiện | Hiếm | kho | 31,3 | Giữa | RCP-222 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-213 | Kiện dung dịch lạnh / Coolant Crate | Kiện | Ít gặp | kho | 44,9 | Giữa | RCP-223 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-206 | Kiện đặc sản Giữa / Mid Specialty Crate | Kiện | Hiếm | kho | 44,0 | Giữa | RCP-224 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-207 | Kiện sản phẩm nuôi Giữa / Mid Farm Crate | Kiện | Ít gặp | kho | 46,2 | Giữa | RCP-225 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-221 | Lồng sinh vật sống Giữa / Mid Live Cage | Kiện | Hiếm | kho | theo loài | Giữa | RCP-226 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-311 | Kiện giáp / Armor Crate | Kiện | Hiếm | kho | 107,6 | Xa | RCP-321 | RCP-422, Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-312 | Kiện plasma / Plasma Crate | Kiện | Hiếm | kho | 86,9 | Xa | RCP-322 | RCP-422, Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-313 | Kiện lõi nguội / Cold Core Crate | Kiện | Hiếm | kho | 111,1 | Xa | RCP-323 | RCP-422, Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-306 | Kiện đặc sản Xa / Far Specialty Crate | Kiện | Hiếm | kho | 99,0 | Xa | RCP-324 | RCP-422, Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-307 | Kiện sản phẩm nuôi Xa / Far Farm Crate | Kiện | Hiếm | kho | 107,8 | Xa | RCP-325 | RCP-422, Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-321 | Lồng sinh vật sống Xa / Far Live Cage | Kiện | Hiếm | kho | theo loài | Xa | RCP-326 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-411 | Kiện linh kiện Cradle / Cradle Parts Crate | Kiện | Hiếm | kho | 161,0 | Cradle | RCP-421 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-421 | Kiện tin mật / Dispatch Crate | Kiện | Hiếm | kho | 86,9 | Xa | RCP-422 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
+| CGO-511 | Kiện linh kiện Warden / Warden Parts Crate | Kiện | Hiếm | kho | 193,2 | Xa | RCP-521 | Bán theo thùng ở ca cảng (K13) | Sau MVP |
 | ENG-101 | Van tiết lưu / Throttle Valve | Linh kiện lõi | Hiếm | kho | - | Gần | Shop (K19), mở ở Hạng cảng 3 (kinh-te-tien-trinh.md) | Lắp động cơ chính, giai đoạn 1 | MVP |
 | ENG-102 | Buồng đốt tái chế / Recycled Combustor | Linh kiện lõi | Hiếm | kho | - | Giữa | Shop (K19) | Lắp động cơ chính, giai đoạn 2 | Sau MVP |
 | ENG-103 | Cuộn ổn định từ / Magnetic Stabilizer | Linh kiện lõi | Hiếm | kho | - | Xa | Shop (K19) | Lắp động cơ chính, giai đoạn 3 | Sau MVP |
@@ -534,7 +534,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 <!--/B:ITEM-->
 
 <!--B:CHECK-->
-- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-20 03:40 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
+- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-20 10:30 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
 - Vật liệu nhãn MVP (6 việc sửa khoang và 6 nâng cấp) quy ra tài nguyên thô: 272,2 GTĐ, tương đương 3,1 chuyến đầy túi (túi bậc 0 là 80 Khối, mật độ 1,1 GTĐ mỗi Khối), chưa tính nguyên liệu đóng kiện bán lấy Tally. Đây là kiểm nhất quán, không phải sim cân bằng.
 <!--/B:CHECK-->
 
