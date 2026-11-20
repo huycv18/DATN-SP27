@@ -47,8 +47,8 @@ export function soBang(nguon, csv, dongDau = 2) {
   return { lech, thua };
 }
 
-async function taiCsv(gid) {
-  const url = `https://docs.google.com/spreadsheets/d/${CFG.spreadsheetId}/export?format=csv&gid=${gid}`;
+async function taiCsv(id, gid) {
+  const url = `https://docs.google.com/spreadsheets/d/${id}/export?format=csv&gid=${gid}`;
   const r = await fetch(url);
   if (!r.ok) throw new Error(`HTTP ${r.status} khi tải gid ${gid} (Sheet còn chia sẻ bằng link không?)`);
   return parseCsv(await r.text());
@@ -63,7 +63,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   for (const tab of files) {
     if (!(tab in CFG.gid)) { out.push(`| ${tab} | | | | Không có tab tên này trong tham-so/sheet.json |`); sai++; continue; }
     const rows = docTsv(readFileSync(join(THU_MUC, `${tab}.tsv`), 'utf8'));
-    const { lech, thua } = soBang(rows, await taiCsv(CFG.gid[tab]), CFG.dongDauRieng?.[tab] ?? CFG.dongDau);
+    const { lech, thua } = soBang(rows, await taiCsv(CFG.file?.[tab] ?? CFG.spreadsheetId, CFG.gid[tab]), CFG.dongDauRieng?.[tab] ?? CFG.dongDau);
     const ok = !lech.length && !thua;
     if (!ok) sai++;
     out.push(`| ${tab} | ${rows.length - 1} | ${lech.length} | ${thua} | ${ok ? 'KHỚP' : 'LỆCH'} |`);

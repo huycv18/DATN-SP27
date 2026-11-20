@@ -2,7 +2,7 @@
 
 Mục đích: mọi việc có pipeline (nhiều hơn một agent hoặc nhiều hơn một lượt) có một dòng ở đây. Việc nhỏ GDM làm thẳng không cần dòng.
 Trạng thái: `todo` / `doing` / `review` / `done` / `blocked`. Chỉ GDM đặt `done`. Mã `GD-###` tăng dần, không tái dùng.
-Mã lớn nhất đã cấp: GD-033
+Mã lớn nhất đã cấp: GD-034
 
 | ID | Project | Việc | Agent | Phụ thuộc | Trạng thái | Tiêu chí hoàn thành |
 |---|---|---|---|---|---|---|
@@ -39,3 +39,4 @@ Mã lớn nhất đã cấp: GD-033
 | GD-031 | game-moi | Review chéo toàn bộ GDD, MVP Criteria Checklist | gd-qa | GD-022 tới GD-030 | done (11 file ĐẠT, 3 lỗi nặng cuối của nguoi-choi GDM sửa, log 81 đến 83) | `qa/` mỗi GDD một file ĐẠT hoặc TRẢ LẠI |
 | GD-032 | game-moi | Chuyển GDD sang TSV theo khuôn và dán 25 tab Sheet GDD, đối chiếu 0 dòng lệch | mọi vai giữ tab, GDM | GD-031 | done (23 tab khớp) | `projects/game-moi/gdd/sheet/<Tab>.tsv`, mỗi tab đối chiếu 0 dòng lệch, `qa/GD-032-sheet.md` |
 | GD-033 | game-moi | Áp phản diện mới của Lead (X độc tài, Y người thừa kế, cách mạng) vào GDD và Sheet | gd-story, các vai chạm, gd-qa | Lead 2026-11-20 | done (gd-qa ĐẠT 6 trên 6 file) | `briefs/dot6-sua-phan-dien.md`, `qa/GD-033-phan-dien.md` ĐẠT, các tab bị đổi đối chiếu khớp |
+| GD-034 | game-moi | Tách Sheet GDD thành GDD chính và 9 GDD con theo hệ thống, link hai chiều | GDM | Lead 2026-11-20 | doing (9 file con xong, chờ Lead: đăng nhập để dán tab GDD CON vào GDD chính, xóa 16 tab đã chuyển, bật xem bằng link cho file con) | 9 file con có INFO link về GDD chính, GDD chính có tab GDD CON, `doi-chieu-sheet.mjs` khớp mọi tab |

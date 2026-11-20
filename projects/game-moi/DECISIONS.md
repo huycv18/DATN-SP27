@@ -195,3 +195,14 @@ Station Ember là tên trạm trong truyện. Slug kỹ thuật vẫn là `proje
 - Giữ bản đồ The Wake và ba dải Ember Anchorage, Shepherd Belt, Glass Nebula. Chốt các tên Ember Mooring, Shatterline, Lantern Berth, Cradle Interior, Broken Hold, Cryo Deck và Bridge Archive. Hazard đặc trưng là Glassflare, Dead Air và Warden Cutline.
 - Tàu trong tab Customer: Loose Bolt của Tikko, Lamplighter của Station Lantern, Vellune của Ilsume, Glasswing của Vaeth, Iron Keel của Dromm, Stayfast của The Remainers, Backchannel của Nhem và Pilot Light là mật danh tàu chuyển tin của The Kindling.
 - Dùng tên mới làm tên hiển thị theo tab Enemy, Zone và Customer. Giữ mã thực thể và nhãn chức năng phục vụ production.
+
+## 2026-11-20 - Tách GDD con
+
+Lead: "tách nhỏ GDD to này ra thành các bản Modul", "kiểu tạo ra nhiều bản GDD con được Link với GDD chính", tạo trong thư mục Drive Lead đưa.
+
+- GDD chính là Sheet `1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs`. Giữ OVERVIEW, TRACKING, CORE LOOP, Day, Assets, AUDIO ASSETS LIST, MVP Criteria Checklist, Playtest Report, Bugs Report và tab GDD CON (bảng link, nguồn `gdd/sheet/GDD CON.tsv`).
+- 9 GDD con, mỗi hệ thống một file, chia theo vai giữ tab (GDM chọn): 01 Story (GAME STORY), 02 Nhân vật (Player), 03 Combat và Driftlife (Enemy), 04 Vật phẩm (Salvage, ITEM LIST, Recipe), 05 Map (Zone), 06 Trạm và cảng (Customer), 07 Kinh tế và tiến trình (ECONOMIC, Shop, Upgrade, PROCESSING, Balance Sheet), 08 UX UI (WIREFRAME, Tutorials), 09 Kỹ thuật (Event Tracking).
+- Mỗi file con có tab INFO đứng đầu: link về GDD chính, vai giữ, tab trong file, link GDD hệ thống trong repo, quy ước sửa. Tab chép bằng copyTo nên giữ nguyên định dạng.
+- Nguồn luật vẫn là GDD hệ thống markdown trong repo. Sheet con là bản hiển thị của hệ thống đó. Đổi luật: sửa markdown, sinh TSV, dán vào file con, ghi TRACKING ở GDD chính.
+- `tools/tham-so/sheet.json` có khóa `file` ghi tab nào nằm ở file con nào, `doi-chieu-sheet.mjs` tải từ đúng file.
+- File con do tài khoản iKame của Lead tạo (connector), nằm trong thư mục Drive dùng chung. File con dùng locale Việt: công thức phân cách bằng ";".
