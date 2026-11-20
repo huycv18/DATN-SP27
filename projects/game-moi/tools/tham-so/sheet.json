@@ -3,8 +3,7 @@
   "spreadsheetId": "1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs",
   "dongDau": 2,
   "dongDauRieng": {
-    "OVERVIEW": 1,
-    "GDD CON": 1
+    "OVERVIEW": 1
   },
   "gid": {
     "OVERVIEW": 100,
@@ -31,7 +30,6 @@
     "MVP Criteria Checklist": 121,
     "Balance Sheet": 122,
     "Playtest Report": 123,
-    "Bugs Report": 124,
-    "GDD CON": 1560117773
+    "Bugs Report": 124
   }
 }

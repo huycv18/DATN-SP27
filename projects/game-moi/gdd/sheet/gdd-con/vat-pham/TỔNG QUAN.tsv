@@ -1,8 +1,0 @@
-Mục	Nội dung
-Hệ thống làm gì	Định nghĩa mọi thứ người chơi nhặt, chế, mang, đóng kiện và bán: tài nguyên, mẫu Driftlife, dụng cụ, vật tiêu hao, công thức, kiện hàng cảng. Nối nửa đi ra ngoài (nhặt, khai thác, hạ hoặc bắt) với nửa ở trạm (sửa, chế, nuôi, đóng kiện).
-Người chơi nhận được gì	Mỗi thứ nhặt được có hình dạng và chỗ dùng. Túi là giới hạn thứ hai sau Oxy nên mỗi lần nhặt là một lựa chọn, còn về trạm thì thấy kho đầy lên, xưởng biến phế liệu thành đồ có ích, kiện chất lên tàu.
-Pillar phục vụ	Management & Optimization (mọi vật phẩm có chỗ dùng ở trạm) và Risk & Reward (túi và vật tiêu hao đặt giá cho từng hơi thở). Nguyên tắc Solo or Together: mọi luật chạy đúng với 1 đến 4 người.
-Trong MVP	Dải Gần: 6 tài nguyên, 7 điểm khai thác, 5 vật liệu chế (COM), 9 kiện, 6 nâng cấp, 2 vật tiêu hao, 5 dụng cụ cộng chìa Bộ kích nguồn, 4 loài Driftlife (3 loài cỡ S bắt sống được).
-Sau MVP	Dải Giữa và Xa, nuôi Driftlife và nghiên cứu mẫu (chương 2), bản thiết kế, kiện tin mật, bản sao dữ liệu, mẫu sinh thiết cỡ L, nâng cấp bậc cao.
-Liên quan hệ thống khác	Combat (loài, vật rơi, chỉ số dụng cụ), Map (vị trí và số điểm khai thác), Trạm và cảng (khoang, ca cảng, đơn hàng). Nhân vật (túi, Oxy, bậc bộ đồ) và Economy (giá Tally).
-Vai giữ	gd-items
