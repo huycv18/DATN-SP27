@@ -1,6 +1,6 @@
 # tools/ game-moi (gd-tech)
 
-Máy chấm GDD và sim. Node 18 trở lên, không cần cài thư viện. Chạy từ gốc repo. Mô tả luật và quyết định: `gdd/he-thong/ky-thuat.md`.
+Máy chấm GDD và sim. Node 18 trở lên, không cần cài thư viện. Chạy từ gốc repo. Script Python cần Python 3.12 và `python -m pip install --user openpyxl`, chạy bằng `python -P -X utf8` (không dùng `-I` vì `-I` bỏ thư viện cài kiểu `--user`). Mô tả luật và quyết định: `gdd/he-thong/ky-thuat.md`.
 
 | Lệnh | Làm gì | Ra |
 |---|---|---|
