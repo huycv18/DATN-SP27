@@ -48,10 +48,10 @@ Mã lớn nhất đã cấp: GD-050
 | GD-040 | game-moi | Soát lệch và viết lại OVERVIEW, CORE LOOP, Day (đợt 8) | GDM, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-041 | game-moi | Viết lại GAME STORY dễ đọc, ID số (đợt 8) | gd-story, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-042 | game-moi | Viết lại Player dễ đọc, ID số (đợt 8) | gd-character, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
-| GD-043 | game-moi | Viết lại Enemy dễ đọc, ID số (đợt 8) | gd-combat, claude-cty | Lead 2026-11-20 | review (TSV xong, Sheet chưa dán xong) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
+| GD-043 | game-moi | Viết lại Enemy dễ đọc, ID số (đợt 8) | gd-combat, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-044 | game-moi | Viết lại Salvage, ITEM LIST, Recipe dễ đọc, ID số (đợt 8) | gd-items, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-045 | game-moi | Viết lại Zone dễ đọc, ID số (đợt 8) | gd-world, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
-| GD-046 | game-moi | Viết lại Customer dễ đọc, ID số (đợt 8) | gd-quan, claude-cty | Lead 2026-11-20 | review (TSV xong, Sheet chưa dán xong) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
+| GD-046 | game-moi | Viết lại Customer dễ đọc, ID số (đợt 8) | gd-quan, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-047 | game-moi | Viết lại ECONOMIC, Shop, Upgrade, PROCESSING, Balance Sheet dễ đọc, ID số (đợt 8) | gd-economy, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-048 | game-moi | Viết lại WIREFRAME, Tutorials dễ đọc, ID số (đợt 8) | gd-ux, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |
 | GD-049 | game-moi | Viết lại Event Tracking, TRACKING, Assets, AUDIO dễ đọc, ID số (đợt 8) | gd-tech, claude-cty | Lead 2026-11-20 | done (Sheet khớp) | `kiem-de-doc.mjs` ĐẠT tab của mình, gd-qa ĐẠT, Sheet đối chiếu khớp |

@@ -1,6 +1,6 @@
 # Đợt 8 - Soát và viết lại Sheet GDD cho dễ đọc (2026-11-20)
 
-**Kết luận:** 23 tab đã viết lại, qua cổng máy và QA vòng 2. 21 trên 23 tab đã dán lên Sheet và đối chiếu khớp. Enemy dán dở, Customer chưa dán.
+**Kết luận:** 23 tab đã viết lại, qua cổng máy và QA vòng 2. Cả 23 tab đã dán lên Sheet và đối chiếu khớp.
 
 ## Đã xong
 
@@ -20,7 +20,7 @@
 | selftest | 29 trên 29 ĐẠT |
 | QA vòng 1 | TRẢ LẠI (tên công thức lệch, mã sót ở Recipe, tên vật rơi Enemy không có trong ITEM LIST, thuật ngữ lẫn) |
 | Sửa theo QA | Đã sửa hết lỗi nặng và trung bình |
-| Sheet đối chiếu | 21 tab KHỚP, Enemy lệch từ hàng 82 tới 126, Customer còn bản cũ |
+| Sheet đối chiếu | 23 tab KHỚP (Enemy, Customer dán lại ở phiên riêng) |
 
 ## Lệch đã chốt trong đợt (GDM)
 
