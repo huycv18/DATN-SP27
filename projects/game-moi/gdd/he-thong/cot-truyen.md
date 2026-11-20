@@ -392,7 +392,7 @@ Mở chương: không có cảnh. Lần đầu vào dải Xa có một sự ki�
 | C3.5 | Những người ở lại | Tới lối vào N5 | N5 | Elias Vance, Wren. Tàu TA07 của The Remainers. Lối vào N6 |
 | C3.6 | Trạm bị cướp | Đã nộp mẫu Driftlife mang thẻ STY-301 ở phòng nghiên cứu | Ember, phòng nghiên cứu | Cảnh Amara nhận mẫu |
 | C3.7 | Dấu săn trộm | Ngày kế tiếp sau C3.6 | Ember, phòng nghiên cứu | Cú lật Driftlife. Cuộc bắt cóc ở N4 sẵn sàng xảy ra từ ngày kế tiếp |
-| C3.8 | Người thừa kế (đóng chương) | Kén thoát hiểm của Ilsume BNG-102 về tới Ember, qua cửa khí hoặc bằng Recall Beacon. Cuộc bắt cóc chỉ xảy ra khi giai đoạn 3 của động cơ chính đã lắp (K25) | N4, Waypost Outer Ring, rồi Ember | Sevra lộ danh tính. Tàu TA11 của The Kindling vào lịch từ ngày kế tiếp. Lối vào N7, chương 4 |
+| C3.8 | Người thừa kế (đóng chương) | Kén thoát hiểm của Ilsume BNG-102 về tới Ember, qua cửa khí hoặc bằng Recall Beacon. Cuộc bắt cóc chỉ xảy ra khi giai đoạn 3 của động cơ chính đã lắp (K25) | N4, Waypost Outer Ring, rồi Ember | Sevra lộ danh tính, kể Daskel đã ra lệnh đánh Cradle và hồ sơ Solace là mồi dẫn tàu vào ổ phục kích. Tàu TA11 của The Kindling vào lịch từ ngày kế tiếp. Lối vào N7, chương 4 |
 
 | Mã | Là gì | ID vật | Nơi | Hiện từ mốc | Nói điều gì |
 |---|---|---|---|---|---|
@@ -456,8 +456,8 @@ Mục tiêu người chơi: vào bên trong Cradle lấy bằng chứng của ch
 | C4.3 | Kẻ đã vào trước | BS-4 Cradle Custodian xong và đã nhặt MM4.3 | N7, Engine Core | Đường sang Bridge Archive |
 | C4.4 | Tên người dịch | Đã nhặt MM4.4 | N7, Bridge Archive | Lời thú nhận của Linh |
 | C4.5 | Hộp ghi hành trình | Đã nộp hộp ghi hành trình STY-401 ở khoang dẫn đường | Ember, khoang dẫn đường | Cảnh Rafa và Linh nhận hộp |
-| C4.6 | Không có gì ở đó | Ngày kế tiếp sau C4.5 | Ember, khoang dẫn đường | Sự thật: Solace là mồi. Sevra kể chuyện đảo chính. Dòng mục tiêu trong Sổ tay đổi |
-| C4.7 | Đường dây thứ nhất (đóng chương) | Số đơn tin mật của tàu TA11 đã giao đủ đạt ngưỡng chương 4 ở mục 3 và giai đoạn 4 của động cơ chính đã lắp (K25) | Ember, bến | The Kindling biết Sevra còn sống và nhận được bằng chứng của Cradle. Lối vào N8, chương 5 |
+| C4.6 | Không có gì ở đó | Ngày kế tiếp sau C4.5 | Ember, khoang dẫn đường | Hộp ghi hành trình chứng minh Solace là mồi. Sevra kể chuyện đảo chính và động cơ của Daskel. Dòng mục tiêu trong Sổ tay đổi |
+| C4.7 | Đường dây thứ nhất (đóng chương) | Số đơn tin mật của tàu TA11 đã giao đủ đạt ngưỡng chương 4 ở mục 3 và giai đoạn 4 của động cơ chính đã lắp (K25) | Ember, bến | The Kindling biết Sevra còn sống và nhận được bằng chứng của Cradle. Maro báo cho Daskel, Daskel tới Warden Rig và cho quân khép các tuyến bay quanh Ember. Lối vào N8, chương 5 |
 
 - Vì mốc đi theo thứ tự, C4.7 chỉ xét sau khi C4.6 xong. Đơn tin mật giao đủ từ trước đó vẫn được đếm.
 
@@ -1314,3 +1314,4 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 2026-11-20 | Đợt 6, sửa phản diện theo lời Lead. Phản diện là Daskel, tên độc tài của Sennar, The Wardens là chế độ và quân của hắn. Thêm Steward Ilvane, Sevra Ilvane (giả làm Ilsume), The Meeting War, The Kindling, The Hearth. Viết lại bối cảnh, ba chương cuối, kết, mục gieo, hồ sơ nhân vật, voice sheet (thêm ba câu của Sevra, đổi năm câu), khối GAME STORY. Mốc đóng chương 3 là cứu Sevra, mốc đóng chương 4 là đơn tin mật đầu tiên. Bỏ gốc lỗi của loài người và móc cũ cho phần sau. Sàn ngày giữ | Lời Lead cuối `story/lead-y-tuong-2026-11-20.md`, khung sửa lần 6, log GDM dòng 84 đến 92, brief `briefs/dot6-sua-phan-dien.md` | gd-story |
 | 2026-11-20 | Đợt 6, khớp với các vai sau khi họ chốt. Tàu của The Kindling là TA11. Kén thoát hiểm BNG-102, kiện tin mật CGO-421, gói tin mật STY-701, công thức RCP-422. Mốc đóng chương 3 xong khi kén về tới Ember bằng cửa khí hoặc Recall Beacon. Mốc C5.1 xong khi kén chạm cửa The Hearth. Trận BS-5 kết bằng bắt giữ Daskel. Đổi tên hai mốc (Dấu săn trộm, First Warden), bỏ tên The Kept Herds. Bảng lệch đợt 6 chuyển sang xong | Tin của gd-world, gd-combat, gd-items, gd-quan, GDM, phiếu `qa/GD-033-*.md` | gd-story |
 | 2026-11-20 | Mục 5, tiêu chí 14 và bảng lệch số 2: bỏ bộ số sim cũ (6, 5, 8, 3, 4), ghi sim dùng sàn hiện hành 7, 5, 8, 3, 3. Không đổi luật hay số | Sửa cho khớp số đã chốt, theo báo cáo GD-035 | gd-story |
+| 2026-11-20 | Khớp truyện minh họa (Google Doc The Novent): C3.8 Sevra nói ra âm mưu Solace, C4.6 bằng chứng là hộp ghi hành trình, C4.7 thêm phong tỏa quanh Ember | Lead đợt 8 | GDM |
