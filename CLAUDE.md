@@ -3,7 +3,7 @@
 Repo: github.com/huycv18/DATN-SP27 (public từ 2026-11-19). Làm việc nhiều thiết bị: máy cá nhân clone/pull, phiên Claude Đám mây trỏ vào repo này.
 
 ## Game
-Mã tạm EMBER, slug `projects/game-moi/` (đổi khi có tên). Concept Space Salvage đã bỏ 2026-11-19, chỉ để tra.
+Tên game: The Novent. Slug kỹ thuật: `projects/game-moi/`. Concept Space Salvage đã bỏ 2026-11-19, chỉ để tra.
 Lead giao toàn quyền cho GDM hoàn thiện GDD 2026-11-20. Nguồn luật chung: `projects/game-moi/gdd/00-khung-game.md`. Điểm GDM tự quyết: `projects/game-moi/log-gdm-tu-quyet.md`. GDD từng hệ thống: `projects/game-moi/gdd/he-thong/`.
 Một câu: tỉnh dậy trên trạm hỏng giữa bãi vỡ của tàu mẹ, mỗi ngày ra ngoài đổi oxy lấy tài nguyên và Driftlife, về sửa trạm, bán hàng ở ca cảng cho thương nhân ngoài hành tinh lấy Tally, nâng cấp để đi xa hơn, cho tới khi trạm rời neo.
 

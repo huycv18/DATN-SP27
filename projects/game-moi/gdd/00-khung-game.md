@@ -1,4 +1,4 @@
-# Khung game (mã tạm EMBER) - nguồn chung cho mọi GDD hệ thống
+# Khung The Novent - nguồn chung cho mọi GDD hệ thống
 
 Project: game-moi | Chủ sở hữu: GDM | Trạng thái: đã chốt 2026-11-20 theo ủy quyền của Lead, sửa lần 2 sau phản biện đợt 1 (log dòng 39 đến 53), sửa lần 3 sau sim đợt 2 (log dòng 54 đến 60), sửa lần 4 sau QA vòng 1 (log dòng 61 đến 64), sửa lần 5 sau QA vòng 2 (log dòng 65 đến 80), sửa lần 6 theo Lead sửa phản diện (log dòng 84 đến 92) | Nguồn: `DECISIONS.md` mục "2026-11-20 - Lead giao toàn quyền cho GDM", `log-gdm-tu-quyet.md`
 

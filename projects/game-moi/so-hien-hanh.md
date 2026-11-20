@@ -1,4 +1,4 @@
-# Số hiện hành game mới (mã tạm EMBER)
+# Số hiện hành của The Novent
 
 Một nơi duy nhất cho số và phạm vi đã chốt. Các vai đọc ở đây, không lấy từ tin nhắn. Cột Nguồn trỏ mục DECISIONS, dòng log GDM hoặc file sim.
 Nhãn: (L) Lead chốt bằng lời. (G) GDM chốt theo ủy quyền của Lead 2026-11-20, có dòng trong `log-gdm-tu-quyet.md`, Lead đổi được. (S) số do sim in ra, đổi số thì chạy lại sim, không sửa tay.
@@ -25,7 +25,7 @@ Cập nhật lần cuối: 2026-11-20, sau QA GD-031 vòng cuối và đợt 4.
 | GDD hệ thống | 10 file ở `gdd/he-thong/` | Bảng hệ thống ở khung mục 8 |
 | Điểm các vai tự quyết | `log-vai-tu-quyet.md` (237 điểm, sinh bằng `tools/gom-tu-quyet.py`) | Từng GDD |
 | Cốt truyện | `gdd/he-thong/cot-truyen.md`. Phản diện The Wardens, vụ tai nạn The Scattering, Solace là thông tin mồi, kết mở | (L) DECISIONS 2026-11-20. Tên: (G) log 4, 75 |
-| Tên game | Chưa có, mã tạm EMBER. Đề xuất: Cradlefall, Wakebound, Breathline | Chờ Lead chọn |
+| Tên game | The Novent | (L) DECISIONS 2026-11-20, mục Chốt tên game The Novent |
 | Đồng tiền | Tally, duy nhất | (L) vấn đề 7. (G) log 17 |
 | Nửa chơi tay thứ hai | Ca cảng giao thương | (L) DECISIONS 2026-11-20 |
 | Một ngày | Tối đa 2 chuyến, rồi ca cảng, rồi cuối ngày. Tự lưu sau mỗi chuyến, sau ca cảng, lúc ngủ | (G) log 12, 62, 65 |

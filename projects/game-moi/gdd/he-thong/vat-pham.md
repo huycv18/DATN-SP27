@@ -608,7 +608,7 @@ Tiêu chí nghiệm thu (gd-qa kiểm pass hoặc fail):
 
 Dave làm thế nào (theo `docs/knowledge/indie/06-dave-the-diver-cau-truc.md`): sức chứa và oxy là hạn chế thật, Gold nâng sức chứa, oxy, độ sâu [D14]. Map và sinh vật sinh lại mỗi chuyến [D2][D4]. Bắt sống bằng Net Gun hoặc Remote Drone kèm Tranquilizer [D8]. Farm nhân giống cá, món có Taste và giá [D8][D15]. Cá hiếm hơn nằm sâu hơn [D5].
 
-| Điểm | Dave | Space mới (EMBER) | Bằng chứng không tệ hơn |
+| Điểm | Dave | The Novent | Bằng chứng không tệ hơn |
 |---|---|---|---|
 | Đồ nhặt chỉ để bán và nấu | Cá và nguyên liệu bán lấy Gold và nấu ở quán [D12][D14] | Mọi vật phẩm đều có nơi tiêu nhìn thấy ở trạm: sửa khoang, luyện, nâng cấp, kiện (P2). Không có vật phẩm chỉ để bán lấy số | Nhất quán với P2, kiểm bằng script (mọi item có sink) |
 | Ngăn xa nhau hai nửa | Quán sushi nhận cá, nấu ra món | Cảng nhận kiện, kiện tinh phải qua Xưởng, giá trị thêm 1,1 đến 1,25 | Chưa đo, sim đợt 2 |

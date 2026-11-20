@@ -53,7 +53,7 @@ for (const [ten, dong, thuong, tau] of bang(/^### Chủng tộc The Veyl/, 'Ch�
   rows.push([`${ten}: ${dong}\n- Thương nhân có tên: ${thuong}\n- Loại tàu: ${tau}`, '', 'Chủng tộc', thuong === 'Tikko' ? 'MVP' : 'Sau MVP', REF + ' mục 2.6']);
 
 // 5. Ref bản đủ
-rows.push(['Bản đủ: projects/game-moi/gdd/he-thong/cot-truyen.md (luật kể chuyện, vật truyện, kết game, co-op, voice sheet). Mọi tên riêng là [TẠM]. Tên game dùng mã tạm EMBER.', '', 'Ref', '', REF]);
+rows.push(['Bản đủ: projects/game-moi/gdd/he-thong/cot-truyen.md (luật kể chuyện, vật truyện, kết game, co-op, voice sheet). Mọi tên riêng là [TẠM]. Tên game chính thức là The Novent.', '', 'Ref', '', REF]);
 
 // Tự kiểm: đủ 40 mốc, không ký tự cấm, mã không trùng
 const moc = rows.filter((r) => /^C\d\.\d+$/.test(r[1])).length;

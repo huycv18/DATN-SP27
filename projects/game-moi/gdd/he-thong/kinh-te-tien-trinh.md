@@ -1,6 +1,6 @@
 # GDD hệ thống: Kinh tế và tiến trình
 
-- Project: game-moi (EMBER) | Chủ sở hữu: gd-economy | Trạng thái: nháp bản đủ, chờ gd-qa (GD-028, 2026-11-20) | Nguồn quyết định: `../00-khung-game.md` K15, K18 đến K21, C3, C4, C8, mục 9, `../../log-gdm-tu-quyet.md` dòng 40, 50, 53
+- Project: game-moi (The Novent) | Chủ sở hữu: gd-economy | Trạng thái: nháp bản đủ, chờ gd-qa (GD-028, 2026-11-20) | Nguồn quyết định: `../00-khung-game.md` K15, K18 đến K21, C3, C4, C8, mục 9, `../../log-gdm-tu-quyet.md` dòng 40, 50, 53
 
 Mọi bảng số giữa dấu `<!--khoi:...-->` và mọi số giữa dấu `<!--v:...-->` do sim in, không sửa tay. Một lệnh in lại tất cả:
 `python projects/game-moi/sim/economy/sim-kinh-te.py --ghi` (chạy sim, ghi bảng vào file này, rồi chạy cổng kiểm `economy_doc.py kiem`). Tham số ở `projects/game-moi/sim/economy/tham-so.json`. Tự kiểm: `--selftest`. Dò núm gap: `--do`.
@@ -486,7 +486,7 @@ Tiêu chí đo được khi có build (rút từ GD-031):
 
 ## 9. Lệch khỏi tham chiếu (Dave the Diver)
 
-| Phần | Dave làm thế nào | EMBER làm thế nào | Vì sao lệch |
+| Phần | Dave làm thế nào | The Novent làm thế nào | Vì sao lệch |
 |---|---|---|---|
 | Đồng tiền | Gold từ quán sushi, thêm Bei cho trang bị | Một đồng Tally | K18, một bảng giá |
 | Nguồn tiền | Doanh thu ca tối theo món, giá món tăng theo cấp món | Giá kiện cố định theo GTĐ, thưởng đủ đơn và nhanh | Kiện nối thẳng với lượng nhặt, người chơi tính được |

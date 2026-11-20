@@ -12,7 +12,7 @@ Chưa chốt bước trước thì không giao việc cho vai. Số và luật c
 | 4 | Core loop: nửa hành động phiêu lưu, nửa quản lý, và cái nối hai nửa | GDM chốt 2026-11-20 theo ủy quyền của Lead, xem `gdd/00-khung-game.md` |
 | 5 | Danh sách hệ thống, chia cho 10 vai | GDM chốt 2026-11-20 theo ủy quyền của Lead, xem `gdd/00-khung-game.md` |
 | 6 | Phạm vi MVP và Vertical Slice theo sức nhóm (4 dev, 1 artist 2D), mốc thời gian | GDM chốt 2026-11-20 theo ủy quyền của Lead, xem `gdd/00-khung-game.md`. MVP và mốc thời gian là đề xuất, Lead xem lại |
-| 7 | Tên tạm, hướng art (vector 2D hay 2.5D), chi tiết bối cảnh | GDM chốt 2026-11-20 theo ủy quyền của Lead, xem `gdd/00-khung-game.md`. Hướng art 2.5D vẫn mở |
+| 7 | Tên game, hướng art (vector 2D hay 2.5D), chi tiết bối cảnh | Lead chốt tên The Novent ngày 2026-11-20. Hướng art 2.5D vẫn mở, xem `gdd/00-khung-game.md` |
 
 Xong bước 7 thì dựng Sheet GDD mới theo khuôn `docs/process/templates/gdd-sheet-khuon-indie.md` (OVERVIEW từ bước 1 đến 4 và 7, CORE LOOP từ bước 4 và 5, TRACKING từ bước 6).
 

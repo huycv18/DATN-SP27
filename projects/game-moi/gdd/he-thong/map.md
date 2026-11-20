@@ -1,6 +1,6 @@
 # GDD hệ thống: Map tổng, map nhánh, hazard, Recall Beacon, Skiff, nhịp chuyến
 
-Project: game-moi (EMBER) | Chủ sở hữu: gd-world | Trạng thái: bản đủ, số là khởi điểm ước, chưa sim (2026-11-20, GD-026) | Nguồn: `../00-khung-game.md` (K1 đến K9, C1 đến C8, mục 7, 9, 12), `../../log-gdm-tu-quyet.md`, brief `../../briefs/dot1-gdd-he-thong.md`
+Project: game-moi (The Novent) | Chủ sở hữu: gd-world | Trạng thái: bản đủ, số là khởi điểm ước, chưa sim (2026-11-20, GD-026) | Nguồn: `../00-khung-game.md` (K1 đến K9, C1 đến C8, mục 7, 9, 12), `../../log-gdm-tu-quyet.md`, brief `../../briefs/dot1-gdd-he-thong.md`
 
 Tên riêng tiếng Anh đều [TẠM]. Khu hiện như địa danh trên bản đồ dùng tên tiếng Anh [TẠM], gd-story duyệt (log 74). Danh từ chung (Rạn vụn, khoang lái, buồng ngủ đông) và tên phòng trong spec greybox giữ tiếng Việt. Tên vùng, môi trường, hazard do gd-world giữ. Tên trạm con, nhân vật do gd-story giữ. Tên Driftlife, kẻ địch, boss do gd-combat giữ. Tên vật phẩm do gd-items giữ.
 Số trong file sinh từ `projects/game-moi/sim/ngan_sach_oxy.py` (bảng ở `projects/game-moi/sim/ngan-sach-oxy.md`). Đó là phép tính tất định, không phải sim nhiều seed. Sim là việc của gd-tech ở đợt 2.

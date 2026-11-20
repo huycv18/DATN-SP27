@@ -1,6 +1,6 @@
 # GDD hệ thống: Combat, bắt sống, Driftlife, The Wardens, boss
 
-Project: game-moi (EMBER) | Chủ sở hữu: gd-combat | Trạng thái: bản đủ, nháp chờ QA (2026-11-20) | Nguồn: `../00-khung-game.md` (K1, K2, K4, K5, K7, K8, K9, K14, K16, C1 đến C8), brief `../../briefs/dot1-gdd-he-thong.md` GD-024
+Project: game-moi (The Novent) | Chủ sở hữu: gd-combat | Trạng thái: bản đủ, nháp chờ QA (2026-11-20) | Nguồn: `../00-khung-game.md` (K1, K2, K4, K5, K7, K8, K9, K14, K16, C1 đến C8), brief `../../briefs/dot1-gdd-he-thong.md` GD-024
 
 Mọi tên riêng là [TẠM]. Số là khởi điểm ước trừ chỗ ghi nguồn sim (mục 3.8, 6b lấy từ sim của gd-tech). Đề sim ở mục 8. Nhãn `MVP` hoặc `Sau MVP` theo khung mục 12.
 Đơn vị lấy từ `nguoi-choi.md`:
@@ -651,7 +651,7 @@ Tutorial (gd-ux):
 
 Dữ kiện Dave the Diver từ `docs/knowledge/indie/06-dave-the-diver-cau-truc.md` và `docs/knowledge/indie/20-combat.md`.
 
-| Dave làm thế nào | EMBER làm thế nào | Vì sao lệch |
+| Dave làm thế nào | The Novent làm thế nào | Vì sao lệch |
 |---|---|---|
 | Oxy hao nhanh khi bị tấn công, hết Oxy là hết lượt lặn [D14] | Giữ: trúng đòn trừ Oxy (K1) | Không lệch |
 | Bắt sống bằng Net Gun hoặc drone kèm Tranquilizer, cá ngủ thì bơi lại thu [D8][D11] | Giữ cấu trúc: Súng lưới cho S, Súng gây mê, Phao kéo cho M | Không lệch về cấu trúc. Thêm Dùi xung làm cách bất lực nhanh và ngắn, để có lựa chọn choáng hay mê |

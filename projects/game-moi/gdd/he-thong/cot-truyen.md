@@ -1,6 +1,6 @@
 # GDD hệ thống: Cốt truyện
 
-Project: game-moi (mã tạm EMBER) | Chủ sở hữu: gd-story | Trạng thái: bản đủ, đã sửa phản diện theo lời Lead, chờ nghiệm thu đợt 6 (2026-11-20) | Nguồn quyết định: `gdd/00-khung-game.md` mục 3 và 7, `log-gdm-tu-quyet.md` dòng 2 đến 8 và 36 đến 38, `DECISIONS.md` 2026-11-20 "Solace là thông tin mồi, kết mở cho hậu bản" và "Lead sửa phản diện", log dòng 84 đến 92
+Project: game-moi (The Novent) | Chủ sở hữu: gd-story | Trạng thái: bản đủ, đã sửa phản diện theo lời Lead, chờ nghiệm thu đợt 6 (2026-11-20) | Nguồn quyết định: `gdd/00-khung-game.md` mục 3 và 7, `log-gdm-tu-quyet.md` dòng 2 đến 8 và 36 đến 38, `DECISIONS.md` 2026-11-20 "Solace là thông tin mồi, kết mở cho hậu bản" và "Lead sửa phản diện", log dòng 84 đến 92
 
 - Mọi tên riêng tiếng Anh là [TẠM]. Từ dùng theo từ điển khung mục 10.
 - Nhãn `MVP` và `Sau MVP` theo khung mục 12: chương 1 là MVP, chương 2 tới 5 là Sau MVP.
@@ -898,13 +898,13 @@ Chưa có bằng chứng game này không tệ hơn ở phần truyện. Chỉ �
 
 ## 10. Câu hỏi mở
 
-Câu nào đã có quyết định thì ghi số dòng trong `log-gdm-tu-quyet.md`. Còn mở đúng một câu: tên game, để Lead chọn.
+Nguồn quyết định nằm ở `log-gdm-tu-quyet.md` và `DECISIONS.md`.
 
 | # | Câu hỏi | Đề xuất | Ai quyết |
 |---|---|---|---|
 | 1 | Đã chốt: vụ phục kích đổi tên thành The Scattering ở mọi file vì tên cũ trùng một sự kiện lớn của Dungeons & Dragons (log GDM dòng 75). Tra web tên mới: không thấy trùng, có một game tên gần giống (mục 12) | Không | Đã xong |
 | 2 | Đã chốt: giữ tên Solace, là từ thông dụng (log GDM dòng 75) | Không | Đã xong |
-| 3 | Tên game | Ba đề xuất ở mục 12: Cradlefall, Wakebound, Breathline | Lead |
+| 3 | Đã chốt tên game: The Novent | Xem mục 12 | Lead |
 | 4 | Đã chốt: thoại gốc tiếng Việt, tên riêng tiếng Anh (log GDM dòng 80) | Không | Đã xong |
 | 5 | Đã chốt: không lồng tiếng, mỗi nhân vật một âm giọng ngắn (log GDM dòng 80). Lead đổi được | Không | Đã xong |
 | 6 | Đã chốt với gd-ux: hộp thoại truyện UI-53 tối đa 80 ký tự mỗi câu, radio 60, bong bóng 60 (`ux-ui.md` bảng strings: story.box, story.radio, story.bubble) | Không | Đã xong |
@@ -943,9 +943,11 @@ Câu nào đã có quyết định thì ghi số dòng trong `log-gdm-tu-quyet.m
 - Tra trùng làm bằng tìm web ngày 2026-11-20, không phải tra cơ sở dữ liệu nhãn hiệu. Kết quả "không thấy" nghĩa là tìm web không ra, chưa phải bảo đảm pháp lý.
 - Tên các khu hiện như địa danh trong map nhánh (Lantern Outer Ring, Collapsed Hold, Holding Pens và các khu khác) do gd-world đặt ở bảng A01 đến A05 của `map.md`, gd-story đã duyệt (log GDM dòng 74). File này dùng đúng các tên đó, chưa tra trùng.
 
-### Tên game: 3 đề xuất
+### Tên game: The Novent
 
-Mã tạm EMBER vẫn dùng cho tới khi Lead chọn.
+Tên chính thức do Lead chốt ngày 2026-11-20. Đọc gần đúng **NÔ-ven(t)**. Tên ghép **Nova** và **Venture**, gợi chuyến đi mở đầu một kỷ nguyên mới.
+
+**Các phương án từng xét** (lịch sử trước khi chốt):
 
 | Đề xuất | Nghĩa với game | Kết quả tra |
 |---|---|---|
@@ -1006,6 +1008,7 @@ Nguồn tra:
 
 | Nhóm | Tên |
 |---|---|
+| Game | The Novent |
 | Thế giới | United Accord, Cradle, Seed Station, Solace, The Scattering, The Wake, The Lattice, Lodestar Survey, Tally, The Meeting War, Sennar (hành tinh, ngoài map) |
 | Trạm con | Station Ember, Station Lantern, Station Cinder, Station Wick, Station Flint, The Raft |
 | Nơi khác (tên vùng do gd-world giữ) | Ember Anchorage, Shepherd Belt, Glass Nebula, Veyl Waypost, Warden Rig, The Hearth |

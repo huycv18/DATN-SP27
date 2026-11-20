@@ -179,3 +179,11 @@ Lead duyệt: "Oke sửa lại hệ thống tên nhân vật".
 - Đổi tên làm việc của phản diện từ Serith thành Daskel, đọc DAS-kel. Âm đầu và vần tách khỏi Sevra khi hai người được nhắc cùng cảnh. Danh xưng vẫn là First Warden. Mã nhân vật WD-P1, boss BS-5 và mã câu thoại VO_SER giữ giá trị cũ.
 - Dùng Sevra Ilvane và First Warden Daskel khi lộ danh tính ở C3.8. Ilsume vẫn là tên giả của Sevra trước cảnh đó.
 - Quy tắc âm theo nhóm, cách đọc và hình tượng của dàn The Veyl nằm ở GDD cốt truyện mục 12. Tên các nhân vật còn lại tiếp tục dùng cách viết hiện có.
+
+## 2026-11-20 - Chốt tên game The Novent
+
+Lead chốt: "thôi để là The Novent đi".
+
+Tên chính thức: **The Novent**, đọc gần đúng **NÔ-ven(t)**. Ghép **Nova** và **Venture**, gợi chuyến đi mở đầu một kỷ nguyên mới cho nhân loại.
+
+Station Ember là tên trạm trong truyện. Slug kỹ thuật vẫn là `projects/game-moi/` để giữ các đường dẫn và công cụ hiện có.

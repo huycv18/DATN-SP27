@@ -1,12 +1,12 @@
 # GDD hệ thống: Trạm và cảng
 
-Project: game-moi (EMBER) | Chủ sở hữu: gd-quan | Trạng thái: bản đủ, sửa sau QA vòng cuối GD-031 (2026-11-20) | Nguồn quyết định: `gdd/00-khung-game.md` K10 đến K27, C1 đến C10, `log-gdm-tu-quyet.md`
+Project: game-moi (The Novent) | Chủ sở hữu: gd-quan | Trạng thái: bản đủ, sửa sau QA vòng cuối GD-031 (2026-11-20) | Nguồn quyết định: `gdd/00-khung-game.md` K10 đến K27, C1 đến C10, `log-gdm-tu-quyet.md`
 
 Số ca cảng (lịch tàu, kiện, giãn cách, hệ số co-op) đã đo bằng sim ca cảng GD-030 (`tools/ket-qua/sim-ca-cang.md`). Số còn lại ghi nguồn ở cột Nguồn của mục 3, chữ "ước" là chưa đo. ID vật phẩm theo `vat-pham.md` của gd-items, tên thương nhân theo `cot-truyen.md`, hành vi Driftlife theo `combat-driftlife.md`, giá Tally theo `kinh-te-tien-trinh.md` mục 3.1.
 
 ## Tóm tắt
 
-Trạm và cảng là nửa ở nhà của EMBER: người chơi sửa từng khoang của Station Ember, đánh thức người vớt để mở tính năng, nuôi Driftlife, và chơi ca cảng, nửa chơi tay thứ hai, nơi bốc kiện lên tàu thương nhân trước giờ rời bến để lấy Tally. Tầng: lõi. Ưu tiên: bản đầu (MVP chương 1). Phụ thuộc chính: vật phẩm (gd-items), Driftlife (gd-combat), kinh tế (gd-economy), cốt truyện (gd-story).
+Trạm và cảng là nửa ở nhà của The Novent: người chơi sửa từng khoang của Station Ember, đánh thức người vớt để mở tính năng, nuôi Driftlife, và chơi ca cảng, nửa chơi tay thứ hai, nơi bốc kiện lên tàu thương nhân trước giờ rời bến để lấy Tally. Tầng: lõi. Ưu tiên: bản đầu (MVP chương 1). Phụ thuộc chính: vật phẩm (gd-items), Driftlife (gd-combat), kinh tế (gd-economy), cốt truyện (gd-story).
 
 ## Hiện hành
 
