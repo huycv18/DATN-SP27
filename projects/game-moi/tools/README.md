@@ -23,8 +23,8 @@ Vai đổi số: sửa GDD hoặc file tham số, chạy lại lệnh sim, đọ
 | Lệnh (chạy ở gốc repo) | Làm gì |
 |---|---|
 | `node projects/game-moi/tools/xuat-event-tracking.mjs` | Sinh `gdd/sheet/Event Tracking.tsv` từ bảng sự kiện của `ky-thuat.md` mục 2.4. Thêm `--kiem` để chỉ báo TSV có cũ hơn GDD không |
-| `python -P projects/game-moi/tools/dung-gdd-con.py <story\|combat\|vat-pham\|tat-ca> --ra <thư mục>` | Dựng xlsx tab khuôn của GDD con từ GDD hệ thống. Tải lên Drive, chép tab vào file con. Dừng khi có mục "## " chưa có tab khuôn |
+| `python -P projects/game-moi/tools/dung-gdd-con.py <story\|combat\|vat-pham\|tat-ca> --ra <thư mục>` | Không dùng từ 2026-11-20 (bỏ GDD con), giữ để tra. Dựng xlsx tab khuôn của GDD con từ GDD hệ thống. Tải lên Drive, chép tab vào file con. Dừng khi có mục "## " chưa có tab khuôn |
 | `node projects/game-moi/tools/doi-chieu-sheet.mjs` | So mọi `gdd/sheet/<Tab>.tsv` với tab cùng tên trên Sheet qua export CSV, in bảng ô lệch và hàng thừa. Thoát 1 khi có tab lệch |
 | `node projects/game-moi/tools/doi-chieu-sheet.mjs --tab "Customer" --ra <file.md>` | Chỉ một tab, ghi kết quả ra file |
 
-Quy ước cho mọi vai: tên file TSV trùng tên tab, hàng 1 của TSV là header và ứng với hàng 2 của tab (hàng 1 là tiêu đề tab), xuống dòng trong ô ghi `\n`. gid các tab ở `tham-so/sheet.json`, tab nằm ở GDD con thì có thêm dòng trong khóa `file` (spreadsheetId của file con). Sheet phải chia sẻ bằng link (đọc không cần đăng nhập), nếu không thì dùng `/gdd-sheet-sync doi-chieu` qua trình duyệt.
+Quy ước cho mọi vai: tên file TSV trùng tên tab, hàng 1 của TSV là header và ứng với hàng 2 của tab (hàng 1 là tiêu đề tab), xuống dòng trong ô ghi `\n`. gid các tab ở `tham-so/sheet.json`. Khóa `file` (tab nằm ở file khác) không còn dùng từ khi bỏ GDD con 2026-11-20. Sheet phải chia sẻ bằng link (đọc không cần đăng nhập), nếu không thì dùng `/gdd-sheet-sync doi-chieu` qua trình duyệt.

@@ -4,7 +4,7 @@ Repo: github.com/huycv18/DATN-SP27 (public từ 2026-11-19). Làm việc nhiều
 
 ## Game
 Tên game: The Novent. Slug kỹ thuật: `projects/game-moi/`. Concept Space Salvage đã bỏ 2026-11-19, chỉ để tra.
-Lead giao toàn quyền cho GDM hoàn thiện GDD 2026-11-20. Nguồn luật chung: `projects/game-moi/gdd/00-khung-game.md`. Điểm GDM tự quyết: `projects/game-moi/log-gdm-tu-quyet.md`. GDD từng hệ thống: `projects/game-moi/gdd/he-thong/`. Sheet: GDD chính và 3 GDD con (Story, Combat và Driftlife, Vật phẩm), xem tab GDD CON và DECISIONS 2026-11-20 Tách GDD con.
+Lead giao toàn quyền cho GDM hoàn thiện GDD 2026-11-20. Nguồn luật chung: `projects/game-moi/gdd/00-khung-game.md`. Điểm GDM tự quyết: `projects/game-moi/log-gdm-tu-quyet.md`. GDD từng hệ thống: `projects/game-moi/gdd/he-thong/`. Sheet: một GDD duy nhất, 25 tab (bỏ GDD con 2026-11-20, xem `projects/game-moi/DECISIONS.md`).
 Một câu: tỉnh dậy trên trạm hỏng giữa bãi vỡ của tàu mẹ, mỗi ngày ra ngoài đổi oxy lấy tài nguyên và Driftlife, về sửa trạm, bán hàng ở ca cảng cho thương nhân ngoài hành tinh lấy Tally, nâng cấp để đi xa hơn, cho tới khi trạm rời neo.
 
 | Ràng buộc Lead đã chốt | Giá trị |

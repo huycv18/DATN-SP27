@@ -2,7 +2,7 @@
 
 Mục đích: mọi việc có pipeline (nhiều hơn một agent hoặc nhiều hơn một lượt) có một dòng ở đây. Việc nhỏ GDM làm thẳng không cần dòng.
 Trạng thái: `todo` / `doing` / `review` / `done` / `blocked`. Chỉ GDM đặt `done`. Mã `GD-###` tăng dần, không tái dùng.
-Mã lớn nhất đã cấp: GD-038
+Mã lớn nhất đã cấp: GD-039
 
 | ID | Project | Việc | Agent | Phụ thuộc | Trạng thái | Tiêu chí hoàn thành |
 |---|---|---|---|---|---|---|
@@ -44,3 +44,4 @@ Mã lớn nhất đã cấp: GD-038
 | GD-036 | game-moi | GDD con bản đọc Combat và Driftlife theo `gdd/sheet/gdd-con/KHUON.md` | gd-combat | Lead 2026-11-20 | done (kiem ĐẠT, gd-qa ĐẠT, đã thay tab Sheet) | `dung-gdd-con.py kiem combat` ĐẠT, gd-qa ĐẠT |
 | GD-037 | game-moi | GDD con bản đọc Vật phẩm theo `gdd/sheet/gdd-con/KHUON.md` | gd-items | Lead 2026-11-20 | done (kiem ĐẠT, gd-qa ĐẠT, đã thay tab Sheet) | `dung-gdd-con.py kiem vat-pham` ĐẠT, gd-qa ĐẠT |
 | GD-038 | game-moi | Nghiệm thu 3 GDD con bản đọc: khớp GDD hệ thống, dễ hiểu, không mất luật | gd-qa | GD-035 tới GD-037 | done (vòng 2: Story, Vật phẩm ĐẠT. Combat N3 sửa sau, GDM soát 2 hàng kén) | `qa/GD-038-gdd-con-gon.md` ĐẠT |
+| GD-039 | game-moi | Bỏ GDD con, gộp 5 tab về GDD chính | GDM | Lead 2026-11-20 | done | 25 tab ở GDD chính, `doi-chieu-sheet.mjs` 24 tab KHỚP |
