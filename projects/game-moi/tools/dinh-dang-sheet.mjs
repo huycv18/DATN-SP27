@@ -20,6 +20,16 @@ for (const [tab, sheetId] of Object.entries(cfg.gid)) {
   const ngoai = vien('SOLID_MEDIUM', '#351C75'), trong = vien('SOLID', '#B4A7D6');
   req.push({ updateBorders: { range: { sheetId, startRowIndex: 1, endRowIndex: cuoi, startColumnIndex: 0, endColumnIndex: c },
     top: ngoai, bottom: ngoai, left: ngoai, right: ngoai, innerHorizontal: trong, innerVertical: trong } });
+  // Khối Task / Sub Task: gộp dọc các cột trống ở mọi dòng con (STT, Task, Ref) theo từng nhóm. Dán chữ thuần hủy ô gộp nên chạy lại sau mỗi lần dán
+  if (rows[0][1] === 'Task' && rows[0][2] === 'Sub Task') {
+    const nhom = []; // [đầu, cuối] theo index trong rows
+    rows.forEach((r, i) => { if (i === 0) return; if (r[0]) nhom.push([i, i]); else if (nhom.length) nhom.at(-1)[1] = i; });
+    const con = nhom.flatMap(([d, k]) => rows.slice(d + 1, k + 1));
+    const cot = [...Array(c).keys()].filter((j) => con.length && con.every((r) => !r[j]));
+    req.push({ unmergeCells: { range: { sheetId, startRowIndex: thanTu, endRowIndex: cuoi, startColumnIndex: 0, endColumnIndex: c } } });
+    for (const [d, k] of nhom) if (k > d) for (const j of cot)
+      req.push({ mergeCells: { range: { sheetId, startRowIndex: d + 1, endRowIndex: k + 2, startColumnIndex: j, endColumnIndex: j + 1 }, mergeType: 'MERGE_ALL' } });
+  }
   req.push({ autoResizeDimensions: { dimensions: { sheetId, dimension: 'ROWS', startIndex: thanTu, endIndex: cuoi } } });
   const mau = NHOM_A.includes(tab) ? '#351C75' : NHOM_D.includes(tab) ? '#8E7CC3' : null;
   req.push({ updateSheetProperties: { properties: { sheetId, gridProperties: { hideGridlines: true }, ...(mau && { tabColorStyle: { rgbColor: hex(mau) } }) },
