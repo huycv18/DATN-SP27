@@ -350,3 +350,8 @@ Hệ quả:
 
 Lead duyệt mục mẫu II.6 ("Oke làm tiếp đi"), rồi thêm: "Phần tiêu đề để tiếng anh nhé".
 Hệ quả: tên Doc, tên phần và mọi tiêu đề `##`, `###` trong Doc thiết kế và chương đề xuất dự án viết tiếng Anh (The Novent Design Document, Part I. Controls, Part II. Game Elements, Overview, Acceptance Criteria, Edge Cases, Post-MVP). Thân văn, bảng, chú thích hình vẫn tiếng Việt. GDM hiểu "phần tiêu đề" là tiêu đề mục, không gồm chú thích hình. Đã sửa `book/KHUON.md`, II.6, `de-xuat-du-an.md`, `kiem-book.mjs`, `gop-book.mjs`, selftest. `soat.mjs` nhận thêm "edge case" là mục trường hợp biên.
+
+
+## 2026-11-23 - Demo màn hình The Novent
+
+Lead yêu cầu tạo art và asset mới để dựng các màn hình trong game từ Figma, rồi nối thành luồng trình diễn tương tác. Bản web nằm tại `tools/prototype/game-demo/index.html`. Luồng mẫu chạy trong một ngày đã có ca cảng tại Ember. Nút Chọn cảnh mở dữ liệu trình diễn riêng để xem một đoạn mà không thay đổi bản lưu. Phòng co-op, điều kiện sửa khoang và đơn chế trong demo dùng dữ liệu mẫu.

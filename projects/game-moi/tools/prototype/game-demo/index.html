@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d16">
+  <title>The Novent | Demo trong game</title>
+  <link rel="stylesheet" href="../wireframe/figma.css">
+  <link rel="stylesheet" href="game.css">
+  <script defer src="game.js"></script>
+</head>
+<body>
+  <main id="player" aria-label="The Novent">
+    <div id="viewport">
+      <section id="game" aria-label="Màn chơi">
+        <div id="scene" class="scene"></div>
+        <div id="overlay" class="overlay" hidden></div>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      </section>
+    </div>
+    <div class="player-bar">
+      <span>THE NOVENT <span class="player-label">/ Demo trong game</span></span>
+      <div>
+        <button type="button" data-action="picker">Chọn cảnh</button>
+        <button type="button" data-action="fullscreen">Toàn màn hình</button>
+      </div>
+    </div>
+  </main>
+  <noscript>Bật JavaScript để chơi demo The Novent.</noscript>
+</body>
+</html>
