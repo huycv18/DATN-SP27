@@ -257,7 +257,7 @@ Ghi chú: ○ △ □ ◇ trong bản vẽ thay bằng (o) (^) vì khối chữ 
 |---|---|---|---|---|
 | HCH-01 | Giờ ca | Trên trái | Đồng hồ ca còn lại (phút:giây), từ 300 giây (luật 34). Dưới 30 giây: số đậm kèm biểu tượng đồng hồ và tích tắc nhẹ, không nhấp nháy | Chữ, biểu tượng, tích tắc |
 | HCH-02 | Tally và tip trong ca | Trên trái, cạnh HCH-01 | Tally nhận trong ca và Tip nhận trong ca. Mỗi lần giao, "+giá tip +n" bay từ cửa neo lên trong 150 ms và hai số cộng. Bơm khí cộng vào Tip | Số bay |
-| HCH-03 | Điểm cảng và số tàu | Trên trái, cạnh HCH-02 | "Điểm cảng n" và "Tàu a/b" (tàu phục vụ xong trên tổng lịch ca). Điểm cảng cộng 1 mỗi tàu, thêm 1 nếu còn trên 2/3 kiên nhẫn | Chữ, số |
+| HCH-03 | Điểm cảng và số tàu | Trên trái, cạnh HCH-02 | "Điểm cảng n" và "Tàu a/b" (tàu phục vụ xong trên tổng lịch ca). Điểm cảng cộng 1 mỗi tàu, thêm 1 nếu còn từ 2/3 kiên nhẫn trở lên | Chữ, số |
 | HCH-04 | Danh mục còn | Dưới trái | Mỗi loại: hình thùng, tên ngắn, số thùng còn. Hết thì mờ kèm "Hết". Loại có đơn đặt trước chưa giao thêm nhãn "Đặt trước" | Hình, chữ, số |
 | HCH-05 | Thùng đang cầm | Dưới giữa | Hình thùng, tên ngắn và "Cửa neo n" (số cộng màu). Mỗi lần mang 1 thùng. Tay trống thì ẩn | Số cửa neo, hình |
 | HCH-06 | Bong bóng gọi món và thanh kiên nhẫn | Trên tàu (diegetic) | Hình thùng và tên món tàu gọi, vòng đếm 3 giây tới khi thùng ra ô quầy, rồi thanh kiên nhẫn có vạch mốc 2/3 và 1/3. Tàu chờ ngoài chỉ có vòng đồng hồ chờ, không có bong bóng. Tàu đang cập chưa có bong bóng, tàu chưa nhận thùng thì bong bóng xám kèm "Đang chào hỏi". Đơn đặt trước có nhãn "Đặt trước". Tàu nhận thùng hoặc hết kiên nhẫn thì rời, bong bóng biến mất | Hình, vạch mốc, tích tắc dưới 1/3 |
@@ -522,7 +522,7 @@ Mỗi dòng là một khoảnh khắc cần có phản hồi. "Thời gian" là 
 | Mở ca | Ca bắt đầu gọn, hàng đã sẵn | Thông dịch viên đóng thùng nhanh, danh mục hiện ở HCH-04, tàu đầu vào cửa neo | Dán, thả thùng, tiếng cập bến | 0,5 giây ước | Đề xuất gd-ux, đo ở demo |
 | Thùng hiện ở quầy | Biết có việc và biết đi đâu | Bong bóng có vòng đếm 3 giây, rồi thùng nảy lên ở ô quầy, viền và số cùng cửa neo | Tick nhẹ, cao độ theo số cửa neo | 3 giây sau khi tàu gọi | Đề xuất mục 4 |
 | Nhặt thùng | Chắc tay | Thùng nhấc lên đầu nhân vật, HCH-05 hiện | Nhấc, cao độ theo số cửa neo | 0,1 giây | Ước |
-| Giao thùng đúng cửa neo | Tiền vào túi ngay | Thùng trượt vào tàu, bong bóng đóng lại, Tally và tip bay lên HCH-02, tip phóng to khi còn trên 2/3 kiên nhẫn | Nhận hàng, xu, cao độ theo tip | 150 ms | Ước, đo ở demo |
+| Giao thùng đúng cửa neo | Tiền vào túi ngay | Thùng trượt vào tàu, bong bóng đóng lại, Tally và tip bay lên HCH-02, tip phóng to khi còn từ 2/3 kiên nhẫn trở lên | Nhận hàng, xu, cao độ theo tip | 150 ms | Ước, đo ở demo |
 | Giao sai cửa neo | Biết ngay mình sai, không bị phạt | Thùng rung ở tay, cửa neo đúng nháy một lần, hiện lời từ chối | Bíp thấp ngắn, không chói | 1 khung | Ước |
 | Bơm khí xong | Việc nhỏ đáng làm | Vòng đầy, hơi khí chạy lên tàu, thanh kiên nhẫn nhảy lên có vệt sáng, số "+10" bay lên | Xì khí ngắn, xu nhỏ | 1 giây giữ | Ước |
 | Kiên nhẫn xuống dưới 1/3 | Tàu sốt ruột nhưng còn kịp | Thanh đổi hình ở vạch mốc, tàu rung nhẹ, nhấp nháy tối đa 3 lần mỗi giây | Tích tắc nhanh dần | 1 khung | Ước |

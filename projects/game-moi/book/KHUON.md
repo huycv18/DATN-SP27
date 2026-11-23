@@ -74,7 +74,7 @@ Mục mẫu đã duyệt: `phan-2/06-tram-va-cang.md`. Viết mục mới thì �
 8. Văn phong: tiếng Việt có dấu, thuật ngữ game giữ tiếng Anh, không emoji, không gạch dài, không dấu chấm phẩy. Câu kể chuyện vận hành, không viết kiểu ghi chú. Không lịch sử thay đổi, không "đã bỏ", không "trước đây".
 9. Độ dài: 120 tới 300 dòng một mục. Dài hơn thì cắt chi tiết xuống Sheet.
 10. Một dòng văn xuôi có từ 2 số trở lên thì tách thành gạch đầu dòng hoặc bảng. Chú thích hình cũng tính là văn xuôi.
-11. Ở dòng giải nghĩa công thức, tên biến viết thường, không bọc backtick.
+11. Ở dòng giải nghĩa công thức, tên biến viết đúng như trong khối công thức, không bọc backtick (như mục mẫu II.6).
 12. Chú thích hình đặt ngay dưới khối mermaid hoặc ngay dưới dòng `[CHỜ ẢNH`. Mục cuối ghi đúng `### II.n.z. Post-MVP`.
 13. Được thêm ví dụ tính bằng số lấy từ nguồn, mở đầu bằng chữ "Ví dụ" để người đọc biết số kết quả là phép tính, không phải số cân bằng mới.
 

@@ -5,7 +5,7 @@ Ngày là đơn vị nhịp của The Novent. Mỗi ngày người chơi ra ngo�
 ### II.1.1. Overview
 
 Vòng chơi lớn của game đi theo một đường thẳng rồi quay lại điểm đầu:
-- Ra ngoài thu thập tài nguyên và Driftlife (xem mục II.3 và II.4).
+- Ra ngoài thu thập tài nguyên và **Driftlife**, sinh vật trôi trong chân không mà người chơi bắt sống hoặc hạ (xem mục II.3 và II.4).
 - Mang về kho của trạm.
 - Sửa trạm, chế đồ, nuôi Driftlife (xem mục II.5 và II.6).
 - Lập danh mục và bán ở ca cảng lấy Tally (xem mục II.6).
@@ -30,7 +30,7 @@ Một ngày có năm pha theo thứ tự cố định:
 
 Pha Chuẩn bị là lúc người chơi đặt mục tiêu cho ngày. **Bảng tàu** ở khoang liên lạc cho biết tối nay loại tàu nào ghé và chúng hay gọi gì. **Đơn đặt trước** là thùng một tàu cụ thể đặt từ đầu ngày với giá cao. Đọc hai thứ này buổi sáng, người chơi biết nên chọn dải nào và mang gì về. Đây là mối nối giữa nửa phiêu lưu và nửa quản lý.
 
-Hai pha Chuyến là nửa hành động. Ngoài không gian **Oxy** là chỉ số duy nhất của người chơi, vừa là thời gian của chuyến vừa là máu. Túi đồ có sức chứa giới hạn. Chuyến kết thúc khi người chơi về cửa khí, dùng Recall Beacon, hoặc hết Oxy và bị kéo về. Luật của chuyến ở mục II.2 và mục kế tiếp.
+Hai pha Chuyến là nửa hành động. Ngoài không gian **Oxy** là chỉ số duy nhất của người chơi, vừa là thời gian của chuyến vừa là máu. Túi đồ có sức chứa giới hạn. Chuyến kết thúc khi người chơi về cửa khí, dùng **Recall Beacon** (điểm thoát kéo người chơi về trạm), hoặc hết Oxy và bị kéo về. Luật của chuyến ở mục II.2 và mục kế tiếp.
 
 Pha Ca cảng là nửa chơi tay thứ hai. Luật của ca cảng ở mục II.6.
 
@@ -45,7 +45,7 @@ Chi tiết dữ liệu: tab Day trên Sheet GDD, khối Cấu trúc một ngày.
 
 Ba luật giữ nhịp một ngày:
 
-**Tối đa 2 chuyến mỗi ngày.** Đi bằng Skiff tới map nhánh cũng tính là một chuyến. Sau chuyến thứ hai cửa khí khóa tới ngày mới. Lý do: về trạm thì Oxy được nạp đầy. Nếu được ra lại không giới hạn thì Oxy không còn là giới hạn của chuyến, và quyết định lúc nào quay về mất ý nghĩa.
+**Tối đa 2 chuyến mỗi ngày.** Ở bản đủ, đi bằng **Skiff** (xuồng chở thẳng tới một map nhánh đã tìm ra) cũng tính là một chuyến. Sau chuyến thứ hai cửa khí khóa tới ngày mới. Lý do: về trạm thì Oxy được nạp đầy. Nếu được ra lại không giới hạn thì Oxy không còn là giới hạn của chuyến, và quyết định lúc nào quay về mất ý nghĩa.
 
 **Ca cảng luôn sau các chuyến.** Đã mở ca cảng thì không ra ngoài được nữa trong ngày. Người chơi được mở ca sớm khi mới đi 1 chuyến hoặc chưa đi chuyến nào, đổi lại mất chuyến còn lại của ngày. Mỗi ngày có đúng một ca. Chọn Mở ca hay Bỏ ca thì cửa khí cũng khóa tới ngày mới.
 
@@ -109,7 +109,7 @@ Chi tiết dữ liệu: tab Day khối Độ dài mục tiêu, tab Balance Sheet
 
 ### II.1.5. Chapters and the Day
 
-Truyện không chạy theo đồng hồ mà theo **mốc truyện**. Mỗi chương có một chuỗi mốc, một số mốc cần số ngày tối thiểu để diễn ra. Chương chỉ đóng khi mốc đóng chương xong, và mốc đó chỉ kích hoạt khi giai đoạn động cơ chính của chương đã lắp. Kinh tế và trạm không có cổng chương riêng.
+Truyện không chạy theo đồng hồ mà theo **mốc truyện**. Mỗi chương có một chuỗi mốc, một số mốc cần số ngày tối thiểu để diễn ra. Chương chỉ đóng khi mốc đóng chương xong, và mốc đó chỉ kích hoạt khi giai đoạn động cơ chính của chương đã lắp. **Động cơ chính** là việc sửa dài nhất của trạm, chia năm giai đoạn, mỗi chương lắp một giai đoạn (xem mục II.6). Kinh tế và trạm không có cổng chương riêng.
 
 | Chương | Tên tạm | Vùng mới | Kiểu chơi mới | Số ngày tối thiểu |
 |---|---|---|---|---|
@@ -121,7 +121,7 @@ Truyện không chạy theo đồng hồ mà theo **mốc truyện**. Mỗi chư
 
 Số ngày tối thiểu là mức sàn. Nhóm đông chơi nhanh cũng không hết game sớm hơn tổng số ngày này. Nội dung truyện của từng chương ở mục II.9.
 
-Chương đầu là MVP. Ba ngày đầu cảng chưa mở vì khoang liên lạc và cảng còn hỏng. Người chơi đi chuyến, sửa khoang neo, xưởng, khoang liên lạc và cảng. Hàng nhặt được trong những ngày này nằm trong kho chờ ca cảng đầu tiên. Ca cảng đầu tiên là ca dạy, chỉ có 2 tàu.
+Chương đầu là MVP. Những ngày đầu cảng chưa mở vì khoang liên lạc và cảng còn hỏng. Người chơi đi chuyến, sửa khoang neo, xưởng, khoang liên lạc và cảng. Lịch tàu sinh vào đầu ngày, nên cảng sửa xong thì sang ngày sau mới có tàu. Theo chuỗi mốc truyện, ca cảng sớm nhất là ngày 5. Hàng nhặt được trong những ngày này nằm trong kho chờ ca cảng đầu tiên. Ca cảng đầu tiên là ca dạy, chỉ có hai tàu.
 
 Chi tiết dữ liệu: tab Day khối 5 chương, tab GAME STORY.
 
@@ -156,7 +156,7 @@ Sim chưa đo được người chơi có thấy nhịp ngày dễ chịu không
 |---|---|
 | Người chơi mở ca khi mới đi 1 chuyến | Được. Cửa khí khóa, chuyến thứ hai của ngày mất |
 | Người chơi đi ngủ khi chưa có ca hôm đó | Được. Ngày đó không có ca, kho giữ nguyên, sang ngày mới bình thường |
-| Thoát game giữa chuyến khi chơi một mình | Vào lại ở điểm lưu gần nhất, mất phần chuyến đang dở, bố cục map của chuyến đó giữ nguyên |
+| Thoát game giữa chuyến khi chơi một mình | Vào lại ở điểm lưu sau chuyến trước. Chuyến dở không tính vào hạn hai chuyến của ngày, đồ nhặt trong chuyến đó mất, người chơi đi lại chuyến đó với cùng bố cục map |
 | Co-op: một người còn ở ngoài khi người kia muốn mở ca | Nút Mở ca xám kèm lý do, chờ người còn ở ngoài về |
 | Co-op: một người không trả lời xác nhận ra chuyến | Sau 30 giây tính là ở lại trạm, chuyến bắt đầu với những người đã xác nhận |
 | Ba ngày đầu khi cảng chưa sửa | Ngày chỉ có chuyến và cuối ngày, không có pha Ca cảng |

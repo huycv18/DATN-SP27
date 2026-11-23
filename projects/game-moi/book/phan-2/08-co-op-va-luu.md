@@ -12,12 +12,12 @@ Phần lưu đi cùng một nguyên tắc: file lưu nằm ở máy host, game t
 
 ### II.8.2. Host Authority and Synchronization
 
-Mỗi loại trạng thái có đúng một bên nắm quyền. Bảng dưới gộp theo nhóm, chi tiết từng dòng ở tab Event Tracking và ở tài liệu kỹ thuật của đội dev.
+Mỗi loại trạng thái có đúng một bên nắm quyền. Bảng dưới gộp theo nhóm, chi tiết từng dòng ở tab Event Tracking trên Sheet GDD và ở `ky-thuat.md` (tài liệu kỹ thuật của đội dev).
 
 | Nhóm trạng thái | Ai nắm quyền | Cách gửi |
 |---|---|---|
 | Vị trí, vận tốc, hướng, lướt của người chơi | Máy của chính người đó | Gửi liên tục, máy khác nội suy |
-| Oxy, túi đồ, tải của người chơi | Máy người đó tính, host kiểm | Gửi khi đổi và gửi định kỳ |
+| Oxy, túi đồ, tải của người chơi | Máy người đó tính, host kiểm | Gửi khi đổi và gửi định kỳ 5 lần mỗi giây |
 | Ngạt, được cứu, bị kéo về, Recall Beacon, Giữ chỗ | Host | Sự kiện tin cậy |
 | Trao đồ giữa hai người, thả đồ | Host | Yêu cầu gửi host, host chuyển và trả kết quả |
 | Vật kéo (buồng ngủ đông, lồng mẫu, kiện nổ) | Người đang giữ, từ 2 người cùng kéo thì host | Gửi liên tục |
@@ -48,6 +48,7 @@ Tham số mạng, số khởi điểm để dev chỉnh khi chọn stack:
 | Tần số gửi vị trí người chơi | 20 lần mỗi giây | 15 tới 30 |
 | Trễ nội suy | 100 ms | 50 tới 150 |
 | Tần số gửi trạng thái kẻ địch | 10 lần mỗi giây | 5 tới 20 |
+| Tần số gửi định kỳ Oxy, túi đồ, tải | 5 lần mỗi giây | Chưa đặt |
 | Dung sai host kiểm tốc độ | 15% trên vmax cộng lực ngoài | 10 tới 25% |
 | Cửa sổ host trả lời yêu cầu | 250 ms | 150 tới 500 |
 
@@ -81,7 +82,7 @@ Vì N chốt lúc sinh, người vào hoặc rời giữa chừng không làm đ
 
 ### II.8.4. Disconnects and Leaving
 
-Có ba cách một người biến mất khỏi phiên, mỗi cách một luật.
+Có ba cách một người biến mất khỏi phiên, mỗi cách một luật. Sơ đồ bên dưới chỉ vẽ trường hợp mất gói và host rớt. Rời chủ động không qua phát hiện mất gói nên không có trong sơ đồ.
 
 **Rời phiên chủ động.** Nhân vật ở lại trạm. Nếu người đó rời khi đang ngoài chuyến thì tính như bị kéo về, chỉ giữ đúng 1 món. Rời không phải đường về an toàn.
 
