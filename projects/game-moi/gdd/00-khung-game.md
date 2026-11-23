@@ -281,7 +281,7 @@ Ngày và đêm: nhịp sinh hoạt của trạm, không có đồng hồ thật
 1. Kết hợp thể loại game độc đáo: Kết hợp hành động, phiêu lưu ngoài không gian với mô phỏng quản lý trạm thương cảng trong một vòng lặp ngày đêm rõ rệt. Ban ngày bay ra bãi vỡ của tàu mẹ để thu thập tài nguyên và Driftlife, ban đêm mở ca cảng giao thương với thương nhân ngoài hành tinh.
 2. Nội dung đa dạng, nhịp độ thư giãn: Xen giữa các chuyến bay căng thẳng là nhịp chậm trên trạm: sửa khoang, nuôi Driftlife, trò chuyện với người sống sót, giao thương với thương nhân mỗi loài một tính cách. Hoạt động mới mở dần theo chương, thất bại không bị phạt nặng, không gò bó như làm việc.
 3. Thế giới và cốt truyện cuốn hút: Khám phá thế giới giả tưởng có chiều sâu và những khu vực ngoài không gian để tìm lời giải cho những bí ẩn bị che giấu.
-4. Chơi một mình hay cùng bạn bè: Co-op online 2 đến 4 người có lý do trong cốt truyện, mỗi trạm có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh dậy. Chơi một mình vẫn trọn vẹn, có bạn thì thêm người chia việc.
+4. Trải nghiệm trọn vẹn dù chơi một mình hay co-op: Chơi một mình vẫn đủ toàn bộ nội dung và cốt truyện. Co-op online 2 đến 4 người không làm giảm trải nghiệm hay bắt cốt truyện phải đánh đổi: mỗi người chơi đều có chỗ trong câu chuyện, thêm người là thêm tay chia việc, không khóa nội dung.
 
 ## 16. Target Audience (G)
 
