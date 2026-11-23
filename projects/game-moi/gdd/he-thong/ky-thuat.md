@@ -114,7 +114,7 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 | Ca cảng (số tàu trong ca, số cửa neo, điểm) | Số người online lúc mở ca | `tram-va-cang.md` mục ca cảng, `sim-ca-cang.md` mục 4 |
 
 15. Người rời phiên chủ động: nhân vật ở lại trạm (C2). Rời khi đang ngoài chuyến thì tính như bị kéo về (K2, chỉ giữ 1 món), theo C10.
-16. Mất kết nối: mất gói liên tục quá thời gian phát hiện (mục 3) mới tính là rớt. Người rớt giữa chuyến vào Giữ chỗ 15 giây theo `nguoi-choi.md` 2.9 (đề xuất gửi gd-character: Giữ chỗ tối đa 1 lần mỗi chuyến cho mỗi người, lần thứ hai tính như bị kéo về ngay, để không dùng rút mạng dừng đồng hồ ngạt). Quá 15 giây thì tính như bị kéo về (K2), theo C10. Vào lại trong 15 giây bằng cùng mã slot thì nhận lại nhân vật. Người rớt là người cuối còn ngoài thì chuyến chung chờ tối đa 15 giây đó. Trong trạm và ca cảng dùng cùng cửa sổ 15 giây: hết hạn thì kiện trên tay rơi tại chỗ, host giữ.
+16. Mất kết nối: mất gói liên tục quá thời gian phát hiện (mục 3) mới tính là rớt. Người rớt giữa chuyến vào Giữ chỗ 15 giây theo `nguoi-choi.md` 2.9 (Giữ chỗ tối đa 1 lần mỗi chuyến cho mỗi người, lần thứ hai tính như bị kéo về ngay, để không dùng rút mạng dừng đồng hồ ngạt. gd-character đã ghi trần này vào `nguoi-choi.md` 2.9). Quá 15 giây thì tính như bị kéo về (K2), theo C10. Vào lại trong 15 giây bằng cùng mã slot thì nhận lại nhân vật. Người rớt là người cuối còn ngoài thì chuyến chung chờ tối đa 15 giây đó. Trong trạm và ca cảng dùng cùng cửa sổ 15 giây: hết hạn thì kiện trên tay rơi tại chỗ, host giữ.
 17. Host mất kết nối hoặc thoát: phiên kết thúc với mọi người. Mặc định không chuyển host, vì thế giới thuộc về host (C2) và chuyển host là việc riêng của stack mạng. Dev được đề nghị chuyển host nếu stack chọn hỗ trợ sẵn với chi phí thấp (câu hỏi mở 2). Mọi người về menu, thế giới trở về điểm lưu gần nhất trong ba điểm của luật 18 (K23, C10), chuyến hay ca đang dở bị mất. Đây là câu trả lời cho điểm chờ gd-tech của `nguoi-choi.md` và `map.md`.
 
 ### 2.3b Lưu `MVP`
@@ -248,7 +248,7 @@ Sự kiện 72 và 73 thêm ở đợt 9 cho ca cảng khung Dave (cùng với v
 | Thời gian phát hiện mất kết nối | 4 giây mất gói liên tục | 3 đến 5 | Ít báo nhầm | Phát hiện nhanh | Co-op | đề xuất, chờ dev |
 | Dung sai host kiểm tốc độ | 15% trên vmax cộng lực ngoài | 10 đến 25% | Ít kéo giật | Chặn gian lận chặt hơn | Co-op | đề xuất, chờ dev |
 | Cửa sổ host trả lời yêu cầu | 250 ms | 150 đến 500 | Chịu mạng kém | Phản hồi nhanh hơn | Co-op | đề xuất, chờ dev |
-| Số lần Giữ chỗ mỗi người mỗi chuyến | 1 | 1 đến 2 | Tha thứ mạng | Chặn rút mạng dừng ngạt | Co-op | đề xuất gửi gd-character (luật 16) |
+| Số lần Giữ chỗ mỗi người mỗi chuyến | 1 | 1 đến 2 | Tha thứ mạng | Chặn rút mạng dừng ngạt | Co-op | `nguoi-choi.md` 2.9, luật 16 |
 | Số người tối đa | 4 | cố định | | | Co-op | C1 |
 | Giữ chỗ khi rớt mạng | 15 giây | 10 đến 30 | | | Co-op | `nguoi-choi.md` 3 |
 | Số lần sim mỗi ô | chuyến 2000, ca 300, combat 2000 | từ 200 | Số ổn định hơn | Nhanh hơn | Máy chấm | `tools/tham-so/*.json` |
@@ -352,7 +352,7 @@ Không bám game tham chiếu. Cách dùng Sheet làm nguồn dữ liệu và ID
 | Netcode nào | 4 dev | Bảng 6.3 |
 | Có chuyển host khi host thoát không (luật 17) | 4 dev, GDM | Mặc định không. Dev đề nghị nếu stack chọn hỗ trợ sẵn |
 | Chuỗi và bước tutorial có thành ScriptableObject không | gd-ux, dev | Chưa. Dev đọc thẳng `strings/strings.tsv` và bảng bước của `ux-ui.md` |
-| Giữ chỗ tối đa 1 lần mỗi chuyến (luật 16) | gd-character | Đề xuất, chưa nhận. `nguoi-choi.md` 2.9 chưa có trần, luật 16 áp khi gd-character ghi vào |
+| Giữ chỗ tối đa 1 lần mỗi chuyến (luật 16) | gd-character | Đã nhận, `nguoi-choi.md` 2.9 có trần (log GDM 104) |
 | Ai chơi thử prototype bay để chốt cảm giác | GDM | Lead hoặc gd-qa chơi 10 phút, xuất JSON gửi gd-character |
 
 ## Co-op 1 đến 4 người
@@ -372,7 +372,7 @@ File này là phần co-op kỹ thuật của mọi hệ thống: mục 2.2 và 
 | 7 | Tên sự kiện | Tiếng Anh snake_case có tiền tố nhóm, gộp trùng | Một bảng duy nhất, công cụ phân tích không vấp dấu | Giữ tên từng GDD | Rẻ |
 | 8 | Sự kiện ghi ra đâu | File JSON Lines cục bộ | Game offline, bán đứt | Gửi về máy chủ | Rẻ |
 | 9 | Nguồn chuẩn của dữ liệu | Markdown trong repo, Sheet là bản dán | Sim, validator và exporter cùng đọc một chỗ, Sheet 25 tab chưa dán. Đổi khi GDM ghi DECISIONS | Sheet làm nguồn, kéo TSV về | Rẻ |
-| 10 | Giữ chỗ tối đa 1 lần mỗi chuyến | Đề xuất gửi gd-character | Chặn rút mạng để dừng đồng hồ ngạt (lách K2) | Không giới hạn | Rẻ |
+| 10 | Giữ chỗ tối đa 1 lần mỗi chuyến | gd-character đã ghi vào `nguoi-choi.md` 2.9 | Chặn rút mạng để dừng đồng hồ ngạt (lách K2) | Không giới hạn | Rẻ |
 | 11 | Một hệ ID nâng cấp | UPG-xxx-n của gd-items, T-xxx chỉ là nhãn | Luật 3 đòi một ID một thứ | Giữ hai hệ | Rẻ |
 
 ## Phản biện khung

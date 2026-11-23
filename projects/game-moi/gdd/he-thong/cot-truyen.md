@@ -317,7 +317,7 @@ Nhân vật xuất hiện: tổ Ember, Ingrid Halvorsen, Linh Tran, Tikko, Bram 
 Kiểu chơi mới và cách truyện đưa vào:
 - Khai thác: khoang neo cần vật liệu, đó là lý do của chuyến ra ngoài đầu tiên (C1.2).
 - Bắt sống loài nhỏ bằng lưới: Ingrid không chịu được việc phá hỏng thứ còn nguyên. Thứ đầu tiên cô chế sau Bộ kích nguồn là Súng lưới, để mang sinh vật về mà không làm nát chúng (C1.5).
-- Ca cảng: lời gọi của Linh được một dân gom phế liệu Oru nghe thấy. Tikko ghé vì tò mò và trở thành khách đầu tiên (C1.8). Thùng Tikko gọi là một loại hàng Driftlife sống: Tikko gom hộ một nhà sưu tầm chưa lộ mặt. Người đó là Vaeth, tới chương 2 mới tự đến.
+- Ca cảng: lời gọi của Linh được một dân gom phế liệu Oru nghe thấy. Tikko ghé vì tò mò và trở thành khách đầu tiên (C1.8). Từ ngày có Súng lưới, đơn đặt trước ngày chẵn của Tikko là một lồng Driftlife sống: Tikko gom hộ một nhà sưu tầm chưa lộ mặt. Ca dạy đầu tiên chỉ bán thùng phế liệu theo GDD trạm và cảng. Người đó là Vaeth, tới chương 2 mới tự đến.
 
 Người vớt của chương:
 
