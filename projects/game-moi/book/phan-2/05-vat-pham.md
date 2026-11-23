@@ -254,7 +254,7 @@ Mục tiêu đo của hệ thống và kết quả sim đã có:
 | Thời gian làm đầy túi, chương 1 | 60 tới 70% thời gian chuyến | Chờ playtest |
 | Tỉ lệ chuyến dùng đủ khoan, nạy hòm và hạ Driftlife, chương 1 | Trên 90% | Chờ playtest |
 | Tỉ lệ kiện tinh trên kiện thô khi đủ nguyên liệu, sau chương 1 | Trên 50% | Chờ playtest |
-| Giá mẫu sống so với hạ, cỡ S, đã trừ vật tiêu hao | 1,2 tới 2 lần | 1,28 tới 1,90 lần |
+| Giá mẫu sống so với hạ, cỡ S, đã trừ vật tiêu hao | 1,2 tới 2 lần | 1,44 tới 1,81 lần qua lưới |
 | Một chuyến, một người, chương 1 | 4 tới 6 phút | 4,4 phút |
 | Vật liệu 6 việc sửa khoang và 6 nâng cấp nhãn MVP | Không có mục tiêu riêng | 272,2 GTĐ, bằng khoảng 3,1 chuyến đầy túi bậc 0 |
 
