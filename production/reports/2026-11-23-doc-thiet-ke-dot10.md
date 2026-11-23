@@ -44,3 +44,20 @@ Log tự quyết dòng 101 tới 110. Chín chỗ đã sửa trong GDD và Doc. 
 - Xuất ảnh sơ đồ và Google Doc: chờ Lead cho tải `mermaid.min.js` (khoảng 3 MB) và pandoc (khoảng 30 MB). Mermaid chưa render thử lần nào.
 - Phần I Controls chờ build. 9 chỗ chờ ảnh.
 - Subagent không gọi được skill vietnamese-hmr. Văn các mục chỉ qua `soat.mjs`, GDM đọc kỹ mục mẫu và II.1.
+
+## Sau QA (GD-061, GD-067)
+
+| Đo | Giá trị |
+|---|---|
+| Lỗi QA nặng, vừa, nhẹ | 0, 17, 22 |
+| Lỗi vừa đã sửa | 17 |
+| Điểm GDM chốt thêm | log 111 tới 116 |
+| Chương 1 một người (sim, giờ ngân sách 0,8 theo Lead) | 1,77 giờ, đóng ngày 8 |
+| Cả game một người | 14,2 giờ |
+| Nhóm 4 so với một mình | 70% |
+| Tab Sheet khớp repo | 23/23 |
+| Sơ đồ trong docx | 15 |
+
+- Luật mới gd-combat đặt, GDM duyệt: đoạn Dây nối thứ hai của Scrapmaw chỉ cắt được khi boss dưới 50% Sinh lực, đoạn đã cắt giữ tới hết trận.
+- Giá chương 1 giảm: Bình Oxy và Túi đồ bậc 1 930, Bộ đẩy bậc 1 650, Dụng cụ khai thác và Lao từ bậc 2 280, Van tiết lưu 1850.
+- Còn mở: yêu cầu art và âm thanh cho Dây nối Scrapmaw chưa vào tab Assets, 4 luật nhỏ còn thiếu ở mục Còn mở phía trên, Phần I chờ build.
