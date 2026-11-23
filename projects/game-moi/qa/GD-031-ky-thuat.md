@@ -207,7 +207,7 @@ Chạy lúc 04:45 đến 04:50, `--ra` sang thư mục tạm của tôi, seed 1.
 | Nhặt trùng | Co-op | 1000 lần hai máy cùng nhặt: đúng 1 người nhận | Có (khi có build) | MVP |
 | Kiện | Co-op | 100 lần thả, nhặt, bốc có rớt mạng: tổng kiện không đổi | Có (khi có build) | MVP |
 | Mất kết nối | Co-op | Vào lại đúng nhân vật theo mã slot, quá 15 giây thì bị kéo về | Có, cần chốt định danh tài khoản (lỗi mới 7) | MVP |
-| Host thoát | Co-op | Mở lại ra đúng đầu ngày, không mất ngày trước | Có | MVP |
+| Host thoát | Co-op | Host thoát rồi mở lại: thế giới về điểm lưu gần nhất (3 điểm lưu), không mất ngày trước | Có | MVP |
 | Vào giữa chừng | Co-op | Thử ở 3 pha, đúng luật 13 | Có | MVP |
 | File save | Lưu | Cắt điện giữa lúc ghi, mở lại được bản trước | Có | MVP |
 | Dữ liệu | Dữ liệu | Xuất rồi nhập lại, 0 trường lệch | Chưa có exporter | MVP |
