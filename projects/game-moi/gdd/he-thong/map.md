@@ -685,7 +685,7 @@ Tiêu chí nghiệm thu:
 | Luật | 1 người | 2 người | 3 người | 4 người |
 |---|---|---|---|---|
 | Kích thước map, số mảnh, số beacon | Giữ nguyên | Giữ nguyên | Giữ nguyên | Giữ nguyên |
-| Tỉ lệ kích hoạt SP-R, SP-D | x 1,00 | Gần x 1,27, Giữa x 1,25, Xa x 1,38 | Gần x 1,54, Giữa x 1,50, Xa x 1,76 | Gần x 1,81, Giữa x 1,75, Xa x 2,14 |
+| Tỉ lệ kích hoạt SP-R, SP-D | x 1,00 | Gần x 1,30, Giữa x 1,25, Xa x 1,38 | Gần x 1,60, Giữa x 1,50, Xa x 1,76 | Gần x 1,90, Giữa x 1,75, Xa x 2,14 |
 | Hazard | Như nhau, trúng ai trừ người đó | Như nhau | Như nhau | Như nhau |
 | Máu máy phát Hàng rào cắt | Theo bảng 3.5 | x 1,6 | x 2,2 | x 2,8 (hệ số boss và The Wardens của gd-combat, 1 + 0,6 x (N trừ 1)) |
 | Recall Beacon | Một người kích | Mỗi người kích riêng, cùng beacon được | Như 2 người | Như 2 người |
