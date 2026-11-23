@@ -414,6 +414,7 @@ Lead: "dải gần, dải giữa và dải xa là cái gì? nghe nó phèn lứm
 
 Lead: "Về Art game sẽ là không gian game là 3D đồ họa là 2.5D Góc nhìn là Top-down 45". Lead chốt bằng lời.
 
+- Lead nói rõ cùng ngày: "Không gian 3D nghĩa là trong Unity sẽ dựng với 3D nhưng dùng Assets 2D". Không có model 3D, artist 2D làm mọi asset.
 - Thay ràng buộc cũ "2D vector, có thể 2.5D (chưa chốt)" và góc nhìn ngang ở mọi nơi kèm mặt cắt trạm (log GDM 9, GDM tự quyết).
 - Đã sửa: CLAUDE.md, AGENTS.md, `so-hien-hanh.md`, `gdd/00-khung-game.md` mục Góc nhìn và mục 13.
 - Chưa sửa: các GDD, Book, tab và wireframe còn mô tả theo góc nhìn ngang (mặt cắt trạm ba tầng, cảng ở mép phải tầng giữa, layout map nhánh, greybox). GDM giao các vai sửa theo pipeline sau khi Lead trả lời câu hỏi phạm vi.

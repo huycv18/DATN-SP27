@@ -14,7 +14,7 @@ Mọi tên riêng tiếng Anh là [TẠM]. Số trong file này là mục tiêu 
 - Fantasy (G): tôi là người sống sót giỏi nghề, tự tay kéo một trạm chết sống lại. Mỗi chuyến ra ngoài là một lần liều có tính toán, mỗi lần về là thấy trạm đổi khác.
 - Người chơi mục tiêu (G): người chơi PC thích Dave the Diver, Subnautica, Core Keeper, Stardew Valley co-op. Chơi phiên 30 đến 60 phút. Chơi một mình là chính, rủ bạn vào giữa chừng được.
 - Thể loại (L): hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý. Bán đứt. Unity, PC.
-- Góc nhìn (L, 2026-11-23): không gian game 3D, đồ họa 2.5D, camera top-down nghiêng 45 độ. Ngoài không gian vẫn bay tự do 8 hướng trên mặt phẳng nhìn từ trên xuống. Luật góc nhìn ngang và mặt cắt trạm (log 9) hết hiệu lực, các mục còn ghi theo góc nhìn ngang đang chờ sửa (DECISIONS 2026-11-23).
+- Góc nhìn (L, 2026-11-23): không gian game 3D, đồ họa 2.5D, camera top-down nghiêng 45 độ. Unity dựng cảnh 3D, mọi asset là 2D. Ngoài không gian vẫn bay tự do 8 hướng trên mặt phẳng nhìn từ trên xuống. Luật góc nhìn ngang và mặt cắt trạm (log 9) hết hiệu lực, các mục còn ghi theo góc nhìn ngang đang chờ sửa (DECISIONS 2026-11-23).
 
 ## 2. Core Pillars (L)
 
@@ -269,7 +269,7 @@ Chương 1 trọn vẹn: Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Th
 
 ## 13. Art Direction (L phong cách, G phần còn lại)
 
-- Phong cách (L, 2026-11-23): không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ
+- Phong cách (L, 2026-11-23): không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ. Unity dựng cảnh 3D, mọi asset do artist 2D làm (sprite nhân vật, Driftlife, vật phẩm, nền, tile, hiệu ứng), không có model 3D
 - Không khí: khoa học viễn tưởng sinh tồn, nền nghiêm, hài nhẹ từ tính cách nhân vật. Bãi vỡ tối và lạnh, trạm Ember ấm dần lên theo từng khoang sửa xong (thấy được tiến trình bằng mắt)
 - Màu: không gian xanh than, tím đậm. Ánh sáng trạm cam ấm. Driftlife phát quang để đọc được trên nền tối. Giáp chế độ The Wardens trắng xương EDEBE0 và lục acid 7CFC3A, không ai khác dùng. 4 slot người chơi mỗi slot một màu kèm một hình: cam ○, lam ngọc △, vàng chanh □, hồng tím ◇
 - Nhân vật: silhouette đọc được ở 72 điểm ảnh mỗi u (720p). Mỗi nhân vật tối đa 6 màu chính cộng 2 nhấn. Người chơi bão hòa từ 70%, NPC tới 45%. Rig xương chung cho nhân loại, mảnh bộ đồ hoán đổi theo 5 trục nâng cấp

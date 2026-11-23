@@ -11,7 +11,7 @@ Cập nhật lần cuối: 2026-11-20, sau đợt 9 (giờ giao thương khung D
 |---|---|---|
 | Engine / nền tảng | Unity, PC, để mở đa nền tảng | (L) DECISIONS 2026-11-19 |
 | Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, cả hai là cách chơi chính. MVP có co-op 2 người | (L) DECISIONS 2026-11-20. MVP: (L) DECISIONS 2026-11-23 |
-| Art | Không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ. Thay góc nhìn ngang và mặt cắt trạm của log 9 | (L) DECISIONS 2026-11-23 Art 3D, 2.5D, top-down 45 |
+| Art | Không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ. Unity dựng cảnh 3D, mọi asset là 2D (sprite, tile, hiệu ứng 2D), không có model 3D. Thay góc nhìn ngang và mặt cắt trạm của log 9 | (L) DECISIONS 2026-11-23 Art 3D, 2.5D, top-down 45 |
 | Kinh doanh | Bán đứt, không gói bán | (L) |
 | Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý | (L) |
 | Nhóm | 1 GD, 4 dev, 1 artist 2D | (L) |
