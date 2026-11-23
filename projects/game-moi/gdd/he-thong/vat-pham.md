@@ -525,7 +525,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | STY-414 | Bản gốc Lodestar Survey / Original Lodestar Survey | Vật manh mối | Đặc biệt | 0 | - | Cradle | Mã truyện MM4.4, bên trong Cradle (gd-story, gd-world) | Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi | Sau MVP |
 | STY-301 | Mẫu mang dấu săn bắt Wardens / Hunt-marked Sample | Vật nhiệm vụ | Đặc biệt | 1 | - | Xa | Station Flint (chương 3, gd-story) | Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife | Sau MVP |
 | STY-401 | Hộp ghi hành trình Cradle / Cradle Flight Recorder | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Cradle Interior (chương 4, gd-story) | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho), mở cảnh truyện. Loại dữ liệu, sao được thành CGO-131 (RCP-141). Bị tiêu ở RCP-207 (sau mốc C5.6) | Sau MVP |
-| STY-501 | Bản đồ sao thật / True Star Chart | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Data Core ở Warden Rig, khe V1, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel. Tọa độ hành tinh thật do Sevra trao ở C5.6 là cảnh truyện, không phải vật | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6) | Sau MVP |
+| STY-501 | Bản đồ sao thật / True Star Chart | Vật nhiệm vụ | Đặc biệt | 1 | - | Cradle | Data Core ở Warden Rig, khe V1, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel. Tọa độ hành tinh thật do Sevra trao ở C5.6 là cảnh truyện, không có ID vật phẩm | RCP-207, Nộp ở khoang dẫn đường (không tiêu vật, vào kho). Bị tiêu ở RCP-207 (Lõi dẫn hướng rời bãi vỡ, sau mốc C5.6) | Sau MVP |
 | STY-701 | Gói tin mật / Sealed Dispatch | Vật nhiệm vụ | Đặc biệt | 1 | - | Xa | Khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày từ khi mốc nối tình báo mở (chương 4 đến 5, gd-quan), không mua bán | RCP-422, Bị tiêu ở RCP-422 (đóng kiện tin mật). Mất khi rời phiên thì về lại khoang liên lạc (luật V4) | Sau MVP |
 | STY-502 | Lệnh phục kích Cradle mang dấu Daskel / Daskel-Marked Ambush Order | Vật manh mối | Đặc biệt | 0 | - | Cradle | Data Core ở Warden Rig, khe M1, cùng chỗ STY-501, mở sau BS-5 (chương 5, gd-world). Không rơi từ Daskel | Tự ghi vào Sổ tay, mở cảnh truyện. Không sao thành CGO-131 (RCP-141 chỉ sao STY-101 và STY-401) | Sau MVP |
 | STY-601 | Thẻ tên buồng ngủ đông / Cryo Pod Nameplate | Vật manh mối | Đặc biệt | 0 | - | Gần | Xác Seed Station, mỗi buồng đã tắt một thẻ (gd-story) | Tự ghi vào Sổ tay, hiện trên tường khoang buồng ngủ đông (đổi hình trạm, P2), không có công dụng chơi | Sau MVP |
@@ -534,8 +534,8 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 <!--/B:ITEM-->
 
 <!--B:CHECK-->
-- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-20 10:34 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
-- Vật liệu nhãn MVP (6 việc sửa khoang và 6 nâng cấp) quy ra tài nguyên thô: 272,2 GTĐ, tương đương 3,1 chuyến đầy túi (túi bậc 0 là 80 Khối, mật độ 1,1 GTĐ mỗi Khối), chưa tính nguyên liệu đóng kiện bán lấy Tally. Đây là kiểm nhất quán, không phải sim cân bằng.
+- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-23 03:34 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
+- Vật liệu nhãn MVP (6 việc sửa khoang và 6 nâng cấp) quy ra tài nguyên thô: 272,2 GTĐ, tương đương 3,1 chuyến đầy túi (túi bậc 0 là 80 Khối, mật độ 1,1 GTĐ mỗi Khối), chưa tính nguyên liệu đóng kiện bán lấy Tally. Đây là kiểm nhất quán.
 <!--/B:CHECK-->
 
 ## 4. Trường hợp biên

@@ -1,6 +1,6 @@
 # GDD hệ thống: Cốt truyện
 
-Project: game-moi (The Novent). Chủ sở hữu: gd-story. Trạng thái: bản đủ, phản diện theo lời Lead, chờ nghiệm thu (2026-11-20). Nguồn quyết định: `gdd/00-khung-game.md` mục 3 và 7, `log-gdm-tu-quyet.md` dòng 2 đến 8 và 36 đến 38, `DECISIONS.md` 2026-11-20 "Solace là thông tin mồi, kết mở cho hậu bản" và "Lead sửa phản diện", log dòng 84 đến 92
+Project: game-moi (The Novent). Chủ sở hữu: gd-story. Trạng thái: bản đủ, phản diện theo lời Lead, gd-qa ĐẠT (GD-022, GD-033). Nguồn quyết định: `gdd/00-khung-game.md` mục 3 và 7, `log-gdm-tu-quyet.md` dòng 2 đến 8 và 36 đến 38, `DECISIONS.md` 2026-11-20 "Solace là thông tin mồi, kết mở cho hậu bản" và "Lead sửa phản diện", log dòng 84 đến 92
 
 - Mọi tên riêng tiếng Anh là [TẠM]. Từ dùng theo từ điển khung mục 10.
 - Nhãn `MVP` và `Sau MVP` theo khung mục 12: chương 1 là MVP, chương 2 tới 5 là Sau MVP.
@@ -770,7 +770,7 @@ Số tính từ tham số (in bằng script cùng lần soát, xem dòng "Soát"
 - Riêng chương đầu: 7 ngày là khoảng 1,8 đến 2,3 giờ, chạm trần mục tiêu 1,5 đến 2 giờ của khung. Hạ núm số ca cảng của C1.9 xuống hai thì chương đầu còn 6 ngày, khoảng 1,5 đến 2 giờ.
 - Chuỗi mốc là sàn cứng: không số người chơi nào xong chương đầu trước ngày 7. Sàn không đổi theo số người chơi.
 - Chương 1 là 7 vì Bộ kích nguồn chế qua đêm. Chương 5 là 3 vì hai chuyến vào Warden Rig làm được trong một ngày.
-- Sim kinh tế của gd-economy chạy với sàn 7, 5, 8, 3, 3. Số giờ và tỉ lệ co-op tính từ sim cũ cần chạy lại. Mục tiêu co-op của khung là 60 đến 75% (log dòng 69).
+- Sim kinh tế của gd-economy chạy với sàn 7, 5, 8, 3, 3, số giờ và tỉ lệ co-op ở `kinh-te-tien-trinh.md` mục 6b. Mục tiêu co-op của khung là 60 đến 75% (log dòng 69).
 - K25 buộc mỗi mốc đóng chương chờ giai đoạn động cơ của chương đã lắp. Việc lắp không thêm ngày vào sàn khi vật liệu và linh kiện đã có sẵn. Sàn không tính thời gian chờ hàng đặt ở shop.
 - GDM chốt giữ sàn ngày (log dòng 69). Bảng chỗ hạ sàn bên dưới chưa áp.
 - Sàn của ba chương cuối đứng được khi tàu TA11 vào lịch từ ngày kế tiếp sau mốc đóng chương 3 và có trong lịch ngày đầu chương 5.
@@ -1199,18 +1199,11 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 
 | # | Với | Lệch | Đề xuất | Tình trạng |
 |---|---|---|---|---|
-| 1 | gd-quan | Đợt 6: Maro còn hai lần cập bến. Tàu của The Kindling là mã mới TA11 (TA09 giữ vai tàu đơn gấp), vào lịch từ ngày kế tiếp sau C3.8. Tàu TA04 và TA08 không ghé sau C3.8 | Hai file đã khớp, luật 35 của `tram-va-cang.md` ghi cùng danh sách mốc trong ca | Xong |
 | 2 | gd-economy, gd-tech | Sàn ngày của chuỗi mốc là 7, 5, 8, 3, 3 (mục 5). Sim kinh tế dùng đúng bộ số này | GDM đã chốt giữ sàn, mục tiêu co-op 60 đến 75% (log dòng 69) | Đã gửi gd-economy |
 | 3 | gd-tech | `ky-thuat.md`: schema mốc có một điều kiện, cảnh chưa tách theo người, vật truyện chưa có loại, khe, mốc hiện, khoang nhận. Validator chưa kiểm cặp mã truyện với ID vật và khe | Theo mục 6 của file này | Đã gửi gd-tech |
-| 4 | Khung | Khung mục 7 chương 2 còn viết "bắt sống loài lớn". Cỡ L không bắt sống được | Viết "cỡ M" như mốc C2.4 | Xong, khung đã sửa (log GDM dòng 76) |
-| 5 | Khung | K24 ghi bản lưu "ngay trước khi rời neo". Luật 26 của file này đặt bản lưu sau khi C5.7 và C5.8 đã xong, không rời neo lần nữa | Sửa K24 thành "ở ngày cuối, sau cảnh kết", hoặc GDM chọn cách đọc khác thì file này sửa theo | Xong, K24 đã sửa (log GDM dòng 77) |
-| 6 | gd-character | `ho-so-nhan-vat.md` luật 8 không cho viết Odile "tới Solace". File này giữ, có chủ ý | Giữ: đó là niềm tin của Odile tới mốc C4.7. Mục 10 câu 9 | Xong, giữ (log GDM dòng 73) |
 | 7 | gd-character | File luật người chơi của gd-character còn cho người rời phiên giữa chuyến giữ túi như khi về bằng cửa khí. Khung C10: tính như bị kéo về | gd-character sửa theo C10. File này đã theo C10 (biên 13) | Báo GDM, gd-character là subagent |
 | 8 | gd-quan | `tram-va-cang.md` luật 38 ghi lần cập bến đầu của TA08 vào lịch từ mốc C3.3. Mốc C3.3 của truyện lại xong chính nhờ lần cập bến đó | Luật 38: lần đầu vào lịch từ ngày kế tiếp sau khi bến thuộc KH12 Hoạt động, khớp bảng ba lần cập bến ở mục 2.5 | Đã gửi gd-quan |
 | 9 | gd-world | Bảng hòm của `map.md` cho Wick ghi thẻ tên ở cả M1 đến M3, trong khi hàng N2 ghi M3 là thẻ tên, M1 và M2 là mảng vỏ STY-211 và nhật ký STY-101 | gd-world sửa bảng hòm của Wick, và liệt kê đủ vật ở Lantern, N4, N5 | Đã gửi gd-world |
-| 10 | gd-world | Đợt 6: nơi cứu Sevra là Waypost Outer Ring, The Hearth là khu thứ ba của N4. Mốc C3.8 xong khi kén về tới Ember bằng cửa khí hoặc Recall Beacon. Mốc C5.1 xong khi kén chạm cửa The Hearth | Hai file đã khớp | Xong |
-| 11 | gd-combat | Đợt 6: toán bắt cóc, kén là vật kéo không bị nhắm, Maro không đánh, trận BS-5 kết bằng bắt giữ Daskel | Hai file đã khớp | Xong |
-| 12 | gd-items | Đợt 6: BNG-102, CGO-421, STY-701, RCP-422. STY-502, STY-412, STY-301 đã đổi tên và mô tả | Hai file đã khớp | Xong |
 | 13 | gd-character | Đợt 6: hồ sơ Sevra Ilvane (mã đề xuất NP-5), Daskel đổi vai, lính The Wardens là người Sennari, Ilsume là tên giả | gd-character sửa `ho-so-nhan-vat.md` | GDM chuyển, gd-character là subagent |
 
 Đã hết lệch:
@@ -1228,7 +1221,6 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 |---|---|---|---|---|---|
 | 1 | Truyện có rẽ nhánh không | Một đường, không lựa chọn hội thoại, một kết | Tiến trình truyện là của chung nhóm (C3), bỏ phiếu lựa chọn trong co-op không tạm dừng rất rối. Vừa sức nhóm | Lựa chọn có hệ quả, nhiều kết | Đắt |
 | 2 | Vật truyện có mất khi bị kéo về không | Vật manh mối ghi Sổ tay ngay khi nhặt. Vật nhiệm vụ rơi thì về vị trí gốc | P4 cấm bỏ lỡ manh mối. K2 chỉ cho giữ 1 món sẽ làm mất vật truyện | Tính như đồ mọi loại khác theo K2 | Rẻ |
-| 3 | Gốc của tai nạn nằm ở đâu | Hết hiệu lực từ đợt 6. Lead sửa: gốc là hận thù của Daskel, cái nhìn loài người tham lam là phiến diện. Xem dòng 41 | Lead sửa phản diện 2026-11-20 | Bản trước: lỗi của United Accord | Rẻ |
 | 4 | Người chơi biết Solace là mồi bằng cách nào | Hộp ghi hành trình: đài quan sát của Cradle đã tự nhìn về phía Solace ngay trước vụ nổ và thấy không có gì khớp hồ sơ | Sự thật phải đến từ chính mắt loài người, không từ lời kẻ thù hay lời thương nhân, thì người chơi mới tin | Daskel nói ra, hoặc Nhem tìm ra | Rẻ |
 | 5 | Vì sao phải vào Warden Rig ở chương 5 | Mọi bản đồ loài người có đều chép từ hồ sơ giả. Bản đồ thật chỉ kẻ dựng hồ sơ mới có, và nó là thứ lắp bước cuối của động cơ | Cho chương 5 một mục tiêu cụ thể đúng log GDM dòng 36, nối boss cuối với việc rời neo | Rời neo không cần Rig | Vừa |
 | 6 | Dải Giữa mở bằng gì | Bằng mốc C1.9 (Lantern đọc vị trí). Hoa tiêu mở dải Xa và Skiff | Khung mục 7 đặt Hoa tiêu ở chương 2, trong dải Giữa. gd-world đã theo (W4) | Vớt Hoa tiêu ở chương 1 | Vừa |
@@ -1236,7 +1228,6 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 8 | Nhân vật người chơi | Bốn hồ sơ mặc định có tên, đổi tên được, không có lời thoại riêng | Buồng tắt cần có tên. Người chơi 1 đến 4 không thể có thoại riêng mà vẫn đúng mọi số người | Nhân vật chính có tên và giọng riêng | Vừa |
 | 9 | Số xác trạm có truyện | Ba: Cinder, Wick, Flint. Flint không có người để vớt | Mỗi dải một xác trạm, khớp ba người kéo buồng và cú lật | Một xác trạm mỗi người vớt | Rẻ |
 | 10 | Lý do truyện của sự cố ca cảng (K14) | Thiết bị Maro để lại dưới bến, gỡ rồi vẫn còn di chứng | Nối K14 với mốc cải trang B8, sự cố có thủ phạm | Sự cố không có lý do | Rẻ |
-| 11 | Maro lộ mặt thế nào | Hết hiệu lực từ đợt 6. Xem dòng 44 | Lead sửa phản diện 2026-11-20 | Bản trước: cập bến ba lần rồi tự lộ mặt | Rẻ |
 | 12 | The Veyl trung lập làm gì ở kết | Không đánh giúp. Sau khi bằng chứng chạy hết The Lattice, họ quay lại bãi vỡ đứng nhìn Ember rời neo | Giữ trung lập Lead chốt, vẫn cho The Wardens mất uy quyền | The Veyl hợp sức đánh The Wardens | Rẻ |
 | 13 | Kết với The Wardens | Hạ Daskel ở Warden Rig, thả Driftlife. Daskel bị bắt và giao cho The Kindling, truyện không kể bản án. Không diệt ai | Chủ đề là làm khác đi, không phải trả thù. Lead cho cách mạng thành công nên Daskel phải mất quyền | Giết Daskel, hoặc để số phận mở | Rẻ |
 | 14 | Lời hứa "dựng khác đi" do ai nói | Amara, ở câu áp chót của cảnh kết, đặt cạnh hiến chương định cư của United Accord | Log GDM dòng 38 và 91: giữ làm lời nhân vật. Amara là người mang chủ đề suốt game | Odile hoặc người dẫn truyện | Rẻ |
@@ -1256,7 +1247,6 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 28 | Mã cho vật nhiệm vụ | Mã V theo chương (V1.1 tới V5.1), tách khỏi mã MM của vật manh mối | Khớp quy ước khe M và khe V của `map.md` | Dùng chung mã MM | Rẻ |
 | 29 | Chuyện riêng của thương nhân | Là lời bong bóng lúc cập bến, mở theo số lần phục vụ xong tàu 3, 6, 10 cộng một mốc truyện cho từng đoạn. Không phải cảnh | Không chiếm điểm nghỉ, không đẩy lùi cảnh của mốc, không lộ chuyện của chương sau | Là cảnh trong hàng chờ | Rẻ |
 | 30 | Áp K25 cho mốc đóng chương 3 | Cuộc bắt cóc ở N4 chỉ xảy ra khi giai đoạn 3 của động cơ đã lắp | Nếu để cuộc bắt cóc xảy ra rồi mới xét động cơ thì Sevra lộ danh tính mà chương chưa đóng | Cho cứu trước, chương đóng sau | Rẻ |
-| 31 | Điều kiện của C5.1 | Hết hiệu lực từ đợt 6: mốc này nay là hộ tống Sevra tới The Hearth. Xem dòng 38 | Lead sửa phản diện 2026-11-20 | Bản trước: tàu của Dromm cập bến | Rẻ |
 | 32 | Sàn ngày có tính bước chế qua đêm không | Có, tính hai bước mà chuỗi mốc bắt buộc: Bộ kích nguồn và Lõi dẫn hướng rời bãi vỡ | Sàn là con số gd-economy dùng làm cận dưới, phải là cận dưới thật | Bỏ qua mọi thời gian chế | Rẻ |
 | 33 | Chủng tộc của X và Y (đợt 6) | Sennari, chủng tộc đã có. Hành tinh quê tên Sennar | Maro vốn đã giả làm thương nhân Sennari, Ilsume là người Sennari. Không thêm chủng tộc, không thêm art | Chủng tộc mới | Vừa |
 | 34 | Cha của Daskel chết thế nào | Trong một trận với hạm đội loài người ở The Meeting War | Lead nói hắn hận vì cha hy sinh và hướng hận thù sang Trái Đất. Phải có lý do để mối hận đó nhắm vào loài người | Chết vì một chủng tộc khác | Rẻ |
@@ -1316,3 +1306,23 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 2026-11-20 | Mục 5, tiêu chí 14 và bảng lệch số 2: bỏ bộ số sim cũ (6, 5, 8, 3, 4), ghi sim dùng sàn hiện hành 7, 5, 8, 3, 3. Không đổi luật hay số | Sửa cho khớp số đã chốt, theo báo cáo GD-035 | gd-story |
 | 2026-11-20 | Khớp truyện minh họa (Google Doc The Novent): C3.8 Sevra nói ra âm mưu Solace, C4.6 bằng chứng là hộp ghi hành trình, C4.7 thêm phong tỏa quanh Ember | Lead đợt 8 | GDM |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Bảng mốc ở đầu file bỏ cột Trước, giá trị cũ: C3.7 là cú lật Driftlife bản trước, C3.8 là tàu TA08 cập bến lần thứ ba, C4.6 là nguồn ẩn danh (Nhem ở N4), C4.7 là ngày kế tiếp sau C4.5, C5.1 là tàu TA06 cập bến, C5.2 là ngày kế tiếp sau C5.1, C5.6 là nộp bản đồ sao thật. Mục 5 bỏ câu kể lịch sử sàn ngày (bản đầu 6, 5, 8, 3, 4, chương 1 sửa thành 7 ở vòng QA 2) | Báo cáo humanizer GDD của GDM | GDM |
+
+### Lệch đã xong (chuyển từ mục Lệch với vai khác, 2026-11-23)
+
+| # | Với | Lệch | Đề xuất | Tình trạng |
+|---|---|---|---|---|
+| 1 | gd-quan | Đợt 6: Maro còn hai lần cập bến. Tàu của The Kindling là mã mới TA11 (TA09 giữ vai tàu đơn gấp), vào lịch từ ngày kế tiếp sau C3.8. Tàu TA04 và TA08 không ghé sau C3.8 | Hai file đã khớp, luật 35 của `tram-va-cang.md` ghi cùng danh sách mốc trong ca | Xong |
+| 4 | Khung | Khung mục 7 chương 2 còn viết "bắt sống loài lớn". Cỡ L không bắt sống được | Viết "cỡ M" như mốc C2.4 | Xong, khung đã sửa (log GDM dòng 76) |
+| 5 | Khung | K24 ghi bản lưu "ngay trước khi rời neo". Luật 26 của file này đặt bản lưu sau khi C5.7 và C5.8 đã xong, không rời neo lần nữa | Sửa K24 thành "ở ngày cuối, sau cảnh kết", hoặc GDM chọn cách đọc khác thì file này sửa theo | Xong, K24 đã sửa (log GDM dòng 77) |
+| 6 | gd-character | `ho-so-nhan-vat.md` luật 8 không cho viết Odile "tới Solace". File này giữ, có chủ ý | Giữ: đó là niềm tin của Odile tới mốc C4.7. Mục 10 câu 9 | Xong, giữ (log GDM dòng 73) |
+| 10 | gd-world | Đợt 6: nơi cứu Sevra là Waypost Outer Ring, The Hearth là khu thứ ba của N4. Mốc C3.8 xong khi kén về tới Ember bằng cửa khí hoặc Recall Beacon. Mốc C5.1 xong khi kén chạm cửa The Hearth | Hai file đã khớp | Xong |
+| 11 | gd-combat | Đợt 6: toán bắt cóc, kén là vật kéo không bị nhắm, Maro không đánh, trận BS-5 kết bằng bắt giữ Daskel | Hai file đã khớp | Xong |
+| 12 | gd-items | Đợt 6: BNG-102, CGO-421, STY-701, RCP-422. STY-502, STY-412, STY-301 đã đổi tên và mô tả | Hai file đã khớp | Xong |
+
+### Điểm tự quyết hết hiệu lực từ đợt 6 (chuyển từ mục Điểm tự quyết, 2026-11-23)
+
+| # | Điểm | Chọn | Vì sao | Đã bỏ | Đảo |
+|---|---|---|---|---|---|
+| 3 | Gốc của tai nạn nằm ở đâu | Hết hiệu lực từ đợt 6. Lead sửa: gốc là hận thù của Daskel, cái nhìn loài người tham lam là phiến diện. Xem dòng 41 | Lead sửa phản diện 2026-11-20 | Bản trước: lỗi của United Accord | Rẻ |
+| 11 | Maro lộ mặt thế nào | Hết hiệu lực từ đợt 6. Xem dòng 44 | Lead sửa phản diện 2026-11-20 | Bản trước: cập bến ba lần rồi tự lộ mặt | Rẻ |
+| 31 | Điều kiện của C5.1 | Hết hiệu lực từ đợt 6: mốc này nay là hộ tống Sevra tới The Hearth. Xem dòng 38 | Lead sửa phản diện 2026-11-20 | Bản trước: tàu của Dromm cập bến | Rẻ |

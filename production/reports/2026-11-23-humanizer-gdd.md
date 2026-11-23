@@ -84,17 +84,22 @@ check_facts chạy trên thân file, bỏ dòng lịch sử ngày 2026-11-23. Kh
 
 Tham chiếu sửa kèm: `ux-ui.md` dòng 885 trỏ `ho-so-nhan-vat.md` dòng 148 đổi thành 146, vì lượt sửa lỗi trước bớt 2 dòng ở ho-so-nhan-vat.
 
-Còn lại, cần GDM hoặc vai giữ hệ thống quyết:
+Các chỗ còn lại sau lượt sửa câu văn, đã xử lý cùng ngày (GDM):
 
-| Chỗ | Vì sao chưa sửa |
+| Chỗ | Cách xử lý |
 |---|---|
-| Bảng Điểm tự quyết ở mọi file (lịch sử, "bản trước", "Hết hiệu lực từ đợt 6") | Brief cấm sửa bảng này |
-| cot-truyen.md dòng 1196 tới hết (nhật ký phối hợp, khoảng 120 dòng) | Tách ra file riêng là đổi cấu trúc |
-| combat-driftlife.md dòng 385 tới 393 (bảng BS-1 bản cũ) | Chuyển xuống lịch sử phải bỏ dòng bảng |
-| 00-khung-game.md dòng 3 (lịch sử sửa lần 2 tới 6) | File chưa có bảng Lịch sử thay đổi |
-| vat-pham.md dòng 528, 538 | Nằm trong khối do `sim/vat-pham.mjs` sinh, sửa trong script |
-| tram-va-cang.md dòng 457 | Đã xong (gd-quan, 2026-11-23): "đặt" là chữ sót, bỏ đi. Câu nay ghi đúng ba yêu cầu gửi host theo `ky-thuat.md` luật 29, chỗ trỏ sửa từ luật 15 tới 17 thành mục 2.2 và luật 29 tới 31. Luật 26 giữ nguyên |
-| cot-truyen.md dòng 3 "chờ nghiệm thu", dòng 773 "sim cũ cần chạy lại" | Chưa rõ trạng thái còn đúng, gd-story xác nhận |
+| cot-truyen.md bảng Điểm tự quyết, 3 hàng "Hết hiệu lực từ đợt 6" | Chuyển nguyên văn xuống cuối file, mục con dưới Lịch sử thay đổi |
+| cot-truyen.md mục Lệch với vai khác, 7 hàng "Xong" | Chuyển nguyên văn xuống cuối file. Bảng Đang mở chỉ còn 6 hàng chưa xong. Không tách file riêng vì 9 file khác cũng có mục Lệch, Điểm tự quyết, Phản biện |
+| combat-driftlife.md bảng BS-1 bản cũ | Câu dẫn và bảng chuyển nguyên văn xuống cuối file, thân bài còn một câu trỏ xuống |
+| 00-khung-game.md dòng 3 | Rút còn "sửa 6 lần, lịch sử ở cuối file". Thêm bảng Lịch sử thay đổi 7 hàng |
+| vat-pham.md dòng 528, 538 | Sửa câu trong `sim/vat-pham.mjs`, chạy `--ghi`. Chỉ đổi 3 dòng (2 câu và giờ sinh) |
+| tram-va-cang.md dòng 457 | gd-quan: "đặt" là chữ sót, bỏ đi. Câu nay ghi đúng ba yêu cầu gửi host theo `ky-thuat.md` luật 29, chỗ trỏ sửa từ luật 15 tới 17 thành mục 2.2 và luật 29 tới 31. Luật 26 giữ nguyên |
+| cot-truyen.md dòng 3, dòng 773 | Tra từ file: GD-022 và GD-033 gd-qa ĐẠT, nên "chờ nghiệm thu" đổi thành "gd-qa ĐẠT (GD-022, GD-033)". Sim kinh tế đã chạy với sàn 7, 5, 8, 3, 3, câu "cần chạy lại" đổi thành trỏ `kinh-te-tien-trinh.md` mục 6b |
+| nguoi-choi.md bảng Lệch hàng 4 | Trỏ sai từ trước (dòng 630 của combat là S1). Sửa thành dòng 714 và ghi đã xong, vì combat bỏ "kéo chậm" ở QA vòng 1 |
+
+Tham chiếu "dòng N" tới file đổi số dòng dò bằng script theo nội dung dòng, chỉ một chỗ phải đổi (hàng trên). Kiểm: check_facts không mất số (chỉ báo phần cố ý thêm: GD-033, ngày và đường dẫn ở bảng lịch sử khung), selftest 33 ĐẠT, validate-gdd 0 lỗi, khối SIM của map giữ nguyên.
+
+Còn lệch: tab ITEM LIST trên Sheet (bản đọc sửa tay) vẫn ghi STY-501 "là cảnh truyện, không phải vật". Nghĩa không đổi, sửa khi dán tab đó lần tới.
 
 ## Giới hạn
 

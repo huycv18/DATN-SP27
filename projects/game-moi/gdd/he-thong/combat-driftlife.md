@@ -380,17 +380,7 @@ Giữ lãnh thổ bị bắn từ ngoài vùng phát hiện (ví dụ Lao từ b
 | BS-4 Cradle Custodian | Cradle Interior, Lõi máy | 1000 | 3 | Hệ an ninh chặn đường tới hộp ghi hành trình, điều khiển cửa khoang và tia quét. Báo trước bằng đường quét đỏ 1,0 s. Người chơi phá 4 rơ le theo thứ tự hiện trên bảng điều khiển trong phòng. Mỗi rơ le phá xong mở một đoạn hành lang. Pha 3: lõi Custodian lộ ra | Hạ | 4 đến 6 phút | Sau MVP |
 | BS-5 Daskel | Warden Rig, Command Deck | 1500 | 3 | Pha 1: khiên được nuôi bằng Driftlife bị nhốt trong ống chứa. Giải thoát hết ống (4 ống) thì khiên tắt. Pha 2: Daskel dùng lưới The Wardens bắt người chơi như bắt Driftlife (bị trói như luật 34, tối đa 5 s). Pha 3 (Sinh lực Daskel dưới 30%): Rig quá tải, sàn vỡ dần theo đoạn trong 90 s nên chỗ đứng thu hẹp, Daskel vẫn nhận sát thương bình thường. Hết 90 s mà chưa xong thì sàn dừng vỡ ở vùng nhỏ nhất, trận tiếp tục, không có thua do hết giờ. Daskel có mặt vì tự tới bãi vỡ bắt Sevra, tổ Ember giữ chân hắn trong lúc The Kindling nổi dậy ở Sennar | Khuất phục: Sinh lực về 0 thì Daskel gục và bị bắt, giao cho The Kindling | 6 đến 9 phút | Sau MVP |
 
-Kết quả S5 lần đầu cho BS-1 (sim của gd-tech) và các thay đổi sau đó, chờ gd-tech chạy lại S5:
-
-| Chỉ số | Bản cũ | Kết quả sim bản cũ | Hiện hành |
-|---|---|---|---|
-| Sinh lực | 400 | Hạ một người trung bình 0,9 phút (P50), quá ngắn | 600 |
-| Đòn quét, húc, phóng điện (Oxy) | 12, 16, 12 | Oxy P90 người tệ đánh một mình 385, vượt bình chương 1 (330) | 8, 10, 8 |
-| Thời lượng mục tiêu | 2 đến 4 phút | Không vừa bình Oxy chương 1 cộng đường đi | 1 đến 2 phút |
-| Xua đi | 1 lần cắt | 0,4 phút, là đường tắt | 2 lần cắt Dây nối, lần hai khi Sinh lực dưới 50% |
-| Thân ở pha 2 | Chỉ nhận sát thương khi Choáng (lần sim thứ hai đọc như vậy) | Hạ một người trung bình 3,3 phút P50, Oxy P90 710. Người tệ 7,9 phút | Nhận sát thương mọi lúc. Chỉ pha 1 cần Choáng |
-| Phun Krill ở pha 1 | 3 con mỗi lần, hồi chiêu 15, tối đa 6 sống | Pha 2 bắn được mọi lúc: thời lượng đạt (người trung bình một mình 1,3 phút P50, Oxy P90 229). Người tệ một mình vẫn tốn Oxy P90 456, phần lớn do quét và Krill | 2 con mỗi lần, hồi chiêu 20, tối đa 3 sống |
-| Húc ở pha 2 | 12 Oxy | Sau khi giảm Krill: người tệ một mình Oxy P50 344, vẫn trên 330. Tách nguồn: Krill 97, húc 92, phóng điện 33, quét 20. Thử húc 10 ra 329 | 10 Oxy. Thời lượng người trung bình một mình 1,2 phút, Oxy P90 210. Xua đi một mình xong trong 10 phút: người tệ 80%, trung bình 90%, phần còn lại vẫn hạ được |
+Số BS-1 trước sim S5 và lý do đổi: cuối file, mục Lịch sử thay đổi.
 
 Kết quả S5 hiện hành (`tools/ket-qua/sim-combat.md` mục 5):
 
@@ -765,3 +755,17 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 2026-11-20 | Thêm bảng điểm sinh và rơi, đổi tên dụng cụ theo ID gd-items, mẫu sống đi trong Lồng mẫu kéo theo thay vì vào túi, đặt boss chương 2 và 3 vào SS-3 và SS-4 | Tin của gd-world, gd-items, gd-story | gd-combat |
 | 2026-11-20 | BS-5 rơi bản đồ sao thật | Khung đổi: Solace là mồi, chương 5 lấy bản đồ sao ở Warden Rig (DECISIONS 2026-11-20) | gd-combat |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer GDD | gd-combat |
+
+### Số BS-1 trước sim S5 (chuyển từ mục 3, 2026-11-23)
+
+Kết quả S5 lần đầu cho BS-1 (sim của gd-tech) và các thay đổi sau đó, chờ gd-tech chạy lại S5:
+
+| Chỉ số | Bản cũ | Kết quả sim bản cũ | Hiện hành |
+|---|---|---|---|
+| Sinh lực | 400 | Hạ một người trung bình 0,9 phút (P50), quá ngắn | 600 |
+| Đòn quét, húc, phóng điện (Oxy) | 12, 16, 12 | Oxy P90 người tệ đánh một mình 385, vượt bình chương 1 (330) | 8, 10, 8 |
+| Thời lượng mục tiêu | 2 đến 4 phút | Không vừa bình Oxy chương 1 cộng đường đi | 1 đến 2 phút |
+| Xua đi | 1 lần cắt | 0,4 phút, là đường tắt | 2 lần cắt Dây nối, lần hai khi Sinh lực dưới 50% |
+| Thân ở pha 2 | Chỉ nhận sát thương khi Choáng (lần sim thứ hai đọc như vậy) | Hạ một người trung bình 3,3 phút P50, Oxy P90 710. Người tệ 7,9 phút | Nhận sát thương mọi lúc. Chỉ pha 1 cần Choáng |
+| Phun Krill ở pha 1 | 3 con mỗi lần, hồi chiêu 15, tối đa 6 sống | Pha 2 bắn được mọi lúc: thời lượng đạt (người trung bình một mình 1,3 phút P50, Oxy P90 229). Người tệ một mình vẫn tốn Oxy P90 456, phần lớn do quét và Krill | 2 con mỗi lần, hồi chiêu 20, tối đa 3 sống |
+| Húc ở pha 2 | 12 Oxy | Sau khi giảm Krill: người tệ một mình Oxy P50 344, vẫn trên 330. Tách nguồn: Krill 97, húc 92, phóng điện 33, quét 20. Thử húc 10 ra 329 | 10 Oxy. Thời lượng người trung bình một mình 1,2 phút, Oxy P90 210. Xua đi một mình xong trong 10 phút: người tệ 80%, trung bình 90%, phần còn lại vẫn hạ được |

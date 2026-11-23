@@ -511,7 +511,7 @@ Ca đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng 
 | 1 | `ky-thuat.md` dòng 101, 102 | Còn luật túi nguyên vẹn khi thoát hoặc mất kết nối, trái C10 | Đổi thành tính như Bị kéo về (giữ 1 món), host thoát về điểm lưu |
 | 2 | `ky-thuat.md` dòng 68 | `CharacterProfile` thiếu tiền tố NP | Thêm NP hoặc ghi NP Sau MVP (đã ghi ở `ho-so-nhan-vat.md` mục 6) |
 | 3 | `ux-ui.md` dòng 29 và bảng 2.9 | Bộ màu slot khác `ho-so-nhan-vat.md` luật 6. Ghim món gamepad đang Y (trùng Kích Recall), hàng hành động phụ menu ghi X | Ghim món gamepad đổi sang R3, bộ màu theo hồ sơ nhân vật |
-| 4 | `combat-driftlife.md` dòng 630 | Điểm tự quyết 21 còn chữ "kéo chậm", Lồng mẫu là lớp Nhẹ hệ số 1,00 | Bỏ chữ "kéo chậm" |
+| 4 | `combat-driftlife.md` dòng 714 | Điểm tự quyết 21 còn chữ "kéo chậm", Lồng mẫu là lớp Nhẹ hệ số 1,00 | Đã xong: combat bỏ chữ "kéo chậm" ở QA vòng 1 (Lịch sử thay đổi của file đó) |
 | 5 | `tram-va-cang.md` dòng 332 | "tốc độ thường" chưa có số | Ghi tốc độ đi 5,5 u/s, leo thang 3,5 u/s (mục 2.8) |
 | 6 | `map.md` map nhánh có buồng ngủ đông | Cần tính thời gian kéo buồng về cửa | Dùng hệ số kéo lớp Nặng 0,50 |
 | 7 | `vat-pham.md` | CON-101 cần đưa vào sim chuyến để chốt số 40 và chi phí chế | gd-tech mô hình, gd-items chỉnh nếu lời ròng quá trần |

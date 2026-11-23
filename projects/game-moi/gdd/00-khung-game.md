@@ -1,6 +1,6 @@
 # Khung The Novent - nguồn chung cho mọi GDD hệ thống
 
-Project: game-moi | Chủ sở hữu: GDM | Trạng thái: đã chốt 2026-11-20 theo ủy quyền của Lead, sửa lần 2 sau phản biện đợt 1 (log dòng 39 đến 53), sửa lần 3 sau sim đợt 2 (log dòng 54 đến 60), sửa lần 4 sau QA vòng 1 (log dòng 61 đến 64), sửa lần 5 sau QA vòng 2 (log dòng 65 đến 80), sửa lần 6 theo Lead sửa phản diện (log dòng 84 đến 92) | Nguồn: `DECISIONS.md` mục "2026-11-20 - Lead giao toàn quyền cho GDM", `log-gdm-tu-quyet.md`
+Project: game-moi | Chủ sở hữu: GDM | Trạng thái: đã chốt 2026-11-20 theo ủy quyền của Lead, sửa 6 lần, lịch sử ở cuối file | Nguồn: `DECISIONS.md` mục "2026-11-20 - Lead giao toàn quyền cho GDM", `log-gdm-tu-quyet.md`
 
 Define GDD và Game Vision & Concept bản cho người đọc ngoài phòng: tab OVERVIEW của Sheet (nguồn `gdd/sheet/OVERVIEW.tsv`).
 Cách đọc: mọi vai đọc file này trước khi viết GDD hệ thống của mình. Luật khung đánh mã K. GDD hệ thống không được trái luật K. Thấy luật K có vấn đề thì phản biện trong báo cáo (luật 12 giao thức chung), không tự đổi.
@@ -293,3 +293,15 @@ Oxy vừa là thời gian vừa là máu không tính là USP, vì Dave cũng d�
 - Chơi phiên 30 đến 60 phút (2 đến 3 ngày trong game). Chơi một mình là chính, rủ 1 đến 3 bạn vào giữa chừng
 - Kỹ năng hành động vừa phải: thử thách đến từ quyết định quản lý Oxy, không đòi phản xạ cao
 - Độ tuổi: chưa chốt
+
+## Lịch sử thay đổi
+
+| Ngày | Thay đổi | Nguồn |
+|---|---|---|
+| 2026-11-20 | Chốt theo ủy quyền của Lead | `DECISIONS.md` "Lead giao toàn quyền cho GDM" |
+| 2026-11-20 | Sửa lần 2 sau phản biện đợt 1 | `log-gdm-tu-quyet.md` dòng 39 đến 53 |
+| 2026-11-20 | Sửa lần 3 sau sim đợt 2 | `log-gdm-tu-quyet.md` dòng 54 đến 60 |
+| 2026-11-20 | Sửa lần 4 sau QA vòng 1 | `log-gdm-tu-quyet.md` dòng 61 đến 64 |
+| 2026-11-20 | Sửa lần 5 sau QA vòng 2 | `log-gdm-tu-quyet.md` dòng 65 đến 80 |
+| 2026-11-20 | Sửa lần 6 theo Lead sửa phản diện | `log-gdm-tu-quyet.md` dòng 84 đến 92 |
+| 2026-11-23 | Sửa câu văn theo đánh giá humanizer, dòng trạng thái chuyển lịch sử xuống bảng này. Không đổi luật, số, ID | `production/reports/2026-11-23-humanizer-gdd.md` |
