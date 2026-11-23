@@ -16,6 +16,29 @@ Một **ngày** là một vòng như vậy, trong truyện gọi là một chu k
 
 Cả game chia thành năm chương. Mỗi chương mở một vùng mới và thêm một hai kiểu chơi mới, nên ngày ở chương sau có nhiều việc hơn ngày ở chương đầu. MVP là trọn chương đầu.
 
+```mermaid
+flowchart TD
+  A["Ra cửa khí: một chuyến, Oxy là giới hạn"] --> B["Nhặt tài nguyên, bắt sống hoặc hạ Driftlife, tìm manh mối và người vớt"]
+  B --> C{"Về tới trạm?"}
+  C -->|"Cửa khí hoặc Recall Beacon"| D["Cả túi đồ vào kho"]
+  C -->|"Ngạt, bị kéo về"| E["Chỉ giữ 1 món tự chọn"]
+  D --> F["Sửa khoang, chế ở xưởng, nuôi Driftlife"]
+  E --> F
+  F --> G{"Động cơ chính đã sửa xong?"}
+  G -->|"Rồi"| H["Ember rời neo, hết game"]
+  G -->|"Chưa"| I{"Mở ca cảng?"}
+  I -->|"Mở ca"| J["Lập danh mục, bán thùng cho tàu, nhận Tally và tip"]
+  I -->|"Bỏ ca, không bị phạt"| K
+  J --> K["Nâng cấp bộ đồ, dụng cụ, trạm, mua ở shop"]
+  K --> L["Bình Oxy và túi lớn hơn, đi xa hơn, lâu hơn"]
+  L --> A
+  B -.-> M["Người vớt mở tính năng trạm, mốc truyện mở dải mới"]
+  M -.-> F
+```
+*Hình II.1.1 - Core loop tổng, từ một chuyến tới lúc trạm rời neo*
+
+Đọc sơ đồ: vòng bắt đầu ở cửa khí. Ngoài bãi vỡ, Oxy vừa là đồng hồ vừa là máu, nên mỗi chuyến là một lần cân giữa lấy thêm và quay về. Về bằng cửa khí hoặc Recall Beacon thì giữ cả túi, bị kéo về vì ngạt thì chỉ giữ một món. Đồ trong kho đi vào trạm: sửa khoang, chế, nuôi. Động cơ chính sửa xong thì trạm rời neo và game kết thúc. Chưa xong thì người chơi bán hàng ở ca cảng lấy Tally. Tally đổi thành nâng cấp, nâng cấp cho chuyến sau đi xa hơn và lâu hơn. Nhánh đứt nét là đường truyện: người vớt về mở tính năng của trạm, mốc truyện mở dải mới. Cả hai đổ vào phần trạm chứ không đi qua Tally.
+
 ### II.1.2. Five Phases of a Day
 
 Một ngày có năm pha theo thứ tự cố định:
@@ -37,7 +60,7 @@ Pha Ca cảng là nửa chơi tay thứ hai. Luật của ca cảng ở mục II
 Pha Cuối ngày là lúc tiêu Tally vừa kiếm được và đọc truyện. Người chơi ngủ ở buồng ngủ đông thì game lưu và sang ngày mới.
 
 [CHỜ ẢNH: mặt cắt trạm lúc cuối ngày, người chơi đứng ở buồng ngủ đông, chụp từ build]
-*Hình II.1.1 - Trạm lúc cuối ngày, người chơi chuẩn bị ngủ*
+*Hình II.1.2 - Trạm lúc cuối ngày, người chơi chuẩn bị ngủ*
 
 Chi tiết dữ liệu: tab Day trên Sheet GDD, khối Cấu trúc một ngày.
 
@@ -76,7 +99,7 @@ flowchart TD
   J --> K["Vào buồng ngủ đông: lưu, sang ngày mới"]
   K --> A
 ```
-*Hình II.1.2 - Luồng một ngày và các điểm tự lưu*
+*Hình II.1.3 - Luồng một ngày và các điểm tự lưu*
 
 Đọc sơ đồ: sáng ra, người chơi chọn ra cửa khí hoặc đi thẳng vào ca. Mỗi chuyến về là một điểm lưu. Sau chuyến đầu người chơi còn chọn đi tiếp hay vào ca sớm. Sau chuyến thứ hai thì chỉ còn đường vào ca. Tới ca, người chơi Mở ca để bán hoặc Bỏ ca mà không bị phạt. Cả hai nhánh đều khóa cửa khí và dẫn tới cuối ngày. Ngủ là cách duy nhất để sang ngày mới.
 

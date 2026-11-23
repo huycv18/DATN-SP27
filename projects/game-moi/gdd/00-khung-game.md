@@ -100,6 +100,28 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 
 Vòng lớn: ra ngoài thu thập -> mang về kho -> sửa trạm, chế đồ, nuôi -> lập danh mục, bán ở ca cảng lấy Tally -> nâng cấp bộ đồ và trạm, mua thứ không tự làm được -> đi xa hơn, lâu hơn, gặp thứ mới -> lộ thêm truyện.
 
+```mermaid
+flowchart TD
+  A["Ra cửa khí: một chuyến, Oxy là giới hạn"] --> B["Nhặt tài nguyên, bắt sống hoặc hạ Driftlife, tìm manh mối và người vớt"]
+  B --> C{"Về tới trạm?"}
+  C -->|"Cửa khí hoặc Recall Beacon"| D["Cả túi đồ vào kho"]
+  C -->|"Ngạt, bị kéo về"| E["Chỉ giữ 1 món tự chọn"]
+  D --> F["Sửa khoang, chế ở xưởng, nuôi Driftlife"]
+  E --> F
+  F --> G{"Động cơ chính đã sửa xong?"}
+  G -->|"Rồi"| H["Ember rời neo, hết game"]
+  G -->|"Chưa"| I{"Mở ca cảng?"}
+  I -->|"Mở ca"| J["Lập danh mục, bán thùng cho tàu, nhận Tally và tip"]
+  I -->|"Bỏ ca, không bị phạt"| K
+  J --> K["Nâng cấp bộ đồ, dụng cụ, trạm, mua ở shop"]
+  K --> L["Bình Oxy và túi lớn hơn, đi xa hơn, lâu hơn"]
+  L --> A
+  B -.-> M["Người vớt mở tính năng trạm, mốc truyện mở dải mới"]
+  M -.-> F
+```
+
+Sơ đồ trên là core loop tổng. Giải thích từng nhánh ở Book mục II.1.1.
+
 Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm):
 
 | Pha | Người chơi làm gì | Kết thúc khi | Bỏ qua được |
