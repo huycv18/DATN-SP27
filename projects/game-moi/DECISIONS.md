@@ -355,3 +355,9 @@ Hệ quả: tên Doc, tên phần và mọi tiêu đề `##`, `###` trong Doc th
 ## 2026-11-23 - Demo màn hình The Novent
 
 Lead yêu cầu tạo art và asset mới để dựng các màn hình trong game từ Figma, rồi nối thành luồng trình diễn tương tác. Bản web nằm tại `tools/prototype/game-demo/index.html`. Luồng mẫu chạy trong một ngày đã có ca cảng tại Ember. Nút Chọn cảnh mở dữ liệu trình diễn riêng để xem một đoạn mà không thay đổi bản lưu. Phòng co-op, điều kiện sửa khoang và đơn chế trong demo dùng dữ liệu mẫu.
+
+## 2026-11-23 - UI game theo tham chiếu WarFront Demo
+
+Lead muốn UI demo Figma có cách trình bày như game PC và lấy bản WarFront Demo trên Steam làm mốc chất lượng. Đã chỉnh trang `The Novent / Demo màn hình`: màn chuẩn bị chiếm toàn khung, mỗi bước có một hành động chính, HUD bay bám mép, ca cảng chỉ nhấn thùng và cửa neo đang thao tác. Màu, ký hiệu và art dùng hệ hình ảnh của Ember. Đây là hướng trình bày của prototype Figma, các thông số và luật vẫn lấy từ tài liệu dự án.
+
+[Figma Present](https://www.figma.com/proto/rwemYZkNuUXZKONbA2c2EW/The-Novent?node-id=37-184&page-id=37%3A110&starting-point-node-id=37%3A184&scaling=scale-down)
