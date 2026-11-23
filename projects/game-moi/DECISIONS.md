@@ -335,3 +335,13 @@ GDM chốt trong thẩm quyền (chốt mâu thuẫn giữa vai, không đổi l
 - Âm SFX_Order_Complete và SFX_Order_Missed đổi tên thành SFX_Ship_Served và SFX_Ship_Left vì đơn nhiều dòng đã bỏ.
 - Co-op MVP 2 người: không sửa ky-thuat.md luật 12 (4 slot là của bản đủ). Bản MVP khóa ô 3 và 4 ở màn Tạo thế giới như WIREFRAME.
 - Không đổi: Recipe ghi bậc 4 "chương 4 đến 5" (cửa sổ mở, khác chương mua), Balance Sheet hàng 28 (đã đánh dấu thay).
+
+## 2026-11-23 - Tài liệu nộp: Doc thiết kế 2 phần, tiếng Việt
+
+Lead xem folder Documents của nhóm Timberwalls (khóa trước) và giao: "Oke để học theo các làm này của họ hãy lên kế hoạch". GDM đề xuất kế hoạch 3 đợt. Lead chốt: "Tiếng Việt, 2 phần".
+Hệ quả:
+- Tài liệu nộp là một Doc thiết kế viết tiếng Việt, 2 phần như "Tutorial - Book Of Timberwalls" của họ. Phần I Điều khiển: từng thao tác có ảnh build, đánh số hình. Phần II Thành phần game: mỗi hệ thống MVP một mục, có luật, công thức, bảng số, sơ đồ luồng, link sang tab Sheet.
+- Nguồn của Doc nằm trong repo (`projects/game-moi/book/`), gộp và kiểm bằng script rồi mới xuất Google Doc. Không viết tay riêng trên Google Docs để Doc không lệch với GDD và Sheet.
+- Doc chỉ dẫn lại luật và số đã có trong GDD hệ thống, `so-hien-hanh.md` và Sheet, không đặt luật hay số mới. Thấy lệch thì báo GDM.
+- Làm một mục mẫu trước (II.6 Trạm và cảng), GDM duyệt rồi mới giao các mục còn lại. Phần I chờ có build.
+- Việc đợt 2 và 3 (codex Dave the Diver theo hệ thống, Guides cho dev Unity) ghi ở BACKLOG GD-064, GD-065.
