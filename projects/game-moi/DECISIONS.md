@@ -316,3 +316,9 @@ Hệ quả: MVP có co-op 2 người online từ đầu, nhãn đổi từ (G) l
 - Lead xem GDD ở Sheet "Game Design Document - The Novent" (`1NayaWIuhGD9p3Czlff9sCubY610Ksye4bo97R_QqPdE`, chép từ Sheet cũ ngày 2026-11-20), trong khi tool và các lần dán vẫn trỏ vào Sheet cũ "GDD - The Novent" (`1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs`). Lead chốt bằng lời: dùng Sheet mới làm GDD chính.
 - Hai Sheet cùng tên tab và cùng gid, nên chỉ đổi `spreadsheetId` trong `tools/tham-so/sheet.json` và dòng Sheet GDD trong `so-hien-hanh.md`. Sheet cũ thôi dùng, không dán vào nữa.
 - Ô OVERVIEW!B28 (USP) đã ghi bản mới vào Sheet mới. Các tab khác chưa đối chiếu: Sheet mới chưa bật chia sẻ xem bằng link nên `doi-chieu-sheet.mjs` nhận HTTP 401.
+
+## 2026-11-23 - Bảng màn UX còn 30, thêm HUD boss và hộp xác nhận
+
+Lead chọn "Sửa ux-ui.md" sau đánh giá wireframe trên Figma (`production/reports/2026-11-23-wireframe-figma.md`). Đây là quyết định UX trong thẩm quyền GDM, không chạm luật lõi.
+Hệ quả: 35 màn còn 30. Bỏ sảnh co-op UI-03 (bạn vào sau bất kỳ lúc nào qua UI-04, chủ phòng mời từ UI-50). UI-20 thành trạng thái Chờ nhóm của UI-10, UI-45 thành khối trong UI-43. UI-32, UI-41, UI-42 thành phần tử HUD (HUD-16, HCH-06, HCH-12). Thêm UI-54 hộp xác nhận, xóa thế giới ở UI-01, HUD-17 thanh boss theo cơ chế pha (boss không có thanh Choáng), HUD-18 thanh Choáng và dấu Bất lực trên Driftlife. Đai dụng cụ 3 đến 5 ô theo `nguoi-choi.md`. Wireframe: Figma The Novent, trang Wireframe MVP. Tab WIREFRAME trong repo đã sửa, chưa dán lên Sheet.
+

@@ -48,8 +48,7 @@ btn.join	Tham gia	12	UI-01
 btn.settings	Cài đặt	12	UI-01
 btn.quit	Thoát	10	UI-01
 btn.create	Tạo	8	UI-02
-btn.ready	Sẵn sàng	12	UI-03
-btn.invite	Mời bạn	12	UI-03
+btn.invite	Mời bạn	12	UI-50
 btn.enter	Vào	8	UI-04
 btn.skip	Bỏ qua	10	UI-05
 btn.continue	Tiếp tục	12	UI-35
@@ -66,7 +65,6 @@ btn.retry	Thử lại	10	UI-01
 btn.swap	Hoán đổi	12	UI-52
 btn.reset	Mặc định	12	UI-52
 title.create	Tạo thế giới	16	UI-02
-title.lobby	Sảnh	8	UI-03
 title.join	Tham gia thế giới	20	UI-04
 title.airlock	Cửa khí	12	UI-11
 title.storage	Kho	8	UI-12
@@ -77,14 +75,14 @@ title.upgrade	Nâng cấp	12	UI-16
 title.repair	Sửa khoang	14	UI-17
 title.engine	Động cơ chính	16	UI-18
 title.notebook	Sổ tay	10	UI-19
-title.wait	Chờ nhóm	12	UI-20
+title.wait	Chờ nhóm	12	UI-10
 title.map	Bản đồ chuyến	16	UI-33
 title.choking	Ngạt	8	UI-34
 title.pulled	Bị kéo về	14	UI-35
 title.home	Về an toàn	14	UI-36
 title.shift_end	Kết ca	10	UI-43
 title.day_end	Cuối ngày	12	UI-44
-title.rank_up	Lên Hạng cảng	16	UI-45
+title.rank_up	Lên Hạng cảng	16	UI-43
 title.paused	Tạm dừng	12	UI-50
 title.menu	Menu	8	UI-50
 title.keys	Đổi phím	12	UI-52
@@ -120,20 +118,19 @@ state.storage_empty	Kho trống	14	UI-12
 state.bag_empty	Túi trống	14	UI-31
 state.no_ships	Hôm nay không có tàu	28	UI-14
 state.first_ship	Chờ tàu đầu tiên	24	UI-40
-state.no_ping	Hết ping	12	UI-32
-state.ping_wait	Chờ ping tự hết	18	UI-32
+state.no_ping	Hết ping	12	HUD-16
+state.ping_wait	Chờ ping tự hết	18	HUD-16
 state.shift_on	Ca đang chạy	16	UI-14
 state.unset	Chưa gán	12	UI-52
 state.fixed	Cố định	12	UI-52
 state.next_chapter	Chương sau	14	UI-18
 state.done	Xong	8	UI-18
 state.waiting_out	Chờ ngoài	14	UI-40
-state.just_back	Nhóm vừa về	16	UI-20
+state.just_back	Nhóm vừa về	16	UI-10
 lbl.how_to	Cách chơi	12	UI-19
 state.saving	Đang lưu	12	UI-44
 state.saved	Đã lưu	10	UI-44
 state.no_signal	Mất tín hiệu	16	UI-33
-state.wait_friends	Chờ bạn	10	UI-03
 hud.block	Chưa có đường qua	24	UI-30
 prompt.need_key	Cần {tool} để mở	24	UI-30
 hud.share.floor	Dừng chia: giữ lại {n} Oxy	32	UI-30
@@ -178,7 +175,7 @@ tut.t34	Giữ {share} để chia Oxy cho bạn	40	T34
 tut.ping_oxy	Đồng đội ping Cần Oxy	30	T33
 tut.t35	Giữ {interact} để trao đồ cho bạn	40	T35
 state.engineer_wait	Kỹ sư chưa tới	24	UI-13
-state.wait_update	Chờ cập nhật	16	UI-20
+state.wait_update	Chờ cập nhật	16	UI-10
 state.no_samples	Chưa có mẫu	14	UI-21
 state.no_blueprints	Hết bản thiết kế	20	UI-21
 lbl.shift_blocked	Còn người đang ở ngoài chuyến	36	UI-14
@@ -239,20 +236,34 @@ hud.catalog.left	Danh mục còn	16	HCH-04
 hud.carry	Cầm {item}, cửa neo {n}	32	HCH-05
 lbl.dock	Cửa neo {n}	14	UI-40
 lbl.counter	Quầy cảng	12	UI-40
-lbl.preorder	Đặt trước	12	UI-41
-lbl.pump_ask	Bơm khí!	10	UI-42
+lbl.preorder	Đặt trước	12	HCH-06
+lbl.pump_ask	Bơm khí!	10	HCH-12
 state.sold_out	Hết	8	HCH-04
-state.greeting	Đang chào hỏi	18	UI-41
+state.greeting	Đang chào hỏi	18	HCH-06
 prompt.take	{key} nhặt thùng	20	HCH-11
 prompt.give	{key} giao thùng	20	HCH-11
 prompt.pump	Giữ {key} bơm khí	24	HCH-11
 err.hand_full	Tay đang bận, mỗi lần 1 thùng	36	HCH-11
-err.pump_hand	Giao thùng trước khi bơm khí	32	UI-42
-err.wrong_dock	Sai cửa neo, tàu gọi thùng khác	36	UI-41
+err.pump_hand	Giao thùng trước khi bơm khí	32	HCH-12
+err.wrong_dock	Sai cửa neo, tàu gọi thùng khác	36	HCH-06
 toast.ship_left	Tàu đã rời	16	UI-40
 toast.crate_back	Tàu đã rời, thùng về kho	32	UI-40
 toast.tally_tip	+{n} tip +{t}	20	UI-40
-toast.pump	+{n} bơm khí	16	UI-42
+toast.pump	+{n} bơm khí	16	HCH-12
+btn.delete_world	Xóa thế giới	16	UI-01
+title.confirm_delete	Xóa thế giới {name}?	36	UI-54
+title.confirm_menu	Về menu chính?	20	UI-54
+title.confirm_open_shift	Mở ca bây giờ?	20	UI-54
+title.confirm_skip_shift	Bỏ ca hôm nay?	20	UI-54
+lbl.no_undo	Không hoàn tác được	24	UI-54
+btn.delete	Xóa	8	UI-54
+hud.boss.phase	Pha {n}/{m}	12	HUD-17
+hud.boss.phase_change	Chuyển pha	12	HUD-17
+hud.boss.anchor	Neo đứt {n}/{m}	16	HUD-17
+hud.boss.tether	Dây nối {n}/{m}	16	HUD-17
+hud.boss.cut	Giữ {key} cắt Dây nối	24	HUD-17
+hud.dl.helpless	Bất lực	10	HUD-18
+hud.dl.catch	{key} Bắt	10	HUD-18
 lbl.catalog	Danh mục bán	16	UI-14
 lbl.catalog_count	{n}/{m} loại	14	UI-14
 lbl.catalog_empty	Chưa có món nào	20	UI-14

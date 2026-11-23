@@ -40,4 +40,16 @@ Thừa (đề xuất gộp, chờ Lead):
 - Giá Shop, vật liệu nâng cấp, lời thoại là chỗ đặt `{...}` khi GDD chưa có số. Giá thùng và độ gọi lấy tab Shop, bậc 1 lấy tab Upgrade.
 - Font wireframe Be Vietnam Pro (đủ dấu), chưa phải font game.
 - Chưa chạy `validate_wireframe.py` (script kiểm SVG, không áp cho Figma). Chưa soi ở 1080p, Steam Deck. Chưa có anchor game tham chiếu nên phần thẩm mỹ CHƯA ĐÁNH GIÁ.
-- Các đề xuất thêm hoặc bỏ chưa sửa vào `ux-ui.md`, chờ Lead duyệt.
+- Các đề xuất thêm hoặc bỏ đã đưa vào `ux-ui.md`, xem mục dưới.
+
+## Đã đưa vào ux-ui.md (Lead chọn sửa, cùng ngày)
+
+| Mục | Trước | Sau |
+|---|---|---|
+| Màn | 35 | 30 (28 MVP) |
+| Phần tử HUD bay | 15 | 18 |
+| Phần tử HUD ca cảng | 11 | 12 |
+| Strings | 287 | 298 |
+
+HUD boss viết theo `combat-driftlife.md` mục 3.7: boss không có thanh Choáng, chỉ Bất lực theo cơ chế pha, nên HUD-17 hiện Sinh lực, pha, bộ đếm Neo hoặc Dây nối và đồng hồ Choáng. Khung UI-30b trên Figma đã sửa theo. Cổng máy: `kiem-ux.mjs` 0 lỗi, `kiem-de-doc.mjs --tab WIREFRAME` ĐẠT, `validate-gdd.mjs` 0 lỗi, `selftest.mjs` 33 ĐẠT. Chưa dán tab WIREFRAME lên Sheet.
+
