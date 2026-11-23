@@ -366,6 +366,14 @@
         "gd-economy"
       ],
       [
+        "Ngày mở ca cảng chương 1 và ca đầu trong sim",
+        "tham-so.json ngay_mo_cang_ch1, ca_day (gd-economy)",
+        "Từ ngày 4, ca đầu là ca đủ 25 tàu",
+        "QA GD-061 C-V1, C-V2: lệch cot-truyen.md mục 5 (ca thứ nhất ngày 5) và tram-va-cang.md luật 67 (ca dạy 2 tàu). Chạy lại: chương 1 1,90 thành 2,29 giờ, cả game 14,2 thành 14,6 giờ, nhóm 4 71% thành 68%",
+        "Sớm nhất ngày 5, ngày sau khi cảng sửa xong. Ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu (log GDM 111). Chương 1 quá mục tiêu 2 giờ, phương án ở mục 10",
+        "gd-economy"
+      ],
+      [
         "T-VO là cổng chương",
         "GD-028",
         "T-VO bậc c chặn qua chương c, vật liệu 25, 45, 81",
@@ -442,7 +450,7 @@
         "tram-va-cang.md (gd-quan)",
         "2 mỗi đơn đủ, thêm 1 khi nhanh, nhân (N cộng 1) chia 2",
         "Luật mới không còn đơn",
-        "1 mỗi tàu phục vụ xong, thêm 1 nếu còn trên 2/3 kiên nhẫn. Sim trễ 2 giây: một ca 46, 102, 105, 111 điểm cho 1 tới 4 người",
+        "1 mỗi tàu phục vụ xong, thêm 1 nếu còn từ 2/3 kiên nhẫn trở lên. Sim trễ 2 giây: một ca 46, 102, 105, 111 điểm cho 1 tới 4 người",
         "Lead"
       ],
       [
@@ -536,8 +544,13 @@
       "VO",
       "KH05-C2"
     ],
-    "ngay_mo_cang_ch1": 4,
+    "ngay_mo_cang_ch1": 5,
     "vl_mo_cang_ch1": 98,
+    "ca_day": {
+      "tau": 2,
+      "giay": 28,
+      "diem_moi_tau": 2
+    },
     "he_so_thieu_vo": 0.27,
     "nuoi_dai": [
       [
@@ -612,7 +625,8 @@
       "tu_bac": 2
     },
     "ghi_chu_nguon": {
-      "ngay_mo_cang_ch1": "tram-va-cang.md: ca cảng đầu ở mốc C1.8, khoảng ngày 4 (Thông dịch viên vớt ở lần 2 Station Cinder rồi tỉnh sau một đêm)",
+      "ngay_mo_cang_ch1": "Log GDM 111 (QA GD-061 C-V1): ca cảng sớm nhất ngày 5, khớp cot-truyen.md mục 5 (ngày 5: C1.8 và ca thứ nhất). Lịch tàu sinh đầu ngày, nên cảng sửa xong ngày d thì ca đầu ở ngày d cộng 1",
+      "ca_day": "tram-va-cang.md luật 67, log GDM 111: ca đầu tiên là ca dạy, 2 tàu Loose Bolt (TA01) kiên nhẫn Dài, chỉ gọi thùng phế liệu CGO-101, 1 tàu nếu kho chỉ đủ 1 thùng. Giây: giữa khoảng 23 tới 33 giây của sim GD-054 vòng 2 mục 1. Điểm: tàu được phục vụ ngay, còn từ 2/3 kiên nhẫn trở lên nên 2 điểm mỗi tàu. Tip theo phần tip của kịch bản như mọi ca",
       "vl_mo_cang_ch1": "vat-pham.md mục 2.7: tổng vật liệu khoang neo, kho cấp 2, xưởng, khoang liên lạc, cảng bến 1",
       "he_so_thieu_vo": "map.md mục 3.2: thiếu 1 cấp môi trường còn khoảng 27% thời gian làm việc",
       "chuyen_nhanh_theo_chuong": "map.md mục 2.10: Cinder 2 lần, Wick và Lantern 3, Flint 2, Cradle 4, Warden Rig 3",

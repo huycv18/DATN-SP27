@@ -4,7 +4,7 @@ Kinh tế là chỗ đổi đồ mang về thành sức mạnh cho chuyến sau.
 
 ### II.7.1. Overview
 
-Game có đúng một đồng tiền là **Tally**, dùng chung cả nhóm. Tally chỉ đến từ ca cảng: tàu thương nhân trả giá thùng, tip theo tốc độ và tiền bơm khí. Không có Tally từ quest, từ hòm hay từ bán đồ ở Shop. Người chơi tiêu Tally vào hai chỗ: nâng cấp bộ đồ và dụng cụ ở Xưởng, và mua linh kiện động cơ ở Shop. Mỗi nâng cấp tốn cả Tally lẫn vật liệu trong kho, nên đồ mang về luôn bị kéo về hai phía: đem bán để có Tally, hay giữ lại để sửa trạm và nâng cấp.
+Game có đúng một đồng tiền là **Tally**, dùng chung cả nhóm. Tally chỉ đến từ ca cảng: tàu thương nhân trả giá thùng, tip theo tốc độ và tiền bơm khí. Không có Tally từ quest, từ hòm hay từ bán đồ ở Shop. Người chơi tiêu Tally vào hai chỗ: nâng cấp bộ đồ và dụng cụ ở Xưởng, và mua linh kiện động cơ ở Shop. Mỗi nâng cấp tốn cả Tally lẫn vật liệu trong kho (trừ Đai dụng cụ bậc 1, là thưởng quest của Kỹ sư và không tốn Tally), nên đồ mang về luôn bị kéo về hai phía: đem bán để có Tally, hay giữ lại để sửa trạm và nâng cấp.
 
 Mọi giá đều tính từ một đơn vị gốc là **GTĐ**, giá trị tương đối của vật phẩm do mục Vật phẩm đặt. Giá bán một thùng hàng đi theo GTĐ của hàng và bậc giá của nó. Giá mua một nâng cấp đi theo thu nhập dự kiến của chương. Nhờ vậy khi lượng nhặt một chuyến đổi, giá tự đổi theo và sim chạy lại là xong. Tally không bao giờ giảm ngoài lúc mua, không có chi phí duy trì, không có phí cứu hộ, không có nợ. Tiến trình theo chương do truyện và động cơ quyết, kinh tế chỉ làm nhịp.
 
@@ -80,6 +80,7 @@ Thế cân của bậc giá hiện ra khi đo các kiểu **danh mục bán**, t
 - Bày thừa hàng chợ cạnh hàng chuẩn bị không thêm gì, vì tàu gọi hàng chợ trước còn hàng đắt nằm lại kho.
 - Ít mà đắt mất 10 tàu vì hết hàng, nhưng mỗi GTĐ bán ra được gấp đôi hàng chợ, nghĩa là giữ được hàng chợ để sửa trạm.
 - Bỏ đồ Trái Đất làm trượt đơn đặt trước và mất tip gấp đôi của Loose Bolt.
+- Bảng đo trên mô hình ca có sẵn mọi loại hàng. Trong game, thùng mô sinh học và thùng đặc sản Gần chỉ bày được từ Hạng cảng 3 (mục II.6), nên hai kiểu dùng đặc sản Gần là kiểu của cuối chương 1 trở đi.
 
 Bắt sống phải đáng hơn hạ, nhưng không quá hai lần, để hạ vẫn là lựa chọn. Bảng dưới so Tally của lồng với Tally kỳ vọng khi hạ cùng loài, đã trừ Lưới cuộn tốn 1,10 GTĐ mỗi phát:
 
@@ -123,11 +124,11 @@ Ví dụ chương 1:
 - Phút một ngày = 2 x 4,4 + 3,8 + 3 = 15,6 phút.
 - Ngày mục tiêu = 1,25 x 60 / 15,6 = 4,8 ngày.
 - Thu nhập tham chiếu = 2 x (102,1 / 0,9) x 10 x 0,97 / (1 - 26%), sim in ra 3000 Tally.
-- Ngân sách = 0,54 x 4,8 x 3000, sim in ra 7750 Tally.
+- Ngân sách = 0,54 x 4,8 x 3000, sim in ra 7750 Tally. Số trong ví dụ đã làm tròn: sim dùng số lẻ 4,797 ngày và 2989 Tally, ra 7742, làm tròn 50 thành 7750. Nhân tay số tròn ra 7776.
 
 Giờ mục tiêu thấp hơn giờ đo được vì chương có phần thời gian không phụ thuộc giá: chuyến map nhánh, đêm chờ người vớt tỉnh, thời gian sửa khoang, điểm lên Hạng cảng:
-- Chương 1 đo được 1,90 giờ so với 1,25 giờ dùng tính ngân sách.
-- Sim đo riêng phần không phụ thuộc giá của chương 1, khi giá Tally gần bằng 0, ra 1,6 giờ.
+- Chương 1 đo được 2,29 giờ so với 1,25 giờ dùng tính ngân sách.
+- Sim đo riêng phần không phụ thuộc giá của chương 1, khi giá Tally gần bằng 0, ra 1,8 giờ.
 
 | Loại món | Tỉ lệ trong ngân sách chương |
 |---|---|
@@ -170,20 +171,17 @@ Một món có thể mua đi qua năm trạng thái:
 
 ```mermaid
 flowchart TD
-  A["Bảng kết ca cộng Tally và điểm cảng"] --> B{"Đủ điểm lên hạng và chưa chạm trần chương?"}
+  A["Kết ca: cộng Tally và điểm cảng"] --> B{"Đủ điểm lên hạng<br/>và chưa chạm trần?"}
   B -->|Có| C["Lên Hạng cảng, Shop mở món mới"]
   B -->|Không| D["Giữ hạng, điểm vẫn cộng dồn"]
-  C --> E["Người chơi chọn một món ở Xưởng hoặc Shop"]
+  C --> E["Chọn một món ở Xưởng hoặc Shop"]
   D --> E
-  E --> F{"Đủ điều kiện mở: chương và Hạng cảng?"}
+  E --> F{"Đủ chương<br/>và Hạng cảng?"}
   F -->|Chưa| G["Khóa: ô xám ghi điều kiện"]
-  F -->|Đủ| H{"Ví chung đủ Tally và kho đủ vật liệu?"}
+  F -->|Đủ| H{"Đủ Tally<br/>và vật liệu?"}
   H -->|Thiếu| I["Mở, thiếu: phần thiếu hiện đỏ"]
-  H -->|Đủ| J["Xác nhận: trừ ngay Tally và vật liệu"]
-  J --> K{"Món Shop hay nâng cấp ở Xưởng?"}
-  K -->|Món Shop| L["Xong ngay"]
-  K -->|Nâng cấp| M["Đang làm, chờ qua đêm"]
-  M --> N["Ngủ: sáng hôm sau hiệu ứng áp cho cả nhóm"]
+  H -->|Đủ, món Shop| L["Trừ ngay Tally và vật liệu.<br/>Xong ngay"]
+  H -->|Đủ, nâng cấp| M["Trừ ngay Tally và vật liệu.<br/>Chờ qua đêm, sáng hôm sau<br/>áp cho cả nhóm"]
 ```
 *Hình II.7.1 - Từ bảng kết ca tới lúc một món mua xong*
 
@@ -206,23 +204,26 @@ Bảng dưới là một lượt sim chương đầu, kịch bản trung bình, 
 | 1 | 153 | 0 | Không | 0 | 0 | 1 |
 | 2 | 153 | 0 | Đai dụng cụ bậc 1 (thưởng quest) | 0 | 0 | 1 |
 | 3 | 10 | 0 | Không | 0 | 0 | 1 |
-| 4 | 107 | 1744 | Bình Oxy bậc 1 | 1450 | 294 | 1 |
-| 5 | 107 | 1415 | Túi đồ bậc 1 | 1450 | 259 | 2 |
-| 6 | 255 | 1744 | Bộ đẩy bậc 1, Dụng cụ khai thác bậc 2, Lao từ bậc 2 | 1880 | 123 | 2 |
-| 7 | 255 | 1744 | Không | 0 | 1867 | 3 |
-| 8 | 255 | 1744 | Van tiết lưu | 2900 | 711 | 3 |
+| 4 | 107 | 0 | Không | 0 | 0 | 1 |
+| 5 | 107 | 114 | Không | 0 | 114 | 1 |
+| 6 | 204 | 1744 | Bình Oxy bậc 1 | 1450 | 408 | 1 |
+| 7 | 204 | 1744 | Túi đồ bậc 1, Dụng cụ khai thác bậc 2 | 1890 | 262 | 2 |
+| 8 | 255 | 1744 | Bộ đẩy bậc 1, Lao từ bậc 2 | 1440 | 566 | 3 |
+| 9 | 133 | 1744 | Không | 0 | 2310 | 3 |
+| 10 | 255 | 1744 | Van tiết lưu | 2900 | 1154 | 3 |
 
 Đọc bảng:
-- Ba ngày đầu chưa có ca cảng. Trong sim ca cảng mở từ ngày 4, khi Thông dịch viên đã tỉnh và năm khoang đầu đã sửa.
-- Từ ngày 4 mỗi ca cho khoảng một nâng cấp bộ đồ.
-- Ngày 7 lên Hạng 3, ngày 8 đủ Tally mua Van tiết lưu và chương đóng, sau sàn 7 ngày của truyện chương 1.
+- Bốn ngày đầu chưa có ca cảng. Lịch tàu sinh đầu ngày, nên cảng sửa xong thì ngày sau mới có tàu, sớm nhất ngày 5, cùng ngày với ca thứ nhất của truyện.
+- Ca ngày 5 là ca dạy: 2 tàu Loose Bolt chỉ gọi thùng phế liệu, thu 114 Tally gồm tip (mục II.6). Từ ngày 6 người chơi tự lập danh mục, mỗi ca 25 tàu cho khoảng một nâng cấp bộ đồ.
+- Ngày 8 lên Hạng 3, ngày 10 đủ Tally mua Van tiết lưu và chương đóng, sau sàn 7 ngày của truyện chương 1. Đây là một lượt mẫu. Trung bình 200 lượt cũng lên Hạng 3 ở ngày 8 và đóng chương ở ngày 10.
+- Chương 1 dài 2,29 giờ, quá mục tiêu 1,5 đến 2 giờ: so với khi sim còn mở ca đủ từ ngày 4, thu nhập chương 1 lùi khoảng hai ca. Hạ ngưỡng Hạng cảng không rút được chương vì Tally mới là chỗ chặn. Phương án chỉnh giá đang chờ quyết.
 
 Người chơi học và mở theo chương, bảng chương 1:
 
 | Nội dung | Chương 1 |
 |---|---|
 | Người chơi học | Bay, Oxy, nhặt, khoan, nạy, hạ, bắt sống loài nhỏ, sửa khoang, lập danh mục bán, mang thùng ở ca cảng, mua nâng cấp đầu tiên |
-| Tài nguyên và map | Tài nguyên dải Gần, dải Gần, map nhánh Station Cinder |
+| Tài nguyên và map | Tài nguyên và map dải Gần, map nhánh Station Cinder |
 | Trang bị | Dùi xung, Súng lưới, Lồng mẫu, Bộ kích nguồn, nâng cấp bộ đồ bậc 1 |
 | Driftlife và boss | 4 loài dải Gần làm ở MVP, boss Scrapmaw |
 | Sức mạnh tăng | Túi đồ, Bình Oxy, Bộ đẩy lên bậc 1, Đai dụng cụ thêm 1 ô. Một chuyến mang về khoảng 102 GTĐ, quy ra 1021 Tally |
@@ -238,7 +239,7 @@ Sim chạy ba kịch bản người chơi. Tham số hành vi là giả định 
 | Chỉ số giá của danh mục | 0,84 | 0,97 | 1,07 |
 | Hệ số phút một ngày | 1,15 | 1,0 | 0,9 |
 | Tally một ca chương 1 khi kho đủ, một người | 1345 | 1744 | 2038 |
-| Xong chương 1, một người | Ngày 10, 2,80 giờ | Ngày 8, 1,90 giờ | Ngày 7, 1,47 giờ |
+| Xong chương 1, một người | Ngày 11, 2,99 giờ | Ngày 10, 2,29 giờ | Ngày 9, 1,83 giờ |
 
 Kịch bản tệ dài hơn chủ yếu vì người chơi không chuẩn bị chỉ bày hàng chợ, chỉ số giá thấp. Đây là ý đồ của giá theo bậc: chuẩn bị danh mục rút ngắn game.
 
@@ -255,20 +256,20 @@ Kết quả sim kinh tế chương 1, kịch bản trung bình:
 
 | Số người | Tally một ca khi kho đủ | Điểm cảng một ca | Phần hai chuyến đầy túi bán ở một ca | Xong chương 1 |
 |---|---|---|---|---|
-| 1 | 1744 | 46 | 58% | Ngày 8, 1,90 giờ |
-| 2 | 3848 | 102 | 76% | Ngày 7, 1,74 giờ |
+| 1 | 1744 | 46 | 58% | Ngày 10, 2,29 giờ |
+| 2 | 3848 | 102 | 76% | Ngày 7, 1,60 giờ |
 
-Nhóm hai người xong chương đầu sớm nhất có thể vì chạm sàn ngày của truyện, sàn này không đổi theo số người. Tally một ca ở đây là sim kinh tế theo chỉ số giá của kịch bản, nên khác chút với số ở mục Trạm và cảng đo bằng mô hình ca với một danh mục cố định.
+Nhóm hai người xong chương đầu sớm nhất có thể vì chạm sàn ngày của truyện, sàn này không đổi theo số người. Hai cột Tally và điểm một ca là ca đủ từ ca thứ hai, ca dạy đầu tiên chỉ có 2 tàu. Tally một ca ở đây là sim kinh tế theo chỉ số giá của kịch bản, nên khác chút với số ở mục Trạm và cảng đo bằng mô hình ca với một danh mục cố định.
 
 Tiêu chí đã đo bằng sim, kịch bản trung bình, chơi một mình trừ khi ghi khác:
 
 | Tiêu chí | Mục tiêu | Đo được | Đạt |
 |---|---|---|---|
-| Thời lượng chương 1 | 1,5 đến 2 giờ | 1,90 giờ | Đạt |
+| Thời lượng chương 1 | 1,5 đến 2 giờ | 2,29 giờ | Không đạt, chờ quyết phương án giá |
 | Độ dài một ngày chương 1 | 15 đến 20 phút | 15,6 phút | Đạt |
 | Tip kể cả bơm khí trong Tally ca cảng | 20 đến 30% | 26%, tệ 21%, tốt 30%, mọi kiểu danh mục 22% đến 29% | Đạt |
 | Bắt sống so với hạ, đã trừ vật tiêu hao | 1,2 đến 2 lần | 1,44 đến 1,81 qua lưới, 1,50 đến 1,94 bắt tay | Đạt |
-| Hạng cảng 3 tới trước khi chương 1 xong | Có | Hạng 3 ở ngày 6, trung bình 200 lượt | Đạt |
+| Hạng cảng 3 tới trước khi chương 1 xong | Có | Hạng 3 ở ngày 8, chương đóng ngày 10, cả lượt mẫu ở II.7.6 lẫn trung bình 200 lượt | Đạt |
 
 Tiêu chí đo khi có build, qua event tracking:
 - Mọi Tally nhận được có nguồn là thùng, tip, bơm khí hoặc đơn đặt trước, không có nguồn khác trong 100 phiên thử.

@@ -295,6 +295,8 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
     sua_con = VAT_LIEU_SUA[0]
     vot_con = S["nguoi_vot_theo_chuong"][0]
     cang_mo = False
+    cang_xong = None  # ngày sửa xong 5 khoang chương 1
+    ca_day = False
     ngay_dau_chuong = 1
     while c <= 5 and ngay < 400:
         ngay += 1
@@ -339,14 +341,33 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
         dung = min(kho, sua_con)
         sua_con -= dung
         kho -= dung
-        if c == 1 and ngay >= S["ngay_mo_cang_ch1"] and sua_con <= VAT_LIEU_SUA[0] - S["vl_mo_cang_ch1"]:  # Thông dịch viên đã tỉnh và đủ 5 khoang chương 1
+        # lịch tàu sinh đầu ngày (log GDM 111): cảng sửa xong hôm nay thì ca đầu ở ngày sau, sớm nhất ngày 5
+        if c == 1 and cang_xong is None and sua_con <= VAT_LIEU_SUA[0] - S["vl_mo_cang_ch1"]:  # đủ 5 khoang chương 1
+            cang_xong = ngay
+        if c == 1 and not cang_mo and cang_xong is not None and ngay > cang_xong and ngay >= S["ngay_mo_cang_ch1"]:
             cang_mo = True
+            ca_day = True
         if c > 1:
             cang_mo = True
         # ca cảng
         phut_ca = 0.0
         thu = ban = 0.0
-        if cang_mo:
+        la_ca_day = cang_mo and ca_day
+        if la_ca_day:
+            # ca dạy (tram-va-cang.md luật 67): 2 tàu Loose Bolt chỉ gọi thùng phế liệu, 1 tàu nếu kho chỉ đủ 1 thùng
+            CD = S["ca_day"]
+            ban = float(min(CD["tau"], int(kho / (GTD["CGO-101"] / THUNG))))
+            ca_day = ban == 0  # kho không có phế liệu thì nút Mở ca xám, ca dạy dời sang ngày sau
+            kho -= ban * GTD["CGO-101"] / THUNG
+            thu = round(ban * gia_thung("CGO-101") * he_so_tip(N, kb))
+            phut_ca = CD["giay"] / 60 * ban / CD["tau"]
+            tally += thu
+            tally_thu += thu
+            tally_tip += thu * P["tip"]
+            diem += ban * CD["diem_moi_tau"]
+            while hang < S["tran_hang_theo_chuong"][i] and diem >= NGUONG[hang]:
+                hang += 1
+        elif cang_mo:
             # ca khung Dave: mỗi tàu gọi 1 thùng. Bán được số nhỏ hơn giữa tàu phục vụ xong và thùng có trong kho sau khi giữ phần để xây (D8)
             con_xay = sua_con > 0 or any(m["c"] <= c and m["vl"] > 0 for m in mua)
             co_the = kho * (1 - (S["du_tru_vat_lieu_khi_con_xay"] if con_xay else 0.0)) / gtd_thung(c)
@@ -385,7 +406,7 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
         phut_ngay = (trip_phut + phut_ca + S["phut_chuan_bi_cuoi_ngay"]) * K["phut_them"] * (1 + S["he_so_ngay_coop_moi_nguoi"] * (N - 1))
         phut += phut_ngay
         if ghi_ngay:
-            dong.append((ngay, c, nhat, thu, tally, hang, phut, mua_ngay, tally_truoc_mua - thu, diem, ban))
+            dong.append((ngay, c, nhat, thu, tally, hang, phut, mua_ngay, tally_truoc_mua - thu, diem, ban, la_ca_day))
         # điều kiện qua chương
         bat_buoc = [m for m in mua if m["c"] == c and m["loai"] == "ENG"]
         if sua_con <= 0 and chuyen_nhanh == 0 and vot_con == 0 and all(m.get("xong") for m in bat_buoc) and ngay - ngay_dau_chuong + 1 >= S["san_ngay_truyen"][i]:
@@ -635,7 +656,7 @@ def bao_cao():
         for N in S["so_nguoi"]:
             o = []
             for c in range(1, 6):
-                v = [x[10] for r in R[(kb, N)] for x in r["dong"] if x[1] == c and x[3] > 0]
+                v = [x[10] for r in R[(kb, N)] for x in r["dong"] if x[1] == c and x[3] > 0 and not x[11]]  # ca dạy 2 tàu không tính
                 o.append("%s (%d%%)" % (f(tb(v), 1), round(100 * tb(v) / port(N, kb)["tau"])))
             rows.append([kb, N, port(N, kb)["tau"]] + o)
     K["ban-chuong"] = tbl(["Kịch bản", "Số người", "Số tàu"] + ["Chương %d: thùng bán mỗi ca (phần số tàu)" % c for c in range(1, 6)], rows)
@@ -789,14 +810,14 @@ def tab_economic():
     """Tab ECONOMIC bản đọc (luật đợt 8: không mã, cột Ngày là số). Một lượt seed, kịch bản trung bình, một người."""
     one = chay("trung bình", 1, random.Random(S["seed"]), ghi_ngay=True)
     rows = [["Ngày", "Source (vật phẩm)", "Source (Tally)", "Sink Type", "Sink Quality", "Surplus", "Note"]]
-    for ngay, c, nhat, thu, tl, hang, phut, mua, dau, diem, ban in one["dong"]:
+    for ngay, c, nhat, thu, tl, hang, phut, mua, dau, diem, ban, day in one["dong"]:
         chi = sum(m["gia"] for m in mua)
         rows.append([ngay, "%s GTĐ" % f(nhat, 0), f(thu, 0), ", ".join(ten_doc(m["id"]) for m in mua) or "Không mua",
                      " + ".join("0 (thưởng quest Kỹ sư)" if m["mien_phi"] else str(m["gia"]) for m in mua) or "0",
                      "%s + %s - %s = %s" % (f(dau, 0), f(thu, 0), chi, f(tl, 0)),
-                     "Chương %d, Hạng cảng %d, đã chơi %s giờ. %s" % (c, hang, f(phut / 60, 2), "Bán %s thùng, điểm cảng cộng dồn %s" % (f(ban, 0), f(diem, 0)) if ban else "Cảng chưa mở")])
+                     "Chương %d, Hạng cảng %d, đã chơi %s giờ. %s" % (c, hang, f(phut / 60, 2), ("Ca dạy 2 tàu Loose Bolt, bán %s thùng phế liệu, điểm cảng cộng dồn %s" if day else "Bán %s thùng, điểm cảng cộng dồn %s") % (f(ban, 0), f(diem, 0)) if ban else "Cảng chưa mở")])
     rows.append(["", "Ghi chú: kịch bản trung bình, một người, một lượt sim. Nhặt gồm cả Driftlife bắt, hạ và con nuôi",
-                 "Tally thu bằng giá thùng cộng tip. Cảng mở từ ngày %d" % S["ngay_mo_cang_ch1"], "Tên thứ mua theo tab Shop và Upgrade", "Tally chi, giá theo tab Shop và Upgrade",
+                 "Tally thu bằng giá thùng cộng tip. Ca cảng sớm nhất ngày %d, ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu" % S["ngay_mo_cang_ch1"], "Tên thứ mua theo tab Shop và Upgrade", "Tally chi, giá theo tab Shop và Upgrade",
                  "Tally đầu ngày + thu - chi = Tally cuối ngày. Sim in, không gõ tay",
                  "Một lượt nên ngày qua chương có thể lệch vài ngày so với tab PROCESSING (trung bình nhiều lượt). Bản đủ: kinh-te-tien-trinh.md Phụ lục"])
     p = os.path.join(ROOT, "projects", "game-moi", "gdd", "sheet", "ECONOMIC.tsv")
@@ -831,6 +852,9 @@ def selftest():
     thu_tu = [m["id"] for x in r["dong"] for m in x[7]]
     assert all(thu_tu.index(m["can"]) < thu_tu.index(m["id"]) for x in r["dong"] for m in x[7] if m.get("can")), "bộ đồ bậc 2 mua sau Xưởng cấp 2"
     assert all(x[4] == int(x[4]) and x[8] + x[3] - sum(m["gia"] for m in x[7]) == x[4] for x in r["dong"]), "số dư nguyên, đầu + thu - chi = cuối"
+    ca = [x for x in r["dong"] if x[10] > 0]
+    assert ca[0][0] >= S["ngay_mo_cang_ch1"] and ca[0][11] and 0 < ca[0][10] <= S["ca_day"]["tau"], "ca đầu sớm nhất ngày 5 và là ca dạy tối đa 2 tàu (log 111)"
+    assert sum(1 for x in r["dong"] if x[11]) == 1, "đúng một ca dạy"
     print("selftest xanh")
 
 

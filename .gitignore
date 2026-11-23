@@ -10,3 +10,4 @@ projects/game-moi/tools/vendor/
 projects/game-moi/book/ket-qua/
 # Ảnh sơ đồ sinh bằng xuat-book.mjs
 projects/game-moi/book/hinh/so-do-*.png
+__pycache__/

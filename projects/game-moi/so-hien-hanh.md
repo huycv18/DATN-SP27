@@ -54,9 +54,9 @@ Chạy lại: `node projects/game-moi/tools/selftest.mjs`, các lệnh sim trong
 
 | Chỉ số | Đo được | Mục tiêu khung mục 9 | Đạt |
 |---|---|---|---|
-| Chương 1, một người, kịch bản trung bình | 1,90 giờ | 1,5 đến 2 giờ | Có |
-| Cả game, một người, kịch bản trung bình | 14,2 giờ | 12 đến 15 giờ | Có |
-| Nhóm 4 hết game so với một mình | 71% thời gian | 60 đến 75% | Có |
+| Chương 1, một người, kịch bản trung bình | 2,29 giờ (sim 2026-11-23 sau log 111, ca đầu ngày 5 là ca dạy) | 1,5 đến 2 giờ | Không, chờ Lead |
+| Cả game, một người, kịch bản trung bình | 14,6 giờ | 12 đến 15 giờ | Có |
+| Nhóm 4 hết game so với một mình | 68% thời gian | 60 đến 75% | Có |
 | Mỗi người nhóm 4 nhặt so với một mình | Từ 61% | Từ 60% | Có |
 | Tip trong Tally của ca cảng (gồm bơm khí) | 26% (tệ 21%, tốt 30%) | 20 đến 30% | Có |
 | Sống so với hạ, cỡ S, sau khi trừ vật tiêu hao | 1,44 đến 1,81 lần qua lưới, 1,50 đến 1,94 bắt tay (sim kinh tế 2026-11-23, log 108) | 1,2 đến 2 lần | Có |
