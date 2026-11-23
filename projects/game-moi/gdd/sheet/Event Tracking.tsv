@@ -39,7 +39,7 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 38	Port	incident	Sự cố bắt đầu hoặc xong	incident_id\nstate\nseconds	Sự cố kéo dài bao lâu	string\nstring\nfloat
 39	Station	room_repaired	Khoang sửa xong	room_id\nlevel	Nhịp sửa trạm theo ngày	string\nint
 40	Station	survivor_awake	Người vớt tỉnh	survivor_id	Nhịp người vớt tỉnh theo ngày	string
-41	Economy	tally_gain	Nhận Tally	source (crate, tip, air_pump, ship)\namount	Tỉ lệ Tally từ cảng	string\nint
+41	Economy	tally_gain	Nhận Tally	source (crate, tip, air_pump, preorder)\namount	Tỉ lệ Tally từ cảng	string\nint
 42	Economy	tally_spend	Tiêu Tally	item_id\namount	Tiêu Tally vào đâu	string\nint
 43	Economy	port_rank_up	Lên Hạng cảng	rank\nday	Số ngày tới Hạng 3	int\nint
 44	Story	story_beat_done	Mốc truyện xong	beat_id	Thời lượng từng chương	string
@@ -63,8 +63,8 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 62	Net	net_rollback	Máy người chơi lùi lại sau dự đoán sai	action\nms	Lùi lại có hiếm không	string\nint
 63	Net	net_reject_hash	Từ chối vào phiên vì lệch hash dữ liệu	build_host\nbuild_client	Từ chối vào phiên vì lệch dữ liệu giữa các máy	string\nstring
 64	Net	net_rtt	Mỗi 30 giây	player_id\nrtt_ms	Độ trễ thực tế	string\nint
-65	Session	save_written	Tự lưu xong ở một trong ba điểm	diem_luu (after_trip, after_shift, sleep)\nms	Lưu chậm hay không, người chơi thoát ở điểm nào	string\nint
-66	Session	save_failed	Một lần ghi lưu lỗi	diem_luu\nlan (1 đến 3)	Lưu lỗi bao nhiêu lần, lùi về điểm nào	string\nint
+65	Session	save_written	Tự lưu xong ở một trong ba điểm	save_point (after_trip, after_shift, sleep)\nms	Lưu chậm hay không, người chơi thoát ở điểm nào	string\nint
+66	Session	save_failed	Một lần ghi lưu lỗi	save_point\nattempt (1 đến 3)	Lưu lỗi bao nhiêu lần, lùi về điểm nào	string\nint
 67	UX	ux_screen_open	Mở một màn	screen_id\ndevice\nday_phase	Màn nào hay mở, mở lúc nào trong ngày	string\nstring\nstring
 68	UX	ux_pin_changed	Đổi món ghim	item_id\nsource (auto, player)	Người chơi có tự ghim không	string\nstring
 69	UX	ux_input_device_change	Đổi giữa bàn phím chuột và gamepad	from\nto	Tỉ lệ dùng gamepad	string\nstring

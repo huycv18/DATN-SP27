@@ -35,10 +35,10 @@ gd-combat giữ tên Driftlife, kẻ địch, boss. Nhóm rơi ghi theo từ đi
 | WD-01 | Warden Harvester | Xa, từ chương 3 | M | Máy The Wardens bắt Driftlife | Không (máy) | Không | Linh kiện Warden, thả Driftlife đang bị giữ | Sau MVP |
 | WD-02 | Warden Lancer | Xa, từ chương 3 | M | Lính có khiên trước | Không | Không | Linh kiện Warden | Sau MVP |
 | WD-03 | Warden Snarer | Xa, từ chương 3 | M | Lính bắn lưới vào người chơi | Không | Không | Linh kiện Warden, lưới năng lượng | Sau MVP |
-| WD-04 | Warden Collector | Xa, từ chương 3 | Boss nhỏ | Tàu thu gom, thả drone | Không | Không | Linh kiện Warden hiếm | Sau MVP |
+| WD-04 | Warden Collector | Xa, từ chương 3 | Boss nhỏ | Tàu thu gom, thả drone | Không | Không | Linh kiện Warden | Sau MVP |
 | BS-1 | Scrapmaw | Map nhánh Station Cinder (Gần), khoang máy C6 sau cửa D1 | Boss | Driftlife làm tổ quanh lõi năng lượng | Hai cách kết: hạ hoặc xua đi | Không | Theo cách kết | MVP |
 | BS-2 | Tempest Gulper | Map nhánh Station Lantern (Giữa), vành ngoài trạm | Boss | Gulper đầu đàn vây Lantern, cắt đường tiếp tế | Hai cách kết | Không | Theo cách kết | Sau MVP |
-| BS-3 | Warden Reaper | Map nhánh Station Flint (Xa), khoang hàng bị biến thành trạm thu, nơi có manh mối cú lật Driftlife | Boss | Máy săn bắt Driftlife của quân The Wardens | Hạ | Không | Linh kiện Warden hiếm | Sau MVP |
+| BS-3 | Warden Reaper | Map nhánh Station Flint (Xa), khoang hàng bị biến thành trạm thu, nơi có manh mối cú lật Driftlife | Boss | Máy săn bắt Driftlife của quân The Wardens | Hạ | Không | Linh kiện Warden | Sau MVP |
 | BS-4 | Cradle Custodian | Map nhánh Cradle Interior (Xa), Lõi máy | Boss | Hệ an ninh Cradle bị The Wardens cài lại | Hạ | Không | Linh kiện Cradle | Sau MVP |
 | BS-5 | Daskel | Map nhánh Warden Rig (Xa), Command Deck | Boss | Độc tài của Sennar, đứng đầu The Wardens (tên của gd-story). Tự tới bãi vỡ để bắt Sevra Ilvane | Khuất phục và bắt giữ, không hạ chết | Không | Không rơi trực tiếp, vật truyện mở sau trận theo `vat-pham.md` và `cot-truyen.md` | Sau MVP |
 
@@ -755,6 +755,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 2026-11-20 | Thêm bảng điểm sinh và rơi, đổi tên dụng cụ theo ID gd-items, mẫu sống đi trong Lồng mẫu kéo theo thay vì vào túi, đặt boss chương 2 và 3 vào SS-3 và SS-4 | Tin của gd-world, gd-items, gd-story | gd-combat |
 | 2026-11-20 | BS-5 rơi bản đồ sao thật | Khung đổi: Solace là mồi, chương 5 lấy bản đồ sao ở Warden Rig (DECISIONS 2026-11-20) | gd-combat |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer GDD | gd-combat |
+| 2026-11-23 | Theo rà chéo Sheet nhóm B (qa/2026-11-23-ra-cheo-B.md): WD-04 và BS-3 rơi Linh kiện Warden (đúng tên trong ITEM LIST), bỏ chữ hiếm. Không đổi luật | Đánh giá humanizer GDD | gd-combat |
 
 ### Số BS-1 trước sim S5 (chuyển từ mục 3, 2026-11-23)
 

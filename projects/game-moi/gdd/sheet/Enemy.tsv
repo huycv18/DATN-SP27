@@ -99,7 +99,7 @@ STT	Task	Sub Task	Short Description	Ref
 		Characteristic	- Lính bắn lưới vào người chơi\n- Giữ cách 8 u, ưu tiên người đang kéo vật hoặc đang bắt sống	
 		Attribute	- Sinh lực: 90\n- Ngưỡng choáng: 75\n- Khiên: Không	
 		Skill 1	- Lưới trói: người trúng bị trói tối đa 2 s rồi lưới tự tan. Trong lúc bị trói không bay được, mỗi giây mất 2 Oxy\n- Thoát sớm: Lướt 3 lần liên tiếp, hoặc đồng đội bắn Lao từ cắt lưới. Đang kéo vật lớp Nặng thì chờ lưới tan, hoặc thả vật rồi Lướt\n- Gọi 1 Warden Harvester mỗi 15 s	
-20	Warden Collector	Type	- Phe The Wardens, dải Xa, từ chương 3, cỡ Boss nhỏ\n- Nhãn: Sau MVP\n- Không bắt sống, miễn mê\n- Rơi khi hạ: Linh kiện Warden hiếm, Hợp kim Warden	combat-driftlife.md mục 2.5, 3.6
+20	Warden Collector	Type	- Phe The Wardens, dải Xa, từ chương 3, cỡ Boss nhỏ\n- Nhãn: Sau MVP\n- Không bắt sống, miễn mê\n- Rơi khi hạ: Linh kiện Warden, Hợp kim Warden	combat-driftlife.md mục 2.5, 3.6
 		Characteristic	- Tàu thu gom có khoang chứa Driftlife, trôi qua dải Xa theo đường cố định, thả drone\n- Phá cả 2 động cơ thì tàu rút, khoang chứa vỡ, thả 3 đến 5 Driftlife đang choáng	
 		Attribute	- Sinh lực: 600\n- Miễn choáng\n- Giáp toàn thân. 2 động cơ là điểm yếu, mỗi cái 150 Sinh lực	
 		Skill 1	- Thả 2 Warden Harvester mỗi 20 s\n- Tháp tia: mất 15 Oxy, báo trước 1,0 s, hồi chiêu 6 s	

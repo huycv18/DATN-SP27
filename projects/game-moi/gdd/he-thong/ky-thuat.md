@@ -188,7 +188,7 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 | 38 | Port | incident | Sự cố bắt đầu hoặc xong | incident_id, state, seconds | | string, string, float | `tram-va-cang.md` |
 | 39 | Station | room_repaired | Khoang sửa xong | room_id, level | Nhịp sửa trạm theo ngày | string, int | `tram-va-cang.md` |
 | 40 | Station | survivor_awake | Người vớt tỉnh | survivor_id | | string | `tram-va-cang.md`, `cot-truyen.md` |
-| 41 | Economy | tally_gain | Nhận Tally | source (crate, tip, air_pump, ship), amount | Tỉ lệ Tally từ cảng (khung mục 9) | string, int | `tally_nhan` của `kinh-te-tien-trinh.md` |
+| 41 | Economy | tally_gain | Nhận Tally | source (crate, tip, air_pump, preorder), amount | Tỉ lệ Tally từ cảng (khung mục 9) | string, int | `tally_nhan` của `kinh-te-tien-trinh.md` |
 | 42 | Economy | tally_spend | Tiêu Tally | item_id, amount | | string, int | `kinh-te-tien-trinh.md` sự kiện tally_chi |
 | 43 | Economy | port_rank_up | Lên Hạng cảng | rank, day | Số ngày tới Hạng 3 | int, int | `hang_cang_len` |
 | 44 | Story | story_beat_done | Mốc truyện xong | beat_id | Thời lượng chương (khung mục 9) | string | `cot-truyen.md`, `chuong_xong` của `kinh-te-tien-trinh.md` gộp (mốc đóng chương) |
@@ -217,8 +217,8 @@ Sự kiện 47 đến 73:
 | 62 | Net | net_rollback | Máy người chơi lùi lại sau dự đoán sai | action, ms | Lùi lại có hiếm không (mục 7b) | string, int | luật 11 |
 | 63 | Net | net_reject_hash | Từ chối vào phiên vì lệch hash dữ liệu | build_host, build_client | | string, string | mục 4 |
 | 64 | Net | net_rtt | Mỗi 30 giây | player_id, rtt_ms | Độ trễ thực tế | string, int | mục 3 |
-| 65 | Session | save_written | Tự lưu xong ở một trong ba điểm (K23) | diem_luu (after_trip, after_shift, sleep), ms | Lưu chậm hay không, người chơi thoát ở điểm nào | string, int | luật 18 |
-| 66 | Session | save_failed | Một lần ghi lưu lỗi | diem_luu, lan (1 đến 3) | Lưu lỗi bao nhiêu lần, lùi về điểm nào (UI-44) | string, int | luật 20 |
+| 65 | Session | save_written | Tự lưu xong ở một trong ba điểm (K23) | save_point (after_trip, after_shift, sleep), ms | Lưu chậm hay không, người chơi thoát ở điểm nào | string, int | luật 18 |
+| 66 | Session | save_failed | Một lần ghi lưu lỗi | save_point, attempt (1 đến 3) | Lưu lỗi bao nhiêu lần, lùi về điểm nào (UI-44) | string, int | luật 20 |
 | 67 | UX | ux_screen_open | Mở một màn | screen_id, device, day_phase | Màn nào hay mở, mở lúc nào trong ngày | string, string, string | `ux-ui.md` mục 6 |
 | 68 | UX | ux_pin_changed | Đổi món ghim | item_id, source (auto, player) | Người chơi có tự ghim không | string, string | `ux-ui.md` mục 6 |
 | 69 | UX | ux_input_device_change | Đổi giữa bàn phím chuột và gamepad | from, to | Tỉ lệ dùng gamepad | string, string | `ux-ui.md` mục 6 |
@@ -394,3 +394,4 @@ File này là phần co-op kỹ thuật của mọi hệ thống: mục 2.2 và 
 | 2026-11-20 | Đợt 9 (GD-054): ca cảng theo khung Dave. Sim ca cảng viết lại (N người chia việc, quét số tàu và cửa neo, 3 kiểu danh mục, bơm khí). Mục 2.5 mới. Sự kiện ca cảng 30 đến 37 viết lại, thêm 72 và 73. Schema ShipTypeData, dữ liệu động của ca đổi sang thùng, danh mục | Lead chốt ca cảng theo khung Dave | gd-tech |
 | 2026-11-20 | Đợt 9 vòng 2 (GD-054): sim nối giaThung của gd-economy, độ gọi nhân hệ số hàng hay gọi (luật 24), Tàu vội chỉ gọi băng và khoáng, bơm khí 50% lúc cập (luật 28), ca 300 giây (luật 34), ca đầu (luật 67). So sánh cửa neo hiện hành, 4 cửa, 3 cửa thùng 1 giây. Mục đo: 6 kiểu danh mục, Tàu vội, đồ Trái Đất và đơn đặt trước. Khóa PortTuning cập nhật | Lead chốt ca cảng, gd-quan sửa luật | gd-tech |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer | GDM |
+| 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): tally_gain nguồn ship đổi thành preorder, tham số lưu đổi sang tiếng Anh save_point, attempt. Không đổi luật | Đánh giá humanizer | GDM |

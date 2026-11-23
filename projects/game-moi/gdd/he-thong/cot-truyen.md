@@ -94,7 +94,7 @@ Hệ thống cốt truyện giữ bối cảnh, năm chương, nhân vật truy�
 | Tên [TẠM] | Tình trạng | Mã map nhánh (gd-world) | Chương | Truyện đặt gì ở đó |
 |---|---|---|---|---|
 | Station Ember | Nhà của người chơi | Không | 1 | |
-| Station Cinder | Xác | N1 | 1 | Buồng của Ingrid và Linh, hai buồng tắt |
+| Station Cinder | Xác | N1 | 1 | Buồng của Ingrid và Linh còn chạy, hai buồng khác đã tắt |
 | Station Wick | Xác | N2 | 2 | Buồng của Rafa, vết phá từ ngoài vào |
 | Station Lantern | Còn người sống | N3 | 2 | Odile, Bram, Amara đang thức ở đây |
 | Station Flint | Xác, bị lính The Wardens chiếm làm trạm săn bắt | N6 | 3 | Không có người để vớt, manh mối cú lật Driftlife |
@@ -1306,6 +1306,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 2026-11-20 | Mục 5, tiêu chí 14 và bảng lệch số 2: bỏ bộ số sim cũ (6, 5, 8, 3, 4), ghi sim dùng sàn hiện hành 7, 5, 8, 3, 3. Không đổi luật hay số | Sửa cho khớp số đã chốt, theo báo cáo GD-035 | gd-story |
 | 2026-11-20 | Khớp truyện minh họa (Google Doc The Novent): C3.8 Sevra nói ra âm mưu Solace, C4.6 bằng chứng là hộp ghi hành trình, C4.7 thêm phong tỏa quanh Ember | Lead đợt 8 | GDM |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Bảng mốc ở đầu file bỏ cột Trước, giá trị cũ: C3.7 là cú lật Driftlife bản trước, C3.8 là tàu TA08 cập bến lần thứ ba, C4.6 là nguồn ẩn danh (Nhem ở N4), C4.7 là ngày kế tiếp sau C4.5, C5.1 là tàu TA06 cập bến, C5.2 là ngày kế tiếp sau C5.1, C5.6 là nộp bản đồ sao thật. Mục 5 bỏ câu kể lịch sử sàn ngày (bản đầu 6, 5, 8, 3, 4, chương 1 sửa thành 7 ở vòng QA 2) | Báo cáo humanizer GDD của GDM | GDM |
+| 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): Station Cinder ghi rõ buồng Ingrid và Linh còn chạy, hai buồng khác đã tắt. Không đổi luật | Báo cáo humanizer GDD của GDM | GDM |
 
 ### Lệch đã xong (chuyển từ mục Lệch với vai khác, 2026-11-23)
 

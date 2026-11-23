@@ -430,7 +430,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | BIO-113 | Sản phẩm nuôi DL-G04 Sting Krill / DL-G04 Farm Yield | Sản phẩm nuôi | Thường | 1 | 3,0 | Gần | Khoang nuôi DL-G04 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-125 | Sau MVP |
 | LIV-114 | Mẫu sống DL-G05 Arc Eel / DL-G05 Live Specimen | Mẫu sống | Ít gặp | kéo | 30,7 | Gần | Bắt sống DL-G05 bằng Súng gây mê rồi Phao kéo (K9, chương 2, miễn choáng) | RCP-128, Nuôi (chương 2), bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BIO-114 | Sản phẩm nuôi DL-G05 Arc Eel / DL-G05 Farm Yield | Sản phẩm nuôi | Thường | 1 | 3,0 | Gần | Khoang nuôi DL-G05 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-125 | Sau MVP |
-| LIV-115 | Mẫu sống DL-G03 Latchjaw / DL-G03 Live Specimen | Mẫu sống | Ít gặp | kéo | 16,9 | Gần | Bắt sống DL-G03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-128, Nuôi (chương 2), bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
+| LIV-115 | Mẫu sống DL-G03 Latchjaw / DL-G03 Live Specimen | Mẫu sống | Ít gặp | kéo | 16,9 | Gần | Bắt sống DL-G03 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-128, bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BPS-211 | Mẫu sinh thiết DL-M01 Shepherd Whale / DL-M01 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 25,0 | Giữa | Kim sinh thiết trên DL-M01 (loài L, chương 2) | RCP-224, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
 | LIV-212 | Mẫu sống DL-M02 Lumen Jelly / DL-M02 Live Specimen | Mẫu sống | Hiếm | kéo | 25,9 | Giữa | Bắt sống DL-M02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-226, Nuôi (chương 2), bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BIO-212 | Sản phẩm nuôi DL-M02 Lumen Jelly / DL-M02 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 7,0 | Giữa | Khoang nuôi DL-M02 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-225 | Sau MVP |
@@ -441,7 +441,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | BPS-215 | Mẫu sinh thiết DL-M05 Gulper / DL-M05 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 19,5 | Giữa | Kim sinh thiết trên DL-M05 (loài L, chương 2) | RCP-224, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
 | LIV-311 | Mẫu sống DL-X01 Prism Wisp / DL-X01 Live Specimen | Mẫu sống | Hiếm | kéo | 33,5 | Xa | Bắt sống DL-X01 bằng Súng lưới (K9, từ chương 1) | RCP-326, Nuôi (chương 2), bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BIO-311 | Sản phẩm nuôi DL-X01 Prism Wisp / DL-X01 Farm Yield | Sản phẩm nuôi | Ít gặp | 1 | 14,0 | Xa | Khoang nuôi DL-X01 (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn) | RCP-325 | Sau MVP |
-| LIV-312 | Mẫu sống DL-X02 Mirror Mantis / DL-X02 Live Specimen | Mẫu sống | Hiếm | kéo | 69,5 | Xa | Bắt sống DL-X02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-326, Nuôi (chương 2), bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
+| LIV-312 | Mẫu sống DL-X02 Mirror Mantis / DL-X02 Live Specimen | Mẫu sống | Hiếm | kéo | 69,5 | Xa | Bắt sống DL-X02 bằng choáng hoặc mê rồi Phao kéo (K9, chương 2) | RCP-326, bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
 | BPS-313 | Mẫu sinh thiết DL-X03 Storm Siphon / DL-X03 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 32,1 | Xa | Kim sinh thiết trên DL-X03 (loài L, chương 2) | RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
 | BPS-314 | Mẫu sinh thiết DL-X04 Shardbrood Queen / DL-X04 Biopsy | Mẫu sinh thiết | Hiếm | 1 | 32,1 | Xa | Kim sinh thiết trên DL-X04 (loài L, chương 2) | RCP-324, Nghiên cứu (Hồ sơ loài, gd-combat) | Sau MVP |
 | LIV-315 | Mẫu sống DL-X05 Shardbrood Hatchling / DL-X05 Live Specimen | Mẫu sống | Hiếm | kéo | 23,0 | Xa | Bắt sống DL-X05 bằng Súng lưới (K9, từ chương 1) | RCP-326, Nuôi (chương 2), bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2) | Sau MVP |
@@ -534,7 +534,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 <!--/B:ITEM-->
 
 <!--B:CHECK-->
-- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-23 03:34 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
+- Sinh bởi `projects/game-moi/sim/vat-pham.mjs` lúc 2026-11-23 06:39 UTC. Số vật phẩm: 146. Công thức: 84. Điểm khai thác: 14. Trang bị: 9. Kiện nhãn MVP: 9. Lỗi kiểm: 0.
 - Vật liệu nhãn MVP (6 việc sửa khoang và 6 nâng cấp) quy ra tài nguyên thô: 272,2 GTĐ, tương đương 3,1 chuyến đầy túi (túi bậc 0 là 80 Khối, mật độ 1,1 GTĐ mỗi Khối), chưa tính nguyên liệu đóng kiện bán lấy Tally. Đây là kiểm nhất quán.
 <!--/B:CHECK-->
 
@@ -606,7 +606,7 @@ Chia Oxy cứu đồng đội (C6): do gd-character định, hệ thống này k
 | Nâng cấp bộ đồ hoàn thành | Bộ đồ đổi hình theo trục, trạm đổi hình khi sửa xong khoang | Tiếng khởi động | Màn nhận đồ chế xong | MVP |
 | Học bản thiết kế | Bản vẽ mở ra, dụng cụ mới hiện | Tiếng mở khóa | Tutorial dụng cụ mới | Sau MVP |
 
-Art cần ID danh sách icon: mọi ID trong ITEM LIST (khoảng 130) cần icon vector, nhóm theo hình khối: phế liệu (mảnh góc cạnh), khoáng (tinh thể), băng (khối trong), linh kiện (bo mạch), mẫu (thể sinh học), kiện (hộp). GDM đưa vào tab Assets.
+Art cần ID danh sách icon: mọi ID trong ITEM LIST (khoảng 155) cần icon vector, nhóm theo hình khối: phế liệu (mảnh góc cạnh), khoáng (tinh thể), băng (khối trong), linh kiện (bo mạch), mẫu (thể sinh học), kiện (hộp). GDM đưa vào tab Assets.
 
 ## 7b. Cảm giác (game feel)
 
@@ -729,3 +729,5 @@ Dave làm thế nào (theo `docs/knowledge/indie/06-dave-the-diver-cau-truc.md`)
 | 2026-11-20 | Luật M4: nhãn BS-2 đến BS-5, STY-501, STY-502 đổi từ MVP sang Sau MVP (khớp combat BO8) | Phiếu QA GD-038 N1 | gd-items |
 | 2026-11-20 | Bảng biên: host thoát về "điểm lưu gần nhất" thay "lần lưu đầu ngày" (khớp K23, C10) | Phiếu QA GD-038 N2 | gd-items |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Chuyển xuống đây: ENG-105 từng tên "Lõi dẫn hướng Solace", đổi theo khung mới (Solace là mồi). Bỏ R(N) bằng N mũ 0,36, vì gd-world chỉ ra hai núm cho cùng một việc là thừa. SLV-101 bản trước nhặt tay nhanh gấp 2,5 lần khoan về GTĐ mỗi giây, đã giảm lượng, còn khoảng 1,2 lần, tỉ lệ này không đổi khi nhân đôi giây khai thác ở GD-030 | Rà văn phong GDD | gd-items |
+| 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): số icon vector khoảng 155 theo ITEM LIST. Không đổi luật | Rà văn phong GDD | gd-items |
+| 2026-11-23 | Theo rà chéo Sheet nhóm B: sim/vat-pham.mjs chỉ ghi Nuôi ở nguồn tiêu mẫu sống của loài nuôi được, sinh lại khối ITEM (LIV-115 Latchjaw, LIV-312 Mirror Mantis). Không đổi luật | Rà văn phong GDD | gd-items |

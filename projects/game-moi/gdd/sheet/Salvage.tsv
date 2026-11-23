@@ -47,7 +47,7 @@ Số lần quay bảng rơi: 3"
 - Dây cáp đứt: trọng số 25, số lượng 2
 - Mảnh vỏ Cradle: trọng số 25, số lượng 2
 - Đồ Trái Đất vụn: trọng số 15, số lượng 1"	
-		Spawn Point	Xác Seed Station: Cinder 3 hòm, Wick 3, Flint 3	
+		Spawn Point	Xác Seed Station: Cinder 3 hòm (MVP). Wick 3, Flint 3 (Sau MVP)	
 7	Kho hàng Seed (nhánh)	Type	Điểm khai thác, Nhánh Gần. Nhãn: MVP	vat-pham.md mục 3
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
 Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
@@ -56,7 +56,7 @@ Số lần quay bảng rơi: 3"
 		Resource Output	"- Bo mạch cháy: trọng số 35, số lượng 1
 - Quặng sắt thiên thạch: trọng số 35, số lượng 1
 - Đồ Trái Đất vụn: trọng số 30, số lượng 1"	
-		Spawn Point	Xác Seed Station: Cinder 1 (sau boss), Wick 1. Cradle Interior 2 mỗi khu	
+		Spawn Point	Xác Seed Station: Cinder 1 (sau boss, MVP). Wick 1, Cradle Interior 2 mỗi khu (Sau MVP)	
 8	Mạch quặng cobalt	Type	Điểm khai thác, Giữa. Nhãn: Sau MVP	vat-pham.md mục 3
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
 Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
