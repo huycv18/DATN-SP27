@@ -1,0 +1,7 @@
+Mục	Nội dung
+Teardown này là gì	Bảng mổ xẻ Dave the Diver theo đúng 9 hệ thống của Doc thiết kế Phần II. Mỗi dòng là một cơ chế con: Dave làm thế nào, The Novent lấy gì, khác gì và vì sao.
+Cách đọc	Cột Nguồn ghi mã, tra ở tab Sources. Cột Mục GDD trỏ tới file và mục trong repo. Ô ghi "chưa có nguồn" là chưa tìm được nguồn đọc được. Ô ghi "GDD chưa nói" là GDD chưa có lý do cho điểm đó.
+Mức tin của nguồn	Nguồn đọc được trực tiếp và nguồn chỉ qua tóm tắt tìm kiếm được ghi riêng ở cột Đọc được không của tab Sources. Dòng nào chỉ dựa trên tóm tắt tìm kiếm thì cần người chơi Dave kiểm lại.
+Ảnh	Cột Ảnh còn trống. Cột Ảnh cần chụp ghi màn Dave cần chụp cho từng dòng.
+Không chép game	Game tham chiếu chỉ để lấy cấu trúc. Không lấy asset, không chép nguyên văn. Mô tả về Dave được viết lại bằng lời của phòng.
+Nguồn repo	Mỗi tab sinh từ projects/game-moi/teardown trong repo. Cổng kiểm: node projects/game-moi/tools/kiem-teardown.mjs
