@@ -426,3 +426,12 @@ Lead: "Codex và SFX".
 - Lời Codex viết tiếng Việt như `strings/strings.tsv`, tên tiếng Anh ở cột riêng, lấy từ `vat-pham.md`. Mục GDD không có tên Anh thì để trống.
 - AUDIO ASSETS LIST đổi sang 10 cột theo khuôn "Sounds" của Timberwalls: tách Mô tả, Sự kiện phát, Phát, Nhãn, Nguồn GDD. Âm GDD chưa có dòng thì Nguồn GDD ghi "Đề xuất gd-ux, GDD chưa có dòng âm" (GDM quyết giữ, gồm 3 ambience).
 - ITEM LIST: hai chìa (Bộ kích nguồn, Máy cắt thân tàu) cột Nguồn tiêu thành "Không tiêu, không cần mang theo" theo luật T7.
+
+## 2026-11-23 - Duyệt bố cục top-down UI-10 trạm và UI-40 cảng (GD-077)
+
+Lead bấm Duyệt bản đề xuất của gd-ux ở `ux/de-xuat-topdown/` kèm 4 phương án GDM nghiêng về:
+- Dải HUD trên giờ giao thương giữ 84 px ở 1080p, chữ đặt trong vùng an toàn 5%.
+- HUD trạm không có đồng hồ giờ trong ngày (luật chưa có).
+- Sơ đồ trạm thu nhỏ ở góc dưới phải, không che hành lang phía đông.
+- Tường phía bắc các phòng là tường thấp 0,8 u, không cần dither vách cao trong trạm.
+gd-ux chép vào `ux-ui.md`, thêm key cho nút Xem bản đồ chuyến và Ping của khối Chờ nhóm. Khung Figma Wireframe MVP vẽ lại theo hai SVG này.

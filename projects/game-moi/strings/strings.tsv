@@ -297,3 +297,5 @@ state.pre_nostock	Không có trong danh mục	28	UI-43
 lbl.res.end_time	Hết giờ	14	UI-43
 lbl.res.end_last	Tàu cuối đã rời	20	UI-43
 lbl.res.end_stock	Hết hàng trong danh mục	28	UI-43
+btn.trip_map	Xem bản đồ chuyến	20	UI-10
+btn.ping	Ping	8	UI-10

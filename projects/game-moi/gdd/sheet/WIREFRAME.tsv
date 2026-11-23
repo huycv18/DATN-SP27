@@ -5,6 +5,7 @@ STT	Issue	Ref 1	Ref 2	Note
 4	Cảnh tỉnh dậy	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Cảnh mở đầu hoặc cảnh đến, xem nhân vật tỉnh dậy. Bấm một lần ở câu nào cũng bỏ qua cả cảnh. Nút chính: Bỏ qua hoặc xem tiếp. Vào từ: màn Tạo thế giới, Tham gia thế giới. Ra tới: Trạm mặt bằng. Nhãn: MVP.
 5	Trạm mặt bằng	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	"Mặt bằng Station Ember nhìn từ trên, camera top-down 45 độ, đi bộ 8 hướng tới khoang cần dùng để sửa, chế, lập danh mục bán.
 Khi còn người ngoài chuyến thì màn ở trạng thái Chờ nhóm: thấy hàng đồng đội, xem bản đồ chuyến chỉ xem, ping nhắc, chế trước. Không có nút thoát, thoát game qua Esc.
+Bố cục đã duyệt: hành lang 3 u ở giữa, tường phía bắc thấp 0,8 u, không có giờ trong ngày. Khối Chờ nhóm ở trên trái, mục tiêu và Tally ở trên phải, sơ đồ trạm và hàng đợi xưởng ở dưới phải. Nút trong khối Chờ nhóm: Xem bản đồ chuyến, Ping.
 Nút chính: đi tới khoang kế tiếp trong mục tiêu.
 Vào từ: Cảnh tỉnh dậy, Kết chuyến, Bị kéo về, Cuối ngày. Ra tới: mọi màn trong trạm, Cửa khí, HUD giờ giao thương. Nhãn: MVP."
 6	Cửa khí	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Chọn dụng cụ trong đai (3 ô ở bậc 0), xác nhận ra ngoài hoặc ở lại trạm, xem số chuyến hôm nay. Nút chính: Xác nhận ra ngoài. Thoát: Esc ở lại trạm. Vào từ: Trạm mặt bằng (bấm E ở cửa khí). Ra tới: HUD bay hoặc Trạm mặt bằng. Nhãn: MVP.
@@ -30,6 +31,7 @@ Vào từ: Cửa khí. Ra tới: Ngạt, Kết chuyến, Bị kéo về. Nhãn: 
 21	Bị kéo về	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	Cảnh bị kéo về. Xem món giữ, món mất và vật nhiệm vụ về chỗ cũ. Dùng chung khuôn với Kết chuyến. Nút chính: Tiếp tục (bấm được sau 1,5 giây). Vào từ: Ngạt hết giờ. Ra tới: Trạm mặt bằng. Nhãn: MVP.
 22	Kết chuyến	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	Về an toàn: xem tóm tắt chuyến, túi đã vào kho. Nút chính: Tiếp tục. Vào từ: HUD bay (cửa khí hoặc Recall Beacon). Ra tới: Trạm mặt bằng. Nhãn: MVP.
 23	HUD giờ giao thương	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.7, Figma Wireframe MVP	"Cánh cảng nhìn từ trên: ô quầy và 3 cửa neo thẳng hàng, tàu cập từ mép trên, tàu chờ xếp ở mép trên. Thấy giờ giao thương, Tally, tip, điểm cảng, số tàu và danh mục còn ở hai dải HUD trên và dưới.
+Bố cục đã duyệt ở 1080p: dải trên 84 px, dải dưới tối đa 126 px, chữ trong vùng an toàn 5%, ô quầy 1 tới cửa neo 3 dài 1514 px.
 Trên mỗi tàu ở cửa neo có bong bóng gọi món với thanh kiên nhẫn, tàu bật yêu cầu thì có chip Bơm khí (giữ E 1 giây). Làm: nhặt thùng ở quầy, mang tới đúng cửa neo, giao, bơm khí. Không thoát giữa giờ giao thương, chơi một mình thì Esc để tạm dừng.
 Nút chính: giao một thùng.
 Vào từ: Bảng tàu và danh mục bán (Mở giao thương). Ra tới: Tổng kết giao thương. Nhãn: MVP."

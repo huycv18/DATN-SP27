@@ -181,7 +181,7 @@ Trống: không có dữ liệu để hiện. Đang tải: chờ máy hoặc m�
 | UI-02 | Chưa đặt tên: nút "Tạo" mờ, gợi ý tên | Đang dựng thế giới | Có tên và số người | Tên trùng hay ký tự cấm: báo "Tên đã dùng" dưới ô | Ô 3 và 4 khóa kèm "Sắp có". Đủ số thế giới tối đa: báo xóa bớt, xóa ở UI-01 qua UI-54 |
 | UI-04 | Không có bạn đang chơi: báo "Chưa có bạn nào đang chơi" và ô nhập mã | Đang tìm | Danh sách thế giới bạn mời | Báo "Mã sai hoặc hết hạn" hay "Khác phiên bản game" | Chữ "Phòng đầy", nút "Vào" mờ |
 | UI-05 | Không áp dụng, luôn có cảnh | Nạp cảnh: tối dần | Cảnh phát, nút Bỏ qua luôn hiện | Cảnh lỗi: tự bỏ qua và ghi nhật ký | Không áp dụng, cảnh luôn bỏ qua được |
-| UI-10 | Khoang hỏng tối với khung đỏ | Nạp trạm: màn tối ngắn | Mặt bằng sáng, người vớt đứng ở khoang. Có người còn ngoài chuyến: thêm HUD-07, nút xem bản đồ chuyến chỉ xem và nút ping, mất đồng bộ vị trí thì chữ Chờ cập nhật, nhóm về hết thì tự trở lại trạng thái thường | Mất kết nối chủ phòng: banner "Mất kết nối chủ phòng", kèm "Thế giới về lần lưu gần nhất" và nút "Thử lại" | Khoang chưa tới chương: khung tối, báo "Chưa mở ở chương này" kèm gợi ý truyện |
+| UI-10 | Khoang hỏng tối với khung đỏ | Nạp trạm: màn tối ngắn | Mặt bằng sáng, người vớt đứng ở khoang. Có người còn ngoài chuyến: thêm HUD-07, nút "Xem bản đồ chuyến" (chỉ xem) và nút "Ping" (khóa `btn.trip_map`, `btn.ping`), mất đồng bộ vị trí thì chữ Chờ cập nhật, nhóm về hết thì tự trở lại trạng thái thường | Mất kết nối chủ phòng: banner "Mất kết nối chủ phòng", kèm "Thế giới về lần lưu gần nhất" và nút "Thử lại" | Khoang chưa tới chương: khung tối, báo "Chưa mở ở chương này" kèm gợi ý truyện |
 | UI-11 | Đai không có dụng cụ nào chế được: báo vào xưởng | Chờ cả nhóm xác nhận: tick từng người và đồng hồ HTR-01 | Chọn dụng cụ, danh sách tick, "Chuyến {n}/{m}" | Một người chưa trả lời: báo tên, tự tính "Ở lại trạm" sau 30 giây kể từ người đầu tiên xác nhận | Hết chuyến, đã mở giao thương hoặc đã nghỉ giao thương: khóa kèm "Hôm nay hết chuyến ra ngoài". Đủ ô đai: dụng cụ thừa mờ |
 | UI-12 | Kho rỗng: chữ "Kho trống" | Đồng bộ kho cho nhóm | Danh sách theo nhóm với số lượng, sao và giá | Số liệu lệch: báo "Thử lại" | Một loại chạm 999: số đổi sang vàng kèm biểu tượng "Đầy" |
 | UI-13 | Chưa có công thức nào mở: chữ Kỹ sư chưa tới | Mẻ đang chạy: thanh tiến độ | Danh sách công thức, thời gian, hàng đợi | Thiếu vật liệu: dòng đỏ có biểu tượng và số thiếu | Hàng đợi qua đêm đủ 2 chỗ: nút Chế mờ kèm lý do |
@@ -264,7 +264,7 @@ Ghi chú: ○ △ □ ◇ trong bản vẽ thay bằng (o) (^) vì khối chữ 
 | HCH-07 | Hàng đợi xưởng | Dưới phải | Số mẻ đang chạy và chờ, chế qua đêm hiện "xong khi sang ngày" | Số, chữ |
 | HCH-08 | Sự cố | Giữa trái | Biểu tượng loại sự cố, mũi tên tới khoang, chữ xử lý. Còi báo động ngắn, không lặp liên tục | Biểu tượng riêng từng loại (Sau MVP) |
 | HCH-09 | Tally và Hạng cảng | Trên phải | Tổng Tally của nhóm kèm "Hạng n (a/b)" (điểm cảng hiện tại trên ngưỡng kế), mỗi khi thay đổi hiện số cộng hay trừ trong 150 ms. Hiện ngoài giờ giao thương, trong giờ giao thương nhường chỗ cho HCH-02 | Số |
-| HCH-10 | Sơ đồ trạm thu nhỏ | Dưới HCH-09 | Mặt bằng trạm thu nhỏ, bắc ở trên: khoang, bến (chấm khi có tàu), vị trí mỗi người (hình slot), sự cố. Hiện ở UI-10 ngoài giờ giao thương. Trong giờ giao thương ẩn vì quầy và cửa neo nằm trọn trong một màn | Hình khoang, hình slot |
+| HCH-10 | Sơ đồ trạm thu nhỏ | Góc dưới phải, trên HCH-07 (Lead duyệt 2026-11-23: không che hành lang phía đông) | Mặt bằng trạm thu nhỏ, bắc ở trên: khoang, bến (chấm khi có tàu), vị trí mỗi người (hình slot), sự cố. Hiện ở UI-10 ngoài giờ giao thương. Trong giờ giao thương ẩn vì quầy và cửa neo nằm trọn trong một màn | Hình khoang, hình slot |
 | HCH-11 | Gợi ý phím tương tác | Cạnh nhân vật | Phím theo thiết bị và động từ ngắn ("E nhặt thùng", "E giao thùng", "Giữ E bơm khí"), chỉ hiện khi làm được. Đứng gần mà chưa làm được thì hiện mờ kèm lý do ngắn ("Tay đang bận, mỗi lần 1 thùng") | Glyph, chữ |
 | HCH-12 | Chip bơm khí | Trên tàu, cạnh HCH-06 | Chip "Bơm khí!" khi tàu bật yêu cầu (50% tàu lúc cập). Đứng ở cửa neo, tay trống, giữ E 1 giây (vòng HUD-14) thì hồi 25% kiên nhẫn, cộng 10 Tally tip, số bay lên. Thả phím, bước đi hoặc tàu rời thì vòng về 0, không mất gì. Tay đang cầm thùng thì hiện "Giao thùng trước khi bơm khí". Bơm xong chip tắt tới lần bật kế | Chữ trên chip, vòng giữ |
 
@@ -277,6 +277,11 @@ HUD trong trạm (UI-10 ngoài giờ giao thương):
 | HTR-03 | Điểm lưu | Dưới phải | Biểu tượng và chữ "Đã lưu" 2 giây tại ba điểm tự lưu của K23: sau mỗi chuyến khi mọi người đã về, sau giờ giao thương, lúc ngủ | Biểu tượng, chữ |
 | HTR-04 | Dấu cảnh chờ | Trên nhân vật hay khoang | Biểu tượng cạnh người vớt hay khoang có cảnh đang chờ phát. Hàng chờ cảnh và dấu là riêng từng người chơi. Cảnh chặn màn chỉ phát ở trạm khi giờ giao thương không chạy. Mốc xảy ra giữa giờ giao thương chỉ có bong bóng trong giờ giao thương, cảnh của mốc phát ở UI-44 bằng UI-53 | Biểu tượng, chữ |
 
+Bố cục UI-10 (Lead duyệt 2026-11-23, bản vẽ `ux/de-xuat-topdown/UI-10.svg`):
+1. Camera Zmin bám người chơi, chân người chơi ở giữa màn. Hành lang chính 3 u nằm ngang, khoang hai bên. Tường phía bắc của các phòng phía bắc là tường thấp 0,8 u, che 86 px nền phòng ở 1080p, thấy trong phòng qua khe cửa và phần trên. Trong trạm không dùng vách cao cần dither. `MVP`
+2. HUD trạm không có đồng hồ giờ trong ngày, vì luật chưa có. `MVP`
+3. Khối Chờ nhóm ở trên trái, gom HUD-07, nút "Xem bản đồ chuyến" và nút "Ping", chỉ hiện khi có người còn ngoài chuyến. HTR-01 ở trên giữa, chỉ hiện khi có người xác nhận. Tally, mục tiêu HUD-13 và HTR-02 xếp dọc ở trên phải. HCH-10 và HCH-07 ở dưới phải. `MVP`
+
 Quy tắc giờ giao thương:
 1. Không có chữ "Thất bại" hay "Thua" ở bất kỳ đâu trong giờ giao thương (K13: tàu rời chỉ mất món đó). Tàu hết kiên nhẫn hiện "Tàu đã rời", thương nhân lắc đầu, âm trung tính, thùng về kho. `MVP`
 2. Bong bóng gọi món (HCH-06) là bản nhìn trong cảnh. Danh mục còn (HCH-04) là bản nhìn khi người chơi chạy xa tàu. Hai bản dùng cùng một dữ liệu. `MVP`
@@ -284,6 +289,7 @@ Quy tắc giờ giao thương:
 4. Trong giờ giao thương không có Oxy. HUD trạm ở UI-10 gồm Tally (HCH-09), mục tiêu Sổ tay (HUD-13), sơ đồ trạm (HCH-10), hàng đợi xưởng (HCH-07), lời nhắc thao tác và ba phần tử HTR-01 đến HTR-04. `MVP`
 5. Giờ giao thương dựng ô quầy và 3 cửa neo trong cùng một màn 1280x720, không cuộn: cánh cảng ở đầu đông, ô quầy và 3 cửa neo thẳng hàng dọc mép bắc hành lang bến, tàu cập từ mép trên vào cửa neo, tàu chờ ngoài xếp ở mép trên màn hình ngay dưới dải HUD. Kho chỉ là hình sát quầy, có thể nằm ngoài khung. HCH-01 đến HCH-03 ở dải HUD trên (cao 56 px ở 720p), HCH-04 và HCH-05 ở dải dưới (cao tối đa 84 px), sàn chạy nằm giữa hai dải nên HUD không đè quầy, cửa neo hay lối chạy. Khung camera cố định ở tâm cảng (`ky-thuat.md` luật 43, 14,03 u từ ô quầy 1 tới cửa neo 3 trong 17,8 u ngang). [GIẢ ĐỊNH] chiều sâu bắc nam của cánh cảng đủ chứa tàu, bong bóng và sàn chạy trong 14,1 u dọc mặt đất, gd-tech kiểm khi dựng. Số giờ giao thương trong mục này lấy từ `de-xuat-ca-cang-kieu-dave.md` mục 4 (ước, demo bot 2026-11-20), số thật do sim giờ giao thương của gd-tech. `MVP`
 6. Bấm chuột trái vào ô quầy, cửa neo hay điểm trên sàn thì nhân vật tự chạy tới, tới nơi tự làm việc ở đích (nhặt, giao hoặc bắt đầu bơm khí). Điểm đích hiện vòng sáng dưới sàn. Giữ phím di chuyển giữa đường thì hủy đường tự chạy. `MVP`
+7. Bố cục UI-40 (Lead duyệt 2026-11-23, `ux/de-xuat-topdown/UI-40.svg`): ở 1080p dải trên cao 84 px, dải dưới cao tối đa 126 px (56 và 84 px nhân 1,5). Chữ dải trên đặt trong vùng an toàn 5% (từ 54 px tính từ mép trên), cỡ chữ 26 px. Ô quầy 1 tới cửa neo 3 dài 1514 px (14,03 u nhân 108 px) trong 1920 px ngang, lề 1,9 u mỗi bên. `MVP`
 
 ```
 1280x720 giờ giao thương (mặt bằng cánh cảng, bắc ở trên, không cuộn)
@@ -878,6 +884,8 @@ Mỗi key một dòng. Giới hạn là số ký tự tối đa của chuỗi g�
 | lbl.res.end_time | Hết giờ | 14 | UI-43 |
 | lbl.res.end_last | Tàu cuối đã rời | 20 | UI-43 |
 | lbl.res.end_stock | Hết hàng trong danh mục | 28 | UI-43 |
+| btn.trip_map | Xem bản đồ chuyến | 20 | UI-10 |
+| btn.ping | Ping | 8 | UI-10 |
 
 ## 3. Tham số
 

@@ -1,6 +1,6 @@
-# Đề xuất bố cục top-down 45 độ: UI-10 và UI-40 (GD-077)
+# Bố cục top-down 45 độ: UI-10 và UI-40 (GD-077)
 
-Đề xuất cho Lead duyệt trước khi vẽ lại hai khung Figma "Wireframe MVP". Không sửa Figma, GDD, Sheet. Greybox, không phải art. Mở `UI-10.svg` và `UI-40.svg` bằng trình duyệt (1920x1080). Lớp ghi chú màu hồng nằm trong nhóm `ghichu`, ẩn đi là còn khung sạch.
+Trạng thái: Đã duyệt (Lead, 2026-11-23, ghi ở `DECISIONS.md`). Bốn điểm đã chép vào `ux-ui.md`, key string `btn.trip_map` và `btn.ping` đã thêm. Bản vẽ này là gốc để vẽ lại hai khung Figma "Wireframe MVP". Không sửa Figma, GDD, Sheet. Greybox, không phải art. Mở `UI-10.svg` và `UI-40.svg` bằng trình duyệt (1920x1080). Lớp ghi chú màu hồng nằm trong nhóm `ghichu`, ẩn đi là còn khung sạch.
 
 Thước chung (từ `ky-thuat.md` 2.6): 1 u = 108 px theo chiều ngang, 76 px theo chiều dọc mặt đất (nén 0,71). Sprite đứng cao 1 u = 108 px, chân đặt ở điểm dưới thân, có bóng chân. Vùng nhìn 17,8 x 14,1 u mặt đất. Vùng an toàn 5% = 96 px ngang, 54 px dọc.
 
@@ -48,25 +48,25 @@ Thứ tự đọc: người chơi và gợi ý phím, mục tiêu, Tally, khối
 
 | Mã | Nội dung | Ai kiểm |
 |---|---|---|
-| G1 | Dải trên 84 px lệch vùng an toàn dọc 54 px: chữ chỉ còn 30 px nằm trong vùng. Vẽ chữ dải lệch lên sát 54 px | Lead quyết |
+| G1 | Đã chốt: dải 84 px, chữ 26 px đặt trong vùng an toàn dọc 54 px | Đã duyệt |
 | G2 | Chiều sâu bắc nam của sàn bến phía bắc đường mép khoảng 2,9 u. Chưa đặt trong 2.6b | gd-tech |
 | G3 | Sàn chạy phía nam đường mép khoảng 5,7 u (phần còn lại của 14,1 u sau dải HUD) | gd-tech, gd-quan |
 | G4 | HCH-05 lệch phải giữa màn để HCH-04 đủ 3 loại không đè | gd-ux |
 | G5 | Mỗi khoang 5,9 u rộng x 6 u sâu, hành lang 3 u. Số do gd-world và art quyết | gd-world |
-| G6 | Tường thấp 0,8 u ở mặt bắc của phòng phía bắc | gd-world, art |
+| G6 | Đã chốt: tường thấp 0,8 u ở mặt bắc của phòng phía bắc | Đã duyệt |
 | G7 | Khối Chờ nhóm gom HUD-07 và hai nút vào một khối | gd-ux, Lead |
-| G8 | HCH-10 dời từ "dưới HCH-09" xuống góc dưới phải, vì ở trên nó đè hành lang phía đông | Lead quyết |
+| G8 | Đã chốt: HCH-10 ở góc dưới phải | Đã duyệt |
 | G9 | Mọi bố cục và cỡ chữ là greybox, chữ HUD 22 đến 32 px ở 1080p (tối thiểu 18 px theo ux-ui) | gd-ux |
 
 ## Lệch giữa đề bài và luật hiện hành
 
 | Chỗ | Điều thấy | Cách xử lý |
 |---|---|---|
-| "Giờ trong ngày" ở HUD trạm | ux-ui.md chưa có phần tử HUD đồng hồ trong ngày, chưa có key | Không vẽ, không thêm luật. Hỏi Lead ở câu 2 |
-| Nút "Xem bản đồ chuyến" và "Ping" ở khối Chờ nhóm | Có trong ux-ui luật 33 và C9 nhưng không có key riêng trong `strings.tsv` (chỉ có hud.ping.left) | Dùng chữ tạm, gd-ux bổ sung key khi Lead duyệt |
+| "Giờ trong ngày" ở HUD trạm | ux-ui.md chưa có phần tử HUD đồng hồ trong ngày, chưa có key | Đã chốt: không có |
+| Nút "Xem bản đồ chuyến" và "Ping" ở khối Chờ nhóm | Có trong ux-ui luật 33 và C9 nhưng không có key riêng trong `strings.tsv` (chỉ có hud.ping.left) | Đã thêm key btn.trip_map, btn.ping |
 | `hud.rank` | strings.tsv gán cho UI-40, ux-ui HCH-09 nói nhường chỗ ở giờ giao thương | Không vẽ trong UI-40, vẽ ở UI-10 |
 
-## Câu hỏi quyết định cho GDM
+## Quyết định đã chốt (từ 4 câu hỏi)
 
 1. Dải HUD trên và vùng an toàn dọc 5% (G1): (a) dải 84 px, chữ lệch lên sát 54 px, chấp nhận chữ sát mép (nghiêng về cái này, giữ số 56 và 84 đã chốt). (b) tăng dải trên lên 108 px, tức 72 px ở 720p, hơi hẹp sàn chạy.
 2. Giờ trong ngày ở HUD trạm: (a) không có, vì luật chưa có đồng hồ ngày (nghiêng về cái này). (b) thêm một phần tử HTR-05 hiện ngày và pha, cần Lead chốt luật trước.
