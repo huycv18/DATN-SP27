@@ -310,3 +310,9 @@ Hệ quả: USP gồm 4 ý, giọng giới thiệu sản phẩm, bỏ cột so v
 
 Lead: "Giữ co-op trong MVP", sau khi GDM phản biện trong review Sheet (`production/reports/2026-11-23-review-gdd-sheet.md`, rủi ro 2): co-op online trong MVP cộng với 1 artist, 4 dev và chưa có mốc thời gian là rủi ro phạm vi Cao, GDM đề xuất làm MVP một người trước rồi gộp co-op sau.
 Hệ quả: MVP có co-op 2 người online từ đầu, nhãn đổi từ (G) log 28 sang (L). Rủi ro phạm vi vẫn mở, cần dev ước công S/M/L từng mục MVP khi Lead có mốc thời gian.
+
+## 2026-11-23 - Đổi Sheet GDD chính
+
+- Lead xem GDD ở Sheet "Game Design Document - The Novent" (`1NayaWIuhGD9p3Czlff9sCubY610Ksye4bo97R_QqPdE`, chép từ Sheet cũ ngày 2026-11-20), trong khi tool và các lần dán vẫn trỏ vào Sheet cũ "GDD - The Novent" (`1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs`). Lead chốt bằng lời: dùng Sheet mới làm GDD chính.
+- Hai Sheet cùng tên tab và cùng gid, nên chỉ đổi `spreadsheetId` trong `tools/tham-so/sheet.json` và dòng Sheet GDD trong `so-hien-hanh.md`. Sheet cũ thôi dùng, không dán vào nữa.
+- Ô OVERVIEW!B28 (USP) đã ghi bản mới vào Sheet mới. Các tab khác chưa đối chiếu: Sheet mới chưa bật chia sẻ xem bằng link nên `doi-chieu-sheet.mjs` nhận HTTP 401.

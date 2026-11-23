@@ -15,7 +15,7 @@ Cập nhật lần cuối: 2026-11-20, sau đợt 9 (ca cảng khung Dave, QA GD
 | Kinh doanh | Bán đứt, không gói bán | (L) |
 | Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý | (L) |
 | Nhóm | 1 GD, 4 dev, 1 artist 2D | (L) |
-| Sheet GDD | https://docs.google.com/spreadsheets/d/1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs (Lead đưa 2026-11-20). GDD duy nhất, 25 tab theo khuôn indie, 17 tab `v0.1` cũ đã ẩn | (L) DECISIONS 2026-11-20 Bỏ GDD con |
+| Sheet GDD | https://docs.google.com/spreadsheets/d/1NayaWIuhGD9p3Czlff9sCubY610Ksye4bo97R_QqPdE ("Game Design Document - The Novent", Lead chốt 2026-11-23). GDD duy nhất, 25 tab theo khuôn indie, 17 tab `v0.1` cũ đã ẩn. Sheet cũ `1kGdCe...` thôi dùng | (L) DECISIONS 2026-11-23 Đổi Sheet GDD chính |
 
 ## Luật và nội dung
 
