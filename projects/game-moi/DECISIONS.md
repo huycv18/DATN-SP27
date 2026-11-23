@@ -300,3 +300,8 @@ Lead: "sửa lại GDD", "Sửa Sheet". Báo cáo: `production/reports/2026-11-2
 - Lead sửa tay OVERVIEW B22 trên Sheet ("chưa chốt nhé"), đã kéo về `gdd/sheet/OVERVIEW.tsv`.
 - OVERVIEW trên Sheet còn bản trước đợt 9 và USP lần 1 ở 7 ô (B7, B9, B15, D15, B20, B24, B28): đã ghi bản repo lên, gồm USP lần 2. B28 tách dòng dài cho qua cổng 300 ký tự.
 - Sửa 3 ô nhỏ: ITEM LIST D143 (STY-501), Upgrade D7, TRACKING I3. Ghi bằng connector Google Sheets theo từng ô, giữ định dạng tab. `doi-chieu-sheet.mjs` KHỚP 23/23 tab.
+
+## 2026-11-23 - USP viết theo mẫu của Lead
+
+Lead đưa mẫu 3 ý theo khung USP của Dave the Diver: "kiểu kiểu như này ngôn từ nó chuyên nghiệp cơ". Lead giữ ý "Nội dung đa dạng, nhịp độ thư giãn" sau khi GDM đã phản biện ý này trái CP2 (log dòng 98).
+Hệ quả: USP gồm 4 ý, giọng giới thiệu sản phẩm, bỏ cột so với Dave. Ý 2 viết thành căng khi bay, chậm trên trạm, thất bại không phạt nặng để không trái CP2. Ý 4 co-op thay ý DLC. Sửa `gdd/00-khung-game.md` mục 15 và ô USP tab OVERVIEW.

@@ -273,18 +273,15 @@ Chương 1 trọn vẹn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông d
 - Mốc thời gian: chưa có, chờ Lead. Phạm vi art tính lại khi có mốc
 - Chi tiết: tab TRACKING, MVP Criteria Checklist
 
-## 15. USP (G)
+## 15. USP (L)
 
-Khung theo USP của Dave the Diver Lead đưa 2026-11-20, bản viết lại lần 2 cùng ngày (log dòng 98, 99). Mỗi USP trả lời: người chơi nhận được gì, và khác game tham chiếu ở đâu.
-Ngày và đêm trong game: là nhịp sinh hoạt của trạm, không có đồng hồ thật (K23). Ngày là pha Chuyến 1 và Chuyến 2, đêm là pha Ca cảng. Ngày mới bắt đầu khi người chơi vào buồng ngủ đông.
-Oxy vừa là thời gian vừa là máu không tính là USP, vì Dave cũng dùng O2 làm máu và cho giữ 1 món khi hết O2. Điểm mượn này giữ ở CP2 và Core Gameplay.
+Lead chốt cách viết 2026-11-23: theo khung USP của Dave the Diver, giọng giới thiệu sản phẩm, mỗi ý một tên và một đoạn ngắn. Ý 1 và 3 là lời Lead, ý 2 và 4 do GDM viết (DECISIONS 2026-11-23, log dòng 100). Bản này thay bản 2 có cột so với Dave.
+Ngày và đêm: nhịp sinh hoạt của trạm, không có đồng hồ thật (K23). Ngày là pha Chuyến 1 và Chuyến 2, đêm là pha Ca cảng.
 
-| # | USP | Người chơi nhận được | Khác Dave the Diver |
-|---|---|---|---|
-| 1 | Salvage by Day, Trade by Night - Ngày vớt, đêm buôn | Ngày: rời trạm Ember, bay 8 hướng trong bãi vỡ của tàu mẹ Cradle để nhặt phế liệu, khai khoáng, bắt sống Driftlife (hành động phiêu lưu 2D). Đêm: mở ca cảng, tàu thương nhân ngoài hành tinh cập cửa neo, mang thùng hàng tới đúng tàu trước khi tàu hết kiên nhẫn để lấy Tally (mô phỏng quản lý). Hai nửa nuôi nhau: thứ vớt ban ngày là hàng bán ban đêm | Lặn trong nước thành bay không trọng lực. Phục vụ bàn sushi thành bán thùng hàng cho tàu, mỗi loài thương nhân một tính cách. Hàng còn là vật liệu sửa trạm, nên mỗi món vớt về phải chọn bán hay giữ |
-| 2 | Rebuild a Dead Station - Kéo trạm chết sống lại | Mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng chơi. Người sống sót vớt về vận hành khoang và mở tính năng mới. Tiến trình thấy được bằng mắt, không chỉ bằng số | Nhà hàng của Dave là nơi kiếm tiền. Trạm Ember là đích của cả game: sửa xong động cơ thì rời neo |
-| 3 | A Wreckfield Full of Secrets - Bãi vỡ đầy bí ẩn | Bố cục sinh lại mỗi chuyến, ba dải Gần, Giữa, Xa mở theo chương, map nhánh dựng tay giữ người sống sót và manh mối. Mỗi chương thêm một kiểu chơi mới (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống). Truyện 5 chương từ vụ The Scattering tới cuộc cách mạng cùng Sevra lật đổ Daskel, đích là một hành tinh có sự sống thật | Bí ẩn người biển thành truyện sinh tồn và chính trị: kẻ thù là định kiến của một tên độc tài. Hài nhẹ đến từ tính cách nhân vật, không dùng cắt cảnh dài |
-| 4 | Wake Up Together - Cùng nhau tỉnh dậy | Co-op online 2 đến 4 người có lý do trong truyện: mỗi Seed Station có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh. Chơi một mình vẫn trọn vẹn, thêm người là thêm tay chia việc ở cả ngày lẫn đêm | Dave chỉ chơi một mình. Ở đây co-op là cách chơi chính ngang chơi đơn |
+1. Kết hợp thể loại game độc đáo: Kết hợp hành động, phiêu lưu ngoài không gian với mô phỏng quản lý trạm thương cảng trong một vòng lặp ngày đêm rõ rệt. Ban ngày bay ra bãi vỡ của tàu mẹ để thu thập tài nguyên và Driftlife, ban đêm mở ca cảng giao thương với thương nhân ngoài hành tinh.
+2. Nội dung đa dạng, nhịp độ thư giãn: Xen giữa những chuyến bay căng thẳng là nhịp sống chậm trên trạm: sửa khoang, nuôi Driftlife, trò chuyện với những người sống sót được cứu về và giao thương với những thương nhân mỗi loài một tính cách. Hoạt động mới mở dần theo từng chương, thất bại không bị phạt nặng, người chơi tự chọn nhịp mà không thấy gò bó như đang làm việc.
+3. Thế giới và cốt truyện cuốn hút: Khám phá thế giới giả tưởng có chiều sâu và những khu vực ngoài không gian để tìm lời giải cho những bí ẩn bị che giấu.
+4. Chơi một mình hay cùng bạn bè: Co-op online 2 đến 4 người có lý do trong cốt truyện, mỗi trạm có 4 buồng ngủ đông, bao nhiêu người chơi thì bấy nhiêu người tỉnh dậy. Chơi một mình vẫn trọn vẹn, có bạn thì thêm người chia việc.
 
 ## 16. Target Audience (G)
 
