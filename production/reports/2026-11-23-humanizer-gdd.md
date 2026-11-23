@@ -93,7 +93,7 @@ Còn lại, cần GDM hoặc vai giữ hệ thống quyết:
 | combat-driftlife.md dòng 385 tới 393 (bảng BS-1 bản cũ) | Chuyển xuống lịch sử phải bỏ dòng bảng |
 | 00-khung-game.md dòng 3 (lịch sử sửa lần 2 tới 6) | File chưa có bảng Lịch sử thay đổi |
 | vat-pham.md dòng 528, 538 | Nằm trong khối do `sim/vat-pham.mjs` sinh, sửa trong script |
-| tram-va-cang.md dòng 457 | Có thể lệch luật: ghi "đặt" là yêu cầu gửi host, luật 26 nói thùng đã nhặt không đặt xuống được. Là nội dung, gd-quan xem |
+| tram-va-cang.md dòng 457 | Đã xong (gd-quan, 2026-11-23): "đặt" là chữ sót, bỏ đi. Câu nay ghi đúng ba yêu cầu gửi host theo `ky-thuat.md` luật 29, chỗ trỏ sửa từ luật 15 tới 17 thành mục 2.2 và luật 29 tới 31. Luật 26 giữ nguyên |
 | cot-truyen.md dòng 3 "chờ nghiệm thu", dòng 773 "sim cũ cần chạy lại" | Chưa rõ trạng thái còn đúng, gd-story xác nhận |
 
 ## Giới hạn
