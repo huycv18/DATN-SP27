@@ -394,3 +394,26 @@ Lead: "tôi muốn đổi tên luồng Ca Cảng, nghe Ca Cảng tôi không hi�
 Lead: "Thêm 1. Teardown game tham chiếu 2. Codex của chính game họ, dựng theo khuôn codex Mind over Magic 3. Hướng dẫn sử dụng 4. Danh sách SFX".
 - "Codex" ở đây là bách khoa trong game (Mind over Magic có màn Codex liệt kê mọi phòng, vật phẩm, nghi thức, trạng thái), không phải Codex của OpenAI. Timberwalls có hai file: "The codex - Mind over magic" là teardown game tham chiếu, mỗi hệ thống một tab, chủ yếu ảnh chụp. "Book of timberwalls" là codex game của họ, mỗi hệ thống một tab, cột Loại, Tên, Lời trong game, Nguồn, Công thức, Dùng cho, Ảnh.
 - Việc tương ứng ở BACKLOG: Teardown Dave the Diver GD-064, Codex The Novent GD-068, Hướng dẫn sử dụng cho dev GD-065 (chờ Unity project), Danh sách SFX GD-069 (nâng tab AUDIO ASSETS LIST có sẵn). Folder nộp GD-063 thêm 4 file này.
+
+## 2026-11-23 - Đổi tên ba vùng của map: Vành đai ngoài, Vành đai trong, Vùng trung tâm
+
+Lead: "dải gần, dải giữa và dải xa là cái gì? nghe nó phèn lứm", rồi chê tên địa danh "tối nghĩa quá" vì không cho biết vùng nào gần trạm hơn. GDM đề xuất đặt tên theo khoảng cách tới tâm vụ nổ tàu mẹ. Lead chốt tên tiếng Việt: "Vành đai ngoài, Vành đai trong, Vùng trung tâm".
+
+| Mã | Cũ | Mới | Tên địa danh giữ cho truyện |
+|---|---|---|---|
+| Z1 | dải Gần, Gần | Vành đai ngoài | Ember Anchorage |
+| Z2 | dải Giữa, Giữa | Vành đai trong | Shepherd Belt |
+| Z3 | dải Xa, Xa | Vùng trung tâm | Glass Nebula |
+
+- Tên mới dùng ở mọi chỗ, kể cả HUD-11, tên món (ví dụ Kiện đặc sản Vành đai ngoài) và key dữ liệu trong sim. Bỏ chữ "dải" đứng trước tên. Chữ "dải" chung chỉ cấu trúc map giữ nguyên.
+- Chỉ đổi chữ. Sim vật phẩm, kinh tế, ngân sách Oxy, bố cục chạy lại, không số nào đổi. Mã ID giữ nguyên (DL-G0x, DL-M0x, DL-X0x, SLV-1xx).
+- Đã đổi trong GDD hệ thống, Book, 18 tab TSV và Sheet, sim, tool, prototype, story. Giữ nguyên ở chỗ ghi lịch sử theo tiền lệ đổi tên Giờ Giao Thương: các DECISIONS, log tự quyết, `production/`, `qa/`, `briefs/`, `book/de-xuat-du-an.md`.
+- Tên tiếng Anh chưa chốt. Tên món tiếng Anh vẫn là Near, Mid, Far (ví dụ Near Specialty Crate). Không dùng "Outer Ring" vì trùng tên khu Lantern Outer Ring và Waypost Outer Ring.
+
+## 2026-11-23 - Art: không gian 3D, đồ họa 2.5D, góc nhìn top-down 45 độ
+
+Lead: "Về Art game sẽ là không gian game là 3D đồ họa là 2.5D Góc nhìn là Top-down 45". Lead chốt bằng lời.
+
+- Thay ràng buộc cũ "2D vector, có thể 2.5D (chưa chốt)" và góc nhìn ngang ở mọi nơi kèm mặt cắt trạm (log GDM 9, GDM tự quyết).
+- Đã sửa: CLAUDE.md, AGENTS.md, `so-hien-hanh.md`, `gdd/00-khung-game.md` mục Góc nhìn và mục 13.
+- Chưa sửa: các GDD, Book, tab và wireframe còn mô tả theo góc nhìn ngang (mặt cắt trạm ba tầng, cảng ở mép phải tầng giữa, layout map nhánh, greybox). GDM giao các vai sửa theo pipeline sau khi Lead trả lời câu hỏi phạm vi.

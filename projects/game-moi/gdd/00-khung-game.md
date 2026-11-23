@@ -14,7 +14,7 @@ Mọi tên riêng tiếng Anh là [TẠM]. Số trong file này là mục tiêu 
 - Fantasy (G): tôi là người sống sót giỏi nghề, tự tay kéo một trạm chết sống lại. Mỗi chuyến ra ngoài là một lần liều có tính toán, mỗi lần về là thấy trạm đổi khác.
 - Người chơi mục tiêu (G): người chơi PC thích Dave the Diver, Subnautica, Core Keeper, Stardew Valley co-op. Chơi phiên 30 đến 60 phút. Chơi một mình là chính, rủ bạn vào giữa chừng được.
 - Thể loại (L): hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý. Bán đứt. Unity, PC.
-- Góc nhìn (G): 2D nhìn ngang ở mọi nơi. Ngoài không gian là mặt phẳng bay tự do 8 hướng (cùng cấu trúc với lặn của Dave). Trong trạm là mặt cắt ngang nhìn thấy các khoang.
+- Góc nhìn (L, 2026-11-23): không gian game 3D, đồ họa 2.5D, camera top-down nghiêng 45 độ. Ngoài không gian vẫn bay tự do 8 hướng trên mặt phẳng nhìn từ trên xuống. Luật góc nhìn ngang và mặt cắt trạm (log 9) hết hiệu lực, các mục còn ghi theo góc nhìn ngang đang chờ sửa (DECISIONS 2026-11-23).
 
 ## 2. Core Pillars (L)
 
@@ -34,7 +34,7 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 
 | Mục | Nội dung |
 |---|---|
-| Mô tả | Khuyến khích người chơi khám phá bãi vỡ của tàu mẹ Cradle: ba dải Gần, Giữa, Xa, các map nhánh, loài Driftlife mới, tài nguyên hiếm, xác các trạm con, người còn sống để vớt và những điều bất ngờ. Mỗi chuyến bố cục đổi khác, mỗi chương mở vùng mới |
+| Mô tả | Khuyến khích người chơi khám phá bãi vỡ của tàu mẹ Cradle: ba vùng Vành đai ngoài, Vành đai trong, Vùng trung tâm, các map nhánh, loài Driftlife mới, tài nguyên hiếm, xác các trạm con, người còn sống để vớt và những điều bất ngờ. Mỗi chuyến bố cục đổi khác, mỗi chương mở vùng mới |
 | Player Experience | Curiosity, Wonder, Discovery |
 | Giữ bằng luật | K5 map sinh lại mỗi chuyến, K6 dải mở theo chương, K7 map nhánh dựng tay giữ người vớt, vật manh mối, boss |
 | Đo bằng | mỗi dải có ít nhất 2 tài nguyên chỉ dải đó có. Mỗi chương mở ít nhất 1 vùng hoặc map nhánh mới |
@@ -136,7 +136,7 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 - K2 (G): Oxy về 0 thì người đó vào trạng thái ngạt trong một khoảng ngắn. Hết khoảng đó mà không ai cứu thì bị kéo về trạm, chỉ giữ đúng 1 món tự chọn trong túi đồ, mất phần còn lại của túi. Không mất Tally, không có phí cứu hộ, không có nợ. Ngoại lệ: vật manh mối tự ghi lại ngay khi nhặt và không chiếm túi, vật nhiệm vụ mất cùng túi thì trở về vị trí gốc để lấy lại.
 - K3 (G): túi đồ có giới hạn sức chứa. Đây là giới hạn thứ hai sau Oxy. Đồ trong túi chỉ thành của trạm khi người chơi về tới trạm.
 - K4 (L): kết thúc chuyến bằng cửa khí của trạm hoặc Recall Beacon. Recall Beacon: giữ phím vài giây, bị đánh thì hủy, về trạm giữ nguyên túi đồ. Trong map tổng vị trí Recall Beacon đổi mỗi chuyến. Trong map nhánh Recall Beacon nằm cố định.
-- K5 (L, G): map tổng có 3 dải theo khoảng cách tới trạm: Gần, Giữa, Xa. Bố cục sinh lại mỗi chuyến bằng cách ghép các mảnh dựng tay từ một kho mảnh. Loài Driftlife và loại tài nguyên gắn với dải, không ngẫu nhiên giữa các dải.
+- K5 (L, G): map tổng có 3 dải theo khoảng cách tới trạm: Vành đai ngoài, Vành đai trong, Vùng trung tâm. Bố cục sinh lại mỗi chuyến bằng cách ghép các mảnh dựng tay từ một kho mảnh. Loài Driftlife và loại tài nguyên gắn với dải, không ngẫu nhiên giữa các dải.
 - K6 (G): dải mở theo chương truyện. Mỗi dải có một điều kiện môi trường cần cấp bộ đồ tương ứng. Thiếu cấp vẫn vào được nhưng Oxy hao nhanh hơn nhiều (đi được nhưng đắt). Dải chưa mở theo chương thì bị chặn cứng bằng vật cản do gd-world định.
 - K7 (L, G): map nhánh là khu dựng tay, không sinh lại, vào qua một lối trong map tổng. Người để vớt, vật manh mối, boss chỉ nằm ở map nhánh. Mốc truyện thì được diễn ra cả ở trạm và cảng. Skiff đưa người chơi từ trạm thẳng tới map nhánh đã tìm ra, tính là một chuyến.
 - K8 (L): Driftlife và tài nguyên sinh lại mỗi chuyến. Không có luật cạn kiệt, không phạt khai thác.
@@ -145,7 +145,7 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 ### Trạm và cảng
 - K10 (L, G): Ember neo cố định suốt game. Việc sửa đầu tiên là hãm trôi và neo. Sửa động cơ chính là mục tiêu dài nhất, xong thì Ember rời neo, lên đường tới hành tinh thật Sevra trao tọa độ, và game kết (kết mở, chưa tới hành tinh đó trong game này).
 - K11 (G): trạm gồm các khoang. Khoang hỏng phải sửa bằng vật liệu mới dùng được. Mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng.
-- K12 (L, G): mỗi người vớt về mở một tính năng của trạm qua một quest nhỏ hoặc mốc chương. Năm người: Kỹ sư (xưởng: chế và nâng cấp trang bị), Thông dịch viên (khoang liên lạc: gọi tàu, mở giờ giao thương, shop), Hoa tiêu (khoang dẫn đường: mở dải Xa, Skiff. Dải Giữa mở khi xong chương 1), Nhà sinh học (nghiên cứu và nuôi Driftlife), Trưởng cảng (thêm bến, tiện ích cảng). Không có bếp trưởng.
+- K12 (L, G): mỗi người vớt về mở một tính năng của trạm qua một quest nhỏ hoặc mốc chương. Năm người: Kỹ sư (xưởng: chế và nâng cấp trang bị), Thông dịch viên (khoang liên lạc: gọi tàu, mở giờ giao thương, shop), Hoa tiêu (khoang dẫn đường: mở Vùng trung tâm, Skiff. Vành đai trong mở khi xong chương 1), Nhà sinh học (nghiên cứu và nuôi Driftlife), Trưởng cảng (thêm bến, tiện ích cảng). Không có bếp trưởng.
 - K13 (L, 2026-11-20 đổi theo khung bán sushi của Dave the Diver): giờ giao thương là nửa chơi tay thứ hai. Trước giờ giao thương người chơi lập danh mục bán từ hàng trong kho, Thông dịch viên tự đóng thùng. Trong giờ giao thương tàu cập vào các cửa neo, mỗi tàu gọi 1 thùng trong danh mục. Người chơi nhặt thùng ở quầy cảng, mang tới đúng cửa neo trước khi tàu hết kiên nhẫn, và bơm khí cho tàu đang chờ. Giao xong nhận giá thùng cộng tip theo kiên nhẫn còn lại. Không chế, không đóng kiện trong giờ giao thương. Tàu chỉ mua, không bán trong giờ giao thương. Bản luật đủ: `gdd/he-thong/tram-va-cang.md`, nguồn đề xuất: `de-xuat-ca-cang-kieu-dave.md`.
 - K14 (G): từ chương 3, giờ giao thương có sự cố trạm chen ngang (rò khí, chập điện, Driftlife sổng khoang nuôi). Trước chương 3 không có sự cố.
 - K15 (G): có một thang Hạng cảng duy nhất, tăng theo kết quả các giờ giao thương. Hạng cảng mở thêm loại tàu, loại hàng giá cao, trần danh mục bán và danh mục shop. Không có danh tiếng riêng từng phe.
@@ -186,9 +186,9 @@ Co-op không phải pillar (Lead chốt bảng 5 pillar đúng như Dave the Div
 
 | Chương | Tên tạm | Vùng mới | Người vớt | Kiểu chơi mới | Mốc truyện |
 |---|---|---|---|---|---|
-| 1 | Tỉnh dậy | Dải Gần, xác Seed Station đầu tiên | Kỹ sư, Thông dịch viên | Khai thác, bắt sống loài nhỏ bằng lưới, giờ giao thương | Neo trạm, sửa cảng, tàu buôn đầu tiên ghé, bắt được sóng của Lantern |
-| 2 | Không cô độc | Dải Giữa, Station Lantern | Hoa tiêu, Nhà sinh học | Nuôi Driftlife, bắt sống cỡ M (gây mê, Phao kéo), lấy mẫu sinh thiết cỡ L | Gặp người sống ở Lantern, dấu vết phá từ ngoài vào trên các xác trạm |
-| 3 | Kẻ canh giữ | Dải Xa, Veyl Waypost, The Remainers | Trưởng cảng | Sự cố trong giờ giao thương, kẻ địch có vũ khí | Tàu lạ ghé cảng, cú lật Driftlife, quân The Wardens lộ mặt. Cuối chương: cứu Sevra khỏi cuộc tấn công bắt cóc, Sevra lộ danh tính |
+| 1 | Tỉnh dậy | Vành đai ngoài, xác Seed Station đầu tiên | Kỹ sư, Thông dịch viên | Khai thác, bắt sống loài nhỏ bằng lưới, giờ giao thương | Neo trạm, sửa cảng, tàu buôn đầu tiên ghé, bắt được sóng của Lantern |
+| 2 | Không cô độc | Vành đai trong, Station Lantern | Hoa tiêu, Nhà sinh học | Nuôi Driftlife, bắt sống cỡ M (gây mê, Phao kéo), lấy mẫu sinh thiết cỡ L | Gặp người sống ở Lantern, dấu vết phá từ ngoài vào trên các xác trạm |
+| 3 | Kẻ canh giữ | Vùng trung tâm, Veyl Waypost, The Remainers | Trưởng cảng | Sự cố trong giờ giao thương, kẻ địch có vũ khí | Tàu lạ ghé cảng, cú lật Driftlife, quân The Wardens lộ mặt. Cuối chương: cứu Sevra khỏi cuộc tấn công bắt cóc, Sevra lộ danh tính |
 | 4 | Tâm vụ nổ | Cradle Interior | Không | Map nhánh lớn trong nội thất tàu | Hộp ghi hành trình: Solace là thông tin mồi do chế độ Daskel dựng. Sevra kể chuyện đảo chính. Mục tiêu đổi từ "tới Solace" sang "giúp Sevra lật đổ Daskel". Chuyển tin cho mạng lưới qua giờ giao thương |
 | 5 | Rời neo | Warden Rig | Không | Hộ tống Sevra, trận đối đầu cuối | Hộ tống Sevra về căn cứ, nối tình báo, đánh Warden Rig (đầu não của Daskel ở bãi vỡ) khi cách mạng nổ ra. Sevra lên nắm quyền, trao tọa độ hành tinh thật. Sửa xong động cơ chính, rời neo |
 
@@ -237,7 +237,7 @@ Chủ tên gọi: gd-items giữ tên và ID vật phẩm, gd-combat giữ tên 
 | Khoang | Một phòng chức năng của trạm |
 | Buồng ngủ đông | Nơi người ngủ. Ember có 4 buồng |
 | Chuyến | Một lần ra ngoài không gian rồi về |
-| Dải Gần, Giữa, Xa | Ba dải của map tổng The Wake. Tên riêng: Ember Anchorage, Shepherd Belt, Glass Nebula |
+| Vành đai ngoài, Vành đai trong, Vùng trung tâm | Ba dải của map tổng The Wake. Tên riêng: Ember Anchorage, Shepherd Belt, Glass Nebula |
 | Map nhánh | Khu dựng tay vào qua một lối trong map tổng |
 | Oxy | Chỉ số duy nhất của người chơi ngoài không gian |
 | Bộ đồ, bộ đẩy, túi đồ | Trang bị mặc, thiết bị di chuyển, chỗ chứa đồ trong chuyến |
@@ -265,11 +265,11 @@ PvP. Chơi chung một máy. Tiền thứ hai. XP và cấp nhân vật. Hệ đ
 
 ## 12. Phạm vi MVP đề xuất (G, Lead nên xem lại vì chạm thời hạn)
 
-Chương 1 trọn vẹn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến, 3 đến 4 loài Driftlife, bắt sống loài nhỏ bằng lưới và 1 loại hàng Driftlife sống ở cảng, 1 boss nhỏ, co-op 2 người chạy được. GDD viết cho cả game, mỗi mục ghi nhãn MVP hoặc Sau MVP.
+Chương 1 trọn vẹn: Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến, 3 đến 4 loài Driftlife, bắt sống loài nhỏ bằng lưới và 1 loại hàng Driftlife sống ở cảng, 1 boss nhỏ, co-op 2 người chạy được. GDD viết cho cả game, mỗi mục ghi nhãn MVP hoặc Sau MVP.
 
 ## 13. Art Direction (L phong cách, G phần còn lại)
 
-- Phong cách: 2D vector, nhìn ngang ở mọi nơi (Lead chốt). Thêm 3D thành 2.5D: chưa chốt, chờ Lead
+- Phong cách (L, 2026-11-23): không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ
 - Không khí: khoa học viễn tưởng sinh tồn, nền nghiêm, hài nhẹ từ tính cách nhân vật. Bãi vỡ tối và lạnh, trạm Ember ấm dần lên theo từng khoang sửa xong (thấy được tiến trình bằng mắt)
 - Màu: không gian xanh than, tím đậm. Ánh sáng trạm cam ấm. Driftlife phát quang để đọc được trên nền tối. Giáp chế độ The Wardens trắng xương EDEBE0 và lục acid 7CFC3A, không ai khác dùng. 4 slot người chơi mỗi slot một màu kèm một hình: cam ○, lam ngọc △, vàng chanh □, hồng tím ◇
 - Nhân vật: silhouette đọc được ở 72 điểm ảnh mỗi u (720p). Mỗi nhân vật tối đa 6 màu chính cộng 2 nhấn. Người chơi bão hòa từ 70%, NPC tới 45%. Rig xương chung cho nhân loại, mảnh bộ đồ hoán đổi theo 5 trục nâng cấp
@@ -282,7 +282,7 @@ Chương 1 trọn vẹn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông d
 
 - Nhóm: 1 Game Designer, 4 Game Developer, 1 Artist 2D. Unity, PC, co-op online 2 đến 4 người
 - Cả game: 5 chương, 3 dải map tổng, 8 map nhánh, 15 loài Driftlife, 4 đơn vị The Wardens, 5 boss, khoảng 150 vật phẩm, 5 người vớt, 5 thương nhân, 12 đến 15 giờ chơi một mình
-- MVP: trọn chương 1. Dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến có 1 loại kiện phải chế và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Khoảng 1,5 đến 2 giờ chơi
+- MVP: trọn chương 1. Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến có 1 loại kiện phải chế và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Dài 1,5 đến 2 giờ
 - Ngoài phạm vi: PvP, chơi chung một máy, tiền thứ hai, XP, sinh map thủ tục hoàn toàn, chọn chặng trên bản đồ, vùng chơi trên hành tinh Sennar hay hành tinh đích
 - Mốc thời gian: chưa có, chờ Lead. Phạm vi art tính lại khi có mốc
 - Chi tiết: tab TRACKING, MVP Criteria Checklist

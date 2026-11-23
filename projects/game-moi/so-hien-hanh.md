@@ -11,7 +11,7 @@ Cập nhật lần cuối: 2026-11-20, sau đợt 9 (giờ giao thương khung D
 |---|---|---|
 | Engine / nền tảng | Unity, PC, để mở đa nền tảng | (L) DECISIONS 2026-11-19 |
 | Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, cả hai là cách chơi chính. MVP có co-op 2 người | (L) DECISIONS 2026-11-20. MVP: (L) DECISIONS 2026-11-23 |
-| Art | 2D vector, có thể 2.5D (chưa chốt). Góc nhìn ngang ở mọi nơi | (L). Góc nhìn: (G) log 9 |
+| Art | Không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ. Thay góc nhìn ngang và mặt cắt trạm của log 9 | (L) DECISIONS 2026-11-23 Art 3D, 2.5D, top-down 45 |
 | Kinh doanh | Bán đứt, không gói bán | (L) |
 | Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý | (L) |
 | Nhóm | 1 GD, 4 dev, 1 artist 2D | (L) |
@@ -30,7 +30,7 @@ Cập nhật lần cuối: 2026-11-20, sau đợt 9 (giờ giao thương khung D
 | Đồng tiền | Tally, duy nhất | (L) vấn đề 7. (G) log 17 |
 | Nửa chơi tay thứ hai | Giờ giao thương theo khung bán sushi của Dave: lập danh mục trước giờ giao thương, tàu cập 3 cửa neo, mỗi tàu gọi 1 thùng, mang thùng, bơm khí, tip theo kiên nhẫn | (L) DECISIONS 2026-11-20, mục "Giờ giao thương theo khung Dave" |
 | Một ngày | Tối đa 2 chuyến, rồi giờ giao thương, rồi cuối ngày. Tự lưu sau mỗi chuyến, sau giờ giao thương, lúc ngủ | (G) log 12, 62, 65 |
-| Phạm vi MVP | Chương 1 trọn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến 3 cửa neo, có 1 loại hàng phải chế trước giờ giao thương (CGO-113) và 1 loại hàng Driftlife sống, bắt sống cỡ S bằng lưới, 1 boss nhỏ, co-op 2 người | (G) log 29, 49, 67. Lead nên xem lại vì chạm thời hạn |
+| Phạm vi MVP | Chương 1 trọn: Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến 3 cửa neo, có 1 loại hàng phải chế trước giờ giao thương (CGO-113) và 1 loại hàng Driftlife sống, bắt sống cỡ S bằng lưới, 1 boss nhỏ, co-op 2 người | (G) log 29, 49, 67. Lead nên xem lại vì chạm thời hạn |
 
 ## Số cân bằng
 
@@ -40,10 +40,10 @@ Cập nhật lần cuối: 2026-11-20, sau đợt 9 (giờ giao thương khung D
 | Bình Oxy bậc 0 đến 4 | 330, 450, 600, 780, 1000. 1 Oxy hao trong 1 giây ở mức nền | (G) log 54 |
 | Ngạt | 12 giây chờ cứu, sau đó bị kéo về và giữ 1 món. Chia Oxy không xuống dưới sàn 20 | `nguoi-choi.md`, (G) log 11, 41, 57 |
 | Oxy hồi từ vật tiêu hao | Không quá 25% dung lượng bình mỗi chuyến, tối đa 2 bình Oxy nhỏ | (G) log 72 |
-| Hệ số co-op lượng nhặt k(N) | 1 cộng a nhân (N trừ 1). a bằng 0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa | (S) `map.md` 3.8 |
+| Hệ số co-op lượng nhặt k(N) | 1 cộng a nhân (N trừ 1). a bằng 0,30 ở Vành đai ngoài, 0,25 ở Vành đai trong, 0,38 ở Vùng trung tâm | (S) `map.md` 3.8 |
 | Giờ giao thương chương 1, 1 người | Thùng = 0,4 kiện. Danh mục tối đa 4 loại hàng. Số tàu theo số người 1, 2, 3, 4: 25, 55, 55, 60, 3 cửa neo ở mọi số người, đến trong cửa sổ 225 giây. Chờ ngoài 20 giây. Trần giờ giao thương 300 giây. Kiên nhẫn Loose Bolt 60, Vừa 45, Tàu vội 30 giây. Tip tối đa 25% giá thùng nhân kiên nhẫn còn lại. Bơm khí: 50% tàu bật lúc cập, hồi 25% kiên nhẫn, cộng 10 Tally. Giờ giao thương đầu tiên 2 tàu Loose Bolt | (S) sim GD-054 cho số tàu, (G) GD-051 cho trần giờ giao thương, bơm khí, giờ giao thương đầu (ước). sim GD-054 vòng 2 |
 | Tally mỗi đơn vị giá trị (GTĐ) | 10 | `kinh-te-tien-trinh.md` 2.1 |
-| Giá thùng chương 1 (1 kiện = 2,5 thùng) | Phế liệu 42, cáp 40, quặng 40, băng 42, mô sinh học 54, nước tinh khiết 64, đồ Trái Đất 76, đặc sản Gần 80. Lồng Driftmoth 65, Skitter Ray 75, Sting Krill 55. Bậc giá chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5 | (S) GD-055 `kinh-te-tien-trinh.md` mục 3.1 |
+| Giá thùng chương 1 (1 kiện = 2,5 thùng) | Phế liệu 42, cáp 40, quặng 40, băng 42, mô sinh học 54, nước tinh khiết 64, đồ Trái Đất 76, đặc sản Vành đai ngoài 80. Lồng Driftmoth 65, Skitter Ray 75, Sting Krill 55. Bậc giá chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5 | (S) GD-055 `kinh-te-tien-trinh.md` mục 3.1 |
 | Tip, điểm cảng | Tip cơ bản tối đa 25% giá thùng nhân kiên nhẫn còn lại, rồi nhân hệ số tip của tàu và hệ số món mê, cộng tiền bơm khí (MVP tối đa 50% giá thùng, log 114). 1 điểm mỗi tàu xong, thêm 1 nếu còn từ 2/3 kiên nhẫn trở lên (log 113). Ngưỡng Hạng 2 tới 8: 70, 135, 285, 400, 560, 680, 910 | (L) K13, (S) GD-055 mục 3.5. Thưởng đủ đơn, thưởng nhanh bỏ từ đợt 9 |
 | Hệ số ngân sách kinh tế | 0,54 (đợt 9, trước là 0,40). Giá Shop và Upgrade tăng khoảng 35% | (S) GD-055 mục 3.3 |
 | Số ngày tối thiểu của chuỗi mốc truyện, chương 1 đến 5 | 7, 5, 8, 3, 3 (tổng 26) | `cot-truyen.md` mục 5 |
