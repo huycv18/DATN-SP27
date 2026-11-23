@@ -64,10 +64,10 @@ Mã lớn nhất đã cấp: GD-066
 | GD-056 | game-moi | Review GDD ca cảng mới, MVP Criteria Checklist phần ca cảng (đợt 9) | gd-qa, claude-cty | GD-051 tới GD-055 | done (Sheet khớp) | `qa/GD-056-ca-cang-dave.md` ĐẠT |
 | GD-057 | game-moi | CORE LOOP, Day, dán Sheet các tab đổi, đối chiếu (đợt 9) | GDM, claude-cty | GD-056 | done (Sheet khớp) | doi-chieu-sheet KHỚP các tab đổi |
 | GD-058 | game-moi | Doc thiết kế: mục mẫu II.6 Trạm và cảng theo `book/KHUON.md` (đợt 10) | gd-quan, claude-cty | Lead 2026-11-23 | doing | `book/phan-2/06-tram-va-cang.md` qua `kiem-book.mjs`, GDM duyệt làm mẫu |
-| GD-059 | game-moi | Script gộp Doc, cổng kiểm khuôn, cách xuất sơ đồ luồng và Google Doc (đợt 10) | gd-tech, claude-cty | Lead 2026-11-23 | doing | `node projects/game-moi/tools/kiem-book.mjs` in lỗi theo mục, `gop-book.mjs` ra `book/ket-qua/book.md`, selftest ĐẠT |
+| GD-059 | game-moi | Script gộp Doc, cổng kiểm khuôn, cách xuất sơ đồ luồng và Google Doc (đợt 10) | gd-tech, claude-cty | Lead 2026-11-23 | done (cổng và gộp, selftest 37 ĐẠT. Xuất ảnh sơ đồ và Google Doc chờ Lead duyệt tải công cụ) | `node projects/game-moi/tools/kiem-book.mjs` in lỗi theo mục, `gop-book.mjs` ra `book/ket-qua/book.md`, selftest ĐẠT |
 | GD-060 | game-moi | Doc thiết kế: các mục Phần II còn lại II.1 tới II.9 | các vai giữ hệ thống, GDM | GD-058, GD-059 | todo | mỗi mục qua `kiem-book.mjs` |
 | GD-061 | game-moi | Nghiệm thu Phần II khớp GDD hệ thống và Sheet | gd-qa | GD-060 | todo | `qa/GD-061-book-phan-2.md` ĐẠT |
-| GD-062 | game-moi | Chương đề xuất dự án: ràng buộc, pillar, PX goal, concept đã bỏ và lý do | GDM | Lead 2026-11-23 | todo | `book/de-xuat-du-an.md` qua soat |
+| GD-062 | game-moi | Chương đề xuất dự án: ràng buộc, pillar, PX goal, concept đã bỏ và lý do | GDM | Lead 2026-11-23 | review (bản nháp, chờ Lead đọc) | `book/de-xuat-du-an.md` qua soat |
 | GD-063 | game-moi | Folder Drive nộp bài, một tài khoản sở hữu, chia thư mục theo loại | Lead tạo, GDM xếp | GD-061 | todo | Lead mở folder thấy đủ Doc, Sheet, đề xuất, không shortcut |
 | GD-064 | game-moi | Codex Dave the Diver theo hệ thống: Dave làm gì, The Novent lấy gì, khác gì (đợt 2 kế hoạch) | gd-research | GD-061 | todo | `docs/knowledge/indie/06-dave-the-diver-cau-truc.md` có mục cho 9 hệ thống, có nguồn |
 | GD-065 | game-moi | Guides cho dev: Sheet sang ScriptableObject, prefab, thư mục Unity | gd-tech | Unity project | blocked (chưa có Unity project) | dev làm theo tạo được 1 item từ Sheet |

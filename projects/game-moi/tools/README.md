@@ -9,6 +9,8 @@ Máy chấm GDD và sim. Node 18 trở lên, không cần cài thư viện. Ch�
 | `node projects/game-moi/tools/sim-chuyen.mjs [--seed 1] [--lan 2000] [--ra projects/game-moi/tools/ket-qua/sim-chuyen.md]` | Sim chuyến: thời lượng, lượng nhặt, ngạt, beacon theo chương, kịch bản, số người. Độ nhạy túi và mật độ, tìm k(N) | `tools/ket-qua/sim-chuyen.md` |
 | `node projects/game-moi/tools/sim-ca-cang.mjs [--seed 1] [--lan 300] [--ra projects/game-moi/tools/ket-qua/sim-ca-cang.md]` | Sim ca cảng khung Dave (đợt 9): 1 tới 4 người, số tàu theo N, cửa neo, 3 kiểu danh mục, bơm khí | `tools/ket-qua/sim-ca-cang.md` |
 | `node projects/game-moi/tools/sim-combat.mjs [--seed 1] [--lan 2000] [--ra projects/game-moi/tools/ket-qua/sim-combat.md]` | Sim combat S1 phần trận, S2, S3, S4, S5 boss BS-1 | `tools/ket-qua/sim-combat.md` |
+| `node projects/game-moi/tools/kiem-book.mjs <file.md|thư mục>` | Cổng khuôn Doc thiết kế (`book/KHUON.md`): heading II.n và II.n.k liên tục, Tổng quan và Ngoài MVP, mermaid có chú thích Hình đúng số mục, tên tab có trong `tham-so/sheet.json`, văn phong, ID nội bộ, 120 tới 300 dòng, đếm LỆCH và CHỜ ẢNH | thoát 1 khi có lỗi |
+| `node projects/game-moi/tools/gop-book.mjs [--book <thư mục>]` | Gộp `book/phan-1` rồi `phan-2` thành `book/ket-qua/book.md`: tiêu đề, mục lục 9 mục Phần II (thiếu file ghi "chưa viết"), đánh số hình xuyên suốt. Không sửa file nguồn | `book/ket-qua/book.md` |
 
 Prototype ca cảng khung Dave: `prototype/ca-cang-dave.html`, mở thẳng bằng trình duyệt. Prototype bay: `prototype/bay.html`, mở qua http trên cổng riêng (`python -m http.server 8791 --bind 127.0.0.1` trong thư mục `prototype/`, tắt đúng tiến trình đó khi xong). Thanh chỉnh bên phải, nút Xuất JSON, phím T thử né.
 

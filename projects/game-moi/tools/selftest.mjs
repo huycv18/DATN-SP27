@@ -232,4 +232,49 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
     assert.deepEqual(kq, ['map.md|gd-world', 'sheet/Enemy.tsv|gd-combat']);
   } finally { rmSync(goc, { recursive: true }); }
 });
+// Cổng khuôn Doc thiết kế và script gộp (GD-059): file mẫu tạm, không dùng file thật của vai.
+{
+  const KB = await import('./kiem-book.mjs');
+  const GB = await import('./gop-book.mjs');
+  const muc = (n, { hong = false } = {}) => {
+    const thun = Array.from({ length: 110 }, (_, i) => `Dòng chữ giải thích số ${i + 1} của hệ thống mẫu.`);
+    return [
+      `## II.${n}. Trạm mẫu`, '', 'Hệ thống mẫu làm một việc trong game và nối với hệ thống khác.', '',
+      `### II.${n}.1. Tổng quan`, 'Một vòng chơi của hệ thống mẫu.', '',
+      `### II.${n}.${hong ? 3 : 2}. Luật thứ nhất`, ...thun, 'Chi tiết dữ liệu: tab Customer trên Sheet GDD.', '',
+      '```mermaid', 'flowchart TD', '  A[Tàu cập] --> B{Có chỗ}', '  B -->|Có| C[Nhận hàng]', '```',
+      hong ? '' : `*Hình II.${n}.2 - Ca cảng một tàu*`, '',
+      '[CHỜ ẢNH: màn cảng từ build]', `*Hình II.${n}.3 - Màn cảng*`, '',
+      `### II.${n}.z. Ngoài MVP`, '- Tàu thứ ba', ...(hong ? ['Có dấu chấm phẩy; và gạch dài — sai, mã STY-501, tab Khong Co'] : []),
+    ].join('\n') + '\n';
+  };
+  t('kiem-book: file đúng khuôn qua cổng, đếm CHỜ ẢNH', () => {
+    const r = KB.kiemMuc(muc(6), '06-tram.md');
+    assert.deepEqual(r.loi, []);
+    assert.equal(r.choAnh, 1);
+    assert.equal(r.mermaid, 1);
+  });
+  t('kiem-book: file sai khuôn bị bắt đủ nhóm lỗi', () => {
+    const ten = KB.kiemMuc(muc(6, { hong: true }), '07-tram.md').loi.map((l) => l[1]);
+    for (const can of ['Số mục', 'Đánh số không liên tục', 'Sơ đồ thiếu chú thích', 'Dấu chấm phẩy', 'Gạch dài', 'ID nội bộ', 'Tên tab không có trên Sheet'])
+      assert.ok(ten.some((x) => x.startsWith(can)), 'thiếu bắt: ' + can);
+  });
+  t('kiem-book: file ngắn quá bị bắt độ dài', () => {
+    assert.ok(KB.kiemMuc('## II.1. A\n\nMở.\n', '01-a.md').loi.some((l) => /^Độ dài/.test(l[1])));
+  });
+  t('gop-book: 0 file ra mục lục 9 dòng chưa viết, 1 file đánh số hình xuyên suốt', () => {
+    const goc = mkdtempSync(join(tmpdir(), 'book-'));
+    try {
+      const khuon = [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => `| II.${n} | \`0${n}-x.md\` | HT${n} | nguồn | vai |`).join('\n');
+      writeFileSync(join(goc, 'KHUON.md'), khuon);
+      assert.equal(GB.gop(goc).md.split('\n').filter((l) => /\(chưa viết\)/.test(l)).length, 9);
+      mkdirSync(join(goc, 'phan-2'));
+      writeFileSync(join(goc, 'phan-2', '06-x.md'), muc(6));
+      const g1 = GB.gop(goc);
+      assert.equal(g1.thieu.length, 8);
+      assert.ok(/\*Hình 1 - Ca cảng/.test(g1.md) && /\*Hình 2 - Màn cảng/.test(g1.md) && !/Hình II\.6/.test(g1.md));
+    } finally { rmSync(goc, { recursive: true }); }
+  });
+}
+
 console.log(`\n${ok} phép kiểm ĐẠT.`);
