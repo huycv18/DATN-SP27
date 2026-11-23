@@ -14,7 +14,7 @@ The Novent trong một câu: tỉnh dậy trên một trạm hỏng giữa bãi 
 |---|---|
 | Engine, nền tảng | Unity, PC, có thể mở rộng đa nền tảng |
 | Nhóm | 1 Game Designer, 4 Game Developer, 1 Artist 2D |
-| Art | 2D vector, có thể thêm 3D thành 2.5D (chưa chốt) |
+| Art | Không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ. Unity dựng cảnh 3D, mọi asset là 2D |
 | Kinh doanh | Bán đứt, không gói bán |
 | Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, MVP có co-op 2 người |
 
@@ -24,7 +24,7 @@ Thể loại Lead chọn là hành động nhập vai phiêu lưu kết hợp m�
 
 ### II.3. Implications of the Constraints
 
-- Nhóm có 4 dev nhưng chỉ 1 artist, nên art là nút cổ chai. Số loại quái, thương nhân và map trong MVP tính theo sức một artist vector. Map tổng ghép từ kho mảnh dựng tay để tái dùng tối đa.
+- Nhóm có 4 dev nhưng chỉ 1 artist, nên art là nút cổ chai. Số loại quái, thương nhân và map trong MVP tính theo sức một artist 2D. Map tổng ghép từ kho mảnh dựng tay để tái dùng tối đa.
 - Có co-op online, nên luật lõi không được chỉ đúng khi có một người. Game không dừng thời gian toàn cục và không tạm dừng khi mở menu. Kiến trúc mạng phải chọn trước khi viết gameplay vì thêm sau rất đắt.
 
 ## III. Design Pillars
@@ -81,7 +81,7 @@ Lead yêu cầu phát triển bối cảnh từ hạt giống của concept cũ:
 |---|---|---|---|
 | Một câu | Thợ trục vớt mắc nợ sống ở trạm quỹ đạo rìa, ra vành đai rác kiếm sống | Tàu thuộc địa khổng lồ bị bỏ trên quỹ đạo, người chơi đào sâu vào bên trong | Trạm biên giới cạnh tinh vân vô luật, nơi tập đoàn, chợ đen, cướp và loài lạ cùng sống |
 | Nửa phiêu lưu | Bay ngoài không gian mở | Đi sâu từng tầng trong tàu | Thám hiểm các mảng tinh vân |
-| Hợp 1 artist vector | Trung bình | Tốt | Thấp |
+| Hợp 1 artist 2D | Trung bình | Tốt | Thấp |
 | Rủi ro chính | Giống concept đã bỏ | Mất cảm giác vũ trụ rộng | Phạm vi nội dung lớn nhất |
 
 ### V.3. Arriving at the Current Setting
@@ -108,7 +108,7 @@ Một ngày gồm hai chuyến ra bãi vỡ ban ngày và một ca cảng ban đ
 
 | Ràng buộc | Cách concept đáp ứng |
 |---|---|
-| 1 artist vector | Map tổng ghép từ kho mảnh dựng tay, trạm là mặt cắt ngang tái dùng khoang, Driftlife phát quang trên nền tối dễ đọc |
+| 1 artist 2D | Cảnh 3D chỉ dùng asset 2D, camera cố định nên mỗi sprite vẽ một góc. Map tổng ghép từ kho mảnh dựng tay, trạm là mặt bằng tái dùng khoang, Driftlife phát quang trên nền tối dễ đọc |
 | Co-op 2 đến 4 người | Không có luật chỉ đúng với một người, không tạm dừng toàn cục, thêm người là thêm tay chia việc ở cả chuyến lẫn ca cảng |
 | Bán đứt | Không tiền thứ hai, không XP, một đồng tiền Tally, tiến trình 5 chương có kết thúc |
 | Thể loại hành động kết hợp quản lý | Hai nửa nuôi nhau trong một ngày: chuyến cấp hàng cho ca cảng, ca cảng cấp Tally cho chuyến sau |

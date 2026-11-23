@@ -4,7 +4,7 @@ Trạm và cảng là nửa ở nhà của The Novent. Ở đây người chơi 
 
 ### II.6.1. Overview
 
-Người chơi sống trên **Station Ember**, trạm nhà bị hỏng neo giữa bãi vỡ. Trạm chia thành các **khoang**, mỗi khoang là một phòng chức năng. Khoang hỏng thì không dùng được. Người chơi mang vật liệu từ **chuyến**, tức một lần ra ngoài không gian rồi về, để sửa từng khoang. Sửa xong một khoang thì mặt cắt trạm đổi hình và trả lại một chức năng. Một số khoang chỉ sửa được khi có người phụ trách. Đó là **người vớt**, người sống sót còn nằm trong buồng ngủ đông ở các xác trạm ngoài kia. Người chơi tìm buồng, kéo về trạm, chờ người đó tỉnh, rồi sửa khoang của người đó để mở tính năng.
+Người chơi sống trên **Station Ember**, trạm nhà bị hỏng neo giữa bãi vỡ. Trạm chia thành các **khoang**, mỗi khoang là một phòng chức năng. Khoang hỏng thì không dùng được. Người chơi mang vật liệu từ **chuyến**, tức một lần ra ngoài không gian rồi về, để sửa từng khoang. Sửa xong một khoang thì khoang đó đổi hình trên mặt bằng trạm và trả lại một chức năng. Một số khoang chỉ sửa được khi có người phụ trách. Đó là **người vớt**, người sống sót còn nằm trong buồng ngủ đông ở các xác trạm ngoài kia. Người chơi tìm buồng, kéo về trạm, chờ người đó tỉnh, rồi sửa khoang của người đó để mở tính năng.
 
 Khi khoang liên lạc và cảng đều chạy, mỗi ngày có một **giờ giao thương**, pha bán hàng cho tàu thương nhân. Trước giờ giao thương người chơi chọn hàng đem bán. Trong giờ giao thương tàu cập vào cảng, mỗi tàu gọi một món, người chơi chạy mang món đó tới đúng tàu trước khi tàu hết kiên nhẫn. Tiền bán và tiền thưởng theo tốc độ là **Tally**, đồng tiền duy nhất của game, dùng để nâng cấp bộ đồ và trạm cho các chuyến sau đi xa hơn. Giờ giao thương không có thua: tàu bỏ đi chỉ làm mất món của tàu đó, hàng quay về kho. Quyết định nặng nằm trước giờ giao thương (bán gì, bao nhiêu), trong giờ giao thương tay bận nhưng đầu nhẹ.
 
@@ -27,13 +27,13 @@ Bản MVP gồm các khoang của chương 1:
 
 Kho có một nâng cấp ngay trong chương đầu là kho cấp 2, sửa bằng phế liệu và khoáng Vành đai ngoài. Mọi nâng cấp khoang khác thuộc bản đủ.
 
-Trạm được nhìn theo mặt cắt ngang ba tầng, hai thang dọc nối các tầng:
-- Tầng giữa là nơi người chơi qua lại nhiều nhất: buồng ngủ đông, xưởng, kho, quầy cảng, và bến 1 ở mép phải với 3 cửa neo nằm ngang nối tiếp.
-- Tầng dưới có cửa khí, khoang neo, động cơ chính. Tầng trên có khoang liên lạc.
-- Quầy cảng nằm ngay trái cửa neo 1, nên cửa neo càng xa thì đường chạy càng dài. Demo đo khoảng 1,1, 1,7 và 2,3 giây từ quầy tới cửa neo 1, 2, 3.
+Trạm được nhìn từ trên xuống, camera nghiêng 45 độ, và nằm trọn trên một mặt bằng, không chia tầng:
+- Hành lang chính chạy từ tây sang đông, khoang là phòng hai bên hành lang. Phía bắc có bến Skiff, khoang dẫn đường, khoang liên lạc, phòng nghiên cứu, khoang sinh quyển. Phía nam có cửa khí, khoang neo, buồng ngủ đông, xưởng, kho. Động cơ chính chặn đầu tây.
+- Cánh cảng nối vào đầu đông: quầy cảng 3 ô rồi bến 1 với 3 cửa neo, thẳng hàng dọc mép bắc hành lang bến. Tàu cập từ phía trên màn hình.
+- Cửa neo càng xa quầy thì đường chạy càng dài. Demo đo khoảng 1,1, 1,7 và 2,3 giây từ giữa quầy tới cửa neo 1, 2, 3. Bến 2 và bến 3 về sau nằm ở hai nhánh hành lang xa hơn.
 
-[CHỜ ẢNH: mặt cắt trạm chương 1, chụp từ build hoặc lấy khung từ Figma trang Wireframe MVP]
-*Hình II.6.1 - Mặt cắt Station Ember, ba tầng, cảng ở mép phải tầng giữa*
+[CHỜ ẢNH: mặt bằng trạm chương 1 nhìn từ trên, camera 45 độ, chụp từ build hoặc lấy khung từ Figma trang Wireframe MVP]
+*Hình II.6.1 - Mặt bằng Station Ember, hành lang chính tây đông, cánh cảng ở đầu đông*
 
 Chi tiết dữ liệu: tab Customer trên Sheet GDD, khối Khoang trạm.
 
@@ -41,7 +41,7 @@ Chi tiết dữ liệu: tab Customer trên Sheet GDD, khối Khoang trạm.
 
 Muốn sửa một khoang, mọi vật liệu trong danh sách sửa phải nằm sẵn trong kho. Người chơi đứng ở khoang và giữ phím sửa trong thời gian sửa (số khởi điểm 5 giây, chưa đo). Vật liệu bị trừ khỏi kho ngay lúc bắt đầu giữ phím. Thả phím giữa chừng thì tiến độ giữ nguyên, vật liệu không hoàn lại, giữ phím lại thì làm tiếp. Kho thiếu một vật liệu thì không bắt đầu được, khung khoang liệt kê thứ còn thiếu.
 
-Sửa xong thì khoang sang Hoạt động cấp 1, mặt cắt đổi hình khoang đó và người phụ trách đứng làm việc tại chỗ. Đồ trong túi đồ tự vào kho khi người chơi qua cửa khí về trạm, nên vòng sửa khoang luôn là: ra chuyến, về kho, sửa. Khoang neo là khoang đầu tiên sửa được. Trước khi khoang neo Hoạt động, chỉ cửa khí, kho và buồng ngủ đông dùng được, và trạm trôi chậm trên nền. Sửa xong khoang neo thì trạm đứng yên tới hết game. Vật liệu sửa các khoang chương đầu là phế liệu, khoáng và linh kiện của Vành đai ngoài. Khoang neo và xưởng chỉ dùng tài nguyên thô, vì chưa có xưởng thì chưa chế được gì.
+Sửa xong thì khoang sang Hoạt động cấp 1, mặt bằng trạm đổi hình khoang đó và người phụ trách đứng làm việc tại chỗ. Đồ trong túi đồ tự vào kho khi người chơi qua cửa khí về trạm, nên vòng sửa khoang luôn là: ra chuyến, về kho, sửa. Khoang neo là khoang đầu tiên sửa được. Trước khi khoang neo Hoạt động, chỉ cửa khí, kho và buồng ngủ đông dùng được, và trạm trôi chậm trên nền. Sửa xong khoang neo thì trạm đứng yên tới hết game. Vật liệu sửa các khoang chương đầu là phế liệu, khoáng và linh kiện của Vành đai ngoài. Khoang neo và xưởng chỉ dùng tài nguyên thô, vì chưa có xưởng thì chưa chế được gì.
 
 **Động cơ chính** là mục tiêu dài nhất của trạm. Động cơ có năm giai đoạn, mỗi chương mở đúng một giai đoạn, sửa một giai đoạn giống sửa khoang. Xong giai đoạn thì động cơ sáng thêm một phần. Giai đoạn đầu cần tài nguyên Vành đai ngoài, một hạch hoặc một mẫu của boss Scrapmaw, và linh kiện Van tiết lưu mua ở shop. Mốc đóng chương của truyện chỉ kích hoạt khi giai đoạn động cơ của chương đã lắp, trạm không có cổng chương riêng.
 

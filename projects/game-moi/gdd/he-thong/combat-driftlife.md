@@ -96,6 +96,7 @@ Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh
 - Chất lượng mẫu sống 1 đến 3 sao theo Sinh lực còn lại lúc bắt. Hạ cho nguyên liệu 1 sao, hạ khi đang bất lực cho 2 sao.
 - 15 loài Driftlife (5 mỗi dải), 4 đơn vị The Wardens, 5 boss (1 mỗi chương, chỉ ở map nhánh).
 - Co-op: Sinh lực, ngưỡng choáng và ngưỡng mê tăng theo số người. Sát thương lên người chơi không tăng. Mỗi người chơi có vé tấn công riêng nên áp lực mỗi người giữ nguyên.
+- Góc nhìn top-down 45 độ: hitbox, vùng trúng, hướng đòn và đẩy lùi tính trên mặt phẳng chơi nhìn từ trên, không có trục cao (mục 2.9).
 
 ## 1. Mục đích với người chơi
 
@@ -205,6 +206,27 @@ Dùng luật sẵn có, không thêm hệ thống (log GDM về hộ tống). Á
 41. (Sau MVP) Kén không bị kẻ địch nhắm và không nhận sát thương. Kẻ địch nhắm người chơi theo luật 9 và 10. Warden Snarer ưu tiên người đang kéo vật (bảng 3.6), nên người kéo kén là mục tiêu chính, đồng đội che chắn.
 42. (Sau MVP) Người kéo vào Ngạt thì thả kén, kén trôi tại chỗ, đồng đội kéo tiếp được. Cả nhóm bị kéo về hoặc về trạm thì kén nằm lại chỗ thả, chuyến sau kéo tiếp (luật buồng ngủ đông của `nguoi-choi.md`). Trong hộ tống C5.1 kén không đi theo Recall Beacon: người kéo kích beacon thì kén nằm lại tại chỗ, như khi ngạt. Giữa các chuyến, kén được lưu ở beacon cố định gần nhất đã đi qua, chưa qua beacon nào thì ở cửa N4 (luật 2.7.9 của `map.md`). Không có thất bại vĩnh viễn, Sevra không chết.
 43. (Sau MVP) Kén nằm ngoài luật giữ 1 món của K2: không ghim được, không mất theo túi.
+
+### 2.9 Combat trên mặt phẳng top-down 45 độ (MVP)
+
+Theo quy ước góc nhìn (`DECISIONS.md` 2026-11-23, brief `../../briefs/dot10-top-down.md`): camera cố định nghiêng 45 độ, không xoay, phía trên màn hình là phía bắc của map. Unity dựng cảnh 3D, mọi Driftlife, đơn vị The Wardens và boss là sprite 2D đứng quay mặt về camera. Mục này chỉ nói cách trình bày không gian combat. Luật, số, cự ly ở mục 2 và 3 giữ nguyên, đơn vị u không đổi.
+
+| Mục | Cách làm |
+|---|---|
+| Mặt phẳng chơi | Mọi vị trí, đường bay của đạn, đòn và vùng trúng nằm trên một mặt phẳng ngang nhìn từ trên. Combat không có trục cao: không có đòn trên đầu hay dưới chân, không né bằng độ cao. Ngoài không gian và trong map nhánh như nhau |
+| Hitbox thân | Hình tròn hoặc elip trên mặt phẳng, tâm ở chân sprite (điểm sprite chạm mặt phẳng). Cỡ hitbox theo cỡ thân nhìn từ trên, không theo chiều cao hình vẽ. Cỡ cụ thể do gd-tech ghi vào data, gd-combat duyệt [GIẢ ĐỊNH] |
+| Ngắm | Hướng bắn là hướng từ nhân vật tới điểm chuột chiếu xuống mặt phẳng chơi, hoặc hướng cần phải gamepad. Hỗ trợ ngắm 6 độ đo trên mặt phẳng. Loài cỡ L và boss có sprite cao che phần mặt phẳng phía bắc chân nó: chuột trỏ vào hình vẽ con vật thì ngắm vào tâm hitbox của con đó, gd-tech ghi spec cùng phần che khuất [GIẢ ĐỊNH] |
+| Vùng trúng và Báo trước | Hình vùng trúng (nón, tròn, đường lao) vẽ thành vệt phẳng nằm trên mặt phẳng chơi, không vẽ đứng. Đòn vùng hiện viền vùng mờ suốt pha Báo trước (mục 7). Đòn nón và đòn lao thẳng hiện thêm vệt hướng mờ trên mặt phẳng trong pha Báo trước, vì sprite chỉ có hướng vẽ gần nhất nên thân con vật không chỉ đúng hướng đòn [GIẢ ĐỊNH]. Thời gian Báo trước theo luật 8 |
+| Hướng đòn và đẩy lùi | Hướng đòn, hướng lao, hướng đẩy lùi (luật 2) là hướng trên mặt phẳng, đủ 360 độ. Nón tính từ hướng mặt của con vật trên mặt phẳng, không theo hướng vẽ của sprite |
+| Hướng sprite | Theo quy ước tối thiểu của brief đợt 10: 3 hướng vẽ (lên, xuống, ngang), lật gương cho trái và phải, di chuyển 8 hướng dùng hướng vẽ gần nhất. Loài cần thêm ghi ở bảng dưới |
+| Che khuất | Vật cao (vách, xác tàu, máy) che người chơi hoặc kẻ địch thì làm mờ phần che (spec của gd-tech). Viền vùng trúng và vệt hướng luôn vẽ trên vật che để cam kết "mọi đòn đều thấy trước" giữ đúng [GIẢ ĐỊNH] |
+| Chỉ báo ngoài màn | Mũi tên ở mép màn (luật 8) chỉ hướng trên màn hình. Camera không xoay nên hướng trên màn hình khớp hướng trên mặt phẳng |
+
+| Loài | Cần thêm ngoài quy ước tối thiểu | Lý do |
+|---|---|---|
+| DL-X02 Mirror Mantis (Sau MVP) | Cung mặt gương vẽ phẳng trên mặt phẳng quanh chân, quay theo hướng mặt [GIẢ ĐỊNH] | Đạn từ mặt trước dội lại, mặt quay 120 độ mỗi giây (bảng 3.4b). Sprite 3 hướng không cho người chơi biết đã vòng ra sau chưa |
+| WD-02 Warden Lancer (Sau MVP) | Cung khiên trước vẽ phẳng trên mặt phẳng, quay theo hướng khiên [GIẢ ĐỊNH] | Khiên chặn 100% sát thương từ phía trước (bảng 3.6), cùng lý do |
+| BS-1 Scrapmaw (MVP) | Không thêm hướng vẽ. Pha 1 một tư thế cuộn quanh lõi, không cần hướng. Pha 2 theo quy ước tối thiểu. Xúc tu Neo và Dây nối là sprite kéo giãn nằm trên mặt phẳng | Pha 1 boss không di chuyển, hướng quét chỉ bằng vệt nón. Mặt bằng phòng ở mục 3.7 |
 
 ### Trạng thái và chuyển tiếp của Driftlife
 
@@ -415,6 +437,20 @@ Phòng boss (gd-world giữ, `map.md` 2.10). Vật dựng phòng BS-2 đến BS-
 | BS-4 | Cradle Interior, Lõi máy | 32 x 24 u | 4 rơ le, bảng điều khiển hiện thứ tự |
 | BS-5 | Warden Rig, Command Deck | 36 x 24 u | 4 ống chứa Driftlife, sàn vỡ theo đoạn ở pha 3 |
 
+Mặt bằng phòng BS-1 nhìn từ trên (top-down 45 độ, mục 2.9). Đây là nhu cầu của cơ chế, gd-world giữ tọa độ dựng ở `map.md` 6.5 và chốt hướng phòng trong GD-070:
+
+| Thứ | Vị trí trên mặt bằng | Cơ chế dùng |
+|---|---|---|
+| Phòng C6 | 16 x 12 u, cạnh dài theo trục đông tây, x 40 tới 56, y 0 tới 12 (`map.md` 6.5) | Toàn trận |
+| Cửa D1 (lối vào) | Cạnh tây x = 40, nối C2 (`map.md` 6.5) | Rút khỏi trận, beacon B3 ngoài phòng phía D1 (luật 36) |
+| Vách sang C7 | Cạnh đông, đóng tới khi boss kết | Lối đi tiếp sau trận |
+| Lõi năng lượng | Tâm phòng | Pha 1: thân boss cuộn trên lõi. Pha 2: phóng điện vòng bán kính 4 u, vòng đỏ vẽ phẳng trên sàn quanh lõi |
+| Gốc Dây nối | Sát lõi | Pha 2: Dây nối là một xúc tu căng trên sàn từ gốc tới thân boss, theo boss khi nó đuổi. Cắt bằng Tương tác trong tầm 1,5 u tính từ gốc |
+| 3 Neo xúc tu | Trên tường, một Neo giữa tường bắc, một giữa tường nam, một ở tường đông. Không đặt ở tường tây có cửa D1 [GIẢ ĐỊNH] | Pha 1: xúc tu căng trên sàn từ thân boss tới tường. Mỗi Neo cách lõi 6 đến 8 u, bắn Lao từ bậc 1 (8 u) được từ trong phòng |
+| 2 Cáp chập (H02) | Theo `map.md` (gd-world) | Hazard của gd-world, không thuộc cơ chế boss |
+
+Xúc tu Neo và Dây nối nằm trên mặt phẳng nhưng không chặn đường bay và không gây sát thương khi chạm, như luật cũ không có va chạm cho chúng [GIẢ ĐỊNH]. Đòn quét xúc tu pha 1 là nón 120 độ tầm 4 u tính từ thân boss ở lõi, hướng nón chỉ bằng vệt hướng trên sàn (mục 2.9).
+
 Núm gap: Sinh lực Driftlife và Sinh lực boss nối sát thương dụng cụ (gd-items) với thời gian hạ mục tiêu ở mục 5.
 
 | Công thức | Biến | Ví dụ |
@@ -581,7 +617,7 @@ Luật co-op:
 
 | Sự kiện | Hình (VFX, trạng thái) | Âm (SFX) | Text, tutorial | Ưu tiên |
 |---|---|---|---|---|
-| Báo trước đòn | Thân con vật sáng màu đòn (vàng thường, đỏ đòn lớn), viền vùng trúng hiện mờ với đòn vùng | Âm tích ngắn, cao dần | Tutorial chương 1: "Sáng đỏ là sắp đánh, lướt để né" | MVP |
+| Báo trước đòn | Thân con vật sáng màu đòn (vàng thường, đỏ đòn lớn), viền vùng trúng hiện mờ phẳng trên mặt phẳng chơi với đòn vùng, vệt hướng mờ trên mặt phẳng với đòn nón và đòn lao thẳng [GIẢ ĐỊNH] (mục 2.9) | Âm tích ngắn, cao dần | Tutorial chương 1: "Sáng đỏ là sắp đánh, lướt để né" | MVP |
 | Đòn từ ngoài màn | Mũi tên ở mép màn chỉ hướng kẻ địch, màu theo mức đòn (vàng, đỏ), hiện suốt pha Báo trước | Âm báo trước phát theo hướng (stereo) | Không | MVP |
 | Người chơi trúng đòn | Nhân vật nháy trắng 2 khung, thanh Oxy tụt có vệt đỏ phần mất, rung màn nhẹ | Âm va đập mũ, tiếng thở gấp | Lần đầu: "Bị đánh mất Oxy" | MVP |
 | Miễn sát thương | Nhân vật nhấp nháy 0,8 s | Không | Không | MVP |
@@ -593,11 +629,11 @@ Luật co-op:
 | Hạ | Con vật vỡ, nguyên liệu trôi ra có viền sáng | Âm vỡ trầm | Không | MVP |
 | Miễn choáng (Arc Eel) | Dùi xung làm nó sáng thêm, biểu tượng "miễn" | Âm dội | Lần đầu ở chương 1: "Con này không choáng được, chưa có cách bắt" | MVP |
 | Chuyển pha boss | Boss gầm, màn tối viền, khung chậm 0,3 s | Nhạc boss đổi đoạn | Tên boss hiện ở lần gặp đầu | MVP |
-| Cắt Dây nối BS-1 | Cắt xong: đoạn đứt rơi xuống sàn, Dây nối ngắn lại thấy rõ, hitstop 4 khung. Đoạn thứ hai chưa cắt được: dấu khóa ở gốc Dây nối, vòng giữ phím không chạy | Âm dây đứt trầm. Khi khóa: âm cạch từ chối ngắn | Lần đầu gặp khóa: "Dây nối còn căng, đánh Scrapmaw yếu thêm" | MVP |
+| Cắt Dây nối BS-1 | Cắt xong: đoạn đứt văng ra nằm trên sàn, Dây nối ngắn lại thấy rõ, hitstop 4 khung. Đoạn thứ hai chưa cắt được: dấu khóa ở gốc Dây nối, vòng giữ phím không chạy | Âm dây đứt trầm. Khi khóa: âm cạch từ chối ngắn | Lần đầu gặp khóa: "Dây nối còn căng, đánh Scrapmaw yếu thêm" | MVP |
 | Bị lưới The Wardens trói | Súng lưới năng lượng đỏ quấn nhân vật, nút "Lướt x3" | Âm điện rè | Lần đầu hiện cách thoát | Sau MVP |
 | Dấu săn bắt | Vết lưới năng lượng và vết cắt của quân The Wardens trên thân một số cá thể | Không | Nhà sinh học bình luận khi mang mẫu về | Sau MVP |
 
-Art: mỗi loài cần hoạt ảnh Trôi, Cảnh giác, Báo trước (mỗi đòn), Đánh, Hồi, Choáng, Ngủ, Bị hạ. Silhouette mỗi loài khác nhau rõ ở cỡ nhỏ. Màu nhận diện theo kiểu: hiền màu lạnh, săn mồi và lãnh thổ có điểm đỏ hoặc vàng. Gửi GDM cho tab Assets, AUDIO ASSETS LIST.
+Art: mỗi loài là sprite 2D đứng quay mặt về camera top-down 45 độ, hướng vẽ theo mục 2.9. Mỗi loài cần hoạt ảnh Trôi, Cảnh giác, Báo trước (mỗi đòn), Đánh, Hồi, Choáng, Ngủ, Bị hạ. Silhouette mỗi loài khác nhau rõ ở cỡ nhỏ khi nhìn từ camera nghiêng 45 độ. Viền vùng trúng, vệt hướng, vòng choáng, vòng ngủ là hiệu ứng vẽ phẳng trên mặt phẳng chơi. Màu nhận diện theo kiểu: hiền màu lạnh, săn mồi và lãnh thổ có điểm đỏ hoặc vàng. Gửi GDM cho tab Assets, AUDIO ASSETS LIST.
 Tutorial (gd-ux):
 
 | Chương | Dạy |
@@ -649,7 +685,7 @@ Dữ kiện Dave the Diver từ `docs/knowledge/indie/06-dave-the-diver-cau-truc
 | Bắt sống bằng Net Gun hoặc drone kèm Tranquilizer, cá ngủ thì bơi lại thu [D8][D11] | Giữ cấu trúc: Súng lưới cho S, Súng gây mê, Phao kéo cho M | Không lệch về cấu trúc. Thêm Dùi xung làm cách bất lực nhanh và ngắn, để có lựa chọn choáng hay mê |
 | Cá bị bắn bằng súng giảm hạng, bắt sống giữ hạng cao (theo review và guide) | Sao theo Sinh lực lúc bắt. Hạ cho 1 sao, Kết nhanh cho 2 sao | Một luật duy nhất thay vì luật theo từng loại súng, dễ hiểu và dễ cân |
 | Súng lưới của Dave bị người chơi chê không bắt được cá to dù lưới to hơn cá (thảo luận Steam) | Súng lưới trúng con M trở lên thì quấn chậm 2 s và báo rõ "quá to, cần Phao kéo" | Giới hạn của Súng lưới có lý do nhìn thấy được |
-| Combat của Dave bị review gọi là đủ dùng, góc ngắm hẹp | Ngắm tự do 360 độ vì bay tự do 8 hướng, có hỗ trợ ngắm gamepad | Không gian không có hướng trên dưới cố định |
+| Combat của Dave bị review gọi là đủ dùng, góc ngắm hẹp | Ngắm tự do 360 độ vì bay tự do 8 hướng, có hỗ trợ ngắm gamepad | Người chơi bay trên mặt phẳng nhìn từ trên (top-down 45 độ), kẻ địch tới từ mọi phía |
 | Một người chơi | 1 đến 4 người, vé tấn công riêng, hệ số co-op | Khung C1 |
 | Cá to không bắt được bằng lưới, người chơi chê (thảo luận Steam) | Cỡ L không bắt sống, chỉ sinh thiết. Mẫu sinh thiết rẻ hơn một lần hạ (`vat-pham.md`: 0,45 lần), đổi lại nhanh hơn nhiều và con vật sống, bỏ đi | K9 sửa lần 5 (log GDM dòng 66) chỉ áp cho loài cỡ S, M. Sinh thiết cỡ L là đường khác, dùng cho nghiên cứu. Hạ cỡ L lâu và nguy hiểm nên cho nhiều giá trị hơn, sinh thiết nhanh và an toàn |
 | Không có phe địch có vũ khí rõ ràng ở các dải chính | The Wardens từ chương 3 | Khung B3, B8, chương 3 thêm kiểu chơi "kẻ địch có vũ khí" |
@@ -668,7 +704,7 @@ Dữ kiện Dave the Diver từ `docs/knowledge/indie/06-dave-the-diver-cau-truc
 
 Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ cấp hành vi. Sau MVP (sự cố và nuôi chưa có ở MVP, xem K14, K16).
 
-| Kiểu loài sổng | Hành vi trong mặt cắt trạm | Cách người chơi xử |
+| Kiểu loài sổng | Hành vi trên mặt bằng trạm | Cách người chơi xử |
 |---|---|---|
 | Hiền (DL-G01, DL-M02) | Đi lang thang qua các khoang, dừng nuốt hàng trong khoang đang đứng | Đi tới tóm (Tương tác giữ 0,8 s) |
 | Chạy trốn (DL-G02, DL-X01) | Chạy khỏi người chơi trong bán kính 3 u, trốn vào góc khoang | Dồn vào góc hoặc hai người chặn hai cửa |
@@ -759,6 +795,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 2026-11-20 | BS-5 rơi bản đồ sao thật | Khung đổi: Solace là mồi, chương 5 lấy bản đồ sao ở Warden Rig (DECISIONS 2026-11-20) | gd-combat |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer GDD | gd-combat |
 | 2026-11-23 | BS-1 luật cắt Dây nối khi Sinh lực còn từ 50%: đoạn hai khóa, đoạn đã cắt giữ tới hết trận, boss không đổi hành vi. Thêm E21, tự quyết 23, dòng hình và âm ở mục 7 | Log GDM 116, QA GD-061 nhóm C | gd-combat |
+| 2026-11-23 | GD-073 góc nhìn top-down 45 độ: thêm mục 2.9 (mặt phẳng chơi, hitbox, ngắm, vùng trúng và vệt hướng, hướng sprite, che khuất), mặt bằng phòng BS-1 ở 3.7, mục 7 hình Báo trước và Art, bảng sự cố đổi "mặt cắt" thành "mặt bằng", mục 9 lý do ngắm 360 độ. Không đổi luật, số, ID | Lead chốt Art 2026-11-23, brief đợt 10 | gd-combat |
 | 2026-11-23 | Theo rà chéo Sheet nhóm B (qa/2026-11-23-ra-cheo-B.md): WD-04 và BS-3 rơi Linh kiện Warden (đúng tên trong ITEM LIST), bỏ chữ hiếm. Không đổi luật | Đánh giá humanizer GDD | gd-combat |
 
 ### Số BS-1 trước sim S5 (chuyển từ mục 3, 2026-11-23)

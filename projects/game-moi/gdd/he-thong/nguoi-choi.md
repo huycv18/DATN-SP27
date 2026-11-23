@@ -4,7 +4,7 @@ Project: game-moi | Chủ sở hữu: gd-character | Trạng thái: bản đủ,
 
 ## Tóm tắt
 
-Nhân vật người chơi là một người sống sót mặc bộ đồ không gian: bay 8 hướng bằng bộ đẩy với quán tính nhẹ, mang một túi đồ có sức chứa, tiêu một chỉ số duy nhất là Oxy (vừa là thời gian vừa là máu), và đi bộ trong mặt cắt trạm khi ở nhà. Người chơi điều khiển trực tiếp và tiêu Oxy theo từng giây (P1). Tầng: lõi. Ưu tiên: prototype di chuyển và Oxy trước, sau đó bản đầu. Phụ thuộc chính: gd-combat (sát thương, i-frame, bắt sống), gd-items (khối lượng, dụng cụ), gd-world (cấp môi trường theo dải, Recall Beacon), gd-economy (giá nâng cấp), gd-tech (prototype thử số).
+Nhân vật người chơi là một người sống sót mặc bộ đồ không gian: bay 8 hướng bằng bộ đẩy với quán tính nhẹ, mang một túi đồ có sức chứa, tiêu một chỉ số duy nhất là Oxy (vừa là thời gian vừa là máu), và đi bộ 8 hướng trên mặt bằng trạm khi ở nhà (camera top-down 45 độ ở mọi nơi). Người chơi điều khiển trực tiếp và tiêu Oxy theo từng giây (P1). Tầng: lõi. Ưu tiên: prototype di chuyển và Oxy trước, sau đó bản đầu. Phụ thuộc chính: gd-combat (sát thương, i-frame, bắt sống), gd-items (khối lượng, dụng cụ), gd-world (cấp môi trường theo dải, Recall Beacon), gd-economy (giá nâng cấp), gd-tech (prototype thử số).
 
 ## Hiện hành
 
@@ -59,7 +59,7 @@ Tên thao tác: Bay, Lướt, Hãm, Ngắm, Dùng dụng cụ, Đổi dụng c�
 3. Quán tính nhẹ (log dòng 22): buông phím thì tốc độ giảm theo hãm tự nhiên 12 u/s2, từ tốc độ tối đa bậc 0 dừng sau 0,5 giây và đi thêm 1,5 u.
 4. Hãm (giữ Space, LT): hãm 36 u/s2, từ tốc độ tối đa dừng sau 0,17 giây và đi thêm 0,5 u. Hãm không tốn Oxy. Hãm là cách dừng chính xác để nhặt và khai thác.
 5. Lướt (Shift, RB): xung lực 15 u/s trong 0,22 giây (đi 3,3 u) theo hướng đang đẩy, không đẩy thì theo hướng nhân vật quay. Tốn 4 Oxy, hồi chiêu 1,2 giây ở bậc 0. Có miễn sát thương 0,2 giây đầu (khớp gd-combat). Lướt đặt vận tốc cố định 15 u/s trong 0,22 giây, hết thì vận tốc cắt về tối đa vmax_thật theo hướng đó (không trôi tiếp 15 u/s), rồi hãm tự nhiên áp bình thường. Lướt không dùng để di chuyển đường dài vì 3,3 u tốn 4 Oxy trong khi bay thường 6 u chỉ tốn 1 Oxy (đắt hơn 7 lần mỗi u). Lướt dùng để né, vượt khe hẹp, vào đúng điểm.
-6. Hướng nhìn: nhân vật quay trái hoặc phải theo vị trí con trỏ (chuột) hoặc cần ngắm phải (gamepad). Không ngắm thì quay theo hướng bay ngang.
+6. Hướng nhìn: nhân vật quay mặt về hướng con trỏ (chuột) hoặc cần ngắm phải (gamepad), quy về hướng vẽ gần nhất (mục 7c). Không ngắm thì quay theo hướng đang bay.
 7. Va chạm: nhân vật là hình tròn bán kính 0,4 u. Chạm tường thì triệt thành phần vận tốc vuông góc, giữ thành phần trượt dọc tường. Va tường không trừ Oxy, không choáng. Có corner correction 0,25 u để không kẹt góc.
 8. Lực ngoài (dòng chảy, hazard của gd-world): cộng vào vận tốc, phần do lực ngoài gây ra chặn ở 12 u/s. Trần này không áp cho Lướt (15 u/s).
 9. Tự gỡ kẹt: nếu hình tròn nhân vật chồng lên địa hình hơn 2 giây thì đẩy ra điểm trống gần nhất.
@@ -188,7 +188,7 @@ Quan hệ trục: T-OXY quyết định độ dài chuyến, T-VO quyết địn
 
 | Hành động | Bàn phím và chuột | Gamepad (bố cục Xbox) |
 |---|---|---|
-| Bay | W A S D | Cần trái |
+| Bay | W A S D, phím mũi tên là phím phụ | Cần trái |
 | Ngắm và quay mặt | Con trỏ chuột | Cần phải, hỗ trợ ngắm: kéo nhẹ về mục tiêu trong nón 15 độ |
 | Dùng dụng cụ | Chuột trái | RT |
 | Đổi dụng cụ | 1 đến 4, bánh xe chuột | D-pad trái và phải |
@@ -209,10 +209,10 @@ Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ c�
 
 ### 2.8 Trong trạm (MVP)
 
-1. Trạm là mặt cắt ngang, có trọng lực nhân tạo. Nhân vật đi bộ trái phải trên sàn, leo thang giữa các tầng bằng W hoặc S. Không có nhảy.
-2. Tốc độ đi 5,5 u/s, leo thang 3,5 u/s. Không chạy riêng, vì giờ giao thương (K13) có áp lực thời gian nên tốc độ cố định cho dễ đọc.
+1. Trạm là một mặt bằng nhìn từ trên xuống (camera top-down 45 độ, khoang là phòng nối bằng hành lang). Nhân vật đi bộ 8 hướng trên mặt phẳng bằng W A S D hoặc cần trái, quay mặt theo hướng đi (không ngắm trong trạm). Không có nhảy, không có leo.
+2. Tốc độ đi 5,5 u/s theo mọi hướng (đi chéo không nhanh hơn). Không chạy riêng, vì giờ giao thương (K13) có áp lực thời gian nên tốc độ cố định cho dễ đọc.
 3. Trong trạm nhân vật không có Oxy, không Ngạt. Không dùng dụng cụ trong trạm trừ sự cố do gd-quan quy định.
-4. Mang thùng trong giờ giao thương: bấm E hoặc Space để nhặt ở ô quầy và giao ở cửa neo. Mỗi người mang 1 thùng (hoặc 1 lồng) một lần, tốc độ chạy không đổi khi mang, không cùng mang một thùng, không đặt thùng xuống. Giữ E 1 giây ở cửa neo để bơm khí. Bấm chuột trái vào ô quầy hay cửa neo để tự chạy tới, giữ A D giữa đường thì hủy. Luật đầy đủ ở `tram-va-cang.md` luật 26 tới 28.
+4. Mang thùng trong giờ giao thương: bấm E hoặc Space để nhặt ở ô quầy và giao ở cửa neo. Mỗi người mang 1 thùng (hoặc 1 lồng) một lần, tốc độ chạy không đổi khi mang, không cùng mang một thùng, không đặt thùng xuống. Giữ E 1 giây ở cửa neo để bơm khí. Bấm chuột trái vào ô quầy hay cửa neo để tự chạy tới, giữ phím di chuyển giữa đường thì hủy. Luật đầy đủ ở `tram-va-cang.md` luật 26 tới 28.
 5. Sự cố giờ giao thương (K14, gd-quan): không đặt trạng thái lên người chơi. Rò khí đóng cửa một khoang bắt đi vòng, chập điện và Driftlife sổng xử bằng giữ phím. Trong trạm không có Oxy nên không trừ Oxy và không có sát thương (khớp `combat-driftlife.md`).
 6. Qua cửa khí từ trong ra cần cả nhóm đang online xác nhận (C5). 30 giây tính từ lúc người đầu tiên xác nhận (khớp `ux-ui.md`), ai không trả lời trong 30 giây thì tính là ở lại trạm và chuyến vẫn đi. Ở trong ra, bộ đồ tự mặc (cảnh 1,0 giây có thể bỏ qua).
 7. Người chơi không qua cửa khí thì ở lại trạm và dùng xưởng, khoang nuôi (C5).
@@ -270,7 +270,6 @@ Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ c�
 | Tầm chia Oxy, trao đồ | 1,5 u | 1 đến 3 | Dễ dùng | Phải sát | Co-op | ước |
 | Giữ chỗ khi rớt mạng | 15 giây | 10 đến 30 | Tha thứ mạng | Treo nhóm | Co-op | ước |
 | Tốc độ đi trong trạm | 5,5 u/s | 4,5 đến 7 | Giờ giao thương dễ | Giờ giao thương khó | Giờ giao thương | ước, gd-quan lấy làm tốc độ thường |
-| Tốc độ leo thang | 3,5 u/s | 2,5 đến 5 | Nhanh giữa tầng | Chậm | Giờ giao thương | ước |
 | Số ô dụng cụ bậc 0 đến 2 | 3, 4, 5 | 3 đến 6 | Nhiều lựa chọn | Hạn chế | Kiểu chơi | ước |
 | Miễn sát thương sau khi trúng đòn | 0,8 giây | gd-combat đặt | Đòn ít dồn | Đòn dồn | Combat | gd-combat |
 | Mất điều khiển khi trúng đòn | 0,25 giây | 0,15 đến 0,4 | Đòn nặng tay | Đòn nhẹ | Combat | gd-combat |
@@ -337,7 +336,7 @@ Núm gap: ba tham số nối ý đồ với số đo: dung lượng Oxy bậc 0 
 ## 5. Ràng buộc vật lý của luật
 
 - Tốc độ tối đa ở bậc 3 là 7,5 u/s, không vượt 8 u/s vì tốc độ quá lớn làm khe và mảnh dựng tay khó đọc. Tăng mỗi bậc tối đa 8%.
-- Camera thấy khoảng 17,8 u theo chiều ngang và 10 u theo chiều dọc (ước, chốt ở `ux-ui.md`), nên ở 7,5 u/s nhân vật mất 1,2 giây để băng qua nửa màn.
+- Camera thấy khoảng 17,8 u theo chiều ngang và 10 u theo chiều dọc màn hình, tức 14,1 u trên mặt đất vì camera nghiêng 45 độ (chốt ở `ky-thuat.md` mục 2.6), nên ở 7,5 u/s nhân vật mất 1,2 giây để băng qua nửa màn.
 - Co-op 4 người tách nhau: mỗi người một camera nên cần đồng bộ vị trí 4 nhân vật tại 20 Hz (xem mục 6).
 - Chia Oxy cần từ 2 người trở lên, một mình vẫn thoát được qua Recall, cửa khí, hoặc Ngạt rồi bị kéo về.
 - Ngạt luôn kết thúc, trần thời gian = 12 giây cộng tối đa thời gian đang được chia (người cho đủ 20 Oxy để cho, nên hữu hạn).
@@ -388,6 +387,10 @@ Núm gap: ba tham số nối ý đồ với số đo: dung lượng Oxy bậc 0 
 | Dùng vật tiêu hao | Nhân vật nâng bình lên cổ, thanh Oxy dâng, hiện "Còn hồi n" | Xì nạp ấm 1,5 giây | "Hồi Oxy có trần" lần đầu Oxy dưới 50% | Cao |
 
 Phản hồi thị giác và âm thanh phải bật tắt được từng lớp khi thử (juice không che thông tin). Chi tiết art nhân vật trong `ho-so-nhan-vat.md`.
+
+### 7c. Hướng sprite nhân vật (top-down 45 độ)
+
+Nhân vật là sprite 2D đứng quay mặt về camera. Artist vẽ 3 hướng (lên, xuống, ngang), hướng ngang lật gương cho trái và phải. Đi hoặc bay 8 hướng dùng hướng vẽ gần nhất: 4 hướng chéo dùng hướng ngang cho chéo ngang và hướng lên hoặc xuống theo thành phần dọc lớn hơn [GIẢ ĐỊNH]. Ngoài không gian, tư thế bay theo hướng 3 hướng vẽ này cộng độ nghiêng thân theo vận tốc. Cần thêm hướng chéo riêng thì gd-character ghi lý do trước khi nhờ artist.
 
 ## 7b. Cảm giác (game feel)
 
@@ -512,7 +515,7 @@ Giờ giao thương đặc biệt: hai người cùng bị kéo về cạnh nhau
 | 2 | `ky-thuat.md` dòng 68 | `CharacterProfile` thiếu tiền tố NP | Thêm NP hoặc ghi NP Sau MVP (đã ghi ở `ho-so-nhan-vat.md` mục 6) |
 | 3 | `ux-ui.md` dòng 29 và bảng 2.9 | Bộ màu slot khác `ho-so-nhan-vat.md` luật 6. Ghim món gamepad đang Y (trùng Kích Recall), hàng hành động phụ menu ghi X | Ghim món gamepad đổi sang R3, bộ màu theo hồ sơ nhân vật |
 | 4 | `combat-driftlife.md` dòng 714 | Điểm tự quyết 21 còn chữ "kéo chậm", Lồng mẫu là lớp Nhẹ hệ số 1,00 | Đã xong: combat bỏ chữ "kéo chậm" ở QA vòng 1 (Lịch sử thay đổi của file đó) |
-| 5 | `tram-va-cang.md` dòng 332 | "tốc độ thường" chưa có số | Ghi tốc độ đi 5,5 u/s, leo thang 3,5 u/s (mục 2.8) |
+| 5 | `tram-va-cang.md` dòng 332 | "tốc độ thường" chưa có số | Ghi tốc độ đi 5,5 u/s (mục 2.8). Tốc độ leo thang 3,5 u/s bỏ ở GD-072 vì trạm top-down không còn thang |
 | 6 | `map.md` map nhánh có buồng ngủ đông | Cần tính thời gian kéo buồng về cửa | Dùng hệ số kéo lớp Nặng 0,50 |
 | 7 | `vat-pham.md` | CON-101 cần đưa vào sim chuyến để chốt số 40 và chi phí chế | gd-tech mô hình, gd-items chỉnh nếu lời ròng quá trần |
 
@@ -527,3 +530,4 @@ Giờ giao thương đặc biệt: hai người cùng bị kéo về cạnh nhau
 | 2026-11-20 | Đợt 9 lượt giao thương kiểu Dave (GD-051): bỏ luật mang kiện và 3 hàng tốc độ mang kiện theo cỡ, thay bằng mang 1 thùng, tốc độ không đổi, không khiêng chung, không đặt xuống, nhặt giao bằng E hoặc Space, giữ E 1 giây bơm khí, bấm chuột tự chạy tới. Người về sớm (C9) chế trước ở xưởng, bỏ đóng kiện trước | Lead chốt giờ giao thương theo khung bán sushi của Dave | gd-character |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Thang cũ túi 20 Khối, bình 300 làm gần 100% chuyến kết thúc vì đầy túi, chương 1 chỉ dài khoảng 1,5 phút nên đã đổi (log 54) | Đánh giá humanizer GDD | gd-character |
 | 2026-11-23 | Theo rà chéo Sheet nhóm B (qa/2026-11-23-ra-cheo-B.md): mục 2.7 ghi rõ mọi phím gán lại được trừ Esc và Start, khớp ux-ui.md mục 2.9. Không đổi luật | Đánh giá humanizer GDD | gd-character |
+| 2026-11-23 | GD-072: góc nhìn top-down 45 độ. Trạm đi 8 hướng trên mặt bằng thay đi ngang và leo thang, bỏ tham số tốc độ leo thang 3,5 u/s (không còn thang), thêm mục 7c hướng sprite. Số khác giữ nguyên | Lead chốt Art 2026-11-23 | gd-character |

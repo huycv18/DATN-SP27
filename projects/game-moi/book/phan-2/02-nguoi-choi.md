@@ -8,7 +8,7 @@ Người chơi ra khỏi cửa khí là bay tự do 8 hướng. Bấm đẩy là
 
 Oxy về 0 thì nhân vật không chết mà vào **Ngạt**, một khoảng thời gian ngắn để chạy về cửa khí hoặc chờ đồng đội cứu. Hết giờ mà chưa ai cứu thì nhân vật bị kéo về trạm, mất gần hết túi nhưng giữ lại một **món ghim** người chơi đã chọn từ trước. Tally và dụng cụ không bao giờ mất. Về tới trạm thì Oxy đầy lại ngay và đồ trong túi đổ vào kho.
 
-Nâng cấp bộ đồ mua một lần cho cả nhóm, gồm năm trục: bình Oxy, vỏ bộ đồ, bộ đẩy, túi đồ, đai dụng cụ. Ở trạm nhân vật đi bộ trên mặt cắt, không có Oxy, không có Ngạt. Chơi một mình hay co-op đều dùng cùng luật.
+Nâng cấp bộ đồ mua một lần cho cả nhóm, gồm năm trục: bình Oxy, vỏ bộ đồ, bộ đẩy, túi đồ, đai dụng cụ. Ở trạm nhân vật đi bộ 8 hướng trên mặt bằng nhìn từ trên xuống, không có Oxy, không có Ngạt. Chơi một mình hay co-op đều dùng cùng luật.
 
 ### II.2.2. Flight and Movement
 
@@ -28,7 +28,7 @@ Ngoài không gian dùng đơn vị **u**, đơn vị thế giới. Điều khi�
 **Hãm** là cách dừng chính xác để nhặt và khai thác. **Lướt** là xung lực ngắn theo hướng đang đẩy, không đẩy thì theo hướng nhân vật quay. Hết lướt thì vận tốc cắt về tốc độ tối đa, rồi hãm tự nhiên áp bình thường. Lướt có khoảng miễn sát thương ngắn lúc đầu. Lướt không dùng để đi đường dài vì mỗi u tốn Oxy gấp 7 lần bay thường, nó dùng để né, vượt khe hẹp và vào đúng điểm.
 
 Các luật còn lại của di chuyển:
-- Hướng nhìn theo con trỏ chuột hoặc cần ngắm phải, không ngắm thì quay theo hướng bay ngang.
+- Hướng nhìn theo con trỏ chuột hoặc cần ngắm phải, không ngắm thì quay theo hướng đang bay. Sprite nhân vật vẽ 3 hướng (lên, xuống, ngang), hướng ngang lật gương, đi 8 hướng dùng hướng gần nhất.
 - Chạm tường thì triệt thành phần vận tốc vuông góc, giữ thành phần trượt dọc tường. Va tường không trừ Oxy, không choáng. Có bù góc 0,25 u: nhân vật trượt qua mép góc thay vì kẹt.
 - Lực ngoài như dòng chảy hay hazard cộng vào vận tốc, phần do lực ngoài gây ra chặn ở 12 u/s. Trần này không áp cho Lướt.
 
@@ -219,9 +219,9 @@ Chi tiết dữ liệu: tab Player, khối Bộ đồ, tab Upgrade cho giá.
 
 ### II.2.8. On the Station
 
-Trạm là mặt cắt ngang có trọng lực nhân tạo. Nhân vật đi bộ trái phải trên sàn và leo thang giữa các tầng, không có nhảy. Trong trạm nhân vật không có Oxy, không Ngạt, không dùng dụng cụ.
+Trạm là một mặt bằng nhìn từ trên xuống, khoang là phòng nối bằng hành lang. Nhân vật đi bộ 8 hướng bằng W A S D hoặc cần trái, không có nhảy, không có leo. Trong trạm nhân vật không có Oxy, không Ngạt, không dùng dụng cụ.
 
-- Tốc độ đi 5,5 u/s, leo thang 3,5 u/s.
+- Tốc độ đi 5,5 u/s theo mọi hướng.
 - Không có chạy riêng, vì giờ giao thương có áp lực thời gian nên tốc độ cố định cho dễ đọc.
 - Người chơi đi xuyên qua nhau để không kẹt hành lang.
 

@@ -39,7 +39,7 @@ Trạm và cảng là nửa ở nhà của The Novent. Người chơi sửa từ
 | KH09 | Bến Skiff | Đi thẳng tới map nhánh | Hoa tiêu | 2 | Sau MVP |
 | KH10 | Phòng nghiên cứu | Nghiên cứu mẫu Driftlife | Nhà sinh học | 2 | Sau MVP |
 | KH11 | Khoang sinh quyển | Nuôi Driftlife | Nhà sinh học | 2 | Sau MVP |
-| KH12 | Bến 2, bến 3, tiện ích cảng | Thêm cửa neo ở tầng khác, quầy phụ sát bến xa | Trưởng cảng | 3 | Sau MVP |
+| KH12 | Bến 2, bến 3, tiện ích cảng | Thêm cửa neo ở hai nhánh hành lang xa quầy hơn bến 1, quầy phụ sát bến xa | Trưởng cảng | 3 | Sau MVP |
 | KH13 | Động cơ chính | Tiến độ rời neo, 5 giai đoạn | Có sẵn (hỏng) | 1 đến 5 | MVP giai đoạn 1 |
 
 ### Loại tàu và thương nhân
@@ -83,7 +83,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 
 ## 1. Mục đích với người chơi
 
-- Pillar P2 (mang về là để trạm sống lại): mỗi chuyến về là có thứ để sửa, mỗi khoang sửa xong đổi hình mặt cắt trạm và trả một chức năng.
+- Pillar P2 (mang về là để trạm sống lại): mỗi chuyến về là có thứ để sửa, mỗi khoang sửa xong đổi hình trên mặt bằng trạm và trả một chức năng.
 - Pillar P1 kéo dài sang nhà: bảng tàu cho biết hôm nay loại tàu nào ghé, tàu đó hay gọi gì và đơn đặt trước nào đang chờ, nên quyết định đi dải nào và mang gì về bắt đầu từ cảng.
 - Pillar P3: giờ giao thương có đủ việc cho 4 người nhưng một người vẫn chơi trọn, vì số tàu co giãn theo số người và mỗi tàu chỉ cần 1 thùng.
 - Pillar P4: thương nhân ghé cảng là nơi kể truyện giữa hai nửa ngày, kể cả tàu lạ của gián điệp Maro và Ilsume, người thừa kế Sevra giả danh.
@@ -97,7 +97,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 1. Ember có 13 khoang ở bảng Danh mục. Mỗi khoang ở một trong bốn trạng thái: Hỏng, Hoạt động, Đang sự cố, Đang nâng cấp. `MVP` (trừ Đang sự cố)
 2. Khoang Hỏng không dùng được chức năng, vẫn đi qua được. `MVP`
 3. Sửa khoang: mọi vật liệu trong danh sách sửa phải nằm trong kho, người chơi đứng ở khoang và giữ phím sửa trong thời gian sửa. Bắt đầu giữ phím thì vật liệu bị trừ khỏi kho. Thả phím giữa chừng thì tiến độ giữ nguyên, vật liệu không hoàn lại, giữ phím lại thì làm tiếp. `MVP`
-4. Sửa xong thì khoang sang Hoạt động cấp 1, mặt cắt trạm đổi hình khoang đó và hiện người vớt phụ trách (nếu có). `MVP`
+4. Sửa xong thì khoang sang Hoạt động cấp 1, mặt bằng trạm đổi hình khoang đó và hiện người vớt phụ trách (nếu có). `MVP`
 5. Nâng cấp khoang lên cấp 2 và cấp 3 theo cùng cách sửa, cần vật liệu và Tally theo bảng của gd-economy. Trong lúc nâng cấp khoang vẫn dùng được. ID nâng cấp là ID khoang cộng cấp: KH05-C2 là xưởng cấp 2, KH07-C2 là Cảng cấp 2: cửa neo thứ 4 của bến 1 (mua ở shop, Hạng 4), là nâng cấp, không theo số người, KH12-KP là quầy phụ cạnh bến 2 và bến 3, KHxx-C3 là cấp 3 của khoang xx. Xưởng cấp 2 mở ở chương 2. Mọi nâng cấp khoang `Sau MVP`, trừ kho cấp 2 sửa ở chương 1 (`MVP`, có trong sim kinh tế chương 1)
 6. Khoang neo là khoang đầu tiên sửa được. Trước khi khoang neo Hoạt động, chỉ cửa khí, kho, buồng ngủ đông dùng được, và Ember trôi chậm (hình nền trôi, không ảnh hưởng luật). Sửa xong khoang neo thì Ember đứng yên tới hết game. `MVP`
 7. Một khoang chỉ sửa được khi chương của khoang đã mở (bảng 2.6). Khoang có người vớt phụ trách (xưởng, khoang liên lạc, cảng, khoang dẫn đường, bến Skiff, phòng nghiên cứu, khoang sinh quyển, bến 2, bến 3) chỉ sửa được sau khi người vớt đó tỉnh và giao quest (luật 15). Khoang chưa sửa được hiện khung tối và một dòng gợi ý truyện. `MVP`
@@ -209,7 +209,7 @@ Khoang và chỗ trong cảng:
 | Hỏng | Bắt đầu game | Sửa xong | Không có chức năng, đi qua được | Khoang tối, mảnh vỡ, khung đỏ khi đứng gần kèm danh sách vật liệu |
 | Hoạt động | Sửa xong, xử lý xong sự cố, hết giờ giao thương | Bắt đầu nâng cấp, có sự cố | Đủ chức năng theo cấp | Khoang sáng, người vớt đứng làm việc |
 | Đang nâng cấp | Giữ phím nâng cấp lần đầu | Nâng cấp xong | Vẫn đủ chức năng cấp hiện tại | Giàn giáo, thanh tiến độ |
-| Đang sự cố | Sự cố xảy ra trong giờ giao thương ở cửa neo, ô quầy hoặc khoang sinh quyển | Xử lý xong hoặc hết giờ giao thương | Theo bảng 2.8 | Đèn đỏ nháy, biểu tượng sự cố trên mặt cắt |
+| Đang sự cố | Sự cố xảy ra trong giờ giao thương ở cửa neo, ô quầy hoặc khoang sinh quyển | Xử lý xong hoặc hết giờ giao thương | Theo bảng 2.8 | Đèn đỏ nháy, biểu tượng sự cố trên mặt bằng |
 
 Tàu:
 | Trạng thái | Vào khi | Ra khi | Hành vi | Người chơi thấy gì |
@@ -277,17 +277,42 @@ Trần ở chương nghĩa là hạng đó đạt được sớm nhất ở chư
 | 4 | Bến 3, quầy phụ, cấp 3 các khoang còn lại | Không | 4 | Sau MVP |
 | 5 | Không có khoang mới | Không | 5 | Sau MVP |
 
-### 2.6b Sơ đồ mặt cắt
+### 2.6b Sơ đồ mặt bằng
 
-Mặt cắt ngang 3 tầng, đọc từ trái sang phải. Hai thang dọc ở cột trái và cột giữa nối các tầng. Bến nằm ở mép phải để tàu cập từ ngoài màn hình.
+Trạm nằm trọn trên một mặt bằng nhìn từ trên, camera top-down nghiêng 45 độ, phía trên màn hình là phía bắc. Không chia tầng, camera không phải đổi tầng. Hành lang chính chạy từ tây sang đông. Khoang là phòng hai bên hành lang, cửa mở vào hành lang. Cánh cảng nối vào đầu đông của hành lang chính. Bảng đọc từ tây (trái màn hình) sang đông (phải màn hình).
 
-| Tầng | Cột 1 | Cột 2 | Cột 3 | Cột 4 | Mép phải |
-|---|---|---|---|---|---|
-| Trên | Khoang dẫn đường | Khoang liên lạc | Phòng nghiên cứu | Khoang sinh quyển | Bến 2 (2 cửa neo, ước) |
-| Vành đai trong | Buồng ngủ đông và khu hồi sức | Xưởng | Kho | Quầy cảng (3 ô, mỗi ô một màu cửa neo) | Bến 1: cửa neo 1, 2, 3 nằm ngang nối tiếp |
-| Dưới | Cửa khí | Khoang neo | Động cơ chính | Bến Skiff | Bến 3 (2 cửa neo, ước) |
+| Hàng | Cột 1 (tây) | Cột 2 | Cột 3 | Cột 4 | Cột 5 | Cánh cảng (đông) |
+|---|---|---|---|---|---|---|
+| Bắc | Bến Skiff KH09 | Khoang dẫn đường KH08 | Khoang liên lạc KH06 | Phòng nghiên cứu KH10 | Khoang sinh quyển KH11 | Bến 2 KH12: nhánh rẽ lên bắc ở cuối hành lang bến (2 cửa neo, ước) |
+| Hành lang chính | Động cơ chính KH13, chặn đầu tây | Hành lang | Hành lang | Hành lang | Hành lang | Hành lang bến KH07: quầy cảng 3 ô rồi bến 1 với cửa neo 1, 2, 3, thẳng hàng dọc mép bắc |
+| Nam | Cửa khí KH02 | Khoang neo KH04 | Buồng ngủ đông và khu hồi sức KH01 | Xưởng KH05 | Kho KH03 | Bến 3 KH12: nhánh rẽ xuống nam ở cuối hành lang bến (2 cửa neo, ước) |
 
-- Ý đồ: quầy cảng nằm ngay trái cửa neo 1, ba cửa neo nối tiếp về bên phải trên cùng một sàn. Demo đo đường chạy từ quầy tới cửa neo 1, 2, 3 khoảng 1,1, 1,7, 2,3 giây. Cửa neo xa hơn thì đường dài hơn, đó là lý do người chơi chọn tàu nào phục vụ trước. Kho cạnh quầy chỉ là hình, trong giờ giao thương không có việc ở kho. Bến 2 và bến 3 khác tầng, cần thang, là nguồn khó mới ở chương 3 và 4, quầy phụ (tiện ích Trưởng cảng) gỡ bớt. Kích thước ô và tỉ lệ do gd-world và art quyết.
+Vị trí trên cánh cảng theo trục tây đông. Cột sim là đơn vị của `tools/tham-so/ca-cang.json` (người đi 280 mỗi giây). Cột u đổi theo tốc độ đi trong trạm 5,5 u/s (`nguoi-choi.md`), tức 1 đơn vị sim bằng 5,5/280 u, để thời gian chạy giữ đúng sim. Gốc x là gốc của sim, đặt ở mép tây cánh cảng:
+
+| Điểm | x (sim) | x (u) | Nguồn |
+|---|---|---|---|
+| Ô quầy 1, 2, 3 | 96, 156, 216 | 1,89, 3,06, 4,24 | quayX 96, quayDai 120 |
+| Cửa neo 1, 2, 3 | 470, 640, 810 | 9,23, 12,57, 15,91 | neoX 470, neoDai 340 |
+| Chỗ đứng đầu giờ giao thương | 300, người sau cách 40 | 5,89, người sau cách 0,79 | nguoiX, nguoiCach |
+
+Quãng chạy, mang thùng không chậm (luật 26):
+
+| Đường | Quãng (sim) | Quãng (u) | Giây chạy một chiều | Khứ hồi (giây) |
+|---|---|---|---|---|
+| Ô 1 tới cửa neo 1 | 374 | 7,35 | 1,34 | 2,67 |
+| Ô 2 tới cửa neo 2 | 484 | 9,51 | 1,73 | 3,46 |
+| Ô 3 tới cửa neo 3 | 594 | 11,67 | 2,12 | 4,24 |
+| Giữa quầy (ô 2) tới cửa neo 1, 2, 3 | 314, 484, 654 | 6,17, 9,51, 12,85 | 1,12, 1,73, 2,34 | Là số demo 1,1, 1,7, 2,3 |
+| Ô 1 tới cửa neo 3 | 714 | 14,03 | 2,55 | Không có đường mang thùng này vì thùng ô 1 chỉ giao cửa neo 1 (luật 25). Chỉ gặp khi đi bơm khí |
+
+- Ý đồ: ô quầy và ba cửa neo thẳng hàng dọc mép bắc hành lang bến, người chơi chạy theo trục tây đông, nên quãng chạy là hiệu số x, đúng bố cục một trục của sim GD-054. Tiêu chí "quầy tới cửa neo 3 dưới 2,5 giây chạy" đạt: ô 3 tới cửa neo 3 là 2,12 giây, giữa quầy tới cửa neo 3 là 2,34 giây. Cửa neo xa hơn thì đường dài hơn, đó là lý do người chơi chọn tàu nào phục vụ trước.
+- [GIẢ ĐỊNH] Đoạn hành lang bến từ ô quầy 1 tới cửa neo 3 thẳng, không góc rẽ, không vật cản, để giữ số sim. Thêm góc rẽ hay vật cản thì quãng đổi, gd-tech chạy lại sim.
+- Tàu cập từ phía trên màn hình vào cửa neo ở mép bắc, tàu chờ ngoài xếp ở mép trên màn hình. Tàu nằm phía bắc người chơi nên không che người chơi.
+- Kho (Nam, cột 5) sát quầy chỉ là hình, trong giờ giao thương không có việc ở kho.
+- Cửa neo thứ 4 (KH07-C2, chương 2) nối tiếp phía đông cửa neo 3, vị trí và quãng chạy chưa đo.
+- Bến 2 và bến 3 nằm ở hai nhánh rẽ cuối hành lang bến, xa quầy hơn cửa neo 3 và thêm một góc rẽ. Đó là nguồn khó mới ở chương 3 và 4 mà không đổi luật, quầy phụ sát bến xa (tiện ích Trưởng cảng) gỡ bớt. Quãng chạy chưa đo.
+- Trường dữ liệu vị trí khoang là `viTriMatBang` ({x, z, rong, sau} theo u, schema ở `ky-thuat.md`). Bảng hàng và cột trên là bố cục, số đo từng phòng do gd-tech và gd-world đặt, riêng ô quầy và cửa neo phải theo cột u ở trên. Kích thước phòng và tỉ lệ do gd-world và art quyết.
+- Khung hình: ô quầy 1 tới cửa neo 3 dài 14,03 u, vừa khung ngang 17,8 u của Zmin 5 (`ky-thuat.md` bảng tham số camera) với lề khoảng 1,9 u mỗi bên. Nên camera giờ giao thương cố định ở tâm cảng được (`ky-thuat.md` luật 43). Chiều sâu bắc nam của cánh cảng chưa đặt, gd-tech kiểm khi dựng.
 
 ### 2.6c Vật liệu sửa khoang theo nhóm
 
@@ -442,13 +467,13 @@ Núm co-op (C8):
 | Thông lượng 3 cửa neo | Một tàu chiếm cửa neo từ lúc cập tới lúc khuất, ít nhất khoảng 6 giây. Sim GD-054 vòng 2: 3 cửa neo đạt mục tiêu ở 1 tới 4 người với 25, 55, 55, 60 tàu. 3 và 4 người dừng ở khoảng 55 tới 60 tàu vì 3 ô quầy và 3 cửa neo chung, bơm khí lấp phần rảnh |
 | Trần thời gian | Cửa sổ đến 225 giây, giờ giao thương tối đa 300 giây. Tàu cập cuối cửa sổ với kiên nhẫn Dài 60 giây vẫn kịp phục vụ |
 | Kho không giới hạn | Không có ràng buộc kho trong giờ giao thương. Ràng buộc nằm ở trần M loại và lượng hàng mang về. Sim GD-054 bảng 5: danh mục thiếu hàng làm Tally hụt 13 tới 16% |
-| Tải mặt cắt | Quầy tới cửa neo 3 dưới 2,5 giây chạy. Bến 2, bến 3 khác tầng, xa hơn, là cách tạo độ khó mới ở chương 3, 4 mà không đổi luật |
+| Tải mặt bằng | Quầy tới cửa neo 3 dưới 2,5 giây chạy (ô 3 là 2,12 giây, giữa quầy là 2,34 giây, mục 2.6b). Bến 2, bến 3 ở nhánh hành lang xa hơn, là cách tạo độ khó mới ở chương 3, 4 mà không đổi luật |
 
 ## 6. Yêu cầu cho engineer / tool
 
 | Hạng mục | Nội dung |
 |---|---|
-| Dữ liệu khoang | ID, tên, chương mở, danh sách vật liệu theo cấp, thời gian sửa, người vớt, vị trí trên mặt cắt |
+| Dữ liệu khoang | ID, tên, chương mở, danh sách vật liệu theo cấp, thời gian sửa, người vớt, vị trí trên mặt bằng (`viTriMatBang`, mục 2.6b) |
 | Dữ liệu tàu | ID loại, kiên nhẫn, bảng trọng số sở thích theo nhóm hàng hoặc danh sách chỉ gọi, hệ số tip theo loại hàng, luật riêng, có bật bơm khí không, chương và hạng mở, trọng số túi trộn |
 | Danh mục | Danh sách {ID kiện, số thùng}, trần M theo Hạng cảng, chốt lúc Mở giao thương. Đổi kho sang thùng theo công thức đóng thùng của gd-items (0,4 kiện mỗi thùng, hàng không chia là 1) |
 | Sinh lịch | Đầu ngày theo luật 67 tới 73, có seed để tái hiện. Túi trộn loại tàu giữ qua các ngày (lưu cùng thế giới). Món gọi chọn lúc tàu tới bằng RNG có seed của giờ giao thương |
@@ -491,7 +516,7 @@ Kết quả sim GD-054 vòng 2 cho các mục gd-quan đề, bản đầy đủ 
 | Đơn đặt trước tới | Bong bóng có nhãn "đặt trước" | Âm riêng ngắn | Lời Tikko | Vừa |
 | Hết danh mục | Bảng danh mục ở HUD tắt dần | Âm kết | "Hết hàng, giờ giao thương kết thúc sớm" | Vừa |
 | Lên hạng cảng | Bảng hạng sáng, liệt kê thứ mới mở | Chuông dài | Danh sách mở khóa | Vừa |
-| Sự cố | Đèn đỏ nháy ở cửa neo hoặc ô quầy, biểu tượng trên mặt cắt và HUD | Còi báo động ngắn, không lặp liên tục | Tên sự cố và cách xử lý lần đầu | Vừa |
+| Sự cố | Đèn đỏ nháy ở cửa neo hoặc ô quầy, biểu tượng trên mặt bằng và HUD | Còi báo động ngắn, không lặp liên tục | Tên sự cố và cách xử lý lần đầu | Vừa |
 | Driftlife sinh con non | Con non cạnh bố mẹ trong ô | Âm sinh vật | Không | Thấp |
 
 - Tutorial cần có (gd-ux viết): giờ giao thương đầu tiên theo luật 67: danh mục chọn sẵn, chỉ bấm Mở giao thương, đọc bong bóng, nhặt thùng ở quầy, giao đúng cửa neo, bơm khí lần đầu ở tàu thứ 2. Giờ giao thương thứ hai: lập danh mục lần đầu (chọn loại, đặt số thùng, đọc đơn đặt trước). Lần đầu có tàu chờ ngoài. Lần đầu có hàng cần chế trước giờ giao thương: hướng dẫn chế ở xưởng trước khi Mở giao thương. Lần đầu có TA02 (kiên nhẫn ngắn, tip gấp đôi). Lần đầu sự cố mỗi loại. Lần đầu ghim hàng của đơn đặt trước.
@@ -557,7 +582,7 @@ Sau MVP:
 | Chỉ số tiến trình | Hạng Cooksta quyết số khách mỗi tối [S10 kho 35] | Hạng cảng quyết loại tàu, trần danh mục, loại hàng bán được, mục shop | Giống: một chỉ số dễ hiểu. Khác: số tàu theo chương và số người để giờ giao thương giữ trong 300 giây |
 | Thất bại | Khách bỏ đi mất doanh thu khách đó | Tàu rời chưa giao mất món đó, thùng về kho | Giống: thất bại ở mức khách lẻ. Khác: hàng không mất vì hàng là công cả chuyến |
 | Bản cũ của Ember trước đợt 9 | | Tàu đưa đơn nhiều dòng theo lịch biết trước, đơn đủ và đơn trượt, thưởng đủ đơn, thưởng nhanh, máy đóng kiện chạy trong giờ giao thương, kệ kiện, tốc độ chạy theo cỡ kiện, quy mô đơn theo số người | Lead muốn giờ giao thương đơn giản mà vẫn vui (DECISIONS đợt 9) |
-| Nuôi | Fish Farm 9 ô mỗi khu, bắt đầu 4 ô, cần một cặp cùng loài, roe ấp 1 ngày [D8][D15] | Một khoang sinh quyển, 4 lên 9 ô, cặp cùng loài sinh con non, cần cho ăn để ra sản phẩm | Giữ số ô của Dave. Một khoang thay vì nhiều khu để gọn mặt cắt. Thêm cho ăn để nuôi có một quyết định mỗi ngày mà không phạt |
+| Nuôi | Fish Farm 9 ô mỗi khu, bắt đầu 4 ô, cần một cặp cùng loài, roe ấp 1 ngày [D8][D15] | Một khoang sinh quyển, 4 lên 9 ô, cặp cùng loài sinh con non, cần cho ăn để ra sản phẩm | Giữ số ô của Dave. Một khoang thay vì nhiều khu để gọn mặt bằng. Thêm cho ăn để nuôi có một quyết định mỗi ngày mà không phạt |
 | NPC mở tính năng | Duff, Cobra, Otto mở shop, farm qua quest [D10][D8] | 5 người vớt, mỗi người một khoang, quest là sửa khoang | Giống cấu trúc. Khác: quest nối với sửa trạm (P2) thay vì quest giao đồ |
 
 ## 10. Câu hỏi mở
@@ -632,7 +657,7 @@ Không có luật nào cần đúng N người, vì một người phục vụ �
 | Khoang của người vớt | Chỉ sửa được sau khi người vớt tỉnh | Quest mở là sửa khoang, cho mỗi người vớt một khoảnh khắc trả chức năng | Sửa trước, người vớt tới sau | Rẻ |
 | Chỗ ngủ người vào sau | Buồng của họ đặt ở khu hồi sức | Khớp L4: buồng tắt vẫn tắt. Không cần khoang mới | Lấp buồng tắt | Rẻ |
 | Driftlife sổng | Ôm thùng chứ không làm mất | Giữ cam kết không mất hàng | Mất hàng | Rẻ |
-| Khoang hỏng đi qua được | Có | Mặt cắt không bị chặn đường, sửa là để có chức năng | Khoang hỏng chặn lối | Rẻ |
+| Khoang hỏng đi qua được | Có | Mặt bằng không bị chặn đường, sửa là để có chức năng | Khoang hỏng chặn lối | Rẻ |
 
 ## Phản biện khung
 
@@ -691,3 +716,4 @@ Không có luật nào cần đúng N người, vì một người phục vụ �
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Số chuyển từ thân luật xuống đây: tip tối đa trước là 30%, trần giờ giao thương trước là 240 giây | Đánh giá humanizer | GDM |
 | 2026-11-23 | Dòng 457 (đề sim, Đồng bộ co-op): bỏ chữ "đặt" trong danh sách yêu cầu gửi host vì luật 26 không cho đặt thùng xuống và `ky-thuat.md` luật 29 chỉ có ba yêu cầu nhặt, giao, bơm khí. Sửa chỗ trỏ từ luật 15 tới 17 (rời phiên, mất kết nối) sang mục 2.2 và luật 29 tới 31. Không đổi luật, số, ID | Brief GDM | gd-quan |
 | 2026-11-23 | Luật 71 và bảng tham số mục 3: đơn đặt trước từ chương 2 là 1 đơn mỗi ngày, Hạng cảng 8 lên 2 đơn mỗi ngày, khớp bảng 2.5. Không đổi luật khác | qa/2026-11-23-ra-cheo-A.md mục Cần quyết 4, GDM chốt | gd-economy |
+| 2026-11-23 | GD-071: mục 2.6b đổi từ mặt cắt ngang 3 tầng sang mặt bằng nhìn từ trên (top-down 45 độ), một mặt bằng duy nhất, hành lang chính tây đông, cánh cảng ở đầu đông. Ghi vị trí ô quầy và cửa neo theo `tools/tham-so/ca-cang.json` và bảng quãng chạy. KH12 bến 2, bến 3 đổi từ tầng khác sang nhánh hành lang xa hơn. Mọi chữ "mặt cắt" đổi thành "mặt bằng". Không đổi luật, số, ID | DECISIONS 2026-11-23 Art top-down 45, brief đợt 10 | gd-quan |

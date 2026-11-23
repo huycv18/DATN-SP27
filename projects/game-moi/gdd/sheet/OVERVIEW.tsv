@@ -5,7 +5,7 @@ Designed by Huy
 INFORMATION	"Game Title: The Novent
 Genre: Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý
 Theme: Khoa học viễn tưởng sinh tồn
-Graphics: 2D vector, nhìn ngang
+Graphics: 2.5D, cảnh 3D trong Unity với asset 2D, top-down 45 độ
 Engine: Unity
 Age Rating: E+10
 Platform: PC, chơi đơn hoặc co-op online 2 đến 4 người"
@@ -27,7 +27,7 @@ GAME VISION & CONCEPT	"- Vision: tự tay kéo một trạm chết sống lại 
 - Bối cảnh: Trái Đất cạn kiệt, đoàn di cư của United Accord trên tàu mẹ Cradle đi tìm hành tinh mới
 - Daskel, tên độc tài của hành tinh Sennar, phát tín hiệu giả về hành tinh Solace để dụ và phục kích đoàn di cư (vụ The Scattering)
 - Người chơi tỉnh dậy trên Station Ember, một trạm con hỏng đang trôi giữa bãi vỡ
-- Concept: mỗi ngày tối đa 2 chuyến ra ngoài không gian (2D nhìn ngang, bay 8 hướng). Oxy vừa là thời gian vừa là máu
+- Concept: mỗi ngày tối đa 2 chuyến ra ngoài không gian (nhìn top-down 45 độ, bay 8 hướng). Oxy vừa là thời gian vừa là máu
 - Ngoài không gian: nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối
 - Về trạm: sửa khoang, chế đồ, nuôi Driftlife, rồi bán hàng cho tàu thương nhân The Veyl trong giờ giao thương để lấy Tally. Tally dùng nâng cấp bộ đồ và trạm để đi xa hơn
 - Truyện 5 chương: sống sót, tìm đường tới Solace, cứu Sevra (người thừa kế hợp pháp của Sennar), biết Solace là mồi, giúp mạng lưới của Sevra lật đổ Daskel. Sevra trao tọa độ hành tinh có sự sống thật, Ember rời neo. Kết mở cho phần sau
@@ -60,11 +60,11 @@ CORE GAMEPLAY	"- Vòng lớn: ra ngoài thu thập, mang về kho, sửa trạm,
 - Thời lượng mục tiêu: chuyến 4 đến 12 phút, giờ giao thương 3 đến 5 phút, một ngày 15 đến 30 phút
 - Chi tiết: tab CORE LOOP, Day, Player, Customer"
 
-ART DIRECTION	"- Phong cách: 2D vector, nhìn ngang ở mọi nơi (Lead chốt). Thêm 3D thành 2.5D: chưa chốt nhé
+ART DIRECTION	"- Phong cách: không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ ở mọi nơi (Lead chốt 2026-11-23). Unity dựng cảnh 3D, mọi asset là 2D
 - Không khí: khoa học viễn tưởng sinh tồn, nền nghiêm, hài nhẹ từ tính cách nhân vật. Bãi vỡ tối và lạnh, trạm Ember ấm dần lên theo từng khoang sửa xong (thấy được tiến trình bằng mắt)
 - Màu: không gian xanh than, tím đậm. Ánh sáng trạm cam ấm. Driftlife phát quang để đọc được trên nền tối. Giáp chế độ The Wardens trắng xương EDEBE0 và lục acid 7CFC3A, không ai khác dùng. 4 slot người chơi mỗi slot một màu kèm một hình: cam ○, lam ngọc △, vàng chanh □, hồng tím ◇
 - Nhân vật: silhouette đọc được ở 72 điểm ảnh mỗi u (720p). Mỗi nhân vật tối đa 6 màu chính cộng 2 nhấn. Người chơi bão hòa từ 70%, NPC tới 45%. Rig xương chung cho nhân loại, mảnh bộ đồ hoán đổi theo 5 trục nâng cấp
-- Môi trường: map tổng ghép từ kho mảnh dựng tay (tái dùng tối đa), trạm là mặt cắt ngang nhìn thấy các khoang, mỗi dải một bảng màu và loại mảnh vỡ riêng
+- Môi trường: map tổng ghép từ kho mảnh dựng tay (tái dùng tối đa), trạm là mặt bằng nhìn từ trên, khoang là phòng nối bằng hành lang, mỗi dải một bảng màu và loại mảnh vỡ riêng
 - UI: 16:9, chữ đọc được ở 1280x720, mỗi trạng thái quan trọng có tín hiệu hình kèm màu
 - Tham chiếu cảm giác: Dave the Diver (đọc rõ, vui mắt, nhân vật nhiều biểu cảm). Chỉ lấy cảm giác, không lấy asset
 - Chi tiết: tab Assets, ho-so-nhan-vat.md mục 7"

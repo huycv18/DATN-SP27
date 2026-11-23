@@ -14,7 +14,7 @@ Người chơi không có thanh máu. Sát thương tính bằng điểm Oxy, m�
 - Trúng đòn hủy mọi thao tác đang giữ phím: kích Recall Beacon, bắt bằng tay, cạy. Dụng cụ đang nạp không mất đạn.
 - Lướt có 0,2 giây đầu miễn sát thương. Đây là cách né chủ động duy nhất.
 
-Mọi đòn của kẻ địch có ba pha: Báo trước, Đánh, Hồi. Báo trước có cả hình (thân con vật sáng màu) và tiếng. Pha Hồi là lúc kẻ địch đứng yên sau đòn, mở sơ hở để người chơi đánh lại. Khoảng cách tính bằng u, 1 u bằng chiều cao nhân vật.
+Mọi đòn của kẻ địch có ba pha: Báo trước, Đánh, Hồi. Báo trước có cả hình (thân con vật sáng màu) và tiếng. Pha Hồi là lúc kẻ địch đứng yên sau đòn, mở sơ hở để người chơi đánh lại. Khoảng cách tính bằng u, 1 u bằng chiều cao nhân vật. Camera nhìn từ trên xuống, nghiêng 45 độ, và Driftlife là hình 2D đứng quay mặt về camera. Combat diễn ra trên một mặt phẳng ngang: vị trí, đường bay của đạn, hướng đòn, hướng đẩy lùi và vùng trúng đều tính trên mặt phẳng đó, không có đòn trên đầu hay dưới chân. Thân mỗi con vật nhận đòn ở vùng quanh chân hình vẽ, không theo chiều cao hình vẽ.
 
 | Loại đòn | Báo trước tối thiểu |
 |---|---|
@@ -34,7 +34,7 @@ Các mức này đặt theo prototype bay, để mọi đòn đều né được
 - Người đang Ngạt hoặc đang được cứu không bị nhắm và không nhận sát thương, kể cả đòn vùng.
 
 Ngắm tự do bằng chuột hoặc cần phải gamepad, không khóa mục tiêu. Gamepad được hỗ trợ ngắm, đạn lệch tối đa 6 độ về mục tiêu gần tâm ngắm nhất. Không có sát thương lên đồng đội. Trong trạm không dùng được dụng cụ combat. Phản hồi khi đánh và bị đánh:
-- Báo trước: thân con vật sáng vàng với đòn thường, đỏ với đòn lớn, kèm tiếng tích cao dần.
+- Báo trước: thân con vật sáng vàng với đòn thường, đỏ với đòn lớn, kèm tiếng tích cao dần. Đòn vùng hiện thêm viền vùng trúng mờ nằm phẳng trên mặt phẳng chơi.
 - Người chơi trúng đòn: nhân vật nháy trắng, thanh Oxy tụt có vệt đỏ. Rung màn nhẹ chỉ khi mất từ 15 Oxy, có tùy chọn tắt.
 - Hitstop đòn nhẹ 2 tới 3 khung hình, đòn nặng và lúc đứt Neo boss 4 tới 6 khung hình. Choáng là nhịp ngắt rõ, con vật đơ hẳn.
 
@@ -158,8 +158,8 @@ Bản MVP có bốn loài của Vành đai ngoài, mỗi loài dạy người ch
 
 Hạ một con cho nguyên liệu mô sinh học chung và có tỉ lệ ra đặc sản của loài, danh sách rơi xem mục II.5.
 
-[CHỜ ẢNH: bốn loài Driftlife Vành đai ngoài ở cỡ hiển thị thật, có hoạt ảnh Báo trước của Sting Krill và Arc Eel, lấy từ tab Assets khi artist giao]
-*Hình II.4.2 - Driftmoth, Skitter Ray, Sting Krill và Arc Eel, silhouette khác nhau ở cỡ nhỏ*
+[CHỜ ẢNH: bốn loài Driftlife Vành đai ngoài ở cỡ hiển thị thật dưới camera top-down 45 độ, có hoạt ảnh Báo trước của Sting Krill và Arc Eel kèm vùng trúng vẽ trên mặt phẳng, lấy từ tab Assets khi artist giao]
+*Hình II.4.2 - Driftmoth, Skitter Ray, Sting Krill và Arc Eel nhìn từ camera nghiêng 45 độ, silhouette khác nhau ở cỡ nhỏ*
 
 Chi tiết dữ liệu: tab Enemy khối Driftmoth, Skitter Ray, Sting Krill, Arc Eel. Nơi sinh và mật độ: tab Zone.
 
@@ -184,7 +184,7 @@ Chi tiết dữ liệu: tab Enemy khối Thứ tự xử lý.
 - Cửa phòng không khóa. Người chơi rút ra bằng lối vào rồi kích Recall Beacon đặt ngay ngoài phòng. Boss và con do boss sinh ra không rời phòng.
 - Không còn ai trong phòng quá 10 giây, hoặc cả nhóm đã về trạm, thì boss hồi đầy và về pha 1.
 - Boss miễn Dùi xung, không có thanh Choáng, chỉ Bất lực theo cơ chế từng pha. Lúc chuyển pha boss miễn sát thương 2 giây và có báo trước rõ.
-- Scrapmaw có 600 Sinh lực khi chơi một mình, 2 pha, thời lượng mục tiêu một mình 1 tới 2 phút. Phòng rộng 16 x 12 u, lõi năng lượng ở giữa, 3 điểm neo xúc tu trên tường.
+- Scrapmaw có 600 Sinh lực khi chơi một mình, 2 pha, thời lượng mục tiêu một mình 1 tới 2 phút. Phòng rộng 16 x 12 u, lõi năng lượng ở giữa, 3 điểm neo xúc tu trên tường. Nhìn từ trên, cửa vào ở một cạnh phòng, lõi ở tâm. Ở pha đầu thân boss cuộn trên lõi, ba xúc tu Neo căng trên sàn từ thân tới tường. Ở pha 2 Dây nối căng trên sàn từ gốc sát lõi tới thân boss và theo boss khi nó đuổi người.
 
 Pha đầu kéo dài tới khi đứt hết ba **Neo**, những xúc tu giữ thân boss vào tường, hoặc Sinh lực xuống dưới nửa. Xúc tu quấn che thân nên thân chỉ nhận sát thương khi boss đang Choáng:
 - Bắn Lao từ vào một Neo rồi giữ phím 2 giây để giật đứt, bị đánh trúng thì hủy. Mỗi Neo đứt thì boss Choáng 4 giây.

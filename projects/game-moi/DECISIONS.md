@@ -418,3 +418,4 @@ Lead: "Về Art game sẽ là không gian game là 3D đồ họa là 2.5D Góc 
 - Thay ràng buộc cũ "2D vector, có thể 2.5D (chưa chốt)" và góc nhìn ngang ở mọi nơi kèm mặt cắt trạm (log GDM 9, GDM tự quyết).
 - Đã sửa: CLAUDE.md, AGENTS.md, `so-hien-hanh.md`, `gdd/00-khung-game.md` mục Góc nhìn và mục 13.
 - Chưa sửa: các GDD, Book, tab và wireframe còn mô tả theo góc nhìn ngang (mặt cắt trạm ba tầng, cảng ở mép phải tầng giữa, layout map nhánh, greybox). GDM giao các vai sửa theo pipeline sau khi Lead trả lời câu hỏi phạm vi.
+- Lead: "Chuyển hết sang top-down" (trạm và cảng cũng vậy, bỏ mặt cắt). Đợt 10 (GD-070 tới GD-076, gd-qa ĐẠT) đã sửa map, trạm và cảng thành mặt bằng một lớp, điều khiển trong trạm đi 8 hướng, combat, spec camera orthographic 45 độ, wireframe. Quy ước chung ở log 118, Zmin camera ở log 119. Tải art nhân vật thành 75 bộ hình (3 hướng vẽ mỗi clip) thay cho 25.

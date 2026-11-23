@@ -196,7 +196,7 @@ confirm.leave_host	Chủ phòng thoát thì phiên kết thúc	44	UI-50
 confirm.leave_shift	Thoát giữa chừng sẽ mất lượt đang dở	40	UI-50
 tut.t36	{use} dùng vật tiêu hao hồi Oxy	40	T36
 story.line	{lời nhân vật}	60	UI-10
-tut.t01	{move} đi trái phải, {climb} leo thang	40	T01
+tut.t01	{move} đi tới điểm sáng	40	T01
 tut.t02	Mục tiêu ở góc phải, {notebook} Sổ tay	40	T02
 tut.t03	{interact} ở cửa khí để ra ngoài	40	T03
 tut.t04	{move} để bay tới vòng sáng	40	T04

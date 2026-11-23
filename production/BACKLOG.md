@@ -2,7 +2,7 @@
 
 Mục đích: mọi việc có pipeline (nhiều hơn một agent hoặc nhiều hơn một lượt) có một dòng ở đây. Việc nhỏ GDM làm thẳng không cần dòng.
 Trạng thái: `todo` / `doing` / `review` / `done` / `blocked`. Chỉ GDM đặt `done`. Mã `GD-###` tăng dần, không tái dùng.
-Mã lớn nhất đã cấp: GD-069
+Mã lớn nhất đã cấp: GD-076
 
 | ID | Project | Việc | Agent | Phụ thuộc | Trạng thái | Tiêu chí hoàn thành |
 |---|---|---|---|---|---|---|
@@ -75,3 +75,10 @@ Mã lớn nhất đã cấp: GD-069
 | GD-067 | game-moi | Sửa Doc Phần II và GDD theo QA GD-061, chạy lại sim kinh tế ca đầu ngày 5 | 8 vai, GDM | GD-061 | done (17 lỗi vừa đã sửa, sim ca đầu ngày 5, giờ ngân sách chương 1 0,8 theo Lead, chương 1 1,77 giờ. doi-chieu-sheet 23/23 tab KHỚP, docx 15 sơ đồ) | Mỗi lỗi QA có dòng xử lý, cổng Doc 0 lỗi, validate-gdd 0 lỗi, sim in số mới |
 | GD-068 | game-moi | Codex The Novent: Sheet mỗi hệ thống một tab (Vật phẩm, Salvage, Driftlife, Trạm và khoang, Thương nhân, Nhân vật và trạng thái). Cột Loại, Tên, Lời trong game, Nguồn nhận, Công thức, Dùng cho, Ảnh (học "Book of timberwalls") | gd-story (lời), gd-items (cột dữ liệu), GDM | GD-061 | todo | Mọi dòng ITEM LIST, Salvage, Enemy, Customer MVP có một mục, cột dữ liệu sinh từ TSV bằng script, lời qua soat |
 | GD-069 | game-moi | Danh sách SFX: nâng AUDIO ASSETS LIST theo khuôn "Sounds" của Timberwalls, tách cột Mô tả và Sự kiện phát, thêm cột 1 lần hay lặp, ưu tiên MVP, nguồn âm miễn phí. Rà đủ sự kiện từ GDD và Event Tracking | GDM, gd-ux (sự kiện UI) | GD-061 | todo | Mỗi sự kiện có âm trong GDD có đúng một dòng, không dòng nào thiếu Sự kiện phát, doi-chieu-sheet KHỚP |
+| GD-070 | game-moi | Map, map nhánh, hazard, greybox theo top-down 45 | gd-world | Lead chốt Art 2026-11-23 | done (gd-qa GD-076 ĐẠT) | Không còn mô tả nhìn ngang trong map.md, Zone, Book II.3, cổng máy đạt |
+| GD-071 | game-moi | Mặt bằng trạm Ember và cảng thay mặt cắt | gd-quan | Lead chốt Art 2026-11-23 | done (gd-qa GD-076 ĐẠT) | Mục 2.6b là mặt bằng, quãng chạy quầy tới cửa neo giữ như sim, Book II.6 khớp |
+| GD-072 | game-moi | Điều khiển trong trạm và hướng sprite nhân vật theo top-down | gd-character | Lead chốt Art 2026-11-23 | done (gd-qa GD-076 ĐẠT) | nguoi-choi.md, Player, Book II.2 không còn đi ngang, leo thang |
+| GD-073 | game-moi | Telegraph, hitbox, trận Scrapmaw theo top-down | gd-combat | Lead chốt Art 2026-11-23 | done (gd-qa GD-076 ĐẠT) | combat-driftlife.md và Book II.4 khớp top-down |
+| GD-074 | game-moi | Spec camera 45 độ, dựng 3D asset 2D, che khuất, camera co-op | gd-tech | Lead chốt Art 2026-11-23 | done (gd-qa GD-076 ĐẠT) | ky-thuat.md có mục camera và render đủ để dev dựng |
+| GD-075 | game-moi | Wireframe, HUD theo top-down | gd-ux | GD-070, GD-071 | done (gd-qa GD-076 ĐẠT) | ux-ui.md, WIREFRAME, Tutorials khớp mặt bằng mới, kiem-ux 0 lỗi |
+| GD-076 | game-moi | Nghiệm thu đợt 10 top-down | gd-qa | GD-070 tới GD-075 | done (gd-qa GD-076 ĐẠT) | qa/GD-076.md ĐẠT hoặc TRẢ LẠI kèm bằng chứng |

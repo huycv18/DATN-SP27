@@ -16,6 +16,7 @@ Cầu nối giữa GDD và 4 dev Unity. File này chốt cách dữ liệu đi t
 | Sim combat | Chạy được, S1 phần trận, S2 phần thời gian và ròng, S3, S4, S5 cho BS-1. S6 lý thuyết ở prototype | `tools/sim-combat.mjs`, `tools/ket-qua/sim-combat.md` |
 | Schema dữ liệu | Bản của gd-tech ở mục 2.1 (schema thuộc thẩm quyền gd-tech, GDM duyệt khi giao dev) | file này |
 | Đồng bộ co-op | Mô hình host nắm quyền, mục 2.2 | file này |
+| Camera và dựng cảnh | Top-down 45 độ, orthographic, sprite đứng, che khuất, camera co-op, mục 2.6 và 2.7. Số là [GIẢ ĐỊNH] chờ build | file này |
 | Netcode | Dev chọn, bảng so sánh ở mục 6.3 | file này |
 | Event Tracking | 73 sự kiện, mục 2.4: 46 gộp từ các GDD, 20 bổ sung, 5 của `ux-ui.md`, 2 của giờ giao thương khung Dave. Tab Sheet là bản đọc sửa tay, không sinh lại bằng `tools/xuat-event-tracking.mjs` | file này, tab Event Tracking |
 | Prototype bay | Chạy được: bay 8 hướng, hãm, lướt, Oxy, túi, thử né S6, 16 thanh chỉnh, xuất JSON. Số bậc 0 khớp `nguoi-choi.md` (đo trong trình duyệt: buông từ vmax dừng sau 0,51 giây và 1,5 u, hãm dừng sau 0,18 giây, lướt 15 u/s) | `tools/prototype/bay.html` |
@@ -63,7 +64,7 @@ Schema đề xuất (mỗi bảng một loại ScriptableObject, một asset m�
 | `ClueData` (vật truyện) | ma (MM hoặc V), itemId (STY), chuong, mocHien, branchMapId, khe, mucSoTay | `cot-truyen.md` mục 2.5, mục 6 | MVP cho chương 1 |
 | `ShipTypeData` | id (TA01..), luuBen bỏ, kienNhan (giây kiên nhẫn), tipHeSo, trongSo, thichHang (list {thungId, trongSo}), mePhan (thungId tip gấp đôi), moChuong, moHang, thuongNhan (TR id), luatRieng ({kieu, thamSo}), nhan. Đề xuất của gd-tech theo khung Dave, chờ gd-quan khớp với tab Customer | `tram-va-cang.md` loại tàu | MVP cho tàu mở đầu |
 | `CargoGroupData` | id (HC01..), kien (list CGO id), moChuong (int). Thùng là kiện chia hệ số thùng, giá thùng đọc từ giá kiện, lồng sống không chia | `tram-va-cang.md` Nhóm hàng, `vat-pham.md` | MVP |
-| `RoomData` (khoang) | id (KH01..), ten, chuongMo, nguoiVot (RS id), capSua (list {vatLieu, giay}), viTriMatCat ({tang, cot}) | `tram-va-cang.md` Danh mục, 2.6, 2.6b | MVP |
+| `RoomData` (khoang) | id (KH01..), ten, chuongMo, nguoiVot (RS id), capSua (list {vatLieu, giay}), viTriMatBang ({x, z, rong, sau}: tâm khoang và kích thước trên mặt bằng trạm, đơn vị u, mục 2.6) | `tram-va-cang.md` Danh mục, 2.6, 2.6b | MVP |
 | `PortRankData` | hang (int), nguongDiem, tranChuong, mo (list) | `tram-va-cang.md` 2.5 | MVP |
 | `StoryBeatData` | id (C1.x), chuong, dongChuong (bool, K25: chỉ mốc đóng chương mở dải mới), giaiDoanDongCo (giai đoạn động cơ phải lắp xong, chỉ khi dongChuong), truoc (list), dieuKien (list {loai, thamSo}, mọi điều kiện cùng đúng, không có "hoặc"), noi, canh, mo (list) | `cot-truyen.md` mục 6 (18 loại điều kiện) | MVP cho chương 1 |
 | `AreaData` (địa danh) | id (A01..), ten (list tên khu hiển thị), branchMapId hoặc zoneId, nhan | `map.md` danh mục A01 đến A05 | MVP cho A01 |
@@ -205,7 +206,7 @@ Sự kiện 47 đến 73:
 | 50 | Trip | zone_exit | Ra dải | player_id, zone | | string, string | `map.md` mục 6.2 |
 | 51 | Trip | branch_exit | Ra map nhánh | player_id, branch_id, minutes | Thời lượng mỗi lần vào map nhánh | string, string, float | `map.md` mục 6.2 |
 | 52 | Trip | branch_unlock | Mở khóa cửa hay vách map nhánh | branch_id, lock_id | | string, string | `map.md` mục 6.2 |
-| 53 | Trip | hazard_warn | Hazard bắt đầu báo trước gần người chơi | hazard_id, warn_seconds | Báo trước đo trên build từ 1 giây (`map.md` tiêu chí) | string, float | `map.md` mục 8 |
+| 53 | Trip | hazard_warn | Hazard bắt đầu báo trước gần người chơi | hazard_id, warn_seconds, on_screen | Báo trước đo trên build từ 1 giây (`map.md` tiêu chí), vùng báo trước có nằm trong màn không (mục 2.6) | string, float, bool | `map.md` mục 8 |
 | 54 | Combat | creature_wake | Driftlife tỉnh khỏi Choáng hoặc Ngủ | creature_id, kind | S3 | string, string | `driftlife_tinh` |
 | 55 | Combat | attack_ticket | Vé tấn công cấp hoặc trả | creature_id, player_id, state | Áp lực mỗi người | string, string, string | `ve_tan_cong_cap` |
 | 56 | Station | creature_born | Con non sinh ở khoang nuôi | species_id | Nhịp nuôi | string | `tram-va-cang.md` mục 6 |
@@ -237,6 +238,51 @@ Sự kiện 72 và 73 thêm ở đợt 9 cho giờ giao thương khung Dave (cù
 31. Người vào giữa giờ giao thương không đổi lịch giờ giao thương đó (luật 13). Người rớt giữa giờ giao thương khi đang cầm thùng: thùng rơi tại chỗ, host giữ, người khác nhặt được, hết Giữ chỗ mà tàu đã rời thì thùng về danh mục.
 32. Sự kiện một giờ giao thương theo thứ tự: `port_catalog_set` (trước giờ giao thương), `port_shift_start`, rồi mỗi tàu `ship_docked`, `ship_called`, `crate_delivered` hoặc `ship_left_unserved`, thêm `air_pump_done` khi có, cuối giờ giao thương `port_shift_end` và `port_player_idle` mỗi người một dòng. Sự kiện 30, 32 tới 37 do host ghi, 73 do máy của người đó ghi (luật 25). Tỉ lệ tàu phục vụ xong tính bằng số `crate_delivered` chia số tàu trong lịch (`ships` của `port_shift_start`). Tip trong Tally tính bằng tổng `tip` và `patience_gain` của bơm khí chia tổng Tally giờ giao thương.
 33. `PortTuning` cần các khóa: soTauTheoN (4 giá trị), cuaNeoTheoN (4 giá trị), caToiDa (300 giây, luật 34), choNgoai, thungHienSau, tuoiRoiGiuCua, kienNhan theo loại tàu, heSoHangHayGoi theo loại tàu (Tikko đồ Trái Đất 6, phế liệu 1), chiGoi theo loại tàu (Tàu vội chỉ gọi nhóm băng và khoáng, luật 24), doGoiTheoBacGia (Hàng chợ 3, sinh học 2, chế 1,5, sống 1, hiếm 1), giaThung theo món và giaLongTheoLoai (khối giaThung của gd-economy), tipToiDa, bom {batLucCap (50%, luật 28), sau, giu, hoi, tally}, datTruoc {thuTu, heSo}, caDau (2 tàu Loose Bolt, luật 67). Giá trị đặt theo kết quả sim, giá do gd-economy đặt.
+
+### 2.6 Camera và dựng cảnh top-down 45 độ `MVP`
+
+Nguồn: Lead chốt Art 2026-11-23 (`DECISIONS.md`), quy ước `briefs/dot10-top-down.md`. Một camera cho trạm, cảng, ngoài không gian. Mỗi máy tự chạy camera của mình, camera không đồng bộ qua mạng.
+
+34. Dựng cảnh: Unity dựng cảnh 3D, mọi asset là 2D. Mặt phẳng chơi là mặt phẳng XZ của Unity (y = 0). Phía bắc của map là +Z, phía trên màn hình. Đơn vị 1 u = 1 đơn vị Unity, nhân vật cao 1 u (khớp `map.md`). Mọi tốc độ, tầm, bán kính trong GDD là u hoặc u/s trên mặt phẳng này, không đổi số.
+35. Camera: Rotation (45, 0, 0) cố định, không xoay, không đổi góc theo cảnh. Phép chiếu orthographic. Camera đặt trên đường chéo cách tâm nhìn 40 u (near 0,3, far 120). Điều khiển 8 hướng theo trục màn hình: lên màn hình là +Z. Tốc độ bay là u/s trên mặt đất, nên chạy dọc màn hình trông chậm hơn chạy ngang khoảng 0,71 lần (cos 45 độ). Không bù tốc độ, vì đơn vị khoảng cách phải giữ nguyên (đợt 10). Playtest xem người chơi có phàn nàn (câu hỏi mở 6).
+36. Sprite đứng: nhân vật, Driftlife, vật phẩm, tàu, máy và vật cản cao là sprite quay mặt camera, Rotation (45, 0, 0) giống camera nên không bị méo. Pivot ở chân, chân đặt đúng điểm dưới sàn. Vị trí logic, hitbox, tầm và vùng báo trước tính theo điểm chân trên mặt phẳng XZ, không theo thân sprite. Mỗi sprite đứng có một bóng giả (sprite ellipse dẹt đặt ở y = 0,01) để người chơi thấy điểm chân.
+37. Thứ tự vẽ: vật nào chân nằm phía nam hơn (Z nhỏ hơn) vẽ sau, che vật phía bắc. Dev đặt Transparency Sort Mode là Custom Axis (0, 0, -1) hoặc dùng Sorting Order tính từ -Z (chiều dấu kiểm bằng ca thử: hai sprite chân ở Z = 0 và Z = -1, sprite Z = -1 phải che). Vật lớn nhiều ô (xác tàu, máy) cắt thành lát theo chiều ngang, mỗi lát một pivot ở mép nam của lát, để người đi giữa hai lát vẫn che đúng. Hazard, vùng báo trước, bóng, sàn vẽ trước mọi sprite đứng.
+38. Sàn và nền: sàn trạm, sàn cảng, mảnh map, vùng báo trước và hazard là tile hoặc quad phẳng nằm trên XZ, không phải sprite đứng. Tilemap dùng Cell Swizzle XZY. Vùng báo trước và vùng trúng là đĩa phẳng trên mặt đất: hình tròn bán kính r của GDD trông là ellipse rộng 2r, cao 1,41r trên màn hình, đúng theo phép chiếu, artist không vẽ ellipse tay. Nền sao là một quad lớn đi theo camera, UV cuộn 5% theo vị trí camera, chỉ để trang trí, không có hitbox. Không có model 3D.
+39. Vật lý: Physics 3D, mọi collider là trụ hoặc hộp đứng trên mặt phẳng XZ, khóa y và khóa xoay x, z. Bán kính tầm, vùng báo trước, bán kính hút nhặt tính trên XZ bằng khoảng cách phẳng (bỏ y). Vị trí gửi mạng là (x, z) hai float, không gửi y, cùng tần số của mục 2.2.
+40. Che khuất: vật cao (vách, xác tàu, máy, xác lớn) nằm trên layer Occluder, mang trường `doCao` (u). Mỗi khung, host và khách đều raycast từ camera tới điểm chân mỗi người chơi còn ngoài chuyến (và người ở trạm, cảng). Người chơi bị Occluder nằm giữa thì vật đó dùng shader dither cắt một ellipse quanh người, rộng 5 u và cao 3,5 u trên màn hình, alpha phần cắt 0,35, mờ dần 0,15 giây, trả lại 0,25 giây sau khi hết che. Dùng shader dither chứ không mờ cả vật, vì vách dài che nhiều người một lúc và mờ cả vách làm mất layout. Hiệu ứng chỉ là hình ảnh, không đổi va chạm hay tầm nhìn của Driftlife. Vùng báo trước và hazard vẽ trên sàn, không bị che.
+40b. Ngắm bằng chuột vào sprite cao: sprite đứng che phần mặt phẳng phía bắc chân, nên không ngắm theo điểm con trỏ chiếu xuống mặt đất. Mỗi khung dev bắn raycast từ con trỏ vào collider quad của sprite Driftlife và boss (layer Targetable, quad cùng cỡ sprite, cùng Rotation camera). Trúng quad của kẻ địch cỡ L hoặc boss thì hướng ngắm là từ người chơi tới tâm hitbox trên XZ của con đó (không phải điểm chân, không phải điểm con trỏ chiếu xuống đất). Cỡ S và M giữ ngắm theo điểm con trỏ chiếu xuống mặt phẳng XZ, vì sprite thấp không che đáng kể. Trúng nhiều quad thì lấy con có chân nằm phía nam nhất (cùng thứ tự vẽ của luật 37). Ngoại lệ: gamepad ngắm theo hướng cần analog, không dùng raycast. Đòn vùng nhắm điểm (Súng lưới) vẫn dùng điểm con trỏ chiếu xuống đất, không bắt vào tâm. Đây là cách đọc con trỏ, không đổi hitbox hay luật combat. Nguồn: giả định của gd-combat GD-073.
+41. Camera co-op (mọi N, kể cả N = 1): mỗi máy tính khung chứa tất cả người đang ngoài chuyến ở trạng thái Bay, Lướt, Kéo vật, Kích Recall, Trúng đòn, Ngạt, Được cứu, Giữ chỗ (không tính Về an toàn, Bị kéo về, Rời phiên, Chờ vào). Tâm là tâm hộp bao các điểm chân đó. Zoom (orthographic size) tăng vừa đủ để hộp bao cộng lề 4 u nằm trong màn, không dưới Zmin, không quá Zmax. Camera đi theo bằng SmoothDamp 0,25 giây, zoom đổi tối đa 3 đơn vị size mỗi giây, có vùng chết 1 u để đứng yên không rung.
+42. Quá ngưỡng: khi hộp bao không vừa Zmax (người xa nhau hơn ngưỡng co-op ở bảng dưới) camera đứng ở Zmax và giữ người của máy đó trong 60% giữa màn hình (kẹp tâm). Người ngoài màn hình hiện mũi tên ở viền (gd-ux đặt hình, gồm biểu tượng Ngạt, để cứu người xa). Không chia màn, không kéo người về gần, không giới hạn khoảng cách giữa hai người: đó là luật chơi, không thêm. Lý do không chia màn: co-op là online (C1), mỗi người một máy một màn, không có chơi chung một máy, và chia màn tốn thêm một camera mỗi người cho 4 dev mà không giải quyết gì mới. Lý do không kéo người hay khóa khoảng cách: chạm C6 và C9 (mỗi người kết thúc chuyến riêng) và luật Oxy riêng.
+43. Trạm và cảng: camera cùng góc, bám người của máy đó, Zmin. Kẹp camera trong biên mặt bằng (không hiện ra ngoài trạm). Giờ giao thương: camera cố định ở tâm cánh cảng, Zmin. Đã kiểm theo `tram-va-cang.md` 2.6b: ô quầy 1 tới cửa neo 3 dài 714 x 5,5/280 = 14,03 u, khung ngang Zmin 17,8 u, lề (17,8 - 14,03)/2 = 1,9 u mỗi bên, vừa. Tàu cập và tàu chờ ngoài xếp ở mép trên màn hình (phía bắc người chơi), camera phải chừa dải mép trên cho chúng, nên tâm đặt sao cho dải bắc của cảng nằm trong khung dọc 14,1 u. Chiều sâu bắc nam của cánh cảng chưa đặt trong 2.6b [GIẢ ĐỊNH]: dev kiểm khi dựng, nếu sâu quá 14,1 u thì camera bám người theo trục dọc, giữ cố định theo trục ngang. Người ở trạm (C9) xem đồng đội ngoài chuyến qua bản đồ và UI, không đổi camera.
+44. Chọn orthographic, không chọn perspective, vì: Một, khoảng cách u giữ đều trên màn hình, mọi tầm, vùng báo trước và bán kính hút nhặt đọc được bằng mắt, người chơi đo né đòn đúng như số GDD (báo trước 0,92 đến 1,3 giây dựa trên khoảng cách này). Hai, sprite 2D không bị méo và không đổi cỡ theo xa gần, artist vẽ một cỡ. Ba, sàn tile ghép khít, không cần mip hay lệch đường lưới. Bốn, zoom co-op chỉ là một số (size), không cần dịch camera thay đổi góc nhìn. Mất gì: không có cảm giác chiều sâu thật, chấp nhận vì art là 2D vector.
+
+Tham số camera (ô khởi điểm là đề xuất, đo trên build):
+
+| Tên | Khởi điểm | Khoảng an toàn | Tăng thì | Giảm thì | Nguồn |
+|---|---|---|---|---|---|
+| Góc nghiêng camera | 45 độ | cố định | | | Lead 2026-11-23 |
+| Phép chiếu | Orthographic | cố định | | | mục 2.6 luật 44 |
+| Zmin (size, 1 người và trạm) | 5 | 5 đến 6 | Thấy xa hơn, sprite nhỏ | Sprite lớn, ít thấy báo trước | [GIẢ ĐỊNH]. Size 5 giữ khung ngang 17,8 u ở 16:9 như `map.md` hiện hành |
+| Zmax (size, co-op) | 9 | 8 đến 11 | Chứa đội xa hơn, sprite nhỏ còn 56% | Người dễ ra khỏi màn | [GIẢ ĐỊNH] |
+| Vùng nhìn mặt đất ở Zmin (16:9) | 17,8 u ngang, 14,1 u dọc | theo Z | | | tính: ngang = 2 nhân size nhân 1,78, dọc = 2 nhân size nhân 1,41 |
+| Vùng nhìn mặt đất ở Zmax (16:9) | 32,0 u ngang, 25,5 u dọc | | | | tính như trên |
+| Ngưỡng co-op (hộp bao vừa Zmax, lề 4 u) | 24 u ngang, 17 u dọc | theo Zmax và lề | Cho đội tách xa | Cho đội gần | tính |
+| Tầm nhìn tối thiểu quanh người, phía trước | 7 u dọc, 8,9 u ngang tới mép màn ở Zmin | không thấp hơn 7 u dọc | | | [GIẢ ĐỊNH]. Theo `map.md` mục 3.1: R = 7 u ở Vành đai ngoài (MVP), Zmin 5 cho nửa dọc 7,05 u, đạt sát. Playtest đo bằng `hazard_warn` tham số `on_screen`, đòn nào báo trước ngoài màn thì nâng Zmin lên 5,6 (log GDM 119). Vành đai trong và Vùng trung tâm R = 10 u cần size từ 7,1, Sau MVP chọn giữa zoom theo dải và chỉ báo mép |
+| Lề hộp bao | 4 u | 3 đến 6 | | | [GIẢ ĐỊNH] |
+| Làm mượt camera | 0,25 giây | 0,15 đến 0,4 | | | [GIẢ ĐỊNH] |
+| Tốc độ đổi zoom | 3 size mỗi giây | 1,5 đến 5 | | | [GIẢ ĐỊNH] |
+| Vùng chết | 1 u | 0,5 đến 2 | | | [GIẢ ĐỊNH] |
+| Kẹp người của máy trong màn khi quá ngưỡng | 60% giữa | 50 đến 70% | | | [GIẢ ĐỊNH] |
+| Che khuất: ellipse cắt, alpha, mờ dần, trả lại | 5 x 3,5 u, 0,35, 0,15 giây, 0,25 giây | | | | [GIẢ ĐỊNH] |
+
+Cách đo khi có build: (1) vùng báo trước đòn nặng nhất (DL-X03 bán kính 6 u, phóng điện lõi BS-1 bán kính 4 u) nằm trong màn trước khi bắt đầu báo trước ít nhất 90% lần ở Zmin, đo bằng sự kiện `hazard_warn` kèm cờ `on_screen`. (2) Tỉ lệ người chơi trúng đòn có `player_hit` mà nguồn đòn ngoài màn hình trước đó không quá 5%. (3) Đội 2 người cùng đi trong ngưỡng 24 u ngang bao nhiêu phần thời gian (gd-qa ghi khoảng cách hai người mỗi 5 giây khi playtest). (4) Cỡ sprite nhân vật ở Zmax còn đọc được khi so với Zmin trên màn 1080p (nhân vật cao 1 u là 108 px ở Zmin, 60 px ở Zmax).
+
+### 2.7 Yêu cầu cho art và dev từ camera
+
+| Ai | Yêu cầu |
+|---|---|
+| Artist 2D | Sprite đứng vẽ nhìn xiên 45 độ từ trên xuống (thấy đỉnh đầu và phần mặt phẳng trên), không vẽ nhìn ngang, vì camera nghiêng. Nhân vật cao 1 u. Pivot ở chân. Vùng báo trước là texture đĩa tròn vuông (không vẽ ellipse), dev đặt trên XZ. Sàn và tường thấp là tile 1 u vuông trên XZ |
+| Dev | Camera orthographic, script camera co-op (hoặc Cinemachine Group Framing cộng script kẹp 60%), sort theo -Z, shader dither che khuất, bóng giả, Tilemap XZY |
 
 ## 3. Tham số
 
@@ -354,6 +400,8 @@ Không bám game tham chiếu. Cách dùng Sheet làm nguồn dữ liệu và ID
 | Chuỗi và bước tutorial có thành ScriptableObject không | gd-ux, dev | Chưa. Dev đọc thẳng `strings/strings.tsv` và bảng bước của `ux-ui.md` |
 | Giữ chỗ tối đa 1 lần mỗi chuyến (luật 16) | gd-character | Đã nhận, `nguoi-choi.md` 2.9 có trần (log GDM 104) |
 | Ai chơi thử prototype bay để chốt cảm giác | GDM | Lead hoặc gd-qa chơi 10 phút, xuất JSON gửi gd-character |
+| Có bù tốc độ dọc màn hình (chạy dọc trông chậm 0,71 lần) không | GDM, Lead | Không bù, giữ đơn vị khoảng cách. Quyết lại sau playtest nếu người chơi phàn nàn |
+| Tầm nhìn tối thiểu ngoài không gian (số của gd-world) | gd-world | Đã có ở `map.md` 3.1: 7 u ở Vành đai ngoài, 10 u từ Vành đai trong. MVP giữ Zmin 5 (log GDM 119) |
 
 ## Co-op 1 đến 4 người
 
@@ -394,4 +442,5 @@ File này là phần co-op kỹ thuật của mọi hệ thống: mục 2.2 và 
 | 2026-11-20 | Đợt 9 (GD-054): giờ giao thương theo khung Dave. Sim giờ giao thương viết lại (N người chia việc, quét số tàu và cửa neo, 3 kiểu danh mục, bơm khí). Mục 2.5 mới. Sự kiện giờ giao thương 30 đến 37 viết lại, thêm 72 và 73. Schema ShipTypeData, dữ liệu động của giờ giao thương đổi sang thùng, danh mục | Lead chốt giờ giao thương theo khung Dave | gd-tech |
 | 2026-11-20 | Đợt 9 vòng 2 (GD-054): sim nối giaThung của gd-economy, độ gọi nhân hệ số hàng hay gọi (luật 24), Tàu vội chỉ gọi băng và khoáng, bơm khí 50% lúc cập (luật 28), giờ giao thương 300 giây (luật 34), giờ giao thương đầu (luật 67). So sánh cửa neo hiện hành, 4 cửa, 3 cửa thùng 1 giây. Mục đo: 6 kiểu danh mục, Tàu vội, đồ Trái Đất và đơn đặt trước. Khóa PortTuning cập nhật | Lead chốt giờ giao thương, gd-quan sửa luật | gd-tech |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer | GDM |
+| 2026-11-23 | GD-074 (đợt 10, Lead chốt Art top-down 45 độ): thêm mục 2.6 và 2.7 camera, dựng 3D với asset 2D, thứ tự vẽ, che khuất, camera co-op. Đổi trường vị trí khoang trên RoomData sang `viTriMatBang`. Sự kiện 53 thêm `on_screen`. Luật 43: camera giờ giao thương cố định ở tâm cảng, đã kiểm với 2.6b. Luật 40b: ngắm chuột vào sprite cao (L, boss) quy về tâm hitbox trên XZ. Không đổi luật chơi, số GDD | Lead chốt Art 2026-11-23 | gd-tech |
 | 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): tally_gain nguồn ship đổi thành preorder, tham số lưu đổi sang tiếng Anh save_point, attempt. Không đổi luật | Đánh giá humanizer | GDM |

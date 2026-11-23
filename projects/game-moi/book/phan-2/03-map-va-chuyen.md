@@ -10,13 +10,13 @@ Một **chuyến** là một lần ra ngoài rồi về. Chuyến bắt đầu k
 
 ### II.3.2. The Wake and Tiles
 
-Map tổng nhìn ngang. Trạm Ember nằm ngoài lưới ở mép trái, cửa khí mở vào giữa chiều cao map. Đi sang phải là đi xa trạm. Map tổng gồm ba **dải** nối tiếp theo chiều ngang là Vành đai ngoài, Vành đai trong và Vùng trung tâm. Bản MVP chỉ có Vành đai ngoài, tên riêng Ember Anchorage, môi trường chân không sạch nên không đòi cấp vỏ bộ đồ.
+Map tổng là một mặt phẳng nhìn từ trên xuống, camera top-down nghiêng 45 độ, phía trên màn hình là phía bắc. Người chơi bay tự do 8 hướng trên mặt phẳng đó. Trạm Ember nằm ngoài lưới ở mép trái, cửa khí mở vào giữa chiều dọc map. Đi sang phải là đi xa trạm. Map tổng gồm ba **dải** nối tiếp từ trái sang phải là Vành đai ngoài, Vành đai trong và Vùng trung tâm. Bản MVP chỉ có Vành đai ngoài, tên riêng Ember Anchorage, môi trường chân không sạch nên không đòi cấp vỏ bộ đồ.
 
 Mỗi dải là một lưới **mảnh**, tức khối không gian dựng tay cùng kích thước:
-- Mảnh rộng 40 u, cao 24 u. 1 u bằng chiều cao nhân vật, một mảnh bằng khoảng 2,2 x 2,4 màn hình.
-- Dải cao 3 hàng. Vành đai ngoài có 4 cột, tức 12 ô, chạy từ 0 tới 160 u theo chiều ngang.
+- Mảnh rộng 40 u theo chiều ngang màn hình, 24 u theo chiều dọc. 1 u bằng chiều cao sprite nhân vật, một mảnh bằng khoảng 2,2 x 1,7 màn hình ở mức zoom gần nhất.
+- Dải có 3 hàng xếp từ dưới lên trên màn hình. Vành đai ngoài có 4 cột, tức 12 ô, chạy từ 0 tới 160 u theo chiều ngang.
 - Mỗi cạnh mảnh có một cổng mở rộng 8 u ở giữa cạnh, hoặc đóng. Hai mảnh cạnh nhau chỉ thông khi cả hai cạnh chạm nhau đều mở.
-- Biên trên và biên dưới là tường mảnh vỡ dày. Chạm biên thì dừng lại, không mất Oxy.
+- Biên trên (bắc) và biên dưới (nam) là tường mảnh vỡ dày. Chạm biên thì dừng lại, không mất Oxy.
 
 Mỗi mảnh thuộc một loại. Loại quyết định vai của mảnh trên đường đi và số khe điểm sinh nó mang (xem mục II.3.4):
 
@@ -32,7 +32,7 @@ Mỗi mảnh thuộc một loại. Loại quyết định vai của mảnh trên
 - **Ember Mooring**, ô cột 1 hàng giữa, ngay trước cửa khí. Bốn cạnh đều mở. Ô luôn có 6 khe phế liệu và 1 khe Driftlife hiền có hàng, không hazard, không loài săn mồi. Đây là chỗ an toàn để học bay ở 30 giây đầu game.
 - Ô lối vào Station Cinder, cột 3 hàng trên. Vỏ xác 32 x 16 u nhìn thấy từ Ember Mooring, làm mốc định hướng cho cả dải.
 
-Dải chưa mở bị chặn bằng **Rạn vụn**, dải va chạm cứng dày 8 u nằm ở đầu dải sau, cao suốt chiều cao map. Không dụng cụ nào phá được. Ở MVP người chơi chạm Rạn vụn ở cuối Vành đai ngoài thì hiện dòng chưa có đường qua.
+Dải chưa mở bị chặn bằng **Rạn vụn**, dải va chạm cứng dày 8 u nằm ở đầu dải sau, chắn suốt chiều dọc map. Không dụng cụ nào phá được. Ở MVP người chơi chạm Rạn vụn ở cuối Vành đai ngoài thì hiện dòng chưa có đường qua.
 
 Chi tiết dữ liệu: tab Zone khối Map tổng The Wake và khối Vành đai ngoài, Ember Anchorage.
 
@@ -104,9 +104,9 @@ Bản MVP có ba hazard:
 | Ống xì | Đẩy | Luồng chữ nhật dài 12 u, rộng 3 u, theo một trong 8 hướng. Đẩy 6 u/s, không trừ Oxy | Hơi trắng 1 giây | Xì 3 giây, nghỉ 3 giây | Bay xuôi để tăng tốc, hoặc đợi lúc nghỉ |
 
 Mảnh trôi cần chỉ báo ở mép màn hình vì nó có thể tới trước khi người chơi kịp thấy:
-- Vùng nhìn tối thiểu là 17,8 x 10 u, nửa chiều ngang là 8,9 u. Tốc độ tương đối lớn nhất là 17 u/s, gồm lướt 15 u/s và trôi 2 u/s. Ở tốc độ đó Mảnh trôi đi hết nửa màn trong 0,52 giây, ngắn hơn báo trước tối thiểu.
+- Ở mức zoom gần nhất, vùng nhìn trên mặt phẳng chơi là 17,8 u ngang x 14,1 u dọc, nửa ngang 8,9 u, nửa dọc 7,05 u. Tốc độ tương đối lớn nhất là 17 u/s, gồm lướt 15 u/s và trôi 2 u/s. Ở tốc độ đó Mảnh trôi đi hết nửa màn ngang trong 0,52 giây, nửa màn dọc trong 0,41 giây, đều ngắn hơn báo trước tối thiểu.
 
-Hazard cũng dùng để làm node khó lấy. Ở Vành đai ngoài, Hòm kỹ thuật vỡ đặt cạnh Cáp chập, nên muốn lấy hòm người chơi phải canh nhịp tia. Lần đầu gặp mỗi hazard có một dòng gợi ý. Trúng hazard thì nhân vật nháy và bị đẩy ngay trong khung hình đó, thanh Oxy rơi kèm số trừ.
+Hazard cũng dùng để làm node khó lấy. Ở Vành đai ngoài, Hòm kỹ thuật vỡ đặt cạnh Cáp chập, nên muốn lấy hòm người chơi phải canh nhịp tia. Lần đầu gặp mỗi hazard có một dòng gợi ý. Trúng hazard thì nhân vật nháy và bị đẩy ngay trong khung hình đó, thanh Oxy tụt kèm số trừ.
 
 Chi tiết dữ liệu: tab Zone khối Hazard: luật chung và ba khối Hazard Mảnh trôi, Cáp chập, Ống xì.
 
@@ -185,49 +185,49 @@ Chi tiết dữ liệu: tab Zone khối Ngân sách Oxy một chuyến.
 
 Map nhánh là khu dựng tay không sinh lại bố cục. Map nhánh giữ trạng thái giữa các chuyến: cửa đã mở, vách đã cắt, boss đã hạ, đường tắt đã mở, vật kể chuyện đã lấy. Tài nguyên và Driftlife thường trong map nhánh vẫn sinh lại mỗi chuyến như map tổng. Vào và ra qua một màn chuyển cảnh ngắn. Khóa trong map nhánh mở bằng dụng cụ, mốc truyện hoặc hạ boss, và một người mở được mọi khóa. Map nhánh dùng môi trường của dải chứa lối vào.
 
-Bản MVP có một map nhánh là **Station Cinder**, xác Seed Station đầu tiên ở Vành đai ngoài. Lối vào mở sau mốc truyện Hãm trôi và neo, tức khi khoang neo của trạm Hoạt động (xem mục Trạm và cảng). Nội thất có hai tầng, chia thành các khu:
+Bản MVP có một map nhánh là **Station Cinder**, xác Seed Station đầu tiên ở Vành đai ngoài. Lối vào mở sau mốc truyện Hãm trôi và neo, tức khi khoang neo của trạm Hoạt động (xem mục Trạm và cảng). Nhìn từ trên, nội thất là hai dãy song song chạy từ trái sang phải: dãy nam ở nửa dưới màn hình, dãy bắc ở nửa trên. Vách giữa hai dãy kín, chỉ thông ở lối nối đầu hành lang trục và ở khoang lái. Các khu:
 
 | Khu | Vị trí | Có gì |
 |---|---|---|
-| Cửa khí hỏng | Tầng dưới, đầu trái | Lối vào và lối ra chính, beacon cố định |
-| Hành lang trục | Tầng dưới | Hai Mảnh trôi, đàn Driftmoth, phế liệu, linh kiện, một hòm kỹ thuật. Beacon ngay trước Cửa khóa nguồn để rút khỏi phòng boss |
-| Khoang ngủ đông trái | Tầng trên, lên bằng giếng ở đầu hành lang trục | Buồng của Ingrid (Kỹ sư), một buồng tắt có thẻ tên, nhật ký trạm, một hòm kỹ thuật. Vách sập ở mép phải chặn đường sang khoang ngủ đông phải, không phá được |
+| Cửa khí hỏng | Dãy nam, đầu trái | Lối vào và lối ra chính, beacon cố định |
+| Hành lang trục | Dãy nam | Hai Mảnh trôi, đàn Driftmoth, phế liệu, linh kiện, một hòm kỹ thuật. Beacon ngay trước Cửa khóa nguồn để rút khỏi phòng boss |
+| Khoang ngủ đông trái | Dãy bắc, vào bằng lối nối ở đầu hành lang trục | Buồng của Ingrid (Kỹ sư), một buồng tắt có thẻ tên, nhật ký trạm, một hòm kỹ thuật. Vách sập ở mép phải chặn đường sang khoang ngủ đông phải, không phá được |
 | Cửa khóa nguồn | Cuối hành lang trục | Mở bằng Bộ kích nguồn. Nhóm đã có thì ai chạm cửa cũng mở |
-| Khoang máy | Tầng dưới, sau Cửa khóa nguồn | Phòng boss Scrapmaw, lõi năng lượng, hai Cáp chập, kho hàng Seed mở sau boss |
-| Khoang lái | Đầu phải, hai tầng | Manh mối, mảnh lõi dẫn đường Cinder, một hòm kỹ thuật, beacon bật sau boss |
-| Hành lang trên và khoang ngủ đông phải | Tầng trên | Hành lang trên là đường duy nhất từ khoang lái tới buồng của Linh (Thông dịch viên). Khoang có thêm một buồng tắt có thẻ tên |
+| Khoang máy | Dãy nam, sau Cửa khóa nguồn | Phòng boss Scrapmaw, cạnh dài theo chiều ngang, lõi năng lượng ở tâm phòng, ba điểm neo xúc tu giữa vách trên, vách dưới và vách phải, hai Cáp chập, kho hàng Seed mở sau boss |
+| Khoang lái | Đầu phải, chiếm cả hai dãy | Manh mối, mảnh lõi dẫn đường Cinder, một hòm kỹ thuật, beacon bật sau boss |
+| Hành lang trên và khoang ngủ đông phải | Dãy bắc | Hành lang trên là đường duy nhất từ khoang lái tới buồng của Linh (Thông dịch viên). Khoang có thêm một buồng tắt có thẻ tên |
 
 Người chơi đi Station Cinder trong hai lần:
 
 | Lần | Cần có | Đường đi | Kết quả | Thời lượng trong nhánh |
 |---|---|---|---|---|
-| Lần 1 | Không | Cửa khí hỏng, hành lang trục, giếng, khoang ngủ đông trái | Vớt Ingrid, kéo buồng về beacon ở cửa khí hỏng | 90 giây |
+| Lần 1 | Không | Cửa khí hỏng, hành lang trục, lối nối, khoang ngủ đông trái | Vớt Ingrid, kéo buồng về beacon ở cửa khí hỏng | 90 giây |
 | Lần 2 | Bộ kích nguồn | Cửa khí hỏng, hành lang trục, Cửa khóa nguồn, khoang máy, khoang lái, hành lang trên, khoang ngủ đông phải | Hạ hoặc xua Scrapmaw, vớt Linh, kéo buồng về beacon ở khoang lái | 150 giây, gồm trận boss ước 60 giây |
 
 Bộ kích nguồn là món đầu tiên Ingrid chế ở xưởng, chỉ dùng tài nguyên thô Vành đai ngoài. Vì vậy lần đầu dạy kéo buồng và beacon cố định, lần sau mới mở trận boss. Vách giữa khoang máy và khoang lái chỉ mở khi trận boss kết thúc, bằng cách hạ hoặc xua đi, nên muốn tới Linh phải qua trận boss. Cửa phòng boss không khóa. Beacon để rút giữa trận nằm ngoài phòng, cách Cửa khóa nguồn 6 u về phía hành lang trục. Driftlife do boss sinh ra không rời phòng, nên beacon đó luôn kích được. Cơ chế trận boss ở mục Combat.
 
 Người vớt nằm trong **buồng ngủ đông**, vật kéo nặng không vào túi. Muốn vớt thì kéo buồng tới beacon hoặc tới cửa ra. Buồng tới trạm thì vào khu hồi sức (xem mục Trạm và cảng). Tốc độ khi kéo và Oxy hao thêm khi kéo ở mục Người chơi.
 
-[CHỜ ẢNH: sơ đồ mặt cắt Station Cinder hai tầng có tên khu, vẽ từ spec greybox ở `map.md` mục 6.5 hoặc chụp greybox Unity]
-*Hình II.3.2 - Mặt cắt Station Cinder, hai tầng, phòng boss ở giữa tầng dưới*
+[CHỜ ẢNH: sơ đồ mặt bằng Station Cinder nhìn từ trên, hai dãy nam và bắc có tên khu, vẽ từ spec greybox ở `map.md` mục 6.5 hoặc chụp greybox Unity]
+*Hình II.3.2 - Mặt bằng Station Cinder, dãy nam và dãy bắc, phòng boss ở cuối dãy nam*
 
 Chi tiết dữ liệu: tab Zone khối Map nhánh Station Cinder.
 
 ### II.3.9. Greybox Spec
 
-Đơn vị Unity là 1 u, bằng chiều cao nhân vật. Gốc tọa độ map tổng đặt ở cửa khí của Ember theo chiều ngang và ở biên dưới map theo chiều dọc.
+Đơn vị Unity là 1 u, bằng chiều cao sprite nhân vật. Unity dựng cảnh 3D, mặt phẳng chơi là mặt XZ, mọi asset là sprite 2D. Tọa độ (x, y) dưới đây là tọa độ mặt bằng: x là trục X của Unity, y là trục Z (lên màn hình, phía bắc). Gốc tọa độ map tổng đặt ở cửa khí của Ember theo trục x và ở biên dưới (nam) của map theo trục y.
 
 | Phần | Tọa độ (u) | Ghi chú |
 |---|---|---|
-| Camera | Cao 10, rộng 17,8 ở tỉ lệ 16:9 | Mở ngang tới 21:9 |
+| Camera | Orthographic nghiêng 45 độ. Gần nhất 17,8 x 14,1, xa nhất 32 x 25,5 ở tỉ lệ 16:9, mở ngang tới 21:9 | Spec camera ở `ky-thuat.md` mục 2.6. Bán kính tầm nhìn tối thiểu quanh người chơi 7 u ở Vành đai ngoài |
 | Vỏ ngoài Ember | x từ -40 tới 0, y từ 24 tới 48 | Ngoài lưới. Cửa khí ở (0, 36) |
 | Lưới Vành đai ngoài | x từ 0 tới 160, y từ 0 tới 72 | 4 cột x 3 hàng, mỗi ô 40 x 24 |
 | Ember Mooring | x từ 0 tới 40, y từ 24 tới 48 | Bốn cổng mở |
 | Lối vào Station Cinder | x từ 80 tới 120, y từ 48 tới 72 | Cổng Trái, Phải, Dưới mở, cạnh Trên là biên map. Cửa vào ở cạnh dưới vỏ xác |
 | Rạn vụn | x từ 160 tới 168, y từ 0 tới 72 | Va chạm cứng |
-| Biên trên, biên dưới | y = 0 và y = 72 | Va chạm vô hình kèm lớp hình mảnh vỡ dày |
-| Kích thước tối thiểu | Khe hở 3, đường chính rộng 6, cổng mảnh 8 | Nhân vật cao 1 u |
-| Station Cinder | Scene riêng, rộng 64, cao 24, gốc ở góc dưới trái vỏ xác | Tọa độ từng khu, buồng, beacon và Cáp chập ở `map.md` mục 6.5 |
+| Biên dưới, biên trên | y = 0 và y = 72 | Va chạm vô hình kèm lớp hình mảnh vỡ dày |
+| Kích thước tối thiểu | Khe hở 3, đường chính rộng 6, cổng mảnh 8 | Nhân vật chiếm 1 u trên mặt phẳng chơi |
+| Station Cinder | Scene riêng, mặt bằng 64 x 24, gốc ở góc dưới trái vỏ xác | Tọa độ từng khu, buồng, beacon và Cáp chập ở `map.md` mục 6.5 |
 
 | Lớp va chạm | Dùng cho | Va với người chơi | Va với Driftlife |
 |---|---|---|---|
@@ -242,7 +242,7 @@ Bố cục dự phòng Vành đai ngoài đi đường chính ở hàng giữa:
 | Hàng | Cột 1 | Cột 2 | Cột 3 | Cột 4 |
 |---|---|---|---|---|
 | Trên | Hành lang | Xác lớn | Lối vào Station Cinder | Mở, beacon nếu chuyến trước không ở đây |
-| Vành đai trong | Ember Mooring | Hành lang | Xác lớn | Mở |
+| Giữa | Ember Mooring | Hành lang | Xác lớn | Mở |
 | Dưới | Mở | Hành lang | Ổ | Xác lớn, beacon thay thế |
 
 Chi tiết dữ liệu: tab Zone khối Map tổng The Wake và khối Map nhánh Station Cinder.
@@ -285,7 +285,7 @@ Chi tiết dữ liệu: tab Zone khối Ngân sách Oxy một chuyến, tab MVP 
 |---|---|
 | Oxy về 0 đúng lúc giữ phím beacon xong | Giữ xong tính trước, người chơi về trạm, không vào Ngạt |
 | Spam phím giữ beacon, nhấn nhả liên tục | Mỗi lần nhả là hủy, tiến độ về 0, không cộng dồn |
-| Đang kéo buồng ngủ đông thì Oxy về 0 | Buồng rơi tại chỗ, ở lại map nhánh ở trạng thái chưa vớt, không mất người vớt |
+| Đang kéo buồng ngủ đông thì Oxy về 0 | Buồng bị thả tại chỗ, ở lại map nhánh ở trạng thái chưa vớt, không mất người vớt |
 | Kéo Driftlife sống tới beacon nhưng nó ở ngoài 3 u | Driftlife không đi cùng, ở lại map |
 | Hazard đẩy người chơi vào Rạn vụn hoặc biên map | Dừng lại ở ranh, không trừ Oxy |
 | Thoát game giữa chuyến khi chơi một mình | Vào lại ở điểm lưu sau chuyến trước. Chuyến dở không tính vào hạn hai chuyến của ngày, đồ nhặt trong chuyến đó mất, người chơi đi lại chuyến đó với cùng bố cục map |

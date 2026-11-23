@@ -273,7 +273,7 @@ Chương 1 trọn vẹn: Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Th
 - Không khí: khoa học viễn tưởng sinh tồn, nền nghiêm, hài nhẹ từ tính cách nhân vật. Bãi vỡ tối và lạnh, trạm Ember ấm dần lên theo từng khoang sửa xong (thấy được tiến trình bằng mắt)
 - Màu: không gian xanh than, tím đậm. Ánh sáng trạm cam ấm. Driftlife phát quang để đọc được trên nền tối. Giáp chế độ The Wardens trắng xương EDEBE0 và lục acid 7CFC3A, không ai khác dùng. 4 slot người chơi mỗi slot một màu kèm một hình: cam ○, lam ngọc △, vàng chanh □, hồng tím ◇
 - Nhân vật: silhouette đọc được ở 72 điểm ảnh mỗi u (720p). Mỗi nhân vật tối đa 6 màu chính cộng 2 nhấn. Người chơi bão hòa từ 70%, NPC tới 45%. Rig xương chung cho nhân loại, mảnh bộ đồ hoán đổi theo 5 trục nâng cấp
-- Môi trường: map tổng ghép từ kho mảnh dựng tay (tái dùng tối đa), trạm là mặt cắt ngang nhìn thấy các khoang, mỗi dải một bảng màu và loại mảnh vỡ riêng
+- Môi trường: map tổng ghép từ kho mảnh dựng tay (tái dùng tối đa), trạm là mặt bằng nhìn từ trên, khoang là phòng nối bằng hành lang, mỗi dải một bảng màu và loại mảnh vỡ riêng
 - UI: 16:9, chữ đọc được ở 1280x720, mỗi trạng thái quan trọng có tín hiệu hình kèm màu
 - Tham chiếu cảm giác: Dave the Diver (đọc rõ, vui mắt, nhân vật nhiều biểu cảm). Chỉ lấy cảm giác, không lấy asset
 - Chi tiết: tab Assets, ho-so-nhan-vat.md mục 7

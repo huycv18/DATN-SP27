@@ -190,6 +190,8 @@ Lính The Wardens: một bộ giáp trắng xương đường lục acid dùng c
 
 Yêu cầu chung: 2D vector, rig xương, bóng đổ phẳng 2 mức, viền theo màu tối của vùng, bảng màu theo mục 3. Thời lượng clip theo giây (ước), loop ghi chú.
 
+Tải art theo hướng (top-down 45 độ, GD-072): mỗi clip vẽ 3 hướng (lên, xuống, ngang), ngang lật gương. Ngoài không gian 17 clip thành 51 bộ hình, trong trạm 8 clip thành 24 bộ hình, tổng 75 bộ thay cho 25 bộ khi nhìn ngang.
+
 Clip nhân vật người chơi ngoài không gian (mỗi clip dùng cho 4 skin):
 
 | # | Clip | Thời lượng | Loop | Nhãn |
@@ -212,13 +214,13 @@ Clip nhân vật người chơi ngoài không gian (mỗi clip dùng cho 4 skin)
 | 16 | Ping chỉ tay | 0,3 | Không | MVP |
 | 17 | Dùng dụng cụ bắt | 0,5 | Không | MVP |
 
-Clip trong trạm:
+Clip trong trạm (top-down 45 độ, 3 hướng vẽ lên, xuống, ngang, ngang lật gương, đi 8 hướng dùng hướng gần nhất):
 
 | # | Clip | Thời lượng | Loop | Nhãn |
 |---|---|---|---|---|
 | 1 | Idle | 2,0 | Có | MVP |
-| 2 | Đi | 0,8 | Có | MVP |
-| 3 | Leo thang | 0,8 | Có | MVP |
+| 2 | Đi ngang (lật gương cho trái, phải) | 0,8 | Có | MVP |
+| 3 | Đi lên và đi xuống (hai hướng vẽ) | 0,8 | Có | MVP |
 | 4 | Mang thùng (đi) | 0,8 | Có | MVP |
 | 5 | Nhặt và giao thùng | 0,4 | Không | MVP |
 | 6 | Tương tác | 0,5 | Không | MVP |

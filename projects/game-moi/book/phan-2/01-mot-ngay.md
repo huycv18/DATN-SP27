@@ -56,7 +56,7 @@ Pha Giờ giao thương là nửa chơi tay thứ hai. Luật của giờ giao t
 
 Pha Cuối ngày là lúc tiêu Tally vừa kiếm được và đọc truyện. Người chơi ngủ ở buồng ngủ đông thì game lưu và sang ngày mới.
 
-[CHỜ ẢNH: mặt cắt trạm lúc cuối ngày, người chơi đứng ở buồng ngủ đông, chụp từ build]
+[CHỜ ẢNH: mặt bằng trạm nhìn top-down lúc cuối ngày, người chơi đứng ở buồng ngủ đông, chụp từ build]
 *Hình II.1.2 - Trạm lúc cuối ngày, người chơi chuẩn bị ngủ*
 
 Chi tiết dữ liệu: tab Day trên Sheet GDD, khối Cấu trúc một ngày.

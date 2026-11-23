@@ -12,7 +12,7 @@ Gồm 30 màn, HUD ngoài không gian và trong giờ giao thương, bảng phí
 
 | Mục | Giá trị khởi điểm | Nhãn |
 |---|---|---|
-| Khung hình | 16:9, thiết kế ở 1280x720, lề an toàn 5% (64 x 36 px), chiều cao camera ngoài không gian 10 u | MVP |
+| Khung hình | 16:9, thiết kế ở 1280x720, lề an toàn 5% (64 x 36 px), vùng nhìn ngoài không gian 17,8 x 10 u trên màn hình, tức 17,8 x 14,1 u mặt đất ở Zmin (`ky-thuat.md` mục 2.6) | MVP |
 | Cỡ chữ | Thân chữ tối thiểu 12 px ở 720p (tương đương 18 px ở 1080p), người chơi chọn 100%, 150%, 200% | MVP |
 | Số màn | 30 màn (bảng 2.2), 28 màn MVP và 2 màn Sau MVP. Wireframe trên Figma (mục 2.8) | MVP và Sau MVP |
 | HUD ngoài không gian | 18 phần tử HUD-01 đến HUD-18 (gồm bánh ping, HUD boss, thanh Choáng trên Driftlife), chỉ Oxy, túi, dụng cụ luôn hiện | MVP |
@@ -32,16 +32,16 @@ Gồm 30 màn, HUD ngoài không gian và trong giờ giao thương, bảng phí
 
 ## 1. Mục đích với người chơi
 
-- Cảm thấy: nhìn một lần biết mình còn bao lâu và có đủ về không, giao thùng xong thấy Tally và tip bay lên ngay, bước vào trạm thấy mọi việc cần làm đứng yên trên mặt cắt, không phải mở menu mới thấy.
+- Cảm thấy: nhìn một lần biết mình còn bao lâu và có đủ về không, giao thùng xong thấy Tally và tip bay lên ngay, bước vào trạm thấy mọi việc cần làm đứng yên trên mặt bằng, không phải mở menu mới thấy.
 - Quyết định mà giao diện phải hỗ trợ: đi tiếp hay về (vạch "đủ về", thời gian còn), tham hay nhẹ túi (thanh tải và mốc 60%), ghim món nào, chia Oxy cho bạn hay giữ, bán loại hàng nào và bao nhiêu thùng (danh mục bán), tàu nào giao trước (thanh kiên nhẫn).
-- Pillar: P1 (Oxy là số đọc được, không ẩn), P2 (mặt cắt trạm là giao diện chính của nửa ở nhà, mỗi khoang sửa xong đổi hình), P3 (giao diện giống nhau với 1 đến 4 người, thêm người là thêm hàng đồng đội).
-- 30 giây đầu (một mình, thế giới mới): xem cảnh tỉnh dậy (bỏ qua được), đi tới điểm sáng trong trạm tối bằng A D, thấy dòng mục tiêu "Sửa Khoang neo" ở góc, ra cửa khí, bay tới vòng sáng đầu tiên, thấy thanh Oxy tụt và vạch "đủ về" nhích theo.
+- Pillar: P1 (Oxy là số đọc được, không ẩn), P2 (mặt bằng trạm là giao diện chính của nửa ở nhà, mỗi khoang sửa xong đổi hình), P3 (giao diện giống nhau với 1 đến 4 người, thêm người là thêm hàng đồng đội).
+- 30 giây đầu (một mình, thế giới mới): xem cảnh tỉnh dậy (bỏ qua được), đi tới điểm sáng trong trạm tối bằng W A S D, thấy dòng mục tiêu "Sửa Khoang neo" ở góc, ra cửa khí, bay tới vòng sáng đầu tiên, thấy thanh Oxy tụt và vạch "đủ về" nhích theo.
 
 ## 2. Luật
 
 ### 2.1 Luật chung của giao diện (MVP trừ khi ghi khác)
 
-1. Khung hình thiết kế ở 16:9, 1280x720. Vùng nhìn tối thiểu luôn là 17,8 x 10,0 u. Màn rộng hơn 16:9 (tới 21:9) được mở thêm chiều ngang, màn hẹp hơn 16:9 (16:10, 4:3) được mở thêm chiều cao, không có thanh đen trong khoảng 4:3 đến 21:9. HUD neo theo lề an toàn 5%.
+1. Khung hình thiết kế ở 16:9, 1280x720. Vùng nhìn tối thiểu luôn là 17,8 x 10,0 u trên màn hình (camera nghiêng 45 độ, tương ứng 17,8 x 14,1 u trên mặt đất, `ky-thuat.md` mục 2.6). Màn rộng hơn 16:9 (tới 21:9) được mở thêm chiều ngang, màn hẹp hơn 16:9 (16:10, 4:3) được mở thêm chiều cao, không có thanh đen trong khoảng 4:3 đến 21:9. HUD neo theo lề an toàn 5%.
 2. Thân chữ tối thiểu 12 px ở 720p, tương đương 18 px ở 1080p theo mức tối thiểu PC của Xbox Accessibility Guideline 101. Người chơi chọn cỡ chữ 100%, 150%, 200% cho toàn bộ chữ và biểu tượng nút, không mất nội dung và không cuộn hai chiều. Mức Steam Deck (ký tự nhỏ nhất không dưới 9 px cao ở 1280x800) thấp hơn mốc này, vì 12 px ở 720p quy ra 13,3 px ở 800p. Nguồn: `45-ux-ui.md` S1, S5.
 3. Font có đủ dấu tiếng Việt và có phương án sans serif không cách điệu. Mọi chữ nằm trên cảnh có viền hoặc nền mờ để đọc được trên mọi nền.
 4. Tương phản chữ cỡ chuẩn tối thiểu 4,5:1, chữ lớn tối thiểu 3:1, phần tử không hoạt động tối thiểu 3:1. Số tỉ lệ ghi trong brief art phải lấy từ script đo, không gõ tay. Nguồn: `45-ux-ui.md` S2, S4.
@@ -85,7 +85,7 @@ Nhóm: M menu và nhập cuộc, T trạm, O ngoài không gian, C giờ giao th
 | UI-02 | Tạo thế giới (chọn số người tỉnh dậy 1 đến 4) | M | UI-01 | UI-05 | MVP |
 | UI-04 | Tham gia thế giới (bạn bè, mã, Phòng đầy) | M | UI-01 | UI-05 | MVP |
 | UI-05 | Cảnh tỉnh dậy và cảnh đến | M | UI-02, UI-04 | UI-10 | MVP |
-| UI-10 | Trạm mặt cắt (đi bộ, 3 tầng, trạng thái Chờ nhóm khi có người còn ngoài chuyến) | T | UI-05, UI-36, UI-35, UI-44 | Mọi màn T, UI-11, UI-40 | MVP |
+| UI-10 | Trạm mặt bằng (đi bộ 8 hướng, một mặt bằng duy nhất, trạng thái Chờ nhóm khi có người còn ngoài chuyến) | T | UI-05, UI-36, UI-35, UI-44 | Mọi màn T, UI-11, UI-40 | MVP |
 | UI-11 | Cửa khí: xác nhận chuyến và chọn dụng cụ | T | UI-10 (E ở cửa khí) | UI-30, UI-10 | MVP |
 | UI-12 | Kho (xem, tìm, lọc) | T | UI-10 | UI-10 | MVP |
 | UI-13 | Xưởng (chế, hàng đợi qua đêm, nâng cấp trang bị) | T | UI-10 | UI-10 | MVP |
@@ -144,7 +144,7 @@ Câu thứ nhất nói đang ở đâu, câu thứ hai nói làm được gì, c
 | UI-02 | Ở: tạo thế giới. Làm: đặt tên và chọn 1 hoặc 2 người tỉnh dậy (ô 3 và 4 khóa kèm "Sắp có"), bạn vào sau vẫn được. Về: Esc về menu chính, chưa tạo gì. | Bấm Tạo |
 | UI-04 | Ở: màn tìm thế giới của bạn. Làm: chọn bạn bè hoặc nhập mã để vào. Về: Esc về menu chính. | Bấm Vào |
 | UI-05 | Ở: cảnh mở đầu hay cảnh đến. Làm: xem cảnh ngắn của nhân vật. Về: bấm một lần ở bất kỳ câu nào là bỏ qua. | Bỏ qua hoặc xem tiếp |
-| UI-10 | Ở: mặt cắt Station Ember. Làm: đi tới khoang cần dùng, sửa, chế, lập danh mục bán. Khi có người còn ngoài chuyến (Chờ nhóm, C9): thấy hàng đồng đội, xem bản đồ chuyến chỉ xem, ping nhắc, chế trước. Về: không có thoát, thoát game qua Esc. | Đi tới khoang kế tiếp trong mục tiêu |
+| UI-10 | Ở: mặt bằng Station Ember nhìn từ trên. Làm: đi tới khoang cần dùng, sửa, chế, lập danh mục bán. Khi có người còn ngoài chuyến (Chờ nhóm, C9): thấy hàng đồng đội, xem bản đồ chuyến chỉ xem, ping nhắc, chế trước. Về: không có thoát, thoát game qua Esc. | Đi tới khoang kế tiếp trong mục tiêu |
 | UI-11 | Ở: cửa khí. Làm: chọn dụng cụ trong đai, xác nhận ra ngoài hoặc ở lại trạm, xem số chuyến hôm nay. Về: Esc ở lại trạm. | Xác nhận ra ngoài |
 | UI-12 | Ở: kho dùng chung. Làm: xem số lượng, sao chất lượng và giá của từng loại, lọc theo nhóm, tìm theo tên. Về: Esc về màn đã mở nó. | Tìm một loại vật phẩm |
 | UI-13 | Ở: xưởng. Làm: chọn công thức, đặt vào hàng đợi, nhận đồ chế xong. Về: Esc về trạm. | Bấm Chế |
@@ -181,7 +181,7 @@ Trống: không có dữ liệu để hiện. Đang tải: chờ máy hoặc m�
 | UI-02 | Chưa đặt tên: nút "Tạo" mờ, gợi ý tên | Đang dựng thế giới | Có tên và số người | Tên trùng hay ký tự cấm: báo "Tên đã dùng" dưới ô | Ô 3 và 4 khóa kèm "Sắp có". Đủ số thế giới tối đa: báo xóa bớt, xóa ở UI-01 qua UI-54 |
 | UI-04 | Không có bạn đang chơi: báo "Chưa có bạn nào đang chơi" và ô nhập mã | Đang tìm | Danh sách thế giới bạn mời | Báo "Mã sai hoặc hết hạn" hay "Khác phiên bản game" | Chữ "Phòng đầy", nút "Vào" mờ |
 | UI-05 | Không áp dụng, luôn có cảnh | Nạp cảnh: tối dần | Cảnh phát, nút Bỏ qua luôn hiện | Cảnh lỗi: tự bỏ qua và ghi nhật ký | Không áp dụng, cảnh luôn bỏ qua được |
-| UI-10 | Khoang hỏng tối với khung đỏ | Nạp trạm: màn tối ngắn | Mặt cắt sáng, người vớt đứng ở khoang. Có người còn ngoài chuyến: thêm HUD-07, nút xem bản đồ chuyến chỉ xem và nút ping, mất đồng bộ vị trí thì chữ Chờ cập nhật, nhóm về hết thì tự trở lại trạng thái thường | Mất kết nối chủ phòng: banner "Mất kết nối chủ phòng", kèm "Thế giới về lần lưu gần nhất" và nút "Thử lại" | Khoang chưa tới chương: khung tối, báo "Chưa mở ở chương này" kèm gợi ý truyện |
+| UI-10 | Khoang hỏng tối với khung đỏ | Nạp trạm: màn tối ngắn | Mặt bằng sáng, người vớt đứng ở khoang. Có người còn ngoài chuyến: thêm HUD-07, nút xem bản đồ chuyến chỉ xem và nút ping, mất đồng bộ vị trí thì chữ Chờ cập nhật, nhóm về hết thì tự trở lại trạng thái thường | Mất kết nối chủ phòng: banner "Mất kết nối chủ phòng", kèm "Thế giới về lần lưu gần nhất" và nút "Thử lại" | Khoang chưa tới chương: khung tối, báo "Chưa mở ở chương này" kèm gợi ý truyện |
 | UI-11 | Đai không có dụng cụ nào chế được: báo vào xưởng | Chờ cả nhóm xác nhận: tick từng người và đồng hồ HTR-01 | Chọn dụng cụ, danh sách tick, "Chuyến {n}/{m}" | Một người chưa trả lời: báo tên, tự tính "Ở lại trạm" sau 30 giây kể từ người đầu tiên xác nhận | Hết chuyến, đã mở giao thương hoặc đã nghỉ giao thương: khóa kèm "Hôm nay hết chuyến ra ngoài". Đủ ô đai: dụng cụ thừa mờ |
 | UI-12 | Kho rỗng: chữ "Kho trống" | Đồng bộ kho cho nhóm | Danh sách theo nhóm với số lượng, sao và giá | Số liệu lệch: báo "Thử lại" | Một loại chạm 999: số đổi sang vàng kèm biểu tượng "Đầy" |
 | UI-13 | Chưa có công thức nào mở: chữ Kỹ sư chưa tới | Mẻ đang chạy: thanh tiến độ | Danh sách công thức, thời gian, hàng đợi | Thiếu vật liệu: dòng đỏ có biểu tượng và số thiếu | Hàng đợi qua đêm đủ 2 chỗ: nút Chế mờ kèm lý do |
@@ -219,7 +219,7 @@ Ba phần tử luôn hiện: Oxy (HUD-01 và HUD-02), túi (HUD-03 và HUD-04), 
 | HUD-03 | Thanh tải túi | Dưới HUD-01 | Luôn | Thanh tải, số "x/80" (bậc 0 là 80 Khối), vạch mốc 60%. Quá 60% hiện chữ "Nặng" và "-p% tốc độ, hao +p%" cùng một p theo công thức của `nguoi-choi.md` mục 3. Chạm 100% hiện chữ Đầy | Vạch mốc, chữ Nặng, bộ đẩy phụt lớn |
 | HUD-04 | Món ghim | Dưới HUD-03 | Luôn | Biểu tượng ghim và biểu tượng món đang ghim. Chưa ghim hiện "Chưa ghim" cùng gợi ý phím. Ghim tự đổi (vật hiếm nhất vừa nhặt) hiện thông báo "Đã ghim ..." | Biểu tượng ghim |
 | HUD-05 | Đai dụng cụ | Dưới giữa | Luôn | 3 đến 5 ô theo bậc đai (`nguoi-choi.md` T-DUNGCU, MVP 3 và 4 ô), ô đang cầm to hơn kèm phím 1 đến 5. Hiện hồi chiêu dạng vòng quay, độ nóng của Dùi xung, số Lưới cuộn còn lại khi cầm Súng lưới | Số phím, vòng hồi chiêu |
-| HUD-06 | La bàn viền | Mép màn hình | Khi mục tiêu nằm ngoài màn | Mũi tên ở mép: Ember (luôn), Recall Beacon đã thấy, đồng đội (hình slot), điểm ping. Mũi tên kèm khoảng cách bằng u. Đòn từ kẻ địch ngoài màn có mũi tên chỉ báo riêng ở mép ngay từ đầu pha báo trước (vàng hay đỏ theo mức đòn, đòn lớn dùng mũi tên đôi, kèm âm định hướng). Hazard của map cũng có chỉ báo mép theo `map.md` mục 3.5: Mảnh trôi (MVP) mũi tên theo hướng tới và tiếng có hướng trái phải, 1 giây trước khi vào màn. Dòng đá vụn (Sau MVP) là vạch đỏ theo làn ở mép, 2 giây trước đợt. Bùng tinh vân (Sau MVP) chỉ báo cùng lúc túi khí sáng dần khi cách mép dưới 5 u. Mũi tên Ember có hình trạm, Beacon có hình tháp | Hình riêng từng loại, không chỉ màu |
+| HUD-06 | La bàn viền | Mép màn hình | Khi mục tiêu nằm ngoài màn | Mũi tên ở mép: Ember (luôn), Recall Beacon đã thấy, đồng đội (hình slot), điểm ping. Mũi tên kèm khoảng cách bằng u tính trên mặt đất, không đo theo màn hình. Khi đội xa hơn ngưỡng co-op, camera đứng ở Zmax và giữ người của máy trong 60% giữa màn (`ky-thuat.md` luật 42): mũi tên đồng đội nằm trong lề an toàn, người đang Ngạt thêm biểu tượng Ngạt và đồng hồ vòng để người ở xa nhìn ra cần cứu. Đòn từ kẻ địch ngoài màn có mũi tên chỉ báo riêng ở mép ngay từ đầu pha báo trước (vàng hay đỏ theo mức đòn, đòn lớn dùng mũi tên đôi, kèm âm định hướng). Hazard của map cũng có chỉ báo mép theo `map.md` mục 3.5: Mảnh trôi (MVP) mũi tên theo hướng tới và tiếng có hướng trái phải, 1 giây trước khi vào màn. Dòng đá vụn (Sau MVP) là vạch đỏ theo làn ở mép, 2 giây trước đợt. Bùng tinh vân (Sau MVP) chỉ báo cùng lúc túi khí sáng dần khi cách mép dưới 5 u. Mũi tên Ember có hình trạm, Beacon có hình tháp | Hình riêng từng loại, không chỉ màu |
 | HUD-07 | Đồng đội | Mép trái, dưới HUD-04 | Từ 2 người | Tối đa 3 hàng: hình slot, tên, thanh Oxy nhỏ, trạng thái (Ngạt có đồng hồ vòng, Được chia Oxy, Đã về), biểu tượng mạng ba mức (ổn, trễ, Giữ chỗ có đồng hồ 15 giây, quá hạn tính như bị kéo về theo C10). Người chia Oxy thấy mốc sàn 20 trên thanh Oxy của mình, chạm sàn thì dừng chia và hiện "Dừng chia: giữ lại {n} Oxy" | Hình slot, chữ trạng thái |
 | HUD-08 | Số ping còn lại | Dưới phải | Khi có ping đang hiện | "Ping 3" giảm dần, hết thì "0", ping hiện 8 giây trong thế giới và ở La bàn nếu ngoài màn | Chữ |
 | HUD-09 | Thông báo nhặt | Phải, dưới HUD-13 | Khi nhặt | Tối đa 3 dòng, 32 ký tự, gộp loại ("+3 Phế liệu"). Vật hiếm có viền và hình riêng theo bậc | Viền, hình bậc |
@@ -264,7 +264,7 @@ Ghi chú: ○ △ □ ◇ trong bản vẽ thay bằng (o) (^) vì khối chữ 
 | HCH-07 | Hàng đợi xưởng | Dưới phải | Số mẻ đang chạy và chờ, chế qua đêm hiện "xong khi sang ngày" | Số, chữ |
 | HCH-08 | Sự cố | Giữa trái | Biểu tượng loại sự cố, mũi tên tới khoang, chữ xử lý. Còi báo động ngắn, không lặp liên tục | Biểu tượng riêng từng loại (Sau MVP) |
 | HCH-09 | Tally và Hạng cảng | Trên phải | Tổng Tally của nhóm kèm "Hạng n (a/b)" (điểm cảng hiện tại trên ngưỡng kế), mỗi khi thay đổi hiện số cộng hay trừ trong 150 ms. Hiện ngoài giờ giao thương, trong giờ giao thương nhường chỗ cho HCH-02 | Số |
-| HCH-10 | Sơ đồ trạm thu nhỏ | Dưới HCH-09 | Mặt cắt 3 tầng thu nhỏ: khoang, bến (chấm khi có tàu), vị trí mỗi người (hình slot), sự cố. Hiện ở UI-10 ngoài giờ giao thương. Trong giờ giao thương ẩn vì quầy và cửa neo nằm trọn trong một màn | Hình khoang, hình slot |
+| HCH-10 | Sơ đồ trạm thu nhỏ | Dưới HCH-09 | Mặt bằng trạm thu nhỏ, bắc ở trên: khoang, bến (chấm khi có tàu), vị trí mỗi người (hình slot), sự cố. Hiện ở UI-10 ngoài giờ giao thương. Trong giờ giao thương ẩn vì quầy và cửa neo nằm trọn trong một màn | Hình khoang, hình slot |
 | HCH-11 | Gợi ý phím tương tác | Cạnh nhân vật | Phím theo thiết bị và động từ ngắn ("E nhặt thùng", "E giao thùng", "Giữ E bơm khí"), chỉ hiện khi làm được. Đứng gần mà chưa làm được thì hiện mờ kèm lý do ngắn ("Tay đang bận, mỗi lần 1 thùng") | Glyph, chữ |
 | HCH-12 | Chip bơm khí | Trên tàu, cạnh HCH-06 | Chip "Bơm khí!" khi tàu bật yêu cầu (50% tàu lúc cập). Đứng ở cửa neo, tay trống, giữ E 1 giây (vòng HUD-14) thì hồi 25% kiên nhẫn, cộng 10 Tally tip, số bay lên. Thả phím, bước đi hoặc tàu rời thì vòng về 0, không mất gì. Tay đang cầm thùng thì hiện "Giao thùng trước khi bơm khí". Bơm xong chip tắt tới lần bật kế | Chữ trên chip, vòng giữ |
 
@@ -282,22 +282,21 @@ Quy tắc giờ giao thương:
 2. Bong bóng gọi món (HCH-06) là bản nhìn trong cảnh. Danh mục còn (HCH-04) là bản nhìn khi người chơi chạy xa tàu. Hai bản dùng cùng một dữ liệu. `MVP`
 3. Giao sai cửa neo hiện lời từ chối ngắn của thương nhân (gd-story) và lý do ngắn "Sai cửa neo, tàu gọi thùng khác", thùng ở lại tay. `MVP`
 4. Trong giờ giao thương không có Oxy. HUD trạm ở UI-10 gồm Tally (HCH-09), mục tiêu Sổ tay (HUD-13), sơ đồ trạm (HCH-10), hàng đợi xưởng (HCH-07), lời nhắc thao tác và ba phần tử HTR-01 đến HTR-04. `MVP`
-5. Giờ giao thương dựng kho, ô quầy và 3 cửa neo trong cùng một màn 1280x720, không cuộn. Tàu chờ ngoài nằm ở dải trên. Số giờ giao thương trong mục này lấy từ `de-xuat-ca-cang-kieu-dave.md` mục 4 (ước, demo bot 2026-11-20), số thật do sim giờ giao thương của gd-tech. `MVP`
-6. Bấm chuột trái vào ô quầy, cửa neo hay điểm trên sàn thì nhân vật tự chạy tới, tới nơi tự làm việc ở đích (nhặt, giao hoặc bắt đầu bơm khí). Điểm đích hiện vòng sáng dưới sàn. Giữ A D giữa đường thì hủy đường tự chạy. `MVP`
+5. Giờ giao thương dựng ô quầy và 3 cửa neo trong cùng một màn 1280x720, không cuộn: cánh cảng ở đầu đông, ô quầy và 3 cửa neo thẳng hàng dọc mép bắc hành lang bến, tàu cập từ mép trên vào cửa neo, tàu chờ ngoài xếp ở mép trên màn hình ngay dưới dải HUD. Kho chỉ là hình sát quầy, có thể nằm ngoài khung. HCH-01 đến HCH-03 ở dải HUD trên (cao 56 px ở 720p), HCH-04 và HCH-05 ở dải dưới (cao tối đa 84 px), sàn chạy nằm giữa hai dải nên HUD không đè quầy, cửa neo hay lối chạy. Khung camera cố định ở tâm cảng (`ky-thuat.md` luật 43, 14,03 u từ ô quầy 1 tới cửa neo 3 trong 17,8 u ngang). [GIẢ ĐỊNH] chiều sâu bắc nam của cánh cảng đủ chứa tàu, bong bóng và sàn chạy trong 14,1 u dọc mặt đất, gd-tech kiểm khi dựng. Số giờ giao thương trong mục này lấy từ `de-xuat-ca-cang-kieu-dave.md` mục 4 (ước, demo bot 2026-11-20), số thật do sim giờ giao thương của gd-tech. `MVP`
+6. Bấm chuột trái vào ô quầy, cửa neo hay điểm trên sàn thì nhân vật tự chạy tới, tới nơi tự làm việc ở đích (nhặt, giao hoặc bắt đầu bơm khí). Điểm đích hiện vòng sáng dưới sàn. Giữ phím di chuyển giữa đường thì hủy đường tự chạy. `MVP`
 
 ```
-1280x720 giờ giao thương (một màn, không cuộn)
+1280x720 giờ giao thương (mặt bằng cánh cảng, bắc ở trên, không cuộn)
 +----------------------------------------------------------------------+
-| HCH-01 Giờ giao thương còn 2:41  HCH-02 Tally 412  Tip 86  HCH-03 Điểm cảng 12  Tàu 7/25 |
-|   tàu chờ ngoài (vòng chờ 14 s)  (vòng chờ 9 s)                      |
-|                                                                      |
-|  HCH-06 [Phế liệu]      [Đồ Trái Đất - Đặt trước]      [Cáp]  Bơm khí! |
-|         [thanh kiên nhẫn]   [thanh kiên nhẫn]         [thanh kiên nhẫn] |
-|        ==== tàu ====       ==== tàu ====            ==== tàu ====    |
-|                                                                      |
-|  Kho  [1][2][3] quầy cảng     Cửa neo 1     Cửa neo 2     Cửa neo 3  |
-|       HCH-11 E nhặt thùng                                            |
-| HCH-04 Danh mục còn: Phế liệu 6  Cáp 4  Quặng 0 Hết     HCH-05 Cầm: Cáp, cửa neo 3 |
+| HCH-01 Còn 2:41  HCH-02 Tally 412 Tip 86  HCH-03 Điểm cảng 12 Tàu 7/25  | dải HUD trên, cao 56 px
+|  tàu chờ ngoài, xếp ở mép trên (vòng chờ 14 s)  (vòng chờ 9 s)       |
+|   HCH-06 [Phế liệu]    [Đồ Trái Đất - Đặt trước]    [Cáp]  Bơm khí!    | bong bóng trên tàu
+|          [kiên nhẫn]     [kiên nhẫn]                [kiên nhẫn]        |
+|          ==== tàu ====   ==== tàu ====              ==== tàu ====      | tàu cập từ mép trên
+|  [1][2][3]       Cửa neo 1        Cửa neo 2        Cửa neo 3   -> bến |
+|  quầy cảng       (thẳng hàng dọc mép bắc hành lang bến, trục tây đông)  |
+|      HCH-11 E nhặt thùng       sàn hành lang bến, người chơi chạy      |
+| HCH-04 Danh mục còn: Phế liệu 6  Cáp 4  Quặng 0 Hết   HCH-05 Cầm: Cáp, cửa neo 3 | dải HUD dưới
 +----------------------------------------------------------------------+
 ```
 
@@ -305,13 +304,13 @@ Quy tắc giờ giao thương:
 
 Bản wireframe đủ màn MVP (28 khung 1280x720, lề an toàn 5%) ở Figma The Novent, trang "Wireframe MVP": https://www.figma.com/design/rwemYZkNuUXZKONbA2c2EW/The-Novent . Khuôn dùng chung: UI-35 và UI-36, UI-17 và UI-18. Bản chữ dưới đây giữ làm bản đối chiếu, đổi luật thì sửa cả hai.
 
-Wireframe trạm (UI-10) theo sơ đồ mặt cắt của `tram-va-cang.md` mục 2.6b. Khoang hỏng tối với khung đỏ, khoang hoạt động sáng.
+Wireframe trạm (UI-10) theo sơ đồ mặt bằng của `tram-va-cang.md` mục 2.6b, camera top-down 45 độ, bắc ở trên, đọc từ tây (trái) sang đông (phải). Khoang hỏng tối với khung đỏ, khoang hoạt động sáng. Màn trạm chỉ là cảnh theo người chơi, mục này là bản đồ đối chiếu, không phải khung hình một lần.
 
 ```
-Tầng trên  | KH08 Dẫn đường | KH06 Liên lạc  | KH10 Nghiên cứu | KH11 Sinh quyển | KH12 Bến 2
-Tầng giữa  | KH01 Ngủ đông  | KH05 Xưởng     | KH03 Kho        | KH07 Cảng: quầy cảng | Bến 1 (3 cửa neo)
-Tầng dưới  | KH02 Cửa khí   | KH04 Neo       | KH13 Động cơ    | KH09 Bến Skiff  | KH12 Bến 3
-Thang dọc: cột trái và cột giữa. Góc trên phải: Tally, HUD-13 mục tiêu. Dưới giữa: lời nhắc.
+Bắc       | KH09 Bến Skiff | KH08 Dẫn đường | KH06 Liên lạc | KH10 Nghiên cứu | KH11 Sinh quyển | KH12 Bến 2 (nhánh bắc)
+Hành lang | KH13 Động cơ   | hành lang      | hành lang     | hành lang       | hành lang       | KH07 quầy cảng, cửa neo 1 đến 3
+Nam       | KH02 Cửa khí   | KH04 Neo       | KH01 Ngủ đông | KH05 Xưởng      | KH03 Kho        | KH12 Bến 3 (nhánh nam)
+Góc trên phải: HCH-09 Tally, HCH-10 mặt bằng thu nhỏ dưới nó, HUD-13 mục tiêu. Dưới giữa: lời nhắc.
 ```
 
 Bảng tàu và danh mục bán (UI-14), bản vẽ mẫu. Số là chỗ đặt, mẫu của một ngày về sau (giờ giao thương đầu cố định có danh mục trống và chưa có đơn đặt trước, luật FTUE 8):
@@ -399,8 +398,7 @@ Trong trạm:
 
 | Hành động | Bàn phím | Gamepad Xbox | Ghi chú |
 |---|---|---|---|
-| Đi trái phải | A D | Cần trái | |
-| Leo thang | W S | Cần trái lên xuống | Không nhảy |
+| Đi 8 hướng | W A S D | Cần trái | Đi chéo không nhanh hơn, không nhảy. Quay mặt theo hướng đi |
 | Tương tác, sửa, nhặt và giao thùng, bơm khí | E hoặc Space (giữ khi sửa và bơm khí, bấm khi nhặt và giao) | A | Space là phím thứ hai, chỉ trong trạm |
 | Xem kho nhanh (mới) | Tab | Back | Chỉ xem |
 | Sổ tay (mới) | J | Y | |
@@ -411,10 +409,10 @@ Trong giờ giao thương (dùng bảng Trong trạm, thêm các hàng dưới �
 
 | Hành động | Bàn phím chuột | Gamepad Xbox | Ghi chú |
 |---|---|---|---|
-| Chạy | A D hoặc mũi tên trái phải | Cần trái | Một trục, không nhảy |
+| Đi 8 hướng | W A S D, phím mũi tên là phím phụ | Cần trái | Tốc độ cố định, không nhảy |
 | Nhặt thùng, giao thùng | E hoặc Space (bấm) | A | Đứng trong tầm ô quầy hay cửa neo. Mỗi lần 1 thùng |
 | Bơm khí | E hoặc Space (giữ 1 giây) | A giữ | Tay trống, có vòng HUD-14, thả phím là hủy |
-| Chạy tới đích | Chuột trái vào ô quầy, cửa neo hay điểm sàn | RB tới cửa neo kế, LB tới ô quầy có thùng | Gamepad là đề xuất. Tới nơi tự làm việc ở đích, giữ A D giữa đường thì hủy |
+| Chạy tới đích | Chuột trái vào ô quầy, cửa neo hay điểm sàn | RB tới cửa neo kế, LB tới ô quầy có thùng | Gamepad là đề xuất. Tới nơi tự làm việc ở đích, giữ phím di chuyển giữa đường thì hủy |
 | Menu | Esc | Start | Một mình là tạm dừng, từ 2 người không dừng (luật 8 mục 2.1) |
 
 Menu:
@@ -453,7 +451,7 @@ Mỗi bước có Design Intent (ý đồ), Trigger (kích khi), Setup (cảnh d
 
 | ID | Design Intent | Trigger | Setup | Interaction | Tắt khi | Luật nguồn |
 |---|---|---|---|---|---|---|
-| T01 | Biết mình điều khiển được và trạm đang hỏng | Sau cảnh tỉnh dậy C1.1, hoặc sau cảnh đến UI-05 với người vào sau | Trạm tối, chỉ KH01, KH02, KH03 dùng được, điểm sáng ở khoang kho | Đi A D, leo thang W S tới điểm sáng | Tới điểm sáng | `nguoi-choi.md` 2.8 |
+| T01 | Biết mình điều khiển được và trạm đang hỏng | Sau cảnh tỉnh dậy C1.1, hoặc sau cảnh đến UI-05 với người vào sau | Trạm tối, chỉ KH01, KH02, KH03 dùng được, điểm sáng ở khoang kho | Đi W A S D tới điểm sáng | Tới điểm sáng | `nguoi-choi.md` 2.8 |
 | T02 | Luôn biết việc kế tiếp | Đã tới điểm sáng ở T01 | HUD-13 hiện mục tiêu "Sửa Khoang neo" | Mở Sổ tay một lần (tùy chọn) | Sau 8 giây | `cot-truyen.md` luật 10 |
 | T03 | Ra ngoài là quyết định có xác nhận | Đứng trong 1,0 u của cửa khí | Hai dụng cụ khởi điểm đã trong đai | E ở cửa khí, chọn dụng cụ, xác nhận | Xác nhận xong | K4, C5 |
 | T04 | Bay trực tiếp, buông thì trượt nửa giây | Ra khỏi cửa khí lần đầu | Mảnh Ember Mooring, vòng sáng cách 12 u, không hazard | WASD bay tới vòng | Tới vòng | `nguoi-choi.md` 2.1.1 và 2.1.3 |
@@ -474,7 +472,7 @@ Mỗi bước có Design Intent (ý đồ), Trigger (kích khi), Setup (cảnh d
 | T19 | Bắt sống có giá trị hơn | Nhận Súng lưới sau quest Kỹ sư | Một con loài nhỏ cỡ S, đúng 1 con | Chuột trái bắn lưới, kéo mẫu về | Bắt 1 con | K9, log 49 |
 | T20 | Ngạt không phải thua | Vào trạng thái Ngạt lần đầu | Túi tự mở ở chế độ chọn món | Chọn món ghim, chờ hoặc bay tới cửa khí | Hết Ngạt | K2, `nguoi-choi.md` 2.3 |
 | T21 | Danh mục là thứ mang ra bán | Vào khoang liên lạc sau quest Linh (C1.7) | Giờ giao thương đầu của thế giới là giờ giao thương cố định (luật 8). Danh mục chọn sẵn thùng phế liệu, người chơi chỉ xem rồi Mở giao thương | Đọc danh mục, bấm Mở giao thương | Bấm Mở giao thương | K13, `tram-va-cang.md` luật 20 và 67 |
-| T22 | Tàu gọi món bằng bong bóng, kiên nhẫn có hạn | Tàu đầu tiên vào cửa neo | Tàu Loose Bolt, kiên nhẫn Dài, bong bóng hiện món có trong danh mục | Chỉ nhìn bong bóng và thanh kiên nhẫn | Sau 8 giây hay khi nhặt thùng | K13, `tram-va-cang.md` luật 23, 24 và 27 |
+| T22 | Tàu gọi món bằng bong bóng, kiên nhẫn có hạn | Tàu đầu tiên vào cửa neo | Tàu Loose Bolt cập từ mép trên màn hình, kiên nhẫn Dài, bong bóng trên tàu hiện món có trong danh mục | Chỉ nhìn bong bóng và thanh kiên nhẫn | Sau 8 giây hay khi nhặt thùng | K13, `tram-va-cang.md` luật 23, 24 và 27 |
 | T23 | Nhặt thùng ở ô quầy cùng số với cửa neo | Thùng hiện ở ô quầy (3 giây sau khi tàu cập) | Ô quầy sáng cùng số và màu với cửa neo của tàu | Đi tới ô quầy sáng, bấm E hoặc Space | Nhặt được thùng | K13, `tram-va-cang.md` luật 25 và 26 |
 | T24 | Giao đúng cửa neo là nhận Tally và tip ngay | Cầm thùng đầu tiên | Cửa neo của tàu sáng, hai cửa còn lại tối | Mang thùng tới cửa neo cùng số, bấm E | Giao xong 1 thùng, thấy Tally và tip bay lên | K13, `tram-va-cang.md` luật 29 và mục Thứ tự xử lý khi giao thùng |
 | T25 | Bơm khí hồi kiên nhẫn | Tàu bật yêu cầu bơm khí lần đầu khi tay người chơi đang trống | Giờ giao thương đầu: tàu 2 cập khi người chơi vừa giao xong và bật yêu cầu ngay. Kho chỉ đủ 1 thùng thì bước kích ở giờ giao thương sau, lần đầu có tàu bật yêu cầu | Đứng ở cửa neo, giữ E 1 giây | Bơm xong 1 lần | K13, `tram-va-cang.md` luật 28 và 67 |
@@ -779,7 +777,7 @@ Mỗi key một dòng. Giới hạn là số ký tự tối đa của chuỗi g�
 | confirm.leave_shift | Thoát giữa chừng sẽ mất lượt đang dở | 40 | UI-50 |
 | tut.t36 | {use} dùng vật tiêu hao hồi Oxy | 40 | T36 |
 | story.line | {lời nhân vật} | 60 | UI-10 |
-| tut.t01 | {move} đi trái phải, {climb} leo thang | 40 | T01 |
+| tut.t01 | {move} đi tới điểm sáng | 40 | T01 |
 | tut.t02 | Mục tiêu ở góc phải, {notebook} Sổ tay | 40 | T02 |
 | tut.t03 | {interact} ở cửa khí để ra ngoài | 40 | T03 |
 | tut.t04 | {move} để bay tới vòng sáng | 40 | T04 |
@@ -885,8 +883,8 @@ Mỗi key một dòng. Giới hạn là số ký tự tối đa của chuỗi g�
 
 | Tên | Khởi điểm | Khoảng an toàn | Tăng thì | Giảm thì | Nhóm tác động | Nguồn |
 |---|---|---|---|---|---|---|
-| Chiều cao camera ngoài không gian | 10,0 u (ngang 17,8 u ở 16:9, nhân vật 72 px ở 720p) | 9 đến 12 | Thấy xa, nhân vật nhỏ | Hẹp, hazard vào màn muộn | Đọc map, hazard, bắn | ước, chốt giữa `nguoi-choi.md` mục 5 (18 x 10), `ho-so-nhan-vat.md` (106 điểm ảnh mỗi u, khoảng 10 u ở 1080p) và `map.md` mục 6.4 (đề xuất 12 x 21) |
-| Camera trong trạm | Cùng tỉ lệ nhân vật với ngoài không gian (72 px mỗi u ở 720p), theo nhân vật, thấy khoảng 1,5 tầng | | Thấy nhiều khoang | Mất ngữ cảnh | Trạm, giờ giao thương | ước, trả lời `ho-so-nhan-vat.md` dòng 146 (silhouette giữ nguyên). HCH-10 bù phần không thấy |
+| Chiều cao vùng nhìn ngoài không gian trên màn hình | 10,0 u màn hình, tức 14,1 u mặt đất (ngang 17,8 u ở 16:9, nhân vật 72 px ở 720p, camera theo `ky-thuat.md` mục 2.6) | 9 đến 12 | Thấy xa, nhân vật nhỏ | Hẹp, hazard vào màn muộn | Đọc map, hazard, bắn | ước, chốt giữa `nguoi-choi.md` mục 5 (18 x 10), `ho-so-nhan-vat.md` (106 điểm ảnh mỗi u, khoảng 10 u ở 1080p) và `map.md` mục 6.4 (đề xuất 12 x 21) |
+| Camera trong trạm | Cùng tỉ lệ nhân vật với ngoài không gian (72 px mỗi u ở 720p), theo nhân vật và kẹp trong biên mặt bằng, giờ giao thương cố định ở tâm cảng (`ky-thuat.md` luật 43) | | Thấy nhiều khoang | Mất ngữ cảnh | Trạm, giờ giao thương | ước, trả lời `ho-so-nhan-vat.md` dòng 146 (silhouette giữ nguyên). HCH-10 bù phần không thấy |
 | Tỉ lệ màn hỗ trợ | 4:3 đến 21:9, vùng nhìn tối thiểu 17,8 x 10,0 u | 4:3 đến 21:9 | Màn rộng thấy thêm ngang | Màn hẹp thấy thêm chiều cao | Công bằng nhìn | ước, vùng nhìn tối thiểu là luật 1 mục 2.1 |
 | Cột trái HUD tối đa | 400 px ở 720p, mọi cỡ chữ (thanh Oxy và thanh tải giữ 320 px, chỉ chữ và biểu tượng phóng) | 360 đến 440 | Thấy nhiều | Vào vùng giữa màn | Bố cục | tính: vùng giữa 25% rộng 320 px bắt đầu từ 480 px, mà 64 + 400 = 464 |
 | Giữ chỗ khi mất kết nối | 15 giây, quá hạn tính như bị kéo về (C10) | 10 đến 30 | Tha thứ mạng | Treo nhóm | Co-op | gốc `nguoi-choi.md` 2.9, C10 |
@@ -998,7 +996,7 @@ Một artist, vector, ưu tiên bộ kit tái dùng. Số của bảng dưới t
 | Cửa neo và ô quầy | 3 cửa neo có số lớn và màu khác màu slot, ô quầy cùng số cùng màu | Tiếng cập bến | | MVP |
 | Bong bóng gọi món và thanh kiên nhẫn | Bong bóng có hình thùng, vòng đếm 3 giây, thanh có vạch mốc 2/3 và 1/3, chip Bơm khí | Tích tắc dưới 1/3, xì khí khi bơm | | MVP |
 | Chân dung thương nhân | TA01 Tikko và TA02 dân Oru ở MVP, các tàu khác Sau MVP | | Tên theo `cot-truyen.md` | MVP |
-| Khoang mặt cắt | Hỏng (tối, khung đỏ), Hoạt động (sáng), Đang nâng cấp (giàn giáo) cho 8 khoang MVP (KH01 đến KH07 và KH13) | Máy khởi động theo khoang | | MVP |
+| Khoang trên mặt bằng | Hỏng (tối, khung đỏ), Hoạt động (sáng), Đang nâng cấp (giàn giáo) cho 8 khoang MVP (KH01 đến KH07 và KH13) | Máy khởi động theo khoang | | MVP |
 | Glyph | Bộ bàn phím, Xbox, PlayStation | | | MVP |
 | Cảnh bỏ qua | Nút Bỏ qua luôn hiện ở góc | | | MVP |
 | Biểu tượng sự cố | Rò khí, chập điện, Driftlife sổng | Còi ngắn | | Sau MVP |
@@ -1047,9 +1045,9 @@ Tiêu chí nghiệm thu (gd-qa pass hoặc fail):
 |---|---|---|---|
 | Hướng dẫn | Nhiều người chơi và Destructoid nêu một số phần chưa được giải thích, ngoài ra có ý kiến quá nhiều hệ thống cùng lúc (`45-ux-ui.md` S13) | 37 bước chia theo core loop, mỗi bước một ý, kích bằng sự kiện, xem lại ở Sổ tay | Chưa đo, playtest sẽ đo funnel từng bước |
 | Thoát chuyến | Escape Pod giữ Space 6 giây, hủy khi bị đẩy (`06` D9) | Recall 5 giây theo K4, thêm cửa khí và chia Oxy, vòng tiến độ và cách hủy hiện cạnh vòng | Cùng cấu trúc, thêm tín hiệu |
-| Giờ giao thương | Dave the Diver chọn thực đơn trước giờ giao thương rồi phục vụ khách trong giờ giao thương (`de-xuat-ca-cang-kieu-dave.md` mục 1) | Lấy cấu trúc chọn trước rồi phục vụ. Lệch: khách là tàu ở cửa neo, người chơi chạy ngang một màn để mang thùng, bơm khí thay rót trà, tip theo kiên nhẫn còn lại | Demo bot 2026-11-20: ở trễ phản xạ 2 giây người chơi rảnh 24% giờ giao thương. Chưa đo bằng người chơi thật |
+| Giờ giao thương | Dave the Diver chọn thực đơn trước giờ giao thương rồi phục vụ khách trong giờ giao thương (`de-xuat-ca-cang-kieu-dave.md` mục 1) | Lấy cấu trúc chọn trước rồi phục vụ. Lệch: khách là tàu ở cửa neo, người chơi chạy dọc hành lang bến trong một màn để mang thùng, bơm khí thay rót trà, tip theo kiên nhẫn còn lại | Demo bot 2026-11-20: ở trễ phản xạ 2 giây người chơi rảnh 24% giờ giao thương. Chưa đo bằng người chơi thật |
 | Theo dõi tiến độ | App điện thoại Cooksta theo dõi quán và bộ sưu tập (`06` D2, D10) | Sổ tay một mục tiêu cố định cộng bảng tàu cho nửa cảng | Giữ việc kế tiếp ở một nơi duy nhất |
-| Giao diện diegetic | Hardspace: Shipbreaker pha diegetic với giao diện rõ, NME chê màn hub (`45-ux-ui.md` S10, S11) | HUD bay là HUD phẳng có thẩm mỹ kính mũ, màn trạm là mặt cắt trực quan | Chưa đo, nhận định theo nghiên cứu Peacocke (`45-ux-ui.md` S7): máu đọc tốt hơn ở HUD |
+| Giao diện diegetic | Hardspace: Shipbreaker pha diegetic với giao diện rõ, NME chê màn hub (`45-ux-ui.md` S10, S11) | HUD bay là HUD phẳng có thẩm mỹ kính mũ, màn trạm là mặt bằng trực quan | Chưa đo, nhận định theo nghiên cứu Peacocke (`45-ux-ui.md` S7): máu đọc tốt hơn ở HUD |
 
 ## 10. Câu hỏi mở
 
@@ -1097,7 +1095,7 @@ Kiểm: không giao diện nào hỏi "có đúng N người không", mọi số
 | Vạch đủ về | Sọc chéo dưới vạch, đặc trên vạch, nhãn đích | Không dựa vào màu, đọc ở liếc mắt | Hai thanh Oxy | Rẻ |
 | La bàn | Mũi tên ở mép, không minimap luôn hiện | Giữ màn sạch cho bay 8 hướng, đã có Bản đồ chuyến | Minimap góc màn | Vừa |
 | Bản đồ chuyến | Có trong MVP, chỉ hiện phần đã đi | Bố cục sinh lại mỗi chuyến, Recall Beacon đổi chỗ | Chỉ la bàn | Vừa |
-| Phân loại giao diện | HUD phẳng cho bay, mặt cắt trực quan cho trạm | Máu đọc tốt hơn ở HUD, trạm thì mặt cắt đã là cảnh | Diegetic hoàn toàn | Vừa |
+| Phân loại giao diện | HUD phẳng cho bay, mặt bằng trực quan cho trạm | Máu đọc tốt hơn ở HUD, trạm thì mặt bằng đã là cảnh | Diegetic hoàn toàn | Vừa |
 | Slot người chơi | Màu cộng hình | Mù màu, 4 người phân biệt được | Chỉ màu | Rẻ |
 | Phím mới | Bản đồ M, Sổ tay J, Kết nhanh Q (gd-combat đã chốt) | Không đụng bảng của `nguoi-choi.md`, chỉ thêm | Dùng E cho cả ba | Rẻ |
 | Esc không gán lại | Cố định | Người chơi không tự khóa | Gán lại tự do | Rẻ |
@@ -1113,7 +1111,7 @@ Kiểm: không giao diện nào hỏi "có đúng N người không", mọi số
 | Chữ thất bại | Cấm trong giờ giao thương | Khung K13: tàu rời chỉ mất món đó | Màn Thua giờ giao thương | Rẻ |
 | Hộp thoại truyện | Bỏ qua một lần bấm, Sổ tay ghi một câu | Khớp `cot-truyen.md` luật 8 | Không cho bỏ qua | Rẻ |
 | Camera ngoài không gian | 10,0 u dọc, 17,8 u ngang ở 16:9 | Hai trong ba file đã ngầm dùng 10 u (`nguoi-choi.md` 18 x 10, `ho-so-nhan-vat.md` 106 điểm ảnh mỗi u là 10,2 u ở 1080p), nhân vật 72 px ở 720p còn đọc rõ | Camera 12 x 21 của `map.md` mục 6.4 (nhân vật chỉ 60 px ở 720p) | Vừa (greybox của gd-world phải theo) |
-| Camera trong trạm | Cùng tỉ lệ nhân vật, theo nhân vật, kèm HCH-10 | Silhouette nhân vật không đổi giữa hai cảnh, HCH-10 bù phần không thấy | Thu nhỏ để thấy cả 3 tầng | Rẻ |
+| Camera trong trạm | Cùng tỉ lệ nhân vật, theo nhân vật, kèm HCH-10 | Silhouette nhân vật không đổi giữa hai cảnh, HCH-10 bù phần không thấy | Thu nhỏ để thấy cả mặt bằng | Rẻ |
 | Màn hẹp hơn 16:9 | Mở thêm chiều cao, vùng nhìn tối thiểu 17,8 x 10,0 u | Mọi người thấy cùng vùng ngang tối thiểu, hazard vào màn không bị thu hẹp | Cắt ngang, thanh đen | Rẻ |
 | Esc | Đóng màn con trước, rồi mới mở menu. Start luôn mở menu | Một luật để dev không phải đoán | Esc luôn mở menu | Rẻ |
 | Gợi ý khi Oxy dưới 25% | Chỉ T09, T15, T20, T34, T36 | Nhường chỗ cho cảnh báo Oxy, năm bước này là thoát hiểm, cứu bạn hoặc hồi Oxy | Cấm mọi gợi ý | Rẻ |
@@ -1124,7 +1122,7 @@ Kiểm: không giao diện nào hỏi "có đúng N người không", mọi số
 | HUD boss | HUD-17 theo cơ chế pha, không có thanh Choáng | Boss chỉ Bất lực theo cơ chế pha (`combat-driftlife.md` mục 3.7), người chơi cần biết pha và cơ chế để chọn hạ hay xua đi | Thanh choáng như Driftlife | Rẻ |
 | Hộp xác nhận | Một khuôn UI-54, nút an toàn focus sẵn | Luật 23, 28 cần nêu hệ quả, một khuôn để dev không dựng nhiều kiểu | Mỗi chỗ một hộp riêng | Rẻ |
 | Nhận biết cửa neo | Số lớn cộng màu, viền thùng cùng số | Màu demo gần màu slot, mù màu | Chỉ màu | Rẻ |
-| Chạy tới bằng chuột | Bấm ô quầy hay cửa neo là tự chạy và làm việc ở đích | Demo Lead đã duyệt, bớt bấm A D qua lại | Chỉ A D | Rẻ |
+| Chạy tới bằng chuột | Bấm ô quầy hay cửa neo là tự chạy và làm việc ở đích | Demo Lead đã duyệt, bớt bấm phím di chuyển qua lại | Chỉ phím di chuyển | Rẻ |
 | Giờ giao thương đầu cố định | 2 tàu, dạy T22 đến T25 trong một giờ giao thương | Mỗi bước một ý, đủ vòng nhặt, giao, bơm khí | Dạy rải nhiều giờ giao thương | Vừa |
 | Âm thanh | 4 thanh âm lượng, chú thích âm bật tắt, không giọng đọc ở MVP | Trợ năng cơ bản, mọi thoại là chữ | Một thanh âm lượng | Rẻ |
 | Thoát giữa chuyến | Hộp xác nhận nêu hệ quả theo C10 | Không để người chơi mất túi vì bấm nhầm | Thoát im lặng | Rẻ |

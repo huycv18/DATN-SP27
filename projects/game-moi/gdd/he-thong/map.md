@@ -52,8 +52,9 @@ Hệ thống này dựng toàn bộ không gian ngoài trạm: map tổng The Wa
 
 ## Hiện hành
 
-- Map tổng là một dải ngang: Ember ở mép trái, đi sang phải là đi xa trạm và về phía tâm vụ nổ. Ba vùng Vành đai ngoài, Vành đai trong, Vùng trung tâm nối tiếp nhau theo trục ngang.
-- Mỗi dải là lưới mảnh 40 x 24 u, cao 3 hàng. Vành đai ngoài 4 cột, Vành đai trong 6 cột, Vùng trung tâm 8 cột. Mảnh dựng tay, ghép lại mỗi chuyến, một số ô cố định.
+- Góc nhìn top-down nghiêng 45 độ (Lead chốt 2026-11-23): mọi không gian trong file là mặt bằng nhìn từ trên xuống. Trên, dưới, trái, phải theo màn hình, phía trên màn hình là phía bắc của map. Ngoài không gian vẫn bay tự do 8 hướng trên mặt phẳng chơi.
+- Map tổng trải từ trái sang phải màn hình: Ember ở mép trái, đi sang phải là đi xa trạm và về phía tâm vụ nổ. Ba vùng Vành đai ngoài, Vành đai trong, Vùng trung tâm nối tiếp nhau theo trục x.
+- Mỗi dải là lưới mảnh 40 x 24 u, 3 hàng xếp từ dưới lên trên màn hình. Vành đai ngoài 4 cột, Vành đai trong 6 cột, Vùng trung tâm 8 cột. Mảnh dựng tay, ghép lại mỗi chuyến, một số ô cố định.
 - Dải chưa mở bị chặn bằng Rạn vụn. Dải đã mở mà vỏ bộ đồ thiếu cấp môi trường thì hao nền nhân hệ số thiếu cấp của gd-character (2,5 hoặc 4).
 - Recall Beacon: Vành đai ngoài 1, Vành đai trong 2, Vùng trung tâm 3 mỗi chuyến, giữ phím 5 giây, dùng nhiều lần, ai cũng dùng được.
 - Skiff mở ở chương 2, đưa cả nhóm tới lối vào một map nhánh đã từng vào, tính là một chuyến, chỉ đi vào map nhánh đó.
@@ -72,14 +73,14 @@ Quyết định người chơi đưa ra trong hệ thống này:
 
 - Pillar phục vụ: P1 (Oxy là đồng hồ của không gian), P3 (mọi luật đúng với 1 đến 4 người), P4 (truyện chỉ ở chỗ dựng tay).
 
-30 giây đầu của chuyến đầu tiên: ra cửa khí vào mảnh Ember Mooring (ô cố định, không hazard, không Driftlife săn mồi). Thấy phế liệu trôi trong tầm tay, nhặt món đầu. Thấy xác Station Cinder lớn ở phía phải trên làm mốc. Thấy Mảnh trôi đầu tiên đi chậm qua đường bay, có vệt bụi báo trước.
+30 giây đầu của chuyến đầu tiên: ra cửa khí vào mảnh Ember Mooring (ô cố định, không hazard, không Driftlife săn mồi). Thấy phế liệu trôi trong tầm tay, nhặt món đầu. Thấy xác Station Cinder lớn ở phía trên bên phải màn hình làm mốc. Thấy Mảnh trôi đầu tiên đi chậm qua đường bay, có vệt bụi báo trước.
 
 ## 2. Luật
 
 ### 2.1 Map tổng và mảnh
 
-1. Map tổng The Wake là mặt phẳng 2D nhìn ngang. Trục ngang là khoảng cách tới Ember. Ember nằm ngoài lưới, ở mép trái, cửa khí mở vào giữa chiều cao map. (MVP)
-2. Map tổng gồm ba dải nối tiếp theo trục ngang: Vành đai ngoài, Vành đai trong, Vùng trung tâm. Mỗi dải là một lưới mảnh, số cột theo bảng tham số, cao 3 hàng. (MVP cho Vành đai ngoài)
+1. Map tổng The Wake là một mặt phẳng chơi nhìn từ trên xuống, camera top-down nghiêng 45 độ. Trục x (trái sang phải màn hình) là khoảng cách tới Ember, trục y (dưới lên trên màn hình, nam lên bắc) là chiều dọc của dải. Ember nằm ngoài lưới, ở mép trái, cửa khí mở vào giữa chiều dọc map. (MVP)
+2. Map tổng gồm ba dải nối tiếp theo trục x: Vành đai ngoài, Vành đai trong, Vùng trung tâm. Mỗi dải là một lưới mảnh, số cột theo bảng tham số, 3 hàng theo trục y. (MVP cho Vành đai ngoài)
 3. Mảnh là khối dựng tay cùng kích thước. Mỗi cạnh của mảnh khai báo một cổng: mở (lỗ rộng bằng tham số cổng mảnh, ở giữa cạnh) hoặc đóng. Hai mảnh cạnh nhau chỉ thông nhau khi cả hai cạnh chạm nhau đều mở. (MVP)
 4. Mỗi mảnh thuộc đúng một dải và một loại: Mở, Hành lang, Ổ, Xác lớn, Thưởng, Cố định. Định nghĩa loại ở bảng 3.3. (MVP)
 5. Ô cố định giữ nguyên mảnh qua mọi chuyến: ô Ember Mooring (cột 1 hàng giữa của Vành đai ngoài, cổng Trái, Phải, Trên, Dưới đều mở) và ô lối vào của mỗi map nhánh (cổng ghi ở mục 6.4). Rạn vụn không phải ô (luật 2.2.2). (MVP)
@@ -88,12 +89,12 @@ Quyết định người chơi đưa ra trong hệ thống này:
 8. Cờ nửa ngoài của mảnh: "Có" là mảnh chỉ đặt ở nửa ngoài của dải (cột lớn hơn nửa số cột, Vành đai ngoài là cột 3 và 4), "Không" là mảnh đặt ở mọi cột. Mảnh Thưởng luôn có cờ "Có". (MVP)
 9. Mỗi dải có đường chính đi được từ ranh trong tới ranh ngoài mà không cần dụng cụ phá vật cản. Mỗi dải có ít nhất một vòng: hai đường khác nhau nối cùng hai cột. (MVP)
 10. Mọi ô lối vào map nhánh, mọi Recall Beacon của chuyến và ô Ember Mooring đều nối được với đường chính. (MVP)
-11. Biên trên và biên dưới của map là ranh vô hình có hình mảnh vỡ dày. Người chơi chạm ranh thì dừng lại, không mất Oxy. (MVP)
+11. Biên trên (bắc) và biên dưới (nam) của map là ranh vô hình có hình mảnh vỡ dày. Người chơi chạm ranh thì dừng lại, không mất Oxy. (MVP)
 
 ### 2.2 Dải, mở dải và môi trường
 
 1. Vành đai ngoài mở từ đầu game. Vành đai trong mở ở mốc đóng chương 1 (bắt được sóng của Lantern, Thông dịch viên giải ra khe đi qua Rạn vụn). Vùng trung tâm mở ở mốc đóng chương 2 (Hoa tiêu đọc lõi dẫn đường). Mốc do gd-story giữ. (MVP cho Vành đai ngoài, Sau MVP cho Vành đai trong, Vùng trung tâm)
-2. Dải chưa mở có Rạn vụn chiếm 8 u đầu cột 1 của dải đó, suốt chiều cao map. Rạn vụn là va chạm cứng, không phá được bằng mọi dụng cụ. Khi dải mở, Rạn vụn mở một khe cao bằng cổng mảnh ở đúng hàng đường chính đi từ dải trước sang (mục 2.9 bước 4), phần còn lại giữ làm cảnh. (MVP)
+2. Dải chưa mở có Rạn vụn chiếm 8 u đầu cột 1 của dải đó, suốt chiều dọc map. Rạn vụn là va chạm cứng, không phá được bằng mọi dụng cụ. Khi dải mở, Rạn vụn mở một khe rộng bằng cổng mảnh ở đúng hàng đường chính đi từ dải trước sang (mục 2.9 bước 4), phần còn lại giữ làm cảnh. (MVP)
 3. Mỗi dải có một môi trường: Vành đai ngoài E0, Vành đai trong E1, Vùng trung tâm E2. Môi trường E0 không đòi gì. Môi trường E1, E2, E3 đòi cấp vỏ bộ đồ (trục T-VO của gd-character) bằng số trong mã. (MVP cho E0)
 4. Người chơi ở trong dải có môi trường cao hơn cấp vỏ bộ đồ thì hao nền Oxy nhân hệ số thiếu cấp. Hệ số do gd-character giữ (thiếu 1 cấp và thiếu từ 2 cấp). Hệ số tính theo khu người đó đang ở, đổi ngay khi qua ranh dải. (Sau MVP)
 5. Map nhánh dùng môi trường của dải chứa lối vào, trừ khu có khí (luật 2.7.4). Cradle Interior và Warden Rig dùng E3. (Sau MVP)
@@ -152,7 +153,7 @@ Chi tiết từng hazard ở bảng 3.5.
 6. Manh mối truyện, người vớt và boss chỉ nằm trong map nhánh (K7). Nội dung manh mối do gd-story đặt vào khe manh mối của sơ đồ. (MVP)
 7. Khóa trong map nhánh mở bằng một trong ba loại chìa: dụng cụ (do gd-items định nghĩa), mốc truyện (do gd-story), hạ boss. Một người mở được mọi khóa. (MVP)
 8. Vật nhiệm vụ ở khe V bị mất khi người mang bị kéo về thì trở lại đúng khe V của nó ở chuyến sau. Vật manh mối ở khe M tự ghi khi chạm, không chiếm túi (log GDM dòng 46). (MVP)
-9. Hộ tống (C5.1) không có hệ thống riêng: kéo kén của Sevra qua một đoạn map nhánh có kẻ địch, dùng luật bay, kéo và combat sẵn có. Từ đầu chương 5 (sau C4.7), Skiff chở nhóm và kén từ Ember tới cửa N4, kén chỉ rời Ember bằng Skiff. Từ cửa N4, kéo kén qua vòng phong tỏa tới cửa The Hearth. Cửa The Hearth mở khi kén chạm cửa, đó là mốc C5.1. Trong hộ tống, kén không đi theo Recall Beacon: người kéo kích beacon thì kén nằm lại tại chỗ. Kén rơi khi người kéo ngạt, bị kéo về hoặc kích beacon. Giữa các chuyến, kén được lưu ở beacon cố định gần nhất đã đi qua trên đường hộ tống, chưa qua beacon nào thì ở cửa N4. (Sau MVP)
+9. Hộ tống (C5.1) không có hệ thống riêng: kéo kén của Sevra qua một đoạn map nhánh có kẻ địch, dùng luật bay, kéo và combat sẵn có. Từ đầu chương 5 (sau C4.7), Skiff chở nhóm và kén từ Ember tới cửa N4, kén chỉ rời Ember bằng Skiff. Từ cửa N4, kéo kén qua vòng phong tỏa tới cửa The Hearth. Cửa The Hearth mở khi kén chạm cửa, đó là mốc C5.1. Trong hộ tống, kén không đi theo Recall Beacon: người kéo kích beacon thì kén nằm lại tại chỗ. Kén bị thả khi người kéo ngạt, bị kéo về hoặc kích beacon. Giữa các chuyến, kén được lưu ở beacon cố định gần nhất đã đi qua trên đường hộ tống, chưa qua beacon nào thì ở cửa N4. (Sau MVP)
 Sơ đồ từng map nhánh ở mục 2.10.
 
 ### 2.8 Nhịp chuyến
@@ -197,20 +198,21 @@ Lối vào mỗi map nhánh mở theo mốc truyện (bảng mốc ở `cot-truy
 **N1 Station Cinder (MVP).**
 - Xác Seed Station đầu tiên, Vành đai ngoài, chương 1.
 - Ô lối vào cố định ở Vành đai ngoài cột 3 hàng trên, vỏ xác nhìn thấy từ Ember Mooring làm mốc.
+- Mặt bằng nhìn từ trên gồm hai dãy song song chạy trái sang phải: dãy nam ở nửa dưới màn hình, dãy bắc ở nửa trên. Vách ngăn giữa hai dãy kín, chỉ thông ở lối nối đầu trái C2 và ở C7 (C7 chiếm cả hai dãy). Tọa độ ở mục 6.5.
 
 | Khu | Vị trí | Có gì |
 |---|---|---|
-| C1 Cửa khí hỏng | Tầng dưới, đầu trái | Lối vào và lối ra chính. Beacon B1 |
-| C2 Hành lang trục | Tầng dưới | Mảnh trôi trong hành lang, đàn Driftmoth, phế liệu, linh kiện. Beacon B3 ngay trước D1 để rút khỏi phòng boss |
-| C3 Khoang ngủ đông trái | Tầng trên, lên bằng giếng ở đầu trái C2 | Buồng của Ingrid (sống), một buồng tắt (M1), khe M4 nhật ký trạm STY-101 (vật manh mối đầu tiên, lấy được ở lần 1) |
-| C4 Vách sập | Giữa tầng trên | Chặn đường sang C5 từ C3, không phá được |
-| C5 Khoang ngủ đông phải | Tầng trên | Buồng của Linh (sống), một buồng tắt (M2). Chỉ vào được từ C8, tức phải qua phòng boss |
+| C1 Cửa khí hỏng | Dãy nam, đầu trái | Lối vào và lối ra chính. Beacon B1 |
+| C2 Hành lang trục | Dãy nam | Mảnh trôi trong hành lang, đàn Driftmoth, phế liệu, linh kiện. Beacon B3 ngay trước D1 để rút khỏi phòng boss |
+| C3 Khoang ngủ đông trái | Dãy bắc, vào bằng lối nối ở đầu trái C2 | Buồng của Ingrid (sống), một buồng tắt (M1), khe M4 nhật ký trạm STY-101 (vật manh mối đầu tiên, lấy được ở lần 1) |
+| C4 Vách sập | Giữa dãy bắc | Chặn đường sang C5 từ C3, không phá được |
+| C5 Khoang ngủ đông phải | Dãy bắc | Buồng của Linh (sống), một buồng tắt (M2). Chỉ vào được từ C8, tức phải qua phòng boss |
 | D1 Cửa khóa nguồn | Cuối C2 | Mở bằng TOL-401 Bộ kích nguồn: công thức đầu tiên Ingrid chế ở xưởng sau lần 1 (RCP-205, chỉ dùng tài nguyên thô Vành đai ngoài). Nhóm đã có thì ai chạm cửa cũng mở |
-| C6 Khoang máy | Tầng dưới, sau D1 | Lõi năng lượng, tổ của boss BS-1 Scrapmaw (3 điểm neo xúc tu trên tường), hai Cáp chập |
-| C7 Khoang lái | Đầu phải, hai tầng | khe M3 (manh mối MM1.2 của gd-story), khe vật nhiệm vụ V1 (STY-102 mảnh lõi dẫn đường), beacon B2 mở sau khi xong boss |
-| C8 Hành lang trên | Tầng trên, từ C7 sang C5 | Đường duy nhất tới buồng của Linh |
+| C6 Khoang máy | Dãy nam, sau D1 | Lõi năng lượng, tổ của boss BS-1 Scrapmaw (3 điểm neo xúc tu trên vách phòng), hai Cáp chập |
+| C7 Khoang lái | Đầu phải, chiếm cả hai dãy | khe M3 (manh mối MM1.2 của gd-story), khe vật nhiệm vụ V1 (STY-102 mảnh lõi dẫn đường), beacon B2 mở sau khi xong boss |
+| C8 Hành lang trên | Dãy bắc, từ C7 sang C5 | Đường duy nhất tới buồng của Linh |
 
-- Lần 1 (chưa có chìa): C1, C2, giếng, C3, vớt Ingrid, kéo buồng về B1. Lần 2 (có Bộ kích nguồn): C1, C2, D1, C6 boss, C7, C8, C5, vớt Linh, kéo buồng về B2.
+- Lần 1 (chưa có chìa): C1, C2, lối nối, C3, vớt Ingrid, kéo buồng về B1. Lần 2 (có Bộ kích nguồn): C1, C2, D1, C6 boss, C7, C8, C5, vớt Linh, kéo buồng về B2.
 - Cửa giữa C6 và C7 là vách kín, chỉ mở khi BS-1 kết thúc (hạ hoặc xua đi). Không chạy ngang boss được: đường duy nhất tới C7, C8, C5 và Linh đi qua trận boss. Driftlife do boss sinh ra trong trận không rời phòng C6 (gd-combat xác nhận), nên beacon B3 ngoài phòng luôn kích được.
 
 | Lần | Thời lượng trong nhánh (giây) | Ghi chú |
@@ -235,10 +237,10 @@ Phòng boss (kích thước theo thời lượng trận ước, cơ chế do gd-
 
 | Boss | Nơi | Kích thước (u) | Điểm dựng cho cơ chế | Lối ra sau trận |
 |---|---|---|---|---|
-| BS-1 Scrapmaw | Cinder, C6 Khoang máy | 16 x 12 | 3 điểm neo xúc tu trên tường, lõi năng lượng ở giữa, 2 Cáp chập | Cửa không khóa. Rút giữa trận: qua D1 về C2, beacon B3 cách D1 6 u. Sau trận: beacon B2 ở C7 |
+| BS-1 Scrapmaw | Cinder, C6 Khoang máy | 16 x 12 | 3 điểm neo xúc tu giữa vách bắc, nam, đông, lõi năng lượng ở tâm phòng, 2 Cáp chập | Cửa không khóa. Rút giữa trận: qua D1 về C2, beacon B3 cách D1 6 u. Sau trận: beacon B2 ở C7 |
 | BS-2 Tempest Gulper | Lantern, Lantern Berth, Lantern Outer Ring | 32 x 20 | Kiện hàng trôi (Vụn, đẩy được), 2 cửa cập làm chỗ nấp | Cửa cập Lantern mở, beacon cố định ở bến. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
 | BS-3 Warden Reaper | Flint, khoang hàng thành trạm thu | 28 x 16 | Lồng giữ Driftlife phá được, băng chuyền thu hoạch | Khoang nghiên cứu mở, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
-| BS-4 Cradle Custodian | Cradle, Engine Core | 32 x 24 | Hai tầng sàn kỹ thuật, Engine Core làm tâm | Đường tắt về cửa vào, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
+| BS-4 Cradle Custodian | Cradle, Engine Core | 32 x 24 | Hai dãy sàn kỹ thuật hai bên Engine Core, Engine Core làm tâm | Đường tắt về cửa vào, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
 | BS-5 (Daskel) | Warden Rig, Command Deck | 36 x 24 | Hàng rào cắt bật theo pha, Holding Pens kề bên | Data Core mở, beacon cố định. Beacon phía lối vào, ngoài phòng, để rút giữa trận (luật 2.5.7) |
 
 Hòm và vật kể chuyện trong map nhánh (hòm là điểm khai thác SLV của gd-items, độ cứng theo bảng của gd-items):
@@ -267,8 +269,15 @@ Hòm và vật kể chuyện trong map nhánh (hòm là điểm khai thác SLV c
 | Số cột Vành đai ngoài, Vành đai trong, Vùng trung tâm | 4, 6, 8 | ±1 mỗi dải | Dải dài, bay ra tốn Oxy | Thời lượng làm việc tăng | Ngân sách Oxy | ước |
 | Ranh dải (u) | 160, 400, 720 | theo số cột | | | Ngân sách Oxy | sinh từ số cột |
 | Cổng mảnh | 8 u | 6 đến 10 | Đi qua dễ, mảnh ít kín | Va chạm nhiều ở mối nối | Greybox | ước |
-| Khe hở tối thiểu | 3 u | 3 đến 4 | Dễ bay | Chật, hay va | Greybox | ước, nhân vật cao 1 u |
+| Khe hở tối thiểu | 3 u | 3 đến 4 | Dễ bay | Chật, hay va | Greybox | ước, nhân vật chiếm 1 u trên mặt phẳng chơi |
 | Đường chính rộng tối thiểu | 6 u | 5 đến 8 | Dễ đi | Chật | Greybox | ước |
+| Bán kính tầm nhìn tối thiểu quanh người chơi ngoài không gian, đo trên mặt phẳng chơi, mọi hướng | Vành đai ngoài 7 u. Vành đai trong, Vùng trung tâm 10 u | không thấp hơn | Thấy quái và hazard sớm, sprite nhỏ hơn | Quái phát hiện hoặc đòn bắt đầu báo trước khi nguồn còn ngoài màn | Camera, camera co-op (gd-tech `ky-thuat.md` 2.6), greybox | Suy từ số có sẵn, cách tính ở dưới bảng. Chưa đo trên build |
+
+- Bán kính tầm nhìn tối thiểu R của một dải là số lớn hơn trong hai số. Một: vùng phát hiện lớn nhất của loài trong dải, để người chơi thấy quái trước khi quái thấy mình. Hai: tốc độ bay lớn nhất nhân báo trước dài nhất của mối đe dọa không có chỉ báo ở mép, để người bay thẳng vào một đòn vẫn thấy nguồn đòn ngay khi báo trước bắt đầu.
+- Vành đai ngoài: Arc Eel 7 u (`combat-driftlife.md` 3.4). Bộ đẩy bậc 1 6,5 u/s nhân 1,0 giây (Phóng điện vòng của Arc Eel, Cáp chập) ra 6,5 u. R = 7 u.
+- Vành đai trong và Vùng trung tâm: Gulper, Shardbrood Queen 10 u. Bộ đẩy bậc 3 7,5 u/s nhân 1,0 giây (Nuốt, Vùng hút, Hàng rào cắt) ra 7,5 u. R = 10 u.
+- Không tính: Mảnh trôi, Dòng đá vụn, Bùng tinh vân (có chỉ báo ở mép, luật 2.3.2), Băng nứt (chỉ nổ ở node người chơi đang khai thác), phóng điện lõi BS-1 báo trước 1,3 giây (người ở đâu trong phòng C6 16 x 12 u thì lõi giữa phòng cũng chỉ cách tối đa 8 u ngang, 6 u dọc, nằm trong vùng nhìn ở Zmin).
+- Camera orthographic nghiêng 45 độ nên vùng thấy trên mặt phẳng là hình chữ nhật đều: nửa dọc bằng size x 1,41, nửa ngang bằng size x 1,78 ở 16:9 (gd-tech). R áp theo nửa dọc vì nửa dọc ngắn hơn. Co-op: R áp cho từng người, gd-tech quyết cách giữ trong khung chung.
 
 ### 3.2 Oxy và nhịp chuyến
 
@@ -379,7 +388,7 @@ Hazard làm node khó lấy:
 | H08 | Vùng nhiễu | Môi trường cục bộ | Tắt la bàn, ping, tín hiệu beacon. Không trừ Oxy | Màn hình nhiễu ở mép | Luôn bật, bán kính 15 đến 25 u | Nhớ đường, ra khỏi vùng | Vùng trung tâm | Sau MVP |
 | H09 | Hàng rào cắt | Tĩnh theo nhịp | Tia giữa hai cột, trừ 25 Oxy, đẩy mạnh. Máy phát 60 máu (một người) | Tia mờ 1 giây | Bật 3 giây, tắt 2 giây | Đi qua lúc tắt hoặc phá máy phát | Vùng trung tâm từ chương 3 | Sau MVP |
 
-- Kiểm phép tính: vùng nhìn tối thiểu 17,8 x 10 u (gd-ux), nửa ngang 8,9 u. Tốc độ tương đối lớn nhất của Mảnh trôi là 17 u/s (lướt 15 u/s cộng trôi 2 u/s), đi hết 8,9 u trong 0,52 giây, dưới 1 giây. Vì vậy H01, H04, H07 cần chỉ báo ở mép (luật 2.3.2).
+- Kiểm phép tính: vùng nhìn trên mặt phẳng chơi ở Zmin là 17,8 u ngang x 14,1 u dọc ở 16:9 (`ky-thuat.md` 2.6), nửa ngang 8,9 u, nửa dọc 7,05 u. Tốc độ tương đối lớn nhất của Mảnh trôi là 17 u/s (lướt 15 u/s cộng trôi 2 u/s), đi hết 8,9 u trong 0,52 giây và 7,05 u trong 0,41 giây, đều dưới 1 giây. Vì vậy H01, H04, H07 cần chỉ báo ở mép (luật 2.3.2).
 - Báo trước tối thiểu của mọi hazard gây hại: 1 giây. Bán kính an toàn quanh beacon không có hazard: 8 u.
 - Khoảng cách khe: khe SP-R cách vùng gây hại của hazard (tia, luồng, đường trôi, bán kính nổ) ít nhất 2 u. "Cạnh Cáp chập" nghĩa là khe SP-R cách vùng tia của H02 từ 2 đến 4 u.
 
@@ -491,7 +500,7 @@ Một người, kịch bản trung bình, theo chương:
 | Kích beacon khi Oxy còn đủ đúng thời gian giữ, Oxy về 0 cùng lúc giữ xong | Giữ xong tính trước. Người chơi về trạm, không vào ngạt |
 | Đang giữ beacon thì đồng đội ngạt ngay cạnh | Không tự hủy. Người giữ tự chọn thả phím để chia Oxy |
 | Hai người cùng giữ một beacon | Mỗi người tính riêng, cả hai về khi đủ thời gian của mình |
-| Đang kéo buồng ngủ đông mà Oxy về 0 | Buồng rơi tại chỗ, ở lại map nhánh với trạng thái chưa vớt. Không mất người vớt |
+| Đang kéo buồng ngủ đông mà Oxy về 0 | Buồng bị thả tại chỗ, ở lại map nhánh với trạng thái chưa vớt. Không mất người vớt |
 | Kéo Driftlife sống vào beacon nhưng nó ở ngoài bán kính kéo theo | Driftlife không đi cùng, ở lại map |
 | Spam phím giữ beacon (nhấn nhả liên tục) | Mỗi lần nhả là hủy, tiến độ về 0, không cộng dồn |
 | Thoát game giữa chuyến (chơi một mình) | Nạp lại ở điểm lưu sau chuyến trước (K23). Chuyến dở không tính vào hạn 2 chuyến của ngày, đồ nhặt trong chuyến đó mất. Chơi lại chuyến đó ra đúng bố cục cũ vì seed theo ngày và số thứ tự chuyến |
@@ -542,7 +551,9 @@ Chuyến bắt đầu (seed, N, chương), vào dải, ra dải, thấy beacon, 
 
 ### 6.4 Spec greybox MVP: Vành đai ngoài
 
-- Đơn vị Unity: 1 u, nhân vật cao 1 u. Gốc tọa độ: x = 0 ở cửa khí của Ember, y = 0 ở biên dưới map. Camera cao 10 u, rộng 17,8 u ở 16:9, mở ngang tới 21:9 (gd-ux). Một mảnh 40 x 24 u bằng khoảng 2,2 x 2,4 màn hình.
+- Đơn vị Unity: 1 u, sprite nhân vật cao 1 u và chiếm khoảng 1 u trên mặt phẳng chơi. Unity dựng cảnh 3D, mặt phẳng chơi là mặt XZ ở độ cao Y = 0, mọi asset là sprite 2D. Tọa độ (x, y) trong mục 6.4 và 6.5 là tọa độ mặt bằng: x là trục X của Unity (phải màn hình), y là trục Z của Unity (lên màn hình, phía bắc). Gốc: x = 0 ở cửa khí của Ember, y = 0 ở biên dưới (nam) của map.
+- Camera theo `ky-thuat.md` mục 2.6 (gd-tech): orthographic, nghiêng 45 độ, không xoay. Zmin size 5 cho vùng nhìn 17,8 u ngang x 14,1 u dọc ở 16:9, Zmax size 9 (co-op) cho 32 x 25,5 u. Màn rộng hơn 16:9 mở thêm chiều ngang tới 21:9 (gd-ux). Một mảnh 40 x 24 u bằng khoảng 2,2 x 1,7 màn hình ở Zmin. Bán kính tầm nhìn tối thiểu ở mục 3.1.
+- Vật Rắn cao (vỏ xác, thiên thạch lớn, Rạn vụn) che người chơi thì làm mờ phần che theo spec che khuất của gd-tech.
 
 | Phần | Tọa độ (u) | Ghi chú |
 |---|---|---|
@@ -558,7 +569,7 @@ Lớp va chạm:
 | Lớp | Dùng cho | Va với người chơi | Va với Driftlife |
 |---|---|---|---|
 | Rắn | Vỏ xác, thiên thạch lớn, Rạn vụn, biên | Có | Có |
-| Vụn | Vật trôi nhỏ đẩy được (Rigidbody2D) | Có, đẩy được | Có |
+| Vụn | Vật trôi nhỏ đẩy được trên mặt phẳng chơi (thân vật lý do gd-tech chọn, `ky-thuat.md` 2.6) | Có, đẩy được | Có |
 | Hazard | Vùng gây hại hoặc đẩy | Trigger | Trigger |
 | Khe | Marker điểm sinh | Không | Không |
 | Lối | Cửa khí, beacon, cửa map nhánh | Trigger | Không |
@@ -596,18 +607,20 @@ Lớp va chạm:
 
 ### 6.5 Spec greybox MVP: Station Cinder
 
-- Scene riêng. Gốc tọa độ ở góc dưới trái của vỏ xác. Nội thất 64 x 24 u, hai tầng, mỗi tầng cao 12 u.
+- Scene riêng. Mặt bằng nhìn từ trên, gốc tọa độ ở góc dưới trái (tây nam) của vỏ xác, trục x là đông tây, trục y là nam bắc. Nội thất 64 x 24 u gồm hai dãy: dãy nam y từ 0 tới 12 (C1, C2, D1, C6) và dãy bắc y từ 12 tới 24 (C3, C4, C5, C8), C7 chiếm cả hai dãy.
+- Vách ngăn hai dãy tại y = 12, x từ 8 tới 56, lớp Rắn, kín trừ lối nối x từ 10 tới 13 (rộng 3 u bằng khe hở tối thiểu).
+- Lý do giữ hai dãy (thẩm quyền gd-world, GD-070): giữ nguyên mọi tọa độ, đường đi lần 1 và lần 2, quãng bay và thời lượng 90 và 150 giây đã ước, một mặt bằng duy nhất nên camera không đổi tầng. Giếng của bản nhìn ngang đổi thành lối nối cùng vị trí. Đã bỏ: xếp một dãy dài 128 x 12 u (đổi quãng bay, phải ước lại thời lượng và vị trí beacon).
 
 | Khu | x (u) | y (u) | Ghi chú dựng |
 |---|---|---|---|
 | C1 Cửa khí hỏng | 0 tới 8 | 0 tới 12 | Cửa ra map tổng ở x = 0. Beacon B1 tại (4, 4) |
-| C2 Hành lang trục | 8 tới 40 | 0 tới 12 | Giếng lên tầng trên ở x từ 10 tới 13. Hai H01 trôi dọc hành lang, không đi qua bán kính an toàn 8 u của B3. Beacon B3 tại (34, 4) |
+| C2 Hành lang trục | 8 tới 40 | 0 tới 12 | Lối nối sang dãy bắc (C3) ở x từ 10 tới 13 trên vách y = 12. Hai H01 trôi dọc hành lang, không đi qua bán kính an toàn 8 u của B3. Beacon B3 tại (34, 4) |
 | C3 Khoang ngủ đông trái | 8 tới 24 | 12 tới 24 | Buồng Ingrid tại (16, 15), buồng tắt M1 tại (20, 15), khe M4 (STY-101) tại (12, 20) |
 | C4 Vách sập | 24 tới 26 | 12 tới 24 | Rắn, không phá |
 | C5 Khoang ngủ đông phải | 26 tới 40 | 12 tới 24 | Buồng Linh tại (32, 15), buồng tắt M2 tại (36, 15) |
-| D1 Cửa khóa nguồn | x = 40 | 0 tới 12 | Cửa 1 x 6 u, trigger dùng Bộ kích nguồn |
-| C6 Khoang máy | 40 tới 56 | 0 tới 12 | Đấu trường boss 16 x 12 u, H02 tại (44, 10) và (52, 2), lõi năng lượng ở giữa |
-| C7 Khoang lái | 56 tới 64 | 0 tới 24 | Giếng hai tầng. Khe M3 tại (60, 18), khe V1 (STY-102) tại (58, 10). Beacon B2 tại (60, 4), bật sau boss |
+| D1 Cửa khóa nguồn | x = 40 | 0 tới 12 | Cửa dày 1 u, rộng 6 u trên vách x = 40, trigger dùng Bộ kích nguồn |
+| C6 Khoang máy | 40 tới 56 | 0 tới 12 | Đấu trường boss 16 x 12 u, cạnh dài theo trục đông tây, D1 ở cạnh tây. Lõi năng lượng ở tâm phòng (48, 6). Ba Neo xúc tu BS-1 giữa ba vách: bắc (48, 12) cách lõi 6 u, nam (48, 0) cách lõi 6 u, đông (56, 6) cách lõi 8 u (khớp gd-combat GD-073). H02 tại (44, 10) và (52, 2) |
+| C7 Khoang lái | 56 tới 64 | 0 tới 24 | Chiếm cả hai dãy, thông với C8 ở nửa bắc, vách sang C6 ở nửa nam. Khe M3 tại (60, 18), khe V1 (STY-102) tại (58, 10). Beacon B2 tại (60, 4), bật sau boss |
 | C8 Hành lang trên | 40 tới 56 | 12 tới 24 | Nối C7 sang C5 |
 | Cửa D1 và vách C6 sang C7 | x = 40 và x = 56 | 0 tới 12 | D1 mở bằng TOL-401 thì giữ mở ở mọi chuyến sau. Vách tại x = 56 mở sau boss và giữ mở |
 
@@ -615,25 +628,25 @@ Lớp va chạm:
 
 | Sự kiện | Hình (VFX, trạng thái) | Âm (SFX) | Text, tutorial | Ưu tiên |
 |---|---|---|---|---|
-| Qua ranh dải | Đổi màu nền, hạt bụi môi trường đổi | Tầng nhạc nền đổi | Tên dải hiện 2 giây | MVP |
+| Qua ranh dải | Đổi màu nền, hạt bụi môi trường đổi | Lớp nhạc nền đổi | Tên dải hiện 2 giây | MVP |
 | Vào dải thiếu cấp | Viền màn hình theo màu môi trường, thanh Oxy chạy nhanh | Tiếng cảnh báo bộ đồ | Một dòng: thiếu cấp vỏ, Oxy hao nhanh | Sau MVP |
 | Thấy beacon lần đầu | Cột sáng từ beacon, ghim lên la bàn | Tiếng bíp phát hiện | Tutorial lần đầu: giữ phím để về trạm | MVP |
 | Đang giữ beacon | Vòng tiến độ quanh nhân vật | Âm tăng dần | | MVP |
 | Giữ beacon bị hủy | Vòng vỡ | Tiếng tắt | | MVP |
-| Báo trước từng hazard | Theo bảng 3.5. Chỉ báo ở mép màn hình cho H01, H04, H07 (mũi tên theo hướng tới) | Mỗi hazard một tiếng báo riêng, tiếng chỉ báo mép có hướng trái phải | Lần đầu gặp mỗi hazard: một dòng gợi ý | MVP cho H01 đến H03 |
+| Báo trước từng hazard | Theo bảng 3.5. Chỉ báo ở mép màn hình cho H01, H04, H07 (mũi tên theo hướng tới) | Mỗi hazard một tiếng báo riêng, tiếng chỉ báo mép có hướng theo mép tới (trái, phải, trên, dưới) | Lần đầu gặp mỗi hazard: một dòng gợi ý | MVP cho H01 đến H03 |
 | Rạn vụn | Tường mảnh vỡ dày, chớp nhẹ ở khe khi dải mở | | Khi chạm lần đầu ở chương 1: chưa có đường qua | MVP |
 | Bản đồ chuyến (phím M, không dừng thời gian) | Lưới mảnh, ô đã vào sáng, ô chưa vào tối, ghim beacon đã thấy, lối vào map nhánh, vị trí đồng đội | | Tutorial lần đầu ở Ember Mooring | MVP |
 | Mốc cố định | Silhouette lớn, đèn nháy riêng của mỗi xác | | | MVP |
 | Kéo buồng ngủ đông | Dây kéo, buồng phát sáng nhịp tim | Tiếng máy buồng | Tutorial lần 1 ở Cinder | MVP |
 | Skiff đi | Cảnh xuồng tách bến, bay qua các dải | Động cơ | | Sau MVP |
 
-Art 2D vector, một artist: map tổng dựng từ một bộ kit dùng chung cho mỗi dải (khối vỏ tàu, thiên thạch, băng, mây khí). Mảnh là cách xếp kit, không phải tranh vẽ riêng. Map nhánh xác Seed Station dùng chung một bộ nội thất.
+Art 2.5D, một artist: Unity dựng cảnh 3D, mọi asset là sprite 2D, camera top-down nghiêng 45 độ. Map tổng dựng từ một bộ kit dùng chung cho mỗi dải (khối vỏ tàu, thiên thạch, băng, mây khí). Mảnh là cách xếp kit, không phải tranh vẽ riêng. Map nhánh xác Seed Station dùng chung một bộ nội thất.
 
 ## 7b. Cảm giác
 
 Tham chiếu cảm giác: khoảnh khắc thấy vỏ xác lớn hiện dần từ bóng tối khi bay tới, tiếng thở trong mũ đổi nhịp khi Oxy thấp, Recall Beacon kéo người chơi đi trong một nhịp sáng ngắn rồi cắt về trạm.
 Phản tham chiếu: không để map tổng trông như lưới ô vuông. Mối nối giữa hai mảnh phải bị che bằng vật trôi và mảnh vỡ. Không để hazard giật hình hay rung màn hình liên tục.
-Phản hồi: trúng hazard thì nhân vật nháy và bị đẩy ngay trong khung hình đó, thanh Oxy rơi kèm số trừ. Báo trước của hazard luôn dài hơn thời gian phản ứng tối thiểu ở bảng 3.5.
+Phản hồi: trúng hazard thì nhân vật nháy và bị đẩy ngay trong khung hình đó, thanh Oxy tụt kèm số trừ. Báo trước của hazard luôn dài hơn thời gian phản ứng tối thiểu ở bảng 3.5.
 
 ## 8. Cách đo thành công và tiêu chí nghiệm thu
 
@@ -662,7 +675,7 @@ Tiêu chí nghiệm thu:
 
 | Điểm | Dave làm thế nào | Mình làm thế nào | Vì sao lệch |
 |---|---|---|---|
-| Trục khám phá | Blue Hole chia 3 dải theo độ sâu (0 đến 50 m, 50 đến 130 m, 130 đến 250 m) [D3] | 3 dải theo khoảng cách ngang tới trạm | Không gian không có trên dưới, khoảng cách tới trạm là thứ người chơi tính Oxy |
+| Trục khám phá | Blue Hole chia 3 dải theo độ sâu (0 đến 50 m, 50 đến 130 m, 130 đến 250 m) [D3] | 3 dải theo khoảng cách tới trạm trên mặt phẳng chơi (trục x) | Không gian không có trên dưới, khoảng cách tới trạm là thứ người chơi tính Oxy |
 | Sinh lại | Địa hình và sinh vật sinh lại mỗi lần lặn [D2][D4], loài gắn độ sâu [D5] | Ghép mảnh dựng tay theo lưới, có đường chính và vòng bảo đảm, ô cố định | Kho tri thức ghi Dave bỏ sinh thủ tục vì độ vui không đều (log dòng 13). Ghép mảnh giữ chất lượng từng mảnh |
 | Thoát | Escape Pod, giữ phím 6 giây, đổi vị trí mỗi dive, bị đẩy thì hủy [D9] | Recall Beacon giữ 5 giây, số beacon giới hạn theo dải, phải thấy mới ghim | Số beacon và bán kính phát hiện là núm đo được cho P1. Dave không công bố số pod |
 | Khu đặc biệt | Glacial Area, Cargo Ship và khu khác có tên, cố định, có đường tắt bằng gương [D3][D6] | 8 map nhánh dựng tay giữ trạng thái, Skiff đi thẳng | Truyện và người vớt phải ở chỗ chắc chắn gặp (K7, P4) |
@@ -704,8 +717,8 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 
 | # | Điểm | Chọn | Vì sao | Đã bỏ | Đảo |
 |---|---|---|---|---|---|
-| W1 | Hình học map tổng | Dải ngang một trục, Ember ở mép trái | Khoảng cách tới trạm là một trục, tính Oxy được, ghép mảnh theo cột đơn giản | Vòng tròn đồng tâm quanh trạm (diện tích tăng bậc hai, nặng art) | Đắt |
-| W2 | Đơn vị ghép | Lưới mảnh 40 x 24 u, cao 3 hàng | Mỗi mảnh khoảng 2 x 2 màn hình, đủ chỗ cho một ý | Mảnh tự do không lưới | Vừa |
+| W1 | Hình học map tổng | Dải một trục từ trái sang phải màn hình, Ember ở mép trái | Khoảng cách tới trạm là một trục, tính Oxy được, ghép mảnh theo cột đơn giản | Vòng tròn đồng tâm quanh trạm (diện tích tăng bậc hai, nặng art) | Đắt |
+| W2 | Đơn vị ghép | Lưới mảnh 40 x 24 u, 3 hàng | Mỗi mảnh khoảng 2,2 x 1,7 màn hình ở Zmin, đủ chỗ cho một ý | Mảnh tự do không lưới | Vừa |
 | W3 | Bảo đảm đường | Đường chính kiểu một hàng mỗi cột, ít nhất một vòng mỗi dải | Không sinh bố cục hỏng, có lựa chọn đường | Cây phân nhánh | Rẻ |
 | W4 | Mở dải | Rạn vụn chặn dải chưa mở, mở theo mốc chương. Vành đai trong mở bởi mốc đóng chương 1, Vùng trung tâm bởi mốc đóng chương 2 | Khớp K6 (mở theo chương) và gd-story (Hoa tiêu ở Wick trong Vành đai trong, mở Vùng trung tâm) | Hoa tiêu mở Vành đai trong (Hoa tiêu nằm trong Vành đai trong nên không tới được) | Rẻ |
 | W5 | Cấp môi trường từng dải | Vành đai ngoài 0, Vành đai trong 1, Vùng trung tâm 2, Cradle Interior và Warden Rig 3 (môi trường E3 Lõi rò). Hệ số thiếu cấp dùng của gd-character | Mỗi chương lớn cần một bậc vỏ, khớp bảng T-VO của gd-character. Thiếu 1 cấp còn 29 đến 33% thời gian làm việc: đi được nhưng đắt (K6) | Cradle dùng E2 của Vùng trung tâm (cấp 3 của T-VO không có chỗ dùng) | Rẻ |
@@ -723,6 +736,7 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | W20 | Hướng sửa thời lượng chuyến | Không đổi map. Giây khai thác nhân 2 (gd-items đã làm). Túi bậc 0 đến 4 là 80, 100, 126, 168, 216 và bình 330, 450, 600, 780, 1000 (GDM đã chốt, log 54) | Sim: diện tích, mật độ, hazard không kéo dài chuyến đủ. Túi quyết đầu game, bình quyết cuối game | Tăng số hàng, mật độ, giảm hazard (sim cho ngắn hơn hoặc thêm dưới 1 phút) | Vừa |
 | W21 | Định nghĩa để dựng bộ sinh mảnh | Trùng mảnh là cùng mảnh cùng ô. Cờ nửa ngoài "Có" là chỉ cột 3, 4. Cổng ô cố định Ember Mooring 1111, Cinder 1101. Beacon không cùng ô chuyến trước. Đường chính nối liền giữa hai dải. Bố cục dự phòng dựng tay. Kiểm bằng `sim/bo_cuc.py` | QA GD-031: các luật cũ chưa dựng được, cách đọc khác nhau lệch tỉ lệ hợp lệ hàng nghìn lần | Trùng tính theo tập mảnh (kho 16 không đạt tiêu chí) | Rẻ |
 | W22 | Nơi cứu và hộ tống Sevra (lời Lead, GD-033) | Dùng lại N4 Veyl Waypost theo đề xuất của gd-story. Cứu ở Waypost Outer Ring, kén về Ember bằng beacon hoặc cửa khí (C3.8). Hộ tống: Skiff chở kén tới cửa N4, kéo tới cửa The Hearth (C5.1). Trong hộ tống kén không theo beacon, lưu ở beacon cố định gần nhất | Không thêm map nhánh và art mới. Một đích cho mỗi mốc. Kén không theo beacon để hộ tống không bị bỏ qua bằng một lần kích | Station Flint, kéo kén xuyên map tổng từ Ember | Rẻ |
+| W23 | Mặt bằng Station Cinder theo top-down 45 độ (GD-070) | Hai dãy nam và bắc giữ nguyên tọa độ bản nhìn ngang, giếng thành lối nối cùng vị trí, C6 cạnh dài đông tây, 3 Neo giữa vách bắc, nam, đông | Không đổi số, đường đi, thời lượng. Neo cách lõi 6 đến 8 u như gd-combat cần | Một dãy dài 128 x 12 u | Rẻ |
 | W17 | Kho mảnh MVP | 16 mảnh Vành đai ngoài, 2 ô cố định | Tỉ lệ kho trên ô ghép 1,6, vừa sức 1 artist khi dựng bằng kit | 22 mảnh ngay MVP | Rẻ |
 | W19 | Nơi đặt vật kể chuyện chương 4 và 5 | Hộp ghi hành trình ở Bridge Archive (khu cuối Cradle Interior). Bản đồ sao thật và lệnh phục kích mang dấu Daskel ở Data Core của Warden Rig, mở sau BS-5 | Vật kể chuyện là phần thưởng của trận cuối, người chơi tự tay lấy | Rơi từ boss (dễ lỡ khi xua hoặc rớt mạng) | Rẻ |
 | W18 | Boss chương 2 và 3 | BS-2 ở Lantern Outer Ring, BS-3 ở Flint. Waypost và Wick không boss | BS-2 là Gulper vây Lantern (mô tả của gd-combat), lần đầu tới Lantern thành trận cứu trạm. BS-3 là máy thu hoạch, đặt ở Flint thì trận boss và manh mối cú lật Driftlife nói cùng một điều. Waypost trung lập giữ vai bến buôn | BS-2 ở Wick, BS-3 ở Waypost | Rẻ |
@@ -739,6 +753,7 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 
 | Ngày | Thay đổi | Lý do | Ai |
 |---|---|---|---|
+| 2026-11-23 | GD-070: viết lại không gian theo top-down 45 độ. Map tổng và greybox theo mặt bằng (x đông tây, y nam bắc, Unity XZ), Station Cinder hai dãy thay hai tầng, giếng thành lối nối, C6 và 3 Neo theo GD-073, BS-4 hai dãy sàn, camera theo `ky-thuat.md` 2.6, thêm bán kính tầm nhìn tối thiểu (3.1), bỏ chữ rơi không phải luật. Không đổi luật, số | Lead chốt Art 2026-11-23, brief đợt 10, tin gd-tech và gd-combat | gd-world |
 | 2026-11-20 | Ghi Danh mục sơ bộ | Luật đợt số 11 | gd-world |
 | 2026-11-20 | GD-033 phản diện mới: N4 thêm nơi cứu Sevra và The Hearth, luật hộ tống 2.7.9, Warden Rig là nơi Daskel chỉ huy ở bãi vỡ, STY-502 đổi nội dung. Sửa theo QA GD-033 vòng 1: đích C3.8 là Ember, Skiff chở kén tới N4, kén không theo beacon khi hộ tống, lưu vị trí kén, khoảng cách đường hộ tống | Brief đợt 6, tên của gd-story, phiếu `qa/GD-033-map.md` | gd-world |
 | 2026-11-20 | Đợt 4: địa danh tiếng Anh [TẠM] (log 74), seed và lưu bố cục theo K23, giờ giao thương biên thoát theo K23, trọng số độ khó đã duyệt (log 79), mục tiêu co-op 60 đến 75% (log 69) | Tin GDM, brief đợt 4 | gd-world |
