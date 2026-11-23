@@ -166,9 +166,9 @@ Mục tiêu độ dài và kết quả sim, một người chơi ở kịch bả
 | Ca cảng | 3 đến 5 phút | 3,8 phút | Có |
 | Một ngày, chương 1 | 15 đến 20 phút | 15,6 phút | Có |
 | Một ngày, chương 5 | 25 đến 30 phút | 27,6 phút | Có |
-| Chương 1 | 1,5 đến 2 giờ | 2,29 giờ | Không, chờ Lead chọn cách cân lại |
-| Cả game | 12 đến 15 giờ | 14,6 giờ | Có |
-| Nhóm 4 hết game so với chơi một mình | 60 đến 75% thời gian | 68% | Có |
+| Chương 1 | 1,5 đến 2 giờ | 1,77 giờ | Có |
+| Cả game | 12 đến 15 giờ | 14,2 giờ | Có |
+| Nhóm 4 hết game so với chơi một mình | 60 đến 75% thời gian | 70% | Có |
 | Một phiên chơi | 30 đến 60 phút, tức 2 đến 3 ngày trong game | Chưa đo | Chờ playtest |
 
 Sim chưa đo được người chơi có thấy nhịp ngày dễ chịu không, việc đó chờ playtest trên build.

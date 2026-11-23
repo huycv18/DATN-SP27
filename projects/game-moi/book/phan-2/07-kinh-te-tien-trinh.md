@@ -112,7 +112,7 @@ NgayMucTieu = GioMucTieu * 60 / PhutMotNgay
 PhutMotNgay = 2 * PhutMotChuyen + PhutCaCang + 3
 ThuNhapThamChieu = 2 * (GTDMotChuyen / 0,9) * 10 * ChiSoGia / (1 - PhanTip)
 ```
-- GioMucTieu: giờ dùng để tính ngân sách, chương 1 là 1,25 giờ.
+- GioMucTieu: giờ dùng để tính ngân sách, chương 1 là 0,8 giờ.
 - PhutMotNgay: độ dài một ngày tham chiếu, đơn vị phút. 2 chuyến, một ca cảng và 3 phút chuẩn bị và cuối ngày.
 - PhutMotChuyen: phút một chuyến đo bằng sim chuyến, chương 1 là 4,4 phút.
 - PhutCaCang: phút một ca cảng đo bằng sim ca cảng, 3,83 phút.
@@ -122,12 +122,12 @@ ThuNhapThamChieu = 2 * (GTDMotChuyen / 0,9) * 10 * ChiSoGia / (1 - PhanTip)
 
 Ví dụ chương 1:
 - Phút một ngày = 2 x 4,4 + 3,8 + 3 = 15,6 phút.
-- Ngày mục tiêu = 1,25 x 60 / 15,6 = 4,8 ngày.
+- Ngày mục tiêu = 0,8 x 60 / 15,6 = 3,1 ngày.
 - Thu nhập tham chiếu = 2 x (102,1 / 0,9) x 10 x 0,97 / (1 - 26%), sim in ra 3000 Tally.
-- Ngân sách = 0,54 x 4,8 x 3000, sim in ra 7750 Tally. Số trong ví dụ đã làm tròn: sim dùng số lẻ 4,797 ngày và 2989 Tally, ra 7742, làm tròn 50 thành 7750. Nhân tay số tròn ra 7776.
+- Ngân sách = 0,54 x 3,1 x 3000, sim in ra 4950 Tally. Số trong ví dụ đã làm tròn: sim dùng số lẻ 3,070 ngày và 2989 Tally, ra 4955, làm tròn 50 thành 4950. Nhân tay số tròn ra 5022.
 
 Giờ mục tiêu thấp hơn giờ đo được vì chương có phần thời gian không phụ thuộc giá: chuyến map nhánh, đêm chờ người vớt tỉnh, thời gian sửa khoang, điểm lên Hạng cảng:
-- Chương 1 đo được 2,29 giờ so với 1,25 giờ dùng tính ngân sách.
+- Chương 1 đo được 1,77 giờ so với 0,8 giờ dùng tính ngân sách.
 - Sim đo riêng phần không phụ thuộc giá của chương 1, khi giá Tally gần bằng 0, ra 1,8 giờ.
 
 | Loại món | Tỉ lệ trong ngân sách chương |
@@ -138,22 +138,22 @@ Giờ mục tiêu thấp hơn giờ đo được vì chương có phần thời 
 | Bộ đẩy | 0,35 |
 | Mỗi nâng cấp dụng cụ | 0,15 |
 
-- Ví dụ Bình Oxy bậc 1: tổng tỉ lệ các món có giá Tally của chương 1 là 1,0 + 0,5 + 0,5 + 0,35 + 0,15 + 0,15 = 2,65. Giá = 7750 x 0,5 / 2,65 = 1462, làm tròn 50 ra 1450 Tally. 
+- Ví dụ Bình Oxy bậc 1: tổng tỉ lệ các món có giá Tally của chương 1 là 1,0 + 0,5 + 0,5 + 0,35 + 0,15 + 0,15 = 2,65. Giá = 4950 x 0,5 / 2,65 = 934, làm tròn 10 ra 930 Tally. 
 - Đai dụng cụ bậc 1 là thưởng quest của Kỹ sư, không tốn Tally và không tính vào tổng.
 
 Bảng dưới là mọi thứ mua được ở bản MVP. Cột Loại cho biết nâng cấp mở khả năng mới hay chỉ tăng số:
 
 | Món | Loại | Hiệu ứng | Tally | Vật liệu (GTĐ) | Mở khi |
 |---|---|---|---|---|---|
-| Bình Oxy bậc 1 | Chỉ là số | Oxy 330 lên 450, chuyến dài hơn | 1450 | 26,0 | Kỹ sư tỉnh, Xưởng chạy |
-| Túi đồ bậc 1 | Chỉ là số | Túi 80 lên 100 Khối, mang về nhiều hơn | 1450 | 24,2 | Kỹ sư tỉnh, Xưởng chạy |
-| Bộ đẩy bậc 1 | Chỉ là số | Bay nhanh hơn một chút, chỉ số ở mục II.2 | 1000 | 26,2 | Kỹ sư tỉnh, Xưởng chạy |
+| Bình Oxy bậc 1 | Chỉ là số | Oxy 330 lên 450, chuyến dài hơn | 930 | 26,0 | Kỹ sư tỉnh, Xưởng chạy |
+| Túi đồ bậc 1 | Chỉ là số | Túi 80 lên 100 Khối, mang về nhiều hơn | 930 | 24,2 | Kỹ sư tỉnh, Xưởng chạy |
+| Bộ đẩy bậc 1 | Chỉ là số | Bay nhanh hơn một chút, chỉ số ở mục II.2 | 650 | 26,2 | Kỹ sư tỉnh, Xưởng chạy |
 | Đai dụng cụ bậc 1 | Mở khả năng | 3 lên 4 ô dụng cụ, mang thêm một kiểu chơi | 0 | 23,1 | Thưởng quest Kỹ sư, đi kèm Dùi xung |
-| Dụng cụ khai thác bậc 2 | Chỉ là số, có cổng mềm | Khai thác nhanh gấp 1,4. Điểm cứng hơn bậc dụng cụ thì chậm gấp 4 | 440 | 24,4 | Kỹ sư tỉnh, Xưởng chạy |
-| Lao từ bậc 2 | Chỉ là số | Đánh mạnh hơn, xa hơn, chỉ số ở mục II.4 | 440 | 27,0 | Kỹ sư tỉnh, Xưởng chạy |
-| Van tiết lưu | Mở tiến trình | Linh kiện cho giai đoạn đầu của động cơ chính | 2900 | Không | Shop, cần Hạng cảng 3 |
+| Dụng cụ khai thác bậc 2 | Chỉ là số, có cổng mềm | Khai thác nhanh gấp 1,4. Điểm cứng hơn bậc dụng cụ thì chậm gấp 4 | 280 | 24,4 | Kỹ sư tỉnh, Xưởng chạy |
+| Lao từ bậc 2 | Chỉ là số | Đánh mạnh hơn, xa hơn, chỉ số ở mục II.4 | 280 | 27,0 | Kỹ sư tỉnh, Xưởng chạy |
+| Van tiết lưu | Mở tiến trình | Linh kiện cho giai đoạn đầu của động cơ chính | 1850 | Không | Shop, cần Hạng cảng 3 |
 
-Bình Oxy và Túi đồ là hai nâng cấp làm tăng thu nhập chính. Cộng giá Tally của bảng trên ra 7680, sát ngân sách của chương.
+Bình Oxy và Túi đồ là hai nâng cấp làm tăng thu nhập chính. Cộng giá Tally của bảng trên ra 4920, sát ngân sách của chương.
 
 Chi tiết dữ liệu: tab Upgrade cho giá, hiệu ứng và vật liệu từng bậc, tab Shop cho Van tiết lưu, tab Recipe cho công thức vật liệu.
 
@@ -206,17 +206,15 @@ Bảng dưới là một lượt sim chương đầu, kịch bản trung bình, 
 | 3 | 10 | 0 | Không | 0 | 0 | 1 |
 | 4 | 107 | 0 | Không | 0 | 0 | 1 |
 | 5 | 107 | 114 | Không | 0 | 114 | 1 |
-| 6 | 204 | 1744 | Bình Oxy bậc 1 | 1450 | 408 | 1 |
-| 7 | 204 | 1744 | Túi đồ bậc 1, Dụng cụ khai thác bậc 2 | 1890 | 262 | 2 |
-| 8 | 255 | 1744 | Bộ đẩy bậc 1, Lao từ bậc 2 | 1440 | 566 | 3 |
-| 9 | 133 | 1744 | Không | 0 | 2310 | 3 |
-| 10 | 255 | 1744 | Van tiết lưu | 2900 | 1154 | 3 |
+| 6 | 204 | 1744 | Bình Oxy bậc 1, Bộ đẩy bậc 1 | 1580 | 278 | 1 |
+| 7 | 204 | 1744 | Túi đồ bậc 1, Dụng cụ khai thác bậc 2, Lao từ bậc 2 | 1490 | 532 | 2 |
+| 8 | 255 | 1744 | Van tiết lưu | 1850 | 426 | 3 |
 
 Đọc bảng:
 - Bốn ngày đầu chưa có ca cảng. Lịch tàu sinh đầu ngày, nên cảng sửa xong thì ngày sau mới có tàu, sớm nhất ngày 5, cùng ngày với ca thứ nhất của truyện.
 - Ca ngày 5 là ca dạy: 2 tàu Loose Bolt chỉ gọi thùng phế liệu, thu 114 Tally gồm tip (mục II.6). Từ ngày 6 người chơi tự lập danh mục, mỗi ca 25 tàu cho khoảng một nâng cấp bộ đồ.
-- Ngày 8 lên Hạng 3, ngày 10 đủ Tally mua Van tiết lưu và chương đóng, sau sàn 7 ngày của truyện chương 1. Đây là một lượt mẫu. Trung bình 200 lượt cũng lên Hạng 3 ở ngày 8 và đóng chương ở ngày 10.
-- Chương 1 dài 2,29 giờ, quá mục tiêu 1,5 đến 2 giờ: so với khi sim còn mở ca đủ từ ngày 4, thu nhập chương 1 lùi khoảng hai ca. Hạ ngưỡng Hạng cảng không rút được chương vì Tally mới là chỗ chặn. Phương án chỉnh giá đang chờ quyết.
+- Ngày 8 lên Hạng 3, cùng tối đủ Tally mua Van tiết lưu nên chương đóng ngày 8, sau sàn 7 ngày của truyện chương 1. Đây là một lượt mẫu. Trung bình 200 lượt cũng lên Hạng 3 và đóng chương ở ngày 8.
+- Hạng 3 cần 135 điểm, tức ca dạy và ba ca đủ, nên chương 1 một người không đóng trước ngày 8. Giá chương 1 đặt để Tally đủ đúng lúc đó.
 
 Người chơi học và mở theo chương, bảng chương 1:
 
@@ -239,7 +237,7 @@ Sim chạy ba kịch bản người chơi. Tham số hành vi là giả định 
 | Chỉ số giá của danh mục | 0,84 | 0,97 | 1,07 |
 | Hệ số phút một ngày | 1,15 | 1,0 | 0,9 |
 | Tally một ca chương 1 khi kho đủ, một người | 1345 | 1744 | 2038 |
-| Xong chương 1, một người | Ngày 11, 2,99 giờ | Ngày 10, 2,29 giờ | Ngày 9, 1,83 giờ |
+| Xong chương 1, một người | Ngày 9, 2,37 giờ | Ngày 8, 1,77 giờ | Ngày 8, 1,59 giờ |
 
 Kịch bản tệ dài hơn chủ yếu vì người chơi không chuẩn bị chỉ bày hàng chợ, chỉ số giá thấp. Đây là ý đồ của giá theo bậc: chuẩn bị danh mục rút ngắn game.
 
@@ -256,7 +254,7 @@ Kết quả sim kinh tế chương 1, kịch bản trung bình:
 
 | Số người | Tally một ca khi kho đủ | Điểm cảng một ca | Phần hai chuyến đầy túi bán ở một ca | Xong chương 1 |
 |---|---|---|---|---|
-| 1 | 1744 | 46 | 58% | Ngày 10, 2,29 giờ |
+| 1 | 1744 | 46 | 58% | Ngày 8, 1,77 giờ |
 | 2 | 3848 | 102 | 76% | Ngày 7, 1,60 giờ |
 
 Nhóm hai người xong chương đầu sớm nhất có thể vì chạm sàn ngày của truyện, sàn này không đổi theo số người. Hai cột Tally và điểm một ca là ca đủ từ ca thứ hai, ca dạy đầu tiên chỉ có 2 tàu. Tally một ca ở đây là sim kinh tế theo chỉ số giá của kịch bản, nên khác chút với số ở mục Trạm và cảng đo bằng mô hình ca với một danh mục cố định.
@@ -265,11 +263,11 @@ Tiêu chí đã đo bằng sim, kịch bản trung bình, chơi một mình tr�
 
 | Tiêu chí | Mục tiêu | Đo được | Đạt |
 |---|---|---|---|
-| Thời lượng chương 1 | 1,5 đến 2 giờ | 2,29 giờ | Không đạt, chờ quyết phương án giá |
+| Thời lượng chương 1 | 1,5 đến 2 giờ | 1,77 giờ | Đạt |
 | Độ dài một ngày chương 1 | 15 đến 20 phút | 15,6 phút | Đạt |
 | Tip kể cả bơm khí trong Tally ca cảng | 20 đến 30% | 26%, tệ 21%, tốt 30%, mọi kiểu danh mục 22% đến 29% | Đạt |
 | Bắt sống so với hạ, đã trừ vật tiêu hao | 1,2 đến 2 lần | 1,44 đến 1,81 qua lưới, 1,50 đến 1,94 bắt tay | Đạt |
-| Hạng cảng 3 tới trước khi chương 1 xong | Có | Hạng 3 ở ngày 8, chương đóng ngày 10, cả lượt mẫu ở II.7.6 lẫn trung bình 200 lượt | Đạt |
+| Hạng cảng 3 tới trước khi chương 1 xong | Có | Hạng 3 và chương đóng ở ngày 8, cả lượt mẫu ở II.7.6 lẫn trung bình 200 lượt | Đạt |
 
 Tiêu chí đo khi có build, qua event tracking:
 - Mọi Tally nhận được có nguồn là thùng, tip, bơm khí hoặc đơn đặt trước, không có nguồn khác trong 100 phiên thử.

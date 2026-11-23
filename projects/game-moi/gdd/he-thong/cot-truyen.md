@@ -760,7 +760,7 @@ Số tính từ tham số (in bằng script cùng lần soát, xem dòng "Soát"
 
 | Chương | Sàn ngày | Chuỗi theo ngày |
 |---|---|---|
-| 1 | 7 | Ngày 1: C1.1, C1.2, C1.3, C1.4. Ngày 2: Ingrid tỉnh, C1.5, đặt chế Bộ kích nguồn qua đêm. Ngày 3: vào Cinder lần hai, C1.6. Ngày 4: Linh tỉnh, C1.7. Ngày 5: C1.8 và ca thứ nhất. Ngày 6: ca thứ hai. Ngày 7: ca thứ ba, C1.9 |
+| 1 | 7 | Ngày 1: C1.1, C1.2, C1.3, C1.4. Ngày 2: Ingrid tỉnh, C1.5, đặt chế Bộ kích nguồn qua đêm. Ngày 3: vào Cinder lần hai, C1.6. Ngày 4: Linh tỉnh, C1.7. Ngày 5: C1.8 và ca thứ nhất. Ngày 6: ca thứ hai. Ngày 7: ca thứ ba, C1.9. Đây là sàn theo truyện. Sim kinh tế cho chơi một mình đóng chương ngày 8, vì cần Hạng cảng 3 để mua Van tiết lưu |
 | 2 | 5 | Ngày 1: C2.1, C2.2. Ngày 2: ca có TA03, C2.3, sửa KH10 và KH11, chế Phao kéo. Ngày 3: bắt con cỡ M, C2.4. Ngày 4: C2.5, vào Wick, C2.6, C2.7. Ngày 5: Rafa tỉnh, sửa KH08, nộp STY-103, C2.8 |
 | 3 | 8 | Ngày 1: C3.1. Ngày 2: ca có TA06. Ngày 3: Skiff đón Yusuf, C3.2, sửa bến. Ngày 4: C3.3. Ngày 5: C3.4. Ngày 6: C3.5, vào Flint, C3.6. Ngày 7: C3.7. Ngày 8: tới N4, cứu Sevra, C3.8 |
 | 4 | 3 | Ngày 1: cảnh mở, C4.1, C4.2, ca có TA11 với đơn đặt trước tin mật đầu tiên. Ngày 2: C4.3, C4.4, C4.5. Ngày 3: C4.6, rồi C4.7 xong ngay vì đơn đặt trước đã giao xong |

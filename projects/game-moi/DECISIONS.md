@@ -360,6 +360,11 @@ Hệ quả: tải mermaid 10.9.1 (jsdelivr) và pandoc 3.1.11.1 bản portable (
 
 Lead: "Giữ mốc". Mốc của buổi playtest `qa/playtest/2026-11-23/kich-ban.md`: từ 2/3 số người muốn ra chuyến thứ hai. Từ nửa số người có ít nhất một lần dưới vạch "đủ về", và dưới 1/3 số chuyến kết thúc bằng bị kéo về. Điểm khó điều khiển trung bình từ 3 trở xuống, không ai bỏ dở bài hành lang. Tiêu chí 23, 24, 54 theo MVP Checklist.
 
+## 2026-11-23 - Hạ giờ ngân sách chương 1 xuống 0,8
+
+Sau khi sim mô hình đúng ca cảng sớm nhất ngày 5 và ca dạy 2 tàu (log 111), chương 1 một người dài 2,29 giờ, vượt mục tiêu 1,5 đến 2 giờ. GDM trình ba cách, Lead chọn: "Hạ về 0,8".
+Hệ quả: giờ mục tiêu chương 1 trong công thức ngân sách của `kinh-te-tien-trinh.md` từ 1,25 thành 0,8. Giá mua chương 1 giảm theo (sim thử: ngân sách 7750 thành 4950, Bình Oxy bậc 1 1450 thành 930, Van tiết lưu 2900 thành 1850). Ngưỡng Hạng cảng giữ nguyên. gd-economy chạy lại sim, in lại Shop, Upgrade, ECONOMIC, PROCESSING, Balance Sheet, sửa II.7. GDM dán Sheet các tab đổi.
+
 ## 2026-11-23 - Bỏ hàng "Nguyên tắc nền Solo or Together" khỏi bảng pillar
 
 Lead chỉ vào hàng này trên Sheet: "Bạn check rồi mà vẫn giữ cái này". Hàng do GDM tự thêm ngày 2026-11-20 (mục Core Pillars theo Dave), nằm chen trong bảng 5 pillar mà Lead chốt giữ đúng như Dave the Diver.

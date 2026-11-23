@@ -61,7 +61,7 @@ Luật của chuỗi:
 - Mốc đóng chương chỉ xong khi giai đoạn động cơ chính của chương đã lắp. Trạm và kinh tế không có cổng chương riêng.
 - Số ca cảng cần cho mốc đóng chương là khởi điểm 3, khoảng an toàn 2 tới 5, chưa đo. Đây là núm duy nhất của truyện chạm thời lượng chương 1.
 
-Mốc Tàu đầu tiên rơi vào ca cảng thứ nhất, mốc đóng chương cần ca thứ ba. Ngày sớm nhất chương đầu xong theo sim kinh tế: xem mục II.7, không đổi theo số người chơi.
+Mốc Tàu đầu tiên rơi vào ca cảng thứ nhất, mốc đóng chương cần ca thứ ba. Ngày chương đầu xong theo sim kinh tế ở mục II.7. Chơi một mình thường xong muộn hơn chơi hai người một ngày, vì phải đủ điểm lên Hạng cảng ba để mua linh kiện động cơ.
 
 ```mermaid
 flowchart TD
@@ -178,7 +178,7 @@ Mục tiêu nghiệm thu của hệ thống truyện:
 |---|---|---|
 | Số mốc và vật truyện mỗi chương | Ít nhất 3 mốc, ít nhất 2 vật truyện. Chương 1 có 9 mốc và 4 vật | Đã đếm bằng script |
 | Câu thoại mẫu trong giới hạn kênh | Không câu nào quá 80 hoặc 60 ký tự, không chứa chữ số | Đã đếm bằng script |
-| Sàn ngày chương 1 | Ngày xong sớm nhất theo II.7, không đổi theo số người chơi | Đã đo bằng sim kinh tế, số ở mục II.7 |
+| Sàn ngày chương 1 | Ngày xong theo sim kinh tế ở mục II.7, chơi một mình muộn hơn chơi hai người một ngày | Đã đo bằng sim kinh tế, số ở mục II.7 |
 | Bỏ qua mọi cảnh chương 1 | Sổ tay có 9 dòng tóm tắt và luôn có dòng mục tiêu | Chờ build |
 | Bị kéo về khi đang kéo buồng Ingrid | Chuyến sau buồng ở vị trí gốc, Ingrid vẫn vớt được | Chờ build |
 | Hai người, người thứ nhất nhặt manh mối | Sổ tay người thứ hai có manh mối đó ở lần mở kế tiếp | Chờ build |

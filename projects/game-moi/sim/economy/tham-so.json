@@ -115,7 +115,7 @@
     },
     "ghi_chu_chuong": "Chỉ số 0 là chương 1",
     "gio_muc_tieu_chuong": [
-      1.25,
+      0.8,
       2.75,
       3.5,
       3.0,
@@ -370,7 +370,15 @@
         "tham-so.json ngay_mo_cang_ch1, ca_day (gd-economy)",
         "Từ ngày 4, ca đầu là ca đủ 25 tàu",
         "QA GD-061 C-V1, C-V2: lệch cot-truyen.md mục 5 (ca thứ nhất ngày 5) và tram-va-cang.md luật 67 (ca dạy 2 tàu). Chạy lại: chương 1 1,90 thành 2,29 giờ, cả game 14,2 thành 14,6 giờ, nhóm 4 71% thành 68%",
-        "Sớm nhất ngày 5, ngày sau khi cảng sửa xong. Ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu (log GDM 111). Chương 1 quá mục tiêu 2 giờ, phương án ở mục 10",
+        "Sớm nhất ngày 5, ngày sau khi cảng sửa xong. Ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu (log GDM 111). Chương 1 quá mục tiêu 2 giờ, chỉnh ở dòng sau",
+        "gd-economy"
+      ],
+      [
+        "Giờ mục tiêu chương 1 trong công thức ngân sách",
+        "tham-so.json gio_muc_tieu_chuong (gd-economy)",
+        "1,25. Ngân sách chương 1 7750, giá chương 1 cộng lại 7680",
+        "Sau khi ca cảng sớm nhất ngày 5 và ca đầu là ca dạy: chương 1 2,29 giờ, quá mục tiêu 1,5 đến 2. Hạ ngưỡng Hạng 2 và 3 về 50 và 95 không đổi gì vì Tally là chỗ chặn",
+        "0,8 (Lead chốt 2026-11-23). Ngân sách 4950, giá cộng lại 4920. Chương 1 1,77 giờ, cả game 14,2 giờ, nhóm 4 70%",
         "gd-economy"
       ],
       [
