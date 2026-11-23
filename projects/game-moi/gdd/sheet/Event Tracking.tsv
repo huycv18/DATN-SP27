@@ -63,7 +63,7 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 62	Net	net_rollback	Máy người chơi lùi lại sau dự đoán sai	action\nms	Lùi lại có hiếm không	string\nint
 63	Net	net_reject_hash	Từ chối vào phiên vì lệch hash dữ liệu	build_host\nbuild_client	Từ chối vào phiên vì lệch dữ liệu giữa các máy	string\nstring
 64	Net	net_rtt	Mỗi 30 giây	player_id\nrtt_ms	Độ trễ thực tế	string\nint
-65	Session	save_written	Tự lưu xong ở một trong ba điểm	save_point (after_trip, after_shift, sleep)\nms	Lưu chậm hay không, người chơi thoát ở điểm nào	string\nint
+65	Session	save_written	Tự lưu xong ở một trong ba điểm, hoặc ghi nhanh số chuyến lúc qua cửa khí	save_point (after_trip, after_shift, sleep, trip_start)\nms	Lưu chậm hay không, người chơi thoát ở điểm nào	string\nint
 66	Session	save_failed	Một lần ghi lưu lỗi	save_point\nattempt (1 đến 3)	Lưu lỗi bao nhiêu lần, lùi về điểm nào	string\nint
 67	UX	ux_screen_open	Mở một màn	screen_id\ndevice\nday_phase	Màn nào hay mở, mở lúc nào trong ngày	string\nstring\nstring
 68	UX	ux_pin_changed	Đổi món ghim	item_id\nsource (auto, player)	Người chơi có tự ghim không	string\nstring

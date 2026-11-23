@@ -163,7 +163,7 @@ hud.confirm.wait	Chờ: {names}	32	HTR-01
 hud.trip_count	Chuyến {n}/{m}	16	HTR-02
 hud.saved	Đã lưu	10	HTR-03
 confirm.leave_trip	Thoát giữa chuyến tính như bị kéo về, chỉ giữ 1 món	64	UI-50
-confirm.leave_trip_solo	Thoát giữa chuyến sẽ mất chuyến này	40	UI-50
+confirm.leave_trip_solo	Mất đồ nhặt và vẫn tính 1 chuyến	40	UI-50
 confirm.leave_save	Lần sau vào lại ở lần lưu gần nhất	40	UI-50
 err.version	Khác phiên bản game	24	UI-04
 err.host_world	Thế giới về lần lưu gần nhất	40	UI-10

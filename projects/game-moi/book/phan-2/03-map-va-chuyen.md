@@ -288,7 +288,7 @@ Chi tiết dữ liệu: tab Zone khối Ngân sách Oxy một chuyến, tab MVP 
 | Đang kéo buồng ngủ đông thì Oxy về 0 | Buồng bị thả tại chỗ, ở lại map nhánh ở trạng thái chưa vớt, không mất người vớt |
 | Kéo Driftlife sống tới beacon nhưng nó ở ngoài 3 u | Driftlife không đi cùng, ở lại map |
 | Hazard đẩy người chơi vào Rạn vụn hoặc biên map | Dừng lại ở ranh, không trừ Oxy |
-| Thoát game giữa chuyến khi chơi một mình | Vào lại ở điểm lưu sau chuyến trước. Chuyến dở không tính vào hạn hai chuyến của ngày, đồ nhặt trong chuyến đó mất, người chơi đi lại chuyến đó với cùng bố cục map |
+| Thoát game giữa chuyến khi chơi một mình | Vào lại ở điểm lưu sau chuyến trước. Đồ nhặt trong chuyến đó mất, chuyến dở vẫn tính vào hạn hai chuyến của ngày, chuyến kế có bố cục map khác |
 | Người chơi rút khỏi phòng boss khi boss đã mất một phần sinh lực | Boss không đuổi ra ngoài. Phòng không còn ai quá 10 giây hoặc cả nhóm về trạm thì boss hồi đầy, cửa đã mở giữ nguyên |
 
 ### II.3.z. Post-MVP

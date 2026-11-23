@@ -242,7 +242,7 @@ Thế giới lưu tối đa bốn nhân vật theo bốn slot màu. Người và
 |---|---|
 | Khách thoát chủ động giữa chuyến | Tính như bị kéo về, giữ 1 món ghim, nhân vật ở lại trạm, vào lại nhận lại nhân vật cũ |
 | Khách mất kết nối giữa chuyến | Giữ chỗ 15 giây: đứng yên, bất tử, Oxy đóng băng. Quá hạn hoặc mất lần hai trong chuyến thì bị kéo về, giữ 1 món ghim |
-| Chơi một mình thoát giữa chuyến | Vào lại ở điểm lưu sau chuyến trước, chuyến dở không tính vào hạn 2 chuyến mỗi ngày, đi lại được với cùng bố cục |
+| Chơi một mình thoát giữa chuyến | Vào lại ở điểm lưu sau chuyến trước, mất đồ trong chuyến, chuyến dở vẫn tính vào hạn 2 chuyến mỗi ngày, chuyến kế có bố cục khác |
 | Host thoát hoặc mất kết nối | Phiên kết thúc, thế giới về điểm lưu gần nhất |
 
 Chi tiết dữ liệu: tab Player, khối Co-op.

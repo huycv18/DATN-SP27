@@ -76,7 +76,7 @@ Game tự lưu ở ba lúc:
 - Sau giờ giao thương.
 - Lúc ngủ.
 
-Thoát giữa một chuyến hoặc giữa giờ giao thương thì lần sau vào lại ở điểm lưu gần nhất, mất phần đang dở. Bố cục map của từng chuyến được lưu theo ngày và số thứ tự chuyến, nên nạp lại không đổi bố cục. Cách lưu khi co-op ở mục II.8.
+Khi cả nhóm qua cửa khí ra chuyến, game ghi số chuyến đã dùng vào file lưu. Thoát giữa một chuyến thì lần sau vào lại ở điểm lưu sau chuyến trước, đồ nhặt trong chuyến dở mất nhưng chuyến dở vẫn tính vào hạn hai chuyến của ngày. Thoát giữa giờ giao thương thì vào lại ở điểm lưu gần nhất, mất phần đang dở. Bố cục map của từng chuyến được lưu theo ngày và số thứ tự chuyến, nên chuyến kế có bố cục khác chuyến dở. Cách lưu khi co-op ở mục II.8.
 
 ```mermaid
 flowchart TD
@@ -220,7 +220,7 @@ Sim chưa đo được người chơi có thấy nhịp ngày dễ chịu không
 |---|---|
 | Người chơi mở giao thương khi mới đi 1 chuyến | Được. Cửa khí khóa, chuyến thứ hai của ngày mất |
 | Người chơi đi ngủ khi chưa có giờ giao thương hôm đó | Được. Ngày đó không có giờ giao thương, kho giữ nguyên, sang ngày mới bình thường |
-| Thoát game giữa chuyến khi chơi một mình | Vào lại ở điểm lưu sau chuyến trước. Chuyến dở không tính vào hạn hai chuyến của ngày, đồ nhặt trong chuyến đó mất, người chơi đi lại chuyến đó với cùng bố cục map |
+| Thoát game giữa chuyến khi chơi một mình | Vào lại ở điểm lưu sau chuyến trước. Đồ nhặt trong chuyến đó mất, chuyến dở vẫn tính vào hạn hai chuyến của ngày, chuyến kế có bố cục map khác |
 | Co-op: một người còn ở ngoài khi người kia muốn mở giao thương | Nút Mở bán xám kèm lý do, chờ người còn ở ngoài về |
 | Co-op: một người không trả lời xác nhận ra chuyến | Sau 30 giây tính là ở lại trạm, chuyến bắt đầu với những người đã xác nhận |
 | Ba ngày đầu khi cảng chưa sửa | Ngày chỉ có chuyến và cuối ngày, không có pha Giờ giao thương |

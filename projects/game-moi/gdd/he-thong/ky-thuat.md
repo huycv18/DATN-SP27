@@ -116,12 +116,13 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 
 15. Người rời phiên chủ động: nhân vật ở lại trạm (C2). Rời khi đang ngoài chuyến thì tính như bị kéo về (K2, chỉ giữ 1 món), theo C10.
 16. Mất kết nối: mất gói liên tục quá thời gian phát hiện (mục 3) mới tính là rớt. Người rớt giữa chuyến vào Giữ chỗ 15 giây theo `nguoi-choi.md` 2.9 (Giữ chỗ tối đa 1 lần mỗi chuyến cho mỗi người, lần thứ hai tính như bị kéo về ngay, để không dùng rút mạng dừng đồng hồ ngạt. gd-character đã ghi trần này vào `nguoi-choi.md` 2.9). Quá 15 giây thì tính như bị kéo về (K2), theo C10. Vào lại trong 15 giây bằng cùng mã slot thì nhận lại nhân vật. Người rớt là người cuối còn ngoài thì chuyến chung chờ tối đa 15 giây đó. Trong trạm và giờ giao thương dùng cùng cửa sổ 15 giây: hết hạn thì kiện trên tay rơi tại chỗ, host giữ.
-17. Host mất kết nối hoặc thoát: phiên kết thúc với mọi người. Mặc định không chuyển host, vì thế giới thuộc về host (C2) và chuyển host là việc riêng của stack mạng. Dev được đề nghị chuyển host nếu stack chọn hỗ trợ sẵn với chi phí thấp (câu hỏi mở 2). Mọi người về menu, thế giới trở về điểm lưu gần nhất trong ba điểm của luật 18 (K23, C10), chuyến hay giờ giao thương đang dở bị mất. Đây là câu trả lời cho điểm chờ gd-tech của `nguoi-choi.md` và `map.md`.
+17. Host mất kết nối hoặc thoát: phiên kết thúc với mọi người. Mặc định không chuyển host, vì thế giới thuộc về host (C2) và chuyển host là việc riêng của stack mạng. Dev được đề nghị chuyển host nếu stack chọn hỗ trợ sẵn với chi phí thấp (câu hỏi mở 2). Mọi người về menu, thế giới trở về điểm lưu gần nhất trong ba điểm của luật 18 (K23, C10). Đồ trong chuyến dở và phần giờ giao thương dở bị mất, chuyến dở vẫn tính vào hạn 2 chuyến theo luật 18c. Đây là câu trả lời cho điểm chờ gd-tech của `nguoi-choi.md` và `map.md`.
 
 ### 2.3b Lưu `MVP`
 
-18. Tự lưu ở ba điểm (K23, khung sửa lần 5, log 65): sau mỗi chuyến khi mọi người đã về trạm, sau giờ giao thương, và lúc ngủ. Không có lưu tay. Thoát giữa một chuyến hoặc giữa giờ giao thương, kể cả chơi một mình, thì lần sau vào lại ở điểm lưu gần nhất, mất phần đang dở. Ba điểm lưu dùng chung một file và cùng cách ghi an toàn của luật 20.
-18b. Bố cục map của từng chuyến lưu theo ngày và số thứ tự chuyến: `seedChuyen = hash(worldSeed, ngay, soThuTuChuyen)`. Nạp lại ở điểm lưu sau chuyến 1 rồi đi chuyến 2 thì bố cục chuyến 2 giống hệt lần trước, không lưu lại chuyến để đổi bố cục. Bộ sinh dùng RNG riêng theo luật tất định ở mục 7 (`map.md` 6.1, bản tham chiếu `sim/bo_cuc.py`).
+18. Tự lưu ở ba điểm (K23, khung sửa lần 5, log 65): sau mỗi chuyến khi mọi người đã về trạm, sau giờ giao thương, và lúc ngủ. Không có lưu tay. Thoát giữa một chuyến hoặc giữa giờ giao thương, kể cả chơi một mình, thì lần sau vào lại ở điểm lưu gần nhất, mất phần đang dở. Riêng chuyến dở vẫn tính vào hạn 2 chuyến (luật 18c). Ba điểm lưu dùng chung một file và cùng cách ghi an toàn của luật 20.
+18b. Bố cục map của từng chuyến lưu theo ngày và số thứ tự chuyến: `seedChuyen = hash(worldSeed, ngay, soThuTuChuyen)`. Nạp lại ở điểm lưu sau chuyến 1 rồi đi chuyến 2 thì bố cục chuyến 2 giống hệt lần trước. Thoát giữa chuyến 1 thì chuyến 1 đã tính (luật 18c), lần sau vào lại ở điểm lưu đầu ngày và chuyến kế là chuyến 2, dùng số thứ tự 2 nên bố cục khác chuyến 1 dở. Không có đường lặp lại một chuyến đã tính để thăm dò bố cục. Bộ sinh dùng RNG riêng theo luật tất định ở mục 7 (`map.md` 6.1, bản tham chiếu `sim/bo_cuc.py`).
+18c. Ghi số chuyến lúc ra chuyến (DECISIONS 2026-11-23): khi cả nhóm qua cửa khí và chuyến bắt đầu, host ghi `soChuyenDaDi` tăng 1 vào file save ngay lúc đó. Đây là ghi nhanh một trường, không ghi lại các trường khác và không đổi `diemLuu`, dùng cùng cách ghi an toàn của luật 20 (file tạm rồi đổi tên đè, giữ `.bak`). Nạp lại thì lấy `soChuyenDaDi` từ lần ghi nhanh, các trường khác từ điểm lưu cuối. Ghi nhanh lỗi thì thử lại như luật 20, quá 3 lần thì không cho qua cửa khí và báo lỗi lưu (khớp UI-44). Khách rời hoặc mất kết nối giữa chuyến (C10) không đổi số chuyến của nhóm.
 19. File save theo thế giới, chỉ trên máy host. Khách giữ bản sao hồ sơ máy (cài đặt, phím, tiến độ tutorial), không đồng bộ qua mạng.
 20. Ghi an toàn: ghi ra file tạm rồi đổi tên đè file chính. Giữ một bản `.bak` của lần lưu trước. File chính hỏng thì mở `.bak` và báo người chơi lùi về điểm lưu trước đó. Lưu lỗi 3 lần liền thì cho người chơi thoát, báo rõ lùi về điểm lưu cuối ghi được (khớp UI-44 của `ux-ui.md`).
 21. File save có số phiên bản dữ liệu. Bản build đổi dữ liệu thì chạy bước migrate có ghi log. Không migrate được thì không mở và báo.
@@ -130,7 +131,7 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 | Nhóm | Trường | Kiểu | Nguồn |
 |---|---|---|---|
 | Thế giới | phienBanSave, worldId, worldSeed, ngay, daySeed, playSecondsTotal, daKetGame (K24, chơi tiếp được ở ngày cuối) | số, chuỗi, bool | khung K23, K24 |
-| Ngày | soChuyenDaDi (K22, tối đa 2), caDaMo, caDaXong, diemLuu (sau chuyến 1, sau chuyến 2, sau giờ giao thương, ngủ), seedChuyen theo số thứ tự chuyến đã sinh trong ngày | số, bool, enum | khung K22, K23, `tram-va-cang.md` luật 63, 65 |
+| Ngày | soChuyenDaDi (K22, tối đa 2, tăng lúc qua cửa khí theo luật 18c), caDaMo, caDaXong, diemLuu (sau chuyến 1, sau chuyến 2, sau giờ giao thương, ngủ), seedChuyen theo số thứ tự chuyến đã sinh trong ngày | số, bool, enum | khung K22, K23, `tram-va-cang.md` luật 63, 65 |
 | Người chơi theo slot | maSlot, ten, mau, preset, viTriTrongTram, daRoi | | C2, `nguoi-choi.md` 2.9 |
 | Trang bị chung | cấp từng UPG đã mua, bản thiết kế, dụng cụ đã mở | list | C4, `vat-pham.md` |
 | Kho | list `ItemInstance` | | `vat-pham.md` |
@@ -218,7 +219,7 @@ Sự kiện 47 đến 73:
 | 62 | Net | net_rollback | Máy người chơi lùi lại sau dự đoán sai | action, ms | Lùi lại có hiếm không (mục 7b) | string, int | luật 11 |
 | 63 | Net | net_reject_hash | Từ chối vào phiên vì lệch hash dữ liệu | build_host, build_client | | string, string | mục 4 |
 | 64 | Net | net_rtt | Mỗi 30 giây | player_id, rtt_ms | Độ trễ thực tế | string, int | mục 3 |
-| 65 | Session | save_written | Tự lưu xong ở một trong ba điểm (K23) | save_point (after_trip, after_shift, sleep), ms | Lưu chậm hay không, người chơi thoát ở điểm nào | string, int | luật 18 |
+| 65 | Session | save_written | Tự lưu xong ở một trong ba điểm (K23), hoặc ghi nhanh số chuyến lúc qua cửa khí (luật 18c) | save_point (after_trip, after_shift, sleep, trip_start), ms | Lưu chậm hay không, người chơi thoát ở điểm nào | string, int | luật 18 |
 | 66 | Session | save_failed | Một lần ghi lưu lỗi | save_point, attempt (1 đến 3) | Lưu lỗi bao nhiêu lần, lùi về điểm nào (UI-44) | string, int | luật 20 |
 | 67 | UX | ux_screen_open | Mở một màn | screen_id, device, day_phase | Màn nào hay mở, mở lúc nào trong ngày | string, string, string | `ux-ui.md` mục 6 |
 | 68 | UX | ux_pin_changed | Đổi món ghim | item_id, source (auto, player) | Người chơi có tự ghim không | string, string | `ux-ui.md` mục 6 |
@@ -381,7 +382,7 @@ Không có khoảnh khắc riêng. Mục tiêu là người chơi không nhận 
 | Khi có build, co-op: hai người cùng nhặt một node | 1000 lần thử, đúng 1 người nhận mỗi lần |
 | Khi có build, co-op: thùng không nhân đôi hay mất | 100 lần nhặt, giao có rớt mạng giữa chừng, tổng thùng không đổi |
 | Khi có build, mất kết nối 15 giây | Vào lại đúng nhân vật theo mã slot. Quá 15 giây thì bị tính như kéo về (C10) |
-| Khi có build, host thoát | Thoát ở 4 thời điểm (giữa chuyến 1, sau chuyến 1, giữa giờ giao thương, sau giờ giao thương): mở lại đúng điểm lưu gần nhất (K23), bố cục chuyến kế giống lần trước |
+| Khi có build, host thoát | Thoát ở 4 thời điểm (giữa chuyến 1, sau chuyến 1, giữa giờ giao thương, sau giờ giao thương): mở lại đúng điểm lưu gần nhất (K23). Thoát giữa chuyến thì chuyến dở vẫn tính (luật 18c) và chuyến kế có bố cục khác, thoát sau chuyến thì chuyến kế giống lần trước |
 | Khi có build, vào giữa chừng | Thử ở 3 pha (chuyến, giờ giao thương, cuối ngày), người mới vào đúng luật 13 |
 | Khi có build, file save | Cắt điện giữa lúc ghi: mở lại được bản trước (luật 20) |
 | Khi có build, dữ liệu | Xuất rồi nhập lại: 0 trường lệch |
@@ -444,3 +445,4 @@ File này là phần co-op kỹ thuật của mọi hệ thống: mục 2.2 và 
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer | GDM |
 | 2026-11-23 | GD-074 (đợt 10, Lead chốt Art top-down 45 độ): thêm mục 2.6 và 2.7 camera, dựng 3D với asset 2D, thứ tự vẽ, che khuất, camera co-op. Đổi trường vị trí khoang trên RoomData sang `viTriMatBang`. Sự kiện 53 thêm `on_screen`. Luật 43: camera giờ giao thương cố định ở tâm cảng, đã kiểm với 2.6b. Luật 40b: ngắm chuột vào sprite cao (L, boss) quy về tâm hitbox trên XZ. Không đổi luật chơi, số GDD | Lead chốt Art 2026-11-23 | gd-tech |
 | 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): tally_gain nguồn ship đổi thành preorder, tham số lưu đổi sang tiếng Anh save_point, attempt. Không đổi luật | Đánh giá humanizer | GDM |
+| 2026-11-23 | Lead chốt "Thoát giữa chuyến vẫn tính là một chuyến": thêm luật 18c (ghi nhanh `soChuyenDaDi` lúc qua cửa khí), làm rõ luật 17, 18, 18b, thêm giá trị `trip_start` cho `save_point` của `save_written`, sửa dòng thử host thoát. Không đổi luật khách rời (C10) và số khác | DECISIONS 2026-11-23 | gd-tech |

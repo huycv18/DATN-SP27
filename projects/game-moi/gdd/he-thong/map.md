@@ -84,7 +84,7 @@ Quyết định người chơi đưa ra trong hệ thống này:
 3. Mảnh là khối dựng tay cùng kích thước. Mỗi cạnh của mảnh khai báo một cổng: mở (lỗ rộng bằng tham số cổng mảnh, ở giữa cạnh) hoặc đóng. Hai mảnh cạnh nhau chỉ thông nhau khi cả hai cạnh chạm nhau đều mở. (MVP)
 4. Mỗi mảnh thuộc đúng một dải và một loại: Mở, Hành lang, Ổ, Xác lớn, Thưởng, Cố định. Định nghĩa loại ở bảng 3.3. (MVP)
 5. Ô cố định giữ nguyên mảnh qua mọi chuyến: ô Ember Mooring (cột 1 hàng giữa của Vành đai ngoài, cổng Trái, Phải, Trên, Dưới đều mở) và ô lối vào của mỗi map nhánh (cổng ghi ở mục 6.4). Rạn vụn không phải ô (luật 2.2.2). (MVP)
-6. Bố cục mới được sinh khi chuyến bắt đầu, theo thứ tự xử lý ở 2.9. Seed của chuyến sinh từ thế giới, số ngày và số thứ tự chuyến trong ngày (1 hoặc 2), nên nạp lại cùng ngày cùng chuyến ra đúng bố cục cũ (K23). Trong một chuyến, bố cục không đổi. (MVP)
+6. Bố cục mới được sinh khi chuyến bắt đầu, theo thứ tự xử lý ở 2.9. Seed của chuyến sinh từ thế giới, số ngày và số thứ tự chuyến trong ngày (1 hoặc 2), nên nạp lại cùng ngày cùng số thứ tự chuyến ra đúng bố cục cũ (K23). Chuyến thoát giữa chừng đã tính vào hạn 2 chuyến nên không có đường chơi lại đúng chuyến đó. Trong một chuyến, bố cục không đổi. (MVP)
 7. Trong một chuyến, một mảnh xuất hiện tối đa một lần. Trùng mảnh là cùng một mảnh ở cùng một ô với chuyến liền trước, chỉ tính ô ghép. Số ô trùng không vượt tham số trùng tối đa. (MVP)
 8. Cờ nửa ngoài của mảnh: "Có" là mảnh chỉ đặt ở nửa ngoài của dải (cột lớn hơn nửa số cột, Vành đai ngoài là cột 3 và 4), "Không" là mảnh đặt ở mọi cột. Mảnh Thưởng luôn có cờ "Có". (MVP)
 9. Mỗi dải có đường chính đi được từ ranh trong tới ranh ngoài mà không cần dụng cụ phá vật cản. Mỗi dải có ít nhất một vòng: hai đường khác nhau nối cùng hai cột. (MVP)
@@ -503,8 +503,8 @@ Một người, kịch bản trung bình, theo chương:
 | Đang kéo buồng ngủ đông mà Oxy về 0 | Buồng bị thả tại chỗ, ở lại map nhánh với trạng thái chưa vớt. Không mất người vớt |
 | Kéo Driftlife sống vào beacon nhưng nó ở ngoài bán kính kéo theo | Driftlife không đi cùng, ở lại map |
 | Spam phím giữ beacon (nhấn nhả liên tục) | Mỗi lần nhả là hủy, tiến độ về 0, không cộng dồn |
-| Thoát game giữa chuyến (chơi một mình) | Nạp lại ở điểm lưu sau chuyến trước (K23). Chuyến dở không tính vào hạn 2 chuyến của ngày, đồ nhặt trong chuyến đó mất. Chơi lại chuyến đó ra đúng bố cục cũ vì seed theo ngày và số thứ tự chuyến |
-| Host thoát giữa chuyến co-op | Phiên kết thúc với mọi người, thế giới về điểm lưu gần nhất (C10, K23). Chuyến đang dở mất, chơi lại ra đúng bố cục cũ |
+| Thoát game giữa chuyến (chơi một mình) | Nạp lại ở điểm lưu sau chuyến trước (K23). Đồ nhặt trong chuyến dở mất, chuyến dở vẫn tính vào hạn 2 chuyến của ngày. Chuyến kế dùng số thứ tự kế nên seed và bố cục khác chuyến dở |
+| Host thoát giữa chuyến co-op | Phiên kết thúc với mọi người, thế giới về điểm lưu gần nhất (C10, K23). Đồ trong chuyến dở mất, chuyến dở vẫn tính vào hạn 2 chuyến, chuyến kế ra bố cục khác |
 | Người vào phiên giữa chuyến | Chờ ở trạm tới chuyến sau, không vào map đang chạy |
 | Sinh bố cục 20 lần đều hỏng | Dùng bố cục dự phòng dựng tay của dải, ghi log seed hỏng |
 | Mọi beacon của dải nằm trong Vùng nhiễu | Không xảy ra: kiểm hợp lệ loại bố cục có dải mất hết tín hiệu beacon |

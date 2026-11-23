@@ -24,7 +24,7 @@ Tiêu chí còn lỗi (mơ hồ, thiếu số) đã ghi ở file GD-031 tương 
 | CK-01 | Một ngày chương 1 | Nhịp | Một ngày đủ 2 chuyến và ca cảng dài 15 đến 20 phút ở chương 1 (sim chuyến cộng sim ca cảng, sai lệch cho phép 15%) | MVP | Máy | FALSE | Chưa chấm, chưa có build | khung |
 | CK-02 | Trần chuyến mỗi ngày (K22) | Luật | Sau chuyến thứ hai hoặc khi đã mở ca cảng, cửa khí khóa. Skiff cũng tính một chuyến | MVP | Build | FALSE | Chưa chấm, chưa có build | khung |
 | CK-03 | Sang ngày và lưu (K23) | Luật | Ngày không có đồng hồ. Chỉ sang ngày khi ngủ. Tự lưu ở ba lúc: sau mỗi chuyến, sau ca cảng, lúc ngủ. Thoát giữa chuyến hoặc giữa ca cảng thì lần sau vào lại ở điểm lưu gần nhất | MVP | Build | FALSE | Chưa chấm, chưa có build | khung |
-| CK-04 | Thoát giữa chuyến (C10) | Co-op, lưu | Rời phiên hoặc mất kết nối quá 15 giây giữa chuyến tính như bị kéo về, giữ 1 món. Một mình thoát giữa chuyến thì mất chuyến. Host thoát thì phiên kết thúc, thế giới về điểm lưu gần nhất | MVP | Build | FALSE | Chưa chấm, chưa có build | khung |
+| CK-04 | Thoát giữa chuyến (C10) | Co-op, lưu | Rời phiên hoặc mất kết nối quá 15 giây giữa chuyến tính như bị kéo về, giữ 1 món. Một mình thoát giữa chuyến thì mất đồ trong chuyến và vẫn tính một chuyến. Host thoát thì phiên kết thúc, thế giới về điểm lưu gần nhất | MVP | Build | FALSE | Chưa chấm, chưa có build | khung |
 | CK-05 | Hết Oxy (K2) | Luật | Oxy về 0 rồi không ai cứu: bị kéo về, giữ đúng 1 món, 0 Tally bị trừ, không nợ | MVP | Build | FALSE | Chưa chấm, chưa có build | khung |
 | CK-06 | Chơi một mình trọn chương 1 (P3) | Co-op | Một người chơi trọn chương 1 (mọi quest, ca cảng, sửa khoang) không cần người thứ hai và không có thứ chỉ co-op mới có | MVP | Playtest | FALSE | Chưa chấm, chưa có build | khung |
 | CK-07 | Co-op 2 người (C1 đến C10) | Co-op | Hai người online chơi trọn một ngày: xác nhận cửa khí C5, kết chuyến riêng C6, người về sớm không ra lại C9, không tạm dừng toàn cục C7 | MVP | Playtest | FALSE | Chưa chấm, chưa có build | khung |
@@ -104,7 +104,7 @@ Tiêu chí còn lỗi (mơ hồ, thiếu số) đã ghi ở file GD-031 tương 
 | MP-08 | Lối ra map nhánh | Luồng | Mỗi map nhánh có ít nhất một lối ra, kiểm tay trên greybox | MVP cho Cinder | Máy | FALSE | Chưa chấm, chưa có build | GD-031-map.md |
 | MP-09 | Nhóm 4 | Cân bằng | Mỗi người nhặt từ 60% so với một mình ở mọi chương và kịch bản. Đo 61% thấp nhất (a 0,30) | MVP | Máy | FALSE | Chưa chấm, chưa có build | GD-031-map.md |
 | MP-10 | Hazard Oxy | Cân bằng | H01 trừ 8, H02 trừ 12 một lần mỗi tia, H03 không trừ, qua event "trúng hazard" | MVP | Máy | FALSE | Chưa chấm, chưa có build | GD-031-map.md |
-| MP-11 | Thoát giữa chuyến | Dữ liệu | Một mình: mất chuyến, về lần lưu. Host thoát: phiên dừng | MVP | Máy | FALSE | Chưa chấm, chưa có build | GD-031-map.md |
+| MP-11 | Thoát giữa chuyến | Dữ liệu | Một mình: mất đồ trong chuyến, vẫn tính một chuyến, về lần lưu. Host thoát: phiên dừng, chuyến dở cũng tính | MVP | Máy | FALSE | Chưa chấm, chưa có build | GD-031-map.md |
 | TC-01 | Ca chương 1 một người | Sim, chơi thật | Lịch 4 tàu, giao đủ ít nhất 3 đơn trong 240 giây, 0 đóng sẵn | MVP | Máy | FALSE | Chưa chấm, chưa có build | GD-031-tram-va-cang.md |
 | TC-02 | Giờ đến tàu | Sim | Không tàu nào có giờ đến cộng lưu bến vượt 240 giây (luật 70) | MVP | Máy | FALSE | Chưa chấm, chưa có build | GD-031-tram-va-cang.md |
 | TC-03 | Ca chương 1 N 1 tới 4 | Sim | Ca 190 tới 191 giây, rảnh 21 tới 26%, kiện mỗi người 10,8, 10,2, 9,5, 7,8, đơn đủ 91, 94, 96, 86% | MVP | Máy | FALSE | Chưa chấm, chưa có build | GD-031-tram-va-cang.md |

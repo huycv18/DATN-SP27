@@ -8,7 +8,7 @@ Một thế giới thuộc về một người, gọi là **host**, người t�
 
 Khi người chơi làm một việc đổi trạng thái chung, như nhặt thùng, sửa khoang, mua đồ hay chế, máy người đó gửi yêu cầu cho host. Máy người chơi hiện kết quả dự đoán ngay cho đỡ trễ. Host xét yêu cầu, trả lời cho mọi máy. Nếu host từ chối thì máy người chơi lùi về trạng thái đúng. Nhờ vậy hai người cùng nhặt một thùng thì chỉ một người nhận được, thùng không bao giờ nhân đôi hay biến mất.
 
-Phần lưu đi cùng một nguyên tắc: file lưu nằm ở máy host, game tự lưu ở ba điểm cố định, không có nút lưu tay. Thoát giữa chuyến hoặc giữa giờ giao thương thì lần sau vào lại ở điểm lưu gần nhất và mất phần đang dở.
+Phần lưu đi cùng một nguyên tắc: file lưu nằm ở máy host, game tự lưu ở ba điểm cố định, không có nút lưu tay. Thoát giữa giờ giao thương thì lần sau vào lại ở điểm lưu gần nhất và mất phần đang dở. Thoát giữa chuyến cũng về điểm lưu sau chuyến trước và mất đồ trong chuyến, nhưng chuyến dở vẫn tính vào hạn hai chuyến của ngày.
 
 ### II.8.2. Host Authority and Synchronization
 
@@ -127,7 +127,7 @@ Game tự lưu ở ba điểm và không có nút lưu tay:
 - Sau giờ giao thương.
 - Lúc ngủ, tức lúc sang ngày.
 
-Ba điểm dùng chung một file và cùng cách ghi an toàn. Thoát giữa chuyến hoặc giữa giờ giao thương, kể cả chơi một mình, thì lần sau vào lại ở điểm lưu gần nhất và mất phần đang dở. Ngày không có đồng hồ, chỉ sang ngày khi người chơi vào buồng ngủ đông.
+Ba điểm dùng chung một file và cùng cách ghi an toàn. Thoát giữa chuyến hoặc giữa giờ giao thương, kể cả chơi một mình, thì lần sau vào lại ở điểm lưu gần nhất và mất phần đang dở. Riêng chuyến dở vẫn tính vào hạn hai chuyến: lúc cả nhóm qua cửa khí, game ghi nhanh số chuyến đã đi vào file lưu, không ghi điểm lưu đầy đủ. Ngày không có đồng hồ, chỉ sang ngày khi người chơi vào buồng ngủ đông.
 
 **Bố cục map của từng chuyến** được lưu theo ngày và số thứ tự chuyến thay vì lưu cả map:
 ```text
@@ -139,7 +139,7 @@ SeedChuyen = Bam(SeedTheGioi, Ngay, SoThuTuChuyen)
 - Ngay: số ngày trong game, đơn vị ngày.
 - SoThuTuChuyen: số thứ tự chuyến trong ngày, chuyến thứ nhất hoặc thứ hai.
 
-Ví dụ: nạp lại điểm lưu sau chuyến đầu rồi đi chuyến sau thì bố cục chuyến sau y nguyên, nạp lại không đổi được bố cục. Muốn vậy bộ sinh map dùng bộ số ngẫu nhiên riêng có seed, không dùng bộ số ngẫu nhiên dùng chung của engine và không phụ thuộc thứ tự khung hình.
+Ví dụ: nạp lại điểm lưu sau chuyến đầu rồi đi chuyến sau thì bố cục chuyến sau y nguyên, nạp lại không đổi được bố cục. Chuyến thoát giữa chừng đã tính vào hạn hai chuyến nên không có đường chơi lại đúng chuyến đó để dò bố cục. Muốn vậy bộ sinh map dùng bộ số ngẫu nhiên riêng có seed, không dùng bộ số ngẫu nhiên dùng chung của engine và không phụ thuộc thứ tự khung hình.
 
 File lưu theo thế giới và chỉ nằm trên máy host. Khách giữ bản sao hồ sơ máy gồm cài đặt, phím, tiến độ tutorial, không đồng bộ qua mạng. File chứa các nhóm:
 
@@ -183,7 +183,7 @@ Sim hiện có chỉ phủ phần cân bằng theo số người (ví dụ giờ
 | Hai người cùng nhặt một node | 1000 lần thử, mỗi lần đúng 1 người nhận | Chờ build |
 | Thùng không nhân đôi hay mất | 100 lần nhặt và giao có rớt mạng giữa chừng, tổng thùng không đổi | Chờ build |
 | Mất kết nối trong cửa sổ Giữ chỗ | Vào lại đúng nhân vật theo mã slot. Quá hạn thì tính như bị kéo về | Chờ build |
-| Host thoát | Thử ở 4 thời điểm: giữa chuyến 1, sau chuyến 1, giữa giờ giao thương, sau giờ giao thương. Mở lại đúng điểm lưu gần nhất và bố cục chuyến kế giống lần trước | Chờ build |
+| Host thoát | Thử ở 4 thời điểm: giữa chuyến 1, sau chuyến 1, giữa giờ giao thương, sau giờ giao thương. Mở lại đúng điểm lưu gần nhất. Thoát giữa chuyến thì chuyến dở vẫn tính và chuyến kế có bố cục khác, thoát sau chuyến thì bố cục chuyến kế giống lần trước | Chờ build |
 | Vào giữa chừng | Thử ở 3 pha: chuyến, giờ giao thương, cuối ngày. Người mới vào đúng luật Chờ vào | Chờ build |
 | File save | Cắt điện giữa lúc ghi, mở lại được bản trước | Chờ build |
 | Dữ liệu từ Sheet vào game | Xuất rồi nhập lại, 0 trường lệch | Chờ build |

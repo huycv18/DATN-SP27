@@ -18,7 +18,7 @@ Nhân vật người chơi là một người sống sót mặc bộ đồ khôn
 | Túi đồ | đo bằng Khối, bậc 0 là 80 Khối, đầy thì không nhặt thêm, vật manh mối không chiếm túi | MVP |
 | Bộ đồ | 5 trục nâng cấp, mua một lần cho cả nhóm (C4) | MVP bậc 0 và 1, còn lại Sau MVP |
 | Điều khiển | bàn phím chuột và gamepad, bảng phím ở mục 2.7 | MVP |
-| Thoát giữa chuyến | Khách rời hoặc mất kết nối quá 15 giây tính như bị kéo về (giữ 1 món), chơi một mình thì mất chuyến, host thoát thì về điểm lưu (C10, K23) | MVP |
+| Thoát giữa chuyến | Khách rời hoặc mất kết nối quá 15 giây tính như bị kéo về (giữ 1 món), chơi một mình thì mất đồ trong chuyến và vẫn tính 1 chuyến, host thoát thì về điểm lưu và cũng tính chuyến dở (C10, K23) | MVP |
 | Số chuyến mỗi ngày | Tối đa 2, Skiff cũng tính, cửa khí khóa sau chuyến 2 và sau khi mở giờ giao thương (K22) | MVP |
 | Co-op | Oxy và túi riêng, chia Oxy, trao đồ, ping, không va chạm giữa người chơi | MVP (2 người), 3 và 4 người Sau MVP |
 
@@ -120,7 +120,7 @@ Bảng trạng thái và chuyển tiếp ngoài không gian:
 | Bị kéo về | Hết 12 giây ngạt | Hoàn tất cảnh kéo 1,5 giây thì sang Ở trạm | Mất túi trừ món ghim, Oxy đầy | Dây kéo, hiện tóm tắt "mất" và "giữ" |
 | Về an toàn | Vào cửa khí hoặc Recall xong | Chuyển cảnh xong thì sang Ở trạm | Túi nguyên vẹn đổ vào kho, Oxy đầy | Màn tóm tắt chuyến |
 | Giữ chỗ | Mất kết nối giữa chuyến (khách) | Tối đa 1 lần mỗi người mỗi chuyến. Kết nối lại trong 15 giây thì về trạng thái cũ, hết 15 giây hoặc mất kết nối lần thứ hai trong chuyến thì Bị kéo về, chỉ giữ 1 món ghim (C10) | Nhân vật đứng yên, bất tử, Oxy đóng băng (mục 2.9 điểm 6) | Đồng đội thấy biểu tượng mạng |
-| Rời phiên | Người chơi thoát chủ động | Vào lại thì nhận lại nhân vật cũ | Khách thoát giữa chuyến thì tính như Bị kéo về (giữ 1 món ghim), nhân vật ở lại trạm. Chơi một mình thoát giữa chuyến thì mất chuyến, vào lại ở điểm lưu gần nhất với bố cục chuyến cũ (K23). Host thoát thì thế giới về điểm lưu gần nhất (C10) | Nhân vật đứng ở trạm, không điều khiển |
+| Rời phiên | Người chơi thoát chủ động | Vào lại thì nhận lại nhân vật cũ | Khách thoát giữa chuyến thì tính như Bị kéo về (giữ 1 món ghim), nhân vật ở lại trạm. Chơi một mình thoát giữa chuyến thì vào lại ở điểm lưu sau chuyến trước, mất đồ trong chuyến, chuyến dở vẫn tính vào hạn 2 chuyến (K23). Host thoát thì thế giới về điểm lưu gần nhất và chuyến dở cũng tính (C10) | Nhân vật đứng ở trạm, không điều khiển |
 | Chờ vào | Người vào sau khi nhóm đang giữa chuyến | Chuyến kế tiếp được xác nhận ở cửa khí | Ở trong trạm, dùng xưởng, khoang nuôi | Màn "chờ nhóm về" có nút ping |
 
 Không có trạng thái cụt: mọi trạng thái có ít nhất một đường ra, Ngạt luôn kết thúc trong tối đa 12 giây cộng thời gian đồng hồ tạm dừng khi được chia (có trần: chia dứt khi người cho chạm sàn 20 Oxy).
@@ -225,7 +225,7 @@ Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ c�
 2. Người vào sau lấy slot trống thấp nhất, là một người sống sót vớt về từ một buồng ngủ đông vô danh (gd-story): ở điểm nghỉ kế tiếp Skiff hoặc xuồng của Bram đưa buồng về, trước khi có Skiff thì dòng mảnh vỡ đưa buồng tới sát cửa khí. Không lấp buồng tắt của Ember. Cảnh tối đa 3 câu, phát một lần, bỏ qua được. Người vào sau có tên mới do người đó đặt (bắt buộc, không trùng tên mặc định của buồng tắt, khớp `ho-so-nhan-vat.md` luật 11). Túi rỗng, bộ đồ bằng cấp chung của nhóm (C4), dụng cụ lấy bộ khởi điểm, đổi được ở trạm.
 3. Người vào giữa lúc nhóm đang ở ngoài thì ở Chờ vào tới chuyến kế (C5).
 4. Hết slot thì không vào được, hiện "Phòng đầy". Host xóa nhân vật của người đã rời lâu để nhường slot.
-5. Khách chủ động rời giữa chuyến thì tính như Bị kéo về (K2, C10): chỉ giữ 1 món ghim, phần còn lại của túi mất, không phải đường về an toàn. Nhân vật ở lại trạm, đứng ở khoang buồng ngủ đông (khớp gd-story), không điều khiển. Vào lại thì nhận lại đúng nhân vật cũ (cùng slot, cùng màu). Chơi một mình thoát giữa chuyến thì vào lại ở điểm lưu sau chuyến trước, chuyến dở không tính vào hạn 2 chuyến mỗi ngày, đi lại được với cùng bố cục chuyến (K23). Host thoát thì phiên kết thúc và thế giới về điểm lưu gần nhất (C10, K23).
+5. Khách chủ động rời giữa chuyến thì tính như Bị kéo về (K2, C10): chỉ giữ 1 món ghim, phần còn lại của túi mất, không phải đường về an toàn. Nhân vật ở lại trạm, đứng ở khoang buồng ngủ đông (khớp gd-story), không điều khiển. Vào lại thì nhận lại đúng nhân vật cũ (cùng slot, cùng màu). Chơi một mình thoát giữa chuyến thì vào lại ở điểm lưu sau chuyến trước, chuyến dở vẫn tính vào hạn 2 chuyến mỗi ngày, chuyến kế có bố cục khác (K23). Host thoát thì phiên kết thúc, thế giới về điểm lưu gần nhất và chuyến dở cũng tính (C10, K23).
 6. Khách mất kết nối giữa chuyến thì Giữ chỗ 15 giây (đứng yên, bất tử, Oxy đóng băng, đồng hồ ngạt dừng). Giữ chỗ tối đa 1 lần mỗi người mỗi chuyến. Quá 15 giây, hoặc mất kết nối lần thứ hai trong cùng chuyến, thì tính như Bị kéo về (C10): chỉ giữ 1 món ghim. Host mất kết nối thì xử như host thoát (về điểm lưu gần nhất). Chuyển host không làm trong MVP.
 
 ## 3. Tham số
@@ -323,8 +323,8 @@ Núm gap: ba tham số nối ý đồ với số đo: dung lượng Oxy bậc 0 
 | Kích Recall khi có vật đang kéo xa hơn 3 u | Vật ở lại, hiện cảnh báo trước khi hoàn tất 1 giây |
 | Về an toàn khi túi rỗng | Cho phép, hiện "Chuyến trống" |
 | Thoát phiên đúng khi Ngạt | Mất kết nối: Giữ chỗ (đồng hồ dừng), quá 15 giây thì Bị kéo về giữ 1 món ghim. Thoát chủ động: tính như Bị kéo về, giữ 1 món ghim (C10) |
-| Một mình thoát giữa chuyến | Mất chuyến, vào lại ở điểm lưu gần nhất với cùng bố cục (K23) |
-| Host thoát hoặc mất kết nối giữa chuyến | Thế giới về điểm lưu gần nhất (C10), khách không giữ gì từ chuyến dở |
+| Một mình thoát giữa chuyến | Vào lại ở điểm lưu sau chuyến trước, mất đồ trong chuyến, chuyến dở vẫn tính vào hạn 2 chuyến, chuyến kế bố cục khác (K23) |
+| Host thoát hoặc mất kết nối giữa chuyến | Thế giới về điểm lưu gần nhất (C10), khách không giữ gì từ chuyến dở, chuyến dở vẫn tính vào hạn 2 chuyến (K23) |
 | Bộ đẩy mất lực ngoài (vượt 12 u/s) | Chặn ở 12 u/s |
 | Mở túi giữa lúc bị đánh | Không dừng thời gian, túi mở như HUD chồng |
 | Oxy đầy, ở xa cửa khí | Vạch "đủ về" hiển thị nhưng thanh không cảnh báo |
@@ -359,7 +359,7 @@ Núm gap: ba tham số nối ý đồ với số đo: dung lượng Oxy bậc 0 
 | player_item_trade | từ, tới, vật phẩm |
 | player_recall_start, player_recall_end | player_id, hoàn tất hay hủy, lý do hủy |
 | player_pinned_item | player_id, vật phẩm, thời điểm |
-| player_trip_end | player_id, loại kết thúc (cửa khí, recall, kéo về, rời phiên tính như kéo về, mất chuyến khi chơi một mình), tải cuối, giá trị túi, Oxy còn |
+| player_trip_end | player_id, loại kết thúc (cửa khí, recall, kéo về, rời phiên tính như kéo về, thoát giữa chuyến khi chơi một mình, vẫn tính 1 chuyến), tải cuối, giá trị túi, Oxy còn |
 
 - Dữ liệu lưu: cấp bộ đồ chung của nhóm, danh sách nhân vật (tối đa 4, slot, tên, màu), món ghim đang chọn không lưu qua chuyến.
 - Đồng bộ co-op: vị trí và vận tốc từ client sở hữu nhân vật, Oxy và túi do client sở hữu quyết định nhưng host kiểm hợp lệ (host quyết ngạt, kéo về và chia Oxy), ngưỡng 20 Hz cho vị trí (gd-tech có thể đổi ở `ky-thuat.md`).
@@ -461,7 +461,7 @@ Nguyên tắc: mọi luật ở trên đúng với mọi N từ 1 đến 4. Thê
 | Xác nhận chuyến | Một mình xác nhận | Cả hai xác nhận, ai không trả lời trong 30 giây thì tính là ở lại (C5) | Như vậy | Như vậy |
 | Ngạt và kéo về | Mỗi người riêng (C6) | Riêng, người còn lại tiếp tục | Riêng | Riêng |
 | Người về sớm (C9) | Không áp, chuyến kết thúc ngay | Chờ người còn lại, làm việc trạm | Như 2 người | Như 2 người |
-| Khách rời hoặc mất kết nối quá 15 giây | Không áp. Chơi một mình thoát giữa chuyến thì mất chuyến (K23) | Tính như Bị kéo về, giữ 1 món ghim, nhân vật ở lại trạm (C10) | Như 2 người | Như 2 người |
+| Khách rời hoặc mất kết nối quá 15 giây | Không áp. Chơi một mình thoát giữa chuyến thì mất đồ trong chuyến và vẫn tính 1 chuyến (K23) | Tính như Bị kéo về, giữ 1 món ghim, nhân vật ở lại trạm (C10) | Như 2 người | Như 2 người |
 | Host thoát | Như một mình | Phiên kết thúc, về điểm lưu gần nhất | Như vậy | Như vậy |
 | Người vào sau | Vào làm người thứ 2 | Vào làm người thứ 3 | Vào làm người thứ 4 | Không vào được (hết slot) |
 | Ngạt khi chỉ còn một người ngoài kia | Bị kéo về như thường | Như thường | Như thường | Như thường |

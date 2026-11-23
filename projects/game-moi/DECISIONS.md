@@ -441,3 +441,9 @@ Lead: "Làm tiếp Teardown Dave the Diver".
 - Sheet riêng "Teardown - Dave the Diver" (id 1JSE_C8ixTcDwE3d0BXXu6DnGsYoa88HP9P1_YuRwJxU), cùng thư mục Sheet GDD. Tab Overview, 9 tab trùng tiêu đề mục Phần II, tab Sources. Nguồn ở `projects/game-moi/teardown/`, cổng `tools/kiem-teardown.mjs`, gộp nguồn bằng `--nguon`.
 - Mỗi cơ chế Dave chỉ mổ ở một tab nhà, tab khác chỉ giữ góc riêng của hệ thống tab đó hoặc trỏ sang tab nhà (GDM quyết khi QA bắt trùng).
 - Cột Ảnh chờ người chơi Dave chụp theo cột Ảnh cần chụp.
+
+## 2026-11-23 - Thoát giữa chuyến vẫn tính là một chuyến
+Teardown Dave (tab Co-op and Saving) lộ kẽ hở: chơi một mình hoặc host thoát game khi sắp Ngạt thì mất túi nhưng chuyến dở không tính vào hạn 2 chuyến, nạp lại ra đúng bố cục cũ, nên đi lại chuyến đó miễn phí với map đã biết. GDM đề xuất tính chuyến dở là một chuyến. Lead chọn "Tính là một chuyến".
+- Khi cả nhóm qua cửa khí ra chuyến, game ghi số chuyến đã dùng vào file lưu (ghi nhanh, không phải điểm lưu đầy đủ). Thoát giữa chuyến thì vào lại ở điểm lưu sau chuyến trước, đồ nhặt trong chuyến dở mất, chuyến dở vẫn trừ vào hạn 2 chuyến của ngày, chuyến kế dùng số thứ tự kế nên bố cục khác.
+- Khách rời giữa chuyến giữ luật cũ: tính như bị kéo về, giữ 1 món ghim (C10).
+- Sửa cùng lúc: khung K23, `ky-thuat.md` luật 18, `nguoi-choi.md`, `ux-ui.md` luật 23 và chuỗi xác nhận thoát, `map.md`, Doc II.1 và II.8, các tab Sheet nhắc luật này, Teardown.

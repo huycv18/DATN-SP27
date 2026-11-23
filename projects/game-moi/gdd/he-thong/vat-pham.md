@@ -549,7 +549,7 @@ ITEM LIST (tab Sheet, một dòng mỗi vật phẩm, cột Nguồn nhận và N
 | Hai người cùng khai thác một điểm | Người đến trước giữ. Người sau thấy điểm xám |
 | Người chơi thả vật nhiệm vụ | Thả được, vật nằm 30 giây rồi về vị trí gốc nếu không ai nhặt (V4) |
 | Spam nhặt và thả | Thả mất tối đa 1 lần mỗi giây, vật thả tồn tại 30 giây. Không có lỗi nhân đôi vì vật được trừ khỏi túi ngay |
-| Rời phiên hoặc mất kết nối giữa chuyến | Theo C10: khách mất kết nối được giữ chỗ 15 giây, quá hạn hoặc chủ động rời thì tính như bị kéo về (K2), chỉ giữ 1 món, không phải đường về an toàn giữ nguyên túi. Host thoát thì thế giới về điểm lưu gần nhất (K23). Chơi một mình thoát giữa chuyến thì mất chuyến |
+| Rời phiên hoặc mất kết nối giữa chuyến | Theo C10: khách mất kết nối được giữ chỗ 15 giây, quá hạn hoặc chủ động rời thì tính như bị kéo về (K2), chỉ giữ 1 món, không phải đường về an toàn giữ nguyên túi. Host thoát thì thế giới về điểm lưu gần nhất (K23). Chơi một mình thoát giữa chuyến thì mất đồ trong chuyến và vẫn tính 1 chuyến |
 | Hai mẫu cùng loài, một sống một hạ | Hai vật phẩm khác ID, không gộp |
 | Công thức đòi "một trong n loài" và kho có nhiều loài | Người chơi chọn loài dùng. Nhóm loài cùng dải, giá trị đầu vào tính theo loài rẻ nhất trong nhóm |
 | Hết nguyên liệu lúc Mở giao thương khi đóng thùng | Loại hàng đó đóng được bao nhiêu thùng thì bày bấy nhiêu, không trừ nguyên liệu của thùng không đóng |
