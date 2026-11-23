@@ -20,3 +20,8 @@ Chỗ GDD mục 9 lệch với nguồn về Dave (các nhóm nghiên cứu báo,
 - Doc II.2.5 và II.5.5 nói khác nhau về Đai dụng cụ bậc 1. Doc II.4.6 còn tiêu đề "Near Belt".
 
 Kẽ hở luật (cần Lead): thoát game khi sắp Ngạt thì mất túi nhưng chuyến dở không tính vào hạn 2 chuyến và nạp lại ra đúng bố cục cũ, nên thử lại chuyến miễn phí với bố cục đã biết.
+
+## Sau Teardown
+
+- 8 chỗ lệch mục 9 đã sửa (Lead giao 2026-11-23): cot-truyen, tram-va-cang (bỏ dẫn "kho 35" không tồn tại), map, ky-thuat (thêm dòng so cách lưu), nguoi-choi, combat-driftlife, Doc II.2.5 (Đai dụng cụ bậc 1 đi kèm Dùi xung), Doc II.4.6 (Driftlife of the Ember Anchorage). Teardown tab 03, 04, 08 cập nhật và dán Sheet.
+- Kẽ hở thoát game: Lead chốt thoát giữa chuyến vẫn tính một chuyến, đã áp vào khung K23, GDD, Doc, 5 tab Sheet.

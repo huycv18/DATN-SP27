@@ -676,12 +676,12 @@ Tiêu chí nghiệm thu:
 | Điểm | Dave làm thế nào | Mình làm thế nào | Vì sao lệch |
 |---|---|---|---|
 | Trục khám phá | Blue Hole chia 3 dải theo độ sâu (0 đến 50 m, 50 đến 130 m, 130 đến 250 m) [D3] | 3 dải theo khoảng cách tới trạm trên mặt phẳng chơi (trục x) | Không gian không có trên dưới, khoảng cách tới trạm là thứ người chơi tính Oxy |
-| Sinh lại | Địa hình và sinh vật sinh lại mỗi lần lặn [D2][D4], loài gắn độ sâu [D5] | Ghép mảnh dựng tay theo lưới, có đường chính và vòng bảo đảm, ô cố định | Kho tri thức ghi Dave bỏ sinh thủ tục vì độ vui không đều (log dòng 13). Ghép mảnh giữ chất lượng từng mảnh |
+| Sinh lại | Dave dựng cảnh bằng tay. Dev từng thử sinh thủ tục, thấy độ vui chênh nhiều giữa các lượt nên chọn nhiều map dựng tay [A4]. Mỗi lần lặn game tải một tổ hợp cảnh, chọn theo tiến độ nhiệm vụ, tiến trình, xác suất và giờ trong game [A1]. Loài gắn độ sâu [D5]. Một bài Early Access mô tả bố cục Blue Hole cố định có thể thuộc lòng [A9, chỉ qua tóm tắt tìm kiếm, bản Early Access có thể đã lỗi thời] | Ghép mảnh dựng tay theo lưới, có đường chính và vòng bảo đảm, ô cố định. Seed của chuyến lấy từ thế giới, ngày và số thứ tự chuyến | Hai bên cùng chọn khối dựng tay, không sinh thủ tục thuần. Khác: Dave chọn cảnh theo tiến độ, game này chọn mảnh theo seed và luật hợp lệ. Ghép mảnh giữ chất lượng từng mảnh |
 | Thoát | Escape Pod, giữ phím 6 giây, đổi vị trí mỗi dive, bị đẩy thì hủy [D9] | Recall Beacon giữ 5 giây, số beacon giới hạn theo dải, phải thấy mới ghim | Số beacon và bán kính phát hiện là núm đo được cho P1. Dave không công bố số pod |
 | Khu đặc biệt | Glacial Area, Cargo Ship và khu khác có tên, cố định, có đường tắt bằng gương [D3][D6] | 8 map nhánh dựng tay giữ trạng thái, Skiff đi thẳng | Truyện và người vớt phải ở chỗ chắc chắn gặp (K7, P4) |
 | Một mình hay nhiều người | Một người | 1 đến 4 người, không gian giữ nguyên, tài nguyên theo k(N) | C1 đến C8 |
 
-- Điểm yếu tham chiếu được sửa: lặp lại đường đi xuống dải sâu mỗi lần lặn trong Dave không có số công bố. Ở đây, chuyến chương 5 bay ra chiếm khoảng 16% thời lượng chuyến, nên có Dòng trôi ở Vành đai trong và Skiff cho map nhánh để giảm phần bay lặp. Chưa đo, đề sim ở mục 8.
+- Chưa có nguồn nói người chơi Dave phải lặp lại quãng đi xuống dải sâu nhiều hay ít, nên không coi đó là điểm yếu đã xác nhận của Dave. Ở đây, chuyến chương 5 bay ra chiếm khoảng 16% thời lượng chuyến, nên có Dòng trôi ở Vành đai trong và Skiff cho map nhánh để giảm phần bay lặp. Chưa đo, đề sim ở mục 8.
 
 ## 10. Câu hỏi mở
 
@@ -775,3 +775,4 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | 2026-11-20 | Solace là mồi, không có vùng Solace: hộp ghi hành trình ở Cradle, Data Core sau boss ở Warden Rig (W19) | Tin GDM, khung B4, B9, B11, K10 | gd-world |
 | 2026-11-20 | Bản đủ đầu tiên, số ước từ `projects/game-moi/sim/ngan_sach_oxy.py` | GD-026 | gd-world |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. | production/reports/2026-11-23-humanizer-gdd.md | gd-world |
+| 2026-11-23 | Mục 9: dòng Sinh lại sửa theo A1, A4, A9 (dựng tay, chọn tổ hợp cảnh theo tiến độ, A9 chỉ qua tóm tắt). Dòng lặp đường đi ghi chưa có nguồn. Không đổi luật | Lead giao sửa 8 chỗ lệch mục 9 (production/reports/2026-11-23-teardown-dot12.md) | gd-research |

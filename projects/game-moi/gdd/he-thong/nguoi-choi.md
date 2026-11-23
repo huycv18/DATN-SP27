@@ -425,11 +425,11 @@ Tiêu chí nghiệm thu (gd-qa pass hoặc fail):
 
 | Mục | Dave the Diver làm thế nào | Mình lệch ở đâu | Bằng chứng không tệ hơn |
 |---|---|---|---|
-| Oxy | Oxy hao nhanh khi bị tấn công, hết oxy thì dive kết thúc, Gold nâng sức chứa, oxy, độ sâu [D14] | Hết Oxy có 12 giây Ngạt kịp cứu, giữ 1 món ghim | Giảm phạt đột ngột (playbook: hết năng lượng là mất tất cả gây sợ). Bằng chứng giữ 1 món: log GDM dòng 11 và 57, sim GD-030 (món giữ lại bằng 22% túi đầy ở chương 1) |
+| Oxy | Oxy hao nhanh khi bị tấn công, hết oxy thì dive kết thúc, Gold nâng sức chứa, oxy, độ sâu [D14]. Hết Oxy là nguy cơ chết, bùa Sea People Bracelet giúp Dave hồi Oxy khi gần hết [B1, không nêu rõ chuyện gì xảy ra khi về 0 ngoài nguy cơ chết] | Hết Oxy có 12 giây Ngạt kịp cứu, giữ 1 món ghim | Giảm phạt đột ngột (playbook: hết năng lượng là mất tất cả gây sợ). Bằng chứng giữ 1 món: log GDM dòng 11 và 57, sim GD-030 (món giữ lại bằng 22% túi đầy ở chương 1) |
 | Thoát chuyến | Escape Pod giữ Space 6 giây, bị đẩy hoặc thả phím thì hủy, loot giữ nguyên [D9] | Recall Beacon 5 giây theo K4, thêm: ngạt vẫn chạm được cửa khí, chia Oxy | Cùng cấu trúc, thêm lựa chọn khi nguy hiểm |
 | Co-op | Tài liệu 06 không ghi co-op | Chia Oxy, trao đồ, ping, kéo chung, không va chạm giữa người chơi | Pillar P3 do Lead chốt, Dave không có để tham chiếu |
 | Điều khiển | Không tìm thấy nguồn trong tài liệu 06 | Thêm Lướt tốn Oxy, hãm chủ động | Prototype đo trong tiêu chí 1 và 2 |
-| Túi đồ | Gold nâng sức chứa túi [D14] | Phạt tải mềm từ 60% (tốc độ và hao nền) | Tạo lựa chọn tham hay về, không khóa cứng |
+| Túi đồ | Gold nâng sức chứa túi [D14]. Mặc định 9 kg, nâng Cargo Box cấp 3 tới 19 kg [B2]. Quá tải thì Dave bơi chậm hơn [B2][B6], túi đầy không nhặt thêm được | Phạt tải mềm từ 60% (tốc độ và hao nền) | Cả hai đều phạt tốc độ khi quá tải. Khác thật: The Novent phạt thêm Oxy nền, và bắt đầu phạt từ 60% sức chứa thay vì chờ tới giới hạn. Tạo lựa chọn tham hay về, không khóa cứng |
 
 ## 10. Câu hỏi mở
 
@@ -531,3 +531,4 @@ Giờ giao thương đặc biệt: hai người cùng bị kéo về cạnh nhau
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Thang cũ túi 20 Khối, bình 300 làm gần 100% chuyến kết thúc vì đầy túi, chương 1 chỉ dài khoảng 1,5 phút nên đã đổi (log 54) | Đánh giá humanizer GDD | gd-character |
 | 2026-11-23 | Theo rà chéo Sheet nhóm B (qa/2026-11-23-ra-cheo-B.md): mục 2.7 ghi rõ mọi phím gán lại được trừ Esc và Start, khớp ux-ui.md mục 2.9. Không đổi luật | Đánh giá humanizer GDD | gd-character |
 | 2026-11-23 | GD-072: góc nhìn top-down 45 độ. Trạm đi 8 hướng trên mặt bằng thay đi ngang và leo thang, bỏ tham số tốc độ leo thang 3,5 u/s (không còn thang), thêm mục 7c hướng sprite. Số khác giữ nguyên | Lead chốt Art 2026-11-23 | gd-character |
+| 2026-11-23 | Mục 9: dòng Túi đồ ghi Dave cũng bơi chậm khi quá tải (B2, B6), khác thật là phạt thêm Oxy. Dòng Oxy nhắc Sea People Bracelet (B1). Không đổi luật | Lead giao sửa 8 chỗ lệch mục 9 (production/reports/2026-11-23-teardown-dot12.md) | gd-research |

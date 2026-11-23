@@ -162,7 +162,7 @@ Vật manh mối ghi vào Sổ tay ngay khi nhặt, không chiếm túi, nhặt 
 
 **Đai dụng cụ** là chỗ mang dụng cụ, riêng từng người. Dụng cụ không tốn Oxy, chi phí của chúng là hồi chiêu và vật tiêu hao. Đổi dụng cụ chỉ ở trạm, ngoài không gian chỉ đổi ô đang cầm. Dụng cụ không mất khi bị kéo về.
 - Đai khởi điểm có 3 ô: Dụng cụ khai thác, Lao từ, và một ô trống cho Dùi xung hoặc Súng lưới mở bằng quest Kỹ sư.
-- Bậc 1 thêm ô thứ 4 cho dụng cụ như Súng gây mê.
+- Bậc 1 thêm ô thứ 4, mở ở chương 1 và đi kèm Dùi xung. Bậc 2 thêm ô thứ 5, mở ở chương 2.
 
 Chi tiết dữ liệu: tab Player, khối Túi đồ và dụng cụ.
 

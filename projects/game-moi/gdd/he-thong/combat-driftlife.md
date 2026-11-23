@@ -684,10 +684,11 @@ Dữ kiện Dave the Diver từ `docs/knowledge/indie/06-dave-the-diver-cau-truc
 | Oxy hao nhanh khi bị tấn công, hết Oxy là hết lượt lặn [D14] | Giữ: trúng đòn trừ Oxy (K1) | Không lệch |
 | Bắt sống bằng Net Gun hoặc drone kèm Tranquilizer, cá ngủ thì bơi lại thu [D8][D11] | Giữ cấu trúc: Súng lưới cho S, Súng gây mê, Phao kéo cho M | Không lệch về cấu trúc. Thêm Dùi xung làm cách bất lực nhanh và ngắn, để có lựa chọn choáng hay mê |
 | Cá bị bắn bằng súng giảm hạng, bắt sống giữ hạng cao (theo review và guide) | Sao theo Sinh lực lúc bắt. Hạ cho 1 sao, Kết nhanh cho 2 sao | Một luật duy nhất thay vì luật theo từng loại súng, dễ hiểu và dễ cân |
-| Súng lưới của Dave bị người chơi chê không bắt được cá to dù lưới to hơn cá (thảo luận Steam) | Súng lưới trúng con M trở lên thì quấn chậm 2 s và báo rõ "quá to, cần Phao kéo" | Giới hạn của Súng lưới có lý do nhìn thấy được |
+| Net Gun không bắt được sinh vật lớn như cá mập, lưới chứa tối đa 7 con [B9]. Một thảo luận Steam được dẫn trước đây nói người chơi chê lưới không bắt được cá to, chưa đọc lại được nên không coi là dữ kiện | Súng lưới trúng con M trở lên thì quấn chậm 2 s và báo rõ "quá to, cần Phao kéo" | Giới hạn của Súng lưới có lý do nhìn thấy được |
 | Combat của Dave bị review gọi là đủ dùng, góc ngắm hẹp | Ngắm tự do 360 độ vì bay tự do 8 hướng, có hỗ trợ ngắm gamepad | Người chơi bay trên mặt phẳng nhìn từ trên (top-down 45 độ), kẻ địch tới từ mọi phía |
 | Một người chơi | 1 đến 4 người, vé tấn công riêng, hệ số co-op | Khung C1 |
-| Cá to không bắt được bằng lưới, người chơi chê (thảo luận Steam) | Cỡ L không bắt sống, chỉ sinh thiết. Mẫu sinh thiết rẻ hơn một lần hạ (`vat-pham.md`: 0,45 lần), đổi lại nhanh hơn nhiều và con vật sống, bỏ đi | K9 sửa lần 5 (log GDM dòng 66) chỉ áp cho loài cỡ S, M. Sinh thiết cỡ L là đường khác, dùng cho nghiên cứu. Hạ cỡ L lâu và nguy hiểm nên cho nhiều giá trị hơn, sinh thiết nhanh và an toàn |
+| Hush Dart hoặc mũi lao gây mê làm cá ngủ sau chừng 8 giây rồi bơi lại thu, dùng được với mọi loài kể cả thú săn mồi lớn, nhưng phải né đòn tới khi thuốc ngấm [B9][D11] | Cỡ L không bắt sống, chỉ sinh thiết. Mẫu sinh thiết rẻ hơn một lần hạ (`vat-pham.md`: 0,45 lần), đổi lại nhanh hơn nhiều và con vật sống, bỏ đi | K9 sửa lần 5 (log GDM dòng 66) chỉ áp cho loài cỡ S, M. Sinh thiết cỡ L là đường khác, dùng cho nghiên cứu. Hạ cỡ L lâu và nguy hiểm nên cho nhiều giá trị hơn, sinh thiết nhanh và an toàn |
+| Boss đầu tiên là Giant Squid, hạ nó mở shop nâng cấp vũ khí của Duff theo [B4]. Một nguồn khác mô tả cổng mở khác [B11, chỉ qua tóm tắt tìm kiếm], nên chưa chốt boss có phải cổng mở nâng cấp hay không. Review gọi boss khéo, review khác gọi combat chậm và lặp lại [B7][B8] | Mỗi chương một boss ở map nhánh. Scrapmaw chương 1 có hai cách kết là hạ hoặc Xua đi, đều mở chương tiếp. Nâng cấp dụng cụ mở qua quest của Kỹ sư, không qua boss | Boss gắn với nhịp chương và hai cách kết. Cổng nâng cấp dụng cụ theo người vớt và co-op công bằng (`vat-pham.md` mục 2.4 và mục 9) |
 | Không có phe địch có vũ khí rõ ràng ở các dải chính | The Wardens từ chương 3 | Khung B3, B8, chương 3 thêm kiểu chơi "kẻ địch có vũ khí" |
 
 ## 10. Câu hỏi mở
@@ -797,6 +798,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 2026-11-23 | BS-1 luật cắt Dây nối khi Sinh lực còn từ 50%: đoạn hai khóa, đoạn đã cắt giữ tới hết trận, boss không đổi hành vi. Thêm E21, tự quyết 23, dòng hình và âm ở mục 7 | Log GDM 116, QA GD-061 nhóm C | gd-combat |
 | 2026-11-23 | GD-073 góc nhìn top-down 45 độ: thêm mục 2.9 (mặt phẳng chơi, hitbox, ngắm, vùng trúng và vệt hướng, hướng sprite, che khuất), mặt bằng phòng BS-1 ở 3.7, mục 7 hình Báo trước và Art, bảng sự cố đổi "mặt cắt" thành "mặt bằng", mục 9 lý do ngắm 360 độ. Không đổi luật, số, ID | Lead chốt Art 2026-11-23, brief đợt 10 | gd-combat |
 | 2026-11-23 | Theo rà chéo Sheet nhóm B (qa/2026-11-23-ra-cheo-B.md): WD-04 và BS-3 rơi Linh kiện Warden (đúng tên trong ITEM LIST), bỏ chữ hiếm. Không đổi luật | Đánh giá humanizer GDD | gd-combat |
+| 2026-11-23 | Mục 9: dòng cỡ L so Hush Dart bắt được thú lớn (B9), thêm dòng boss (B4, B11 lệch nhau), dòng Súng lưới ghi chưa đọc lại được thảo luận Steam. Không đổi luật | Lead giao sửa 8 chỗ lệch mục 9 (production/reports/2026-11-23-teardown-dot12.md) | gd-research |
 
 ### Số BS-1 trước sim S5 (chuyển từ mục 3, 2026-11-23)
 

@@ -139,7 +139,7 @@ SoPhatHa = LamTronLen(SinhLuc * HeSoNguoiChoi / SatThuongMoiPhat)
 
 Chi tiết dữ liệu: tab Enemy khối Dụng cụ combat, tab ITEM LIST cho Lưới cuộn.
 
-### II.4.6. Driftlife of the Near Belt
+### II.4.6. Driftlife of the Ember Anchorage
 
 Bản MVP có bốn loài của Vành đai ngoài, mỗi loài dạy người chơi một bài:
 

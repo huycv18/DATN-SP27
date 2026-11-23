@@ -884,13 +884,13 @@ Nơi phải đổi cùng lúc khi đổi truyện: `map.md` (map nhánh, khe M v
 
 | Điểm | Dave làm thế nào | Game này làm gì | Vì sao lệch |
 |---|---|---|---|
-| Số chương | 7 chương, mỗi chương thêm một kiểu chơi (`10-narrative.md` [S6], bài đánh giá) | 5 chương | Log GDM dòng 7: 5 vừa với 3 dải và 2 map nhánh lớn |
+| Số chương | 7 chương tính cả prologue [C3], mỗi chương thêm một kiểu chơi (`10-narrative.md` [S6], bài đánh giá) | 5 chương | Log GDM dòng 7: 5 vừa với 3 dải và 2 map nhánh lớn |
 | Nhân vật mở tính năng | Mỗi NPC mở một tính năng qua quest hoặc chương: Duff, Cobra, Otto [D8][D10] | Giữ cấu trúc: 5 người vớt, quest là sửa khoang của người đó | Nối người vớt với sửa trạm (P2), theo `tram-va-cang.md` |
 | Phản diện | John Watson ở Chapter 2 tin Dave đánh bắt quá mức [D11][D17]. Mối đe dọa các chương sau: không tìm thấy nguồn | Daskel và chế độ The Wardens xuyên suốt, lộ dần từ chương 2 tới 5. Có một đồng minh trong chính chủng tộc của hắn | Lead chốt tai nạn là âm mưu có chủ đích, và phản diện là một tên độc tài, không phải cả một chủng tộc |
 | Chủ đề môi trường | Mức nhẹ, nói qua nhân vật, farm là đường bền vững [D8][D14][D18] | Cùng mức với luật chơi (không phạt), nặng hơn ở truyện qua cú lật Driftlife và lời hứa cuối. Phản diện không xoay quanh nó | Lead sửa 2026-11-20: gốc tai nạn là hận thù của Daskel, cái nhìn loài người tham lam là phiến diện |
 | Giọng | Hài là chính (`10-narrative.md` nguyên lý 8) | Nền nghiêm, hài nhẹ từ tính cách | Lead chốt (B9) |
 | Cảnh truyện | Cảnh cắt hài, có minigame riêng | Cảnh tối đa 8 câu, bỏ qua được, không minigame truyện | Co-op không tạm dừng toàn cục (C7), và sức nhóm |
-| Kết | Không tìm thấy nguồn mô tả kết của Dave | Cách mạng thành công, nhận tọa độ thật, rời neo. Hành trình để ngỏ cho hậu bản | Lead sửa 2026-11-20 (B9) |
+| Kết | Sau chương 7 có một chương cuối tên Epilogue: Friends, kể kết cục của những nhân vật Dave gặp trên đường [C4, chỉ qua tóm tắt tìm kiếm, nội dung chi tiết chưa đọc được] | Cách mạng thành công, nhận tọa độ thật, rời neo. Hành trình để ngỏ cho hậu bản | Lead sửa 2026-11-20 (B9) |
 | Số người chơi | Một người | 1 đến 4 người, truyện là tiến trình chung | Lead chốt |
 | Điểm yếu của Dave được tránh | Bị chê kéo dài quest cho truyện dài ra (`10-narrative.md` [S5]) | Quest là một việc sửa khoang, truyện không khóa vòng ngày | Luật 11 và 12 |
 
@@ -1307,6 +1307,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 2026-11-20 | Khớp truyện minh họa (Google Doc The Novent): C3.8 Sevra nói ra âm mưu Solace, C4.6 bằng chứng là hộp ghi hành trình, C4.7 thêm phong tỏa quanh Ember | Lead đợt 8 | GDM |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Bảng mốc ở đầu file bỏ cột Trước, giá trị cũ: C3.7 là cú lật Driftlife bản trước, C3.8 là tàu TA08 cập bến lần thứ ba, C4.6 là nguồn ẩn danh (Nhem ở N4), C4.7 là ngày kế tiếp sau C4.5, C5.1 là tàu TA06 cập bến, C5.2 là ngày kế tiếp sau C5.1, C5.6 là nộp bản đồ sao thật. Mục 5 bỏ câu kể lịch sử sàn ngày (bản đầu 6, 5, 8, 3, 4, chương 1 sửa thành 7 ở vòng QA 2) | Báo cáo humanizer GDD của GDM | GDM |
 | 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): Station Cinder ghi rõ buồng Ingrid và Linh còn chạy, hai buồng khác đã tắt. Không đổi luật | Báo cáo humanizer GDD của GDM | GDM |
+| 2026-11-23 | Mục 9: dòng Kết ghi điều nguồn C4 nói (Epilogue: Friends sau chương 7, chỉ qua tóm tắt tìm kiếm), dòng Số chương ghi 7 chương tính cả prologue (C3). Không đổi luật | Lead giao sửa 8 chỗ lệch mục 9 (production/reports/2026-11-23-teardown-dot12.md) | gd-research |
 
 ### Lệch đã xong (chuyển từ mục Lệch với vai khác, 2026-11-23)
 

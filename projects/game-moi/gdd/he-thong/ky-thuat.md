@@ -390,7 +390,11 @@ Không có khoảnh khắc riêng. Mục tiêu là người chơi không nhận 
 
 ## 9. Lệch khỏi tham chiếu
 
-Không bám game tham chiếu. Cách dùng Sheet làm nguồn dữ liệu và ID chuỗi ổn định theo kho tri thức `docs/knowledge/indie/50-technical-design.md`.
+Không bám game tham chiếu ở cách dùng Sheet làm nguồn dữ liệu và ID chuỗi ổn định (kho tri thức `docs/knowledge/indie/50-technical-design.md`). Riêng cách lưu có một dòng so với Dave:
+
+| Dave làm thế nào | The Novent làm thế nào | Vì sao lệch |
+|---|---|---|
+| Theo người chơi trên Steam, game tự lưu khi chết về thuyền, ngoài ra người chơi lưu tay trước mỗi lượt lặn để liều rồi nạp lại, và khuyên tạm dừng rồi thoát ở 50 Oxy cuối để tránh mất đồ [A5, lời người chơi]. Theo tóm tắt tìm kiếm có khoảng ba ô tự lưu ghi đè luân phiên, hai ô lưu tay, không lưu tay được khi đang lặn hay phục vụ [A6, chưa kiểm, không đọc được trang gốc] | Tự lưu ở ba điểm, không có lưu tay (luật 18). Thoát giữa chuyến vẫn tính một chuyến (luật 18c). Một file mỗi thế giới trên máy host, ghi file tạm rồi đổi tên đè, giữ một `.bak` (luật 19, 20) | Lưu tay trước chuyến cộng thoát giữa chuyến là đường thử lại miễn phí, game này đóng nó. Điểm tự lưu sau mỗi chuyến đã thay ván lưu trước chuyến sau. Nếu số ô của A6 đúng thì Dave cho lùi nhiều điểm hơn, The Novent chỉ lùi một bước nhờ `.bak`. Cách ghi an toàn của Dave chưa có nguồn |
 
 ## 10. Câu hỏi mở
 
@@ -446,3 +450,4 @@ File này là phần co-op kỹ thuật của mọi hệ thống: mục 2.2 và 
 | 2026-11-23 | GD-074 (đợt 10, Lead chốt Art top-down 45 độ): thêm mục 2.6 và 2.7 camera, dựng 3D với asset 2D, thứ tự vẽ, che khuất, camera co-op. Đổi trường vị trí khoang trên RoomData sang `viTriMatBang`. Sự kiện 53 thêm `on_screen`. Luật 43: camera giờ giao thương cố định ở tâm cảng, đã kiểm với 2.6b. Luật 40b: ngắm chuột vào sprite cao (L, boss) quy về tâm hitbox trên XZ. Không đổi luật chơi, số GDD | Lead chốt Art 2026-11-23 | gd-tech |
 | 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): tally_gain nguồn ship đổi thành preorder, tham số lưu đổi sang tiếng Anh save_point, attempt. Không đổi luật | Đánh giá humanizer | GDM |
 | 2026-11-23 | Lead chốt "Thoát giữa chuyến vẫn tính là một chuyến": thêm luật 18c (ghi nhanh `soChuyenDaDi` lúc qua cửa khí), làm rõ luật 17, 18, 18b, thêm giá trị `trip_start` cho `save_point` của `save_written`, sửa dòng thử host thoát. Không đổi luật khách rời (C10) và số khác | DECISIONS 2026-11-23 | gd-tech |
+| 2026-11-23 | Mục 9: thêm dòng so cách lưu của Dave (A5 lời người chơi, A6 chưa kiểm) với luật 18, 18c, 19, 20. Không đổi luật | Lead giao sửa 8 chỗ lệch mục 9 (production/reports/2026-11-23-teardown-dot12.md) | gd-research |
