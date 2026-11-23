@@ -111,7 +111,7 @@ GiaThung = GiaKien / 2,5
 | Lồng Driftmoth, Skitter Ray, Sting Krill | Hàng sống | 1 | 65, 75, 55 | Bắt sống trong chuyến | Chương 1 |
 
 Độ gọi là trọng số để tàu chọn món, hàng rẻ được gọi nhiều hơn (xem mục II.6.6). Thùng nước tinh khiết là hàng cần chế duy nhất của chương đầu:
-- Xưởng chạy một mẻ một lúc và giữ thêm mẻ chờ trong hàng đợi. Hàng đợi xưởng cấp 1 giữ 2 mẻ. Thời gian mỗi mẻ theo công thức ở tab Recipe.
+- Xưởng chạy một mẻ một lúc và giữ thêm mẻ chờ trong hàng đợi. Hàng đợi xưởng cấp 1 có 2 chỗ, tính cả mẻ đang chạy: một mẻ chạy cộng một mẻ chờ. Thời gian mỗi mẻ theo công thức ở tab Recipe.
 - Mẻ chạy cả khi người chơi ra chuyến. Mẻ còn lúc ngủ thì xong khi sang ngày.
 - Mẻ xong sau khi Mở ca thì vào kho, không vào danh mục ca đó.
 - Danh mục chỉ dùng hàng đã nằm trong kho. Hàng trong túi của người còn ở ngoài chưa dùng được.
@@ -203,13 +203,13 @@ Tip = LamTron(GiaBan * 0,25 * KienNhanConLai * HeSoTip * HeSoMe) + 10 * SoLanBom
 ```
 - GiaThung: giá thùng ở tab Shop, đơn vị Tally.
 - HeSoDon: 1,5 nếu thùng thuộc đơn đặt trước, còn lại là 1. Không đơn vị.
-- 0,25: tip tối đa bằng 25% giá bán.
+- 0,25: mức tip cơ sở, tối đa bằng 25% giá bán trước khi nhân hệ số tip và món mê. Tip có thể tới 50% giá bán, chưa kể tiền bơm khí.
 - KienNhanConLai: phần kiên nhẫn còn lại lúc giao, từ 0 tới 1.
 - HeSoTip: hệ số tip của loại tàu, Loose Bolt 1, Tàu vội 2.
 - HeSoMe: 2 nếu là món mê của tàu (đồ Trái Đất với Loose Bolt), còn lại là 1.
 - SoLanBomKhi: số lần bơm khí đã làm cho tàu này, mỗi lần 10 Tally, tính vào tip. LamTron là làm tròn tới Tally nguyên.
 
-Tip là chỗ duy nhất tốc độ đổi ra Tally. Giá không nhân theo Hạng cảng, không nhân theo số người. Tàu chỉ mua, không bán gì trong ca, mua hàng chỉ ở shop của khoang liên lạc vào cuối ngày.
+Tip là chỗ duy nhất tốc độ đổi ra Tally. Giá không nhân theo Hạng cảng, không nhân theo số người. Tàu chỉ mua hàng trong ca. Người chơi mua hàng ở shop của khoang liên lạc vào cuối ngày.
 
 **Đơn đặt trước** là thùng một tàu cụ thể đặt từ đầu ngày, giá cao, hiện ở bảng tàu. Đây là mối nối giữa hai nửa ngày: đọc đơn buổi sáng, chọn dải để mang đúng thứ đó về.
 - Chương 1 có 1 đơn mỗi ngày, ở tàu thứ 9 của lịch, là Loose Bolt đặt thùng đồ Trái Đất.

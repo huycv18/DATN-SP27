@@ -41,6 +41,8 @@ Chi tiết dữ liệu: tab GAME STORY trên Sheet GDD, khối Tóm tắt cốt 
 
 Chương 1 có chín mốc. Mục tiêu người chơi: hãm trôi và neo Ember, vớt hai người đầu tiên, sửa cảng, bán chuyến hàng đầu tiên, nghe được tiếng người khác.
 
+Tên riêng trong bảng mốc: **Station Cinder** là trạm hoang đầu tiên người chơi tới được, nơi có hai buồng ngủ đông của Ingrid và Linh. **Station Lantern** là trạm có người sống sót ở chương 2, phát sóng ở mốc đóng chương. **Oru Tikko** là thương nhân The Veyl, chủ tàu **Loose Bolt**, khách đầu tiên của ca cảng.
+
 | Mốc | Điều kiện | Mở gì |
 |---|---|---|
 | Tỉnh dậy | Bắt đầu thế giới | Cửa khí, dải Gần |
@@ -59,11 +61,7 @@ Luật của chuỗi:
 - Mốc đóng chương chỉ xong khi giai đoạn động cơ chính của chương đã lắp. Trạm và kinh tế không có cổng chương riêng.
 - Số ca cảng cần cho mốc đóng chương là khởi điểm 3, khoảng an toàn 2 tới 5, chưa đo. Đây là núm duy nhất của truyện chạm thời lượng chương 1.
 
-Ví dụ theo bảng sàn ngày:
-- Ngày 5 có mốc Tàu đầu tiên và ca cảng thứ nhất.
-- Ngày 6 là ca thứ hai, ngày 7 là ca thứ ba và mốc đóng chương.
-
-Vì vậy chương đầu không xong trước ngày 7 với mọi số người chơi.
+Mốc Tàu đầu tiên rơi vào ca cảng thứ nhất, mốc đóng chương cần ca thứ ba. Ngày sớm nhất chương đầu xong theo sim kinh tế: xem mục II.7, không đổi theo số người chơi.
 
 ```mermaid
 flowchart TD
@@ -72,11 +70,21 @@ flowchart TD
   C --> D["Buồng Ingrid về cửa khí"]
   D --> E["Xưởng Hoạt động"]
   E --> F["Buồng Linh về cửa khí"]
-  F --> G{"Khoang liên lạc và cảng đều Hoạt động?"}
+```
+*Hình II.9.1 - Chuỗi mốc chương đầu, từ tỉnh dậy tới buồng thứ hai*
+
+```mermaid
+flowchart TD
+  F["Buồng Linh về cửa khí"] --> G{"Khoang liên lạc và cảng đều Hoạt động?"}
   G -->|Mới sửa một khoang| H["Dòng mục tiêu: sửa khoang còn lại"]
   H --> G
   G -->|Đủ| I["Tàu Loose Bolt vào lịch ngày kế tiếp"]
-  I --> J{"Ngày kế tiếp, Tikko cập bến?"}
+```
+*Hình II.9.2 - Cổng thứ nhất: hai khoang liên lạc và cảng*
+
+```mermaid
+flowchart TD
+  I["Tàu Loose Bolt vào lịch ngày kế tiếp"] --> J{"Ngày kế tiếp, Tikko cập bến?"}
   J -->|Chưa| K["Chờ lịch tàu"]
   K --> J
   J -->|Có| L{"Đủ 3 ca cảng xong và động cơ giai đoạn 1?"}
@@ -84,9 +92,9 @@ flowchart TD
   M --> L
   L -->|Đủ| N["Đóng chương: mở dải Giữa và Lantern"]
 ```
-*Hình II.9.1 - Chuỗi mốc chương đầu và hai cổng ở cuối chương*
+*Hình II.9.3 - Cổng thứ hai: tàu đầu tiên và đóng chương*
 
-Đọc sơ đồ: từ lúc tỉnh dậy, người chơi neo trạm rồi tới Cinder và kéo hai buồng về, mỗi buồng mở một người vớt và một khoang. Khoang liên lạc và cảng cùng phải sáng thì tàu đầu tiên mới vào lịch. Nếu mới sửa một khoang thì Sổ tay ghi việc còn lại, mốc vẫn đứng ở trạng thái Mở. Tàu đầu cập bến thì chương vào giai đoạn cuối: hai điều kiện của mốc đóng chương không có thứ tự nào, người chơi làm thêm ca cảng và sửa động cơ theo nhịp của mình. Đủ cả hai thì chương đóng và cảnh cuối ngày phát ra.
+Đọc sơ đồ (Hình II.9.1 tới II.9.3): từ lúc tỉnh dậy, người chơi neo trạm rồi tới Cinder và kéo hai buồng về, mỗi buồng mở một người vớt và một khoang. Khoang liên lạc và cảng cùng phải sáng thì tàu đầu tiên mới vào lịch. Nếu mới sửa một khoang thì Sổ tay ghi việc còn lại, mốc vẫn đứng ở trạng thái Mở. Tàu đầu cập bến thì chương vào giai đoạn cuối: hai điều kiện của mốc đóng chương không có thứ tự nào, người chơi làm thêm ca cảng và sửa động cơ theo nhịp của mình. Đủ cả hai thì chương đóng và cảnh cuối ngày phát ra.
 
 Chi tiết dữ liệu: tab GAME STORY, khối Chương và mốc. Quest sửa khoang xem mục II.6.
 
@@ -111,7 +119,7 @@ Chi tiết dữ liệu: tab GAME STORY, khối Dòng Sổ tay chương 1.
 
 ### II.9.6. Scenes, Dialogue and Pacing Limits
 
-Cảnh chỉ diễn ra ở điểm nghỉ: pha Chuẩn bị, lúc vừa về tới trạm, pha Cuối ngày, và trong khu có khí của map nhánh. Trong ca cảng và trong khu chân không, truyện chỉ nói bằng bong bóng trên đầu nhân vật hoặc radio. Mốc xong giữa ca cảng thì cảnh của nó phát sau ca, ở màn kết ca hoặc pha Cuối ngày.
+Cảnh chỉ diễn ra ở điểm nghỉ: pha Chuẩn bị, lúc vừa về tới trạm, pha Cuối ngày, và trong khu có khí của map nhánh. Trong ca cảng và trong khu chân không, truyện chỉ nói bằng bong bóng trên đầu nhân vật hoặc radio. Mốc xong giữa ca cảng thì cảnh của nó phát sau ca, ở màn kết ca hoặc pha Cuối ngày. Hộp thoại không tạm dừng khi co-op và không hiện khi ca cảng đang chạy (xem II.9.8).
 
 | Giới hạn | Giá trị | Nguồn |
 |---|---|---|
@@ -170,17 +178,13 @@ Mục tiêu nghiệm thu của hệ thống truyện:
 |---|---|---|
 | Số mốc và vật truyện mỗi chương | Ít nhất 3 mốc, ít nhất 2 vật truyện. Chương 1 có 9 mốc và 4 vật | Đã đếm bằng script |
 | Câu thoại mẫu trong giới hạn kênh | Không câu nào quá 80 hoặc 60 ký tự, không chứa chữ số | Đã đếm bằng script |
-| Sàn ngày chương 1 | 7 ngày, không đổi theo số người chơi | Tính tay theo luật, chờ sim kinh tế |
+| Sàn ngày chương 1 | Ngày xong sớm nhất theo II.7, không đổi theo số người chơi | Đã đo bằng sim kinh tế, số ở mục II.7 |
 | Bỏ qua mọi cảnh chương 1 | Sổ tay có 9 dòng tóm tắt và luôn có dòng mục tiêu | Chờ build |
 | Bị kéo về khi đang kéo buồng Ingrid | Chuyến sau buồng ở vị trí gốc, Ingrid vẫn vớt được | Chờ build |
 | Hai người, người thứ nhất nhặt manh mối | Sổ tay người thứ hai có manh mối đó ở lần mở kế tiếp | Chờ build |
 | Sau mốc đóng chương 1, người chơi nói được việc kế tiếp không cần mở Sổ tay | 7 trên 10 người chơi, chỉ tiêu ước | Chờ playtest |
 
-Sàn ngày theo luật:
-- Cả game tổng 26 ngày.
-- Chương đầu chiếm 7 ngày trong đó.
-
-Đó là sàn tính tay, chưa tính thời gian gom vật liệu và tiền, nên thực tế dài hơn. Cảm giác của truyện và việc người chơi có nhớ nhân vật hay không thì máy chưa đo được, chờ playtest trên build.
+Số ngày sàn của chương đầu và của cả game lấy từ sim kinh tế ở mục II.7, mục này không chép lại. Sàn chưa tính thời gian gom vật liệu và tiền, nên thực tế dài hơn. Cảm giác của truyện và việc người chơi có nhớ nhân vật hay không thì máy chưa đo được, chờ playtest trên build.
 
 ### II.9.9. Edge Cases
 
