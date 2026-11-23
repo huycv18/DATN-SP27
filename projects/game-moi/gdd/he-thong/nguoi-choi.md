@@ -97,7 +97,7 @@ Thêm người cùng kéo một vật nặng hoặc vừa: mỗi người thêm 
 ### 2.3 Ngạt, được cứu, bị kéo về (K2, C6) (MVP)
 
 1. Ngạt kéo dài 12 giây. Trong Ngạt: tốc độ tối đa nhân 0,4, không Lướt, không dùng dụng cụ, không kích Recall, không dùng vật tiêu hao, không Trao đồ, không thả đồ khỏi túi (K27), thả mọi vật đang kéo. Oxy giữ 0 và không hao thêm.
-2. Người ngạt không bị AI nhắm tới và không nhận sát thương (để Ngạt là khoảnh khắc chọn đồ và chờ cứu, không phải bị đánh chết). Luật này do file này đặt, gd-combat chưa ghi, xem mục "Lệch cần vai khác sửa".
+2. Người ngạt không bị AI nhắm tới và không nhận sát thương (để Ngạt là khoảnh khắc chọn đồ và chờ cứu, không phải bị đánh chết). Khớp `combat-driftlife.md` luật 10.
 3. Ngay khi vào Ngạt, túi đồ mở ở chế độ chọn món ghim (2.4). Hết giờ chọn vẫn giữ món đã ghim trước đó.
 4. Được cứu: một đồng đội ở trong 1,5 u giữ Chia Oxy (V, X) chuyển Oxy với tốc độ 10 điểm/giây. Khi người ngạt đạt từ 30 Oxy thì sang Được cứu (2 giây i-frame, rồi Bay). Trong lúc đang được chia Oxy thì đồng hồ ngạt tạm dừng.
 5. Tự thoát (không cần đồng đội): nếu người ngạt chạm cửa khí của trạm trong 12 giây (chỉ ở dải Gần mới khả thi: 12 giây ở tốc độ 2,4 u/s đi tối đa 28,8 u) thì tính là kết thúc chuyến bằng cửa khí (K4), giữ nguyên túi. Recall Beacon cần kích 5 giây nên không dùng được khi ngạt.

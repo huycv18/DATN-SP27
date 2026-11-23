@@ -227,7 +227,7 @@ Sự kiện bổ sung sau QA GD-031 (đánh số tiếp):
 | 72 | Port | air_pump_done | Bơm khí xong | player_id, ship_type, patience_gain_pct, tally | Việc phụ có được làm không (sim ca cảng mục 6) | string, string, float, int | `tram-va-cang.md` |
 | 73 | Port | port_player_idle | Kết ca, mỗi người một dòng | player_id, idle_seconds, shift_seconds | Rảnh mỗi người tối đa 30% ở người chơi trễ 2 giây (sim ca cảng). Rảnh là thời gian không có thùng ở quầy chưa ai nhận, không đang cầm thùng, không có tàu đang chờ bơm khí | string, float, float | `tram-va-cang.md` |
 
-Sự kiện 72 và 73 thêm ở đợt 9 cho ca cảng khung Dave (cùng với việc viết lại 30 đến 37). Sự kiện 67 đến 71 lấy từ bảng sự kiện của `ux-ui.md` mục 6, tham số đổi sang tên tiếng Anh snake_case theo luật 26. Tab Event Tracking sinh bằng `tools/xuat-event-tracking.mjs` từ hai bảng sự kiện của file này.
+Sự kiện 72 và 73 thêm ở đợt 9 cho ca cảng khung Dave (cùng với việc viết lại 30 đến 37). Sự kiện 67 đến 71 lấy từ bảng sự kiện của `ux-ui.md` mục 6, tham số đổi sang tên tiếng Anh snake_case theo luật 26. Từ đợt 8 (2026-11-20) tab Event Tracking là bản đọc sửa tay, `tools/xuat-event-tracking.mjs` chỉ còn dùng cho selftest (DECISIONS 2026-11-20).
 
 ### 2.5 Ca cảng khung Dave: cách đo, đồng bộ, sự kiện `MVP`
 

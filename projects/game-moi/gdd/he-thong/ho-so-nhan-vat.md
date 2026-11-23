@@ -19,7 +19,7 @@ Hồ sơ cho art và cho gd-story: mỗi nhân vật có vai, ngoại hình, sil
 | Rig | Một rig xương chung cho nhân loại, 4 skin người chơi, người vớt dùng cùng rig | MVP |
 | Phong cách | 2D vector, bóng đổ phẳng 2 mức, nét viền theo màu tối của vùng | Chốt khung |
 
-Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-1 đến PC-4 (preset Noor, Jonas, Mei, Tariq), người vớt mã RS-1 đến RS-5 (Ingrid, Linh, Rafa, Amara, Yusuf), thương nhân mã TR-1 đến TR-5 (Tikko, Ilsume, Dromm, Vaeth, Nhem), The Wardens mã WD-P1 và WD-P2 (Daskel, Maro, không trùng mã WD-01 đến WD-04 là đơn vị chiến đấu của gd-combat), người phụ mã NP-1 đến NP-4 (Odile, Bram, Elias, Wren). NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Daskel, Sevra, Maro và lính The Wardens, không thêm chủng mới. NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Daskel, Sevra, Maro và lính The Wardens, không thêm chủng mới.
+Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-1 đến PC-4 (preset Noor, Jonas, Mei, Tariq), người vớt mã RS-1 đến RS-5 (Ingrid, Linh, Rafa, Amara, Yusuf), thương nhân mã TR-1 đến TR-5 (Tikko, Ilsume, Dromm, Vaeth, Nhem), The Wardens mã WD-P1 và WD-P2 (Daskel, Maro, không trùng mã WD-01 đến WD-04 là đơn vị chiến đấu của gd-combat), người phụ mã NP-1 đến NP-4 (Odile, Bram, Elias, Wren). NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Daskel, Sevra, Maro và lính The Wardens, không thêm chủng mới.
 
 ## 1. Mục đích với người chơi
 
@@ -107,8 +107,6 @@ Mỗi chủng một rig và hình khối riêng, để người chơi đọc ch�
 | TR-3 | Dromm | Brakk | 1,8 u cao, 1,6 u rộng, thân khối | Khối vuông lớn, giáp đá, đầu nhỏ chìm giữa vai | Một mắt lớn, da xám đá có vân kim loại | Xám đá `#6E6A66` nhấn đồng `#B87333` | Ít lời, không bao giờ nói thẳng giá, mặc cả bằng ánh nhìn | Im lặng, nhìn xuống, nhướng mắt, gật rất nhỏ | Sau MVP |
 | TR-4 | Vaeth | Aelith | 1,3 u, uyển chuyển | Tua mềm như sứa quanh thân, bể thủy tinh nhỏ đeo vai | Da trong mờ, tua phát sáng, bể chứa một sinh vật nhỏ sống | Oải hương `#CBA6E4` | Nhà sưu tầm sinh vật sống, quan tâm Driftlife còn sống hơn Tally | Mê say, thương cảm, giận khi thấy Driftlife bị hạ | Sau MVP |
 | TR-5 | Nhem | Kesh | 1,0 u, lơ lửng | Thân dẹt trôi, nhiều mắt nhỏ, bó dây cáp mạng buông dưới | Da xám đen, mắt trắng nhỏ như điểm sáng, dây cáp có đèn | Xám đen nhấn đỏ tươi nhỏ `#D8382C` | Dân buôn tin, giữ The Lattice, câu ngắn hai vế, áy náy về thông tin giả | Nhìn nghiêng, im lặng, sợ, dè dặt, thú nhận | Sau MVP |
-
-Sevra (NP-5, trạng thái 2, xem mục 2b.5) lộ ra ở cuối chương 3 (C3.8). Từ đó Ilsume không còn che mạng trong trạm.
 
 Sevra (NP-5, trạng thái 2, xem mục 2b.5) lộ ra ở cuối chương 3 (C3.8). Từ đó Ilsume không còn che mạng trong trạm.
 
