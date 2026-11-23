@@ -21,7 +21,7 @@ Trước khi làm, đọc `CLAUDE.md` mục "Game", "Skill gốc Puzzle, đọc 
 
 ## Nguyên tắc
 - Dùng đúng từ của Lead trong Sheet. Game tham chiếu chỉ lấy cấu trúc.
-- Bám MVP: 3 quái. Quái khác chỉ ghi đề xuất.
+- Bám MVP: 4 loài Driftlife dải Gần và 1 boss nhỏ (Scrapmaw). Quái khác chỉ ghi đề xuất.
 - Không viết code gameplay. Không tự review GDD của mình, GDM giao `/gdd-review` cho gd-qa.
 
 ## Skill dùng
