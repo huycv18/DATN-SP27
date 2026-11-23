@@ -94,7 +94,7 @@ flowchart TD
 ```
 *Hình II.9.3 - Cổng thứ hai: tàu đầu tiên và đóng chương*
 
-Đọc sơ đồ (Hình II.9.1 tới II.9.3): từ lúc tỉnh dậy, người chơi neo trạm rồi tới Cinder và kéo hai buồng về, mỗi buồng mở một người vớt và một khoang. Khoang liên lạc và cảng cùng phải sáng thì tàu đầu tiên mới vào lịch. Nếu mới sửa một khoang thì Sổ tay ghi việc còn lại, mốc vẫn đứng ở trạng thái Mở. Tàu đầu cập bến thì chương vào giai đoạn cuối: hai điều kiện của mốc đóng chương không có thứ tự nào, người chơi làm thêm ca cảng và sửa động cơ theo nhịp của mình. Đủ cả hai thì chương đóng và cảnh cuối ngày phát ra.
+Đọc ba sơ đồ trên: từ lúc tỉnh dậy, người chơi neo trạm rồi tới Cinder và kéo hai buồng về, mỗi buồng mở một người vớt và một khoang. Khoang liên lạc và cảng cùng phải sáng thì tàu đầu tiên mới vào lịch. Nếu mới sửa một khoang thì Sổ tay ghi việc còn lại, mốc vẫn đứng ở trạng thái Mở. Tàu đầu cập bến thì chương vào giai đoạn cuối: hai điều kiện của mốc đóng chương không có thứ tự nào, người chơi làm thêm ca cảng và sửa động cơ theo nhịp của mình. Đủ cả hai thì chương đóng và cảnh cuối ngày phát ra.
 
 Chi tiết dữ liệu: tab GAME STORY, khối Chương và mốc. Quest sửa khoang xem mục II.6.
 
