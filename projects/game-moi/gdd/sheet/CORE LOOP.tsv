@@ -1,14 +1,14 @@
 STT	Task	Sub Task	Short Description	Ref	Ref 2
 1	Vòng lớn	Vai trò	Khung vòng chơi của cả game. Ra ngoài thu thập, về trạm biến đồ nhặt được thành thứ dùng được, bán ở cảng lấy Tally, nâng cấp để đi xa hơn và mở thêm truyện	00-khung-game.md mục 4
-		Các bước	Ra ngoài thu thập -> Mang về kho -> Sửa trạm, chế đồ, nuôi Driftlife -> Lập danh mục, bán ở ca cảng lấy Tally -> Nâng cấp bộ đồ và trạm, mua ở Shop thứ trạm không tự làm được -> Đi xa hơn, lâu hơn -> Mở thêm truyện	00-khung-game.md mục 4
-		Phạm vi MVP	Trọn chương 1: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến, 3 đến 4 loài Driftlife, bắt sống loài nhỏ bằng lưới, 1 boss nhỏ, co-op 2 người. GDD viết cho cả game, mỗi mục có nhãn MVP hoặc Sau MVP	so-hien-hanh.md
+		Các bước	Ra ngoài thu thập -> Mang về kho -> Sửa trạm, chế đồ, nuôi Driftlife -> Lập danh mục, bán ở giờ giao thương lấy Tally -> Nâng cấp bộ đồ và trạm, mua ở Shop thứ trạm không tự làm được -> Đi xa hơn, lâu hơn -> Mở thêm truyện	00-khung-game.md mục 4
+		Phạm vi MVP	Trọn chương 1: dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến, 3 đến 4 loài Driftlife, bắt sống loài nhỏ bằng lưới, 1 boss nhỏ, co-op 2 người. GDD viết cho cả game, mỗi mục có nhãn MVP hoặc Sau MVP	so-hien-hanh.md
 2	Pillar trong vòng chơi	Vai trò	Vòng chơi phục vụ đúng 5 Core Pillars đã chốt ở tab OVERVIEW. Mỗi pillar có một chặng của vòng gánh chính. Xung đột thì ưu tiên theo thứ tự 1 đến 5	00-khung-game.md mục 2
 		1. Khám phá	Chặng gánh: Ra ngoài thu thập. Map tổng sinh lại mỗi chuyến, mỗi chương mở vùng mới, map nhánh dựng tay giữ người vớt, manh mối và boss	00-khung-game.md mục 2
 		2. Rủi ro và phần thưởng	Chặng gánh: Ra ngoài thu thập. Oxy vừa là thời gian vừa là máu, túi có giới hạn. Đi càng xa hàng càng quý nhưng đường về càng dài	00-khung-game.md mục 2
-		3. Quản lý và tối ưu	Chặng gánh: Sửa trạm, chế đồ, nuôi Driftlife và Ca cảng. Người chơi chọn sửa khoang nào trước, nuôi loài nào, bán hàng gì trong ca cảng, mang thùng kịp trước khi tàu hết kiên nhẫn	00-khung-game.md mục 2
+		3. Quản lý và tối ưu	Chặng gánh: Sửa trạm, chế đồ, nuôi Driftlife và Giờ giao thương. Người chơi chọn sửa khoang nào trước, nuôi loài nào, bán hàng gì trong giờ giao thương, mang thùng kịp trước khi tàu hết kiên nhẫn	00-khung-game.md mục 2
 		4. Phát triển liên tục	Chặng gánh: Nâng cấp. Tally mở cấp bộ đồ, dụng cụ, khoang, từ đó vào được dải mới, chuyến dài hơn, bắt được loài lớn hơn. Đích cuối là sửa xong động cơ và rời neo	00-khung-game.md mục 2
 		5. Đa dạng và bất ngờ	Chặng gánh: Mở thêm truyện. Mỗi chương thêm kiểu chơi mới, người vớt mới, thương nhân mỗi loài một tính cách	00-khung-game.md mục 2
-3	Một ngày	5 pha	Chuẩn bị, Chuyến 1, Chuyến 2, Ca cảng, Cuối ngày. Tối đa 2 chuyến, ca cảng luôn sau các chuyến, ngủ thì lưu và sang ngày mới. Chi tiết từng pha ở tab Day	00-khung-game.md mục 4
+3	Một ngày	5 pha	Chuẩn bị, Chuyến 1, Chuyến 2, Giờ giao thương, Cuối ngày. Tối đa 2 chuyến, giờ giao thương luôn sau các chuyến, ngủ thì lưu và sang ngày mới. Chi tiết từng pha ở tab Day	00-khung-game.md mục 4
 4	Luật chuyến ra ngoài	Oxy	Oxy là chỉ số duy nhất, vừa là thời gian chuyến đi vừa là máu. Oxy giảm đều theo thời gian, giảm thêm khi trúng đòn hoặc vào vùng môi trường xấu. Không có thanh máu riêng	nguoi-choi.md
 		Hết Oxy	Oxy về 0 thì ngạt trong một khoảng ngắn. Không ai cứu kịp thì bị kéo về trạm, chỉ giữ 1 món tự chọn, mất phần còn lại trong túi\nKhông mất Tally, không phí cứu hộ, không nợ. Vật manh mối tự ghi lại khi nhặt. Vật nhiệm vụ bị mất thì quay về chỗ cũ	nguoi-choi.md
 		Túi đồ	Túi có sức chứa giới hạn, là giới hạn thứ hai sau Oxy. Đồ trong túi chỉ thành của trạm khi về tới trạm	nguoi-choi.md
@@ -22,18 +22,18 @@ STT	Task	Sub Task	Short Description	Ref	Ref 2
 		Ngạt không trao đồ	Người đang ngạt không trao hay thả đồ được. Đồng đội cứu bằng cách chia Oxy, không lấy túi hộ	nguoi-choi.md
 5	Luật trạm và cảng	Neo và rời neo	Ember neo một chỗ suốt game. Việc sửa đầu tiên là hãm trôi và neo. Sửa động cơ chính là mục tiêu dài nhất, xong thì rời neo đi tới hành tinh thật mà Sevra trao tọa độ. Game kết mở	tram-va-cang.md
 		Khoang	Khoang hỏng phải sửa bằng vật liệu mang về. Mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng	tram-va-cang.md
-		Người vớt mở tính năng	Mỗi người vớt mở một tính năng qua quest nhỏ hoặc mốc chương: Kỹ sư mở xưởng, Thông dịch viên mở khoang liên lạc, ca cảng và Shop, Hoa tiêu mở dải Xa và Skiff, Nhà sinh học mở nghiên cứu và nuôi, Trưởng cảng mở bến và tiện ích cảng	tram-va-cang.md
-		Ca cảng	Nửa chơi tay thứ hai, theo khung bán sushi của Dave the Diver. Trước ca lập danh mục bán, Thông dịch viên tự đóng thùng\nTrong ca tàu cập vào cửa neo, mỗi tàu gọi 1 thùng. Mang thùng từ quầy tới đúng tàu, bơm khí cho tàu đang chờ. Nhận giá thùng và tip theo kiên nhẫn còn lại. Tàu chỉ mua, không bán	tram-va-cang.md
-		Sự cố trạm	Từ chương 3, ca cảng có sự cố chen ngang: rò khí, chập điện, Driftlife sổng khoang sinh quyển. Trước chương 3 không có	tram-va-cang.md
-		Hạng cảng	Một thang Hạng cảng duy nhất, tăng theo số tàu phục vụ xong trong các ca. Hạng cao mở thêm loại tàu, cửa neo, hàng ở Shop. Không có danh tiếng riêng từng phe	tram-va-cang.md
+		Người vớt mở tính năng	Mỗi người vớt mở một tính năng qua quest nhỏ hoặc mốc chương: Kỹ sư mở xưởng, Thông dịch viên mở khoang liên lạc, giờ giao thương và Shop, Hoa tiêu mở dải Xa và Skiff, Nhà sinh học mở nghiên cứu và nuôi, Trưởng cảng mở bến và tiện ích cảng	tram-va-cang.md
+		Giờ giao thương	Nửa chơi tay thứ hai, theo khung bán sushi của Dave the Diver. Trước giờ giao thương lập danh mục bán, Thông dịch viên tự đóng thùng\nTrong giờ giao thương tàu cập vào cửa neo, mỗi tàu gọi 1 thùng. Mang thùng từ quầy tới đúng tàu, bơm khí cho tàu đang chờ. Nhận giá thùng và tip theo kiên nhẫn còn lại. Tàu chỉ mua, không bán	tram-va-cang.md
+		Sự cố trạm	Từ chương 3, giờ giao thương có sự cố chen ngang: rò khí, chập điện, Driftlife sổng khoang sinh quyển. Trước chương 3 không có	tram-va-cang.md
+		Hạng cảng	Một thang Hạng cảng duy nhất, tăng theo số tàu phục vụ xong trong các giờ giao thương. Hạng cao mở thêm loại tàu, cửa neo, hàng ở Shop. Không có danh tiếng riêng từng phe	tram-va-cang.md
 		Nuôi Driftlife	Khoang sinh quyển là nguồn hàng đều, mở ở chương 2. Nuôi là lựa chọn có lợi, không bắt buộc	tram-va-cang.md
 		Không hệ đói	Không đói, không tốn chi phí nuôi người trong trạm, không nấu ăn. Trạm không xấu đi khi người chơi nghỉ	tram-va-cang.md
-6	Luật kinh tế và tiến trình	Tally	Đồng tiền duy nhất, kiếm chủ yếu từ ca cảng. Không có tiền thứ hai, không có XP. Nghiên cứu tốn mẫu vật và vật liệu, không tốn Tally	kinh-te-tien-trinh.md
-		Tiêu vào đâu	Tài nguyên dùng để sửa khoang, chế trang bị, nghiên cứu, nuôi, bán ở ca cảng. Tally dùng để nâng cấp bộ đồ và trạm, mua ở Shop thứ trạm không tự làm được	kinh-te-tien-trinh.md
+6	Luật kinh tế và tiến trình	Tally	Đồng tiền duy nhất, kiếm chủ yếu từ giờ giao thương. Không có tiền thứ hai, không có XP. Nghiên cứu tốn mẫu vật và vật liệu, không tốn Tally	kinh-te-tien-trinh.md
+		Tiêu vào đâu	Tài nguyên dùng để sửa khoang, chế trang bị, nghiên cứu, nuôi, bán ở giờ giao thương. Tally dùng để nâng cấp bộ đồ và trạm, mua ở Shop thứ trạm không tự làm được	kinh-te-tien-trinh.md
 		Shop	Bảng giá duy nhất, ở khoang liên lạc, đặt hàng cuối ngày. Hàng mở dần theo Hạng cảng và chương	kinh-te-tien-trinh.md
 		5 chương	Mỗi chương mở một dải hoặc một map nhánh lớn, thêm một đến hai kiểu chơi mới. Nội dung từng chương ở tab Day	cot-truyen.md
-		Tối đa 2 chuyến một ngày	Đi Skiff cũng tính một chuyến. Ca cảng luôn sau các chuyến. Chi tiết ở tab Day	00-khung-game.md mục 5
-		Ngày không đồng hồ	Ngày chỉ sang khi vào buồng ngủ đông. Tự lưu sau mỗi chuyến, sau ca cảng và lúc ngủ. Chi tiết ở tab Day	ky-thuat.md
+		Tối đa 2 chuyến một ngày	Đi Skiff cũng tính một chuyến. Giờ giao thương luôn sau các chuyến. Chi tiết ở tab Day	00-khung-game.md mục 5
+		Ngày không đồng hồ	Ngày chỉ sang khi vào buồng ngủ đông. Tự lưu sau mỗi chuyến, sau giờ giao thương và lúc ngủ. Chi tiết ở tab Day	ky-thuat.md
 		Sau cảnh kết	Game về menu chính. Bản lưu ở ngày cuối, mọi mốc truyện đã xong, Ember vẫn neo để chơi tiếp tự do. Xem lại cảnh kết trong Sổ tay	00-khung-game.md mục 5
 		Qua chương	Chương đóng khi xong mốc truyện cuối chương. Mốc này chỉ bật khi phần động cơ của chương đó đã lắp xong. Kinh tế và trạm không có cổng chặn chương riêng	cot-truyen.md
 7	Luật co-op	Số người	1 đến 4 người, co-op online, không PvP. Chơi một mình là cách chơi chính ngang co-op. Thêm người là thêm tay để chia việc, không mở thêm nội dung	00-khung-game.md mục 6	ky-thuat.md
@@ -43,7 +43,7 @@ STT	Task	Sub Task	Short Description	Ref	Ref 2
 		Xác nhận ra chuyến	Chuyến bắt đầu khi mọi người đang online đã xác nhận ở cửa khí. Ai không trả lời trong 30 giây thì tính là ở lại. Ra ngoài rồi mỗi người tự do, mỗi người một màn hình. Chi tiết ở tab Day	00-khung-game.md mục 6	ky-thuat.md
 		Kết thúc chuyến riêng	Mỗi người tự kết thúc chuyến của mình. Người ngạt được đồng đội chia Oxy. Chuyến kết thúc khi người cuối cùng đã về hoặc bị kéo về	00-khung-game.md mục 6	nguoi-choi.md
 		Không tạm dừng khi co-op	Từ 2 người trở lên thì không có tạm dừng chung, mở menu không dừng thời gian. Chơi một mình thì tạm dừng được	00-khung-game.md mục 6	ux-ui.md
-		Cân bằng theo số người	Không gian giữ nguyên. Lượng tài nguyên, sức chịu của Driftlife và boss, số tàu trong ca cảng tăng theo số người. Giá sửa khoang và nâng cấp không đổi. Không nội dung nào mở theo số người	00-khung-game.md mục 6	map.md
+		Cân bằng theo số người	Không gian giữ nguyên. Lượng tài nguyên, sức chịu của Driftlife và boss, số tàu trong giờ giao thương tăng theo số người. Giá sửa khoang và nâng cấp không đổi. Không nội dung nào mở theo số người	00-khung-game.md mục 6	map.md
 		Người đã về không ra lại	Người đã về trạm không ra lại trong cùng chuyến. Trong lúc chờ thì làm việc ở trạm và xem được vị trí đồng đội. Chi tiết ở tab Day	00-khung-game.md mục 6	nguoi-choi.md
 		Mất kết nối	Mất kết nối được giữ chỗ 15 giây, quá hạn thì tính như bị kéo về (chỉ giữ 1 món). Tự rời giữa chuyến cũng vậy. Host thoát thì phiên kết thúc, thế giới về điểm lưu gần nhất	00-khung-game.md mục 6	ky-thuat.md
 8	Mục lục tab chi tiết	Vai trò	CORE LOOP giữ luật chung của vòng chơi. Nội dung và chỉ số riêng của từng thực thể nằm ở 8 tab dưới đây. Bấm tên tab ở cột Ref để mở.
@@ -51,7 +51,7 @@ STT	Task	Sub Task	Short Description	Ref	Ref 2
 		Enemy	Chặng Ra ngoài thu thập. Luật combat và bắt sống, rồi từng loài Driftlife: dải, cỡ, kiểu hành vi, ngưỡng choáng, rơi gì.	Tab Enemy	combat-driftlife.md
 		Salvage	Chặng Ra ngoài thu thập và Mang về kho. Điểm khai thác và vật nhặt được: dải, độ cứng, sản lượng, điểm sinh.	Tab Salvage	vat-pham.md
 		Recipe	Chặng Sửa trạm, chế đồ. Công thức ở Xưởng và các khoang: nguyên liệu vào, thành phẩm, thời gian, mở khóa.	Tab Recipe	vat-pham.md
-		Customer	Chặng Ca cảng. Từng tàu thương nhân: ai, hay gọi hàng gì, hệ số tip, mở ở chương nào.	Tab Customer	tram-va-cang.md
+		Customer	Chặng Giờ giao thương. Từng tàu thương nhân: ai, hay gọi hàng gì, hệ số tip, mở ở chương nào.	Tab Customer	tram-va-cang.md
 		Upgrade	Chặng Nâng cấp. Luật mua và các trục: Bình Oxy, Túi đồ, Bộ đẩy, Vỏ bộ đồ, Đai dụng cụ, dụng cụ, Lao từ, Súng lưới, khoang.	Tab Upgrade	kinh-te-tien-trinh.md
 		Day	Nhịp một ngày. 5 pha, luật ngày, độ dài mục tiêu một chuyến, 5 chương.	Tab Day	00-khung-game.md
 		Zone	Chặng Ra ngoài thu thập. Map tổng The Wake, 3 dải, các map nhánh, hazard và nhịp chuyến.	Tab Zone	map.md

@@ -370,3 +370,22 @@ Hệ quả: giờ mục tiêu chương 1 trong công thức ngân sách của `k
 Lead chỉ vào hàng này trên Sheet: "Bạn check rồi mà vẫn giữ cái này". Hàng do GDM tự thêm ngày 2026-11-20 (mục Core Pillars theo Dave), nằm chen trong bảng 5 pillar mà Lead chốt giữ đúng như Dave the Diver.
 Đã làm: xóa hàng đó ở OVERVIEW và hàng "Nguyên tắc nền: Một mình vẫn trọn" ở CORE LOOP mục 2. Ý co-op không mất: USP ý 4 ở OVERVIEW, mục Luật co-op ở CORE LOOP (hàng Số người thêm câu "thêm người là thêm tay để chia việc, không mở thêm nội dung"), luật C1 đến C10 ở `gdd/00-khung-game.md`.
 Bài học: lượt rà và lượt đọc sửa chữ chỉ so với luật, không soát thứ GDM tự thêm vào chỗ Lead đã chốt khuôn. Lần sau rà bảng nào Lead chốt khuôn thì đếm hàng so với khuôn.
+
+## 2026-11-23 - Đổi tên "ca cảng" thành Giờ Giao Thương (Trade Hour)
+
+Lead: "tôi muốn đổi tên luồng Ca Cảng, nghe Ca Cảng tôi không hiểu gì nó tối nghĩa và đọc không hay". Tên tiếng Anh Lead chọn: "Trade Hour đi nhưng để tên tiếng việt gì đó cho ngầu". Tên tiếng Việt Lead giao: "tên nào phù hợp cho game đi". GDM chọn Giờ Giao Thương (log 117).
+
+| Cũ | Mới |
+|---|---|
+| ca cảng, ca | giờ giao thương (tên tính năng viết hoa: Giờ Giao Thương, tiếng Anh Trade Hour) |
+| số đếm: 3 ca cảng | 3 lượt giao thương (tránh đọc nhầm thành 3 giờ đồng hồ) |
+| Mở ca, Bỏ ca | Hành động: mở giao thương, nghỉ giao thương. Chữ trên nút: Mở bán, Nghỉ bán (giới hạn 8 ký tự của nút). Tiếng Anh Start Trade Hour |
+| bảng kết ca, màn Kết ca (UI-43), kết ca | bảng tổng kết giao thương, màn Tổng kết giao thương (tiêu đề trên màn: Tổng kết), kết thúc giờ giao thương |
+| giờ ca, hết ca, trần ca | giờ giao thương, hết giờ giao thương, trần giờ giao thương |
+| ca dạy | giờ giao thương hướng dẫn |
+
+- 14 string UI rút gọn cho vừa giới hạn ký tự, ví dụ HUD "Còn {m}:{s}", "Đang giao thương" (`ux-ui.md`, `strings/strings.tsv`).
+- Chỉ đổi chữ, luật và số giữ nguyên. Sim kinh tế chạy lại, không số nào đổi. Hạng cảng, cảng, cửa neo, bến, quầy cảng giữ tên vì là nơi chốn.
+- Đã đổi trong GDD hệ thống, Book, TSV các tab, strings, sim, tool, prompt agent, CLAUDE.md. Giữ nguyên ở chỗ ghi lịch sử: các DECISIONS, log tự quyết, `production/`, `qa/`, `briefs/`, đề xuất cũ, lời trích của Lead.
+- Giữ tên file và ID kỹ thuật có chữ ca-cang (`sim-ca-cang.mjs`, `tham-so/ca-cang.json`, `ca-cang-dave.html`) để không gãy lệnh và đường dẫn.
+- Chữ "Ca" ở tiêu đề bảng trường hợp biên nghĩa là trường hợp, không đổi. Chữ "phiên" đã dùng cho phiên co-op nên không dùng cho tên mới.

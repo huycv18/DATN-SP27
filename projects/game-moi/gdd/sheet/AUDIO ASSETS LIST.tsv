@@ -1,6 +1,6 @@
 STT	Name	Link	Note	Web Ref
-1	BGM_Station_Day		Nhạc nền trong trạm, ấm hơn so với bên ngoài. MVP. Chất hài chỉ có ở trong trạm và ca cảng. Nguồn: cot-truyen.md mục 7b	
-2	BGM_Port_Shift		Nhạc ca cảng, nhịp nhanh vừa phải, không đếm ngược hét lên. MVP. Nguồn: tram-va-cang.md mục 7b	
+1	BGM_Station_Day		Nhạc nền trong trạm, ấm hơn so với bên ngoài. MVP. Chất hài chỉ có ở trong trạm và giờ giao thương. Nguồn: cot-truyen.md mục 7b	
+2	BGM_Port_Shift		Nhạc giờ giao thương, nhịp nhanh vừa phải, không đếm ngược hét lên. MVP. Nguồn: tram-va-cang.md mục 7b	
 3	BGM_Wake_Near		Nhạc nền dải Gần (Ember Anchorage). Đổi tầng nhạc khi qua ranh dải. MVP. Nguồn: map.md mục 7	
 4	BGM_Wake_Mid		Nhạc nền dải Giữa (Shepherd Belt). Sau MVP. Nguồn: map.md mục 7	
 5	BGM_Wake_Far		Nhạc nền dải Xa (Glass Nebula). Sau MVP. Nguồn: map.md mục 7	
@@ -27,7 +27,7 @@ STT	Name	Link	Note	Web Ref
 26	SFX_Mine_Drill		Tiếng khoan khi khai thác điểm, ì ạch ở cổng mềm. MVP. Nguồn: vat-pham.md mục 7	
 27	SFX_Mine_Break		Tiếng vỡ khi hoàn thành khai thác. MVP. Nguồn: vat-pham.md mục 7	
 28	SFX_Craft_Machine		Tiếng máy theo loại công thức ở xưởng. MVP. Nguồn: vat-pham.md mục 7	
-29	SFX_Pack_Crate		Tiếng dán, thả hộp khi Thông dịch viên đóng thùng lúc Mở ca. MVP. Nguồn: vat-pham.md mục 7	
+29	SFX_Pack_Crate		Tiếng dán, thả hộp khi Thông dịch viên đóng thùng lúc Mở giao thương. MVP. Nguồn: vat-pham.md mục 7	
 30	SFX_Rarity_Chime		Nhạc nhặt tăng cao độ theo 4 bậc hiếm. MVP. Nguồn: vat-pham.md mục 7	
 31	SFX_Upgrade_Start		Tiếng khởi động và máy Xưởng khi nhận đồ nâng cấp. MVP. Nguồn: vat-pham.md, kinh-te-tien-trinh.md mục 7	
 32	SFX_Enemy_Telegraph		Âm tích ngắn, cao dần báo trước đòn, phát theo hướng stereo. MVP. Nguồn: combat-driftlife.md mục 7	
@@ -51,7 +51,7 @@ STT	Name	Link	Note	Web Ref
 50	SFX_Crate_Accepted		Tiếng nhận hàng và tiếng xu khi giao thùng đúng tàu. MVP. Nguồn: tram-va-cang.md mục 7	
 51	SFX_Crate_Rejected		Tiếng từ chối trầm. MVP. Nguồn: tram-va-cang.md mục 7	
 52	SFX_Air_Pump		Tiếng xì khí khi bơm khí xong cho tàu ở cửa neo. MVP. Nguồn: tram-va-cang.md mục 7	
-53	SFX_Crate_Spawn		Tiếng đặt hàng nhẹ khi thùng hiện ở ô quầy, kèm tiếng băng chuyền ngắn lúc Mở ca. MVP. Nguồn: tram-va-cang.md mục 7	
+53	SFX_Crate_Spawn		Tiếng đặt hàng nhẹ khi thùng hiện ở ô quầy, kèm tiếng băng chuyền ngắn lúc Mở giao thương. MVP. Nguồn: tram-va-cang.md mục 7	
 54	SFX_Ship_Served		Hợp âm đi lên, cao dần theo số tàu giao liên tiếp khi còn từ 2/3 kiên nhẫn. MVP. Nguồn: tram-va-cang.md mục 7, 7b	
 55	SFX_Ship_Left		Hợp âm trung tính, không chói, không có chữ thất bại. MVP. Nguồn: tram-va-cang.md mục 7	
 56	SFX_Ship_Waiting		Còi xa khi tàu chờ ngoài. MVP. Nguồn: tram-va-cang.md mục 7	

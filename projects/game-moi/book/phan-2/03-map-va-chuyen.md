@@ -1,6 +1,6 @@
 ## II.3. Map and Expeditions
 
-Map là nửa ra ngoài của The Novent. Mỗi ngày người chơi rời cửa khí của trạm, bay vào bãi vỡ để nhặt tài nguyên, bắt Driftlife, vớt người sống sót, rồi quay về trước khi hết Oxy. Mục này giải thích không gian ngoài trạm được dựng ra sao, nội dung và hazard được rải thế nào, và một chuyến bắt đầu, kết thúc ra sao. Mục nối với mục Người chơi ở Oxy và cách bay, với mục Combat ở Driftlife và boss, với mục Vật phẩm ở tài nguyên nhặt được, với mục Trạm và cảng ở chỗ đồ mang về dùng để sửa khoang và bán ở ca cảng.
+Map là nửa ra ngoài của The Novent. Mỗi ngày người chơi rời cửa khí của trạm, bay vào bãi vỡ để nhặt tài nguyên, bắt Driftlife, vớt người sống sót, rồi quay về trước khi hết Oxy. Mục này giải thích không gian ngoài trạm được dựng ra sao, nội dung và hazard được rải thế nào, và một chuyến bắt đầu, kết thúc ra sao. Mục nối với mục Người chơi ở Oxy và cách bay, với mục Combat ở Driftlife và boss, với mục Vật phẩm ở tài nguyên nhặt được, với mục Trạm và cảng ở chỗ đồ mang về dùng để sửa khoang và bán ở giờ giao thương.
 
 ### II.3.1. Overview
 

@@ -7,7 +7,7 @@ Viết 2026-11-19 bởi gd-quan cho kho `docs/knowledge/indie/`. Cách làm vi�
 | Thuật ngữ | Định nghĩa một dòng |
 |---|---|
 | Time management game | Dòng game phục vụ khách trước khi họ hết kiên nhẫn, gốc từ Tapper (1983), định hình bởi Diner Dash [S1] [S2] |
-| Arrival rate (λ) | Số khách đến trong một đơn vị thời gian của ca |
+| Arrival rate (λ) | Số khách đến trong một đơn vị thời gian của giờ giao thương |
 | Service rate (μ) | Số khách một quầy phục vụ xong trong một đơn vị thời gian, nghịch đảo của thời gian phục vụ |
 | Utilization (ρ) | Độ bận quầy, ρ = λ / μ. ρ ≥ 1 thì hàng dài vô hạn [S3] |
 | Little's Law | Số khách trong quán = nhịp đến x thời gian ở lại (L = λW), đúng với mọi hệ ổn định [S4] [S5] |
@@ -17,7 +17,7 @@ Viết 2026-11-19 bởi gd-quan cho kho `docs/knowledge/indie/`. Cách làm vi�
 | Balking | Khách thấy hàng dài nên không vào hàng |
 | Mood | Tâm trạng khách lúc nhận món, quyết định tip |
 | Tip | Tiền thưởng ngoài giá món, theo tốc độ và chất lượng phục vụ [S2] |
-| Rush hour | Khung giờ khách đến dồn dập trong ca, đỉnh tải [S7] |
+| Rush hour | Khung giờ khách đến dồn dập trong giờ giao thương, đỉnh tải [S7] |
 | Holding station | Chỗ giữ món làm sẵn trước giờ cao điểm, thưởng cho người lập kế hoạch [S7] [S8] |
 | Order | Yêu cầu món của một khách, có thể có điều kiện riêng [S9] |
 | Reputation / rating | Chỉ số tiến trình của quán, quyết định lượng khách hoặc loại khách [S9] [S10] |
@@ -30,19 +30,19 @@ Viết 2026-11-19 bởi gd-quan cho kho `docs/knowledge/indie/`. Cách làm vi�
 
 **N2. Thời gian chờ tăng phi tuyến theo độ bận quầy.** Với một quầy, thời gian chờ trung bình bằng ρ / (1 - ρ) lần thời gian phục vụ [S3]. Đi từ ρ 0.7 lên 0.9 làm thời gian chờ tăng gần 4 lần (bảng mục 3). Đúng vì hàng đợi tích lũy khi khách đến ngẫu nhiên. Không áp nguyên công thức khi khách đến theo lịch cố định hoặc người chơi chủ động chọn khách, khi đó phải đo bằng sim.
 
-**N3. Dùng Little's Law để định sức chứa.** Muốn biết cần bao nhiêu chỗ ngồi hay ô hàng chờ, nhân nhịp đến với thời gian một khách ở lại [S4] [S5]. Đúng với mọi hệ ổn định không cần giả định phân phối. Không áp cho đoạn đầu và cuối ca, lúc hệ chưa ổn định.
+**N3. Dùng Little's Law để định sức chứa.** Muốn biết cần bao nhiêu chỗ ngồi hay ô hàng chờ, nhân nhịp đến với thời gian một khách ở lại [S4] [S5]. Đúng với mọi hệ ổn định không cần giả định phân phối. Không áp cho đoạn đầu và cuối giờ giao thương, lúc hệ chưa ổn định.
 
 **N4. Kiên nhẫn phải đọc được, tâm trạng sinh ra tip.** Diner Dash cho mỗi loại khách kiên nhẫn và cách tip riêng, hiện bằng tim giảm dần [S2]. Đúng vì người chơi ưu tiên khách bằng mắt, không cần nhớ số. Không áp khi muốn khách bí ẩn có chủ ý, nhưng phải dạy riêng.
 
-**N5. Giữ thất bại ở mức khách lẻ trong game hai nửa.** PlateUp! cho một khách bỏ đi là đóng cửa quán [S14], hợp với game chạy theo lượt (run). Đội làm PlateUp! vẫn nói họ chủ động tránh dồn áp lực [S15]. Với game có nửa thám hiểm, mất cả ca vì một khách làm mất công cả chuyến bay. Không áp khi thể loại lấy sự khắc nghiệt làm bản sắc.
+**N5. Giữ thất bại ở mức khách lẻ trong game hai nửa.** PlateUp! cho một khách bỏ đi là đóng cửa quán [S14], hợp với game chạy theo lượt (run). Đội làm PlateUp! vẫn nói họ chủ động tránh dồn áp lực [S15]. Với game có nửa thám hiểm, mất cả giờ giao thương vì một khách làm mất công cả chuyến bay. Không áp khi thể loại lấy sự khắc nghiệt làm bản sắc.
 
 **N6. Tránh bỏ đi hàng loạt bằng kiên nhẫn theo độ dài hàng.** Một dev indie trên itch.io cộng thêm kiên nhẫn theo độ dài hàng để khách không bỏ đi cùng lúc [S6]. Đúng vì đếm ngược đồng bộ tạo một khoảnh khắc thua không cứu được. Không cần khi hàng tối đa chỉ 1 đến 2 khách.
 
 **N7. Quán là converter của vòng thám hiểm.** Theo Machinations, quán đổi nguyên liệu (source từ chuyến bay) thành tiền (₵) [S11]. Dave the Diver lấy cảm hứng từ một quán ở Jeju, chủ quán sáng ra biển bắt cá, tối chế món [S16]. Đúng vì doanh thu quán bị chặn bởi thứ mang về, nên người chơi phải ra khám phá lại. Không áp nếu quán có nguồn nguyên liệu vô hạn, khi đó hai nửa tách rời.
 
-**N8. Ca cần đỉnh và vùng nghỉ.** Cook, Serve, Delicious! 2 có hai giờ cao điểm mỗi ca. Trong giờ đó khách đến liên tục và phần thưởng kiên nhẫn từ món phụ giảm một nửa [S7]. Holding station cho người chơi chuẩn bị trước cao điểm [S8]. Đúng vì nhịp căng rồi thả giữ cảm giác làm chủ. Không áp khi ca quá ngắn để có hai pha.
+**N8. Giờ giao thương cần đỉnh và vùng nghỉ.** Cook, Serve, Delicious! 2 có hai giờ cao điểm mỗi giờ giao thương. Trong giờ đó khách đến liên tục và phần thưởng kiên nhẫn từ món phụ giảm một nửa [S7]. Holding station cho người chơi chuẩn bị trước cao điểm [S8]. Đúng vì nhịp căng rồi thả giữ cảm giác làm chủ. Không áp khi giờ giao thương quá ngắn để có hai pha.
 
-**N9. Đơn hàng là câu đố, danh tiếng lọc khách.** Potion Craft cho khách kể vấn đề thay vì gọi tên món, có khách đặt điều kiện riêng để việc chế không thành lặp lại. Danh tiếng quyết định loại khách đến [S9]. Đúng vì đơn hàng thành quyết định thay vì phản xạ. Không áp khi ca bán là phần nhịp nhanh, đọc đơn phải tức thì.
+**N9. Đơn hàng là câu đố, danh tiếng lọc khách.** Potion Craft cho khách kể vấn đề thay vì gọi tên món, có khách đặt điều kiện riêng để việc chế không thành lặp lại. Danh tiếng quyết định loại khách đến [S9]. Đúng vì đơn hàng thành quyết định thay vì phản xạ. Không áp khi giờ giao thương bán là phần nhịp nhanh, đọc đơn phải tức thì.
 
 **N10. Tín hiệu phản hồi phải đủ rõ, nếu không người chơi tra guide.** Moonlighter cho người chơi tự định giá và đọc phản ứng khách bằng biểu cảm [S17]. Cộng đồng làm bảng "giá hoàn hảo" để bỏ qua thử sai [S18], dấu hiệu tín hiệu chưa đủ để học trong game. Không áp khi chính việc khám phá là niềm vui có chủ ý.
 
@@ -62,7 +62,7 @@ Thời gian chờ trung bình một quầy theo độ bận (bội số thời g
 
 | Con số | Giá trị | Nguồn |
 |---|---|---|
-| Giờ cao điểm mỗi ca, Cook, Serve, Delicious! 2 | 2 lần, mỗi lần 1 giờ trong game, thường 12:00 và 18:00 (wiki người chơi) | [S7] |
+| Giờ cao điểm mỗi giờ giao thương, Cook, Serve, Delicious! 2 | 2 lần, mỗi lần 1 giờ trong game, thường 12:00 và 18:00 (wiki người chơi) | [S7] |
 | Phần thưởng kiên nhẫn từ món phụ trong giờ cao điểm, CSD2 | Giảm một nửa (wiki người chơi) | [S7] |
 | Dave the Diver, doanh số | Hơn 1 triệu bản trong chưa tới 2 tuần (7/2023), hơn 10 triệu bản (9/2026) | [S19] [S20] |
 | Moonlighter, doanh số | 500 000 bản trong chưa tới 1 năm | [S21] |
@@ -74,7 +74,7 @@ Doanh số chỉ để thấy cấu trúc hai nửa hành động và kinh doanh
 ## 4. Phân tích game tham chiếu
 
 ### Dave the Diver (Mintrocket, 2023)
-- Làm gì: ngày chia lặn và ca tối ở quán sushi. Khách vào, gọi món và đồ uống, để lại bừa bộn. Người chơi hoặc nhân viên thuê phục vụ và dọn [S24]. Lượng khách theo hạng Cooksta [S10].
+- Làm gì: ngày chia lặn và giờ giao thương tối ở quán sushi. Khách vào, gọi món và đồ uống, để lại bừa bộn. Người chơi hoặc nhân viên thuê phục vụ và dọn [S24]. Lượng khách theo hạng Cooksta [S10].
 - Vì sao hiệu quả: món của quán làm từ chính thứ bắt được, nên mỗi chuyến lặn có lý do [S16].
 - Bài học cho Space Salvage: món quán phải truy về salvage và sinh vật mang về. Một chỉ số duy nhất quyết lượng khách là đủ cho MVP. Nhân viên là lớp quản lý thêm, ngoài MVP.
 
@@ -89,9 +89,9 @@ Doanh số chỉ để thấy cấu trúc hai nửa hành động và kinh doanh
 - Bài học cho Space Salvage: 2 loài khách nên khác nhau ở cách gọi món, không chỉ ở chỉ số kiên nhẫn. Lớp danh tiếng để sau MVP.
 
 ### Cook, Serve, Delicious! 2 (Vertigo Gaming, 2017)
-- Làm gì: ca bán có giờ cao điểm, holding station cho làm món trước [S7] [S8]. Galindo nói bản 2 cố tình rất khó, dữ liệu hoàn tiền Steam cho thấy độ khó là lý do hoàn tiền phổ biến [S25].
+- Làm gì: giờ giao thương bán có giờ cao điểm, holding station cho làm món trước [S7] [S8]. Galindo nói bản 2 cố tình rất khó, dữ liệu hoàn tiền Steam cho thấy độ khó là lý do hoàn tiền phổ biến [S25].
 - Vì sao hiệu quả: cao điểm có báo trước, người lập kế hoạch được thưởng.
-- Bài học cho Space Salvage: báo trước đỉnh tải trong ca. Độ khó quán đặt nhẹ hơn dòng game bếp thuần, vì người chơi đến vì cả hai nửa.
+- Bài học cho Space Salvage: báo trước đỉnh tải trong giờ giao thương. Độ khó quán đặt nhẹ hơn dòng game bếp thuần, vì người chơi đến vì cả hai nửa.
 
 ### Overcooked (Ghost Town Games, 2016)
 - Làm gì: co-op bếp hỗn loạn, ít nút: chặt, chuẩn bị, phục vụ [S12] [S13].
@@ -103,9 +103,9 @@ Doanh số chỉ để thấy cấu trúc hai nửa hành động và kinh doanh
 | Sai lầm | Hậu quả | Cách tránh |
 |---|---|---|
 | Thêm lớp quản lý (nhân viên, menu, trang trí) trước khi vòng phục vụ vui | Phần quán thành việc vặt, review chê lặp lại [S26] | Làm vòng nhận đơn, chế, đưa cho vui trước. Lớp quản lý chỉ thêm khi Lead mở phạm vi |
-| Chỉnh nhịp khách đến bằng cảm giác | Ca trống hoặc ngập, chênh lớn khi đổi một số nhỏ (N2) | Tính độ bận rồi sim nhiều seed, báo thời gian chờ trung bình và p90 |
+| Chỉnh nhịp khách đến bằng cảm giác | Giờ giao thương trống hoặc ngập, chênh lớn khi đổi một số nhỏ (N2) | Tính độ bận rồi sim nhiều seed, báo thời gian chờ trung bình và p90 |
 | Đếm ngược kiên nhẫn đồng bộ | Cả hàng bỏ đi cùng lúc [S6] | Lệch giờ đến, cộng kiên nhẫn theo độ dài hàng |
-| Một lỗi mất cả ca | Mất công cả chuyến thám hiểm [S14] | Thất bại ở mức khách lẻ, mức nặng hơn hỏi Lead |
+| Một lỗi mất cả giờ giao thương | Mất công cả chuyến thám hiểm [S14] | Thất bại ở mức khách lẻ, mức nặng hơn hỏi Lead |
 | Tín hiệu giá hay tip mơ hồ | Người chơi tra guide [S18] | Mỗi mức phản ứng một biểu cảm và một câu thoại rõ |
 | Doanh thu quán không phụ thuộc thứ mang về | Nửa thám hiểm vô nghĩa | Mỗi món cần nguyên liệu từ chuyến bay (N7) |
 | Độ khó quán theo chuẩn game bếp thuần | Người chơi đến vì thám hiểm bỏ game [S25] | Đặt mức áp lực thấp hơn, cho chuẩn bị trước cao điểm |

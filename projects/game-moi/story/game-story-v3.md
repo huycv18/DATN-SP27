@@ -23,7 +23,7 @@ Cách gọi: "buồng ngủ đông" là nơi người ngủ (từ của Lead), "
 | Kết: vẫn tới Solace nhưng dựng khác đi | Lead chốt |
 | Vớt người còn sống để mở tính năng, mỗi người mở qua quest nhỏ hoặc mốc chương | Lead chốt |
 | Game có đồng tiền riêng, nguồn chính là giao thương | Lead chốt. Tiền thứ hai chưa chốt |
-| Nửa chơi tay thứ hai là ca cảng giao thương tại Ember: tàu thương nhân The Veyl và trạm người cập bến, người chơi lấy hàng, chế thêm, đóng kiện, bốc lên tàu trước khi tàu rời. Đây là nguồn đồng tiền riêng | Lead chốt, cơ chế ở bước 4 và 6 |
+| Nửa chơi tay thứ hai là giờ giao thương tại Ember: tàu thương nhân The Veyl và trạm người cập bến, người chơi lấy hàng, chế thêm, đóng kiện, bốc lên tàu trước khi tàu rời. Đây là nguồn đồng tiền riêng | Lead chốt, cơ chế ở bước 4 và 6 |
 | Phạm vi art | Lead: bỏ qua ở giai đoạn này, tính lại ở bước 6 |
 | Mọi thứ khác: tên riêng, The Hollowers là ai và vì sao, các dải và nhánh, vai từng người vớt được, tên đồng tiền | Phòng đề xuất `[GIẢ ĐỊNH]` |
 
@@ -55,7 +55,7 @@ Ember neo lại một chỗ, còn người sống sót thì đi xa dần. Càng 
 | 6 | Mặc đồ không gian ra ngoài thu thập, khai thác tài nguyên trôi nổi | Trạm hỏng không tự làm ra đủ thứ để sống. Tài nguyên trôi nổi chính là bãi vỡ của Cradle và các trạm con, cùng thiên thạch khoáng và băng mà bãi vỡ trôi vào. |
 | 7 | Sinh vật ngoài hành tinh trôi nổi: bắt, tấn công để lấy nguyên liệu, nghiên cứu, điều chế | Driftlife sống trong chân không, kéo tới bãi vỡ kiếm ăn. Săn để lấy nguyên liệu, bắt sống để nuôi trong trạm (Lead chốt có nuôi). Nguồn gốc của chúng là cú lật giữa game (mục 6). |
 | 8 | Sinh tồn, nâng cấp trạm, nâng cấp trang bị để ở ngoài lâu hơn, đi xa hơn | Oxy do trạm tái tạo, bộ đồ do xưởng trạm chế. Trạm hồi phục tới đâu thì người ra ngoài được trang bị tốt tới đó. |
-| 9 | Dùng tài nguyên thế nào | Lead chốt: vớt người mở tính năng, nuôi Driftlife, ca cảng giao thương lấy tiền. Mục 4. |
+| 9 | Dùng tài nguyên thế nào | Lead chốt: vớt người mở tính năng, nuôi Driftlife, giờ giao thương lấy tiền. Mục 4. |
 | 10 | Gặp trạm con khác còn người sống, người ngoài hành tinh cấp tiến, con người | Số ít trạm con còn người sống. The Veyl là tên chung các loài ngoài hành tinh, phần lớn trung lập và giao thương được, một nhóm là phản diện (Lead chốt). Chi tiết ở mục 5 và 6. |
 | 11 | Manh mối về nguyên nhân tai nạn, giải mã | Manh mối nằm trong xác trạm con, trong cơ thể Driftlife, trong lời thương nhân The Veyl, và trong hộp ghi hành trình của Cradle. Mở dần theo chương (mục 6). |
 | 12 | Mục tiêu cuối: tới hành tinh có sự sống, dựng lại đế chế loài người | Sửa xong Ember, có đường tới Solace, đưa những người vớt được tới đó. Solace là điểm kết (Lead chốt). Kết vẫn tới Solace nhưng dựng khác đi (Lead chốt). |
@@ -105,9 +105,9 @@ Trong xác các trạm con vẫn còn buồng ngủ đông đang chạy. Ngườ
 |---|---|---|---|
 | Kỹ sư trang bị | Xưởng | Nghiên cứu và chế trang bị mới: bình khí, bộ đồ, dụng cụ, vũ khí (ví dụ của Lead) | Kim loại, linh kiện, khoáng hiếm |
 | Nhà sinh học | Phòng nghiên cứu và khoang sinh quyển | Nghiên cứu Driftlife, điều chế, và nuôi Driftlife bắt sống | Mẫu Driftlife sống hoặc chết |
-| Bếp trưởng | Bếp | Chế Driftlife và băng thành thức ăn, nước, món có tác dụng cho chuyến đi sau. Không phải ca phục vụ khách | Thịt và mô Driftlife, băng |
+| Bếp trưởng | Bếp | Chế Driftlife và băng thành thức ăn, nước, món có tác dụng cho chuyến đi sau. Không phải giờ giao thương phục vụ khách | Thịt và mô Driftlife, băng |
 | Hoa tiêu | Khoang dẫn đường | Đọc lõi dẫn đường vớt được, mở dải xa hơn và lối tới map nhánh, ghép đường tới Solace | Lõi dẫn đường, linh kiện |
-| Thông dịch viên | Khoang liên lạc và cảng | Bắt liên lạc với thương nhân The Veyl và các trạm con còn sống, mở ca cảng giao thương | Hàng để bốc lên tàu |
+| Thông dịch viên | Khoang liên lạc và cảng | Bắt liên lạc với thương nhân The Veyl và các trạm con còn sống, mở giờ giao thương | Hàng để bốc lên tàu |
 
 Người trong trạm là lý do để quay về mỗi ngày: giao nguyên liệu, nhận đồ chế xong, nhận quest, mở tính năng mới. Họ cũng là chỗ đặt giọng hài nhẹ đã chốt. Người vớt về không phải nhân vật người chơi, họ ở lại trong trạm. Trần bốn người ra ngoài vẫn là bốn buồng của Ember. Riêng người chơi vào sau thì nhập vai một người sống sót vớt về (Lead chốt).
 
@@ -115,9 +115,9 @@ Người trong trạm là lý do để quay về mỗi ngày: giao nguyên liệ
 
 Bắt sống Driftlife về nuôi trong khoang sinh quyển, thu nguyên liệu đều thay vì chỉ săn. Trong truyện đây là việc của nhà sinh học, và là nơi chủ đề của game được nói ra bằng hành động: có cách sống nhờ sinh vật mà không vắt kiệt chúng. Lead chốt không phạt khai thác, nên nuôi là lựa chọn có lợi, không phải nghĩa vụ.
 
-### Ca cảng giao thương và đồng tiền (Lead chốt)
+### Giờ giao thương và đồng tiền (Lead chốt)
 
-Lead chốt: sau chuyến ra ngoài là ca cảng giao thương tại Ember. Tàu thương nhân The Veyl và trạm người cập bến, đưa danh sách hàng, người chơi lấy hàng trong kho, chế thêm, đóng kiện, bốc lên tàu trước khi tàu rời. Đây là nguồn đồng tiền riêng của game. Cơ chế ca, nhịp tàu, giá quyết ở bước 4 và 6.
+Lead chốt: sau chuyến ra ngoài là giờ giao thương tại Ember. Tàu thương nhân The Veyl và trạm người cập bến, đưa danh sách hàng, người chơi lấy hàng trong kho, chế thêm, đóng kiện, bốc lên tàu trước khi tàu rời. Đây là nguồn đồng tiền riêng của game. Cơ chế giờ giao thương, nhịp tàu, giá quyết ở bước 4 và 6.
 
 Lý do trong truyện `[GIẢ ĐỊNH]`:
 - Vì sao tàu tìm tới Ember: bãi vỡ của Cradle là nơi dân buôn The Veyl lui tới gom hàng. Ember là điểm duy nhất trong bãi vỡ đứng yên, có cảng cập và có người để buôn bán.
@@ -134,7 +134,7 @@ Ai ghé bến theo tiến trình truyện `[GIẢ ĐỊNH]`:
 | Sau khi bắt liên lạc với Lantern | Xuồng tiếp tế của Station Lantern | Người với người, đổi nhu yếu phẩm và tin tức về các trạm con khác. |
 | Giữa | Nhiều loài The Veyl từ Veyl Waypost | Tin về Ember lan ra bến. Mỗi loài cần một thứ hàng khác nhau. |
 | Giữa về sau | Tàu của The Remainers, và những tàu lạ chưa ai từng thấy | The Remainers nửa buôn nửa dò xét. Tàu lạ là chỗ đặt đề xuất phản diện cải trang bên dưới. |
-| Gần cuối | Số thương nhân thưa dần | The Hollowers lộ mặt, phần lớn dân buôn bỏ bãi vỡ. Vài khách quen vẫn ghé Ember dù sợ, và đó là lúc ca cảng có sức nặng cảm xúc. |
+| Gần cuối | Số thương nhân thưa dần | The Hollowers lộ mặt, phần lớn dân buôn bỏ bãi vỡ. Vài khách quen vẫn ghé Ember dù sợ, và đó là lúc giờ giao thương có sức nặng cảm xúc. |
 
 Chỗ đặt hài nhẹ qua tính cách thương nhân (giọng Lead chốt: nền nghiêm, hài nhẹ từ tính cách). Ví dụ kiểu nhân vật, chưa phải hồ sơ `[GIẢ ĐỊNH]`:
 
@@ -145,7 +145,7 @@ Chỗ đặt hài nhẹ qua tính cách thương nhân (giọng Lead chốt: n�
 | Trưởng xuồng Lantern | Lần nào cập bến cũng có một chuyện để than, và lần nào cũng xin thêm một thứ ngoài danh sách. |
 | Kẻ không bao giờ nói thẳng giá | Mặc cả bằng im lặng và ánh nhìn, người chơi phải tự đoán. |
 
-Nguyên tắc giọng: hài nằm ở thói quen và sự lệch văn hóa giữa các loài, không nằm ở câu đùa. Ở những mốc mất mát (cảnh tỉnh dậy, buồng tắt trong xác trạm, lúc The Hollowers lộ mặt) ca cảng không chen hài.
+Nguyên tắc giọng: hài nằm ở thói quen và sự lệch văn hóa giữa các loài, không nằm ở câu đùa. Ở những mốc mất mát (cảnh tỉnh dậy, buồng tắt trong xác trạm, lúc The Hollowers lộ mặt) giờ giao thương không chen hài.
 
 Đề xuất chưa chốt (từ GDM): phản diện cải trang làm thương nhân. Một tàu lạ cập bến nhiều lần, trả giá hời bất thường và chỉ hỏi mua những thứ không ai khác cần: lõi dẫn đường, nhật ký trạm, danh sách người đã vớt. Về sau lộ ra đó là trinh sát của The Hollowers đang đếm xem bãi vỡ còn bao nhiêu người sống. Giá trị truyện: người chơi đã tự tay bán hàng cho kẻ thù trước khi biết, lặp lại ở quy mô nhỏ đúng sai lầm của United Accord khi mua tọa độ Solace.
 
@@ -156,7 +156,7 @@ Nguyên tắc giọng: hài nằm ở thói quen và sự lệch văn hóa giữ
 | Tên | Tally [TẠM] |
 | Là gì | Đơn vị ghi sổ chung của thương nhân The Veyl. Loài người đã dùng nó từ thời còn giao thương ở Trái Đất, nên trạm con nào cũng có sổ Tally. |
 | Vì sao có giá trị với cả hai bên | Tally đổi được ở bất kỳ bến The Veyl nào ra thứ mọi loài đi không gian đều cần: năng lượng tinh chế và linh kiện. Người sống sót cần Tally để mua thứ Ember không tự làm được. Thương nhân The Veyl nhận Tally vì nó tiêu được ở mọi bến khác. |
-| Kiếm từ đâu | Ca cảng giao thương: bốc lên tàu salvage, chất điều chế, Driftlife nuôi được, đồ chế. |
+| Kiếm từ đâu | Giờ giao thương: bốc lên tàu salvage, chất điều chế, Driftlife nuôi được, đồ chế. |
 
 ## 5. Cấu trúc hành trình
 

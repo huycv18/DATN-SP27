@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ca cảng nháp</title>
+<title>Giờ giao thương nháp</title>
 <style>
 :root{--bg:#0b0f1a;--panel:#151c2c;--line:#2b3650;--text:#e8ecf4;--muted:#93a0b8;--accent:#f0b44c;--good:#6fd18f;--bad:#e36b5b}
 *{box-sizing:border-box}
@@ -43,7 +43,7 @@ kbd{background:#22304a;border:1px solid #3a4a6a;border-radius:4px;padding:0 5px;
 
   <div id="prep" class="panel">
     <h1>Bảng tàu hôm nay - lập danh mục bán</h1>
-    <p class="sub">Chọn tối đa 4 loại hàng từ kho để bán trong ca. Thông dịch viên tự đóng thùng khi mở ca. Tàu chỉ gọi món có trong danh mục.</p>
+    <p class="sub">Chọn tối đa 4 loại hàng từ kho để bán trong ca. Thông dịch viên tự đóng thùng khi mở giao thương. Tàu chỉ gọi món có trong danh mục.</p>
     <div class="cols">
       <div class="box"><h2>Kho (sau 2 chuyến)</h2><div id="khoList"></div></div>
       <div class="box">
@@ -55,12 +55,12 @@ kbd{background:#22304a;border:1px solid #3a4a6a;border-radius:4px;padding:0 5px;
     </div>
     <div class="foot">
       <div class="muted">Điều khiển: <kbd>A</kbd><kbd>D</kbd> hoặc mũi tên để chạy, <kbd>E</kbd> hoặc <kbd>Space</kbd> để nhặt, giao, bơm khí. Hoặc bấm chuột vào quầy, cửa neo. <kbd>P</kbd> tạm dừng.</div>
-      <button class="big" id="btnOpen">Mở ca</button>
+      <button class="big" id="btnOpen">Mở giao thương</button>
     </div>
   </div>
 
   <div id="result" class="panel hidden">
-    <h1>Kết ca</h1>
+    <h1>Kết thúc giờ giao thương</h1>
     <p class="sub" id="resLine"></p>
     <div class="cols">
       <div class="box"><h2>Kết quả</h2><table id="resTable"></table></div>
@@ -146,7 +146,7 @@ $("btnOpen").onclick = () => startShift();
 $("btnAgain").onclick = () => startShift();
 $("btnBack").onclick = () => { $("result").classList.add("hidden"); $("prep").classList.remove("hidden"); S = null; renderPrep(); };
 
-// ---------- Ca cảng ----------
+// ---------- Giờ giao thương ----------
 let S = null;
 const stars = Array.from({ length: 90 }, () => [Math.random() * W, Math.random() * WALL, Math.random() * 1.4 + .3]);
 
@@ -267,10 +267,10 @@ function update(dt) {
   for (const t of S.toasts) t.t -= dt;
   S.toasts = S.toasts.filter(t => t.t > 0);
 
-  // kết ca
+  // kết thúc giờ giao thương
   const active = S.ships.some(s => s.state !== "roi");
   const noMore = S.next >= S.plan.length || (availTotal() === 0 && !S.preReserved);
-  if (S.t >= CFG.ca) { for (const sh of S.ships) if (sh.state !== "roi") shipFail(sh, "rời vì hết giờ ca"); endShift("Hết giờ ca"); }
+  if (S.t >= CFG.ca) { for (const sh of S.ships) if (sh.state !== "roi") shipFail(sh, "rời vì hết giờ giao thương"); endShift("Hết giờ giao thương"); }
   else if (noMore && !active && S.ships.length === 0) endShift(S.next >= S.plan.length ? "Tàu cuối đã rời" : "Hết hàng trong danh mục");
 }
 

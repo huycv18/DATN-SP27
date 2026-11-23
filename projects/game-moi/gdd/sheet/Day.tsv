@@ -8,26 +8,26 @@ Bỏ qua được: Có"	00-khung-game.md mục 4
 		Pha 3 Chuyến 2	"Làm gì: như chuyến 1. Giữa hai chuyến được vào kho và xưởng
 Kết thúc khi: như chuyến 1
 Bỏ qua được: Có"	00-khung-game.md mục 4
-		Pha 4 Ca cảng	"Làm gì: lập danh mục bán từ hàng trong kho rồi mở ca. Tàu cập vào cửa neo, mỗi tàu gọi 1 thùng. Mang thùng từ quầy tới đúng tàu trước khi tàu hết kiên nhẫn, bơm khí cho tàu đang chờ, nhận Tally và tip
-Kết thúc khi: hết giờ ca, tàu cuối rời, hoặc hết hàng trong danh mục
+		Pha 4 Giờ giao thương	"Làm gì: lập danh mục bán từ hàng trong kho rồi mở giao thương. Tàu cập vào cửa neo, mỗi tàu gọi 1 thùng. Mang thùng từ quầy tới đúng tàu trước khi tàu hết kiên nhẫn, bơm khí cho tàu đang chờ, nhận Tally và tip
+Kết thúc khi: hết giờ giao thương, tàu cuối rời, hoặc hết hàng trong danh mục
 Bỏ qua được: Có, không bị phạt"	00-khung-game.md mục 4
 		Pha 5 Cuối ngày	"Làm gì: nâng cấp, nghiên cứu, đặt hàng ở Shop, nói chuyện với người trong trạm, nhận quest, xem truyện
 Kết thúc khi: người chơi vào buồng ngủ đông. Ngủ thì lưu và sang ngày mới
 Bỏ qua được: Không"	00-khung-game.md mục 4
-2	Luật ngày	Tối đa 2 chuyến	Một ngày tối đa 2 chuyến, đi Skiff cũng tính một chuyến. Sau chuyến thứ hai cửa khí khóa tới ngày mới. Ca cảng luôn sau các chuyến, đã mở ca cảng thì không ra ngoài nữa\nLý do: nếu được về nạp đầy Oxy rồi ra lại mãi thì Oxy không còn là giới hạn	00-khung-game.md mục 5
-		Ngày không đồng hồ	Ngày chỉ sang khi vào buồng ngủ đông. Co-op: vào buồng là đồng ý ngủ, đếm 30 giây từ người đầu tiên, ai chưa vào thì tự tính là đồng ý\nTự lưu ở 3 lúc: sau mỗi chuyến khi mọi người đã về, sau ca cảng, lúc ngủ. Thoát giữa chuyến hoặc giữa ca thì vào lại ở điểm lưu gần nhất, mất phần đang làm dở\nBố cục map của từng chuyến lưu theo ngày và chuyến thứ mấy	00-khung-game.md mục 5, ky-thuat.md
+2	Luật ngày	Tối đa 2 chuyến	Một ngày tối đa 2 chuyến, đi Skiff cũng tính một chuyến. Sau chuyến thứ hai cửa khí khóa tới ngày mới. Giờ giao thương luôn sau các chuyến, đã mở giờ giao thương thì không ra ngoài nữa\nLý do: nếu được về nạp đầy Oxy rồi ra lại mãi thì Oxy không còn là giới hạn	00-khung-game.md mục 5
+		Ngày không đồng hồ	Ngày chỉ sang khi vào buồng ngủ đông. Co-op: vào buồng là đồng ý ngủ, đếm 30 giây từ người đầu tiên, ai chưa vào thì tự tính là đồng ý\nTự lưu ở 3 lúc: sau mỗi chuyến khi mọi người đã về, sau giờ giao thương, lúc ngủ. Thoát giữa chuyến hoặc giữa giờ giao thương thì vào lại ở điểm lưu gần nhất, mất phần đang làm dở\nBố cục map của từng chuyến lưu theo ngày và chuyến thứ mấy	00-khung-game.md mục 5, ky-thuat.md
 		Xác nhận ra chuyến	Chuyến bắt đầu khi mọi người đang online đã xác nhận ở cửa khí. Ai không đi thì ở lại trạm, vẫn dùng được xưởng và khoang sinh quyển. Ai không trả lời trong 30 giây thì tính là ở lại\nRa ngoài rồi mỗi người tự do tách nhau, mỗi người một màn hình	00-khung-game.md mục 6
 		Người đã về không ra lại	Người đã về trạm (về sớm hoặc bị kéo về) không ra lại trong cùng chuyến. Trong lúc chờ thì làm việc trạm: chế trước ở xưởng cho danh mục bán, khoang sinh quyển, sửa khoang, xem vị trí đồng đội\nLý do: ra lại thì Oxy không còn là giới hạn	00-khung-game.md mục 6
 3	Độ dài mục tiêu	Một chuyến, chương 1	Mục tiêu 4 đến 6 phút. Sim đo được 4,4 phút (một người)	00-khung-game.md mục 9, so-hien-hanh.md
 		Một chuyến, chương 5	Mục tiêu 10 đến 12 phút. Sim đo được 10,4 phút (một người)	00-khung-game.md mục 9, so-hien-hanh.md
-		Ca cảng	Mục tiêu 3 đến 5 phút	00-khung-game.md mục 9
-		Một ngày đủ 2 chuyến và ca cảng	Chương 1: 15 đến 20 phút. Chương 5: 25 đến 30 phút	00-khung-game.md mục 9
+		Giờ giao thương	Mục tiêu 3 đến 5 phút	00-khung-game.md mục 9
+		Một ngày đủ 2 chuyến và giờ giao thương	Chương 1: 15 đến 20 phút. Chương 5: 25 đến 30 phút	00-khung-game.md mục 9
 		Chương 1	Mục tiêu 1,5 đến 2 giờ. Sim đo được 1,77 giờ (một người, chơi mức trung bình), đạt	00-khung-game.md mục 9, so-hien-hanh.md
 		Cả game	Mục tiêu 12 đến 15 giờ. Sim đo được 14,2 giờ (một người, chơi mức trung bình)\nNhóm 4 người hết game bằng 70% thời gian chơi một mình (mục tiêu 60 đến 75%)	00-khung-game.md mục 9, so-hien-hanh.md
 		Số ngày ít nhất theo mốc truyện	Chương 1 đến 5 lần lượt cần ít nhất 7, 5, 8, 3, 3 ngày (tổng 26). Đây là mức sàn, nhóm đông chơi nhanh cũng không hết game sớm hơn	cot-truyen.md mục 5
 4	5 chương	Chương 1 Tỉnh dậy	"Vùng mới: dải Gần, xác Seed Station đầu tiên
 Người vớt: Kỹ sư, Thông dịch viên
-Kiểu chơi mới: khai thác, bắt sống loài nhỏ bằng lưới, ca cảng
+Kiểu chơi mới: khai thác, bắt sống loài nhỏ bằng lưới, giờ giao thương
 Mốc truyện: neo trạm, sửa cảng, tàu buôn đầu tiên ghé, bắt được sóng của Lantern
 Phạm vi: MVP"	00-khung-game.md mục 7
 		Chương 2 Không cô độc	"Vùng mới: dải Giữa, Station Lantern
@@ -36,14 +36,14 @@ Kiểu chơi mới: nuôi Driftlife, bắt sống cỡ M (gây mê, Phao kéo), 
 Mốc truyện: gặp người sống ở Lantern, thấy dấu vết phá từ ngoài vào trên các xác trạm"	00-khung-game.md mục 7
 		Chương 3 Kẻ canh giữ	"Vùng mới: dải Xa, Veyl Waypost, The Remainers
 Người vớt: Trưởng cảng
-Kiểu chơi mới: sự cố trong ca cảng, kẻ địch có vũ khí
+Kiểu chơi mới: sự cố trong giờ giao thương, kẻ địch có vũ khí
 Mốc truyện: tàu lạ ghé cảng, cú lật Driftlife, quân The Wardens của Daskel lộ mặt
 Cuối chương: cứu Sevra khỏi toán bắt cóc của Maro, Sevra lộ danh tính"	00-khung-game.md mục 7
 		Chương 4 Tâm vụ nổ	"Vùng mới: bên trong Cradle (Cradle Interior)
 Người vớt: không có
 Kiểu chơi mới: map nhánh lớn trong lòng tàu mẹ
 Mốc truyện: hộp ghi hành trình cho thấy Solace là tin mồi do chế độ Daskel dựng. Sevra kể chuyện đảo chính
-Mục tiêu đổi từ tới Solace sang giúp Sevra lật đổ Daskel. Chuyển tin mật cho The Kindling qua ca cảng"	00-khung-game.md mục 7
+Mục tiêu đổi từ tới Solace sang giúp Sevra lật đổ Daskel. Chuyển tin mật cho The Kindling qua giờ giao thương"	00-khung-game.md mục 7
 		Chương 5 Rời neo	"Vùng mới: Warden Rig
 Người vớt: không có
 Kiểu chơi mới: hộ tống Sevra, trận đối đầu cuối

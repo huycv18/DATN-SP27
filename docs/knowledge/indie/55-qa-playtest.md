@@ -62,7 +62,7 @@ Số Space Salvage (HP, giá, thời lượng chuyến bay) không có trong kho
 
 ## 4. Phân tích game tham chiếu
 
-**Dave the Diver (Mintrocket).** Làm gì: ngày lặn, tối chạy quán sushi, thêm hoạt động phụ (trồng trọt, đua cá ngựa, sổ sưu tầm) để tránh lặp. Vì sao hiệu quả: hướng dẫn qua nhân vật và hài hước vì người chơi bỏ qua tutorial nhàm [19]. Sau ra mắt vẫn chỉnh kinh tế quán: giá và số đĩa của vài món, nhân viên, thao tác quán, và vá thả đồ ở boss Mantis Shrimp [23]. Bài học QA: quán là nơi kinh tế dễ lệch nên giá phải một nguồn và có Balance Sheet lịch sử. Lỗi và cân bằng của boss, rơi đồ phải có ca kiểm riêng, vì đội gốc cũng vá sau.
+**Dave the Diver (Mintrocket).** Làm gì: ngày lặn, tối chạy quán sushi, thêm hoạt động phụ (trồng trọt, đua cá ngựa, sổ sưu tầm) để tránh lặp. Vì sao hiệu quả: hướng dẫn qua nhân vật và hài hước vì người chơi bỏ qua tutorial nhàm [19]. Sau ra mắt vẫn chỉnh kinh tế quán: giá và số đĩa của vài món, nhân viên, thao tác quán, và vá thả đồ ở boss Mantis Shrimp [23]. Bài học QA: quán là nơi kinh tế dễ lệch nên giá phải một nguồn và có Balance Sheet lịch sử. Lỗi và cân bằng của boss, rơi đồ phải có giờ giao thương kiểm riêng, vì đội gốc cũng vá sau.
 
 **Moonlighter (Digital Sun).** Làm gì: bán hàng ban ngày, hầm ngục ban đêm, cùng cấu trúc hai nửa với Space Salvage. Combat chỉnh nhiều vòng vì bản đầu chưa đạt, cân bằng bằng bảng tính và playtest [21]. Phần tiếp theo thử cơ chế shop nặng ngẫu nhiên và bị phản ứng ngay, đội hỏi lại người chơi [21]. Bài học QA: thay đổi lớn ở cơ chế kinh tế cần playtest người thật trước khi chốt. Ngẫu nhiên nặng ở phần bán hàng dễ gây cảm giác bất công mà sim không thấy.
 

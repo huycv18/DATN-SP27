@@ -1,6 +1,6 @@
 ## II.4. Combat and Driftlife
 
-Combat là cách người chơi lấy mẫu sinh vật và giữ Oxy khi ở ngoài trạm. Mỗi lần gặp một con Driftlife, người chơi chọn bắt sống, hạ hay né, và mọi đòn trúng người đều trừ thẳng vào Oxy, nên đánh hay né luôn là quyết định về thời gian còn lại của chuyến. Mục này nối với mục Người chơi ở Oxy và lướt, với mục Vật phẩm ở dụng cụ và thứ rơi ra, với mục Trạm và cảng ở chỗ lồng sinh vật sống bán được ở ca cảng. Ai cần biết vì sao một chuyến kết thúc sớm, hay vì sao bắt sống đáng công hơn hạ, nên đọc mục này.
+Combat là cách người chơi lấy mẫu sinh vật và giữ Oxy khi ở ngoài trạm. Mỗi lần gặp một con Driftlife, người chơi chọn bắt sống, hạ hay né, và mọi đòn trúng người đều trừ thẳng vào Oxy, nên đánh hay né luôn là quyết định về thời gian còn lại của chuyến. Mục này nối với mục Người chơi ở Oxy và lướt, với mục Vật phẩm ở dụng cụ và thứ rơi ra, với mục Trạm và cảng ở chỗ lồng sinh vật sống bán được ở giờ giao thương. Ai cần biết vì sao một chuyến kết thúc sớm, hay vì sao bắt sống đáng công hơn hạ, nên đọc mục này.
 
 ### II.4.1. Overview
 

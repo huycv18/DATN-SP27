@@ -19,7 +19,7 @@ Nhân vật người chơi là một người sống sót mặc bộ đồ khôn
 | Bộ đồ | 5 trục nâng cấp, mua một lần cho cả nhóm (C4) | MVP bậc 0 và 1, còn lại Sau MVP |
 | Điều khiển | bàn phím chuột và gamepad, bảng phím ở mục 2.7 | MVP |
 | Thoát giữa chuyến | Khách rời hoặc mất kết nối quá 15 giây tính như bị kéo về (giữ 1 món), chơi một mình thì mất chuyến, host thoát thì về điểm lưu (C10, K23) | MVP |
-| Số chuyến mỗi ngày | Tối đa 2, Skiff cũng tính, cửa khí khóa sau chuyến 2 và sau khi mở ca cảng (K22) | MVP |
+| Số chuyến mỗi ngày | Tối đa 2, Skiff cũng tính, cửa khí khóa sau chuyến 2 và sau khi mở giờ giao thương (K22) | MVP |
 | Co-op | Oxy và túi riêng, chia Oxy, trao đồ, ping, không va chạm giữa người chơi | MVP (2 người), 3 và 4 người Sau MVP |
 
 Mọi số là khởi điểm "ước", chưa qua prototype của gd-tech. Số di chuyển và Oxy phải qua prototype trước khi gd-economy dùng.
@@ -102,7 +102,7 @@ Thêm người cùng kéo một vật nặng hoặc vừa: mỗi người thêm 
 4. Được cứu: một đồng đội ở trong 1,5 u giữ Chia Oxy (V, X) chuyển Oxy với tốc độ 10 điểm/giây. Khi người ngạt đạt từ 30 Oxy thì sang Được cứu (2 giây i-frame, rồi Bay). Trong lúc đang được chia Oxy thì đồng hồ ngạt tạm dừng.
 5. Tự thoát (không cần đồng đội): nếu người ngạt chạm cửa khí của trạm trong 12 giây (chỉ ở dải Gần mới khả thi: 12 giây ở tốc độ 2,4 u/s đi tối đa 28,8 u) thì tính là kết thúc chuyến bằng cửa khí (K4), giữ nguyên túi. Recall Beacon cần kích 5 giây nên không dùng được khi ngạt.
 6. Hết 12 giây không ai cứu và chưa về: Bị kéo về. Nhân vật về buồng cửa khí của trạm. Túi chỉ giữ đúng 1 món ghim (một đơn vị vật phẩm, một lồng mẫu đang kéo hoặc một vật nhiệm vụ cũng được ghim. Ghim lồng mẫu thì chỉ giữ con có sao cao nhất trong lồng, các con còn lại mất, khớp luật 25 của `combat-driftlife.md`). Phần còn lại của túi biến mất, không rơi ra map. Ngoại lệ: vật nhiệm vụ không ghim thì trở về vị trí gốc (2.4 điểm 10), vật manh mối không nằm trong túi nên không mất. Dụng cụ mang theo trên đai và Tally không mất, không phí, không nợ (K2).
-7. Bị kéo về, cũng như Về an toàn sớm, là kết thúc chuyến của riêng người đó (C6). Người đã về trạm không ra lại trong cùng chuyến (C9, vì về trạm nạp đầy Oxy rồi ra lại sẽ phá giới hạn Oxy K1). Trong lúc chờ người đó làm việc trạm: xưởng (chế trước cho ca cảng), khoang nuôi, và xem vị trí đồng đội. Chuyến chung kết thúc khi người cuối cùng đã về hoặc bị kéo về.
+7. Bị kéo về, cũng như Về an toàn sớm, là kết thúc chuyến của riêng người đó (C6). Người đã về trạm không ra lại trong cùng chuyến (C9, vì về trạm nạp đầy Oxy rồi ra lại sẽ phá giới hạn Oxy K1). Trong lúc chờ người đó làm việc trạm: xưởng (chế trước cho giờ giao thương), khoang nuôi, và xem vị trí đồng đội. Chuyến chung kết thúc khi người cuối cùng đã về hoặc bị kéo về.
 8. K27: người đang ngạt không trao và không thả được đồ. Đồng đội cứu bằng chia Oxy, không vét túi hộ. Muốn giữ đồ cho nhóm, người chơi phải trao trước khi Oxy chạm 0.
 
 Bảng trạng thái và chuyển tiếp ngoài không gian:
@@ -210,14 +210,14 @@ Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ c�
 ### 2.8 Trong trạm (MVP)
 
 1. Trạm là mặt cắt ngang, có trọng lực nhân tạo. Nhân vật đi bộ trái phải trên sàn, leo thang giữa các tầng bằng W hoặc S. Không có nhảy.
-2. Tốc độ đi 5,5 u/s, leo thang 3,5 u/s. Không chạy riêng, vì ca cảng (K13) có áp lực thời gian nên tốc độ cố định cho dễ đọc.
+2. Tốc độ đi 5,5 u/s, leo thang 3,5 u/s. Không chạy riêng, vì giờ giao thương (K13) có áp lực thời gian nên tốc độ cố định cho dễ đọc.
 3. Trong trạm nhân vật không có Oxy, không Ngạt. Không dùng dụng cụ trong trạm trừ sự cố do gd-quan quy định.
-4. Mang thùng trong ca cảng: bấm E hoặc Space để nhặt ở ô quầy và giao ở cửa neo. Mỗi người mang 1 thùng (hoặc 1 lồng) một lần, tốc độ chạy không đổi khi mang, không cùng mang một thùng, không đặt thùng xuống. Giữ E 1 giây ở cửa neo để bơm khí. Bấm chuột trái vào ô quầy hay cửa neo để tự chạy tới, giữ A D giữa đường thì hủy. Luật đầy đủ ở `tram-va-cang.md` luật 26 tới 28.
-5. Sự cố ca cảng (K14, gd-quan): không đặt trạng thái lên người chơi. Rò khí đóng cửa một khoang bắt đi vòng, chập điện và Driftlife sổng xử bằng giữ phím. Trong trạm không có Oxy nên không trừ Oxy và không có sát thương (khớp `combat-driftlife.md`).
+4. Mang thùng trong giờ giao thương: bấm E hoặc Space để nhặt ở ô quầy và giao ở cửa neo. Mỗi người mang 1 thùng (hoặc 1 lồng) một lần, tốc độ chạy không đổi khi mang, không cùng mang một thùng, không đặt thùng xuống. Giữ E 1 giây ở cửa neo để bơm khí. Bấm chuột trái vào ô quầy hay cửa neo để tự chạy tới, giữ A D giữa đường thì hủy. Luật đầy đủ ở `tram-va-cang.md` luật 26 tới 28.
+5. Sự cố giờ giao thương (K14, gd-quan): không đặt trạng thái lên người chơi. Rò khí đóng cửa một khoang bắt đi vòng, chập điện và Driftlife sổng xử bằng giữ phím. Trong trạm không có Oxy nên không trừ Oxy và không có sát thương (khớp `combat-driftlife.md`).
 6. Qua cửa khí từ trong ra cần cả nhóm đang online xác nhận (C5). 30 giây tính từ lúc người đầu tiên xác nhận (khớp `ux-ui.md`), ai không trả lời trong 30 giây thì tính là ở lại trạm và chuyến vẫn đi. Ở trong ra, bộ đồ tự mặc (cảnh 1,0 giây có thể bỏ qua).
 7. Người chơi không qua cửa khí thì ở lại trạm và dùng xưởng, khoang nuôi (C5).
 8. Người chơi không va chạm nhau, đi xuyên nhau (tránh kẹt hành lang và phá nhau).
-9. K22: một ngày tối đa 2 chuyến (đi Skiff cũng tính một chuyến). Sau chuyến thứ hai cửa khí khóa tới ngày mới. Đã mở ca cảng thì không ra ngoài được nữa trong ngày đó. Lý do: về trạm nạp đầy Oxy rồi ra lại không giới hạn sẽ phá K1. Cửa khí khóa hiện chữ nêu lý do (chuyến thứ hai đã xong hoặc ca cảng đã mở).
+9. K22: một ngày tối đa 2 chuyến (đi Skiff cũng tính một chuyến). Sau chuyến thứ hai cửa khí khóa tới ngày mới. Đã mở giờ giao thương thì không ra ngoài được nữa trong ngày đó. Lý do: về trạm nạp đầy Oxy rồi ra lại không giới hạn sẽ phá K1. Cửa khí khóa hiện chữ nêu lý do (chuyến thứ hai đã xong hoặc giờ giao thương đã mở).
 
 ### 2.9 Vào sau và rời phiên (C2) (MVP luật, cảnh do gd-story)
 
@@ -269,8 +269,8 @@ Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ c�
 | I-frame sau khi được cứu | 2 giây | 1 đến 3 | An toàn | Dễ ngạt lại | Co-op | ước |
 | Tầm chia Oxy, trao đồ | 1,5 u | 1 đến 3 | Dễ dùng | Phải sát | Co-op | ước |
 | Giữ chỗ khi rớt mạng | 15 giây | 10 đến 30 | Tha thứ mạng | Treo nhóm | Co-op | ước |
-| Tốc độ đi trong trạm | 5,5 u/s | 4,5 đến 7 | Ca cảng dễ | Ca cảng khó | Ca cảng | ước, gd-quan lấy làm tốc độ thường |
-| Tốc độ leo thang | 3,5 u/s | 2,5 đến 5 | Nhanh giữa tầng | Chậm | Ca cảng | ước |
+| Tốc độ đi trong trạm | 5,5 u/s | 4,5 đến 7 | Giờ giao thương dễ | Giờ giao thương khó | Giờ giao thương | ước, gd-quan lấy làm tốc độ thường |
+| Tốc độ leo thang | 3,5 u/s | 2,5 đến 5 | Nhanh giữa tầng | Chậm | Giờ giao thương | ước |
 | Số ô dụng cụ bậc 0 đến 2 | 3, 4, 5 | 3 đến 6 | Nhiều lựa chọn | Hạn chế | Kiểu chơi | ước |
 | Miễn sát thương sau khi trúng đòn | 0,8 giây | gd-combat đặt | Đòn ít dồn | Đòn dồn | Combat | gd-combat |
 | Mất điều khiển khi trúng đòn | 0,25 giây | 0,15 đến 0,4 | Đòn nặng tay | Đòn nhẹ | Combat | gd-combat |
@@ -303,7 +303,7 @@ Núm gap: ba tham số nối ý đồ với số đo: dung lượng Oxy bậc 0 
 | Dùng CON-101 khi Oxy gần đầy hoặc chạm trần 25% | Hồi phần còn lại tới trần hoặc tới dung lượng, bình tiêu hết, phần dư bỏ |
 | Dùng CON-101 khi Ngạt | Không dùng được, hiện "Không dùng được khi ngạt" |
 | Bị đánh giữa kênh CON-101 | Hủy kênh, bình chưa tiêu |
-| Chuyến thứ ba trong ngày hoặc đã mở ca cảng | Cửa khí khóa (K22), hiện lý do |
+| Chuyến thứ ba trong ngày hoặc đã mở giờ giao thương | Cửa khí khóa (K22), hiện lý do |
 | Trao đồ hay thả đồ khi đang ngạt | Không cho (K27) |
 | Đòn trúng đúng khung Kích Recall hoàn tất | Đòn thắng (bước 7 trước bước 8), Recall bị hủy |
 | Oxy đúng 0 do hao nền, không phải do đòn | Vào Ngạt như thường, không có nhánh "chết ngay" |
@@ -438,7 +438,7 @@ Tiêu chí nghiệm thu (gd-qa pass hoặc fail):
 | 4 | Thang tải của vật phẩm và lớp vật kéo | gd-items đặt, giữ trần mẻ lớn nhất không quá 2 lần túi bậc 0 | gd-items |
 | 5 | Camera 17,8 nhân 10 u có hợp bản đồ greybox không | Giữ ước, chốt cùng gd-world và gd-ux | gd-world, gd-ux |
 | 6 | Chuyển host khi host rớt | Không làm: host thoát thì về điểm lưu (C10) | Đóng |
-| 7 | Người rời phiên có nên có mặt trong ca cảng như NPC hỗ trợ không | Không, nhân vật chỉ đứng trang trí (Sau MVP bàn lại) | gd-quan, GDM |
+| 7 | Người rời phiên có nên có mặt trong giờ giao thương như NPC hỗ trợ không | Không, nhân vật chỉ đứng trang trí (Sau MVP bàn lại) | gd-quan, GDM |
 | 8 | Cấp Vỏ có cần giảm đòn không hay chỉ cần là cổng môi trường | Giữ giảm nhẹ 5 phần trăm mỗi cấp để cấp có cảm giác | gd-combat |
 
 ## Co-op 1 đến 4 người
@@ -465,7 +465,7 @@ Nguyên tắc: mọi luật ở trên đúng với mọi N từ 1 đến 4. Thê
 
 Kiểm: không luật nào hỏi "có đúng N người không", mọi con số tham số không đổi theo N (C8 chỉ đổi tài nguyên, máu Driftlife, số tàu, ở hệ thống khác).
 
-Ca đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng ở Bị kéo về, hai cảnh kéo hiển thị đồng thời, mỗi người giữ món ghim của mình. Đồng đội cũ vẫn ngoài kia ghi nhận "người này đã về" trên HUD và có thể ping lời nhắc.
+Giờ giao thương đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng ở Bị kéo về, hai cảnh kéo hiển thị đồng thời, mỗi người giữ món ghim của mình. Đồng đội cũ vẫn ngoài kia ghi nhận "người này đã về" trên HUD và có thể ping lời nhắc.
 
 ## Điểm tự quyết
 
@@ -490,7 +490,7 @@ Ca đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng 
 | Va chạm người chơi | Đi xuyên nhau | Tránh kẹt hành lang, tránh phá bạn, hợp cứu nhau | Va chạm cứng | Rẻ |
 | Nâng cấp bộ đồ | 5 trục, tốc độ tăng tối đa 8% mỗi bậc | Giữ cảm giác tay không đổi mỗi bậc | Tăng tốc lớn | Vừa |
 | Đai dụng cụ | 3, 4, 5 ô, đổi ở trạm | Hợp bắt sống ở chương 2, không đổi giữa chuyến để giữ chuẩn bị là một pha | Đổi ngoài không gian | Rẻ |
-| Trong trạm | Không nhảy, không chạy, 5,5 u/s, 1 thùng mỗi người, tốc độ không đổi khi mang | Ca cảng cần đọc dễ, nhân vật tập trung nhiệm vụ | Có nhảy, nhiều thùng | Vừa |
+| Trong trạm | Không nhảy, không chạy, 5,5 u/s, 1 thùng mỗi người, tốc độ không đổi khi mang | Giờ giao thương cần đọc dễ, nhân vật tập trung nhiệm vụ | Có nhảy, nhiều thùng | Vừa |
 | Vào sau | Thế giới giữ tối đa 4 nhân vật, người mới chiếm slot trống | Đơn giản hóa dữ liệu, 4 buồng ngủ đông | Không giới hạn nhân vật | Vừa |
 | Rớt mạng | Giữ chỗ 15 giây, rồi tính như Bị kéo về (giữ 1 món), theo C10 | Không treo nhóm, không biến thoát thành Recall tức thì | Recall tức thì giữ cả túi (trái K4 và C10) | Rẻ |
 | Ping | 4 loại, 3 ping mỗi người, 8 giây | Giao tiếp tối thiểu khi không có voice chat | Chat chữ đầy đủ | Rẻ |
@@ -524,6 +524,6 @@ Ca đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng 
 | 2026-11-20 | Khớp lượt 1b: K2 ngoại lệ (vật manh mối, vật nhiệm vụ), C9, Solace là mồi, gỡ dấu chờ các vai đã có file, đai dụng cụ 3, 4, 5 ô, đơn vị Khối | GD-023 1b | gd-character |
 | 2026-11-20 | Lượt 2b: túi 80, 100, 126, 168, 216 Khối, bình 330, 450, 600, 780, 1000, ghim lồng mẫu giữ con sao cao nhất, C5 30 giây, mục tiêu bị kéo về hai mức, đổi ID theo gd-items (bỏ TOL-101) | GD-023 2b, log 54 đến 60 | gd-character |
 | 2026-11-20 | Đợt 4 sau GD-031: C10 và K23 thay "Về an toàn giữ nguyên túi" khi thoát hoặc mất kết nối, K26 trần CON-101 kèm thao tác Dùng vật tiêu hao (phím G), K27 cấm trao và thả đồ khi ngạt, K22 tối đa 2 chuyến mỗi ngày, bảng phím khớp ux-ui (Q, M, J, Tab, ghim R3), Lướt và trần 12 u/s, Oxy chạm 0 giữa Recall, thả vật 30 giây, gỡ mọi dấu chờ, sửa số lỗi nhẹ | GD-023 Đ4 | gd-character |
-| 2026-11-20 | Đợt 9 ca cảng kiểu Dave (GD-051): bỏ luật mang kiện và 3 hàng tốc độ mang kiện theo cỡ, thay bằng mang 1 thùng, tốc độ không đổi, không khiêng chung, không đặt xuống, nhặt giao bằng E hoặc Space, giữ E 1 giây bơm khí, bấm chuột tự chạy tới. Người về sớm (C9) chế trước ở xưởng, bỏ đóng kiện trước | Lead chốt ca cảng theo khung bán sushi của Dave | gd-character |
+| 2026-11-20 | Đợt 9 lượt giao thương kiểu Dave (GD-051): bỏ luật mang kiện và 3 hàng tốc độ mang kiện theo cỡ, thay bằng mang 1 thùng, tốc độ không đổi, không khiêng chung, không đặt xuống, nhặt giao bằng E hoặc Space, giữ E 1 giây bơm khí, bấm chuột tự chạy tới. Người về sớm (C9) chế trước ở xưởng, bỏ đóng kiện trước | Lead chốt giờ giao thương theo khung bán sushi của Dave | gd-character |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Thang cũ túi 20 Khối, bình 300 làm gần 100% chuyến kết thúc vì đầy túi, chương 1 chỉ dài khoảng 1,5 phút nên đã đổi (log 54) | Đánh giá humanizer GDD | gd-character |
 | 2026-11-23 | Theo rà chéo Sheet nhóm B (qa/2026-11-23-ra-cheo-B.md): mục 2.7 ghi rõ mọi phím gán lại được trừ Esc và Start, khớp ux-ui.md mục 2.9. Không đổi luật | Đánh giá humanizer GDD | gd-character |

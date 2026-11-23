@@ -16,7 +16,7 @@ Viết 2026-11-19 bởi gd-economy cho Space Salvage. Đây là kiến thức n�
 | Transitive / Intransitive balance | Lựa chọn mạnh hơn thì đắt hơn / không có lựa chọn tốt nhất (kiểu oẳn tù tì) | [N2] |
 | Growth rate | Hệ số nhân giá mỗi lần mua thêm một bậc, giá tăng mũ | [N3] |
 | Gold per day (yield rate) | Lãi ròng chia số ngày tạo ra lãi, dùng so lựa chọn có thời gian khác nhau | [N13] |
-| Operating cost | Chi phí cố định mỗi ca hoặc mỗi ngày để vận hành (Dave the Diver có chi phí vận hành quán theo hạng) | [N18] [N19] |
+| Operating cost | Chi phí cố định mỗi giờ giao thương hoặc mỗi ngày để vận hành (Dave the Diver có chi phí vận hành quán theo hạng) | [N18] [N19] |
 | Positive feedback loop | Vòng tự khuếch đại, người đang dẫn càng dẫn xa (snowball) | [N7] [N8] |
 | Negative feedback loop | Vòng kéo về cân bằng, người đang sau dễ bắt kịp | [N7] [N8] |
 | Death spiral | Vòng dương theo chiều xấu: thua làm yếu đi, yếu đi làm thua tiếp | [N7] [N8] |

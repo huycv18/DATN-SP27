@@ -741,12 +741,12 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 |---|---|---|---|
 | 2026-11-20 | Ghi Danh mục sơ bộ | Luật đợt số 11 | gd-world |
 | 2026-11-20 | GD-033 phản diện mới: N4 thêm nơi cứu Sevra và The Hearth, luật hộ tống 2.7.9, Warden Rig là nơi Daskel chỉ huy ở bãi vỡ, STY-502 đổi nội dung. Sửa theo QA GD-033 vòng 1: đích C3.8 là Ember, Skiff chở kén tới N4, kén không theo beacon khi hộ tống, lưu vị trí kén, khoảng cách đường hộ tống | Brief đợt 6, tên của gd-story, phiếu `qa/GD-033-map.md` | gd-world |
-| 2026-11-20 | Đợt 4: địa danh tiếng Anh [TẠM] (log 74), seed và lưu bố cục theo K23, ca biên thoát theo K23, trọng số độ khó đã duyệt (log 79), mục tiêu co-op 60 đến 75% (log 69) | Tin GDM, brief đợt 4 | gd-world |
+| 2026-11-20 | Đợt 4: địa danh tiếng Anh [TẠM] (log 74), seed và lưu bố cục theo K23, giờ giao thương biên thoát theo K23, trọng số độ khó đã duyệt (log 79), mục tiêu co-op 60 đến 75% (log 69) | Tin GDM, brief đợt 4 | gd-world |
 | 2026-11-20 | Sửa 5 lỗi nhẹ QA GD-031 vòng 2: chép lại sim 04:43, bỏ bảng chạy thử khỏi 3.9, khoảng cách khe tính theo vùng gây hại, beacon lối vào BS-2 đến BS-4 | Phiếu `qa/GD-031-map.md` | gd-world |
-| 2026-11-20 | Sửa theo QA GD-031 vòng 1: định nghĩa bộ sinh mảnh (W21), `sim/bo_cuc.py`, số 3.9 chép bằng `sim/dong_bo_sim.py`, a Gần 0,30, hình học hazard, cửa C6 sang C7, Amara, Skiff tới Warden Rig, ca biên theo C10 và K23 | Phiếu `qa/GD-031-map.md` | gd-world |
+| 2026-11-20 | Sửa theo QA GD-031 vòng 1: định nghĩa bộ sinh mảnh (W21), `sim/bo_cuc.py`, số 3.9 chép bằng `sim/dong_bo_sim.py`, a Gần 0,30, hình học hazard, cửa C6 sang C7, Amara, Skiff tới Warden Rig, giờ giao thương biên theo C10 và K23 | Phiếu `qa/GD-031-map.md` | gd-world |
 | 2026-11-20 | Khe M và V khớp bảng khe chốt của gd-story (phiếu QA GD-031), thêm bảng mốc mở lối vào map nhánh | Tin gd-story | gd-world |
 | 2026-11-20 | Báo trước tính từ lúc thấy tín hiệu, chỉ báo ở mép cho H01, H04, H07, tốc độ đá H04 10 u/s | Tin gd-ux (QA) | gd-world |
-| 2026-11-20 | Thêm beacon B3 trước D1 ở Cinder, luật beacon phía lối vào mỗi phòng boss, ca biên rút khỏi phòng boss | Tin gd-combat (QA N8, L6) | gd-world |
+| 2026-11-20 | Thêm beacon B3 trước D1 ở Cinder, luật beacon phía lối vào mỗi phòng boss, giờ giao thương biên rút khỏi phòng boss | Tin gd-combat (QA N8, L6) | gd-world |
 | 2026-11-20 | k(N) theo dải nâng Gần 0,27, Xa 0,38 cho có dư mục tiêu 60% | Sim gd-tech bảng 2 | gd-world |
 | 2026-11-20 | k(N) theo dải: Gần 0,25, Giữa 0,25, Xa 0,35 | Tin gd-economy, bảng mục 4 sim chuyến gd-tech | gd-world |
 | 2026-11-20 | Đợt 2b: thang túi và bình GDM chốt (log 54) vào Hiện hành, 3.2, 3.9. Mục tiêu bị kéo về hai mức (log 56) | Tin GDM | gd-world |

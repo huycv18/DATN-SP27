@@ -19,7 +19,7 @@ Cách đọc: mỗi game một bảng cùng hàng, sau đó là bài học cho S
 
 Bài học cho Space Salvage:
 - Năng lượng bộ đồ vừa là máu vừa là thời gian chuyến bay là cùng cấu trúc oxy của Dave, đã chứng minh được. Hình phạt hết năng lượng phải đau nhưng không xóa sạch chuyến (Dave giữ lại một món). Phí cứu hộ cộng nợ cần sim để không thành vòng xoáy nợ.
-- Làm prototype jetpack và thu nhặt trước (GD-002), quán sau. Ca tối phải có thao tác tay, không chạy tự động, nếu không nửa quán thành màn hình chờ.
+- Làm prototype jetpack và thu nhặt trước (GD-002), quán sau. Giờ giao thương tối phải có thao tác tay, không chạy tự động, nếu không nửa quán thành màn hình chờ.
 - Tầng không gian nên dựng tay cho MVP. Dave đã bỏ sinh thủ tục vì độ vui không đều.
 
 ## 2. Moonlighter (Digital Sun, 2018)
@@ -61,7 +61,7 @@ Bài học cho Space Salvage:
 | Core loop | Tháo dỡ tàu bỏ hoang trong không trọng lực bằng dây kéo, dao cắt laser, máy quét. Kiếm tiền trả món nợ 1,2 tỷ cho Lynx Corporation [S11] |
 | Nối hai vòng | Mỗi lần làm xong nhận Lynx Token để nâng cấp và sửa công cụ. Lệnh việc nâng hạng chứng chỉ, mở công cụ và nhiệm vụ khó hơn [S11] |
 | Economy | Hai lớp: tiền trừ nợ và token nâng cấp. Người chơi còn phải lo oxy và nhiên liệu đẩy [S11] |
-| Nhịp ngày | Nhiệm vụ ban đầu có giới hạn thời gian, về sau thêm chế độ Open Shift bỏ giới hạn [S11] |
+| Nhịp ngày | Nhiệm vụ ban đầu có giới hạn thời gian, về sau thêm chế độ Start Trade Hour bỏ giới hạn [S11] |
 | Team và thời gian | Từ game jam nội bộ sau 2016. Early Access 16/06/2020, bản đủ 24/05/2022. Unity [S11]. Số người chưa có nguồn |
 | Được khen | PC Gamer 91, khen gameplay và chủ đề lao động. Destructoid khen chơi lại nhiều [S11]. Lời thoại đồng nghiệp trong lúc làm làm công trường sống động [S12] |
 | Bị chê | IGN 6/10 vì tiến trình cố ý chậm, lê thê. Có người chê say không trọng lực và lặp [S11] |
@@ -146,14 +146,14 @@ Bài học cho Space Salvage:
 | Dave the Diver | Lặn, bắn lao, bắt cá | Quán sushi ban đêm, điều khiển tay | Oxy (cũng là máu) | Chỉ giữ 1 món | Vàng vào đồ lặn và quán | Khoảng 6 năm từ prototype, khoảng 27 người | Một chỉ số vừa máu vừa giờ hoạt động tốt |
 | Moonlighter | Dungeon ban đêm | Cửa tiệm ban ngày, tự đặt giá | Chưa có nguồn | Rời sớm mất vàng | Vàng vào thị trấn và đồ | Chưa có nguồn | Dò giá ẩn gây khó chịu, phần sau đã bỏ |
 | Stardew Valley | Mỏ, đánh quái | Nông trại, dân làng | Năng lượng và giờ trong ngày | Chưa dẫn trong file này | Tiền bán nông sản | 1 người, khoảng 5 năm | Ngày đầu phải chạm đủ hệ thống |
-| Hardspace: Shipbreaker | Cắt, tháo tàu không trọng lực | Nâng cấp bằng token, trả nợ | Giới hạn ca, sau có Open Shift | Chưa dẫn trong file này | Token vào công cụ, tiền trừ nợ | Từ jam, EA 2 năm | Đồng hồ cứng cần lối thoát |
+| Hardspace: Shipbreaker | Cắt, tháo tàu không trọng lực | Nâng cấp bằng token, trả nợ | Giới hạn giờ giao thương, sau có Start Trade Hour | Chưa dẫn trong file này | Token vào công cụ, tiền trừ nợ | Từ jam, EA 2 năm | Đồng hồ cứng cần lối thoát |
 | Spiritfarer | Thu thập, mini-game | Xây thuyền, chăm linh hồn | Chưa có nguồn | Không có thất bại cứng (chơi trực tiếp) | Tiền mua hạt và nguyên liệu | Chưa có nguồn | Quản lý gắn cảm xúc thì chịu lặp lâu |
 | Potion Craft | Hái vườn giới hạn mỗi ngày | Chế thuốc trên bản đồ, bán, mặc cả | Số khách mỗi ngày | Mất danh tiếng | Tiền vào nguyên liệu, công thức | EA khoảng 15 tháng | Thao tác chế phải có kỹ năng |
 | Dome Keeper | Đào, mang tài nguyên về | Nâng cấp, thủ mái vòm | Đồng hồ đợt quái | Mất mái vòm là hết lượt (chơi trực tiếp) | Sắt, nước, cobalt vào nâng cấp | 2 người, khoảng 14 tháng | Sức chở cộng đồng hồ tạo quyết định về tàu |
 | Cult of the Lamb | Dungeon rogue-lite | Quản lý giáo phái | Chưa có nguồn | Chưa dẫn trong file này | Tim, vàng, đức tin | 3 người cốt lõi, khoảng 4 năm | Một nửa yếu là cả game đổ |
 
 Điểm chung rút ra cho Space Salvage:
-- 5 trên 8 game dùng một tài nguyên vừa giới hạn chuyến vừa là rủi ro (oxy, năng lượng, đợt quái, ca, số khách). Năng lượng bộ đồ đúng hướng, phần cần chứng minh là số bằng sim.
+- 5 trên 8 game dùng một tài nguyên vừa giới hạn chuyến vừa là rủi ro (oxy, năng lượng, đợt quái, giờ giao thương, số khách). Năng lượng bộ đồ đúng hướng, phần cần chứng minh là số bằng sim.
 - Lời chê lặp lại nhiều nhất là lặp và tiến trình chậm (Stardew, Hardspace, Spiritfarer, Dome Keeper). Đường cong ₵ ngày 1 đến ngày 3 là điểm phải đo trước.
 - Hình phạt thất bại đều giữ lại một phần thành quả, không xóa sạch. Phí cứu hộ và nợ của mình cần cùng tinh thần.
 

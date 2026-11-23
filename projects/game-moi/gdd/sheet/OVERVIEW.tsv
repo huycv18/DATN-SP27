@@ -29,7 +29,7 @@ GAME VISION & CONCEPT	"- Vision: tự tay kéo một trạm chết sống lại 
 - Người chơi tỉnh dậy trên Station Ember, một trạm con hỏng đang trôi giữa bãi vỡ
 - Concept: mỗi ngày tối đa 2 chuyến ra ngoài không gian (2D nhìn ngang, bay 8 hướng). Oxy vừa là thời gian vừa là máu
 - Ngoài không gian: nhặt phế liệu, khai khoáng, bắt sống hoặc hạ Driftlife, vào map nhánh vớt người sống sót và tìm manh mối
-- Về trạm: sửa khoang, chế đồ, nuôi Driftlife, rồi bán hàng cho tàu thương nhân The Veyl trong ca cảng để lấy Tally. Tally dùng nâng cấp bộ đồ và trạm để đi xa hơn
+- Về trạm: sửa khoang, chế đồ, nuôi Driftlife, rồi bán hàng cho tàu thương nhân The Veyl trong giờ giao thương để lấy Tally. Tally dùng nâng cấp bộ đồ và trạm để đi xa hơn
 - Truyện 5 chương: sống sót, tìm đường tới Solace, cứu Sevra (người thừa kế hợp pháp của Sennar), biết Solace là mồi, giúp mạng lưới của Sevra lật đổ Daskel. Sevra trao tọa độ hành tinh có sự sống thật, Ember rời neo. Kết mở cho phần sau
 - Thể loại: hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý, cấu trúc tham khảo Dave the Diver (ra ngoài ở phần ngày, quản lý ở cuối ngày). Chơi đơn hoặc co-op online 2 đến 4 người"
 
@@ -42,22 +42,22 @@ Khám phá"	Khuyến khích người chơi khám phá bãi vỡ của tàu mẹ 
 Rủi ro và phần thưởng"	"Người chơi phải cân nhắc lượng Oxy, sức chứa túi đồ, Driftlife nguy hiểm và thời điểm quay về. Oxy vừa là thời gian vừa là máu. Đi càng xa càng có phần thưởng giá trị nhưng rủi ro cũng cao hơn. Lựa chọn luôn có thông tin để tính (vạch ""đủ về"", cảnh báo theo phần trăm)"	Tension, Challenge, Satisfaction	"Luật: Oxy là chỉ số duy nhất, hết Oxy chỉ giữ 1 món, túi đồ có giới hạn, Recall Beacon, bắt sống giá trị hơn hạ, tối đa 2 chuyến mỗi ngày, Oxy hồi từ vật tiêu hao tối đa 25%, đang ngạt không trao đồ
 Đo: chuyến chương 1 dài 4 đến 6 phút, chương 5 dài 10 đến 12 phút. Bị kéo về: người cẩn thận dưới 5%, người tham 15 đến 40%"	Thanh máu riêng. Hồi Oxy miễn phí giữa chuyến. Chuyến đi không có giới hạn. Về trạm nạp Oxy rồi ra lại không giới hạn. Mất trắng khi hết Oxy
 "3. Management & Optimization
-Quản lý và tối ưu"	Thứ mang về trở thành vật liệu sửa trạm và hàng hóa cho ca cảng. Người chơi chọn sửa khoang nào trước, nuôi Driftlife nào, bán gì cho tàu thương nhân, và mang hàng tới kịp trước khi tàu hết kiên nhẫn. Người vớt về vận hành các khoang. Mục tiêu là tối ưu thu nhập Tally	Ownership, Strategy, Efficiency	"Luật: khoang sửa xong đổi hình trạm, người vớt vận hành khoang, ca cảng, sự cố trạm, Hạng cảng, nuôi Driftlife, mọi tài nguyên có nơi tiêu
-Đo: tàu phục vụ xong ở ca cảng 85 đến 100% (chương 1), 75 đến 95% (từ chương 2). Tip chiếm 20 đến 30% Tally của ca cảng. Rảnh trong ca không quá 30%. 100% vật phẩm có ít nhất một nguồn tiêu"	Tài nguyên chỉ để bán lấy số. Vật phẩm không có nguồn tiêu. Hệ đói, chi phí duy trì làm trạm xấu đi khi người chơi nghỉ
+Quản lý và tối ưu"	Thứ mang về trở thành vật liệu sửa trạm và hàng hóa cho giờ giao thương. Người chơi chọn sửa khoang nào trước, nuôi Driftlife nào, bán gì cho tàu thương nhân, và mang hàng tới kịp trước khi tàu hết kiên nhẫn. Người vớt về vận hành các khoang. Mục tiêu là tối ưu thu nhập Tally	Ownership, Strategy, Efficiency	"Luật: khoang sửa xong đổi hình trạm, người vớt vận hành khoang, giờ giao thương, sự cố trạm, Hạng cảng, nuôi Driftlife, mọi tài nguyên có nơi tiêu
+Đo: tàu phục vụ xong ở giờ giao thương 85 đến 100% (chương 1), 75 đến 95% (từ chương 2). Tip chiếm 20 đến 30% Tally của giờ giao thương. Rảnh trong giờ giao thương không quá 30%. 100% vật phẩm có ít nhất một nguồn tiêu"	Tài nguyên chỉ để bán lấy số. Vật phẩm không có nguồn tiêu. Hệ đói, chi phí duy trì làm trạm xấu đi khi người chơi nghỉ
 "4. Progression & Growth
 Phát triển liên tục"	Tally kiếm được giúp nâng cấp bộ đồ (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ), dụng cụ và trạm, từ đó mở ra khả năng mới (vào dải mới, chuyến dài hơn, bắt loài lớn hơn) và thúc đẩy người chơi đi tiếp. Đích của cả hành trình là sửa xong động cơ và rời neo	Achievement, Empowerment, Growth	"Luật: cấp bộ đồ theo dải, Tally là đồng tiền duy nhất, Shop, mỗi chương thêm kiểu chơi mới, qua chương theo mốc truyện
 Đo: chương 1 dài 1,5 đến 2 giờ, cả game 12 đến 15 giờ (một người, kịch bản trung bình)"	Nâng cấp chỉ tăng số mà không mở gì mới. Mất tiến trình (hết Oxy chỉ mất túi, không mất nâng cấp hay Tally). Tiền tệ thứ hai hay XP
 "5. Variety & Delight
 Đa dạng và bất ngờ"	"Cốt truyện có chiều sâu (vụ The Scattering, tên độc tài Daskel, người thừa kế Sevra). Nhân vật độc đáo (người vớt về, thương nhân The Veyl mỗi loài một tính cách), hài nhẹ từ tính cách nhân vật
-Mỗi chương thêm cơ chế mới (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống) để người chơi không thấy lặp lại"	Surprise, Humor, Relaxation	"Luật: mỗi chương thêm một đến hai kiểu chơi mới, qua chương theo mốc truyện, dấu vết phản diện lộ dần, giọng nền nghiêm, hài nhẹ
+Mỗi chương thêm cơ chế mới (bắt sống, nuôi Driftlife, sự cố giờ giao thương, hộ tống) để người chơi không thấy lặp lại"	Surprise, Humor, Relaxation	"Luật: mỗi chương thêm một đến hai kiểu chơi mới, qua chương theo mốc truyện, dấu vết phản diện lộ dần, giọng nền nghiêm, hài nhẹ
 Đo: mỗi chương có ít nhất 3 mốc truyện và 2 vật manh mối có nơi đặt cố định. Mỗi chương có kiểu chơi mới"	Cắt cảnh dài chặn vòng chơi. Truyện chỉ kể qua chữ mà không qua thứ người chơi tự tìm thấy. Hài lấn át những mốc mất mát. Chương sau chỉ là chương trước với số lớn hơn
 
-CORE GAMEPLAY	"- Vòng lớn: ra ngoài thu thập, mang về kho, sửa trạm, chế đồ, nuôi Driftlife, bán hàng ở ca cảng lấy Tally, nâng cấp bộ đồ và trạm, đi xa hơn và lâu hơn, lộ thêm truyện
-- Một ngày (5 pha): Chuẩn bị (xem bảng tàu và đơn đặt trước, chọn dụng cụ), Chuyến 1, Chuyến 2, Ca cảng, Cuối ngày (nâng cấp, nghiên cứu, nói chuyện, ngủ để lưu). Tối đa 2 chuyến mỗi ngày
+CORE GAMEPLAY	"- Vòng lớn: ra ngoài thu thập, mang về kho, sửa trạm, chế đồ, nuôi Driftlife, bán hàng ở giờ giao thương lấy Tally, nâng cấp bộ đồ và trạm, đi xa hơn và lâu hơn, lộ thêm truyện
+- Một ngày (5 pha): Chuẩn bị (xem bảng tàu và đơn đặt trước, chọn dụng cụ), Chuyến 1, Chuyến 2, Giờ giao thương, Cuối ngày (nâng cấp, nghiên cứu, nói chuyện, ngủ để lưu). Tối đa 2 chuyến mỗi ngày
 - Nửa hành động: bay 8 hướng có quán tính nhẹ, Oxy là chỉ số duy nhất, khai thác điểm tài nguyên, combat và bắt sống Driftlife, map nhánh dựng tay, về bằng cửa khí hoặc Recall Beacon. Hết Oxy thì ngạt, không ai cứu thì bị kéo về và chỉ giữ 1 món
-- Nửa quản lý: sửa khoang trạm (mỗi khoang đổi hình và trả lại một chức năng), người vớt về mở tính năng, nuôi Driftlife, ca cảng kiểu bán sushi của Dave (lập danh mục, mang thùng tới đúng tàu kịp kiên nhẫn, bơm khí, nhận tip), Hạng cảng
+- Nửa quản lý: sửa khoang trạm (mỗi khoang đổi hình và trả lại một chức năng), người vớt về mở tính năng, nuôi Driftlife, giờ giao thương kiểu bán sushi của Dave (lập danh mục, mang thùng tới đúng tàu kịp kiên nhẫn, bơm khí, nhận tip), Hạng cảng
 - Co-op 1 đến 4: dùng chung trạm, kho, Tally, cấp trang bị. Riêng từng người Oxy và túi đồ. Không tạm dừng khi co-op
-- Thời lượng mục tiêu: chuyến 4 đến 12 phút, ca cảng 3 đến 5 phút, một ngày 15 đến 30 phút
+- Thời lượng mục tiêu: chuyến 4 đến 12 phút, giờ giao thương 3 đến 5 phút, một ngày 15 đến 30 phút
 - Chi tiết: tab CORE LOOP, Day, Player, Customer"
 
 ART DIRECTION	"- Phong cách: 2D vector, nhìn ngang ở mọi nơi (Lead chốt). Thêm 3D thành 2.5D: chưa chốt nhé
@@ -71,7 +71,7 @@ ART DIRECTION	"- Phong cách: 2D vector, nhìn ngang ở mọi nơi (Lead chốt
 
 PROJECT SCOPE	"- Nhóm: 1 Game Designer, 4 Game Developer, 1 Artist 2D. Unity, PC, co-op online 2 đến 4 người
 - Cả game: 5 chương, 3 dải map tổng, 8 map nhánh, 15 loài Driftlife, 4 đơn vị The Wardens, 5 boss, khoảng 150 vật phẩm, 5 người vớt, 5 thương nhân, 12 đến 15 giờ chơi một mình
-- MVP: trọn chương 1. Dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, ca cảng 1 bến 3 cửa neo, có 1 loại hàng phải chế trước ca và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Khoảng 1,5 đến 2 giờ chơi
+- MVP: trọn chương 1. Dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến 3 cửa neo, có 1 loại hàng phải chế trước giờ giao thương và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Khoảng 1,5 đến 2 giờ chơi
 - Ngoài phạm vi: PvP, chơi chung một máy, tiền thứ hai, XP, sinh map thủ tục hoàn toàn, chọn chặng trên bản đồ, vùng chơi trên hành tinh Sennar hay hành tinh đích
 - Mốc thời gian: chưa có, chờ Lead. Phạm vi art tính lại khi có mốc
 - Chi tiết: tab TRACKING, MVP Criteria Checklist"
@@ -82,7 +82,7 @@ TARGET AUDIENCE	"- Người chơi PC thích Dave the Diver, Subnautica, Core Kee
 - Kỹ năng hành động vừa phải: thử thách đến từ quyết định quản lý Oxy, không đòi phản xạ cao
 - Độ tuổi: chưa chốt"
 
-USP	"1. Kết hợp thể loại game độc đáo: Kết hợp hành động, phiêu lưu ngoài không gian với mô phỏng quản lý trạm thương cảng trong một vòng lặp ngày đêm rõ rệt. Ban ngày bay ra bãi vỡ của tàu mẹ để thu thập tài nguyên và Driftlife, ban đêm mở ca cảng giao thương với thương nhân ngoài hành tinh.
+USP	"1. Kết hợp thể loại game độc đáo: Kết hợp hành động, phiêu lưu ngoài không gian với mô phỏng quản lý trạm thương cảng trong một vòng lặp ngày đêm rõ rệt. Ban ngày bay ra bãi vỡ của tàu mẹ để thu thập tài nguyên và Driftlife, ban đêm mở giờ giao thương với thương nhân ngoài hành tinh.
 2. Nội dung đa dạng, nhịp độ thư giãn: Xen giữa các chuyến bay căng thẳng là nhịp chậm trên trạm: sửa khoang, nuôi Driftlife, trò chuyện với người sống sót, giao thương với thương nhân mỗi loài một tính cách. Hoạt động mới mở dần theo chương, thất bại không bị phạt nặng, không gò bó như làm việc.
 3. Thế giới và cốt truyện cuốn hút: Khám phá thế giới giả tưởng có chiều sâu và những khu vực ngoài không gian để tìm lời giải cho những bí ẩn bị che giấu.
 4. Trải nghiệm trọn vẹn dù chơi một mình hay co-op: Chơi một mình vẫn đủ toàn bộ nội dung và cốt truyện. Co-op online 2 đến 4 người không làm giảm trải nghiệm hay bắt cốt truyện phải đánh đổi: mỗi người chơi đều có chỗ trong câu chuyện, thêm người là thêm tay chia việc, không khóa nội dung."

@@ -1,5 +1,5 @@
 {
-  "_ghi_chu": "Tham số sim ca cảng khung Dave (GD-054, đợt 9). Thay hẳn bản GD-030. Số ghi demo bot 2026-11-20 lấy từ prototype/ca-cang-dave.html (CFG, ITEMS, SHIPS). Số [GIẢ ĐỊNH] là gd-tech đặt vì GDD chưa có.",
+  "_ghi_chu": "Tham số sim giờ giao thương khung Dave (GD-054, đợt 9). Thay hẳn bản GD-030. Số ghi demo bot 2026-11-20 lấy từ prototype/ca-cang-dave.html (CFG, ITEMS, SHIPS). Số [GIẢ ĐỊNH] là gd-tech đặt vì GDD chưa có.",
   "dt": 0.05,
   "lan": 300,
   "caToiDa": 300,

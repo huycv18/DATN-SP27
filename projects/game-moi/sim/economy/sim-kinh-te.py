@@ -8,8 +8,8 @@
   python projects/game-moi/sim/economy/sim-kinh-te.py --selftest tự kiểm
 
 Đầu vào: tham-so.json (cùng thư mục), các bảng của gd-items trong vat-pham.md (ITEM, REPAIR, NODE, SPECIES, UPG),
-sim chuyến và sim ca cảng của gd-tech (tools/ket-qua/sim-chuyen.md, sim-ca-cang.md). Kiểu danh mục đo bằng do-danh-muc.mjs.
-Mô hình ở mức giá trị: lượng nhặt tính bằng GTĐ, ca cảng bán theo thùng (1 kiện = 2,5 thùng), giá thùng theo bậc giá.
+sim chuyến và sim giờ giao thương của gd-tech (tools/ket-qua/sim-chuyen.md, sim-ca-cang.md). Kiểu danh mục đo bằng do-danh-muc.mjs.
+Mô hình ở mức giá trị: lượng nhặt tính bằng GTĐ, giờ giao thương bán theo thùng (1 kiện = 2,5 thùng), giá thùng theo bậc giá.
 """
 import io
 import json
@@ -87,7 +87,7 @@ KIEN_THO = statistics.mean(GTD[k] for k in ("CGO-101", "CGO-102", "CGO-103", "CG
 
 # Lãi nuôi một ô một ngày: sản phẩm nuôi trừ thức ăn của dải (vat-pham.md)
 LAI_NUOI = {d: GTD[b] - GTD[fd] for d, b, fd in S["nuoi_dai"]}
-# Ca cảng khung Dave (sim ca cảng gd-tech, mục 4): theo số người N và trễ phản xạ, số tàu, cửa neo, phần tàu xong, giây một ca,
+# Giờ giao thương khung Dave (sim giờ giao thương gd-tech, mục 4): theo số người N và trễ phản xạ, số tàu, cửa neo, phần tàu xong, giây một lượt giao thương,
 # phần tip trong Tally, điểm cảng mỗi tàu phục vụ xong. Kịch bản tệ, trung bình, tốt ứng với trễ 3, 2, 1 giây (tham-so.json ca_cang).
 PORT = {}
 _pc = os.path.join(ROOT, S["sim_ca_cang_gd_tech"])
@@ -102,7 +102,7 @@ def port(N, kb):
     return PORT[(N, S["ca_cang"]["tre_theo_kich_ban"][kb])]
 
 
-PHUT_CA = {c: port(1, "trung bình")["giay"] / 60 for c in range(1, 6)}  # shortcut: sim ca cảng chỉ có chương 1, chương sau dùng cùng số. Đo lại khi gd-quan đặt tàu chương 2 tới 5
+PHUT_CA = {c: port(1, "trung bình")["giay"] / 60 for c in range(1, 6)}  # shortcut: sim giờ giao thương chỉ có chương 1, chương sau dùng cùng số. Đo lại khi gd-quan đặt tàu chương 2 tới 5
 
 # Phút và GTĐ một chuyến (trung bình, một người, gồm Driftlife). Ưu tiên sim chuyến gd-tech khi cột Bình khớp thang hiện hành,
 # không khớp thì dùng số dự phòng trong tham-so.json (gd-world chạy cùng sim trên bản sao tham số, map.md mục 3.9).
@@ -148,7 +148,7 @@ def tron(x):
     return int(50 * round(x / 50))
 
 
-def phut_ngay_tham_chieu(c):  # c từ 1: 2 chuyến đo được, ca cảng, chuẩn bị và cuối ngày
+def phut_ngay_tham_chieu(c):  # c từ 1: 2 chuyến đo được, giờ giao thương, chuẩn bị và cuối ngày
     return 2 * (TECH[c][0] if c in TECH else 0.85 * S["oxy_theo_bac"][c - 1] / 60) + PHUT_CA[c] + S["phut_chuan_bi_cuoi_ngay"]
 
 
@@ -198,7 +198,7 @@ def chi_so_gia(kb):  # Tally trên (GTĐ x 10) của danh mục đại diện c�
     return sum(q * gia_don_vi(k)[0] for k, q in dm.items()) / sum(q * gia_don_vi(k)[1] * S["tally_moi_gtd"] for k, q in dm.items())
 
 
-def he_so_tip(N, kb):  # Tally ca chia Tally giá thùng: tip là phần p của Tally ca nên nhân 1 / (1 - p)
+def he_so_tip(N, kb):  # Tally giờ giao thương chia Tally giá thùng: tip là phần p của Tally giờ giao thương nên nhân 1 / (1 - p)
     return 1 / (1 - port(N, kb)["tip"])
 
 
@@ -271,7 +271,7 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
     NGUONG = nguong or S["nguong_hang"]
     K = S["kich_ban"][kb]
     P = port(N, kb)
-    gia_gtd = S["tally_moi_gtd"] * chi_so_gia(kb) * he_so_tip(N, kb)  # Tally một GTĐ bán ở ca, gồm tip
+    gia_gtd = S["tally_moi_gtd"] * chi_so_gia(kb) * he_so_tip(N, kb)  # Tally một GTĐ bán ở giờ giao thương, gồm tip
     mua = sorted(danh_sach_mua(beta), key=lambda m: (m["c"], 0 if m["loai"] in S["uu_tien_mua"] or m["id"] in S["uu_tien_mua"] else 1))
     da_mua = set()
     bac = {t: 0 for t in TRUC}
@@ -286,7 +286,7 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
     nhat_ca_game = 0.0
     tally_thu = 0.0
     tally_tip = 0.0
-    ban_ch1 = []  # thùng bán mỗi ca chương 1
+    ban_ch1 = []  # thùng bán mỗi lượt giao thương chương 1
     tally_chi = {}
     mat_ngat = 0.0
     nhat_ch1 = 0.0
@@ -341,7 +341,7 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
         dung = min(kho, sua_con)
         sua_con -= dung
         kho -= dung
-        # lịch tàu sinh đầu ngày (log GDM 111): cảng sửa xong hôm nay thì ca đầu ở ngày sau, sớm nhất ngày 5
+        # lịch tàu sinh đầu ngày (log GDM 111): cảng sửa xong hôm nay thì giờ giao thương đầu ở ngày sau, sớm nhất ngày 5
         if c == 1 and cang_xong is None and sua_con <= VAT_LIEU_SUA[0] - S["vl_mo_cang_ch1"]:  # đủ 5 khoang chương 1
             cang_xong = ngay
         if c == 1 and not cang_mo and cang_xong is not None and ngay > cang_xong and ngay >= S["ngay_mo_cang_ch1"]:
@@ -349,15 +349,15 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
             ca_day = True
         if c > 1:
             cang_mo = True
-        # ca cảng
+        # giờ giao thương
         phut_ca = 0.0
         thu = ban = 0.0
         la_ca_day = cang_mo and ca_day
         if la_ca_day:
-            # ca dạy (tram-va-cang.md luật 67): 2 tàu Loose Bolt chỉ gọi thùng phế liệu, 1 tàu nếu kho chỉ đủ 1 thùng
+            # giờ giao thương hướng dẫn (tram-va-cang.md luật 67): 2 tàu Loose Bolt chỉ gọi thùng phế liệu, 1 tàu nếu kho chỉ đủ 1 thùng
             CD = S["ca_day"]
             ban = float(min(CD["tau"], int(kho / (GTD["CGO-101"] / THUNG))))
-            ca_day = ban == 0  # kho không có phế liệu thì nút Mở ca xám, ca dạy dời sang ngày sau
+            ca_day = ban == 0  # kho không có phế liệu thì nút Mở bán xám, giờ giao thương hướng dẫn dời sang ngày sau
             kho -= ban * GTD["CGO-101"] / THUNG
             thu = round(ban * gia_thung("CGO-101") * he_so_tip(N, kb))
             phut_ca = CD["giay"] / 60 * ban / CD["tau"]
@@ -368,13 +368,13 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
             while hang < S["tran_hang_theo_chuong"][i] and diem >= NGUONG[hang]:
                 hang += 1
         elif cang_mo:
-            # ca khung Dave: mỗi tàu gọi 1 thùng. Bán được số nhỏ hơn giữa tàu phục vụ xong và thùng có trong kho sau khi giữ phần để xây (D8)
+            # giờ giao thương khung Dave: mỗi tàu gọi 1 thùng. Bán được số nhỏ hơn giữa tàu phục vụ xong và thùng có trong kho sau khi giữ phần để xây (D8)
             con_xay = sua_con > 0 or any(m["c"] <= c and m["vl"] > 0 for m in mua)
             co_the = kho * (1 - (S["du_tru_vat_lieu_khi_con_xay"] if con_xay else 0.0)) / gtd_thung(c)
             ban = min(P["tau"] * P["xong"], co_the)
             kho -= ban * gtd_thung(c)
             thu = round(ban * gtd_thung(c) * gia_gtd)  # Tally là số nguyên: số dư cuối ngày nguyên, phép cộng trừ in ở ECONOMIC đúng từng dòng
-            phut_ca = P["giay"] / 60 * ban / (P["tau"] * P["xong"])  # hết hàng thì ca kết thúc sớm
+            phut_ca = P["giay"] / 60 * ban / (P["tau"] * P["xong"])  # hết hàng thì giờ giao thương kết thúc sớm
             tally += thu
             tally_thu += thu
             tally_tip += thu * P["tip"]
@@ -487,7 +487,7 @@ def tally_ha(sp):  # một lần hạ: mô sinh học bán theo thùng mô, ph�
 _DM = None
 
 
-def do_danh_muc():  # chạy do-danh-muc.mjs một lần: kiểu danh mục trên mô hình ca của gd-tech, giá và độ gọi của file này
+def do_danh_muc():  # chạy do-danh-muc.mjs một lần: kiểu danh mục trên mô hình giờ giao thương của gd-tech, giá và độ gọi của file này
     global _DM
     if _DM is None:
         D = S["do_danh_muc"]
@@ -518,11 +518,11 @@ def bang_danh_muc():
     V["dm-it"] = "%+d%%" % round(100 * (t1["Ít mà đắt"]["tally"] / t1["Chuẩn bị kỹ"]["tally"] - 1))
     V["dm-bo-td"] = "%+d%%" % round(100 * (t1["Chuẩn bị kỹ, bỏ đồ Trái Đất"]["tally"] / t1["Chuẩn bị kỹ"]["tally"] - 1))
     V["dm-tip"] = "%d%% đến %d%%" % (round(100 * min(x["tipPhan"] for x in out)), round(100 * max(x["tipPhan"] for x in out)))
-    return tbl(["Số người", "Kiểu danh mục", "Thùng bày (lồng tính 1)", "Tàu xong / không tới", "Tally một ca", "So với Chuẩn bị kỹ", "Tip trong Tally", "Đơn đặt trước đạt", "Tally mỗi tàu", "Tally mỗi GTĐ đã bán"], rows), V
+    return tbl(["Số người", "Kiểu danh mục", "Thùng bày (lồng tính 1)", "Tàu xong / không tới", "Tally một lượt giao thương", "So với Chuẩn bị kỹ", "Tip trong Tally", "Đơn đặt trước đạt", "Tally mỗi tàu", "Tally mỗi GTĐ đã bán"], rows), V
 
 
 def bang_ca_theo_n():
-    """Tally một ca chương 1 theo số người so với giá trị hai chuyến đầy túi của cả nhóm (mốc cũ 60%), và kho thùng sau hai chuyến so với số tàu."""
+    """Tally một lượt giao thương chương 1 theo số người so với giá trị hai chuyến đầy túi của cả nhóm (mốc cũ 60%), và kho thùng sau hai chuyến so với số tàu."""
     rows, V = [], {}
     for kb in S["kich_ban"]:
         for n in S["so_nguoi"]:
@@ -533,7 +533,7 @@ def bang_ca_theo_n():
             if kb == "trung bình":
                 V["tally-ca-%d" % n] = f(ca, 0)
                 V["moc-%d" % n] = "%d%%" % round(100 * ca / hai)
-    t1 = tbl(["Kịch bản", "Số người", "Số tàu", "Tàu xong (sim ca cảng)", "Tally một ca, kho đủ", "Hai chuyến đầy túi của nhóm, quy ra Tally", "Mốc: phần hai chuyến bán ở một ca", "Điểm cảng một ca"], rows)
+    t1 = tbl(["Kịch bản", "Số người", "Số tàu", "Tàu xong (sim giờ giao thương)", "Tally một lượt giao thương, kho đủ", "Hai chuyến đầy túi của nhóm, quy ra Tally", "Mốc: phần hai chuyến bán ở một lượt giao thương", "Điểm cảng một lượt giao thương"], rows)
     rows = []
     for c in range(1, 6):
         for kb in (S["kich_ban"] if c == 1 else ["trung bình"]):
@@ -649,17 +649,17 @@ def bao_cao():
     # 3d. Tally theo ngày, trung bình 1 người, một lượt chạy có seed
     one = chay("trung bình", 1, random.Random(S["seed"]), ghi_ngay=True)
     rows = [[x[0], x[1], f(x[2], 0), f(x[10], 1), f(x[3], 0), f(x[4], 0), f(x[9], 0), x[5], f(x[6] / 60, 2)] for x in one["dong"]]
-    K["tally_ngay"] = tbl(["Ngày", "Chương", "Nhặt cả ngày (GTĐ)", "Thùng bán ở ca", "Tally thu ở ca cảng", "Tally còn cuối ngày", "Điểm cảng cộng dồn", "Hạng cảng", "Giờ chơi cộng dồn"], rows)
-    # 3e2. Thùng bán mỗi ca theo chương so với số tàu (kho có chặn không)
+    K["tally_ngay"] = tbl(["Ngày", "Chương", "Nhặt cả ngày (GTĐ)", "Thùng bán ở giờ giao thương", "Tally thu ở giờ giao thương", "Tally còn cuối ngày", "Điểm cảng cộng dồn", "Hạng cảng", "Giờ chơi cộng dồn"], rows)
+    # 3e2. Thùng bán mỗi lượt giao thương theo chương so với số tàu (kho có chặn không)
     rows = []
     for kb in kbs:
         for N in S["so_nguoi"]:
             o = []
             for c in range(1, 6):
-                v = [x[10] for r in R[(kb, N)] for x in r["dong"] if x[1] == c and x[3] > 0 and not x[11]]  # ca dạy 2 tàu không tính
+                v = [x[10] for r in R[(kb, N)] for x in r["dong"] if x[1] == c and x[3] > 0 and not x[11]]  # giờ giao thương hướng dẫn 2 tàu không tính
                 o.append("%s (%d%%)" % (f(tb(v), 1), round(100 * tb(v) / port(N, kb)["tau"])))
             rows.append([kb, N, port(N, kb)["tau"]] + o)
-    K["ban-chuong"] = tbl(["Kịch bản", "Số người", "Số tàu"] + ["Chương %d: thùng bán mỗi ca (phần số tàu)" % c for c in range(1, 6)], rows)
+    K["ban-chuong"] = tbl(["Kịch bản", "Số người", "Số tàu"] + ["Chương %d: thùng bán mỗi lượt giao thương (phần số tàu)" % c for c in range(1, 6)], rows)
     # 3f. Ngưỡng Hạng cảng: ngày đủ điểm giữ như bản trước đợt 9
     rr1 = R[("trung bình", 1)]
     rows = []
@@ -748,8 +748,8 @@ def bao_cao():
         ["Ví Tally, giá, Hạng cảng", "Chung", "Chung", "Chung", "Chung"],
         ["Hệ số khe điểm sinh k(N) (gd-world), Gần, Giữa, Xa"] + ["%s, %s, %s" % (f(1 + kc[0] * (n - 1), 2), f(1 + kc[1] * (n - 1), 2), f(1 + kc[4] * (n - 1), 2)) for n in range(1, 5)],
         ["Mỗi người so với chơi một mình, sim chuyến gd-tech, chương 1 tới 5"] + [", ".join("%d%%" % round(100 * MOI_NGUOI.get((c, n), (1 + kc[c - 1] * (n - 1)) / n)) for c in range(1, 6)) for n in range(1, 5)],
-        ["Số tàu một ca và cửa neo (sim ca cảng gd-tech, C8)"] + ["%d tàu, %d cửa neo" % (port(n, "trung bình")["tau"], port(n, "trung bình")["cua"]) for n in range(1, 5)],
-        ["Điểm cảng một ca, kịch bản trung bình, kho đủ"] + [f(port(n, "trung bình")["diem_tau"] * port(n, "trung bình")["tau"] * port(n, "trung bình")["xong"], 0) for n in range(1, 5)],
+        ["Số tàu một lượt giao thương và cửa neo (sim giờ giao thương gd-tech, C8)"] + ["%d tàu, %d cửa neo" % (port(n, "trung bình")["tau"], port(n, "trung bình")["cua"]) for n in range(1, 5)],
+        ["Điểm cảng một lượt giao thương, kịch bản trung bình, kho đủ"] + [f(port(n, "trung bình")["diem_tau"] * port(n, "trung bình")["tau"] * port(n, "trung bình")["xong"], 0) for n in range(1, 5)],
         ["Giá nâng cấp, sửa khoang", "Không đổi", "Không đổi", "Không đổi", "Không đổi"]])
     # số phụ: khoảng β, sàn chương 1
     for ten, b in (("beta_lo", S["beta_ngan_sach"] - 0.05), ("beta_hi", S["beta_ngan_sach"] + 0.05)):
@@ -815,9 +815,9 @@ def tab_economic():
         rows.append([ngay, "%s GTĐ" % f(nhat, 0), f(thu, 0), ", ".join(ten_doc(m["id"]) for m in mua) or "Không mua",
                      " + ".join("0 (thưởng quest Kỹ sư)" if m["mien_phi"] else str(m["gia"]) for m in mua) or "0",
                      "%s + %s - %s = %s" % (f(dau, 0), f(thu, 0), chi, f(tl, 0)),
-                     "Chương %d, Hạng cảng %d, đã chơi %s giờ. %s" % (c, hang, f(phut / 60, 2), ("Ca dạy 2 tàu Loose Bolt, bán %s thùng phế liệu, điểm cảng cộng dồn %s" if day else "Bán %s thùng, điểm cảng cộng dồn %s") % (f(ban, 0), f(diem, 0)) if ban else "Cảng chưa mở")])
+                     "Chương %d, Hạng cảng %d, đã chơi %s giờ. %s" % (c, hang, f(phut / 60, 2), ("Giờ giao thương hướng dẫn 2 tàu Loose Bolt, bán %s thùng phế liệu, điểm cảng cộng dồn %s" if day else "Bán %s thùng, điểm cảng cộng dồn %s") % (f(ban, 0), f(diem, 0)) if ban else "Cảng chưa mở")])
     rows.append(["", "Ghi chú: kịch bản trung bình, một người, một lượt sim. Nhặt gồm cả Driftlife bắt, hạ và con nuôi",
-                 "Tally thu bằng giá thùng cộng tip. Ca cảng sớm nhất ngày %d, ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu" % S["ngay_mo_cang_ch1"], "Tên thứ mua theo tab Shop và Upgrade", "Tally chi, giá theo tab Shop và Upgrade",
+                 "Tally thu bằng giá thùng cộng tip. Giờ giao thương sớm nhất ngày %d, giờ giao thương đầu là giờ giao thương hướng dẫn 2 tàu Loose Bolt bán thùng phế liệu" % S["ngay_mo_cang_ch1"], "Tên thứ mua theo tab Shop và Upgrade", "Tally chi, giá theo tab Shop và Upgrade",
                  "Tally đầu ngày + thu - chi = Tally cuối ngày. Sim in, không gõ tay",
                  "Một lượt nên ngày qua chương có thể lệch vài ngày so với tab PROCESSING (trung bình nhiều lượt). Bản đủ: kinh-te-tien-trinh.md Phụ lục"])
     p = os.path.join(ROOT, "projects", "game-moi", "gdd", "sheet", "ECONOMIC.tsv")
@@ -853,8 +853,8 @@ def selftest():
     assert all(thu_tu.index(m["can"]) < thu_tu.index(m["id"]) for x in r["dong"] for m in x[7] if m.get("can")), "bộ đồ bậc 2 mua sau Xưởng cấp 2"
     assert all(x[4] == int(x[4]) and x[8] + x[3] - sum(m["gia"] for m in x[7]) == x[4] for x in r["dong"]), "số dư nguyên, đầu + thu - chi = cuối"
     ca = [x for x in r["dong"] if x[10] > 0]
-    assert ca[0][0] >= S["ngay_mo_cang_ch1"] and ca[0][11] and 0 < ca[0][10] <= S["ca_day"]["tau"], "ca đầu sớm nhất ngày 5 và là ca dạy tối đa 2 tàu (log 111)"
-    assert sum(1 for x in r["dong"] if x[11]) == 1, "đúng một ca dạy"
+    assert ca[0][0] >= S["ngay_mo_cang_ch1"] and ca[0][11] and 0 < ca[0][10] <= S["ca_day"]["tau"], "giờ giao thương đầu sớm nhất ngày 5 và là giờ giao thương hướng dẫn tối đa 2 tàu (log 111)"
+    assert sum(1 for x in r["dong"] if x[11]) == 1, "đúng một giờ giao thương hướng dẫn"
     print("selftest xanh")
 
 

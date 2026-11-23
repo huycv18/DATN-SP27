@@ -125,76 +125,76 @@ Thời gian: 8 giây"
 		Output	"4 x Thức ăn nuôi Xa
 Thời gian: 8 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-24	Đóng kiện phế liệu	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+24	Đóng kiện phế liệu	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	14 x Mảnh vỏ Cradle	
 		Output	"1 x Kiện phế liệu (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-25	Đóng kiện cáp	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+25	Đóng kiện cáp	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	11 x Dây cáp đứt	
 		Output	"1 x Kiện cáp (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-26	Đóng kiện quặng	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+26	Đóng kiện quặng	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	6 x Quặng sắt thiên thạch	
 		Output	"1 x Kiện quặng (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-27	Đóng kiện băng	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+27	Đóng kiện băng	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	7 x Băng nước đục	
 		Output	"1 x Kiện băng (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-28	Đóng kiện mô sinh học	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+28	Đóng kiện mô sinh học	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	9 x Mô sinh học Gần	
 		Output	"1 x Kiện mô sinh học (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-29	Đóng kiện đồ Trái Đất	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+29	Đóng kiện đồ Trái Đất	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	5 x Đồ Trái Đất vụn	
 		Output	"1 x Kiện đồ Trái Đất (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-30	Đóng kiện cơ khí	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+30	Đóng kiện cơ khí	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	3 x Tấm thép nén	
 		Output	"1 x Kiện cơ khí (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-31	Đóng kiện điện tử	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+31	Đóng kiện điện tử	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	3 x Dây dẫn bện	
 		Output	"1 x Kiện điện tử (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-32	Đóng kiện nước tinh khiết	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+32	Đóng kiện nước tinh khiết	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	2 x Khối nước tinh khiết	
 		Output	"1 x Kiện nước tinh khiết (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-33	Đóng kiện đặc sản Gần	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+33	Đóng kiện đặc sản Gần	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	3 x một trong Đặc sản Driftmoth, Skitter Ray, Sting Krill, Arc Eel, Latchjaw	
 		Output	"1 x Kiện đặc sản Gần (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-34	Đóng kiện sản phẩm nuôi Gần	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+34	Đóng kiện sản phẩm nuôi Gần	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	13 x một trong Sản phẩm nuôi Driftmoth, Skitter Ray, Sting Krill, Arc Eel	
 		Output	"1 x Kiện sản phẩm nuôi Gần (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-35	Đưa sinh vật sống cỡ S Gần vào lồng giao	Type	Cảng (trước Mở ca)	vat-pham.md mục 3
+35	Đưa sinh vật sống cỡ S Gần vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3
 		Ingredients	1 x một trong Mẫu sống Driftmoth, Skitter Ray, Sting Krill	
 		Output	"1 x Lồng sinh vật sống Gần (1 đơn vị bán)
 Thời gian: 8 giây"	
 		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-36	Đưa sinh vật sống cỡ M Gần vào lồng giao	Type	Cảng (trước Mở ca)	vat-pham.md mục 3
+36	Đưa sinh vật sống cỡ M Gần vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3
 		Ingredients	1 x một trong Mẫu sống Arc Eel, Latchjaw	
 		Output	"1 x Lồng sinh vật sống Gần (1 đơn vị bán)
 Thời gian: 8 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-37	Đóng kiện vật tư	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+37	Đóng kiện vật tư	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	"4 x Bình Oxy nhỏ
 4 x Lưới cuộn"	
 		Output	"1 x Kiện vật tư (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
 38	Sao bản dữ liệu	Type	Khoang liên lạc	vat-pham.md mục 3
 		Ingredients	"1 x Mạch phục hồi
@@ -202,78 +202,78 @@ Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (Nhậ
 		Output	"1 x Bản sao dữ liệu (1 đơn vị bán)
 Thời gian: 10 giây"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-39	Đóng kiện hợp kim	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+39	Đóng kiện hợp kim	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	3 x Tấm hợp kim chịu nhiệt	
 		Output	"1 x Kiện hợp kim (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-40	Đóng kiện cảm biến	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+40	Đóng kiện cảm biến	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	1 x Mạch cảm biến	
 		Output	"1 x Kiện cảm biến (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-41	Đóng kiện dung dịch lạnh	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+41	Đóng kiện dung dịch lạnh	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	3 x Dung dịch lạnh	
 		Output	"1 x Kiện dung dịch lạnh (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-42	Đóng kiện đặc sản Giữa	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+42	Đóng kiện đặc sản Giữa	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	4 x một trong Đặc sản Lumen Jelly, Orebiter, Needlefin, Gulper hoặc Mẫu sinh thiết Shepherd Whale, Gulper	
 		Output	"1 x Kiện đặc sản Giữa (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-43	Đóng kiện sản phẩm nuôi Giữa	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+43	Đóng kiện sản phẩm nuôi Giữa	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	6 x một trong Sản phẩm nuôi Lumen Jelly, Orebiter, Needlefin	
 		Output	"1 x Kiện sản phẩm nuôi Giữa (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-44	Đưa sinh vật sống Giữa vào lồng giao	Type	Cảng (trước Mở ca)	vat-pham.md mục 3
+44	Đưa sinh vật sống Giữa vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3
 		Ingredients	1 x một trong Mẫu sống Lumen Jelly, Orebiter, Needlefin	
 		Output	"1 x Lồng sinh vật sống Giữa (1 đơn vị bán)
 Thời gian: 8 giây"	
 		Unlock	Chương 2. Nhãn: Sau MVP	
-45	Đóng kiện giáp	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+45	Đóng kiện giáp	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	3 x Tấm giáp Warden	
 		Output	"1 x Kiện giáp (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-46	Đóng kiện plasma	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+46	Đóng kiện plasma	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	2 x Cuộn plasma	
 		Output	"1 x Kiện plasma (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-47	Đóng kiện lõi nguội	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+47	Đóng kiện lõi nguội	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	3 x Lõi nguội nạp	
 		Output	"1 x Kiện lõi nguội (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-48	Đóng kiện đặc sản Xa	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+48	Đóng kiện đặc sản Xa	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	5 x một trong Đặc sản Prism Wisp, Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling hoặc Mẫu sinh thiết Storm Siphon, Shardbrood Queen	
 		Output	"1 x Kiện đặc sản Xa (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-49	Đóng kiện sản phẩm nuôi Xa	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+49	Đóng kiện sản phẩm nuôi Xa	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	7 x một trong Sản phẩm nuôi Prism Wisp, Shardbrood Hatchling	
 		Output	"1 x Kiện sản phẩm nuôi Xa (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 3. Nhãn: Sau MVP	
-50	Đóng kiện linh kiện Cradle	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+50	Đóng kiện linh kiện Cradle	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	7 x Linh kiện Cradle	
 		Output	"1 x Kiện linh kiện Cradle (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 4. Nhãn: Sau MVP	
-51	Đóng kiện tin mật	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+51	Đóng kiện tin mật	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	"1 x một trong Kiện đặc sản Xa, Kiện sản phẩm nuôi Xa, Kiện giáp, Kiện plasma, Kiện lõi nguội
 1 x Gói tin mật"	
 		Output	"1 x Kiện tin mật (1 đơn vị bán)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 4. Nhãn: Sau MVP	
-52	Đóng kiện linh kiện Warden	Type	Cảng (tự động lúc Mở ca)	vat-pham.md mục 3
+52	Đóng kiện linh kiện Warden	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
 		Ingredients	14 x Linh kiện Warden	
 		Output	"1 x Kiện linh kiện Warden (2,5 thùng)
-Thời gian: đóng lúc Mở ca, không tốn thời gian ca"	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
 		Unlock	Chương 5. Nhãn: Sau MVP	
-53	Đưa sinh vật sống Xa vào lồng giao	Type	Cảng (trước Mở ca)	vat-pham.md mục 3
+53	Đưa sinh vật sống Xa vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3
 		Ingredients	1 x một trong Mẫu sống Prism Wisp, Mirror Mantis, Shardbrood Hatchling	
 		Output	"1 x Lồng sinh vật sống Xa (1 đơn vị bán)
 Thời gian: 8 giây"	

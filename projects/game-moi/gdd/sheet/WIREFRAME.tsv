@@ -6,13 +6,13 @@ STT	Issue	Ref 1	Ref 2	Note
 5	Trạm mặt cắt	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	"Mặt cắt Station Ember 3 tầng, đi bộ tới khoang cần dùng để sửa, chế, lập danh mục bán.
 Khi còn người ngoài chuyến thì màn ở trạng thái Chờ nhóm: thấy hàng đồng đội, xem bản đồ chuyến chỉ xem, ping nhắc, chế trước. Không có nút thoát, thoát game qua Esc.
 Nút chính: đi tới khoang kế tiếp trong mục tiêu.
-Vào từ: Cảnh tỉnh dậy, Kết chuyến, Bị kéo về, Cuối ngày. Ra tới: mọi màn trong trạm, Cửa khí, HUD ca cảng. Nhãn: MVP."
+Vào từ: Cảnh tỉnh dậy, Kết chuyến, Bị kéo về, Cuối ngày. Ra tới: mọi màn trong trạm, Cửa khí, HUD giờ giao thương. Nhãn: MVP."
 6	Cửa khí	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Chọn dụng cụ trong đai (3 ô ở bậc 0), xác nhận ra ngoài hoặc ở lại trạm, xem số chuyến hôm nay. Nút chính: Xác nhận ra ngoài. Thoát: Esc ở lại trạm. Vào từ: Trạm mặt cắt (bấm E ở cửa khí). Ra tới: HUD bay hoặc Trạm mặt cắt. Nhãn: MVP.
 7	Kho	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Kho dùng chung. Xem số lượng, sao chất lượng và giá từng loại, lọc theo nhóm, tìm theo tên. Nút chính: tìm một loại vật phẩm. Thoát: Esc về màn đã mở nó. Vào từ: Trạm mặt cắt. Ra tới: Trạm mặt cắt. Nhãn: MVP.
 8	Xưởng	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Chọn công thức, đặt vào hàng đợi qua đêm, nhận đồ chế xong, nâng cấp trang bị. Nút chính: Chế. Thoát: Esc về trạm. Vào từ: Trạm mặt cắt. Ra tới: Trạm mặt cắt. Nhãn: MVP.
-9	Bảng tàu và danh mục bán	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	"Xem giá, độ gọi, đơn đặt trước. Chọn tối đa 4 loại hàng, đặt số thùng, bấm Mở ca. Báo khi thiếu hàng cho một loại tàu. Mở ca khi không còn ai ngoài chuyến, mỗi ngày một ca. Bỏ ca không phạt. Mở ca và Bỏ ca xác nhận bằng Hộp xác nhận.
-Nút chính: Mở ca. Thoát: Esc.
-Vào từ: Trạm mặt cắt. Ra tới: HUD ca cảng hoặc Trạm mặt cắt. Nhãn: MVP."
+9	Bảng tàu và danh mục bán	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	"Xem giá, độ gọi, đơn đặt trước. Chọn tối đa 4 loại hàng, đặt số thùng, bấm Mở giao thương. Báo khi thiếu hàng cho một loại tàu. Mở giao thương khi không còn ai ngoài chuyến, mỗi ngày một giờ giao thương. Nghỉ giao thương không phạt. Mở giao thương và Nghỉ giao thương xác nhận bằng Hộp xác nhận.
+Nút chính: Mở giao thương. Thoát: Esc.
+Vào từ: Trạm mặt cắt. Ra tới: HUD giờ giao thương hoặc Trạm mặt cắt. Nhãn: MVP."
 10	Shop	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Shop ở khoang liên lạc. Đặt hàng bằng Tally, hàng tới sáng hôm sau. Nút chính: đặt một mục. Thoát: Esc về trạm. Vào từ: Trạm mặt cắt (khoang liên lạc), Cuối ngày. Ra tới: Trạm mặt cắt hoặc Cuối ngày. Nhãn: MVP.
 11	Nâng cấp	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Nâng cấp bộ đồ ở xưởng, nâng cấp khoang ở từng khoang. Chọn trục hoặc khoang, xem vật liệu và Tally cần, mua một lần cho cả nhóm. Nút chính: Nâng cấp. Thoát: Esc quay lại. Vào từ: Xưởng, Trạm mặt cắt, Cuối ngày. Ra tới: Trạm mặt cắt hoặc Cuối ngày. Nhãn: MVP.
 12	Sửa khoang	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Hiện danh sách vật liệu của khoang hỏng đang đứng, giữ phím sửa để sửa. Dùng chung khuôn với Động cơ chính. Nút chính: giữ E để sửa. Thoát: bước ra khỏi khoang là đóng. Vào từ: Trạm mặt cắt (đứng ở khoang hỏng). Ra tới: Trạm mặt cắt. Nhãn: MVP.
@@ -29,18 +29,18 @@ Vào từ: Cửa khí. Ra tới: Ngạt, Kết chuyến, Bị kéo về. Nhãn: 
 20	Ngạt	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	Bị ngạt, còn 12 giây. Chọn món ghim (không trao, không thả đồ), chờ đồng đội chia Oxy hoặc bay tới cửa khí. Không có nút thoát. Màn tự kết thúc khi được cứu, chạm cửa khí hoặc hết giờ. Nút chính: chọn món ghim hoặc bay. Vào từ: HUD bay (Oxy về 0). Ra tới: HUD bay, Bị kéo về, Kết chuyến. Nhãn: MVP.
 21	Bị kéo về	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	Cảnh bị kéo về. Xem món giữ, món mất và vật nhiệm vụ về chỗ cũ. Dùng chung khuôn với Kết chuyến. Nút chính: Tiếp tục (bấm được sau 1,5 giây). Vào từ: Ngạt hết giờ. Ra tới: Trạm mặt cắt. Nhãn: MVP.
 22	Kết chuyến	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	Về an toàn: xem tóm tắt chuyến, túi đã vào kho. Nút chính: Tiếp tục. Vào từ: HUD bay (cửa khí hoặc Recall Beacon). Ra tới: Trạm mặt cắt. Nhãn: MVP.
-23	HUD ca cảng	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.7, Figma Wireframe MVP	"Thấy giờ ca, Tally, tip, điểm cảng, số tàu và danh mục còn.
-Trên mỗi tàu ở cửa neo có bong bóng gọi món với thanh kiên nhẫn, tàu bật yêu cầu thì có chip Bơm khí (giữ E 1 giây). Làm: nhặt thùng ở quầy, mang tới đúng cửa neo, giao, bơm khí. Không thoát giữa ca, chơi một mình thì Esc để tạm dừng.
+23	HUD giờ giao thương	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.7, Figma Wireframe MVP	"Thấy giờ giao thương, Tally, tip, điểm cảng, số tàu và danh mục còn.
+Trên mỗi tàu ở cửa neo có bong bóng gọi món với thanh kiên nhẫn, tàu bật yêu cầu thì có chip Bơm khí (giữ E 1 giây). Làm: nhặt thùng ở quầy, mang tới đúng cửa neo, giao, bơm khí. Không thoát giữa giờ giao thương, chơi một mình thì Esc để tạm dừng.
 Nút chính: giao một thùng.
-Vào từ: Bảng tàu và danh mục bán (Mở ca). Ra tới: Kết ca. Nhãn: MVP."
-24	Kết ca	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	"Xem số tàu phục vụ, Tally từ giá hàng, tip, điểm cảng, đơn đặt trước, hàng về kho và lời thương nhân. Vừa lên Hạng cảng thì có khối Lên Hạng cảng với thứ mới mở. Bấm tiếp không chặn người khác.
+Vào từ: Bảng tàu và danh mục bán (Mở giao thương). Ra tới: Tổng kết giao thương. Nhãn: MVP."
+24	Tổng kết giao thương	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	"Xem số tàu phục vụ, Tally từ giá hàng, tip, điểm cảng, đơn đặt trước, hàng về kho và lời thương nhân. Vừa lên Hạng cảng thì có khối Lên Hạng cảng với thứ mới mở. Bấm tiếp không chặn người khác.
 Nút chính: Tiếp tục.
-Vào từ: hết giờ ca, hết danh mục hoặc tàu cuối rời. Ra tới: Cuối ngày hoặc Trạm mặt cắt. Nhãn: MVP."
-25	Cuối ngày	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Việc cuối ngày: shop, nâng cấp, nghiên cứu, Sổ tay, nói chuyện, rồi vào buồng ngủ. Đồng hồ 30 giây chạy từ người vào buồng đầu tiên. Thoát: Esc đóng màn con, ra khỏi buồng để hủy xác nhận. Nút chính: vào buồng ngủ. Vào từ: Kết ca. Ra tới: các màn con và Cảnh tỉnh dậy (ngày mới). Nhãn: MVP.
+Vào từ: hết giờ giao thương, hết danh mục hoặc tàu cuối rời. Ra tới: Cuối ngày hoặc Trạm mặt cắt. Nhãn: MVP."
+25	Cuối ngày	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Việc cuối ngày: shop, nâng cấp, nghiên cứu, Sổ tay, nói chuyện, rồi vào buồng ngủ. Đồng hồ 30 giây chạy từ người vào buồng đầu tiên. Thoát: Esc đóng màn con, ra khỏi buồng để hủy xác nhận. Nút chính: vào buồng ngủ. Vào từ: Tổng kết. Ra tới: các màn con và Cảnh tỉnh dậy (ngày mới). Nhãn: MVP.
 26	Menu	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Chơi một mình thì Menu là tạm dừng. Làm: tiếp tục, mời bạn, Sổ tay, cài đặt, về Menu chính (qua Hộp xác nhận). Nút chính: Tiếp tục. Thoát: Esc hoặc Start. Vào từ: Esc hoặc Start. Ra tới: màn trước, Hộp xác nhận. Nhãn: MVP.
 27	Cài đặt	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Chỉnh hình, âm lượng, điều khiển, trợ năng, gợi ý. Thay đổi áp ngay. Nút chính: chỉnh một mục. Thoát: Esc. Vào từ: Menu chính, Menu. Ra tới: màn trước. Nhãn: MVP.
 28	Đổi phím	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Chọn hành động rồi bấm phím mới, phím trùng thì báo. Nút chính: bấm phím mới. Thoát: Esc, thay đổi giữ nguyên. Vào từ: Cài đặt. Ra tới: Cài đặt. Nhãn: MVP.
-29	Hộp thoại truyện	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Đọc câu thoại ngắn. Một lần bấm là bỏ qua cả cảnh. Trong ca cảng đang chạy chỉ là bong bóng, không chặn. Nút chính: Tiếp. Vào từ: mốc truyện, người vớt. Ra tới: màn trước. Nhãn: MVP.
-30	Hộp xác nhận	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	"Hộp chồng lên màn đã mở nó, cho hành động làm mất tiến độ hoặc không hoàn tác được: về Menu chính hay thoát giữa chuyến hoặc giữa ca, Mở ca, Bỏ ca, xóa thế giới. Nêu hệ quả bằng số và lần lưu gần nhất.
+29	Hộp thoại truyện	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Đọc câu thoại ngắn. Một lần bấm là bỏ qua cả cảnh. Trong giờ giao thương đang chạy chỉ là bong bóng, không chặn. Nút chính: Tiếp. Vào từ: mốc truyện, người vớt. Ra tới: màn trước. Nhãn: MVP.
+30	Hộp xác nhận	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	"Hộp chồng lên màn đã mở nó, cho hành động làm mất tiến độ hoặc không hoàn tác được: về Menu chính hay thoát giữa chuyến hoặc giữa giờ giao thương, Mở giao thương, Nghỉ giao thương, xóa thế giới. Nêu hệ quả bằng số và lần lưu gần nhất.
 Nút chính: Quay lại (focus sẵn) hoặc làm. Thoát: Esc là Quay lại.
-Vào từ: Menu chính, Bảng tàu và danh mục bán, Menu. Ra tới: màn đã mở nó, Menu chính hoặc HUD ca cảng. Nhãn: MVP."
+Vào từ: Menu chính, Bảng tàu và danh mục bán, Menu. Ra tới: màn đã mở nó, Menu chính hoặc HUD giờ giao thương. Nhãn: MVP."

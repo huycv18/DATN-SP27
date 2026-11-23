@@ -74,7 +74,7 @@ World & Level Designer ở team indie giữ không gian chơi: người chơi đ
 | Quái spawn dày quanh điểm thu nhặt | Hoạt động chính (nhặt, cắt) bị phá liên tục | Tách vùng thu nhặt và vùng săn, có khoảng thở quanh salvage giá trị thấp |
 | Làm mới quá nhanh gần tàu | Vòng farm ngắn phá kinh tế quán | Thời gian làm mới tăng theo độ gần tàu, gd-economy chạy sim thu nhập |
 | Layout vẽ trước khi có số di chuyển | Vùng quá to hay quá chật với jetpack quán tính, làm lại cả tầng | Metrics trước layout, chờ prototype jetpack |
-| Hai nửa game lệch nhau: tầng cho nguyên liệu không khớp công thức quán | Tối dư món này thiếu món kia, ca bán hỏng | Đối chiếu loot kỳ vọng với nhu cầu Recipe mỗi ngày trước khi chốt mật độ |
+| Hai nửa game lệch nhau: tầng cho nguyên liệu không khớp công thức quán | Tối dư món này thiếu món kia, giờ giao thương bán hỏng | Đối chiếu loot kỳ vọng với nhu cầu Recipe mỗi ngày trước khi chốt mật độ |
 | Greybox sang art đổi va chạm | Bug kẹt, đường bay hỏng | Khóa lớp va chạm và kích thước trong spec, art vẽ theo khối |
 
 ## 6. Áp vào Space Salvage MVP

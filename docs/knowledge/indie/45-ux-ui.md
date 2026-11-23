@@ -61,7 +61,7 @@ Số ghi nguyên văn từ nguồn, cột "Suy ra" là tính của vai, không p
 | Độ phân giải nền pixel art | 320x180 và 640x360 scale nguyên lên 1080p, 1440p, 4K. 1280x720 gây lệch ở 1080p (1,5 lần) | [S9] | 1280x720 là 4 lần của 320x180, lên 1080p là hệ số 6 so với 320x180 [tính của vai] |
 | Hit stop đòn nhẹ | 2 đến 4 khung | [S21] độ tin thấp | Điểm bắt đầu thử, không phải chuẩn |
 | Hit stop đòn nặng, đòn chốt | 8 đến 12 khung, 12 đến 20 khung. Trên 20 khung giống lỗi | [S21] độ tin thấp | Điểm bắt đầu thử cho lưới, cắt nặng |
-| Tỉ lệ rơi trong tutorial hybrid sim, D1 trung vị | 60% (một ca), 22% (GameAnalytics 2025) | [S25] nguồn gốc ở file đó | Chỉ để tham chiếu cho funnel, không là mục tiêu |
+| Tỉ lệ rơi trong tutorial hybrid sim, D1 trung vị | 60% (một giờ giao thương), 22% (GameAnalytics 2025) | [S25] nguồn gốc ở file đó | Chỉ để tham chiếu cho funnel, không là mục tiêu |
 
 ## 4. Phân tích game tham chiếu
 
@@ -103,7 +103,7 @@ Trừ khi ghi khác, nguồn đã thấy trong kết quả tìm kiếm ngày 202
 | S4 | Unity, Accessibility basics (4,5:1 và 3:1) | https://unity.com/blog/video-game-accessibility-basics |
 | S5 | Steamworks: tương thích Steam Deck (chữ 9 px, glyph) | https://partner.steamgames.com/doc/steamdeck/compat |
 | S6 | NN/g: Response Times, the 3 important limits | https://www.nngroup.com/alertbox/timeframes.html |
-| S7 | Fagerholt, Lorentzon: Beyond the HUD (slide). Peacocke et al. 2018 | https://www2.slideshare.net/DICEStudio/beyond-the-hud-user-interfaces-for-increased-player-immersion-in-fps-games và https://www.yorku.ca/mack/ec2018.html |
+| S7 | Fagerholt, Lorentzon: Beyond the HUD (slide). Peacocke et al. 2018 | https://www2.slideshare.net/DICEStudio/beyond-the-hud-user-interfaces-for-increased-player-immersion-in-fps-games và https://www.yorku.giờ giao thương/mack/ec2018.html |
 | S8 | City University London: mù màu ở nam và nữ | https://www.city.ac.uk/news-and-events/news/2017/09/colour-blindness-statistically-affects-every-male-football-team |
 | S9 | Cài đặt pixel art và scale nguyên (blog, nguồn yếu) | https://itch.io/blog/806788/godot-44-settings-for-pixel-art và https://forum.gdevelop.io/t/about-resolution-pixel-art-and-size/48825/9 |
 | S10 | GDC 2021: Cutting Apart The Diegetic Interface of Hardspace: Shipbreaker (đã mở) | https://www.gdconf.com/news/go-behind-fully-diegetic-ui-hardspace-shipbreaker-gdc-2021 |

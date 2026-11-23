@@ -26,7 +26,7 @@ const strings = tables.find((t) => t.heading.startsWith('2.13'))
 const txt = (k) => strings.rows.find((r) => r[0] === k)?.[1] ?? ''
 const clean = (s) => s.replace(/`/g, '').replace(/\s+/g, ' ').trim()
 
-const wire = new Map([['UI-10', 'mục 2.8 wireframe trạm'], ['UI-14', 'mục 2.8 wireframe bảng tàu'], ['UI-30', 'mục 2.6 wireframe HUD bay'], ['UI-34', 'mục 2.8 wireframe ngạt'], ['UI-35', 'mục 2.8 khuôn Giữ và Mất'], ['UI-36', 'mục 2.8 khuôn Giữ và Mất'], ['UI-40', 'mục 2.7 wireframe ca cảng']])
+const wire = new Map([['UI-10', 'mục 2.8 wireframe trạm'], ['UI-14', 'mục 2.8 wireframe bảng tàu'], ['UI-30', 'mục 2.6 wireframe HUD bay'], ['UI-34', 'mục 2.8 wireframe ngạt'], ['UI-35', 'mục 2.8 khuôn Giữ và Mất'], ['UI-36', 'mục 2.8 khuôn Giữ và Mất'], ['UI-40', 'mục 2.7 wireframe giờ giao thương']])
 const hudRef = new Map([['UI-30', 'HUD-01 đến HUD-18'], ['UI-40', 'HCH-01 đến HCH-12'], ['UI-10', 'HTR-01 đến HTR-04 và HCH-07, HCH-09, HCH-10'], ['UI-11', 'HTR-01, HTR-02'], ['UI-44', 'HTR-01, HTR-03']])
 
 const W = [['ID', 'Issue', 'Ref 1', 'Ref 2', 'Note']]

@@ -3,7 +3,7 @@ Ngày	Source (vật phẩm)	Source (Tally)	Sink Type	Sink Quality	Surplus	Note
 2	153 GTĐ	0	Đai dụng cụ bậc 1	0 (thưởng quest Kỹ sư)	0 + 0 - 0 = 0	Chương 1, Hạng cảng 1, đã chơi 0,39 giờ. Cảng chưa mở
 3	10 GTĐ	0	Không mua	0	0 + 0 - 0 = 0	Chương 1, Hạng cảng 1, đã chơi 0,59 giờ. Cảng chưa mở
 4	107 GTĐ	0	Không mua	0	0 + 0 - 0 = 0	Chương 1, Hạng cảng 1, đã chơi 0,79 giờ. Cảng chưa mở
-5	107 GTĐ	114	Không mua	0	0 + 114 - 0 = 114	Chương 1, Hạng cảng 1, đã chơi 0,99 giờ. Ca dạy 2 tàu Loose Bolt, bán 2 thùng phế liệu, điểm cảng cộng dồn 4
+5	107 GTĐ	114	Không mua	0	0 + 114 - 0 = 114	Chương 1, Hạng cảng 1, đã chơi 0,99 giờ. Giờ giao thương hướng dẫn 2 tàu Loose Bolt, bán 2 thùng phế liệu, điểm cảng cộng dồn 4
 6	204 GTĐ	1744	Bình Oxy bậc 1, Bộ đẩy bậc 1	930 + 650	114 + 1744 - 1580 = 278	Chương 1, Hạng cảng 1, đã chơi 1,25 giờ. Bán 25 thùng, điểm cảng cộng dồn 50
 7	204 GTĐ	1744	Túi đồ bậc 1, Dụng cụ khai thác bậc 2, Lao từ bậc 2	930 + 280 + 280	278 + 1744 - 1490 = 532	Chương 1, Hạng cảng 2, đã chơi 1,51 giờ. Bán 25 thùng, điểm cảng cộng dồn 96
 8	255 GTĐ	1744	Van tiết lưu (động cơ giai đoạn 1)	1850	532 + 1744 - 1850 = 426	Chương 1, Hạng cảng 3, đã chơi 1,77 giờ. Bán 25 thùng, điểm cảng cộng dồn 142
@@ -48,4 +48,4 @@ Ngày	Source (vật phẩm)	Source (Tally)	Sink Type	Sink Quality	Surplus	Note
 47	2324 GTĐ	25143	Không mua	0	13610 + 25143 - 0 = 38753	Chương 5, Hạng cảng 8, đã chơi 14,15 giờ. Bán 25 thùng, điểm cảng cộng dồn 1447
 48	2324 GTĐ	25143	Không mua	0	38753 + 25143 - 0 = 63896	Chương 5, Hạng cảng 8, đã chơi 14,61 giờ. Bán 25 thùng, điểm cảng cộng dồn 1493
 49	2324 GTĐ	25143	Không mua	0	63896 + 25143 - 0 = 89039	Chương 5, Hạng cảng 8, đã chơi 15,07 giờ. Bán 25 thùng, điểm cảng cộng dồn 1539
-	Ghi chú: kịch bản trung bình, một người, một lượt sim. Nhặt gồm cả Driftlife bắt, hạ và con nuôi	Tally thu bằng giá thùng cộng tip. Ca cảng sớm nhất ngày 5, ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu	Tên thứ mua theo tab Shop và Upgrade	Tally chi, giá theo tab Shop và Upgrade	Tally đầu ngày + thu - chi = Tally cuối ngày. Sim in, không gõ tay	Một lượt nên ngày qua chương có thể lệch vài ngày so với tab PROCESSING (trung bình nhiều lượt). Bản đủ: kinh-te-tien-trinh.md Phụ lục
+	Ghi chú: kịch bản trung bình, một người, một lượt sim. Nhặt gồm cả Driftlife bắt, hạ và con nuôi	Tally thu bằng giá thùng cộng tip. Giờ giao thương sớm nhất ngày 5, giờ giao thương đầu là giờ giao thương hướng dẫn 2 tàu Loose Bolt bán thùng phế liệu	Tên thứ mua theo tab Shop và Upgrade	Tally chi, giá theo tab Shop và Upgrade	Tally đầu ngày + thu - chi = Tally cuối ngày. Sim in, không gõ tay	Một lượt nên ngày qua chương có thể lệch vài ngày so với tab PROCESSING (trung bình nhiều lượt). Bản đủ: kinh-te-tien-trinh.md Phụ lục

@@ -1,45 +1,45 @@
 # GDD hệ thống: Kinh tế và tiến trình
 
-- Project: game-moi (The Novent) | Chủ sở hữu: gd-economy | Trạng thái: bản đủ, đợt 9 theo ca cảng khung Dave (GD-055, 2026-11-20), chờ gd-qa GD-056 | Nguồn quyết định: `../00-khung-game.md` K9, K13, K15, K18 đến K21, C3, C4, C8, mục 9, `../../DECISIONS.md` mục "Ca cảng theo khung Dave (đợt 9)", `../../log-gdm-tu-quyet.md` dòng 40, 50, 53
+- Project: game-moi (The Novent) | Chủ sở hữu: gd-economy | Trạng thái: bản đủ, đợt 9 theo giờ giao thương khung Dave (GD-055, 2026-11-20), chờ gd-qa GD-056 | Nguồn quyết định: `../00-khung-game.md` K9, K13, K15, K18 đến K21, C3, C4, C8, mục 9, `../../DECISIONS.md` mục "Giờ giao thương theo khung Dave (đợt 9)", `../../log-gdm-tu-quyet.md` dòng 40, 50, 53
 
 Mọi bảng số giữa dấu `<!--khoi:...-->` và mọi số giữa dấu `<!--v:...-->` do sim in, không sửa tay. Một lệnh in lại tất cả:
-`python projects/game-moi/sim/economy/sim-kinh-te.py --ghi` (chạy sim, ghi bảng vào file này, rồi chạy cổng kiểm `economy_doc.py kiem`). Tham số ở `projects/game-moi/sim/economy/tham-so.json`. Tự kiểm: `--selftest`. Dò β: `--do`. Tab ECONOMIC bản đọc: `--tab`. Kiểu danh mục đo bằng `sim/economy/do-danh-muc.mjs` trên mô hình ca của gd-tech (`tools/sim-ca-cang.mjs`).
+`python projects/game-moi/sim/economy/sim-kinh-te.py --ghi` (chạy sim, ghi bảng vào file này, rồi chạy cổng kiểm `economy_doc.py kiem`). Tham số ở `projects/game-moi/sim/economy/tham-so.json`. Tự kiểm: `--selftest`. Dò β: `--do`. Tab ECONOMIC bản đọc: `--tab`. Kiểu danh mục đo bằng `sim/economy/do-danh-muc.mjs` trên mô hình giờ giao thương của gd-tech (`tools/sim-ca-cang.mjs`).
 
 ## Tóm tắt
 
-- Hệ thống này đặt giá cho mọi thứ trao đổi bằng Tally, quyết nhịp mở khóa theo chương và đo bằng sim rằng game đạt mục tiêu thời lượng của khung với 1 tới 4 người. Tầng: lõi. Ưu tiên: bản đầu (MVP chương 1), số cho cả 5 chương. Phụ thuộc chính: GTĐ của gd-items (`vat-pham.md`), luật ca cảng và Hạng cảng của gd-quan (`tram-va-cang.md`), sim ca cảng và sim chuyến của gd-tech (`tools/ket-qua/`), bậc bộ đồ của gd-character (`nguoi-choi.md`), nhịp chuyến và k(N) của gd-world (`map.md`).
+- Hệ thống này đặt giá cho mọi thứ trao đổi bằng Tally, quyết nhịp mở khóa theo chương và đo bằng sim rằng game đạt mục tiêu thời lượng của khung với 1 tới 4 người. Tầng: lõi. Ưu tiên: bản đầu (MVP chương 1), số cho cả 5 chương. Phụ thuộc chính: GTĐ của gd-items (`vat-pham.md`), luật giờ giao thương và Hạng cảng của gd-quan (`tram-va-cang.md`), sim giờ giao thương và sim chuyến của gd-tech (`tools/ket-qua/`), bậc bộ đồ của gd-character (`nguoi-choi.md`), nhịp chuyến và k(N) của gd-world (`map.md`).
 
 ## Hiện hành
 
 | Mục | Giá trị | Nhãn |
 |---|---|---|
-| Đồng tiền | Tally duy nhất, chỉ đến từ ca cảng (K18) | MVP |
+| Đồng tiền | Tally duy nhất, chỉ đến từ giờ giao thương (K18) | MVP |
 | Đơn vị bán | Thùng. 1 kiện = 2,5 thùng, lồng sinh vật sống là một đơn vị không chia (Lead chốt, D0) | MVP |
 | Giá thùng | GTĐ một thùng nhân 10 nhân hệ số bậc giá. 5 bậc: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75 (mục 3.1) | MVP |
 | Tip | Tip cơ bản tối đa 25% giá thùng nhân phần kiên nhẫn còn lại. Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 Tally Sim đo tip chiếm <!--v:tip-tb-->26%<!--/v--> Tally (tệ <!--v:tip-te-->21%<!--/v-->, tốt <!--v:tip-tot-->30%<!--/v-->) | MVP |
-| Điểm cảng | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn từ 2/3 kiên nhẫn trở lên (Lead chốt). Một ca một người trung bình <!--v:diem-ca-1-->46<!--/v--> điểm | MVP |
+| Điểm cảng | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn từ 2/3 kiên nhẫn trở lên (Lead chốt). Một giờ giao thương một người trung bình <!--v:diem-ca-1-->46<!--/v--> điểm | MVP |
 | Ngưỡng Hạng cảng 2 tới 8 | <!--v:nguong-hien-hanh-->70, 135, 285, 400, 560, 680, 910<!--/v--> (mục 3.5, gd-quan đã nhận (luật 41)) | MVP hạng 2, 3 |
 | Giá Tally của nâng cấp, ENG, Shop | Ngân sách chương chia theo tỉ lệ. Ngân sách chương bằng β nhân ngày mục tiêu nhân thu nhập tham chiếu một ngày, hệ số ngân sách β bằng <!--v:beta-->0,54<!--/v--> | MVP |
 | Thời lượng đo được, trung bình, một người | Chương 1 <!--v:gio-ch1-tb-->1,77<!--/v--> giờ, cả game <!--v:gio-game-tb-->14,2<!--/v--> giờ (mục tiêu 1,5 đến 2 và 12 đến 15) | MVP |
-| Co-op | Số tàu một ca 25, 55, 55, 60 cho 1 tới 4 người, 3 cửa neo (luật gd-quan, sim ca cảng gd-tech, C8). k(N) bằng 1 cộng a nhân (N trừ 1), a bằng <!--v:kc-->0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa<!--/v--> (gd-world). Nhóm 4 tới hết game bằng <!--v:coop4-game-->70%<!--/v--> thời gian một mình, trong mục tiêu 60 đến 75% (GDM, log 69) | MVP 2 người |
+| Co-op | Số tàu một giờ giao thương 25, 55, 55, 60 cho 1 tới 4 người, 3 cửa neo (luật gd-quan, sim giờ giao thương gd-tech, C8). k(N) bằng 1 cộng a nhân (N trừ 1), a bằng <!--v:kc-->0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa<!--/v--> (gd-world). Nhóm 4 tới hết game bằng <!--v:coop4-game-->70%<!--/v--> thời gian một mình, trong mục tiêu 60 đến 75% (GDM, log 69) | MVP 2 người |
 | Túi và bình | Túi 80, 100, 126, 168, 216 Khối, bình 330, 450, 600, 780, 1000 (GDM chốt, log 54). Phút và GTĐ một chuyến đọc từ sim chuyến gd-tech (mục 8.5) | MVP bậc 0 và 1 |
 
 ## 1. Mục đích với người chơi
 
-- Người chơi cảm thấy: mỗi ca cảng là ngày lương, mỗi nâng cấp mua về làm chuyến sau khác đi thấy rõ (túi to hơn, Oxy dài hơn, vào được dải mới). Tally không bao giờ thành số vô nghĩa trước chương 5.
+- Người chơi cảm thấy: mỗi giờ giao thương là ngày lương, mỗi nâng cấp mua về làm chuyến sau khác đi thấy rõ (túi to hơn, Oxy dài hơn, vào được dải mới). Tally không bao giờ thành số vô nghĩa trước chương 5.
 - Quyết định chính: đem hàng trong kho đi sửa trạm hay lập danh mục bán (P2). Lập danh mục nào: hàng chợ rẻ mà tàu nào cũng gọi, hay hàng chuẩn bị trước (bắt sống, chế nước, đồ Trái Đất) đắt mà ít. Mua nâng cấp nào trước.
 - Pillar: P2 (mọi thứ mang về có hai chỗ tiêu nhìn thấy được: trạm và cảng, giá theo bậc làm hai chỗ tiêu kéo ngược nhau), P1 (giữ 1 món khi ngạt là mất thật, đo ở mục 8), P3 (một mình vẫn xong game trong 12 đến 15 giờ, có bạn thì nhanh hơn mà không ai nghèo).
-- 30 giây đầu của ca cảng đầu tiên (ca dạy, sớm nhất ngày 5, 2 tàu Loose Bolt chỉ gọi thùng phế liệu): thùng phế liệu đầu tiên lên tàu, số Tally nhảy lên <!--v:gia-thung-phe-->42<!--/v--> cộng tip. Từ ca thứ hai người chơi tự lập danh mục, lồng Driftmoth bắt sống ở chuyến sáng lên tàu được 65. Cuối ngày ca thứ hai người chơi mở Xưởng thấy T-TUI bậc 1 giá <!--v:gia-tui1-->930<!--/v--> Tally cộng 24,2 GTĐ vật liệu, biết phải để dành Tally qua vài ca cảng.
+- 30 giây đầu của giờ giao thương đầu tiên (giờ giao thương hướng dẫn, sớm nhất ngày 5, 2 tàu Loose Bolt chỉ gọi thùng phế liệu): thùng phế liệu đầu tiên lên tàu, số Tally nhảy lên <!--v:gia-thung-phe-->42<!--/v--> cộng tip. Từ giờ giao thương thứ hai người chơi tự lập danh mục, lồng Driftmoth bắt sống ở chuyến sáng lên tàu được 65. Cuối ngày giờ giao thương thứ hai người chơi mở Xưởng thấy T-TUI bậc 1 giá <!--v:gia-tui1-->930<!--/v--> Tally cộng 24,2 GTĐ vật liệu, biết phải để dành Tally qua vài giờ giao thương.
 
 ## 2. Luật
 
-### 2.1 Tally và giá ở ca cảng
+### 2.1 Tally và giá ở giờ giao thương
 1. Tally là đồng tiền duy nhất, dùng chung cả nhóm (K18, C3). `MVP`
-2. Nguồn Tally duy nhất là ca cảng: giá thùng khi tàu nhận thùng, tip theo kiên nhẫn còn lại, bơm khí (K13, luật ca của gd-quan ở `tram-va-cang.md`). Không có Tally từ quest, hòm, bán ở Shop. `MVP`
+2. Nguồn Tally duy nhất là giờ giao thương: giá thùng khi tàu nhận thùng, tip theo kiên nhẫn còn lại, bơm khí (K13, luật giờ giao thương của gd-quan ở `tram-va-cang.md`). Không có Tally từ quest, hòm, bán ở Shop. `MVP`
 3. Đơn vị bán là thùng: 1 kiện = 2,5 thùng (D0). Giá một kiện bằng giá một thùng nhân 2,5. Lồng sinh vật sống không chia, giá theo loài bên trong. `MVP`
 4. Giá một thùng bằng GTĐ một thùng (GTĐ kiện của gd-items chia 2,5, `vat-pham.md` mục 2.6b) nhân 10 Tally mỗi GTĐ nhân hệ số bậc giá của kiện (mục 3.1), làm tròn tới số chẵn để giá kiện là số nguyên. Giá lồng bằng GTĐ mẫu sống nhân 10 nhân hệ số Hàng sống, làm tròn 5. Không nhân theo Hạng cảng, không nhân theo số người. `MVP`
 5. Bậc giá gắn với độ gọi: hàng rẻ thì độ gọi cao, hàng đắt thì độ gọi thấp. Khi tàu chọn món trong danh mục, trọng số của món là độ gọi nhân độ ưa của loại tàu (gd-quan giữ độ ưa). `MVP`
-6. Tip một tàu bằng giá thùng nhân 25% nhân phần kiên nhẫn còn lại lúc giao. Tàu vội nhân 2. Tikko (Loose Bolt) nhận đồ Trái Đất nhân 2. Bơm khí xong cộng 10 Tally. Tàu hết kiên nhẫn rời đi thì không trả gì, thùng về kho (luật ca của gd-quan). `MVP`
+6. Tip một tàu bằng giá thùng nhân 25% nhân phần kiên nhẫn còn lại lúc giao. Tàu vội nhân 2. Tikko (Loose Bolt) nhận đồ Trái Đất nhân 2. Bơm khí xong cộng 10 Tally. Tàu hết kiên nhẫn rời đi thì không trả gì, thùng về kho (luật giờ giao thương của gd-quan). `MVP`
 7. Đơn đặt trước trả giá thùng nhân 1,5 (gd-quan giữ luật đơn đặt trước, file này giữ hệ số). `MVP`
 
 ### 2.2 Shop là bảng giá duy nhất (K20)
@@ -68,13 +68,13 @@ Cam kết với người chơi: giá in trên Shop không đổi, không có chi
 | Đang làm | Đã mua, chờ qua đêm (nâng cấp, dụng cụ) | Ngủ | Đã trừ | Thanh đang chế ở Xưởng |
 | Xong | Sáng hôm sau, hoặc ngay với mục Shop | Không | Hiệu ứng áp cho cả nhóm (C4) | Hình bộ đồ hoặc khoang đổi |
 
-- Thứ tự xử lý cuối ngày: 1. Bảng kết ca cộng Tally và điểm cảng. 2. Lên Hạng cảng nếu đủ điểm và chưa chạm trần. 3. Mở mục Shop theo Hạng mới. 4. Người chơi mua. 5. Ngủ: xong hàng đợi qua đêm, lưu.
+- Thứ tự xử lý cuối ngày: 1. Bảng tổng kết giao thương cộng Tally và điểm cảng. 2. Lên Hạng cảng nếu đủ điểm và chưa chạm trần. 3. Mở mục Shop theo Hạng mới. 4. Người chơi mua. 5. Ngủ: xong hàng đợi qua đêm, lưu.
 
 ## 3. Tham số
 
 ### 3.1 Giá thùng (tab Shop, phần tàu trả)
 
-- Bậc giá theo vai của món trong dải: hàng chợ là khối lớn cũng dùng để xây, hàng chế phải chế ở Xưởng trước ca, hàng sống là lồng bắt sống, hàng hiếm là đồ ít gặp không dùng để xây. Độ gọi ngược với giá. Bảng bậc:
+- Bậc giá theo vai của món trong dải: hàng chợ là khối lớn cũng dùng để xây, hàng chế phải chế ở Xưởng trước giờ giao thương, hàng sống là lồng bắt sống, hàng hiếm là đồ ít gặp không dùng để xây. Độ gọi ngược với giá. Bảng bậc:
 
 <!--khoi:bac-gia-->
 | Bậc giá | Hệ số giá | Độ gọi | Ý đồ | Giá chương 1 (MVP, Tally một thùng hoặc lồng) |
@@ -138,7 +138,7 @@ Giá lồng sinh vật sống theo loài:
 | CGO-321 | DL-X05 Shardbrood Hatchling | Xa | 23,04 | 300 | Sau MVP |
 <!--/khoi-->
 
-Chỉ số giá của từng kịch bản: Tally giá thùng của danh mục đại diện chia (GTĐ x 10). Sim kinh tế nhân chỉ số này vào mọi GTĐ bán ở ca, mọi chương (`[GIẢ ĐỊNH]` danh mục đại diện ở tham-so.json, chương 2 tới 5 coi như cùng tỉ lệ bậc):
+Chỉ số giá của từng kịch bản: Tally giá thùng của danh mục đại diện chia (GTĐ x 10). Sim kinh tế nhân chỉ số này vào mọi GTĐ bán ở giờ giao thương, mọi chương (`[GIẢ ĐỊNH]` danh mục đại diện ở tham-so.json, chương 2 tới 5 coi như cùng tỉ lệ bậc):
 
 <!--khoi:chi-so-gia-->
 | Kịch bản | Danh mục đại diện, chương 1, một người (đơn vị) | Đơn vị | Tally giá thùng | Chỉ số giá (Tally trên GTĐ x 10) |
@@ -148,10 +148,10 @@ Chỉ số giá của từng kịch bản: Tally giá thùng của danh mục đ
 | tốt | Lồng sinh vật sống Gần 6, Kiện đồ Trái Đất 3, Kiện nước tinh khiết 5, Kiện phế liệu 11 | 25 | 1400 | 1,07 |
 <!--/khoi-->
 
-Độ khác nhau giữa các kiểu danh mục đo bằng mô hình ca của gd-tech (`tools/sim-ca-cang.mjs`, trễ phản xạ 2 giây, 300 ca mỗi dòng, cửa neo và số tàu theo N như mục 6b) với giá và độ gọi ở trên, qua `sim/economy/do-danh-muc.mjs`:
+Độ khác nhau giữa các kiểu danh mục đo bằng mô hình giờ giao thương của gd-tech (`tools/sim-ca-cang.mjs`, trễ phản xạ 2 giây, 300 lượt giao thương mỗi dòng, cửa neo và số tàu theo N như mục 6b) với giá và độ gọi ở trên, qua `sim/economy/do-danh-muc.mjs`:
 
 <!--khoi:danh-muc-->
-| Số người | Kiểu danh mục | Thùng bày (lồng tính 1) | Tàu xong / không tới | Tally một ca | So với Chuẩn bị kỹ | Tip trong Tally | Đơn đặt trước đạt | Tally mỗi tàu | Tally mỗi GTĐ đã bán |
+| Số người | Kiểu danh mục | Thùng bày (lồng tính 1) | Tàu xong / không tới | Tally một lượt giao thương | So với Chuẩn bị kỹ | Tip trong Tally | Đơn đặt trước đạt | Tally mỗi tàu | Tally mỗi GTĐ đã bán |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Hàng chợ, không chuẩn bị | Kiện phế liệu 9, Kiện cáp 8, Kiện quặng 8 | 22,9 / 2,1 | 1203 | -28% | 23% | 0% | 53 | 9,8 |
 | 2 | Hàng chợ, không chuẩn bị | Kiện phế liệu 20, Kiện cáp 18, Kiện quặng 18 | 50,2 / 4,7 | 2659 | -27% | 23% | 0% | 53 | 9,8 |
@@ -179,9 +179,9 @@ Chỉ số giá của từng kịch bản: Tally giá thùng của danh mục đ
 | 4 | Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng sinh vật sống Gần 12, Kiện nước tinh khiết 12, Kiện đặc sản Gần 7, Kiện phế liệu 29 | 52,1 / 7,8 | 3834 | -5% | 25% | 0% | 74 | 13,9 |
 <!--/khoi-->
 
-- Kết quả, một người: bày hàng chợ không chuẩn bị kém Chuẩn bị kỹ <!--v:dm-cho-->-28%<!--/v--> Tally một ca. Ít mà đắt kém <!--v:dm-it-->-15%<!--/v--> vì 10 tàu không tới, nhưng Tally mỗi GTĐ gấp đôi hàng chợ, nghĩa là giữ được hàng chợ để xây. Bày thừa hàng chợ cạnh hàng chuẩn bị kém <!--v:dm-thua-->-1%<!--/v--> vì tàu gọi hàng chợ trước, hàng đắt ở lại kho. Bỏ đồ Trái Đất (trượt đơn đặt trước, mất tip gấp đôi của Tikko) kém <!--v:dm-bo-td-->-7%<!--/v-->. Tip ở mọi kiểu nằm trong <!--v:dm-tip-->22% đến 29%<!--/v-->, trong mục tiêu 20 đến 30%.
-- Thế cân hiện hành: chuẩn bị trước ca (bắt sống, chế nước, giữ đồ Trái Đất) thêm khoảng 30% Tally một ca, hoặc bán ít mà đắt để giữ hàng chợ cho trạm.
-- Cách gd-tech đo lại khi nối khối giaThung vào `sim-ca-cang.mjs`: chạy mục 5 của sim ca cảng với 6 kiểu danh mục ở tham-so.json khóa do_danh_muc, so cột Tally và Tip với bảng trên, lệch quá 3% thì báo gd-economy.
+- Kết quả, một người: bày hàng chợ không chuẩn bị kém Chuẩn bị kỹ <!--v:dm-cho-->-28%<!--/v--> Tally một giờ giao thương. Ít mà đắt kém <!--v:dm-it-->-15%<!--/v--> vì 10 tàu không tới, nhưng Tally mỗi GTĐ gấp đôi hàng chợ, nghĩa là giữ được hàng chợ để xây. Bày thừa hàng chợ cạnh hàng chuẩn bị kém <!--v:dm-thua-->-1%<!--/v--> vì tàu gọi hàng chợ trước, hàng đắt ở lại kho. Bỏ đồ Trái Đất (trượt đơn đặt trước, mất tip gấp đôi của Tikko) kém <!--v:dm-bo-td-->-7%<!--/v-->. Tip ở mọi kiểu nằm trong <!--v:dm-tip-->22% đến 29%<!--/v-->, trong mục tiêu 20 đến 30%.
+- Thế cân hiện hành: chuẩn bị trước giờ giao thương (bắt sống, chế nước, giữ đồ Trái Đất) thêm khoảng 30% Tally một giờ giao thương, hoặc bán ít mà đắt để giữ hàng chợ cho trạm.
+- Cách gd-tech đo lại khi nối khối giaThung vào `sim-ca-cang.mjs`: chạy mục 5 của sim giờ giao thương với 6 kiểu danh mục ở tham-so.json khóa do_danh_muc, so cột Tally và Tip với bảng trên, lệch quá 3% thì báo gd-economy.
 
 ### 3.2 Giá mua bằng Tally (tab Upgrade và Shop)
 
@@ -230,7 +230,7 @@ Nâng cấp nào mở khả năng mới, nâng cấp nào chỉ là số:
 |---|---|---|
 | T-VO cấp môi trường | Mở khả năng | Vào dải Giữa, Xa, Cradle mà không hao Oxy gấp 2,5 hoặc 4 (K6). Không chặn chương, thiếu thì làm việc còn khoảng 27% |
 | T-DUNGCU số ô dụng cụ | Mở khả năng | Thêm một kiểu chơi mang theo cùng lúc (khai thác, hạ, bắt) |
-| Cảng cấp 2 | Mở khả năng | Cửa neo thứ 4 của bến 1, Hạng 4, chương 2 (gd-quan). Luật hiện hành 3 cửa neo đã đạt mục tiêu rảnh ở mọi số người (sim ca cảng mục 4), nên cửa thứ 4 chỉ để thuận tiện |
+| Cảng cấp 2 | Mở khả năng | Cửa neo thứ 4 của bến 1, Hạng 4, chương 2 (gd-quan). Luật hiện hành 3 cửa neo đã đạt mục tiêu rảnh ở mọi số người (sim giờ giao thương mục 4), nên cửa thứ 4 chỉ để thuận tiện |
 | T-OXY, T-TUI | Chỉ là số | Chuyến dài hơn, mang về nhiều hơn. Đây là nguồn tăng thu nhập chính |
 | T-DAY bộ đẩy | Chỉ là số | Chuyến gọn hơn, tăng nhỏ để không đổi cảm giác tay (`nguoi-choi.md`) |
 | Xưởng cấp 2 | Mở khả năng | Cổng của nâng cấp bộ đồ từ bậc 2, chế 2 mẻ song song (`tram-va-cang.md` mục 2.7) |
@@ -247,13 +247,13 @@ Nâng cấp nào mở khả năng mới, nâng cấp nào chỉ là số:
 | Tỉ lệ giá trong ngân sách chương | ENG 1,0, T-VO 0,6, T-OXY 0,5, T-TUI 0,5, T-DUNGCU 0,4, khoang cấp 0,4, T-DAY 0,35, bản thiết kế 0,3, cảng cấp 2 0,2, mỗi nâng cấp dụng cụ 0,15 | | Thứ đó đắt hơn trong chương | | Thứ tự mua | gd-economy tự quyết |
 | Hệ số bậc giá | Chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5 | Sống 1,1 đến 1,4 (giữ K9 trong 1,2 đến 2 lần hạ), chợ 0,7 đến 0,85 | Bậc đó đắt hơn, danh mục nghiêng về nó | Danh mục bỏ bậc đó | Lập danh mục, chỉ số giá | gd-economy, đợt 9 |
 | Độ gọi | Chợ 3, sinh học 2, chế 1,5, sống 1, hiếm 1 | 1 đến 4 | Hàng đó bán trước khi bày thừa | | Thế cân bày thừa | gd-economy, đợt 9. gd-quan giữ độ ưa của loại tàu |
-| Tip tối đa | 25% giá thùng | 20 đến 30% (tip kể cả bơm khí trong 20 đến 30% Tally ca) | Tip lớn hơn phần Tally | | Ca cảng | Đề xuất demo 30%, GDM hạ 25% ở đợt 9 vòng 2 |
+| Tip tối đa | 25% giá thùng | 20 đến 30% (tip kể cả bơm khí trong 20 đến 30% Tally giờ giao thương) | Tip lớn hơn phần Tally | | Giờ giao thương | Đề xuất demo 30%, GDM hạ 25% ở đợt 9 vòng 2 |
 | Hệ số co-op k(N), phần thêm mỗi người | 0,30 ở Gần, 0,25 ở Giữa, 0,38 ở Xa | | Co-op nhanh, mỗi người giàu | Co-op chậm | Co-op | gd-world giữ, sim xác nhận |
 
 Công thức:
-- Ngày mục tiêu(c) = Giờ mục tiêu(c) x 60 / Phút một ngày tham chiếu(c). Phút một ngày tham chiếu(c) = 2 x Phút một chuyến đo được của chương (mục 8.5) + phút ca cảng + 3 phút chuẩn bị và cuối ngày. Phút ca cảng lấy từ sim ca cảng gd-tech (một người, trễ 2 giây): <!--v:phut-ca-->3,83, 3,83, 3,83, 3,83, 3,83<!--/v--> phút. Sim ca cảng mới chỉ có chương 1, chương 2 tới 5 dùng cùng số.
-- Thu nhập tham chiếu một ngày(c) = 2 chuyến x (GTĐ một chuyến đo được của chương chia 0,9) x 10 x chỉ số giá kịch bản trung bình x 1 / (1 trừ phần tip). Chia 0,9 vì sim chuyến đo ở mức túi đầy 90% của kịch bản trung bình. Chia (1 trừ phần tip) vì tip là phần của Tally ca, không phải phần cộng thêm trên giá.
-- Tally một ca trong sim = thùng bán x GTĐ một thùng x 10 x chỉ số giá của kịch bản / (1 trừ phần tip của kịch bản và số người). Thùng bán = số nhỏ hơn giữa tàu phục vụ xong (sim ca cảng) và thùng còn trong kho sau khi giữ phần để xây.
+- Ngày mục tiêu(c) = Giờ mục tiêu(c) x 60 / Phút một ngày tham chiếu(c). Phút một ngày tham chiếu(c) = 2 x Phút một chuyến đo được của chương (mục 8.5) + phút giờ giao thương + 3 phút chuẩn bị và cuối ngày. Phút giờ giao thương lấy từ sim giờ giao thương gd-tech (một người, trễ 2 giây): <!--v:phut-ca-->3,83, 3,83, 3,83, 3,83, 3,83<!--/v--> phút. Sim giờ giao thương mới chỉ có chương 1, chương 2 tới 5 dùng cùng số.
+- Thu nhập tham chiếu một ngày(c) = 2 chuyến x (GTĐ một chuyến đo được của chương chia 0,9) x 10 x chỉ số giá kịch bản trung bình x 1 / (1 trừ phần tip). Chia 0,9 vì sim chuyến đo ở mức túi đầy 90% của kịch bản trung bình. Chia (1 trừ phần tip) vì tip là phần của Tally giờ giao thương, không phải phần cộng thêm trên giá.
+- Tally một giờ giao thương trong sim = thùng bán x GTĐ một thùng x 10 x chỉ số giá của kịch bản / (1 trừ phần tip của kịch bản và số người). Thùng bán = số nhỏ hơn giữa tàu phục vụ xong (sim giờ giao thương) và thùng còn trong kho sau khi giữ phần để xây.
 - Mật độ GTĐ mỗi Khối lấy trung bình bảng NODE của gd-items: <!--v:mat-do-->Gần 1,16, Giữa 3,09, Xa 7,78<!--/v-->. Chương 4 và 5 dùng mật độ dải Xa, khớp sim chuyến của gd-tech (mục 8.5).
 - Ví dụ chương 1: Phút một ngày = 2 x <!--v:vd-chuyen-->4,4<!--/v--> + <!--v:vd-ca-->3,8<!--/v--> + 3 = <!--v:vd-phut-->15,6<!--/v-->. Ngày mục tiêu = 0,8 x 60 chia Phút một ngày = <!--v:vd-ngay-->3,1<!--/v-->. Thu nhập tham chiếu = 2 x (<!--v:vd-gtd-->102,1<!--/v--> chia 0,9) x 10 x <!--v:chi-so-tb-->0,97<!--/v--> chia (1 trừ <!--v:tip-tb-->26%<!--/v-->) = <!--v:vd-thu-->3000<!--/v-->. Ngân sách = β x Ngày mục tiêu x Thu nhập tham chiếu = <!--v:vd-ngan-sach-->4950<!--/v--> Tally.
 
@@ -290,16 +290,16 @@ Núm gap: β (một núm cho cả 5 chương). Mọi giá Tally đi theo thu nh�
 | Phần túi đầy mỗi chuyến | 75% | 90% | 100% | `[GIẢ ĐỊNH]`, chờ sim chuyến gd-tech |
 | Hệ số mật độ (nhặt đồ hiếm) | 0,9 | 1,0 | 1,15 | `[GIẢ ĐỊNH]` |
 | Tỉ lệ chuyến ngạt, một người | 25% | 15% | 7% | Khung mục 9: người cẩn thận dưới 5%, người tham 15 đến 40%. Ba mức là `[GIẢ ĐỊNH]` nằm giữa hai đầu |
-| Trễ phản xạ ở ca cảng | 3 giây | 2 giây | 1 giây | Sim ca cảng gd-tech mục 4: tàu xong, giây một ca, tip, điểm mỗi tàu theo N |
+| Trễ phản xạ ở giờ giao thương | 3 giây | 2 giây | 1 giây | Sim giờ giao thương gd-tech mục 4: tàu xong, giây một giờ giao thương, tip, điểm mỗi tàu theo N |
 | Chỉ số giá của danh mục | <!--v:chi-so-te-->0,84<!--/v--> | <!--v:chi-so-tb-->0,97<!--/v--> | <!--v:chi-so-tot-->1,07<!--/v--> | Danh mục đại diện mục 3.1, `[GIẢ ĐỊNH]` |
 | Hệ số phút một ngày | 1,15 | 1,0 | 0,9 | `[GIẢ ĐỊNH]` |
 
-- Giả định chung của sim (ghi đủ ở `tham-so.json`, kèm nguồn ở mục ghi chú nguồn): mỗi chương không xong trước sàn ngày truyện của gd-story (7, 5, 8, 3, 3 ngày, `cot-truyen.md` mục 5). Ca cảng chương 1 sớm nhất ngày 5 (log GDM 111, khớp `cot-truyen.md` mục 5): lịch tàu sinh đầu ngày, nên cảng phải sửa đủ 98 GTĐ của 5 khoang từ ngày trước. Ca đầu là ca dạy (`tram-va-cang.md` luật 67): 2 tàu Loose Bolt chỉ gọi thùng phế liệu, khoảng 28 giây, 2 điểm mỗi tàu, tip theo phần tip của kịch bản. Từ ca thứ hai ca đủ theo sim ca cảng của gd-tech. Mỗi ngày đúng 2 chuyến, đúng trần của K22, ngày chỉ sang khi ngủ (K23). Lượng nhặt một chuyến là số nhỏ hơn giữa túi đầy và thời gian làm việc nhân tốc độ nhặt thực. Tốc độ nhặt thực đặt để túi bậc 0 đầy ở 65% thời gian làm việc chương 1 (mục tiêu của gd-items). Kết quả nhân hệ số để khớp GTĐ một chuyến của sim chuyến gd-tech (mục 8.5), gồm cả Driftlife bắt và hạ. Chuyến map nhánh cho 50% lượng nhặt. Người vớt tỉnh sau một đêm. Co-op làm mỗi ngày dài thêm 5% mỗi người thêm (chờ người về cuối). Đồng đội cứu nhau làm tỉ lệ ngạt giảm một nửa khi từ 2 người. Ngạt giữ món đắt nhất của dải. Khi còn thứ phải xây, người chơi giữ lại 40% kho cho xây trước khi lập danh mục. Hết hàng thì ca ngắn lại theo phần tàu được phục vụ (D8). Qua chương thì 30% giá trị kho mang sang. Tally thu mỗi ca làm tròn số nguyên, nên số dư cuối ngày là số nguyên. 200 lượt chạy mỗi ô, seed 20261120.
+- Giả định chung của sim (ghi đủ ở `tham-so.json`, kèm nguồn ở mục ghi chú nguồn): mỗi chương không xong trước sàn ngày truyện của gd-story (7, 5, 8, 3, 3 ngày, `cot-truyen.md` mục 5). Giờ giao thương chương 1 sớm nhất ngày 5 (log GDM 111, khớp `cot-truyen.md` mục 5): lịch tàu sinh đầu ngày, nên cảng phải sửa đủ 98 GTĐ của 5 khoang từ ngày trước. Giờ giao thương đầu là giờ giao thương hướng dẫn (`tram-va-cang.md` luật 67): 2 tàu Loose Bolt chỉ gọi thùng phế liệu, khoảng 28 giây, 2 điểm mỗi tàu, tip theo phần tip của kịch bản. Từ giờ giao thương thứ hai giờ giao thương đủ theo sim giờ giao thương của gd-tech. Mỗi ngày đúng 2 chuyến, đúng trần của K22, ngày chỉ sang khi ngủ (K23). Lượng nhặt một chuyến là số nhỏ hơn giữa túi đầy và thời gian làm việc nhân tốc độ nhặt thực. Tốc độ nhặt thực đặt để túi bậc 0 đầy ở 65% thời gian làm việc chương 1 (mục tiêu của gd-items). Kết quả nhân hệ số để khớp GTĐ một chuyến của sim chuyến gd-tech (mục 8.5), gồm cả Driftlife bắt và hạ. Chuyến map nhánh cho 50% lượng nhặt. Người vớt tỉnh sau một đêm. Co-op làm mỗi ngày dài thêm 5% mỗi người thêm (chờ người về cuối). Đồng đội cứu nhau làm tỉ lệ ngạt giảm một nửa khi từ 2 người. Ngạt giữ món đắt nhất của dải. Khi còn thứ phải xây, người chơi giữ lại 40% kho cho xây trước khi lập danh mục. Hết hàng thì giờ giao thương ngắn lại theo phần tàu được phục vụ (D8). Qua chương thì 30% giá trị kho mang sang. Tally thu mỗi giờ giao thương làm tròn số nguyên, nên số dư cuối ngày là số nguyên. 200 lượt chạy mỗi ô, seed 20261120.
 
 ### 3.5 Ngưỡng Hạng cảng (gd-quan đã nhận, luật 41)
 
 - Cách tính: ngưỡng đặt để ngày đủ điểm trung bình (một người, kịch bản trung bình, chưa tính trần chương) giữ nhịp mở theo chương đã duyệt. Hàm `nguong_theo_ngay_cu()` của sim dò từng ngưỡng theo bước 5 điểm, lặp tới khi đứng yên. Sim in lại đề xuất mỗi lần chạy: <!--v:nguong-de-xuat-->5, 55, 195, 315, 480, 605, 845<!--/v-->. Đổi ngưỡng thì gd-quan đổi ở `tram-va-cang.md` rồi gd-economy sửa tham-so.json.
-- Hạng 2 cần 2 ca (một ca một người tới 50 điểm). Hạng 6 và 8 lên ở ngày mở chương vì trần chương, như bản cũ.
+- Hạng 2 cần 2 lượt giao thương (một giờ giao thương một người tới 50 điểm). Hạng 6 và 8 lên ở ngày mở chương vì trần chương, như bản cũ.
 
 <!--khoi:nguong-hang-->
 | Hạng | Trần ở chương | Ngưỡng điểm (sim dùng số này) | Ngày đủ điểm, bản trước đợt 9 | Ngày đủ điểm, đo lại | Ngày lên hạng (có trần chương) |
@@ -317,14 +317,14 @@ Núm gap: β (một núm cho cả 5 chương). Mọi giá Tally đi theo thu nh�
 
 | Ca | Xử lý |
 |---|---|
-| Tally bằng 0 | Không mua được gì, không có phạt. Ca cảng hôm sau vẫn có tàu. Không thể kẹt: thùng hàng chợ đóng thẳng từ tài nguyên thô không cần Tally |
-| Bỏ mọi ca cảng | Không có Tally, không lên Hạng cảng, kẹt ở ENG-101. Đây là lựa chọn người chơi, game không ép. Bảng tàu nhắc ENG cần Hạng 3 |
+| Tally bằng 0 | Không mua được gì, không có phạt. Giờ giao thương hôm sau vẫn có tàu. Không thể kẹt: thùng hàng chợ đóng thẳng từ tài nguyên thô không cần Tally |
+| Bỏ mọi giờ giao thương | Không có Tally, không lên Hạng cảng, kẹt ở ENG-101. Đây là lựa chọn người chơi, game không ép. Bảng tàu nhắc ENG cần Hạng 3 |
 | Đủ Tally, thiếu Hạng cảng cho ENG | Mục ENG hiện điều kiện "cần Hạng N". Sim đo: Hạng 3 tới trước khi chương 1 xong (bảng 3.5) |
 | Đủ điểm, chạm trần hạng chương | Điểm cộng dồn, lên hạng khi chương sau mở (gd-quan) |
-| Danh mục ít hơn số tàu | Tàu không tới khi hết hàng, ca kết thúc sớm (D8). Không phạt, không mất điểm đã có |
+| Danh mục ít hơn số tàu | Tàu không tới khi hết hàng, giờ giao thương kết thúc sớm (D8). Không phạt, không mất điểm đã có |
 | Tàu rời vì hết kiên nhẫn | Không trả giá, không tip, không điểm. Thùng về kho, không mất |
 | Đơn đặt trước trượt (món không có trong danh mục) | Tàu đó gọi món khác trong danh mục với giá thường. Không phạt |
-| Thùng chưa bán cuối ca | Về kho, bán được ca sau với cùng giá |
+| Thùng chưa bán cuối giờ giao thương | Về kho, bán được giờ giao thương sau với cùng giá |
 | Mua cùng lúc trong co-op | Ví chung, người bấm trước được, người sau thấy giá đỏ nếu thiếu. Máy chủ xử lý theo thứ tự tới |
 | Người vào sau | Không mang Tally riêng, dùng ví chung, bộ đồ cùng bậc với nhóm (C4) |
 | Tally rất lớn ở chương 5 hoặc nhóm 3, 4 người | Chương 5 không có thứ mua mới, Tally dư. Nhóm đông dư nhiều hơn (bảng 8.2). Ghi ở mục 10 |
@@ -332,8 +332,8 @@ Núm gap: β (một núm cho cả 5 chương). Mọi giá Tally đi theo thu nh�
 
 ## 5. Ràng buộc vật lý của luật
 
-- Tally tối đa một ca bằng số tàu nhân giá thùng đắt nhất trong danh mục nhân 1,5 (tip tối đa 25%, gấp đôi là 50%), cộng phần 0,5 thêm của đơn đặt trước, cộng 10 Tally mỗi lần bơm khí. K22 cho một ca mỗi ngày nên ngân sách chương luôn đo được bằng số ngày.
-- Không có vòng tiền vô hạn: nuôi có trần ô (4, 6, 9) và lãi ròng 2,2 / 5,0 / 9,5 GTĐ mỗi ô mỗi ngày, khoảng 3 đến 4% thu nhập. Shop không bán tài nguyên, kiện, vật tiêu hao nên không có mua rẻ bán đắt. Chế rồi bán có biên lợi (hàng chế 1,35) nhưng nguyên liệu gốc chỉ đến từ chuyến ngoài, mà chuyến ngoài có Oxy và túi giới hạn, còn số thùng một ca có số tàu giới hạn. Giá không đổi theo số người và thời gian.
+- Tally tối đa một giờ giao thương bằng số tàu nhân giá thùng đắt nhất trong danh mục nhân 1,5 (tip tối đa 25%, gấp đôi là 50%), cộng phần 0,5 thêm của đơn đặt trước, cộng 10 Tally mỗi lần bơm khí. K22 cho một giờ giao thương mỗi ngày nên ngân sách chương luôn đo được bằng số ngày.
+- Không có vòng tiền vô hạn: nuôi có trần ô (4, 6, 9) và lãi ròng 2,2 / 5,0 / 9,5 GTĐ mỗi ô mỗi ngày, khoảng 3 đến 4% thu nhập. Shop không bán tài nguyên, kiện, vật tiêu hao nên không có mua rẻ bán đắt. Chế rồi bán có biên lợi (hàng chế 1,35) nhưng nguyên liệu gốc chỉ đến từ chuyến ngoài, mà chuyến ngoài có Oxy và túi giới hạn, còn số thùng một giờ giao thương có số tàu giới hạn. Giá không đổi theo số người và thời gian.
 - Thời gian một chương có sàn không phụ thuộc giá: chuyến map nhánh, đêm chờ người vớt, sửa khoang, Hạng cảng. Sim đo sàn chương 1 khi giá Tally gần 0 là <!--v:san-ch1-goc-->1,8<!--/v--> giờ. Chương 5 gần như chỉ có sàn (bảng 8.1).
 - Co-op không thể nhanh hơn sàn: chương 5 của nhóm 4 dài gần bằng chơi một mình (bảng 8.1).
 
@@ -352,8 +352,8 @@ Núm gap: β (một núm cho cả 5 chương). Mọi giá Tally đi theo thu nh�
 | Ví Tally, giá, Hạng cảng | Chung | Chung | Chung | Chung |
 | Hệ số khe điểm sinh k(N) (gd-world), Gần, Giữa, Xa | 1,00, 1,00, 1,00 | 1,30, 1,25, 1,38 | 1,60, 1,50, 1,76 | 1,90, 1,75, 2,14 |
 | Mỗi người so với chơi một mình, sim chuyến gd-tech, chương 1 tới 5 | 100%, 100%, 100%, 100%, 100% | 85%, 92%, 95%, 92%, 85% | 73%, 85%, 91%, 87%, 75% | 66%, 80%, 89%, 83%, 69% |
-| Số tàu một ca và cửa neo (sim ca cảng gd-tech, C8) | 25 tàu, 3 cửa neo | 55 tàu, 3 cửa neo | 55 tàu, 3 cửa neo | 60 tàu, 3 cửa neo |
-| Điểm cảng một ca, kịch bản trung bình, kho đủ | 46 | 102 | 105 | 111 |
+| Số tàu một lượt giao thương và cửa neo (sim giờ giao thương gd-tech, C8) | 25 tàu, 3 cửa neo | 55 tàu, 3 cửa neo | 55 tàu, 3 cửa neo | 60 tàu, 3 cửa neo |
+| Điểm cảng một lượt giao thương, kịch bản trung bình, kho đủ | 46 | 102 | 105 | 111 |
 | Giá nâng cấp, sửa khoang | Không đổi | Không đổi | Không đổi | Không đổi |
 <!--/khoi-->
 
@@ -373,7 +373,7 @@ Không luật nào cần đúng N người. Bảng đo:
 | tốt | 4 | 77% | 98% | 78% | 82% | 81% | 85% |
 <!--/khoi-->
 
-- Số tàu một ca tăng theo số người (C8) nên điểm cảng một ca tăng theo, không cần hệ số riêng. Mỗi người nhóm 4 nhặt <!--v:moi-nguoi-4-->66% đến 89%<!--/v--> so với một mình (sim chuyến gd-tech), từ 60% như mục tiêu. Nhóm 4 tới hết game bằng <!--v:coop4-game-->70%<!--/v--> thời gian một mình, hết chương 1 (cộng dồn) bằng <!--v:coop4-ch1-->99%<!--/v-->, hết chương 2 (cộng dồn) bằng <!--v:coop4-ch2-->65%<!--/v-->. Nguyên nhân là sàn ngày của chuỗi mốc truyện (`cot-truyen.md` mục 5): tổng <!--v:san-tong-->26<!--/v--> ngày, không đổi theo số người. Nhóm đông đi chạm sàn ở mọi chương. Phương án hạ sàn không áp: nếu áp thì sàn còn <!--v:san-ha-tong-->22<!--/v--> ngày và nhóm 4 xuống <!--v:coop4-san-ha-->63%<!--/v-->.
+- Số tàu một giờ giao thương tăng theo số người (C8) nên điểm cảng một giờ giao thương tăng theo, không cần hệ số riêng. Mỗi người nhóm 4 nhặt <!--v:moi-nguoi-4-->66% đến 89%<!--/v--> so với một mình (sim chuyến gd-tech), từ 60% như mục tiêu. Nhóm 4 tới hết game bằng <!--v:coop4-game-->70%<!--/v--> thời gian một mình, hết chương 1 (cộng dồn) bằng <!--v:coop4-ch1-->99%<!--/v-->, hết chương 2 (cộng dồn) bằng <!--v:coop4-ch2-->65%<!--/v-->. Nguyên nhân là sàn ngày của chuỗi mốc truyện (`cot-truyen.md` mục 5): tổng <!--v:san-tong-->26<!--/v--> ngày, không đổi theo số người. Nhóm đông đi chạm sàn ở mọi chương. Phương án hạ sàn không áp: nếu áp thì sàn còn <!--v:san-ha-tong-->22<!--/v--> ngày và nhóm 4 xuống <!--v:coop4-san-ha-->63%<!--/v-->.
 - Ở kịch bản tốt, nhóm đông xong chương 1 chậm hơn chơi một mình (trên 100% ở bảng trên): người chơi tốt một mình cũng chạm sàn ngày truyện, mà một ngày co-op dài hơn 5% mỗi người thêm (chờ người về cuối, `[GIẢ ĐỊNH]`). Cùng số ngày, ngày dài hơn thì giờ nhiều hơn.
 
 ## 7. Yêu cầu cho art, UI, tutorial, audio
@@ -391,7 +391,7 @@ gd-ux: mỗi giá hiện cả hai phần (Tally và vật liệu). Màn Shop, Up
 
 ## 7b. Cảm giác (game feel)
 
-- Tham chiếu: khoảnh khắc Dave nhận tiền cuối ca sushi, tiền đếm lên từng dòng món [D theo `docs/knowledge/indie/06-dave-the-diver-cau-truc.md`]. Ở đây đếm theo từng tàu trên bảng kết ca, tách giá và tip.
+- Tham chiếu: khoảnh khắc Dave nhận tiền cuối giờ giao thương sushi, tiền đếm lên từng dòng món [D theo `docs/knowledge/indie/06-dave-the-diver-cau-truc.md`]. Ở đây đếm theo từng tàu trên bảng tổng kết giao thương, tách giá và tip.
 - Phản tham chiếu: không có số Tally nhảy kiểu máy đánh bạc, không có hiệu ứng mua sắm kiểu cửa hàng game di động.
 - Mua nâng cấp: không có hoạt ảnh dài, xác nhận một lần, kết quả thấy ở sáng hôm sau trên hình bộ đồ.
 
@@ -422,11 +422,11 @@ Mỗi ô là ngày thứ mấy xong chương và số giờ chơi của riêng c
 |---|---|---|---|
 | Chương 1 | 1,5 đến 2 giờ | <!--v:gio-ch1-tb-->1,77<!--/v--> giờ | Đạt (từ GD-067 giờ ngân sách chương 1 là 0,8, Lead chốt) |
 | Cả game | 12 đến 15 giờ | <!--v:gio-game-tb-->14,2<!--/v--> giờ | Đạt |
-| Độ dài một ngày (khung mục 9) | Chương 1: 15 đến 20 phút. Chương 5: 25 đến 30 phút | Chương 1 <!--v:phut-ngay-ch1-->15,6<!--/v--> phút, chương 5 <!--v:phut-ngay-ch5-->27,6<!--/v--> phút (2 chuyến đo được, ca cảng, 3 phút chuẩn bị) | Đạt |
+| Độ dài một ngày (khung mục 9) | Chương 1: 15 đến 20 phút. Chương 5: 25 đến 30 phút | Chương 1 <!--v:phut-ngay-ch1-->15,6<!--/v--> phút, chương 5 <!--v:phut-ngay-ch5-->27,6<!--/v--> phút (2 chuyến đo được, giờ giao thương, 3 phút chuẩn bị) | Đạt |
 | Số ngày tới hết game | Không đặt | <!--v:ngay-game-tb-->46<!--/v--> ngày | Để tham khảo |
 | Nhóm 4 so với một mình, tới hết game | 60 đến 75% (GDM, log 69) | <!--v:coop4-game-->70%<!--/v--> | Đạt |
 | Mỗi người nhóm 4 nhặt so với một mình | từ 60% | <!--v:moi-nguoi-4-->66% đến 89%<!--/v--> | Đạt |
-| Tip trong Tally ca cảng (khung mục 9) | 20 đến 30% | <!--v:tip-tb-->26%<!--/v--> (tệ <!--v:tip-te-->21%<!--/v-->, tốt <!--v:tip-tot-->30%<!--/v-->), mọi kiểu danh mục <!--v:dm-tip-->22% đến 29%<!--/v--> | Đạt |
+| Tip trong Tally giờ giao thương (khung mục 9) | 20 đến 30% | <!--v:tip-tb-->26%<!--/v--> (tệ <!--v:tip-te-->21%<!--/v-->, tốt <!--v:tip-tot-->30%<!--/v-->), mọi kiểu danh mục <!--v:dm-tip-->22% đến 29%<!--/v--> | Đạt |
 | Sống so với hạ, cỡ S và M, sau khi trừ vật tiêu hao, tính bằng Tally | 1,2 đến 2 lần (khung mục 9) | <!--v:luoi-min-->1,44<!--/v--> đến <!--v:luoi-max-->1,81<!--/v--> qua lưới, <!--v:tay-min-->1,50<!--/v--> đến <!--v:tay-max-->1,94<!--/v--> bắt tay (mục 8.4) | Đạt |
 | Kiểu danh mục khác nhau rõ (Lead "cần làm cho nó tốt hơn") | Không đặt số | Hàng chợ <!--v:dm-cho-->-28%<!--/v-->, ít mà đắt <!--v:dm-it-->-15%<!--/v--> so với Chuẩn bị kỹ (mục 3.1) | Để GDM xem |
 
@@ -451,7 +451,7 @@ Mỗi ô là ngày thứ mấy xong chương và số giờ chơi của riêng c
 | tốt | 4 | 835056 | 30% | 28% | 51% | 21% | 500486 | 60% |
 <!--/khoi-->
 
-- Tally không phải cổng ở chương 3 và 4 (cổng là vật liệu, Hạng và chuyến map nhánh), nên Tally trong ví có lúc lên vài ngày lương (Phụ lục). Dư cuối game phần lớn đến từ chương 5 (không có thứ mua mới, GDM chấp nhận). Nhóm 3 và 4 người dư nhiều vì 55 và 60 tàu một ca bán hơn gấp đôi một người, còn giá không đổi theo số người (C8).
+- Tally không phải cổng ở chương 3 và 4 (cổng là vật liệu, Hạng và chuyến map nhánh), nên Tally trong ví có lúc lên vài ngày lương (Phụ lục). Dư cuối game phần lớn đến từ chương 5 (không có thứ mua mới, GDM chấp nhận). Nhóm 3 và 4 người dư nhiều vì 55 và 60 tàu một giờ giao thương bán hơn gấp đôi một người, còn giá không đổi theo số người (C8).
 
 ### 8.3 Điểm treo log 40: giữ 1 món khi ngạt có quá đau ở chương 1
 
@@ -493,12 +493,12 @@ Mỗi ô là ngày thứ mấy xong chương và số giờ chơi của riêng c
 
 - Kết luận: qua lưới, ròng trên hạ từ <!--v:luoi-min-->1,44<!--/v--> tới <!--v:luoi-max-->1,81<!--/v-->. Bắt tay sau choáng không tốn vật tiêu hao nên được <!--v:tay-min-->1,50<!--/v--> đến <!--v:tay-max-->1,94<!--/v--> lần, trong trần 2,0 của khung. Bắt sống luôn đáng hơn hạ (K9) mà không vượt trần. Hệ số Hàng sống 1,3 thấp hơn Hàng hiếm 1,5 có chủ ý: đặc sản rơi khi hạ đã đắt, lồng đắt hơn nữa thì Sting Krill vượt trần 2.
 
-### 8.4b Tally một ca theo số người, kho thùng sau hai chuyến
+### 8.4b Tally một giờ giao thương theo số người, kho thùng sau hai chuyến
 
-Tally một ca chương 1 khi kho đủ (tàu xong theo sim ca cảng, giá theo chỉ số giá của kịch bản) so với giá trị hai chuyến đầy túi của cả nhóm. Mốc cũ là 60% cho mọi số người, cột cuối là mốc theo số người:
+Tally một giờ giao thương chương 1 khi kho đủ (tàu xong theo sim giờ giao thương, giá theo chỉ số giá của kịch bản) so với giá trị hai chuyến đầy túi của cả nhóm. Mốc cũ là 60% cho mọi số người, cột cuối là mốc theo số người:
 
 <!--khoi:tally-ca-->
-| Kịch bản | Số người | Số tàu | Tàu xong (sim ca cảng) | Tally một ca, kho đủ | Hai chuyến đầy túi của nhóm, quy ra Tally | Mốc: phần hai chuyến bán ở một ca | Điểm cảng một ca |
+| Kịch bản | Số người | Số tàu | Tàu xong (sim giờ giao thương) | Tally một lượt giao thương, kho đủ | Hai chuyến đầy túi của nhóm, quy ra Tally | Mốc: phần hai chuyến bán ở một lượt giao thương | Điểm cảng một lượt giao thương |
 |---|---|---|---|---|---|---|---|
 | tệ | 1 | 25 | 23,7 | 1345 | 2394 | 56% | 42 |
 | tệ | 2 | 55 | 49,5 | 2882 | 4629 | 62% | 88 |
@@ -514,9 +514,9 @@ Tally một ca chương 1 khi kho đủ (tàu xong theo sim ca cảng, giá theo
 | tốt | 4 | 60 | 59,8 | 4915 | 7764 | 63% | 120 |
 <!--/khoi-->
 
-- Mốc mới, kịch bản trung bình: một người <!--v:moc-1-->58%<!--/v-->, 2 người <!--v:moc-2-->76%<!--/v-->, 3 người <!--v:moc-3-->59%<!--/v-->, 4 người <!--v:moc-4-->52%<!--/v--> giá trị hai chuyến đầy túi. Tally một ca <!--v:tally-ca-1-->1744<!--/v-->, <!--v:tally-ca-2-->3848<!--/v-->, <!--v:tally-ca-3-->4025<!--/v-->, <!--v:tally-ca-4-->4261<!--/v-->. Nhóm 2 người bán phần kho lớn hơn một mình vì vật liệu xây không nhân theo số người, nên nhóm có nhiều hàng rảnh để bán. 3 và 4 người có 55 và 60 tàu nên bán phần kho nhỏ dần.
+- Mốc mới, kịch bản trung bình: một người <!--v:moc-1-->58%<!--/v-->, 2 người <!--v:moc-2-->76%<!--/v-->, 3 người <!--v:moc-3-->59%<!--/v-->, 4 người <!--v:moc-4-->52%<!--/v--> giá trị hai chuyến đầy túi. Tally một giờ giao thương <!--v:tally-ca-1-->1744<!--/v-->, <!--v:tally-ca-2-->3848<!--/v-->, <!--v:tally-ca-3-->4025<!--/v-->, <!--v:tally-ca-4-->4261<!--/v-->. Nhóm 2 người bán phần kho lớn hơn một mình vì vật liệu xây không nhân theo số người, nên nhóm có nhiều hàng rảnh để bán. 3 và 4 người có 55 và 60 tàu nên bán phần kho nhỏ dần.
 
-Kho thùng sau hai chuyến (kịch bản theo cột, sim chuyến gd-tech) so với số tàu một ca, chưa trừ phần giữ để xây:
+Kho thùng sau hai chuyến (kịch bản theo cột, sim chuyến gd-tech) so với số tàu một giờ giao thương, chưa trừ phần giữ để xây:
 
 <!--khoi:kho-thung-->
 | Chương | Kịch bản | GTĐ một thùng trung bình | 1 người: thùng sau hai chuyến / số tàu | 2 người: thùng sau hai chuyến / số tàu | 3 người: thùng sau hai chuyến / số tàu | 4 người: thùng sau hai chuyến / số tàu |
@@ -530,12 +530,12 @@ Kho thùng sau hai chuyến (kịch bản theo cột, sim chuyến gd-tech) so v
 | 5 | trung bình | 77,3 | 39 / 25 đủ | 66 / 55 đủ | 87 / 55 đủ | 107 / 60 đủ |
 <!--/khoi-->
 
-- Mọi ô đủ. Một người chương 1 có <!--v:kho-ch1-1-->38<!--/v--> thùng sau hai chuyến, còn <!--v:kho-ch1-1-xay-->23<!--/v--> nếu giữ 40% để xây, dưới 25 tàu. Hàng tồn từ ngày 1 tới 4 (cảng chưa mở) và ca dạy ngày 5 (chỉ 2 thùng) bù phần thiếu: sim đo một người chương 1, không tính ca dạy, bán trung bình <!--v:ban-ch1-->24,7<!--/v--> thùng mỗi ca.
+- Mọi ô đủ. Một người chương 1 có <!--v:kho-ch1-1-->38<!--/v--> thùng sau hai chuyến, còn <!--v:kho-ch1-1-xay-->23<!--/v--> nếu giữ 40% để xây, dưới 25 tàu. Hàng tồn từ ngày 1 tới 4 (cảng chưa mở) và giờ giao thương hướng dẫn ngày 5 (chỉ 2 thùng) bù phần thiếu: sim đo một người chương 1, không tính giờ giao thương hướng dẫn, bán trung bình <!--v:ban-ch1-->24,7<!--/v--> thùng mỗi giờ giao thương.
 
-Thùng bán thật mỗi ca trong sim (sau khi giữ phần để xây, kho mang sang 30% khi qua chương):
+Thùng bán thật mỗi giờ giao thương trong sim (sau khi giữ phần để xây, kho mang sang 30% khi qua chương):
 
 <!--khoi:ban-chuong-->
-| Kịch bản | Số người | Số tàu | Chương 1: thùng bán mỗi ca (phần số tàu) | Chương 2: thùng bán mỗi ca (phần số tàu) | Chương 3: thùng bán mỗi ca (phần số tàu) | Chương 4: thùng bán mỗi ca (phần số tàu) | Chương 5: thùng bán mỗi ca (phần số tàu) |
+| Kịch bản | Số người | Số tàu | Chương 1: thùng bán mỗi lượt giao thương (phần số tàu) | Chương 2: thùng bán mỗi lượt giao thương (phần số tàu) | Chương 3: thùng bán mỗi lượt giao thương (phần số tàu) | Chương 4: thùng bán mỗi lượt giao thương (phần số tàu) | Chương 5: thùng bán mỗi lượt giao thương (phần số tàu) |
 |---|---|---|---|---|---|---|---|
 | tệ | 1 | 25 | 23,1 (92%) | 15,3 (61%) | 16,7 (67%) | 16,2 (65%) | 15,9 (64%) |
 | tệ | 2 | 55 | 49,5 (90%) | 29,9 (54%) | 34,8 (63%) | 32,2 (59%) | 28,9 (53%) |
@@ -551,7 +551,7 @@ Thùng bán thật mỗi ca trong sim (sau khi giữ phần để xây, kho mang
 | tốt | 4 | 60 | 59,8 (100%) | 59,7 (100%) | 59,8 (100%) | 59,8 (100%) | 59,8 (100%) |
 <!--/khoi-->
 
-- Từ chương 2 một người chỉ lấp khoảng 70 tới 90% số tàu vì vật liệu sửa khoang chương mới lớn và kho mang sang chỉ còn 30%. Tàu không tới khi hết hàng (D8), không phải tàu bỏ đi, nên không trái mục tiêu tàu phục vụ xong của khung. Nếu gd-quan muốn ca chương 2 đầy hơn thì bớt tàu hoặc giảm GTĐ một thùng chương 2, không đổi giá.
+- Từ chương 2 một người chỉ lấp khoảng 70 tới 90% số tàu vì vật liệu sửa khoang chương mới lớn và kho mang sang chỉ còn 30%. Tàu không tới khi hết hàng (D8), không phải tàu bỏ đi, nên không trái mục tiêu tàu phục vụ xong của khung. Nếu gd-quan muốn giờ giao thương chương 2 đầy hơn thì bớt tàu hoặc giảm GTĐ một thùng chương 2, không đổi giá.
 
 ### 8.5 So với sim chuyến của gd-tech
 
@@ -595,23 +595,23 @@ Tiêu chí đo được khi có build:
 | Giá một thùng | Kinh tế | Giá hiển thị bằng cột Giá Tally một thùng ở bảng 3.1, giá kiện bằng thùng nhân 2,5 | MVP |
 | Giá lồng sống | Kinh tế | Giá bằng bảng Lồng theo loài nhân hệ số sao, bảng tàu hiện "từ" giá loài rẻ nhất | MVP |
 | Tip | Kinh tế | Tip bằng giá thùng x 25% x phần kiên nhẫn còn lại, Tàu vội và Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10 | MVP |
-| Phần tip trong thu | Kinh tế | 20 đến 30% tổng Tally ca cảng trong cả phiên | MVP |
+| Phần tip trong thu | Kinh tế | 20 đến 30% tổng Tally giờ giao thương trong cả phiên | MVP |
 | Giá nâng cấp và Shop | Kinh tế | Bằng bảng 3.2, không đổi khi số người đổi từ 1 đến 4 kể cả giữa phiên (C8) | MVP |
 | Điểm cảng | Tiến trình | Mỗi tàu xong cộng 1, cộng thêm 1 khi còn từ 2/3 kiên nhẫn trở lên, tàu rời không cộng | MVP |
 | Qua chương 1 | Tiến trình | Chương 1 đóng khi mốc đóng chương của truyện xong và ENG-101 đã lắp vào động cơ (K25), không có cổng kinh tế riêng | MVP |
 | ENG-101 | Tiến trình | Chỉ mua được khi Hạng cảng 3, ô ENG hiện "cần Hạng 3" khi chưa đủ | MVP |
 | Thời lượng chương 1 | Tiến trình | Event `chuong_xong` chương 1 của 5 người chơi mới, trung bình trong 1,5 đến 2 giờ | MVP |
 | Thời lượng cả game | Tiến trình | 12 đến 15 giờ trung bình, nhóm 4 bằng 60 đến 75% thời gian một mình tới hết game (log 69) | Sau MVP |
-| Lập danh mục có tác động | Kinh tế | Event `danh_muc_lap`: ca có từ 3 thùng hàng chế, sống hoặc hiếm cho Tally mỗi tàu cao hơn ca chỉ hàng chợ từ 20% | MVP |
+| Lập danh mục có tác động | Kinh tế | Event `danh_muc_lap`: giờ giao thương có từ 3 thùng hàng chế, sống hoặc hiếm cho Tally mỗi tàu cao hơn giờ giao thương chỉ hàng chợ từ 20% | MVP |
 | Không mất Tally | Kinh tế | Ngạt, bị kéo về, thoát giữa chuyến không làm Tally giảm (K2) | MVP |
-| Không có vòng tiền | Kinh tế | Tally một ca không vượt số tàu x giá thùng đắt nhất trong danh mục x 1,5 cộng phần đơn đặt trước và bơm khí | MVP |
+| Không có vòng tiền | Kinh tế | Tally một giờ giao thương không vượt số tàu x giá thùng đắt nhất trong danh mục x 1,5 cộng phần đơn đặt trước và bơm khí | MVP |
 
 ## 9. Lệch khỏi tham chiếu (Dave the Diver)
 
 | Phần | Dave làm thế nào | The Novent làm thế nào | Vì sao lệch |
 |---|---|---|---|
 | Đồng tiền | Gold từ quán sushi, thêm Bei cho trang bị | Một đồng Tally | K18, một bảng giá |
-| Nguồn tiền | Doanh thu ca tối theo món, giá món tăng theo cấp món, tip theo độ hài lòng | Giá thùng cố định theo GTĐ và bậc giá, tip theo kiên nhẫn còn lại. Không có cấp món | Thùng nối thẳng với lượng nhặt, người chơi tính được. Thế cân nằm ở bậc giá thay cho nâng cấp món |
+| Nguồn tiền | Doanh thu giờ giao thương tối theo món, giá món tăng theo cấp món, tip theo độ hài lòng | Giá thùng cố định theo GTĐ và bậc giá, tip theo kiên nhẫn còn lại. Không có cấp món | Thùng nối thẳng với lượng nhặt, người chơi tính được. Thế cân nằm ở bậc giá thay cho nâng cấp món |
 | Chọn thực đơn | Chọn món từ đồ bắt về, món đắt bán ít suất | Lập danh mục tối đa 4 loại hàng, hàng đắt ít tàu gọi | Cùng cấu trúc, lấy bậc giá và độ gọi làm trục cân |
 | Nâng cấp | Mua bằng tiền, mở độ sâu và thời gian lặn | Tally cộng vật liệu, T-VO là cổng dải | P2: nâng cấp phải tiêu đồ mang về |
 | Hạng quán | Cooksta theo like, mở nhân viên | Hạng cảng theo tàu phục vụ và kiên nhẫn, mở tàu và Shop | Cùng vai trò, gd-quan giữ luật |
@@ -623,8 +623,8 @@ Tiêu chí đo được khi có build:
 |---|---|---|
 
 | Chương 2 dài hơn giờ đặt ra <!--v:lech-ch2-->30%<!--/v--> | Giữ, tổng game trong mục tiêu. Muốn rút thì bớt 1 chuyến map nhánh chương 2 | GDM, gd-world |
-| Nguồn RES-401 và RES-305 mỗi ngày có đủ cho khoảng 25 thùng CGO-411, CGO-511 một ca không | gd-world và gd-combat đo số RES mỗi chuyến chương 4, 5 | gd-world, gd-combat |
-| Số tàu và phút ca chương 2 tới 5 | Sim dùng số chương 1 (25, 55, 55, 60 tàu). Cần sim ca cảng của gd-tech cho tàu chương sau | gd-quan, gd-tech |
+| Nguồn RES-401 và RES-305 mỗi ngày có đủ cho khoảng 25 thùng CGO-411, CGO-511 một giờ giao thương không | gd-world và gd-combat đo số RES mỗi chuyến chương 4, 5 | gd-world, gd-combat |
+| Số tàu và phút giờ giao thương chương 2 tới 5 | Sim dùng số chương 1 (25, 55, 55, 60 tàu). Cần sim giờ giao thương của gd-tech cho tàu chương sau | gd-quan, gd-tech |
 | Tally dư ở nhóm 3, 4 người (bảng 8.2) | Chấp nhận như chương 5, hoặc thêm sink tùy chọn cho nhóm đông khi Lead mở phạm vi | GDM |
 
 ## Số hiện hành đề xuất (GDM chép sang `so-hien-hanh.md`)
@@ -642,10 +642,10 @@ Tiêu chí đo được khi có build:
 | Hệ số ngân sách β | 0,54 | GD-055 mục 3.3 |
 | Giờ mục tiêu chương 1 tới 5 trong công thức | 0,8, 2,75, 3,5, 3,0, 1,5 | Lead chốt chương 1 là 0,8 (DECISIONS game 2026-11-23), chương 2 tới 5 GDM log 55 |
 | Túi và bình bậc 0 tới 4 | Túi 80, 100, 126, 168, 216. Bình 330, 450, 600, 780, 1000 | GDM chốt, log 54 |
-| Tally một ca theo số người, kịch bản trung bình | <!--v:tally-ca-1-->1744<!--/v-->, <!--v:tally-ca-2-->3848<!--/v-->, <!--v:tally-ca-3-->4025<!--/v-->, <!--v:tally-ca-4-->4261<!--/v-->, bằng <!--v:moc-1-->58%<!--/v-->, <!--v:moc-2-->76%<!--/v-->, <!--v:moc-3-->59%<!--/v-->, <!--v:moc-4-->52%<!--/v--> hai chuyến đầy túi | GD-055 mục 8.4b |
+| Tally một giờ giao thương theo số người, kịch bản trung bình | <!--v:tally-ca-1-->1744<!--/v-->, <!--v:tally-ca-2-->3848<!--/v-->, <!--v:tally-ca-3-->4025<!--/v-->, <!--v:tally-ca-4-->4261<!--/v-->, bằng <!--v:moc-1-->58%<!--/v-->, <!--v:moc-2-->76%<!--/v-->, <!--v:moc-3-->59%<!--/v-->, <!--v:moc-4-->52%<!--/v--> hai chuyến đầy túi | GD-055 mục 8.4b |
 | k(N) phần thêm mỗi người | 0,30 ở dải Gần, 0,25 ở Giữa, 0,38 ở Xa | gd-world, map.md 3.8 |
 | ENG mở theo Hạng cảng | 3, 5, 7, 8 | GD-028 luật 11 |
-| Đo được (trung bình, một người) | Chương 1 <!--v:gio-ch1-tb-->1,77<!--/v--> giờ, cả game <!--v:gio-game-tb-->14,2<!--/v--> giờ. Nhóm 4 xong game bằng <!--v:coop4-game-->70%<!--/v--> thời gian một mình. Tip chiếm <!--v:tip-tb-->26%<!--/v--> Tally ca | Sim GD-055 |
+| Đo được (trung bình, một người) | Chương 1 <!--v:gio-ch1-tb-->1,77<!--/v--> giờ, cả game <!--v:gio-game-tb-->14,2<!--/v--> giờ. Nhóm 4 xong game bằng <!--v:coop4-game-->70%<!--/v--> thời gian một mình. Tip chiếm <!--v:tip-tb-->26%<!--/v--> Tally giờ giao thương | Sim GD-055 |
 
 ## Balance Sheet (lịch sử đổi số, tab Balance Sheet)
 
@@ -655,34 +655,34 @@ Tiêu chí đo được khi có build:
 | Hệ số tài nguyên co-op k(N), phần thêm mỗi người | map.md 3.8 (gd-world) | 0,13 | Nhóm 4 mỗi người nhặt 35% so với một mình (log 50). Sim GD-028 với 0,47: mỗi người 60%, nhóm 4 hết game bằng 57% thời gian một mình (trung bình) | 0,47 (gd-world đã đổi ở 1b, sim xác nhận) | Giữ |
 | Điểm cảng mỗi đơn đủ | tram-va-cang.md mục 3 (gd-quan) | 2, thêm 1 khi nhanh, mọi số người | Điểm không theo quy mô đơn thì nhóm 4 hết game bằng 82% thời gian một mình, trượt mục tiêu 45 đến 60% | 2 và 1 nhân (N cộng 1) chia 2, làm tròn lên (gd-quan đã nhận) | gd-quan |
 | Quy mô đơn một ca | tram-va-cang.md (gd-quan): 3 tàu, 1 đến 4 dòng, 2 kiện mỗi dòng gốc | Đơn đòi 146% (chương 1) tới 440% (chương 2) lượng nhặt một ngày | Hạng cảng chặn mọi chương, chương 2 và 3 kéo dài trên 6 giờ, Tally dư hàng chục lần | Giá trị đơn bằng 60% hai chuyến đầy túi (gd-quan đã nhận). Số kiện theo phương án B: kiện nhỏ hơn, khoảng 10 kiện mỗi ca một người | gd-quan, gd-items |
-| Ngưỡng điểm Hạng cảng 2 tới 8 | tram-va-cang.md mục 3 (gd-quan) | 8, 20, 36, 56, 80, 108, 140, rồi 18, 45, 85, 130, 185, 245, 310 sau sim ca cảng GD-030 | Bản sau đặt theo ca đủ hàng (8,5 điểm một ca) nên chương 1 kéo tới 2,9 giờ vì cảng mở muộn và kho chưa đủ hàng | 10, 20, 45, 70, 100, 135, 195 (gd-quan đã nhận) | gd-quan |
+| Ngưỡng điểm Hạng cảng 2 tới 8 | tram-va-cang.md mục 3 (gd-quan) | 8, 20, 36, 56, 80, 108, 140, rồi 18, 45, 85, 130, 185, 245, 310 sau sim giờ giao thương GD-030 | Bản sau đặt theo ca đủ hàng (8,5 điểm một ca) nên chương 1 kéo tới 2,9 giờ vì cảng mở muộn và kho chưa đủ hàng | 10, 20, 45, 70, 100, 135, 195 (gd-quan đã nhận) | gd-quan |
 | Vật liệu sửa khoang chương 1 | vat-pham.md mục 2.7 (gd-items) | 145 GTĐ | Vòng 3 thử nhân 0,7: chương 1 xuống 1,9 giờ. Sau khi đổi ngưỡng Hạng cảng thì chương 1 vào mục tiêu mà không cần | 145 GTĐ, không đổi | Giữ |
 | Đơn vị quy đổi GTĐ sang Tally | chưa có | - | Cần một đơn vị để Shop là bảng giá duy nhất | 10 Tally mỗi GTĐ | gd-economy |
 | Giá Tally theo chương | chưa có | Vòng 1: B1 600 nhân 2,4 mũ (chương trừ 1) | Tally dư 30 đến 100 lần chi, Hạng cảng chặn, cả game 22 giờ | Vòng 3: ngân sách chương bằng β nhân ngày mục tiêu nhân thu nhập tham chiếu một ngày, β 0,40 | gd-economy |
 | Lưới cuộn mỗi mẻ RCP-132, mở ở | vat-pham.md (gd-items) | 2 mỗi mẻ, chương 2 | Bắt bằng lưới lỗ so với hạ khi trúng 1 con | 4 mỗi mẻ, chương 1 (gd-items, 1b), rồi 10 mỗi mẻ (gd-items, sau QA). Sim xác nhận ròng 1,28 lần trở lên | Giữ |
-| Thưởng đủ đơn, thưởng nhanh | tram-va-cang.md (gd-quan) | 25%, 15% | Không thấy vấn đề | 25%, 15%, rồi bỏ từ đợt 9 (Lead chốt ca cảng khung Dave), thay bằng tip | Giữ |
+| Thưởng đủ đơn, thưởng nhanh | tram-va-cang.md (gd-quan) | 25%, 15% | Không thấy vấn đề | 25%, 15%, rồi bỏ từ đợt 9 (Lead chốt giờ giao thương khung Dave), thay bằng tip | Giữ |
 | Giờ mục tiêu chương 1 trong công thức ngân sách | GD-028 | 1,75 | Sau khi dùng lượng nhặt của sim chuyến gd-tech (có Driftlife, cao hơn 1,4 đến 2 lần), chương 1 dài 2,24 giờ với β 0,40 | 1,5, chương 1 đo được trong 1,5 đến 2 giờ | gd-economy |
 | Túi và bình bậc 0 tới 4 | nguoi-choi.md (gd-character), map.md (gd-world) | Túi 20, 30, 42, 56, 72. Bình 300, 400, 520, 650, 800 | Chuyến kết thúc vì đầy túi sau 1,5 phút ở chương 1 (sim GD-030) | Túi 80, 100, 126, 168, 216. Bình 330, 450, 600, 780, 1000 (GDM chốt, log 54) | gd-character, gd-world |
 | Hệ số ngân sách β và giờ mục tiêu chương 1 trong công thức | GD-028 | 0,40 và 1,5 | Thang túi mới làm thu nhập một chuyến tăng 3 đến 4 lần, cả game còn 9,5 giờ với β 0,40 | 0,60 và 1,25 (GDM chốt, log 55) | gd-economy |
 | Hệ số k(N), phần thêm mỗi người | map.md 3.8 (gd-world) | 0,47 mọi dải | Với thang túi mới, Oxy là giới hạn từ chương 2, mỗi người nhóm 4 nhặt 73 đến 91%, nhóm 4 hết chương 1 ở 31%, chương 2 ở 29% | 0,30 ở Gần, 0,25 ở Giữa, 0,38 ở Xa (gd-world, sau QA GD-026) | gd-world |
-| Hệ số ngân sách β | GD-028 | 0,60 (GDM chốt, log 55) | Sau sửa QA GD-031 (cảng mở ngày 4, T-VO 1 sang chương 2, giá theo ID gd-items, chặn sức chở ca cảng, sàn ngày truyện, kiện chương 4 và 5): giữ 0,60 thì chương 1 2,33 giờ, cả game 18,9 giờ (gd-qa đo) | 0,40, cả game trong 12 đến 15 giờ (bảng 8.1). GDM nhận lại ở log 70 | gd-economy |
-| Ngày mở ca cảng chương 1 trong sim | GD-028 | Ngày đầu đủ vật liệu 5 khoang (thường ngày 1) | QA GD-031: trái chuỗi vớt Thông dịch viên | Từ ngày 4 (tram-va-cang.md, mốc C1.8) | gd-economy |
-| Ngày mở ca cảng chương 1 và ca đầu trong sim | tham-so.json ngay_mo_cang_ch1, ca_day (gd-economy) | Từ ngày 4, ca đầu là ca đủ 25 tàu | QA GD-061 C-V1, C-V2: lệch cot-truyen.md mục 5 (ca thứ nhất ngày 5) và tram-va-cang.md luật 67 (ca dạy 2 tàu). Chạy lại: chương 1 1,90 thành 2,29 giờ, cả game 14,2 thành 14,6 giờ, nhóm 4 71% thành 68% | Sớm nhất ngày 5, ngày sau khi cảng sửa xong. Ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu (log GDM 111). Chương 1 quá mục tiêu 2 giờ, chỉnh ở dòng sau | gd-economy |
-| Giờ mục tiêu chương 1 trong công thức ngân sách | tham-so.json gio_muc_tieu_chuong (gd-economy) | 1,25. Ngân sách chương 1 7750, giá chương 1 cộng lại 7680 | Sau khi ca cảng sớm nhất ngày 5 và ca đầu là ca dạy: chương 1 2,29 giờ, quá mục tiêu 1,5 đến 2. Hạ ngưỡng Hạng 2 và 3 về 50 và 95 không đổi gì vì Tally là chỗ chặn | 0,8 (Lead chốt 2026-11-23). Ngân sách 4950, giá cộng lại 4920. Chương 1 1,77 giờ, cả game 14,2 giờ, nhóm 4 70% | gd-economy |
+| Hệ số ngân sách β | GD-028 | 0,60 (GDM chốt, log 55) | Sau sửa QA GD-031 (cảng mở ngày 4, T-VO 1 sang chương 2, giá theo ID gd-items, chặn sức chở giờ giao thương, sàn ngày truyện, kiện chương 4 và 5): giữ 0,60 thì chương 1 2,33 giờ, cả game 18,9 giờ (gd-qa đo) | 0,40, cả game trong 12 đến 15 giờ (bảng 8.1). GDM nhận lại ở log 70 | gd-economy |
+| Ngày mở giờ giao thương chương 1 trong sim | GD-028 | Ngày đầu đủ vật liệu 5 khoang (thường ngày 1) | QA GD-031: trái chuỗi vớt Thông dịch viên | Từ ngày 4 (tram-va-cang.md, mốc C1.8) | gd-economy |
+| Ngày mở giờ giao thương chương 1 và ca đầu trong sim | tham-so.json ngay_mo_cang_ch1, ca_day (gd-economy) | Từ ngày 4, ca đầu là ca đủ 25 tàu | QA GD-061 C-V1, C-V2: lệch cot-truyen.md mục 5 (ca thứ nhất ngày 5) và tram-va-cang.md luật 67 (giờ giao thương hướng dẫn 2 tàu). Chạy lại: chương 1 1,90 thành 2,29 giờ, cả game 14,2 thành 14,6 giờ, nhóm 4 71% thành 68% | Sớm nhất ngày 5, ngày sau khi cảng sửa xong. Ca đầu là giờ giao thương hướng dẫn 2 tàu Loose Bolt bán thùng phế liệu (log GDM 111). Chương 1 quá mục tiêu 2 giờ, chỉnh ở dòng sau | gd-economy |
+| Giờ mục tiêu chương 1 trong công thức ngân sách | tham-so.json gio_muc_tieu_chuong (gd-economy) | 1,25. Ngân sách chương 1 7750, giá chương 1 cộng lại 7680 | Sau khi giờ giao thương sớm nhất ngày 5 và ca đầu là giờ giao thương hướng dẫn: chương 1 2,29 giờ, quá mục tiêu 1,5 đến 2. Hạ ngưỡng Hạng 2 và 3 về 50 và 95 không đổi gì vì Tally là chỗ chặn | 0,8 (Lead chốt 2026-11-23). Ngân sách 4950, giá cộng lại 4920. Chương 1 1,77 giờ, cả game 14,2 giờ, nhóm 4 70% | gd-economy |
 | T-VO là cổng chương | GD-028 | T-VO bậc c chặn qua chương c, vật liệu 25, 45, 81 | QA GD-031: trái vat-pham.md (UPG-ENV-1 mở chương 2, vật liệu 48,1 / 90,6 / 126,6) | Không chặn chương, mua đầu chương mở nó, vật liệu theo bảng UPG | gd-economy |
 | Sàn ngày truyện mỗi chương trong sim | cot-truyen.md mục 5 (gd-story) | Không có, chỉ đếm đêm chờ người vớt | QA GD-031 lỗi 4, 5 của truyện: nhóm xong chương 1 ở ngày 2 đến 4, dưới sàn 6 | 7, 5, 8, 3, 3 ngày (gd-story bản cuối sau QA vòng 2) | gd-story |
 | GTĐ một kiện | vat-pham.md (gd-items) | Chương 1 khoảng 2,5 | Đơn một ca cần 54 kiện, ca chở khoảng 10 | Chương 1 khoảng 13,4, chương 2 khoảng 41, chương 3 khoảng 102 (gd-items đã đổi). Chương 4 và 5 chưa có kiện riêng | gd-items |
-| Thu một ca trong sim | GD-028 | Theo đơn, không chặn sức chở | QA GD-031 lỗi chặn | Chặn bằng số kiện sim ca cảng giao được nhân GTĐ một kiện. β dò lại 0,30, rồi 0,35 (sàn chương 5 còn 3 ngày), rồi 0,40 (có kiện chương 4 và 5) | gd-economy |
+| Thu một ca trong sim | GD-028 | Theo đơn, không chặn sức chở | QA GD-031 lỗi chặn | Chặn bằng số kiện sim giờ giao thương giao được nhân GTĐ một kiện. β dò lại 0,30, rồi 0,35 (sàn chương 5 còn 3 ngày), rồi 0,40 (có kiện chương 4 và 5) | gd-economy |
 | Kiện chương 4 và 5 | vat-pham.md (gd-items) | Dùng kiện dải Xa, khoảng 102 GTĐ | Đơn chương 4, 5 cần khoảng 150 và 199 GTĐ mỗi kiện, chương 4 kéo dài | CGO-411 161,0 và CGO-511 193,2 GTĐ (gd-items thêm) | gd-items |
 | Mục tiêu nhóm 4 so với một mình, hết game | khung mục 9 (GDM) | 45 đến 60% | Sàn ngày truyện 26 ngày không đổi theo số người, đo được 72% | 60 đến 75%, giữ sàn ngày truyện (GDM, log 69) | GDM |
 | Mục tiêu sống so với hạ | khung mục 9 (GDM) | 1,5 đến 2 lần | Lưới trúng 1 con của loài rẻ cho 1,28 lần | 1,2 đến 2 lần cho cỡ S và M, sau khi trừ vật tiêu hao (khung sửa lần 5) | GDM |
-| Đơn vị bán ở ca cảng và giá | kinh-te-tien-trinh.md mục 3.1 (gd-economy) | Giá kiện bằng GTĐ x 10, một thùng bằng giá kiện chia 2,5: thùng chương 1 từ 48 tới 56 Tally | Sim ca cảng GD-054: giữ hàng cho đơn đặt trước chỉ chênh dưới 2,5% Tally, lập danh mục không có thế cân | Giá thùng theo 5 bậc giá: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75 | gd-economy |
-| Thưởng theo đơn | tram-va-cang.md (gd-quan), kinh-te-tien-trinh.md | Thưởng đủ đơn 25%, thưởng nhanh 15% | Lead chốt ca cảng khung Dave 2026-11-20, bỏ đơn nhiều dòng | Tip tối đa 30% (sau hạ 25%) giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally | Lead |
+| Đơn vị bán ở giờ giao thương và giá | kinh-te-tien-trinh.md mục 3.1 (gd-economy) | Giá kiện bằng GTĐ x 10, một thùng bằng giá kiện chia 2,5: thùng chương 1 từ 48 tới 56 Tally | Sim giờ giao thương GD-054: giữ hàng cho đơn đặt trước chỉ chênh dưới 2,5% Tally, lập danh mục không có thế cân | Giá thùng theo 5 bậc giá: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75 | gd-economy |
+| Thưởng theo đơn | tram-va-cang.md (gd-quan), kinh-te-tien-trinh.md | Thưởng đủ đơn 25%, thưởng nhanh 15% | Lead chốt giờ giao thương khung Dave 2026-11-20, bỏ đơn nhiều dòng | Tip tối đa 30% (sau hạ 25%) giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally | Lead |
 | Điểm cảng | tram-va-cang.md (gd-quan) | 2 mỗi đơn đủ, thêm 1 khi nhanh, nhân (N cộng 1) chia 2 | Luật mới không còn đơn | 1 mỗi tàu phục vụ xong, thêm 1 nếu còn từ 2/3 kiên nhẫn trở lên. Sim trễ 2 giây: một ca 46, 102, 105, 111 điểm cho 1 tới 4 người | Lead |
 | Ngưỡng điểm Hạng cảng 2 tới 8 | tram-va-cang.md mục 3 (gd-quan) | 10, 20, 45, 70, 100, 135, 195 | Điểm mới gấp 7 tới 8 lần mỗi ca, ngưỡng cũ thì Hạng không còn chặn ENG | 70, 135, 285, 400, 560, 680, 910, giữ ngày đủ điểm của bản trước (5, 7, 13, 16, 20, 24, 31). Chờ gd-quan nhận | gd-economy |
 | Hệ số ngân sách β | GD-028 | 0,40 | Ca khung Dave bán gần đủ 25 thùng mỗi ca và có tip: giữ 0,40 thì cả game 11,0 giờ | 0,54, cả game trung bình 13,9 giờ, nhóm 4 bằng 73% thời gian một mình | gd-economy |
 | Tip tối đa | ca-cang.json (GDM) | 30% giá thùng nhân kiên nhẫn còn lại | Bơm khí bật lúc cập (luật 28): tip kể cả bơm khí vượt 30% Tally ở 3 và 4 người | 25%, tip kể cả bơm khí 26 tới 29% ở trễ 2 giây | GDM |
-| Số tàu một ca theo số người và cửa neo | tram-va-cang.md (gd-quan), sim ca cảng gd-tech | 25, 50, 70, 70 tàu, 4 cửa neo khi 3 và 4 người | Luật mới 3 cửa neo cho mọi số người (không mở nội dung theo số người) | 25, 55, 55, 60 tàu, 3 cửa neo. Kho sau hai chuyến vẫn đủ ở mọi chương | gd-quan, gd-tech |
+| Số tàu một ca theo số người và cửa neo | tram-va-cang.md (gd-quan), sim giờ giao thương gd-tech | 25, 50, 70, 70 tàu, 4 cửa neo khi 3 và 4 người | Luật mới 3 cửa neo cho mọi số người (không mở nội dung theo số người) | 25, 55, 55, 60 tàu, 3 cửa neo. Kho sau hai chuyến vẫn đủ ở mọi chương | gd-quan, gd-tech |
 | Lộ trình mua chương 2 và 3 trong sim | kinh-te-tien-trinh.md mục 3.2, 3.4 (gd-economy) | Bộ đồ bậc 2 mua trước Xưởng cấp 2. Khoang sinh quyển cấp 3 gộp trong gói chương 4 | Rà chéo nhóm A 2026-11-23: trái cổng Xưởng cấp 2 và mốc chương 3 của khoang sinh quyển cấp 3 (tram-va-cang.md 2.6, 2.7) | Xưởng cấp 2 là cổng bộ đồ từ bậc 2. KH11-C3 14700 Tally ở chương 3, ngoài phần chia. Cả game 13,9 thành 14,2 giờ | GDM |
 <!--/khoi-->
 
@@ -693,12 +693,12 @@ Tiêu chí đo được khi có build:
 | 1 | Đơn vị quy đổi | 10 Tally mỗi GTĐ | Số tròn, dễ đọc, nhân với hệ số bậc ra giá thùng | Quy đổi một đổi một (giá lẻ thập phân) | Rẻ |
 | 2 | Cách đặt giá Tally | Ngân sách chương neo thu nhập tham chiếu và ngày mục tiêu, một núm β | Mật độ dải Xa gấp <!--v:xa-gan-->6,7<!--/v--> dải Gần, giá mũ một hệ số làm Tally dư hàng chục lần (vòng 1) | Giá gốc nhân hệ số mũ theo chương | Rẻ |
 | 3 | Giá thùng theo Hạng cảng | Không nhân | Hạng đã mở tàu và Shop, nhân thêm là vòng dương kép | Cộng 4% mỗi hạng | Rẻ |
-| 4 | Nguồn Tally | Chỉ ca cảng | K18. Tally từ quest làm người bỏ ca vẫn tiến | Tally từ quest người vớt | Rẻ |
+| 4 | Nguồn Tally | Chỉ giờ giao thương | K18. Tally từ quest làm người nghỉ giao thương vẫn tiến | Tally từ quest người vớt | Rẻ |
 | 5 | Cổng chương | Sửa khoang, ENG, chuyến map nhánh, sàn ngày truyện. T-VO không chặn chương | Khớp `vat-pham.md` (UPG-ENV-1 mở ở chương 2) và K6 (thiếu cấp vẫn vào được, chỉ đắt) | T-VO là cổng chương, bắt mua mọi nâng cấp | Vừa |
 | 6 | ENG mở theo Hạng | 3, 5, 7, 8 (hạng trần của chương) | gd-quan đã ghi hạng 3 và hạng 8, điền hai hạng giữa theo trần chương | Mở theo chương, không theo Hạng | Rẻ |
 | 7 | Giờ từng chương | 0,8 (Lead chốt 2026-11-23), 2,75, 3,5, 3,0, 1,5 | Khung chỉ đặt chương 1 và tổng. Chương 3 dài nhất vì dải Xa, sự cố và nhiều tàu. Chương 5 ngắn vì chỉ còn truyện | Chia đều | Rẻ |
-| 8 | Độ dài một ngày | 2 chuyến cộng phút ca cảng của gd-tech cộng 3 phút, co-op thêm 5% mỗi người | Khớp khung mục 4 và mục 9 | Không tính thời gian chờ co-op | Rẻ |
-| 9 | Ba kịch bản | Bảng 3.4, ca cảng theo trễ phản xạ 3, 2, 1 giây của sim gd-tech | Tệ là người mới hay ngạt, giao chậm, không chuẩn bị danh mục. Tốt là người tối ưu | Chỉ một kịch bản | Rẻ |
+| 8 | Độ dài một ngày | 2 chuyến cộng phút giờ giao thương của gd-tech cộng 3 phút, co-op thêm 5% mỗi người | Khớp khung mục 4 và mục 9 | Không tính thời gian chờ co-op | Rẻ |
+| 9 | Ba kịch bản | Bảng 3.4, giờ giao thương theo trễ phản xạ 3, 2, 1 giây của sim gd-tech | Tệ là người mới hay ngạt, giao chậm, không chuẩn bị danh mục. Tốt là người tối ưu | Chỉ một kịch bản | Rẻ |
 | 10 | Bộ đồ | Dùng 5 trục của `nguoi-choi.md` (T-OXY, T-VO, T-DAY, T-TUI, T-DUNGCU), vật liệu theo công thức gd-items | Chọn bộ của chủ hệ thống bộ đồ | Bộ UPG của gd-items | Rẻ |
 | 11 | Xưởng cấp 2 | Chương 2, là cổng của nâng cấp bộ đồ từ bậc 2. Dụng cụ không qua cổng | Bậc 2 bộ đồ là chương 2. `tram-va-cang.md` mục 2.7: Kỹ sư cấp 2 mới nâng cấp bậc 2 (GDM chốt giữ cổng 2026-11-23) | Chương 1. Bỏ cổng, chỉ giữ chế 2 mẻ song song | Rẻ |
 | 12 | Hàng mang sang chương mới | Giữ 30% giá trị | Hàng dải cũ vẫn bán được nhưng tàu ít gọi | Giữ 100% | Rẻ |
@@ -712,7 +712,7 @@ Tiêu chí đo được khi có build:
 
 | # | Điểm | Vấn đề | Bằng chứng | Phương án |
 |---|---|---|---|---|
-| 1 | Mục tiêu khung mục 9 "Tally từ ca cảng trên 80%" | Luôn đạt 100% vì K18 | Bảng 8.2 | Đã thay bằng mục tiêu tip 20 đến 30% (khung mục 9 đợt 9) |
+| 1 | Mục tiêu khung mục 9 "Tally từ giờ giao thương trên 80%" | Luôn đạt 100% vì K18 | Bảng 8.2 | Đã thay bằng mục tiêu tip 20 đến 30% (khung mục 9 đợt 9) |
 | 2 | Hai mục tiêu co-op (60 đến 75% thời gian, từ 60% mỗi người) | Chỉ cùng đạt khi điểm cảng tăng theo số người | Bảng 6b | Đã đạt tự nhiên vì số tàu tăng theo số người (C8) và điểm tính trên mỗi tàu |
 | 3 | K19 sink của Tally | Chương 5 và nhóm 3, 4 người không còn sink, Tally dư | Bảng 8.2 | GDM chấp nhận Tally dư ở chương 5. Nhóm đông dư hơn nửa thu, nêu lại ở mục 10 |
 | 4 | Độ gọi chỉ có tác dụng khi bày thừa | Luật D3, D8: tàu chỉ gọi món còn trong danh mục. Người chơi bày đúng 25 thùng thì mọi thùng đều bán, độ gọi không đổi gì. Thế cân thật nằm ở bậc giá và kho (giữ hàng chợ để xây) | Bảng kiểu danh mục mục 3.1: bày thừa chỉ kém 5% | gd-quan đã có cơ chế này cho TA05, TA09 (danh mục không có nhóm hàng của tàu thì tàu không tới), nhưng chỉ từ chương 2. Đề xuất cho gd-quan (luật, không tự đổi): đưa vào chương 1, ví dụ Tàu vội chỉ tới khi danh mục có băng hoặc khoáng. Khi đó bỏ hàng chợ khỏi danh mục là mất tàu thật, "hàng đắt ít tàu gọi" thành quyết định thật |
@@ -722,8 +722,8 @@ Tiêu chí đo được khi có build:
 | Vai | Việc | Đọc |
 |---|---|---|
 | gd-quan | Nhận ngưỡng Hạng 2 tới 8 (70, 135, 285, 400, 560, 680, 910) vào luật 41 của `tram-va-cang.md`. Luật 24: trọng số chọn món bằng độ gọi của bậc giá nhân hàng hay gọi của bảng 2.4. Luật 30 giữ (giá kiện chia 2,5 ra đúng giá thùng). Chốt cảng cấp 2 là cửa neo thứ 4. Xem phản biện 4 | Mục 2.1, 3.1, 3.5 |
-| gd-tech | Nối khối giaThung của `tools/tham-so/ca-cang.json` vào `sim-ca-cang.mjs` (giá thùng thay cho giá kiện chia 2,5, lồng theo loài, thêm mô sinh học và đặc sản), chạy lại mục 5 so với bảng kiểu danh mục. Sửa phép kiểm `selftest.mjs` dòng 111 (giá thùng mới: đồ Trái Đất 76, phế liệu 42). Sim ca cảng cho tàu chương 2 tới 5 | Mục 3.1, 6, 10 |
-| gd-ux | Màn lập danh mục hiện giá thùng và độ gọi, bảng kết ca tách giá và tip | Mục 7 |
+| gd-tech | Nối khối giaThung của `tools/tham-so/ca-cang.json` vào `sim-ca-cang.mjs` (giá thùng thay cho giá kiện chia 2,5, lồng theo loài, thêm mô sinh học và đặc sản), chạy lại mục 5 so với bảng kiểu danh mục. Sửa phép kiểm `selftest.mjs` dòng 111 (giá thùng mới: đồ Trái Đất 76, phế liệu 42). Sim giờ giao thương cho tàu chương 2 tới 5 | Mục 3.1, 6, 10 |
+| gd-ux | Màn lập danh mục hiện giá thùng và độ gọi, bảng tổng kết giao thương tách giá và tip | Mục 7 |
 | gd-items | Không có việc mới. Giá thùng đọc GTĐ ở bảng 2.6b | Mục 3.1 |
 
 ## Phụ lục
@@ -731,7 +731,7 @@ Tiêu chí đo được khi có build:
 ### Tally theo ngày, kịch bản trung bình, một người (một lượt, seed 20261120)
 
 <!--khoi:tally-ngay-->
-| Ngày | Chương | Nhặt cả ngày (GTĐ) | Thùng bán ở ca | Tally thu ở ca cảng | Tally còn cuối ngày | Điểm cảng cộng dồn | Hạng cảng | Giờ chơi cộng dồn |
+| Ngày | Chương | Nhặt cả ngày (GTĐ) | Thùng bán ở giờ giao thương | Tally thu ở giờ giao thương | Tally còn cuối ngày | Điểm cảng cộng dồn | Hạng cảng | Giờ chơi cộng dồn |
 |---|---|---|---|---|---|---|---|---|
 | 1 | 1 | 153 | 0,0 | 0 | 0 | 0 | 1 | 0,20 |
 | 2 | 1 | 153 | 0,0 | 0 | 0 | 0 | 1 | 0,39 |
@@ -802,9 +802,9 @@ Tiêu chí đo được khi có build:
 
 | Chương | Người chơi học gì | Mở tài nguyên | Mở map | Mở trang bị | Mở Driftlife | Sức mạnh tăng | Ý đồ |
 |---|---|---|---|---|---|---|---|
-| 1 | Bay, Oxy, nhặt, khoan, nạy, hạ, bắt sống loài nhỏ, sửa khoang, lập danh mục, ca cảng, mua nâng cấp đầu tiên | Tài nguyên dải Gần | Dải Gần, Station Cinder | Dùi xung, Súng lưới, Lồng mẫu, Bộ kích nguồn, bậc 1 bộ đồ | 5 loài Gần (MVP làm 4), BS-1 | T-TUI và T-OXY lên bậc 1, T-DAY bậc 1, thêm ô dụng cụ (quest) | Dạy trọn vòng lặp trong 2 giờ |
+| 1 | Bay, Oxy, nhặt, khoan, nạy, hạ, bắt sống loài nhỏ, sửa khoang, lập danh mục, giờ giao thương, mua nâng cấp đầu tiên | Tài nguyên dải Gần | Dải Gần, Station Cinder | Dùi xung, Súng lưới, Lồng mẫu, Bộ kích nguồn, bậc 1 bộ đồ | 5 loài Gần (MVP làm 4), BS-1 | T-TUI và T-OXY lên bậc 1, T-DAY bậc 1, thêm ô dụng cụ (quest) | Dạy trọn vòng lặp trong 2 giờ |
 | 2 | Nuôi, bắt loài lớn, nghiên cứu, Skiff | Tài nguyên dải Giữa | Dải Giữa, Wick, Lantern | Súng gây mê, Phao kéo, Kim sinh thiết, Máy quét xung, bậc 2 (cần Xưởng cấp 2) | Loài Giữa, BS-2 | T-TUI, T-OXY, T-DAY lên bậc 2, T-VO bậc 1, thêm ô dụng cụ | Nhịp chậm lại, trạm lớn lên rõ |
-| 3 | Sự cố trong ca, kẻ địch có vũ khí, nhiều bến | Tài nguyên dải Xa | Dải Xa, Flint, Veyl Waypost | Bậc 3 | Loài Xa, The Wardens, BS-3 | T-TUI, T-OXY, T-DAY lên bậc 3, T-VO bậc 2, khoang sinh quyển cấp 3 | Chương dài nhất, giữa game |
+| 3 | Sự cố trong giờ giao thương, kẻ địch có vũ khí, nhiều bến | Tài nguyên dải Xa | Dải Xa, Flint, Veyl Waypost | Bậc 3 | Loài Xa, The Wardens, BS-3 | T-TUI, T-OXY, T-DAY lên bậc 3, T-VO bậc 2, khoang sinh quyển cấp 3 | Chương dài nhất, giữa game |
 | 4 | Map nhánh lớn nhiều chuyến | Linh kiện Cradle | Cradle Interior | Máy cắt thân tàu, bậc 4 | BS-4 | T-TUI, T-OXY lên bậc 4, T-VO bậc 3 | Lộ sự thật, chuẩn bị trận cuối |
 | 5 | Trận cuối nhiều chuyến | Linh kiện Warden | Warden Rig | Không | BS-5 | Không thêm | Kết, Tally không còn vai trò |
 
@@ -813,26 +813,26 @@ Tiêu chí đo được khi có build:
 | Ngày | Thay đổi | Lý do | Ai |
 |---|---|---|---|
 | 2026-11-20 | Tạo bản đủ, sim 3 vòng | GD-028 | gd-economy |
-| 2026-11-20 | Đợt 9 GD-055, ca cảng khung Dave: bán theo thùng, giá thùng 5 bậc (40 tới 80 Tally ở chương 1), độ gọi, tip thay thưởng theo đơn, điểm cảng mỗi tàu, ngưỡng Hạng 70 tới 910 giữ ngày đủ điểm cũ, β 0,54, 1 tới 4 người, bảng kiểu danh mục đo bằng mô hình ca của gd-tech, K9 tính bằng Tally, bỏ mục quy mô đơn và thang túi cũ | Lead chốt ca cảng khung Dave, brief đợt 9 | gd-economy |
+| 2026-11-20 | Đợt 9 GD-055, giờ giao thương khung Dave: bán theo thùng, giá thùng 5 bậc (40 tới 80 Tally ở chương 1), độ gọi, tip thay thưởng theo đơn, điểm cảng mỗi tàu, ngưỡng Hạng 70 tới 910 giữ ngày đủ điểm cũ, β 0,54, 1 tới 4 người, bảng kiểu danh mục đo bằng mô hình giờ giao thương của gd-tech, K9 tính bằng Tally, bỏ mục quy mô đơn và thang túi cũ | Lead chốt giờ giao thương khung Dave, brief đợt 9 | gd-economy |
 | 2026-11-20 | Đợt 4: β 0,40 (log 70), mục tiêu nhóm 4 là 60 đến 75% (log 69), luật 12 theo K25, mục tiêu sống so với hạ 1,2 đến 2 lần, bỏ hai câu hỏi đã chốt | GDM | gd-economy |
 | 2026-11-20 | QA GD-031 vòng 2 ĐẠT, sửa 7 lỗi nhẹ: chạy lại theo sim chuyến mới, hàng β và hàng kiện trùng ở Balance Sheet, điểm tự quyết 5 | gd-qa | gd-economy |
 | 2026-11-20 | Sàn ngày truyện bản cuối 7, 5, 8, 3, 3 (gd-story sau QA vòng 2). Phương án hạ sàn còn 6, 4, 6, 3, 3 | gd-story | gd-economy |
 | 2026-11-20 | Bảng PROCESSING bỏ số túi và Oxy thang cũ, trỏ về bảng Sức mạnh. a dải Gần 0,30 (gd-world) | QA GD-031 lỗi 7, gd-world | gd-economy |
 | 2026-11-20 | gd-items thêm kiện chương 4 (CGO-411) và 5 (CGO-511). β 0,40 | gd-items | gd-economy |
 | 2026-11-20 | Sàn ngày truyện chương 5 đổi 4 thành 3 (gd-story đính chính). Thêm số đo khi hạ sàn còn 21 ngày | gd-story | gd-economy |
-| 2026-11-20 | gd-items đổi cỡ kiện chương 1 tới 3. Sim luôn chặn thu một ca theo sức chở ca cảng, β 0,30 | gd-items, QA GD-031 | gd-economy |
+| 2026-11-20 | gd-items đổi cỡ kiện chương 1 tới 3. Sim luôn chặn thu một giờ giao thương theo sức chở giờ giao thương, β 0,30 | gd-items, QA GD-031 | gd-economy |
 | 2026-11-20 | Đổi sang ID khoang chính của gd-quan (KH07-C2, KH05-C2, KHxx-C3) | gd-quan | gd-economy |
 | 2026-11-20 | Thêm sàn ngày truyện của gd-story vào điều kiện qua chương. Luật lồng con nuôi (M5 của gd-items). Đọc vat-pham.md mới | gd-story, gd-items | gd-economy |
-| 2026-11-20 | Sửa theo QA GD-031 vòng 1: cảng mở ngày 4, T-VO không chặn chương, bảng 3.2 dựng từ bảng UPG của gd-items theo ID, bỏ UPG-PRY, đủ BPR-103, 105, 106, bỏ hệ số tàu không nguồn, công thức chia 0,9, số cứng vào tham số, đọc sim ca cảng mới, cỡ kiện là lỗi chặn chờ gd-items, β 0,45, thêm tiêu chí đo được và đoạn vòng tiền, đánh lại số mục 8 | gd-qa GD-031 | gd-economy |
+| 2026-11-20 | Sửa theo QA GD-031 vòng 1: cảng mở ngày 4, T-VO không chặn chương, bảng 3.2 dựng từ bảng UPG của gd-items theo ID, bỏ UPG-PRY, đủ BPR-103, 105, 106, bỏ hệ số tàu không nguồn, công thức chia 0,9, số cứng vào tham số, đọc sim giờ giao thương mới, cỡ kiện là lỗi chặn chờ gd-items, β 0,45, thêm tiêu chí đo được và đoạn vòng tiền, đánh lại số mục 8 | gd-qa GD-031 | gd-economy |
 | 2026-11-20 | Sửa theo QA GD-031 qua gd-quan: bảng 3.5 chỉ còn ngưỡng đã nhận và sim dùng đúng số đó, thêm giá lồng sống theo loài, ghi cách tính thưởng | QA lỗi 18, 27 | gd-economy |
 | 2026-11-20 | Chạy lại theo sim chuyến 04:11 (k(N) theo dải lần cuối). Thêm độ dài một ngày theo khung mục 9 sửa lần 4, ghi nguồn K22, K23 | GDM | gd-economy |
 | 2026-11-20 | Đọc tỉ lệ mỗi người theo số người từ sim chuyến gd-tech. k(N) theo dải của gd-world | Tin gd-tech, gd-world | gd-economy |
-| 2026-11-20 | Đợt 2b: áp thang túi và bình GDM chốt, β 0,60, giờ mục tiêu chương 1 là 1,25. Đọc phút và GTĐ chuyến từ sim chuyến gd-tech theo cột Bình. Thay mục tiêu Tally từ ca cảng bằng mục tiêu thưởng 15 đến 25% | GDM log 54 tới 57 | gd-economy |
+| 2026-11-20 | Đợt 2b: áp thang túi và bình GDM chốt, β 0,60, giờ mục tiêu chương 1 là 1,25. Đọc phút và GTĐ chuyến từ sim chuyến gd-tech theo cột Bình. Thay mục tiêu Tally từ giờ giao thương bằng mục tiêu thưởng 15 đến 25% | GDM log 54 tới 57 | gd-economy |
 | 2026-11-20 | gd-quan tách hệ số kiện co-op: 0,6 ở chương 1 và 2, 0,4 ở chương 3 tới 5. Sim dùng đúng bảng này | Tin của gd-quan | gd-economy |
 | 2026-11-20 | Quy mô đơn co-op của gd-quan đổi 0,4 lên 0,6 mỗi người thêm. Nhóm 4 xong game đổi 2 điểm (số lúc đó, số hiện hành ở mục 6b). Đọc cột vật tiêu hao mới của SPECIES | Tin của gd-quan, gd-items | gd-economy |
 | 2026-11-20 | gd-quan nhận ngưỡng Hạng, điểm theo quy mô đơn, ENG theo Hạng. Quy mô đơn theo phương án B | Trả lời của gd-quan | gd-economy |
 | 2026-11-20 | Chạy lại với vat-pham.md mới (Lưới cuộn 10 mỗi mẻ, cổng sống trên hạ). Thêm mục 8.6 thử trước túi nhân 3 | gd-items và gd-combat sửa ở 1b, gd-world đề xuất túi | gd-economy |
-| 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Số chuyển từ thân luật xuống: tip tối đa demo đề xuất 30% rồi GDM hạ 25% (đợt 9 vòng 2). Trước đợt 9 giá thùng sát nhau 48 tới 56, sim ca cảng GD-054 đo chênh tối đa 13%, giữ hàng cho đơn đặt trước dưới 2,5%. Kịch bản tệ một người bản trước 19,5 giờ. Nhặt tay trước bản 1b của gd-items lợi gấp 2,5 | production/reports/2026-11-23-humanizer-gdd.md | gd-economy |
-| 2026-11-23 | Sửa theo rà chéo nhóm A: bảng PROCESSING thêm Lồng mẫu ở chương 1, Máy quét xung về chương 2, 5 loài dải Gần (MVP làm 4). Xưởng cấp 2 là cổng của bộ đồ từ bậc 2, sim mua đúng cổng. Thêm dòng giá KH11-C3 khoang sinh quyển cấp 3 chương 3 (14700 Tally), gói KHxx-C3 chương 4 thành các khoang còn lại. Sim làm tròn Tally thu mỗi ca về số nguyên. Chạy lại sim: chương 1 1,90 giờ, cả game 14,2 giờ | qa/2026-11-23-ra-cheo-A.md, GDM chốt | gd-economy |
-| 2026-11-23 | Sửa theo QA GD-061 (log GDM 111, 113): sim mở ca cảng sớm nhất ngày 5, ngày sau khi cảng sửa xong, ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu (tham số ngay_mo_cang_ch1, ca_day). Điểm cảng ghi "từ 2/3 kiên nhẫn trở lên". Chạy lại: chương 1 1,90 thành 2,29 giờ (không đạt mục tiêu, phương án ở mục 10), cả game 14,2 thành 14,6 giờ, nhóm 4 71% thành 68% | qa/GD-061-C.md, log GDM 111, 113 | gd-economy |
+| 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Số chuyển từ thân luật xuống: tip tối đa demo đề xuất 30% rồi GDM hạ 25% (đợt 9 vòng 2). Trước đợt 9 giá thùng sát nhau 48 tới 56, sim giờ giao thương GD-054 đo chênh tối đa 13%, giữ hàng cho đơn đặt trước dưới 2,5%. Kịch bản tệ một người bản trước 19,5 giờ. Nhặt tay trước bản 1b của gd-items lợi gấp 2,5 | production/reports/2026-11-23-humanizer-gdd.md | gd-economy |
+| 2026-11-23 | Sửa theo rà chéo nhóm A: bảng PROCESSING thêm Lồng mẫu ở chương 1, Máy quét xung về chương 2, 5 loài dải Gần (MVP làm 4). Xưởng cấp 2 là cổng của bộ đồ từ bậc 2, sim mua đúng cổng. Thêm dòng giá KH11-C3 khoang sinh quyển cấp 3 chương 3 (14700 Tally), gói KHxx-C3 chương 4 thành các khoang còn lại. Sim làm tròn Tally thu mỗi giờ giao thương về số nguyên. Chạy lại sim: chương 1 1,90 giờ, cả game 14,2 giờ | qa/2026-11-23-ra-cheo-A.md, GDM chốt | gd-economy |
+| 2026-11-23 | Sửa theo QA GD-061 (log GDM 111, 113): sim mở giờ giao thương sớm nhất ngày 5, ngày sau khi cảng sửa xong, giờ giao thương đầu là giờ giao thương hướng dẫn 2 tàu Loose Bolt bán thùng phế liệu (tham số ngay_mo_cang_ch1, ca_day). Điểm cảng ghi "từ 2/3 kiên nhẫn trở lên". Chạy lại: chương 1 1,90 thành 2,29 giờ (không đạt mục tiêu, phương án ở mục 10), cả game 14,2 thành 14,6 giờ, nhóm 4 71% thành 68% | qa/GD-061-C.md, log GDM 111, 113 | gd-economy |
 | 2026-11-23 | Lead chốt hạ giờ ngân sách chương 1 từ 1,25 xuống 0,8 (DECISIONS game 2026-11-23). Ngân sách chương 1 7750 thành 4950: Bình Oxy và Túi đồ bậc 1 1450 thành 930, Bộ đẩy bậc 1 1000 thành 650, Dụng cụ khai thác và Lao từ bậc 2 440 thành 280, Van tiết lưu 2900 thành 1850. Chạy lại: chương 1 2,29 thành 1,77 giờ (đạt), cả game 14,6 thành 14,2 giờ, nhóm 4 68% thành 70%. Ngưỡng Hạng cảng giữ nguyên | DECISIONS game, GD-067 | gd-economy |

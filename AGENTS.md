@@ -5,7 +5,7 @@ Repo: github.com/huycv18/DATN-SP27 (public từ 2026-11-19). Làm việc nhiều
 ## Game
 Tên game: The Novent. Slug kỹ thuật: `projects/game-moi/`. Concept Space Salvage đã bỏ 2026-11-19, chỉ để tra.
 Lead giao toàn quyền cho GDM hoàn thiện GDD 2026-11-20. Nguồn luật chung: `projects/game-moi/gdd/00-khung-game.md`. Điểm GDM tự quyết: `projects/game-moi/log-gdm-tu-quyet.md`. GDD từng hệ thống: `projects/game-moi/gdd/he-thong/`. Sheet: một GDD duy nhất, 25 tab (bỏ GDD con 2026-11-20, xem `projects/game-moi/DECISIONS.md`).
-Một câu: tỉnh dậy trên trạm hỏng giữa bãi vỡ của tàu mẹ, mỗi ngày ra ngoài đổi oxy lấy tài nguyên và Driftlife, về sửa trạm, bán hàng ở ca cảng cho thương nhân ngoài hành tinh lấy Tally, nâng cấp để đi xa hơn, cho tới khi trạm rời neo.
+Một câu: tỉnh dậy trên trạm hỏng giữa bãi vỡ của tàu mẹ, mỗi ngày ra ngoài đổi oxy lấy tài nguyên và Driftlife, về sửa trạm, bán hàng ở giờ giao thương cho thương nhân ngoài hành tinh lấy Tally, nâng cấp để đi xa hơn, cho tới khi trạm rời neo.
 
 | Ràng buộc Lead đã chốt | Giá trị |
 |---|---|
@@ -110,7 +110,7 @@ Vai chia theo hệ thống của game (kiểu team indie), mỗi hệ thống m�
 | `gd-combat` | Combat | opus | Cắt, choáng, lưới bắt, sát thương, hit feel, quái và hành vi | Enemy |
 | `gd-items` | Vũ khí và vật phẩm | sonnet | Vũ khí, công cụ, đồ độ, salvage, nguyên liệu, món, công thức chế | Salvage, ITEM LIST, Recipe |
 | `gd-world` | Map và môi trường | opus | Tầng, zone, layout, hazard, điểm sinh, độ khó, nhịp chuyến bay, greybox | Zone |
-| `gd-quan` | Trạm và cảng (trước là Quán) | opus | Khoang trạm, người vớt mở tính năng, ca cảng giao thương, Hạng cảng, nuôi Driftlife, sự cố | Customer (thương nhân và tàu) |
+| `gd-quan` | Trạm và cảng (trước là Quán) | opus | Khoang trạm, người vớt mở tính năng, giờ giao thương, Hạng cảng, nuôi Driftlife, sự cố | Customer (thương nhân và tàu) |
 | `gd-economy` | Economy và tiến độ | opus | ₵, bảng giá duy nhất, nâng cấp, phí cứu hộ, nhịp mở khóa theo ngày, lịch sử đổi số | ECONOMIC, Shop, Upgrade, PROCESSING, Balance Sheet |
 | `gd-ux` | UX / UI | sonnet | HUD, wireframe, FTUE, tutorial, input, game feel checklist, strings UI | WIREFRAME, Tutorials |
 | `gd-tech` | Technical design | sonnet | Sim, validator chéo tab, Sheet sang ScriptableObject, prototype thử feel, event tracking | Event Tracking |
@@ -158,7 +158,7 @@ Kho tri thức chuyên môn indie: `docs/knowledge/indie/` (đọc `docs/knowled
 | Quái mới | gd-combat (hành vi, chỉ số) -> gd-items (rơi gì) -> gd-world (đặt ở đâu) -> gd-tech (sim) -> gd-qa |
 | Tầng mới / hazard | gd-world (layout, hazard, độ khó) -> gd-combat, gd-items (nội dung) -> gd-tech (sim) -> gd-qa |
 | Vũ khí, item, công thức | gd-items (định nghĩa, chỉ số) -> gd-economy (giá, sim 3 kịch bản) -> gd-qa (kiểm chéo ITEM LIST, Recipe, Shop, ECONOMIC) |
-| Trạm, cảng, thương nhân | gd-quan (luật ca cảng, khoang) -> gd-character (hồ sơ) -> gd-economy (giá, Tally) -> gd-story (lời thoại) -> gd-ux (màn cảng) |
+| Trạm, cảng, thương nhân | gd-quan (luật giờ giao thương, khoang) -> gd-character (hồ sơ) -> gd-economy (giá, Tally) -> gd-story (lời thoại) -> gd-ux (màn cảng) |
 | Nhân vật chính | gd-character (di chuyển, năng lượng) -> gd-tech (prototype thử feel) -> gd-combat (kỹ năng) -> gd-qa |
 | Cốt truyện | gd-story -> gd-character (khớp hồ sơ) -> GDM (khớp core loop) -> gd-qa |
 | Wireframe, FTUE | gd-ux -> vai giữ hệ thống (khớp luật) -> gd-qa |

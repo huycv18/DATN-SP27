@@ -676,7 +676,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | Giữ lãnh thổ (DL-G05, DL-M03) | Đứng chặn cửa một khoang, đẩy người chơi ra (0 Oxy, trong trạm không có Oxy) | Đưa mồi (vật phẩm nuôi của gd-items) để dụ ra, rồi tóm |
 
 - Trong trạm không có Oxy giảm, không có sát thương. Driftlife sổng không chết và không mất. Không có dụng cụ combat trong trạm (luật 7).
-- Con sổng nuốt và giữ hàng trong khoang nó đứng (hàng thô trong kho, hàng đã chế trong xưởng, hoặc kiện trên kệ). Hàng không mất: tóm được thì hàng nó giữ về chỗ cũ và con tự về ô nuôi. Bỏ mặc thì nó nuốt tiếp tới hết ca, hết ca con tự về và hàng về kho, kệ. Cái giá là hàng bị giữ không giao được trong ca (luật 46 của `tram-va-cang.md`). Số theo `tram-va-cang.md` bảng 2.8:
+- Con sổng nuốt và giữ hàng trong khoang nó đứng (hàng thô trong kho, hàng đã chế trong xưởng, hoặc kiện trên kệ). Hàng không mất: tóm được thì hàng nó giữ về chỗ cũ và con tự về ô nuôi. Bỏ mặc thì nó nuốt tiếp tới hết giờ giao thương, hết giờ giao thương con tự về và hàng về kho, kệ. Cái giá là hàng bị giữ không giao được trong giờ giao thương (luật 46 của `tram-va-cang.md`). Số theo `tram-va-cang.md` bảng 2.8:
 
 | Tham số | Giá trị | Khoảng an toàn | Chủ |
 |---|---|---|---|
@@ -686,7 +686,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 
 | # | Vấn đề | Lý do và bằng chứng | Phương án thay |
 |---|---|---|---|
-| PB1 | Khung mục 7 cho "bắt sống và nuôi" là kiểu chơi mới của chương 2, và MVP là chương 1. Vậy MVP không có bắt sống, không kiểm được K9 (bắt sống luôn đáng hơn) là luật làm game khác game săn thường | K9 và P2 là điểm khác biệt chính. Kho tri thức 20-combat N6: bắt sống phải có lý do kinh tế mới có người dùng, mà lý do kinh tế cần được thử sớm. Ca cảng MVP đã có hàng "Kiện mẫu Driftlife" (`tram-va-cang.md`) nhưng chưa có lồng sống | GDM đã xử, log dòng 49: Súng lưới cỡ S mở chương 1, nhãn MVP, cảng chương 1 có 1 loại hàng Driftlife sống. GDD đã sửa theo (luật 19 đến 25, bảng 3.3, tutorial) |
+| PB1 | Khung mục 7 cho "bắt sống và nuôi" là kiểu chơi mới của chương 2, và MVP là chương 1. Vậy MVP không có bắt sống, không kiểm được K9 (bắt sống luôn đáng hơn) là luật làm game khác game săn thường | K9 và P2 là điểm khác biệt chính. Kho tri thức 20-combat N6: bắt sống phải có lý do kinh tế mới có người dùng, mà lý do kinh tế cần được thử sớm. Giờ giao thương MVP đã có hàng "Kiện mẫu Driftlife" (`tram-va-cang.md`) nhưng chưa có lồng sống | GDM đã xử, log dòng 49: Súng lưới cỡ S mở chương 1, nhãn MVP, cảng chương 1 có 1 loại hàng Driftlife sống. GDD đã sửa theo (luật 19 đến 25, bảng 3.3, tutorial) |
 | PB2 | C8 nói máu Driftlife tăng theo số người, nhưng nếu chỉ tăng máu thì co-op khóa choáng mãi | Choáng cộng từ nhiều nguồn cùng lúc | Đã xử trong hệ thống: tăng cả ngưỡng choáng, ngưỡng mê và DR. Không cần đổi khung |
 
 ## Điểm tự quyết

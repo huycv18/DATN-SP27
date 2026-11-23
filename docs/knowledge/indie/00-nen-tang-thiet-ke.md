@@ -14,7 +14,7 @@ Mã nguồn trong ngoặc vuông, ví dụ [S1], trỏ tới mục 6.
 | Design pillar | 3 đến 5 câu về trải nghiệm, dùng làm bộ lọc tính năng [S9][S10] | Pillar do Lead chốt, mọi đề xuất phải trả lời "phục vụ pillar nào" |
 | Core loop | Chuỗi hành động lặp ngắn nhất tạo ra giá trị [S11][S12] | Bay ra tầng, nhặt, cắt, choáng và bắt bằng lưới, quay về |
 | Meta loop | Vòng dài cho lý do quay lại core loop: tiến trình, mở khóa [S11][S12] | Bán món lấy ₵, mua nâng cấp và đồ độ, bay xa hơn |
-| Mid loop | Lớp giữa giữa core và meta, một số tài liệu tách riêng, số khác gộp [S11] | Một ngày: chuyến bay ban ngày cộng ca quán ban tối |
+| Mid loop | Lớp giữa giữa core và meta, một số tài liệu tách riêng, số khác gộp [S11] | Một ngày: chuyến bay ban ngày cộng giờ giao thương quán ban tối |
 | SDT (Self-Determination Theory) | Động lực bền đến từ thỏa mãn 3 nhu cầu Competence, Autonomy, Relatedness [S3] | Thước đo cho từng hệ thống, xem nguyên lý 3 |
 | Competence | Cảm giác mình giỏi lên và kiểm soát được [S3] | Bay mượt hơn, bắt nhanh hơn qua từng ngày |
 | Autonomy | Cảm giác được chọn có nghĩa [S3] | Chọn đường bay, chọn món, chọn nâng cấp |
@@ -31,12 +31,12 @@ Mã nguồn trong ngoặc vuông, ví dụ [S1], trỏ tới mục 6.
 | Scope / feature creep | Phạm vi dự án, và việc phạm vi phình dần ngoài kế hoạch [S17][S18] | Mọi thứ ngoài MVP vào backlog |
 | MVP | Bản nhỏ nhất chơi trọn vòng lõi để kiểm giả thuyết thiết kế [S19] | 1 tầng, 3 quái, 7 công thức, 2 loài khách, chơi trọn 1 ngày |
 | Playtest | Cho người chơi thật chơi để kiểm giả thuyết, quan sát hơn hỏi [S20][S21][S22] | Có build thì gd-qa chạy `/playtest`, trước đó thử bằng prototype |
-| Playcentric | Đưa người chơi vào quy trình từ ý tưởng tới hoàn thành, thử sớm và lặp [S22] | Prototype jetpack và ca quán trước khi viết GDD chi tiết |
+| Playcentric | Đưa người chơi vào quy trình từ ý tưởng tới hoàn thành, thử sớm và lặp [S22] | Prototype jetpack và giờ giao thương quán trước khi viết GDD chi tiết |
 
 ## 2. Nguyên lý
 
 **N1. Thiết kế từ Aesthetics ngược về Mechanics.** Người chơi gặp game từ phía Aesthetics, designer chỉ chạm được Mechanics, nên phải chọn cảm xúc đích trước rồi dò luật [S1]. Không áp cứng khi đang thử một mechanic mới chưa rõ cảm xúc, lúc đó prototype trước rồi gọi tên Aesthetics sau. MDA bị phê bình là bỏ qua phần hình ảnh, âm thanh và truyện [S2], nên đừng coi MDA là đủ.
-Áp vào Space Salvage: mỗi GDD hệ thống mở đầu bằng câu Aesthetics đích, ví dụ "ca quán là Submission có chút Challenge".
+Áp vào Space Salvage: mỗi GDD hệ thống mở đầu bằng câu Aesthetics đích, ví dụ "giờ giao thương quán là Submission có chút Challenge".
 
 **N2. Pillar là bộ lọc, không phải khẩu hiệu.** Pillar ít (3 đến 5), nói về trải nghiệm chứ không về tính năng, và dùng để gạt tính năng [S9][S10]. Đổi pillar giữa chừng chỉ khi playtest chứng minh pillar sai [S10b].
 Áp vào Space Salvage: GDM giữ pillar ở ONE PAGE, gd-qa dùng câu "phục vụ pillar nào" khi chấm.
@@ -63,7 +63,7 @@ Mã nguồn trong ngoặc vuông, ví dụ [S1], trỏ tới mục 6.
 Áp vào Space Salvage: MVP khóa ở CLAUDE.md, mọi ý mới vào `production/BACKLOG.md`.
 
 **N10. Playtest sớm, nhỏ, nhiều vòng, và quan sát hơn hỏi.** Valve coi thiết kế là giả thuyết và playtest là thí nghiệm, và lưu ý người chơi không luôn hiểu đúng vì sao mình làm vậy [S20][S21]. Nhiều vòng nhỏ có sửa giữa các vòng tìm được nhiều lỗi hơn một vòng lớn [S23]. Không thay được đo số bằng sim cho cân bằng ₵.
-Áp vào Space Salvage: playtest cảm giác (jetpack, ca quán) bằng người, cân bằng ₵ bằng sim, hai việc không thay nhau.
+Áp vào Space Salvage: playtest cảm giác (jetpack, giờ giao thương quán) bằng người, cân bằng ₵ bằng sim, hai việc không thay nhau.
 
 ## 3. Con số tham chiếu
 
@@ -128,7 +128,7 @@ Lưu ý: số usability đo cho phần mềm, áp cho game ở mức tìm lỗi 
 - [S14] Risk and reward, the engine of engaging decisions: https://bugnet.io/blog/risk-and-reward-the-engine-of-engaging-decisions và Push Your Luck (NoobFeed): https://www.noobfeed.com/articles/push-luck-risk-reward-loops-modern-games
 - [S15] Steve Swink, Game Feel (2008), định nghĩa qua bài tổng quan: https://ar5iv.arxiv.org/html/2011.09201 và https://eolt.org/articles/game-feel/
 - [S16] Jan Willem Nijman, The Art of Screenshake (INDIGO 2013), tường thuật Game Developer: https://gamedeveloper.com/design/vlambeer-co-founder-shares-advice-on-building-better-action-games và danh sách Kenney: https://kenney.nl/learn/must-see-videos-for-indie-developers
-- [S17] Politowski và cộng sự, Game Industry Problems: an Extensive Analysis of the Gray Literature: https://arxiv.org/abs/2009.02440v2 và tin Concordia https://www.concordia.ca/news/stories/2021/04/07/the-video-game-industrys-problems-are-mostly-due-to-people-not-technology-concordia-researchers-argue.html
+- [S17] Politowski và cộng sự, Game Industry Problems: an Extensive Analysis of the Gray Literature: https://arxiv.org/abs/2009.02440v2 và tin Concordia https://www.concordia.giờ giao thương/news/stories/2021/04/07/the-video-game-industrys-problems-are-mostly-due-to-people-not-technology-concordia-researchers-argue.html
 - [S18] Petrillo và cộng sự, What went wrong? A survey of problems in game development (2009): https://api.crossref.org/works/10.1145%2F1486508.1486521 và Game Developer, What Went Wrong? Learning From Past Postmortems: https://www.gamedeveloper.com/pc/feature-what-went-wrong-learning-from-past-postmortems-
 - [S19] Derek Yu, Finishing a Game: https://gamedev.net/news/4293-finishing-a-game/ và Game Developer: https://gamedeveloper.com/design/-i-spelunky-i-designer-want-to-be-an-indie-then-learn-how-to-finish-games-reliably
 - [S20] Mike Ambinder, Valve's Approach to Playtesting, GDC 2009: https://cdn.fastly.steamstatic.com/apps/valve/2009/GDC2009_ValvesApproachToPlaytesting.pdf

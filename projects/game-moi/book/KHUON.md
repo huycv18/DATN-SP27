@@ -24,7 +24,7 @@ book/
 | II.3 | `03-map-va-chuyen.md` | Map and Expeditions | Map, chuyến ra ngoài, hazard | `map.md` | gd-world |
 | II.4 | `04-combat-driftlife.md` | Combat and Driftlife | Combat, bắt sống, Driftlife, The Wardens, boss | `combat-driftlife.md` | gd-combat |
 | II.5 | `05-vat-pham.md` | Items and Crafting | Tài nguyên, vật phẩm, dụng cụ, công thức, thùng | `vat-pham.md` | gd-items |
-| II.6 | `06-tram-va-cang.md` | Station and Port | Khoang, người vớt, ca cảng, Hạng cảng, nuôi | `tram-va-cang.md` | gd-quan (mục mẫu) |
+| II.6 | `06-tram-va-cang.md` | Station and Port | Khoang, người vớt, giờ giao thương, Hạng cảng, nuôi | `tram-va-cang.md` | gd-quan (mục mẫu) |
 | II.7 | `07-kinh-te-tien-trinh.md` | Economy and Progression | Tally, giá, nâng cấp, 5 chương | `kinh-te-tien-trinh.md` | gd-economy |
 | II.8 | `08-co-op-va-luu.md` | Co-op and Saving | Co-op 2 người MVP, vào giữa chừng, lưu | `ky-thuat.md` mục 2.2 tới 2.3b | gd-tech |
 | II.9 | `09-cot-truyen-ket-thuc.md` | Story and Ending | Bối cảnh, 5 chương truyện, kết thúc trạm rời neo | `cot-truyen.md` | gd-story |
@@ -54,7 +54,7 @@ Mọi tiêu đề (tên Doc, tên phần, `##`, `###`) viết tiếng Anh, thân
 <Khác biệt khi co-op 2 người nếu có. Bảng mục tiêu số của hệ thống và kết quả sim nếu đã có. Thứ sim chưa đo được thì nói chờ playtest.>
 
 ### II.n.<chót>. Edge Cases
-<Bảng Tình huống, Phán quyết, ít nhất 4 dòng, chọn ca dev hay hỏi nhất.>
+<Bảng Tình huống, Phán quyết, ít nhất 4 dòng, chọn giờ giao thương dev hay hỏi nhất.>
 
 ### II.n.z. Post-MVP
 <Một gạch đầu dòng mỗi phần của bản đủ, không giải thích luật.>

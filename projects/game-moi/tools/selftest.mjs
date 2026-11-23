@@ -243,7 +243,7 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
       `### II.${n}.1. Overview`, 'Một vòng chơi của hệ thống mẫu.', '',
       `### II.${n}.${hong ? 3 : 2}. Luật thứ nhất`, ...thun, 'Chi tiết dữ liệu: tab Customer trên Sheet GDD.', '',
       '```mermaid', 'flowchart TD', '  A[Tàu cập] --> B{Có chỗ}', '  B -->|Có| C[Nhận hàng]', '```',
-      hong ? '' : `*Hình II.${n}.2 - Ca cảng một tàu*`, '',
+      hong ? '' : `*Hình II.${n}.2 - Giờ giao thương một tàu*`, '',
       '[CHỜ ẢNH: màn cảng từ build]', `*Hình II.${n}.3 - Màn cảng*`, '',
       `### II.${n}.z. Post-MVP`, '- Tàu thứ ba', ...(hong ? ['Có dấu chấm phẩy; và gạch dài — sai, mã STY-501, tab Khong Co'] : []),
     ].join('\n') + '\n';
@@ -272,7 +272,7 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
       writeFileSync(join(goc, 'phan-2', '06-x.md'), muc(6));
       const g1 = GB.gop(goc);
       assert.equal(g1.thieu.length, 8);
-      assert.ok(/\*Hình 1 - Ca cảng/.test(g1.md) && /\*Hình 2 - Màn cảng/.test(g1.md) && !/Hình II\.6/.test(g1.md));
+      assert.ok(/\*Hình 1 - Giờ giao thương/.test(g1.md) && /\*Hình 2 - Màn cảng/.test(g1.md) && !/Hình II\.6/.test(g1.md));
     } finally { rmSync(goc, { recursive: true }); }
   });
 }

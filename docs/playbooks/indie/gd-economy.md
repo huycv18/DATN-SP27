@@ -54,7 +54,7 @@ Số hiện hành chỉ nằm ở tab spec (Shop, Upgrade). Balance Sheet không
 - [ ] Kịch bản tệ: cuối ngày vẫn đủ ₵ mua nhiên liệu chuyến tối thiểu hôm sau (không kẹt vòng phí cứu hộ và nợ).
 - [ ] Mỗi bậc nâng cấp ghi rõ "mở khả năng" hay "chỉ là số". Có ít nhất một bậc mở khả năng trong phạm vi MVP.
 - [ ] Số ngày để mua mỗi bậc nâng cấp in từ sim cho cả 3 kịch bản.
-- [ ] Tham số hành vi (tỉ lệ bắt được, số khách mỗi ca, tỉ lệ tip) đánh `[GIẢ ĐỊNH]` và có dải nhạy.
+- [ ] Tham số hành vi (tỉ lệ bắt được, số khách mỗi giờ giao thương, tỉ lệ tip) đánh `[GIẢ ĐỊNH]` và có dải nhạy.
 - [ ] Số chưa có trong `so-hien-hanh.md` đánh `[GIẢ ĐỊNH]`. Số Lead đổi thì số cũ vào `cam`.
 - [ ] Đổi số thì có dòng Balance Sheet (cũ, kết quả thử, mới, quyết định).
 - [ ] Không có tiền tệ thứ hai, XP, ads, IAP. Không đổi luật để chỉnh economy.
@@ -69,7 +69,7 @@ Số hiện hành chỉ nằm ở tab spec (Shop, Upgrade). Balance Sheet không
 | Vòng xoáy thua: hết năng lượng, mất phí cứu hộ, nợ, không đủ nhiên liệu, chuyến sau càng tệ | Roguelite nhẹ, action exploration | Bất biến sàn: kịch bản tệ vẫn mua được chuyến tối thiểu. Trần nợ và cách trả nợ đặt bằng số, luật nợ hỏi GDM |
 | Tràn tiền giữa game: thu nhập tăng theo nâng cấp, sink cố định nên ₵ mất nghĩa | Mọi game có tiến độ | Giá nâng cấp tăng mũ theo bậc, sink hơi lớn hơn source (Cook). Sim nhiều ngày ở kịch bản tốt |
 | Nâng cấp chỉ cộng số, người chơi không thấy khác | Action exploration | Xen bậc mở khả năng (bay xa hơn, khoang lớn hơn, lưới bắt loài lớn hơn) giữa các bậc số. Cấu trúc tham chiếu: tiền nâng thiết bị để lặn sâu hơn, lâu hơn, chở nhiều hơn (Dave the Diver, https://en.wikipedia.org/wiki/Dave_the_Diver) |
-| Hai nửa không nối: quán mua đủ nguyên liệu ở shop nên không cần bay, hoặc bay nhặt nhiều mà quán không tiêu hết | Thám hiểm + quán | Nguyên liệu shop chỉ là phụ, mỗi công thức cần vật ngoài không gian. Sim so lượng nhặt một chuyến với sức bán một ca |
+| Hai nửa không nối: quán mua đủ nguyên liệu ở shop nên không cần bay, hoặc bay nhặt nhiều mà quán không tiêu hết | Thám hiểm + quán | Nguyên liệu shop chỉ là phụ, mỗi công thức cần vật ngoài không gian. Sim so lượng nhặt một chuyến với sức bán một giờ giao thương |
 | Số ghi ở hai nơi lệch nhau, Surplus chép nhầm | Mọi GDD Sheet | Một bảng giá ở Shop, Surplus do sim, validator gd-tech (khuôn Sheet mục 7) |
 | Thiết kế economy dài hạn trước khi loop một ngày vui | Indie nhỏ | Bám MVP: chỉ cân ngày 1 và nhịp mua bậc nâng cấp đầu. Ngày 2 trở đi là phụ lục `[GIẢ ĐỊNH]` |
 
@@ -81,7 +81,7 @@ Số hiện hành chỉ nằm ở tab spec (Shop, Upgrade). Balance Sheet không
 | Năng lượng bộ đồ về 0, drone cứu hộ, phí, nợ | Bất biến sàn, dải nhạy | Phí bao nhiêu để mất năng lượng đau mà không kẹt vòng xoáy |
 | Khoang hàng giới hạn ô | Cost curve theo ô | ₵ kỳ vọng trên một ô của từng vật nhặt và sinh vật, lựa chọn bỏ gì có ý nghĩa |
 | 7 công thức (chia món / đồ độ chưa chốt) | Cost curve, value chain | Giá theo nguyên liệu, độ hiếm, công chế. Không món trội |
-| 2 loài khách, tip | Value chain (điểm neo ở quán) | Giá chịu trả và tip theo loài, số liệu khách mỗi ca từ gd-quan |
+| 2 loài khách, tip | Value chain (điểm neo ở quán) | Giá chịu trả và tip theo loài, số liệu khách mỗi giờ giao thương từ gd-quan |
 | Nâng cấp | Giá tăng mũ, mở khả năng | Bậc 1 mua được sau bao nhiêu ngày ở 3 kịch bản |
 | PROCESSING | Nhịp mở khóa | Ngày 1 người chơi học gì, mở gì, mua gì đầu tiên |
 
@@ -89,7 +89,7 @@ Việc đầu tiên khi GDM giao (đợt chuyển nội dung Sheet):
 1. Kéo `v0.1 ECONOMIC`, `v0.1 SHOP`, `v0.1 UPGRADES` về `gdd/sheet/`, đánh dấu mọi số "Đề xuất - chưa chốt" là `[GIẢ ĐỊNH]`. Không dùng mục "MÔ PHỎNG LỢI NHUẬN MỘT NGÀY" làm số chốt.
 2. Chuyển sang cột tab mới Shop, Upgrade, ECONOMIC theo khuôn, giá chỉ ở Shop.
 3. Lập value chain và bảng source / sink từ nội dung đó, liệt kê mắt xích đứt và số không có công thức.
-4. Tạo `sim/economy/tham-so.json` từ mẫu `economy-sim`, đặt đề gd-tech cho sim hành vi một chuyến bay và một ca bán.
+4. Tạo `sim/economy/tham-so.json` từ mẫu `economy-sim`, đặt đề gd-tech cho sim hành vi một chuyến bay và một giờ giao thương bán.
 5. Hỏi GDM một câu nếu chặn: bậc nâng cấp đầu phải mua được cuối ngày 1 (MVP chơi trọn 1 ngày) hay sau vài ngày.
 
 ## 7. Phối hợp
@@ -100,7 +100,7 @@ Việc đầu tiên khi GDM giao (đợt chuyển nội dung Sheet):
 | gd-items | Danh sách vật phẩm, công thức, độ hiếm, nguồn nhận, nguồn tiêu (Salvage, ITEM LIST, Recipe) |
 | gd-world | Sản lượng salvage một chuyến, quãng bay, năng lượng tiêu theo tầng |
 | gd-combat | Độ khó bắt hoặc hạ từng quái, dùng làm hệ số rủi ro trong giá |
-| gd-quan | Số khách mỗi ca, kiên nhẫn, luật tip, sức bán một ca |
+| gd-quan | Số khách mỗi giờ giao thương, kiên nhẫn, luật tip, sức bán một giờ giao thương |
 | gd-character | Hồ sơ loài khách (khẩu vị, sức chi), hiệu ứng nâng cấp lên nhân vật |
 | gd-tech | Output sim hành vi, validator giá chéo tab |
 

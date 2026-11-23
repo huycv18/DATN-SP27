@@ -71,7 +71,7 @@ I('SMP-292', 'Mẫu boss Giữa', 'Tempest Gulper Sample', 'Mẫu', DB, 2, 65, M
 const eHa = (s) => s.n * items.find((i) => i.id === s.nlsId).gtd + s.p * items.find((i) => i.id === s.dacId).gtd;
 const r2 = (x) => Math.round(x * 100) / 100;
 for (const s of species) {
-  if (s.bat === 'LIV') I(s.livId, `Mẫu sống ${s.ma} ${s.ten}`, `${s.ma} Live Specimen`, 'Mẫu sống', s.dai === G ? IG : HI, 'kéo', null, s.dai, [111, 112, 113].includes(s.so) ? MVP : SAU, { nguon: s.size === 'S' ? `Bắt sống ${s.ma} bằng Súng lưới (K9, từ chương 1)` : s.so === 114 ? `Bắt sống ${s.ma} bằng Súng gây mê rồi Phao kéo (K9, chương 2, miễn choáng)` : `Bắt sống ${s.ma} bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)`, sink: `${s.nuoi ? 'Nuôi (chương 2), ' : ''}bán ở ca cảng (lồng sinh vật sống), nghiên cứu (chương 2)` });
+  if (s.bat === 'LIV') I(s.livId, `Mẫu sống ${s.ma} ${s.ten}`, `${s.ma} Live Specimen`, 'Mẫu sống', s.dai === G ? IG : HI, 'kéo', null, s.dai, [111, 112, 113].includes(s.so) ? MVP : SAU, { nguon: s.size === 'S' ? `Bắt sống ${s.ma} bằng Súng lưới (K9, từ chương 1)` : s.so === 114 ? `Bắt sống ${s.ma} bằng Súng gây mê rồi Phao kéo (K9, chương 2, miễn choáng)` : `Bắt sống ${s.ma} bằng choáng hoặc mê rồi Phao kéo (K9, chương 2)`, sink: `${s.nuoi ? 'Nuôi (chương 2), ' : ''}bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)` });
   if (s.bat === 'BPS') I(s.bpsId, `Mẫu sinh thiết ${s.ma} ${s.ten}`, `${s.ma} Biopsy`, 'Mẫu sinh thiết', HI, 1, s.bpsFix ?? null, s.dai, SAU, { nguon: `Kim sinh thiết trên ${s.ma} (loài L, chương 2)`, sink: 'Nghiên cứu (Hồ sơ loài, gd-combat)' });
   if (s.nuoi) I(s.bioId, `Sản phẩm nuôi ${s.ma} ${s.ten}`, `${s.ma} Farm Yield`, 'Sản phẩm nuôi', s.dai === G ? TH : IG, 1, s.dai === G ? 3 : s.dai === M ? 7 : 14, s.dai, SAU, { nguon: `Khoang nuôi ${s.ma} (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)` });
 }
@@ -101,7 +101,7 @@ D('CON-107', 'Kim sinh thiết', 'Biopsy Needle', 'Vật tiêu hao', IG, 1, G, S
 D('FED-101', 'Thức ăn nuôi Gần', 'Near Feed', 'Thức ăn nuôi', TH, 1, G, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
 D('FED-201', 'Thức ăn nuôi Giữa', 'Mid Feed', 'Thức ăn nuôi', TH, 1, M, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
 D('FED-301', 'Thức ăn nuôi Xa', 'Far Feed', 'Thức ăn nuôi', TH, 1, X, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
-const CG = (id, ten, en, hiem, dai, nhan, o = {}) => D(id, ten, en, 'Kiện', hiem, 'kho', dai, nhan, { sink: 'Bán theo thùng ở ca cảng (K13)', ...o });
+const CG = (id, ten, en, hiem, dai, nhan, o = {}) => D(id, ten, en, 'Kiện', hiem, 'kho', dai, nhan, { sink: 'Bán theo thùng ở giờ giao thương (K13)', ...o });
 CG('CGO-101', 'Kiện phế liệu', 'Scrap Crate', TH, G, MVP, { ghi: 'Cỡ Vừa' });
 CG('CGO-102', 'Kiện cáp', 'Cable Crate', TH, G, MVP, { ghi: 'Cỡ Nhỏ' });
 CG('CGO-103', 'Kiện quặng', 'Ore Crate', TH, G, MVP, { ghi: 'Cỡ Lớn' });
@@ -355,9 +355,9 @@ for (let pass = 0; pass < 8; pass++) {
   }
 }
 const LONG = ['CGO-121', 'CGO-221', 'CGO-321'], NGUYEN = ['CGO-131', 'CGO-421'], THUNG = 2.5; // 1 kiện = 2,5 thùng (K13, đợt 9). Lồng sống, Bản sao dữ liệu, Kiện tin mật bán nguyên cái (Lead 2026-11-20)
-for (const it of items) if (NGUYEN.includes(it.id)) it.sink = 'Bán nguyên cái ở ca cảng (K13)';
-// Đợt 9: đóng kiện thành đóng thùng tự động lúc Mở ca, không tốn thời gian ca. Lồng sống làm tay ngoài ca, xong trước Mở ca.
-for (const r of rec) if (r.noi === CA) { if (r.loai === 'CGOL') r.noi = 'Cảng (trước Mở ca)'; else { r.noi = 'Cảng (tự động lúc Mở ca)'; r.t = 0; } }
+for (const it of items) if (NGUYEN.includes(it.id)) it.sink = 'Bán nguyên cái ở giờ giao thương (K13)';
+// Đợt 9: đóng kiện thành đóng thùng tự động lúc Mở giao thương, không tốn thời gian ca. Lồng sống làm tay ngoài ca, xong trước Mở giao thương.
+for (const r of rec) if (r.noi === CA) { if (r.loai === 'CGOL') r.noi = 'Cảng (trước Mở giao thương)'; else { r.noi = 'Cảng (tự động lúc Mở giao thương)'; r.t = 0; } }
 const thung = (id) => (!id.startsWith('CGO-') ? '' : LONG.includes(id) || NGUYEN.includes(id) ? ' (1 đơn vị bán)' : ` (${String(THUNG).replace('.', ',')} thùng)`);
 const RANGE = { COM: [1.25, 1.5], CGOT: [1, 1], CGOF: [1.1, 1.25], CGOD: [1.5, 2.5], CON: [1, 1], FOD: [1, 1] };
 for (const r of rec) {
@@ -414,7 +414,7 @@ const parts = {};
 parts.ITEM = tbl(['Item ID', 'Tên (VI / EN [TẠM])', 'Nhóm', 'Độ hiếm', 'Khối', 'GTĐ', 'Dải', 'Nguồn nhận', 'Nguồn tiêu', 'Nhãn'],
   items.map((i) => [i.id, `${i.ten} / ${i.en}`, i.nhom, i.hiem, f(i.khoi, 0), f(i.gtd), i.dai, i.nguonAuto || '-', i.sinkAuto || '-', i.nhan]));
 parts.RECIPE = tbl(['Recipe ID', 'Tên', 'Nơi chế', 'Đầu vào', 'Đầu ra', 'Thời gian (giây)', 'Mở bằng', 'Σ GTĐ vào', 'GTĐ ra', 'Hệ số', 'Nhãn'],
-  rec.filter((r) => !r.ra?.nc).map((r) => [r.id, r.ten, r.noi, r.vao.map(idList).join(', ') + (r.giu ? `. Giữ nguyên, không tiêu: ${r.giu}` : ''), r.ra.tol ? 'Mở khóa dụng cụ cho nhóm' : `${r.ra[1]} x ${r.ra[0]}${thung(r.ra[0])}`, r.t === 'đêm' ? 'qua đêm' : r.t === 0 ? 'lúc Mở ca' : f(r.t, 0), r.mo, f(r.sum), f(r.out), r.mReal ? f(r.mReal, 2) : '-', r.nhan]));
+  rec.filter((r) => !r.ra?.nc).map((r) => [r.id, r.ten, r.noi, r.vao.map(idList).join(', ') + (r.giu ? `. Giữ nguyên, không tiêu: ${r.giu}` : ''), r.ra.tol ? 'Mở khóa dụng cụ cho nhóm' : `${r.ra[1]} x ${r.ra[0]}${thung(r.ra[0])}`, r.t === 'đêm' ? 'qua đêm' : r.t === 0 ? 'lúc Mở giao thương' : f(r.t, 0), r.mo, f(r.sum), f(r.out), r.mReal ? f(r.mReal, 2) : '-', r.nhan]));
 parts.UPG = tbl(['Nâng cấp', 'Bậc', 'Lớp chi phí', 'Đầu vào (vật liệu)', 'Σ GTĐ vào', 'Mục tiêu 25 x 1,8^(lớp-2)', 'Mở bằng', 'Nhãn'],
   rec.filter((r) => r.ra?.nc).map((r) => [r.id, r.id.split('-')[2], r.ra.bac, r.vao.map(idList).join(', '), f(r.sum), f(r.tgt), r.mo, r.nhan]));
 parts.TOOL = tbl(['ID', 'Tên (VI / EN [TẠM])', 'Vai trò', 'Cách có', 'Công dụng và gating', 'Nhãn'], tools.map((t) => [t[0], `${t[1]} / ${t[2]}`, t[3], t[4], t[6], t[5]]));
@@ -511,7 +511,7 @@ if (process.argv.includes('--tsv')) {
     const rows = [
       ['Type', r.noi],
       ['Ingredients', r.vao.map(ing).join('\n') + (r.giu ? `\nGiữ nguyên, không tiêu: ${r.giu}` : '')],
-      ['Output', `${outTxt}\nThời gian: ${r.t === 'đêm' ? 'qua đêm' : r.t === 0 ? 'đóng lúc Mở ca, không tốn thời gian ca' : f(r.t, 0) + ' giây'}`],
+      ['Output', `${outTxt}\nThời gian: ${r.t === 'đêm' ? 'qua đêm' : r.t === 0 ? 'đóng lúc Mở giao thương, không tốn thời gian ca' : f(r.t, 0) + ' giây'}`],
       ['Unlock', `${r.mo}. Nhãn: ${r.nhan}`],
     ];
     rows.forEach((rw, k) => T.Recipe.push([k === 0 ? r.id : '', k === 0 ? r.ten : '', rw[0], rw[1], k === 0 ? REF + ' mục 3' : '']));

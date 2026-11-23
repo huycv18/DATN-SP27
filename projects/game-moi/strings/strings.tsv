@@ -58,7 +58,7 @@ btn.stay	Ở lại trạm	14	UI-11
 btn.craft	Chế	8	UI-13
 btn.upgrade	Nâng cấp	12	UI-16
 btn.order	Đặt hàng	12	UI-15
-btn.open_shift	Mở ca	8	UI-14
+btn.open_shift	Mở bán	8	UI-14
 btn.pin_group	Ghim hàng	18	UI-14
 btn.sleep	Vào buồng ngủ	18	UI-44
 btn.retry	Thử lại	10	UI-01
@@ -80,7 +80,7 @@ title.map	Bản đồ chuyến	16	UI-33
 title.choking	Ngạt	8	UI-34
 title.pulled	Bị kéo về	14	UI-35
 title.home	Về an toàn	14	UI-36
-title.shift_end	Kết ca	10	UI-43
+title.shift_end	Tổng kết	10	UI-43
 title.day_end	Cuối ngày	12	UI-44
 title.rank_up	Lên Hạng cảng	16	UI-43
 title.paused	Tạm dừng	12	UI-50
@@ -120,7 +120,7 @@ state.no_ships	Hôm nay không có tàu	28	UI-14
 state.first_ship	Chờ tàu đầu tiên	24	UI-40
 state.no_ping	Hết ping	12	HUD-16
 state.ping_wait	Chờ ping tự hết	18	HUD-16
-state.shift_on	Ca đang chạy	16	UI-14
+state.shift_on	Đang giao thương	16	UI-14
 state.unset	Chưa gán	12	UI-52
 state.fixed	Cố định	12	UI-52
 state.next_chapter	Chương sau	14	UI-18
@@ -149,11 +149,11 @@ lbl.being_shared	Đang được chia Oxy	24	UI-34
 lbl.quest_back	Vật nhiệm vụ về chỗ cũ	32	UI-35
 lbl.trip_of	Chuyến {n}/{m}	16	UI-11
 lbl.no_trips	Hôm nay hết chuyến ra ngoài	36	UI-11
-lbl.open_shift_warn	Mở ca là hết ra ngoài hôm nay	40	UI-14
-lbl.skip_shift_warn	Bỏ ca cũng hết ra ngoài hôm nay	40	UI-14
+lbl.open_shift_warn	Mở bán là hết ra ngoài hôm nay	40	UI-14
+lbl.skip_shift_warn	Nghỉ bán cũng hết ra ngoài hôm nay	40	UI-14
 lbl.for_group	Áp cho cả nhóm	20	UI-16
 lbl.shop_soon	Shop sắp có hàng	24	UI-15
-btn.skip_shift	Bỏ ca	8	UI-14
+btn.skip_shift	Nghỉ bán	8	UI-14
 btn.cancel	Hủy	8	HTR-01
 btn.leave_anyway	Vẫn thoát	12	UI-50
 btn.menu_main	Về menu chính	18	UI-50
@@ -179,9 +179,9 @@ state.wait_update	Chờ cập nhật	16	UI-10
 state.no_samples	Chưa có mẫu	14	UI-21
 state.no_blueprints	Hết bản thiết kế	20	UI-21
 lbl.shift_blocked	Còn người đang ở ngoài chuyến	36	UI-14
-state.shift_done	Hôm nay đã có ca	24	UI-14
-hud.confirm.shift	Mở ca sau {s} giây	28	HTR-01
-hud.confirm.skip	Bỏ ca sau {s} giây	28	HTR-01
+state.shift_done	Hôm nay đã giao thương	24	UI-14
+hud.confirm.shift	Mở giao thương sau {s} giây	28	HTR-01
+hud.confirm.skip	Nghỉ bán sau {s} giây	28	HTR-01
 story.box	{câu thoại}	80	UI-53
 story.radio	{dòng radio}	60	UI-30
 story.bubble	{lời bong bóng}	60	UI-40
@@ -193,7 +193,7 @@ hud.oxy.refill_max	Đã hồi tối đa chuyến này	32	HUD-15
 err.no_use_choking	Không dùng được khi ngạt	28	HUD-15
 prompt.use_item	{key} dùng {item}	28	UI-30
 confirm.leave_host	Chủ phòng thoát thì phiên kết thúc	44	UI-50
-confirm.leave_shift	Thoát giữa ca sẽ mất ca đang dở	40	UI-50
+confirm.leave_shift	Thoát giữa chừng sẽ mất lượt đang dở	40	UI-50
 tut.t36	{use} dùng vật tiêu hao hồi Oxy	40	T36
 story.line	{lời nhân vật}	60	UI-10
 tut.t01	{move} đi trái phải, {climb} leo thang	40	T01
@@ -216,7 +216,7 @@ tut.t17	Chọn công thức rồi bấm Chế	40	T17
 tut.t18	Choáng rồi, giữ {finish} kết nhanh	40	T18
 tut.t19	Súng lưới bắt loài nhỏ còn sống	40	T19
 tut.t20	Chờ cứu hoặc bay tới cửa khí	40	T20
-tut.t21	Xem danh mục rồi bấm Mở ca	40	T21
+tut.t21	Xem danh mục rồi bấm Mở giao thương	40	T21
 tut.t22	Tàu gọi món, thanh là thời gian chờ	40	T22
 tut.t23	{interact} nhặt thùng ở ô quầy sáng	40	T23
 tut.t24	Tới cửa neo cùng số, {interact} giao	40	T24
@@ -227,7 +227,7 @@ tut.t28	Đặt hàng cuối ngày, hàng tới sáng mai	40	T28
 tut.t29	Manh mối đã ghi vào Sổ tay	40	T29
 tut.t30	Bấm {skip} để bỏ qua cảnh	40	T30
 tut.t37	Món đặt trước phải có trong danh mục	40	T37
-hud.shift.left	Ca còn {m}:{s}	16	HCH-01
+hud.shift.left	Còn {m}:{s}	16	HCH-01
 hud.tally.shift	Tally {n}	14	HCH-02
 hud.tip	Tip {n}	12	HCH-02
 hud.port_score	Điểm cảng {n}	16	HCH-03
@@ -253,8 +253,8 @@ toast.pump	+{n} bơm khí	16	HCH-12
 btn.delete_world	Xóa thế giới	16	UI-01
 title.confirm_delete	Xóa thế giới {name}?	36	UI-54
 title.confirm_menu	Về menu chính?	20	UI-54
-title.confirm_open_shift	Mở ca bây giờ?	20	UI-54
-title.confirm_skip_shift	Bỏ ca hôm nay?	20	UI-54
+title.confirm_open_shift	Mở bán bây giờ?	20	UI-54
+title.confirm_skip_shift	Nghỉ bán hôm nay?	20	UI-54
 lbl.no_undo	Không hoàn tác được	24	UI-54
 btn.delete	Xóa	8	UI-54
 hud.boss.phase	Pha {n}/{m}	12	HUD-17
@@ -281,7 +281,7 @@ lbl.pre_line	{name} đặt 1 {item}, giá x{k}	44	UI-14
 lbl.pre_ok	Đã có trong danh mục	28	UI-14
 lbl.pre_missing	Chưa có trong danh mục, mất đơn đặt trước	48	UI-14
 lbl.ships_by_players	Số tàu theo số người đang chơi	40	UI-14
-lbl.packed_note	Thông dịch viên đóng thùng khi mở ca	44	UI-14
+lbl.packed_note	Thông dịch viên đóng thùng khi mở bán	44	UI-14
 lbl.res.served	Tàu phục vụ xong	24	UI-43
 lbl.res.left	Tàu rời khi chưa giao	28	UI-43
 lbl.res.skipped	Tàu không tới vì hết hàng	32	UI-43
@@ -294,6 +294,6 @@ lbl.res.back	Hàng về kho	16	UI-43
 lbl.res.sold_out	Bán hết	10	UI-43
 state.pre_done	Đã giao	10	UI-43
 state.pre_nostock	Không có trong danh mục	28	UI-43
-lbl.res.end_time	Hết giờ ca	14	UI-43
+lbl.res.end_time	Hết giờ	14	UI-43
 lbl.res.end_last	Tàu cuối đã rời	20	UI-43
 lbl.res.end_stock	Hết hàng trong danh mục	28	UI-43

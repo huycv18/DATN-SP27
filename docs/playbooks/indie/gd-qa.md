@@ -71,7 +71,7 @@ Phần này tổng hợp từ bài học nội bộ và kinh nghiệm nghề chu
 | Soft lock ở chuỗi chết, nợ, túi đầy | Hết năng lượng bộ đồ, drone cứu hộ kéo về, phí vượt ₵ thì kẹt vòng lặp. Khoang hàng đầy không nhặt được món cần | Bộ biên bắt buộc ở checklist. Mỗi trạng thái xấu phải có đường ra |
 | Vòng lặp tiền vô hạn | Giá bán món cao hơn giá nguyên liệu và nhiên liệu cộng lại ở mức bỏ qua thu nhặt | Quét giá chéo Shop, Recipe, ITEM LIST. Chạy sim 3 kịch bản (thận trọng, bình thường, tối ưu) |
 | Chiến lược trội | Chỉ dùng lưới hoặc chỉ cắt, bỏ qua cơ chế còn lại. Farm một tầng bỏ nâng cấp | Hỏi "cách chơi nào hơn hẳn" ở mỗi hệ thống, ghi chiến lược trội vào lỗi thiết kế |
-| Mất tiến trình | Thoát giữa chuyến bay hoặc giữa ca bán, save hỏng, load sai | Ca thoát và load ở mỗi pha của ngày. Ghi file save dùng |
+| Mất tiến trình | Thoát giữa chuyến bay hoặc giữa giờ giao thương bán, save hỏng, load sai | Ca thoát và load ở mỗi pha của ngày. Ghi file save dùng |
 | Số hai nơi lệch | Cùng một số ở hai tab khác nhau (lỗi đã thấy ở Dungeon Builder) | Số hiện hành chỉ ở tab spec. Script quét so hai nơi |
 | Spawn ngẫu nhiên không tái hiện được | Lỗi một lần rồi mất | Ghi seed và trạng thái đầu. Không có seed thì ghi tỉ lệ tái hiện |
 | Pixel art co giãn lỗi | Méo khi tỉ lệ không nguyên, UI tràn ở 3840x2160 hoặc 21:9, mờ khi đổi cửa sổ | Bộ biên 1280x720 đến 3840x2160, cửa sổ và toàn màn hình, alt-tab |
@@ -102,7 +102,7 @@ Việc đầu tiên khi GDM giao:
 | Nhận từ | Nhận gì | Giao cho | Giao gì |
 |---|---|---|---|
 | GDM | Brief, tiêu chí, giờ chốt số | GDM | Kết luận ĐẠT / TRẢ LẠI / BLOCKED, danh sách lỗi nhẹ và đích |
-| gd-tech | Validator, sim, seed, prototype | gd-tech | Lỗi validator bỏ sót, ca kiểm cần thành script |
+| gd-tech | Validator, sim, seed, prototype | gd-tech | Lỗi validator bỏ sót, giờ giao thương kiểm cần thành script |
 | gd-economy | Bảng giá, sim 3 kịch bản | gd-economy | Lỗi cân bằng, chiến lược trội, vòng tiền |
 | gd-combat, gd-items, gd-world, gd-quan | GDD hệ thống, tab đã soạn | Từng vai giữ tab | Lỗi có bước tái hiện, đề xuất người sửa |
 | gd-character, gd-story, gd-ux | Hồ sơ, lời thoại, wireframe, FTUE | gd-ux và vai liên quan | Lỗi FTUE, strings, nhãn UI lệch config |

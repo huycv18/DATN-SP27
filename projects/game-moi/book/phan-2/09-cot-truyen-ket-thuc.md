@@ -4,16 +4,16 @@ Cốt truyện cho người chơi một lý do để ra ngoài xa hơn mỗi ng�
 
 ### II.9.1. Overview
 
-Truyện chia thành năm **chương**. Mỗi chương là một chuỗi **mốc** có thứ tự, mốc sau chỉ mở khi mốc trước xong. Mỗi mốc có một danh sách điều kiện lấy từ việc người chơi vốn đã làm: sửa khoang, kéo buồng ngủ đông về, phục vụ tàu ở ca cảng, tới một map nhánh. Mọi điều kiện cùng đúng thì mốc xong ngay, không chờ cảnh. Mốc cuối chương gọi là **mốc đóng chương**, chỉ nó mới mở dải và map nhánh của chương sau.
+Truyện chia thành năm **chương**. Mỗi chương là một chuỗi **mốc** có thứ tự, mốc sau chỉ mở khi mốc trước xong. Mỗi mốc có một danh sách điều kiện lấy từ việc người chơi vốn đã làm: sửa khoang, kéo buồng ngủ đông về, phục vụ tàu ở giờ giao thương, tới một map nhánh. Mọi điều kiện cùng đúng thì mốc xong ngay, không chờ cảnh. Mốc cuối chương gọi là **mốc đóng chương**, chỉ nó mới mở dải và map nhánh của chương sau.
 
-Truyện không đòi người chơi làm gì ngoài vòng ngày. Ra chuyến, sửa trạm, bán hàng ở ca cảng đều tiếp tục như mọi ngày, mốc chỉ khóa nội dung mới như dải, lối vào map nhánh, tính năng và loại tàu. **Cảnh** là phần trình bày của mốc, phát ở điểm nghỉ trong trạm, ngắn và bỏ qua được bằng một lần bấm. Ngoài không gian truyện chỉ nói bằng một dòng radio ở mép màn hình, không chặn điều khiển. **Sổ tay** trong trạm ghi mọi mốc đã xong và luôn có đúng một dòng mục tiêu, nên người chơi không bao giờ phải đoán việc kế tiếp.
+Truyện không đòi người chơi làm gì ngoài vòng ngày. Ra chuyến, sửa trạm, bán hàng ở giờ giao thương đều tiếp tục như mọi ngày, mốc chỉ khóa nội dung mới như dải, lối vào map nhánh, tính năng và loại tàu. **Cảnh** là phần trình bày của mốc, phát ở điểm nghỉ trong trạm, ngắn và bỏ qua được bằng một lần bấm. Ngoài không gian truyện chỉ nói bằng một dòng radio ở mép màn hình, không chặn điều khiển. **Sổ tay** trong trạm ghi mọi mốc đã xong và luôn có đúng một dòng mục tiêu, nên người chơi không bao giờ phải đoán việc kế tiếp.
 
 ### II.9.2. Setting and Conflict
 
 Người chơi là một người trong kíp vận hành của **Station Ember**, tỉnh dậy sau giấc ngủ đông. Trạm trôi giữa **The Wake**, bãi vỡ của Cradle, con tàu mẹ của **United Accord** chở đoàn di cư rời Trái Đất đi tìm hành tinh **Solace**. Tàu đã nổ trước khi tới nơi. Bốn hồ sơ nhân vật mặc định là Noor Haddad, Jonas Weber, Mei Tanaka và Tariq Bello, người chơi đổi được tên.
 
 Thế giới có ba lực lượng:
-- **The Veyl** là tên chung các chủng tộc ngoài hành tinh, gồm Oru, Sennari, Aelith, Brakk và Kesh. Họ buôn bán với nhau và với loài người, dùng chung Tally. Thương nhân The Veyl lui tới rìa bãi vỡ gom hàng, và họ là khách của ca cảng.
+- **The Veyl** là tên chung các chủng tộc ngoài hành tinh, gồm Oru, Sennari, Aelith, Brakk và Kesh. Họ buôn bán với nhau và với loài người, dùng chung Tally. Thương nhân The Veyl lui tới rìa bãi vỡ gom hàng, và họ là khách của giờ giao thương.
 - **The Wardens** là chế độ và quân đội của **Daskel**, kẻ độc tài lật đổ Steward Ilvane của hành tinh Sennar. Lính của chế độ là người Sennari, không phải cả một chủng tộc. Chúng tuyên bố bãi vỡ là khu bảo hộ, trong khi tháo xác tàu, bắt người và săn Driftlife đem bán.
 - **The Kindling** là mạng lưới cách mạng của **Sevra Ilvane**, con gái Ilvane và người thừa kế hợp pháp của Sennar. Cô giả làm thương nhân Ilsume để đi các tuyến buôn.
 
@@ -33,7 +33,7 @@ Chỉ chương đầu nằm trong MVP. Bốn chương sau là bản đủ, ghi �
 | 4 | Tâm vụ nổ | Cradle Interior | Không | Hộp ghi hành trình lộ Solace là mồi, tin mật tới The Kindling | Post-MVP |
 | 5 | Rời neo | Warden Rig | Không | Daskel thua, Ember rời neo | Post-MVP |
 
-Mỗi chương có một kiểu chơi mới mà truyện đưa vào bằng lý do trong truyện chứ không bằng hướng dẫn. Chương 1 có khai thác, bắt sống loài nhỏ bằng lưới và ca cảng. Điều này chỉ là đề cương, luật từng kiểu chơi nằm ở mục tương ứng.
+Mỗi chương có một kiểu chơi mới mà truyện đưa vào bằng lý do trong truyện chứ không bằng hướng dẫn. Chương 1 có khai thác, bắt sống loài nhỏ bằng lưới và giờ giao thương. Điều này chỉ là đề cương, luật từng kiểu chơi nằm ở mục tương ứng.
 
 Chi tiết dữ liệu: tab GAME STORY trên Sheet GDD, khối Tóm tắt cốt truyện.
 
@@ -41,7 +41,7 @@ Chi tiết dữ liệu: tab GAME STORY trên Sheet GDD, khối Tóm tắt cốt 
 
 Chương 1 có chín mốc. Mục tiêu người chơi: hãm trôi và neo Ember, vớt hai người đầu tiên, sửa cảng, bán chuyến hàng đầu tiên, nghe được tiếng người khác.
 
-Tên riêng trong bảng mốc: **Station Cinder** là trạm hoang đầu tiên người chơi tới được, nơi có hai buồng ngủ đông của Ingrid và Linh. **Station Lantern** là trạm có người sống sót ở chương 2, phát sóng ở mốc đóng chương. **Oru Tikko** là thương nhân The Veyl, chủ tàu **Loose Bolt**, khách đầu tiên của ca cảng.
+Tên riêng trong bảng mốc: **Station Cinder** là trạm hoang đầu tiên người chơi tới được, nơi có hai buồng ngủ đông của Ingrid và Linh. **Station Lantern** là trạm có người sống sót ở chương 2, phát sóng ở mốc đóng chương. **Oru Tikko** là thương nhân The Veyl, chủ tàu **Loose Bolt**, khách đầu tiên của giờ giao thương.
 
 | Mốc | Điều kiện | Mở gì |
 |---|---|---|
@@ -51,17 +51,17 @@ Tên riêng trong bảng mốc: **Station Cinder** là trạm hoang đầu tiên
 | Người đầu tiên | Buồng của Ingrid qua cửa khí | Ingrid tỉnh đầu ngày kế tiếp, giao quest sửa xưởng |
 | Xưởng sáng đèn | Xưởng Hoạt động | Chế dụng cụ cơ bản và Súng lưới cho loài nhỏ |
 | Người thứ hai | Buồng của Linh qua cửa khí | Linh tỉnh đầu ngày kế tiếp, giao quest sửa khoang liên lạc và cảng |
-| Lời gọi đầu tiên | Khoang liên lạc và cảng cùng Hoạt động | Ca cảng, shop, tàu Loose Bolt vào lịch từ ngày kế tiếp |
-| Tàu đầu tiên | Ngày kế tiếp sau mốc trên và tàu Loose Bolt của Tikko cập bến | Ca cảng thành kiểu chơi mới |
-| Sóng của Lantern (đóng chương) | Đủ 3 ca cảng xong và động cơ chính xong giai đoạn 1 | Dải Giữa, lối vào Station Lantern, chương 2 |
+| Lời gọi đầu tiên | Khoang liên lạc và cảng cùng Hoạt động | Giờ giao thương, shop, tàu Loose Bolt vào lịch từ ngày kế tiếp |
+| Tàu đầu tiên | Ngày kế tiếp sau mốc trên và tàu Loose Bolt của Tikko cập bến | Giờ giao thương thành kiểu chơi mới |
+| Sóng của Lantern (đóng chương) | Đủ 3 lượt giao thương xong và động cơ chính xong giai đoạn 1 | Dải Giữa, lối vào Station Lantern, chương 2 |
 
 Luật của chuỗi:
 - Mọi điều kiện trong một mốc phải cùng đúng, không có điều kiện dạng "hoặc". Mỗi mốc xong đúng một lần trong một thế giới.
 - Nhiều mốc có thể xong liền nhau trong một lần kiểm. Cảnh của chúng xếp hàng theo thứ tự mốc, mỗi điểm nghỉ phát một cảnh cho mỗi người.
 - Mốc đóng chương chỉ xong khi giai đoạn động cơ chính của chương đã lắp. Trạm và kinh tế không có cổng chương riêng.
-- Số ca cảng cần cho mốc đóng chương là khởi điểm 3, khoảng an toàn 2 tới 5, chưa đo. Đây là núm duy nhất của truyện chạm thời lượng chương 1.
+- Số giờ giao thương cần cho mốc đóng chương là khởi điểm 3, khoảng an toàn 2 tới 5, chưa đo. Đây là núm duy nhất của truyện chạm thời lượng chương 1.
 
-Mốc Tàu đầu tiên rơi vào ca cảng thứ nhất, mốc đóng chương cần ca thứ ba. Ngày chương đầu xong theo sim kinh tế ở mục II.7. Chơi một mình thường xong muộn hơn chơi hai người một ngày, vì phải đủ điểm lên Hạng cảng ba để mua linh kiện động cơ.
+Mốc Tàu đầu tiên rơi vào giờ giao thương thứ nhất, mốc đóng chương cần giờ giao thương thứ ba. Ngày chương đầu xong theo sim kinh tế ở mục II.7. Chơi một mình thường xong muộn hơn chơi hai người một ngày, vì phải đủ điểm lên Hạng cảng ba để mua linh kiện động cơ.
 
 ```mermaid
 flowchart TD
@@ -87,14 +87,14 @@ flowchart TD
   I["Tàu Loose Bolt vào lịch ngày kế tiếp"] --> J{"Ngày kế tiếp, Tikko cập bến?"}
   J -->|Chưa| K["Chờ lịch tàu"]
   K --> J
-  J -->|Có| L{"Đủ 3 ca cảng xong và động cơ giai đoạn 1?"}
-  L -->|Chưa đủ| M["Làm thêm ca cảng, sửa động cơ"]
+  J -->|Có| L{"Đủ 3 lượt giao thương xong và động cơ giai đoạn 1?"}
+  L -->|Chưa đủ| M["Làm thêm giờ giao thương, sửa động cơ"]
   M --> L
   L -->|Đủ| N["Đóng chương: mở dải Giữa và Lantern"]
 ```
 *Hình II.9.3 - Cổng thứ hai: tàu đầu tiên và đóng chương*
 
-Đọc ba sơ đồ trên: từ lúc tỉnh dậy, người chơi neo trạm rồi tới Cinder và kéo hai buồng về, mỗi buồng mở một người vớt và một khoang. Khoang liên lạc và cảng cùng phải sáng thì tàu đầu tiên mới vào lịch. Nếu mới sửa một khoang thì Sổ tay ghi việc còn lại, mốc vẫn đứng ở trạng thái Mở. Tàu đầu cập bến thì chương vào giai đoạn cuối: hai điều kiện của mốc đóng chương không có thứ tự nào, người chơi làm thêm ca cảng và sửa động cơ theo nhịp của mình. Đủ cả hai thì chương đóng và cảnh cuối ngày phát ra.
+Đọc ba sơ đồ trên: từ lúc tỉnh dậy, người chơi neo trạm rồi tới Cinder và kéo hai buồng về, mỗi buồng mở một người vớt và một khoang. Khoang liên lạc và cảng cùng phải sáng thì tàu đầu tiên mới vào lịch. Nếu mới sửa một khoang thì Sổ tay ghi việc còn lại, mốc vẫn đứng ở trạng thái Mở. Tàu đầu cập bến thì chương vào giai đoạn cuối: hai điều kiện của mốc đóng chương không có thứ tự nào, người chơi làm thêm giờ giao thương và sửa động cơ theo nhịp của mình. Đủ cả hai thì chương đóng và cảnh cuối ngày phát ra.
 
 Chi tiết dữ liệu: tab GAME STORY, khối Chương và mốc. Quest sửa khoang xem mục II.6.
 
@@ -119,7 +119,7 @@ Chi tiết dữ liệu: tab GAME STORY, khối Dòng Sổ tay chương 1.
 
 ### II.9.6. Scenes, Dialogue and Pacing Limits
 
-Cảnh chỉ diễn ra ở điểm nghỉ: pha Chuẩn bị, lúc vừa về tới trạm, pha Cuối ngày, và trong khu có khí của map nhánh. Trong ca cảng và trong khu chân không, truyện chỉ nói bằng bong bóng trên đầu nhân vật hoặc radio. Mốc xong giữa ca cảng thì cảnh của nó phát sau ca, ở màn kết ca hoặc pha Cuối ngày. Hộp thoại không tạm dừng khi co-op và không hiện khi ca cảng đang chạy (xem II.9.8).
+Cảnh chỉ diễn ra ở điểm nghỉ: pha Chuẩn bị, lúc vừa về tới trạm, pha Cuối ngày, và trong khu có khí của map nhánh. Trong giờ giao thương và trong khu chân không, truyện chỉ nói bằng bong bóng trên đầu nhân vật hoặc radio. Mốc xong giữa giờ giao thương thì cảnh của nó phát sau giờ giao thương, ở màn kết thúc giờ giao thương hoặc pha Cuối ngày. Hộp thoại không tạm dừng khi co-op và không hiện khi giờ giao thương đang chạy (xem II.9.8).
 
 | Giới hạn | Giá trị | Nguồn |
 |---|---|---|
@@ -145,7 +145,7 @@ Theo cùng công thức, cả game có:
 - Tối đa 180 câu thoại, khoảng 14,1 phút đọc, bằng 2,0% của một game 12 giờ.
 
 Ngoài cảnh còn hai loại lời không phải cảnh và không vào hàng chờ cảnh:
-- Lời theo trạng thái: nhân vật trong trạm nói một dòng khi người chơi tới gần, theo bối cảnh như chào đầu ngày, sau chuyến, sau ca cảng, gợi ý mục tiêu. Mỗi trạng thái có 4 biến thể và không nói lại biến thể vừa nói. Tikko có lời riêng ở cảng bằng bong bóng.
+- Lời theo trạng thái: nhân vật trong trạm nói một dòng khi người chơi tới gần, theo bối cảnh như chào đầu ngày, sau chuyến, sau giờ giao thương, gợi ý mục tiêu. Mỗi trạng thái có 4 biến thể và không nói lại biến thể vừa nói. Tikko có lời riêng ở cảng bằng bong bóng.
 - Lời truyện không chứa chữ số, tên phím hay thuật ngữ luật chơi, và không dạy thao tác. Hướng dẫn thao tác thuộc mục Giao diện và hướng dẫn.
 
 Mỗi nhân vật có giọng riêng, ghi ở bảng giọng nhân vật của tab GAME STORY. Hai ví dụ: Ingrid khô, gọn, nói bằng câu mệnh lệnh và tên dụng cụ. Linh khéo, giữ thể diện, nói lời chữa và lời cảnh báo lịch sự.
@@ -169,7 +169,7 @@ Tiến trình truyện là của thế giới, không của từng người. Kh�
 - Cảnh phát riêng trên màn từng người ở điểm nghỉ của người đó. Mỗi người có hàng chờ riêng, tự bỏ qua, không ai chờ ai, và mỗi người xem mỗi cảnh nhiều nhất một lần. Người đang ở ngoài thấy dấu báo và xem khi về.
 - Vật manh mối ai nhặt cũng ghi cho cả nhóm. Vật nhiệm vụ ai mang cũng được và chuyền tay được.
 - Cảnh tỉnh dậy theo số người tỉnh dậy ban đầu. Một người thì ba buồng tắt, hai người thì hai buồng tắt, cảnh dài như nhau và không nhân vật nào nói thay người chơi.
-- Hộp thoại không tạm dừng khi co-op, và không hiện với bất kỳ ai trong nhóm khi ca cảng đang chạy.
+- Hộp thoại không tạm dừng khi co-op, và không hiện với bất kỳ ai trong nhóm khi giờ giao thương đang chạy.
 - Không mốc, quest hay cảnh nào cần đúng một số người. Lời không chứa từ chỉ số người chơi như "một mình" hay "cả hai".
 
 Mục tiêu nghiệm thu của hệ thống truyện:
@@ -191,16 +191,16 @@ Số ngày sàn của chương đầu và của cả game lấy từ sim kinh t�
 | Tình huống | Phán quyết |
 |---|---|
 | Người chơi bỏ qua mọi cảnh | Mốc đã xong từ trước khi cảnh phát. Sổ tay vẫn đủ tóm tắt và dòng mục tiêu |
-| Người chơi không bao giờ làm ca cảng | Mốc cần ca cảng đứng ở trạng thái Mở vô thời hạn. Sổ tay ghi rõ việc cần làm, không có đường vòng |
+| Người chơi không bao giờ làm giờ giao thương | Mốc cần giờ giao thương đứng ở trạng thái Mở vô thời hạn. Sổ tay ghi rõ việc cần làm, không có đường vòng |
 | Đang kéo buồng ngủ đông thì hết Oxy và bị kéo về | Buồng nằm lại vị trí gốc ở chuyến sau. Người trong buồng vẫn sống, truyện không có trạng thái thua |
 | Tới cửa khóa của Cinder khi chưa có Bộ kích nguồn | Cửa không mở, một dòng radio của Ingrid gợi ý về xưởng. Không có cảnh |
 | Sửa xong khoang liên lạc mà chưa sửa cảng | Mốc Lời gọi đầu tiên chưa xong, dòng mục tiêu ghi: sửa cảng |
-| Tàu có điều kiện truyện cập bến đúng ngày người chơi bỏ ca cảng | Tàu đó vào lịch lại ngày sau, mốc không mất |
+| Tàu có điều kiện truyện cập bến đúng ngày người chơi bỏ giờ giao thương | Tàu đó vào lịch lại ngày sau, mốc không mất |
 | Người chơi mới vào khi thế giới đã ở chương sau | Phát cảnh vào 3 câu. Cảnh của các mốc đã xong không vào hàng chờ của họ, Sổ tay có đủ |
 | Host thoát khi một mốc vừa xong giữa ngày | Thế giới về điểm lưu gần nhất. Mốc xong sau lần lưu đó quay lại trạng thái Mở |
 | Mốc xong khi mọi người chơi đều ở ngoài | Mốc xong ngay, cảnh chờ từng người ở điểm nghỉ kế tiếp của họ |
 
-Ca cảng đầu tiên là ca dạy và chỉ bán thùng phế liệu. Từ ngày có Súng lưới, đơn đặt trước ngày chẵn của Tikko là một lồng Driftlife sống, Tikko gom hộ một nhà sưu tầm chưa lộ mặt, mở đường cho truyện ở chương sau.
+Giờ giao thương đầu tiên là giờ giao thương hướng dẫn và chỉ bán thùng phế liệu. Từ ngày có Súng lưới, đơn đặt trước ngày chẵn của Tikko là một lồng Driftlife sống, Tikko gom hộ một nhà sưu tầm chưa lộ mặt, mở đường cho truyện ở chương sau.
 
 ### II.9.z. Post-MVP
 

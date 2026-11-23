@@ -50,7 +50,7 @@
     },
     "bo_luat_ca_cu": {
       "gia_tri": 0,
-      "nguon": "Lead chốt ca cảng khung Dave 2026-11-20: bỏ đơn nhiều dòng và thưởng theo đơn",
+      "nguon": "Lead chốt giờ giao thương khung Dave 2026-11-20: bỏ đơn nhiều dòng và thưởng theo đơn",
       "nhan": "Lead chốt",
       "bat": [],
       "cam": [
@@ -272,7 +272,7 @@
       [
         "Ngưỡng điểm Hạng cảng 2 tới 8",
         "tram-va-cang.md mục 3 (gd-quan)",
-        "8, 20, 36, 56, 80, 108, 140, rồi 18, 45, 85, 130, 185, 245, 310 sau sim ca cảng GD-030",
+        "8, 20, 36, 56, 80, 108, 140, rồi 18, 45, 85, 130, 185, 245, 310 sau sim giờ giao thương GD-030",
         "Bản sau đặt theo ca đủ hàng (8,5 điểm một ca) nên chương 1 kéo tới 2,9 giờ vì cảng mở muộn và kho chưa đủ hàng",
         "10, 20, 45, 70, 100, 135, 195 (gd-quan đã nhận)",
         "gd-quan"
@@ -314,7 +314,7 @@
         "tram-va-cang.md (gd-quan)",
         "25%, 15%",
         "Không thấy vấn đề",
-        "25%, 15%, rồi bỏ từ đợt 9 (Lead chốt ca cảng khung Dave), thay bằng tip",
+        "25%, 15%, rồi bỏ từ đợt 9 (Lead chốt giờ giao thương khung Dave), thay bằng tip",
         "Giữ"
       ],
       [
@@ -353,12 +353,12 @@
         "Hệ số ngân sách β",
         "GD-028",
         "0,60 (GDM chốt, log 55)",
-        "Sau sửa QA GD-031 (cảng mở ngày 4, T-VO 1 sang chương 2, giá theo ID gd-items, chặn sức chở ca cảng, sàn ngày truyện, kiện chương 4 và 5): giữ 0,60 thì chương 1 2,33 giờ, cả game 18,9 giờ (gd-qa đo)",
+        "Sau sửa QA GD-031 (cảng mở ngày 4, T-VO 1 sang chương 2, giá theo ID gd-items, chặn sức chở giờ giao thương, sàn ngày truyện, kiện chương 4 và 5): giữ 0,60 thì chương 1 2,33 giờ, cả game 18,9 giờ (gd-qa đo)",
         "0,40, cả game trong 12 đến 15 giờ (bảng 8.1). GDM nhận lại ở log 70",
         "gd-economy"
       ],
       [
-        "Ngày mở ca cảng chương 1 trong sim",
+        "Ngày mở giờ giao thương chương 1 trong sim",
         "GD-028",
         "Ngày đầu đủ vật liệu 5 khoang (thường ngày 1)",
         "QA GD-031: trái chuỗi vớt Thông dịch viên",
@@ -366,18 +366,18 @@
         "gd-economy"
       ],
       [
-        "Ngày mở ca cảng chương 1 và ca đầu trong sim",
+        "Ngày mở giờ giao thương chương 1 và ca đầu trong sim",
         "tham-so.json ngay_mo_cang_ch1, ca_day (gd-economy)",
         "Từ ngày 4, ca đầu là ca đủ 25 tàu",
-        "QA GD-061 C-V1, C-V2: lệch cot-truyen.md mục 5 (ca thứ nhất ngày 5) và tram-va-cang.md luật 67 (ca dạy 2 tàu). Chạy lại: chương 1 1,90 thành 2,29 giờ, cả game 14,2 thành 14,6 giờ, nhóm 4 71% thành 68%",
-        "Sớm nhất ngày 5, ngày sau khi cảng sửa xong. Ca đầu là ca dạy 2 tàu Loose Bolt bán thùng phế liệu (log GDM 111). Chương 1 quá mục tiêu 2 giờ, chỉnh ở dòng sau",
+        "QA GD-061 C-V1, C-V2: lệch cot-truyen.md mục 5 (ca thứ nhất ngày 5) và tram-va-cang.md luật 67 (giờ giao thương hướng dẫn 2 tàu). Chạy lại: chương 1 1,90 thành 2,29 giờ, cả game 14,2 thành 14,6 giờ, nhóm 4 71% thành 68%",
+        "Sớm nhất ngày 5, ngày sau khi cảng sửa xong. Ca đầu là giờ giao thương hướng dẫn 2 tàu Loose Bolt bán thùng phế liệu (log GDM 111). Chương 1 quá mục tiêu 2 giờ, chỉnh ở dòng sau",
         "gd-economy"
       ],
       [
         "Giờ mục tiêu chương 1 trong công thức ngân sách",
         "tham-so.json gio_muc_tieu_chuong (gd-economy)",
         "1,25. Ngân sách chương 1 7750, giá chương 1 cộng lại 7680",
-        "Sau khi ca cảng sớm nhất ngày 5 và ca đầu là ca dạy: chương 1 2,29 giờ, quá mục tiêu 1,5 đến 2. Hạ ngưỡng Hạng 2 và 3 về 50 và 95 không đổi gì vì Tally là chỗ chặn",
+        "Sau khi giờ giao thương sớm nhất ngày 5 và ca đầu là giờ giao thương hướng dẫn: chương 1 2,29 giờ, quá mục tiêu 1,5 đến 2. Hạ ngưỡng Hạng 2 và 3 về 50 và 95 không đổi gì vì Tally là chỗ chặn",
         "0,8 (Lead chốt 2026-11-23). Ngân sách 4950, giá cộng lại 4920. Chương 1 1,77 giờ, cả game 14,2 giờ, nhóm 4 70%",
         "gd-economy"
       ],
@@ -410,7 +410,7 @@
         "GD-028",
         "Theo đơn, không chặn sức chở",
         "QA GD-031 lỗi chặn",
-        "Chặn bằng số kiện sim ca cảng giao được nhân GTĐ một kiện. β dò lại 0,30, rồi 0,35 (sàn chương 5 còn 3 ngày), rồi 0,40 (có kiện chương 4 và 5)",
+        "Chặn bằng số kiện sim giờ giao thương giao được nhân GTĐ một kiện. β dò lại 0,30, rồi 0,35 (sàn chương 5 còn 3 ngày), rồi 0,40 (có kiện chương 4 và 5)",
         "gd-economy"
       ],
       [
@@ -438,10 +438,10 @@
         "GDM"
       ],
       [
-        "Đơn vị bán ở ca cảng và giá",
+        "Đơn vị bán ở giờ giao thương và giá",
         "kinh-te-tien-trinh.md mục 3.1 (gd-economy)",
         "Giá kiện bằng GTĐ x 10, một thùng bằng giá kiện chia 2,5: thùng chương 1 từ 48 tới 56 Tally",
-        "Sim ca cảng GD-054: giữ hàng cho đơn đặt trước chỉ chênh dưới 2,5% Tally, lập danh mục không có thế cân",
+        "Sim giờ giao thương GD-054: giữ hàng cho đơn đặt trước chỉ chênh dưới 2,5% Tally, lập danh mục không có thế cân",
         "Giá thùng theo 5 bậc giá: chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Thùng chương 1 từ 40 tới 80 Tally, lồng 55 tới 75",
         "gd-economy"
       ],
@@ -449,7 +449,7 @@
         "Thưởng theo đơn",
         "tram-va-cang.md (gd-quan), kinh-te-tien-trinh.md",
         "Thưởng đủ đơn 25%, thưởng nhanh 15%",
-        "Lead chốt ca cảng khung Dave 2026-11-20, bỏ đơn nhiều dòng",
+        "Lead chốt giờ giao thương khung Dave 2026-11-20, bỏ đơn nhiều dòng",
         "Tip tối đa 30% (sau hạ 25%) giá thùng nhân kiên nhẫn còn lại, Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Sim đo tip 22 tới 26% Tally",
         "Lead"
       ],
@@ -487,7 +487,7 @@
       ],
       [
         "Số tàu một ca theo số người và cửa neo",
-        "tram-va-cang.md (gd-quan), sim ca cảng gd-tech",
+        "tram-va-cang.md (gd-quan), sim giờ giao thương gd-tech",
         "25, 50, 70, 70 tàu, 4 cửa neo khi 3 và 4 người",
         "Luật mới 3 cửa neo cho mọi số người (không mở nội dung theo số người)",
         "25, 55, 55, 60 tàu, 3 cửa neo. Kho sau hai chuyến vẫn đủ ở mọi chương",
@@ -633,8 +633,8 @@
       "tu_bac": 2
     },
     "ghi_chu_nguon": {
-      "ngay_mo_cang_ch1": "Log GDM 111 (QA GD-061 C-V1): ca cảng sớm nhất ngày 5, khớp cot-truyen.md mục 5 (ngày 5: C1.8 và ca thứ nhất). Lịch tàu sinh đầu ngày, nên cảng sửa xong ngày d thì ca đầu ở ngày d cộng 1",
-      "ca_day": "tram-va-cang.md luật 67, log GDM 111: ca đầu tiên là ca dạy, 2 tàu Loose Bolt (TA01) kiên nhẫn Dài, chỉ gọi thùng phế liệu CGO-101, 1 tàu nếu kho chỉ đủ 1 thùng. Giây: giữa khoảng 23 tới 33 giây của sim GD-054 vòng 2 mục 1. Điểm: tàu được phục vụ ngay, còn từ 2/3 kiên nhẫn trở lên nên 2 điểm mỗi tàu. Tip theo phần tip của kịch bản như mọi ca",
+      "ngay_mo_cang_ch1": "Log GDM 111 (QA GD-061 C-V1): giờ giao thương sớm nhất ngày 5, khớp cot-truyen.md mục 5 (ngày 5: C1.8 và ca thứ nhất). Lịch tàu sinh đầu ngày, nên cảng sửa xong ngày d thì ca đầu ở ngày d cộng 1",
+      "ca_day": "tram-va-cang.md luật 67, log GDM 111: ca đầu tiên là giờ giao thương hướng dẫn, 2 tàu Loose Bolt (TA01) kiên nhẫn Dài, chỉ gọi thùng phế liệu CGO-101, 1 tàu nếu kho chỉ đủ 1 thùng. Giây: giữa khoảng 23 tới 33 giây của sim GD-054 vòng 2 mục 1. Điểm: tàu được phục vụ ngay, còn từ 2/3 kiên nhẫn trở lên nên 2 điểm mỗi tàu. Tip theo phần tip của kịch bản như mọi ca",
       "vl_mo_cang_ch1": "vat-pham.md mục 2.7: tổng vật liệu khoang neo, kho cấp 2, xưởng, khoang liên lạc, cảng bến 1",
       "he_so_thieu_vo": "map.md mục 3.2: thiếu 1 cấp môi trường còn khoảng 27% thời gian làm việc",
       "chuyen_nhanh_theo_chuong": "map.md mục 2.10: Cinder 2 lần, Wick và Lantern 3, Flint 2, Cradle 4, Warden Rig 3",

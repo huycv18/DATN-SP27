@@ -43,8 +43,8 @@ STT	Chương	Mốc	Điều kiện	Nơi diễn ra	Mở ra	Phạm vi
 5	1	Xưởng sáng đèn	Xưởng hoạt động	Ember, xưởng	Xưởng chế được Bộ kích nguồn và Súng lưới cho loài nhỏ	MVP
 6	1	Người thứ hai	Buồng của Linh đã qua cửa khí của Ember	Ember	Linh vào khu hồi sức, tỉnh vào đầu ngày kế tiếp và giao quest sửa khoang liên lạc và cảng	MVP
 7	1	Lời gọi đầu tiên	Khoang liên lạc và cảng đều hoạt động	Ember, khoang liên lạc	Khoang liên lạc, cảng, shop. Tàu Loose Bolt vào lịch từ ngày kế tiếp	MVP
-8	1	Tàu đầu tiên	Ngày kế tiếp sau Lời gọi đầu tiên và tàu Loose Bolt của Tikko cập bến	Ember, bến 1	Ca cảng (kiểu chơi mới)	MVP
-9	1	Sóng của Lantern (đóng chương)	Đủ số ca cảng đã xong theo ngưỡng chương 1, và động cơ chính đã lắp giai đoạn 1	Ember, khoang liên lạc	Dải Giữa, lối vào Station Lantern, chương 2	MVP
+8	1	Tàu đầu tiên	Ngày kế tiếp sau Lời gọi đầu tiên và tàu Loose Bolt của Tikko cập bến	Ember, bến 1	Giờ giao thương (kiểu chơi mới)	MVP
+9	1	Sóng của Lantern (đóng chương)	Đủ số giờ giao thương đã xong theo ngưỡng chương 1, và động cơ chính đã lắp giai đoạn 1	Ember, khoang liên lạc	Dải Giữa, lối vào Station Lantern, chương 2	MVP
 10	2	Đèn của Lantern	Tới lối vào Station Lantern	Station Lantern, vành ngoài	Trận Tempest Gulper đang vây bến cập. Vật truyện của Station Lantern hiện ra	Sau MVP
 11	2	Phá vây	Trận Tempest Gulper xong (hạ hoặc xua)	Station Lantern, lõi trạm	Cửa cập mở. Gặp Odile Laurent, Bram, Amara. Odile ra điều kiện cho Amara đi. Tàu Lamplighter của Bram vào lịch từ ngày kế tiếp	Sau MVP
 12	2	Chuyến xuồng đặc biệt	Phục vụ xong tàu Lamplighter	Ember, bến	Bram chở Amara sang Ember. Quest sửa phòng nghiên cứu và khoang sinh quyển	Sau MVP
@@ -54,9 +54,9 @@ STT	Chương	Mốc	Điều kiện	Nơi diễn ra	Mở ra	Phạm vi
 16	2	Không nổ từ trong ra	Đã nhặt Mảng vỏ thân của Station Wick và Nhật ký trạm của Wick	Ember, xưởng	Cảnh Ingrid xem mảng vỏ. Tàu Vellune của Ilsume vào lịch	Sau MVP
 17	2	Bản đồ có một lỗ đen (đóng chương)	Khoang dẫn đường hoạt động, đã nộp Mảnh lõi dẫn đường Wick, và động cơ chính đã lắp giai đoạn 2	Ember, khoang dẫn đường	Bến Skiff, dải Xa, lối vào Veyl Waypost, chương 3	Sau MVP
 18	3	Bến của The Veyl	Tới lối vào Veyl Waypost	Veyl Waypost, sảnh chính	Nhem, Dromm, Yusuf Demir. Tàu Iron Keel và Backchannel vào lịch từ ngày kế tiếp. Vật truyện của Veyl Waypost hiện ra	Sau MVP
-19	3	Trưởng cảng về bến	Đã xong một ca cảng có tàu Iron Keel của Dromm cập bến, và sau ca đó tới Veyl Waypost bằng Skiff	Ember, bến	Yusuf về Ember cùng chuyến Skiff. Quest sửa bến 2, bến 3 và tiện ích cảng	Sau MVP
+19	3	Trưởng cảng về bến	Đã xong một giờ giao thương có tàu Iron Keel của Dromm cập bến, và sau giờ giao thương đó tới Veyl Waypost bằng Skiff	Ember, bến	Yusuf về Ember cùng chuyến Skiff. Quest sửa bến 2, bến 3 và tiện ích cảng	Sau MVP
 20	3	Tàu lạ	Bến 2, bến 3 và tiện ích cảng hoạt động, và Tàu lạ của Maro cập bến lần thứ nhất	Ember, bến	Maro vào truyện: thương nhân Sennari trả hậu, đúng giờ, hay hỏi những thương hội nào ghé Ember	Sau MVP
-21	3	Sự cố đầu tiên	Sự cố đầu tiên xảy ra ở ca cảng kế tiếp sau Tàu lạ	Ember	Sự cố trong ca cảng (đường điện ở bến chập chờn). Ingrid lần theo cáp, gỡ được thiết bị nghe lén Maro gắn dưới sàn. Lối vào The Raft	Sau MVP
+21	3	Sự cố đầu tiên	Sự cố đầu tiên xảy ra ở giờ giao thương kế tiếp sau Tàu lạ	Ember	Sự cố trong giờ giao thương (đường điện ở bến chập chờn). Ingrid lần theo cáp, gỡ được thiết bị nghe lén Maro gắn dưới sàn. Lối vào The Raft	Sau MVP
 22	3	Những người ở lại	Tới lối vào The Raft	The Raft	Elias Vance, Wren. Tàu Stayfast của The Remainers. Lối vào Station Flint	Sau MVP
 23	3	Trạm bị cướp	Đã nộp Mẫu mang dấu săn bắt Wardens ở phòng nghiên cứu	Ember, phòng nghiên cứu	Cảnh Amara nhận mẫu	Sau MVP
 24	3	Dấu săn trộm	Ngày kế tiếp sau Trạm bị cướp	Ember, phòng nghiên cứu	Cú lật Driftlife. Cuộc bắt cóc ở Veyl Waypost sẵn sàng xảy ra từ ngày kế tiếp	Sau MVP
@@ -69,7 +69,7 @@ STT	Chương	Mốc	Điều kiện	Nơi diễn ra	Mở ra	Phạm vi
 31	4	Không có gì ở đó	Ngày kế tiếp sau Hộp ghi hành trình	Ember, khoang dẫn đường	Hộp ghi hành trình chứng minh Solace là mồi. Sevra kể chuyện đảo chính và động cơ của Daskel. Dòng mục tiêu trong Sổ tay đổi	Sau MVP
 32	4	Đường dây thứ nhất (đóng chương)	Giao xong số đơn đặt trước tin mật của tàu Pilot Light theo ngưỡng chương 4, và động cơ chính đã lắp giai đoạn 4	Ember, bến	The Kindling biết Sevra còn sống và nhận được bằng chứng của Cradle. Maro báo cho Daskel, Daskel tới Warden Rig và cho quân khép các tuyến bay quanh Ember. Lối vào Warden Rig, chương 5	Sau MVP
 33	5	Đưa người thừa kế về	Kén thoát hiểm của Sevra chạm cửa The Hearth	Veyl Waypost, từ cửa vào tới The Hearth	Hộ tống bằng luật kéo sẵn có. Skiff chở nhóm và kén từ Ember tới cửa Veyl Waypost, người chơi kéo kén qua vòng phong tỏa. Cửa The Hearth mở khi kén tới. Sevra nắm lại mạng lưới	Sau MVP
-34	5	Lời nói dối đi đường nào	Giao xong tổng số đơn đặt trước tin mật của tàu Pilot Light theo ngưỡng chương 5	Ember, bến	Nhem mở The Lattice cho The Kindling, bằng chứng của Cradle tới Sennar. Ngày nổi dậy được định. Trong ca chỉ có lời bong bóng, cảnh ngắn phát sau ca	Sau MVP
+34	5	Lời nói dối đi đường nào	Giao xong tổng số đơn đặt trước tin mật của tàu Pilot Light theo ngưỡng chương 5	Ember, bến	Nhem mở The Lattice cho The Kindling, bằng chứng của Cradle tới Sennar. Ngày nổi dậy được định. Trong giờ giao thương chỉ có lời bong bóng, cảnh ngắn phát sau giờ giao thương	Sau MVP
 35	5	Vào Warden Rig	Tới Warden Rig bằng Skiff	Warden Rig, bãi đáp	Sennar nổi dậy. Tổ Ember giữ chân Daskel ở Rig. Vật truyện của Warden Rig hiện ra	Sau MVP
 36	5	Mở lồng	Đã thả Driftlife ở Holding Pens	Warden Rig, Holding Pens	Driftlife quay sang đánh lính The Wardens. Đường vào Command Deck	Sau MVP
 37	5	First Warden	Trận Daskel xong	Warden Rig, Command Deck	Trận đối đầu cuối (kiểu chơi mới). Daskel bị khuất phục, bị bắt và giao cho The Kindling. Data Core mở	Sau MVP
@@ -133,12 +133,12 @@ STT	Tên	Nghĩa
 9. LUẬT KỂ CHUYỆN (nguồn: cot-truyen.md mục 2.1)						
 STT	Chủ đề	Luật	Phạm vi			
 1	Một đường	Truyện đi một đường: không lựa chọn hội thoại, không nhánh, không nhiều kết, không có trạng thái thua	MVP			
-2	Không khóa vòng ngày	Truyện không khóa vòng ngày. Mốc chưa xong thì người chơi vẫn ra ngoài, làm ca cảng, nâng cấp. Mốc chỉ khóa nội dung mới: dải, map nhánh, tính năng, loại tàu	MVP			
+2	Không khóa vòng ngày	Truyện không khóa vòng ngày. Mốc chưa xong thì người chơi vẫn ra ngoài, làm giờ giao thương, nâng cấp. Mốc chỉ khóa nội dung mới: dải, map nhánh, tính năng, loại tàu	MVP			
 3	Mốc truyện	Mỗi mốc có danh sách điều kiện và đúng một nơi diễn ra. Mốc xong ngay khi mọi điều kiện cùng đúng, cảnh chỉ là phần trình bày	MVP			
 4	Vật manh mối	Vật manh mối chỉ đặt ở map nhánh, chỗ cố định. Nhặt là ghi ngay vào Sổ tay của cả nhóm, không chiếm túi, không mất khi bị kéo về	MVP			
 5	Vật nhiệm vụ	Vật nhiệm vụ phải mang về trạm. Nộp là đặt vào khoang nhận, vật vào kho và ở lại đó	MVP			
-6	Nơi có cảnh	Cảnh truyện chỉ diễn ra ở điểm nghỉ: pha Chuẩn bị, lúc vừa về trạm, pha Cuối ngày, khu có khí của map nhánh. Không cảnh nào ở map tổng hay dừng ca cảng	MVP			
-7	Radio và bong bóng	Ngoài không gian chỉ nói qua radio: một dòng chữ ở mép màn hình, tự tắt, không dừng điều khiển. Trong ca cảng chỉ có lời bong bóng	MVP			
+6	Nơi có cảnh	Cảnh truyện chỉ diễn ra ở điểm nghỉ: pha Chuẩn bị, lúc vừa về trạm, pha Cuối ngày, khu có khí của map nhánh. Không cảnh nào ở map tổng hay dừng giờ giao thương	MVP			
+7	Radio và bong bóng	Ngoài không gian chỉ nói qua radio: một dòng chữ ở mép màn hình, tự tắt, không dừng điều khiển. Trong giờ giao thương chỉ có lời bong bóng	MVP			
 8	Độ dài cảnh	Cảnh ngắn tối đa 3 câu, cảnh dài tối đa 8 câu. Mọi cảnh bỏ qua được bằng một lần bấm, Sổ tay vẫn ghi tóm tắt	MVP			
 9	Sổ tay	Sổ tay ghi mọi mốc đã xong, mọi manh mối đã nhặt và đúng một dòng mục tiêu hiện tại kèm nơi phải tới	MVP			
 10	Người vớt tỉnh dậy	Người vớt nằm trong buồng tỉnh vào đầu ngày kế tiếp sau khi buồng về trạm, rồi mới giao quest. Quest không giới hạn thời gian	MVP			

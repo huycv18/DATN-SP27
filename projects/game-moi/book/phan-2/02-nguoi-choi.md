@@ -222,14 +222,14 @@ Chi tiết dữ liệu: tab Player, khối Bộ đồ, tab Upgrade cho giá.
 Trạm là mặt cắt ngang có trọng lực nhân tạo. Nhân vật đi bộ trái phải trên sàn và leo thang giữa các tầng, không có nhảy. Trong trạm nhân vật không có Oxy, không Ngạt, không dùng dụng cụ.
 
 - Tốc độ đi 5,5 u/s, leo thang 3,5 u/s.
-- Không có chạy riêng, vì ca cảng có áp lực thời gian nên tốc độ cố định cho dễ đọc.
+- Không có chạy riêng, vì giờ giao thương có áp lực thời gian nên tốc độ cố định cho dễ đọc.
 - Người chơi đi xuyên qua nhau để không kẹt hành lang.
 
-Luật mang thùng và bơm khí trong ca cảng nằm ở mục II.6.
+Luật mang thùng và bơm khí trong giờ giao thương nằm ở mục II.6.
 
 Qua cửa khí từ trong ra cần cả nhóm đang online xác nhận. Ai không trả lời trong 30 giây thì tính là ở lại trạm và chuyến vẫn đi. Người ở lại dùng xưởng và khoang nuôi. Bộ đồ tự mặc khi ra.
 
-Một ngày có tối đa 2 chuyến, đi Skiff cũng tính một chuyến. Sau chuyến thứ hai hoặc sau khi mở ca cảng thì cửa khí khóa tới ngày mới, kèm chữ nêu lý do. Lý do là về trạm nạp đầy Oxy rồi ra lại không giới hạn sẽ phá luật Oxy là thời gian.
+Một ngày có tối đa 2 chuyến, đi Skiff cũng tính một chuyến. Sau chuyến thứ hai hoặc sau khi mở giờ giao thương thì cửa khí khóa tới ngày mới, kèm chữ nêu lý do. Lý do là về trạm nạp đầy Oxy rồi ra lại không giới hạn sẽ phá luật Oxy là thời gian.
 
 ### II.2.9. Joining Late and Leaving
 
@@ -268,7 +268,7 @@ Mục tiêu số của hệ thống. Cột kết quả chờ prototype và playt
 | Đi hành lang rộng 1,5 u không chạm tường, từ lần thử thứ 3 | Từ 90% lượt đi | Chờ playtest |
 | Số lần được cứu trên số lần ngạt khi co-op 2 người | Trên 40% | Chờ playtest |
 
-Bot chấm trên 1000 chuyến, đạt khi không có ca nào vi phạm:
+Bot chấm trên 1000 chuyến, đạt khi không có giờ giao thương nào vi phạm:
 - Người chơi không kẹt ở trạng thái không thoát được.
 - Bị kéo về luôn giữ đúng 1 món ghim và không trừ Tally.
 - Bình Oxy nhỏ không hồi vượt trần của chuyến.
@@ -297,4 +297,4 @@ Chi tiết dữ liệu: tab Player, khối Co-op, tab MVP Criteria Checklist.
 - Lớp vật kéo Vừa, chờ vật cỡ lớn ở bản sau.
 - Co-op 3 và 4 người, kéo chung hệ số 0,80 và 0,95.
 - Chuyển host khi host rớt mạng.
-- Người rời phiên làm NPC hỗ trợ trong ca cảng.
+- Người rời phiên làm NPC hỗ trợ trong giờ giao thương.

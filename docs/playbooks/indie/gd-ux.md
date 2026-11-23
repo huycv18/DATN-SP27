@@ -70,8 +70,8 @@ Nguồn dưới đây xác minh qua tóm tắt tìm kiếm ngày 2026-11-19, ch�
 | Người chơi không biết còn đủ năng lượng về hay không | Năng lượng vừa là máu vừa là đồng hồ nên một thanh chứa hai ý | HUD có chỉ báo "đủ về" hay "không đủ về" tính theo khoảng cách tới tàu, đã nói ở mục 6 |
 | Khoang hàng đầy mà không báo, nhặt thêm bị mất thông báo | Đầy là trạng thái thứ 5 hay bị quên | Phản hồi khi nhặt thất bại do đầy, phân biệt với nhặt thành công |
 | Tutorial chặn lúc đang bay hay đang đánh | Dạy ngay tại chỗ, quên rằng thao tác thời gian thực | Dạy ở chỗ an toàn, hoặc hạ nhịp, không hiện hộp thoại che màn trong lúc có quái |
-| Dạy quá nhiều ở ngày 1 | Có hai nửa game (khám phá và quán) cần dạy | Mỗi bước một ý, chia ngày 1 thành bay trước rồi quán sau, đo funnel khi có build (ca tham chiếu: 60% rơi trong tutorial game hybrid sim) |
-| Ca bán buổi tối quá rối | Nhiều thao tác cùng lúc: chế, phục vụ, thu tiền | Bản đồ thao tác trên một màn, mỗi lúc chỉ một hành động chính, tiến độ khách luôn thấy |
+| Dạy quá nhiều ở ngày 1 | Có hai nửa game (khám phá và quán) cần dạy | Mỗi bước một ý, chia ngày 1 thành bay trước rồi quán sau, đo funnel khi có build (giờ giao thương tham chiếu: 60% rơi trong tutorial game hybrid sim) |
+| Giờ giao thương bán buổi tối quá rối | Nhiều thao tác cùng lúc: chế, phục vụ, thu tiền | Bản đồ thao tác trên một màn, mỗi lúc chỉ một hành động chính, tiến độ khách luôn thấy |
 | Cảnh báo chỉ dùng màu đỏ | Quen tay làm cyberpunk neon | Thêm hình và nhịp nhấp nháy, kiểm bằng mô phỏng mù màu |
 | Feel làm sau cùng | Cho rằng là polish | Đưa feel vào prototype từ đầu, checklist phản hồi đi cùng luật cắt, choáng, lưới |
 | Strings tràn nút | Cột giới hạn không có | Cột giới hạn lấy từ spec màn trước khi viết text |
@@ -106,7 +106,7 @@ Việc đầu tiên khi GDM giao:
 | gd-character | Điều khiển, năng lượng bộ đồ, kỹ năng | gd-tech | Event cho funnel FTUE, yêu cầu prototype feel |
 | gd-combat | Phản hồi cắt, choáng, lưới, hit feel | gd-qa | Tiêu chí nghiệm thu UX, checklist feel, bản dán Tutorials |
 | gd-items | Danh sách item, số ô khoang hàng | Art (qua GDM) | Yêu cầu icon, khung, font, trạng thái nút |
-| gd-quan | Luồng ca bán, hàng đợi, kiên nhẫn khách | gd-story | Giới hạn ký tự và chỗ đặt text, màn cần lời thoại |
+| gd-quan | Luồng giờ giao thương bán, hàng đợi, kiên nhẫn khách | gd-story | Giới hạn ký tự và chỗ đặt text, màn cần lời thoại |
 | gd-economy | Cách hiển thị ₵, phí cứu hộ, nợ, giá | gd-world | Cảnh báo hazard trên HUD, bản đồ tầng |
 | gd-world | Bản đồ tầng, hazard, điểm hồi | Dev (qua GDM) | Wireframe, HUD, bảng input, strings |
 | gd-story | Lời thoại, tên, strings truyện | | |

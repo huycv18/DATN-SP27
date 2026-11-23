@@ -46,7 +46,7 @@ Kiến thức nền về thiết kế không gian chơi cho game indie action ex
 
 **N7. Giữ mốc cố định khi nội dung đổi.** Người chơi luôn phải biết mình ở đâu và đi đâu [9]. Dave the Diver đổi nhẹ Blue Hole mỗi lần lặn nhưng giữ các điểm đáng nhớ như hang ngầm ở chỗ cố định [16]. Metroid Dread giữ người chơi định hướng bằng cách nhốt họ trong các mảnh map nhỏ [14]. Khi không áp: game lấy lạc làm cảm giác chính, hiếm ở thể loại có vòng kinh tế.
 
-**N8. Tài nguyên là đồng hồ, và đồng hồ chỉ chạy khi người chơi hành động.** Dredge cho thời gian trôi khi di chuyển, câu, nạo vét [8], và postmortem của team nói di chuyển gắn với tài nguyên thời gian đẩy chu kỳ ngày đêm [26]. Dave the Diver chỉ đẩy giờ trong ngày khi kết thúc một lần lặn [16]. Oxy trong Subnautica vừa giới hạn chuyến lặn vừa là cổng tiến độ qua nâng cấp bình [7][21]. Vì sao đúng: áp lực đến từ lựa chọn của người chơi, không từ đồng hồ thật. Khi không áp: chế độ muốn áp lực thời gian thật, nhưng Hardspace phải thêm chế độ không giới hạn vì nhiều người không thích đồng hồ ca 15 phút [20].
+**N8. Tài nguyên là đồng hồ, và đồng hồ chỉ chạy khi người chơi hành động.** Dredge cho thời gian trôi khi di chuyển, câu, nạo vét [8], và postmortem của team nói di chuyển gắn với tài nguyên thời gian đẩy chu kỳ ngày đêm [26]. Dave the Diver chỉ đẩy giờ trong ngày khi kết thúc một lần lặn [16]. Oxy trong Subnautica vừa giới hạn chuyến lặn vừa là cổng tiến độ qua nâng cấp bình [7][21]. Vì sao đúng: áp lực đến từ lựa chọn của người chơi, không từ đồng hồ thật. Khi không áp: chế độ muốn áp lực thời gian thật, nhưng Hardspace phải thêm chế độ không giới hạn vì nhiều người không thích đồng hồ giờ giao thương 15 phút [20].
 
 **N9. Năng lực là chìa khóa của không gian.** Metroidvania khóa vùng bằng năng lực, Boss Keys vẽ khóa và chìa trên sơ đồ để thấy người chơi phải quay lại bao nhiêu [14][25]. Trong game có căn cứ, nâng cấp mua bằng tiền là chìa: bình oxy lớn hơn mở vùng sâu hơn [7][21]. Khi không áp: chìa đặt quá xa khóa làm người chơi quên, Metroid Dread bù bằng dịch chuyển [14].
 
@@ -67,7 +67,7 @@ Kiến thức nền về thiết kế không gian chơi cho game indie action ex
 | Dave the Diver, một lần lặn đáng kể | thường từ 15 phút trở lên | [16] |
 | Dave the Diver, dải độ sâu Blue Hole | 0 - 50 m, 50 - 130 m, 130 - 250 m (trang dữ liệu fan, có nguồn khác ghi 50 - 100 m) | [24] |
 | Subnautica: Below Zero, oxy | gốc 45, bình chuẩn +30 thành 75, bình dung tích cao thành 135, đeo bình giảm tốc bơi 0,40 m/s | [21] |
-| Hardspace: Shipbreaker, ca làm | 15 phút mỗi ca trong chế độ chiến dịch, sau thêm chế độ không đếm ngược | [20] |
+| Hardspace: Shipbreaker, giờ giao thương làm | 15 phút mỗi giờ giao thương trong chế độ chiến dịch, sau thêm chế độ không đếm ngược | [20] |
 | Stardew Valley, Mines | 120 tầng, cứ 5 tầng có thang máy để quay lại | [18] |
 | Moonlighter, cấu trúc dungeon | thường 3 tầng và boss (một nguồn ghi 4 tầng gồm tầng boss) | [19] |
 | Left 4 Dead, trạng thái nhịp | 3 trạng thái Build Up, Peak, Relax | [3] |
@@ -82,7 +82,7 @@ Kiến thức nền về thiết kế không gian chơi cho game indie action ex
 
 **Stardew Valley (The Mines).** Làm gì: 120 tầng, cứ 5 tầng có thang máy, chết thì quên vài tầng gần nhất [18]. Vì sao hiệu quả: điểm lưu tiến độ trong không gian chia game dài thành các mục tiêu ngắn, phạt chết lấy đi tiến độ gần nhất chứ không lấy hết. Bài học: khi mở tầng 2 trở đi (ngoài MVP), cân nhắc điểm phóng tàu mở theo mốc thay vì luôn xuất phát từ cửa tầng.
 
-**Hardspace: Shipbreaker.** Làm gì: tháo dỡ tàu trong ca 15 phút, hết ca về doanh trại dù xong hay chưa. Sau phản hồi người chơi, nhà phát triển thêm Open Shift không đếm ngược [20]. Vì sao hiệu quả và chỗ hỏng: ca ngắn hợp nhịp vào, làm, ra, nhưng đồng hồ thật làm một phần người chơi khó chịu với game tháo dỡ cần cẩn thận. Bài học: fantasy nhặt nhạnh ngoài không gian cần thời gian tỉ mỉ. Đồng hồ nên là tài nguyên bị tiêu bởi hành động (năng lượng) thay vì đếm ngược tường minh.
+**Hardspace: Shipbreaker.** Làm gì: tháo dỡ tàu trong giờ giao thương 15 phút, hết giờ giao thương về doanh trại dù xong hay chưa. Sau phản hồi người chơi, nhà phát triển thêm Start Trade Hour không đếm ngược [20]. Vì sao hiệu quả và chỗ hỏng: giờ giao thương ngắn hợp nhịp vào, làm, ra, nhưng đồng hồ thật làm một phần người chơi khó chịu với game tháo dỡ cần cẩn thận. Bài học: fantasy nhặt nhạnh ngoài không gian cần thời gian tỉ mỉ. Đồng hồ nên là tài nguyên bị tiêu bởi hành động (năng lượng) thay vì đếm ngược tường minh.
 
 ## 5. Sai lầm thường gặp ở team indie nhỏ
 
@@ -124,7 +124,7 @@ Kiến thức nền về thiết kế không gian chơi cho game indie action ex
 | 20 | PC Gamer, "Hardspace: Shipbreaker is adding a new mode with no time limit" | Bài viết | https://pcgamer.com/hardspace-shipbreaker-is-adding-a-new-mode-with-no-time-limit |
 | 21 | Subnautica Wiki, Standard O₂ Tank (Below Zero) | Wiki | https://subnautica.fandom.com/wiki/Standard_O%E2%82%82_Tank_(Below_Zero) |
 | 22 | Game Developer, "How Dome Keeper focuses on systems that feed into one another" và Wikipedia Dome Keeper | Phỏng vấn, wiki | https://www.gamedeveloper.com/road-to-igf-2023/how-dome-keeper-focuses-on-systems-that-feed-into-one-another và https://en.wikipedia.org/wiki/Dome_Keeper |
-| 23 | Noel Berry, "Remaking Celeste's Lighting" | Bài viết | https://www.noelberry.ca/posts/celeste_lighting |
+| 23 | Noel Berry, "Remaking Celeste's Lighting" | Bài viết | https://www.noelberry.giờ giao thương/posts/celeste_lighting |
 | 24 | MeowDB, Dave the Diver Blue Hole Area & Depth | Trang dữ liệu fan | https://meowdb.com/db/dave-the-diver/blue-hole |
 | 25 | Boris the Brave, "Lock and Key Dungeons" | Bài viết | https://www.boristhebrave.com/2021/02/27/lock-and-key-dungeons |
 | 26 | Game Developer, postmortem "Trawling in the deep: How Black Salt Games made Dredge" | Postmortem | https://www.gamedeveloper.com/design/trawling-in-the-deep-how-black-salt-games-made-spooky-fishing-rpg-i-dredge-i- |

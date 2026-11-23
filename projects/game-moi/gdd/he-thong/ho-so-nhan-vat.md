@@ -91,7 +91,7 @@ Chương xuất hiện và chức năng K12 đầy đủ:
 | Tên | Chương | Khoang, chức năng K12 |
 |---|---|---|
 | Ingrid | 1 | Xưởng: chế và nâng cấp trang bị |
-| Linh | 1 | Khoang liên lạc: gọi tàu, mở ca cảng, shop |
+| Linh | 1 | Khoang liên lạc: gọi tàu, mở giờ giao thương, shop |
 | Rafa | 2 | Khoang dẫn đường: mở dải, Skiff |
 | Amara | 2 | Nghiên cứu và nuôi Driftlife |
 | Yusuf | 3 | Thêm bến và tiện ích cảng |

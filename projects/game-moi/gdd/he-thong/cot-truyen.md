@@ -30,7 +30,7 @@ Việc truyện cần ở vai khác, đã chốt với từng vai:
 |---|---|---|
 | Nơi cứu Y (mốc đóng chương 3, C3.8) | N4, Waypost Outer Ring: tàu TA04 bị toán của Maro áp mạn. Sevra nằm trong kén thoát hiểm BNG-102, người chơi kéo kén như kéo buồng ngủ đông. Mốc xong khi kén về tới Ember, qua cửa khí hoặc bằng Recall Beacon | gd-world (nơi, đường về), gd-combat (toán bắt cóc), gd-items (BNG-102) |
 | Hộ tống Y về căn cứ (C5.1) | Skiff chở nhóm và kén từ Ember tới cửa N4. Kéo kén qua vòng phong tỏa của The Wardens tới cửa The Hearth, cửa mở khi kén chạm tới. Kén không bị nhắm, không nhận sát thương. Không thêm hệ thống (log 87) | gd-world, gd-combat |
-| Nối tình báo (C4.7, C5.2) | Đơn đặt trước tự sinh của tàu TA11 (Pilot Light) mỗi ngày: Thông dịch viên đóng thùng tin mật CGO-421 từ gói tin mật STY-701 lúc Mở ca, tàu đến thì giao thùng, giao xong là tin tới nơi. Tàu vào lịch từ ngày kế tiếp sau C3.8 | gd-quan (TA11, nhóm hàng HC15), gd-items (CGO-421, STY-701, RCP-422) |
+| Nối tình báo (C4.7, C5.2) | Đơn đặt trước tự sinh của tàu TA11 (Pilot Light) mỗi ngày: Thông dịch viên đóng thùng tin mật CGO-421 từ gói tin mật STY-701 lúc Mở giao thương, tàu đến thì giao thùng, giao xong là tin tới nơi. Tàu vào lịch từ ngày kế tiếp sau C3.8 | gd-quan (TA11, nhóm hàng HC15), gd-items (CGO-421, STY-701, RCP-422) |
 | Maro | Hai lần cập bến (C3.3 và sau C3.4), rồi chỉ huy cuộc bắt cóc ở C3.8. Maro không đánh, rút lên tàu TA08 khi toán bị hạ. Tàu TA06 không là điều kiện của mốc nào ở chương 5 | gd-quan, gd-combat |
 | Trận cuối | Daskel tự tới Warden Rig để bắt Sevra. The Kindling nổi dậy ở Sennar đúng lúc hắn vắng mặt, tổ Ember giữ chân hắn ở Rig. BS-5 là Daskel, trận kết bằng khuất phục và bắt giữ, giao cho The Kindling | gd-combat |
 
@@ -55,7 +55,7 @@ Hệ thống cốt truyện giữ bối cảnh, năm chương, nhân vật truy�
 - Phản diện là Daskel, tên độc tài của hành tinh Sennar. Hắn đảo chính lật đổ Steward Ilvane, người chủ trương chung sống hòa bình sau The Meeting War. Chế độ và quân đội của hắn là The Wardens. Cái nhìn loài người tham lam, xấu tính là cái nhìn phiến diện của riêng hắn, sinh từ hận thù vì cha hắn chết trong cuộc chiến đó (Lead sửa 2026-11-20).
 - Solace là thông tin mồi (Lead chốt). Lodestar Survey, hồ sơ tả một hành tinh sống được tên Solace và đường tới đó, do chế độ của Daskel dựng và phát qua The Lattice. Thương nhân trung lập chuyển nó đi mà không biết. Hồ sơ dẫn Cradle vào điểm phục kích: The Scattering.
 - Sevra Ilvane, con gái Ilvane và người thừa kế hợp pháp, giả làm thương nhân Ilsume. Tổ Ember cứu cô ở mốc đóng chương 3. Cô cùng mạng lưới The Kindling chuẩn bị lật đổ Daskel.
-- Chương 1 tới 3 người chơi sống sót và tìm đường tới Solace. Chương 4 lộ ra Solace là mồi và Sevra kể chuyện đảo chính. Chương 5 là hộ tống Sevra, nối tình báo qua ca cảng, đánh Warden Rig khi cách mạng nổ ra, rồi rời neo.
+- Chương 1 tới 3 người chơi sống sót và tìm đường tới Solace. Chương 4 lộ ra Solace là mồi và Sevra kể chuyện đảo chính. Chương 5 là hộ tống Sevra, nối tình báo qua giờ giao thương, đánh Warden Rig khi cách mạng nổ ra, rồi rời neo.
 - Kết: cách mạng thành công, Sevra lên nắm quyền và trao tọa độ một hành tinh có sự sống thật. Ember rời neo lên đường. Móc cho phần sau là hành trình tới đó, game này không kể (B9, B11).
 - Truyện có 5 chương, 40 mốc, đi một đường, không rẽ nhánh, một kết.
 - Vật manh mối chỉ đặt ở khe M của map nhánh, vật nhiệm vụ ở khe V. Vật nhiệm vụ không bao giờ mất vĩnh viễn, nộp không tiêu vật. Mọi cảnh bỏ qua được. Không có trạng thái thua của truyện.
@@ -160,22 +160,22 @@ Số luật là khóa tham chiếu của các file khác, nên luật thêm sau 
 3. `MVP` Vật manh mối chỉ đặt ở map nhánh, tại khe M cố định theo bảng khe ở mục 2.5 (K7). Không vật manh mối nào đặt ở map tổng. Vật manh mối hiện ra từ lúc mốc ghi ở cột "Hiện từ mốc" mở, và nằm yên tại chỗ cho tới khi có người nhặt.
 4. `MVP` Nhặt vật manh mối là ghi ngay vào Sổ tay của cả nhóm. Vật manh mối không chiếm sức chứa túi đồ và không mất khi người nhặt bị kéo về.
 5. `MVP` Vật nhiệm vụ là thứ phải đưa về trạm, đặt ở khe V của map nhánh. Vật nhiệm vụ nhỏ (mảnh lõi dẫn đường của Cinder và Wick, mẫu Driftlife mang thẻ, hộp ghi hành trình, bản đồ sao thật) chiếm túi theo luật V4 của `vat-pham.md`. Người mang bị kéo về thì chọn nó làm món giữ lại theo K2 được. Không chọn thì nó mất cùng túi và ở chuyến sau nằm lại đúng khe V của nó. Buồng ngủ đông có người là vật kéo: rơi dọc đường, hoặc người kéo bị kéo về, thì ở chuyến sau buồng nằm lại vị trí gốc. Không vật nhiệm vụ nào mất vĩnh viễn. Người trong buồng ngủ đông không chết vì người chơi thất bại.
-6. `MVP` Cảnh truyện chỉ diễn ra ở điểm nghỉ: pha Chuẩn bị, lúc vừa về tới trạm, pha Cuối ngày, và trong khu có khí của map nhánh. Không cảnh nào diễn ra trong map tổng. Không cảnh nào dừng đồng hồ ca cảng.
-7. `MVP` Hộp thoại chỉ có trong trạm và trong khu có khí của map nhánh (Lantern, Veyl Waypost, The Raft), ngoài giờ ca cảng. Trong ca cảng và trong khu chân không của map nhánh, truyện chỉ nói bằng lời bong bóng trên đầu nhân vật hoặc radio, không chặn điều khiển.
+6. `MVP` Cảnh truyện chỉ diễn ra ở điểm nghỉ: pha Chuẩn bị, lúc vừa về tới trạm, pha Cuối ngày, và trong khu có khí của map nhánh. Không cảnh nào diễn ra trong map tổng. Không cảnh nào dừng đồng hồ giờ giao thương.
+7. `MVP` Hộp thoại chỉ có trong trạm và trong khu có khí của map nhánh (Lantern, Veyl Waypost, The Raft), ngoài giờ giao thương. Trong giờ giao thương và trong khu chân không của map nhánh, truyện chỉ nói bằng lời bong bóng trên đầu nhân vật hoặc radio, không chặn điều khiển.
 8. `MVP` Cảnh ngắn dài tối đa 3 câu. Cảnh dài (cảnh của mốc dài và cảnh mở chương 4, 5) dài tối đa 8 câu. Mọi cảnh bỏ qua được bằng một lần bấm ở bất kỳ câu nào. Bỏ qua thì Sổ tay vẫn ghi tóm tắt một câu.
 9. `MVP` Ngoài không gian không có hộp thoại. Lời nói ngoài không gian đi qua radio: một dòng chữ ở mép màn hình, tự tắt, không dừng điều khiển.
 10. `MVP` Sổ tay ở trong trạm ghi mọi mốc đã xong, mọi vật manh mối đã nhặt, và đúng một dòng mục tiêu hiện tại kèm tên nơi phải tới. Khi mốc đang mở cần một thứ chưa có (dụng cụ, khoang, tàu), dòng mục tiêu ghi thứ đó.
 11. `MVP` Quest mở tính năng của người vớt theo luật 15 ở `tram-va-cang.md`: sửa khoang của người đó. Cốt truyện chỉ thêm cảnh và lời cho quest, không thêm điều kiện. Quest không có giới hạn thời gian và không thất bại. Riêng Linh Tran có hai khoang: khoang liên lạc KH06 và cảng KH07.
-12. `MVP` Truyện không khóa vòng ngày. Khi một mốc chưa xong, người chơi vẫn ra ngoài, làm ca cảng, nâng cấp như mọi ngày. Mốc chỉ khóa nội dung mới: dải, lối vào map nhánh, tính năng, loại tàu.
+12. `MVP` Truyện không khóa vòng ngày. Khi một mốc chưa xong, người chơi vẫn ra ngoài, làm giờ giao thương, nâng cấp như mọi ngày. Mốc chỉ khóa nội dung mới: dải, lối vào map nhánh, tính năng, loại tàu.
 13. `MVP` Lối vào mỗi map nhánh mở theo một mốc ghi ở bảng "Lối vào map nhánh" (mục 2.5). Dải chưa mở bị chặn cứng theo `map.md`, không vào sớm được.
-14. `MVP` Lời theo trạng thái không phải cảnh và không vào hàng chờ cảnh. Nhân vật trong trạm nói một dòng khi người chơi tới gần hoặc bấm nói chuyện: chào đầu ngày, sau chuyến có hàng, sau khi người chơi bị kéo về, sau ca cảng, gợi ý mục tiêu. Mỗi trạng thái có 4 biến thể, không nói lại biến thể vừa nói.
+14. `MVP` Lời theo trạng thái không phải cảnh và không vào hàng chờ cảnh. Nhân vật trong trạm nói một dòng khi người chơi tới gần hoặc bấm nói chuyện: chào đầu ngày, sau chuyến có hàng, sau khi người chơi bị kéo về, sau giờ giao thương, gợi ý mục tiêu. Mỗi trạng thái có 4 biến thể, không nói lại biến thể vừa nói.
 15. `MVP` Tikko có lời theo trạng thái ở cảng (cập bến, chờ, nhận đủ hàng, rời bến thiếu hàng), nói bằng bong bóng.
 16. `MVP` Truyện đi một đường. Không có lựa chọn hội thoại, không có nhánh, không có nhiều kết.
 17. `MVP` Lời truyện không chứa số và không dạy thao tác. Hướng dẫn thao tác do gd-ux viết.
 18. `MVP` Mỗi câu thoại là một chuỗi có mã riêng. Mã không hiện ra cho người chơi.
 19. `MVP` Mốc xong ngay khi điều kiện đúng, không phụ thuộc cảnh. Cảnh chỉ là phần trình bày của mốc. Mỗi người chơi có hàng chờ cảnh riêng và xem mỗi cảnh nhiều nhất một lần.
 20. `MVP` Nộp nghĩa là mang vật nhiệm vụ về tới trạm và đặt vào khoang nhận. Nộp không tiêu vật: vật vào kho của trạm và ở lại đó. Vật chỉ bị tiêu khi một danh sách sửa khoang hoặc một công thức của `vat-pham.md` dùng nó làm nguyên liệu, và các chỗ dùng đó được xếp sau mốc cần vật (bảng "Vật nhiệm vụ và chỗ tiêu" ở mục 6).
-21. `MVP` Mốc có điều kiện đúng ở giữa ca cảng (C1.8, C2.3, C3.3, C3.4, C4.7, C5.2): trong ca chỉ phát lời bong bóng. Cảnh mốc đó phát sau ca, ở màn Kết ca hoặc ở pha Cuối ngày của cùng ngày (UI-43, UI-44 của `ux-ui.md`). Khi ca cảng đang chạy, không cảnh nào chặn màn của bất kỳ ai trong nhóm, kể cả người không làm ca: cảnh của họ chờ tới khi ca xong.
+21. `MVP` Mốc có điều kiện đúng ở giữa giờ giao thương (C1.8, C2.3, C3.3, C3.4, C4.7, C5.2): trong giờ giao thương chỉ phát lời bong bóng. Cảnh mốc đó phát sau giờ giao thương, ở màn Kết thúc giờ giao thương hoặc ở pha Cuối ngày của cùng ngày (UI-43, UI-44 của `ux-ui.md`). Khi giờ giao thương đang chạy, không cảnh nào chặn màn của bất kỳ ai trong nhóm, kể cả người không làm giờ giao thương: cảnh của họ chờ tới khi giờ giao thương xong.
 22. `MVP` Người vớt nằm trong buồng tỉnh vào đầu ngày kế tiếp sau khi buồng về tới trạm (luật 14 của `tram-va-cang.md`), rồi mới giao quest. Người vớt đang thức (Amara, Yusuf) giao quest ngay khi tới trạm.
 23. `MVP` "Ngày kế tiếp sau mốc X" nghĩa là sau ít nhất một lần ngủ kể từ lúc X xong (K23).
 24. `Sau MVP` Bốn thương nhân có tên còn lại cũng có lời theo trạng thái ở cảng như luật 15.
@@ -300,8 +300,8 @@ Mục tiêu người chơi: hãm trôi và neo Ember, vớt hai người đầu 
 | C1.5 | Xưởng sáng đèn | Xưởng KH05 Hoạt động | Ember, xưởng | Xưởng (K12), chế được Bộ kích nguồn TOL-401 và Súng lưới cho loài nhỏ TOL-202 (log GDM dòng 49) |
 | C1.6 | Người thứ hai | Buồng của Linh qua cửa khí của Ember | Ember | Linh vào Hồi sức, tỉnh đầu ngày kế tiếp và giao quest sửa KH06 và KH07 |
 | C1.7 | Lời gọi đầu tiên | Khoang liên lạc KH06 Hoạt động và cảng KH07 Hoạt động | Ember, khoang liên lạc | Khoang liên lạc, cảng, shop (K12, K20). Tàu TA01 vào lịch từ ngày kế tiếp |
-| C1.8 | Tàu đầu tiên | Ngày kế tiếp sau C1.7 và tàu TA01 của Tikko cập bến | Ember, bến 1 | Ca cảng (kiểu chơi mới) |
-| C1.9 | Sóng của Lantern (đóng chương) | Số ca cảng đã xong đạt ngưỡng ở mục 3 và giai đoạn 1 của động cơ chính đã lắp (K25) | Ember, khoang liên lạc | Dải Giữa, lối vào N3, chương 2 |
+| C1.8 | Tàu đầu tiên | Ngày kế tiếp sau C1.7 và tàu TA01 của Tikko cập bến | Ember, bến 1 | Giờ giao thương (kiểu chơi mới) |
+| C1.9 | Sóng của Lantern (đóng chương) | Số giờ giao thương đã xong đạt ngưỡng ở mục 3 và giai đoạn 1 của động cơ chính đã lắp (K25) | Ember, khoang liên lạc | Dải Giữa, lối vào N3, chương 2 |
 
 | Mã | Là gì | ID vật | Nơi | Hiện từ mốc | Nói điều gì |
 |---|---|---|---|---|---|
@@ -317,14 +317,14 @@ Nhân vật xuất hiện: tổ Ember, Ingrid Halvorsen, Linh Tran, Tikko, Bram 
 Kiểu chơi mới và cách truyện đưa vào:
 - Khai thác: khoang neo cần vật liệu, đó là lý do của chuyến ra ngoài đầu tiên (C1.2).
 - Bắt sống loài nhỏ bằng lưới: Ingrid không chịu được việc phá hỏng thứ còn nguyên. Thứ đầu tiên cô chế sau Bộ kích nguồn là Súng lưới, để mang sinh vật về mà không làm nát chúng (C1.5).
-- Ca cảng: lời gọi của Linh được một dân gom phế liệu Oru nghe thấy. Tikko ghé vì tò mò và trở thành khách đầu tiên (C1.8). Từ ngày có Súng lưới, đơn đặt trước ngày chẵn của Tikko là một lồng Driftlife sống: Tikko gom hộ một nhà sưu tầm chưa lộ mặt. Ca dạy đầu tiên chỉ bán thùng phế liệu theo GDD trạm và cảng. Người đó là Vaeth, tới chương 2 mới tự đến.
+- Giờ giao thương: lời gọi của Linh được một dân gom phế liệu Oru nghe thấy. Tikko ghé vì tò mò và trở thành khách đầu tiên (C1.8). Từ ngày có Súng lưới, đơn đặt trước ngày chẵn của Tikko là một lồng Driftlife sống: Tikko gom hộ một nhà sưu tầm chưa lộ mặt. Giờ giao thương hướng dẫn đầu tiên chỉ bán thùng phế liệu theo GDD trạm và cảng. Người đó là Vaeth, tới chương 2 mới tự đến.
 
 Người vớt của chương:
 
 | Người | Đưa về thế nào | Quest mở (luật của gd-quan) | Cảnh truyện kèm quest | Mở (K12) |
 |---|---|---|---|---|
 | Ingrid Halvorsen | Lần 1 vào Cinder: kéo buồng từ C3 về beacon B1 | Sửa xưởng KH05 | Cô tự tay kiểm từng món vật liệu người chơi giao, chê một món, nhận hết | Xưởng: chế và nâng cấp trang bị. Kèm Súng lưới cho loài nhỏ |
-| Linh Tran | Lần 2 vào Cinder: mở cửa D1 bằng Bộ kích nguồn, qua khoang máy C6, kéo buồng từ C5 về beacon B2 | Sửa khoang liên lạc KH06 và cảng KH07 | Cô phát lời gọi đầu tiên bằng ba thứ tiếng của The Veyl | Khoang liên lạc và cảng: gọi tàu, ca cảng, shop |
+| Linh Tran | Lần 2 vào Cinder: mở cửa D1 bằng Bộ kích nguồn, qua khoang máy C6, kéo buồng từ C5 về beacon B2 | Sửa khoang liên lạc KH06 và cảng KH07 | Cô phát lời gọi đầu tiên bằng ba thứ tiếng của The Veyl | Khoang liên lạc và cảng: gọi tàu, giờ giao thương, shop |
 
 - Vai truyện của boss BS-1 Scrapmaw: nó làm tổ quanh lõi năng lượng ở khoang máy C6, chắn đường duy nhất tới buồng của Linh. Hạ hay xua nó đi đều được (hai cách kết của gd-combat). Xua đi là lần đầu game cho thấy không cần giết.
 
@@ -386,9 +386,9 @@ Mở chương: không có cảnh. Lần đầu vào dải Xa có một sự ki�
 | Mốc | Tên | Điều kiện | Nơi | Mở gì |
 |---|---|---|---|---|
 | C3.1 | Bến của The Veyl | Tới lối vào N4 | N4, Waypost Concourse | Nhem, Dromm, Yusuf Demir. Tàu TA06 và TA10 vào lịch từ ngày kế tiếp. Vật truyện của N4 hiện ra |
-| C3.2 | Trưởng cảng về bến | Đã xong một ca cảng có tàu TA06 của Dromm cập bến và sau ca đó tới N4 bằng Skiff | Ember, bến | Yusuf về Ember cùng chuyến Skiff. Quest sửa bến thuộc KH12 |
+| C3.2 | Trưởng cảng về bến | Đã xong một giờ giao thương có tàu TA06 của Dromm cập bến và sau giờ giao thương đó tới N4 bằng Skiff | Ember, bến | Yusuf về Ember cùng chuyến Skiff. Quest sửa bến thuộc KH12 |
 | C3.3 | Tàu lạ | Bến thuộc KH12 Hoạt động và tàu TA08 của Maro cập bến lần thứ nhất | Ember, bến | Maro vào truyện |
-| C3.4 | Sự cố đầu tiên | Sự cố đầu tiên xảy ra, ở ca cảng kế tiếp sau C3.3 (luật 43 của `tram-va-cang.md`) | Ember | Sự cố trong ca cảng (K14). Lối vào N5 |
+| C3.4 | Sự cố đầu tiên | Sự cố đầu tiên xảy ra, ở giờ giao thương kế tiếp sau C3.3 (luật 43 của `tram-va-cang.md`) | Ember | Sự cố trong giờ giao thương (K14). Lối vào N5 |
 | C3.5 | Những người ở lại | Tới lối vào N5 | N5 | Elias Vance, Wren. Tàu TA07 của The Remainers. Lối vào N6 |
 | C3.6 | Trạm bị cướp | Đã nộp mẫu Driftlife mang thẻ STY-301 ở phòng nghiên cứu | Ember, phòng nghiên cứu | Cảnh Amara nhận mẫu |
 | C3.7 | Dấu săn trộm | Ngày kế tiếp sau C3.6 | Ember, phòng nghiên cứu | Cú lật Driftlife. Cuộc bắt cóc ở N4 sẵn sàng xảy ra từ ngày kế tiếp |
@@ -410,7 +410,7 @@ Mở chương: không có cảnh. Lần đầu vào dải Xa có một sự ki�
 Nhân vật xuất hiện: Yusuf Demir, Nhem, Dromm, Maro, Elias Vance, Wren, Ilsume (lộ là Sevra Ilvane ở mốc đóng chương), Daskel (chỉ qua lời Maro và lời phát).
 
 Kiểu chơi mới và cách truyện đưa vào:
-- Sự cố trong ca cảng: thiết bị Maro để lại làm trạm trục trặc. Thiết bị đó cũng nghe lén lịch tàu ở cảng, nhờ vậy The Wardens biết đường đi của Ilsume. Sau khi Ingrid gỡ nó, trạm vẫn mang di chứng, nên sự cố còn lại tới hết game.
+- Sự cố trong giờ giao thương: thiết bị Maro để lại làm trạm trục trặc. Thiết bị đó cũng nghe lén lịch tàu ở cảng, nhờ vậy The Wardens biết đường đi của Ilsume. Sau khi Ingrid gỡ nó, trạm vẫn mang di chứng, nên sự cố còn lại tới hết game.
 - Kẻ địch có vũ khí: đơn vị The Wardens có ở dải Xa từ đầu chương (theo gd-combat). Người chơi đọc được tên The Wardens ngay ở Veyl Waypost (MM3.2), nhưng tới C3.8 mới biết chính chúng đã đánh Cradle, khi toán bắt cóc của Maro lộ mặt.
 - Kéo kén thoát hiểm ở mốc đóng chương: dùng lại cách kéo buồng ngủ đông của chương 1. Không thêm luật (log GDM dòng 87).
 
@@ -418,13 +418,13 @@ Người vớt của chương:
 
 | Người | Đưa về thế nào | Quest mở (luật của gd-quan) | Cảnh truyện kèm quest | Mở (K12) |
 |---|---|---|---|---|
-| Yusuf Demir | Ông đang thức, điều bến thuê ở Veyl Waypost từ khi trạm của ông vỡ. Ông nhờ Dromm ghé xem cảng Ember có đáng về không. Sau một ca có Dromm cập bến, người chơi dùng Skiff đón ông ở mốc C3.2. Theo K22 chuyến Skiff đó là của ngày sau ca | Sửa bến thuộc KH12 | Ông đi một vòng cảng, chê hết, rồi pha trà | Thêm bến, tiện ích cảng |
+| Yusuf Demir | Ông đang thức, điều bến thuê ở Veyl Waypost từ khi trạm của ông vỡ. Ông nhờ Dromm ghé xem cảng Ember có đáng về không. Sau một giờ giao thương có Dromm cập bến, người chơi dùng Skiff đón ông ở mốc C3.2. Theo K22 chuyến Skiff đó là của ngày sau giờ giao thương | Sửa bến thuộc KH12 | Ông đi một vòng cảng, chê hết, rồi pha trà | Thêm bến, tiện ích cảng |
 
 Hai lần cập bến của Maro (tàu TA08) và cuộc bắt cóc:
 
 | Lần | Vào lịch khi | Maro làm gì | Người trong trạm phản ứng |
 |---|---|---|---|
-| Thứ nhất (C3.3) | Bến thuộc KH12 Hoạt động | Gọi 1 thùng như mọi tàu, trả giá hời. Hỏi thăm trạm có bao nhiêu người thức | Yusuf vui vì có khách sộp. Linh thấy cách chào hơi lệch nghi thức Sennari. Ca sau có sự cố đầu tiên (C3.4) |
+| Thứ nhất (C3.3) | Bến thuộc KH12 Hoạt động | Gọi 1 thùng như mọi tàu, trả giá hời. Hỏi thăm trạm có bao nhiêu người thức | Yusuf vui vì có khách sộp. Linh thấy cách chào hơi lệch nghi thức Sennari. Giờ giao thương sau có sự cố đầu tiên (C3.4) |
 | Thứ hai | Từ ngày kế tiếp sau C3.4 | Hỏi những thương hội Sennari nào hay ghé Ember. Hỏi mua bản sao dữ liệu của nhật ký trạm. Rời bến sớm | Ingrid đã gỡ thiết bị lạ, chưa biết của ai. Linh trả lời qua loa về Ilsume |
 | Cuộc bắt cóc (C3.8) | Từ ngày kế tiếp sau C3.7, khi giai đoạn 3 đã lắp | Không cập bến Ember nữa. Toán của Maro áp mạn tàu TA04 ở Waypost Outer Ring của N4 | Mốc đóng chương |
 
@@ -472,7 +472,7 @@ Mục tiêu người chơi: vào bên trong Cradle lấy bằng chứng của ch
 Nhân vật xuất hiện: Sevra Ilvane, Rafael Ortega, Linh Tran, Nhem, Odile Laurent, người đưa tin của The Kindling (tàu TA11), Daskel (lời phát trên The Lattice).
 
 Kiểu chơi mới và cách truyện đưa vào: map nhánh lớn trong nội thất tàu. Người chơi tin Cradle là nơi duy nhất còn giữ đường tới Solace, nên phải vào tận kho lưu trữ, đi trọn trong nhiều chuyến.
-- Đơn tin mật không phải kiểu chơi mới, nó dùng luật đơn đặt trước sẵn có (luật 71 tới 73 của `tram-va-cang.md`): tàu TA11 của The Kindling có đơn đặt trước tự sinh mỗi ngày, Thông dịch viên đóng thùng tin mật CGO-421 lúc Mở ca, giao xong là tin tới nơi. Đây là phần nối tình báo trong lời Lead, làm bằng việc người chơi đã biết làm (log GDM dòng 87).
+- Đơn tin mật không phải kiểu chơi mới, nó dùng luật đơn đặt trước sẵn có (luật 71 tới 73 của `tram-va-cang.md`): tàu TA11 của The Kindling có đơn đặt trước tự sinh mỗi ngày, Thông dịch viên đóng thùng tin mật CGO-421 lúc Mở giao thương, giao xong là tin tới nơi. Đây là phần nối tình báo trong lời Lead, làm bằng việc người chơi đã biết làm (log GDM dòng 87).
 
 Người vớt của chương: không có (khung mục 7). Sevra ở ẩn trên Ember nhưng không phải người vớt: cô không mở tính năng nào. Hai chuyện riêng khép lại: Linh (người dịch hồ sơ) và Nhem (người chuyển hồ sơ).
 
@@ -483,7 +483,7 @@ Cảnh của C4.6 (cảnh dài):
 - Sevra kể phần còn lại: The Meeting War, cha cô và chủ trương chung sống, người cha của Daskel chết trận, cuộc đảo chính, và việc Daskel cần một kẻ thù để giữ ghế. Cô bật một lời phát của hắn để tổ Ember nghe hắn nói gì về loài người.
 - Qua sóng, Odile im rất lâu, rồi gỡ bản Lodestar Survey khỏi tường. Mục tiêu trong Sổ tay đổi: giúp Sevra, rời bãi vỡ.
 
-Cảnh đóng (cảnh của C4.7, cảnh ngắn, phát sau ca):
+Cảnh đóng (cảnh của C4.7, cảnh ngắn, phát sau giờ giao thương):
 - Người đưa tin của The Kindling nhận kiện, chào Sevra bằng nghi thức cũ của nhà Ilvane. Tin về tới Sennar.
 - Cùng lúc Maro báo về: người thừa kế đang ở chỗ loài người. Daskel rời Sennar, tự tới Warden Rig.
 
@@ -492,14 +492,14 @@ Cảnh đóng (cảnh của C4.7, cảnh ngắn, phát sau ca):
 Mục tiêu người chơi: đưa Sevra về căn cứ của The Kindling, giữ đường dây tin thông suốt, đánh Warden Rig khi cách mạng nổ ra, lấy bản đồ sao thật, sửa xong động cơ chính và rời neo.
 
 - Cảnh mở (cảnh dài, không phải mốc): phát ở pha Chuẩn bị của ngày kế tiếp sau C4.7.
-- Warden Rig hiện rõ ở rìa dải Xa: Daskel đã tới và phong tỏa bãi vỡ. Ca cảng vắng hẳn, chỉ còn Tikko, Dromm và tàu đưa tin.
+- Warden Rig hiện rõ ở rìa dải Xa: Daskel đã tới và phong tỏa bãi vỡ. Giờ giao thương vắng hẳn, chỉ còn Tikko, Dromm và tàu đưa tin.
 - Sevra nói cô phải về The Hearth: người nằm vùng chỉ nổi dậy khi nghe lệnh từ chính cô.
 - Rafa nói thẳng: mọi bản đồ loài người đang có đều chép từ hồ sơ giả, không tấm nào tin được. Kẻ dựng hồ sơ thì phải có bản đồ thật.
 
 | Mốc | Tên | Điều kiện | Nơi | Mở gì |
 |---|---|---|---|---|
 | C5.1 | Đưa người thừa kế về | Kén của Sevra BNG-102 chạm cửa The Hearth | N4, từ cửa vào tới The Hearth | Hộ tống, dùng luật kéo sẵn có: Skiff chở nhóm và kén từ Ember tới cửa N4, người chơi kéo kén qua vòng phong tỏa. Cửa The Hearth mở khi kén tới. Sevra nắm lại mạng lưới |
-| C5.2 | Lời nói dối đi đường nào | Tổng số đơn đặt trước tin mật của tàu TA11 đã giao xong đạt ngưỡng chương 5 ở mục 3 | Ember, bến | Nhem mở The Lattice cho The Kindling: bằng chứng của Cradle tới Sennar. Ngày nổi dậy được định. Trong ca chỉ có lời bong bóng, cảnh ngắn phát sau ca |
+| C5.2 | Lời nói dối đi đường nào | Tổng số đơn đặt trước tin mật của tàu TA11 đã giao xong đạt ngưỡng chương 5 ở mục 3 | Ember, bến | Nhem mở The Lattice cho The Kindling: bằng chứng của Cradle tới Sennar. Ngày nổi dậy được định. Trong giờ giao thương chỉ có lời bong bóng, cảnh ngắn phát sau giờ giao thương |
 | C5.3 | Vào Warden Rig | Tới N8 bằng Skiff | N8, Rig Landing | Sennar nổi dậy. Tổ Ember giữ chân Daskel ở Rig. Vật truyện của N8 hiện ra |
 | C5.4 | Mở lồng | Đã thả Driftlife ở Holding Pens | N8, Holding Pens | Driftlife quay sang đánh lính The Wardens. Đường vào Command Deck |
 | C5.5 | First Warden | BS-5 Daskel xong | N8, Command Deck | Trận đối đầu cuối (kiểu chơi mới). Daskel bị khuất phục, bị bắt và giao cho The Kindling. Data Core mở |
@@ -685,18 +685,18 @@ Mọi số là khởi điểm, chưa đo. Sim và playtest sẽ chỉnh.
 | Số câu tối đa của cảnh dài | 8 | 6 đến 10 | Mốc chương nặng ký hơn | Mốc chương nhạt | Nhịp chương | ước | `MVP` |
 | Ký tự tối đa một câu hộp thoại | 80 | 60 đến 90 | Viết thoải mái hơn, dễ tràn khi dịch | Phải cắt ý | Hộp thoại, dịch | gốc `10-narrative.md` [S27], gd-ux đã nhận (story.box) | `MVP` |
 | Ký tự tối đa một dòng radio | 60 | 40 đến 70 | Đọc không kịp khi đang bay | Thiếu ý | HUD | ước, gd-ux đã nhận (story.radio) | `MVP` |
-| Ký tự tối đa một lời bong bóng | 60 | 40 đến 70 | Che màn khi đang làm ca cảng | Thiếu ý | Ca cảng, map nhánh | ước, gd-ux đã nhận (story.bubble) | `MVP` |
+| Ký tự tối đa một lời bong bóng | 60 | 40 đến 70 | Che màn khi đang làm giờ giao thương | Thiếu ý | Giờ giao thương, map nhánh | ước, gd-ux đã nhận (story.bubble) | `MVP` |
 | Tốc độ đọc giả định | 17 ký tự mỗi giây | 15 đến 17 | Cảnh tính ra ngắn hơn | Cảnh tính ra dài hơn | Thời lượng cảnh | gốc `10-narrative.md` [S28][S29] | `MVP` |
 | Số cảnh phát ở một điểm nghỉ, tính theo từng người | 1 | 1 đến 2 | Truyện dồn, chặn lâu | Truyện giãn | Nhịp vòng ngày | ước | `MVP` |
 | Số biến thể của mỗi trạng thái lời nhân vật | 4 | 3 đến 6 | Ít lặp, tốn công viết | Lặp nhanh | Lời trong trạm | quy ước phòng, chưa có nguồn ngoài | `MVP` |
-| Số ca cảng đã xong để C1.9 xong | 3 | 2 đến 5 | Chương 1 dài hơn | Lantern tới quá sớm, chưa quen ca cảng | Thời lượng chương 1 | ước, gd-economy chỉnh | `MVP` |
+| Số giờ giao thương đã xong để C1.9 xong | 3 | 2 đến 5 | Chương 1 dài hơn | Lantern tới quá sớm, chưa quen giờ giao thương | Thời lượng chương 1 | ước, gd-economy chỉnh | `MVP` |
 | Số lần cập bến của Maro trước cuộc bắt cóc | 2 | 1 đến 3 | Nghi ngờ kéo dài, dễ đoán ra | Cuộc bắt cóc tới khi chưa kịp nghi | Chương 3 | ước | `Sau MVP` |
 | Số đơn đặt trước tin mật đã giao xong để C4.7 xong (ngưỡng chương 4) | 1 | 1 đến 2 | Chương 4 thêm ngày ở cảng | Không giảm được | Chương 4 | ước, gd-quan chỉnh | `Sau MVP` |
 | Tổng số đơn đặt trước tin mật đã giao xong để C5.2 xong (ngưỡng chương 5) | 2 | 2 đến 4 | Chương 5 dài thêm, sàn ngày tăng | Nối tình báo chỉ còn là một lần giao | Chương 5 | ước, gd-quan chỉnh | `Sau MVP` |
-| Số đoạn chuyện riêng của mỗi thương nhân | 3 | 2 đến 4 | Thương nhân sâu hơn, tốn công viết | Thương nhân mỏng | Ca cảng | ước | `Sau MVP` |
-| Số lần phục vụ xong tàu để mở đoạn chuyện riêng thứ nhất | 3 | 2 đến 4 | Chuyện riêng tới muộn | Tới khi chưa quen thương nhân | Ca cảng | ước | `Sau MVP` |
-| Số lần phục vụ xong tàu để mở đoạn thứ hai | 6 | 5 đến 8 | Như trên | Như trên | Ca cảng | ước | `Sau MVP` |
-| Số lần phục vụ xong tàu để mở đoạn thứ ba | 10 | 8 đến 14 | Như trên | Như trên | Ca cảng | ước | `Sau MVP` |
+| Số đoạn chuyện riêng của mỗi thương nhân | 3 | 2 đến 4 | Thương nhân sâu hơn, tốn công viết | Thương nhân mỏng | Giờ giao thương | ước | `Sau MVP` |
+| Số lần phục vụ xong tàu để mở đoạn chuyện riêng thứ nhất | 3 | 2 đến 4 | Chuyện riêng tới muộn | Tới khi chưa quen thương nhân | Giờ giao thương | ước | `Sau MVP` |
+| Số lần phục vụ xong tàu để mở đoạn thứ hai | 6 | 5 đến 8 | Như trên | Như trên | Giờ giao thương | ước | `Sau MVP` |
+| Số lần phục vụ xong tàu để mở đoạn thứ ba | 10 | 8 đến 14 | Như trên | Như trên | Giờ giao thương | ước | `Sau MVP` |
 | Số vật truyện tối thiểu mỗi chương | 2 | 2 đến 6 | Map nhánh dày truyện | Chương thiếu chứng cứ | Map nhánh | tiêu chí brief GD-022 | `MVP` |
 
 Số tính từ tham số (in bằng script cùng lần soát, xem dòng "Soát" ở Lịch sử thay đổi):
@@ -711,7 +711,7 @@ Số tính từ tham số (in bằng script cùng lần soát, xem dòng "Soát"
 
 - Bảy mốc dài là C1.1, C1.9, C2.8, C3.8, C4.6, C5.7, C5.8.
 - Lời theo trạng thái và chuyện riêng của thương nhân không phải cảnh (luật 14, 25), không nằm trong 180 câu. Amara và Yusuf tới bằng mốc nên không có cảnh đánh thức riêng.
-- Núm nối: "Số ca cảng đã xong để C1.9 xong" là núm duy nhất của hệ thống này chạm thời lượng chương, các mốc khác đi theo tiến độ của map và trạm.
+- Núm nối: "Số giờ giao thương đã xong để C1.9 xong" là núm duy nhất của hệ thống này chạm thời lượng chương, các mốc khác đi theo tiến độ của map và trạm.
 - Ba ngưỡng số lần phục vụ xong tàu chỉ là một nửa điều kiện của chuyện riêng thương nhân. Nửa kia là mốc truyện ở cột "Mở sau mốc" của bảng đề cương, mục 2.6 (luật 25).
 
 ## 4. Trường hợp biên
@@ -721,7 +721,7 @@ Số tính từ tham số (in bằng script cùng lần soát, xem dòng "Soát"
 | 1 | Người chơi tới cửa D1 của Station Cinder trước khi có Bộ kích nguồn | Cửa không mở. Một dòng radio của Ingrid gợi ý về xưởng. Không có cảnh | `MVP` |
 | 2 | Đang kéo buồng ngủ đông thì hết Oxy và bị kéo về | Buồng nằm lại vị trí gốc ở chuyến sau (luật 5). Người trong buồng vẫn sống. Vật nhiệm vụ nhỏ trong túi: chọn giữ lại thì về trạm, không chọn thì về khe V của nó ở chuyến sau | `MVP` |
 | 3 | Người chơi bỏ qua mọi cảnh | Mốc đã xong từ trước khi cảnh phát (luật 19). Sổ tay vẫn đủ tóm tắt và dòng mục tiêu | `MVP` |
-| 4 | Người chơi không bao giờ làm ca cảng | Mốc cần ca cảng (C1.8, C1.9, C2.3, C3.2, C3.3, C3.4, C4.7, C5.2) đứng ở trạng thái Mở vô thời hạn. Sổ tay ghi rõ việc cần làm. Không có đường vòng | `MVP` |
+| 4 | Người chơi không bao giờ làm giờ giao thương | Mốc cần giờ giao thương (C1.8, C1.9, C2.3, C3.2, C3.3, C3.4, C4.7, C5.2) đứng ở trạng thái Mở vô thời hạn. Sổ tay ghi rõ việc cần làm. Không có đường vòng | `MVP` |
 | 5 | Người chơi đã ở trong dải mới mở nhưng mốc mở lối vào map nhánh của dải đó chưa xong | Lối vào map nhánh đó đóng (luật 13). Dải chưa mở thì bị chặn cứng theo `map.md`, không vào sớm được | `MVP` |
 | 6 | Nhiều mốc xong liền nhau trong một lần kiểm | Cả chuỗi xong ngay (mục 2.3). Cảnh của chúng xếp hàng theo thứ tự mốc, mỗi điểm nghỉ phát một cảnh | `MVP` |
 | 7 | Nhặt vật manh mối trong cùng map nhánh theo thứ tự khác bảng | Được. Mốc chỉ xét đủ, không xét thứ tự nhặt | `MVP` |
@@ -733,11 +733,11 @@ Số tính từ tham số (in bằng script cùng lần soát, xem dòng "Soát"
 | 13 | Người đang mang vật nhiệm vụ rời phiên hoặc mất kết nối giữa chuyến | Tính như bị kéo về (C10): chỉ giữ 1 món. Vật nhiệm vụ nhỏ không được giữ thì về khe V ở chuyến sau. Buồng đang kéo rơi tại chỗ, người khác kéo tiếp được, hết chuyến chưa ai kéo về thì buồng về vị trí gốc | `MVP` |
 | 14 | Người chơi đặt tên trùng tên một nhân vật | Hiện bình thường, không đổi | `MVP` |
 | 15 | Đã xem cảnh kết rồi vào lại bản lưu | Theo luật 26: động cơ đã xong giai đoạn 5, C5.7 và C5.8 không phát lại, không rời neo lần nữa. Hai cảnh cuối xem lại từ Sổ tay | `Sau MVP` |
-| 16 | Tàu Lamplighter (C2.3) rời khi chưa giao | Bram quay lại ở ca sau và gọi thùng lại. Không giới hạn số lần | `Sau MVP` |
+| 16 | Tàu Lamplighter (C2.3) rời khi chưa giao | Bram quay lại ở giờ giao thương sau và gọi thùng lại. Không giới hạn số lần | `Sau MVP` |
 | 17 | Người chơi xua BS-1 hoặc BS-2 thay vì hạ | Mốc vẫn xong. Lời nhân vật có biến thể cho cách kết đó. Với BS-2, Amara đứng trong Lantern nhìn thấy và có một lời riêng ở lần gặp đầu | `MVP` cho BS-1 |
 | 18 | Mảnh lõi dẫn đường của Cinder nhặt từ chương 1, chưa có chỗ dùng | Nằm trong kho tới khi sửa khoang dẫn đường KH08. Không bán được, không mất | `MVP` |
 | 19 | Sửa xong KH06 mà chưa sửa KH07 | C1.7 chưa xong. Dòng mục tiêu Sổ tay ghi: sửa cảng | `MVP` |
-| 20 | Tàu có điều kiện truyện cập bến trong ngày người chơi bỏ ca cảng | Tàu đó vào lịch lại ở ngày sau. Mốc không mất (luật 19 của `tram-va-cang.md`) | `MVP` |
+| 20 | Tàu có điều kiện truyện cập bến trong ngày người chơi bỏ giờ giao thương | Tàu đó vào lịch lại ở ngày sau. Mốc không mất (luật 19 của `tram-va-cang.md`) | `MVP` |
 | 21 | Host thoát khi một mốc vừa xong giữa ngày | Thế giới về điểm lưu gần nhất (C10, K23). Mốc xong sau lần lưu đó quay lại trạng thái Mở, vật manh mối nhặt sau lần lưu đó quay lại Tại chỗ | `MVP` |
 | 22 | Mọi người chơi đều ở ngoài khi một mốc ở trạm xong | Mốc xong ngay. Cảnh chờ từng người ở điểm nghỉ kế tiếp của họ | `MVP` |
 | 23 | Đang kéo kén của Sevra thì người kéo ngạt hoặc bị kéo về | Người kéo thả kén, đồng đội kéo tiếp. Cả nhóm về trạm thì kén nằm lại, chuyến sau kéo tiếp (luật của gd-combat). Kén không bị nhắm, không nhận sát thương. Sevra không chết, truyện không có trạng thái thua | `Sau MVP` |
@@ -754,20 +754,20 @@ Số tính từ tham số (in bằng script cùng lần soát, xem dòng "Soát"
 - Điều không có: thua vì truyện, người vớt chết, lựa chọn hội thoại, kết thứ hai, tới được Solace.
 
 - Số ngày tối thiểu của chuỗi mốc từng chương `MVP` cho chương 1. Tính tay theo luật, chưa sim.
-- Luật dùng để tính: một ngày tối đa hai chuyến và một ca cảng, ca cảng sau các chuyến (K22). Ngày chỉ sang khi ngủ (K23). Người vớt trong buồng tỉnh đầu ngày kế tiếp (luật 22). Lịch tàu sinh đầu ngày nên tàu mới mở vào lịch từ ngày kế tiếp.
+- Luật dùng để tính: một ngày tối đa hai chuyến và một giờ giao thương, giờ giao thương sau các chuyến (K22). Ngày chỉ sang khi ngủ (K23). Người vớt trong buồng tỉnh đầu ngày kế tiếp (luật 22). Lịch tàu sinh đầu ngày nên tàu mới mở vào lịch từ ngày kế tiếp.
 - Có tính hai bước chế qua đêm mà chuỗi mốc bắt buộc phải qua theo `vat-pham.md`: Bộ kích nguồn (RCP-205) ở chương đầu và Lõi dẫn hướng rời bãi vỡ (RCP-207) ở chương cuối. Mốc C2.4 đi đường Phao kéo, không cần bước qua đêm nào. Máy cắt thân tàu cho chương 4 chế được từ chương 3.
 - Không tính thời gian gom vật liệu và tiền, nên đây là sàn, thực tế dài hơn.
 
 | Chương | Sàn ngày | Chuỗi theo ngày |
 |---|---|---|
-| 1 | 7 | Ngày 1: C1.1, C1.2, C1.3, C1.4. Ngày 2: Ingrid tỉnh, C1.5, đặt chế Bộ kích nguồn qua đêm. Ngày 3: vào Cinder lần hai, C1.6. Ngày 4: Linh tỉnh, C1.7. Ngày 5: C1.8 và ca thứ nhất. Ngày 6: ca thứ hai. Ngày 7: ca thứ ba, C1.9. Đây là sàn theo truyện. Sim kinh tế cho chơi một mình đóng chương ngày 8, vì cần Hạng cảng 3 để mua Van tiết lưu |
-| 2 | 5 | Ngày 1: C2.1, C2.2. Ngày 2: ca có TA03, C2.3, sửa KH10 và KH11, chế Phao kéo. Ngày 3: bắt con cỡ M, C2.4. Ngày 4: C2.5, vào Wick, C2.6, C2.7. Ngày 5: Rafa tỉnh, sửa KH08, nộp STY-103, C2.8 |
-| 3 | 8 | Ngày 1: C3.1. Ngày 2: ca có TA06. Ngày 3: Skiff đón Yusuf, C3.2, sửa bến. Ngày 4: C3.3. Ngày 5: C3.4. Ngày 6: C3.5, vào Flint, C3.6. Ngày 7: C3.7. Ngày 8: tới N4, cứu Sevra, C3.8 |
-| 4 | 3 | Ngày 1: cảnh mở, C4.1, C4.2, ca có TA11 với đơn đặt trước tin mật đầu tiên. Ngày 2: C4.3, C4.4, C4.5. Ngày 3: C4.6, rồi C4.7 xong ngay vì đơn đặt trước đã giao xong |
-| 5 | 3 | Ngày 1: cảnh mở, chuyến hộ tống với C5.1, ca có TA11, C5.2. Ngày 2: chuyến một vào Rig với C5.3 và C5.4, chuyến hai với C5.5 và C5.6, chế ENG-105 qua đêm. Ngày 3: sửa giai đoạn 5, C5.7, C5.8 |
+| 1 | 7 | Ngày 1: C1.1, C1.2, C1.3, C1.4. Ngày 2: Ingrid tỉnh, C1.5, đặt chế Bộ kích nguồn qua đêm. Ngày 3: vào Cinder lần hai, C1.6. Ngày 4: Linh tỉnh, C1.7. Ngày 5: C1.8 và giờ giao thương thứ nhất. Ngày 6: giờ giao thương thứ hai. Ngày 7: giờ giao thương thứ ba, C1.9. Đây là sàn theo truyện. Sim kinh tế cho chơi một mình đóng chương ngày 8, vì cần Hạng cảng 3 để mua Van tiết lưu |
+| 2 | 5 | Ngày 1: C2.1, C2.2. Ngày 2: giờ giao thương có TA03, C2.3, sửa KH10 và KH11, chế Phao kéo. Ngày 3: bắt con cỡ M, C2.4. Ngày 4: C2.5, vào Wick, C2.6, C2.7. Ngày 5: Rafa tỉnh, sửa KH08, nộp STY-103, C2.8 |
+| 3 | 8 | Ngày 1: C3.1. Ngày 2: giờ giao thương có TA06. Ngày 3: Skiff đón Yusuf, C3.2, sửa bến. Ngày 4: C3.3. Ngày 5: C3.4. Ngày 6: C3.5, vào Flint, C3.6. Ngày 7: C3.7. Ngày 8: tới N4, cứu Sevra, C3.8 |
+| 4 | 3 | Ngày 1: cảnh mở, C4.1, C4.2, giờ giao thương có TA11 với đơn đặt trước tin mật đầu tiên. Ngày 2: C4.3, C4.4, C4.5. Ngày 3: C4.6, rồi C4.7 xong ngay vì đơn đặt trước đã giao xong |
+| 5 | 3 | Ngày 1: cảnh mở, chuyến hộ tống với C5.1, giờ giao thương có TA11, C5.2. Ngày 2: chuyến một vào Rig với C5.3 và C5.4, chuyến hai với C5.5 và C5.6, chế ENG-105 qua đêm. Ngày 3: sửa giai đoạn 5, C5.7, C5.8 |
 
 - Tổng sàn: 26 ngày. Độ dài một ngày lấy theo khung mục 9 (chương đầu 15 đến 20 phút, chương cuối 25 đến 30 phút, ba chương giữa nội suy đều). Cả game: khoảng 8,3 đến 10,4 giờ, thấp hơn mục tiêu 12 đến 15 giờ.
-- Riêng chương đầu: 7 ngày là khoảng 1,8 đến 2,3 giờ, chạm trần mục tiêu 1,5 đến 2 giờ của khung. Hạ núm số ca cảng của C1.9 xuống hai thì chương đầu còn 6 ngày, khoảng 1,5 đến 2 giờ.
+- Riêng chương đầu: 7 ngày là khoảng 1,8 đến 2,3 giờ, chạm trần mục tiêu 1,5 đến 2 giờ của khung. Hạ núm số giờ giao thương của C1.9 xuống hai thì chương đầu còn 6 ngày, khoảng 1,5 đến 2 giờ.
 - Chuỗi mốc là sàn cứng: không số người chơi nào xong chương đầu trước ngày 7. Sàn không đổi theo số người chơi.
 - Chương 1 là 7 vì Bộ kích nguồn chế qua đêm. Chương 5 là 3 vì hai chuyến vào Warden Rig làm được trong một ngày.
 - Sim kinh tế của gd-economy chạy với sàn 7, 5, 8, 3, 3, số giờ và tỉ lệ co-op ở `kinh-te-tien-trinh.md` mục 6b. Mục tiêu co-op của khung là 60 đến 75% (log dòng 69).
@@ -779,9 +779,9 @@ Chỗ hạ sàn được `Sau MVP` trừ dòng đầu. Tính tay theo cùng lu�
 
 | Chỗ hạ | Đổi gì | Rút được | Mất gì ở truyện |
 |---|---|---|---|
-| Núm C1.9 | Số ca cảng để C1.9 xong từ 3 xuống 2 | 1 ngày ở chương 1 | Người chơi mới quen ca cảng ít hơn một ca trước khi sang chương 2 |
+| Núm C1.9 | Số giờ giao thương để C1.9 xong từ 3 xuống 2 | 1 ngày ở chương 1 | Người chơi mới quen giờ giao thương ít hơn một giờ giao thương trước khi sang chương 2 |
 | C2.5 | Bỏ điều kiện ngày kế tiếp, lối vào Wick mở ngay khi C2.4 xong | 1 ngày ở chương 2 | Mất một nhịp nghỉ sau mẫu sống đầu tiên |
-| C3.2 | Yusuf về Ember cùng tàu của Dromm ngay trong ca đó, không cần chuyến Skiff ngày sau | 1 ngày ở chương 3 | Skiff mất một vai trong truyện, giống cách Amara tới |
+| C3.2 | Yusuf về Ember cùng tàu của Dromm ngay trong giờ giao thương đó, không cần chuyến Skiff ngày sau | 1 ngày ở chương 3 | Skiff mất một vai trong truyện, giống cách Amara tới |
 | C3.7 | Bỏ điều kiện ngày kế tiếp, cú lật phát ở pha Cuối ngày của ngày nộp mẫu | 1 ngày ở chương 3 | Mất đêm chờ kết quả, cú lật tới gấp hơn |
 
 - Áp cả bốn chỗ thì sàn còn 6, 4, 6, 3, 3, tổng 22 ngày thay cho 26.
@@ -794,7 +794,7 @@ Chỗ hạ sàn được `Sau MVP` trừ dòng đầu. Tính tay theo cùng lu�
 | Dữ liệu mốc | Bảng: mã mốc, chương, mốc đứng trước, danh sách điều kiện (mỗi điều kiện gồm loại và tham số, tất cả phải cùng đúng), nơi, mã cảnh, danh sách thứ được mở | `MVP` |
 | Dữ liệu cảnh | Bảng: mã cảnh, mốc sở hữu hoặc điều kiện riêng (hai cảnh mở chương 4 và 5), loại (ngắn, dài), kênh, danh sách mã câu | `MVP` |
 | Dữ liệu vật truyện | Bảng: mã truyện, ID vật của `vat-pham.md`, loại (manh mối, nhiệm vụ), map nhánh, khe, mốc làm nó hiện, mã mục Sổ tay, khoang nhận nếu là vật nhiệm vụ | `MVP` |
-| Loại điều kiện cần có | Bắt đầu thế giới. Tới một lối vào hoặc một khu. Một khoang Hoạt động. Một buồng ngủ đông qua cửa khí. Boss xong (hạ hoặc xua). Đã nhặt một vật manh mối. Đã nộp một vật nhiệm vụ. Một vật hoặc sinh vật về tới kho. Số ca cảng đã xong. Phục vụ xong một tàu. Một tàu cập bến lần thứ n. Một ca cảng có một tàu đã xong. Sự cố đầu tiên xảy ra. Đã mua một món ở shop. Ngày kế tiếp sau một mốc. Giai đoạn động cơ xong. Mọi người có mặt xác nhận. Lần đầu vào một dải (chỉ dùng cho radio và sự kiện hình mở chương 2, 3) | `MVP` |
+| Loại điều kiện cần có | Bắt đầu thế giới. Tới một lối vào hoặc một khu. Một khoang Hoạt động. Một buồng ngủ đông qua cửa khí. Boss xong (hạ hoặc xua). Đã nhặt một vật manh mối. Đã nộp một vật nhiệm vụ. Một vật hoặc sinh vật về tới kho. Số giờ giao thương đã xong. Phục vụ xong một tàu. Một tàu cập bến lần thứ n. Một giờ giao thương có một tàu đã xong. Sự cố đầu tiên xảy ra. Đã mua một món ở shop. Ngày kế tiếp sau một mốc. Giai đoạn động cơ xong. Mọi người có mặt xác nhận. Lần đầu vào một dải (chỉ dùng cho radio và sự kiện hình mở chương 2, 3) | `MVP` |
 | Lưu | Trạng thái mọi mốc, mọi vật truyện, số lần cập bến của từng tàu có tên, số lần phục vụ xong tàu của từng thương nhân có tên, và với mỗi người chơi: hàng chờ cảnh và danh sách cảnh đã xem. Lưu theo thế giới của host | `MVP` |
 | Chuỗi văn bản | Mỗi câu một mã, tách khỏi code, dùng bảng dịch của Unity Localization. Chừa khung gấp đôi độ dài bản gốc | `MVP` |
 | Đồng bộ co-op | Trạng thái mốc và vật truyện là trạng thái chung, host quyết và đồng bộ. Hàng chờ cảnh và cảnh đã xem là của từng người. Cảnh phát riêng từng máy | `MVP` |
@@ -812,7 +812,7 @@ Vật nhiệm vụ và chỗ tiêu (luật 20). Cột cuối là lý do không c
 | STY-501 bản đồ sao thật | Khoang dẫn đường, C5.6 | Công thức RCP-207 | RCP-207 chỉ mở khi C5.6 đã xong, tức sau khi đã nộp | `Sau MVP` |
 | Buồng ngủ đông có người | Cửa khí, C1.4, C1.6, C2.6 | Không | Người vớt ra khỏi buồng, buồng không phải vật liệu | `MVP` |
 | Kén thoát hiểm BNG-102 | Về tới Ember ở C3.8, chạm cửa The Hearth ở C5.1 | Không | Sevra ra khỏi kén ở C3.8 và vào lại cho chuyến C5.1. Kén không phải vật liệu | `Sau MVP` |
-| STY-701 gói tin mật | Không nộp. Thông dịch viên đóng vào thùng tin mật CGO-421 lúc Mở ca cho đơn đặt trước của tàu TA11 | Công thức RCP-422 | Khoang liên lạc nhận gói mới từ The Kindling mỗi ngày, tiêu rồi vẫn có lại | `Sau MVP` |
+| STY-701 gói tin mật | Không nộp. Thông dịch viên đóng vào thùng tin mật CGO-421 lúc Mở giao thương cho đơn đặt trước của tàu TA11 | Công thức RCP-422 | Khoang liên lạc nhận gói mới từ The Kindling mỗi ngày, tiêu rồi vẫn có lại | `Sau MVP` |
 
 - Cả 23 vật truyện đã có ID trong `vat-pham.md`. Mười vật manh mối do gd-items cấp ID: STY-111, STY-211 tới STY-213, STY-311 tới STY-313, STY-411, STY-412, STY-414.
 - ID do gd-items cấp cho phần Sevra và tin mật: kén thoát hiểm BNG-102, kiện tin mật CGO-421, gói tin mật STY-701, công thức đóng kiện RCP-422. Gói tin mật không phải vật truyện của bảng mục 2.5 và không nằm ở khe nào.
@@ -831,7 +831,7 @@ Nơi phải đổi cùng lúc khi đổi truyện: `map.md` (map nhánh, khe M v
 | Đánh thức người vớt | Đầu ngày kế tiếp, pha Chuẩn bị: buồng mở trong trạm, nhân vật bước ra | Như C1.1, ấm hơn | Cảnh 3 câu | `MVP` |
 | Vật manh mối | Phát sáng nhẹ, có một dấu riêng dùng chung cả game | Một tiếng chuông ngắn khi nhặt | Thông báo một dòng, mục Sổ tay | `MVP` |
 | Khoang mở tính năng | Khoang sáng đèn, có người đứng trong | Tiếng máy khởi động theo khoang | Tên tính năng | `MVP` |
-| Tàu đầu tiên (C1.8) | Tàu Oru nhỏ, chắp vá, cập bến lệch | Động cơ lọc xọc | Trong ca: lời bong bóng của Tikko. Cuối ngày: cảnh 3 câu | `MVP` |
+| Tàu đầu tiên (C1.8) | Tàu Oru nhỏ, chắp vá, cập bến lệch | Động cơ lọc xọc | Trong giờ giao thương: lời bong bóng của Tikko. Cuối ngày: cảnh 3 câu | `MVP` |
 | Sóng của Lantern (C1.9) | Cuối ngày: đèn khoang liên lạc nhấp theo giọng nói | Giọng người lẫn nhiễu | Cảnh 8 câu | `MVP` |
 | Cú lật Driftlife (C3.7) | Ảnh phóng to cái thẻ và vết cắt mô | Im lặng, bỏ nhạc nền | Cảnh 3 câu | `Sau MVP` |
 | Cuộc bắt cóc (C3.8), ở N4 | Tàu TA04 bị áp mạn, một kén thoát hiểm bị kéo đi giữa các tàu đang đậu | Nhạc bến tắt, chỉ còn sóng radio | Lời radio của Maro, một dòng mỗi lần | `Sau MVP` |
@@ -854,7 +854,7 @@ Nơi phải đổi cùng lúc khi đổi truyện: `map.md` (map nhánh, khe M v
 - Tham chiếu: cách Dave the Diver chen cảnh ngắn vào giữa vòng ngày mà không dừng vòng. Cách Hardspace: Shipbreaker kể bằng radio và đồ nhặt trong xác tàu. Cách Spiritfarer gắn một tính năng của con tàu với một con người.
 - Phản tham chiếu: không cắt cảnh dài không bỏ qua được. Không hộp thoại chân dung nối nhau quá 8 câu. Không nhân vật giảng giải lịch sử thế giới.
 - Phản hồi: nhặt vật manh mối có tiếng và thông báo trong vòng một nhịp. Cảnh hiện ngay khi vào điểm nghỉ, không chờ. Bỏ qua là hết ngay, không chuyển cảnh mờ dần dài.
-- Nhịp cảm xúc: mốc mất mát (C1.1, C3.6, C4.2, C4.6) không có hài và không có nhạc cảng. Hài chỉ ở trong trạm và ở ca cảng.
+- Nhịp cảm xúc: mốc mất mát (C1.1, C3.6, C4.2, C4.6) không có hài và không có nhạc cảng. Hài chỉ ở trong trạm và ở giờ giao thương.
 - Kết là thắng lợi của tổ Ember trước, của Sevra sau: cảnh rời neo cho thấy thứ người chơi tự làm (thoát, mang được người, hạ được Daskel), rồi mới tới món quà của cô.
 
 ## 8. Cách đo thành công và tiêu chí nghiệm thu
@@ -924,7 +924,7 @@ Nguồn quyết định nằm ở `log-gdm-tu-quyet.md` và `DECISIONS.md`.
 | Hàng chờ cảnh | Một hàng | Mỗi người một hàng riêng. Mốc xong thì cảnh vào hàng của mọi người đang có mặt. Mỗi người xem mỗi cảnh nhiều nhất một lần | Như 2 hoặc 3 |
 | Cảnh trong trạm | Hộp thoại, tạm dừng được (C7) | Phát riêng trên màn hình từng người ở điểm nghỉ của người đó, mỗi điểm nghỉ một cảnh. Mỗi người tự bỏ qua, không ai chờ ai. Người đang ở ngoài thấy dấu báo và xem khi về | Như 2 hoặc 3 |
 | Hai cảnh cuối (C5.7, C5.8) | Phát liền nhau | Phát cùng lúc cho mọi người đang có mặt sau khi mọi người xác nhận rời neo | Như 2 hoặc 3 |
-| Cảnh trong khu chân không của map nhánh và trong ca cảng | Lời bong bóng và radio, không chặn điều khiển | Như 1 người | Như 1 người |
+| Cảnh trong khu chân không của map nhánh và trong giờ giao thương | Lời bong bóng và radio, không chặn điều khiển | Như 1 người | Như 1 người |
 | Vật manh mối | Nhặt là ghi Sổ tay | Ai nhặt cũng ghi cho cả nhóm | Như 2 hoặc 3 |
 | Vật nhiệm vụ | Tự mang về | Ai mang cũng được, chuyền tay được | Như 2 hoặc 3 |
 | Cảnh tỉnh dậy | Ba buồng tắt | Một hoặc hai buồng tắt | Không buồng tắt |
@@ -932,8 +932,8 @@ Nguồn quyết định nằm ở `log-gdm-tu-quyet.md` và `DECISIONS.md`.
 
 - Không mốc, quest hay cảnh nào cần đúng N người. Không nội dung truyện nào chỉ co-op mới có (P3).
 - Câu thoại không chứa từ chỉ số người chơi như "một mình", "cả hai", "cả bốn", "các bạn". Ngoại lệ duy nhất là ba biến thể cảnh tỉnh dậy, và chúng không có lời.
-- Trong trạm ngoài giờ ca cảng và trong khu có khí không có nguy hiểm, nên hộp thoại không tạm dừng thời gian khi co-op vẫn an toàn.
-- Khi ca cảng đang chạy, hộp thoại không hiện với bất kỳ ai trong nhóm (luật 21, khớp luật 25 và 26 của `ux-ui.md`). Mỗi mốc xảy ra trong ca có hai bản lời: bản bong bóng ngắn cho trong ca và bản cảnh cho sau ca.
+- Trong trạm ngoài giờ giao thương và trong khu có khí không có nguy hiểm, nên hộp thoại không tạm dừng thời gian khi co-op vẫn an toàn.
+- Khi giờ giao thương đang chạy, hộp thoại không hiện với bất kỳ ai trong nhóm (luật 21, khớp luật 25 và 26 của `ux-ui.md`). Mỗi mốc xảy ra trong giờ giao thương có hai bản lời: bản bong bóng ngắn cho trong giờ giao thương và bản cảnh cho sau giờ giao thương.
 - Người đã về trạm và đang chờ đồng đội (C9) xem được cảnh đang chờ của mình trong lúc chờ.
 - Người vào sau và người rời phiên: mục 2.7.
 
@@ -1095,7 +1095,7 @@ Chữ hoa trong cột cách đọc chỉ phần nhấn. Cột này dùng nội b
 | VO_ING_01 | Ingrid | Đừng cảm ơn. Đưa tôi cái cờ lê. | Vừa được đánh thức | Hộp thoại |
 | VO_ING_02 | Ingrid | Thứ gì hỏng được thì sửa được. Trừ người. | Nhìn buồng tắt | Hộp thoại |
 | VO_ING_03 | Ingrid | Tôi khoan đáy biển cả đời. Giờ mới biết sợ một cái lỗ. | Xem mảng vỏ của Wick | Hộp thoại |
-| VO_LIN_01 | Linh | Ông ấy vừa khen tàu của ta. Hoặc chê. Từ đó có hai nghĩa. | Ca cảng, dịch cho Tikko | Bong bóng |
+| VO_LIN_01 | Linh | Ông ấy vừa khen tàu của ta. Hoặc chê. Từ đó có hai nghĩa. | Giờ giao thương, dịch cho Tikko | Bong bóng |
 | VO_LIN_02 | Linh | Nói chậm thôi. Lịch sự với họ rẻ hơn sửa tàu. | Trước khi Ilsume cập bến | Bong bóng |
 | VO_LIN_03 | Linh | Tôi dịch đúng từng chữ. Không ai dịch cho tôi ý đồ. | Lời thú nhận ở chương 4 | Hộp thoại |
 | VO_RAF_01 | Rafa | Sao không nói dối. Chỉ bản đồ mới nói dối. | Vừa được đánh thức | Hộp thoại |
@@ -1105,7 +1105,7 @@ Chữ hoa trong cột cách đọc chỉ phần nhấn. Cột này dùng nội b
 | VO_AMA_02 | Amara | Tôi mang cả một kho giống lên tàu. Giờ còn cuốn sổ này. | Chuyện riêng | Hộp thoại |
 | VO_AMA_03 | Amara | Đây không phải dấu canh giữ. Đây là dấu săn trộm. | Cú lật, C3.7 | Hộp thoại |
 | VO_YUS_01 | Yusuf | Tàu cập bến là khách. Khách thì phải có trà. | Vừa về Ember | Hộp thoại |
-| VO_YUS_02 | Yusuf | Bốc nhanh lên! Tàu không đợi, tôi thì đợi còn ít hơn. | Trong ca cảng | Bong bóng |
+| VO_YUS_02 | Yusuf | Bốc nhanh lên! Tàu không đợi, tôi thì đợi còn ít hơn. | Trong giờ giao thương | Bong bóng |
 | VO_YUS_03 | Yusuf | Tôi đã mời nó trà. Trà ngon của tôi. | Sau C3.8 | Hộp thoại |
 | VO_TIK_01 | Tikko | Cái có răng này! Loài người dùng chải đầu hay đánh nhau? | Thấy một cái lược | Bong bóng |
 | VO_TIK_02 | Tikko | Trạm sáng đèn giữa bãi vỡ. Tikko thích. Tikko ghé. | Cập bến lần đầu | Bong bóng |
@@ -1155,9 +1155,9 @@ Chữ hoa trong cột cách đọc chỉ phần nhấn. Cột này dùng nội b
 | SO_C1_6_TT | Buồng thứ hai đã về Ember. | Tóm tắt |
 | SO_C1_7_MT | Sửa khoang liên lạc và cảng cho Linh. | Mục tiêu |
 | SO_C1_7_TT | Linh phát lời gọi đầu tiên ra bãi vỡ. | Tóm tắt |
-| SO_C1_8_MT | Chờ tàu đầu tiên cập bến trong ca cảng. | Mục tiêu |
+| SO_C1_8_MT | Chờ tàu đầu tiên cập bến trong giờ giao thương. | Mục tiêu |
 | SO_C1_8_TT | Tikko, dân gom phế liệu Oru, là khách đầu tiên. | Tóm tắt |
-| SO_C1_9_MT | Làm thêm ca cảng. Khoang liên lạc đang dò sóng. | Mục tiêu |
+| SO_C1_9_MT | Làm thêm giờ giao thương. Khoang liên lạc đang dò sóng. | Mục tiêu |
 | SO_C1_9_TT | Bắt được sóng của Station Lantern. Còn người sống. | Tóm tắt |
 | SO_MM1_1 | Nhật ký Cinder: một ánh chớp ngoài mạn tàu trước tiếng nổ. | Vật manh mối |
 | SO_MM1_2 | Máy liên lạc Cinder còn lưu tên hồ sơ Lodestar Survey. | Vật manh mối |
@@ -1211,7 +1211,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 - gd-world, đợt 4: hàng N7 của `map.md` đã gọi tên khe M1 ở Broken Hold và M2 ở Cryo Deck. Tên tiếng Anh các khu trong map nhánh đã chốt ở bảng A01 đến A05 của `map.md`, file này đã đổi theo (log GDM dòng 74).
 - gd-items: đủ ID cho cả 23 vật truyện, nghĩa của nộp, bản sao dữ liệu chỉ từ STY-101 và STY-401, ENG-105 đổi tên, Súng lưới ở chương 1.
 - gd-quan: luật 38 (lần hai và lần ba của TA08 chờ mốc), luật 15 (quest của Linh là KH06 và KH07), luật 14 (Hồi sức), tên TA02 và TA09.
-- gd-ux: giới hạn ký tự của hộp thoại, radio, bong bóng, dòng Sổ tay và lời theo trạng thái, tên Sổ tay, cảnh sau ca cảng, bước T29, thẻ tên chương.
+- gd-ux: giới hạn ký tự của hộp thoại, radio, bong bóng, dòng Sổ tay và lời theo trạng thái, tên Sổ tay, cảnh sau giờ giao thương, bước T29, thẻ tên chương.
 - gd-combat: vai truyện và vị trí của BS-1 tới BS-5, loài mang thẻ, cỡ M cho mốc C2.4.
 - gd-character: cảnh đến của người vào sau, bốn hồ sơ người chơi không có nghề riêng.
 
@@ -1224,10 +1224,10 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 4 | Người chơi biết Solace là mồi bằng cách nào | Hộp ghi hành trình: đài quan sát của Cradle đã tự nhìn về phía Solace ngay trước vụ nổ và thấy không có gì khớp hồ sơ | Sự thật phải đến từ chính mắt loài người, không từ lời kẻ thù hay lời thương nhân, thì người chơi mới tin | Daskel nói ra, hoặc Nhem tìm ra | Rẻ |
 | 5 | Vì sao phải vào Warden Rig ở chương 5 | Mọi bản đồ loài người có đều chép từ hồ sơ giả. Bản đồ thật chỉ kẻ dựng hồ sơ mới có, và nó là thứ lắp bước cuối của động cơ | Cho chương 5 một mục tiêu cụ thể đúng log GDM dòng 36, nối boss cuối với việc rời neo | Rời neo không cần Rig | Vừa |
 | 6 | Dải Giữa mở bằng gì | Bằng mốc C1.9 (Lantern đọc vị trí). Hoa tiêu mở dải Xa và Skiff | Khung mục 7 đặt Hoa tiêu ở chương 2, trong dải Giữa. gd-world đã theo (W4) | Vớt Hoa tiêu ở chương 1 | Vừa |
-| 7 | Năm người vớt có cùng một kiểu vớt không | Ba người kéo buồng từ xác trạm (Ingrid, Linh, Rafa). Amara đang thức ở Lantern, tới bằng xuồng của Bram. Yusuf đang thức ở Veyl Waypost, đón bằng Skiff | Năm lần không lặp, và cho Lantern, ca cảng, Skiff mỗi thứ một vai trong truyện | Cả năm đều kéo buồng | Rẻ |
+| 7 | Năm người vớt có cùng một kiểu vớt không | Ba người kéo buồng từ xác trạm (Ingrid, Linh, Rafa). Amara đang thức ở Lantern, tới bằng xuồng của Bram. Yusuf đang thức ở Veyl Waypost, đón bằng Skiff | Năm lần không lặp, và cho Lantern, giờ giao thương, Skiff mỗi thứ một vai trong truyện | Cả năm đều kéo buồng | Rẻ |
 | 8 | Nhân vật người chơi | Bốn hồ sơ mặc định có tên, đổi tên được, không có lời thoại riêng | Buồng tắt cần có tên. Người chơi 1 đến 4 không thể có thoại riêng mà vẫn đúng mọi số người | Nhân vật chính có tên và giọng riêng | Vừa |
 | 9 | Số xác trạm có truyện | Ba: Cinder, Wick, Flint. Flint không có người để vớt | Mỗi dải một xác trạm, khớp ba người kéo buồng và cú lật | Một xác trạm mỗi người vớt | Rẻ |
-| 10 | Lý do truyện của sự cố ca cảng (K14) | Thiết bị Maro để lại dưới bến, gỡ rồi vẫn còn di chứng | Nối K14 với mốc cải trang B8, sự cố có thủ phạm | Sự cố không có lý do | Rẻ |
+| 10 | Lý do truyện của sự cố giờ giao thương (K14) | Thiết bị Maro để lại dưới bến, gỡ rồi vẫn còn di chứng | Nối K14 với mốc cải trang B8, sự cố có thủ phạm | Sự cố không có lý do | Rẻ |
 | 12 | The Veyl trung lập làm gì ở kết | Không đánh giúp. Sau khi bằng chứng chạy hết The Lattice, họ quay lại bãi vỡ đứng nhìn Ember rời neo | Giữ trung lập Lead chốt, vẫn cho The Wardens mất uy quyền | The Veyl hợp sức đánh The Wardens | Rẻ |
 | 13 | Kết với The Wardens | Hạ Daskel ở Warden Rig, thả Driftlife. Daskel bị bắt và giao cho The Kindling, truyện không kể bản án. Không diệt ai | Chủ đề là làm khác đi, không phải trả thù. Lead cho cách mạng thành công nên Daskel phải mất quyền | Giết Daskel, hoặc để số phận mở | Rẻ |
 | 14 | Lời hứa "dựng khác đi" do ai nói | Amara, ở câu áp chót của cảnh kết, đặt cạnh hiến chương định cư của United Accord | Log GDM dòng 38 và 91: giữ làm lời nhân vật. Amara là người mang chủ đề suốt game | Odile hoặc người dẫn truyện | Rẻ |
@@ -1241,7 +1241,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 22 | Quest của người vớt | Theo luật của gd-quan: sửa khoang. Truyện không thêm điều kiện riêng | Một luật cho cả năm người, không hai vai cùng giữ một luật | Quest riêng nhiều bước do truyện đặt | Rẻ |
 | 23 | Mốc xong lúc nào khi co-op | Ngay khi điều kiện đúng, không chờ cảnh. Cảnh xếp hàng riêng từng người (luật 19) | Cảnh phát riêng từng máy nên không thể là thứ quyết mốc xong | Mốc xong khi cảnh phát xong | Vừa |
 | 24 | Nộp vật nhiệm vụ có tiêu vật không | Không tiêu. Vật vào kho, chỉ công thức hoặc danh sách sửa của gd-items mới tiêu, và luôn sau mốc cần vật (luật 20) | Tránh khóa cứng ở C2.8 và chương 5 | Nộp là tiêu | Rẻ |
-| 25 | Mốc xảy ra giữa ca cảng trình bày thế nào | Trong ca chỉ bong bóng, cảnh của mốc phát ở pha Cuối ngày (luật 21) | Không cảnh nào được dừng đồng hồ ca cảng | Dừng ca để phát cảnh | Rẻ |
+| 25 | Mốc xảy ra giữa giờ giao thương trình bày thế nào | Trong giờ giao thương chỉ bong bóng, cảnh của mốc phát ở pha Cuối ngày (luật 21) | Không cảnh nào được dừng đồng hồ giờ giao thương | Dừng giờ giao thương để phát cảnh | Rẻ |
 | 26 | Rời neo có tự chạy khi sửa xong động cơ không | Không. Cần mọi người có mặt xác nhận ở khoang dẫn đường | Kết game là việc người chơi chọn lúc làm, và co-op không ai bị kéo vào kết khi chưa sẵn sàng | Tự rời neo khi sửa xong | Rẻ |
 | 27 | Giảm số vật ở chương 3 | Gộp sổ hải trình vào bản ghi của Nhem (MM3.1), đưa ghi chép của người xem sao thành lời Elias ở C3.5 | Dùng đúng số khe `map.md` đang có ở N4 và N5 | Xin thêm hai khe | Rẻ |
 | 28 | Mã cho vật nhiệm vụ | Mã V theo chương (V1.1 tới V5.1), tách khỏi mã MM của vật manh mối | Khớp quy ước khe M và khe V của `map.md` | Dùng chung mã MM | Rẻ |
@@ -1251,10 +1251,10 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 33 | Chủng tộc của X và Y (đợt 6) | Sennari, chủng tộc đã có. Hành tinh quê tên Sennar | Maro vốn đã giả làm thương nhân Sennari, Ilsume là người Sennari. Không thêm chủng tộc, không thêm art | Chủng tộc mới | Vừa |
 | 34 | Cha của Daskel chết thế nào | Trong một trận với hạm đội loài người ở The Meeting War | Lead nói hắn hận vì cha hy sinh và hướng hận thù sang Trái Đất. Phải có lý do để mối hận đó nhắm vào loài người | Chết vì một chủng tộc khác | Rẻ |
 | 35 | Số phận Ilvane và tuổi của Sevra | Ilvane chết trong giam cầm. Sevra còn nhỏ lúc đảo chính, lớn lên trong thương hội. Người Sennari sống dài hơn người | Sevra là người thừa kế thì Ilvane phải đã mất. Từ đảo chính tới lúc game bắt đầu là rất nhiều năm | Ilvane còn sống trong ngục | Rẻ |
-| 36 | Y giả làm thương nhân nào (log 89) | Ilsume, thương nhân đã có từ chương 2 | Người chơi đã bán hàng cho cô nhiều ca trước khi cứu cô, cú lộ danh tính có sức nặng. Không thêm nhân vật | Một thương nhân mới | Vừa |
+| 36 | Y giả làm thương nhân nào (log 89) | Ilsume, thương nhân đã có từ chương 2 | Người chơi đã bán hàng cho cô nhiều giờ giao thương trước khi cứu cô, cú lộ danh tính có sức nặng. Không thêm nhân vật | Một thương nhân mới | Vừa |
 | 37 | X có mặt ở bãi vỡ không | Có. Daskel tự tới Warden Rig ở đầu chương 5 và là boss cuối | Cho người chơi mặt đối mặt với phản diện chính. Sennar vắng hắn là lý do cách mạng thắng mà người chơi không cần tới đó (log 88) | Daskel ở Sennar, boss cuối là một tướng của hắn | Vừa |
 | 38 | Cứu và hộ tống Y bằng cách nào (log 86, 87) | Sevra ở trong kén thoát hiểm, kéo như buồng ngủ đông. Cứu ở Waypost Outer Ring, hộ tống tới The Hearth, đều trong N4 | Dùng lại luật kéo và map có sẵn | Sevra tự bay theo người chơi | Vừa |
-| 39 | Nối tình báo (log 87) | Tàu TA11 của The Kindling có đơn đặt trước tin mật tự sinh từ ngày kế tiếp sau mốc đóng chương 3. Ngưỡng chương 4 là 1 đơn, ngưỡng chương 5 là tổng 2 đơn | Ca cảng có việc của truyện suốt chương 4. Sàn ngày giữ 3 và 3. gd-quan cấp mã tàu mới vì TA09 đã có vai ở Hạng cảng | Chỉ mở đơn đặt trước tin mật ở chương 5 | Rẻ |
+| 39 | Nối tình báo (log 87) | Tàu TA11 của The Kindling có đơn đặt trước tin mật tự sinh từ ngày kế tiếp sau mốc đóng chương 3. Ngưỡng chương 4 là 1 đơn, ngưỡng chương 5 là tổng 2 đơn | Giờ giao thương có việc của truyện suốt chương 4. Sàn ngày giữ 3 và 3. gd-quan cấp mã tàu mới vì TA09 đã có vai ở Hạng cảng | Chỉ mở đơn đặt trước tin mật ở chương 5 | Rẻ |
 | 47 | Bỏ tên riêng mà chế độ đặt cho đàn Driftlife | Bỏ. Hình ảnh chế độ tự dựng chỉ còn "khu bảo hộ" và danh xưng First Warden | Tên này gắn với ý phản diện bản trước, không file nào khác dùng | Giữ làm lời tuyên truyền | Rẻ |
 | 48 | Tên mốc C3.7 và C5.5 | Dấu săn trộm, First Warden | Tên cũ dùng chữ của ý phản diện bản trước. Tên chương 3 giữ theo khung mục 7 | Giữ tên cũ | Rẻ |
 | 40 | Vì sao Daskel để người sống sót yên nhiều năm | Hắn cần kẻ thù còn đó để giữ quân và giữ ghế | Lời Lead: hướng sự chú ý sang Trái Đất để ổn định vị trí. Lấp lỗ hổng "sao chưa giết hết" | Quân đồn trú lười | Rẻ |
@@ -1262,14 +1262,14 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 42 | Tọa độ thật là gì trong game | Một cảnh ở mốc C5.6, không phải vật mới. Tọa độ đặt lên bản đồ sao thật STY-501 để kiểm được | Không thêm vật, không đổi công thức RCP-207. Trả lời câu "vì sao tin lần này" | Một vật nhiệm vụ mới | Rẻ |
 | 43 | Ai nói thẳng Solace là giả đầu tiên | Sevra, ở mốc đóng chương 3. Tổ Ember chưa tin, chương 4 đi lấy bằng chứng | Giữ nguyên tắc sự thật phải đến từ chính Cradle (dòng 4), và cho chương 4 một câu hỏi rõ | Không ai nói trước chương 4 | Rẻ |
 | 44 | Maro sau đợt 6 (log 90) | Hai lần cập bến, rồi chỉ huy toán bắt cóc. Thiết bị nghe lén gắn ở cảng Ember làm lộ lịch của Ilsume | Cuộc bắt cóc có nguyên nhân từ chính cảng của người chơi | Giữ lần cập bến thứ ba | Rẻ |
-| 45 | Mốc dài của chương 4 | C4.6 (mở hộp ghi, Sevra kể chuyện), thay cho C4.7 | Mốc đóng chương 4 nay nằm trong ca cảng, cảnh của nó là cảnh ngắn | Hai cảnh dài liền nhau | Rẻ |
+| 45 | Mốc dài của chương 4 | C4.6 (mở hộp ghi, Sevra kể chuyện), thay cho C4.7 | Mốc đóng chương 4 nay nằm trong giờ giao thương, cảnh của nó là cảnh ngắn | Hai cảnh dài liền nhau | Rẻ |
 | 46 | Tên mới | Sennar, Ilvane, Sevra, The Meeting War, The Kindling, The Hearth, danh xưng First Warden và Steward of Sennar | Log 85. Tên Sennari ngắn, hai âm tiết. The Kindling và The Hearth nối với họ tên giữ lửa của các trạm con | Xem mục 12 | Rẻ |
 
 ## Phản biện khung
 
 | # | Vấn đề | Lý do và bằng chứng | Phương án thay | Đã viết theo |
 |---|---|---|---|---|
-| 1 | K21 nói mỗi chương thêm đúng một kiểu chơi mới, nhưng bảng mục 7 của khung ghi hai kiểu ở chương 1 (khai thác và ca cảng) và hai kiểu ở chương 3 (sự cố trong ca cảng, kẻ địch có vũ khí) | Hai chỗ của khung lệch nhau. Chương 3 còn gánh thêm dải Xa, ba map nhánh, một người vớt và ba mốc truyện lớn nhất | Sửa K21 thành "một hoặc hai". Hoặc dời một map nhánh của chương 3 sang chương 4 | GDM đã xử, log dòng 43: K21 sửa thành một hoặc hai. Chương 3 giữ nguyên |
+| 1 | K21 nói mỗi chương thêm đúng một kiểu chơi mới, nhưng bảng mục 7 của khung ghi hai kiểu ở chương 1 (khai thác và giờ giao thương) và hai kiểu ở chương 3 (sự cố trong giờ giao thương, kẻ địch có vũ khí) | Hai chỗ của khung lệch nhau. Chương 3 còn gánh thêm dải Xa, ba map nhánh, một người vớt và ba mốc truyện lớn nhất | Sửa K21 thành "một hoặc hai". Hoặc dời một map nhánh của chương 3 sang chương 4 | GDM đã xử, log dòng 43: K21 sửa thành một hoặc hai. Chương 3 giữ nguyên |
 | 2 | K12 ghi Hoa tiêu mở dải, nhưng mục 7 đặt dải Giữa và Hoa tiêu cùng ở chương 2 | Phải vào dải Giữa mới vớt được Hoa tiêu | Sửa K12: Hoa tiêu mở dải Xa và Skiff | GDM đã xử, log dòng 44: K12 đã sửa đúng phương án thay |
 | 3 | K7 ghi manh mối truyện chỉ nằm ở map nhánh | Nhiều mốc truyện phải diễn ra ở trạm và cảng: tàu lạ, cú lật ở phòng nghiên cứu, thiết bị dưới bến | Sửa chữ K7 thành "vật manh mối", còn mốc truyện được diễn ra ở trạm và cảng | GDM đã xử, log dòng 45: K7 đã sửa đúng phương án thay |
 | 4 | K2 chỉ cho giữ 1 món khi bị kéo về | Áp cho vật truyện thì người chơi phải chọn giữa manh mối và hàng, hoặc mất vật nhiệm vụ | Thêm ngoại lệ cho vật manh mối và vật nhiệm vụ | GDM đã xử, log dòng 46: K2 đã có ngoại lệ. gd-items đã ghi luật V4 cùng nghĩa, gd-character áp ở đợt 1b |
@@ -1282,7 +1282,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 11 | Lời Lead: Y trao tọa độ một hành tinh có sự sống thật, ngay sau khi loài người vừa bị một tọa độ từ Sennar lừa | Người chơi vừa học rằng tọa độ được cho không là bẫy. Nhận tọa độ thứ hai mà không kiểm được thì kết thành ngây thơ, hoặc người chơi chờ một cú lừa nữa | Giữ lời Lead, thêm cách kiểm: tọa độ đặt trên bản đồ sao thật do tổ Ember tự lấy ở Data Core, Odile và Rafa tự kiểm | gd-story đã viết theo phương án thay (mục 2.8). Báo GDM |
 | 12 | Lời Lead và log 88: cách mạng diễn ra trên Sennar, người chơi không tới | Cao trào chính trị xảy ra ngoài màn hình. Chương 5 dễ thành chuyện giành ghế của người khác, tổ Ember làm vai phụ, trong khi mục tiêu của người chơi suốt game là nhà cho loài người | Giữ phạm vi của log 88. Viết để việc của tổ Ember là điều kiện của cả hai thắng lợi: giữ chân Daskel ở Rig thì Sennar mới nổi dậy được, lấy bản đồ sao thật thì mới rời được bãi vỡ | gd-story đã viết theo phương án thay (chương 5, mục 7b). Báo GDM |
 | 13 | Lời Lead: tổ Ember tình cờ gặp cuộc bắt cóc một thương nhân | Nếu Y là người lạ xuất hiện lần đầu ở cuối chương 3 thì cú lộ danh tính nhẹ, và phải thêm một nhân vật, một chủng tộc cần art | Y là Ilsume, thương nhân người chơi đã bán hàng từ chương 2. Chủng tộc là Sennari đã có. Cuộc bắt cóc xảy ra vì thiết bị nghe lén Maro gắn ở cảng Ember | gd-story tự quyết trong thẩm quyền (log 89). Báo GDM |
-| 14 | Phạm vi của đợt 6: thêm một sự kiện bắt cóc, một vật kéo, một loại đơn đặt trước ở ca cảng, một nhân vật hai trạng thái | Tất cả là `Sau MVP`, MVP không đổi. Bản đầy đủ nặng thêm cho 4 dev và 1 artist | Đã giữ mọi thứ trên luật sẵn có. Nếu phải cắt: bỏ hộ tống ở C5.1, cho Sevra về The Hearth bằng tàu TA11 trong một cảnh | Báo GDM, chưa cắt |
+| 14 | Phạm vi của đợt 6: thêm một sự kiện bắt cóc, một vật kéo, một loại đơn đặt trước ở giờ giao thương, một nhân vật hai trạng thái | Tất cả là `Sau MVP`, MVP không đổi. Bản đầy đủ nặng thêm cho 4 dev và 1 artist | Đã giữ mọi thứ trên luật sẵn có. Nếu phải cắt: bỏ hộ tống ở C5.1, cho Sevra về The Hearth bằng tàu TA11 trong một cảnh | Báo GDM, chưa cắt |
 
 ## Lịch sử thay đổi
 
@@ -1295,8 +1295,8 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 2026-11-20 | Gỡ dấu chờ gd-ux (bước T02, T29, T30, màn UI-19 và UI-53). Giữ tên cũ của vụ phục kích, đưa phương án đổi tên xuống mục 10. Ghi rõ Odile tin Solace tới chương 4. Bốn hồ sơ người chơi không có nghề riêng | Tin của gd-ux, lỗi validator của gd-tech, mục lệch của gd-character | gd-story |
 | 2026-11-20 | Thêm cột Kênh cho 36 câu mẫu, cắt VO_MAR_01 và VO_BRA_03 xuống dưới 60 ký tự. Script soát kiểm giới hạn theo kênh | gd-ux chốt story.box 80, story.radio 60, story.bubble 60 | gd-story |
 | 2026-11-20 | Đính chính sàn ngày chương 5 từ 4 xuống 3 (tổng 25). Ghi kết quả sim của gd-economy và bảng bốn chỗ hạ sàn được, chưa áp | Tin của gd-economy, tự soát lại bảng sàn | gd-story |
-| 2026-11-20 | Luật 21 khớp luật 25 và 26 của `ux-ui.md`: cảnh sau ca phát ở màn Kết ca hoặc Cuối ngày, khi ca đang chạy không cảnh nào chặn màn của ai. Thêm năm thẻ tên chương | Tin của gd-ux | gd-story |
-| 2026-11-20 | Vòng QA 1 (GD-031, 16 nặng, 14 nhẹ). Luật 19 tới 26 mới: mốc xong không phụ thuộc cảnh, nộp không tiêu vật, mốc trong ca cảng, người vớt tỉnh ngày kế tiếp, nghĩa của ngày kế tiếp, chuyện riêng thương nhân, sau kết. Điều kiện mốc thành danh sách. C1.7 cần cả KH06 và KH07. C2.4 đổi sang cỡ M. C2.8 không đòi nộp lại STY-102. Bảng lối vào map nhánh, cột ID vật và cột "Hiện từ mốc" cho mọi vật truyện, khe M và V theo `map.md`. Gộp hai vật ở chương 3. Mã V cho vật nhiệm vụ. Bảng sàn ngày từng chương. Bảng vật nhiệm vụ và chỗ tiêu. Dòng Sổ tay chương 1, dòng buồng tắt, đề cương chuyện riêng thương nhân. Theo khung lần 4: K22, K23, K24, C10 | `qa/GD-031-cot-truyen.md` | gd-story |
+| 2026-11-20 | Luật 21 khớp luật 25 và 26 của `ux-ui.md`: cảnh sau giờ giao thương phát ở màn Kết thúc giờ giao thương hoặc Cuối ngày, khi giờ giao thương đang chạy không cảnh nào chặn màn của ai. Thêm năm thẻ tên chương | Tin của gd-ux | gd-story |
+| 2026-11-20 | Vòng QA 1 (GD-031, 16 nặng, 14 nhẹ). Luật 19 tới 26 mới: mốc xong không phụ thuộc cảnh, nộp không tiêu vật, mốc trong giờ giao thương, người vớt tỉnh ngày kế tiếp, nghĩa của ngày kế tiếp, chuyện riêng thương nhân, sau kết. Điều kiện mốc thành danh sách. C1.7 cần cả KH06 và KH07. C2.4 đổi sang cỡ M. C2.8 không đòi nộp lại STY-102. Bảng lối vào map nhánh, cột ID vật và cột "Hiện từ mốc" cho mọi vật truyện, khe M và V theo `map.md`. Gộp hai vật ở chương 3. Mã V cho vật nhiệm vụ. Bảng sàn ngày từng chương. Bảng vật nhiệm vụ và chỗ tiêu. Dòng Sổ tay chương 1, dòng buồng tắt, đề cương chuyện riêng thương nhân. Theo khung lần 4: K22, K23, K24, C10 | `qa/GD-031-cot-truyen.md` | gd-story |
 | 2026-11-20 | Đợt 4, theo khung sửa lần 5 và log GDM dòng 61 đến 80. Đổi tên vụ phục kích thành The Scattering. K25: bốn mốc đóng chương thêm điều kiện giai đoạn động cơ đã lắp. C5.1 đổi điều kiện thành tàu của Dromm cập bến. Các câu hỏi mở đã có quyết định thì ghi số dòng log. Tra web tên The Scattering: không thấy trùng | Brief đợt 4 của GDM (áp các điểm chốt sau QA vòng 2) | gd-story |
 | 2026-11-20 | Vòng QA 2. Chuyện riêng thương nhân thêm điều kiện mốc cho từng đoạn (luật 25, bảng đề cương). Sàn ngày tính cả bước chế qua đêm: 7, 5, 8, 3, 3, tổng 26, giờ tính theo độ dài ngày của khung. Thêm ba cảnh đánh thức vào số cảnh (45 cảnh, 180 câu). C2.4 đổi tên thành Mẫu sống cho Amara, đi đường Phao kéo. Bỏ các ghi chú đã cũ về khe và ID, viết lại bảng lệch | `qa/GD-031-cot-truyen.md` vòng 2 | gd-story |
 | 2026-11-20 | Soát, lần chạy cuối sau vòng QA 2. Script riêng của file, 0 lỗi: 36 câu mẫu của 12 nhân vật, câu dài nhất 59 ký tự, 24 dòng Sổ tay dài nhất 58 ký tự, 0 chữ số, 0 từ chỉ số người chơi. Mốc 9, 8, 8, 7, 8. Vật truyện 4, 6, 6, 5, 2, mỗi vật có khe, ID và mốc hiện. Sàn ngày 7, 5, 8, 3, 3. 0 dấu chấm phẩy, 0 gạch dài, 0 emoji, 0 tên phản diện cũ, 0 dấu chờ. Script của phòng `soat.mjs`: 0 lỗi, 2 cảnh báo (thiếu file từ vựng của game, một dòng có tên file không dấu). `validate-gdd.mjs`: gd-story 0 lỗi riêng, 2 lỗi chung với gd-world (khe M1 và M2 của N7 chưa có tên trên map) | Tiêu chí nghiệm thu 1, 3, 4 | gd-story |
@@ -1312,7 +1312,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 
 | # | Với | Lệch | Đề xuất | Tình trạng |
 |---|---|---|---|---|
-| 1 | gd-quan | Đợt 6: Maro còn hai lần cập bến. Tàu của The Kindling là mã mới TA11 (TA09 giữ vai tàu đơn gấp), vào lịch từ ngày kế tiếp sau C3.8. Tàu TA04 và TA08 không ghé sau C3.8 | Hai file đã khớp, luật 35 của `tram-va-cang.md` ghi cùng danh sách mốc trong ca | Xong |
+| 1 | gd-quan | Đợt 6: Maro còn hai lần cập bến. Tàu của The Kindling là mã mới TA11 (TA09 giữ vai tàu đơn gấp), vào lịch từ ngày kế tiếp sau C3.8. Tàu TA04 và TA08 không ghé sau C3.8 | Hai file đã khớp, luật 35 của `tram-va-cang.md` ghi cùng danh sách mốc trong giờ giao thương | Xong |
 | 4 | Khung | Khung mục 7 chương 2 còn viết "bắt sống loài lớn". Cỡ L không bắt sống được | Viết "cỡ M" như mốc C2.4 | Xong, khung đã sửa (log GDM dòng 76) |
 | 5 | Khung | K24 ghi bản lưu "ngay trước khi rời neo". Luật 26 của file này đặt bản lưu sau khi C5.7 và C5.8 đã xong, không rời neo lần nữa | Sửa K24 thành "ở ngày cuối, sau cảnh kết", hoặc GDM chọn cách đọc khác thì file này sửa theo | Xong, K24 đã sửa (log GDM dòng 77) |
 | 6 | gd-character | `ho-so-nhan-vat.md` luật 8 không cho viết Odile "tới Solace". File này giữ, có chủ ý | Giữ: đó là niềm tin của Odile tới mốc C4.7. Mục 10 câu 9 | Xong, giữ (log GDM dòng 73) |

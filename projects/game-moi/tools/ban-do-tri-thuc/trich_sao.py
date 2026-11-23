@@ -70,7 +70,7 @@ for n in nodes:
 # nội dung gốc: tóm tắt của khung
 khung = next(n for n in nodes if n['lv'] == 1 and n['f'].startswith('00-'))
 nodes[root]['body'] = ('Tỉnh dậy trên trạm hỏng giữa bãi vỡ của tàu mẹ, mỗi ngày ra ngoài đổi Oxy lấy tài nguyên và Driftlife, '
-                       'về sửa trạm, bán hàng ở ca cảng cho thương nhân ngoài hành tinh lấy Tally, nâng cấp để đi xa hơn, cho tới khi trạm rời neo.\n\n'
+                       'về sửa trạm, bán hàng ở giờ giao thương cho thương nhân ngoài hành tinh lấy Tally, nâng cấp để đi xa hơn, cho tới khi trạm rời neo.\n\n'
                        'Mỗi ngôi sao lớn là một hệ thống trong GDD. Sao càng to, càng nhiều phần khác của thiết kế dẫn tới nó.')
 
 # gắn khái niệm graphify vào mục chứa nó (khớp chữ của nhãn với tiêu đề và nội dung mục cùng file)

@@ -26,10 +26,10 @@ STT	Asset Name	Link	Note
 25	[MVP] Icon vector băng (khối trong)		Nguồn: vat-pham.md mục 7
 26	[MVP] Icon vector linh kiện (bo mạch)		Nguồn: vat-pham.md mục 7
 27	[MVP] Icon vector mẫu (thể sinh học)		Nguồn: vat-pham.md mục 7
-28	[MVP] Icon vector kiện (hộp, nhãn phẩm cấp) và biểu tượng thùng ở ca cảng (1 cỡ, nhãn loại hàng, viền và số theo cửa neo 1 đến 3, nhãn riêng cho thùng đặt trước)		Nguồn: vat-pham.md mục 7, ux-ui.md mục 7
+28	[MVP] Icon vector kiện (hộp, nhãn phẩm cấp) và biểu tượng thùng ở giờ giao thương (1 cỡ, nhãn loại hàng, viền và số theo cửa neo 1 đến 3, nhãn riêng cho thùng đặt trước)		Nguồn: vat-pham.md mục 7, ux-ui.md mục 7
 29	[MVP] 4 bậc hiếm khác nhau cả màu, viền và hình		Nguồn: vat-pham.md và ux-ui.md mục 7. Cho người mù màu
 30	[MVP] VFX nhặt vật, khai thác điểm (thanh tiến độ, tia khoan, mảnh vụn), cổng mềm, túi đầy		Nguồn: vat-pham.md mục 7
-31	[MVP] Hoạt ảnh xưởng chế (máy ép, lò, hàng đợi) và Thông dịch viên đóng thùng lúc Mở ca (hộp gấp lại)		Nguồn: vat-pham.md mục 7
+31	[MVP] Hoạt ảnh xưởng chế (máy ép, lò, hàng đợi) và Thông dịch viên đóng thùng lúc Mở giao thương (hộp gấp lại)		Nguồn: vat-pham.md mục 7
 32	[MVP] Bộ đồ đổi hình theo trục nâng cấp và trạm đổi hình khi sửa xong khoang		Nguồn: vat-pham.md và kinh-te-tien-trinh.md mục 7
 33	[MVP] Kit map tổng dải Gần: khối vỏ tàu, thiên thạch, băng, mây khí (một kit dùng chung cho các mảnh)		Nguồn: map.md mục 7. Mối nối che bằng vật trôi và mảnh vỡ
 34	[MVP] Kit nội thất xác Seed Station (Station Cinder, dùng chung các xác)		Nguồn: map.md mục 7
@@ -43,10 +43,10 @@ STT	Asset Name	Link	Note
 42	[MVP] Khoang mặt cắt trạm 3 trạng thái (Hỏng, Hoạt động, Đang nâng cấp) cho 8 khoang MVP: Buồng ngủ đông, Cửa khí, Kho, Khoang neo, Xưởng, Khoang liên lạc, Cảng, Động cơ chính		Nguồn: ux-ui.md và tram-va-cang.md mục 7
 43	[MVP] Tàu Loose Bolt (tàu gom phế liệu của Tikko) và Tàu vội, hoạt ảnh cập bến lệch, kẹp neo		Nguồn: tram-va-cang.md và cot-truyen.md mục 7
 44	[MVP] Chân dung thương nhân Tikko và khách Tàu vội		Nguồn: ux-ui.md mục 7
-45	[MVP] Hiệu ứng ca cảng: thùng trượt vào tàu, thanh kiên nhẫn trên tàu, bong bóng gọi món, Tally và tip bay lên, hơi khí khi bơm, tàu rời khi chưa giao (tô xám)		Nguồn: tram-va-cang.md mục 7
+45	[MVP] Hiệu ứng giờ giao thương: thùng trượt vào tàu, thanh kiên nhẫn trên tàu, bong bóng gọi món, Tally và tip bay lên, hơi khí khi bơm, tàu rời khi chưa giao (tô xám)		Nguồn: tram-va-cang.md mục 7
 46	[MVP] Cửa neo và ô quầy cảng: 3 cửa neo có số lớn, màu khác màu slot đồng đội, ô quầy cùng số cùng màu, bộ màu khác cả độ sáng cho người mù màu		Nguồn: ux-ui.md mục 7, tram-va-cang.md mục 7
 47	[MVP] Giao sai cửa neo: thùng bật nhẹ về tay, cửa neo đúng nháy màu. Tàu rời chưa giao: thương nhân lắc đầu, bong bóng tắt		Nguồn: tram-va-cang.md mục 7
-48	[MVP] Bảng kết ca, bảng tàu và danh mục bán, bảng hạng cảng		Nguồn: tram-va-cang.md và kinh-te-tien-trinh.md mục 7
+48	[MVP] Bảng tổng kết giao thương, bảng tàu và danh mục bán, bảng hạng cảng		Nguồn: tram-va-cang.md và kinh-te-tien-trinh.md mục 7
 49	[MVP] Bộ kit UI: khung, nút 5 trạng thái, thanh, danh sách, bảng, vòng tiến độ		Nguồn: ux-ui.md mục 7
 50	[MVP] Font sans đủ dấu tiếng Việt, số có độ rộng đều (tối thiểu 12 px ở 720p)		Nguồn: ux-ui.md mục 7
 51	[MVP] Màu và hình slot đồng đội: 4 màu, 4 hình (tròn, tam giác, vuông, thoi), kiểm mù màu		Nguồn: ux-ui.md mục 7

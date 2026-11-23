@@ -23,7 +23,7 @@ Technical designer là cầu nối thiết kế và dev: biến luật trên gi�
 | 1 | Nhận brief, đọc slug, mức bản (nháp hay đủ) | Brief nêu câu hỏi thiết kế cần trả lời và tiêu chí số. Thiếu thì hỏi GDM một câu |
 | 2 | Kéo nguồn: `/gdd-sheet-sync doi-chieu` các tab liên quan về `gdd/sheet/*.tsv`, đọc `so-hien-hanh.md`, GDD hệ thống của vai giữ luật | Mọi số đầu vào có nguồn (so-hien-hanh hoặc tab và ô). Số chưa chốt đánh `[GIẢ ĐỊNH]` ngay trong config |
 | 3 | Viết đặc tả mô hình trước code: biến, đơn vị, công thức, thứ mô hình bỏ qua (10 đến 20 dòng ở README của tool) | Vai đặt đề xác nhận mô hình đúng luật |
-| 4 | Code: config một chỗ, RNG có seed, hàm thuần, không gọi mạng | Selftest có ít nhất một ca tính tay ra đúng số |
+| 4 | Code: config một chỗ, RNG có seed, hàm thuần, không gọi mạng | Selftest có ít nhất một giờ giao thương tính tay ra đúng số |
 | 5 | Chạy: sweep tham số, nhiều seed, in phân vị | Hai lần chạy cùng seed trùng byte |
 | 6 | Ghi kết quả: bảng sinh từ script, kèm giờ chạy và hash config | `soat.mjs` 0 lỗi, không có số chép tay |
 | 7 | Báo `## Báo cáo cho GDM`, chỉ trỏ đường dẫn | Giờ sửa `so-hien-hanh.md` và DECISIONS không mới hơn lần chạy cuối |
@@ -34,7 +34,7 @@ Technical designer là cầu nối thiết kế và dev: biến luật trên gi�
 |---|---|---|
 | Mô hình dòng tài nguyên (source, pool, converter, drain) | Vẽ dòng ₵, nhiên liệu, nguyên liệu, món trước khi code sim economy và quán | Adams, Dormans - Game Mechanics: Advanced Game Design (2012), chương 5 Machinations. https://www.oreilly.com/library/view/game-mechanics-advanced/9780132946728/ch05.html |
 | Cân bằng bằng bảng tính và đường cong chi phí | Dò giá, bậc nâng cấp, tỉ lệ rơi, đường tiến độ theo ngày | Schreiber, Romero - Game Balance (CRC Press 2021). https://www.routledge.com/Game-Balance/Schreiber-Romero/p/book/9781498799577 |
-| Sim nhiều lần có seed, đọc phân vị và ca biên | Mọi hệ thống có ngẫu nhiên: rơi salvage, khách đến, hành vi quái | Dormans - Simulating Mechanics to Study Emergence in Games (AIIDE 2011). https://ojs.aaai.org/index.php/AIIDE/article/view/12477 |
+| Sim nhiều lần có seed, đọc phân vị và giờ giao thương biên | Mọi hệ thống có ngẫu nhiên: rơi salvage, khách đến, hành vi quái | Dormans - Simulating Mechanics to Study Emergence in Games (AIIDE 2011). https://ojs.aaai.org/index.php/AIIDE/article/view/12477 |
 | Tách dữ liệu khỏi logic bằng ScriptableObject | Thiết kế schema để mỗi item, quái, công thức là một asset designer tự chỉnh | Ryan Hipple - Game Architecture with Scriptable Objects (Unite Austin 2017). https://unity.com/how-to/architect-game-code-scriptable-objects |
 | Sheet làm CMS, CSV nằm trong source control | Pipeline Sheet -> file -> importer chạy lúc editor, nhập lại bản cũ khi hỏng | Defend the Dam, Game Developer. https://gamedeveloper.com/design/turning-data-into-enemies-how-we-used-google-spreadsheets-as-a-cms-for-unity-in-defend-the-dam - thư viện tham khảo BakingSheet (tham chiếu chéo sheet, validate) https://github.com/cathei/BakingSheet |
 | Game feel 6 thành phần (input, phản hồi, ngữ cảnh, polish, ẩn dụ, luật) | Chọn núm cho prototype jetpack và hit feel | Steve Swink - Game Feel: A Game Designer's Guide to Virtual Sensation (Morgan Kaufmann 2008). https://shop.elsevier.com/books/game-feel/swink/978-0-12-374328-2 |
@@ -44,11 +44,11 @@ Technical designer là cầu nối thiết kế và dev: biến luật trên gi�
 ## 4. Checklist trước khi báo xong
 
 1. Mọi số trong config có cột nguồn (so-hien-hanh hoặc tab và ô) hoặc nhãn `[GIẢ ĐỊNH]`.
-2. Selftest xanh trên checkout sạch bằng một lệnh, có ca tính tay.
+2. Selftest xanh trên checkout sạch bằng một lệnh, có giờ giao thương tính tay.
 3. Cùng seed chạy hai lần ra output trùng byte (selftest kiểm).
 4. Sim in số lần chạy và P10, P50, P90, không chỉ trung bình.
 5. Mọi bảng số trong file sinh từ script cùng lần chạy, có giờ và hash config.
-6. Validator thoát 1 khi lỗi, selftest có ca lỗi cố ý: Issue ID trùng, item lạ trong Recipe, giá ngoài Shop.
+6. Validator thoát 1 khi lỗi, selftest có giờ giao thương lỗi cố ý: Issue ID trùng, item lạ trong Recipe, giá ngoài Shop.
 7. Exporter đọc cột theo tên header, header lạ thì dừng. Round-trip TSV -> JSON -> TSV lệch 0 ô.
 8. Mọi đầu ra sinh từ một nguồn (TSV, HTML, JSON) được so khớp nhau trong selftest.
 9. Prototype ghi câu hỏi thiết kế ở đầu trang, mọi núm có tác động (biên độ khác 0), có nút xuất preset JSON.
@@ -62,7 +62,7 @@ Technical designer là cầu nối thiết kế và dev: biến luật trên gi�
 
 | Lỗi | Cách tránh |
 |---|---|
-| Sim chỉ in trung bình, giấu ngày tệ: người chơi hết ₵, không mua nổi nhiên liệu, nợ cứu hộ chồng lên (vòng xoáy nợ) | In P10 và ca tệ nhất. Thêm điều kiện không kẹt: cuối mọi ngày luôn đủ ₵ cho một chuyến bay tối thiểu |
+| Sim chỉ in trung bình, giấu ngày tệ: người chơi hết ₵, không mua nổi nhiên liệu, nợ cứu hộ chồng lên (vòng xoáy nợ) | In P10 và giờ giao thương tệ nhất. Thêm điều kiện không kẹt: cuối mọi ngày luôn đủ ₵ cho một chuyến bay tối thiểu |
 | Một số ghi ở hai nơi lệch nhau (Dungeon Builder: Laser DMG 50 ở Tower, 150 ở Balance Sheet) | Số hiện hành chỉ ở tab spec, Balance Sheet chỉ ghi lịch sử, validator so hai nơi |
 | Issue ID trùng, Surplus chép nhầm, giá hai tab khác đơn vị | Validator kiểm ID duy nhất, Surplus sinh bằng sim, giá chỉ ở Shop |
 | Số di chuyển đẹp trên sim nhưng jetpack quán tính trôi, khó dừng khi chơi | Prototype chơi tay trước, sim chuyến bay dùng số đã chơi qua |
@@ -80,7 +80,7 @@ Technical designer là cầu nối thiết kế và dev: biến luật trên gi�
 | Jetpack quán tính 8 hướng, năng lượng bộ đồ | Prototype `prototype/jetpack/` (GD-002): lực đẩy, lực cản, tốc tối đa, tiêu hao năng lượng mỗi giây | Swink, Hipple (preset sau thành asset) | gd-character |
 | Chuyến bay 1 tầng, năng lượng là đồng hồ, cứu hộ | Sim chuyến bay: thời gian, salvage mang về, tỉ lệ cứu hộ, phí | Sim có seed | gd-world |
 | Cắt, choáng, lưới, 3 quái | Sim combat: thời gian hạ hoặc bắt, năng lượng mất mỗi quái | Sim có seed, Schreiber | gd-combat |
-| Ca bán, 2 loài khách, hàng đợi, tip | Sim hàng đợi: khách phục vụ được, khách bỏ đi, tip | Dòng tài nguyên, sim có seed | gd-quan |
+| Giờ giao thương bán, 2 loài khách, hàng đợi, tip | Sim hàng đợi: khách phục vụ được, khách bỏ đi, tip | Dòng tài nguyên, sim có seed | gd-quan |
 | Economy ₵ một ngày và nhiều ngày | Sim economy (GD-005) dựng trên `docs/process/templates/economy-sim/` | Dòng tài nguyên, Schreiber | gd-economy |
 | 7 công thức, ITEM LIST, Salvage, Shop, Upgrade | Validator chéo tab | Sheet làm CMS | gd-items, gd-economy |
 | Dữ liệu cho Unity | Từ điển dữ liệu + exporter JSON, ScriptableObject khi có project | Hipple | GDM duyệt schema |

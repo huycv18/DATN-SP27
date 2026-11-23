@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Sim ca cảng theo khung Dave (GD-054, đợt 9). Luật: de-xuat-ca-cang-kieu-dave.md mục 2 (D0 tới D13), khung K13, C8, C9.
+// Sim giờ giao thương theo khung Dave (GD-054, đợt 9). Luật: de-xuat-ca-cang-kieu-dave.md mục 2 (D0 tới D13), khung K13, C8, C9.
 // Chạy: node projects/game-moi/tools/sim-ca-cang.mjs [--seed 1] [--lan 300] [--ra <file.md>]
 // Mô hình: một trục ngang như demo ca-cang-dave.html. Quầy cảng (3 ô) bên trái, cửa neo bên phải. N người chia việc,
 // mỗi người nghĩ rồi chọn việc gần nhất chưa ai nhận theo ưu tiên: mang thùng đang cầm tới cửa neo, nhặt thùng ở quầy, bơm khí.
@@ -207,7 +207,7 @@ export function baoCao(cfg, seed, lan) {
     return { s: ben.length ? ben[ben.length - 1] : ok[0] ?? null, dai: ok.length ? `${ok[0]} tới ${ok[ok.length - 1]}` : 'không có' };
   };
   const loiDai = (B, N) => okS(B, N).length;
-  out.push(`# Kết quả sim ca cảng khung Dave\n\nSinh bởi \`tools/sim-ca-cang.mjs\` ${dauChay(cfg)}, seed ${seed}, ${lan} ca mỗi ô (quét: ${QL} ca). Tham số \`tools/tham-so/ca-cang.json\`. Luật nguồn: \`tram-va-cang.md\` mục 2 (luật 24, 28, 34, 67) và bảng 2.4, khung K13, C8.`);
+  out.push(`# Kết quả sim giờ giao thương khung Dave\n\nSinh bởi \`tools/sim-ca-cang.mjs\` ${dauChay(cfg)}, seed ${seed}, ${lan} ca mỗi ô (quét: ${QL} ca). Tham số \`tools/tham-so/ca-cang.json\`. Luật nguồn: \`tram-va-cang.md\` mục 2 (luật 24, 28, 34, 67) và bảng 2.4, khung K13, C8.`);
   out.push('\nSim thay hẳn bản GD-030 (đơn nhiều dòng, đóng kiện, kệ). Số trong file này là số sim, không phải số chốt. Giá thùng, độ gọi và lồng theo loài đọc từ khối giaThung của gd-economy. Mục tiêu do Lead và gd-quan đặt: rảnh mỗi người tối đa 30% ở trễ 2 giây, ca 180 tới 300 giây, tàu phục vụ xong 85 tới 100% (chương 1), tip kể cả bơm khí 20 tới 30% Tally.');
   out.push(`\nGiả định gd-tech: ${cfg._gia_dinh}`);
   out.push(`\nNguồn số: ${cfg._nguon_so}`);

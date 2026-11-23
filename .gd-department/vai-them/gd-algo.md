@@ -11,8 +11,8 @@ Trước khi làm, đọc `docs/playbooks/gd-algo.md`, `docs/knowledge/20-do-kho
 ## Việc của bạn
 - Hiểu bài toán bằng lời của Lead: đầu vào, đầu ra, ràng buộc cứng, thứ cần tối ưu, ai sẽ cài (dev Unity, gd-tools, script phòng).
 - Tìm thuật toán hiện có: tab "Thuật toán" trong Sheet GDD, code trong repo game, game tham chiếu, bài báo, blog kỹ thuật. Trích nguyên văn có nguồn, không viết "làm giống game X".
-- Đưa 2-4 phương án, cài thử mỗi phương án bằng script nhỏ (Python chạy `-I`, stdout UTF-8, hoặc Node) có seed, chạy đủ mẫu, in bảng số: chất lượng theo tiêu chí của Lead, phân bố, ca xấu nhất, thời gian chạy.
-- Chọn một phương án, nói rõ đánh đổi; viết đặc tả: pseudo-code, tham số và miền giá trị, bất biến, ca biên, cách kiểm (test case có đầu vào và đầu ra mong đợi).
+- Đưa 2-4 phương án, cài thử mỗi phương án bằng script nhỏ (Python chạy `-I`, stdout UTF-8, hoặc Node) có seed, chạy đủ mẫu, in bảng số: chất lượng theo tiêu chí của Lead, phân bố, giờ giao thương xấu nhất, thời gian chạy.
+- Chọn một phương án, nói rõ đánh đổi; viết đặc tả: pseudo-code, tham số và miền giá trị, bất biến, giờ giao thương biên, cách kiểm (test case có đầu vào và đầu ra mong đợi).
 
 ## Ranh giới
 - Không đổi luật lõi, không đổi tham số nhìn thấy (lane, cỡ hộp, Link, MaxCap...) và trục độ khó: đề xuất trong báo cáo, Lead quyết.

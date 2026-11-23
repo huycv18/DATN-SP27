@@ -1,12 +1,12 @@
 ## II.6. Station and Port
 
-Trạm và cảng là nửa ở nhà của The Novent. Ở đây người chơi biến thứ mang về từ chuyến ra ngoài thành tiến độ: sửa khoang để trạm sống lại, đánh thức người vớt để mở tính năng, và bán hàng cho tàu thương nhân ở ca cảng để lấy Tally. Mục này nối với mục Vật phẩm ở chỗ hàng nào bán được, với mục Kinh tế ở giá và nâng cấp, với mục Một ngày ở chỗ ca cảng là pha sau các chuyến. Ai cần hiểu vì sao người chơi muốn ra ngoài mỗi ngày nên đọc mục này.
+Trạm và cảng là nửa ở nhà của The Novent. Ở đây người chơi biến thứ mang về từ chuyến ra ngoài thành tiến độ: sửa khoang để trạm sống lại, đánh thức người vớt để mở tính năng, và bán hàng cho tàu thương nhân ở giờ giao thương để lấy Tally. Mục này nối với mục Vật phẩm ở chỗ hàng nào bán được, với mục Kinh tế ở giá và nâng cấp, với mục Một ngày ở chỗ giờ giao thương là pha sau các chuyến. Ai cần hiểu vì sao người chơi muốn ra ngoài mỗi ngày nên đọc mục này.
 
 ### II.6.1. Overview
 
 Người chơi sống trên **Station Ember**, trạm nhà bị hỏng neo giữa bãi vỡ. Trạm chia thành các **khoang**, mỗi khoang là một phòng chức năng. Khoang hỏng thì không dùng được. Người chơi mang vật liệu từ **chuyến**, tức một lần ra ngoài không gian rồi về, để sửa từng khoang. Sửa xong một khoang thì mặt cắt trạm đổi hình và trả lại một chức năng. Một số khoang chỉ sửa được khi có người phụ trách. Đó là **người vớt**, người sống sót còn nằm trong buồng ngủ đông ở các xác trạm ngoài kia. Người chơi tìm buồng, kéo về trạm, chờ người đó tỉnh, rồi sửa khoang của người đó để mở tính năng.
 
-Khi khoang liên lạc và cảng đều chạy, mỗi ngày có một **ca cảng**, pha bán hàng cho tàu thương nhân. Trước ca người chơi chọn hàng đem bán. Trong ca tàu cập vào cảng, mỗi tàu gọi một món, người chơi chạy mang món đó tới đúng tàu trước khi tàu hết kiên nhẫn. Tiền bán và tiền thưởng theo tốc độ là **Tally**, đồng tiền duy nhất của game, dùng để nâng cấp bộ đồ và trạm cho các chuyến sau đi xa hơn. Ca cảng không có thua: tàu bỏ đi chỉ làm mất món của tàu đó, hàng quay về kho. Quyết định nặng nằm trước ca (bán gì, bao nhiêu), trong ca tay bận nhưng đầu nhẹ.
+Khi khoang liên lạc và cảng đều chạy, mỗi ngày có một **giờ giao thương**, pha bán hàng cho tàu thương nhân. Trước giờ giao thương người chơi chọn hàng đem bán. Trong giờ giao thương tàu cập vào cảng, mỗi tàu gọi một món, người chơi chạy mang món đó tới đúng tàu trước khi tàu hết kiên nhẫn. Tiền bán và tiền thưởng theo tốc độ là **Tally**, đồng tiền duy nhất của game, dùng để nâng cấp bộ đồ và trạm cho các chuyến sau đi xa hơn. Giờ giao thương không có thua: tàu bỏ đi chỉ làm mất món của tàu đó, hàng quay về kho. Quyết định nặng nằm trước giờ giao thương (bán gì, bao nhiêu), trong giờ giao thương tay bận nhưng đầu nhẹ.
 
 ### II.6.2. Modules and Station Cross-section
 
@@ -21,8 +21,8 @@ Bản MVP gồm các khoang của chương 1:
 | Kho | Chỗ chứa đồ chung, không giới hạn số lượng | Có sẵn |
 | Khoang neo | Hãm trôi và neo trạm, việc sửa đầu tiên của game | Có sẵn |
 | Xưởng | Chế và nâng cấp trang bị, chế trước hàng cảng cần chế | Kỹ sư |
-| Khoang liên lạc | Bảng tàu, lập danh mục bán, mở ca cảng, shop | Thông dịch viên |
-| Cảng | Bến 1 có 3 cửa neo và quầy cảng, nơi diễn ra ca cảng | Thông dịch viên |
+| Khoang liên lạc | Bảng tàu, lập danh mục bán, mở giờ giao thương, shop | Thông dịch viên |
+| Cảng | Bến 1 có 3 cửa neo và quầy cảng, nơi diễn ra giờ giao thương | Thông dịch viên |
 | Động cơ chính | Tiến độ rời neo, MVP có giai đoạn 1 | Có sẵn, đang hỏng |
 
 Kho có một nâng cấp ngay trong chương đầu là kho cấp 2, sửa bằng phế liệu và khoáng dải Gần. Mọi nâng cấp khoang khác thuộc bản đủ.
@@ -54,9 +54,9 @@ Mỗi người vớt nằm trong một **buồng ngủ đông** còn chạy ở 
 | Người vớt | Khoang phải sửa | Tính năng khi mở |
 |---|---|---|
 | Kỹ sư (Ingrid Halvorsen) | Xưởng | Chế dụng cụ cơ bản, chế trước Khối nước tinh khiết cho hàng cảng, nâng cấp bộ đồ bậc 1 |
-| Thông dịch viên (Linh Tran) | Khoang liên lạc và cảng | Bảng tàu, lập danh mục bán, tự đóng thùng lúc Mở ca, ca cảng, shop |
+| Thông dịch viên (Linh Tran) | Khoang liên lạc và cảng | Bảng tàu, lập danh mục bán, tự đóng thùng lúc Mở giao thương, giờ giao thương, shop |
 
-Quest của Thông dịch viên là sửa cả hai khoang, vì ca cảng chỉ có khi khoang liên lạc và cảng đều Hoạt động. Người vớt không chết, không rời trạm, không cần ăn, và không phải nhân vật người chơi.
+Quest của Thông dịch viên là sửa cả hai khoang, vì giờ giao thương chỉ có khi khoang liên lạc và cảng đều Hoạt động. Người vớt không chết, không rời trạm, không cần ăn, và không phải nhân vật người chơi.
 
 ```mermaid
 flowchart TD
@@ -79,16 +79,16 @@ flowchart TD
 
 Chi tiết dữ liệu: tab Customer khối Người vớt mở tính năng.
 
-### II.6.5. Shift Preparation: Ship Board and Sales Catalog
+### II.6.5. Trade Hour Preparation: Ship Board and Sales Catalog
 
-Mọi việc trước ca làm ở **bảng tàu** của khoang liên lạc, mở được từ đầu ngày tới lúc Mở ca. Bảng tàu cho biết số tàu dự kiến, loại tàu ghé hôm nay và chúng hay gọi gì, đơn đặt trước, số thùng kho làm được và giá thùng từng loại hàng. Buổi sáng người chơi đọc bảng tàu để biết nên mang gì về, tối lập danh mục từ thứ đã mang về. Bảng tàu không chọn hộ.
+Mọi việc trước giờ giao thương làm ở **bảng tàu** của khoang liên lạc, mở được từ đầu ngày tới lúc Mở giao thương. Bảng tàu cho biết số tàu dự kiến, loại tàu ghé hôm nay và chúng hay gọi gì, đơn đặt trước, số thùng kho làm được và giá thùng từng loại hàng. Buổi sáng người chơi đọc bảng tàu để biết nên mang gì về, tối lập danh mục từ thứ đã mang về. Bảng tàu không chọn hộ.
 
-**Danh mục bán** là các loại hàng và số thùng người chơi đưa ra bán trong ca:
+**Danh mục bán** là các loại hàng và số thùng người chơi đưa ra bán trong giờ giao thương:
 - Chương 1 cho tối đa 4 loại hàng. Mỗi loại đặt số thùng từ 1 tới số thùng kho làm được.
-- Danh mục nháp được giữ tới khi Mở ca, kể cả khi thoát bảng tàu. Danh mục rỗng thì không Mở ca được.
-- Bảng tàu cảnh báo khi tổng thùng ít hơn số tàu, vì ca có thể kết thúc sớm.
+- Danh mục nháp được giữ tới khi Mở giao thương, kể cả khi thoát bảng tàu. Danh mục rỗng thì không Mở giao thương được.
+- Bảng tàu cảnh báo khi tổng thùng ít hơn số tàu, vì giờ giao thương có thể kết thúc sớm.
 
-**Thùng** là đơn vị bán trong ca, bằng 0,4 **kiện**, đơn vị hàng trong kho và trong kinh tế:
+**Thùng** là đơn vị bán trong giờ giao thương, bằng 0,4 **kiện**, đơn vị hàng trong kho và trong kinh tế:
 ```text
 SoThung = SoKien * 2,5 (làm tròn xuống)
 GiaThung = GiaKien / 2,5
@@ -98,7 +98,7 @@ GiaThung = GiaKien / 2,5
 - GiaKien: giá một kiện ở tab Shop, đơn vị Tally.
 - GiaThung: giá một thùng khi giao cho tàu, đơn vị Tally. Lồng tính giá theo loài bên trong.
 
-| Hàng bán được ở MVP | Bậc giá | Độ gọi | Giá thùng (Tally) | Trước ca phải có | Mở |
+| Hàng bán được ở MVP | Bậc giá | Độ gọi | Giá thùng (Tally) | Trước giờ giao thương phải có | Mở |
 |---|---|---|---|---|---|
 | Thùng phế liệu | Hàng chợ | 3 | 42 | Hàng trong kho | Chương 1 |
 | Thùng cáp | Hàng chợ | 3 | 40 | Hàng trong kho | Chương 1 |
@@ -113,33 +113,33 @@ GiaThung = GiaKien / 2,5
 Độ gọi là trọng số để tàu chọn món, hàng rẻ được gọi nhiều hơn (xem mục II.6.6). Thùng nước tinh khiết là hàng cần chế duy nhất của chương đầu:
 - Xưởng chạy một mẻ một lúc và giữ thêm mẻ chờ trong hàng đợi. Hàng đợi xưởng cấp 1 có 2 chỗ, tính cả mẻ đang chạy: một mẻ chạy cộng một mẻ chờ. Thời gian mỗi mẻ theo công thức ở tab Recipe.
 - Mẻ chạy cả khi người chơi ra chuyến. Mẻ còn lúc ngủ thì xong khi sang ngày.
-- Mẻ xong sau khi Mở ca thì vào kho, không vào danh mục ca đó.
+- Mẻ xong sau khi Mở giao thương thì vào kho, không vào danh mục giờ giao thương đó.
 - Danh mục chỉ dùng hàng đã nằm trong kho. Hàng trong túi của người còn ở ngoài chưa dùng được.
 
-Mở ca và Bỏ ca chọn ở bảng tàu. Mỗi ngày có đúng một ca, chọn một trong hai thì cửa khí khóa tới ngày mới:
-- Bỏ ca không bị phạt: tàu hôm đó không tới, kho giữ nguyên.
-- Mở ca bị chặn khi còn người ở ngoài chuyến hoặc danh mục rỗng, nút Mở ca xám kèm lý do.
-- Từ 2 người online, Bỏ ca và Mở ca lúc nhóm chưa đi đủ 2 chuyến cần mọi người xác nhận. Không trả lời trong 30 giây tính là đồng ý.
-- Lúc Mở ca, Thông dịch viên đóng thùng cả danh mục và trừ kho ngay, không tốn thời gian ca. Trong ca không chế, không đóng gì thêm.
-- Số người online lúc Mở ca chốt số tàu của ca. Người vào giữa ca không đổi lịch.
-- Ca cảng đầu tiên của thế giới là ca dạy: danh mục chọn sẵn thùng phế liệu, người chơi chỉ bấm Mở ca, lịch có 2 tàu Loose Bolt, không có đơn đặt trước.
+Mở giao thương và Nghỉ giao thương chọn ở bảng tàu. Mỗi ngày có đúng một giờ giao thương, chọn một trong hai thì cửa khí khóa tới ngày mới:
+- Nghỉ giao thương không bị phạt: tàu hôm đó không tới, kho giữ nguyên.
+- Mở giao thương bị chặn khi còn người ở ngoài chuyến hoặc danh mục rỗng, nút Mở bán xám kèm lý do.
+- Từ 2 người online, Nghỉ giao thương và Mở giao thương lúc nhóm chưa đi đủ 2 chuyến cần mọi người xác nhận. Không trả lời trong 30 giây tính là đồng ý.
+- Lúc Mở giao thương, Thông dịch viên đóng thùng cả danh mục và trừ kho ngay, không tốn thời gian giờ giao thương. Trong giờ giao thương không chế, không đóng gì thêm.
+- Số người online lúc Mở giao thương chốt số tàu của giờ giao thương. Người vào giữa giờ giao thương không đổi lịch.
+- Giờ giao thương đầu tiên của thế giới là giờ giao thương hướng dẫn: danh mục chọn sẵn thùng phế liệu, người chơi chỉ bấm Mở giao thương, lịch có 2 tàu Loose Bolt, không có đơn đặt trước.
 
-Toàn ca từ bảng tàu buổi sáng tới cuối ngày vẽ ở mục II.1, phần Day Rules.
+Toàn giờ giao thương từ bảng tàu buổi sáng tới cuối ngày vẽ ở mục II.1, phần Day Rules.
 
 [CHỜ ẢNH: màn bảng tàu khi lập danh mục, lấy từ Figma The Novent trang Wireframe MVP hoặc chụp build]
 *Hình II.6.3 - Màn bảng tàu khi lập danh mục*
 
-Chi tiết dữ liệu: tab Customer khối Nhóm hàng cảng và khối Luật ca cảng, tab Shop cho giá thùng.
+Chi tiết dữ liệu: tab Customer khối Nhóm hàng cảng và khối Luật giờ giao thương, tab Shop cho giá thùng.
 
-### II.6.6. During the Shift: Docking, Crate Delivery, Air Pumping
+### II.6.6. During Trade Hour: Docking, Crate Delivery, Air Pumping
 
-Ca dài tối đa 300 giây. Tàu đầu tới ở giây thứ hai. Mọi tàu tới trong cửa sổ đến ở đầu ca, phần còn lại của ca để tàu cập cuối còn đủ kiên nhẫn được phục vụ.
+Giờ giao thương dài tối đa 300 giây. Tàu đầu tới ở giây thứ hai. Mọi tàu tới trong cửa sổ đến ở đầu giờ giao thương, phần còn lại của giờ giao thương để tàu cập cuối còn đủ kiên nhẫn được phục vụ.
 ```text
 GianCachTrungBinh = 225 / SoTau
 ```
 - GianCachTrungBinh: thời gian trung bình giữa hai tàu tới, đơn vị giây. Mỗi khoảng lệch ngẫu nhiên tới 22%.
-- 225: cửa sổ đến, đơn vị giây, tính từ đầu ca.
-- SoTau: số tàu của ca, đơn vị tàu. Chương 1 là 25 tàu khi chơi một người, 55 tàu khi hai người. Ví dụ 25 tàu thì giãn cách trung bình 9 giây, mỗi khoảng từ 7 tới 11 giây.
+- 225: cửa sổ đến, đơn vị giây, tính từ đầu giờ giao thương.
+- SoTau: số tàu của giờ giao thương, đơn vị tàu. Chương 1 là 25 tàu khi chơi một người, 55 tàu khi hai người. Ví dụ 25 tàu thì giãn cách trung bình 9 giây, mỗi khoảng từ 7 tới 11 giây.
 
 Tàu tới cảng theo các luật sau:
 - Cảng MVP là **bến 1** với 3 **cửa neo**, mỗi cửa neo chứa một tàu. Tàu tới thì cập cửa neo trống có số nhỏ nhất.
@@ -180,20 +180,20 @@ flowchart TD
   G -->|Có| I
   E -->|Có| I["Cập cửa neo trống số nhỏ nhất, kiên nhẫn bắt đầu giảm"]
   I --> J["Sau 3 giây thùng ra ô quầy cùng màu"]
-  J --> K{"Giao đúng thùng trước khi hết kiên nhẫn và hết giờ ca?"}
+  J --> K{"Giao đúng thùng trước khi hết kiên nhẫn và hết giờ giao thương?"}
   K -->|Có| L["Rời xong: giá thùng, tip, điểm cảng"]
   K -->|Không| M["Rời chưa giao, thùng về danh mục"]
   J -.-> N["Bơm khí khi tàu yêu cầu: hồi 25% kiên nhẫn, cộng 10 Tally"]
   N -.-> K
 ```
-*Hình II.6.4 - Một tàu trong ca cảng, từ lúc tới giờ đến tới lúc rời*
+*Hình II.6.4 - Một tàu trong giờ giao thương, từ lúc tới giờ đến tới lúc rời*
 
-Đọc sơ đồ: tới giờ đến, tàu chỉ xuất hiện nếu danh mục còn món nó gọi được, nếu không thì bảng kết ca đếm nó vào tàu không tới. Tàu xuất hiện thì giữ ngay một thùng. Cảng đầy thì tàu chờ ngoài, lúc này đồng hồ chờ ngoài chạy còn kiên nhẫn đứng yên. Hết thời gian chờ ngoài mà chưa có chỗ thì tàu bỏ đi. Cập được thì kiên nhẫn bắt đầu giảm và ít giây sau thùng ra quầy. Nhánh đứt nét là bơm khí: không bắt buộc, nhưng kéo dài thời gian để giao. Giao đúng trước khi kiên nhẫn hoặc giờ ca hết thì tàu trả tiền và rời. Không kịp thì tàu rời tay không, thùng của nó quay lại danh mục cho tàu sau gọi.
+Đọc sơ đồ: tới giờ đến, tàu chỉ xuất hiện nếu danh mục còn món nó gọi được, nếu không thì bảng tổng kết giao thương đếm nó vào tàu không tới. Tàu xuất hiện thì giữ ngay một thùng. Cảng đầy thì tàu chờ ngoài, lúc này đồng hồ chờ ngoài chạy còn kiên nhẫn đứng yên. Hết thời gian chờ ngoài mà chưa có chỗ thì tàu bỏ đi. Cập được thì kiên nhẫn bắt đầu giảm và ít giây sau thùng ra quầy. Nhánh đứt nét là bơm khí: không bắt buộc, nhưng kéo dài thời gian để giao. Giao đúng trước khi kiên nhẫn hoặc giờ giao thương hết thì tàu trả tiền và rời. Không kịp thì tàu rời tay không, thùng của nó quay lại danh mục cho tàu sau gọi.
 
-[CHỜ ẢNH: màn ca cảng, chụp từ demo ca cảng trong thư mục tools/prototype hoặc từ build]
-*Hình II.6.5 - Màn ca cảng: quầy ba ô, cảng với ba cửa neo, bong bóng món gọi và thanh kiên nhẫn*
+[CHỜ ẢNH: màn giờ giao thương, chụp từ demo giờ giao thương trong thư mục tools/prototype hoặc từ build]
+*Hình II.6.5 - Màn giờ giao thương: quầy ba ô, cảng với ba cửa neo, bong bóng món gọi và thanh kiên nhẫn*
 
-Chi tiết dữ liệu: tab Customer, khối Loose Bolt, Tàu vội và khối Luật ca cảng.
+Chi tiết dữ liệu: tab Customer, khối Loose Bolt, Tàu vội và khối Luật giờ giao thương.
 
 ### II.6.7. Tally, Tips and Pre-orders
 
@@ -211,33 +211,33 @@ Tip = LamTron(GiaBan * 0,25 * KienNhanConLai * HeSoTip * HeSoMe) + 10 * SoLanBom
 - HeSoMe: 2 nếu là món mê của tàu (đồ Trái Đất với Loose Bolt), còn lại là 1.
 - SoLanBomKhi: số lần bơm khí đã làm cho tàu này, mỗi lần 10 Tally, tính vào tip. LamTron là làm tròn tới Tally nguyên.
 
-Tip là chỗ duy nhất tốc độ đổi ra Tally. Giá không nhân theo Hạng cảng, không nhân theo số người. Tàu chỉ mua hàng trong ca. Người chơi mua hàng ở shop của khoang liên lạc vào cuối ngày.
+Tip là chỗ duy nhất tốc độ đổi ra Tally. Giá không nhân theo Hạng cảng, không nhân theo số người. Tàu chỉ mua hàng trong giờ giao thương. Người chơi mua hàng ở shop của khoang liên lạc vào cuối ngày.
 
 **Đơn đặt trước** là thùng một tàu cụ thể đặt từ đầu ngày, giá cao, hiện ở bảng tàu. Đây là mối nối giữa hai nửa ngày: đọc đơn buổi sáng, chọn dải để mang đúng thứ đó về.
 - Chương 1 có 1 đơn mỗi ngày, ở tàu thứ 9 của lịch, là Loose Bolt đặt thùng đồ Trái Đất.
 - Từ ngày có Súng lưới, ngày chẵn đặt 1 lồng sống thay cho đồ Trái Đất.
-- Lúc Mở ca, nếu danh mục có loại hàng đặt thì 1 thùng được giữ riêng cho đơn đó.
+- Lúc Mở giao thương, nếu danh mục có loại hàng đặt thì 1 thùng được giữ riêng cho đơn đó.
 - Danh mục không có loại hàng đặt thì tàu đặt gọi món khác như tàu thường. Đơn không đạt, không có phạt ngoài mất phần giá cao.
 
-Thất bại trong ca luôn nhẹ. Tàu hết kiên nhẫn, tàu chờ ngoài quá hạn, hay tàu còn lại khi hết giờ ca chỉ mất món của tàu đó: không có giá, tip, điểm cảng cho tàu đó, không trừ Tally, không giảm Hạng cảng. Thùng của tàu về lại danh mục. Ca kết thúc ở điều tới trước trong ba điều:
+Thất bại trong giờ giao thương luôn nhẹ. Tàu hết kiên nhẫn, tàu chờ ngoài quá hạn, hay tàu còn lại khi hết giờ giao thương chỉ mất món của tàu đó: không có giá, tip, điểm cảng cho tàu đó, không trừ Tally, không giảm Hạng cảng. Thùng của tàu về lại danh mục. Giờ giao thương kết thúc ở điều tới trước trong ba điều:
 - Hết 300 giây. Tàu còn ở cửa neo rời ngay, tàu chờ ngoài bỏ đi.
 - Tàu cuối của lịch đã rời.
 - Danh mục hết thùng và không còn tàu ở cửa neo hay chờ ngoài.
 
-Bảng kết ca ghi số tàu phục vụ xong trên số tàu trong lịch, số tàu rời chưa giao, số tàu không tới vì hết hàng, Tally từ giá thùng và tip tách riêng, tổng Tally, điểm cảng, kết quả đơn đặt trước, số thùng về kho và lời một thương nhân. Thùng chưa bán về kho, giữ qua ngày, không hỏng. Bảng kết ca không có chữ thất bại.
+Bảng tổng kết giao thương ghi số tàu phục vụ xong trên số tàu trong lịch, số tàu rời chưa giao, số tàu không tới vì hết hàng, Tally từ giá thùng và tip tách riêng, tổng Tally, điểm cảng, kết quả đơn đặt trước, số thùng về kho và lời một thương nhân. Thùng chưa bán về kho, giữ qua ngày, không hỏng. Bảng tổng kết giao thương không có chữ thất bại.
 
-Chi tiết dữ liệu: tab Customer khối Luật ca cảng (Tally và tip, Đơn đặt trước, Thất bại, Kết thúc ca), tab Shop.
+Chi tiết dữ liệu: tab Customer khối Luật giờ giao thương (Tally và tip, Đơn đặt trước, Thất bại, Kết thúc giờ giao thương), tab Shop.
 
 ### II.6.8. Port Rank
 
-**Hạng cảng** là thang tiến trình duy nhất của cảng, gồm tám hạng, chung cả nhóm. Hạng tăng theo **điểm cảng** cộng dồn qua các ca và không bao giờ giảm.
+**Hạng cảng** là thang tiến trình duy nhất của cảng, gồm tám hạng, chung cả nhóm. Hạng tăng theo **điểm cảng** cộng dồn qua các giờ giao thương và không bao giờ giảm.
 ```text
 DiemTau = 1 + Thuong
 ```
 - DiemTau: điểm cảng một tàu phục vụ xong cho, đơn vị điểm. Tàu rời chưa giao, bỏ đi hay không tới cho 0 điểm.
 - Thuong: 1 nếu lúc giao còn từ 2/3 kiên nhẫn trở lên, còn lại là 0.
 
-Điểm không nhân theo số người, vì số tàu đã tăng theo số người. Đủ điểm ngưỡng thì lên hạng ngay sau bảng kết ca. Mỗi chương có trần hạng: chạm trần thì điểm vẫn cộng dồn và lên hạng khi chương sau mở. Trần của chương đầu là hạng 3.
+Điểm không nhân theo số người, vì số tàu đã tăng theo số người. Đủ điểm ngưỡng thì lên hạng ngay sau bảng tổng kết giao thương. Mỗi chương có trần hạng: chạm trần thì điểm vẫn cộng dồn và lên hạng khi chương sau mở. Trần của chương đầu là hạng 3.
 
 | Hạng | Điểm cảng cần | Mở |
 |---|---|---|
@@ -252,26 +252,26 @@ Chi tiết dữ liệu: tab Customer khối Hạng cảng.
 ### II.6.9. Two-player Co-op and Acceptance Criteria
 
 Mọi luật trên đúng cho cả một người và co-op. MVP có co-op hai người, khác biệt nằm ở các điểm sau:
-- Danh mục bán là một danh mục chung, ai ở khoang liên lạc cũng sửa được, người bấm Mở ca chốt.
+- Danh mục bán là một danh mục chung, ai ở khoang liên lạc cũng sửa được, người bấm Mở giao thương chốt.
 - Người đã về trạm khi đồng đội còn ở ngoài không ra lại trong chuyến đó, nhưng làm được mọi việc trạm: chế trước ở xưởng, sửa danh mục nháp, sửa khoang.
 - Số tàu tăng theo số người, cửa sổ đến giữ nguyên nên tàu tới dày hơn. Số cửa neo, kiên nhẫn và chờ ngoài không đổi.
 - Hai người nhặt cùng một thùng hoặc bơm cùng một cửa neo trong cùng khung hình thì yêu cầu tới máy chủ trước được nhận, người sau không có gì đổi.
-- Chơi một mình thì tạm dừng ca được. Từ 2 người thì ca không dừng khi mở menu.
+- Chơi một mình thì tạm dừng giờ giao thương được. Từ 2 người thì giờ giao thương không dừng khi mở menu.
 
-Kết quả sim ca cảng chương 1, danh mục đủ hàng, người chơi trễ phản xạ hai giây:
+Kết quả sim giờ giao thương chương 1, danh mục đủ hàng, người chơi trễ phản xạ hai giây:
 
-| Số người | Số tàu | Giãn cách trung bình | Tàu phục vụ xong | Thời gian rảnh | Ca dài | Tip trong Tally | Tally một ca |
+| Số người | Số tàu | Giãn cách trung bình | Tàu phục vụ xong | Thời gian rảnh | Giờ giao thương dài | Tip trong Tally | Tally một giờ giao thương |
 |---|---|---|---|---|---|---|---|
 | 1 | 25 | 9 giây | 99% | 14% | 230 giây | 26% | 1654 |
 | 2 | 55 | 4,1 giây | 99% | 6% | 251 giây | 26% | 3602 |
 
-Ca chương 1 đạt khi đủ bốn điều, cả hai cấu hình trên đều đạt:
-- Rảnh mỗi người không quá 30% thời gian ca.
+Giờ giao thương chương 1 đạt khi đủ bốn điều, cả hai cấu hình trên đều đạt:
+- Rảnh mỗi người không quá 30% thời gian giờ giao thương.
 - Tàu phục vụ xong từ 85% tới 100%.
-- Ca dài từ 180 tới 300 giây.
-- Tip kể cả bơm khí chiếm 20% tới 30% Tally của ca.
+- Giờ giao thương dài từ 180 tới 300 giây.
+- Tip kể cả bơm khí chiếm 20% tới 30% Tally của giờ giao thương.
 
-Cảm giác thật của ca và việc người chơi có hiểu ca cảng không thì sim chưa đo được, chờ playtest trên build.
+Cảm giác thật của giờ giao thương và việc người chơi có hiểu giờ giao thương không thì sim chưa đo được, chờ playtest trên build.
 
 Chi tiết dữ liệu: tab Customer khối Lịch tàu.
 
@@ -283,7 +283,7 @@ Chi tiết dữ liệu: tab Customer khối Lịch tàu.
 | Muốn bơm khí khi tay đang mang thùng | Không bơm được, tương tác ở cửa neo là giao |
 | Tàu rời khi người chơi đang mang thùng của nó | Thùng biến khỏi tay, về danh mục, hiện "Tàu đã rời, thùng về kho" |
 | Kho giảm sau khi lập danh mục nháp | Số thùng loại đó tự hạ về số kho làm được, về 0 thì loại đó rời danh mục |
-| Người chơi rời phiên giữa ca | Nhân vật ở lại trạm, thùng trên tay về ô quầy của nó |
+| Người chơi rời phiên giữa giờ giao thương | Nhân vật ở lại trạm, thùng trên tay về ô quầy của nó |
 
 ### II.6.z. Post-MVP
 
@@ -294,5 +294,5 @@ Chi tiết dữ liệu: tab Customer khối Lịch tàu.
 - Chín loại tàu còn lại (Lamplighter, Vellune, Glasswing, Iron Keel, Stayfast, Tàu lạ, Tàu đơn gấp, Backchannel, Pilot Light), luật riêng của từng loại, mức kiên nhẫn Vừa, tàu theo mốc truyện.
 - Hạng cảng 4 tới 8, danh mục 5 và 6 loại, 2 đơn đặt trước mỗi ngày.
 - Hàng cảng ngoài chương 1: linh kiện, sản phẩm nuôi, vật tư, bản sao dữ liệu, kiện tinh dải Giữa và dải Xa, linh kiện đặc biệt, kiện tin mật, lồng loài cỡ M.
-- Sự cố trong ca từ chương 3 (rò khí, chập điện, Driftlife sổng) và nuôi Driftlife ở khoang sinh quyển.
-- Co-op 3 và 4 người, cấu hình lịch ca cảng chương 2 tới 5.
+- Sự cố trong giờ giao thương từ chương 3 (rò khí, chập điện, Driftlife sổng) và nuôi Driftlife ở khoang sinh quyển.
+- Co-op 3 và 4 người, cấu hình lịch giờ giao thương chương 2 tới 5.

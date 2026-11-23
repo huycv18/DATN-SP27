@@ -6,7 +6,7 @@ Mục này nói về mọi thứ người chơi nhặt, chế, mang và bán: t�
 
 Trong chuyến, người chơi khai thác **điểm khai thác** (mảnh vỡ, mạch quặng, khối băng, hòm kỹ thuật) và hạ hoặc bắt sống Driftlife, rồi nhét thứ nhặt được vào túi. Túi nhỏ và Oxy hữu hạn, nên mỗi lần nhặt là một lựa chọn "món này có đáng chỗ không". Về trạm, đồ trong túi tự chuyển sang kho chung.
 
-Ở trạm, vật phẩm có ba đường tiêu. Đường một là sửa khoang và lắp động cơ. Đường hai là chế ở xưởng thành vật liệu chế, vật tiêu hao, dụng cụ và nâng cấp bộ đồ. Đường ba là đóng thành thùng bán cho tàu ở ca cảng. Không có vật phẩm nào chỉ để bán lấy số: thứ nào cũng có ít nhất một nơi tiêu, và không công thức nào tạo ra tài nguyên thô từ hư không. Chương 1 chỉ dùng dải Gần.
+Ở trạm, vật phẩm có ba đường tiêu. Đường một là sửa khoang và lắp động cơ. Đường hai là chế ở xưởng thành vật liệu chế, vật tiêu hao, dụng cụ và nâng cấp bộ đồ. Đường ba là đóng thành thùng bán cho tàu ở giờ giao thương. Không có vật phẩm nào chỉ để bán lấy số: thứ nào cũng có ít nhất một nơi tiêu, và không công thức nào tạo ra tài nguyên thô từ hư không. Chương 1 chỉ dùng dải Gần.
 
 ### II.5.2. Resources and Salvage Nodes
 
@@ -115,7 +115,7 @@ Bắt sống luôn đáng hơn hạ, kể cả sau khi trừ vật tiêu hao t�
 | 2 sao | Sinh lực từ 30% tới dưới 70% | 1,25 |
 | 1 sao | Sinh lực dưới 30% | 1,0 |
 
-Hạ thường cho một sao, kết nhanh con đang bất lực cho hai sao. Mẫu sống ở MVP có hai nơi tiêu: đưa vào lồng giao để bán ở ca cảng, hoặc để dành cho nuôi và nghiên cứu ở các chương sau. Mẫu đã hạ có nguồn tiêu thô: kiện mô sinh học, kiện đặc sản, vật liệu cho Lưới cuộn. Boss Scrapmaw rơi hạch nếu bị hạ hoặc mẫu boss nếu bị xua đi, một trong hai dùng để sửa động cơ giai đoạn đầu.
+Hạ thường cho một sao, kết nhanh con đang bất lực cho hai sao. Mẫu sống ở MVP có hai nơi tiêu: đưa vào lồng giao để bán ở giờ giao thương, hoặc để dành cho nuôi và nghiên cứu ở các chương sau. Mẫu đã hạ có nguồn tiêu thô: kiện mô sinh học, kiện đặc sản, vật liệu cho Lưới cuộn. Boss Scrapmaw rơi hạch nếu bị hạ hoặc mẫu boss nếu bị xua đi, một trong hai dùng để sửa động cơ giai đoạn đầu.
 
 Chi tiết dữ liệu: tab ITEM LIST, các dòng đặc sản, mẫu sống và loài ở dải Gần.
 
@@ -181,10 +181,10 @@ GTDra = GTDvao * HeSoChuoi
 - hesochuoi: hệ số chuỗi, vật liệu chế từ 1,25 tới 1,5, không đơn vị. Ví dụ ba Mảnh vỏ Cradle (3,0 GTĐ) ép thành một Tấm thép nén (3,9 GTĐ), hệ số 1,30.
 
 Chế có hai kiểu thời gian:
-- Chế nhanh, không quá 20 giây, làm ở xưởng ngoài ca cảng. Vật liệu chế và vật tiêu hao thuộc kiểu này. Thời gian một mẻ theo từng công thức ở tab Recipe, ví dụ Lọc băng mất mười hai giây. Mẻ chạy nền theo thời gian thực, người chơi không phải đứng ở xưởng, kể cả khi đã ra chuyến.
+- Chế nhanh, không quá 20 giây, làm ở xưởng ngoài giờ giao thương. Vật liệu chế và vật tiêu hao thuộc kiểu này. Thời gian một mẻ theo từng công thức ở tab Recipe, ví dụ Lọc băng mất mười hai giây. Mẻ chạy nền theo thời gian thực, người chơi không phải đứng ở xưởng, kể cả khi đã ra chuyến.
 - Chế qua đêm, đặt vào hàng đợi rồi nhận sau khi ngủ. Dụng cụ và nâng cấp bộ đồ luôn thuộc kiểu này.
 
-Xưởng cấp đầu giữ hàng đợi hai chỗ, xếp theo thứ tự người chơi đặt. Mẻ thiếu vật liệu thì không bắt đầu và không trừ nguyên liệu. Trong ca cảng không chế. Ngủ khi hàng đợi chưa xong thì hàng đợi hoàn thành khi sang ngày, không có hàng đợi chạy khi người chơi thoát game.
+Xưởng cấp đầu giữ hàng đợi hai chỗ, xếp theo thứ tự người chơi đặt. Mẻ thiếu vật liệu thì không bắt đầu và không trừ nguyên liệu. Trong giờ giao thương không chế. Ngủ khi hàng đợi chưa xong thì hàng đợi hoàn thành khi sang ngày, không có hàng đợi chạy khi người chơi thoát game.
 
 Hàng cần chế duy nhất của chương 1 là kiện nước tinh khiết, nên đây là luồng người chơi dễ đi sai nhất:
 
@@ -196,20 +196,20 @@ flowchart TD
   C -->|Thiếu| D["Ra chuyến, khai thác Khối băng trôi"]
   D --> C
   C -->|Đủ| E["Ở xưởng đặt mẻ Lọc băng"]
-  E --> F{"Mẻ xong trước Mở ca?"}
-  F -->|Chưa| G["Mẻ chạy tiếp, xong thì vào kho, không vào danh mục ca này"]
-  F -->|Xong| H["Đưa vào danh mục bán, Mở ca"]
-  H --> I["Lúc Mở ca Thông dịch viên đóng kiện, trừ kho ngay"]
+  E --> F{"Mẻ xong trước Mở giao thương?"}
+  F -->|Chưa| G["Mẻ chạy tiếp, xong thì vào kho, không vào danh mục giờ giao thương này"]
+  F -->|Xong| H["Đưa vào danh mục bán, Mở giao thương"]
+  H --> I["Lúc Mở giao thương Thông dịch viên đóng kiện, trừ kho ngay"]
 ```
-*Hình II.5.2 - Đường đi của một thùng nước tinh khiết, từ khối băng ngoài chuyến tới lúc Mở ca*
+*Hình II.5.2 - Đường đi của một thùng nước tinh khiết, từ khối băng ngoài chuyến tới lúc Mở giao thương*
 
-Đọc sơ đồ: người chơi muốn bán nước tinh khiết thì phải có sẵn Khối nước tinh khiết trong kho. Thiếu thì lùi một bước: có đủ băng nước đục thì chế tại xưởng, thiếu băng thì ra chuyến khai thác Khối băng trôi. Mẻ chế xong sau lúc Mở ca không kịp danh mục của ca đó, người chơi phải lên kế hoạch từ buổi sáng. Hàng đã nằm trong kho là hàng bán được, hàng còn trong túi người ở ngoài chưa tính.
+Đọc sơ đồ: người chơi muốn bán nước tinh khiết thì phải có sẵn Khối nước tinh khiết trong kho. Thiếu thì lùi một bước: có đủ băng nước đục thì chế tại xưởng, thiếu băng thì ra chuyến khai thác Khối băng trôi. Mẻ chế xong sau lúc Mở giao thương không kịp danh mục của giờ giao thương đó, người chơi phải lên kế hoạch từ buổi sáng. Hàng đã nằm trong kho là hàng bán được, hàng còn trong túi người ở ngoài chưa tính.
 
 Chi tiết dữ liệu: tab Recipe trên Sheet GDD, mỗi công thức có khối Type, Ingredients, Output, Unlock.
 
 ### II.5.7. Cargo and Crates
 
-Kiện là đơn vị hàng trong kho, thùng là đơn vị bán trong ca cảng, và một kiện đổi ra 2,5 thùng. Kiện không đóng bằng tay trong ca. Lúc Mở ca, Thông dịch viên đóng kiện tự động cho cả danh mục, không tốn thời gian ca. Riêng lồng sinh vật sống do người chơi làm ở cảng trước Mở ca, thời gian làm ở bảng dưới, lồng nhớ loài và sao của mẫu bên trong. Lồng không chia thùng, một lồng là một đơn vị bán.
+Kiện là đơn vị hàng trong kho, thùng là đơn vị bán trong giờ giao thương, và một kiện đổi ra 2,5 thùng. Kiện không đóng bằng tay trong giờ giao thương. Lúc Mở giao thương, Thông dịch viên đóng kiện tự động cho cả danh mục, không tốn thời gian giờ giao thương. Riêng lồng sinh vật sống do người chơi làm ở cảng trước Mở giao thương, thời gian làm ở bảng dưới, lồng nhớ loài và sao của mẫu bên trong. Lồng không chia thùng, một lồng là một đơn vị bán.
 
 Chương đầu có chín loại kiện, chia theo cách đóng:
 
@@ -223,7 +223,7 @@ Chương đầu có chín loại kiện, chia theo cách đóng:
 | Kiện đồ Trái Đất | 5 Đồ Trái Đất vụn | Thô |
 | Kiện nước tinh khiết | 2 Khối nước tinh khiết | Tinh, có bước chế trước |
 | Kiện đặc sản Gần | 3 đặc sản, mỗi cái của một trong các loài Gần | Sinh học |
-| Lồng sinh vật sống Gần | 1 mẫu sống cỡ S | Sống, làm tay trước Mở ca, 8 giây |
+| Lồng sinh vật sống Gần | 1 mẫu sống cỡ S | Sống, làm tay trước Mở giao thương, 8 giây |
 
 Kiện thô đóng thẳng từ tài nguyên thô, hệ số giá trị đúng 1,0 vì chỉ đóng gói. Kiện tinh làm từ vật liệu chế nên có thêm giá trị. Lồng mang đúng giá trị mẫu bên trong nhân hệ số sao:
 ```text
@@ -235,9 +235,9 @@ GTDLong = GTDMauSong * HeSoSao
 - sokiencan: số kiện phải đóng, đơn vị kiện, làm tròn lên.
 - dauvaomoikien: số đơn vị đầu vào của một kiện ở bảng trên, đơn vị cái.
 - hesosao: 1,0 và 1,25 và 1,5 theo 1, 2, 3 sao.
-- Ví dụ danh mục 5 thùng phế liệu cần 2 kiện, tức 28 Mảnh vỏ Cradle trừ khỏi kho lúc Mở ca.
+- Ví dụ danh mục 5 thùng phế liệu cần 2 kiện, tức 28 Mảnh vỏ Cradle trừ khỏi kho lúc Mở giao thương.
 
-Hết nguyên liệu lúc Mở ca thì loại hàng đó đóng được bao nhiêu thùng thì bày bấy nhiêu, không trừ nguyên liệu của thùng không đóng. Thùng thừa và thùng chưa bán ở lại kho cho ca sau, không hỏng. Vật kể chuyện không bán cho tàu. Giá Tally của từng loại thùng và bậc giá hàng nằm ở mục Station and Port và mục Economy and Progression.
+Hết nguyên liệu lúc Mở giao thương thì loại hàng đó đóng được bao nhiêu thùng thì bày bấy nhiêu, không trừ nguyên liệu của thùng không đóng. Thùng thừa và thùng chưa bán ở lại kho cho giờ giao thương sau, không hỏng. Vật kể chuyện không bán cho tàu. Giá Tally của từng loại thùng và bậc giá hàng nằm ở mục Station and Port và mục Economy and Progression.
 
 Chi tiết dữ liệu: tab ITEM LIST và tab Recipe cho kiện, tab Shop cho giá.
 
@@ -275,7 +275,7 @@ Chi tiết dữ liệu: tab Salvage, ITEM LIST, Recipe trên Sheet GDD.
 | Người giữ điểm đứng im không khai thác | Sau 10 giây không có tiến độ thì thả điểm |
 | Thả vật nhiệm vụ xuống | Vật nằm 30 giây, không ai nhặt thì về vị trí gốc |
 | Bị kéo về khi túi rỗng | Không có món để giữ, vẫn tính chuyến kết thúc |
-| Hết nguyên liệu lúc Mở ca | Đóng được bao nhiêu thùng thì bày bấy nhiêu, không trừ phần không đóng |
+| Hết nguyên liệu lúc Mở giao thương | Đóng được bao nhiêu thùng thì bày bấy nhiêu, không trừ phần không đóng |
 | Công thức đòi một trong nhiều loài và kho có nhiều loài | Người chơi chọn loài dùng, giá trị tính theo loài rẻ nhất trong nhóm |
 | Hai mẫu cùng loài, một sống một hạ | Hai vật phẩm khác nhau, không gộp |
 

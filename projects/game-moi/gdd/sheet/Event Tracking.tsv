@@ -4,7 +4,7 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 3	Session	player_join	Người vào giữa chừng	player_id\nphase	Vào giữa chừng có chờ lâu không	string\nstring
 4	Session	player_leave	Người rời	player_id\nphase\nreason	Ai rời, lúc nào, vì sao	string\nstring\nstring
 5	Day	day_start	Thức dậy	ships_scheduled	Một ngày dài bao lâu	int
-6	Day	day_end	Vào buồng ngủ	minutes\ntrips\nport_shift_done	Một ngày có mấy chuyến, ca cảng có xong không	float\nint\nbool
+6	Day	day_end	Vào buồng ngủ	minutes\ntrips\nport_shift_done	Một ngày có mấy chuyến, giờ giao thương có xong không	float\nint\nbool
 7	Trip	trip_start	Cả nhóm xác nhận ở cửa khí	seed\nchapter\nzone_target\nn_players	Thời lượng chuyến theo chương	int\nint\nstring\nint
 8	Trip	player_trip_start	Mỗi người rời cửa khí	player_id\nslot\nsuit_tiers\ntools	Bộ đồ và dụng cụ mang theo mỗi chuyến	string\nint\nstring\nstring
 9	Trip	zone_enter	Vào dải	player_id\nzone\nenv_ok	Người chơi có vào dải thiếu cấp bộ đồ không	string\nstring\nbool
@@ -28,14 +28,14 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 27	Combat	capture_failed	Bắt hỏng	creature_id\nreason	Bắt có quá khó không	string\nstring
 28	Combat	boss_phase	Boss chuyển pha	boss_id\nphase\nseconds	Thời lượng từng pha boss	string\nint\nfloat
 29	Combat	boss_end	Boss kết	boss_id\nending (defeat, drive_off)\nseconds\nn_players	Boss kết thúc ra sao, mất bao lâu	string\nstring\nfloat\nint
-30	Port	port_shift_start	Mở ca	ships\nn_players\ndocks\ncatalog_types\ncrates_total	Số tàu theo số người, danh mục lúc mở có đủ hàng không	int\nint\nint\nint\nint
-31	Port	port_shift_skip	Bỏ ca	day	Ca có bị bỏ nhiều không	int
+30	Port	port_shift_start	Mở giao thương	ships\nn_players\ndocks\ncatalog_types\ncrates_total	Số tàu theo số người, danh mục lúc mở có đủ hàng không	int\nint\nint\nint\nint
+31	Port	port_shift_skip	Nghỉ giao thương	day	Giờ giao thương có bị bỏ nhiều không	int
 32	Port	ship_docked	Tàu cập cửa neo	ship_type\ndock\nwaited	Tàu chờ ngoài bao lâu mới cập	string\nint\nfloat
-33	Port	port_catalog_set	Bấm Mở ca sau khi lập danh mục	items (list item_id và số thùng)\ncrates_total\nhas_preorder\nseconds_on_screen	Người chơi lập danh mục thế nào, mất bao lâu, có giữ hàng cho đơn đặt trước không	string\nint\nbool\nfloat
+33	Port	port_catalog_set	Bấm Mở giao thương sau khi lập danh mục	items (list item_id và số thùng)\ncrates_total\nhas_preorder\nseconds_on_screen	Người chơi lập danh mục thế nào, mất bao lâu, có giữ hàng cho đơn đặt trước không	string\nint\nbool\nfloat
 34	Port	ship_called	Tàu cập cửa neo và hiện món gọi	ship_type\nitem_id\npreorder\npatience_max	Món nào hay được gọi, tàu nào gọi gì	string\nstring\nbool\nfloat
 35	Port	crate_delivered	Giao thùng được nhận	ship_type\nitem_id\nprice\ntip\npatience_left_pct\nplayer_id	Tally và tip mỗi lần giao, ai giao	string\nstring\nint\nint\nfloat\nstring
-36	Port	ship_left_unserved	Tàu rời khi chưa giao	ship_type\nitem_id\nreason (patience, waited_out, shift_end)\nseconds_docked	Tỉ lệ tàu phục vụ xong (sim ca cảng)	string\nstring\nstring\nfloat
-37	Port	port_shift_end	Kết ca	seconds\nserved\nleft\nnot_arrived\ntally\ntip\nport_points\nend_reason (timeout, last_ship, out_of_stock)	Ca dài bao lâu, ca có kết sớm vì hết hàng không	float\nint\nint\nint\nint\nint\nint\nstring
+36	Port	ship_left_unserved	Tàu rời khi chưa giao	ship_type\nitem_id\nreason (patience, waited_out, shift_end)\nseconds_docked	Tỉ lệ tàu phục vụ xong (sim giờ giao thương)	string\nstring\nstring\nfloat
+37	Port	port_shift_end	Kết thúc giờ giao thương	seconds\nserved\nleft\nnot_arrived\ntally\ntip\nport_points\nend_reason (timeout, last_ship, out_of_stock)	Giờ giao thương dài bao lâu, giờ giao thương có kết sớm vì hết hàng không	float\nint\nint\nint\nint\nint\nint\nstring
 38	Port	incident	Sự cố bắt đầu hoặc xong	incident_id\nstate\nseconds	Sự cố kéo dài bao lâu	string\nstring\nfloat
 39	Station	room_repaired	Khoang sửa xong	room_id\nlevel	Nhịp sửa trạm theo ngày	string\nint
 40	Station	survivor_awake	Người vớt tỉnh	survivor_id	Nhịp người vớt tỉnh theo ngày	string
@@ -71,6 +71,6 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 70	UX	ux_settings_change	Đổi một cài đặt	key\nvalue	Cài đặt nào hay bị đổi	string\nstring
 71	UX	ux_dead_end	Đứng yên ở một màn trên 20 giây	screen_id\nidle_seconds	Màn nào làm người chơi bí	string\nfloat
 72	Port	air_pump_done	Bơm khí xong	player_id\nship_type\npatience_gain_pct\ntally	Việc phụ có được làm không	string\nstring\nfloat\nint
-73	Port	port_player_idle	Kết ca, mỗi người một dòng	player_id\nidle_seconds\nshift_seconds	Mỗi người rảnh tối đa 30% khi người chơi trễ 2 giây. Rảnh là lúc không có thùng nào chờ nhặt, không đang cầm thùng, không có tàu chờ bơm khí	string\nfloat\nfloat
+73	Port	port_player_idle	Kết thúc giờ giao thương, mỗi người một dòng	player_id\nidle_seconds\nshift_seconds	Mỗi người rảnh tối đa 30% khi người chơi trễ 2 giây. Rảnh là lúc không có thùng nào chờ nhặt, không đang cầm thùng, không có tàu chờ bơm khí	string\nfloat\nfloat
 74	Mọi nhóm	(trường chung)	Kèm mọi sự kiện ở trên	session_id\nworld_id\nworld_seed\nbuild\nt\nplay_seconds_total\nday\nchapter\nn_players\nslot	Ghi ra file JSON Lines cục bộ mỗi phiên, không gửi mạng. Sự kiện do host nắm thì chỉ máy host ghi, sự kiện của người chơi thì máy nào tự ghi máy đó, gộp theo session_id	string\nstring\nint\nstring\nfloat\nfloat\nint\nint\nint\nint
 	Ref				Bản đủ: ky-thuat.md mục 2.4. Sự kiện của tính năng Sau MVP chỉ ghi khi tính năng có trong build	
