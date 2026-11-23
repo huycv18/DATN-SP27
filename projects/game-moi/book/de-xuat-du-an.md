@@ -14,7 +14,7 @@ The Novent trong một câu: tỉnh dậy trên một trạm hỏng giữa bãi 
 |---|---|
 | Engine, nền tảng | Unity, PC, có thể mở rộng đa nền tảng |
 | Nhóm | 1 Game Designer, 4 Game Developer, 1 Artist 2D |
-| Art | 2D vector, có thể thêm 3D thành 2.5D (chưa chốt) |
+| Art ngoài không gian | Môi trường 3D, đồ họa 2.5D, camera top-down nghiêng 45° |
 | Kinh doanh | Bán đứt, không gói bán |
 | Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, MVP có co-op 2 người |
 

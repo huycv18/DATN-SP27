@@ -361,3 +361,10 @@ Lead yêu cầu tạo art và asset mới để dựng các màn hình trong gam
 Lead muốn UI demo Figma có cách trình bày như game PC và lấy bản WarFront Demo trên Steam làm mốc chất lượng. Đã chỉnh trang `The Novent / Demo màn hình`: màn chuẩn bị chiếm toàn khung, mỗi bước có một hành động chính, HUD bay bám mép, ca cảng chỉ nhấn thùng và cửa neo đang thao tác. Màu, ký hiệu và art dùng hệ hình ảnh của Ember. Đây là hướng trình bày của prototype Figma, các thông số và luật vẫn lấy từ tài liệu dự án.
 
 [Figma Present](https://www.figma.com/proto/rwemYZkNuUXZKONbA2c2EW/The-Novent?node-id=37-184&page-id=37%3A110&starting-point-node-id=37%3A184&scaling=scale-down)
+
+## 2026-11-23 - Hướng hình ảnh gameplay ngoài không gian
+
+Lead yêu cầu môi trường 3D, đồ họa 2.5D, camera top-down nghiêng 45° cho ảnh demo gameplay. Sau khi xem cảnh thu hồi vật liệu cạnh xác tàu và cảnh Noor bay giữa bãi vỡ, Lead chốt: “Oke tôi muốn dùng như này”.
+
+- Hai ảnh duyệt làm mẫu cho cảnh bay ở Dải Gần: [Thu hồi cạnh xác tàu](art/gameplay-dai-gan-thu-hoi.png) và [Bay giữa bãi vỡ](art/gameplay-dai-gan-bai-vo.png).
+- Vật cản, đường bay và Driftlife cần đọc rõ ở cùng góc camera. Dữ liệu mặt phẳng bay và điều khiển dùng luật hiện hành. Phê duyệt này áp dụng cho hình ảnh ngoài không gian.

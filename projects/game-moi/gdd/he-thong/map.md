@@ -78,7 +78,7 @@ Quyết định người chơi đưa ra trong hệ thống này:
 
 ### 2.1 Map tổng và mảnh
 
-1. Map tổng The Wake là mặt phẳng 2D nhìn ngang. Trục ngang là khoảng cách tới Ember. Ember nằm ngoài lưới, ở mép trái, cửa khí mở vào giữa chiều cao map. (MVP)
+1. Map tổng The Wake dùng mặt phẳng gameplay 2D. Cảnh bay hiển thị bằng môi trường 3D, đồ họa 2.5D và camera top-down nghiêng 45° theo `00-khung-game.md` mục 13. Trục ngang của dữ liệu map là khoảng cách tới Ember. Ember nằm ngoài lưới, ở mép trái, cửa khí mở vào giữa chiều cao map. (MVP)
 2. Map tổng gồm ba dải nối tiếp theo trục ngang: Gần, Giữa, Xa. Mỗi dải là một lưới mảnh, số cột theo bảng tham số, cao 3 hàng. (MVP cho Gần)
 3. Mảnh là khối dựng tay cùng kích thước. Mỗi cạnh của mảnh khai báo một cổng: mở (lỗ rộng bằng tham số cổng mảnh, ở giữa cạnh) hoặc đóng. Hai mảnh cạnh nhau chỉ thông nhau khi cả hai cạnh chạm nhau đều mở. (MVP)
 4. Mỗi mảnh thuộc đúng một dải và một loại: Mở, Hành lang, Ổ, Xác lớn, Thưởng, Cố định. Định nghĩa loại ở bảng 3.3. (MVP)

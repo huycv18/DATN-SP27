@@ -14,7 +14,7 @@ Mọi tên riêng tiếng Anh là [TẠM]. Số trong file này là mục tiêu 
 - Fantasy (G): tôi là người sống sót giỏi nghề, tự tay kéo một trạm chết sống lại. Mỗi chuyến ra ngoài là một lần liều có tính toán, mỗi lần về là thấy trạm đổi khác.
 - Người chơi mục tiêu (G): người chơi PC thích Dave the Diver, Subnautica, Core Keeper, Stardew Valley co-op. Chơi phiên 30 đến 60 phút. Chơi một mình là chính, rủ bạn vào giữa chừng được.
 - Thể loại (L): hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý. Bán đứt. Unity, PC.
-- Góc nhìn (G): 2D nhìn ngang ở mọi nơi. Ngoài không gian là mặt phẳng bay tự do 8 hướng (cùng cấu trúc với lặn của Dave). Trong trạm là mặt cắt ngang nhìn thấy các khoang.
+- Góc nhìn: ngoài không gian dùng camera top-down nghiêng 45° trên môi trường 3D (Lead chốt mẫu ngày 2026-11-23). Noor bay tự do 8 hướng trên mặt phẳng gameplay. Trong trạm dùng mặt cắt ngang nhìn thấy các khoang.
 
 ## 2. Core Pillars (L)
 
@@ -255,7 +255,7 @@ Chương 1 trọn vẹn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông d
 
 ## 13. Art Direction (L phong cách, G phần còn lại)
 
-- Phong cách: 2D vector, nhìn ngang ở mọi nơi (Lead chốt). Thêm 3D thành 2.5D: chưa chốt, chờ Lead
+- Cảnh bay ngoài không gian dùng môi trường 3D, đồ họa minh họa 2.5D và camera top-down nghiêng 45°. Hai ảnh Lead duyệt dùng làm mẫu bố cục, chiều sâu và khả năng đọc vật cản, Driftlife và tương tác: [Thu hồi cạnh xác tàu](../art/gameplay-dai-gan-thu-hoi.png) và [Bay giữa bãi vỡ](../art/gameplay-dai-gan-bai-vo.png).
 - Không khí: khoa học viễn tưởng sinh tồn, nền nghiêm, hài nhẹ từ tính cách nhân vật. Bãi vỡ tối và lạnh, trạm Ember ấm dần lên theo từng khoang sửa xong (thấy được tiến trình bằng mắt)
 - Màu: không gian xanh than, tím đậm. Ánh sáng trạm cam ấm. Driftlife phát quang để đọc được trên nền tối. Giáp chế độ The Wardens trắng xương EDEBE0 và lục acid 7CFC3A, không ai khác dùng. 4 slot người chơi mỗi slot một màu kèm một hình: cam ○, lam ngọc △, vàng chanh □, hồng tím ◇
 - Nhân vật: silhouette đọc được ở 72 điểm ảnh mỗi u (720p). Mỗi nhân vật tối đa 6 màu chính cộng 2 nhấn. Người chơi bão hòa từ 70%, NPC tới 45%. Rig xương chung cho nhân loại, mảnh bộ đồ hoán đổi theo 5 trục nâng cấp
