@@ -18,26 +18,23 @@ Cả game chia thành năm chương. Mỗi chương mở một vùng mới và t
 
 ```mermaid
 flowchart TD
-  A["Ra cửa khí: một chuyến, Oxy là giới hạn"] --> B["Nhặt tài nguyên, bắt sống hoặc hạ Driftlife, tìm manh mối và người vớt"]
-  B --> C{"Về tới trạm?"}
-  C -->|"Cửa khí hoặc Recall Beacon"| D["Cả túi đồ vào kho"]
-  C -->|"Ngạt, bị kéo về"| E["Chỉ giữ 1 món tự chọn"]
-  D --> F["Sửa khoang, chế ở xưởng, nuôi Driftlife"]
-  E --> F
-  F --> G{"Động cơ chính đã sửa xong?"}
-  G -->|"Rồi"| H["Ember rời neo, hết game"]
-  G -->|"Chưa"| I{"Mở ca cảng?"}
-  I -->|"Mở ca"| J["Lập danh mục, bán thùng cho tàu, nhận Tally và tip"]
-  I -->|"Bỏ ca, không bị phạt"| K
-  J --> K["Nâng cấp bộ đồ, dụng cụ, trạm, mua ở shop"]
-  K --> L["Bình Oxy và túi lớn hơn, đi xa hơn, lâu hơn"]
-  L --> A
-  B -.-> M["Người vớt mở tính năng trạm, mốc truyện mở dải mới"]
-  M -.-> F
+  A["Sáng: đọc bảng tàu, chọn dải và dụng cụ"] -->|"Oxy đầy, túi trống"| B["Chuyến: khai thác, bắt sống hoặc hạ Driftlife"]
+  B --> C{"Lấy thêm hay quay về?"}
+  C -->|"Lấy thêm: Oxy tụt, rủi ro ngạt"| B
+  C -->|"Quay về: cửa khí hoặc Recall Beacon"| D["Kho: giữ cả túi"]
+  B -.->|"Oxy cạn, không ai cứu"| E["Bị kéo về: giữ 1 món"]
+  E --> D
+  D -->|"vật liệu"| F["Trạm: sửa khoang, chế, nuôi"]
+  D -->|"hàng thô, lồng sống"| G["Ca cảng: bán thùng cho tàu"]
+  F -->|"hàng chế"| G
+  G -->|"Tally, điểm cảng"| H["Nâng cấp bộ đồ, dụng cụ, trạm, mua ở shop"]
+  H -->|"bình Oxy, túi, dụng cụ mới"| A
+  B -.->|"người vớt, manh mối"| I["Truyện: mở tính năng trạm, mở dải mới"]
+  I -.-> F
 ```
-*Hình II.1.1 - Core loop tổng, từ một chuyến tới lúc trạm rời neo*
+*Hình II.1.1 - Core loop: Oxy đổi lấy hàng, hàng đổi lấy Tally, Tally đổi lấy tầm đi*
 
-Đọc sơ đồ: vòng bắt đầu ở cửa khí. Ngoài bãi vỡ, Oxy vừa là đồng hồ vừa là máu, nên mỗi chuyến là một lần cân giữa lấy thêm và quay về. Về bằng cửa khí hoặc Recall Beacon thì giữ cả túi, bị kéo về vì ngạt thì chỉ giữ một món. Đồ trong kho đi vào trạm: sửa khoang, chế, nuôi. Động cơ chính sửa xong thì trạm rời neo và game kết thúc. Chưa xong thì người chơi bán hàng ở ca cảng lấy Tally. Tally đổi thành nâng cấp, nâng cấp cho chuyến sau đi xa hơn và lâu hơn. Nhánh đứt nét là đường truyện: người vớt về mở tính năng của trạm, mốc truyện mở dải mới. Cả hai đổ vào phần trạm chứ không đi qua Tally.
+Đọc sơ đồ: nhãn trên mũi tên là thứ chảy từ bước này sang bước sau. Quyết định lõi của game nằm ở nút Lấy thêm hay quay về. Oxy vừa là đồng hồ vừa là máu, nên mỗi lần nán lại là đổi Oxy lấy hàng và nhận thêm rủi ro ngạt. Về an toàn thì giữ cả túi, cạn Oxy mà không ai cứu thì chỉ giữ một món. Kho chia hai đường: vật liệu vào trạm, hàng bán được vào ca cảng, hàng chế ở trạm cũng đổ về ca cảng. Ca cảng đổi hàng thành Tally, Tally thành nâng cấp, nâng cấp cho chuyến sau đi xa hơn và lâu hơn. Vòng khép lại ở bảng tàu buổi sáng: thứ tàu hôm nay muốn mua quyết định người chơi ra dải nào. Nhánh đứt nét là đường truyện, đi thẳng vào trạm chứ không qua Tally. Sửa động cơ và qua chương nằm ở sơ đồ vòng chương phía dưới.
 
 ### II.1.2. Five Phases of a Day
 
@@ -107,25 +104,26 @@ Pha ca cảng phóng to ở sơ đồ dưới, luật đầy đủ ở mục II.
 
 ```mermaid
 flowchart TD
-  A["Đầu ngày: bảng tàu hiện tàu ghé, đơn đặt trước, giá thùng"] --> B["Đi chuyến, hàng về kho, chế xong trước ca"]
-  B --> C["Lập danh mục: loại hàng và số thùng mỗi loại"]
-  C --> D{"Mở ca hay Bỏ ca?"}
-  D -->|"Bỏ ca"| E["Tàu không tới, kho giữ nguyên, cửa khí khóa"]
-  D -->|"Mở ca"| F{"Còn người ngoài chuyến hoặc danh mục rỗng?"}
-  F -->|"Có, nút Mở ca xám kèm lý do"| C
-  F -->|"Không"| G["Thông dịch viên đóng thùng, trừ kho, cửa khí khóa"]
-  G --> H["Tàu cập theo lịch, mỗi tàu gọi một thùng"]
-  H --> I["Mang thùng, bơm khí, nhận giá thùng và tip"]
-  I --> J{"Hết giờ ca, tàu cuối đã rời, hoặc hết thùng?"}
-  J -->|"Chưa"| H
-  J -->|"Có"| K["Bảng kết ca, thùng chưa bán về kho, đủ điểm thì lên Hạng cảng"]
-  K --> L["Tự lưu"]
-  L --> M["Cuối ngày"]
-  E --> M
+  A["Sáng: bảng tàu hiện tàu ghé, món hay gọi, đơn đặt trước"] --> B["Chuyến: lấy hàng theo bảng tàu, chế xong trước ca"]
+  B --> C{"Lập danh mục: bán gì, bao nhiêu thùng?"}
+  C -->|"Bỏ ca, không phạt"| L["Cuối ngày"]
+  C -->|"Mở ca: mọi người đã về, danh mục không rỗng"| D["Thông dịch viên đóng thùng, cửa khí khóa"]
+  D --> E["Tàu cập cửa neo, gọi một thùng"]
+  E --> F{"Việc nào trước?"}
+  F -->|"Thùng đã ra quầy"| G["Mang thùng tới đúng cửa neo"]
+  F -->|"Tàu bật bơm khí"| H["Bơm khí: hồi kiên nhẫn, cộng Tally"]
+  H --> F
+  G --> I["Tàu trả giá thùng, tip theo kiên nhẫn còn lại"]
+  E -.->|"Hết kiên nhẫn"| J["Tàu rời tay không, thùng về danh mục, không phạt"]
+  I --> K{"Hết giờ ca, tàu cuối đã rời, hoặc hết thùng?"}
+  J --> K
+  K -->|"Chưa"| E
+  K -->|"Rồi"| M["Bảng kết ca, thùng chưa bán về kho, lên Hạng cảng, tự lưu"]
+  M --> L
 ```
-*Hình II.1.4 - Toàn ca cảng, từ bảng tàu buổi sáng tới cuối ngày*
+*Hình II.1.4 - Toàn ca cảng và hai chỗ người chơi quyết*
 
-Đọc sơ đồ: ca cảng bắt đầu từ bảng tàu buổi sáng. Người chơi xem tàu nào ghé và đơn đặt trước, đi chuyến lấy hàng, rồi lập danh mục từ hàng đã nằm trong kho. Bỏ ca thì không mất gì, tàu hôm đó không tới. Nút Mở ca xám khi còn người ở ngoài hoặc danh mục rỗng. Mở được thì Thông dịch viên đóng hết thùng ngay và cửa khí khóa tới ngày mới. Phần giữa ca là vòng của từng tàu, vẽ riêng ở mục II.6. Ca dừng ở điều tới trước: hết giờ ca, tàu cuối đã rời, hoặc hết thùng mà không còn tàu nào chờ. Bảng kết ca cộng Tally và điểm cảng, thùng chưa bán về kho, đủ điểm thì lên Hạng cảng ngay. Sau đó game tự lưu và sang cuối ngày.
+Đọc sơ đồ: ca có hai chỗ người chơi quyết. Chỗ thứ nhất là danh mục, lập trước ca. Hàng rẻ được gọi nhiều, hàng đắt ít tàu gọi, đơn đặt trước trả giá cao, còn tàu tip cao chỉ tới khi danh mục có món nó gọi. Danh mục là quyết định chiến lược của ca, vì trong ca không chế và không đóng thêm. Chỗ thứ hai là việc nào trước, lặp lại suốt ca. Thùng ra quầy sau ít giây, trong lúc đó tàu khác bật bơm khí, người chơi chọn chạy về quầy hay đứng bơm. Tip đi theo phần kiên nhẫn còn lại, nên chọn đúng thứ tự là chỗ ăn thêm Tally. Thất bại luôn nhẹ: tàu hết kiên nhẫn thì rời tay không, thùng quay về danh mục. Bỏ ca cũng không bị phạt. Ca dừng ở điều tới trước trong ba điều ghi ở nút cuối, rồi bảng kết ca cộng Tally, điểm cảng và tự lưu.
 
 Chi tiết dữ liệu: tab Day khối Luật ngày, tab CORE LOOP khối Một ngày.
 
@@ -172,22 +170,22 @@ Chương đầu là MVP. Những ngày đầu cảng chưa mở vì khoang liên
 
 ```mermaid
 flowchart TD
-  A["Mở chương: vùng mới, kiểu chơi mới"] --> B["Các ngày: chuyến, trạm, ca cảng"]
-  B --> C["Mốc truyện của chương xong dần"]
-  B --> D["Tài nguyên của dải mới và Tally"]
-  D --> E["Linh kiện động cơ: mua ở shop, giai đoạn cuối chế ở xưởng"]
-  E --> F["Lắp giai đoạn động cơ chính của chương"]
-  C --> G{"Điều kiện mốc đóng chương đủ và giai đoạn động cơ đã lắp?"}
+  A["Mở chương: vùng mới, kiểu chơi mới, trần Hạng cảng mới"] --> B["Các ngày theo core loop"]
+  B -->|"vớt người, sửa khoang, manh mối"| C["Mốc truyện của chương"]
+  B -->|"Tally, điểm cảng"| D["Hạng cảng lên tới trần của chương"]
+  B -->|"chuyến ra dải mới, cần cấp bộ đồ hợp dải"| E["Tài nguyên của dải mới"]
+  D -->|"Shop mở linh kiện, chương cuối chế ở xưởng"| F["Lắp giai đoạn động cơ của chương"]
+  E --> F
+  C --> G{"Mốc đóng chương đủ điều kiện và giai đoạn động cơ đã lắp?"}
   F --> G
   G -->|"Chưa"| B
   G -->|"Đủ"| H{"Chương cuối?"}
-  H -->|"Chưa"| I["Đóng chương, mở chương sau"]
-  I --> A
-  H -->|"Rồi"| J["Ember rời neo, cảnh kết, về menu chính"]
+  H -->|"Chưa: đóng chương"| A
+  H -->|"Rồi"| I["Ember rời neo, cảnh kết, về menu chính"]
 ```
-*Hình II.1.5 - Vòng chương: hai đường truyện và động cơ cùng mở cổng chương*
+*Hình II.1.5 - Vòng chương: truyện, Hạng cảng và dải mới cùng mở cổng chương*
 
-Đọc sơ đồ: mỗi chương mở một vùng và thêm kiểu chơi mới. Trong chương, các ngày chạy theo vòng ở đầu mục này và đẩy hai đường song song. Đường truyện là các mốc của chương, mỗi mốc xong theo điều kiện riêng. Đường động cơ cần tài nguyên của dải mới và một linh kiện: bốn giai đoạn đầu mua linh kiện ở shop bằng Tally, giai đoạn cuối chế ở xưởng. Mốc đóng chương chỉ xong khi cả hai đường cùng tới, thiếu một đường thì người chơi tiếp tục các ngày. Ngoài cổng này không có cổng kinh tế hay cổng trạm nào khác. Chương cuối đóng bằng giai đoạn động cơ cuối: Ember rời neo, cảnh kết chạy rồi game về menu chính.
+Đọc sơ đồ: mỗi chương mở một vùng, thêm kiểu chơi mới và nâng trần Hạng cảng. Trong chương, các ngày đẩy ba đường cùng lúc. Đường truyện đi qua các mốc của chương. Đường cảng đi qua Hạng cảng: Hạng chạm trần của chương thì shop mở linh kiện động cơ, nên ca cảng là nhịp giữ độ dài chương. Đường khám phá đưa người chơi ra dải mới lấy tài nguyên, bộ đồ thiếu cấp vẫn vào được nhưng hao Oxy nhanh. Có linh kiện và tài nguyên thì lắp giai đoạn động cơ của chương. Mốc đóng chương chỉ xong khi đường truyện tới và giai đoạn động cơ đã lắp, thiếu thì người chơi tiếp tục các ngày. Chương cuối khác ở một chỗ: linh kiện chế ở xưởng chứ không mua, lắp xong thì Ember rời neo, cảnh kết chạy rồi game về menu chính.
 
 Chi tiết dữ liệu: tab Day khối 5 chương, tab GAME STORY.
 

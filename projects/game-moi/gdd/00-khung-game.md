@@ -102,22 +102,19 @@ Vòng lớn: ra ngoài thu thập -> mang về kho -> sửa trạm, chế đồ,
 
 ```mermaid
 flowchart TD
-  A["Ra cửa khí: một chuyến, Oxy là giới hạn"] --> B["Nhặt tài nguyên, bắt sống hoặc hạ Driftlife, tìm manh mối và người vớt"]
-  B --> C{"Về tới trạm?"}
-  C -->|"Cửa khí hoặc Recall Beacon"| D["Cả túi đồ vào kho"]
-  C -->|"Ngạt, bị kéo về"| E["Chỉ giữ 1 món tự chọn"]
-  D --> F["Sửa khoang, chế ở xưởng, nuôi Driftlife"]
-  E --> F
-  F --> G{"Động cơ chính đã sửa xong?"}
-  G -->|"Rồi"| H["Ember rời neo, hết game"]
-  G -->|"Chưa"| I{"Mở ca cảng?"}
-  I -->|"Mở ca"| J["Lập danh mục, bán thùng cho tàu, nhận Tally và tip"]
-  I -->|"Bỏ ca, không bị phạt"| K
-  J --> K["Nâng cấp bộ đồ, dụng cụ, trạm, mua ở shop"]
-  K --> L["Bình Oxy và túi lớn hơn, đi xa hơn, lâu hơn"]
-  L --> A
-  B -.-> M["Người vớt mở tính năng trạm, mốc truyện mở dải mới"]
-  M -.-> F
+  A["Sáng: đọc bảng tàu, chọn dải và dụng cụ"] -->|"Oxy đầy, túi trống"| B["Chuyến: khai thác, bắt sống hoặc hạ Driftlife"]
+  B --> C{"Lấy thêm hay quay về?"}
+  C -->|"Lấy thêm: Oxy tụt, rủi ro ngạt"| B
+  C -->|"Quay về: cửa khí hoặc Recall Beacon"| D["Kho: giữ cả túi"]
+  B -.->|"Oxy cạn, không ai cứu"| E["Bị kéo về: giữ 1 món"]
+  E --> D
+  D -->|"vật liệu"| F["Trạm: sửa khoang, chế, nuôi"]
+  D -->|"hàng thô, lồng sống"| G["Ca cảng: bán thùng cho tàu"]
+  F -->|"hàng chế"| G
+  G -->|"Tally, điểm cảng"| H["Nâng cấp bộ đồ, dụng cụ, trạm, mua ở shop"]
+  H -->|"bình Oxy, túi, dụng cụ mới"| A
+  B -.->|"người vớt, manh mối"| I["Truyện: mở tính năng trạm, mở dải mới"]
+  I -.-> F
 ```
 
 Sơ đồ trên là core loop tổng. Giải thích từng nhánh ở Book mục II.1.1.
