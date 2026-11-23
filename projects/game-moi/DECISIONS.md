@@ -419,3 +419,10 @@ Lead: "Về Art game sẽ là không gian game là 3D đồ họa là 2.5D Góc 
 - Đã sửa: CLAUDE.md, AGENTS.md, `so-hien-hanh.md`, `gdd/00-khung-game.md` mục Góc nhìn và mục 13.
 - Chưa sửa: các GDD, Book, tab và wireframe còn mô tả theo góc nhìn ngang (mặt cắt trạm ba tầng, cảng ở mép phải tầng giữa, layout map nhánh, greybox). GDM giao các vai sửa theo pipeline sau khi Lead trả lời câu hỏi phạm vi.
 - Lead: "Chuyển hết sang top-down" (trạm và cảng cũng vậy, bỏ mặt cắt). Đợt 10 (GD-070 tới GD-076, gd-qa ĐẠT) đã sửa map, trạm và cảng thành mặt bằng một lớp, điều khiển trong trạm đi 8 hướng, combat, spec camera orthographic 45 độ, wireframe. Quy ước chung ở log 118, Zmin camera ở log 119. Tải art nhân vật thành 75 bộ hình (3 hướng vẽ mỗi clip) thay cho 25.
+
+## 2026-11-23 - Codex và Danh sách SFX (đợt 11, GD-068, GD-069)
+Lead: "Codex và SFX".
+- Codex là Sheet riêng "Codex - The Novent" (id 1B6KkZ4_6o7aYHKyxGmawZZzSRyt8CsvKmHb_WG6cIdM), cùng thư mục với Sheet GDD. 6 tab, 83 mục MVP. Nguồn: `codex/<Tab>.tsv` sinh bằng `tools/sinh-codex.mjs` từ TSV các tab GDD cộng `codex/loi.tsv` (gd-story viết). Cổng `sinh-codex.mjs --kiem`. Đổi GDD thì chạy lại script rồi dán lại, không sửa tay trên Sheet Codex.
+- Lời Codex viết tiếng Việt như `strings/strings.tsv`, tên tiếng Anh ở cột riêng, lấy từ `vat-pham.md`. Mục GDD không có tên Anh thì để trống.
+- AUDIO ASSETS LIST đổi sang 10 cột theo khuôn "Sounds" của Timberwalls: tách Mô tả, Sự kiện phát, Phát, Nhãn, Nguồn GDD. Âm GDD chưa có dòng thì Nguồn GDD ghi "Đề xuất gd-ux, GDD chưa có dòng âm" (GDM quyết giữ, gồm 3 ambience).
+- ITEM LIST: hai chìa (Bộ kích nguồn, Máy cắt thân tàu) cột Nguồn tiêu thành "Không tiêu, không cần mang theo" theo luật T7.
