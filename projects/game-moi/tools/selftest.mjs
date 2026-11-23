@@ -287,7 +287,7 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
   const w = (f, x) => writeFileSync(join(goc, 'gdd', 'sheet', f), typeof x === 'string' ? x : T(x));
   const itemH = ['STT', 'Item name', 'Type', 'Nguồn nhận', 'Nguồn tiêu', 'Note'];
   w('ITEM LIST.tsv', [itemH, ['1', 'Mảnh vỏ', 'Phế liệu', 'Mảnh trôi', 'Ép tấm', 'Hull Shard. Thường, MVP'], ['2', 'Hợp kim', 'Phế liệu', 'Hòm', 'Sửa', 'Fused Alloy. Hiếm, Sau MVP'], ['3', 'Tấm nén', 'Vật liệu chế', 'RCP-101', 'Sửa', 'Thường, MVP']]);
-  w('ITEM LIST.json', JSON.stringify([['RES-101', 'Mảnh vỏ', 'Phế liệu', 'SLV-101', 'RCP-101', 'x'], ['RES-201', 'Hợp kim', 'Phế liệu', 'SLV-201', 'x', 'x'], ['COM-101', 'Tấm nén', 'Vật liệu chế', 'RCP-101', 'UPG-OXY-1', 'x']]));
+  w('ITEM LIST.json', JSON.stringify([['RES-101', 'Mảnh vỏ', 'Phế liệu', 'SLV-101', 'RCP-101', 'x'], ['RES-201', 'Hợp kim', 'Phế liệu', 'SLV-201', 'x', 'x'], ['COM-101', 'Tấm nén', 'Vật liệu chế', 'RCP-101', 'UPG-OXY-1, UPG-OXY-2, Hầm sâu (SLV-201), Sửa khoang', 'x']]));
   w('Salvage.tsv', [H, ['1', 'Mảnh trôi', 'Type', 'Điểm khai thác, Vành đai ngoài. Nhãn: MVP', 'r'], ['', '', 'Resource Output', '- Mảnh vỏ: trọng số 60', ''], ['', '', 'Spawn Point', 'Vành đai ngoài. Tối đa 25%', ''], ['2', 'Hầm sâu', 'Type', 'Điểm khai thác, Vành đai trong. Nhãn: Sau MVP', 'r']]);
   w('Salvage.json', JSON.stringify([['SLV-101', 'Mảnh trôi', 'Type', 'x', ''], ['RES-101', 'Mảnh vỏ', 'Type', 'x', ''], ['SLV-201', 'Hầm sâu', 'Type', 'x', '']]));
   w('Recipe.tsv', [H, ['1', 'Ép tấm', 'Type', 'Xưởng', 'r'], ['', '', 'Ingredients', '3 x Mảnh vỏ', ''], ['', '', 'Output', '1 x Tấm nén\nThời gian: 10 giây', '']]);
@@ -296,6 +296,8 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
   w('Customer.tsv', [H, ['1', 'Loose Bolt (Tàu gom)', 'Type', '- Ai: Tikko, thương nhân người Oru\n- Nhãn: MVP', 'r'], ['', '', 'Order', 'Gọi mọi hàng', ''], ['2', 'Tàu xa', 'Type', '- Ai: Vaeth, thương nhân\n- Nhãn: Sau MVP', 'r'], ['3', 'Khoang trạm', 'Luật', '- Sửa khoang', 'r'], ['', '', 'Kho', '- Chức năng: Chỗ chứa\n- Người vớt: Có sẵn\n- Mở ở chương: 1\n- Nhãn: MVP', ''], ['', '', 'Sinh quyển', '- Chức năng: Nuôi\n- Người vớt: Nhà sinh học\n- Mở ở chương: 2\n- Nhãn: Sau MVP', '']]);
   w('Upgrade.tsv', [H, ['1', 'Bình Oxy', 'Loại', 'Chỉ là số', 'r'], ['', '', 'Bậc 1', 'Oxy 330 lên 450. 930 Tally, vật liệu 26 GTĐ. Mở chương 1. MVP', ''], ['', '', 'Bậc 2', 'Oxy 600. 5000 Tally. Mở chương 2. Sau MVP', ''], ['2', 'Túi đồ', 'Loại', 'Chỉ là số', 'r'], ['', '', 'Bậc 2', 'Túi 126. 5000 Tally. Mở chương 2. Sau MVP', '']]);
   w('Player.tsv', [H, ['1', 'Co-op 1 đến 4 người', 'Type', '- MVP chạy 2 người', 'r'], ['2', 'Hồ sơ nhân vật (tóm tắt cho art)', 'Type', '- 4 preset', 'r']]);
+  mkdirSync(join(goc, 'gdd', 'he-thong'), { recursive: true });
+  writeFileSync(join(goc, 'gdd', 'he-thong', 'vat-pham.md'), '| RES-101 | Mảnh vỏ / Hull Shard Mk1 | Phế liệu |\n');
   try {
     t('sinh-codex: lọc MVP đúng từng tab, bỏ Sau MVP và hàng luật', () => {
       const r = SC2.dung(goc), dem = (tab) => r.muc.filter((m) => m.tab === tab).length;
@@ -306,12 +308,19 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
       const r = SC2.dung(goc), tam = r.muc.find((m) => m.khoa === 'COM-101');
       assert.equal(tam.nguon, 'công thức Ép tấm');
       assert.equal(tam.congthuc, '3 x Mảnh vỏ (10 giây)');
-      assert.equal(tam.dungcho, 'nâng cấp Bình Oxy bậc 1');
-      assert.equal(r.muc.find((m) => m.khoa === 'RES-101').ten_en, 'Hull Shard');
+      assert.equal(tam.dungcho, 'nâng cấp Bình Oxy bậc 1, Sửa khoang'); // bậc 2 và Hầm sâu (Sau MVP) bị lọc khỏi ô
+      assert.equal(r.muc.find((m) => m.khoa === 'RES-101').ten_en, 'Hull Shard Mk1'); // tên Anh lấy từ vat-pham.md
+      assert.equal(tam.congthuc, '3 x Mảnh vỏ (10 giây)');
       const tabs = SC2.ghiTab(r.muc, new Map([['RES-101', 'Lời mẫu.']]));
       assert.ok(tabs.every((x) => !/COM-101|RES-101|SLV-101/.test(x.text)));
       assert.ok(tabs[0].text.split('\n')[1].includes('Lời mẫu.'));
       assert.equal(tabs[0].text.split('\n')[0], SC2.COT.join('\t'));
+    });
+    t('sinh-codex: lọc Sau MVP theo nhãn nguồn, giữ dấu phẩy thập phân', () => {
+      const r = SC2.dung(goc), tam = r.muc.find((m) => m.khoa === 'COM-101');
+      assert.ok(!/Hầm sâu|bậc 2|SLV-201/.test(tam.nguon + tam.congthuc + tam.dungcho));
+      const sau = { re: /(?<![\p{L}\d-])(?:Hầm sâu)(?![\p{L}\d])/u };
+      assert.equal(SC2.locSau('dùng 1,5 giây, Hầm sâu, Kho', sau), 'dùng 1,5 giây, Kho');
     });
     t('sinh-codex: --kiem bắt thiếu, thừa, quá dài, chữ số, gạch dài, chấm phẩy', () => {
       const { muc } = SC2.dung(goc), ok1 = new Map(muc.map((m) => [m.khoa, 'Một câu gọn.']));

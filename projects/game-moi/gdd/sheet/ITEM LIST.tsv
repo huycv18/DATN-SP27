@@ -151,6 +151,6 @@ STT	Item name	Type	Nguồn nhận	Nguồn tiêu	Note
 150	Súng lưới	Dụng cụ (Bắt sống)	Quest Kỹ sư (chương 1), Chế Súng lưới	Không tiêu, chọn mang theo ở trạm	Bắt sống cỡ S vào Lồng mẫu, tốn Lưới cuộn. Chỉ số ở tab Enemy. MVP
 151	Súng gây mê	Dụng cụ (Bắt sống)	Bản thiết kế Súng gây mê, Chế Súng gây mê	Không tiêu, chọn mang theo ở trạm	Gây mê, tốn Ống gây mê. Chỉ số ở tab Enemy. Sau MVP
 152	Máy quét xung	Dụng cụ (Tiện ích)	Bản thiết kế Máy quét xung, Chế Máy quét xung	Không tiêu, chọn mang theo ở trạm	Hiện điểm khai thác trong bán kính. Bậc 2 hiện hạng, bậc 3 hiện Driftlife. Bán kính ghi ở tab Zone và WIREFRAME. Sau MVP
-153	Bộ kích nguồn	Dụng cụ (Chìa)	Chế ở Xưởng, là công thức đầu tiên sau khi vớt Kỹ sư, chỉ dùng tài nguyên thô	Không tiêu, chọn mang theo ở trạm	Mở cửa khóa nguồn trong Station Cinder (lần vớt thứ hai). Cổng cứng, không có chế độ chậm. Không cần mang theo. MVP
-154	Máy cắt thân tàu	Dụng cụ (Chìa)	Bản thiết kế Máy cắt thân tàu, Chế Máy cắt thân tàu	Không tiêu, chọn mang theo ở trạm	Mở vách vào Cradle Interior (chương 4). Cổng cứng, không cần mang theo. Sau MVP
+153	Bộ kích nguồn	Dụng cụ (Chìa)	Chế ở Xưởng, là công thức đầu tiên sau khi vớt Kỹ sư, chỉ dùng tài nguyên thô	Không tiêu, không cần mang theo	Mở cửa khóa nguồn trong Station Cinder (lần vớt thứ hai). Cổng cứng, không có chế độ chậm. Không cần mang theo. MVP
+154	Máy cắt thân tàu	Dụng cụ (Chìa)	Bản thiết kế Máy cắt thân tàu, Chế Máy cắt thân tàu	Không tiêu, không cần mang theo	Mở vách vào Cradle Interior (chương 4). Cổng cứng, không cần mang theo. Sau MVP
 155	Lồng mẫu	Dụng cụ (Chứa)	Quest Kỹ sư (chương 1), Chế Lồng mẫu	Không tiêu, chọn mang theo ở trạm	Kéo theo, chứa tối đa 3 mẫu sống cỡ S, mỗi người 1 lồng. MVP

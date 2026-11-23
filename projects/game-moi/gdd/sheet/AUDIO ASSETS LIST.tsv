@@ -34,8 +34,8 @@ STT	Name	Loại	Mô tả	Sự kiện phát	Phát	Nhãn	Nguồn GDD	Link	Web Ref
 33	SFX_Harpoon_Hit	SFX	Âm xuyên và dây rít khi lao móc trúng	Lao từ trúng Driftlife hoặc trúng một Neo xúc tu	Một lần	MVP	combat-driftlife.md mục 7		
 34	SFX_Stun	SFX	Âm điện xẹt rồi ù khi choáng	Driftlife vào trạng thái Choáng	Một lần	MVP	combat-driftlife.md mục 7		
 35	SFX_Enemy_Defeated	SFX	Âm vỡ trầm khi hạ Driftlife	Driftlife bị hạ	Một lần	MVP	combat-driftlife.md mục 7		
-36	SFX_Stun_Immune	SFX	Âm dội khi miễn choáng (Arc Eel)	Bắn Lao từ vào Arc Eel và nó miễn Choáng	Một lần	MVP	combat-driftlife.md mục 7		
-37	SFX_Boss_Phase	SFX	Boss gầm khi chuyển pha	Boss chuyển pha	Một lần	MVP	combat-driftlife.md mục 7		
+36	SFX_Stun_Immune	SFX	Âm dội khi miễn choáng (Arc Eel)	Dùi xung trúng Arc Eel và nó miễn Choáng	Một lần	MVP	combat-driftlife.md mục 7		
+37	SFX_Boss_Phase	SFX	Một tiếng nhấn nặng lúc nhạc boss đổi đoạn	Boss chuyển pha	Một lần	MVP	combat-driftlife.md mục 7		
 38	SFX_Sleep	SFX	Âm ngáy nhẹ khi Driftlife ngủ	Driftlife vào trạng thái Ngủ	Lặp	Sau MVP	combat-driftlife.md mục 7		
 39	SFX_Capture_Success	SFX	Âm pốp vui, hợp âm ngắn theo số sao khi bắt được	Súng lưới bắt được một mẫu sống, hợp âm theo số sao	Một lần	MVP	combat-driftlife.md mục 7		
 40	SFX_Buoy_Tow	SFX	Động cơ nhỏ xa dần khi Phao kéo bay về	Phao kéo con vật bay về trạm	Một lần	Sau MVP	combat-driftlife.md mục 7		
@@ -48,63 +48,64 @@ STT	Name	Loại	Mô tả	Sự kiện phát	Phát	Nhãn	Nguồn GDD	Link	Web Ref
 47	SFX_Room_Online	SFX	Máy khởi động và tiếng ù nền của khoang khi sửa xong	Sửa xong một khoang, khoang chuyển sang Hoạt động	Một lần	MVP	tram-va-cang.md, cot-truyen.md mục 7		
 48	SFX_Ship_Dock	SFX	Kẹp neo, chuông bến khi tàu cập	Một tàu cập cửa neo trong giờ giao thương	Một lần	MVP	tram-va-cang.md mục 7		
 49	SFX_Dock_Timer	SFX	Tích tắc nhanh dần khi kiên nhẫn của tàu dưới 1/3	Kiên nhẫn của một tàu xuống dưới một phần ba	Lặp	MVP	tram-va-cang.md mục 7		
-50	SFX_Crate_Accepted	SFX	Tiếng nhận hàng và tiếng xu khi giao thùng đúng tàu	Giao đúng thùng tới đúng cửa neo	Một lần	MVP	tram-va-cang.md mục 7		
-51	SFX_Crate_Rejected	SFX	Tiếng từ chối trầm	Giao thùng sai tàu hoặc sai cửa neo	Một lần	MVP	tram-va-cang.md mục 7		
-52	SFX_Air_Pump	SFX	Tiếng xì khí khi bơm khí xong cho tàu ở cửa neo	Bơm khí xong cho tàu ở cửa neo	Một lần	MVP	tram-va-cang.md mục 7		
-53	SFX_Crate_Spawn	SFX	Tiếng đặt hàng nhẹ khi thùng hiện ở ô quầy, kèm tiếng băng chuyền ngắn lúc Mở giao thương	Một thùng hiện ra ở ô quầy	Một lần	MVP	tram-va-cang.md mục 7		
-54	SFX_Ship_Served	SFX	Hợp âm đi lên, cao dần theo số tàu giao liên tiếp khi còn từ 2/3 kiên nhẫn	Tàu rời bến sau khi giao đủ, còn từ hai phần ba kiên nhẫn trở lên	Một lần	MVP	tram-va-cang.md mục 7, 7b		
-55	SFX_Ship_Left	SFX	Hợp âm trung tính, không chói, không có chữ thất bại	Tàu rời bến khi hết kiên nhẫn mà chưa giao	Một lần	MVP	tram-va-cang.md mục 7		
-56	SFX_Ship_Waiting	SFX	Còi xa khi tàu chờ ngoài	Tàu tiếp theo chờ ngoài cảng khi cửa neo đang đầy	Một lần	MVP	tram-va-cang.md mục 7		
-57	SFX_Port_Rank_Up	SFX	Chuông dài khi lên Hạng cảng	Lên Hạng cảng sau bảng tổng kết giao thương	Một lần	Sau MVP	tram-va-cang.md mục 7		
-58	SFX_Incident_Alarm	SFX	Còi báo động ngắn, không lặp liên tục khi có sự cố	Xảy ra một sự cố trong giờ giao thương	Một lần	Sau MVP	tram-va-cang.md mục 7		
-59	SFX_Tally_Coin	SFX	Tiếng xu khi nhận Tally, cao dần theo số tàu giao liên tiếp	Nhận Tally từ một tàu, cao dần theo số tàu giao liên tiếp	Một lần	MVP	kinh-te-tien-trinh.md mục 7		
-60	SFX_Shop_Unlock	SFX	Tiếng mở khóa khi học bản thiết kế	Học xong một bản thiết kế mới	Một lần	Sau MVP	vat-pham.md mục 7		
-61	SFX_UI_Click	UI	Click, hover, xác nhận, hủy của bộ kit UI	Bấm, rê chuột, xác nhận hoặc hủy trên bất kỳ nút nào	Một lần	MVP	ux-ui.md mục 7		
-62	SFX_Ping_Go	UI	Ping Tới đây, mỗi ping một âm ngắn khác nhau	Đặt ping Tới đây	Một lần	MVP	ux-ui.md mục 7		
-63	SFX_Ping_Danger	UI	Ping Cảnh báo	Đặt ping Cảnh báo	Một lần	MVP	ux-ui.md mục 7		
-64	SFX_Ping_NeedOxy	UI	Ping Cần Oxy	Đặt ping Cần Oxy	Một lần	MVP	ux-ui.md mục 7		
-65	SFX_Ping_Found	UI	Ping Tìm thấy	Đặt ping Tìm thấy	Một lần	MVP	ux-ui.md mục 7		
-66	SFX_Story_Clue	SFX	Một tiếng chuông ngắn khi nhặt vật manh mối	Nhặt một vật manh mối của truyện	Một lần	MVP	cot-truyen.md mục 7		
-67	SFX_Wake_Alarm	SFX	Báo động yếu và tiếng buồng xả khí khi tỉnh dậy	Cảnh tỉnh dậy ở đầu game	Một lần	MVP	cot-truyen.md mục 7		
-68	SFX_Anchor_Lock	SFX	Tiếng bộ neo bắt vào khối xác khi neo trạm	Cảnh neo trạm vào khối xác	Một lần	MVP	cot-truyen.md mục 7		
-69	SFX_Pod_Pulse	SFX	Nhịp bíp đều của buồng ngủ đông còn chạy trong map nhánh	Buồng ngủ đông còn chạy nằm trong tầm nghe ở map nhánh	Lặp	MVP	cot-truyen.md mục 7		
-70	SFX_Pod_Lock	SFX	Tiếng khóa buồng khi buồng về trạm	Buồng ngủ đông về tới trạm	Một lần	MVP	cot-truyen.md mục 7		
-71	SFX_Oru_Engine	SFX	Động cơ lọc xọc của tàu Oru đầu tiên	Tàu Oru đầu tiên tới cảng	Một lần	MVP	cot-truyen.md mục 7		
-72	SFX_Lantern_Signal	SFX	Giọng người lẫn nhiễu của sóng Lantern	Bắt được sóng Lantern ở mốc đóng chương một	Một lần	MVP	cot-truyen.md mục 7		
-73	SFX_Far_Static	SFX	Tiếng rè khi vào Vùng trung tâm lần đầu	Lần đầu vào Vùng trung tâm	Một lần	Sau MVP	cot-truyen.md mục 7		
-74	SFX_Main_Engine	SFX	Động cơ chính khi rời neo	Trạm rời neo ở cuối game	Một lần	Sau MVP	cot-truyen.md mục 7		
-75	SFX_Black_Box_Static	SFX	Tiếng hộp ghi rè rồi tắt ở cảnh không có gì ở đó	Cảnh hộp ghi ở cuối truyện	Một lần	Sau MVP	cot-truyen.md mục 7		
-76	SFX_Cable_Hold_Loop	SFX	Dây căng ken két, cao độ tăng theo vòng giữ phím	Đang giữ Tương tác 3 giây ở gốc Dây nối của Scrapmaw, tắt khi xong hoặc nhả phím	Lặp	MVP	combat-driftlife.md mục 7 (hàng Cắt Dây nối)		
-77	SFX_Cable_Cut	SFX	Âm dây đứt trầm, đoạn đứt rơi xuống sàn	Giữ đủ 3 giây và cắt xong một đoạn Dây nối, cả đoạn thứ nhất và đoạn thứ hai	Một lần	MVP	combat-driftlife.md mục 7 (hàng Cắt Dây nối)		
-78	SFX_Cable_Locked	SFX	Âm cạch từ chối ngắn, khô, không chói	Bấm giữ Tương tác ở gốc Dây nối khi Sinh lực Scrapmaw còn từ 50 phần trăm trở lên (đoạn thứ hai bị khóa)	Một lần	MVP	combat-driftlife.md mục 7 (hàng Cắt Dây nối)		
-79	SFX_Boss_Retreat	SFX	Tiếng gầm kéo xa dần rồi tắt, nhạc boss dừng	Cắt xong đoạn thứ hai của Dây nối và Scrapmaw bỏ đi (kết cục Xua đi)	Một lần	MVP	combat-driftlife.md mục 7 (hàng Cắt Dây nối), combat-driftlife.md mục 3		
-80	SFX_Tentacle_Snap	SFX	Tiếng cáp thịt bật đứt nặng, dây rít cuối câu	Giật đứt xong một Neo xúc tu của Scrapmaw ở pha 1 (giữ 2 giây sau khi Lao từ trúng)	Một lần	MVP	combat-driftlife.md mục 3 (Scrapmaw pha 1)		
-81	SFX_Core_Discharge	SFX	Lõi ù lên cao dần trong thời gian báo trước rồi nổ vòng điện	Lõi năng lượng phóng điện vòng quanh trong phòng Scrapmaw ở pha 2, từ lúc báo trước tới lúc nổ	Một lần	MVP	combat-driftlife.md mục 3 (Scrapmaw pha 2)		
-82	SFX_Enemy_Alert	SFX	Gầm nhỏ trong cổ, thấp, không chói	Driftlife đổi sang trạng thái Cảnh giác khi thấy người chơi	Một lần	MVP	combat-driftlife.md mục 2 (trạng thái Cảnh giác)		
-83	SFX_Harpoon_Fire	SFX	Tiếng bật phóng ngắn, dây tuột ra khỏi ống	Bấm bắn Lao từ	Một lần	MVP	combat-driftlife.md mục 7 (hàng Lao từ trúng), chưa có dòng riêng cho lúc bắn		
-84	SFX_Net_Fire	SFX	Tiếng phụt khí, lưới bung ra	Bấm bắn Súng lưới	Một lần	MVP	combat-driftlife.md mục 7 (hàng Bắt được), chưa có dòng riêng cho lúc bắn		
-85	SFX_Return_Ready	SFX	Một tiếng chuông sáng, ngắn, khác bíp Oxy	Oxy của người chơi chạm vạch đủ về	Một lần	MVP	nguoi-choi.md mục 2.2.9, ux-ui.md mục 7		
-86	SFX_Recall_Complete	SFX	Bíp tăng dần rồi cắt sạch, nối vào chớp sáng	Giữ đủ 5 giây ở Recall Beacon và bị kéo về trạm	Một lần	MVP	map.md mục 7b, ux-ui.md mục 7		
-87	SFX_Item_Drop	SFX	Tiếng thả nhẹ, món trôi ra khỏi túi	Thả một món khỏi túi đồ	Một lần	MVP	ux-ui.md mục 2 (màn túi đồ)		
-88	SFX_Airlock_Cycle	SFX	Cửa khí xì khí, kẹp mở rồi đóng	Người chơi xác nhận chuyến và qua cửa khí đi ra, hoặc về tới cửa khí kết chuyến	Một lần	MVP	ux-ui.md mục 2 (cửa khí, kết chuyến)		
-89	SFX_Player_Join	SFX	Hai nhịp bíp ấm, hơi rè như bắt sóng	Một người chơi vào thế giới co-op	Một lần	MVP	ux-ui.md mục 2 (tạo và tham gia thế giới), chưa có dòng âm riêng		
-90	SFX_Repair_Loop	SFX	Tiếng hàn và vặn ốc đều	Đang giữ phím sửa một khoang hỏng	Lặp	MVP	ux-ui.md mục 2 (màn sửa khoang), chưa có dòng âm riêng		
-91	SFX_Craft_Done	SFX	Một tiếng ting gọn của xưởng	Xưởng chế xong một món, kể cả món chế qua đêm khi người chơi quay lại	Một lần	MVP	vat-pham.md mục 7		
-92	SFX_Crate_Grab	SFX	Tiếng nhấc thùng khẽ, bìa cứng cọ vào găng	Người chơi nhấc một thùng khỏi ô quầy	Một lần	MVP	tram-va-cang.md mục 7, chưa có dòng âm riêng		
-93	SFX_Trade_Summary	SFX	Chuỗi xu rơi nhanh rồi một tiếng chuông ngắn	Hết giờ giao thương và hiện màn Tổng kết giao thương, Tally chạy số	Một lần	MVP	ux-ui.md mục 7 (hàng Tổng kết giao thương)		
-94	SFX_Day_End	SFX	Buồng ngủ đóng nhẹ, tiếng máy hạ dần	Người chơi vào buồng ngủ để kết thúc ngày	Một lần	MVP	ux-ui.md mục 2 (cuối ngày), chưa có dòng âm riêng		
-95	UI_Panel_Open	UI	Tiếng trượt ngắn, nhẹ, đi lên	Mở một màn hoặc bảng (túi đồ, bản đồ, xưởng, shop, nâng cấp, cài đặt)	Một lần	MVP	ux-ui.md mục 7		
-96	UI_Panel_Close	UI	Tiếng trượt ngắn, nhẹ, đi xuống	Đóng một màn hoặc bảng bằng Esc hoặc nút Đóng	Một lần	MVP	ux-ui.md mục 7		
-97	UI_Confirm_Box_Open	UI	Hai nhịp thấp, cho cảm giác cân nhắc	Hiện hộp xác nhận có hệ quả bằng số	Một lần	MVP	ux-ui.md mục 2 (hộp xác nhận)		
-98	UI_Not_Enough_Tally	UI	Âm cạch thấp ngắn, không chói, không có chữ thất bại	Bấm mua hoặc đặt hàng khi không đủ Tally	Một lần	MVP	ux-ui.md mục 2 (shop, nâng cấp), chưa có dòng âm riêng		
-99	UI_Purchase_Done	UI	Tiếng xu rơi vào khay rồi ting gọn	Mua xong một món ở shop hoặc đặt xong một nâng cấp	Một lần	MVP	ux-ui.md mục 2 (shop, nâng cấp), chưa có dòng âm riêng		
-100	UI_Tutorial_Pop	UI	Bíp mềm một nhịp, khác ping của đồng đội	Hiện một gợi ý hướng dẫn lần đầu trên HUD	Một lần	MVP	ux-ui.md mục 4 (FTUE)		
-101	UI_Dialog_Advance	UI	Tick nhỏ như nhịp gõ chữ	Hiện từng câu trong hộp thoại truyện, bấm để sang câu tiếp	Một lần	MVP	ux-ui.md mục 2 (hộp thoại truyện)		
-102	UI_Volume_Test	UI	Một mẫu ngắn của đúng nhóm âm đang chỉnh	Thả thanh âm lượng ở Cài đặt, phát mẫu để nghe mức mới	Một lần	MVP	ux-ui.md mục 7 (luật 22, bốn thanh âm lượng)		
-103	UI_Keybind_Set	UI	Click khô, chắc	Gán xong một phím mới ở màn Đổi phím	Một lần	MVP	ux-ui.md mục 2 (đổi phím), chưa có dòng âm riêng		
-104	BGM_Main_Menu	BGM	Nhạc nền menu, cùng chủ đề với nhạc trong trạm nhưng thưa hơn	Người chơi ở menu chính, danh sách thế giới và màn tạo thế giới	Lặp	MVP	ux-ui.md mục 2 (menu chính), chưa có dòng nhạc riêng		
-105	BGM_Boss_Clear	BGM	Một đoạn kết ngắn, nhẹ nhõm, có phần thở ra	Boss kết thúc, bằng Hạ hoặc Xua đi, nhạc boss nhường chỗ	Một lần	MVP	combat-driftlife.md mục 7, combat-driftlife.md mục 3		
-106	AMB_Station_Hum	Ambience	Ù máy trạm đều, tiếng ống và đèn, ấm	Người chơi ở trong khoang trạm, mức ù theo số khoang đã Hoạt động	Lặp	MVP	tram-va-cang.md mục 7, cot-truyen.md mục 7b		
-107	AMB_Helmet_Breath	Ambience	Tiếng thở trong mũ, nhịp nhanh dần khi Oxy xuống thấp	Người chơi ở ngoài không gian, nhịp đổi tại 50, 25, 10 phần trăm Oxy	Lặp	MVP	map.md mục 7b, nguoi-choi.md mục 2.2.9		
-108	AMB_Void_Outer	Ambience	Rất thưa, tiếng kim loại trôi xa và tiếng rè nhẹ của vỏ xác lớn	Người chơi ở ngoài không gian Vành đai ngoài	Lặp	MVP	map.md mục 7b		
-109	AMB_Core_Hum	Ambience	Ù lõi năng lượng nặng, có nhịp đập chậm	Người chơi ở trong phòng lõi năng lượng của Scrapmaw, kể cả lúc chờ boss	Lặp	MVP	combat-driftlife.md mục 3 (Scrapmaw)		
+50	SFX_Crate_Accepted	SFX	Tiếng nhận hàng khi giao đúng thùng tới đúng tàu	Giao đúng thùng tới đúng cửa neo	Một lần	MVP	tram-va-cang.md mục 7		
+51	SFX_Tip_Chime	SFX	Tiếng chuông nhỏ, sáng, nhẹ hơn tiếng xu	Giao đúng thùng và có tip	Một lần	MVP	tram-va-cang.md mục 7 (hàng Giao thùng)		
+52	SFX_Crate_Rejected	SFX	Tiếng từ chối trầm	Giao thùng sai tàu hoặc sai cửa neo	Một lần	MVP	tram-va-cang.md mục 7		
+53	SFX_Air_Pump	SFX	Tiếng xì khí khi bơm khí xong cho tàu ở cửa neo	Bơm khí xong cho tàu ở cửa neo	Một lần	MVP	tram-va-cang.md mục 7		
+54	SFX_Crate_Spawn	SFX	Tiếng đặt hàng nhẹ khi thùng hiện ở ô quầy, cao độ theo số cửa neo, kèm tiếng băng chuyền ngắn lúc Mở giao thương	Một thùng hiện ra ở ô quầy	Một lần	MVP	tram-va-cang.md mục 7, ux-ui.md mục 2.11 (hàng Thùng hiện ở quầy)		
+55	SFX_Ship_Served	SFX	Hợp âm đi lên, cao dần theo số tàu giao liên tiếp khi còn từ 2/3 kiên nhẫn	Tàu rời bến sau khi giao đủ, còn từ hai phần ba kiên nhẫn trở lên	Một lần	MVP	tram-va-cang.md mục 7, 7b		
+56	SFX_Ship_Left	SFX	Hợp âm trung tính, không chói, không có chữ thất bại	Tàu rời bến khi hết kiên nhẫn mà chưa giao	Một lần	MVP	tram-va-cang.md mục 7		
+57	SFX_Ship_Waiting	SFX	Còi xa khi tàu chờ ngoài	Tàu tiếp theo chờ ngoài cảng khi cửa neo đang đầy	Một lần	MVP	tram-va-cang.md mục 7		
+58	SFX_Port_Rank_Up	SFX	Chuông dài khi lên Hạng cảng	Lên Hạng cảng sau bảng tổng kết giao thương	Một lần	Sau MVP	tram-va-cang.md mục 7		
+59	SFX_Incident_Alarm	SFX	Còi báo động ngắn, không lặp liên tục khi có sự cố	Xảy ra một sự cố trong giờ giao thương	Một lần	Sau MVP	tram-va-cang.md mục 7		
+60	SFX_Tally_Coin	SFX	Tiếng xu khi nhận Tally, cao độ theo giá và tip	Nhận Tally từ một tàu	Một lần	MVP	kinh-te-tien-trinh.md mục 7		
+61	SFX_Shop_Unlock	SFX	Tiếng mở khóa khi học bản thiết kế	Học xong một bản thiết kế mới	Một lần	Sau MVP	vat-pham.md mục 7		
+62	SFX_UI_Click	UI	Click, hover, xác nhận, hủy của bộ kit UI	Bấm, rê chuột, xác nhận hoặc hủy trên bất kỳ nút nào	Một lần	MVP	ux-ui.md mục 7		
+63	SFX_Ping_Go	UI	Ping Tới đây, mỗi ping một âm ngắn khác nhau	Đặt ping Tới đây	Một lần	MVP	ux-ui.md mục 7		
+64	SFX_Ping_Danger	UI	Ping Cảnh báo	Đặt ping Cảnh báo	Một lần	MVP	ux-ui.md mục 7		
+65	SFX_Ping_NeedOxy	UI	Ping Cần Oxy	Đặt ping Cần Oxy	Một lần	MVP	ux-ui.md mục 7		
+66	SFX_Ping_Found	UI	Ping Tìm thấy	Đặt ping Tìm thấy	Một lần	MVP	ux-ui.md mục 7		
+67	SFX_Story_Clue	SFX	Một tiếng chuông ngắn khi nhặt vật manh mối	Nhặt một vật manh mối của truyện	Một lần	MVP	cot-truyen.md mục 7		
+68	SFX_Wake_Alarm	SFX	Báo động yếu và tiếng buồng xả khí khi tỉnh dậy	Cảnh tỉnh dậy ở đầu game	Một lần	MVP	cot-truyen.md mục 7		
+69	SFX_Anchor_Lock	SFX	Tiếng bộ neo bắt vào khối xác khi neo trạm	Cảnh neo trạm vào khối xác	Một lần	MVP	cot-truyen.md mục 7		
+70	SFX_Pod_Pulse	SFX	Nhịp bíp đều của buồng ngủ đông còn chạy trong map nhánh	Buồng ngủ đông còn chạy nằm trong tầm nghe ở map nhánh	Lặp	MVP	cot-truyen.md mục 7		
+71	SFX_Pod_Lock	SFX	Tiếng khóa buồng khi buồng về trạm	Buồng ngủ đông về tới trạm	Một lần	MVP	cot-truyen.md mục 7		
+72	SFX_Oru_Engine	SFX	Động cơ lọc xọc của tàu Oru đầu tiên	Tàu Oru đầu tiên tới cảng	Một lần	MVP	cot-truyen.md mục 7		
+73	SFX_Lantern_Signal	SFX	Giọng người lẫn nhiễu của sóng Lantern	Bắt được sóng Lantern ở mốc đóng chương một	Một lần	MVP	cot-truyen.md mục 7		
+74	SFX_Far_Static	SFX	Tiếng rè khi vào Vùng trung tâm lần đầu	Lần đầu vào Vùng trung tâm	Một lần	Sau MVP	cot-truyen.md mục 7		
+75	SFX_Main_Engine	SFX	Động cơ chính khi rời neo	Trạm rời neo ở cuối game	Một lần	Sau MVP	cot-truyen.md mục 7		
+76	SFX_Black_Box_Static	SFX	Tiếng hộp ghi rè rồi tắt ở cảnh không có gì ở đó	Cảnh hộp ghi ở cuối truyện	Một lần	Sau MVP	cot-truyen.md mục 7		
+77	SFX_Cable_Hold_Loop	SFX	Dây căng ken két, cao độ tăng theo vòng giữ phím	Đang giữ Tương tác 3 giây ở gốc Dây nối của Scrapmaw, tắt khi xong hoặc nhả phím	Lặp	MVP	combat-driftlife.md mục 7 (hàng Cắt Dây nối)		
+78	SFX_Cable_Cut	SFX	Âm dây đứt trầm, đoạn đứt rơi xuống sàn	Giữ đủ 3 giây và cắt xong một đoạn Dây nối, cả đoạn thứ nhất và đoạn thứ hai	Một lần	MVP	combat-driftlife.md mục 7 (hàng Cắt Dây nối)		
+79	SFX_Cable_Locked	SFX	Âm cạch từ chối ngắn, khô, không chói	Bấm giữ Tương tác ở gốc Dây nối khi Sinh lực Scrapmaw còn từ 50 phần trăm trở lên (đoạn thứ hai bị khóa)	Một lần	MVP	combat-driftlife.md mục 7 (hàng Cắt Dây nối)		
+80	SFX_Boss_Retreat	SFX	Tiếng gầm kéo xa dần rồi tắt, nhạc boss dừng	Cắt xong đoạn thứ hai của Dây nối và Scrapmaw bỏ đi (kết cục Xua đi)	Một lần	MVP	combat-driftlife.md mục 7 (hàng Cắt Dây nối), combat-driftlife.md mục 3		
+81	SFX_Tentacle_Snap	SFX	Tiếng cáp thịt bật đứt nặng, dây rít cuối câu	Giật đứt xong một Neo xúc tu của Scrapmaw ở pha 1 (giữ 2 giây sau khi Lao từ trúng)	Một lần	MVP	combat-driftlife.md mục 3 (Scrapmaw pha 1)		
+82	SFX_Core_Discharge	SFX	Lõi ù lên cao dần trong thời gian báo trước rồi nổ vòng điện	Lõi năng lượng phóng điện vòng quanh trong phòng Scrapmaw ở pha 2, từ lúc báo trước tới lúc nổ	Một lần	MVP	combat-driftlife.md mục 3 (Scrapmaw pha 2)		
+83	SFX_Enemy_Alert	SFX	Gầm nhỏ trong cổ, thấp, không chói	Driftlife đổi sang trạng thái Cảnh giác khi thấy người chơi	Một lần	MVP	combat-driftlife.md mục 2 (trạng thái Cảnh giác)		
+84	SFX_Harpoon_Fire	SFX	Tiếng bật phóng ngắn, dây tuột ra khỏi ống	Bấm bắn Lao từ	Một lần	MVP	combat-driftlife.md mục 7 (hàng Lao từ trúng), Đề xuất gd-ux, GDD chưa có dòng âm		
+85	SFX_Net_Fire	SFX	Tiếng phụt khí, lưới bung ra	Bấm bắn Súng lưới	Một lần	MVP	combat-driftlife.md mục 7 (hàng Bắt được), Đề xuất gd-ux, GDD chưa có dòng âm		
+86	SFX_Return_Ready	SFX	Một tiếng chuông sáng, ngắn, khác bíp Oxy	Oxy của người chơi chạm vạch đủ về	Một lần	MVP	nguoi-choi.md mục 2.2.9, ux-ui.md mục 2.11		
+87	SFX_Recall_Complete	SFX	Bíp tăng dần rồi cắt sạch, nối vào chớp sáng	Giữ đủ 5 giây ở Recall Beacon và bị kéo về trạm	Một lần	MVP	map.md mục 7b, ux-ui.md mục 2.11		
+88	SFX_Item_Drop	SFX	Tiếng thả nhẹ, món trôi ra khỏi túi	Thả một món khỏi túi đồ	Một lần	MVP	ux-ui.md mục 2 (màn túi đồ)		
+89	SFX_Airlock_Cycle	SFX	Cửa khí xì khí, kẹp mở rồi đóng	Người chơi xác nhận chuyến và qua cửa khí đi ra, hoặc về tới cửa khí kết chuyến	Một lần	MVP	ux-ui.md mục 2 (cửa khí, kết chuyến)		
+90	SFX_Airlock_Breath	SFX	Hít sâu ngắn, khóa khí kêu cạch khi vào lại trạm	Người chơi về tới cửa khí kết chuyến	Một lần	MVP	ux-ui.md mục 2.11 (hàng Về tới cửa khí)		
+91	SFX_Player_Join	SFX	Hai nhịp bíp ấm, hơi rè như bắt sóng	Một người chơi vào thế giới co-op	Một lần	MVP	ux-ui.md mục 2 (tạo và tham gia thế giới), Đề xuất gd-ux, GDD chưa có dòng âm		
+92	SFX_Repair_Loop	SFX	Tiếng hàn và vặn ốc đều	Đang giữ phím sửa một khoang hỏng	Lặp	MVP	ux-ui.md mục 2 (màn sửa khoang), Đề xuất gd-ux, GDD chưa có dòng âm		
+93	SFX_Craft_Done	SFX	Một tiếng ting gọn của xưởng	Xưởng chế xong một món, kể cả món chế qua đêm khi người chơi quay lại	Một lần	MVP	vat-pham.md mục 7		
+94	SFX_Crate_Grab	SFX	Tiếng nhấc thùng khẽ, bìa cứng cọ vào găng, cao độ theo số cửa neo	Người chơi nhấc một thùng khỏi ô quầy	Một lần	MVP	ux-ui.md mục 2.11 (hàng Nhặt thùng)		
+95	SFX_Trade_Summary	SFX	Chuỗi xu rơi nhanh rồi một tiếng chuông ngắn	Hết giờ giao thương và hiện màn Tổng kết giao thương, Tally chạy số	Một lần	MVP	ux-ui.md mục 2.11 (hàng Tổng kết giao thương)		
+96	SFX_Day_End	SFX	Buồng ngủ đóng nhẹ, tiếng máy hạ dần	Người chơi vào buồng ngủ để kết thúc ngày	Một lần	MVP	ux-ui.md mục 2 (cuối ngày), Đề xuất gd-ux, GDD chưa có dòng âm		
+97	UI_Panel_Open	UI	Tiếng trượt ngắn, nhẹ, đi lên	Mở một màn hoặc bảng (túi đồ, bản đồ, xưởng, shop, nâng cấp, cài đặt)	Một lần	MVP	ux-ui.md mục 7		
+98	UI_Panel_Close	UI	Tiếng trượt ngắn, nhẹ, đi xuống	Đóng một màn hoặc bảng bằng Esc hoặc nút Đóng	Một lần	MVP	ux-ui.md mục 7		
+99	UI_Confirm_Box_Open	UI	Hai nhịp thấp, cho cảm giác cân nhắc	Hiện hộp xác nhận có hệ quả bằng số	Một lần	MVP	ux-ui.md mục 2 (hộp xác nhận)		
+100	UI_Not_Enough_Tally	UI	Âm cạch thấp ngắn, không chói, không có chữ thất bại	Bấm mua hoặc đặt hàng khi không đủ Tally	Một lần	MVP	ux-ui.md mục 2 (shop, nâng cấp), Đề xuất gd-ux, GDD chưa có dòng âm		
+101	UI_Purchase_Done	UI	Tiếng xu rơi vào khay rồi ting gọn	Mua xong một món ở shop hoặc đặt xong một nâng cấp	Một lần	MVP	ux-ui.md mục 2 (shop, nâng cấp), Đề xuất gd-ux, GDD chưa có dòng âm		
+102	UI_Tutorial_Pop	UI	Bíp mềm một nhịp, khác ping của đồng đội	Hiện một gợi ý hướng dẫn lần đầu trên HUD	Một lần	MVP	ux-ui.md mục 4 (FTUE)		
+103	UI_Dialog_Advance	UI	Tick nhỏ như nhịp gõ chữ	Hiện từng câu trong hộp thoại truyện, bấm để sang câu tiếp	Một lần	MVP	ux-ui.md mục 2 (hộp thoại truyện)		
+104	UI_Volume_Test	UI	Một mẫu ngắn của đúng nhóm âm đang chỉnh	Thả thanh âm lượng ở Cài đặt, phát mẫu để nghe mức mới	Một lần	MVP	ux-ui.md mục 2.1 (luật 22, bốn thanh âm lượng)		
+105	UI_Keybind_Set	UI	Click khô, chắc	Gán xong một phím mới ở màn Đổi phím	Một lần	MVP	ux-ui.md mục 2 (đổi phím), Đề xuất gd-ux, GDD chưa có dòng âm		
+106	BGM_Main_Menu	BGM	Nhạc nền menu, cùng chủ đề với nhạc trong trạm nhưng thưa hơn	Người chơi ở menu chính, danh sách thế giới và màn tạo thế giới	Lặp	MVP	ux-ui.md mục 2 (menu chính), Đề xuất gd-ux, GDD chưa có dòng âm		
+107	AMB_Station_Hum	Ambience	Ù máy trạm đều, tiếng ống và đèn, ấm	Người chơi ở trong khoang trạm	Lặp	MVP	Đề xuất gd-ux, GDD chưa có dòng âm		
+108	AMB_Helmet_Breath	Ambience	Tiếng thở trong mũ, nhịp nhanh dần khi Oxy xuống thấp	Người chơi ở ngoài không gian, nhịp đổi tại 50, 25, 10 phần trăm Oxy	Lặp	MVP	map.md mục 7b, nguoi-choi.md mục 2.2.9		
+109	AMB_Void_Outer	Ambience	Rất thưa, tiếng kim loại trôi xa và tiếng rè nhẹ của vỏ xác lớn	Người chơi ở ngoài không gian Vành đai ngoài	Lặp	MVP	Đề xuất gd-ux, GDD chưa có dòng âm		
+110	AMB_Core_Hum	Ambience	Ù lõi năng lượng nặng, có nhịp đập chậm	Người chơi ở trong phòng lõi năng lượng của Scrapmaw, kể cả lúc chờ boss	Lặp	MVP	Đề xuất gd-ux, GDD chưa có dòng âm		

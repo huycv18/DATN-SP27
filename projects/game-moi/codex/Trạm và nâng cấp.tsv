@@ -1,0 +1,15 @@
+STT	Loại	Tên	Tên tiếng Anh	Lời trong game	Nguồn nhận	Công thức	Dùng cho	Ảnh
+1	Khoang	Buồng ngủ đông và khu hồi sức		Nơi người sống sót nằm ngủ qua đêm và giữ lại tiến trình. Buồng của người vớt cũng chờ tỉnh ở đây.	Có sẵn, mở ở chương 1		Ngủ sang ngày, lưu. Có 4 buồng, số buồng chạy bằng số người lúc tạo thế giới. Khu hồi sức giữ buồng của người chơi vào sau và người vớt chờ tỉnh	
+2	Khoang	Cửa khí		Cửa ra vào của mọi chuyến bay. Về tới đây là Oxy đầy lại. Số chuyến mỗi ngày có hạn, tính cho khéo.	Có sẵn, mở ở chương 1		Ra và về chuyến, nạp đầy Oxy khi chuyến kết thúc. Tối đa 2 chuyến mỗi ngày	
+3	Khoang	Kho		Chỗ chứa chung của cả trạm. Đồ mang về bỏ vào đây, ai cần thì lấy.	Có sẵn, mở ở chương 1		Chỗ chứa đồ chung	
+4	Khoang	Khoang neo		Khoang đầu tiên phải sửa, hãm cho trạm đừng trôi nữa. Có nó thì Ember mới đứng yên được.	Có sẵn, mở ở chương 1		Hãm trôi và neo Ember, việc sửa đầu tiên	
+5	Khoang	Xưởng		Nơi chế và nâng cấp dụng cụ, do Kỹ sư Ingrid Halvorsen trông. Cũng là nơi chế trước hàng thương nhân gọi.	Người vớt Kỹ sư, mở ở chương 1		Chế và nâng cấp trang bị, chế trước hàng cảng cần chế	
+6	Khoang	Khoang liên lạc		Chỗ gọi tàu, lập danh mục hàng và mở giờ giao thương. Linh Tran trực ở đây và nói được tiếng của khách.	Người vớt Thông dịch viên, mở ở chương 1		Gọi tàu, bảng tàu, lập danh mục bán, mở giờ giao thương, shop	
+7	Khoang	Cảng		Bến của Ember cho tàu buôn neo và giao hàng. Mỗi cửa neo đón một tàu, tàu tới là đứng chờ người ra đón.	Người vớt Thông dịch viên, mở ở chương 1		Giờ giao thương	
+8	Khoang	Động cơ chính		Động cơ chính của Ember, hỏng gần hết. Sửa từng giai đoạn, tới khi trạm có thể rời neo.	Có sẵn, mở ở chương 1		Tiến độ rời neo, giai đoạn 1	
+9	Nâng cấp	Bình Oxy		Nâng cấp bình cho thêm Oxy, chuyến đi dài hơn.	Bậc 1: Mở chương 1 (Kỹ sư)	Bậc 1: 930 Tally, vật liệu 26,0 GTĐ	Bậc 1: Oxy 330 lên 450	
+10	Nâng cấp	Túi đồ		Túi lớn hơn thì mang về được nhiều hơn mỗi chuyến. Đỡ phải bỏ lại món dở tay.	Bậc 1: Mở chương 1 (Kỹ sư)	Bậc 1: 930 Tally, vật liệu 24,2 GTĐ	Bậc 1: Túi 80 lên 100 Khối	
+11	Nâng cấp	Bộ đẩy		Nâng cấp bay nhanh hơn, chuyến gọn hơn. Mỗi bậc chỉ tăng nhẹ nên tay lái vẫn quen.	Bậc 1: Mở chương 1 (Kỹ sư)	Bậc 1: 650 Tally, vật liệu 26,2 GTĐ	Bậc 1: Tốc độ tối đa 6,5 u/s, gia tốc 20, lướt tốn 4, hồi chiêu lướt 1,1 s	
+12	Nâng cấp	Đai dụng cụ		Thêm một chỗ mang dụng cụ, đổi kiểu chơi ngay trong chuyến. Kỹ sư làm cho sau nhiệm vụ đầu, vẫn cần vật liệu.	Bậc 1: Mở chương 1	Bậc 1: 0 Tally (thưởng quest Kỹ sư, đi kèm Dùi xung), vật liệu 23,1 GTĐ	Bậc 1: 3 lên 4 ô dụng cụ	
+13	Nâng cấp	Dụng cụ khai thác		Nâng cấp cho khoan nhanh và nạy hòm được thứ cứng hơn. Bậc thấp thì chậm chứ không bị chặn.	Bậc 2: Mở chương 1 (Kỹ sư)	Bậc 2: 280 Tally, vật liệu 24,4 GTĐ	Bậc 2: Khai thác nhanh gấp 1,4	
+14	Nâng cấp	Lao từ		Nâng cấp cho lao đánh mạnh và xa hơn. Cần cho loài khó lại gần.	Bậc 2: Mở chương 1 (Kỹ sư)	Bậc 2: 280 Tally, vật liệu 27,0 GTĐ	Bậc 2: 14 sát thương, nhịp 0,75 s, tầm 9 u	
