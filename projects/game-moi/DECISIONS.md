@@ -359,3 +359,9 @@ Hệ quả: tải mermaid 10.9.1 (jsdelivr) và pandoc 3.1.11.1 bản portable (
 ## 2026-11-23 - Mốc đạt playtest prototype một chuyến
 
 Lead: "Giữ mốc". Mốc của buổi playtest `qa/playtest/2026-11-23/kich-ban.md`: từ 2/3 số người muốn ra chuyến thứ hai. Từ nửa số người có ít nhất một lần dưới vạch "đủ về", và dưới 1/3 số chuyến kết thúc bằng bị kéo về. Điểm khó điều khiển trung bình từ 3 trở xuống, không ai bỏ dở bài hành lang. Tiêu chí 23, 24, 54 theo MVP Checklist.
+
+## 2026-11-23 - Bỏ hàng "Nguyên tắc nền Solo or Together" khỏi bảng pillar
+
+Lead chỉ vào hàng này trên Sheet: "Bạn check rồi mà vẫn giữ cái này". Hàng do GDM tự thêm ngày 2026-11-20 (mục Core Pillars theo Dave), nằm chen trong bảng 5 pillar mà Lead chốt giữ đúng như Dave the Diver.
+Đã làm: xóa hàng đó ở OVERVIEW và hàng "Nguyên tắc nền: Một mình vẫn trọn" ở CORE LOOP mục 2. Ý co-op không mất: USP ý 4 ở OVERVIEW, mục Luật co-op ở CORE LOOP (hàng Số người thêm câu "thêm người là thêm tay để chia việc, không mở thêm nội dung"), luật C1 đến C10 ở `gdd/00-khung-game.md`.
+Bài học: lượt rà và lượt đọc sửa chữ chỉ so với luật, không soát thứ GDM tự thêm vào chỗ Lead đã chốt khuôn. Lần sau rà bảng nào Lead chốt khuôn thì đếm hàng so với khuôn.
