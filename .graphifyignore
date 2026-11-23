@@ -1,0 +1,4 @@
+# Bản Codex gần trùng .claude/skills và CLAUDE.md, bỏ để graph không lặp node
+.agents/
+AGENTS.md
+graphify-out/

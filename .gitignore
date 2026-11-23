@@ -1,1 +1,5 @@
 dist/
+
+# graphify: đường dẫn riêng từng máy, mỗi máy tự sinh khi chạy /graphify
+graphify-out/.graphify_python
+graphify-out/.graphify_root

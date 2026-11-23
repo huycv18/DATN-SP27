@@ -1,0 +1,1418 @@
+{
+  ".claude/skills/gd-department/scripts/chung.mjs": {
+    "mtime": 1795159921.689365,
+    "seen": 1795401687.868494,
+    "ast_hash": "a03a70e4482e0c4db5a614e2c637e57a",
+    "semantic_hash": "a03a70e4482e0c4db5a614e2c637e57a"
+  },
+  ".claude/skills/gd-department/scripts/selftest.mjs": {
+    "mtime": 1795159921.689365,
+    "seen": 1795401687.8684995,
+    "ast_hash": "7cd21f8763c657906595e8df3d7ea326",
+    "semantic_hash": "7cd21f8763c657906595e8df3d7ea326"
+  },
+  ".claude/skills/gd-department/scripts/setup.mjs": {
+    "mtime": 1795159921.689365,
+    "seen": 1795401687.8685024,
+    "ast_hash": "9d6c60f1b1826d92a79877a66fe22c7f",
+    "semantic_hash": "9d6c60f1b1826d92a79877a66fe22c7f"
+  },
+  ".claude/skills/gdd-review/scripts/quet.mjs": {
+    "mtime": 1795159921.6903644,
+    "seen": 1795401687.8685033,
+    "ast_hash": "adafa50f96d60835f57fe190e0e73954",
+    "semantic_hash": "adafa50f96d60835f57fe190e0e73954"
+  },
+  ".claude/skills/gdd-sheet-sync/scripts/chung.mjs": {
+    "mtime": 1795159921.6903644,
+    "seen": 1795401687.8685045,
+    "ast_hash": "9483c3fb8bd137ef1379e25dbda2ca87",
+    "semantic_hash": "9483c3fb8bd137ef1379e25dbda2ca87"
+  },
+  ".claude/skills/gdd-sheet-sync/scripts/doi-chieu.mjs": {
+    "mtime": 1795159921.6903644,
+    "seen": 1795401687.8685052,
+    "ast_hash": "9282db90ef836bcb350544f52c7d44f3",
+    "semantic_hash": "9282db90ef836bcb350544f52c7d44f3"
+  },
+  ".claude/skills/gdd-sheet-sync/scripts/goi.mjs": {
+    "mtime": 1795159921.6913645,
+    "seen": 1795401687.8685064,
+    "ast_hash": "ecf5aa052c30da45dafb4e0a1aedeb53",
+    "semantic_hash": "ecf5aa052c30da45dafb4e0a1aedeb53"
+  },
+  ".claude/skills/gdd-sheet-sync/scripts/selftest.mjs": {
+    "mtime": 1795159921.6913645,
+    "seen": 1795401687.8685071,
+    "ast_hash": "627531e7569a77feed76b5c65aca3b4a",
+    "semantic_hash": "627531e7569a77feed76b5c65aca3b4a"
+  },
+  ".claude/skills/gdd-sheet-sync/scripts/trang.js": {
+    "mtime": 1795159921.6913645,
+    "seen": 1795401687.8685079,
+    "ast_hash": "2b42b1b655f77c76e8253d2c1424f6c6",
+    "semantic_hash": "2b42b1b655f77c76e8253d2c1424f6c6"
+  },
+  ".claude/skills/gdd-v05/cau-hinh/chung.json": {
+    "mtime": 1795159921.6913645,
+    "seen": 1795401687.8685086,
+    "ast_hash": "97d2cbba1ec81593981998aaeaee6971",
+    "semantic_hash": "97d2cbba1ec81593981998aaeaee6971"
+  },
+  ".claude/skills/gdd-v05/cau-hinh/drop.json": {
+    "mtime": 1795159921.6923642,
+    "seen": 1795401687.8685093,
+    "ast_hash": "4e49b9cf47e7e1809102e7da12ecb1a2",
+    "semantic_hash": "4e49b9cf47e7e1809102e7da12ecb1a2"
+  },
+  ".claude/skills/gdd-v05/cau-hinh/puzzle-mau.json": {
+    "mtime": 1795159921.6923642,
+    "seen": 1795401687.8685102,
+    "ast_hash": "51c307fc730ac8c9ec1ce1c6d2c081c4",
+    "semantic_hash": "51c307fc730ac8c9ec1ce1c6d2c081c4"
+  },
+  ".claude/skills/gdd-v05/scripts/selftest.py": {
+    "mtime": 1795159921.6923642,
+    "seen": 1795401687.868511,
+    "ast_hash": "ebefdd512f553451b4f77b36144c5956",
+    "semantic_hash": "ebefdd512f553451b4f77b36144c5956"
+  },
+  ".claude/skills/gdd-v05/scripts/sinh-v05.py": {
+    "mtime": 1795159921.6923642,
+    "seen": 1795401687.8685117,
+    "ast_hash": "b34805de8d5622c8c5c74f198c9f37c9",
+    "semantic_hash": "b34805de8d5622c8c5c74f198c9f37c9"
+  },
+  ".claude/skills/gdd-v05/scripts/video-khung.py": {
+    "mtime": 1795159921.693502,
+    "seen": 1795401687.8685126,
+    "ast_hash": "7f31265fdc01343cf554974890bc4854",
+    "semantic_hash": "7f31265fdc01343cf554974890bc4854"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/scripts/level-data-tile-chu.mjs": {
+    "mtime": 1795159921.695015,
+    "seen": 1795401687.8685133,
+    "ast_hash": "f224803114976bef7c1a190b55d626db",
+    "semantic_hash": "f224803114976bef7c1a190b55d626db"
+  },
+  ".claude/skills/gdd-v1/scripts/sheet-html.mjs": {
+    "mtime": 1795159921.7000108,
+    "seen": 1795401687.868514,
+    "ast_hash": "6422b54ef6c8b75311fd8298323e1a21",
+    "semantic_hash": "6422b54ef6c8b75311fd8298323e1a21"
+  },
+  ".claude/skills/gdd-v1/scripts/sheet-yeu-cau.py": {
+    "mtime": 1795159921.7000108,
+    "seen": 1795401687.8685148,
+    "ast_hash": "15ca0afe223a156420f5cd3fe6b33429",
+    "semantic_hash": "15ca0afe223a156420f5cd3fe6b33429"
+  },
+  ".claude/skills/gdd-v1/scripts/soat-selftest.mjs": {
+    "mtime": 1795159921.7000108,
+    "seen": 1795401687.8685155,
+    "ast_hash": "cda5108580180f15630f01c6a8d43201",
+    "semantic_hash": "cda5108580180f15630f01c6a8d43201"
+  },
+  ".claude/skills/gdd-v1/scripts/soat.mjs": {
+    "mtime": 1795159921.7000108,
+    "seen": 1795401687.8685164,
+    "ast_hash": "f7e5830819a65646d712925504550e8a",
+    "semantic_hash": "f7e5830819a65646d712925504550e8a"
+  },
+  ".claude/skills/level-forge/assets/examples/hop-bong-rules.js": {
+    "mtime": 1795159921.7020102,
+    "seen": 1795401687.8685172,
+    "ast_hash": "a6ddd4f86e164eb9888041f24446ecda",
+    "semantic_hash": "a6ddd4f86e164eb9888041f24446ecda"
+  },
+  ".claude/skills/level-forge/assets/examples/tripletile.js": {
+    "mtime": 1795159921.7020102,
+    "seen": 1795401687.8685179,
+    "ast_hash": "e10efb1b9443b992c715f4d5eff6fad0",
+    "semantic_hash": "e10efb1b9443b992c715f4d5eff6fad0"
+  },
+  ".claude/skills/level-forge/assets/forge/game.js": {
+    "mtime": 1795159921.70301,
+    "seen": 1795401687.8685188,
+    "ast_hash": "6b823e7b34b805bda4b2d3181c56877a",
+    "semantic_hash": "6b823e7b34b805bda4b2d3181c56877a"
+  },
+  ".claude/skills/level-forge/assets/forge/io.js": {
+    "mtime": 1795159921.70301,
+    "seen": 1795401687.8685198,
+    "ast_hash": "28376c99c7ed51f836f46ff2ad744f51",
+    "semantic_hash": "28376c99c7ed51f836f46ff2ad744f51"
+  },
+  ".claude/skills/level-forge/assets/forge/levels.js": {
+    "mtime": 1795159921.70301,
+    "seen": 1795401687.8685207,
+    "ast_hash": "315c4f1dbfa632dbabe26a637593dd88",
+    "semantic_hash": "315c4f1dbfa632dbabe26a637593dd88"
+  },
+  ".claude/skills/level-forge/assets/forge/score.js": {
+    "mtime": 1795159921.70301,
+    "seen": 1795401687.8685215,
+    "ast_hash": "a7ee900c6b7a068d651c859538506556",
+    "semantic_hash": "a7ee900c6b7a068d651c859538506556"
+  },
+  ".claude/skills/level-forge/assets/forge/solver.js": {
+    "mtime": 1795159921.70301,
+    "seen": 1795401687.8685222,
+    "ast_hash": "6de3a1ce629630cca738392778b72b13",
+    "semantic_hash": "6de3a1ce629630cca738392778b72b13"
+  },
+  ".claude/skills/level-forge/assets/selftest.mjs": {
+    "mtime": 1795159921.70301,
+    "seen": 1795401687.8685231,
+    "ast_hash": "7feb65b1241ba7c88d8b67e5a589a7b4",
+    "semantic_hash": "7feb65b1241ba7c88d8b67e5a589a7b4"
+  },
+  ".claude/skills/level-forge/scripts/kiem_noi_dung.py": {
+    "mtime": 1795159921.704011,
+    "seen": 1795401687.8685238,
+    "ast_hash": "93052189fe60f798dc35365ffadd1404",
+    "semantic_hash": "93052189fe60f798dc35365ffadd1404"
+  },
+  ".gd-department/da-cai.json": {
+    "mtime": 1795159921.7070105,
+    "seen": 1795401687.8685246,
+    "ast_hash": "454a95e031b99468e6fc82f45ec86e4d",
+    "semantic_hash": "454a95e031b99468e6fc82f45ec86e4d"
+  },
+  ".gd-department/manifest.json": {
+    "mtime": 1795159921.7070105,
+    "seen": 1795401687.8685253,
+    "ast_hash": "990c79fa13ac2d72219119df2c6ae85d",
+    "semantic_hash": "990c79fa13ac2d72219119df2c6ae85d"
+  },
+  "docs/process/templates/economy-sim/economy_doc.py": {
+    "mtime": 1795159921.7205431,
+    "seen": 1795401687.868526,
+    "ast_hash": "29249538f030588f0f47e2e1cb49de43",
+    "semantic_hash": "29249538f030588f0f47e2e1cb49de43"
+  },
+  "docs/process/templates/economy-sim/tham-so.mau.json": {
+    "mtime": 1795159921.7205431,
+    "seen": 1795401687.868527,
+    "ast_hash": "e94711e4f9056d8060b31fd1b0926837",
+    "semantic_hash": "e94711e4f9056d8060b31fd1b0926837"
+  },
+  "projects/game-moi/gdd/sheet/ITEM LIST.json": {
+    "mtime": 1795405253.7447064,
+    "seen": 1795406053.0592525,
+    "ast_hash": "753f806e19da3dd8f0157f478f5a28ba",
+    "semantic_hash": "753f806e19da3dd8f0157f478f5a28ba"
+  },
+  "projects/game-moi/gdd/sheet/Recipe.json": {
+    "mtime": 1795159921.7376347,
+    "seen": 1795401687.8685284,
+    "ast_hash": "985e200a40d3db8ab05562c42292d6b1",
+    "semantic_hash": "985e200a40d3db8ab05562c42292d6b1"
+  },
+  "projects/game-moi/gdd/sheet/Salvage.json": {
+    "mtime": 1795159921.7376347,
+    "seen": 1795401687.8685293,
+    "ast_hash": "dee872f3ef852684a86cc12f3ae284eb",
+    "semantic_hash": "dee872f3ef852684a86cc12f3ae284eb"
+  },
+  "projects/game-moi/qa/build-mvp-checklist.mjs": {
+    "mtime": 1795159921.7546945,
+    "seen": 1795401687.8685303,
+    "ast_hash": "7a910821b9e8358fe53db9eaca9da941",
+    "semantic_hash": "7a910821b9e8358fe53db9eaca9da941"
+  },
+  "projects/game-moi/qa/quet-phan-dien.mjs": {
+    "mtime": 1795159921.7546945,
+    "seen": 1795401687.868531,
+    "ast_hash": "0627751792e1955cb96553623afe8c5a",
+    "semantic_hash": "0627751792e1955cb96553623afe8c5a"
+  },
+  "projects/game-moi/qa/xuat-checklist-tsv.mjs": {
+    "mtime": 1795159921.7556932,
+    "seen": 1795401687.8685317,
+    "ast_hash": "9be0b19218b6ef49a585235d1b2b7b3b",
+    "semantic_hash": "9be0b19218b6ef49a585235d1b2b7b3b"
+  },
+  "projects/game-moi/sim/bo_cuc.py": {
+    "mtime": 1795159921.7556932,
+    "seen": 1795401687.8685324,
+    "ast_hash": "e7c2dcacf13b9a415a48505f505ec976",
+    "semantic_hash": "e7c2dcacf13b9a415a48505f505ec976"
+  },
+  "projects/game-moi/sim/do_nhay_chuyen.mjs": {
+    "mtime": 1795159921.7556932,
+    "seen": 1795401687.8685331,
+    "ast_hash": "f4b3e7f2b6f890c0ab90beb2b5081ea7",
+    "semantic_hash": "f4b3e7f2b6f890c0ab90beb2b5081ea7"
+  },
+  "projects/game-moi/sim/dong_bo_sim.py": {
+    "mtime": 1795159921.7556932,
+    "seen": 1795401687.868534,
+    "ast_hash": "3dd47570a29fb92a2f5631b7409ead16",
+    "semantic_hash": "3dd47570a29fb92a2f5631b7409ead16"
+  },
+  "projects/game-moi/sim/economy/do-danh-muc.mjs": {
+    "mtime": 1795166018.9659445,
+    "seen": 1795401687.8685348,
+    "ast_hash": "94fb9d0a4b0dfa83d76d3f285f92ca21",
+    "semantic_hash": "94fb9d0a4b0dfa83d76d3f285f92ca21"
+  },
+  "projects/game-moi/sim/economy/ket-qua.json": {
+    "mtime": 1795170954.644787,
+    "seen": 1795401687.868536,
+    "ast_hash": "a127e0873370ced45df235a5c3b60b47",
+    "semantic_hash": "a127e0873370ced45df235a5c3b60b47"
+  },
+  "projects/game-moi/sim/economy/sheet.json": {
+    "mtime": 1795159921.7566938,
+    "seen": 1795401687.8685372,
+    "ast_hash": "f1081992dbd7d6f46baafca8526745c6",
+    "semantic_hash": "f1081992dbd7d6f46baafca8526745c6"
+  },
+  "projects/game-moi/sim/economy/sim-kinh-te.py": {
+    "mtime": 1795170943.0030653,
+    "seen": 1795401687.868538,
+    "ast_hash": "de7c5f3cd972223896d7593869de464b",
+    "semantic_hash": "de7c5f3cd972223896d7593869de464b"
+  },
+  "projects/game-moi/sim/economy/tham-so.json": {
+    "mtime": 1795170943.0030653,
+    "seen": 1795401687.8685386,
+    "ast_hash": "62ca9c23534901754a6f264fe2ad5f6a",
+    "semantic_hash": "62ca9c23534901754a6f264fe2ad5f6a"
+  },
+  "projects/game-moi/sim/ngan_sach_oxy.py": {
+    "mtime": 1795159921.7576933,
+    "seen": 1795401687.8685393,
+    "ast_hash": "cd088be002e593a82aff1cb1ccfc8a80",
+    "semantic_hash": "cd088be002e593a82aff1cb1ccfc8a80"
+  },
+  "projects/game-moi/sim/vat-pham.mjs": {
+    "mtime": 1795404863.79986,
+    "seen": 1795406053.05927,
+    "ast_hash": "4b9ea42e373dd6cd63fe2d3709f45072",
+    "semantic_hash": "4b9ea42e373dd6cd63fe2d3709f45072"
+  },
+  "projects/game-moi/tools/dinh-dang-sheet.mjs": {
+    "mtime": 1795166168.3532395,
+    "seen": 1795401687.868541,
+    "ast_hash": "9560cf748b16443203661b0889b797d6",
+    "semantic_hash": "9560cf748b16443203661b0889b797d6"
+  },
+  "projects/game-moi/tools/doi-chieu-sheet.mjs": {
+    "mtime": 1795159921.7618906,
+    "seen": 1795401687.8685417,
+    "ast_hash": "7bdf7e38e5c0f1ef3e7bfbe6009d41c4",
+    "semantic_hash": "7bdf7e38e5c0f1ef3e7bfbe6009d41c4"
+  },
+  "projects/game-moi/tools/gom-tu-quyet.py": {
+    "mtime": 1795159921.7618906,
+    "seen": 1795401687.8685424,
+    "ast_hash": "840d5111f208d628a1fc6f259e68d17b",
+    "semantic_hash": "840d5111f208d628a1fc6f259e68d17b"
+  },
+  "projects/game-moi/tools/kiem-de-doc.mjs": {
+    "mtime": 1795160696.296203,
+    "seen": 1795401687.8685431,
+    "ast_hash": "16e607164dbc850b5150d79bcd792022",
+    "semantic_hash": "16e607164dbc850b5150d79bcd792022"
+  },
+  "projects/game-moi/tools/lib.mjs": {
+    "mtime": 1795159921.7631836,
+    "seen": 1795401687.868544,
+    "ast_hash": "7b93e61eb97f0e54d9b1fe55cb4ad194",
+    "semantic_hash": "7b93e61eb97f0e54d9b1fe55cb4ad194"
+  },
+  "projects/game-moi/tools/selftest.mjs": {
+    "mtime": 1795167391.7717688,
+    "seen": 1795401687.8685448,
+    "ast_hash": "646e025d935d1590ff4d0a6a734a2836",
+    "semantic_hash": "646e025d935d1590ff4d0a6a734a2836"
+  },
+  "projects/game-moi/tools/sim-ca-cang.mjs": {
+    "mtime": 1795167691.1646366,
+    "seen": 1795401687.8685455,
+    "ast_hash": "80ef50246b65d326728a96f42f848c78",
+    "semantic_hash": "80ef50246b65d326728a96f42f848c78"
+  },
+  "projects/game-moi/tools/sim-chuyen.mjs": {
+    "mtime": 1795159921.7651844,
+    "seen": 1795401687.8685462,
+    "ast_hash": "1dffe5815d87f8c69c5ebf58f7c0ae07",
+    "semantic_hash": "1dffe5815d87f8c69c5ebf58f7c0ae07"
+  },
+  "projects/game-moi/tools/sim-combat.mjs": {
+    "mtime": 1795159921.7651844,
+    "seen": 1795401687.868547,
+    "ast_hash": "aedd46c40f2df412704cbb9222d5470c",
+    "semantic_hash": "aedd46c40f2df412704cbb9222d5470c"
+  },
+  "projects/game-moi/tools/tham-so/ca-cang.json": {
+    "mtime": 1795167947.2232256,
+    "seen": 1795401687.868548,
+    "ast_hash": "e307f83b30bab5832f73e9e844546809",
+    "semantic_hash": "e307f83b30bab5832f73e9e844546809"
+  },
+  "projects/game-moi/tools/tham-so/chuyen.json": {
+    "mtime": 1795159921.7651844,
+    "seen": 1795401687.8685486,
+    "ast_hash": "322282c72d8f63753a3ca1acb1a428b8",
+    "semantic_hash": "322282c72d8f63753a3ca1acb1a428b8"
+  },
+  "projects/game-moi/tools/tham-so/combat.json": {
+    "mtime": 1795159921.7651844,
+    "seen": 1795401687.868549,
+    "ast_hash": "fbf533b32d06069e136f39f289e32d96",
+    "semantic_hash": "fbf533b32d06069e136f39f289e32d96"
+  },
+  "projects/game-moi/tools/tham-so/sheet.json": {
+    "mtime": 1795160007.3034477,
+    "seen": 1795401687.8685498,
+    "ast_hash": "703aeff3864c707e84f402743a6e4e8e",
+    "semantic_hash": "703aeff3864c707e84f402743a6e4e8e"
+  },
+  "projects/game-moi/tools/validate-gdd.mjs": {
+    "mtime": 1795159921.7661831,
+    "seen": 1795401687.868551,
+    "ast_hash": "f7dfadf8c0a41b6424596406390a9952",
+    "semantic_hash": "f7dfadf8c0a41b6424596406390a9952"
+  },
+  "projects/game-moi/tools/xuat-event-tracking.mjs": {
+    "mtime": 1795159921.7661831,
+    "seen": 1795401687.8685517,
+    "ast_hash": "3e77d097b41a829658d8fcab9486e529",
+    "semantic_hash": "3e77d097b41a829658d8fcab9486e529"
+  },
+  "projects/game-moi/ux/kiem-ux.mjs": {
+    "mtime": 1795159921.7661831,
+    "seen": 1795401687.8685522,
+    "ast_hash": "e9ed0fa74a7de3f06f8e6475a4ea0aa7",
+    "semantic_hash": "e9ed0fa74a7de3f06f8e6475a4ea0aa7"
+  },
+  "projects/game-moi/ux/xuat-sheet.mjs": {
+    "mtime": 1795159921.7661831,
+    "seen": 1795401687.868553,
+    "ast_hash": "46456f64f56e63d3a62f4ce94fcadbff",
+    "semantic_hash": "46456f64f56e63d3a62f4ce94fcadbff"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/he-thong/vat-dong-bang.md": {
+    "mtime": 1795159921.6940062,
+    "seen": 1795401687.8685536,
+    "ast_hash": "1b1460a0ac94c7c699c8a7748886ff52",
+    "semantic_hash": "1b1460a0ac94c7c699c8a7748886ff52"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/hoi-dap/vat-dong-bang.md": {
+    "mtime": 1795159921.6940062,
+    "seen": 1795401687.8685546,
+    "ast_hash": "85f83fe565e6f0e418117aec8e231efb",
+    "semantic_hash": "85f83fe565e6f0e418117aec8e231efb"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/sheet/01-gameplay.html": {
+    "mtime": 1795159921.695015,
+    "seen": 1795401687.8685553,
+    "ast_hash": "974e0c567d87dc5a704b865252270d4e",
+    "semantic_hash": "974e0c567d87dc5a704b865252270d4e"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/sheet/02-main-task.html": {
+    "mtime": 1795159921.695015,
+    "seen": 1795401687.868556,
+    "ast_hash": "4e8d4a9d9ae7a446b9e810d10ba7151f",
+    "semantic_hash": "4e8d4a9d9ae7a446b9e810d10ba7151f"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/sheet/03-level-curve.html": {
+    "mtime": 1795159921.695015,
+    "seen": 1795401687.8685567,
+    "ast_hash": "bbf50984f83c1597bc24f21ab5e75077",
+    "semantic_hash": "bbf50984f83c1597bc24f21ab5e75077"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/sheet/04-level-data.html": {
+    "mtime": 1795159921.6960154,
+    "seen": 1795401687.8685572,
+    "ast_hash": "c9168af3654f76416a0b46ae3c3cb312",
+    "semantic_hash": "c9168af3654f76416a0b46ae3c3cb312"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/sheet/05-tutorials.html": {
+    "mtime": 1795159921.6970117,
+    "seen": 1795401687.8685582,
+    "ast_hash": "ddabe933468d1a1203a82b5bb4206128",
+    "semantic_hash": "ddabe933468d1a1203a82b5bb4206128"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/sheet/06-asset-man-hinh.html": {
+    "mtime": 1795159921.6970117,
+    "seen": 1795401687.8685591,
+    "ast_hash": "ede16fdd54ffe3f5462a72c5f78119cf",
+    "semantic_hash": "ede16fdd54ffe3f5462a72c5f78119cf"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/sheet/README.md": {
+    "mtime": 1795159921.6980116,
+    "seen": 1795401687.8685598,
+    "ast_hash": "acdd91c7a60d25fc0ab1bd39b37bf3dc",
+    "semantic_hash": "acdd91c7a60d25fc0ab1bd39b37bf3dc"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/soat/vat-dong-bang.md": {
+    "mtime": 1795159921.6980116,
+    "seen": 1795401687.8685603,
+    "ast_hash": "b3d681984fe61e790a9911705cf5df75",
+    "semantic_hash": "b3d681984fe61e790a9911705cf5df75"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/tu-vung.md": {
+    "mtime": 1795159921.6980116,
+    "seen": 1795401687.8685615,
+    "ast_hash": "069af9ec7618c6698358564d8008f0df",
+    "semantic_hash": "069af9ec7618c6698358564d8008f0df"
+  },
+  ".claude/skills/gdd-v1/references/cap-nhat.md": {
+    "mtime": 1795159921.6990113,
+    "seen": 1795401687.8685622,
+    "ast_hash": "acf126a476e169289473e8b1f9241626",
+    "semantic_hash": "acf126a476e169289473e8b1f9241626"
+  },
+  ".claude/skills/gdd-v1/references/hoi-dap-chot-luat.md": {
+    "mtime": 1795159921.6990113,
+    "seen": 1795401687.8685632,
+    "ast_hash": "1b5d2ed0be045051b44e526a7de1da9d",
+    "semantic_hash": "1b5d2ed0be045051b44e526a7de1da9d"
+  },
+  ".claude/skills/gdd-v1/references/khuon-ba-loai.md": {
+    "mtime": 1795159921.6990113,
+    "seen": 1795401687.868564,
+    "ast_hash": "9c7565d8b28ac65b63e7e29fbc8d6aaf",
+    "semantic_hash": "9c7565d8b28ac65b63e7e29fbc8d6aaf"
+  },
+  ".claude/skills/gdd-v1/references/sheet-6-tab.md": {
+    "mtime": 1795159921.6990113,
+    "seen": 1795401687.8685644,
+    "ast_hash": "b8957592525087faa5aa60681e68e29a",
+    "semantic_hash": "b8957592525087faa5aa60681e68e29a"
+  },
+  ".claude/skills/gdd-v1/references/soat-dinh-dang.md": {
+    "mtime": 1795159921.6990113,
+    "seen": 1795401687.8685656,
+    "ast_hash": "06f61d10a6c3636373d6570427c31101",
+    "semantic_hash": "06f61d10a6c3636373d6570427c31101"
+  },
+  ".claude/skills/gdd-v1/references/tao-sheet.md": {
+    "mtime": 1795159921.7000108,
+    "seen": 1795401687.8685663,
+    "ast_hash": "e2aef0c6347218c55ca01eeb07c59dbf",
+    "semantic_hash": "e2aef0c6347218c55ca01eeb07c59dbf"
+  },
+  ".claude/skills/gdd-v1/templates/mini-gdd.md": {
+    "mtime": 1795159921.7010105,
+    "seen": 1795401687.868567,
+    "ast_hash": "be8abbf6e9d2bdea3a4ca7eaeb190539",
+    "semantic_hash": "be8abbf6e9d2bdea3a4ca7eaeb190539"
+  },
+  ".claude/skills/kickoff-game/SKILL.md": {
+    "mtime": 1795159921.7020102,
+    "seen": 1795401687.8685677,
+    "ast_hash": "fbc197687d9f1aacec5c04d81c7bb7bd",
+    "semantic_hash": "fbc197687d9f1aacec5c04d81c7bb7bd"
+  },
+  ".claude/skills/level-forge/SKILL.md": {
+    "mtime": 1795159921.7020102,
+    "seen": 1795401687.8685687,
+    "ast_hash": "dbcef4f68b0bf42714fe806a317482a7",
+    "semantic_hash": "dbcef4f68b0bf42714fe806a317482a7"
+  },
+  ".claude/skills/level-forge/references/case-hop-bong.md": {
+    "mtime": 1795159921.704011,
+    "seen": 1795401687.8685699,
+    "ast_hash": "41c9bcbae40ff9e4bd866bc77a416ee8",
+    "semantic_hash": "41c9bcbae40ff9e4bd866bc77a416ee8"
+  },
+  ".claude/skills/level-forge/references/rules.md": {
+    "mtime": 1795159921.704011,
+    "seen": 1795401687.8685708,
+    "ast_hash": "ceca9848879292b55311135262f66337",
+    "semantic_hash": "ceca9848879292b55311135262f66337"
+  },
+  ".claude/skills/playtest/SKILL.md": {
+    "mtime": 1795159921.704011,
+    "seen": 1795401687.8685718,
+    "ast_hash": "844630c74b5255661553260af6c39223",
+    "semantic_hash": "844630c74b5255661553260af6c39223"
+  },
+  ".claude/skills/retro/SKILL.md": {
+    "mtime": 1795159921.705011,
+    "seen": 1795401687.8685725,
+    "ast_hash": "e0f85103672ed86f2c275ed28ea2370c",
+    "semantic_hash": "e0f85103672ed86f2c275ed28ea2370c"
+  },
+  ".gd-department/vai-them/gd-algo.md": {
+    "mtime": 1795159921.7070105,
+    "seen": 1795401687.8685732,
+    "ast_hash": "f9b20d4db71da5a10da8724ede50d1f7",
+    "semantic_hash": "f9b20d4db71da5a10da8724ede50d1f7"
+  },
+  ".gd-department/vai-them/gd-research.md": {
+    "mtime": 1795159921.7081165,
+    "seen": 1795401687.868574,
+    "ast_hash": "88aad32a6c828586499db74973576ee9",
+    "semantic_hash": "88aad32a6c828586499db74973576ee9"
+  },
+  "docs/knowledge/95-cach-lead-lam-viec.md": {
+    "mtime": 1795159921.7111166,
+    "seen": 1795401687.8685849,
+    "ast_hash": "f32955290ae6a4d70254ae525a7e431f",
+    "semantic_hash": "f32955290ae6a4d70254ae525a7e431f"
+  },
+  "docs/knowledge/indie/00-nen-tang-thiet-ke.md": {
+    "mtime": 1795159921.7111166,
+    "seen": 1795401687.8685865,
+    "ast_hash": "52cc9245337ba3af5780a46c2ae13d1a",
+    "semantic_hash": "52cc9245337ba3af5780a46c2ae13d1a"
+  },
+  "docs/knowledge/indie/05-game-tham-chieu.md": {
+    "mtime": 1795159921.71234,
+    "seen": 1795401687.8685873,
+    "ast_hash": "7552cc6283bf754f73565baf5fc77b82",
+    "semantic_hash": "7552cc6283bf754f73565baf5fc77b82"
+  },
+  "docs/knowledge/indie/06-dave-the-diver-cau-truc.md": {
+    "mtime": 1795159921.71234,
+    "seen": 1795401687.868588,
+    "ast_hash": "82fca69819b2aaec89fb20b0934e01b7",
+    "semantic_hash": "82fca69819b2aaec89fb20b0934e01b7"
+  },
+  "docs/knowledge/indie/10-narrative.md": {
+    "mtime": 1795159921.71234,
+    "seen": 1795401687.8685887,
+    "ast_hash": "34956466cf48e9f9038e8ef3f00e925f",
+    "semantic_hash": "34956466cf48e9f9038e8ef3f00e925f"
+  },
+  "docs/knowledge/indie/15-character.md": {
+    "mtime": 1795159921.71234,
+    "seen": 1795401687.8685896,
+    "ast_hash": "705ae997585d8db4906950e11b0dd3ae",
+    "semantic_hash": "705ae997585d8db4906950e11b0dd3ae"
+  },
+  "docs/knowledge/indie/20-combat.md": {
+    "mtime": 1795159921.713339,
+    "seen": 1795401687.8685904,
+    "ast_hash": "fabd4e7b35ba1fe49f04adf383409a29",
+    "semantic_hash": "fabd4e7b35ba1fe49f04adf383409a29"
+  },
+  "docs/knowledge/indie/25-items-crafting.md": {
+    "mtime": 1795159921.713339,
+    "seen": 1795401687.868591,
+    "ast_hash": "dd2bce450f5eaa9f53f70c24ac266f49",
+    "semantic_hash": "dd2bce450f5eaa9f53f70c24ac266f49"
+  },
+  "docs/knowledge/indie/30-world-level.md": {
+    "mtime": 1795159921.713339,
+    "seen": 1795401687.8685915,
+    "ast_hash": "fd2590cbf404fffdaf252328e1102d94",
+    "semantic_hash": "fd2590cbf404fffdaf252328e1102d94"
+  },
+  "docs/knowledge/indie/35-management-sim.md": {
+    "mtime": 1795159921.713339,
+    "seen": 1795401687.8685925,
+    "ast_hash": "00ac4be781a1afb900eeffb41680c904",
+    "semantic_hash": "00ac4be781a1afb900eeffb41680c904"
+  },
+  "docs/knowledge/indie/40-economy-progression.md": {
+    "mtime": 1795159921.7143407,
+    "seen": 1795401687.8685932,
+    "ast_hash": "be91c8d1b1284968af6c8d2acb61a0f4",
+    "semantic_hash": "be91c8d1b1284968af6c8d2acb61a0f4"
+  },
+  "docs/knowledge/indie/45-ux-ui.md": {
+    "mtime": 1795404059.496535,
+    "seen": 1795406053.0593085,
+    "ast_hash": "fb0dbeaa3e23d8f7ae847b37acbd0107",
+    "semantic_hash": "fb0dbeaa3e23d8f7ae847b37acbd0107"
+  },
+  "docs/knowledge/indie/50-technical-design.md": {
+    "mtime": 1795159921.7143407,
+    "seen": 1795401687.8685946,
+    "ast_hash": "12c24d8706e1f2d5fb9d73e8e1a43557",
+    "semantic_hash": "12c24d8706e1f2d5fb9d73e8e1a43557"
+  },
+  "docs/knowledge/indie/55-qa-playtest.md": {
+    "mtime": 1795404059.496535,
+    "seen": 1795406053.0593097,
+    "ast_hash": "462e31b0fdec94b6970c52dbcbb42ec3",
+    "semantic_hash": "462e31b0fdec94b6970c52dbcbb42ec3"
+  },
+  "docs/knowledge/indie/README.md": {
+    "mtime": 1795159921.7143407,
+    "seen": 1795401687.8685966,
+    "ast_hash": "a48d598ecbded9b9dfd2cf62e3ea2b7a",
+    "semantic_hash": "a48d598ecbded9b9dfd2cf62e3ea2b7a"
+  },
+  "docs/org/cau-hoi-setup.md": {
+    "mtime": 1795159921.7153397,
+    "seen": 1795401687.8685973,
+    "ast_hash": "583c5ccbf364e59bf22855ea89a01243",
+    "semantic_hash": "583c5ccbf364e59bf22855ea89a01243"
+  },
+  "docs/org/gd-manager.md": {
+    "mtime": 1795159921.7153397,
+    "seen": 1795401687.868598,
+    "ast_hash": "51a7ec951648f2165b45282c29d0600c",
+    "semantic_hash": "51a7ec951648f2165b45282c29d0600c"
+  },
+  "docs/org/ho-so-lead.md": {
+    "mtime": 1795159921.7153397,
+    "seen": 1795401687.8685987,
+    "ast_hash": "7dd1126e46365be543da30bbaafccc39",
+    "semantic_hash": "7dd1126e46365be543da30bbaafccc39"
+  },
+  "docs/org/to-chuc.md": {
+    "mtime": 1795404059.4955351,
+    "seen": 1795406053.0593112,
+    "ast_hash": "66808d55ffd51a9700daf8955f8830c8",
+    "semantic_hash": "66808d55ffd51a9700daf8955f8830c8"
+  },
+  "docs/playbooks/indie/gd-character.md": {
+    "mtime": 1795404059.4975345,
+    "seen": 1795406053.0593123,
+    "ast_hash": "a39939297bcd951fcd74310b950f4a4d",
+    "semantic_hash": "a39939297bcd951fcd74310b950f4a4d"
+  },
+  "docs/playbooks/indie/gd-combat.md": {
+    "mtime": 1795404059.4985359,
+    "seen": 1795406053.0593133,
+    "ast_hash": "be828eca03e995937ca4eaeb267e4a42",
+    "semantic_hash": "be828eca03e995937ca4eaeb267e4a42"
+  },
+  "docs/playbooks/indie/gd-economy.md": {
+    "mtime": 1795404059.4985359,
+    "seen": 1795406053.0593147,
+    "ast_hash": "66d634319369daf747c8e4b27042f62a",
+    "semantic_hash": "66d634319369daf747c8e4b27042f62a"
+  },
+  "docs/playbooks/indie/gd-items.md": {
+    "mtime": 1795404059.4995353,
+    "seen": 1795406053.0593157,
+    "ast_hash": "0e6f75b9bbcf3f8876792cf3d9ff839c",
+    "semantic_hash": "0e6f75b9bbcf3f8876792cf3d9ff839c"
+  },
+  "docs/playbooks/indie/gd-qa.md": {
+    "mtime": 1795404059.5022957,
+    "seen": 1795406053.0593164,
+    "ast_hash": "3a97248ceb50cd58465684cad09c17ca",
+    "semantic_hash": "3a97248ceb50cd58465684cad09c17ca"
+  },
+  "docs/playbooks/indie/gd-quan.md": {
+    "mtime": 1795404059.5022957,
+    "seen": 1795406053.0593176,
+    "ast_hash": "95fdbeefd7ee828aff7c2f33a8209481",
+    "semantic_hash": "95fdbeefd7ee828aff7c2f33a8209481"
+  },
+  "docs/playbooks/indie/gd-story.md": {
+    "mtime": 1795404059.4975345,
+    "seen": 1795406053.0593183,
+    "ast_hash": "389ce063404d9b81fa7e19e92cc51c6f",
+    "semantic_hash": "389ce063404d9b81fa7e19e92cc51c6f"
+  },
+  "docs/playbooks/indie/gd-tech.md": {
+    "mtime": 1795404059.510137,
+    "seen": 1795406053.0593193,
+    "ast_hash": "9da073a90a190824031714e1bcd02b8f",
+    "semantic_hash": "9da073a90a190824031714e1bcd02b8f"
+  },
+  "docs/playbooks/indie/gd-ux.md": {
+    "mtime": 1795404086.8352356,
+    "seen": 1795406053.0593202,
+    "ast_hash": "89c923c40844d421f2c4ca6134cc9d41",
+    "semantic_hash": "89c923c40844d421f2c4ca6134cc9d41"
+  },
+  "docs/playbooks/indie/gd-world.md": {
+    "mtime": 1795404059.5111382,
+    "seen": 1795406053.0593212,
+    "ast_hash": "fbcc6f235f195acf948129c83142c8c9",
+    "semantic_hash": "fbcc6f235f195acf948129c83142c8c9"
+  },
+  "docs/process/templates/brief.md": {
+    "mtime": 1795159921.7194426,
+    "seen": 1795401687.868615,
+    "ast_hash": "d629b1788531d474ceb2dc5a54eb7b1f",
+    "semantic_hash": "d629b1788531d474ceb2dc5a54eb7b1f"
+  },
+  "docs/process/templates/economy-sim/README.md": {
+    "mtime": 1795159921.7194426,
+    "seen": 1795401687.8686156,
+    "ast_hash": "1ac9665ba4d16df6ffefe48dd06abafa",
+    "semantic_hash": "1ac9665ba4d16df6ffefe48dd06abafa"
+  },
+  "docs/process/templates/gdd-he-thong.md": {
+    "mtime": 1795159921.7205431,
+    "seen": 1795401687.8686163,
+    "ast_hash": "e01decbb5533ada8cc26ff180347a7d0",
+    "semantic_hash": "e01decbb5533ada8cc26ff180347a7d0"
+  },
+  "docs/process/templates/gdd-sheet-khuon-indie.md": {
+    "mtime": 1795159921.7205431,
+    "seen": 1795401687.8686173,
+    "ast_hash": "e56c47ca7c9e4397ed099495b8c189f6",
+    "semantic_hash": "e56c47ca7c9e4397ed099495b8c189f6"
+  },
+  "docs/process/templates/ho-so-game-tham-chieu.md": {
+    "mtime": 1795159921.7205431,
+    "seen": 1795401687.868618,
+    "ast_hash": "7611563f77fbaa31861bd2f129445d2d",
+    "semantic_hash": "7611563f77fbaa31861bd2f129445d2d"
+  },
+  "docs/process/templates/ket-qua-qa.md": {
+    "mtime": 1795159921.7205431,
+    "seen": 1795401687.8686187,
+    "ast_hash": "78f162ef923413503b55a81fe172f5f2",
+    "semantic_hash": "78f162ef923413503b55a81fe172f5f2"
+  },
+  "docs/process/templates/phoi-hop-dot.md": {
+    "mtime": 1795159921.721543,
+    "seen": 1795401687.8686204,
+    "ast_hash": "7eed51fab8b2543706fa2c2b837b0562",
+    "semantic_hash": "7eed51fab8b2543706fa2c2b837b0562"
+  },
+  "production/BACKLOG.md": {
+    "mtime": 1795170435.1205668,
+    "seen": 1795401687.868621,
+    "ast_hash": "ef264b719ca449e3136aa7e8728af184",
+    "semantic_hash": "ef264b719ca449e3136aa7e8728af184"
+  },
+  "production/DECISIONS.md": {
+    "mtime": 1795404095.7007856,
+    "seen": 1795406053.059322,
+    "ast_hash": "913e9cfaa7da6bc2537cee429bd0a506",
+    "semantic_hash": "913e9cfaa7da6bc2537cee429bd0a506"
+  },
+  "production/briefs/2026-11-19-chuyen-nghiep-hoa-vai.md": {
+    "mtime": 1795159921.721543,
+    "seen": 1795401687.8686225,
+    "ast_hash": "9e324c07d047f9e92a76480db377964d",
+    "semantic_hash": "9e324c07d047f9e92a76480db377964d"
+  },
+  "production/briefs/2026-11-19-kho-tri-thuc-indie.md": {
+    "mtime": 1795159921.7225437,
+    "seen": 1795401687.8686233,
+    "ast_hash": "a7a27ef3f7d2f5c1c673eea3ca330882",
+    "semantic_hash": "a7a27ef3f7d2f5c1c673eea3ca330882"
+  },
+  "production/reports/2026-11-19-kickoff-space-salvage.md": {
+    "mtime": 1795159921.7225437,
+    "seen": 1795401687.8686242,
+    "ast_hash": "1e6d7e9728e33d7d6978bdac8a79fbd7",
+    "semantic_hash": "1e6d7e9728e33d7d6978bdac8a79fbd7"
+  },
+  "production/reports/2026-11-20-dot8-gdd-de-doc.md": {
+    "mtime": 1795163590.2619584,
+    "seen": 1795401687.868625,
+    "ast_hash": "f1d857004ec32a62e7df02612a2931b7",
+    "semantic_hash": "f1d857004ec32a62e7df02612a2931b7"
+  },
+  "projects/_template/CLAUDE.md": {
+    "mtime": 1795159921.7225437,
+    "seen": 1795401687.8686256,
+    "ast_hash": "f4a4da7ca247166ad0a14aa638005a6b",
+    "semantic_hash": "f4a4da7ca247166ad0a14aa638005a6b"
+  },
+  "projects/_template/DECISIONS.md": {
+    "mtime": 1795159921.7225437,
+    "seen": 1795401687.8686264,
+    "ast_hash": "3a462eaa83f129f994f9839a82c2f1db",
+    "semantic_hash": "3a462eaa83f129f994f9839a82c2f1db"
+  },
+  "projects/_template/README.md": {
+    "mtime": 1795159921.7225437,
+    "seen": 1795401687.8686273,
+    "ast_hash": "d12406716b95d2ae48422a7118a5d30b",
+    "semantic_hash": "d12406716b95d2ae48422a7118a5d30b"
+  },
+  "projects/_template/so-hien-hanh.md": {
+    "mtime": 1795159921.7225437,
+    "seen": 1795401687.8686283,
+    "ast_hash": "03790eebdd386e978191a0864a131e1a",
+    "semantic_hash": "03790eebdd386e978191a0864a131e1a"
+  },
+  "projects/game-moi/DECISIONS.md": {
+    "mtime": 1795405409.2849228,
+    "seen": 1795406053.059325,
+    "ast_hash": "6301c42f95c62b0d8e8d76c68300ea79",
+    "semantic_hash": "6301c42f95c62b0d8e8d76c68300ea79"
+  },
+  "projects/game-moi/briefs/dot1-gdd-he-thong.md": {
+    "mtime": 1795159921.723548,
+    "seen": 1795401687.8686297,
+    "ast_hash": "f8e0c43cb94a7986d7db062585174524",
+    "semantic_hash": "f8e0c43cb94a7986d7db062585174524"
+  },
+  "projects/game-moi/briefs/dot2-kinh-te-ux-ky-thuat.md": {
+    "mtime": 1795159921.723548,
+    "seen": 1795401687.8686304,
+    "ast_hash": "fd80c8200d3a544697590549fe2ffbc3",
+    "semantic_hash": "fd80c8200d3a544697590549fe2ffbc3"
+  },
+  "projects/game-moi/briefs/dot3-chot-so-va-qa.md": {
+    "mtime": 1795159921.723548,
+    "seen": 1795401687.8686314,
+    "ast_hash": "1838ba1996e2e1400111f8f89c39e568",
+    "semantic_hash": "1838ba1996e2e1400111f8f89c39e568"
+  },
+  "projects/game-moi/briefs/dot4-gdm-chot-sau-qa.md": {
+    "mtime": 1795159921.723548,
+    "seen": 1795401687.868632,
+    "ast_hash": "b9ed7c5c64c5191bc4aa921b391bd36b",
+    "semantic_hash": "b9ed7c5c64c5191bc4aa921b391bd36b"
+  },
+  "projects/game-moi/briefs/dot5-dan-sheet.md": {
+    "mtime": 1795159921.7246351,
+    "seen": 1795401687.8686328,
+    "ast_hash": "d64c90bf30535dc86c88611f6ff62e53",
+    "semantic_hash": "d64c90bf30535dc86c88611f6ff62e53"
+  },
+  "projects/game-moi/briefs/dot6-sua-phan-dien.md": {
+    "mtime": 1795159921.7246351,
+    "seen": 1795401687.8686337,
+    "ast_hash": "bed8732841edac2286956fd67180a19a",
+    "semantic_hash": "bed8732841edac2286956fd67180a19a"
+  },
+  "projects/game-moi/briefs/dot7-gdd-con-gon.md": {
+    "mtime": 1795159921.7246351,
+    "seen": 1795401687.8686347,
+    "ast_hash": "9ed6b9a029a82ae272ea9b57b74ed695",
+    "semantic_hash": "9ed6b9a029a82ae272ea9b57b74ed695"
+  },
+  "projects/game-moi/briefs/dot8-gdd-de-doc.md": {
+    "mtime": 1795161729.32943,
+    "seen": 1795401687.8686352,
+    "ast_hash": "3bd4a7d52127c13641219428f1722b05",
+    "semantic_hash": "3bd4a7d52127c13641219428f1722b05"
+  },
+  "projects/game-moi/briefs/dot9-ca-cang-kieu-dave.md": {
+    "mtime": 1795164674.0712996,
+    "seen": 1795401687.8686407,
+    "ast_hash": "d9bd6db6fb4d1e2b468136cc027a98b7",
+    "semantic_hash": "d9bd6db6fb4d1e2b468136cc027a98b7"
+  },
+  "projects/game-moi/concept.md": {
+    "mtime": 1795159921.7246351,
+    "seen": 1795401687.8686419,
+    "ast_hash": "ab1c08ee416b631a63c3695edf227c3d",
+    "semantic_hash": "ab1c08ee416b631a63c3695edf227c3d"
+  },
+  "projects/game-moi/de-xuat-ca-cang-kieu-dave.md": {
+    "mtime": 1795165929.1636486,
+    "seen": 1795401687.8686426,
+    "ast_hash": "4c47d0567368931507bb90f32c4d9984",
+    "semantic_hash": "4c47d0567368931507bb90f32c4d9984"
+  },
+  "projects/game-moi/gdd/00-khung-game.md": {
+    "mtime": 1795404853.0699239,
+    "seen": 1795406053.0593262,
+    "ast_hash": "b3604c38b52a2f35740fc36dd7fca134",
+    "semantic_hash": "b3604c38b52a2f35740fc36dd7fca134"
+  },
+  "projects/game-moi/gdd/he-thong/combat-driftlife.md": {
+    "mtime": 1795404853.0699239,
+    "seen": 1795406053.059327,
+    "ast_hash": "01ddfe169df962a242466fdcf90e7384",
+    "semantic_hash": "01ddfe169df962a242466fdcf90e7384"
+  },
+  "projects/game-moi/gdd/he-thong/cot-truyen.md": {
+    "mtime": 1795404853.0643828,
+    "seen": 1795406053.059328,
+    "ast_hash": "2bacdc34722baf14c631e3ee4388f4da",
+    "semantic_hash": "2bacdc34722baf14c631e3ee4388f4da"
+  },
+  "projects/game-moi/gdd/he-thong/ho-so-nhan-vat.md": {
+    "mtime": 1795404197.1119585,
+    "seen": 1795406053.059329,
+    "ast_hash": "b6730700c2bd34e1ab24438dfa39f468",
+    "semantic_hash": "b6730700c2bd34e1ab24438dfa39f468"
+  },
+  "projects/game-moi/gdd/he-thong/kinh-te-tien-trinh.md": {
+    "mtime": 1795404145.9975698,
+    "seen": 1795406053.0593297,
+    "ast_hash": "3971f2a249bdb013742ab505e1ce152c",
+    "semantic_hash": "3971f2a249bdb013742ab505e1ce152c"
+  },
+  "projects/game-moi/gdd/he-thong/ky-thuat.md": {
+    "mtime": 1795404208.4546905,
+    "seen": 1795406053.0593307,
+    "ast_hash": "a86f68baee7f0f26781791d37f9aafcd",
+    "semantic_hash": "a86f68baee7f0f26781791d37f9aafcd"
+  },
+  "projects/game-moi/gdd/he-thong/map.md": {
+    "mtime": 1795404145.9975698,
+    "seen": 1795406053.0593317,
+    "ast_hash": "ed8bfad383c50137004c16caa1d6b662",
+    "semantic_hash": "ed8bfad383c50137004c16caa1d6b662"
+  },
+  "projects/game-moi/gdd/he-thong/nguoi-choi.md": {
+    "mtime": 1795404919.580201,
+    "seen": 1795406053.0593326,
+    "ast_hash": "2f4c245ba34b94abfb48fd427b6b6754",
+    "semantic_hash": "2f4c245ba34b94abfb48fd427b6b6754"
+  },
+  "projects/game-moi/gdd/he-thong/tram-va-cang.md": {
+    "mtime": 1795404603.7944112,
+    "seen": 1795406053.0593333,
+    "ast_hash": "34013669472fb2017bab7e22ea2f6cc1",
+    "semantic_hash": "34013669472fb2017bab7e22ea2f6cc1"
+  },
+  "projects/game-moi/gdd/he-thong/ux-ui.md": {
+    "mtime": 1795404119.4252448,
+    "seen": 1795406053.0593348,
+    "ast_hash": "a81ac516e96a0553572428ba0ead9dbb",
+    "semantic_hash": "a81ac516e96a0553572428ba0ead9dbb"
+  },
+  "projects/game-moi/gdd/he-thong/vat-pham.md": {
+    "mtime": 1795404864.2748718,
+    "seen": 1795406053.0593355,
+    "ast_hash": "fca036a1e3593d4e40ca730507ec64ca",
+    "semantic_hash": "fca036a1e3593d4e40ca730507ec64ca"
+  },
+  "projects/game-moi/log-gdm-tu-quyet.md": {
+    "mtime": 1795166206.1834776,
+    "seen": 1795401687.8686523,
+    "ast_hash": "bf1a5ae47725f7f1ab75dd93cb49a6ad",
+    "semantic_hash": "bf1a5ae47725f7f1ab75dd93cb49a6ad"
+  },
+  "projects/game-moi/log-vai-tu-quyet.md": {
+    "mtime": 1795159921.7474685,
+    "seen": 1795401687.868653,
+    "ast_hash": "5f9538775a2b5a6ee16b62011c656587",
+    "semantic_hash": "5f9538775a2b5a6ee16b62011c656587"
+  },
+  "projects/game-moi/qa/GD-031-combat-driftlife.md": {
+    "mtime": 1795159921.7484677,
+    "seen": 1795401687.8686538,
+    "ast_hash": "7de12654e12ec481a91c9f616a109b5e",
+    "semantic_hash": "7de12654e12ec481a91c9f616a109b5e"
+  },
+  "projects/game-moi/qa/GD-031-cot-truyen.md": {
+    "mtime": 1795159921.7484677,
+    "seen": 1795401687.8686545,
+    "ast_hash": "abbb610580c10aec1d31d5302ca53452",
+    "semantic_hash": "abbb610580c10aec1d31d5302ca53452"
+  },
+  "projects/game-moi/qa/GD-031-ho-so-nhan-vat.md": {
+    "mtime": 1795159921.7484677,
+    "seen": 1795401687.8686554,
+    "ast_hash": "053b7cee8f84c7eb0f0dbd4e9535845a",
+    "semantic_hash": "053b7cee8f84c7eb0f0dbd4e9535845a"
+  },
+  "projects/game-moi/qa/GD-031-khung-game.md": {
+    "mtime": 1795159921.7484677,
+    "seen": 1795401687.8686562,
+    "ast_hash": "17a70463ebfd7d1547e36e8e1f357059",
+    "semantic_hash": "17a70463ebfd7d1547e36e8e1f357059"
+  },
+  "projects/game-moi/qa/GD-031-kinh-te-tien-trinh.md": {
+    "mtime": 1795159921.7494688,
+    "seen": 1795401687.8686569,
+    "ast_hash": "2c9fc7f51b7839d85b1716d6d22b9279",
+    "semantic_hash": "2c9fc7f51b7839d85b1716d6d22b9279"
+  },
+  "projects/game-moi/qa/GD-031-ky-thuat.md": {
+    "mtime": 1795159921.7494688,
+    "seen": 1795401687.8686578,
+    "ast_hash": "754ec9460bfe03e3d3e4863ffe9bb6f3",
+    "semantic_hash": "754ec9460bfe03e3d3e4863ffe9bb6f3"
+  },
+  "projects/game-moi/qa/GD-031-map.md": {
+    "mtime": 1795159921.7494688,
+    "seen": 1795401687.8686588,
+    "ast_hash": "77423b18e23dc235e0cf19bc446a4ad1",
+    "semantic_hash": "77423b18e23dc235e0cf19bc446a4ad1"
+  },
+  "projects/game-moi/qa/GD-031-nguoi-choi.md": {
+    "mtime": 1795159921.750517,
+    "seen": 1795401687.8686595,
+    "ast_hash": "6ad48ed217e4fc37e8a4519d48d67227",
+    "semantic_hash": "6ad48ed217e4fc37e8a4519d48d67227"
+  },
+  "projects/game-moi/qa/GD-031-tong-hop.md": {
+    "mtime": 1795159921.750517,
+    "seen": 1795401687.8686602,
+    "ast_hash": "c9dbea8254885b318125cef9f3a9d3f1",
+    "semantic_hash": "c9dbea8254885b318125cef9f3a9d3f1"
+  },
+  "projects/game-moi/qa/GD-031-tram-va-cang.md": {
+    "mtime": 1795159921.750517,
+    "seen": 1795401687.868661,
+    "ast_hash": "e88c514d30d3d93cc0dc44e7b8214d59",
+    "semantic_hash": "e88c514d30d3d93cc0dc44e7b8214d59"
+  },
+  "projects/game-moi/qa/GD-031-ux-ui.md": {
+    "mtime": 1795159921.751518,
+    "seen": 1795401687.8686616,
+    "ast_hash": "cc5b7208cb9c30d525eb1c9d346b7c14",
+    "semantic_hash": "cc5b7208cb9c30d525eb1c9d346b7c14"
+  },
+  "projects/game-moi/qa/GD-031-vat-pham.md": {
+    "mtime": 1795159921.751518,
+    "seen": 1795401687.8686626,
+    "ast_hash": "2ecadea7a05086b9180766d8347b2e5f",
+    "semantic_hash": "2ecadea7a05086b9180766d8347b2e5f"
+  },
+  "projects/game-moi/qa/GD-032-sheet.md": {
+    "mtime": 1795159921.751518,
+    "seen": 1795401687.8686633,
+    "ast_hash": "c91f1912ffd255317220492f8d6da1e3",
+    "semantic_hash": "c91f1912ffd255317220492f8d6da1e3"
+  },
+  "projects/game-moi/qa/GD-033-combat-driftlife.md": {
+    "mtime": 1795159921.751518,
+    "seen": 1795401687.8686643,
+    "ast_hash": "7255dc60fda8a0863a67dc6a988c9622",
+    "semantic_hash": "7255dc60fda8a0863a67dc6a988c9622"
+  },
+  "projects/game-moi/qa/GD-033-cot-truyen.md": {
+    "mtime": 1795159921.7525175,
+    "seen": 1795401687.868665,
+    "ast_hash": "0f10c050353af9c06517d43026bc423b",
+    "semantic_hash": "0f10c050353af9c06517d43026bc423b"
+  },
+  "projects/game-moi/qa/GD-033-ho-so-nhan-vat.md": {
+    "mtime": 1795159921.7525175,
+    "seen": 1795401687.868666,
+    "ast_hash": "a1889a7b12ec477257063d96b595679f",
+    "semantic_hash": "a1889a7b12ec477257063d96b595679f"
+  },
+  "projects/game-moi/qa/GD-033-map.md": {
+    "mtime": 1795159921.7525175,
+    "seen": 1795401687.8686666,
+    "ast_hash": "48c5245b8578601a17ff2bf1fcd3145f",
+    "semantic_hash": "48c5245b8578601a17ff2bf1fcd3145f"
+  },
+  "projects/game-moi/qa/GD-033-phan-dien.md": {
+    "mtime": 1795159921.7525175,
+    "seen": 1795401687.8686674,
+    "ast_hash": "310b8d1190acf8e9a90ead266b70a7ea",
+    "semantic_hash": "310b8d1190acf8e9a90ead266b70a7ea"
+  },
+  "projects/game-moi/qa/GD-033-tram-va-cang.md": {
+    "mtime": 1795159921.7535176,
+    "seen": 1795401687.868668,
+    "ast_hash": "c1344831417a3880c3a2f6db4b21fbe0",
+    "semantic_hash": "c1344831417a3880c3a2f6db4b21fbe0"
+  },
+  "projects/game-moi/qa/GD-033-vat-pham.md": {
+    "mtime": 1795159921.7535176,
+    "seen": 1795401687.868669,
+    "ast_hash": "c39e2aa09603938f010fe66fcc275e97",
+    "semantic_hash": "c39e2aa09603938f010fe66fcc275e97"
+  },
+  "projects/game-moi/qa/GD-038-gdd-con-gon.md": {
+    "mtime": 1795159921.7535176,
+    "seen": 1795401687.8686697,
+    "ast_hash": "655f4fdc9478d1102eb24aa842f56311",
+    "semantic_hash": "655f4fdc9478d1102eb24aa842f56311"
+  },
+  "projects/game-moi/qa/GD-050-sheet-de-doc.md": {
+    "mtime": 1795161638.2250445,
+    "seen": 1795401687.8686705,
+    "ast_hash": "5639edfac0c96450c49fa8655d6b2a79",
+    "semantic_hash": "5639edfac0c96450c49fa8655d6b2a79"
+  },
+  "projects/game-moi/qa/GD-056-ca-cang-dave.md": {
+    "mtime": 1795169037.4313004,
+    "seen": 1795401687.8686712,
+    "ast_hash": "65aa56e2adbb97d7207549145f5a2496",
+    "semantic_hash": "65aa56e2adbb97d7207549145f5a2496"
+  },
+  "projects/game-moi/qa/_huong-dan-review.md": {
+    "mtime": 1795159921.7546945,
+    "seen": 1795401687.8686724,
+    "ast_hash": "0d44a39a7c8bc9069ed58b4021780c28",
+    "semantic_hash": "0d44a39a7c8bc9069ed58b4021780c28"
+  },
+  "projects/game-moi/qa/_y-lead-phan-dien.md": {
+    "mtime": 1795159921.7546945,
+    "seen": 1795401687.868673,
+    "ast_hash": "c7703e993212b7571175bb2d587ee91c",
+    "semantic_hash": "c7703e993212b7571175bb2d587ee91c"
+  },
+  "projects/game-moi/qa/mvp-criteria-checklist.md": {
+    "mtime": 1795159921.7546945,
+    "seen": 1795401687.8686738,
+    "ast_hash": "29e3feeaf6c7d5a7896f3d5f115dc600",
+    "semantic_hash": "29e3feeaf6c7d5a7896f3d5f115dc600"
+  },
+  "projects/game-moi/sim/do-nhay-chuyen.md": {
+    "mtime": 1795159921.7556932,
+    "seen": 1795401687.8686745,
+    "ast_hash": "c207ec64e3e5983a2d172ac6b48596e3",
+    "semantic_hash": "c207ec64e3e5983a2d172ac6b48596e3"
+  },
+  "projects/game-moi/so-hien-hanh.md": {
+    "mtime": 1795169120.574849,
+    "seen": 1795401687.8686752,
+    "ast_hash": "8e1d5bff7a4b0624542cd113519c1f7c",
+    "semantic_hash": "8e1d5bff7a4b0624542cd113519c1f7c"
+  },
+  "projects/game-moi/story/game-story-v2.md": {
+    "mtime": 1795159921.7598913,
+    "seen": 1795401687.8686762,
+    "ast_hash": "02f05df5e2962ac70cb811f951bf01d4",
+    "semantic_hash": "02f05df5e2962ac70cb811f951bf01d4"
+  },
+  "projects/game-moi/story/game-story-v3.md": {
+    "mtime": 1795159921.7598913,
+    "seen": 1795401687.8686771,
+    "ast_hash": "786dd2d777c125217963c7d396407201",
+    "semantic_hash": "786dd2d777c125217963c7d396407201"
+  },
+  "projects/game-moi/story/game-story.md": {
+    "mtime": 1795159921.7598913,
+    "seen": 1795401687.8686779,
+    "ast_hash": "a1ad5bd03e4415ca3e39556d878cde21",
+    "semantic_hash": "a1ad5bd03e4415ca3e39556d878cde21"
+  },
+  "projects/game-moi/story/lead-y-tuong-2026-11-20.md": {
+    "mtime": 1795159921.7608917,
+    "seen": 1795401687.8686786,
+    "ast_hash": "c3fd514817920f841224634a199a3750",
+    "semantic_hash": "c3fd514817920f841224634a199a3750"
+  },
+  "projects/game-moi/story/van-de-mo-theo-dave.md": {
+    "mtime": 1795159921.7608917,
+    "seen": 1795401687.8686795,
+    "ast_hash": "d4490c0e1796547f21cc555773e568d9",
+    "semantic_hash": "d4490c0e1796547f21cc555773e568d9"
+  },
+  "projects/game-moi/tools/README.md": {
+    "mtime": 1795165445.3298259,
+    "seen": 1795401687.8686802,
+    "ast_hash": "fb54aa20d32a81c821fbbfc9c328df23",
+    "semantic_hash": "fb54aa20d32a81c821fbbfc9c328df23"
+  },
+  "projects/game-moi/tools/ket-qua/sim-ca-cang.md": {
+    "mtime": 1795168187.3095787,
+    "seen": 1795401687.868681,
+    "ast_hash": "03b51166469a911ea43e3fc163b3d85f",
+    "semantic_hash": "03b51166469a911ea43e3fc163b3d85f"
+  },
+  "projects/game-moi/tools/ket-qua/sim-chuyen.md": {
+    "mtime": 1795159921.7631836,
+    "seen": 1795401687.8686817,
+    "ast_hash": "b84784754740bc9666bc1a99bd49a34d",
+    "semantic_hash": "b84784754740bc9666bc1a99bd49a34d"
+  },
+  "projects/game-moi/tools/ket-qua/sim-combat.md": {
+    "mtime": 1795159921.7631836,
+    "seen": 1795401687.8686824,
+    "ast_hash": "3d01e58112f6d02c55995c74951f093b",
+    "semantic_hash": "3d01e58112f6d02c55995c74951f093b"
+  },
+  "projects/game-moi/tools/ket-qua/validate-gdd.md": {
+    "mtime": 1795159921.7631836,
+    "seen": 1795401687.8686836,
+    "ast_hash": "ed325f4485a0fe5cd12c0bb82afb54b0",
+    "semantic_hash": "ed325f4485a0fe5cd12c0bb82afb54b0"
+  },
+  "projects/game-moi/tools/prototype/bay.html": {
+    "mtime": 1795159921.7641847,
+    "seen": 1795401687.868684,
+    "ast_hash": "fd00b3ec8f9e7899df1f8aafce4a5620",
+    "semantic_hash": "fd00b3ec8f9e7899df1f8aafce4a5620"
+  },
+  "projects/game-moi/tools/prototype/ca-cang-dave.html": {
+    "mtime": 1795164307.4820316,
+    "seen": 1795401687.8686848,
+    "ast_hash": "c85e260275290bef28ad39fcbfc39a28",
+    "semantic_hash": "c85e260275290bef28ad39fcbfc39a28"
+  },
+  "projects/space-salvage/DECISIONS.md": {
+    "mtime": 1795159921.7672887,
+    "seen": 1795401687.8686855,
+    "ast_hash": "5d6671332c0dd04569f80b5801d33ac0",
+    "semantic_hash": "5d6671332c0dd04569f80b5801d33ac0"
+  },
+  "projects/space-salvage/README.md": {
+    "mtime": 1795159921.7672887,
+    "seen": 1795401687.8686864,
+    "ast_hash": "73027464bd4b705fdca11c873a7800b2",
+    "semantic_hash": "73027464bd4b705fdca11c873a7800b2"
+  },
+  "projects/space-salvage/bai-hoc.md": {
+    "mtime": 1795159921.7672887,
+    "seen": 1795401687.8686872,
+    "ast_hash": "1b3d989dd2b8775861aac9aad4d355c4",
+    "semantic_hash": "1b3d989dd2b8775861aac9aad4d355c4"
+  },
+  "projects/space-salvage/briefs/dot1-nen-mvp.md": {
+    "mtime": 1795159921.7672887,
+    "seen": 1795401687.8686879,
+    "ast_hash": "78127101be53005827d2b9877a41025e",
+    "semantic_hash": "78127101be53005827d2b9877a41025e"
+  },
+  "projects/space-salvage/briefs/dot2-chuyen-noi-dung.md": {
+    "mtime": 1795159921.7672887,
+    "seen": 1795401687.8686888,
+    "ast_hash": "5f7c30ee335c58c5ac48d339bbbc5c18",
+    "semantic_hash": "5f7c30ee335c58c5ac48d339bbbc5c18"
+  },
+  "projects/space-salvage/gdd/de-xuat-cau-truc-sheet.md": {
+    "mtime": 1795159921.7672887,
+    "seen": 1795401687.8686893,
+    "ast_hash": "a32470af862c68269aa50909d070f1e0",
+    "semantic_hash": "a32470af862c68269aa50909d070f1e0"
+  },
+  "projects/space-salvage/so-hien-hanh.md": {
+    "mtime": 1795159921.7672887,
+    "seen": 1795401687.8686903,
+    "ast_hash": "d952b2e775408ad8984588ba8dfc92d5",
+    "semantic_hash": "d952b2e775408ad8984588ba8dfc92d5"
+  },
+  ".claude/agents/_shared-protocol.md": {
+    "mtime": 1795159921.687365,
+    "seen": 1795406053.0592895,
+    "ast_hash": "10fbff11957c080e00e9f2c4a2885f89",
+    "semantic_hash": "10fbff11957c080e00e9f2c4a2885f89"
+  },
+  ".claude/agents/gd-character.md": {
+    "mtime": 1795404059.4935353,
+    "seen": 1795406053.0592906,
+    "ast_hash": "91cabc12214905246a87d6f17b778798",
+    "semantic_hash": "91cabc12214905246a87d6f17b778798"
+  },
+  ".claude/agents/gd-combat.md": {
+    "mtime": 1795404059.494535,
+    "seen": 1795406053.0592918,
+    "ast_hash": "80a6fed3643d6079cd20c3acde56cb43",
+    "semantic_hash": "80a6fed3643d6079cd20c3acde56cb43"
+  },
+  ".claude/agents/gd-economy.md": {
+    "mtime": 1795404075.2534802,
+    "seen": 1795406053.0592926,
+    "ast_hash": "7bc990c6c289c4911d1266bea076f487",
+    "semantic_hash": "7bc990c6c289c4911d1266bea076f487"
+  },
+  ".claude/agents/gd-items.md": {
+    "mtime": 1795404059.494535,
+    "seen": 1795406053.0592935,
+    "ast_hash": "f20dcaebba2bb3b24913db789587d9f4",
+    "semantic_hash": "f20dcaebba2bb3b24913db789587d9f4"
+  },
+  ".claude/agents/gd-qa.md": {
+    "mtime": 1795404075.2534802,
+    "seen": 1795406053.0592942,
+    "ast_hash": "14f23ff356249f909d37f5b7518a3e8c",
+    "semantic_hash": "14f23ff356249f909d37f5b7518a3e8c"
+  },
+  ".claude/agents/gd-quan.md": {
+    "mtime": 1795404059.494535,
+    "seen": 1795406053.0592952,
+    "ast_hash": "7c86d0486495e3e66d2fc329c0a3b2ce",
+    "semantic_hash": "7c86d0486495e3e66d2fc329c0a3b2ce"
+  },
+  ".claude/agents/gd-story.md": {
+    "mtime": 1795404059.494535,
+    "seen": 1795406053.059296,
+    "ast_hash": "3a5a28c4b54fd6a6d4d9c3ceba4eb024",
+    "semantic_hash": "3a5a28c4b54fd6a6d4d9c3ceba4eb024"
+  },
+  ".claude/agents/gd-tech.md": {
+    "mtime": 1795404075.2534802,
+    "seen": 1795406053.0592968,
+    "ast_hash": "808683a3469ff54a7b5999d369331002",
+    "semantic_hash": "808683a3469ff54a7b5999d369331002"
+  },
+  ".claude/agents/gd-ux.md": {
+    "mtime": 1795404075.2534802,
+    "seen": 1795406053.0592978,
+    "ast_hash": "c9481a6b1ac6be2695e4fef1d2c061bb",
+    "semantic_hash": "c9481a6b1ac6be2695e4fef1d2c061bb"
+  },
+  ".claude/agents/gd-world.md": {
+    "mtime": 1795404075.2534802,
+    "seen": 1795406053.0592985,
+    "ast_hash": "d7a2b5daef4134081af1200f777ebaad",
+    "semantic_hash": "d7a2b5daef4134081af1200f777ebaad"
+  },
+  ".claude/skills/gd-department/SKILL.md": {
+    "mtime": 1795159921.688363,
+    "seen": 1795406053.0592992,
+    "ast_hash": "365fe6ca33dedc5fa9607583af8b57cf",
+    "semantic_hash": "365fe6ca33dedc5fa9607583af8b57cf"
+  },
+  ".claude/skills/gdd-review/SKILL.md": {
+    "mtime": 1795159921.689365,
+    "seen": 1795406053.0593002,
+    "ast_hash": "c8a7534e9426149ea1c5019f65e18909",
+    "semantic_hash": "c8a7534e9426149ea1c5019f65e18909"
+  },
+  ".claude/skills/gdd-sheet-sync/SKILL.md": {
+    "mtime": 1795159921.6903644,
+    "seen": 1795406053.059301,
+    "ast_hash": "cfcb0ffe440880dcc51ffca3733ea79b",
+    "semantic_hash": "cfcb0ffe440880dcc51ffca3733ea79b"
+  },
+  ".claude/skills/gdd-sheet-sync/examples/vi-du-doi-chieu.md": {
+    "mtime": 1795159921.6903644,
+    "seen": 1795406053.0593016,
+    "ast_hash": "b361289891942b394470cc45a6612b00",
+    "semantic_hash": "b361289891942b394470cc45a6612b00"
+  },
+  ".claude/skills/gdd-v05/SKILL.md": {
+    "mtime": 1795159921.6913645,
+    "seen": 1795406053.0593023,
+    "ast_hash": "ec08ba9ca8207cdfe2180c5f5e823aae",
+    "semantic_hash": "ec08ba9ca8207cdfe2180c5f5e823aae"
+  },
+  ".claude/skills/gdd-v05/references/khuon-va-bai-hoc.md": {
+    "mtime": 1795159921.6923642,
+    "seen": 1795406053.0593035,
+    "ast_hash": "aa82a07a02624e9ee7b695665ac6f2c9",
+    "semantic_hash": "aa82a07a02624e9ee7b695665ac6f2c9"
+  },
+  ".claude/skills/gdd-v05/references/tab-phu.md": {
+    "mtime": 1795159921.6923642,
+    "seen": 1795406053.059304,
+    "ast_hash": "35cf96f7ee7f57fc9ac088b7f1038dea",
+    "semantic_hash": "35cf96f7ee7f57fc9ac088b7f1038dea"
+  },
+  ".claude/skills/gdd-v1/SKILL.md": {
+    "mtime": 1795159921.693502,
+    "seen": 1795406053.059305,
+    "ast_hash": "0289072d6ac465388d2a56bf72384779",
+    "semantic_hash": "0289072d6ac465388d2a56bf72384779"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/README.md": {
+    "mtime": 1795159921.6940062,
+    "seen": 1795406053.0593054,
+    "ast_hash": "8720c8e233b1a507c2e24b40014061b3",
+    "semantic_hash": "8720c8e233b1a507c2e24b40014061b3"
+  },
+  ".claude/skills/gdd-v1/examples/vi-du-vat-dong-bang/mini-gdd.md": {
+    "mtime": 1795159921.695015,
+    "seen": 1795406053.0593064,
+    "ast_hash": "be6dd2289857b177652afd196a3bf5fc",
+    "semantic_hash": "be6dd2289857b177652afd196a3bf5fc"
+  },
+  "CLAUDE.md": {
+    "mtime": 1795404059.4925346,
+    "seen": 1795406053.0593073,
+    "ast_hash": "87a3a7f9012ef1a82ba9ec42a5390a92",
+    "semantic_hash": "87a3a7f9012ef1a82ba9ec42a5390a92"
+  },
+  "production/reports/2026-11-23-humanizer-gdd-chi-tiet.md": {
+    "mtime": 1795402776.8712142,
+    "seen": 1795406053.0593228,
+    "ast_hash": "493117a9d14286a9299610d774824c8d",
+    "semantic_hash": "493117a9d14286a9299610d774824c8d"
+  },
+  "production/reports/2026-11-23-humanizer-gdd.md": {
+    "mtime": 1795405409.5121465,
+    "seen": 1795406053.0593238,
+    "ast_hash": "5d150ab7c6019afa8a314b815a0e39c5",
+    "semantic_hash": "5d150ab7c6019afa8a314b815a0e39c5"
+  },
+  "projects/game-moi/sim/bo-cuc.md": {
+    "mtime": 1795159921.7556932,
+    "seen": 1795406053.0593364,
+    "ast_hash": "f81dcfa8ace94eb7ae3aa1f0669bcbd4",
+    "semantic_hash": "f81dcfa8ace94eb7ae3aa1f0669bcbd4"
+  },
+  "projects/game-moi/sim/ngan-sach-oxy.md": {
+    "mtime": 1795159921.7576933,
+    "seen": 1795406053.0593371,
+    "ast_hash": "8745d979e1f7d8c5f32675217e74771a",
+    "semantic_hash": "8745d979e1f7d8c5f32675217e74771a"
+  }
+}
