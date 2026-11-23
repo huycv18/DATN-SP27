@@ -4,7 +4,7 @@ STT	Issue	Ref 1	Ref 2	Note
 3	Tham gia thế giới	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Tìm thế giới của bạn. Chọn bạn bè hoặc nhập mã. Báo "Phòng đầy" khi hết chỗ. Nút chính: Vào. Thoát: Esc về Menu chính. Vào từ: Menu chính. Ra tới: Cảnh tỉnh dậy. Nhãn: MVP.
 4	Cảnh tỉnh dậy	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Cảnh mở đầu hoặc cảnh đến, xem nhân vật tỉnh dậy. Bấm một lần ở câu nào cũng bỏ qua cả cảnh. Nút chính: Bỏ qua hoặc xem tiếp. Vào từ: màn Tạo thế giới, Tham gia thế giới. Ra tới: Trạm mặt cắt. Nhãn: MVP.
 5	Trạm mặt cắt	ux-ui.md mục 2.4 và 2.5	ux-ui.md mục 2.8, Figma Wireframe MVP	"Mặt cắt Station Ember 3 tầng, đi bộ tới khoang cần dùng để sửa, chế, lập danh mục bán.
-Khi có người còn ngoài chuyến là trạng thái Chờ nhóm: thấy hàng đồng đội, xem bản đồ chuyến chỉ xem, ping nhắc, chế trước. Không có nút thoát, thoát game qua Esc.
+Khi còn người ngoài chuyến thì màn ở trạng thái Chờ nhóm: thấy hàng đồng đội, xem bản đồ chuyến chỉ xem, ping nhắc, chế trước. Không có nút thoát, thoát game qua Esc.
 Nút chính: đi tới khoang kế tiếp trong mục tiêu.
 Vào từ: Cảnh tỉnh dậy, Kết chuyến, Bị kéo về, Cuối ngày. Ra tới: mọi màn trong trạm, Cửa khí, HUD ca cảng. Nhãn: MVP."
 6	Cửa khí	ux-ui.md mục 2.4 và 2.5	Figma Wireframe MVP	Chọn dụng cụ trong đai (3 ô ở bậc 0), xác nhận ra ngoài hoặc ở lại trạm, xem số chuyến hôm nay. Nút chính: Xác nhận ra ngoài. Thoát: Esc ở lại trạm. Vào từ: Trạm mặt cắt (bấm E ở cửa khí). Ra tới: HUD bay hoặc Trạm mặt cắt. Nhãn: MVP.

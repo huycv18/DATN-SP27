@@ -2,8 +2,8 @@ STT	Task	Sub Task	Short Description	Ref
 1	Luật chung	Cách mua	Nâng cấp ở Xưởng, tốn Tally cộng vật liệu. Mua xong thì làm qua đêm, sáng hôm sau có hiệu lực. Bộ đồ (Bình Oxy, Túi đồ, Bộ đẩy, Vỏ bộ đồ, Đai dụng cụ) từ bậc 2 cần Xưởng cấp 2. Dụng cụ không cần	kinh-te-tien-trinh.md mục 2.2
 		Co-op	Mua một lần, cả nhóm cùng được. Giá không đổi theo số người
 		Không chặn chương	Không nâng cấp nào chặn qua chương. Thứ chương trước chưa mua vẫn mua được với giá cũ
-		Cách đánh bậc	Bộ đồ tính từ bậc 0, dụng cụ tính từ bậc 1. Nên nâng cấp dụng cụ đầu tiên là bậc 2
-2	Bình Oxy	Loại	Chỉ là số: Oxy nhiều hơn thì chuyến dài hơn. Cùng Túi đồ là hai nâng cấp chính để tăng thu nhập	kinh-te-tien-trinh.md mục 3.2, nguoi-choi.md mục 2.6
+		Cách đánh bậc	Bộ đồ tính từ bậc 0, dụng cụ tính từ bậc 1. Vì thế nâng cấp đầu tiên của dụng cụ là bậc 2
+2	Bình Oxy	Loại	Chỉ là số: Oxy nhiều hơn thì chuyến dài hơn. Cùng với Túi đồ, đây là hai nâng cấp chính làm tăng thu nhập	kinh-te-tien-trinh.md mục 3.2, nguoi-choi.md mục 2.6
 		Bậc 1	Oxy 330 lên 450. 1450 Tally, vật liệu 26,0 GTĐ. Mở chương 1 (Kỹ sư). MVP
 		Bậc 2	Oxy 600. 5000 Tally, vật liệu 49,4 GTĐ. Mở chương 2, cần Xưởng cấp 2. Sau MVP
 		Bậc 3	Oxy 780. 18350 Tally, vật liệu 74,4 GTĐ. Mở chương 3. Sau MVP
@@ -32,7 +32,7 @@ STT	Task	Sub Task	Short Description	Ref
 		Bậc 3	20 sát thương, nhịp 0,7 s, tầm 10 u, móc dây kéo được cả cỡ M đang Bất lực. 1500 Tally, vật liệu 43,4 GTĐ. Mở chương 2. Sau MVP
 9	Súng lưới	Loại	Chỉ là số: vùng lưới rộng hơn	kinh-te-tien-trinh.md mục 3.2, vat-pham.md mục 2.4
 		Bậc 2	Bán kính lưới 2,2 u, nạp lại 2,5 s, tầm 8 u, tối đa 3 con. 1500 Tally, vật liệu 25,7 GTĐ. Mở bằng Bản thiết kế Súng lưới bậc 2 (nghiên cứu Driftmoth sống, chương 2). Sau MVP
-10	Nâng cấp khoang	Loại	Mở khả năng: khoang thêm tính năng. Trong lúc nâng cấp khoang vẫn dùng được	kinh-te-tien-trinh.md mục 3.2, tram-va-cang.md mục 2
+10	Nâng cấp khoang	Loại	Mở khả năng: khoang thêm tính năng. Trong lúc nâng cấp, khoang vẫn dùng được	kinh-te-tien-trinh.md mục 3.2, tram-va-cang.md mục 2
 		Xưởng cấp 2	Chế 2 mẻ song song, làm được nâng cấp bậc 2. 4000 Tally, vật liệu chưa có số. Mở chương 2. Sau MVP
 		Khoang sinh quyển cấp 3	Môi trường dải Xa, nuôi được loài dải Xa. 14700 Tally, vật liệu chưa có số. Mở chương 3. Sau MVP
 		Cấp 3 các khoang còn lại	Cấp 3 của từng khoang trừ khoang sinh quyển, giá ở đây là tổng các khoang đó. 18350 Tally, vật liệu chưa có số. Mở chương 4. Sau MVP

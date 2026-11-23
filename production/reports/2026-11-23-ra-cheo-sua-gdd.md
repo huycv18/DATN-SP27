@@ -56,3 +56,28 @@ Ghi ở `projects/game-moi/DECISIONS.md` mục "Rà chéo 23 tab Sheet". Gồm: 
 
 - Hàng mới chèn ở Assets, AUDIO, Upgrade, ECONOMIC lấy định dạng của hàng ngay trên. Chưa soát mắt màu nhóm trên Sheet.
 - Rà chéo đọc TSV, không so từng chữ GAME STORY với `cot-truyen.md`.
+
+## Lượt đọc và sửa chữ (cùng ngày, sau khi Lead bảo "Đọc và sửa hết")
+
+5 agent đọc từng ô của 23 tab theo brief `projects/game-moi/briefs/2026-11-23-doc-sua-sheet.md`, chỉ đổi cách viết, tự dán Sheet chính và đối chiếu.
+
+| Nhóm | Tab | Ô đã sửa |
+|---|---|---|
+| 1 | OVERVIEW, CORE LOOP, TRACKING, Day, MVP Criteria Checklist | 15 |
+| 2 | GAME STORY, Player, Tutorials, WIREFRAME | 11 |
+| 3 | Enemy, Zone, Salvage | 8 |
+| 4 | ITEM LIST, Recipe, Event Tracking | 9 |
+| 5 | Customer, Balance Sheet, ECONOMIC, Shop, Upgrade, PROCESSING, Assets, AUDIO ASSETS LIST | 8 |
+
+Kiểm: `check_facts.py` so bản trước và sau của 19 tab có sửa, số, link, mã đều khớp. Cổng máy ĐẠT, `doi-chieu-sheet.mjs` 23 tab KHỚP.
+Sửa đáng kể: OVERVIEW giảm "khám phá" từ 6 còn 3 (3 chỗ còn lại là tên pillar và mô tả pillar 1), câu dài ở pillar 4 tách 3 câu, Zone đổi "máu" của máy phát thành "Sinh lực" cho khớp tab Enemy.
+GDM trả lại: OVERVIEW B22 ("chưa chốt nhé") là chữ Lead sửa tay, agent đã bỏ "nhé", GDM khôi phục.
+Phát hiện: `ux/xuat-sheet.mjs` và `qa/xuat-checklist-tsv.mjs` còn khuôn cũ, chạy sẽ ghi đè bản đọc. Đã ghi cấm chạy vào `tools/README.md`.
+
+Còn mở thêm:
+
+| # | Việc | Ai |
+|---|---|---|
+| 7 | MVP Checklist dòng 1 và dòng 118 ghi "hiện đạt" trong khi Status FALSE | gd-qa |
+| 8 | Zone hàng 12 ("đánh khi cách mạng nổ ra") và Enemy boss Scrapmaw ("Không cần dụng cụ chương 2") mơ hồ, sửa phải đoán ý | gd-world, gd-combat |
+| 9 | `ux/xuat-sheet.mjs`, `qa/xuat-checklist-tsv.mjs` nên sửa theo bản đọc hoặc bỏ | gd-tech |

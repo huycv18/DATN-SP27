@@ -32,4 +32,6 @@ Vai đổi số: sửa GDD hoặc file tham số, chạy lại lệnh sim, đọ
 | `python -X utf8 -I projects/game-moi/tools/ban-do-tri-thuc/trich_sao.py` | Sinh lại `ban-do-tri-thuc/sao.json` (cây sao từ 11 GDD, trọng số và liên hệ chéo từ `graphify-out/graph.json`) và `ban-do-mot-file.html` (nhúng sẵn dữ liệu, nháy đúp mở thẳng). Chạy sau khi sửa GDD, làm mới graphify hoặc sửa `index.html` |
 | `python -m http.server 8791` trong `ban-do-tri-thuc/`, mở `http://127.0.0.1:8791/` | Xem bản đồ sao ở máy (trang đọc `sao.json` nên không mở thẳng file được). Bản đăng: claude.ai/artifact/4Kji863AvcdJYsxHp9DpMt |
 
+Không chạy `ux/xuat-sheet.mjs` và `qa/xuat-checklist-tsv.mjs`: hai script này còn khuôn cũ, chạy sẽ ghi đè bản đọc sửa tay của WIREFRAME, Tutorials và MVP Criteria Checklist. Ba tab này sửa thẳng trong TSV như các tab khác (2026-11-23).
+
 Quy ước cho mọi vai: tên file TSV trùng tên tab, hàng 1 của TSV là header và ứng với hàng 2 của tab (hàng 1 là tiêu đề tab), xuống dòng trong ô ghi `\n`. gid các tab ở `tham-so/sheet.json`. Sheet phải chia sẻ bằng link (đọc không cần đăng nhập), nếu không thì dùng `/gdd-sheet-sync doi-chieu` qua trình duyệt.

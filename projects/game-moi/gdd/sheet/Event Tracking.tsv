@@ -1,5 +1,5 @@
 STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
-1	Session	session_start	Mở thế giới	world_id\nis_host\ninput_device	Đếm phiên, thiết bị	string\nbool\nstring
+1	Session	session_start	Mở thế giới	world_id\nis_host\ninput_device	Số phiên và thiết bị đang dùng	string\nbool\nstring
 2	Session	session_end	Thoát hoặc rớt	reason (quit, host_lost, crash)\nminutes	Phiên dài bao lâu, rớt mạng bao nhiêu	string\nfloat
 3	Session	player_join	Người vào giữa chừng	player_id\nphase	Vào giữa chừng có chờ lâu không	string\nstring
 4	Session	player_leave	Người rời	player_id\nphase\nreason	Ai rời, lúc nào, vì sao	string\nstring\nstring
@@ -11,7 +11,7 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 10	Trip	player_oxy_threshold	Oxy qua 50, 25, 10, 0%	player_id\nthreshold\ntrip_seconds\ncan_return	Ngưỡng cảnh báo có kịp không	string\nint\nfloat\nbool
 11	Trip	player_hit	Người chơi trúng đòn hoặc hazard	player_id\nsource_id\ndmg_raw\ndmg_final	Combat và hazard ăn bao nhiêu Oxy	string\nstring\nfloat\nfloat
 12	Trip	player_dash	Lướt	player_id\noxy_cost	Lướt có thành cách đi chính không	string\nfloat
-13	Trip	player_choking_start	Oxy về 0	player_id\nx\nbag_value	Tỉ lệ ngạt	string\nfloat\nfloat
+13	Trip	player_choking_start	Oxy về 0	player_id\nx\nbag_value	Tỉ lệ người chơi bị ngạt	string\nfloat\nfloat
 14	Trip	player_choking_end	Hết ngạt	player_id\nresult (rescued, recovered, pulled_back)\nkept_item	Co-op cứu được bao nhiêu	string\nstring\nstring
 15	Trip	player_oxy_share	Chia Oxy xong	from\nto\namount	Chia Oxy cho đồng đội nhiều hay ít	string\nstring\nfloat
 16	Trip	recall_start	Bắt đầu giữ Recall Beacon	player_id\nbeacon_id	Số lần giữ Recall Beacon	string\nstring
@@ -19,7 +19,7 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 18	Trip	branch_enter	Vào map nhánh	player_id\nbranch_id\nvia (gate, skiff)	Vào map nhánh bằng cổng hay Skiff	string\nstring\nstring
 19	Trip	player_trip_end	Mỗi người kết thúc chuyến	player_id\nend_type (airlock, recall, pulled_back, left)\nload\nbag_value\noxy_left\nend_reason (bag_full, oxy, choice)	Chuyến về vì túi hay vì Oxy (sim chuyến)	string\nstring\nfloat\nfloat\nfloat\nstring
 20	Trip	trip_end	Người cuối cùng về	minutes\nteam_value	Thời lượng chuyến nhóm	float\nfloat
-21	Item	item_pickup	Nhặt hoặc khai thác xong	player_id\nitem_id\nqty\nsource_id	Lượng nhặt theo dải và theo người (k(N))	string\nstring\nint\nstring
+21	Item	item_pickup	Nhặt hoặc khai thác xong	player_id\nitem_id\nqty\nsource_id	Lượng nhặt theo dải và theo người, để kiểm hệ số co-op k(N)	string\nstring\nint\nstring
 22	Item	item_lost_on_recall	Bị kéo về	player_id\nlost (list)\nkept	Bị kéo về mất bao nhiêu đồ	string\nstring\nstring
 23	Item	item_craft	Chế xong	recipe_id\nroom\nqty	Công thức nào được dùng	string\nstring\nint
 24	Combat	creature_disabled	Driftlife vào Choáng hoặc Ngủ	creature_id\nkind (stun, sleep)\nn_attackers	Driftlife có bị khóa liên tục không	string\nstring\nint
@@ -39,7 +39,7 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 38	Port	incident	Sự cố bắt đầu hoặc xong	incident_id\nstate\nseconds	Sự cố kéo dài bao lâu	string\nstring\nfloat
 39	Station	room_repaired	Khoang sửa xong	room_id\nlevel	Nhịp sửa trạm theo ngày	string\nint
 40	Station	survivor_awake	Người vớt tỉnh	survivor_id	Nhịp người vớt tỉnh theo ngày	string
-41	Economy	tally_gain	Nhận Tally	source (crate, tip, air_pump, preorder)\namount	Tỉ lệ Tally từ cảng	string\nint
+41	Economy	tally_gain	Nhận Tally	source (crate, tip, air_pump, preorder)\namount	Tally từ cảng chiếm bao nhiêu phần	string\nint
 42	Economy	tally_spend	Tiêu Tally	item_id\namount	Tiêu Tally vào đâu	string\nint
 43	Economy	port_rank_up	Lên Hạng cảng	rank\nday	Số ngày tới Hạng 3	int\nint
 44	Story	story_beat_done	Mốc truyện xong	beat_id	Thời lượng từng chương	string
@@ -51,7 +51,7 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 50	Trip	zone_exit	Ra dải	player_id\nzone	Thời gian ở mỗi dải	string\nstring
 51	Trip	branch_exit	Ra map nhánh	player_id\nbranch_id\nminutes	Thời lượng mỗi lần vào map nhánh	string\nstring\nfloat
 52	Trip	branch_unlock	Mở khóa cửa hay vách map nhánh	branch_id\nlock_id	Mở cửa hoặc vách map nhánh	string\nstring
-53	Trip	hazard_warn	Hazard bắt đầu báo trước gần người chơi	hazard_id\nwarn_seconds	Báo trước đo trên build từ 1 giây (map.md tiêu chí)	string\nfloat
+53	Trip	hazard_warn	Hazard bắt đầu báo trước gần người chơi	hazard_id\nwarn_seconds	Thời gian báo trước, đo trên build, tiêu chí từ 1 giây ở map.md	string\nfloat
 54	Combat	creature_wake	Driftlife tỉnh khỏi Choáng hoặc Ngủ	creature_id\nkind	Driftlife tỉnh sau bao lâu	string\nstring
 55	Combat	attack_ticket	Vé tấn công cấp hoặc trả	creature_id\nplayer_id\nstate	Áp lực mỗi người	string\nstring\nstring
 56	Station	creature_born	Con non sinh ở khoang sinh quyển	species_id	Nhịp nuôi	string
@@ -71,6 +71,6 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 70	UX	ux_settings_change	Đổi một cài đặt	key\nvalue	Cài đặt nào hay bị đổi	string\nstring
 71	UX	ux_dead_end	Đứng yên ở một màn trên 20 giây	screen_id\nidle_seconds	Màn nào làm người chơi bí	string\nfloat
 72	Port	air_pump_done	Bơm khí xong	player_id\nship_type\npatience_gain_pct\ntally	Việc phụ có được làm không	string\nstring\nfloat\nint
-73	Port	port_player_idle	Kết ca, mỗi người một dòng	player_id\nidle_seconds\nshift_seconds	Rảnh mỗi người tối đa 30% ở người chơi trễ 2 giây. Rảnh là lúc không có thùng nào chờ nhặt, không đang cầm thùng, không có tàu chờ bơm khí	string\nfloat\nfloat
-74	Mọi nhóm	(trường chung)	Kèm mọi sự kiện ở trên	session_id\nworld_id\nworld_seed\nbuild\nt\nplay_seconds_total\nday\nchapter\nn_players\nslot	Ghi ra file JSON Lines cục bộ mỗi phiên, không gửi mạng. Sự kiện do host nắm chỉ máy host ghi, sự kiện của người chơi mỗi máy tự ghi, gộp theo session_id	string\nstring\nint\nstring\nfloat\nfloat\nint\nint\nint\nint
+73	Port	port_player_idle	Kết ca, mỗi người một dòng	player_id\nidle_seconds\nshift_seconds	Mỗi người rảnh tối đa 30% khi người chơi trễ 2 giây. Rảnh là lúc không có thùng nào chờ nhặt, không đang cầm thùng, không có tàu chờ bơm khí	string\nfloat\nfloat
+74	Mọi nhóm	(trường chung)	Kèm mọi sự kiện ở trên	session_id\nworld_id\nworld_seed\nbuild\nt\nplay_seconds_total\nday\nchapter\nn_players\nslot	Ghi ra file JSON Lines cục bộ mỗi phiên, không gửi mạng. Sự kiện do host nắm thì chỉ máy host ghi, sự kiện của người chơi thì máy nào tự ghi máy đó, gộp theo session_id	string\nstring\nint\nstring\nfloat\nfloat\nint\nint\nint\nint
 	Ref				Bản đủ: ky-thuat.md mục 2.4. Sự kiện của tính năng Sau MVP chỉ ghi khi tính năng có trong build	

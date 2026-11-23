@@ -5,7 +5,7 @@ STT	Task	Sub Task	Short Description	Ref	Ref 2
 2	Pillar trong vòng chơi	Vai trò	Vòng chơi phục vụ đúng 5 Core Pillars và nguyên tắc nền đã chốt ở tab OVERVIEW. Mỗi pillar có một chặng của vòng gánh chính. Xung đột thì ưu tiên theo thứ tự 1 đến 5	00-khung-game.md mục 2
 		1. Khám phá	Chặng gánh: Ra ngoài thu thập. Map tổng sinh lại mỗi chuyến, mỗi chương mở vùng mới, map nhánh dựng tay giữ người vớt, manh mối và boss	00-khung-game.md mục 2
 		2. Rủi ro và phần thưởng	Chặng gánh: Ra ngoài thu thập. Oxy vừa là thời gian vừa là máu, túi có giới hạn. Đi càng xa hàng càng quý nhưng đường về càng dài	00-khung-game.md mục 2
-		3. Quản lý và tối ưu	Chặng gánh: Sửa trạm, chế đồ, nuôi và ca cảng. Người chơi chọn sửa khoang nào trước, nuôi loài nào, bán hàng gì trong ca cảng, mang thùng kịp trước khi tàu hết kiên nhẫn	00-khung-game.md mục 2
+		3. Quản lý và tối ưu	Chặng gánh: Sửa trạm, chế đồ, nuôi Driftlife và Ca cảng. Người chơi chọn sửa khoang nào trước, nuôi loài nào, bán hàng gì trong ca cảng, mang thùng kịp trước khi tàu hết kiên nhẫn	00-khung-game.md mục 2
 		4. Phát triển liên tục	Chặng gánh: Nâng cấp. Tally mở cấp bộ đồ, dụng cụ, khoang, từ đó vào được dải mới, chuyến dài hơn, bắt được loài lớn hơn. Đích cuối là sửa xong động cơ và rời neo	00-khung-game.md mục 2
 		5. Đa dạng và bất ngờ	Chặng gánh: Mở thêm truyện. Mỗi chương thêm kiểu chơi mới, người vớt mới, thương nhân mỗi loài một tính cách	00-khung-game.md mục 2
 		Nguyên tắc nền: Một mình vẫn trọn	Mọi chặng đúng với 1 đến 4 người. Chơi một mình là cách chơi chính ngang co-op. Thêm người là thêm tay, không mở thêm nội dung	00-khung-game.md mục 2
@@ -21,7 +21,7 @@ STT	Task	Sub Task	Short Description	Ref	Ref 2
 		Bắt sống	Loài cỡ S và M bắt sống luôn có giá trị hơn hạ. Driftlife sống dùng để nuôi, nghiên cứu, giao đơn cảng giá cao. Hạ thì chỉ được nguyên liệu. Loài cỡ L không bắt sống được, chỉ lấy mẫu sinh thiết	combat-driftlife.md
 		Trần hồi Oxy	Oxy hồi từ vật tiêu hao trong một chuyến tối đa 25% dung tích bình. Không dùng được khi đang ngạt, không hồi quá dung tích	nguoi-choi.md
 		Ngạt không trao đồ	Người đang ngạt không trao hay thả đồ được. Đồng đội cứu bằng cách chia Oxy, không lấy túi hộ	nguoi-choi.md
-5	Luật trạm và cảng	Neo và rời neo	Ember neo một chỗ suốt game. Việc sửa đầu tiên là hãm trôi và neo. Sửa động cơ chính là mục tiêu dài nhất, xong thì rời neo đi tới hành tinh thật Sevra trao tọa độ, game kết (kết mở)	tram-va-cang.md
+5	Luật trạm và cảng	Neo và rời neo	Ember neo một chỗ suốt game. Việc sửa đầu tiên là hãm trôi và neo. Sửa động cơ chính là mục tiêu dài nhất, xong thì rời neo đi tới hành tinh thật mà Sevra trao tọa độ. Game kết mở	tram-va-cang.md
 		Khoang	Khoang hỏng phải sửa bằng vật liệu mang về. Mỗi khoang sửa xong đổi hình trạm và trả lại một chức năng	tram-va-cang.md
 		Người vớt mở tính năng	Mỗi người vớt mở một tính năng qua quest nhỏ hoặc mốc chương: Kỹ sư mở xưởng, Thông dịch viên mở khoang liên lạc, ca cảng và Shop, Hoa tiêu mở dải Xa và Skiff, Nhà sinh học mở nghiên cứu và nuôi, Trưởng cảng mở bến và tiện ích cảng	tram-va-cang.md
 		Ca cảng	Nửa chơi tay thứ hai, theo khung bán sushi của Dave the Diver. Trước ca lập danh mục bán, Thông dịch viên tự đóng thùng\nTrong ca tàu cập vào cửa neo, mỗi tàu gọi 1 thùng. Mang thùng từ quầy tới đúng tàu, bơm khí cho tàu đang chờ. Nhận giá thùng và tip theo kiên nhẫn còn lại. Tàu chỉ mua, không bán	tram-va-cang.md

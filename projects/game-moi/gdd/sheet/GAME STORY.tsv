@@ -132,7 +132,7 @@ STT	Tên	Nghĩa
 						
 9. LUẬT KỂ CHUYỆN (nguồn: cot-truyen.md mục 2.1)						
 STT	Chủ đề	Luật	Phạm vi			
-1	Một đường	Truyện đi một đường: không lựa chọn hội thoại, không nhánh, không nhiều kết. Truyện không có trạng thái thua	MVP			
+1	Một đường	Truyện đi một đường: không lựa chọn hội thoại, không nhánh, không nhiều kết, không có trạng thái thua	MVP			
 2	Không khóa vòng ngày	Truyện không khóa vòng ngày. Mốc chưa xong thì người chơi vẫn ra ngoài, làm ca cảng, nâng cấp. Mốc chỉ khóa nội dung mới: dải, map nhánh, tính năng, loại tàu	MVP			
 3	Mốc truyện	Mỗi mốc có danh sách điều kiện và đúng một nơi diễn ra. Mốc xong ngay khi mọi điều kiện cùng đúng, cảnh chỉ là phần trình bày	MVP			
 4	Vật manh mối	Vật manh mối chỉ đặt ở map nhánh, chỗ cố định. Nhặt là ghi ngay vào Sổ tay của cả nhóm, không chiếm túi, không mất khi bị kéo về	MVP			
@@ -144,7 +144,7 @@ STT	Chủ đề	Luật	Phạm vi
 10	Người vớt tỉnh dậy	Người vớt nằm trong buồng tỉnh vào đầu ngày kế tiếp sau khi buồng về trạm, rồi mới giao quest. Quest không giới hạn thời gian	MVP			
 11	Lời thoại	Lời truyện không chứa số và không dạy thao tác. Mỗi người chơi xem mỗi cảnh nhiều nhất một lần	MVP			
 12	Chuyện thương nhân	Mỗi thương nhân có tên có một chuỗi chuyện riêng 3 đoạn, mở dần theo số lần phục vụ xong tàu của họ	Sau MVP			
-13	Cam kết	Cam kết với người chơi: không bao giờ lỡ một mốc, không bao giờ mất manh mối hay vật nhiệm vụ, luôn bỏ qua được cảnh, luôn biết việc kế tiếp	MVP			
+13	Cam kết	Với người chơi: không bao giờ lỡ một mốc, không bao giờ mất manh mối hay vật nhiệm vụ, luôn bỏ qua được cảnh, luôn biết việc kế tiếp	MVP			
 						
 10. GIỌNG VĂN (nguồn: cot-truyen.md mục 13)						
 STT	Chủ đề	Quy tắc				
@@ -152,7 +152,7 @@ STT	Chủ đề	Quy tắc
 2	Hài	Hài nhẹ đến từ tính cách và chỗ lệch văn hóa giữa các loài, không từ câu đùa. Không hài ở mốc mất mát				
 3	Cách nói	Nhân vật nói với nhau như người cùng làm việc, không giảng giải thế giới				
 4	Phe Daskel	Daskel và The Wardens nói bằng từ của trật tự và bổn phận: giữ, canh, bảo hộ. Không bao giờ lên giọng. Người Sennari ngoài chế độ nói bằng nghi thức				
-5	Độ dài câu	Độ dài: hộp thoại tối đa 80 ký tự, bong bóng và radio tối đa 60 ký tự				
+5	Độ dài câu	Hộp thoại tối đa 80 ký tự, bong bóng và radio tối đa 60 ký tự				
 6	Điều cấm	Cấm: chữ số, tên phím, thuật ngữ luật chơi trong lời thoại. Cấm trách người chơi vì đã săn Driftlife				
 7	Phản diện	Cấm nói cả chủng tộc Sennari là xấu. Kẻ xấu là Daskel và chế độ của hắn, động cơ là hận thù và giữ quyền, không phải tham của				
 8	Bí mật Solace	Trước khi đóng chương 3, không nhân vật nào nói thẳng Solace không có thật. Chỉ gieo nghi ngờ				

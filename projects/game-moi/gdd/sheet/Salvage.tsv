@@ -6,7 +6,7 @@ STT	Task	Sub Task	Short Description	Ref
 Số lần quay bảng rơi: 1"	
 		Resource Output	"- Mảnh vỏ Cradle: trọng số 60, số lượng 1
 - Dây cáp đứt: trọng số 40, số lượng 1"	
-		Spawn Point	Dải Gần, điểm sinh tài nguyên các mảnh Mở, Hành lang, Ổ. Tối đa 25% điểm sinh tài nguyên của một mảnh, hai khe cách nhau ít nhất 2 u	
+		Spawn Point	Dải Gần, điểm sinh tài nguyên của các mảnh Mở, Hành lang, Ổ. Tối đa 25% điểm sinh tài nguyên của một mảnh, hai khe cách nhau ít nhất 2 u	
 2	Mạch quặng sắt	Type	Điểm khai thác, Gần. Nhãn: MVP	vat-pham.md mục 3
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
 Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	

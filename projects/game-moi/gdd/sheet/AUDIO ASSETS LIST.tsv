@@ -1,11 +1,11 @@
 STT	Name	Link	Note	Web Ref
-1	BGM_Station_Day		Nhạc nền trong trạm, ấm hơn so với bên ngoài. MVP. Hài chỉ ở trong trạm và ca cảng. Nguồn: cot-truyen.md mục 7b	
+1	BGM_Station_Day		Nhạc nền trong trạm, ấm hơn so với bên ngoài. MVP. Chất hài chỉ có ở trong trạm và ca cảng. Nguồn: cot-truyen.md mục 7b	
 2	BGM_Port_Shift		Nhạc ca cảng, nhịp nhanh vừa phải, không đếm ngược hét lên. MVP. Nguồn: tram-va-cang.md mục 7b	
 3	BGM_Wake_Near		Nhạc nền dải Gần (Ember Anchorage). Đổi tầng nhạc khi qua ranh dải. MVP. Nguồn: map.md mục 7	
 4	BGM_Wake_Mid		Nhạc nền dải Giữa (Shepherd Belt). Sau MVP. Nguồn: map.md mục 7	
 5	BGM_Wake_Far		Nhạc nền dải Xa (Glass Nebula). Sau MVP. Nguồn: map.md mục 7	
 6	BGM_Boss_Scrapmaw		Nhạc boss Scrapmaw, đổi đoạn khi chuyển pha. MVP. Nguồn: combat-driftlife.md mục 7	
-7	BGM_Boss_Generic		Nhạc boss các map nhánh sau (các boss sau), đổi đoạn theo pha. Sau MVP. Nguồn: combat-driftlife.md mục 7	
+7	BGM_Boss_Generic		Nhạc boss các map nhánh sau, đổi đoạn theo pha. Sau MVP. Nguồn: combat-driftlife.md mục 7	
 8	BGM_Theme_Ending		Nhạc chủ đề đủ bài cho cảnh ngoài bãi vỡ, cho cảm giác thắng trước khi câu hỏi kết mở. Sau MVP. Nguồn: cot-truyen.md mục 7, 7b	
 9	SFX_Thrust_Loop		Bộ đẩy xì nhẹ liên tục theo tốc độ. MVP. Nguồn: nguoi-choi.md mục 7	
 10	SFX_Brake		Hãm xì ngắn gắt. MVP. Nguồn: nguoi-choi.md mục 7	

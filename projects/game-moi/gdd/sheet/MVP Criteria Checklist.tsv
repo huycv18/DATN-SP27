@@ -59,9 +59,9 @@ STT	Feature/Metric	Category	Acceptance Criteria	Status	Actual Result	Notes
 58	Tài nguyên riêng mỗi dải	Dữ liệu	Mỗi dải có ít nhất 2 tài nguyên riêng. Gần 6, Giữa 4, Xa 5 cộng Cradle 1	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 59	Biên lợi công thức	Cân bằng	Hệ số lợi nằm trong khoảng cho phép. Đạt trừ công thức Lồng cỡ M (0,24, loại hàng sống không có kiểm)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 60	Mẫu sống trên hạ	Cân bằng	Mẫu sống chia hạ từ 1,5 đến 2,0 cho cỡ S và M. Sinh thiết cỡ L đứng ngoài luật này	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
-61	Không ghi giá Tally trong tab vật phẩm	Quy tắc	Chữ "Tally" chỉ xuất hiện ở chỗ phần kinh tế giữ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+61	Không ghi giá Tally trong tab vật phẩm	Quy tắc	Chữ "Tally" chỉ xuất hiện ở phần thuộc kinh tế	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 62	Đủ số lượng nhãn MVP	Phạm vi	6 tài nguyên, 5 linh kiện chế, 9 kiện (Kiện nước tinh khiết là kiện chế duy nhất), 6 nâng cấp, 2 vật tiêu hao, 5 dụng cụ cộng chìa, 4 loài với 3 loài cỡ S bắt sống	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
-63	Không còn dấu chờ	Quy tắc	Dấu chờ chỉ còn ở phần kinh tế giữ, không còn dấu chờ nào ở món đã có giá	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+63	Không còn dấu chờ	Quy tắc	Dấu chờ chỉ còn ở phần thuộc kinh tế, không còn dấu chờ nào ở món đã có giá	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 64	Sim vật phẩm	Cân bằng	Sim in ra: thời gian làm đầy túi, thu nhập một ngày của chuỗi thô và chuỗi tinh, mức trội của chiến lược nhặt, giá trị lồng ròng mỗi loài bằng 1,5 đến 2,0 lần giá trị hạ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 65	Giá trị đồ mỗi chuyến	Cân bằng	Giá trị đồ mỗi chuyến đo ở sim chuyến (sim-chuyen.md)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 66	Thời gian làm đầy túi	Nhịp	Túi đầy sau 60 đến 70% thời gian chuyến ở chương 1 (ước tay 56 đến 63%, chờ sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
@@ -71,7 +71,7 @@ STT	Feature/Metric	Category	Acceptance Criteria	Status	Actual Result	Notes
 70	Sinh bố cục dải Gần	Kỹ thuật	1000 chuyến liền nhau: 100% hợp lệ, dưới 1% dùng bố cục dự phòng. Đo được 0,00% ở 3 seed	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
 71	Đa dạng bố cục	Kỹ thuật	Hai chuyến liền nhau: không quá 5 trên 10 ô ghép cùng mảnh cùng ô, không beacon cùng ô. Đo được lớn nhất 5, beacon trùng 0%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
 72	Thời lượng chuyến chương 1 (map)	Cân bằng	Trung vị 4 đến 6 phút. Đo được 4,4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
-73	Tỉ lệ bị kéo về (map)	Cân bằng	Cẩn thận dưới 5%, tham 15 đến 40%. Cẩn thận đạt, tham chưa đạt (xem bảng mục tiêu lệch)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+73	Tỉ lệ bị kéo về (map)	Cân bằng	Cẩn thận dưới 5%, tham 15 đến 40%. Cẩn thận đạt, tham chưa đạt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
 74	Báo trước hazard	Cảm giác	Mỗi hazard gây hại báo trước ít nhất 1 giây tính từ lúc thấy. Mảnh trôi có chỉ báo ở mép màn hình	FALSE	Chưa chấm, chưa có build	Nhãn: MVP cho Mảnh trôi, Cáp chập, Ống xì. Cách kiểm: Máy. Nguồn: map.md
 75	Hazard trừ Oxy	Cân bằng	Mảnh trôi trừ 8, Cáp chập trừ 12 (một lần mỗi tia), Ống xì không trừ. Ghi qua event trúng hazard	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
 76	Chơi một mình ở Station Cinder	Luồng	Đi hết lần 1 và lần 2, vớt Ingrid và Linh, hạ hoặc xua Scrapmaw. Rút giữa trận qua beacon được, không phải chạy ngang boss tới phòng sau	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
