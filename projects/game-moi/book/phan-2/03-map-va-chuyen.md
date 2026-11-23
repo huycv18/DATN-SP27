@@ -4,7 +4,7 @@ Map là nửa ra ngoài của The Novent. Mỗi ngày người chơi rời cửa
 
 ### II.3.1. Overview
 
-Không gian ngoài trạm có hai loại. **Map tổng The Wake** là bãi vỡ quanh trạm, được ghép lại mỗi chuyến từ các khối dựng tay, nên mỗi lần ra là một bố cục mới. Trạm, xác lớn và lối vào các khu đặc biệt thì luôn ở chỗ cũ, người chơi không bao giờ lạc. **Map nhánh** là khu dựng tay cố định vào qua một lối trong map tổng, nơi giữ truyện, người vớt và boss.
+Không gian ngoài trạm có hai loại. **Map tổng The Wake** là bãi vỡ quanh trạm, được ghép lại mỗi chuyến từ các khối dựng tay, nên mỗi lần ra là một bố cục mới. Trạm, Ember Mooring và lối vào các khu đặc biệt, kể cả vỏ xác Station Cinder, thì luôn ở chỗ cũ, người chơi không bao giờ lạc. **Map nhánh** là khu dựng tay cố định vào qua một lối trong map tổng, nơi giữ truyện, người vớt và boss.
 
 Một **chuyến** là một lần ra ngoài rồi về. Chuyến bắt đầu khi người chơi bay qua cửa khí. Từ lúc đó **Oxy**, chỉ số duy nhất của người chơi ngoài không gian, giảm đều theo giây và là đồng hồ của cả chuyến. Đi xa trạm thì gặp hàng hiếm hơn, nhưng đường về dài hơn và chỗ thoát ít hơn. Người chơi về bằng cách bay lại cửa khí, hoặc tìm và kích một **Recall Beacon**, điểm thoát kéo người chơi về trạm. Hết Oxy mà không ai cứu thì bị kéo về và mất gần hết túi đồ. Vì vậy mỗi chuyến xoay quanh việc chọn đi xa tới đâu, rẽ vào khu thưởng có rủi ro hay không, và lúc nào quay về bằng đường nào.
 
@@ -129,6 +129,7 @@ flowchart TD
   A["Bay qua cửa khí, chuyến bắt đầu"] --> B["Bay, khai thác, combat. Oxy giảm theo giây"]
   B --> C{"Oxy về 0?"}
   C -->|Có| N["Ngạt, chờ cứu"]
+  C -->|Có, giữ beacon xong đúng khung đó| H
   C -->|Không, muốn về| D{"Đường về nào?"}
   D -->|Cửa khí| E["Bay vào cửa khí"]
   D -->|Beacon đã thấy| F["Đứng trong 1,5 u, giữ phím 5 giây"]
@@ -143,7 +144,7 @@ flowchart TD
 ```
 *Hình II.3.1 - Ba cách một chuyến kết thúc với một người*
 
-Đọc sơ đồ: trong chuyến Oxy luôn giảm, nên mọi nhánh đều là cuộc chạy đua với thanh Oxy. Muốn về khi còn Oxy thì có hai đường. Cửa khí không đòi gì nhưng có thể xa. Beacon thường gần hơn nhưng đòi đứng yên giữ phím, và bị Driftlife cắn một cái là phải giữ lại từ đầu. Nếu Oxy cạn trước, người chơi vào Ngạt. Đồng đội chia Oxy kịp thì bay tiếp. Chạm được cửa khí trong lúc ngạt thì vẫn tính là về an toàn. Không kịp cả hai thì bị kéo về và mất gần hết túi. Đây là lý do quyết định quay về sớm hay đi thêm một mảnh là quyết định chính của mỗi chuyến.
+Đọc sơ đồ: trong chuyến Oxy luôn giảm, nên mọi nhánh đều là cuộc chạy đua với thanh Oxy. Muốn về khi còn Oxy thì có hai đường. Cửa khí không đòi gì nhưng có thể xa. Beacon thường gần hơn nhưng đòi đứng yên giữ phím, và bị Driftlife cắn một cái là phải giữ lại từ đầu. Nếu Oxy cạn trước, người chơi vào Ngạt. Đồng đội chia Oxy kịp thì bay tiếp. Chạm được cửa khí trong lúc ngạt thì vẫn tính là về an toàn. Nếu Oxy về 0 đúng khung giữ beacon xong thì người chơi về trạm luôn, không vào Ngạt. Không kịp cả hai thì bị kéo về và mất gần hết túi. Đây là lý do quyết định quay về sớm hay đi thêm một mảnh là quyết định chính của mỗi chuyến.
 
 Trong chuyến người chơi mở **bản đồ chuyến** bằng phím M. Bản đồ hiện lưới mảnh, ô đã vào sáng và ô chưa vào tối, beacon đã thấy, lối vào map nhánh và vị trí đồng đội. Mở bản đồ không dừng thời gian.
 
@@ -164,11 +165,10 @@ OxyBayRa = KhoangCach / TocDoBay * HeSoDuongVong * HaoNen
 - KhoangCach: khoảng cách từ cửa khí tới chỗ làm việc, đơn vị u.
 - TocDoBay: tốc độ bay đều, 6,0 u/s ở bộ đẩy bậc 0. Nguồn tab Player.
 - HeSoDuongVong: hệ số bù đường không thẳng, 1,3, không đơn vị. HaoNen: 1 Oxy mỗi giây.
-- Ví dụ chương 1: OxyLamViec = 330 * 0,85 - 17 - 17 - 33 = 213 giây.
+- Ví dụ chương 1: OxyLamViec = 330 * 0,85 - 17 - 17 - 33 = 213 giây. Mỗi chặng bay 17 giây ứng với khoảng 78 u (17 * 6,0 / 1,3), 213 là làm tròn xuống từ 213,5.
 
 Từ đó trần của một chuyến chương 1:
-- Bay ra 17 giây, về 17 giây, làm việc 213 giây, dự trù trúng đòn 33 giây, tổng 280 giây, tức 4,7 phút. Túi đồ chương 1 chứa 80 Khối.
-- Bay thẳng tới mép ngoài dải Gần mất 27 giây, có đường vòng thì 35 giây.
+- Bay ra 17 giây, về 17 giây, làm việc 213 giây, dự trù trúng đòn 33 giây, tổng 280 giây, tức 4,7 phút. Túi đồ chương 1 chứa 80 Khối. Bay thẳng tới mép ngoài dải Gần mất 27 giây, có đường vòng thì 35 giây.
 
 Thời lượng thật ngắn hơn trần, vì trần chưa tính hao thêm còn sim chuyến có tính:
 - Túi gần đầy: hao nền tăng tới 1,15 lần. Kéo buồng ngủ đông: hao 1,25 lần.
@@ -191,7 +191,7 @@ Bản MVP có một map nhánh là **Station Cinder**, xác Seed Station đầu 
 |---|---|---|
 | Cửa khí hỏng | Tầng dưới, đầu trái | Lối vào và lối ra chính, beacon cố định |
 | Hành lang trục | Tầng dưới | Hai Mảnh trôi, đàn Driftmoth, phế liệu, linh kiện, một hòm kỹ thuật. Beacon ngay trước Cửa khóa nguồn để rút khỏi phòng boss |
-| Khoang ngủ đông trái | Tầng trên, lên bằng giếng ở đầu hành lang trục | Buồng của Ingrid (Kỹ sư), một buồng tắt có thẻ tên, nhật ký trạm. Vách sập ở mép phải chặn đường sang khoang ngủ đông phải, không phá được |
+| Khoang ngủ đông trái | Tầng trên, lên bằng giếng ở đầu hành lang trục | Buồng của Ingrid (Kỹ sư), một buồng tắt có thẻ tên, nhật ký trạm, một hòm kỹ thuật. Vách sập ở mép phải chặn đường sang khoang ngủ đông phải, không phá được |
 | Cửa khóa nguồn | Cuối hành lang trục | Mở bằng Bộ kích nguồn. Nhóm đã có thì ai chạm cửa cũng mở |
 | Khoang máy | Tầng dưới, sau Cửa khóa nguồn | Phòng boss Scrapmaw, lõi năng lượng, hai Cáp chập, kho hàng Seed mở sau boss |
 | Khoang lái | Đầu phải, hai tầng | Manh mối, mảnh lõi dẫn đường Cinder, một hòm kỹ thuật, beacon bật sau boss |
@@ -288,7 +288,7 @@ Chi tiết dữ liệu: tab Zone khối Ngân sách Oxy một chuyến, tab MVP 
 | Đang kéo buồng ngủ đông thì Oxy về 0 | Buồng rơi tại chỗ, ở lại map nhánh ở trạng thái chưa vớt, không mất người vớt |
 | Kéo Driftlife sống tới beacon nhưng nó ở ngoài 3 u | Driftlife không đi cùng, ở lại map |
 | Hazard đẩy người chơi vào Rạn vụn hoặc biên map | Dừng lại ở ranh, không trừ Oxy |
-| Thoát game giữa chuyến khi chơi một mình | Mất chuyến đó, không giữ món nào. Vào lại ở điểm lưu gần nhất, chơi lại ra đúng bố cục cũ |
+| Thoát game giữa chuyến khi chơi một mình | Vào lại ở điểm lưu sau chuyến trước. Chuyến dở không tính vào hạn hai chuyến của ngày, đồ nhặt trong chuyến đó mất, người chơi đi lại chuyến đó với cùng bố cục map |
 | Người chơi rút khỏi phòng boss khi boss đã mất một phần sinh lực | Boss không đuổi ra ngoài. Phòng không còn ai quá 10 giây hoặc cả nhóm về trạm thì boss hồi đầy, cửa đã mở giữ nguyên |
 
 ### II.3.z. Post-MVP

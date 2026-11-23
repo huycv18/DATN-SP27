@@ -62,7 +62,7 @@ Hệ thống này dựng toàn bộ không gian ngoài trạm: map tổng The Wa
 
 ## 1. Mục đích với người chơi
 
-Người chơi cảm thấy: mỗi lần rời cửa khí là một khoản Oxy đem đi đầu tư. Đi xa thì đổi được thứ hiếm hơn, nhưng đường về dài hơn và chỗ thoát ít hơn. Mỗi chuyến lạ đi một chút nhưng không bao giờ lạc: trạm, xác trạm lớn và lối vào map nhánh luôn ở chỗ cũ.
+Người chơi cảm thấy: mỗi lần rời cửa khí là một khoản Oxy đem đi đầu tư. Đi xa thì đổi được thứ hiếm hơn, nhưng đường về dài hơn và chỗ thoát ít hơn. Mỗi chuyến lạ đi một chút nhưng không bao giờ lạc: trạm, Ember Mooring và lối vào map nhánh (kể cả vỏ xác Station Cinder) luôn ở chỗ cũ.
 
 Quyết định người chơi đưa ra trong hệ thống này:
 1. Đi dải nào hôm nay (gần, an toàn, hàng thường hay xa, đắt Oxy, hàng hiếm).
@@ -494,7 +494,7 @@ Một người, kịch bản trung bình, theo chương:
 | Đang kéo buồng ngủ đông mà Oxy về 0 | Buồng rơi tại chỗ, ở lại map nhánh với trạng thái chưa vớt. Không mất người vớt |
 | Kéo Driftlife sống vào beacon nhưng nó ở ngoài bán kính kéo theo | Driftlife không đi cùng, ở lại map |
 | Spam phím giữ beacon (nhấn nhả liên tục) | Mỗi lần nhả là hủy, tiến độ về 0, không cộng dồn |
-| Thoát game giữa chuyến (chơi một mình) | Mất chuyến đó, không giữ món nào. Lần sau vào lại ở điểm lưu gần nhất (sau chuyến trước, sau ca cảng hoặc lúc ngủ, K23). Chơi lại chuyến đó ra đúng bố cục cũ vì seed theo ngày và số thứ tự chuyến |
+| Thoát game giữa chuyến (chơi một mình) | Nạp lại ở điểm lưu sau chuyến trước (K23). Chuyến dở không tính vào hạn 2 chuyến của ngày, đồ nhặt trong chuyến đó mất. Chơi lại chuyến đó ra đúng bố cục cũ vì seed theo ngày và số thứ tự chuyến |
 | Host thoát giữa chuyến co-op | Phiên kết thúc với mọi người, thế giới về điểm lưu gần nhất (C10, K23). Chuyến đang dở mất, chơi lại ra đúng bố cục cũ |
 | Người vào phiên giữa chuyến | Chờ ở trạm tới chuyến sau, không vào map đang chạy |
 | Sinh bố cục 20 lần đều hỏng | Dùng bố cục dự phòng dựng tay của dải, ghi log seed hỏng |
@@ -516,7 +516,7 @@ Một người, kịch bản trung bình, theo chương:
 | Thiếu 1 cấp ở Giữa, bình bậc 1 | 74 giây làm việc | Cổng mềm rất đắt, đúng ý K6: vẫn vào được dải mới |
 | Số mảnh khác nhau gặp trong một chuyến | tối đa 54 ô | 12 + 18 + 24 ô |
 | Số map nhánh cả game | 8 | 4 xác hoặc trạm con dùng chung bộ nội thất Seed Station (Cinder, Wick, Flint, phần ngoài Lantern) |
-| Người chơi không lạc | Mốc cố định nhìn được từ mọi cột của dải | Xác lớn cố định và Ember luôn chỉ trên la bàn |
+| Người chơi không lạc | Mốc cố định nhìn được từ mọi cột của dải | Ember và vỏ Station Cinder cố định, luôn chỉ trên la bàn |
 
 ## 6. Yêu cầu cho engineer và tool
 
