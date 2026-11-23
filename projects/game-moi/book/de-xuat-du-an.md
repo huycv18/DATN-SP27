@@ -39,7 +39,7 @@ Pillar đi theo đúng năm Core Pillars của Dave the Diver về tên và th�
 | CP4. Progression & Growth | Tally kiếm được dùng nâng cấp bộ đồ, dụng cụ và trạm. Nâng cấp mở dải mới, chuyến dài hơn. Đích cuối là sửa xong động cơ và rời neo | Achievement, Empowerment, Growth |
 | CP5. Variety & Delight | Cốt truyện, người vớt và thương nhân mỗi người một tính cách, hài nhẹ. Mỗi chương thêm một kiểu chơi mới để chương sau không lặp chương trước | Surprise, Humor, Relaxation |
 
-Nguyên tắc nền đứng trên năm pillar là **Solo or Together**: mọi luật đúng với mọi số người trong nhóm, chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay chia việc, không mở thêm nội dung.
+Co-op không phải một pillar mà là luật chung của mọi hệ thống (xem mục VI.2): mọi luật đúng với mọi số người trong nhóm, chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay chia việc, không mở thêm nội dung.
 
 ## IV. Player Experience Goals
 
