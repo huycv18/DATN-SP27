@@ -355,3 +355,7 @@ Hệ quả: tên Doc, tên phần và mọi tiêu đề `##`, `###` trong Doc th
 
 GDM hỏi có cho tải mermaid.min.js và pandoc để xuất sơ đồ và Google Doc không, Lead: "Cho tải".
 Hệ quả: tải mermaid 10.9.1 (jsdelivr) và pandoc 3.1.11.1 bản portable (GitHub jgm/pandoc) vào `projects/game-moi/tools/vendor/`, không commit, lệnh tải ghi ở `tools/README.md`. `tools/xuat-book.mjs` gộp Doc, vẽ sơ đồ bằng Chrome headless có sẵn trên máy, ra `book/ket-qua/book.docx`. Lead kéo file vào Drive để thành Google Doc. Không gửi nội dung lên dịch vụ vẽ sơ đồ ngoài.
+
+## 2026-11-23 - Mốc đạt playtest prototype một chuyến
+
+Lead: "Giữ mốc". Mốc của buổi playtest `qa/playtest/2026-11-23/kich-ban.md`: từ 2/3 số người muốn ra chuyến thứ hai. Từ nửa số người có ít nhất một lần dưới vạch "đủ về", và dưới 1/3 số chuyến kết thúc bằng bị kéo về. Điểm khó điều khiển trung bình từ 3 trở xuống, không ai bỏ dở bài hành lang. Tiêu chí 23, 24, 54 theo MVP Checklist.

@@ -36,13 +36,13 @@ Người quan sát không giải thích luật, không chỉ chỗ, không trả
 
 ## Mốc đạt của buổi
 
-Mức của tiêu chí MVP lấy từ tab MVP Criteria Checklist. Mức của 3 câu hỏi do GDM đặt, ghi nhãn [GIẢ ĐỊNH], Lead đổi được trước buổi.
+Mức của tiêu chí MVP lấy từ tab MVP Criteria Checklist. Mức của 3 câu hỏi do GDM đặt, Lead giữ nguyên ngày 2026-11-23.
 
 | Câu hỏi | Đo bằng | Đạt khi |
 |---|---|---|
-| Muốn ra chuyến thứ hai | Câu hỏi ở bước 2 | Từ 2/3 số người trả lời có [GIẢ ĐỊNH] |
-| Có liều quá vạch "đủ về" | JSON: số lần và số giây dưới vạch, cách về | Từ nửa số người có ít nhất một lần dưới vạch, và dưới 1/3 số chuyến kết thúc bằng bị kéo về [GIẢ ĐỊNH] |
-| Có thấy khó điều khiển | Phiếu câu 4 (điểm 1 đến 5) và lời nói to | Điểm trung bình từ 3 trở xuống, không ai bỏ dở bài 24 [GIẢ ĐỊNH] |
+| Muốn ra chuyến thứ hai | Câu hỏi ở bước 2 | Từ 2/3 số người trả lời có |
+| Có liều quá vạch "đủ về" | JSON: số lần và số giây dưới vạch, cách về | Từ nửa số người có ít nhất một lần dưới vạch, và dưới 1/3 số chuyến kết thúc bằng bị kéo về |
+| Có thấy khó điều khiển | Phiếu câu 4 (điểm 1 đến 5) và lời nói to | Điểm trung bình từ 3 trở xuống, không ai bỏ dở bài 24 |
 | Tiêu chí 23 | Bài 23 | Trên 90% lần dừng cách đích tối đa 0,5 u |
 | Tiêu chí 24 | Bài 24 | Lượt thứ 3 không chạm tường |
 | Tiêu chí 54 | Thử né | Từ 70% số đòn né được sau 3 lần thử |
