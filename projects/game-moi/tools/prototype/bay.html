@@ -3,54 +3,133 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prototype bay</title>
+<title>Prototype một chuyến</title>
 <style>
   :root { --nen: #0d1117; --chu: #e6edf3; --mo: #8b949e; --vien: #30363d; --oxy: #3fb950; --canh: #d29922; --nguy: #f85149; --nhan: #58a6ff; }
   body { margin: 0; background: var(--nen); color: var(--chu); font: 14px/1.4 system-ui, sans-serif; display: flex; gap: 12px; padding: 12px; box-sizing: border-box; }
-  main { flex: 1; min-width: 0; }
+  main { flex: 1; min-width: 0; position: relative; }
   canvas { width: 100%; background: #010409; border: 1px solid var(--vien); display: block; }
   aside { width: 300px; flex: none; }
   label { display: grid; grid-template-columns: 1fr 64px; gap: 4px; margin: 6px 0; font-size: 12px; color: var(--mo); }
   label input { grid-column: 1 / 3; }
   label b { text-align: right; color: var(--chu); font-weight: 600; }
   button { background: #21262d; color: var(--chu); border: 1px solid var(--vien); padding: 6px 10px; cursor: pointer; margin: 4px 4px 4px 0; }
-  textarea { width: 100%; height: 120px; background: #010409; color: var(--chu); border: 1px solid var(--vien); font: 11px monospace; }
+  button.on { border-color: var(--nhan); color: var(--nhan); }
+  textarea { width: 100%; height: 100px; background: #010409; color: var(--chu); border: 1px solid var(--vien); font: 11px monospace; }
   table { border-collapse: collapse; font-size: 12px; margin-top: 6px; }
-  td, th { border: 1px solid var(--vien); padding: 3px 6px; }
+  td, th { border: 1px solid var(--vien); padding: 3px 6px; text-align: left; }
   .hint { color: var(--mo); font-size: 12px; }
+  #ket { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #161b22ee; border: 1px solid var(--nhan); padding: 16px 20px; min-width: 380px; }
+  #ket[hidden] { display: none; }
   @media (max-width: 800px) { body { flex-direction: column; } aside { width: auto; } }
 </style>
 </head>
 <body>
 <main>
-  <h3 style="margin:0 0 4px">Prototype bay ngoài không gian (game-moi, gd-tech)</h3>
-  <div class="hint">Trả lời 2 câu: (1) số di chuyển bậc 0 của <code>nguoi-choi.md</code> mục 3 có cho cảm giác "điều khiển trực tiếp, quán tính nhẹ, dừng chính xác để nhặt" không. (2) S6 của <code>combat-driftlife.md</code>: báo trước 0,5 giây có đủ để ra khỏi vùng trúng không.<br>
-  WASD bay, Space hãm, Shift lướt, nhặt bằng cách bay qua điểm xanh. Phím T bật hoặc tắt thử né: một vòng đỏ hiện quanh bạn, sáng dần trong thời gian báo trước rồi đánh.</div>
+  <h3 style="margin:0 0 4px">Prototype một chuyến (game-moi, gd-tech)</h3>
+  <div class="hint">Câu hỏi thiết kế: (1) người chưa biết game có muốn ra chuyến thứ hai không. (2) có liều quá vạch "đủ về" không. (3) có thấy khó điều khiển không. Kèm 2 bài thử tiêu chí MVP 23, 24 và thử né (tiêu chí 54).<br>
+  WASD bay, Space hãm, Shift lướt, giữ E khai thác điểm xanh, giữ F ở Recall Beacon để về (5 giây), bay vào cửa khí bên trái để về. R đổi món ghim (món giữ lại nếu bị kéo về). T bật hoặc tắt thử né.</div>
   <canvas id="c" width="1280" height="720"></canvas>
   <div id="hud" class="hint"></div>
+  <div id="ket" hidden></div>
 </main>
 <aside>
+  <div id="che"><button id="m_chuyen">Chuyến</button><button id="m_b23">Bài 23 Hãm</button><button id="m_b24">Bài 24 Hành lang</button></div>
   <div id="nut"></div>
-  <button id="xuat">Xuất JSON</button><button id="goc">Về số gốc</button><button id="lai">Chơi lại</button>
+  <button id="xuat">Xuất JSON</button><button id="goc">Về số gốc</button><button id="lai">Chuyến mới</button>
   <textarea id="json" readonly></textarea>
+  <div class="hint">Các chuyến trong phiên:</div>
+  <table id="ls"></table>
   <div class="hint">Lý thuyết S6 (đứng yên, phản xạ 0,27 giây, chưa tính đường đi chéo):</div>
   <table id="lt"></table>
 </aside>
 <script>
-// Số gốc lấy từ nguoi-choi.md mục 3 (bậc 0) và combat-driftlife.md 3.1, 3.4. Đổi ở thanh chỉnh, xuất JSON để gửi gd-character.
+// Số gốc. Nguồn viết tắt: NC = nguoi-choi.md, MAP = map.md, VP = vat-pham.md, SHH = so-hien-hanh.md, CB = combat-driftlife.md. [GIẢ ĐỊNH] là số GDD chưa có, prototype tự đặt.
 const GOC = {
-  vmax: 6.0, giaToc: 18, hamTuNhien: 12, hamChuDong: 36, daoChieu: 1.5,
-  luotToc: 15, luotGiay: 0.22, luotOxy: 4, luotHoi: 1.2, luotMien: 0.2,
-  binh: 300, haoNen: 1.0, tui: 20, baoTruoc: 0.5, banKinhDon: 2.5, phanXa: 0.27,
+  vmax: 6.0,        // NC mục 3 vmax bay bậc 0
+  giaToc: 18,       // NC mục 3
+  hamTuNhien: 12,   // NC mục 3
+  hamChuDong: 36,   // NC mục 3
+  daoChieu: 1.5,    // NC mục 3
+  luotToc: 15,      // NC mục 2.1 bảng trạng thái Lướt, xung lực 15 u/s
+  luotGiay: 0.22,   // NC mục 2.1 Lướt 0,22 giây
+  luotOxy: 4,       // NC mục 3 chi phí lướt (số cũ của bản bay thử, giữ nguyên)
+  luotHoi: 1.2,     // NC mục 3 hồi chiêu lướt (số cũ của bản bay thử, giữ nguyên)
+  luotMien: 0.2,    // NC mục 2.1 miễn sát thương 0,2 giây đầu Lướt
+  binh: 330,        // SHH Số cân bằng: Bình Oxy bậc 0 là 330 (bản trước ghi 300 là sai)
+  haoNen: 1.0,      // NC mục 2.2 điểm 2
+  tui: 80,          // SHH Số cân bằng: Túi bậc 0 là 80 Khối (bản trước ghi 20)
+  giuRecall: 5.0,   // NC mục 3 thời gian giữ Kích Recall
+  ngat: 12,         // NC mục 2.3 và SHH: ngạt 12 giây, một mình không ai cứu
+  phatHien: 30,     // MAP mục 3 bảng tham số: bán kính phát hiện beacon 30 u
+  heKhaiThac: 1.0,  // [GIẢ ĐỊNH] nhân lên giây khai thác của tab Salvage để thử nhanh chậm, 1,0 là đúng GDD
+  seed: 7,          // [GIẢ ĐỊNH] hạt RNG, chuyến thứ n dùng seed cộng n trừ 1
+  baoTruoc: 0.5, banKinhDon: 2.5, phanXa: 0.27, // CB 3.1, 3.4 (thử né S6, tiêu chí MVP 54)
+};
+const HANG = {
+  tamKichRecall: 1.5, tamHuyRecall: 2.5, // NC mục 3: tầm kích 1,5 u, tầm hủy 2,5 u
+  tamKhaiThac: 1.5, tamHuyKhaiThac: 2.5, // [GIẢ ĐỊNH] lấy bằng tầm Kích Recall vì GDD chưa nêu tầm khai thác
+  tocKenhRecall: 0.3,    // NC mục 2.1 trạng thái Kích Recall: tốc độ nhân 0,3, không Lướt
+  tocNgat: 0.4,          // NC mục 3: tốc độ khi ngạt 0,4
+  duPhongCua: 3, duPhongBeacon: 8, heMoiTruong: 1.0, // NC mục 2.2 vạch "đủ về", E0 nên hệ số môi trường 1,0
+  R: 0.4,                // NC mục 3 bán kính va chạm
+  hutNhat: 1.2,          // NC mục 3 (không dùng vì mọi vật là điểm khai thác, ghi cho đủ)
+  tai0: 0.6, tai1: 0.15, // NC mục 3 công thức phạt tải p = 0,15 nhân max(0, (f - 0,6) / 0,4)
+  mocBip: [[0.5, 3], [0.25, 1.5], [0.1, 0.7]], // NC mục 2.2 điểm 9: ngưỡng 50, 25, 10 phần trăm với chu kỳ bíp 3, 1,5, 0,7 giây
+  cua: { x: 0, y: 12, nuaCao: 2.5, tamVao: 1.0 }, // [GIẢ ĐỊNH] cửa khí cao 5 u ở giữa mép trái, về khi tâm vào trong 1 u. MAP 2.1 điểm 1 chỉ nói cửa mở vào giữa chiều cao map
+  ranh: 2.0, bang23: 0.5, hl24: { rong: 1.5, dai: 20 }, // Checklist MVP tiêu chí 23 (0,5 u) và 24 (1,5 u rộng, 20 u dài)
 };
 const NHAN = {
   vmax: ['Tốc độ tối đa (u/s)', 3, 10, 0.1], giaToc: ['Gia tốc (u/s2)', 6, 40, 1], hamTuNhien: ['Hãm tự nhiên (u/s2)', 4, 30, 1],
   hamChuDong: ['Hãm chủ động (u/s2)', 12, 80, 1], daoChieu: ['Hệ số đảo chiều', 1, 2.5, 0.1], luotToc: ['Lướt tốc độ (u/s)', 8, 25, 0.5],
   luotGiay: ['Lướt thời gian (s)', 0.1, 0.4, 0.01], luotOxy: ['Lướt tốn Oxy', 0, 10, 1], luotHoi: ['Lướt hồi chiêu (s)', 0.4, 3, 0.1],
   luotMien: ['Lướt miễn sát thương (s)', 0, 0.4, 0.05], binh: ['Bình Oxy', 100, 900, 10], haoNen: ['Hao nền (Oxy/s)', 0.5, 2, 0.1],
-  tui: ['Sức chứa túi (Khối)', 5, 80, 1], baoTruoc: ['Báo trước đòn thử (s)', 0.2, 1.5, 0.05], banKinhDon: ['Bán kính đòn thử (u)', 1, 6, 0.1],
+  tui: ['Sức chứa túi (Khối)', 5, 216, 1], giuRecall: ['Giữ Recall (s)', 3, 8, 0.5], ngat: ['Thời gian ngạt (s)', 8, 20, 1],
+  phatHien: ['Bán kính phát hiện beacon (u)', 10, 50, 1], heKhaiThac: ['Nhân giây khai thác', 0.25, 2, 0.05], seed: ['Hạt RNG', 1, 999, 1],
+  baoTruoc: ['Báo trước đòn thử (s)', 0.2, 1.5, 0.05], banKinhDon: ['Bán kính đòn thử (u)', 1, 6, 0.1],
   phanXa: ['Phản xạ dùng cho lý thuyết (s)', 0.15, 0.5, 0.01],
 };
+// Vật phẩm: VP mục ITEM LIST (khối, GTĐ, độ hiếm h: 0 Thường, 1 Ít gặp)
+const VAT = {
+  'RES-101': { ten: 'Mảnh vỏ Cradle', khoi: 1, gtd: 1.0, h: 0 }, 'RES-102': { ten: 'Dây cáp đứt', khoi: 1, gtd: 1.2, h: 0 },
+  'RES-103': { ten: 'Quặng sắt thiên thạch', khoi: 2, gtd: 2.2, h: 0 }, 'RES-104': { ten: 'Bo mạch cháy', khoi: 1, gtd: 3.0, h: 1 },
+  'RES-105': { ten: 'Băng nước đục', khoi: 2, gtd: 2.0, h: 0 }, 'RES-106': { ten: 'Đồ Trái Đất vụn', khoi: 1, gtd: 2.5, h: 1 },
+};
+// Điểm khai thác: Salvage.tsv và VP khối NODE. bang = [ID, trọng số, số lượng mỗi lần]
+const SLV = {
+  'SLV-101': { ten: 'Mảnh vỡ trôi', giay: 1.6, quay: 1, bang: [['RES-101', 60, 1], ['RES-102', 40, 1]], mau: '#3fb950' },
+  'SLV-102': { ten: 'Mạch quặng sắt', giay: 8, quay: 1, bang: [['RES-103', 100, 2]], mau: '#a371f7' },
+  'SLV-103': { ten: 'Khối băng trôi', giay: 7, quay: 1, bang: [['RES-105', 100, 2]], mau: '#79c0ff' },
+  'SLV-104': { ten: 'Hòm kỹ thuật vỡ', giay: 6, quay: 2, bang: [['RES-104', 30, 1], ['RES-102', 30, 2], ['RES-101', 25, 2], ['RES-106', 15, 1]], mau: '#d29922' },
+  'SLV-105': { ten: 'Tấm vỏ lớn', giay: 14, quay: 3, bang: [['RES-101', 100, 2]], mau: '#ff7b72' },
+};
+// Dụng cụ khai thác TOL-102 là ô 1 của bộ khởi điểm (VP luật T6) nên đủ bậc cho mọi SLV Gần.
+
+// Map dựng tay: 4 mảnh Gần ghép ngang (MAP 2.1, 3.3, 3.4), mảnh 40 x 24 u, cổng 8 u (MAP bảng tham số) ở giữa cạnh.
+// Cột 1 Ember Mooring (cố định), 2 Mở, 3 Xác lớn, 4 Thưởng (chỉ nửa ngoài). Vị trí node và beacon là [GIẢ ĐỊNH], dựng tay cho prototype.
+function dungMapChuyen() {
+  const kh = [], tuong = (x) => { kh.push({ x, y: 0, w: 1, h: 8 }, { x, y: 16, w: 1, h: 8 }); };
+  [40, 80, 120].forEach(tuong);
+  kh.push({ x: 50, y: 15, w: 6, h: 4 }, { x: 64, y: 4, w: 4, h: 6 }, { x: 92, y: 7, w: 18, h: 9 }); // vật cản của Mở và Xác lớn
+  const nut = [], them = (id, x, y) => nut.push({ id, x, y, xong: false });
+  [[12, 6], [20, 18], [30, 8]].forEach(([x, y]) => them('SLV-101', x, y));                    // Ember Mooring: chỉ nhặt tay, gần cửa
+  [[46, 10], [70, 18]].forEach(([x, y]) => them('SLV-101', x, y));                            // Mở
+  [[58, 8], [72, 13]].forEach(([x, y]) => them('SLV-102', x, y));
+  [[74, 6], [48, 20]].forEach(([x, y]) => them('SLV-103', x, y));
+  [[90, 5], [110, 19]].forEach(([x, y]) => them('SLV-104', x, y));                            // Xác lớn
+  them('SLV-105', 96, 19);
+  [[134, 6], [146, 18], [152, 8]].forEach(([x, y]) => them('SLV-104', x, y));                 // Thưởng: hòm và tấm lớn nằm xa nhất
+  them('SLV-105', 140, 12); them('SLV-105', 156, 20);
+  [[128, 19], [156, 14]].forEach(([x, y]) => them('SLV-102', x, y));
+  return { ten: 'chuyen', W: 160, H: 24, kh, nut, beacon: [{ x: 114, y: 22, thay: false }], batDau: { x: 3, y: 12 },
+    manh: [[0, 'Ember Mooring'], [40, 'Mở'], [80, 'Xác lớn'], [120, 'Thưởng']] };
+}
+function dungMapB23() { return { ten: 'b23', W: 60, H: 24, kh: [], nut: [], beacon: [], batDau: { x: 4, y: 12 }, manh: [] }; }
+function dungMapB24() {
+  const w = HANG.hl24.rong, y0 = 6 - w / 2, d = HANG.hl24.dai;
+  return { ten: 'b24', W: 34, H: 12, kh: [{ x: 7, y: 0, w: d, h: y0, hl: 1 }, { x: 7, y: y0 + w, w: d, h: 12 - y0 - w, hl: 1 }], nut: [], beacon: [], batDau: { x: 3, y: 6 }, manh: [] };
+}
+
 let P = { ...GOC };
 const nut = document.getElementById('nut');
 for (const k of Object.keys(NHAN)) {
@@ -64,7 +143,7 @@ for (const k of Object.keys(NHAN)) {
 }
 const vn = (x, d = 2) => (+x).toFixed(d).replace('.', ',');
 function veNut() {
-  for (const k of Object.keys(NHAN)) { document.getElementById('v_' + k).textContent = vn(P[k], NHAN[k][3] < 0.1 ? 2 : 1); document.getElementById('i_' + k).value = P[k]; }
+  for (const k of Object.keys(NHAN)) { const b = NHAN[k][3]; document.getElementById('v_' + k).textContent = vn(P[k], b >= 1 ? 0 : b < 0.1 ? 2 : 1); document.getElementById('i_' + k).value = P[k]; }
   lyThuyet();
 }
 // Thời gian ra khỏi vòng bán kính r + 0,4 từ đứng yên: tăng tốc tới vmax rồi đi đều. Có lướt: lướt ngay, phần còn lại đi bằng vmax.
@@ -76,65 +155,294 @@ function lyThuyet() {
   document.getElementById('lt').innerHTML = `<tr><th>Cách thoát</th><th>Cần báo trước</th><th>Với ${vn(P.baoTruoc)} giây</th></tr>` +
     [['Bay ra, không lướt', khong], ['Lướt ra', co], ['Lướt lúc đòn đánh (miễn)', mien]].map(([a, t]) => `<tr><td>${a}</td><td>${vn(t)} s</td><td>${t <= P.baoTruoc ? 'Kịp' : 'Không kịp'}</td></tr>`).join('');
 }
-document.getElementById('xuat').onclick = () => { document.getElementById('json').value = JSON.stringify({ nguon: 'tools/prototype/bay.html', ngay: new Date().toISOString(), thamSo: P, thuNe: { lan: thu.lan, ne: thu.ne } }, null, 2); };
-document.getElementById('goc').onclick = () => { P = { ...GOC }; veNut(); };
-document.getElementById('lai').onclick = () => batDau();
 
+// ---------- Trạng thái ----------
 const cv = document.getElementById('c'), g = cv.getContext('2d');
-const W = 64, H = 36, S = cv.width / W; // thế giới 64 x 36 u
-const khoi = [{ x: 14, y: 8, w: 6, h: 10 }, { x: 34, y: 20, w: 10, h: 4 }, { x: 48, y: 4, w: 4, h: 14 }, { x: 24, y: 26, w: 4, h: 6 }];
-let pl, diem, thu = { bat: false, lan: 0, ne: 0, vong: null, cho: 1 }, phim = {};
-function batDau() {
-  pl = { x: 4, y: 18, vx: 0, vy: 0, oxy: P.binh, tai: 0, luotCon: 0, luotHoi: 0, luotHuong: [1, 0], mien: 0, trung: 0 };
-  diem = Array.from({ length: 30 }, () => ({ x: 4 + Math.random() * 56, y: 2 + Math.random() * 32, khoi: 1 + Math.floor(Math.random() * 3) })).filter((d) => !khoi.some((k) => d.x > k.x - 1 && d.x < k.x + k.w + 1 && d.y > k.y - 1 && d.y < k.y + k.h + 1));
-}
-addEventListener('keydown', (e) => { phim[e.code] = true; if (e.code === 'KeyT') thu.bat = !thu.bat; if (['Space', 'ShiftLeft'].includes(e.code)) e.preventDefault(); });
-addEventListener('keyup', (e) => { phim[e.code] = false; });
-
+const VW = 32, VH = 18, S = cv.width / VW; // khung nhìn 32 x 18 u, lớn hơn mức tối thiểu 17,8 x 10 u của gd-ux
 const DT = 1 / 120;
+let mode = 'chuyen', map, pl, run, cam = { x: 0, y: 0 }, phim = {}, rnd = Math.random, lichSu = [], soChuyen = 0;
+let thu = { bat: false, lan: 0, ne: 0, vong: null, cho: 1 };
+let b23 = { moc: null, ds: [] }, b24 = { ds: [] };
+const kBat = { chuyen: dungMapChuyen, b23: dungMapB23, b24: dungMapB24 };
+function mulberry32(a) { return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+
+function batDau(m) {
+  if (m) mode = m;
+  map = kBat[mode]();
+  map.tuong = [...map.kh, { x: -1, y: 0, w: 1, h: map.H }, { x: map.W, y: 0, w: 1, h: map.H }, { x: 0, y: -1, w: map.W, h: 1 }, { x: 0, y: map.H, w: map.W, h: 1 }];
+  if (mode === 'chuyen') soChuyen++;
+  rnd = mulberry32(P.seed + soChuyen - 1);
+  pl = { x: map.batDau.x, y: map.batDau.y, vx: 0, vy: 0, oxy: P.binh, bag: {}, tai: 0, ghimTay: null, luotCon: 0, luotHoi: 0, luotHuong: [1, 0], mien: 0, trung: 0, kenh: null, ngat: null, camHL: false, camTruoc: false };
+  run = { t: 0, xong: false, kq: null, duoiGiay: 0, duoiLan: 0, dangDuoi: false, minDu: Infinity, xaNhat: 0, nhat: 0, gtdNhat: 0, mat: 0, nutXong: 0, bipT: 0, tNgat: null, ngatDaVao: false, thamSo: { ...P }, so: soChuyen, thu: false, tin: '', tinT: 0 };
+  thu.vong = null; thu.cho = 1;
+  if (mode === 'b23') { b23.moc = null; datDich23(); b23.daBay = false; b23.hamT = 99; }
+  if (mode === 'b24') { b24.cham = 0; }
+  cam.x = pl.x; cam.y = pl.y;
+  document.getElementById('ket').hidden = true;
+  for (const m2 of ['chuyen', 'b23', 'b24']) document.getElementById('m_' + m2).className = m2 === mode ? 'on' : '';
+}
+function datDich23() {
+  for (let i = 0; i < 20; i++) {
+    const a = rnd() * 6.283, d = 12 + rnd() * 10, x = pl.x + Math.cos(a) * d, y = pl.y + Math.sin(a) * d;
+    if (x > 3 && x < map.W - 3 && y > 3 && y < map.H - 3) { b23.moc = { x, y }; return; }
+  }
+  b23.moc = { x: map.W - 10, y: map.H / 2 };
+}
+
+// ---------- Công thức thuần ----------
+const phatTai = (tai, tui) => HANG.tai1 * Math.max(0, (tai / tui - HANG.tai0) / (1 - HANG.tai0));            // NC mục 3 phạt tải p
+const vmaxThat = (vmax, tai, tui) => vmax * (1 - phatTai(tai, tui));                                       // NC mục 3 (hệ số kéo bằng 1, không kéo vật)
+const oxyVe = (d, vmaxT, loai) => (d / (0.8 * vmaxT)) * HANG.heMoiTruong + (loai === 'beacon' ? HANG.duPhongBeacon : HANG.duPhongCua); // NC mục 2.2 vạch "đủ về"
+const gtdTui = (bag) => Object.entries(bag).reduce((s, [id, n]) => s + VAT[id].gtd * n, 0);
+const monTui = (bag) => Object.values(bag).reduce((s, n) => s + n, 0);
+function veTheoViTri() { // đích gần nhất theo Oxy_về, gồm cửa khí và beacon đã thấy
+  const vm = vmaxThat(P.vmax, pl.tai, P.tui), c = HANG.cua;
+  let tot = { oxy: oxyVe(Math.hypot(pl.x - c.x, pl.y - c.y), vm, 'cua'), ten: 'cửa khí', d: Math.hypot(pl.x - c.x, pl.y - c.y) };
+  for (const b of map.beacon) if (b.thay) { const d = Math.hypot(pl.x - b.x, pl.y - b.y), o = oxyVe(d, vm, 'beacon'); if (o < tot.oxy) tot = { oxy: o, ten: 'Recall Beacon', d }; }
+  return tot;
+}
+function ghimHienTai() {
+  if (pl.ghimTay && pl.bag[pl.ghimTay] > 0) return pl.ghimTay;
+  let best = null; for (const id of Object.keys(pl.bag)) if (pl.bag[id] > 0 && (!best || VAT[id].h > VAT[best].h || (VAT[id].h === VAT[best].h && VAT[id].gtd > VAT[best].gtd))) best = id;
+  return best; // mặc định: độ hiếm cao nhất, hòa thì GTĐ cao hơn (NC mục 2.4 điểm 5)
+}
+function them(p, id, n) { // trả số đơn vị vào được túi, phần dư mất (túi đầy)
+  let vao = 0;
+  for (let i = 0; i < n; i++) { if (p.tai + VAT[id].khoi > P.tui) break; p.tai += VAT[id].khoi; p.bag[id] = (p.bag[id] || 0) + 1; vao++; }
+  return vao;
+}
+function khaiThacXong(nut) {
+  const s = SLV[nut.id], tong = s.bang.reduce((a, b) => a + b[1], 0); let rot = 0, mat = 0;
+  for (let q = 0; q < s.quay; q++) {
+    let r = rnd() * tong, e = s.bang[0];
+    for (const b of s.bang) { if (r < b[1]) { e = b; break; } r -= b[1]; }
+    const vao = them(pl, e[0], e[2]); rot += vao; run.nhat += vao; run.gtdNhat += vao * VAT[e[0]].gtd; mat += (e[2] - vao) * VAT[e[0]].gtd;
+  }
+  nut.xong = true; run.nutXong++; run.mat += mat; // phần dư không vào túi tính vào "mất"
+  tin(mat > 0 ? 'Túi đầy, có món nảy ra mất' : `Nhặt ${s.ten}`);
+}
+function tin(s) { run.tin = s; run.tinT = 2; }
+
+// ---------- Nhịp mô phỏng ----------
+function ket(cach) {
+  const p = pl; let giu = { ...p.bag }, mat = 0;
+  if (cach === 'keo') { // K2: chỉ giữ đúng 1 đơn vị món ghim
+    const id = ghimHienTai(); giu = id ? { [id]: 1 } : {};
+    mat = gtdTui(p.bag) - gtdTui(giu);
+  }
+  run.xong = true;
+  run.kq = { cach, thoiGian: +run.t.toFixed(1), oxyCon: +Math.max(0, p.oxy).toFixed(1), duoiVachGiay: +run.duoiGiay.toFixed(1), duoiVachLan: run.duoiLan, duMin: run.minDu === Infinity ? null : +run.minDu.toFixed(1),
+    xaNhat: +run.xaNhat.toFixed(1), monMangVe: monTui(giu), gtdMangVe: +gtdTui(giu).toFixed(1), gtdMat: +(mat + run.mat).toFixed(1), monNhat: run.nhat, gtdNhat: +run.gtdNhat.toFixed(1), diemKhaiThac: run.nutXong, daNgat: run.ngatDaVao, tuiLucVe: monTui(p.bag), giu };
+  if (run.thu) return;
+  lichSu.push({ chuyen: run.so, seed: P.seed + run.so - 1, thamSo: run.thamSo, ketQua: run.kq });
+  hienKet(); veLichSu();
+}
+const TEN_CACH = { cua: 'cửa khí', beacon: 'Recall Beacon', keo: 'bị kéo về' };
+function hienKet() {
+  const k = run.kq, d = document.getElementById('ket');
+  const giu = Object.entries(k.giu).map(([id, n]) => `${n} x ${VAT[id].ten}`).join(', ') || 'không có';
+  d.innerHTML = `<b>Kết chuyến ${run.so}: về bằng ${TEN_CACH[k.cach]}</b><table>
+  <tr><td>Thời gian chuyến</td><td>${vn(k.thoiGian, 1)} giây</td></tr>
+  <tr><td>Oxy còn khi về</td><td>${vn(k.oxyCon, 1)} trên ${P.binh}</td></tr>
+  <tr><td>Oxy dưới vạch "đủ về"</td><td>${k.duoiVachLan ? `Có, ${k.duoiVachLan} lần, tổng ${vn(k.duoiVachGiay, 1)} giây, thấp nhất ${vn(k.duMin, 1)} Oxy so với vạch` : 'Không, dư thấp nhất ' + vn(k.duMin, 1) + ' Oxy'}</td></tr>
+  <tr><td>Xa nhất tới cửa khí</td><td>${vn(k.xaNhat, 0)} u</td></tr>
+  <tr><td>Mang về</td><td>${k.monMangVe} món, ${vn(k.gtdMangVe, 1)} GTĐ (${giu})</td></tr>
+  <tr><td>Nhặt được cả chuyến</td><td>${k.monNhat} món, ${vn(k.gtdNhat, 1)} GTĐ tại ${k.diemKhaiThac} điểm</td></tr>
+  <tr><td>Mất</td><td>${vn(k.gtdMat, 1)} GTĐ${k.cach === 'keo' ? ' (bị kéo về chỉ giữ 1 món)' : ''}</td></tr></table>
+  <button id="chuyenMoi">Chuyến mới</button>`;
+  d.hidden = false; document.getElementById('chuyenMoi').onclick = () => batDau('chuyen');
+}
+function veLichSu() {
+  document.getElementById('ls').innerHTML = '<tr><th>#</th><th>Về</th><th>Giây</th><th>GTĐ</th><th>Dưới vạch</th></tr>' +
+    lichSu.map((c) => `<tr><td>${c.chuyen}</td><td>${TEN_CACH[c.ketQua.cach]}</td><td>${vn(c.ketQua.thoiGian, 0)}</td><td>${vn(c.ketQua.gtdMangVe, 1)}</td><td>${vn(c.ketQua.duoiVachGiay, 0)} s</td></tr>`).join('');
+}
+let ac = null;
+function bip() { try { ac = ac || new AudioContext(); const o = ac.createOscillator(), v = ac.createGain(); o.frequency.value = 880; v.gain.value = 0.05; o.connect(v); v.connect(ac.destination); o.start(); o.stop(ac.currentTime + 0.08); } catch (e) { /* trình duyệt chặn âm thanh thì bỏ qua */ } }
+
+function huyKenh() { pl.kenh = null; }
 function buoc() {
-  const p = pl;
+  const p = pl; if (run.xong) return;
+  run.t += DT; run.tinT = Math.max(0, run.tinT - DT);
+  const ngat = p.ngat !== null, kRecall = p.kenh && p.kenh.loai === 'beacon';
   let ix = (phim.KeyD ? 1 : 0) - (phim.KeyA ? 1 : 0), iy = (phim.KeyS ? 1 : 0) - (phim.KeyW ? 1 : 0);
   const n = Math.hypot(ix, iy); if (n) { ix /= n; iy /= n; p.luotHuong = [ix, iy]; }
-  const f = p.tai / P.tui, phat = 0.15 * Math.max(0, (f - 0.6) / 0.4), vmax = P.vmax * (1 - phat); // phạt tải nguoi-choi.md
+  const pt = phatTai(p.tai, P.tui), vmax = P.vmax * (1 - pt) * (ngat ? HANG.tocNgat : 1) * (kRecall ? HANG.tocKenhRecall : 1), gt = P.giaToc * (1 - pt);
   p.luotHoi = Math.max(0, p.luotHoi - DT); p.mien = Math.max(0, p.mien - DT);
-  if (phim.ShiftLeft && p.luotHoi === 0 && p.luotCon === 0 && p.oxy > P.luotOxy) { p.luotCon = P.luotGiay; p.luotHoi = P.luotHoi; p.oxy -= P.luotOxy; p.mien = P.luotMien; }
+  const oxyVo = mode !== 'chuyen'; // hai bài thử không tính Oxy
+  if (phim.ShiftLeft && !ngat && !kRecall && p.luotHoi === 0 && p.luotCon === 0 && (oxyVo || p.oxy > P.luotOxy)) { p.luotCon = P.luotGiay; p.luotHoi = P.luotHoi; if (!oxyVo) p.oxy -= P.luotOxy; p.mien = P.luotMien; }
   if (p.luotCon > 0) { p.luotCon -= DT; p.vx = p.luotHuong[0] * P.luotToc; p.vy = p.luotHuong[1] * P.luotToc; if (p.luotCon <= 0) { const v = Math.hypot(p.vx, p.vy); p.vx *= vmax / v; p.vy *= vmax / v; } }
   else if (phim.Space) { const v = Math.hypot(p.vx, p.vy), dv = Math.min(v, P.hamChuDong * DT); if (v) { p.vx -= (p.vx / v) * dv; p.vy -= (p.vy / v) * dv; } }
   else if (n) {
     const tx = ix * vmax, ty = iy * vmax, dx = tx - p.vx, dy = ty - p.vy, d = Math.hypot(dx, dy);
-    const nguoc = p.vx * ix + p.vy * iy < 0 ? P.daoChieu : 1, dv = Math.min(d, P.giaToc * nguoc * DT);
+    const nguoc = p.vx * ix + p.vy * iy < 0 ? P.daoChieu : 1, dv = Math.min(d, gt * nguoc * DT);
     if (d) { p.vx += (dx / d) * dv; p.vy += (dy / d) * dv; }
   } else { const v = Math.hypot(p.vx, p.vy), dv = Math.min(v, P.hamTuNhien * DT); if (v) { p.vx -= (p.vx / v) * dv; p.vy -= (p.vy / v) * dv; } }
   // Di chuyển và va chạm: triệt thành phần vuông góc, giữ phần trượt dọc tường (luật 7).
-  const R = 0.4;
-  p.x += p.vx * DT; for (const k of [...khoi, { x: -1, y: 0, w: 1, h: H }, { x: W, y: 0, w: 1, h: H }]) if (p.x + R > k.x && p.x - R < k.x + k.w && p.y + R > k.y && p.y - R < k.y + k.h) { p.x = p.vx > 0 ? k.x - R : k.x + k.w + R; p.vx = 0; }
-  p.y += p.vy * DT; for (const k of [...khoi, { x: 0, y: -1, w: W, h: 1 }, { x: 0, y: H, w: W, h: 1 }]) if (p.x + R > k.x && p.x - R < k.x + k.w && p.y + R > k.y && p.y - R < k.y + k.h) { p.y = p.vy > 0 ? k.y - R : k.y + k.h + R; p.vy = 0; }
-  p.oxy -= P.haoNen * (1 + phat) * DT;
-  diem = diem.filter((d) => { if (Math.hypot(d.x - p.x, d.y - p.y) < 1.2 && p.tai + d.khoi <= P.tui) { p.tai += d.khoi; return false; } return true; });
-  // Thử né S6.
-  if (thu.bat) {
-    if (!thu.vong) { thu.cho -= DT; if (thu.cho <= 0) thu.vong = { x: p.x, y: p.y, con: P.baoTruoc }; }
-    else { thu.vong.con -= DT; if (thu.vong.con <= 0) { thu.lan++; const trong = Math.hypot(p.x - thu.vong.x, p.y - thu.vong.y) < P.banKinhDon + R; if (!trong || p.mien > 0) thu.ne++; else { p.trung = 0.3; p.oxy -= 15; } thu.vong = null; thu.cho = 2 + Math.random() * 1.5; } }
-  }
+  const R = HANG.R; let cham = false;
+  p.x += p.vx * DT; for (const k of map.tuong) if (p.x + R > k.x && p.x - R < k.x + k.w && p.y + R > k.y && p.y - R < k.y + k.h) { p.x = p.vx > 0 ? k.x - R : k.x + k.w + R; p.vx = 0; if (k.hl) cham = true; }
+  p.y += p.vy * DT; for (const k of map.tuong) if (p.x + R > k.x && p.x - R < k.x + k.w && p.y + R > k.y && p.y - R < k.y + k.h) { p.y = p.vy > 0 ? k.y - R : k.y + k.h + R; p.vy = 0; if (k.hl) cham = true; }
+  if (cham && !p.camTruoc) b24.cham++; p.camTruoc = cham;
   p.trung = Math.max(0, p.trung - DT);
+  if (mode === 'b23') return buocB23(p);
+  if (mode === 'b24') return buocB24(p);
+
+  // Chuyến. Thứ tự theo NC mục 2.6: thử né, kênh giữ phím, kiểm Recall xong, rồi kiểm Oxy chạm 0, rồi đồng hồ ngạt.
+  run.xaNhat = Math.max(run.xaNhat, p.x);
+  for (const b of map.beacon) if (!b.thay && Math.hypot(p.x - b.x, p.y - b.y) < P.phatHien) { b.thay = true; tin('Thấy Recall Beacon'); }
+  if (thu.bat && !ngat) {
+    if (!thu.vong) { thu.cho -= DT; if (thu.cho <= 0) thu.vong = { x: p.x, y: p.y, con: P.baoTruoc }; }
+    else { thu.vong.con -= DT; if (thu.vong.con <= 0) { thu.lan++; const trong = Math.hypot(p.x - thu.vong.x, p.y - thu.vong.y) < P.banKinhDon + R; if (!trong || p.mien > 0) thu.ne++; else { p.trung = 0.3; p.mien = 0.8; p.oxy -= 15; huyKenh(); tin('Trúng đòn, hủy thao tác giữ phím'); } thu.vong = null; thu.cho = 2 + rnd() * 1.5; } }
+  }
+  if (!ngat) p.oxy -= P.haoNen * (1 + pt) * DT; // hao nền thật, chưa có hazard nên hệ số môi trường 1,0
+  // kênh giữ phím
+  if (!ngat && p.trung <= 0) {
+    const bc = map.beacon.find((b) => Math.hypot(p.x - b.x, p.y - b.y) <= (p.kenh && p.kenh.loai === 'beacon' ? HANG.tamHuyRecall : HANG.tamKichRecall));
+    if (phim.KeyF && bc) { if (!p.kenh || p.kenh.loai !== 'beacon') p.kenh = { loai: 'beacon', t: 0 }; p.kenh.t += DT; }
+    else if (phim.KeyE) {
+      let nu = p.kenh && p.kenh.loai === 'nut' ? p.kenh.nut : null;
+      if (nu && (nu.xong || Math.hypot(p.x - nu.x, p.y - nu.y) > HANG.tamHuyKhaiThac)) nu = null;
+      if (!nu) { let md = HANG.tamKhaiThac; for (const q of map.nut) if (!q.xong) { const d = Math.hypot(p.x - q.x, p.y - q.y); if (d <= md) { md = d; nu = q; } } }
+      if (nu) { if (!p.kenh || p.kenh.nut !== nu) p.kenh = { loai: 'nut', nut: nu, t: 0 }; p.kenh.t += DT; if (p.kenh.t >= SLV[nu.id].giay * P.heKhaiThac) { khaiThacXong(nu); p.kenh = null; } }
+      else p.kenh = null;
+    } else p.kenh = null;
+  } else if (!ngat) p.kenh = null;
+  if (p.kenh && p.kenh.loai === 'beacon' && p.kenh.t >= P.giuRecall) return ket('beacon');       // bước 8: Recall xong thắng Oxy chạm 0
+  if (!ngat && p.oxy <= 0) { p.oxy = 0; p.ngat = P.ngat; p.kenh = null; run.ngatDaVao = true; run.tNgat = run.t; tin('NGẠT, bay về cửa khí hoặc chờ bị kéo về'); }    // bước 9
+  else if (ngat) { p.ngat -= DT; p.kenh = null; if (p.ngat <= 0) return ket('keo'); }
+  const c = HANG.cua;
+  if (p.x < c.tamVao && Math.abs(p.y - c.y) < c.nuaCao) return ket('cua');
+  if (!ngat) { // đo "dưới vạch đủ về" và bíp theo ngưỡng
+    const v = veTheoViTri(), du = p.oxy - v.oxy; run.minDu = Math.min(run.minDu, du);
+    if (du < 0) { run.duoiGiay += DT; if (!run.dangDuoi) { run.duoiLan++; run.dangDuoi = true; } } else run.dangDuoi = false;
+    const tl = p.oxy / P.binh; let chuKy = 0; for (const [m, ck] of HANG.mocBip) if (tl <= m) chuKy = ck;
+    if (chuKy) { run.bipT -= DT; if (run.bipT <= 0) { run.bipT = chuKy; if (!run.thu) bip(); } } else run.bipT = 0;
+  }
+}
+function buocB23(p) {
+  const v = Math.hypot(p.vx, p.vy);
+  b23.hamT = phim.Space ? 0 : b23.hamT + DT;
+  if (v > 3) b23.daBay = true;
+  if (b23.daBay && v < 0.05) {
+    const dist = Math.hypot(p.x - b23.moc.x, p.y - b23.moc.y), ham = b23.hamT < 0.5;
+    b23.ds.push({ khoangCach: +dist.toFixed(2), bangHam: ham, dat: ham && dist <= HANG.bang23 }); b23.daBay = false; datDich23();
+  }
+}
+function buocB24(p) {
+  if (p.x >= 30) { b24.ds.push({ lan: b24.ds.length + 1, soLanCham: b24.cham, dat: b24.cham === 0 }); b24.cham = 0; p.x = map.batDau.x; p.y = map.batDau.y; p.vx = p.vy = 0; }
+}
+
+addEventListener('keydown', (e) => {
+  phim[e.code] = true;
+  if (e.code === 'KeyT') thu.bat = !thu.bat;
+  if (e.code === 'KeyR' && pl && mode === 'chuyen' && !run.xong) { const ids = Object.keys(pl.bag).filter((i) => pl.bag[i] > 0); if (ids.length) { pl.ghimTay = ids[(ids.indexOf(ghimHienTai()) + 1) % ids.length]; tin('Ghim ' + VAT[pl.ghimTay].ten); } }
+  if (['Space', 'ShiftLeft'].includes(e.code)) e.preventDefault();
+});
+addEventListener('keyup', (e) => { phim[e.code] = false; });
+for (const m of ['chuyen', 'b23', 'b24']) document.getElementById('m_' + m).onclick = () => batDau(m);
+document.getElementById('xuat').onclick = () => {
+  document.getElementById('json').value = JSON.stringify({ nguon: 'tools/prototype/bay.html', ngay: new Date().toISOString(), thamSoHienTai: P, hang: HANG, chuyen: lichSu, thuNe: { lan: thu.lan, ne: thu.ne },
+    bai23: { tieuChi: 'dừng cách đích tối đa 0,5 u bằng Hãm, đạt trên 90% lần thử', lan: b23.ds.length, dat: b23.ds.filter((x) => x.dat).length, ds: b23.ds },
+    bai24: { tieuChi: 'hành lang 1,5 x 20 u, không chạm tường sau 3 lần thử', lan: b24.ds.length, dat: b24.ds.filter((x) => x.dat).length, ds: b24.ds } }, null, 2);
+};
+document.getElementById('goc').onclick = () => { P = { ...GOC }; veNut(); };
+document.getElementById('lai').onclick = () => batDau('chuyen');
+
+// ---------- Vẽ ----------
+const sx = (x) => (x - cam.x) * S + cv.width / 2, sy = (y) => (y - cam.y) * S + cv.height / 2;
+function ep(c, W, V) { return W <= V ? W / 2 : Math.max(V / 2, Math.min(W - V / 2, c)); }
+function khung_ve() {
+  cam.x += (ep(pl.x + pl.vx * 0.15, map.W, VW) - cam.x) * 0.15; cam.y += (ep(pl.y + pl.vy * 0.15, map.H, VH) - cam.y) * 0.15;
+  g.clearRect(0, 0, cv.width, cv.height);
+  g.fillStyle = '#0a1020'; g.fillRect(sx(0), sy(0), map.W * S, map.H * S);
+  g.font = '12px system-ui'; g.fillStyle = '#30363d'; for (const [x, ten] of map.manh) g.fillText(ten, sx(x) + 6, sy(0) + 14);
+  g.fillStyle = '#21262d'; for (const k of map.kh) { g.fillStyle = k.hl ? '#6e7681' : '#21262d'; g.fillRect(sx(k.x), sy(k.y), k.w * S, k.h * S); }
+  if (mode === 'chuyen') {
+    const c = HANG.cua; g.fillStyle = '#1f6f3f'; g.fillRect(sx(0), sy(c.y - c.nuaCao), 0.5 * S, 2 * c.nuaCao * S); g.fillStyle = '#3fb950'; g.fillText('Cửa khí', sx(0) + 6, sy(c.y - c.nuaCao) - 4);
+    for (const nu of map.nut) { if (nu.xong) continue; const s = SLV[nu.id]; g.fillStyle = s.mau; g.beginPath(); g.arc(sx(nu.x), sy(nu.y), 0.55 * S, 0, 7); g.fill();
+      if (pl.kenh && pl.kenh.nut === nu) { g.strokeStyle = '#fff'; g.lineWidth = 3; g.beginPath(); g.arc(sx(nu.x), sy(nu.y), 0.85 * S, -1.57, -1.57 + 6.283 * pl.kenh.t / (s.giay * P.heKhaiThac)); g.stroke(); }
+      if (Math.hypot(nu.x - pl.x, nu.y - pl.y) < 6) { g.fillStyle = '#8b949e'; g.fillText(`${s.ten} ${vn(s.giay * P.heKhaiThac, 1)} giây`, sx(nu.x) - 30, sy(nu.y) - 0.9 * S); } }
+    for (const b of map.beacon) { const hien = b.thay || Math.hypot(pl.x - b.x, pl.y - b.y) < 12; if (!hien && !b.thay) continue;
+      g.strokeStyle = '#58a6ff'; g.lineWidth = 2; g.beginPath(); g.arc(sx(b.x), sy(b.y), HANG.tamKichRecall * S, 0, 7); g.stroke(); g.setLineDash([4, 6]); g.beginPath(); g.arc(sx(b.x), sy(b.y), HANG.tamHuyRecall * S, 0, 7); g.stroke(); g.setLineDash([]);
+      g.fillStyle = '#58a6ff'; g.fillRect(sx(b.x) - 6, sy(b.y) - 6, 12, 12); g.fillText('Recall Beacon', sx(b.x) - 36, sy(b.y) - 2.8 * S);
+      if (pl.kenh && pl.kenh.loai === 'beacon') { g.strokeStyle = '#fff'; g.lineWidth = 4; g.beginPath(); g.arc(sx(b.x), sy(b.y), 1.2 * S, -1.57, -1.57 + 6.283 * pl.kenh.t / P.giuRecall); g.stroke(); } }
+    // mũi tên chỉ đích khi ngoài khung
+    const dich = [{ x: 0, y: HANG.cua.y, t: 'Cửa' }, ...map.beacon.filter((b) => b.thay).map((b) => ({ x: b.x, y: b.y, t: 'Beacon' }))];
+    for (const d of dich) { const dx = sx(d.x) - cv.width / 2, dy = sy(d.y) - cv.height / 2; if (Math.abs(dx) < cv.width / 2 && Math.abs(dy) < cv.height / 2) continue;
+      const k = Math.min((cv.width / 2 - 30) / Math.abs(dx || 1e-9), (cv.height / 2 - 30) / Math.abs(dy || 1e-9)), px = cv.width / 2 + dx * k, py = cv.height / 2 + dy * k; g.fillStyle = d.t === 'Cửa' ? '#3fb950' : '#58a6ff'; g.beginPath(); g.arc(px, py, 7, 0, 7); g.fill(); g.fillText(`${d.t} ${vn(Math.hypot(d.x - pl.x, d.y - pl.y), 0)} u`, px - 28, py - 12); }
+  }
+  if (mode === 'b23' && b23.moc) { g.strokeStyle = '#d29922'; g.lineWidth = 2; g.beginPath(); g.arc(sx(b23.moc.x), sy(b23.moc.y), HANG.bang23 * S, 0, 7); g.stroke(); g.fillStyle = '#d29922'; g.fillRect(sx(b23.moc.x) - 2, sy(b23.moc.y) - 2, 4, 4); }
+  if (mode === 'b24') { g.fillStyle = '#3fb95040'; g.fillRect(sx(30), sy(0), 4 * S, map.H * S); g.fillStyle = '#8b949e'; g.fillText('Đích', sx(30) + 6, sy(1)); }
+  if (thu.vong) { const a = 1 - thu.vong.con / P.baoTruoc; g.strokeStyle = `rgba(248,81,73,${0.3 + 0.7 * a})`; g.lineWidth = 2; g.beginPath(); g.arc(sx(thu.vong.x), sy(thu.vong.y), P.banKinhDon * S, 0, 7); g.stroke(); g.fillStyle = `rgba(248,81,73,${0.25 * a})`; g.fill(); }
+  g.fillStyle = pl.ngat !== null ? '#6e7681' : pl.trung > 0 ? '#f85149' : pl.mien > 0 ? '#a5d6ff' : '#58a6ff'; g.beginPath(); g.arc(sx(pl.x), sy(pl.y), HANG.R * S, 0, 7); g.fill();
+  if (mode === 'chuyen') veThanh(); else veBaiThu();
+  if (run.tinT > 0) { g.fillStyle = '#e6edf3'; g.font = '16px system-ui'; g.fillText(run.tin, cv.width / 2 - 120, 90); }
+}
+function veThanh() {
+  const tl = Math.max(0, Math.min(1, pl.oxy / P.binh)), v = veTheoViTri(), X = 12, Y = 12, Wd = 420;
+  g.fillStyle = '#30363d'; g.fillRect(X, Y, Wd, 16);
+  const mau = tl > 0.5 ? '#3fb950' : tl > 0.25 ? '#d29922' : '#f85149', nhay = tl <= 0.25 && tl > 0.1 && Math.floor(performance.now() / 300) % 2;
+  g.fillStyle = nhay ? '#5a1d1b' : mau; g.fillRect(X, Y, Wd * tl, 16);
+  const vx = X + Wd * Math.min(1, v.oxy / P.binh); g.fillStyle = '#fff'; g.fillRect(vx - 1, Y - 4, 3, 24); g.font = '12px system-ui'; g.fillText(`đủ về ${vn(v.oxy, 0)} (${v.ten} ${vn(v.d, 0)} u)`, X, Y + 34);
+  g.fillText(`Oxy ${vn(pl.oxy, 0)} / ${P.binh}`, X + Wd + 8, Y + 13);
+  const f = Math.min(1, pl.tai / P.tui); g.fillStyle = '#30363d'; g.fillRect(X, Y + 44, Wd, 12); g.fillStyle = f > 0.6 ? '#d29922' : '#58a6ff'; g.fillRect(X, Y + 44, Wd * f, 12);
+  const gh = ghimHienTai(); g.fillStyle = '#e6edf3'; g.fillText(`Túi ${pl.tai} / ${P.tui} Khối, ${vn(gtdTui(pl.bag), 1)} GTĐ. Ghim: ${gh ? VAT[gh].ten : 'chưa có'}`, X + Wd + 8, Y + 55);
+  if (tl <= 0.1 && pl.ngat === null) { g.fillStyle = 'rgba(248,81,73,0.18)'; g.fillRect(0, 0, cv.width, cv.height); }
+  if (pl.ngat !== null) { g.fillStyle = '#f85149'; g.font = '22px system-ui'; g.fillText(`NGẠT ${vn(pl.ngat, 1)} giây`, cv.width / 2 - 70, 60); }
+  if (run.dangDuoi) { g.fillStyle = '#f85149'; g.font = '14px system-ui'; g.fillText('Dưới vạch đủ về', X, Y + 74); }
+}
+function veBaiThu() {
+  g.fillStyle = '#e6edf3'; g.font = '14px system-ui';
+  if (mode === 'b23') { const n = b23.ds.length, d = b23.ds.filter((x) => x.dat).length, l = b23.ds[n - 1];
+    g.fillText(`Bài 23: bay tới vòng vàng rồi bấm Hãm (Space) cho dừng. Đạt ${d} / ${n}${n ? ` (${Math.round((100 * d) / n)}%, mục tiêu trên 90%)` : ''}. ${l ? `Lần trước: lệch ${vn(l.khoangCach)} u${l.bangHam ? '' : ', không dùng Hãm'}` : ''}`, 12, 24); }
+  else { const n = b24.ds.length, d = b24.ds.filter((x) => x.dat).length;
+    g.fillText(`Bài 24: bay hết hành lang rộng 1,5 u dài 20 u tới vùng xanh, không chạm tường. Lần chạy ${n + 1}, chạm lần này ${b24.cham}. Đạt ${d} / ${n}. ${n ? 'Kết quả: ' + b24.ds.map((x) => (x.dat ? 'sạch' : 'chạm ' + x.soLanCham)).join(', ') : ''}`, 12, 24); }
 }
 let tr = performance.now(), du = 0;
 function khung(t) {
   du += Math.min(0.1, (t - tr) / 1000); tr = t;
-  while (du >= DT) { if (pl.oxy > 0) buoc(); du -= DT; }
-  g.clearRect(0, 0, cv.width, cv.height);
-  g.fillStyle = '#21262d'; for (const k of khoi) g.fillRect(k.x * S, k.y * S, k.w * S, k.h * S);
-  g.fillStyle = '#3fb950'; for (const d of diem) { g.beginPath(); g.arc(d.x * S, d.y * S, (0.25 + 0.1 * d.khoi) * S, 0, 7); g.fill(); }
-  if (thu.vong) { const a = 1 - thu.vong.con / P.baoTruoc; g.strokeStyle = `rgba(248,81,73,${0.3 + 0.7 * a})`; g.lineWidth = 2; g.beginPath(); g.arc(thu.vong.x * S, thu.vong.y * S, P.banKinhDon * S, 0, 7); g.stroke(); g.fillStyle = `rgba(248,81,73,${0.25 * a})`; g.fill(); }
-  g.fillStyle = pl.trung > 0 ? '#f85149' : pl.mien > 0 ? '#a5d6ff' : '#58a6ff'; g.beginPath(); g.arc(pl.x * S, pl.y * S, 0.4 * S, 0, 7); g.fill();
-  const tl = pl.oxy / P.binh;
-  g.fillStyle = '#30363d'; g.fillRect(12, 12, 300, 14); g.fillStyle = tl > 0.25 ? '#3fb950' : tl > 0.1 ? '#d29922' : '#f85149'; g.fillRect(12, 12, 300 * Math.max(0, tl), 14);
-  document.getElementById('hud').textContent = `Oxy ${vn(pl.oxy, 0)} / ${P.binh}. Tốc độ ${vn(Math.hypot(pl.vx, pl.vy), 1)} u/s. Túi ${pl.tai} / ${P.tui} Khối. Lướt ${pl.luotHoi > 0 ? 'đang hồi' : 'sẵn sàng'}. ` +
-    `Thử né ${thu.bat ? 'BẬT' : 'tắt'}: ${thu.ne} né / ${thu.lan} đòn${thu.lan ? ` (${Math.round((100 * thu.ne) / thu.lan)}%)` : ''}.${pl.oxy <= 0 ? ' Hết Oxy, bấm Chơi lại.' : ''}`;
+  while (du >= DT) { buoc(); du -= DT; }
+  khung_ve();
+  document.getElementById('hud').textContent = mode === 'chuyen' ? `Chuyến ${run.so}, ${vn(run.t, 0)} giây. Tốc độ ${vn(Math.hypot(pl.vx, pl.vy), 1)} u/s. Lướt ${pl.luotHoi > 0 ? 'đang hồi' : 'sẵn sàng'}. Thử né ${thu.bat ? 'BẬT' : 'tắt'}: ${thu.ne} né / ${thu.lan} đòn.` : `Tốc độ ${vn(Math.hypot(pl.vx, pl.vy), 1)} u/s. Bấm Chuyến để quay lại chuyến.`;
   requestAnimationFrame(khung);
 }
-veNut(); batDau(); requestAnimationFrame(khung);
+
+// ---------- Tự kiểm (thêm ?kiem vào URL) ----------
+function kiem() {
+  const loi = []; let n = 0;
+  const ok = (c, m) => { n++; if (!c) loi.push(m); }, gan = (a, b, e) => Math.abs(a - b) <= e;
+  const luu = { P: { ...P }, mode, soChuyen };
+  P = { ...GOC }; mode = 'chuyen';
+  // 1. Vạch "đủ về": ca ví dụ của NC mục 3 (d 240, vmax 6, cửa khí là 53), và ca tính tay có tải 60 trên 80, beacon.
+  ok(gan(oxyVe(240, 6, 'cua'), 53, 1e-9), 'vạch ca 1: 240/(0,8x6)+3 phải bằng 53');
+  const vt = vmaxThat(6, 60, 80); // p = 0,15 x (0,75-0,6)/0,4 = 0,05625, vmax thật = 5,6625
+  ok(gan(vt, 5.6625, 1e-9), 'vmax thật tải 60/80 phải 5,6625');
+  ok(gan(oxyVe(60, vt, 'beacon'), 21.2450, 0.001), 'vạch ca 2: 60/(0,8x5,6625)+8 phải 21,245');
+  // 2. Ngạt 12 giây rồi bị kéo về giữ đúng 1 món ghim. Túi 3 x RES-101 và 2 x RES-104, món ghim mặc định RES-104.
+  const chay = (gioiHan) => { let s = 0; while (!run.xong && s++ < gioiHan / DT) buoc(); };
+  soChuyen = 0; batDau('chuyen'); run.thu = true; mode = 'chuyen'; phim = {};
+  them(pl, 'RES-101', 3); them(pl, 'RES-104', 2); ok(gan(gtdTui(pl.bag), 9, 1e-9), 'GTĐ túi 3x1,0 + 2x3,0 phải 9,0');
+  pl.oxy = 0.001; chay(30);
+  ok(run.kq && run.kq.cach === 'keo', 'hết Oxy không ai cứu phải bị kéo về');
+  ok(run.kq && gan(run.t - run.tNgat, P.ngat, 0.02), 'ngạt phải đúng 12 giây, đo ' + (run.t - run.tNgat));
+  ok(run.kq && run.kq.monMangVe === 1 && run.kq.giu['RES-104'] === 1, 'bị kéo về phải giữ đúng 1 RES-104');
+  ok(run.kq && gan(run.kq.gtdMangVe, 3, 1e-9) && gan(run.kq.gtdMat, 6, 1e-9), 'GTĐ giữ 3,0 và mất 6,0');
+  // 3. Cửa khí giữ nguyên túi. 4. Beacon 5 giây giữ nguyên túi. 5. Oxy chạm 0 giữa kênh thì hủy kênh và vào ngạt.
+  batDau('chuyen'); run.thu = true; mode = 'chuyen'; them(pl, 'RES-104', 2); pl.x = 0.6; pl.y = 12; chay(1);
+  ok(run.kq && run.kq.cach === 'cua' && run.kq.gtdMangVe === 6, 'bay vào cửa khí phải về giữ nguyên túi');
+  batDau('chuyen'); run.thu = true; mode = 'chuyen'; them(pl, 'RES-104', 2); pl.x = map.beacon[0].x; pl.y = map.beacon[0].y; phim = { KeyF: true }; chay(10);
+  ok(run.kq && run.kq.cach === 'beacon' && gan(run.t, 5, 0.02) && run.kq.gtdMangVe === 6, 'giữ F 5 giây ở beacon phải về giữ nguyên túi, đo ' + (run.kq && run.t));
+  batDau('chuyen'); run.thu = true; mode = 'chuyen'; pl.x = map.beacon[0].x; pl.y = map.beacon[0].y; pl.oxy = 2; phim = { KeyF: true }; chay(3);
+  ok(run.ngatDaVao && !(run.kq && run.kq.cach === 'beacon'), 'Oxy chạm 0 trước khi kênh xong phải vào ngạt');
+  // 6. Khai thác cộng đúng: ép RNG, mọi vật rơi vào túi đúng Khối và GTĐ của bảng.
+  batDau('chuyen'); run.thu = true; const nd = map.nut.find((q) => q.id === 'SLV-104'); const khoi0 = pl.tai; khaiThacXong(nd);
+  ok(nd.xong && pl.tai > khoi0 && gan(gtdTui(pl.bag), run.gtdNhat, 1e-9) && gan(pl.tai, Object.entries(pl.bag).reduce((s, [id, k]) => s + VAT[id].khoi * k, 0), 1e-9), 'khai thác phải cộng Khối và GTĐ khớp bảng');
+  P = luu.P; mode = luu.mode; soChuyen = 0; phim = {}; batDau('chuyen');
+  window.KIEM_KQ = { phep: n, loi };
+  if (loi.length) console.error('KIEM LỖI:\n' + loi.join('\n')); else console.log(`KIEM ĐẠT: ${n} phép`);
+}
+
+veNut(); veLichSu(); batDau('chuyen'); requestAnimationFrame(khung);
+if (location.search.includes('kiem')) kiem();
 </script>
 </body>
 </html>
