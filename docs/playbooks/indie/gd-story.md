@@ -7,7 +7,7 @@
 | Đầu ra | Dạng | Ai dùng |
 |---|---|---|
 | Story bible 1 trang: bối cảnh, xung đột, vai người chơi, mục tiêu, giọng văn | Tab GAME STORY | GDM, gd-ux, art |
-| Mạch truyện theo ngày: sự kiện, điều kiện kích hoạt, vị trí trong core loop | `projects/space-salvage/gdd/` markdown, tóm vào GAME STORY | gd-systems, gd-ux, dev |
+| Mạch truyện theo ngày: sự kiện, điều kiện kích hoạt, vị trí trong core loop | `projects/space-salvage/gdd/` markdown, tóm vào GAME STORY | gd-character, gd-quan, gd-ux, dev |
 | Bảng lời thoại: key, người nói, câu, giới hạn ký tự, ngữ cảnh | Bảng strings (TSV trong repo, dán tab) | gd-ux, dev, localization |
 | Voice sheet từng NPC và loài khách: 3 từ khóa giọng, từ hay dùng, từ cấm, 3 câu mẫu | Phụ lục bible | gd-character, gd-quan |
 | Bảng tên: game, item, quái, món (10-12 ứng viên, tiêu chí rút, kết quả) | Markdown, kết quả vào Sheet | mọi vai giữ tab có tên |

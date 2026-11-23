@@ -20,4 +20,5 @@ Lead: "xóa tri thức liên quan tới puzzle game khỏi dự án này, không
 - Xóa 24 file: kho cũ `docs/knowledge/00` tới `90` và README, 8 playbook Puzzle ở `docs/playbooks/*.md`, 2 mẫu level `ban-giao-level.md`, `mo-hinh-do-kho.md`. Bản cũ còn trong lịch sử git.
 - Giữ `docs/knowledge/95-cach-lead-lam-viec.md` (cách Lead làm việc, không phải Puzzle), `docs/knowledge/indie/`, `docs/playbooks/indie/`.
 - Không đụng `.claude/skills`, `.agents/skills`, `.gd-department`. Skill gốc Puzzle (level-forge, gdd-v05, gdd-v1 sheet) vẫn còn, CLAUDE.md mục "Skill gốc Puzzle, đọc thế nào" ghi cách dùng.
+- Lead: "xóa luôn phần vai Puzzle trong to-chuc.md". Viết lại `docs/org/to-chuc.md`: bỏ 7 vai gộp từ 13 role, bảng tên cũ, sở hữu file và RACI theo vai Puzzle. Giữ sơ đồ 10 vai hiện hành, vòng đời việc, model, ranh giới an toàn, phần còn lại trỏ về CLAUDE.md.
 - Đã gỡ mọi chỗ trỏ tới file đã xóa ở CLAUDE.md, AGENTS.md, docs/org, .claude/agents, kho và playbook indie.

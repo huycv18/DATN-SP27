@@ -90,7 +90,7 @@ CORE LOOP dùng khuôn khối nhưng mỗi khối là một nhóm thực thể (
 
 | Lỗi | Ví dụ | Cách tránh trong phòng |
 |---|---|---|
-| Một số ghi ở hai nơi lệch nhau | Laser DMG 50 ở Tower, 150 ở Balance Sheet. Canon Range 10f ở Tower, 7f ở Balance Sheet | Balance Sheet chỉ ghi lịch sử đổi số. Số hiện hành chỉ ở tab spec, validator của gd-tools so hai nơi |
+| Một số ghi ở hai nơi lệch nhau | Laser DMG 50 ở Tower, 150 ở Balance Sheet. Canon Range 10f ở Tower, 7f ở Balance Sheet | Balance Sheet chỉ ghi lịch sử đổi số. Số hiện hành chỉ ở tab spec, validator của gd-tech so hai nơi |
 | Issue ID trùng | Copper Ore và Rock cùng 15, Iron Ore và Blue Gems cùng 16 | Validator kiểm ID duy nhất |
 | Dòng Surplus chép nhầm | ECONOMIC Wave 2 lặp công thức của Wave 1 | Surplus sinh bằng sim, không gõ tay |
 | Giá ở hai tab khác đơn vị | Shop bán Wood 5 Coin, Balance Sheet 1 Coin | Một bảng giá duy nhất (Shop), tab khác trỏ về |
