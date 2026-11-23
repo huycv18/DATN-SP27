@@ -51,5 +51,5 @@ Thừa (đề xuất gộp, chờ Lead):
 | Phần tử HUD ca cảng | 11 | 12 |
 | Strings | 287 | 298 |
 
-HUD boss viết theo `combat-driftlife.md` mục 3.7: boss không có thanh Choáng, chỉ Bất lực theo cơ chế pha, nên HUD-17 hiện Sinh lực, pha, bộ đếm Neo hoặc Dây nối và đồng hồ Choáng. Khung UI-30b trên Figma đã sửa theo. Cổng máy: `kiem-ux.mjs` 0 lỗi, `kiem-de-doc.mjs --tab WIREFRAME` ĐẠT, `validate-gdd.mjs` 0 lỗi, `selftest.mjs` 33 ĐẠT. Chưa dán tab WIREFRAME lên Sheet.
+HUD boss viết theo `combat-driftlife.md` mục 3.7: boss không có thanh Choáng, chỉ Bất lực theo cơ chế pha, nên HUD-17 hiện Sinh lực, pha, bộ đếm Neo hoặc Dây nối và đồng hồ Choáng. Khung UI-30b trên Figma đã sửa theo. Cổng máy: `kiem-ux.mjs` 0 lỗi, `kiem-de-doc.mjs --tab WIREFRAME` ĐẠT, `validate-gdd.mjs` 0 lỗi, `selftest.mjs` 33 ĐẠT. Tab WIREFRAME đã dán lên Sheet chính, `doi-chieu-sheet.mjs --tab WIREFRAME` KHỚP 30 hàng, 0 ô lệch.
 
