@@ -239,13 +239,13 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
   const muc = (n, { hong = false } = {}) => {
     const thun = Array.from({ length: 110 }, (_, i) => `Dòng chữ giải thích số ${i + 1} của hệ thống mẫu.`);
     return [
-      `## II.${n}. Trạm mẫu`, '', 'Hệ thống mẫu làm một việc trong game và nối với hệ thống khác.', '',
-      `### II.${n}.1. Tổng quan`, 'Một vòng chơi của hệ thống mẫu.', '',
+      `## II.${n}. Sample Station`, '', 'Hệ thống mẫu làm một việc trong game và nối với hệ thống khác.', '',
+      `### II.${n}.1. Overview`, 'Một vòng chơi của hệ thống mẫu.', '',
       `### II.${n}.${hong ? 3 : 2}. Luật thứ nhất`, ...thun, 'Chi tiết dữ liệu: tab Customer trên Sheet GDD.', '',
       '```mermaid', 'flowchart TD', '  A[Tàu cập] --> B{Có chỗ}', '  B -->|Có| C[Nhận hàng]', '```',
       hong ? '' : `*Hình II.${n}.2 - Ca cảng một tàu*`, '',
       '[CHỜ ẢNH: màn cảng từ build]', `*Hình II.${n}.3 - Màn cảng*`, '',
-      `### II.${n}.z. Ngoài MVP`, '- Tàu thứ ba', ...(hong ? ['Có dấu chấm phẩy; và gạch dài — sai, mã STY-501, tab Khong Co'] : []),
+      `### II.${n}.z. Post-MVP`, '- Tàu thứ ba', ...(hong ? ['Có dấu chấm phẩy; và gạch dài — sai, mã STY-501, tab Khong Co'] : []),
     ].join('\n') + '\n';
   };
   t('kiem-book: file đúng khuôn qua cổng, đếm CHỜ ẢNH', () => {

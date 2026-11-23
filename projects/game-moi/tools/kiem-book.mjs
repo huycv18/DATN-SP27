@@ -70,13 +70,13 @@ export function kiemMuc(text, tenFile = 'muc.md') {
     const m = h.t.match(/^(I{1,2})\.(\d+)\.(\d+|z)\. \S/);
     if (!m) { them(h.d, 'Heading con phải dạng "### II.n.k. Tên"', h.t); continue; }
     if (nhan && `${m[1]}.${m[2]}` !== nhan) them(h.d, `Tiền tố ${m[1]}.${m[2]} sai, cần ${nhan}`);
-    if (daZ) them(h.d, 'Còn mục sau II.n.z, Ngoài MVP phải là mục cuối');
-    if (m[3] === 'z') { daZ = true; if (!/^Ngoài MVP$/.test(h.t.replace(/^[\w.]+ /, ''))) them(h.d, 'Mục z phải tên "Ngoài MVP"', h.t); }
+    if (daZ) them(h.d, 'Còn mục sau II.n.z, Post-MVP phải là mục cuối');
+    if (m[3] === 'z') { daZ = true; if (!/^Post-MVP$/.test(h.t.replace(/^[\w.]+ /, ''))) them(h.d, 'Mục z phải tên "Post-MVP"', h.t); }
     else if (Number(m[3]) !== ++k) them(h.d, `Đánh số không liên tục, cần ${nhan}.${k}`, h.t);
   }
   if (part === 'II') {
-    if (!H3.some((h) => /^II\.\d+\.1\. Tổng quan$/.test(h.t))) them(1, 'Thiếu mục "II.n.1. Tổng quan"');
-    if (!H3.some((h) => /^II\.\d+\.z\. Ngoài MVP$/.test(h.t))) them(1, 'Thiếu mục "II.n.z. Ngoài MVP"');
+    if (!H3.some((h) => /^II\.\d+\.1\. Overview$/.test(h.t))) them(1, 'Thiếu mục "II.n.1. Overview"');
+    if (!H3.some((h) => /^II\.\d+\.z\. Post-MVP$/.test(h.t))) them(1, 'Thiếu mục "II.n.z. Post-MVP"');
     if (!mermaid) them(1, 'Cần ít nhất 1 khối mermaid');
     const dauMuc = H2[0] ? L.slice(H2[0].d, (H3[0]?.d || L.length + 1) - 1) : [];
     if (H2[0] && !dauMuc.some((x) => x.trim())) them(H2[0].d, 'Thiếu đoạn mở giữa "##" và mục con đầu');

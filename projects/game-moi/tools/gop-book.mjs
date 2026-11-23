@@ -6,7 +6,7 @@ import { readFileSync, readdirSync, existsSync, mkdirSync, writeFileSync } from 
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const TIEU_DE = 'Doc thiết kế The Novent';
+const TIEU_DE = 'The Novent Design Document';
 const HINH_NHAN = /Hình ((?:I|II)\.\d+\.\w+)/g;
 const docLf = (f) => readFileSync(f, 'utf8').replace(/\r/g, '').trim();
 const dsMd = (d) => (existsSync(d) ? readdirSync(d).filter((x) => x.endsWith('.md')).sort() : []);
@@ -39,10 +39,10 @@ export function gop(book) {
   const p1txt = thanPhan(1, p1, 'phan-1');
   const p2txt = thanPhan(2, p2, 'phan-2');
 
-  luc.push('## Mục lục', '', '### Phần I. Điều khiển', '');
+  luc.push('## Table of Contents', '', '### Part I. Controls', '');
   if (p1.length) p1txt.forEach((t, i) => luc.push(`- ${tenMuc(t) || p1[i]}`));
   else luc.push('- chưa viết');
-  luc.push('', '### Phần II. Thành phần game', '');
+  luc.push('', '### Part II. Game Elements', '');
   const thieu = [];
   for (const m of muc) {
     const i = p2.indexOf(m.file);
@@ -53,8 +53,8 @@ export function gop(book) {
   for (const f of la) luc.push(`- ${tenMuc(p2txt[p2.indexOf(f)]) || f} (ngoài mục lục KHUON.md)`);
 
   const out = [`# ${TIEU_DE}`, '', ...luc, ''];
-  if (p1.length) out.push('# Phần I. Điều khiển', '', p1txt.join('\n\n'), '');
-  if (p2.length) out.push('# Phần II. Thành phần game', '', p2txt.join('\n\n'), '');
+  if (p1.length) out.push('# Part I. Controls', '', p1txt.join('\n\n'), '');
+  if (p2.length) out.push('# Part II. Game Elements', '', p2txt.join('\n\n'), '');
   return { md: out.join('\n'), thieu, nMuc: muc.length, nHinh: hinh - 1, nFile: p1.length + p2.length, la };
 }
 

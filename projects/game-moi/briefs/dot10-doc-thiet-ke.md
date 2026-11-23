@@ -53,6 +53,41 @@ Hai việc chạy song song. gd-tech viết cổng theo `KHUON.md`, không chờ
 
 **Giới hạn.** Dùng Node có sẵn, không thêm dependency. Không commit.
 
+## GD-060 các vai: 8 mục Phần II còn lại
+
+Lead duyệt mục mẫu II.6 ngày 2026-11-23: "Oke làm tiếp đi", rồi thêm: "Phần tiêu đề để tiếng anh nhé". Mọi tiêu đề `##` và `###` viết tiếng Anh, tiêu đề `##` lấy đúng cột Tiêu đề ở bảng mục lục của `KHUON.md`. Thân văn, bảng, chú thích hình vẫn tiếng Việt. Mục mẫu II.6 đã đổi tiêu đề theo luật này.
+
+**Mục tiêu.** Mỗi vai viết một mục Phần II cho hệ thống mình giữ, cùng cách viết với mục mẫu II.6. Người đọc là hội đồng chấm và dev mới, chưa đọc GDD. Mục phải giúp họ hiểu hệ thống chạy thế nào qua văn xuôi, bảng số, công thức có giải nghĩa biến, sơ đồ luồng, và biết tra chi tiết ở tab Sheet nào.
+
+| Mục | File | Vai | GDD nguồn chính |
+|---|---|---|---|
+| II.1 | `01-mot-ngay.md` | GDM | `00-khung-game.md` mục 4, tab Day, CORE LOOP |
+| II.2 | `02-nguoi-choi.md` | gd-character | `nguoi-choi.md` |
+| II.3 | `03-map-va-chuyen.md` | gd-world | `map.md` |
+| II.4 | `04-combat-driftlife.md` | gd-combat | `combat-driftlife.md` |
+| II.5 | `05-vat-pham.md` | gd-items | `vat-pham.md` |
+| II.7 | `07-kinh-te-tien-trinh.md` | gd-economy | `kinh-te-tien-trinh.md` |
+| II.8 | `08-co-op-va-luu.md` | gd-tech | `ky-thuat.md` mục 2.2 tới 2.3b |
+| II.9 | `09-cot-truyen-ket-thuc.md` | gd-story | `cot-truyen.md` |
+
+**Đọc trước.**
+- `projects/game-moi/book/KHUON.md` toàn bộ, nhất là luật viết 1 tới 13
+- `projects/game-moi/book/phan-2/06-tram-va-cang.md` mục mẫu: đọc để chép cách viết, không chép nội dung
+- `projects/game-moi/so-hien-hanh.md`, `projects/game-moi/DECISIONS.md` các mục từ 2026-11-20
+- GDD nguồn của mục mình, các mục Tóm tắt, Danh mục, Luật, Tham số, Trường hợp biên. Bỏ qua Điểm tự quyết, Phản biện khung, Lịch sử thay đổi
+- `projects/game-moi/gdd/00-khung-game.md` mục 10 Từ điển
+- TSV các tab mình giữ ở `projects/game-moi/gdd/sheet/` để trỏ đúng tên tab
+
+**Ghi vào.** Chỉ file `projects/game-moi/book/phan-2/<file của mục mình>`. Không sửa GDD, Sheet, file mục khác. Chỗ dẫn sang hệ thống khác thì ghi "xem mục II.k", không viết lại luật của vai khác.
+
+**Tiêu chí hoàn thành.**
+- `node projects/game-moi/tools/kiem-book.mjs projects/game-moi/book/phan-2/<file>` ĐẠT
+- `node .claude/skills/gdd-v1/scripts/soat.mjs projects/game-moi/book/phan-2/<file>` 0 lỗi
+- Ít nhất 1 sơ đồ luồng, chọn luồng có rẽ nhánh khó hiểu nhất của hệ thống. Có mục tiêu chí nghiệm thu, Trường hợp biên ít nhất 4 dòng, Ngoài MVP
+- Báo cáo có bảng "số trong mục, nguồn" và danh sách `[LỆCH]` nếu có
+
+**Giới hạn.** Không đặt luật hay số mới. Thấy luật thiếu thì ghi vào báo cáo, không tự lấp. Không commit.
+
 ## Luật chung
 
 - Mỗi vai chỉ sửa file trong cột Ghi vào. Không sửa Google Sheet.

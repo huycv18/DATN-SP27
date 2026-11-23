@@ -1,14 +1,14 @@
-## II.6. Trạm và cảng
+## II.6. Station and Port
 
 Trạm và cảng là nửa ở nhà của The Novent. Ở đây người chơi biến thứ mang về từ chuyến ra ngoài thành tiến độ: sửa khoang để trạm sống lại, đánh thức người vớt để mở tính năng, và bán hàng cho tàu thương nhân ở ca cảng để lấy Tally. Mục này nối với mục Vật phẩm ở chỗ hàng nào bán được, với mục Kinh tế ở giá và nâng cấp, với mục Một ngày ở chỗ ca cảng là pha sau các chuyến. Ai cần hiểu vì sao người chơi muốn ra ngoài mỗi ngày nên đọc mục này.
 
-### II.6.1. Tổng quan
+### II.6.1. Overview
 
 Người chơi sống trên **Station Ember**, trạm nhà bị hỏng neo giữa bãi vỡ. Trạm chia thành các **khoang**, mỗi khoang là một phòng chức năng. Khoang hỏng thì không dùng được. Người chơi mang vật liệu từ **chuyến**, tức một lần ra ngoài không gian rồi về, để sửa từng khoang. Sửa xong một khoang thì mặt cắt trạm đổi hình và trả lại một chức năng. Một số khoang chỉ sửa được khi có người phụ trách. Đó là **người vớt**, người sống sót còn nằm trong buồng ngủ đông ở các xác trạm ngoài kia. Người chơi tìm buồng, kéo về trạm, chờ người đó tỉnh, rồi sửa khoang của người đó để mở tính năng.
 
 Khi khoang liên lạc và cảng đều chạy, mỗi ngày có một **ca cảng**, pha bán hàng cho tàu thương nhân. Trước ca người chơi chọn hàng đem bán. Trong ca tàu cập vào cảng, mỗi tàu gọi một món, người chơi chạy mang món đó tới đúng tàu trước khi tàu hết kiên nhẫn. Tiền bán và tiền thưởng theo tốc độ là **Tally**, đồng tiền duy nhất của game, dùng để nâng cấp bộ đồ và trạm cho các chuyến sau đi xa hơn. Ca cảng không có thua: tàu bỏ đi chỉ làm mất món của tàu đó, hàng quay về kho. Quyết định nặng nằm trước ca (bán gì, bao nhiêu), trong ca tay bận nhưng đầu nhẹ.
 
-### II.6.2. Khoang và mặt cắt trạm
+### II.6.2. Modules and Station Cross-section
 
 Mỗi khoang ở một trong các trạng thái Hỏng, Hoạt động, Đang nâng cấp. Khoang Hỏng không có chức năng nhưng vẫn đi qua được. Khoang đang nâng cấp vẫn dùng được chức năng của cấp hiện tại. Khoang Hoạt động không tự hỏng lại, trạm không xấu đi khi người chơi nghỉ.
 
@@ -37,7 +37,7 @@ Trạm được nhìn theo mặt cắt ngang ba tầng, hai thang dọc nối c�
 
 Chi tiết dữ liệu: tab Customer trên Sheet GDD, khối Khoang trạm.
 
-### II.6.3. Sửa khoang và động cơ chính
+### II.6.3. Module Repair and Main Engine
 
 Muốn sửa một khoang, mọi vật liệu trong danh sách sửa phải nằm sẵn trong kho. Người chơi đứng ở khoang và giữ phím sửa trong thời gian sửa (số khởi điểm 5 giây, chưa đo). Vật liệu bị trừ khỏi kho ngay lúc bắt đầu giữ phím. Thả phím giữa chừng thì tiến độ giữ nguyên, vật liệu không hoàn lại, giữ phím lại thì làm tiếp. Kho thiếu một vật liệu thì không bắt đầu được, khung khoang liệt kê thứ còn thiếu.
 
@@ -47,7 +47,7 @@ Sửa xong thì khoang sang Hoạt động cấp 1, mặt cắt đổi hình kho
 
 Chi tiết dữ liệu: tab Customer khối Khoang trạm, tab Upgrade và ITEM LIST cho danh sách và số lượng vật liệu.
 
-### II.6.4. Đánh thức người vớt
+### II.6.4. Waking the Survivors
 
 Mỗi người vớt nằm trong một **buồng ngủ đông** còn chạy ở một **map nhánh**, khu dựng tay vào qua một lối trong map tổng. Người chơi tìm buồng và kéo buồng về cửa khí của trạm. Buồng qua cửa khí thì đặt vào khu hồi sức. Người vớt tỉnh vào đầu ngày kế tiếp và giao quest mở: sửa khoang của chính người đó. Sửa xong thì tính năng mở.
 
@@ -79,7 +79,7 @@ flowchart TD
 
 Chi tiết dữ liệu: tab Customer khối Người vớt mở tính năng.
 
-### II.6.5. Chuẩn bị ca: bảng tàu và danh mục bán
+### II.6.5. Shift Preparation: Ship Board and Sales Catalog
 
 Mọi việc trước ca làm ở **bảng tàu** của khoang liên lạc, mở được từ đầu ngày tới lúc Mở ca. Bảng tàu cho biết số tàu dự kiến, loại tàu ghé hôm nay và chúng hay gọi gì, đơn đặt trước, số thùng kho làm được và giá thùng từng loại hàng. Buổi sáng người chơi đọc bảng tàu để biết nên mang gì về, tối lập danh mục từ thứ đã mang về. Bảng tàu không chọn hộ.
 
@@ -110,7 +110,7 @@ GiaThung = GiaKien / 2,5
 | Thùng đặc sản Gần | Hàng hiếm | 1 | 80 | Hàng trong kho | Hạng cảng 3 |
 | Lồng Driftmoth, Skitter Ray, Sting Krill | Hàng sống | 1 | 65, 75, 55 | Bắt sống trong chuyến | Chương 1 |
 
-Độ gọi là trọng số để tàu chọn món, hàng rẻ được gọi nhiều hơn (xem mục con kế tiếp). Thùng nước tinh khiết là hàng cần chế duy nhất của chương đầu:
+Độ gọi là trọng số để tàu chọn món, hàng rẻ được gọi nhiều hơn (xem mục II.6.6). Thùng nước tinh khiết là hàng cần chế duy nhất của chương đầu:
 - Xưởng chạy một mẻ một lúc và giữ thêm mẻ chờ trong hàng đợi. Số khởi điểm chưa đo: hàng đợi 2 mẻ ở cấp 1, mỗi mẻ 10 giây.
 - Mẻ chạy cả khi người chơi ra chuyến. Mẻ còn lúc ngủ thì xong khi sang ngày.
 - Mẻ xong sau khi Mở ca thì vào kho, không vào danh mục ca đó.
@@ -129,7 +129,7 @@ Mở ca và Bỏ ca chọn ở bảng tàu. Mỗi ngày có đúng một ca, ch�
 
 Chi tiết dữ liệu: tab Customer khối Nhóm hàng cảng và khối Luật ca cảng, tab Shop cho giá thùng.
 
-### II.6.6. Trong ca: tàu cập, mang thùng, bơm khí
+### II.6.6. During the Shift: Docking, Crate Delivery, Air Pumping
 
 Ca dài tối đa 300 giây. Tàu đầu tới ở giây thứ hai. Mọi tàu tới trong cửa sổ đến ở đầu ca, phần còn lại của ca để tàu cập cuối còn đủ kiên nhẫn được phục vụ.
 ```text
@@ -193,7 +193,7 @@ flowchart TD
 
 Chi tiết dữ liệu: tab Customer, khối Loose Bolt, Tàu vội và khối Luật ca cảng.
 
-### II.6.7. Tally, tip và đơn đặt trước
+### II.6.7. Tally, Tips and Pre-orders
 
 Giao đúng thì tàu trả Tally ngay:
 ```text
@@ -226,7 +226,7 @@ Bảng kết ca ghi số tàu phục vụ xong trên số tàu trong lịch, s�
 
 Chi tiết dữ liệu: tab Customer khối Luật ca cảng (Tally và tip, Đơn đặt trước, Thất bại, Kết thúc ca), tab Shop.
 
-### II.6.8. Hạng cảng
+### II.6.8. Port Rank
 
 **Hạng cảng** là thang tiến trình duy nhất của cảng, gồm tám hạng, chung cả nhóm. Hạng tăng theo **điểm cảng** cộng dồn qua các ca và không bao giờ giảm.
 ```text
@@ -247,7 +247,7 @@ Hạng cao nhất của chương đầu nối cảng với động cơ: linh ki�
 
 Chi tiết dữ liệu: tab Customer khối Hạng cảng.
 
-### II.6.9. Chơi hai người và tiêu chí nghiệm thu ca cảng
+### II.6.9. Two-player Co-op and Acceptance Criteria
 
 Mọi luật trên đúng cho cả một người và co-op. MVP có co-op hai người, khác biệt nằm ở các điểm sau:
 - Danh mục bán là một danh mục chung, ai ở khoang liên lạc cũng sửa được, người bấm Mở ca chốt.
@@ -273,7 +273,7 @@ Cảm giác thật của ca và việc người chơi có hiểu ca cảng khôn
 
 Chi tiết dữ liệu: tab Customer khối Lịch tàu.
 
-### II.6.10. Trường hợp biên
+### II.6.10. Edge Cases
 
 | Tình huống | Phán quyết |
 |---|---|
@@ -283,7 +283,7 @@ Chi tiết dữ liệu: tab Customer khối Lịch tàu.
 | Kho giảm sau khi lập danh mục nháp | Số thùng loại đó tự hạ về số kho làm được, về 0 thì loại đó rời danh mục |
 | Người chơi rời phiên giữa ca | Nhân vật ở lại trạm, thùng trên tay về ô quầy của nó |
 
-### II.6.z. Ngoài MVP
+### II.6.z. Post-MVP
 
 - Khoang chương 2 tới 4: khoang dẫn đường, bến Skiff, phòng nghiên cứu, khoang sinh quyển, bến 2, bến 3, tiện ích cảng và quầy phụ.
 - Nâng cấp khoang cấp 2 và cấp 3, gồm Xưởng cấp 2 và Cảng cấp 2 (cửa neo thứ 4 của bến 1).

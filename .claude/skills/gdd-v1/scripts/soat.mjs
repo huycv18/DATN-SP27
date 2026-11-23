@@ -193,7 +193,7 @@ function soatFile(file) {
       sectionHasContent = false;
       sectionIsExempt = /engineer|tool|kỹ thuật|level data|lịch sử/iu.test(section);
       sectionIsLuat = /^(\d+(\.\d+)*\.?\s*)?luật/iu.test(section);
-      sectionIsBien = /biên/iu.test(section);
+      sectionIsBien = /biên|edge case/iu.test(section);
       sectionIsNghiemThu = /nghiệm thu|acceptance/iu.test(section);
       if (sectionIsNghiemThu) coMucNghiemThu = true;
       tableHeaderSeen = false;

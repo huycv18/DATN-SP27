@@ -345,3 +345,8 @@ Hệ quả:
 - Doc chỉ dẫn lại luật và số đã có trong GDD hệ thống, `so-hien-hanh.md` và Sheet, không đặt luật hay số mới. Thấy lệch thì báo GDM.
 - Làm một mục mẫu trước (II.6 Trạm và cảng), GDM duyệt rồi mới giao các mục còn lại. Phần I chờ có build.
 - Việc đợt 2 và 3 (codex Dave the Diver theo hệ thống, Guides cho dev Unity) ghi ở BACKLOG GD-064, GD-065.
+
+## 2026-11-23 - Tiêu đề Doc thiết kế viết tiếng Anh
+
+Lead duyệt mục mẫu II.6 ("Oke làm tiếp đi"), rồi thêm: "Phần tiêu đề để tiếng anh nhé".
+Hệ quả: tên Doc, tên phần và mọi tiêu đề `##`, `###` trong Doc thiết kế và chương đề xuất dự án viết tiếng Anh (The Novent Design Document, Part I. Controls, Part II. Game Elements, Overview, Acceptance Criteria, Edge Cases, Post-MVP). Thân văn, bảng, chú thích hình vẫn tiếng Việt. GDM hiểu "phần tiêu đề" là tiêu đề mục, không gồm chú thích hình. Đã sửa `book/KHUON.md`, II.6, `de-xuat-du-an.md`, `kiem-book.mjs`, `gop-book.mjs`, selftest. `soat.mjs` nhận thêm "edge case" là mục trường hợp biên.
