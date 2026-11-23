@@ -3,7 +3,7 @@
 Project: game-moi (The Novent) | Chủ sở hữu: gd-world | Trạng thái: bản đủ, số là khởi điểm ước, chưa sim (2026-11-20, GD-026) | Nguồn: `../00-khung-game.md` (K1 đến K9, C1 đến C8, mục 7, 9, 12), `../../log-gdm-tu-quyet.md`, brief `../../briefs/dot1-gdd-he-thong.md`
 
 Tên hiển thị đã chốt cho The Novent. The Veyl gọi các dải theo điểm neo Ember, đàn Shepherd Whale và ánh tinh thể trong Glass Nebula. Tên các khoang giữ cách gọi theo công dụng của thủy thủ đoàn hoặc của The Wardens. Tên phòng trong spec greybox vẫn dùng tiếng Việt.
-Số trong file sinh từ `projects/game-moi/sim/ngan_sach_oxy.py` (bảng ở `projects/game-moi/sim/ngan-sach-oxy.md`). Đó là phép tính tất định, không phải sim nhiều seed. Sim là việc của gd-tech ở đợt 2.
+Số trong file sinh từ `projects/game-moi/sim/ngan_sach_oxy.py` (bảng ở `projects/game-moi/sim/ngan-sach-oxy.md`). Đây là phép tính tất định, chưa có sim nhiều seed (việc của gd-tech ở đợt 2).
 
 ## Danh mục
 
@@ -48,7 +48,7 @@ Số trong file sinh từ `projects/game-moi/sim/ngan_sach_oxy.py` (bảng ở `
 
 ## Tóm tắt
 
-Hệ thống này dựng toàn bộ không gian ngoài trạm: map tổng The Wake gồm ba dải ghép mới mỗi chuyến từ mảnh dựng tay, tám map nhánh dựng tay cố định giữ truyện, người vớt và boss, cùng hai cách rút ngắn đường (Recall Beacon và Skiff). Nó biến Oxy thành quyết định đi tiếp hay quay về (P1) và đặt nội dung một lần ở chỗ chắc chắn gặp (P4). Tầng: lõi. Ưu tiên: bản đầu cho MVP (dải Gần, Station Cinder), đầy đủ cho cả game. Phụ thuộc: tốc độ bay và bình Oxy của gd-character, loài và boss của gd-combat, nhóm tài nguyên của gd-items, mốc chương của gd-story.
+Hệ thống này dựng toàn bộ không gian ngoài trạm: map tổng The Wake gồm ba dải ghép mới mỗi chuyến từ mảnh dựng tay, tám map nhánh dựng tay cố định giữ truyện, người vớt và boss, cùng hai cách rút ngắn đường (Recall Beacon và Skiff). Hệ thống biến Oxy thành quyết định đi tiếp hay quay về (P1) và đặt nội dung một lần ở chỗ chắc chắn gặp (P4). Tầng: lõi. Ưu tiên: bản đầu cho MVP (dải Gần, Station Cinder), đầy đủ cho cả game. Phụ thuộc: tốc độ bay và bình Oxy của gd-character, loài và boss của gd-combat, nhóm tài nguyên của gd-items, mốc chương của gd-story.
 
 ## Hiện hành
 
@@ -120,7 +120,7 @@ Chi tiết từng hazard ở bảng 3.5.
 5. Khe SP-R hạng hiếm là khe chỉ cho phép điểm khai thác loại hòm của dải: SLV-104 (Gần), SLV-203 (Giữa), SLV-303 (Xa). Mảnh Thưởng luôn có ít nhất một khe hạng hiếm được kích hoạt, và luôn có ít nhất một SP-H hoặc một SP-D loài săn mồi được kích hoạt. (MVP)
 6. Từ chương 3, dải Xa kích hoạt khe SP-W theo tỉ lệ ở bảng 3.6. Trước chương 3 khe SP-W để trống. (Sau MVP)
 7. Khe SP-D khai báo điểm neo (không neo, mảnh vỡ nhỏ, xác có điện hoặc cạnh Cáp chập, thiên thạch khoáng, mây khí, xác lớn). Loài có điểm neo trong bảng điểm sinh của gd-combat chỉ sinh ở khe có điểm neo đó. Loài đòi vùng trống hazard (Storm Siphon) chỉ sinh ở khe không có SP-H kích hoạt trong bán kính loài đó đòi. (MVP)
-8. Khe SLV-101 Mảnh vỡ trôi (nhặt tay) chiếm tối đa 25% khe SP-R của một mảnh, hai khe SLV-101 cách nhau ít nhất 2 u. Node khoan và nạy đặt thành cụm 2 đến 3 node trong bán kính 4 u. Với lượng mới của gd-items (1 lần quay), tính cả thời gian bay thì nhặt tay và khoan gần ngang nhau (bảng cuối mục 3.8). (MVP)
+8. Khe SLV-101 Mảnh vỡ trôi (nhặt tay) chiếm tối đa 25% khe SP-R của một mảnh, hai khe SLV-101 cách nhau ít nhất 2 u. Node khoan và nạy đặt thành cụm 2 đến 3 node trong bán kính 4 u. Với lượng của gd-items (1 lần quay), tính cả thời gian bay thì nhặt tay và khoan gần ngang nhau (bảng cuối mục 3.8). (MVP)
 
 ### 2.5 Recall Beacon
 
@@ -150,7 +150,7 @@ Chi tiết từng hazard ở bảng 3.5.
 4. Khu có khí (trạm còn người: Lantern, Waypost, The Raft) không hao nền Oxy và không nạp Oxy. Trúng đòn trong khu có khí vẫn trừ Oxy. (Sau MVP)
 5. Người vớt nằm trong buồng ngủ đông (vật kéo BNG của gd-items). Muốn vớt thì kéo buồng tới beacon hoặc tới cửa ra. Buồng không vào túi đồ. Người vớt còn thức (Amara ở Lantern, Yusuf ở Veyl Waypost) về trạm bằng mốc truyện (C2.3, C3.2 của gd-story), không kéo buồng. Sevra Ilvane nằm trong kén thoát hiểm, kéo theo đúng luật kéo buồng ngủ đông. Lúc cứu (C3.8), kén về tới Ember bằng Recall Beacon (kén trong bán kính kéo theo đi cùng, luật 2.5.5) hoặc qua cửa khí, hai cách đều tính là xong C3.8. (MVP cho luật kéo buồng, Sau MVP cho Sevra)
 6. Manh mối truyện, người vớt và boss chỉ nằm trong map nhánh (K7). Nội dung manh mối do gd-story đặt vào khe manh mối của sơ đồ. (MVP)
-7. Khóa trong map nhánh mở bằng một trong ba loại chìa: dụng cụ (do gd-items định nghĩa), mốc truyện (do gd-story), hạ boss. Mọi khóa đều mở được bởi một người. (MVP)
+7. Khóa trong map nhánh mở bằng một trong ba loại chìa: dụng cụ (do gd-items định nghĩa), mốc truyện (do gd-story), hạ boss. Một người mở được mọi khóa. (MVP)
 8. Vật nhiệm vụ ở khe V bị mất khi người mang bị kéo về thì trở lại đúng khe V của nó ở chuyến sau. Vật manh mối ở khe M tự ghi khi chạm, không chiếm túi (log GDM dòng 46). (MVP)
 9. Hộ tống (C5.1) không có hệ thống riêng: kéo kén của Sevra qua một đoạn map nhánh có kẻ địch, dùng luật bay, kéo và combat sẵn có. Từ đầu chương 5 (sau C4.7), Skiff chở nhóm và kén từ Ember tới cửa N4, kén chỉ rời Ember bằng Skiff. Từ cửa N4, kéo kén qua vòng phong tỏa tới cửa The Hearth. Cửa The Hearth mở khi kén chạm cửa, đó là mốc C5.1. Trong hộ tống, kén không đi theo Recall Beacon: người kéo kích beacon thì kén nằm lại tại chỗ. Kén rơi khi người kéo ngạt, bị kéo về hoặc kích beacon. Giữa các chuyến, kén được lưu ở beacon cố định gần nhất đã đi qua trên đường hộ tống, chưa qua beacon nào thì ở cửa N4. (Sau MVP)
 Sơ đồ từng map nhánh ở mục 2.10.
@@ -278,7 +278,7 @@ Hòm và vật kể chuyện trong map nhánh (hòm là điểm khai thác SLV c
 | Bình Oxy bậc 0 đến 4 | 330, 450, 600, 780, 1000 | GDM chốt (log 54) | Chuyến dài hơn | Chuyến ngắn hơn | Thời lượng chuyến cuối game | gd-character giữ trục, GDM chốt |
 | Túi bậc 0 đến 4 (Khối) | 80, 100, 126, 168, 216 | GDM chốt (log 54) | Oxy thành giới hạn sớm hơn | Túi đầy sớm, chuyến ngắn | Thời lượng chuyến đầu game | gd-character giữ trục, GDM chốt |
 | Hệ số thiếu cấp môi trường | 2,5 khi thiếu 1 cấp, 4,0 khi thiếu từ 2 cấp | theo gd-character | Cổng mềm thành tường | Người chơi bỏ qua nâng vỏ bộ đồ | Giữa, Xa, Cradle, Warden Rig | gd-character |
-| Dự trù quay về trong phép tính | 15% bình | 10 đến 20% | Phép tính cho chuyến ngắn hơn | Phép tính cho nhiều chuyến ngạt hơn | Chỉ phép tính ngân sách và sim | ước. Đây là giả định hành vi người chơi, không phải HUD. HUD dùng vạch đủ về của gd-character |
+| Dự trù quay về trong phép tính | 15% bình | 10 đến 20% | Phép tính cho chuyến ngắn hơn | Phép tính cho nhiều chuyến ngạt hơn | Chỉ phép tính ngân sách và sim | ước. Giả định hành vi người chơi trong phép tính, HUD dùng vạch đủ về của gd-character |
 | Dự trù trúng đòn trong phép tính | 10% bình | 5 đến 15% | | | Phép tính ngân sách | ước |
 | Mục tiêu chuyến chương 1, chương 5 | 4 đến 6 phút, 10 đến 12 phút | | | | Khung mục 9 | khung |
 
@@ -414,8 +414,8 @@ Hazard làm node khó lấy:
 
 - Mục tiêu khung: mỗi người trong nhóm 4 nhặt từ 60% so với chơi một mình (log 50). Nhóm 4 hết game bằng 60 đến 75% thời gian chơi một mình (log 69). Mốc chương bị sàn ngày truyện giữ, nên a chỉ đổi lượng mỗi người nhặt.
 - Hệ số tổng k(N) = 1 + a x (N trừ 1), nhân vào tỉ lệ kích hoạt khe SP-R và SP-D, a đặt theo dải. Dải là núm vì mỗi chương làm việc chủ yếu ở một dải.
-- Vì sao theo dải và vì sao số này: bảng mục 4 của sim chuyến (`tools/ket-qua/sim-chuyen.md`) cho a tối thiểu khác nhau giữa dải Gần (chương 1) và dải Xa (chương 3 đến 5). a của Gần đặt trên mức tối thiểu của kịch bản tốt ở chương 1 một khoảng dư, vì kết quả sim dịch mỗi khi các vai khác đổi số.
-- Bảng dưới đây là nguồn duy nhất của a. Sim chuyến, sim combat (gd-tech) và `projects/game-moi/sim/ngan_sach_oxy.py` đọc thẳng cột a. Giữ dạng bảng (cột Dải rồi cột a, số dùng dấu phẩy). Đổi a thì nhắn gd-tech chạy lại và gd-combat cập nhật hệ số sinh lực.
+- Bảng mục 4 của sim chuyến (`tools/ket-qua/sim-chuyen.md`) cho a tối thiểu khác nhau giữa dải Gần (chương 1) và dải Xa (chương 3 đến 5). a của Gần đặt trên mức tối thiểu của kịch bản tốt ở chương 1 một khoảng dư, vì kết quả sim dịch mỗi khi các vai khác đổi số.
+- Bảng dưới là nguồn duy nhất của a. Sim chuyến, sim combat (gd-tech) và `projects/game-moi/sim/ngan_sach_oxy.py` đọc thẳng cột a. Giữ dạng bảng (cột Dải rồi cột a, số dùng dấu phẩy). Đổi a thì nhắn gd-tech chạy lại và gd-combat cập nhật hệ số sinh lực.
 
 | Dải | a | k(2) | k(3) | k(4) |
 |---|---|---|---|---|
@@ -481,8 +481,8 @@ Một người, kịch bản trung bình, theo chương:
 - Kịch bản "cẩn thận" của log 56 là kịch bản trung bình và tốt của sim. Kịch bản "tham" là kịch bản tham.
 - Tỉ lệ bị kéo về của người chơi tham lệch khỏi 15 đến 40% ở chương đầu và chương cuối. Không chỉnh map trước playtest vì kịch bản tham là giả định. Nếu playtest xác nhận, núm của gd-world là phần mảnh có hazard ở dải Xa.
 
-- Bản chạy thử dùng để chọn hướng (đổi diện tích, giây khai thác, cỡ túi và bình) nằm ở `projects/game-moi/sim/do-nhay-chuyen.md`, sinh bởi `sim/do_nhay_chuyen.mjs`. Không phải số hiện hành nên không chép vào đây. Kết luận: thêm diện tích hay mật độ không kéo dài chuyến, túi quyết thời lượng đầu game, bình quyết cuối game.
-- Hướng đã chọn: map giữ nguyên kích thước và mật độ ở mục 3.1 đến 3.7. Giây khai thác nhân 2 (gd-items). Túi 80 đến 216 Khối và bình 330 đến 1000 (GDM, log 54). Túi quyết thời lượng đầu game, bình quyết cuối game.
+- Bản chạy thử dùng để chọn hướng (đổi diện tích, giây khai thác, cỡ túi và bình) nằm ở `projects/game-moi/sim/do-nhay-chuyen.md`, sinh bởi `sim/do_nhay_chuyen.mjs`. Kết quả: thêm diện tích hay mật độ không kéo dài chuyến, túi quyết thời lượng đầu game, bình quyết cuối game.
+- Hướng đã chọn: map giữ nguyên kích thước và mật độ ở mục 3.1 đến 3.7. Giây khai thác nhân 2 (gd-items). Túi 80 đến 216 Khối và bình 330 đến 1000 (GDM, log 54).
 
 ## 4. Trường hợp biên
 
@@ -513,7 +513,7 @@ Một người, kịch bản trung bình, theo chương:
 |---|---|---|
 | Thời lượng chuyến tối đa khi Oxy là giới hạn | 85% dung lượng bình (giây) | Dự trù quay về là ngưỡng người chơi tự đặt, thời lượng không vượt dung lượng bình |
 | Xa cột cuối, bình bậc 0, bộ đẩy bậc 0 | Bay ra có đường vòng 156 giây trên bình 330 | Tới được nhưng còn ít Oxy làm việc: Xa thực tế cần bình bậc 2 trở lên |
-| Thiếu 1 cấp ở Giữa, bình bậc 1 | 74 giây làm việc | Cổng mềm rất đắt. Đúng ý K6, không phải tường |
+| Thiếu 1 cấp ở Giữa, bình bậc 1 | 74 giây làm việc | Cổng mềm rất đắt, đúng ý K6: vẫn vào được dải mới |
 | Số mảnh khác nhau gặp trong một chuyến | tối đa 54 ô | 12 + 18 + 24 ô |
 | Số map nhánh cả game | 8 | 4 xác hoặc trạm con dùng chung bộ nội thất Seed Station (Cinder, Wick, Flint, phần ngoài Lantern) |
 | Người chơi không lạc | Mốc cố định nhìn được từ mọi cột của dải | Xác lớn cố định và Ember luôn chỉ trên la bàn |
@@ -724,7 +724,7 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | W21 | Định nghĩa để dựng bộ sinh mảnh | Trùng mảnh là cùng mảnh cùng ô. Cờ nửa ngoài "Có" là chỉ cột 3, 4. Cổng ô cố định Ember Mooring 1111, Cinder 1101. Beacon không cùng ô chuyến trước. Đường chính nối liền giữa hai dải. Bố cục dự phòng dựng tay. Kiểm bằng `sim/bo_cuc.py` | QA GD-031: các luật cũ chưa dựng được, cách đọc khác nhau lệch tỉ lệ hợp lệ hàng nghìn lần | Trùng tính theo tập mảnh (kho 16 không đạt tiêu chí) | Rẻ |
 | W22 | Nơi cứu và hộ tống Sevra (lời Lead, GD-033) | Dùng lại N4 Veyl Waypost theo đề xuất của gd-story. Cứu ở Waypost Outer Ring, kén về Ember bằng beacon hoặc cửa khí (C3.8). Hộ tống: Skiff chở kén tới cửa N4, kéo tới cửa The Hearth (C5.1). Trong hộ tống kén không theo beacon, lưu ở beacon cố định gần nhất | Không thêm map nhánh và art mới. Một đích cho mỗi mốc. Kén không theo beacon để hộ tống không bị bỏ qua bằng một lần kích | Station Flint, kéo kén xuyên map tổng từ Ember | Rẻ |
 | W17 | Kho mảnh MVP | 16 mảnh Gần, 2 ô cố định | Tỉ lệ kho trên ô ghép 1,6, vừa sức 1 artist khi dựng bằng kit | 22 mảnh ngay MVP | Rẻ |
-| W19 | Nơi đặt vật kể chuyện chương 4 và 5 | Hộp ghi hành trình ở Bridge Archive (khu cuối Cradle Interior). Bản đồ sao thật và lệnh phục kích mang dấu Daskel ở Data Core của Warden Rig, mở sau BS-5 | Thứ quan trọng nhất là phần thưởng của trận cuối, người chơi tự tay lấy | Rơi từ boss (dễ lỡ khi xua hoặc rớt mạng) | Rẻ |
+| W19 | Nơi đặt vật kể chuyện chương 4 và 5 | Hộp ghi hành trình ở Bridge Archive (khu cuối Cradle Interior). Bản đồ sao thật và lệnh phục kích mang dấu Daskel ở Data Core của Warden Rig, mở sau BS-5 | Vật kể chuyện là phần thưởng của trận cuối, người chơi tự tay lấy | Rơi từ boss (dễ lỡ khi xua hoặc rớt mạng) | Rẻ |
 | W18 | Boss chương 2 và 3 | BS-2 ở Lantern Outer Ring, BS-3 ở Flint. Waypost và Wick không boss | BS-2 là Gulper vây Lantern (mô tả của gd-combat), lần đầu tới Lantern thành trận cứu trạm. BS-3 là máy thu hoạch, đặt ở Flint thì trận boss và manh mối cú lật Driftlife nói cùng một điều. Waypost trung lập giữ vai bến buôn | BS-2 ở Wick, BS-3 ở Waypost | Rẻ |
 
 ## Phản biện khung
@@ -759,3 +759,4 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | 2026-11-20 | Khớp bản đủ cốt truyện: bỏ khe M thừa ở N4, N5, N6, thêm khe V1 ở Cinder và khe M4, M5 ở Cradle, mốc Yusuf C3.2 | Tin gd-story | gd-world |
 | 2026-11-20 | Solace là mồi, không có vùng Solace: hộp ghi hành trình ở Cradle, Data Core sau boss ở Warden Rig (W19) | Tin GDM, khung B4, B9, B11, K10 | gd-world |
 | 2026-11-20 | Bản đủ đầu tiên, số ước từ `projects/game-moi/sim/ngan_sach_oxy.py` | GD-026 | gd-world |
+| 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. | production/reports/2026-11-23-humanizer-gdd.md | gd-world |

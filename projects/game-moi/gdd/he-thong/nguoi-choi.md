@@ -4,7 +4,7 @@ Project: game-moi | Chủ sở hữu: gd-character | Trạng thái: bản đủ,
 
 ## Tóm tắt
 
-Nhân vật người chơi là một người sống sót mặc bộ đồ không gian: bay 8 hướng bằng bộ đẩy với quán tính nhẹ, mang một túi đồ có sức chứa, tiêu một chỉ số duy nhất là Oxy (vừa là thời gian vừa là máu), và đi bộ trong mặt cắt trạm khi ở nhà. Hệ thống này cho người chơi cảm giác điều khiển chính xác dưới áp lực "mỗi hơi thở là một quyết định" (P1). Tầng: lõi. Ưu tiên: prototype di chuyển và Oxy trước, sau đó bản đầu. Phụ thuộc chính: gd-combat (sát thương, i-frame, bắt sống), gd-items (khối lượng, dụng cụ), gd-world (cấp môi trường theo dải, Recall Beacon), gd-economy (giá nâng cấp), gd-tech (prototype thử số).
+Nhân vật người chơi là một người sống sót mặc bộ đồ không gian: bay 8 hướng bằng bộ đẩy với quán tính nhẹ, mang một túi đồ có sức chứa, tiêu một chỉ số duy nhất là Oxy (vừa là thời gian vừa là máu), và đi bộ trong mặt cắt trạm khi ở nhà. Người chơi điều khiển trực tiếp và tiêu Oxy theo từng giây (P1). Tầng: lõi. Ưu tiên: prototype di chuyển và Oxy trước, sau đó bản đầu. Phụ thuộc chính: gd-combat (sát thương, i-frame, bắt sống), gd-items (khối lượng, dụng cụ), gd-world (cấp môi trường theo dải, Recall Beacon), gd-economy (giá nâng cấp), gd-tech (prototype thử số).
 
 ## Hiện hành
 
@@ -44,11 +44,11 @@ Tên thao tác: Bay, Lướt, Hãm, Ngắm, Dùng dụng cụ, Đổi dụng c�
 
 ## 1. Mục đích với người chơi
 
-- Cảm thấy: người sống sót giỏi nghề, điều khiển chuẩn, mỗi lượt lướt hay nán lại thêm một mẻ đều có giá bằng hơi thở của mình.
+- Cảm thấy: người sống sót giỏi nghề, điều khiển chuẩn. Mỗi lượt lướt hay nán lại thêm một mẻ đều tốn Oxy.
 - Quyết định: đi tiếp hay quay về (Oxy, tải túi), lướt hay trôi (tiết kiệm Oxy), ghim món nào phòng khi ngạt, chia Oxy cho bạn hay giữ.
 - Pillar: P1 (Oxy là thời gian và máu, không hồi miễn phí), P3 (mọi luật đúng với 1 đến 4 người, thêm người là thêm tay), P2 (túi đồ là cầu nối ngoài với trạm).
 - 30 giây đầu: ra khỏi cửa khí, bấm bay thấy nhân vật phản hồi ngay, buông phím thấy trượt nửa giây rồi dừng, nhặt một mảnh phế liệu bay vào túi, thấy thanh Oxy tụt đều và vạch "đủ về" nhích theo khoảng cách tới cửa khí.
-- Ý đồ cảm giác một câu: trôi nhẹ nhưng dừng đúng chỗ muốn, đẩy là đi ngay, buông là trượt chừng nửa giây, hãm là dừng gọn.
+- Ý đồ cảm giác: trôi nhẹ nhưng dừng đúng chỗ muốn. Đẩy là đi ngay, buông là trượt chừng nửa giây, hãm là dừng gọn.
 
 ## 2. Luật
 
@@ -81,7 +81,7 @@ Thêm người cùng kéo một vật nặng hoặc vừa: mỗi người thêm 
 4. Hao khi lướt: cộng thẳng chi phí lướt (bảng 3).
 5. Hao khi trúng đòn: sát thương của gd-combat trừ thẳng vào Oxy sau khi Vỏ giảm (0, 5, 10, 15 phần trăm theo cấp 0 đến 3). Oxy không âm. Số Oxy trừ mỗi đòn do gd-combat đặt (ví dụ trúng 8 là mất 8 Oxy), ngưỡng 15 Oxy chia đòn nhẹ và đòn nặng.
 6. Hao theo tải: tải túi quá 60% sức chứa thì hao nền tăng tuyến tính tới 1,15 lần khi đầy, đồng thời tốc độ tối đa và gia tốc giảm tới 0,85 lần (công thức ở mục 3). Dưới 60% không ảnh hưởng.
-7. Không hồi Oxy miễn phí giữa chuyến (P1). Oxy nhận lại chỉ có hai đường: chia Oxy từ đồng đội (2.3 điểm 4), và vật tiêu hao CON-101 Bình Oxy nhỏ (K26, thao tác "Dùng vật tiêu hao" ở 2.5 và 2.7). Luật CON-101: hồi 40 điểm Oxy theo `vat-pham.md` T8 (khoảng 12% bình bậc 0), chỉ cho chính người dùng, không thả hay trao cho người khác. Kênh 1,5 giây, hủy khi trúng đòn, thả phím, hoặc Lướt (bình chưa tiêu). Không dùng khi Ngạt. Không dùng khi Oxy đã đầy dung lượng. Tổng Oxy hồi từ vật tiêu hao trong một chuyến không quá 25% dung lượng bình của người đó (K26): ở bậc 0 là 82 điểm, tức tối đa 2 bình. Lần dùng chạm trần thì chỉ hồi phần còn lại và bình vẫn tiêu hết. Không hồi vượt dung lượng, phần dư bỏ. Mỗi người mang tối đa 2 bình trong túi mỗi chuyến (T8). Hồi chiêu giữa hai lần dùng: không. Số 40 chưa qua sim, chờ gd-tech mô hình vào sim chuyến.
+7. Không hồi Oxy miễn phí giữa chuyến (P1). Oxy nhận lại chỉ có hai đường: chia Oxy từ đồng đội (2.3 điểm 4), và vật tiêu hao CON-101 Bình Oxy nhỏ (K26, thao tác "Dùng vật tiêu hao" ở 2.5 và 2.7). Luật CON-101: hồi 40 điểm Oxy theo `vat-pham.md` T8 (khoảng 12% bình bậc 0), chỉ cho chính người dùng, không thả hay trao cho người khác. Kênh 1,5 giây, hủy khi trúng đòn, thả phím, hoặc Lướt (bình chưa tiêu). Không dùng khi Ngạt hoặc khi Oxy đã đầy dung lượng. Tổng Oxy hồi từ vật tiêu hao trong một chuyến không quá 25% dung lượng bình của người đó (K26): ở bậc 0 là 82 điểm, tức tối đa 2 bình. Lần dùng chạm trần thì chỉ hồi phần còn lại và bình vẫn tiêu hết. Không hồi vượt dung lượng, phần dư bỏ. Mỗi người mang tối đa 2 bình trong túi mỗi chuyến (T8). Hồi chiêu giữa hai lần dùng: không. Số 40 chưa qua sim, chờ gd-tech mô hình vào sim chuyến.
 8. Về tới trạm (cửa khí) thì Oxy đầy lại ngay, trạm tái tạo Oxy.
 9. Cảnh báo theo phần trăm dung lượng:
 
@@ -101,7 +101,7 @@ Thêm người cùng kéo một vật nặng hoặc vừa: mỗi người thêm 
 3. Ngay khi vào Ngạt, túi đồ mở ở chế độ chọn món ghim (2.4). Hết giờ chọn vẫn giữ món đã ghim trước đó.
 4. Được cứu: một đồng đội ở trong 1,5 u giữ Chia Oxy (V, X) chuyển Oxy với tốc độ 10 điểm/giây. Khi người ngạt đạt từ 30 Oxy thì sang Được cứu (2 giây i-frame, rồi Bay). Trong lúc đang được chia Oxy thì đồng hồ ngạt tạm dừng.
 5. Tự thoát (không cần đồng đội): nếu người ngạt chạm cửa khí của trạm trong 12 giây (chỉ ở dải Gần mới khả thi: 12 giây ở tốc độ 2,4 u/s đi tối đa 28,8 u) thì tính là kết thúc chuyến bằng cửa khí (K4), giữ nguyên túi. Recall Beacon cần kích 5 giây nên không dùng được khi ngạt.
-6. Hết 12 giây không ai cứu và chưa về: Bị kéo về. Nhân vật về buồng cửa khí của trạm. Túi chỉ giữ đúng 1 món ghim (một đơn vị vật phẩm, một lồng mẫu đang kéo hoặc một vật nhiệm vụ cũng được ghim. Ghim lồng mẫu thì chỉ giữ con có sao cao nhất trong lồng, các con còn lại mất, khớp luật 25 của `combat-driftlife.md`). Phần còn lại của túi biến mất, không rơi ra map. Ngoại lệ: vật nhiệm vụ không ghim thì trở về vị trí gốc (2.4 điểm 10), vật manh mối không nằm trong túi nên không mất. Dụng cụ mang theo trên đai không mất. Không mất Tally, không phí, không nợ (K2).
+6. Hết 12 giây không ai cứu và chưa về: Bị kéo về. Nhân vật về buồng cửa khí của trạm. Túi chỉ giữ đúng 1 món ghim (một đơn vị vật phẩm, một lồng mẫu đang kéo hoặc một vật nhiệm vụ cũng được ghim. Ghim lồng mẫu thì chỉ giữ con có sao cao nhất trong lồng, các con còn lại mất, khớp luật 25 của `combat-driftlife.md`). Phần còn lại của túi biến mất, không rơi ra map. Ngoại lệ: vật nhiệm vụ không ghim thì trở về vị trí gốc (2.4 điểm 10), vật manh mối không nằm trong túi nên không mất. Dụng cụ mang theo trên đai và Tally không mất, không phí, không nợ (K2).
 7. Bị kéo về, cũng như Về an toàn sớm, là kết thúc chuyến của riêng người đó (C6). Người đã về trạm không ra lại trong cùng chuyến (C9, vì về trạm nạp đầy Oxy rồi ra lại sẽ phá giới hạn Oxy K1). Trong lúc chờ người đó làm việc trạm: xưởng (chế trước cho ca cảng), khoang nuôi, và xem vị trí đồng đội. Chuyến chung kết thúc khi người cuối cùng đã về hoặc bị kéo về.
 8. K27: người đang ngạt không trao và không thả được đồ. Đồng đội cứu bằng chia Oxy, không vét túi hộ. Muốn giữ đồ cho nhóm, người chơi phải trao trước khi Oxy chạm 0.
 
@@ -292,7 +292,7 @@ Công thức:
 
 Núm gap: ba tham số nối ý đồ với số đo: dung lượng Oxy bậc 0 (độ dài chuyến chương 1), hệ số thiếu cấp (độ mềm của cổng dải, K6), thời gian Ngạt (độ khoan dung, P1 với P3). Chỉnh bằng sim và prototype, không chỉnh cảm tính.
 
-Độ dài chuyến theo sim GD-030 (`map.md` 3.9): chương 1 dài 4,4 phút với bình 330, chương 5 dài 10,4 phút với bình 1000, khớp khung mục 9 (4 đến 6 và 10 đến 12 phút). Thang cũ (túi 20 Khối, bình 300) làm gần 100% chuyến kết thúc vì đầy túi, chương 1 chỉ dài khoảng 1,5 phút, nên đã đổi (log 54).
+Độ dài chuyến theo sim GD-030 (`map.md` 3.9): chương 1 dài 4,4 phút với bình 330, chương 5 dài 10,4 phút với bình 1000, khớp khung mục 9 (4 đến 6 và 10 đến 12 phút, log 54).
 
 ## 4. Trường hợp biên
 
@@ -339,7 +339,7 @@ Núm gap: ba tham số nối ý đồ với số đo: dung lượng Oxy bậc 0 
 - Tốc độ tối đa ở bậc 3 là 7,5 u/s, không vượt 8 u/s vì tốc độ quá lớn làm khe và mảnh dựng tay khó đọc. Tăng mỗi bậc tối đa 8%.
 - Camera thấy khoảng 17,8 u theo chiều ngang và 10 u theo chiều dọc (ước, chốt ở `ux-ui.md`), nên ở 7,5 u/s nhân vật mất 1,2 giây để băng qua nửa màn.
 - Co-op 4 người tách nhau: mỗi người một camera nên cần đồng bộ vị trí 4 nhân vật tại 20 Hz (xem mục 6).
-- Không luật nào cần đúng N người. Chia Oxy cần từ 2 người trở lên nhưng một mình vẫn thoát được qua Recall, cửa khí, hoặc Ngạt rồi bị kéo về.
+- Chia Oxy cần từ 2 người trở lên, một mình vẫn thoát được qua Recall, cửa khí, hoặc Ngạt rồi bị kéo về.
 - Ngạt luôn kết thúc, trần thời gian = 12 giây cộng tối đa thời gian đang được chia (người cho đủ 20 Oxy để cho, nên hữu hạn).
 - Túi tối đa 216 Khối (bậc 4) bằng 2,7 lần bậc 0 (80 Khối). Bình Oxy tối đa 1000 bằng 3,0 lần bậc 0, nên từ chương 2 trở đi túi đầy không còn là giới hạn đến trước Oxy. Ở chương 1 (bậc 0) túi đầy vẫn là lý do về phổ biến (sim GD-030: 83% chuyến trung bình một người về vì đầy túi), chấp nhận vì sim đã cho chuyến 4,2 phút.
 
@@ -391,7 +391,7 @@ Phản hồi thị giác và âm thanh phải bật tắt được từng lớp 
 
 ## 7b. Cảm giác (game feel)
 
-- Tham chiếu: bơi và lặn của Dave the Diver (điều khiển trực tiếp trong cấu trúc 2D nhìn ngang, oxy hao nhanh khi trúng đòn [D14]), tha thứ ngầm của Celeste (bán kính hút nhặt, corner correction, đệm input), phản hồi thị giác thay vật lý nặng của Hardspace: Shipbreaker (chân vẩy theo vận tốc, camera trễ).
+- Tham chiếu: Dave the Diver (bơi và lặn, điều khiển trực tiếp trong cấu trúc 2D nhìn ngang, oxy hao nhanh khi trúng đòn [D14]), Celeste (tha thứ ngầm: bán kính hút nhặt, corner correction, đệm input), Hardspace: Shipbreaker (phản hồi thị giác thay vật lý nặng: chân vẩy theo vận tốc, camera trễ).
 - Phản tham chiếu: không được giống quán tính nặng kiểu trôi 2 đến 3 giây làm khó dừng chính xác, không được giống nhân vật điều khiển nửa trễ khiến lướt vào đòn.
 - Thời gian phản hồi: đẩy tới gia tốc nhìn thấy trong 1 khung, lướt phản hồi trong 2 khung, hãm trong 1 khung. Camera trễ 0,15 giây, nhìn trước 1,5 u.
 - Rung màn hình: trúng đòn rung biên độ nhỏ 0,1 giây. Chia Oxy không rung. Cảnh báo 10% dùng âm và viền, không rung.
@@ -525,3 +525,4 @@ Ca đặc biệt: hai người cùng bị kéo về cạnh nhau, cả hai cùng 
 | 2026-11-20 | Lượt 2b: túi 80, 100, 126, 168, 216 Khối, bình 330, 450, 600, 780, 1000, ghim lồng mẫu giữ con sao cao nhất, C5 30 giây, mục tiêu bị kéo về hai mức, đổi ID theo gd-items (bỏ TOL-101) | GD-023 2b, log 54 đến 60 | gd-character |
 | 2026-11-20 | Đợt 4 sau GD-031: C10 và K23 thay "Về an toàn giữ nguyên túi" khi thoát hoặc mất kết nối, K26 trần CON-101 kèm thao tác Dùng vật tiêu hao (phím G), K27 cấm trao và thả đồ khi ngạt, K22 tối đa 2 chuyến mỗi ngày, bảng phím khớp ux-ui (Q, M, J, Tab, ghim R3), Lướt và trần 12 u/s, Oxy chạm 0 giữa Recall, thả vật 30 giây, gỡ mọi dấu chờ, sửa số lỗi nhẹ | GD-023 Đ4 | gd-character |
 | 2026-11-20 | Đợt 9 ca cảng kiểu Dave (GD-051): bỏ luật mang kiện và 3 hàng tốc độ mang kiện theo cỡ, thay bằng mang 1 thùng, tốc độ không đổi, không khiêng chung, không đặt xuống, nhặt giao bằng E hoặc Space, giữ E 1 giây bơm khí, bấm chuột tự chạy tới. Người về sớm (C9) chế trước ở xưởng, bỏ đóng kiện trước | Lead chốt ca cảng theo khung bán sushi của Dave | gd-character |
+| 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Thang cũ túi 20 Khối, bình 300 làm gần 100% chuyến kết thúc vì đầy túi, chương 1 chỉ dài khoảng 1,5 phút nên đã đổi (log 54) | Đánh giá humanizer GDD | gd-character |

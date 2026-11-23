@@ -19,12 +19,12 @@ Hồ sơ cho art và cho gd-story: mỗi nhân vật có vai, ngoại hình, sil
 | Rig | Một rig xương chung cho nhân loại, 4 skin người chơi, người vớt dùng cùng rig | MVP |
 | Phong cách | 2D vector, bóng đổ phẳng 2 mức, nét viền theo màu tối của vùng | Chốt khung |
 
-Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-1 đến PC-4 (preset Noor, Jonas, Mei, Tariq), người vớt mã RS-1 đến RS-5 (Ingrid, Linh, Rafa, Amara, Yusuf), thương nhân mã TR-1 đến TR-5 (Tikko, Ilsume, Dromm, Vaeth, Nhem), The Wardens mã WD-P1 và WD-P2 (Daskel, Maro, không trùng mã WD-01 đến WD-04 là đơn vị chiến đấu của gd-combat), người phụ mã NP-1 đến NP-4 (Odile, Bram, Elias, Wren). NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Daskel, Sevra, Maro và lính The Wardens, không thêm chủng mới.
+Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-1 đến PC-4 (preset Noor, Jonas, Mei, Tariq), người vớt mã RS-1 đến RS-5 (Ingrid, Linh, Rafa, Amara, Yusuf), thương nhân mã TR-1 đến TR-5 (Tikko, Ilsume, Dromm, Vaeth, Nhem). The Wardens mã WD-P1 và WD-P2 (Daskel, Maro, không trùng mã WD-01 đến WD-04 là đơn vị chiến đấu của gd-combat), người phụ mã NP-1 đến NP-4 (Odile, Bram, Elias, Wren). NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Daskel, Sevra, Maro và lính The Wardens, không thêm chủng mới.
 
 ## 1. Mục đích với người chơi
 
-- Người chơi nhận ra bạn đồng hành trong co-op ở cỡ 108 điểm ảnh cao trên màn 1080p (nhân vật cao 1 u, camera thấy 17,8 u ngang) trong một liếc, kể cả khi ping, bay nhanh, hay có Driftlife che bớt.
-- Người vớt và thương nhân là chỗ đặt giọng hài nhẹ (B9). Hình dáng phải gợi tính cách trước khi họ mở miệng.
+- Người chơi nhận ra đồng đội trong co-op ở cỡ 108 điểm ảnh cao trên màn 1080p (nhân vật cao 1 u, camera thấy 17,8 u ngang) trong một liếc, kể cả khi ping, bay nhanh, hay có Driftlife che bớt.
+- Người vớt và thương nhân là chỗ đặt giọng hài nhẹ (B9). Hình dáng phải gợi được tính cách.
 - Phục vụ pillar P4 (vũ trụ kể chuyện qua thứ bạn vớt được): màu và chi tiết ngoại hình mang manh mối, ví dụ kẻ cải trang sạch hơn thương nhân thật.
 - 30 giây đầu: người chơi thấy 1 đến 4 buồng và màu cùng hình slot trên bộ đồ của mình. Ingrid và Linh chưa xuất hiện, họ lần đầu hiện ở mốc C1.4 và C1.6 của `cot-truyen.md` (khi vớt từ Station Cinder).
 
@@ -36,7 +36,7 @@ Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-
 4. Rig `MVP`: một bộ xương chung cho nhân loại. Chiều cao preset (0,9 đến 1,2 u) là scale đồng đều của rig, chênh tối đa 20% quanh 1,0 u, phần còn lại phân biệt bằng hoán đổi bộ phận (mũ, bình Oxy, túi, phụ kiện). Chủng tộc The Veyl mỗi chủng một rig riêng, mức độ đơn giản. Ngoại lệ ghi tên: Wren (0,6 u) dùng rig trẻ em riêng đơn giản.
 5. Bộ đồ `MVP bậc 0 và 1`: người chơi lắp mảnh theo 5 trục (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ) theo `nguoi-choi.md`, mỗi bậc là một biến thể mảnh, không vẽ lại cả nhân vật.
 6. Màu và hình slot `MVP`: slot gán cố định theo slot, không theo người, hiện trên HUD đồng đội và ping kèm hình để không chỉ dựa vào màu: Slot 1 ○ cam `#F26B1D`, Slot 2 △ lam ngọc `#1FB5D6`, Slot 3 □ vàng chanh `#D8E21F`, Slot 4 ◇ hồng tím `#D6309B`. Bảng này là nguồn duy nhất, `ux-ui.md` đọc từ đây.
-7. Nguồn tính cách `MVP`: tính cách, nghề, quốc gia, mâu thuẫn, quest: `cot-truyen.md` quyết, file này chỉ trích tóm tắt để art dựa vào.
+7. Nguồn tính cách `MVP`: tính cách, nghề, quốc gia, mâu thuẫn, quest theo `cot-truyen.md`.
 8. Solace `MVP`: là thông tin mồi, kết game mở (B4, B9, K10). Hồ sơ không viết Solace là đích thật hay giả. Riêng Odile (NP-1) giữ niềm tin "tới Solace" tới hết chương 3 và mất niềm tin ở chương 4 (log 73, `cot-truyen.md`). Hồ sơ của mọi nhân vật khác không gắn đích Solace.
 9. Co-op `MVP`: không nhân vật nào cần đúng N người chơi để hiện diện (P3). Chơi 1 người thì ba buồng còn lại tắt, tên trên buồng lấy từ các preset chưa dùng.
 10. Hình không đổi luật `MVP`: chiều cao và silhouette chỉ là hình. Va chạm, tầm nhặt, vùng trúng giữ bán kính 0,4 u cho mọi preset (P3, công bằng co-op).
@@ -64,7 +64,7 @@ Yêu cầu art: rig chung, 4 skin. Mỗi người có hai bộ màu (bộ đồ 
 
 ### 2b.2 Người vớt (RS-1 đến RS-5), mở tính năng trạm (K12)
 
-Người vớt không phải nhân vật người chơi. Ingrid, Linh, Rafa được kéo từ buồng ngủ đông của xác trạm nên mặc đồ Seed Station (xám nhạt, mòn, mang số hiệu buồng). Amara và Yusuf đang thức ở Lantern và Veyl Waypost, mặc đồ nghề của họ (blouse, áo phản quang). Mỗi người một nhấn trầm. Tính cách, quest: `cot-truyen.md`.
+Người vớt là NPC. Ingrid, Linh, Rafa được kéo từ buồng ngủ đông của xác trạm nên mặc đồ Seed Station (xám nhạt, mòn, mang số hiệu buồng). Amara và Yusuf đang thức ở Lantern và Veyl Waypost, mặc đồ nghề của họ (blouse, áo phản quang). Mỗi người một nhấn trầm. Tính cách, quest: `cot-truyen.md`.
 
 | Mã | Tên | Vai | Chiều cao | Silhouette (khi tô đen) | Ngoại hình | Màu nhận diện | Biểu cảm cần có | Nhãn |
 |---|---|---|---|---|---|---|---|---|
@@ -98,7 +98,7 @@ Chương xuất hiện và chức năng K12 đầy đủ:
 
 ### 2b.3 Thương nhân The Veyl (TR-1 đến TR-5)
 
-Mỗi chủng một rig và hình khối riêng, để người chơi đọc chủng tộc từ xa rồi mới đến tên. Hành vi mua ở cảng của họ là của gd-quan. Tính cách theo `cot-truyen.md`. Tàu: Tikko TA01, Ilsume TA04, Vaeth TA05, Dromm TA06, Nhem TA10, Maro TA08 (Bram TA03).
+Mỗi chủng một rig và hình khối riêng, để người chơi đọc chủng tộc từ xa rồi mới đến tên. Tính cách theo `cot-truyen.md`. Tàu: Tikko TA01, Ilsume TA04, Vaeth TA05, Dromm TA06, Nhem TA10, Maro TA08 (Bram TA03).
 
 | Mã | Tên | Chủng | Chiều cao, tỉ lệ | Silhouette | Ngoại hình | Màu nhận diện | Tính cách (gd-story) | Biểu cảm cần có | Nhãn |
 |---|---|---|---|---|---|---|---|---|---|
@@ -116,12 +116,12 @@ Yêu cầu art thương nhân: tàu của mỗi chủng cần màu và hình kh�
 
 ### 2b.4 The Wardens: chế độ của Daskel (WD-P1, WD-P2, lính)
 
-Đơn vị chiến đấu (WD-01 đến WD-04) do gd-combat giữ, là lính Sennari mặc giáp của chế độ (không thêm chủng tộc, dùng rig Sennari, mặt che bằng mũ giáp). The Wardens là chế độ và quân của Daskel, không còn là một chủng tộc. File này giữ Daskel và Maro. Ngôn ngữ hình: sạch, nhẵn, đối xứng, kỷ luật, đối lập với thương nhân lấm lem và với mạng lưới cách mạng của Sevra (đồ chắp vá). Màu chung của chế độ: trắng xương `#EDEBE0` và lục acid `#7CFC3A` (đường sáng).
+Đơn vị chiến đấu (WD-01 đến WD-04) do gd-combat giữ, là lính Sennari mặc giáp của chế độ (không thêm chủng tộc, dùng rig Sennari, mặt che bằng mũ giáp). The Wardens là chế độ và quân của Daskel. File này giữ Daskel và Maro. Ngôn ngữ hình: sạch, nhẵn, đối xứng, kỷ luật, đối lập với thương nhân lấm lem và với mạng lưới cách mạng của Sevra (đồ chắp vá). Màu chung của chế độ: trắng xương `#EDEBE0` và lục acid `#7CFC3A` (đường sáng).
 
 | Mã | Tên | Vai | Chiều cao | Silhouette | Ngoại hình | Màu nhận diện | Biểu cảm cần có | Nhãn |
 |---|---|---|---|---|---|---|---|---|
-| WD-P1 | Daskel, danh xưng tự phong First Warden | Độc tài cầm quyền Sennar, đứng đầu The Wardens, boss BS-5 (chương 3 đến 5, qua lời Maro và tín hiệu, tới Warden Rig ở chương 5). Ghét loài người vì cha là sĩ quan chết trong cuộc chiến vũ trụ đầu tiên giữa các hành tinh (tên cuộc chiến ở `cot-truyen.md` mục Tên mới), cái nhìn phiến diện của hắn, không phải sự thật | 2,0 u (cao hơn Ilsume nhờ giáp và bục), rất gầy | Cao, tay dài quá gối, vòng sáng tròn sau gáy (halo), mặt nạ nhẵn, vai giáp nhọn đối xứng | Áo giáp choàng trắng xương không một vết bẩn, đường lục acid chạy dọc áo, huy hiệu chế độ trên ngực, không thấy mắt. Sạch vì hắn tin mình đang dọn dẹp | Trắng xương và lục acid | Bình thản, khinh miệt nhẹ, cuồng tín (mặt nạ nứt khi mất bình tĩnh), thương hại giả, giận lạnh khi nhắc tên Sevra hay cha mình | Sau MVP |
-| WD-P2 | Maro | Gián điệp của Daskel săn Sevra, chỉ huy toán bắt cóc. Người Sennari, giả thương nhân của một thương hội Sennari không có thật (tàu TA08), hai lần cập bến khi còn cải trang, lộ mặt ở N4 khi chỉ huy toán bắt cóc (C3.8) | 1,7 u khi cải trang (khom người), 2,0 u sau khi lộ | Cải trang: dáng thương nhân Sennari, áo choàng nghi lễ rút gọn, che đầu bằng khăn, sạch hơn hẳn thương nhân thật. Lộ mặt: dáng cao gầy cùng kiểu Daskel, ít chi tiết hơn, giáp chế độ | Khi cải trang: áo xám không vết, đường lục acid mờ 10 phần trăm ở gáy, chỉ là chi tiết thưởng cho người tinh ý, không phải manh mối bắt buộc (P4). Lộ mặt: đường lục 100 phần trăm, bỏ khăn, huy hiệu The Wardens | Xám nhạt `#A3A8A0`, lục acid mờ khi cải trang, lục acid sáng khi lộ | Vồn vã, hào phóng, hỏi quá nhiều, khi lộ mặt thì phẳng lặng, soi mói | Sau MVP |
+| WD-P1 | Daskel, danh xưng tự phong First Warden | Độc tài cầm quyền Sennar, đứng đầu The Wardens, boss BS-5 (chương 3 đến 5, qua lời Maro và tín hiệu, tới Warden Rig ở chương 5). Ghét loài người vì cha là sĩ quan chết trong cuộc chiến vũ trụ đầu tiên giữa các hành tinh (tên cuộc chiến ở `cot-truyen.md` mục Tên mới), cái nhìn phiến diện của hắn | 2,0 u (cao hơn Ilsume nhờ giáp và bục), rất gầy | Cao, tay dài quá gối, vòng sáng tròn sau gáy (halo), mặt nạ nhẵn, vai giáp nhọn đối xứng | Áo giáp choàng trắng xương không một vết bẩn, đường lục acid chạy dọc áo, huy hiệu chế độ trên ngực, không thấy mắt. Sạch vì hắn tin mình đang dọn dẹp | Trắng xương và lục acid | Bình thản, khinh miệt nhẹ, cuồng tín (mặt nạ nứt khi mất bình tĩnh), thương hại giả, giận lạnh khi nhắc tên Sevra hay cha mình | Sau MVP |
+| WD-P2 | Maro | Gián điệp của Daskel săn Sevra, chỉ huy toán bắt cóc. Người Sennari, giả thương nhân của một thương hội Sennari không có thật (tàu TA08), hai lần cập bến khi còn cải trang, lộ mặt ở N4 khi chỉ huy toán bắt cóc (C3.8) | 1,7 u khi cải trang (khom người), 2,0 u sau khi lộ | Cải trang: dáng thương nhân Sennari, áo choàng nghi lễ rút gọn, che đầu bằng khăn, sạch hơn hẳn thương nhân thật. Lộ mặt: dáng cao gầy cùng kiểu Daskel, ít chi tiết hơn, giáp chế độ | Khi cải trang: áo xám không vết, đường lục acid mờ 10 phần trăm ở gáy, chi tiết thưởng cho người tinh ý, không ai cần nó để hiểu truyện (P4). Lộ mặt: đường lục 100 phần trăm, bỏ khăn, huy hiệu The Wardens | Xám nhạt `#A3A8A0`, lục acid mờ khi cải trang, lục acid sáng khi lộ | Vồn vã, hào phóng, hỏi quá nhiều, khi lộ mặt thì phẳng lặng, soi mói | Sau MVP |
 
 Lính The Wardens: một bộ giáp trắng xương đường lục acid dùng chung rig Sennari, mũ giáp che mặt, 3 biến thể theo loại đơn vị (gd-combat cấp danh sách). Yêu cầu art: Maro cần hai biến thể (cải trang và lộ mặt) dùng chung rig Sennari, đổi lớp phủ. Tàu của Maro cần sạch bất thường trong cảng (gd-quan lấy làm manh mối). Daskel là boss BS-5 nên ngoài 6 clip hội thoại (Idle, Nói, Chỉ tay, Giận, Rút, Rời) cần danh sách clip chiến đấu và cỡ boss do gd-combat cấp (`combat-driftlife.md`), Sau MVP.
 
@@ -170,10 +170,10 @@ Lính The Wardens: một bộ giáp trắng xương đường lục acid dùng c
 
 ## 5. Ràng buộc vật lý của luật
 
-- Một artist 2D cho cả game (khung). Rig chung, skin ghép mảnh là cách duy nhất khả thi cho 4 người chơi cộng 5 người vớt.
+- Một artist 2D cho cả game (khung). Rig chung, skin ghép mảnh vừa sức một artist cho 4 người chơi cộng 5 người vớt.
 - Silhouette phải đọc ở 108 điểm ảnh cao: chi tiết dưới 4 điểm ảnh không tính là đặc điểm nhận diện.
 - Co-op 4 người cùng màn trong trạm: 4 màu slot, 5 nhấn người vớt, vẫn phải đọc, nên cặp màu bão hòa cao và bão hòa thấp đã chia để không nhầm.
-- Không có hồ sơ nào cần đúng N người.
+- Hồ sơ không cần đúng N người chơi (luật 9).
 
 ## 6. Yêu cầu cho engineer / tool
 
@@ -264,7 +264,7 @@ Danh sách yêu cầu để GDM đưa vào tab Assets:
 
 ## 7b. Cảm giác (game feel)
 
-- Tham chiếu: khách và người của Dave the Diver có hồ sơ riêng và hài hước từ tính cách [theo `15-character.md` mục 4, nguồn 16 và 18], Spiritfarer cho cách gắn sở thích vào luật [nguồn 15 của `15-character.md`]. Mượn đúng khoảnh khắc: nhân vật nhận ra qua dáng trước khi nói.
+- Tham chiếu: khách và người của Dave the Diver có hồ sơ riêng và hài hước từ tính cách [theo `15-character.md` mục 4, nguồn 16 và 18], Spiritfarer cho cách gắn sở thích vào luật [nguồn 15 của `15-character.md`]. Mượn đúng khoảnh khắc nhận ra nhân vật qua dáng.
 - Phản tham chiếu: không để nhân vật khác nhau chỉ ở màu da hay màu áo (lỗi hai loài khách giống nhau trong playbook).
 - Phản hồi nhân vật: biểu cảm đổi trong 1 khung hình khi có sự kiện (đau, sợ, cứu), không có độ trễ lên mặt.
 
@@ -349,3 +349,4 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | 2026-11-20 | Khớp lượt 1b: preset người chơi là kíp vận hành trạm, tính cách và tàu theo gd-story, Maro giả Sennari, Solace là mồi, gỡ dấu chờ gd-story | GD-023 1b | gd-character |
 | 2026-11-20 | Đợt 4 sau GD-031: bộ màu sinh lại và kiểm bằng script (HSV), hình slot, luật slot và người vào sau, luật chiều cao không đổi va chạm, Odile giữ niềm tin tới chương 4, clip bắt sống MVP, bảng clip và biểu cảm NPC MVP, 108 điểm ảnh một u, nhãn MVP | GD-023 Đ4 | gd-character |
 | 2026-11-20 | Đợt 6 phản diện mới: Daskel là độc tài Sennar, Sevra (NP-5) gộp với Ilsume hai trạng thái, Maro là gián điệp của Daskel, lính The Wardens là người Sennari, bỏ ý tham lam hơn loài người và đạo đức giả | GD-033 | gd-character |
+| 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Chuyển xuống đây: The Wardens không còn là một chủng tộc, là chế độ và quân của Daskel | Rà văn phong GDD | gd-character |

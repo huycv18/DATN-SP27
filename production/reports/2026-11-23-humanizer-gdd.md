@@ -62,6 +62,40 @@ GDD đọc như tài liệu kỹ thuật do người viết, điểm trung bình
 - Lời thoại và Voice sheet trong `cot-truyen.md`: các câu "không phải X" là giọng nhân vật.
 - Tiêu đề USP tiếng Anh dạng khẩu hiệu ở `00-khung-game.md` dòng 284 tới 287: tên sản phẩm có chủ đích.
 
+## Kết quả sửa (cùng ngày, skill vietnamese-hmr)
+
+Sửa câu văn ở 11 file, giữ luật, số, ID. Mỗi file thêm đúng 1 dòng ở bảng Lịch sử thay đổi (trừ 00-khung-game.md vì không có bảng), số lịch sử bỏ khỏi thân luật chuyển vào dòng đó. Không thêm, không xóa dòng trong thân file nên các tham chiếu "dòng N" giữa các file vẫn đúng.
+
+| File | scan.py trước | Sau | check_facts |
+|---|---|---|---|
+| 00-khung-game.md | 21 (20 dấu hiệu) | 21 (17) | 0 |
+| combat-driftlife.md | 26 (23) | 20 (19) | 0 |
+| cot-truyen.md | 36 (74) | 35 (52) | 0 |
+| ho-so-nhan-vat.md | 14 (10) | 14 (7) | 0 |
+| kinh-te-tien-trinh.md | 20 (19) | 20 (15) | 0 |
+| ky-thuat.md | 21 (16) | 16 (14) | 0 |
+| map.md | 29 (24) | 20 (17) | 0 |
+| nguoi-choi.md | 20 (11) | 16 (8) | 0, số 100% và 300 chuyển vào dòng lịch sử |
+| tram-va-cang.md | 10 (21) | 4 (11) | 0 |
+| ux-ui.md | 20 (12) | 20 (10) | 0 |
+| vat-pham.md | 39 (30) | 34 (26) | 0 |
+
+check_facts chạy trên thân file, bỏ dòng lịch sử ngày 2026-11-23. Khối do script sinh (`<!--B:...-->` ở vat-pham, `<!--SIM:...-->` ở map) và mốc `<!--v:...-->` giữ nguyên. Cổng repo: selftest 33 phép ĐẠT, validate-gdd 0 lỗi, kiem-de-doc TRẢ LẠI 2 lỗi dòng dài ở tab OVERVIEW B28, có từ trước, không thuộc lượt sửa này.
+
+Tham chiếu sửa kèm: `ux-ui.md` dòng 885 trỏ `ho-so-nhan-vat.md` dòng 148 đổi thành 146, vì lượt sửa lỗi trước bớt 2 dòng ở ho-so-nhan-vat.
+
+Còn lại, cần GDM hoặc vai giữ hệ thống quyết:
+
+| Chỗ | Vì sao chưa sửa |
+|---|---|
+| Bảng Điểm tự quyết ở mọi file (lịch sử, "bản trước", "Hết hiệu lực từ đợt 6") | Brief cấm sửa bảng này |
+| cot-truyen.md dòng 1196 tới hết (nhật ký phối hợp, khoảng 120 dòng) | Tách ra file riêng là đổi cấu trúc |
+| combat-driftlife.md dòng 385 tới 393 (bảng BS-1 bản cũ) | Chuyển xuống lịch sử phải bỏ dòng bảng |
+| 00-khung-game.md dòng 3 (lịch sử sửa lần 2 tới 6) | File chưa có bảng Lịch sử thay đổi |
+| vat-pham.md dòng 528, 538 | Nằm trong khối do `sim/vat-pham.mjs` sinh, sửa trong script |
+| tram-va-cang.md dòng 457 | Có thể lệch luật: ghi "đặt" là yêu cầu gửi host, luật 26 nói thùng đã nhặt không đặt xuống được. Là nội dung, gd-quan xem |
+| cot-truyen.md dòng 3 "chờ nghiệm thu", dòng 773 "sim cũ cần chạy lại" | Chưa rõ trạng thái còn đúng, gd-story xác nhận |
+
 ## Giới hạn
 
 - Humanizer viết cho tiếng Anh. Mẫu cấu trúc áp được, danh sách từ (§12) thì không. Skill `vietnamese-tech-writing` hợp hơn cho bước sửa thật.

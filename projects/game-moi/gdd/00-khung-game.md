@@ -64,7 +64,7 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 
 | Mục | Nội dung |
 |---|---|
-| Mô tả | Tally kiếm được giúp nâng cấp bộ đồ (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ), dụng cụ và trạm, từ đó mở ra khả năng mới (vào dải mới, chuyến dài hơn, bắt loài lớn hơn) và thúc đẩy người chơi tiếp tục khám phá. Đích của cả hành trình là sửa xong động cơ và rời neo |
+| Mô tả | Tally kiếm được dùng nâng cấp bộ đồ (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ), dụng cụ và trạm. Nâng cấp mở ra dải mới, chuyến dài hơn, loài lớn hơn để bắt. Đích của cả hành trình là sửa xong động cơ và rời neo |
 | Player Experience | Achievement, Empowerment, Growth |
 | Giữ bằng luật | K6 cấp bộ đồ theo dải, K18 Tally là đồng tiền duy nhất, K20 Shop, K21 mỗi chương thêm kiểu chơi mới, K25 qua chương |
 | Đo bằng | chương 1 dài 1,5 đến 2 giờ, cả game 12 đến 15 giờ (một người, kịch bản trung bình) |
@@ -74,7 +74,7 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 
 | Mục | Nội dung |
 |---|---|
-| Mô tả | Cốt truyện có chiều sâu (vụ The Scattering, tên độc tài Daskel, người thừa kế Sevra), nhân vật độc đáo (người vớt về, thương nhân The Veyl mỗi loài một tính cách), hài nhẹ từ tính cách nhân vật, và cơ chế mới liên tục xuất hiện theo chương (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống) giúp người chơi không thấy lặp lại |
+| Mô tả | Cốt truyện (vụ The Scattering, tên độc tài Daskel, người thừa kế Sevra), người vớt về và thương nhân The Veyl mỗi loài một tính cách, hài nhẹ từ tính cách nhân vật. Cơ chế mới xuất hiện theo chương (bắt sống, nuôi Driftlife, sự cố ca cảng, hộ tống), nên chương sau không lặp chương trước |
 | Player Experience | Surprise, Humor, Relaxation |
 | Giữ bằng luật | K21 mỗi chương thêm một đến hai kiểu chơi mới, K25 qua chương theo mốc truyện, B8 dấu vết phản diện lộ dần, B9 giọng nền nghiêm hài nhẹ |
 | Đo bằng | mỗi chương có ít nhất 3 mốc truyện và 2 vật manh mối có nơi đặt cố định. Mỗi chương có kiểu chơi mới |
@@ -84,7 +84,7 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 
 | Mục | Nội dung |
 |---|---|
-| Mô tả | Nguyên tắc nền, không phải pillar, nhưng mọi pillar phải tuân theo. Mọi luật đúng với 1 đến 4 người. Chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay để chia việc, không mở khóa nội dung |
+| Mô tả | Nguyên tắc nền, mọi pillar phải tuân theo. Mọi luật đúng với 1 đến 4 người. Chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay để chia việc, không mở khóa nội dung |
 | Player Experience | Freedom, Cooperation, Belonging |
 | Giữ bằng luật | C1 đến C10, K23 lưu game |
 | Đo bằng | mỗi người trong nhóm 4 nhặt được từ 60% so với chơi một mình. Nhóm 4 hết game bằng 60 đến 75% thời gian chơi một mình |
@@ -277,7 +277,7 @@ Chương 1 trọn vẹn: dải Gần, 1 xác Seed Station, Kỹ sư và Thông d
 
 Khung theo USP của Dave the Diver Lead đưa 2026-11-20, bản viết lại lần 2 cùng ngày (log dòng 98, 99). Mỗi USP trả lời: người chơi nhận được gì, và khác game tham chiếu ở đâu.
 Ngày và đêm trong game: là nhịp sinh hoạt của trạm, không có đồng hồ thật (K23). Ngày là pha Chuyến 1 và Chuyến 2, đêm là pha Ca cảng. Ngày mới bắt đầu khi người chơi vào buồng ngủ đông.
-Oxy là thời gian và cũng là máu không còn là USP: Dave cũng dùng O2 làm máu và cũng cho giữ 1 món khi hết O2, nên đây là điểm mượn, giữ ở CP2 và Core Gameplay.
+Oxy vừa là thời gian vừa là máu không tính là USP, vì Dave cũng dùng O2 làm máu và cho giữ 1 món khi hết O2. Điểm mượn này giữ ở CP2 và Core Gameplay.
 
 | # | USP | Người chơi nhận được | Khác Dave the Diver |
 |---|---|---|---|
@@ -289,7 +289,7 @@ Oxy là thời gian và cũng là máu không còn là USP: Dave cũng dùng O2 
 ## 16. Target Audience (G)
 
 - Người chơi PC thích Dave the Diver, Subnautica, Core Keeper, Stardew Valley chơi chung
-- Thích khám phá, tối ưu và tự tay dựng lại một thứ. Thích truyện có chiều sâu nhưng không muốn xem cắt cảnh dài
+- Thích khám phá, tối ưu và tự tay dựng lại một thứ. Thích truyện dày nhưng không muốn xem cắt cảnh dài
 - Chơi phiên 30 đến 60 phút (2 đến 3 ngày trong game). Chơi một mình là chính, rủ 1 đến 3 bạn vào giữa chừng
 - Kỹ năng hành động vừa phải: thử thách đến từ quyết định quản lý Oxy, không đòi phản xạ cao
 - Độ tuổi: chưa chốt

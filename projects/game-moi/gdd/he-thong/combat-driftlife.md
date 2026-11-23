@@ -85,7 +85,7 @@ Kết nhanh (hạ con đang bất lực) giữ nguyên số lượng, chỉ nân
 
 ## Tóm tắt
 
-Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh lại mỗi chuyến) và ở nửa sau game gặp The Wardens. Combat là cách để lấy mẫu và giữ Oxy, không phải mục đích: mỗi con Driftlife là một câu hỏi "bắt sống, hạ, hay né", và bắt sống luôn đáng hơn hạ (K9) nhưng tốn công, tốn vật tiêu hao, chiếm chỗ trong Lồng mẫu. Tầng: lõi. Ưu tiên: bản đầu cho MVP (các loài dải Gần và boss chương đầu), đầy đủ cho cả game. Phụ thuộc: `nguoi-choi.md` (Oxy, lướt, túi), `vat-pham.md` (dụng cụ, rơi), `map.md` (điểm sinh, phòng boss), `tram-va-cang.md` (nuôi, sự cố).
+Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh lại mỗi chuyến) và ở nửa sau game gặp The Wardens. Combat là cách lấy mẫu và giữ Oxy. Mỗi con Driftlife cho ba lựa chọn: bắt sống, hạ hoặc né. Bắt sống luôn đáng hơn hạ (K9) nhưng tốn công, tốn vật tiêu hao, chiếm chỗ trong Lồng mẫu. Tầng: lõi. Ưu tiên: bản đầu cho MVP (các loài dải Gần và boss chương đầu), đầy đủ cho cả game. Phụ thuộc: `nguoi-choi.md` (Oxy, lướt, túi), `vat-pham.md` (dụng cụ, rơi), `map.md` (điểm sinh, phòng boss), `tram-va-cang.md` (nuôi, sự cố).
 
 ## Hiện hành
 
@@ -99,10 +99,10 @@ Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh
 
 ## 1. Mục đích với người chơi
 
-- Cảm giác: tôi là người sống sót khéo tay, không phải lính. Tôi đọc được con vật, chọn đúng dụng cụ, lấy được thứ mình cần mà tốn ít Oxy nhất.
+- Cảm giác: tôi là người sống sót khéo tay: đọc con vật, chọn đúng dụng cụ, lấy thứ cần với ít Oxy nhất.
 - Quyết định chính mỗi lần gặp Driftlife: bắt sống (giá trị cao, tốn công, phải kéo lồng mẫu về), hạ (nhanh, gọn túi, giá trị thấp hơn), hay né (giữ Oxy cho việc khác).
-- Pillar phục vụ: P1 (mỗi đòn trúng là mất giây thở, nên đánh hay né là quyết định Oxy), P2 (mẫu sống thành con nuôi, nghiên cứu, đơn cảng giá cao, nhìn thấy trên trạm), P3 (mọi luật đúng 1 đến 4 người, có bạn thì chia vai lùa và bắt), P4 (The Wardens và dấu săn bắt trên Driftlife kể chuyện qua thứ người chơi gặp).
-- 30 giây đầu combat (chương 1, chuyến 1): một đám Driftmoth trôi quanh mảnh vỡ, không đánh. Người chơi bắn Lao từ thử, con trúng nổ ra mẫu mô. Vài giây sau một Arc Eel sáng lên báo trước rồi phóng điện, người chơi mất vài điểm Oxy, thấy thanh Oxy tụt và học rằng bị đánh là mất thời gian.
+- Pillar phục vụ: P1 (mỗi đòn trúng là mất giây thở, nên đánh hay né là quyết định Oxy). P2 (mẫu sống thành con nuôi, nghiên cứu, đơn cảng giá cao, nhìn thấy trên trạm). P3 (mọi luật đúng 1 đến 4 người, có bạn thì chia vai lùa và bắt). P4 (The Wardens và dấu săn bắt trên Driftlife kể chuyện qua thứ người chơi gặp).
+- 30 giây đầu combat (chương 1, chuyến 1): một đám Driftmoth trôi quanh mảnh vỡ, không đánh. Người chơi bắn Lao từ thử, con trúng nổ ra mẫu mô. Vài giây sau một Arc Eel sáng lên báo trước rồi phóng điện, người chơi mất vài điểm Oxy và thấy thanh Oxy tụt.
 
 ## 2. Luật
 
@@ -115,7 +115,7 @@ Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh
 5. (MVP) Ngắm tự do: chuột chỉ hướng bắn (bàn phím chuột), cần phải chỉ hướng bắn (gamepad). Không khóa mục tiêu. Gamepad có hỗ trợ ngắm: đạn lệch tối đa 6 độ về mục tiêu gần tâm ngắm nhất trong tầm.
 6. (MVP) Không có sát thương lên đồng đội. Dùi xung, Súng lưới, Súng gây mê không tác dụng lên người chơi. Lao từ trúng đồng đội thì móc dây và kéo đồng đội về phía người bắn, không trừ Oxy.
 7. (MVP) Trong trạm không dùng được dụng cụ combat. Dụng cụ chỉ hoạt động ngoài không gian và trong map nhánh.
-8. (MVP) Mọi đòn của Driftlife và The Wardens có ba pha: Báo trước, Đánh, Hồi. Báo trước có cả hình và tiếng. Báo trước tối thiểu 0,7 giây với đòn hẹp trừ dưới 15 điểm Oxy, 0,8 giây với đòn hẹp từ 15 điểm trở lên, 1,0 giây với đòn vùng bán kính 2 đến 3 u, 1,3 giây với đòn vùng bán kính trên 3 đến 4 u. Vùng lớn hơn 4 u phải có cách chống khác ngoài bay ra (bám mảnh vỡ, chỗ núp). Ý đồ: mọi đòn đều né được bằng bay thường, lướt là cách né dư dả chứ không bắt buộc (prototype bay của gd-tech: bay ra khỏi đòn hẹp cần khoảng 0,67 giây, khỏi vùng bán kính 2,5 u cần 0,92 giây, lướt ra cần 0,46 giây). Vùng hút của Storm Siphon chống bằng bám mảnh vỡ, không bằng bay ra. Kẻ địch ở ngoài màn hình của người bị nhắm mà ra đòn thì báo trước có thêm chỉ báo ở mép màn (mũi tên chỉ hướng và âm định hướng), hiện ngay từ đầu pha Báo trước, và pha Báo trước không được ngắn hơn mức tối thiểu ở trên tính từ lúc chỉ báo hiện. Hazard từ ngoài màn theo cùng luật này ở `map.md` (gd-world). Ngoại lệ: sát thương tiếp xúc khi người chơi tự lao vào con vật (Lumen Jelly, gai) không cần báo trước nhưng tối đa 5 điểm mỗi lần.
+8. (MVP) Mọi đòn của Driftlife và The Wardens có ba pha: Báo trước, Đánh, Hồi. Báo trước có cả hình và tiếng. Báo trước tối thiểu 0,7 giây với đòn hẹp trừ dưới 15 điểm Oxy, 0,8 giây với đòn hẹp từ 15 điểm trở lên, 1,0 giây với đòn vùng bán kính 2 đến 3 u, 1,3 giây với đòn vùng bán kính trên 3 đến 4 u. Vùng lớn hơn 4 u phải có cách chống khác ngoài bay ra (bám mảnh vỡ, chỗ núp). Ý đồ: mọi đòn đều né được bằng bay thường, lướt là cách né dư dả, không bắt buộc (prototype bay của gd-tech: bay ra khỏi đòn hẹp cần khoảng 0,67 giây, khỏi vùng bán kính 2,5 u cần 0,92 giây, lướt ra cần 0,46 giây). Vùng hút của Storm Siphon chống bằng bám mảnh vỡ, không bằng bay ra. Kẻ địch ở ngoài màn hình của người bị nhắm mà ra đòn thì báo trước có thêm chỉ báo ở mép màn (mũi tên chỉ hướng và âm định hướng), hiện ngay từ đầu pha Báo trước, và pha Báo trước không được ngắn hơn mức tối thiểu ở trên tính từ lúc chỉ báo hiện. Hazard từ ngoài màn theo cùng luật này ở `map.md` (gd-world). Ngoại lệ: sát thương tiếp xúc khi người chơi tự lao vào con vật (Lumen Jelly, gai) không cần báo trước nhưng tối đa 5 điểm mỗi lần.
 9. (MVP) Vé tấn công: mỗi người chơi có 2 vé ở dải Gần, 3 vé ở dải Giữa và Xa. Một kẻ địch muốn ra đòn nhắm vào người chơi nào phải giữ một vé của người đó. Hết vé thì kẻ địch vòng quanh ở khoảng cách 4 u chờ. Đòn tiếp xúc và đòn vùng không cần vé.
 10. (MVP) Chọn mục tiêu: kẻ địch nhắm người gây sát thương, choáng hoặc mê cho nó gần nhất trong 3 giây vừa qua. Không có thì nhắm người chơi gần nhất trong vùng phát hiện. Ra khỏi vùng bỏ đuổi thì quay về chỗ cũ. Người chơi đang Ngạt hoặc Được cứu không bị nhắm tới và không nhận sát thương, kể cả đòn vùng (theo `nguoi-choi.md` 2.3). Kẻ địch đang nhắm người đó trả vé và chọn lại mục tiêu theo luật này, không còn ai thì về Trôi.
 11. (Sau MVP) Driftlife và The Wardens thù nhau: Driftlife kiểu Giữ lãnh thổ và Săn mồi tấn công đơn vị The Wardens trong vùng phát hiện, ưu tiên hơn người chơi.
@@ -149,7 +149,7 @@ Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh
 23. (MVP) Nguyên liệu khi hạ: 1 sao. Hạ con đang Bất lực bằng Kết nhanh cho 2 sao. Kết nhanh là thao tác riêng, không chung phím với Tương tác (giữ 0,6 giây, không cần dụng cụ, phím do gd-ux đặt ở `ux-ui.md` 2.9), để trên cùng một con bất lực người chơi luôn chọn rõ bắt hay hạ. Kết nhanh có từ MVP vì không cần dụng cụ bắt sống.
 24. (MVP) K9 đo bằng một thước duy nhất: giá trị một mẫu sống, sau khi trừ vật tiêu hao kỳ vọng mỗi lần bắt, chia giá trị một lần hạ cùng loài, mục tiêu 1,5 đến 2 lần (khung mục 9), gd-items kiểm bằng script của họ. Giá trị mẫu sống 1 sao không thấp hơn nguyên liệu 2 sao cùng loài. Theo K9 sửa lần 5 (log GDM dòng 66), K9 chỉ áp cho loài bắt sống được (cỡ S, M). Mẫu sinh thiết cỡ L đứng ngoài K9, dùng cho nghiên cứu (mục 9). Tỉ lệ "ròng mỗi phút" ở đề sim S2 là thước đo khác, chỉ để canh chiến lược trội, không phải K9.
 25. (MVP) Mẫu sống trong lồng không chết trong chuyến. Người chơi ngạt và bị kéo về (K2) được ghim Lồng mẫu làm món giữ lại, nhưng chỉ giữ 1 con trong lồng: con có sao cao nhất, bằng sao thì con bắt trước. Các con còn lại mất cùng túi. Lý do: lồng đầy 3 con trị hơn cả túi đầy chương 1, giữ cả lồng thì ngạt gần như không mất gì (`kinh-te-tien-trinh.md` 8.3). Theo K27, người đang Ngạt không trao và không thả được Lồng mẫu: khi vào Ngạt, dây lồng nhả khỏi người nhưng lồng bị khóa tại chỗ, đồng đội không kéo đi được. Người đó được cứu thì Tương tác để nối lại. Bị kéo về thì lồng theo luật ghim ở trên, lồng không ghim thì mất. Rời phiên hoặc mất kết nối quá 15 giây giữa chuyến tính như bị kéo về (C10), lồng xử như trên.
-26. (MVP) Hạ hay bắt đều cho mẫu dùng được ở trạm (P2). Không loài nào chỉ để hạ cho vui.
+26. (MVP) Hạ hay bắt đều cho mẫu dùng được ở trạm (P2).
 
 ### 2.4 Driftlife chung
 
@@ -380,7 +380,7 @@ Giữ lãnh thổ bị bắn từ ngoài vùng phát hiện (ví dụ Lao từ b
 | BS-4 Cradle Custodian | Cradle Interior, Lõi máy | 1000 | 3 | Hệ an ninh chặn đường tới hộp ghi hành trình, điều khiển cửa khoang và tia quét. Báo trước bằng đường quét đỏ 1,0 s. Người chơi phá 4 rơ le theo thứ tự hiện trên bảng điều khiển trong phòng. Mỗi rơ le phá xong mở một đoạn hành lang. Pha 3: lõi Custodian lộ ra | Hạ | 4 đến 6 phút | Sau MVP |
 | BS-5 Daskel | Warden Rig, Command Deck | 1500 | 3 | Pha 1: khiên được nuôi bằng Driftlife bị nhốt trong ống chứa. Giải thoát hết ống (4 ống) thì khiên tắt. Pha 2: Daskel dùng lưới The Wardens bắt người chơi như bắt Driftlife (bị trói như luật 34, tối đa 5 s). Pha 3 (Sinh lực Daskel dưới 30%): Rig quá tải, sàn vỡ dần theo đoạn trong 90 s nên chỗ đứng thu hẹp, Daskel vẫn nhận sát thương bình thường. Hết 90 s mà chưa xong thì sàn dừng vỡ ở vùng nhỏ nhất, trận tiếp tục, không có thua do hết giờ. Daskel có mặt vì tự tới bãi vỡ bắt Sevra, tổ Ember giữ chân hắn trong lúc The Kindling nổi dậy ở Sennar | Khuất phục: Sinh lực về 0 thì Daskel gục và bị bắt, giao cho The Kindling | 6 đến 9 phút | Sau MVP |
 
-Kết quả S5 lần đầu cho BS-1 (sim của gd-tech, bản số cũ) và các thay đổi, chờ gd-tech chạy lại S5:
+Kết quả S5 lần đầu cho BS-1 (sim của gd-tech) và các thay đổi sau đó, chờ gd-tech chạy lại S5:
 
 | Chỉ số | Bản cũ | Kết quả sim bản cũ | Hiện hành |
 |---|---|---|---|
@@ -392,7 +392,7 @@ Kết quả S5 lần đầu cho BS-1 (sim của gd-tech, bản số cũ) và cá
 | Phun Krill ở pha 1 | 3 con mỗi lần, hồi chiêu 15, tối đa 6 sống | Pha 2 bắn được mọi lúc: thời lượng đạt (người trung bình một mình 1,3 phút P50, Oxy P90 229). Người tệ một mình vẫn tốn Oxy P90 456, phần lớn do quét và Krill | 2 con mỗi lần, hồi chiêu 20, tối đa 3 sống |
 | Húc ở pha 2 | 12 Oxy | Sau khi giảm Krill: người tệ một mình Oxy P50 344, vẫn trên 330. Tách nguồn: Krill 97, húc 92, phóng điện 33, quét 20. Thử húc 10 ra 329 | 10 Oxy. Thời lượng người trung bình một mình 1,2 phút, Oxy P90 210. Xua đi một mình xong trong 10 phút: người tệ 80%, trung bình 90%, phần còn lại vẫn hạ được |
 
-Kết quả S5 hiện hành (chép bằng script từ `tools/ket-qua/sim-combat.md` mục 5):
+Kết quả S5 hiện hành (`tools/ket-qua/sim-combat.md` mục 5):
 
 | Cách kết | Kịch bản | Số người | Phút P50 / P90 | Oxy mất do đòn mỗi người | Oxy mỗi người P50 / P90 | P90 so với bình chương 1 | Xong trong 10 phút |
 |---|---|---|---|---|---|---|---|
@@ -433,7 +433,7 @@ Núm gap: Sinh lực Driftlife và Sinh lực boss nối sát thương dụng c�
 
 ### 3.8 Bắt sống so với hạ (sim của gd-tech)
 
-Nguồn: `tools/sim-combat.mjs` của gd-tech (đã có thời gian bay tới, cạy Latchjaw, cột ròng trừ vật tiêu hao theo ITEM LIST). Số bảng dưới lấy từ `tools/ket-qua/sim-combat.md` của gd-tech, đã có luật Chạy trốn và giá trị mẫu mới của gd-items.
+Nguồn: `tools/sim-combat.mjs` của gd-tech (có thời gian bay tới, cạy Latchjaw, cột ròng trừ vật tiêu hao theo ITEM LIST). Số bảng dưới lấy từ `tools/ket-qua/sim-combat.md` của gd-tech, gồm luật Chạy trốn và giá trị mẫu của gd-items.
 
 | Thông số lần chạy | Giá trị |
 |---|---|
@@ -441,7 +441,7 @@ Nguồn: `tools/sim-combat.mjs` của gd-tech (đã có thời gian bay tới, c
 | Số trận mỗi ô | 2000, seed 1 |
 | Giờ chạy | 21:50 UTC ngày 19/11, tức 04:50 giờ máy ngày 20/11 (chép bằng script, không chép tay) |
 
-Các lần sửa để bắt không áp đảo hạ:
+Điều chỉnh để bắt không áp đảo hạ:
 
 | Số | Bản đầu | Hiện hành | Lý do |
 |---|---|---|---|
@@ -480,7 +480,7 @@ Hai thước đo khác nhau, không lẫn:
 | K9 (luật 24) | Giá trị một mẫu sống chia giá trị một lần hạ cùng loài | 1,5 đến 2 lần (khung mục 9) | gd-items, script của `vat-pham.md` |
 | Ròng mỗi phút (đề sim S2) | Giá trị mỗi phút của bắt trừ vật tiêu hao, chia giá trị mỗi phút của hạ | Từ 1,0 cho mọi loài (bắt không thiệt). Cỡ M bắt bằng choáng hoặc mê không quá 1,6. Cỡ S được vượt vì bị chặn bởi Lồng mẫu 3 con mỗi người mỗi chuyến | gd-tech, sim combat |
 
-Đọc cột ròng ở bảng trên theo thước đo thứ hai:
+Cột ròng theo thước đo thứ hai:
 
 | Nhóm | Loài và ròng | Kết luận |
 |---|---|---|
@@ -576,7 +576,7 @@ Kết quả S4 (sim của gd-tech, `tools/ket-qua/sim-combat.md` bảng 4, sim t
 | Cả nhóm cùng hạ một con | S | 0,85 đến 1,32 | 0,80 đến 1,60 | 0,95 đến 1,93 |
 | Cả nhóm cùng bắt một con | S | 1,21 đến 1,34 | 1,43 đến 1,68 | 1,67 đến 2,04 |
 
-Mục tiêu của S4 (mục 8) áp cho kiểu chia (mỗi người xử riêng). Kiểu dồn là kết quả để đọc, không có mục tiêu. Nhận kết quả, không đổi số. Đi theo cặp gần như không tốn thêm, và với Orebiter, Storm Siphon, Shardbrood Queen còn lợi hơn (một người choáng, một người bắt). Cả nhóm bốn người dồn vào một con thì tốn hơn (bảng trên), nên nhóm tự tách thành hai cặp. Đây là kiểu chia vai mong muốn (P3), không phạt chơi chung. Loài cỡ S dồn tốn hơn rõ (bảng trên), vì máu mỗi con nhân theo N mà con S chết hoặc dính lưới chỉ sau một hai phát: cả nhóm vây một con nhỏ là phí. Chấp nhận, kể cả 2 người ở MVP: loài cỡ S trôi rải rác hoặc theo bầy, cách chơi chung tự nhiên là mỗi người một hướng, và Súng lưới bắt nhiều con một phát.
+Mục tiêu của S4 (mục 8) áp cho kiểu chia (mỗi người xử riêng). Kiểu dồn chỉ để đọc kết quả. Nhận kết quả, không đổi số. Đi theo cặp gần như không tốn thêm, và với Orebiter, Storm Siphon, Shardbrood Queen còn lợi hơn (một người choáng, một người bắt). Cả nhóm bốn người dồn vào một con thì tốn hơn, nên nhóm tự tách thành hai cặp, đúng kiểu chia vai mong muốn (P3). Loài cỡ S dồn tốn rõ hơn vì máu mỗi con nhân theo N mà con S chết hoặc dính lưới sau một hai phát, nên cả nhóm vây một con nhỏ là phí. Chấp nhận, kể cả 2 người ở MVP: loài cỡ S trôi rải rác hoặc theo bầy, nên mỗi người một hướng là cách chơi chung tự nhiên, và Súng lưới bắt nhiều con một phát.
 
 Luật co-op:
 - N là số người đang ở ngoài không gian trong cùng map lúc kẻ địch sinh ra hoặc lúc vào phòng boss. Số người ngoài không gian giảm giữa chuyến thì áp E19. Người rời phiên giữa trận thì hệ số giữ nguyên tới hết trận đó.
@@ -764,3 +764,4 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 2026-11-20 | Nơi đặt boss theo `map.md` 2.10 (gd-world chốt): BS-2 về Station Lantern, BS-4 ở Lõi máy, thêm hệ số số Driftlife theo N | Tin gd-world | gd-combat |
 | 2026-11-20 | Thêm bảng điểm sinh và rơi, đổi tên dụng cụ theo ID gd-items, mẫu sống đi trong Lồng mẫu kéo theo thay vì vào túi, đặt boss chương 2 và 3 vào SS-3 và SS-4 | Tin của gd-world, gd-items, gd-story | gd-combat |
 | 2026-11-20 | BS-5 rơi bản đồ sao thật | Khung đổi: Solace là mồi, chương 5 lấy bản đồ sao ở Warden Rig (DECISIONS 2026-11-20) | gd-combat |
+| 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer GDD | gd-combat |

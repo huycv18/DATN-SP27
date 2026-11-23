@@ -12,19 +12,19 @@ Cầu nối giữa GDD và 4 dev Unity. File này chốt cách dữ liệu đi t
 |---|---|---|
 | Validator chéo GDD | Chạy được, 10 file, thoát 1 khi lỗi | `tools/validate-gdd.mjs`, kết quả `tools/ket-qua/validate-gdd.md` |
 | Sim chuyến | Chạy được, theo chương 1 đến 5, 4 kịch bản (tệ, trung bình, tốt, tham), 1 đến 4 người | `tools/sim-chuyen.mjs`, `tools/ket-qua/sim-chuyen.md` |
-| Sim ca cảng | Chạy được, theo khung Dave (đợt 9, thay bản GD-030): 1 đến 4 người chia việc, quét số tàu và số cửa neo theo N, trễ phản xạ 1 đến 3 giây, 3 kiểu danh mục, bơm khí | `tools/sim-ca-cang.mjs`, `tools/ket-qua/sim-ca-cang.md` |
+| Sim ca cảng | Chạy được, theo khung Dave: 1 đến 4 người chia việc, quét số tàu và số cửa neo theo N, trễ phản xạ 1 đến 3 giây, 3 kiểu danh mục, bơm khí | `tools/sim-ca-cang.mjs`, `tools/ket-qua/sim-ca-cang.md` |
 | Sim combat | Chạy được, S1 phần trận, S2 phần thời gian và ròng, S3, S4, S5 cho BS-1. S6 lý thuyết ở prototype | `tools/sim-combat.mjs`, `tools/ket-qua/sim-combat.md` |
 | Schema dữ liệu | Bản của gd-tech ở mục 2.1 (schema thuộc thẩm quyền gd-tech, GDM duyệt khi giao dev) | file này |
 | Đồng bộ co-op | Mô hình host nắm quyền, mục 2.2 | file này |
-| Netcode | So sánh để dev chọn, mục 6.3. Phòng không chọn thay | file này |
-| Event Tracking | 73 sự kiện, mục 2.4 (46 gộp từ các GDD, 20 thêm sau QA GD-031, 5 của `ux-ui.md`, 2 của ca cảng khung Dave đợt 9, và sự kiện ca cảng 30, 32 tới 37 viết lại). Tab Sheet là bản đọc sửa tay từ 2026-11-20 (đợt 8), không sinh lại bằng `tools/xuat-event-tracking.mjs` | file này, tab Event Tracking |
+| Netcode | Dev chọn, bảng so sánh ở mục 6.3 | file này |
+| Event Tracking | 73 sự kiện, mục 2.4: 46 gộp từ các GDD, 20 bổ sung, 5 của `ux-ui.md`, 2 của ca cảng khung Dave. Tab Sheet là bản đọc sửa tay, không sinh lại bằng `tools/xuat-event-tracking.mjs` | file này, tab Event Tracking |
 | Prototype bay | Chạy được: bay 8 hướng, hãm, lướt, Oxy, túi, thử né S6, 16 thanh chỉnh, xuất JSON. Số bậc 0 khớp `nguoi-choi.md` (đo trong trình duyệt: buông từ vmax dừng sau 0,51 giây và 1,5 u, hãm dừng sau 0,18 giây, lướt 15 u/s) | `tools/prototype/bay.html` |
 
-Số và kết luận của sim chỉ nằm ở file kết quả (`tools/ket-qua/sim-chuyen.md`, `sim-ca-cang.md`, `sim-combat.md`), mỗi file có mục đối chiếu mục tiêu. File này không chép kết luận để không lệch khi số đổi.
+Số và kết luận của sim chỉ nằm ở file kết quả (`tools/ket-qua/sim-chuyen.md`, `sim-ca-cang.md`, `sim-combat.md`), mỗi file có mục đối chiếu mục tiêu.
 
 ## 1. Mục đích với người chơi
 
-Người chơi không thấy hệ thống này trực tiếp. Họ thấy kết quả của nó:
+Người chơi chỉ thấy kết quả của hệ thống này:
 - Co-op mượt: bạn vào giữa chừng không phải chờ, đồng đội bay không giật, thùng không bị nhân đôi hay biến mất khi hai người cùng nhặt hoặc giao.
 - Luật mạng rõ ràng: rời phiên hay mất kết nối giữa chuyến không phải đường về an toàn (C10), host thoát thì thế giới về điểm lưu gần nhất (K23).
 - Số trong game khớp số trong GDD vì dữ liệu đi một đường từ Sheet vào game, có máy kiểm.
@@ -33,7 +33,7 @@ Người chơi không thấy hệ thống này trực tiếp. Họ thấy kết 
 
 ### 2.1 Dữ liệu: một nguồn, một đường vào Unity `MVP`
 
-1. Nguồn chuẩn hiện tại của mọi số và danh mục là markdown trong repo: các bảng và khối máy sinh `<!--B:...-->` của GDD hệ thống, cùng script sinh bảng của vai (ví dụ `sim/vat-pham.mjs`). Sheet GDD là bản dán từ repo bằng `/gdd-sheet-sync` sau khi gd-qa chấm ĐẠT. Ngoại lệ: tab Lead sửa tay thì kéo bản Sheet về repo trước khi soạn tiếp (CLAUDE.md nguyên tắc 12). Unity không giữ số gõ tay trong prefab hay code.
+1. Nguồn chuẩn của mọi số và danh mục là markdown trong repo: các bảng và khối máy sinh `<!--B:...-->` của GDD hệ thống, cùng script sinh bảng của vai (ví dụ `sim/vat-pham.mjs`). Sheet GDD là bản dán từ repo bằng `/gdd-sheet-sync` sau khi gd-qa chấm ĐẠT. Ngoại lệ: tab Lead sửa tay thì kéo bản Sheet về repo trước khi soạn tiếp (CLAUDE.md nguyên tắc 12). Unity không giữ số gõ tay trong prefab hay code.
 2. Đường đi: khối markdown trong `gdd/he-thong/` -> `tools/xuat-data.mjs` (chưa làm, việc tiếp theo) -> `data/*.json` -> importer trong Unity Editor -> ScriptableObject. Exporter đọc thẳng khối markdown như các sim đang làm, không qua TSV của Sheet. Chạy importer chỉ lúc editor, game không gọi mạng khi chạy (game chơi offline được). Đổi sang Sheet làm nguồn chỉ khi GDM ghi DECISIONS.
 3. ID là chuỗi ổn định do vai chủ tên đặt (khung mục 8), không dùng số thứ tự dòng. Tham chiếu giữa các bảng bằng ID. Đổi tên hiển thị không đổi ID. Mỗi thứ chỉ có một hệ ID (luật 7 dưới).
 4. Exporter đọc cột theo tên header. Header lạ hoặc thiếu thì dừng, không đoán. Mọi khóa JSON và trường C# là ASCII không dấu.
@@ -113,7 +113,7 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 | Kẻ địch (Sinh lực, ngưỡng) | Số người đang ở ngoài trong cùng map lúc kẻ địch sinh hoặc lúc vào phòng boss | `combat-driftlife.md` 6b |
 | Ca cảng (số tàu trong ca, số cửa neo, điểm) | Số người online lúc mở ca | `tram-va-cang.md` mục ca cảng, `sim-ca-cang.md` mục 4 |
 
-15. Người rời phiên chủ động: nhân vật ở lại trạm (C2). Rời khi đang ngoài chuyến thì tính như bị kéo về (K2, chỉ giữ 1 món), theo C10. Rời phiên không phải đường về an toàn.
+15. Người rời phiên chủ động: nhân vật ở lại trạm (C2). Rời khi đang ngoài chuyến thì tính như bị kéo về (K2, chỉ giữ 1 món), theo C10.
 16. Mất kết nối: mất gói liên tục quá thời gian phát hiện (mục 3) mới tính là rớt. Người rớt giữa chuyến vào Giữ chỗ 15 giây theo `nguoi-choi.md` 2.9 (đề xuất gửi gd-character: Giữ chỗ tối đa 1 lần mỗi chuyến cho mỗi người, lần thứ hai tính như bị kéo về ngay, để không dùng rút mạng dừng đồng hồ ngạt). Quá 15 giây thì tính như bị kéo về (K2), theo C10. Vào lại trong 15 giây bằng cùng mã slot thì nhận lại nhân vật. Người rớt là người cuối còn ngoài thì chuyến chung chờ tối đa 15 giây đó. Trong trạm và ca cảng dùng cùng cửa sổ 15 giây: hết hạn thì kiện trên tay rơi tại chỗ, host giữ.
 17. Host mất kết nối hoặc thoát: phiên kết thúc với mọi người. Mặc định không chuyển host, vì thế giới thuộc về host (C2) và chuyển host là việc riêng của stack mạng. Dev được đề nghị chuyển host nếu stack chọn hỗ trợ sẵn với chi phí thấp (câu hỏi mở 2). Mọi người về menu, thế giới trở về điểm lưu gần nhất trong ba điểm của luật 18 (K23, C10), chuyến hay ca đang dở bị mất. Đây là câu trả lời cho điểm chờ gd-tech của `nguoi-choi.md` và `map.md`.
 
@@ -195,7 +195,7 @@ Dữ liệu động (không phải SO): `ItemInstance` (itemId, soLuong, sao 1 �
 | 45 | Story | cutscene_skipped | Bỏ qua cảnh | scene_id, line_index | Cảnh có dài quá không (P4) | string, int | `cot-truyen.md` |
 | 46 | UX | ux_tutorial_step | Bước tutorial hiện, xong hoặc bỏ | step_id, state, seconds, trips_done | FTUE chương 1 | string, string, float, int | `ux_tut_step_*` của `ux-ui.md` gộp |
 
-Sự kiện bổ sung sau QA GD-031 (đánh số tiếp):
+Sự kiện 47 đến 73:
 
 | No | Group | Event Name | When To Send | Event Params Key | Dùng để | Value Type | Nguồn |
 |---|---|---|---|---|---|---|---|
@@ -231,7 +231,7 @@ Sự kiện 72 và 73 thêm ở đợt 9 cho ca cảng khung Dave (cùng với v
 
 ### 2.5 Ca cảng khung Dave: cách đo, đồng bộ, sự kiện `MVP`
 
-28. Cách đo (`tools/sim-ca-cang.mjs`): N người chia việc, mỗi người chọn việc gần nhất chưa ai nhận theo thứ tự mang thùng đang cầm tới cửa neo, nhặt thùng ở quầy, bơm khí. Trễ phản xạ là thời gian chờ trước mỗi lần đi và tính là bận. Rảnh là thời gian không có việc nào để làm. Số tàu một ca, số cửa neo, rảnh, tip, Tally nằm ở `tools/ket-qua/sim-ca-cang.md`, file này không chép để không lệch khi số đổi.
+28. Cách đo (`tools/sim-ca-cang.mjs`): N người chia việc, mỗi người chọn việc gần nhất chưa ai nhận theo thứ tự mang thùng đang cầm tới cửa neo, nhặt thùng ở quầy, bơm khí. Trễ phản xạ là thời gian chờ trước mỗi lần đi và tính là bận. Rảnh là thời gian không có việc nào để làm. Số tàu một ca, số cửa neo, rảnh, tip, Tally nằm ở `tools/ket-qua/sim-ca-cang.md`.
 29. Host nắm toàn bộ trạng thái ca: đồng hồ, danh mục và số thùng còn, lịch tàu (sinh lúc mở ca từ seed ngày, số tàu theo số người N lúc mở ca), trạng thái từng tàu, kiên nhẫn từng tàu, thùng ở quầy. Máy người chơi chỉ gửi ba yêu cầu: nhặt thùng ở ô quầy, giao thùng ở cửa neo, bắt đầu hoặc dừng giữ bơm khí.
 30. Hai người cùng nhặt một thùng hay cùng giữ bơm khí một tàu: yêu cầu tới host trước được nhận. Người sau nhận từ chối, máy đó hiện lại tay trống và đi việc khác, không mất gì. Giao thùng vào đúng lúc tàu hết kiên nhẫn: host quyết, máy người chơi lùi lại như luật 11.
 31. Người vào giữa ca không đổi lịch ca đó (luật 13). Người rớt giữa ca khi đang cầm thùng: thùng rơi tại chỗ, host giữ, người khác nhặt được, hết Giữ chỗ mà tàu đã rời thì thùng về danh mục.
@@ -295,13 +295,13 @@ Tham số của từng sim nằm ở `tools/tham-so/chuyen.json`, `ca-cang.json`
 
 ### 6.2 Việc kỹ thuật tiếp theo (chưa làm)
 
-1. `tools/xuat-data.mjs`: khối dữ liệu markdown trong `gdd/he-thong/` sang `data/*.json` theo schema mục 2.1, có round-trip. Sheet chỉ là bản dán, không phải nguồn (điểm tự quyết 9).
+1. `tools/xuat-data.mjs`: khối dữ liệu markdown trong `gdd/he-thong/` sang `data/*.json` theo schema mục 2.1, có round-trip. Sheet chỉ là bản dán (điểm tự quyết 9).
 2. Importer Unity Editor: JSON sang ScriptableObject, chạy bằng menu, giữ GUID asset theo ID để prefab không mất tham chiếu.
 3. Prototype bay (`tools/prototype/bay.html`, mở qua http, ví dụ `python -m http.server` ở thư mục đó): còn thiếu kéo vật, Recall Beacon, gamepad. Người chơi thật chơi thử để chốt cảm giác. Lý thuyết S6 trong trang (đứng yên, phản xạ 0,27 giây, vùng trúng bán kính 2,5 u như phóng điện của Arc Eel): bay ra cần 0,92 giây báo trước, lướt ra cần 0,46 giây, nên báo trước 0,5 giây chỉ đủ khi lướt và lướt không đang hồi chiêu. Đã gửi gd-combat.
 
 ### 6.3 Lựa chọn netcode Unity (để 4 dev quyết)
 
-Phòng không chọn thay dev. Bảng dưới là điểm cần cân, kiểm lại giá và giấy phép trên trang chính thức trước khi chọn.
+Kiểm giá và giấy phép trên trang chính thức trước khi chọn.
 
 | Lựa chọn | Mô hình | Điểm mạnh với game này | Điểm cần cân | Chi phí cố định khi bán đứt (cần kiểm trang chính thức) |
 |---|---|---|---|---|
@@ -393,3 +393,4 @@ File này là phần co-op kỹ thuật của mọi hệ thống: mục 2.2 và 
 | 2026-11-20 | Sửa nhẹ vòng cuối V1 đến V6: biên file save hỏng, trường vật tiêu hao ở `ItemData`, `dongChuong` ở `StoryBeatData`, `AreaData` cho A01 đến A05, sự kiện save_written và save_failed, câu hỏi mở Giữ chỗ về trạng thái đề xuất | `qa/GD-031-ky-thuat.md` vòng cuối | gd-tech |
 | 2026-11-20 | Đợt 9 (GD-054): ca cảng theo khung Dave. Sim ca cảng viết lại (N người chia việc, quét số tàu và cửa neo, 3 kiểu danh mục, bơm khí). Mục 2.5 mới. Sự kiện ca cảng 30 đến 37 viết lại, thêm 72 và 73. Schema ShipTypeData, dữ liệu động của ca đổi sang thùng, danh mục | Lead chốt ca cảng theo khung Dave | gd-tech |
 | 2026-11-20 | Đợt 9 vòng 2 (GD-054): sim nối giaThung của gd-economy, độ gọi nhân hệ số hàng hay gọi (luật 24), Tàu vội chỉ gọi băng và khoáng, bơm khí 50% lúc cập (luật 28), ca 300 giây (luật 34), ca đầu (luật 67). So sánh cửa neo hiện hành, 4 cửa, 3 cửa thùng 1 giây. Mục đo: 6 kiểu danh mục, Tàu vội, đồ Trái Đất và đơn đặt trước. Khóa PortTuning cập nhật | Lead chốt ca cảng, gd-quan sửa luật | gd-tech |
+| 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer | GDM |

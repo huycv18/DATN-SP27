@@ -6,7 +6,7 @@ Mọi số là khởi điểm "ước" hoặc lấy nguyên từ GDD đợt 1 (g
 
 ## Tóm tắt
 
-Hệ thống này quy định người chơi thấy gì, bấm gì và học game theo thứ tự nào: 35 màn, HUD ngoài không gian và trong ca cảng, bảng phím cho bàn phím chuột và gamepad, 37 bước FTUE của chương 1, checklist phản hồi cho các khoảnh khắc chính và bảng strings có giới hạn ký tự. Phục vụ P1 (hệ quả của mỗi hơi thở phải đọc được bằng số), P2 (mang về thì thấy trạm đổi), P3 (cùng một giao diện cho 1 đến 4 người). Tầng: trình bày. Ưu tiên: bản đầu (chương 1). Phụ thuộc chính: `nguoi-choi.md` (Oxy, túi, phím), `tram-va-cang.md` (ca cảng, khoang), `map.md` (la bàn, beacon), `combat-driftlife.md` (tín hiệu đòn, choáng), `vat-pham.md` (túi, kiện), gd-economy (giá), gd-story (thoại, tên).
+Gồm 35 màn, HUD ngoài không gian và trong ca cảng, bảng phím cho bàn phím chuột và gamepad, 37 bước FTUE của chương 1, checklist phản hồi cho các khoảnh khắc chính và bảng strings có giới hạn ký tự. Phục vụ P1 (hệ quả của mỗi hơi thở phải đọc được bằng số), P2 (mang về thì thấy trạm đổi), P3 (cùng một giao diện cho 1 đến 4 người). Tầng: trình bày. Ưu tiên: bản đầu (chương 1). Phụ thuộc chính: `nguoi-choi.md` (Oxy, túi, phím), `tram-va-cang.md` (ca cảng, khoang), `map.md` (la bàn, beacon), `combat-driftlife.md` (tín hiệu đòn, choáng), `vat-pham.md` (túi, kiện), gd-economy (giá), gd-story (thoại, tên).
 
 ## Hiện hành
 
@@ -32,7 +32,7 @@ Hệ thống này quy định người chơi thấy gì, bấm gì và học gam
 
 ## 1. Mục đích với người chơi
 
-- Cảm thấy: nhìn một lần biết mình còn bao lâu và có đủ về không, giao thùng xong thấy Tally và tip bay lên ngay, bước vào trạm thấy mọi việc cần làm đứng yên trên mặt cắt chứ không ẩn sau menu.
+- Cảm thấy: nhìn một lần biết mình còn bao lâu và có đủ về không, giao thùng xong thấy Tally và tip bay lên ngay, bước vào trạm thấy mọi việc cần làm đứng yên trên mặt cắt, không phải mở menu mới thấy.
 - Quyết định mà giao diện phải hỗ trợ: đi tiếp hay về (vạch "đủ về", thời gian còn), tham hay nhẹ túi (thanh tải và mốc 60%), ghim món nào, chia Oxy cho bạn hay giữ, bán loại hàng nào và bao nhiêu thùng (danh mục bán), tàu nào giao trước (thanh kiên nhẫn).
 - Pillar: P1 (Oxy là số đọc được, không ẩn), P2 (mặt cắt trạm là giao diện chính của nửa ở nhà, mỗi khoang sửa xong đổi hình), P3 (giao diện giống nhau với 1 đến 4 người, thêm người là thêm hàng đồng đội).
 - 30 giây đầu (một mình, thế giới mới): xem cảnh tỉnh dậy (bỏ qua được), đi tới điểm sáng trong trạm tối bằng A D, thấy dòng mục tiêu "Sửa Khoang neo" ở góc, ra cửa khí, bay tới vòng sáng đầu tiên, thấy thanh Oxy tụt và vạch "đủ về" nhích theo.
@@ -67,7 +67,7 @@ Hệ thống này quy định người chơi thấy gì, bấm gì và học gam
 24. Thẻ tên chương: hiện thẻ "Chương n: tên" 3 giây, không chặn. Chương 1 hiện sau cảnh tỉnh dậy ở UI-05, các chương sau hiện ở pha Chuẩn bị của ngày đầu chương ở UI-10. Năm tên do gd-story cấp (`cot-truyen.md` mục 13), khóa `hud.chapter`, đều dưới 40 ký tự. `MVP` chương 1
 25. Cảnh truyện chặn màn (UI-53) chỉ xảy ra ở trạm khi ca cảng không chạy. Trong ca cảng đang chạy, UI-53 chỉ là bong bóng không chặn (`story.bubble`), cảnh của mốc xảy ra giữa ca (C1.8, C2.3, C3.3, C3.4, C3.8) phát ở UI-44 bằng UI-53. Lời theo trạng thái của nhân vật trong trạm và chuyện riêng của thương nhân không phải cảnh: là một dòng khi tới gần hoặc bấm nói chuyện và bong bóng lúc tàu cập bến, không dùng UI-53 và không có dấu cảnh chờ. Khi bất kỳ ai trong nhóm đang chạy ca cảng, cảnh của người khác không bao giờ chặn màn. `MVP`
 26. "Một mình" nghĩa là một người đang online trong thế giới, không phụ thuộc số nhân vật tỉnh dậy. Người thứ hai vào lúc người kia đang ở Menu tạm dừng thì thời gian chạy tiếp ngay, Menu của người kia đổi tiêu đề thành Menu và hiện thông báo "{name} đã vào". Người thứ hai rời thì người còn lại tạm dừng được từ lần mở Menu kế. `MVP`
-27. Xác nhận ra chuyến, ngủ, mở ca sớm và bỏ ca có đồng hồ chung hiện cho mọi người ở trạm tại HTR-01: ra ngoài 30 giây tính từ người đầu tiên xác nhận, ngủ 30 giây tính từ người đầu tiên vào buồng (khớp K23), mở ca sớm hoặc bỏ ca 30 giây tính từ người đầu tiên xác nhận (`tram-va-cang.md` luật 64 tới 66). Đồng hồ kèm tên người chưa trả lời. Người đã xác nhận hủy bằng cách bấm lại, đồng hồ không dừng và không đặt lại (khớp `tram-va-cang.md` luật 60 và 61). `MVP`
+27. Xác nhận ra chuyến, ngủ, mở ca sớm và bỏ ca có đồng hồ chung hiện cho mọi người ở trạm tại HTR-01. Ra ngoài 30 giây tính từ người đầu tiên xác nhận. Ngủ 30 giây tính từ người đầu tiên vào buồng (khớp K23). Mở ca sớm hoặc bỏ ca 30 giây tính từ người đầu tiên xác nhận (`tram-va-cang.md` luật 64 tới 66). Đồng hồ kèm tên người chưa trả lời. Người đã xác nhận hủy bằng cách bấm lại, đồng hồ không dừng và không đặt lại (khớp `tram-va-cang.md` luật 60 và 61). `MVP`
 28. Số chuyến hôm nay hiện ở HTR-02 ("Chuyến n/2", K22). Sau chuyến thứ hai hoặc khi ca cảng đã mở thì UI-11 khóa kèm lý do. Nút Mở ca ở UI-14 hiện cảnh báo "Mở ca là hết ra ngoài hôm nay" và nút Bỏ ca hiện "Bỏ ca cũng hết ra ngoài hôm nay" trước khi xác nhận. `MVP`
 29. Ca cảng có hai loại bong bóng. Bong bóng gọi món nằm trên tàu ở cửa neo và không bao giờ bị che. Bong bóng truyện (`story.bubble`) nằm dưới tên tàu, chữ nhỏ hơn, tối đa một cái cùng lúc và không đè bong bóng gọi món. `MVP`
 30. Cửa neo 1, 2, 3 nhận biết bằng số lớn cộng màu. Ô quầy cùng số cùng màu với cửa neo, thùng có viền cùng màu và số cửa neo. Ba màu cửa neo phải khác ba trong bốn màu slot người chơi (cam, lam ngọc, vàng chanh, hồng tím) hoặc khác độ sáng rõ rệt, Artist kiểm. Demo dùng hổ phách, ngọc, tím, gần cam, lam ngọc và hồng tím của slot, nên bản thật không được chỉ dựa vào màu. `MVP`
@@ -882,7 +882,7 @@ Mỗi key một dòng. Giới hạn là số ký tự tối đa của chuỗi g�
 | Tên | Khởi điểm | Khoảng an toàn | Tăng thì | Giảm thì | Nhóm tác động | Nguồn |
 |---|---|---|---|---|---|---|
 | Chiều cao camera ngoài không gian | 10,0 u (ngang 17,8 u ở 16:9, nhân vật 72 px ở 720p) | 9 đến 12 | Thấy xa, nhân vật nhỏ | Hẹp, hazard vào màn muộn | Đọc map, hazard, bắn | ước, chốt giữa `nguoi-choi.md` mục 5 (18 x 10), `ho-so-nhan-vat.md` (106 điểm ảnh mỗi u, khoảng 10 u ở 1080p) và `map.md` mục 6.4 (đề xuất 12 x 21) |
-| Camera trong trạm | Cùng tỉ lệ nhân vật với ngoài không gian (72 px mỗi u ở 720p), theo nhân vật, thấy khoảng 1,5 tầng | | Thấy nhiều khoang | Mất ngữ cảnh | Trạm, ca cảng | ước, trả lời `ho-so-nhan-vat.md` dòng 148 (silhouette giữ nguyên). HCH-10 bù phần không thấy |
+| Camera trong trạm | Cùng tỉ lệ nhân vật với ngoài không gian (72 px mỗi u ở 720p), theo nhân vật, thấy khoảng 1,5 tầng | | Thấy nhiều khoang | Mất ngữ cảnh | Trạm, ca cảng | ước, trả lời `ho-so-nhan-vat.md` dòng 146 (silhouette giữ nguyên). HCH-10 bù phần không thấy |
 | Tỉ lệ màn hỗ trợ | 4:3 đến 21:9, vùng nhìn tối thiểu 17,8 x 10,0 u | 4:3 đến 21:9 | Màn rộng thấy thêm ngang | Màn hẹp thấy thêm chiều cao | Công bằng nhìn | ước, vùng nhìn tối thiểu là luật 1 mục 2.1 |
 | Cột trái HUD tối đa | 400 px ở 720p, mọi cỡ chữ (thanh Oxy và thanh tải giữ 320 px, chỉ chữ và biểu tượng phóng) | 360 đến 440 | Thấy nhiều | Vào vùng giữa màn | Bố cục | tính: vùng giữa 25% rộng 320 px bắt đầu từ 480 px, mà 64 + 400 = 464 |
 | Giữ chỗ khi mất kết nối | 15 giây, quá hạn tính như bị kéo về (C10) | 10 đến 30 | Tha thứ mạng | Treo nhóm | Co-op | gốc `nguoi-choi.md` 2.9, C10 |
@@ -911,7 +911,7 @@ Mỗi key một dòng. Giới hạn là số ký tự tối đa của chuỗi g�
 | Cảnh truyện bỏ qua | 1 lần bấm | | | | Truyện | gốc `cot-truyen.md` luật 8 |
 | Tần số cập nhật HUD đồng đội | 5 lần mỗi giây | 2 đến 20 | Mượt, tốn mạng | Giật | Co-op | ước, gd-tech xác nhận |
 
-Núm gap: cỡ chữ tối thiểu, ngưỡng nhấp nháy và giờ tự tính ở lại là ba tham số nối ý đồ trợ năng và co-op với con số. Chỉnh bằng playtest, không bằng cảm tính.
+Núm gap: cỡ chữ tối thiểu, ngưỡng nhấp nháy và giờ tự tính ở lại là ba tham số nối ý đồ trợ năng và co-op với con số. Chỉnh bằng playtest.
 
 ## 4. Trường hợp biên
 
@@ -979,7 +979,7 @@ Nơi luật phải cùng đổi: bảng 2.2, 2.4, 2.5, bảng strings, `ux/kiem-
 
 ## 7. Yêu cầu cho art, UI, tutorial, audio
 
-Một artist, vector. Ưu tiên bộ kit tái dùng. Số của bảng dưới theo mức ưu tiên của MVP.
+Một artist, vector, ưu tiên bộ kit tái dùng. Số của bảng dưới theo mức ưu tiên của MVP.
 
 | Sự kiện hay thứ | Hình | Âm | Text, tutorial | Ưu tiên |
 |---|---|---|---|---|
@@ -1002,7 +1002,7 @@ Một artist, vector. Ưu tiên bộ kit tái dùng. Số của bảng dưới t
 ## 7b. Cảm giác (game feel)
 
 - Tham chiếu: khoảnh khắc cuối ca hiện tổng doanh thu và lời khách của Dave the Diver (đã nêu ở `tram-va-cang.md` 7b), thanh tiến độ hiện rõ khi giữ phím thoát Escape Pod 6 giây của Dave (`06-dave-the-diver-cau-truc.md` D9). Cảm giác nhặt thùng, giao và nhận Tally nhanh như thả món vào ô giao trong Overcooked (tham chiếu của gd-quan).
-- Phản tham chiếu: không đếm ngược hét lên, không chữ Thất bại, không popup chặn màn khi đang bay, không HUD phủ kín màn.
+- Phản tham chiếu: đếm ngược hét lên, chữ Thất bại, popup chặn màn khi đang bay, HUD phủ kín màn.
 - Thời gian phản hồi, từng lớp và từng khoảnh khắc ở bảng 2.11. Tham số bật tắt từng lớp ở prototype.
 
 ## 8. Cách đo thành công và tiêu chí nghiệm thu
@@ -1064,7 +1064,7 @@ Tiêu chí nghiệm thu (gd-qa pass hoặc fail):
 
 ## Co-op 1 đến 4 người
 
-Nguyên tắc: một bộ giao diện cho mọi N, không có màn nào chỉ co-op. Thêm người thêm hàng ở HUD-07, không thêm màn.
+Nguyên tắc: một bộ giao diện cho mọi N. Thêm người thì thêm hàng ở HUD-07, không có màn riêng cho co-op.
 
 | Mục | 1 người | 2 người (MVP) | 3 người (Sau MVP) | 4 người (Sau MVP) |
 |---|---|---|---|---|
@@ -1132,9 +1132,9 @@ Kiểm: không giao diện nào hỏi "có đúng N người không", mọi số
 
 | Luật khung | Vấn đề | Lý do | Bằng chứng | Phương án thay |
 |---|---|---|---|---|
-| C5 (cả nhóm xác nhận ở cửa khí, ai không đi thì chọn ở lại) | Khung lần 4 đã có "không trả lời trong 30 giây thì ở lại" nhưng chưa nói tính từ lúc nào | Hai bên dễ hiểu khác nhau | Chưa đo | GDM đã đưa vào C5 (khung dòng 98, log dòng 60). Mốc đếm tính từ người đầu tiên xác nhận (`tram-va-cang.md` luật 61) |
+| C5 (cả nhóm xác nhận ở cửa khí, ai không đi thì chọn ở lại) | Khung lần 4 đã có "không trả lời trong 30 giây thì ở lại" nhưng chưa nói tính từ lúc nào | Hai bên có thể đếm từ hai mốc khác nhau | Chưa đo | GDM đã đưa vào C5 (khung dòng 98, log dòng 60). Mốc đếm tính từ người đầu tiên xác nhận (`tram-va-cang.md` luật 61) |
 | C8 (số tàu trong ca tăng theo số người) | Số người đổi giữa các phiên nên số tàu một ca khác nhau mà người chơi không hiểu vì sao | Người chơi khó đoán "tàu nhiều hơn khi bạn vào" | Chưa đo | Bảng tàu ghi chú "Số tàu theo số người đang chơi", số tàu tính lại khi có người vào hay rời trước Mở ca, chốt lúc Mở ca, người vào giữa ca không đổi lịch ca đó (K13, C8). Số tàu theo N do sim ca cảng của gd-tech |
-| C7 (không tạm dừng từ 2 người) | Khung không định nghĩa "một mình" và không nói khi số người đổi lúc đang dừng | Khung chưa định nghĩa "một mình" | Chưa đo | Ghi vào C7: một người online thì tạm dừng được, thời gian chạy tiếp ngay khi người thứ hai vào (UI luật 26 đã áp) |
+| C7 (không tạm dừng từ 2 người) | Khung không định nghĩa "một mình" và không nói khi số người đổi lúc đang dừng | Người thứ hai vào lúc đang ở Menu tạm dừng thì chưa rõ thời gian chạy hay dừng | Chưa đo | Ghi vào C7: một người online thì tạm dừng được, thời gian chạy tiếp ngay khi người thứ hai vào (UI luật 26 đã áp) |
 
 ## Lịch sử thay đổi
 
@@ -1144,3 +1144,4 @@ Kiểm: không giao diện nào hỏi "có đúng N người không", mọi số
 | 2026-11-20 | Sửa theo gd-qa vòng 1: Esc, 16:10, tiêu chí 7, HTR-01 đến HTR-04, Bỏ ca, âm lượng và chú thích âm, FTUE thêm T31 đến T35, tín hiệu K22 K23 K24 C10, đổi mã HUD-nn và HCH-nn, strings 225, cổng kiểm chuỗi trạng thái | GD-031 lỗi 1 đến 32, khung lần 4 | gd-ux |
 | 2026-11-20 | Đợt 4: K23 ba điểm tự lưu và thoát giữa chuyến theo C10 (luật 23, UI-44, HTR-03), K22 tín hiệu cửa khí, K26 thêm HUD-15 trần hồi Oxy và phím Dùng vật tiêu hao, K27 đang ngạt không trao không thả (T35 đổi, thêm T36), HTR-01 kết quả hết giờ cho Mở ca và Bỏ ca, bỏ chữ chờ GDM, The Scattering | Brief đợt 4, log GDM dòng 60 đến 72, GD-031 vòng 2 | gd-ux |
 | 2026-11-20 | Đợt 9: ca cảng theo khung bán sushi của Dave. UI-14 thành Bảng tàu và danh mục bán, UI-41 thành bong bóng gọi món, UI-42 thành bơm khí, HCH-01 đến HCH-11 viết lại, FTUE T21 đến T26 viết lại và thêm T37, input ca cảng, game feel ca cảng, strings ca cảng, bỏ việc nhặt hàng thô và đóng gói trong ca | GD-053, Lead chốt 2026-11-20 | gd-ux |
+| 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID | Đánh giá humanizer | gd-ux |
