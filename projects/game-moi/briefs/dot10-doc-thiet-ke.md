@@ -112,6 +112,26 @@ Việc riêng nhóm B: sửa dòng 50 và 60 của `MVP Criteria Checklist.tsv` 
 
 **Giới hạn.** Chỉ ghi file trong cột Ghi vào. Không sửa Google Sheet. Không commit.
 
+## GD-067 các vai: sửa theo QA GD-061
+
+QA không có lỗi nặng, 17 lỗi vừa, 22 lỗi nhẹ. Lỗi ghi theo mã ở `projects/game-moi/qa/GD-061-A.md` (II.1 tới II.3), `-B.md` (II.4 tới II.6), `-C.md` (II.7 tới II.9), mỗi lỗi có dòng và đề xuất. GDM đã chốt các điểm cần quyết ở `log-gdm-tu-quyet.md` dòng 111 tới 116, đọc trước khi sửa.
+
+| Vai | Sửa trong Doc | Sửa thêm ngoài Doc |
+|---|---|---|
+| gd-economy | `07-kinh-te-tien-trinh.md`: C-V1 tới C-V4, C-N1 tới C-N4, sơ đồ quá cao (C-N9, đổi `flowchart LR` hoặc tách) | Sim kinh tế mở ca sớm nhất ngày 5, ca đầu là ca dạy 2 tàu (log 111), chạy lại, cập nhật số ở `kinh-te-tien-trinh.md` và TSV của mình. "Từ 2/3 trở lên" ở `kinh-te-tien-trinh.md` dòng 20, 57, 600, 639, 678, `Balance Sheet.tsv` dòng 26, `sim/economy/tham-so.json` dòng 445 (log 113) |
+| gd-character | `02-nguoi-choi.md`: lỗi nhóm A thuộc II.2, gồm V6 và V7 (sơ đồ Ngạt) | `nguoi-choi.md` câu "mất chuyến đó" theo log 112 |
+| gd-world | `03-map-va-chuyen.md`: lỗi nhóm A thuộc II.3, gồm V4, V6, biến viết thường, nhánh Hình II.3.1 | `map.md` dòng 63 và câu "mất chuyến đó" theo log 112, ô tương ứng ở `Zone.tsv` |
+| gd-combat | `04-combat-driftlife.md`: lỗi nhóm B thuộc II.4 | Luật Scrapmaw khi cắt xong Dây nối lúc boss còn từ nửa Sinh lực (log 116) trong `combat-driftlife.md`, `Enemy.tsv` nếu tab có khối này, rồi đưa vào II.4 |
+| gd-items | `05-vat-pham.md`: lỗi nhóm B thuộc II.5, gồm câu phân biệt hai thước (log 115) | Không |
+| gd-quan | `06-tram-va-cang.md`: lỗi nhóm B thuộc II.6, gồm câu tip (log 114), hàng đợi 2 mẻ có tính mẻ đang chạy không | `tram-va-cang.md` luật 31 theo log 114, câu hàng đợi xưởng |
+| gd-story | `09-cot-truyen-ket-thuc.md`: C-V5 (trỏ sang số sim ở mục II.7), C-V6, C-N8, sơ đồ quá cao (C-N9) | Không |
+| gd-tech | `08-co-op-va-luu.md`: C-N5 tới C-N7 | Không |
+| GDM | `01-mot-ngay.md`: lỗi nhóm A thuộc II.1, ca sớm nhất ngày 5 | `so-hien-hanh.md`, `ux-ui.md` dòng 260 và 525, `MVP Criteria Checklist.tsv` dòng 52, dán Sheet các tab đổi |
+
+**Tiêu chí hoàn thành.** Mỗi lỗi được giao có một dòng trong báo cáo: mã, đã sửa thế nào hoặc vì sao không sửa. File Doc của mình qua `kiem-book.mjs` và `soat.mjs` 0 lỗi. Ai sửa GDD thì `node projects/game-moi/tools/validate-gdd.mjs` 0 lỗi. Ai sửa sim thì báo bảng số trước và sau.
+
+**Giới hạn.** Chỉ sửa file trong dòng của mình. Không sửa Google Sheet, GDM dán. Không đặt luật mới ngoài log 111 tới 116. Không commit.
+
 ## Luật chung
 
 - Mỗi vai chỉ sửa file trong cột Ghi vào. Không sửa Google Sheet.
