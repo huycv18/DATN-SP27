@@ -48,7 +48,7 @@ Tên gọi bám vào người đặt. Loose Bolt là tên Tikko đặt cho tàu 
 Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 | ID | Tàu | Ai (tên theo `cot-truyen.md` sơ bộ) | Mở | Nhãn |
 |---|---|---|---|---|
-| TA01 | Loose Bolt (Tàu gom phế liệu) | Oru, thương nhân Tikko, khách quen đầu tiên | Mốc C1.8 | MVP |
+| TA01 | Loose Bolt (Tàu gom phế liệu) | Tikko, thương nhân người Oru, khách quen đầu tiên | Mốc C1.8 | MVP |
 | TA02 | Tàu vội | Dân Oru vãng lai, không tên riêng | Chương 1, Hạng cảng 2 | MVP |
 | TA03 | Lamplighter (Xuồng tiếp tế Lantern) | Bram Kowalski, Station Lantern | Sau mốc C2.2 | Sau MVP |
 | TA04 | Vellune (Tàu trọng nghi thức) | Sennari, thương nhân Ilsume. Thật ra là Sevra Ilvane (Y) giả danh | Mốc C2.7 tới mốc C3.8 | Sau MVP |
@@ -98,7 +98,7 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 2. Khoang Hỏng không dùng được chức năng, vẫn đi qua được. `MVP`
 3. Sửa khoang: mọi vật liệu trong danh sách sửa phải nằm trong kho, người chơi đứng ở khoang và giữ phím sửa trong thời gian sửa. Bắt đầu giữ phím thì vật liệu bị trừ khỏi kho. Thả phím giữa chừng thì tiến độ giữ nguyên, vật liệu không hoàn lại, giữ phím lại thì làm tiếp. `MVP`
 4. Sửa xong thì khoang sang Hoạt động cấp 1, mặt cắt trạm đổi hình khoang đó và hiện người vớt phụ trách (nếu có). `MVP`
-5. Nâng cấp khoang lên cấp 2 và cấp 3 theo cùng cách sửa, cần vật liệu và Tally theo bảng của gd-economy. Trong lúc nâng cấp khoang vẫn dùng được. ID nâng cấp là ID khoang cộng cấp: KH05-C2 là xưởng cấp 2, KH07-C2 là Cảng cấp 2: cửa neo thứ 4 của bến 1 (mua ở shop, Hạng 4), là nâng cấp, không theo số người, KH12-KP là quầy phụ cạnh bến 2 và bến 3, KHxx-C3 là cấp 3 của khoang xx. Xưởng cấp 2 mở ở chương 2. Mọi nâng cấp khoang `Sau MVP`
+5. Nâng cấp khoang lên cấp 2 và cấp 3 theo cùng cách sửa, cần vật liệu và Tally theo bảng của gd-economy. Trong lúc nâng cấp khoang vẫn dùng được. ID nâng cấp là ID khoang cộng cấp: KH05-C2 là xưởng cấp 2, KH07-C2 là Cảng cấp 2: cửa neo thứ 4 của bến 1 (mua ở shop, Hạng 4), là nâng cấp, không theo số người, KH12-KP là quầy phụ cạnh bến 2 và bến 3, KHxx-C3 là cấp 3 của khoang xx. Xưởng cấp 2 mở ở chương 2. Mọi nâng cấp khoang `Sau MVP`, trừ kho cấp 2 sửa ở chương 1 (`MVP`, có trong sim kinh tế chương 1)
 6. Khoang neo là khoang đầu tiên sửa được. Trước khi khoang neo Hoạt động, chỉ cửa khí, kho, buồng ngủ đông dùng được, và Ember trôi chậm (hình nền trôi, không ảnh hưởng luật). Sửa xong khoang neo thì Ember đứng yên tới hết game. `MVP`
 7. Một khoang chỉ sửa được khi chương của khoang đã mở (bảng 2.6). Khoang có người vớt phụ trách (xưởng, khoang liên lạc, cảng, khoang dẫn đường, bến Skiff, phòng nghiên cứu, khoang sinh quyển, bến 2, bến 3) chỉ sửa được sau khi người vớt đó tỉnh và giao quest (luật 15). Khoang chưa sửa được hiện khung tối và một dòng gợi ý truyện. `MVP`
 8. Kho không giới hạn số lượng. Đồ trong túi đồ tự vào kho khi người chơi qua cửa khí về trạm. `MVP`

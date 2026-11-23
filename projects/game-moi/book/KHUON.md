@@ -48,9 +48,17 @@ book/
 
 ### II.n.k. ...
 
+### II.n.<áp chót>. <Chơi hai người và> tiêu chí nghiệm thu <của hệ thống>
+<Khác biệt khi co-op 2 người nếu có. Bảng mục tiêu số của hệ thống và kết quả sim nếu đã có. Thứ sim chưa đo được thì nói chờ playtest.>
+
+### II.n.<chót>. Trường hợp biên
+<Bảng Tình huống, Phán quyết, ít nhất 4 dòng, chọn ca dev hay hỏi nhất.>
+
 ### II.n.z. Ngoài MVP
 <Một gạch đầu dòng mỗi phần của bản đủ, không giải thích luật.>
 ```
+
+Mục mẫu đã duyệt: `phan-2/06-tram-va-cang.md`. Viết mục mới thì đọc mục mẫu trước, chép cách viết, không chép nội dung.
 
 ## Luật viết
 
@@ -63,6 +71,10 @@ book/
 7. Không chép ID nội bộ (STY-501, HUD-16, log 98...) vào thân văn. Cần trỏ tới thì ghi tên tab Sheet.
 8. Văn phong: tiếng Việt có dấu, thuật ngữ game giữ tiếng Anh, không emoji, không gạch dài, không dấu chấm phẩy. Câu kể chuyện vận hành, không viết kiểu ghi chú. Không lịch sử thay đổi, không "đã bỏ", không "trước đây".
 9. Độ dài: 120 tới 300 dòng một mục. Dài hơn thì cắt chi tiết xuống Sheet.
+10. Một dòng văn xuôi có từ 2 số trở lên thì tách thành gạch đầu dòng hoặc bảng. Chú thích hình cũng tính là văn xuôi.
+11. Ở dòng giải nghĩa công thức, tên biến viết thường, không bọc backtick.
+12. Chú thích hình đặt ngay dưới khối mermaid hoặc ngay dưới dòng `[CHỜ ẢNH`. Mục cuối ghi đúng `### II.n.z. Ngoài MVP`.
+13. Được thêm ví dụ tính bằng số lấy từ nguồn, mở đầu bằng chữ "Ví dụ" để người đọc biết số kết quả là phép tính, không phải số cân bằng mới.
 
 ## Kiểm
 
