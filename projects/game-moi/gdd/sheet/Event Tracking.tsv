@@ -51,7 +51,7 @@ STT	Group	Event Name	When To Send	Event Params Key	Description	Value Type
 50	Trip	zone_exit	Ra dải	player_id\nzone	Thời gian ở mỗi dải	string\nstring
 51	Trip	branch_exit	Ra map nhánh	player_id\nbranch_id\nminutes	Thời lượng mỗi lần vào map nhánh	string\nstring\nfloat
 52	Trip	branch_unlock	Mở khóa cửa hay vách map nhánh	branch_id\nlock_id	Mở cửa hoặc vách map nhánh	string\nstring
-53	Trip	hazard_warn	Hazard bắt đầu báo trước gần người chơi	hazard_id\nwarn_seconds	Thời gian báo trước, đo trên build, tiêu chí từ 1 giây ở map.md	string\nfloat
+53	Trip	hazard_warn	Hazard bắt đầu báo trước gần người chơi	hazard_id\nwarn_seconds\non_screen	Thời gian báo trước, đo trên build, tiêu chí từ 1 giây ở map.md. on_screen: vùng báo trước có nằm trong màn không (ky-thuat.md mục 2.6)	string\nfloat\nbool
 54	Combat	creature_wake	Driftlife tỉnh khỏi Choáng hoặc Ngủ	creature_id\nkind	Driftlife tỉnh sau bao lâu	string\nstring
 55	Combat	attack_ticket	Vé tấn công cấp hoặc trả	creature_id\nplayer_id\nstate	Áp lực mỗi người	string\nstring\nstring
 56	Station	creature_born	Con non sinh ở khoang sinh quyển	species_id	Nhịp nuôi	string
