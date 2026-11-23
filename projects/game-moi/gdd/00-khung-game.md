@@ -26,7 +26,7 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 |---|---|
 | P1 Mỗi hơi thở là một quyết định | CP2 Risk & Reward |
 | P2 Mang về là để trạm sống lại | CP3 Management & Optimization |
-| P3 Một mình vẫn trọn, có bạn thì vui hơn | Nguyên tắc nền Solo or Together |
+| P3 Một mình vẫn trọn, có bạn thì vui hơn | Không còn là pillar. Đọc là luật co-op C1 đến C10 ở mục 6 |
 | P4 Vũ trụ kể chuyện qua thứ bạn vớt được | CP1 Exploration & Discovery và CP5 Variety & Delight |
 | P5 Progression & Growth | CP4 Progression & Growth |
 
@@ -79,16 +79,6 @@ Mã cũ trong các GDD hệ thống đọc theo bảng này:
 | Giữ bằng luật | K21 mỗi chương thêm một đến hai kiểu chơi mới, K25 qua chương theo mốc truyện, B8 dấu vết phản diện lộ dần, B9 giọng nền nghiêm hài nhẹ |
 | Đo bằng | mỗi chương có ít nhất 3 mốc truyện và 2 vật manh mối có nơi đặt cố định. Mỗi chương có kiểu chơi mới |
 | Cấm | Cắt cảnh dài chặn vòng chơi. Truyện chỉ kể qua chữ mà không qua thứ người chơi tự tìm thấy. Hài lấn át những mốc mất mát. Chương sau chỉ là chương trước với số lớn hơn |
-
-### Nguyên tắc nền. Solo or Together - Một mình vẫn trọn, có bạn thì vui hơn
-
-| Mục | Nội dung |
-|---|---|
-| Mô tả | Nguyên tắc nền, mọi pillar phải tuân theo. Mọi luật đúng với 1 đến 4 người. Chơi một mình là cách chơi chính ngang với co-op. Thêm người là thêm tay để chia việc, không mở khóa nội dung |
-| Player Experience | Freedom, Cooperation, Belonging |
-| Giữ bằng luật | C1 đến C10, K23 lưu game |
-| Đo bằng | mỗi người trong nhóm 4 nhặt được từ 60% so với chơi một mình. Nhóm 4 hết game bằng 60 đến 75% thời gian chơi một mình |
-| Cấm | Luật chỉ đúng khi có đúng N người. Nội dung chỉ co-op mới có. Mở thêm bến, vùng hay tính năng theo số người. Tạm dừng toàn cục khi co-op |
 
 ## 3. Bối cảnh đã chốt (tóm tắt, bản đủ ở GDD cốt truyện)
 
@@ -156,6 +146,11 @@ Một ngày (từ trong game: "ngày", trong truyện là một chu kỳ trạm)
 - K27 (G): người đang ngạt không trao và không thả được đồ. Đồng đội cứu bằng chia Oxy, không vét túi hộ.
 
 ## 6. Co-op (khung)
+
+Co-op không phải pillar (Lead chốt bảng 5 pillar đúng như Dave the Diver, 2026-11-23). Mọi luật đúng với 1 đến 4 người. Thêm người là thêm tay để chia việc, không mở thêm nội dung.
+
+- Đo: mỗi người trong nhóm 4 nhặt được từ 60% so với chơi một mình. Nhóm 4 hết game bằng 60 đến 75% thời gian chơi một mình.
+- Cấm: luật chỉ đúng khi có đúng N người, nội dung chỉ co-op mới có, mở thêm bến, vùng hay tính năng theo số người.
 
 - C1 (L): 1 đến 4 người, co-op online, không PvP. Chơi một mình là cách chơi chính ngang với co-op.
 - C2 (G): thế giới thuộc về người tạo (host). Lúc tạo, host chọn số người tỉnh dậy ban đầu từ 1 đến 4. Người vào sau là người sống sót vớt về, tối đa 4 người chơi cùng lúc. Người rời phiên thì nhân vật ở lại trạm.
@@ -302,3 +297,4 @@ Ngày và đêm: nhịp sinh hoạt của trạm, không có đồng hồ thật
 | 2026-11-20 | Sửa lần 5 sau QA vòng 2 | `log-gdm-tu-quyet.md` dòng 65 đến 80 |
 | 2026-11-20 | Sửa lần 6 theo Lead sửa phản diện | `log-gdm-tu-quyet.md` dòng 84 đến 92 |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer, dòng trạng thái chuyển lịch sử xuống bảng này. Không đổi luật, số, ID | `production/reports/2026-11-23-humanizer-gdd.md` |
+| 2026-11-23 | Bỏ mục "Nguyên tắc nền Solo or Together" khỏi Core Pillars theo Lead. Mô tả, cách đo và điều cấm chuyển vào đầu mục 6 Co-op. Bảng mã cũ: P3 đọc là luật co-op C1 đến C10 | DECISIONS 2026-11-23 "Bỏ hàng Nguyên tắc nền" |
