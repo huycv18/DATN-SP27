@@ -14,7 +14,7 @@ Người chơi không có thanh máu. Sát thương tính bằng điểm Oxy, m�
 - Trúng đòn hủy mọi thao tác đang giữ phím: kích Recall Beacon, bắt bằng tay, cạy. Dụng cụ đang nạp không mất đạn.
 - Lướt có 0,2 giây đầu miễn sát thương. Đây là cách né chủ động duy nhất.
 
-Mọi đòn của kẻ địch có ba pha: Báo trước, Đánh, Hồi. Báo trước có cả hình (thân con vật sáng màu) và tiếng. Pha Hồi là lúc kẻ địch đứng yên sau đòn, mở sơ hở để người chơi đánh lại.
+Mọi đòn của kẻ địch có ba pha: Báo trước, Đánh, Hồi. Báo trước có cả hình (thân con vật sáng màu) và tiếng. Pha Hồi là lúc kẻ địch đứng yên sau đòn, mở sơ hở để người chơi đánh lại. Khoảng cách tính bằng u, 1 u bằng chiều cao nhân vật.
 
 | Loại đòn | Báo trước tối thiểu |
 |---|---|
@@ -27,7 +27,6 @@ Mọi đòn của kẻ địch có ba pha: Báo trước, Đánh, Hồi. Báo tr
 Các mức này đặt theo prototype bay, để mọi đòn đều né được bằng bay thường và lướt chỉ là cách né dư dả:
 - Bay ra khỏi đòn hẹp cần khoảng 0,67 giây, ra khỏi vùng bán kính 2,5 u cần khoảng 0,92 giây.
 - Đòn từ ngoài màn hình có thêm mũi tên ở mép màn và âm định hướng, hiện ngay từ đầu pha Báo trước.
-- Ngoại lệ duy nhất: người chơi tự lao vào con vật có gai hoặc bỏng thì không có báo trước, mất tối đa 5 Oxy mỗi lần.
 
 **Vé tấn công** giới hạn số kẻ địch cùng đánh một người:
 - Ở dải Gần mỗi người chơi có 2 vé. Kẻ địch muốn ra đòn vào ai phải giữ một vé của người đó, hết vé thì lượn vòng quanh chờ cách người chơi 4 u. Đòn vùng và đòn tiếp xúc không cần vé.
@@ -43,7 +42,7 @@ Chi tiết dữ liệu: tab Enemy khối Luật combat và bắt sống, tab Ass
 
 ### II.4.3. Stun and Incapacitation
 
-Mỗi Driftlife có **Sinh lực**, **Ngưỡng choáng** và Ngưỡng mê. Sinh lực về 0 thì con vật bị hạ. Dùi xung cộng điểm vào thanh Choáng, thanh đầy thì con vật **Choáng**:
+Mỗi Driftlife có **Sinh lực** và **Ngưỡng choáng**. Sinh lực về 0 thì con vật bị hạ. Dùi xung cộng điểm vào thanh Choáng, thanh đầy thì con vật **Choáng**:
 - Choáng kéo dài 4 giây. Đánh con đang Choáng không làm nó tỉnh.
 - Không bị trúng thêm trong 1 giây thì thanh Choáng tụt 20% ngưỡng mỗi giây, nên muốn làm choáng phải bắn liền tay.
 - Con đang Choáng gọi là **Bất lực**: không di chuyển chủ động, không ra đòn, chỉ trôi chậm theo quán tính.
@@ -120,7 +119,7 @@ Chi tiết dữ liệu: tab Enemy khối Bắt sống và khối Chất lượng
 
 ### II.4.5. Combat Tools
 
-Người chơi mang dụng cụ vào chuyến theo các ô của đai dụng cụ. Chương đầu có thể buộc người chơi chọn giữa dụng cụ khai thác và dụng cụ combat, đây là lựa chọn trước chuyến có chủ đích. Dụng cụ không có độ bền. Bậc và giá dụng cụ do mục II.5 giữ.
+Người chơi mang dụng cụ vào chuyến theo các ô của đai dụng cụ. Chương đầu có thể buộc người chơi chọn giữa dụng cụ khai thác và dụng cụ combat, đây là lựa chọn trước chuyến có chủ đích. Dụng cụ không có độ bền. Dụng cụ mở và nâng cấp ở Xưởng nhờ Kỹ sư Ingrid Halvorsen, người giữ Xưởng của trạm. Bậc và giá dụng cụ do mục II.5 giữ.
 
 | Dụng cụ | Mở | Tác dụng | Nhịp | Tầm | Đạn |
 |---|---|---|---|---|---|
@@ -200,6 +199,7 @@ Pha 2 boss rời lõi, thân nhận sát thương mọi lúc, nhưng vẫn nối
 Trận có hai cách kết, cả hai đều mở tiếp chương:
 - **Hạ**: đưa Sinh lực về 0 bằng Lao từ. Rơi một hạch thủ lĩnh và nguyên liệu mô sinh học.
 - **Xua đi**: Dây nối có 2 đoạn. Mỗi lần boss Choáng 6 giây do phóng điện, người chơi giữ Tương tác 3 giây ở gốc Dây nối, trong tầm 1,5 u, để cắt một đoạn. Cắt đoạn thứ hai khi Sinh lực boss dưới 50% thì boss bỏ đi, rơi một mẫu boss và ít nguyên liệu hơn.
+- Đoạn đầu cắt được ở mọi mức Sinh lực. Sinh lực còn từ 50% trở lên thì gốc Dây nối hiện dấu khóa, giữ Tương tác không chạy, người chơi đánh thân cho Sinh lực xuống dưới 50% rồi mới cắt đoạn thứ hai. Đoạn đã cắt giữ tới hết trận, chỉ về lại 2 đoạn khi boss hồi đầy. Cắt đoạn đầu không đổi hành vi boss.
 
 Xua đi tốn công ngang hạ, không phải đường tắt. Lúc cắt Dây nối chỉ Sting Krill sót lại từ pha trước mới hủy được thao tác. Hạch hoặc mẫu boss đều dùng được cho giai đoạn đầu của động cơ chính (xem mục II.6).
 
@@ -271,7 +271,7 @@ Mục tiêu cột cuối là từ 1,0 cho mọi loài để bắt không thiệt
 Combat MVP đạt khi đủ các điều sau:
 - Người trung bình đánh boss một mình: Oxy P90 không quá 75% bình Oxy của chương.
 - Người tệ đánh boss một mình: Oxy trung vị không quá 100% bình, tức có thể thua lần đầu nhưng không chắc thua.
-- Trên prototype bay, người chơi mới né được đòn hẹp báo trước 0,7 giây bằng bay thường ít nhất 70% số lần sau 3 lần thử.
+- Trên prototype bay, người chơi mới né được đòn hẹp báo trước 0,7 giây và thoát đòn vùng bán kính 2,5 u báo trước 1,0 giây bằng bay thường, mỗi loại ít nhất 70% số lần sau 3 lần thử.
 - Trên prototype bay, người chơi mới thoát vùng phóng điện bán kính 4 u của lõi Scrapmaw bằng bay thường ít nhất 70% số lần sau 3 lần thử.
 
 Combat ăn bao nhiêu Oxy một chuyến, cảm giác né và độ khó thật của boss thì sim chưa đo được, chờ playtest trên build.
@@ -294,7 +294,7 @@ Chi tiết dữ liệu: tab Enemy khối Co-op.
 
 - Súng gây mê, thanh Mê và trạng thái Ngủ, bắt sống cỡ M bằng Phao kéo, mẫu sinh thiết cỡ L bằng Kim sinh thiết, bắt Arc Eel khi ngủ.
 - Lao từ bậc 3 và Súng lưới bậc 2.
-- Latchjaw của dải Gần và mười loài của dải Giữa, dải Xa, gồm các kiểu Săn mồi và Phục kích.
+- Latchjaw của dải Gần và mười loài của dải Giữa, dải Xa, gồm các kiểu Săn mồi và Phục kích. Loài có đòn tiếp xúc như Lumen Jelly chạm thì bỏng: không báo trước vì người chơi tự lao vào, mất tối đa 5 Oxy mỗi lần.
 - Quân The Wardens ở dải Xa từ chương 3, dấu săn bắt trên Driftlife, toán bắt cóc Sevra và hộ tống kén của Sevra.
 - Boss chương 2 tới 5: Tempest Gulper, Warden Reaper, Cradle Custodian, Daskel.
 - Driftlife sổng trong trạm khi có khoang nuôi, hệ số co-op 3 và 4 người.
