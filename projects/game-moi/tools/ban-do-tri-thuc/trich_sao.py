@@ -129,3 +129,15 @@ for n in sorted([n for n in nodes if n['lv'] == 1], key=lambda n: -n['w']):
     print(f"  {n['t']:24s} w={n['w']:.1f} con={n['k']}")
 print('top mục:', [(nodes[n['p']]['t'][:12] + ' > ' + n['t'][:30], round(n['w'], 1)) for n in sorted([n for n in nodes if n['lv'] == 2], key=lambda n: -n['w'])[:10]])
 print('mục trống:', sum(1 for n in nodes if n['lv'] >= 2 and not n['body'].strip()))
+
+# Bản một file: nhúng sao.json vào index.html để nháy đúp mở thẳng, không cần server
+HERE = Path(__file__).resolve().parent
+page = (HERE / 'index.html').read_text(encoding='utf-8')
+cu = "try { D = await (await fetch('sao.json')).json(); }"
+assert page.count(cu) == 1, 'index.html đổi cách tải dữ liệu, sửa lại đoạn nhúng'
+page = page.replace(cu, "try { D = JSON.parse(document.getElementById('sao-data').textContent); }")
+nhung = OUT.read_text(encoding='utf-8').replace('</', '<' + chr(92) + '/')
+page = page.replace('<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/', '<script id="sao-data" type="application/json">' + nhung + '</script>\n<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/', 1)
+head = '<!doctype html>\n<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>body{margin:0}[hidden]{display:none!important}</style>\n'
+(HERE / 'ban-do-mot-file.html').write_text(head + page + '\n</html>\n', encoding='utf-8')
+print('ban-do-mot-file.html', (HERE / 'ban-do-mot-file.html').stat().st_size, 'bytes')
