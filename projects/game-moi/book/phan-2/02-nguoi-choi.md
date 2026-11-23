@@ -29,7 +29,7 @@ Ngoài không gian dùng đơn vị **u**, đơn vị thế giới. Điều khi�
 
 Các luật còn lại của di chuyển:
 - Hướng nhìn theo con trỏ chuột hoặc cần ngắm phải, không ngắm thì quay theo hướng bay ngang.
-- Chạm tường thì triệt thành phần vận tốc vuông góc, giữ thành phần trượt dọc tường. Va tường không trừ Oxy, không choáng. Có corner correction 0,25 u để không kẹt góc.
+- Chạm tường thì triệt thành phần vận tốc vuông góc, giữ thành phần trượt dọc tường. Va tường không trừ Oxy, không choáng. Có bù góc 0,25 u: nhân vật trượt qua mép góc thay vì kẹt.
 - Lực ngoài như dòng chảy hay hazard cộng vào vận tốc, phần do lực ngoài gây ra chặn ở 12 u/s. Trần này không áp cho Lướt.
 
 **Kéo vật** nối nhân vật với một vật bằng dây lò xo. Kéo không chiếm chỗ trong túi, mỗi người kéo tối đa một vật.
@@ -54,7 +54,7 @@ Oxy là chỉ số duy nhất của người chơi ngoài không gian, mỗi ng�
 
 Các khoản hao Oxy, cộng dồn vào một tốc độ hao mỗi giây:
 - Hao nền 1,0 điểm mỗi giây từ lúc ra khỏi cửa khí tới lúc về. Đứng yên, hãm, khai thác đều hao như nhau.
-- Hao môi trường: vào vùng mà **Vỏ bộ đồ** chưa đủ cấp thì hao nền nhân hệ số. Thiếu 1 cấp nhân 2,5, thiếu 2 cấp trở lên nhân 4,0, đủ cấp nhân 1,0. Đi được nhưng đắt.
+- Hao môi trường: vào vùng mà **Vỏ bộ đồ** chưa đủ cấp (mỗi vùng có cấp Vỏ yêu cầu, xem mục II.2.7) thì hao nền nhân hệ số. Thiếu 1 cấp nhân 2,5, thiếu 2 cấp trở lên nhân 4,0, đủ cấp nhân 1,0. Đi được nhưng đắt.
 - Hao khi lướt: mỗi lần lướt trừ thẳng 4 điểm ở bậc 0.
 - Hao khi trúng đòn: sát thương của mục Chiến đấu trừ thẳng vào Oxy sau khi Vỏ giảm 0, 5, 10 hoặc 15 phần trăm theo cấp 0 tới 3. Oxy không xuống âm.
 - Hao theo tải: túi quá 60% sức chứa thì hao nền tăng tuyến tính tới 1,15 lần khi đầy. Cùng lúc đó tốc độ tối đa và gia tốc giảm tới 0,85 lần.
@@ -100,7 +100,7 @@ OxyVe = (KhoangCach / (0,8 * VmaxThat)) * HeSoMoiTruongDocDuong + DuPhong
 - khoảng cách: đường thẳng tới đích, đơn vị u.
 - vmax thật: tốc độ tối đa thật ở công thức trên, đơn vị u/s.
 - hệ số môi trường dọc đường: hệ số hao môi trường trung bình trên đường về, không đơn vị.
-- dự phòng: 8 điểm khi đích là Recall Beacon (5 giây kênh cộng 3 giây đệm), 3 điểm khi đích là cửa khí.
+- dự phòng: 8 điểm khi đích là Recall Beacon (cột hồi hương, xem mục II.2.6, 5 giây kênh cộng 3 giây đệm), 3 điểm khi đích là cửa khí.
 
 Ví dụ, đích là cửa khí không có hao môi trường:
 - Khoảng cách 240 u, vmax thật 6,0 u/s.
@@ -139,7 +139,8 @@ flowchart TD
   E -->|Có| F["Đồng hồ ngạt dừng, Oxy tăng 10 điểm mỗi giây"]
   F --> G{"Oxy người ngạt đạt 30?"}
   G -->|Đạt| H["Được cứu, 2 giây miễn sát thương, bay lại"]
-  G -->|Người cho chạm sàn 20| D
+  G -->|Người cho chạm sàn 20| D2["Ngạt, đồng hồ 12 giây chạy tiếp"]
+  D2 --> E
   E -->|Không| I{"Chạm cửa khí trong 12 giây?"}
   I -->|Có| J["Về an toàn bằng cửa khí, túi nguyên vẹn"]
   I -->|Không| K["Bị kéo về: giữ 1 món ghim, mất phần còn lại"]
@@ -241,7 +242,7 @@ Thế giới lưu tối đa bốn nhân vật theo bốn slot màu. Người và
 |---|---|
 | Khách thoát chủ động giữa chuyến | Tính như bị kéo về, giữ 1 món ghim, nhân vật ở lại trạm, vào lại nhận lại nhân vật cũ |
 | Khách mất kết nối giữa chuyến | Giữ chỗ 15 giây: đứng yên, bất tử, Oxy đóng băng. Quá hạn hoặc mất lần hai trong chuyến thì bị kéo về, giữ 1 món ghim |
-| Chơi một mình thoát giữa chuyến | Mất chuyến đó, vào lại ở điểm lưu gần nhất với cùng bố cục chuyến |
+| Chơi một mình thoát giữa chuyến | Vào lại ở điểm lưu sau chuyến trước, chuyến dở không tính vào hạn 2 chuyến mỗi ngày, đi lại được với cùng bố cục |
 | Host thoát hoặc mất kết nối | Phiên kết thúc, thế giới về điểm lưu gần nhất |
 
 Chi tiết dữ liệu: tab Player, khối Co-op.

@@ -53,7 +53,7 @@ flowchart TD
   B -->|Không| D{"Bậc dụng cụ đạt độ cứng?"}
   D -->|Thấp hơn| E["Khai thác chậm gấp 4"]
   D -->|Đạt| F["Khai thác theo hệ số bậc"]
-  E --> G{"Giữ tiến độ liên tục?"}
+  E --> G{"Khai thác có xong?"}
   F --> G
   G -->|Không tiến độ trong 10 giây| H["Thả điểm cho người khác"]
   G -->|Xong| I{"Túi còn đủ Khối?"}
@@ -100,6 +100,13 @@ Mỗi Driftlife có ba lựa chọn: hạ, bắt sống hoặc né. Hạ cho ngu
 | Sting Krill | S | 0,20 | 1,60 lần | Hạ và bắt sống |
 | Arc Eel | M | 0,60 | 1,50 lần | Chỉ hạ |
 
+Cột giá ở trên và thước nghiệm thu K9 đo hai thứ khác nhau. Sàn giá đặt cao hơn để K9 ròng vẫn đạt:
+
+| Thước | Tính thế nào | Giá trị |
+|---|---|---|
+| Sàn giá mẫu sống so với hạ | Giá mẫu sống chia giá hạ, chưa trừ vật tiêu hao | 1,5 trở lên |
+| K9 | Giá trị ròng sau khi trừ vật tiêu hao tốn cho lần bắt | Mục tiêu 1,2 tới 2, sim đo 1,44 tới 1,81 |
+
 Bắt sống luôn đáng hơn hạ, kể cả sau khi trừ vật tiêu hao tốn cho lần bắt. Đổi lại bắt sống chậm hơn và rủi ro hơn. Mẫu sống một sao cũng không rẻ hơn nguyên liệu hạ hai sao của cùng loài. Chất lượng mẫu chia ba bậc sao, hệ số giá trị tương ứng:
 
 | Sao | Điều kiện (mẫu sống) | Hệ số giá trị |
@@ -138,7 +145,7 @@ Người chơi cũng mang **vật tiêu hao** vào túi. Ở MVP có hai loại:
 - Bình Oxy nhỏ hồi 40 điểm Oxy trong 1,5 giây cho chính người dùng, tối đa 2 bình trong túi mỗi chuyến, tức tối đa 80 Oxy mỗi chuyến.
 - Lưới cuộn là đạn của Súng lưới, mỗi lần chế ra 10 viên.
 
-Nâng cấp bộ đồ và dụng cụ ở MVP có sáu món. Mỗi món chỉ dùng vật liệu chế, thêm Tally ở tab Upgrade (xem mục Economy and Progression):
+Nâng cấp bộ đồ và dụng cụ ở MVP có sáu món. Mỗi món chủ yếu dùng vật liệu chế, thêm Tally ở tab Upgrade (xem mục Economy and Progression):
 
 | Nâng cấp | Hiệu ứng (chi tiết ở mục II.2 và II.4) | Vật liệu |
 |---|---|---|
@@ -174,14 +181,10 @@ GTDra = GTDvao * HeSoChuoi
 - hesochuoi: hệ số chuỗi, vật liệu chế từ 1,25 tới 1,5, không đơn vị. Ví dụ ba Mảnh vỏ Cradle (3,0 GTĐ) ép thành một Tấm thép nén (3,9 GTĐ), hệ số 1,30.
 
 Chế có hai kiểu thời gian:
-- Chế nhanh, không quá 20 giây, làm ở xưởng ngoài ca cảng. Vật liệu chế và vật tiêu hao thuộc kiểu này.
+- Chế nhanh, không quá 20 giây, làm ở xưởng ngoài ca cảng. Vật liệu chế và vật tiêu hao thuộc kiểu này. Thời gian một mẻ theo từng công thức ở tab Recipe, ví dụ Lọc băng mất mười hai giây. Mẻ chạy nền theo thời gian thực, người chơi không phải đứng ở xưởng, kể cả khi đã ra chuyến.
 - Chế qua đêm, đặt vào hàng đợi rồi nhận sau khi ngủ. Dụng cụ và nâng cấp bộ đồ luôn thuộc kiểu này.
 
 Xưởng cấp đầu giữ hàng đợi hai chỗ, xếp theo thứ tự người chơi đặt. Mẻ thiếu vật liệu thì không bắt đầu và không trừ nguyên liệu. Trong ca cảng không chế. Ngủ khi hàng đợi chưa xong thì hàng đợi hoàn thành khi sang ngày, không có hàng đợi chạy khi người chơi thoát game.
-
-Thời gian một mẻ theo từng công thức ở tab Recipe, ví dụ Lọc băng mất mười hai giây.
-
-Mẻ chạy nền theo thời gian thực, người chơi không phải đứng ở xưởng, kể cả khi đã ra chuyến.
 
 Hàng cần chế duy nhất của chương 1 là kiện nước tinh khiết, nên đây là luồng người chơi dễ đi sai nhất:
 
