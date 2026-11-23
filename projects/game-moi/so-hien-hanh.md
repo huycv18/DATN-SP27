@@ -48,15 +48,15 @@ Cập nhật lần cuối: 2026-11-20, sau đợt 9 (ca cảng khung Dave, QA GD
 | Số ngày tối thiểu của chuỗi mốc truyện, chương 1 đến 5 | 7, 5, 8, 3, 3 (tổng 26) | `cot-truyen.md` mục 5 |
 | Giá, công thức, chỉ số loài, tham số ca cảng | Ở GDD của vai giữ hệ thống. Giá chỉ ở `kinh-te-tien-trinh.md` mục 3 (tab Shop, Upgrade) | Từng GDD |
 
-## Kết quả sim (S), bản chạy 2026-11-20
+## Kết quả sim (S), bản chạy 2026-11-20, sim kinh tế chạy lại 2026-11-23
 
 Chạy lại: `node projects/game-moi/tools/selftest.mjs`, các lệnh sim trong `projects/game-moi/tools/README.md`, `python projects/game-moi/sim/economy/sim-kinh-te.py`.
 
 | Chỉ số | Đo được | Mục tiêu khung mục 9 | Đạt |
 |---|---|---|---|
-| Chương 1, một người, kịch bản trung bình | 1,89 giờ | 1,5 đến 2 giờ | Có |
-| Cả game, một người, kịch bản trung bình | 13,9 giờ | 12 đến 15 giờ | Có |
-| Nhóm 4 hết game so với một mình | 73% thời gian | 60 đến 75% | Có |
+| Chương 1, một người, kịch bản trung bình | 1,90 giờ | 1,5 đến 2 giờ | Có |
+| Cả game, một người, kịch bản trung bình | 14,2 giờ | 12 đến 15 giờ | Có |
+| Nhóm 4 hết game so với một mình | 71% thời gian | 60 đến 75% | Có |
 | Mỗi người nhóm 4 nhặt so với một mình | Từ 61% | Từ 60% | Có |
 | Tip trong Tally của ca cảng (gồm bơm khí) | 26% (tệ 21%, tốt 30%) | 20 đến 30% | Có |
 | Sống so với hạ, cỡ S, sau khi trừ vật tiêu hao | 1,28 đến 1,90 lần | 1,2 đến 2 lần | Có |

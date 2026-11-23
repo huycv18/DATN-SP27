@@ -476,6 +476,14 @@
         "Luật mới 3 cửa neo cho mọi số người (không mở nội dung theo số người)",
         "25, 55, 55, 60 tàu, 3 cửa neo. Kho sau hai chuyến vẫn đủ ở mọi chương",
         "gd-quan, gd-tech"
+      ],
+      [
+        "Lộ trình mua chương 2 và 3 trong sim",
+        "kinh-te-tien-trinh.md mục 3.2, 3.4 (gd-economy)",
+        "Bộ đồ bậc 2 mua trước Xưởng cấp 2. Khoang sinh quyển cấp 3 gộp trong gói chương 4",
+        "Rà chéo nhóm A 2026-11-23: trái cổng Xưởng cấp 2 và mốc chương 3 của khoang sinh quyển cấp 3 (tram-va-cang.md 2.6, 2.7)",
+        "Xưởng cấp 2 là cổng bộ đồ từ bậc 2. KH11-C3 14700 Tally ở chương 3, ngoài phần chia. Cả game 13,9 thành 14,2 giờ",
+        "GDM"
       ]
     ],
     "beta_ngan_sach": 0.54,
@@ -525,7 +533,8 @@
     },
     "uu_tien_mua": [
       "ENG",
-      "VO"
+      "VO",
+      "KH05-C2"
     ],
     "ngay_mo_cang_ch1": 4,
     "vl_mo_cang_ch1": 98,
@@ -583,12 +592,25 @@
         3
       ],
       [
+        "KH11-C3",
+        "Khoang sinh quyển cấp 3 (môi trường dải Xa)",
+        "KHOANG_CAP",
+        3
+      ],
+      [
         "KHxx-C3",
-        "Cấp 3 các khoang (KHxx-C3 từng khoang, giá ở đây là tổng, gd-quan chốt danh sách khoang)",
+        "Cấp 3 các khoang còn lại (KHxx-C3 từng khoang, trừ khoang sinh quyển, giá ở đây là tổng, gd-quan chốt danh sách khoang)",
         "KHOANG_CAP",
         4
       ]
     ],
+    "ngoai_chia_ngan_sach": [
+      "KH11-C3"
+    ],
+    "cong_xuong_cap_2": {
+      "id": "KH05-C2",
+      "tu_bac": 2
+    },
     "ghi_chu_nguon": {
       "ngay_mo_cang_ch1": "tram-va-cang.md: ca cảng đầu ở mốc C1.8, khoảng ngày 4 (Thông dịch viên vớt ở lần 2 Station Cinder rồi tỉnh sau một đêm)",
       "vl_mo_cang_ch1": "vat-pham.md mục 2.7: tổng vật liệu khoang neo, kho cấp 2, xưởng, khoang liên lạc, cảng bến 1",

@@ -250,9 +250,16 @@ def danh_sach_mua(beta=None):
                      "mo": "Shop, cần Hạng cảng %d" % S["hang_mo_eng"][c - 1]})
     for c in range(1, 6):
         ds = [h for h in hang if h["c"] == c and not h["mien_phi"]]
-        W = sum(S["ti_le_gia"][h["loai"]] for h in ds)
+        # thứ ngoài chia (ví dụ KH11-C3) lấy giá theo đơn giá một phần trọng số của chương nhưng không vào W, để giá thứ khác của chương giữ nguyên
+        W = sum(S["ti_le_gia"][h["loai"]] for h in ds if h["id"] not in S["ngoai_chia_ngan_sach"])
         for h in ds:
             h["gia"] = tron(ngan_sach(c, beta) * S["ti_le_gia"][h["loai"]] / W)
+    cx = S["cong_xuong_cap_2"]
+    for h in hang:
+        if h["loai"] in TRUC and h["bac"] >= cx["tu_bac"]:
+            h["can"] = cx["id"]
+            if h["bac"] == cx["tu_bac"]:  # bậc cao hơn mở ở chương sau, Xưởng cấp 2 đã có
+                h["mo"] += ", cần Xưởng cấp 2"
     for h in hang:
         if h["mien_phi"]:
             h["gia"] = 0
@@ -265,7 +272,8 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
     K = S["kich_ban"][kb]
     P = port(N, kb)
     gia_gtd = S["tally_moi_gtd"] * chi_so_gia(kb) * he_so_tip(N, kb)  # Tally một GTĐ bán ở ca, gồm tip
-    mua = sorted(danh_sach_mua(beta), key=lambda m: (m["c"], 0 if m["loai"] in S["uu_tien_mua"] else 1))
+    mua = sorted(danh_sach_mua(beta), key=lambda m: (m["c"], 0 if m["loai"] in S["uu_tien_mua"] or m["id"] in S["uu_tien_mua"] else 1))
+    da_mua = set()
     bac = {t: 0 for t in TRUC}
     tally = 0.0
     kho = 0.0  # GTĐ trong kho, dải hiện tại
@@ -344,7 +352,7 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
             co_the = kho * (1 - (S["du_tru_vat_lieu_khi_con_xay"] if con_xay else 0.0)) / gtd_thung(c)
             ban = min(P["tau"] * P["xong"], co_the)
             kho -= ban * gtd_thung(c)
-            thu = ban * gtd_thung(c) * gia_gtd
+            thu = round(ban * gtd_thung(c) * gia_gtd)  # Tally là số nguyên: số dư cuối ngày nguyên, phép cộng trừ in ở ECONOMIC đúng từng dòng
             phut_ca = P["giay"] / 60 * ban / (P["tau"] * P["xong"])  # hết hàng thì ca kết thúc sớm
             tally += thu
             tally_thu += thu
@@ -362,10 +370,13 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
                 continue
             if m["loai"] == "ENG" and hang < S["hang_mo_eng"][m["c"] - 1]:
                 continue
+            if m.get("can") and m["can"] not in da_mua:  # bộ đồ từ bậc 2 cần Xưởng cấp 2 (tram-va-cang.md mục 2.7)
+                continue
             if tally >= m["gia"] and kho >= m["vl"]:
                 tally -= m["gia"]
                 kho -= m["vl"]
                 m["xong"] = True
+                da_mua.add(m["id"])
                 tally_chi[m["loai"]] = tally_chi.get(m["loai"], 0) + m["gia"]
                 mua_ngay.append(m)
                 if m["loai"] in TRUC:
@@ -763,7 +774,7 @@ def bao_cao():
 TEN_DOC = {"UPG-OXY": "Bình Oxy bậc %s", "UPG-BAG": "Túi đồ bậc %s", "UPG-THR": "Bộ đẩy bậc %s", "UPG-ENV": "Vỏ bộ đồ cấp %s", "UPG-RACK": "Đai dụng cụ bậc %s",
            "UPG-MIN": "Dụng cụ khai thác bậc %s", "UPG-HAR": "Lao từ bậc %s", "UPG-NET": "Súng lưới bậc %s",
            "ENG-101": "Van tiết lưu (động cơ giai đoạn 1)", "ENG-102": "Buồng đốt tái chế (động cơ giai đoạn 2)", "ENG-103": "Cuộn ổn định từ (động cơ giai đoạn 3)",
-           "ENG-104": "Bơm nhiên liệu Veyl (động cơ giai đoạn 4)", "KH07-C2": "Cảng cấp 2", "KH05-C2": "Xưởng cấp 2", "KHxx-C3": "Cấp 3 các khoang",
+           "ENG-104": "Bơm nhiên liệu Veyl (động cơ giai đoạn 4)", "KH07-C2": "Cảng cấp 2", "KH05-C2": "Xưởng cấp 2", "KH11-C3": "Khoang sinh quyển cấp 3", "KHxx-C3": "Cấp 3 các khoang còn lại",
            "BPR-103": "Bản thiết kế Máy quét xung", "BPR-105": "Bản thiết kế Máy cắt thân tàu", "BPR-106": "Bản thiết kế tiện ích cảng"}
 
 
@@ -787,7 +798,7 @@ def tab_economic():
     rows.append(["", "Ghi chú: kịch bản trung bình, một người, một lượt sim. Nhặt gồm cả Driftlife bắt, hạ và con nuôi",
                  "Tally thu bằng giá thùng cộng tip. Cảng mở từ ngày %d" % S["ngay_mo_cang_ch1"], "Tên thứ mua theo tab Shop và Upgrade", "Tally chi, giá theo tab Shop và Upgrade",
                  "Tally đầu ngày + thu - chi = Tally cuối ngày. Sim in, không gõ tay",
-                 "Một lượt nên ngày qua chương có thể lệch 1 ngày so với tab PROCESSING (trung bình nhiều lượt). Bản đủ: kinh-te-tien-trinh.md Phụ lục"])
+                 "Một lượt nên ngày qua chương có thể lệch vài ngày so với tab PROCESSING (trung bình nhiều lượt). Bản đủ: kinh-te-tien-trinh.md Phụ lục"])
     p = os.path.join(ROOT, "projects", "game-moi", "gdd", "sheet", "ECONOMIC.tsv")
     with open(p, "w", encoding="utf-8", newline="\n") as fh:
         for r in rows:
@@ -816,6 +827,10 @@ def selftest():
     g = chay("tốt", 1, random.Random(1))
     assert t["moc"][-1][1] > a["moc"][-1][1] > g["moc"][-1][1], "tệ chậm hơn trung bình chậm hơn tốt"
     assert a["tally_thu"] > 0
+    r = chay("trung bình", 1, random.Random(1), ghi_ngay=True)
+    thu_tu = [m["id"] for x in r["dong"] for m in x[7]]
+    assert all(thu_tu.index(m["can"]) < thu_tu.index(m["id"]) for x in r["dong"] for m in x[7] if m.get("can")), "bộ đồ bậc 2 mua sau Xưởng cấp 2"
+    assert all(x[4] == int(x[4]) and x[8] + x[3] - sum(m["gia"] for m in x[7]) == x[4] for x in r["dong"]), "số dư nguyên, đầu + thu - chi = cuối"
     print("selftest xanh")
 
 
