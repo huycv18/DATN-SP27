@@ -3,3 +3,10 @@ dist/
 # graphify: đường dẫn riêng từng máy, mỗi máy tự sinh khi chạy /graphify
 graphify-out/.graphify_python
 graphify-out/.graphify_root
+
+# Công cụ tải về để xuất Doc (mermaid, pandoc), lệnh tải ở projects/game-moi/tools/README.md
+projects/game-moi/tools/vendor/
+# Bản gộp và docx sinh bằng gop-book.mjs, xuat-book.mjs
+projects/game-moi/book/ket-qua/
+# Ảnh sơ đồ sinh bằng xuat-book.mjs
+projects/game-moi/book/hinh/so-do-*.png

@@ -350,3 +350,8 @@ Hệ quả:
 
 Lead duyệt mục mẫu II.6 ("Oke làm tiếp đi"), rồi thêm: "Phần tiêu đề để tiếng anh nhé".
 Hệ quả: tên Doc, tên phần và mọi tiêu đề `##`, `###` trong Doc thiết kế và chương đề xuất dự án viết tiếng Anh (The Novent Design Document, Part I. Controls, Part II. Game Elements, Overview, Acceptance Criteria, Edge Cases, Post-MVP). Thân văn, bảng, chú thích hình vẫn tiếng Việt. GDM hiểu "phần tiêu đề" là tiêu đề mục, không gồm chú thích hình. Đã sửa `book/KHUON.md`, II.6, `de-xuat-du-an.md`, `kiem-book.mjs`, `gop-book.mjs`, selftest. `soat.mjs` nhận thêm "edge case" là mục trường hợp biên.
+
+## 2026-11-23 - Công cụ xuất Doc thiết kế ra Word
+
+GDM hỏi có cho tải mermaid.min.js và pandoc để xuất sơ đồ và Google Doc không, Lead: "Cho tải".
+Hệ quả: tải mermaid 10.9.1 (jsdelivr) và pandoc 3.1.11.1 bản portable (GitHub jgm/pandoc) vào `projects/game-moi/tools/vendor/`, không commit, lệnh tải ghi ở `tools/README.md`. `tools/xuat-book.mjs` gộp Doc, vẽ sơ đồ bằng Chrome headless có sẵn trên máy, ra `book/ket-qua/book.docx`. Lead kéo file vào Drive để thành Google Doc. Không gửi nội dung lên dịch vụ vẽ sơ đồ ngoài.
