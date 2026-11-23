@@ -124,6 +124,8 @@ Mở ca và Bỏ ca chọn ở bảng tàu. Mỗi ngày có đúng một ca, ch�
 - Số người online lúc Mở ca chốt số tàu của ca. Người vào giữa ca không đổi lịch.
 - Ca cảng đầu tiên của thế giới là ca dạy: danh mục chọn sẵn thùng phế liệu, người chơi chỉ bấm Mở ca, lịch có 2 tàu Loose Bolt, không có đơn đặt trước.
 
+Toàn ca từ bảng tàu buổi sáng tới cuối ngày vẽ ở mục II.1, phần Day Rules.
+
 [CHỜ ẢNH: màn bảng tàu khi lập danh mục, lấy từ Figma The Novent trang Wireframe MVP hoặc chụp build]
 *Hình II.6.3 - Màn bảng tàu khi lập danh mục*
 

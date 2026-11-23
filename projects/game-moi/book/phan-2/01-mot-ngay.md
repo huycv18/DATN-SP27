@@ -103,6 +103,30 @@ flowchart TD
 
 Đọc sơ đồ: sáng ra, người chơi chọn ra cửa khí hoặc đi thẳng vào ca. Mỗi chuyến về là một điểm lưu. Sau chuyến đầu người chơi còn chọn đi tiếp hay vào ca sớm. Sau chuyến thứ hai thì chỉ còn đường vào ca. Tới ca, người chơi Mở ca để bán hoặc Bỏ ca mà không bị phạt. Cả hai nhánh đều khóa cửa khí và dẫn tới cuối ngày. Ngủ là cách duy nhất để sang ngày mới.
 
+Pha ca cảng phóng to ở sơ đồ dưới, luật đầy đủ ở mục II.6.
+
+```mermaid
+flowchart TD
+  A["Đầu ngày: bảng tàu hiện tàu ghé, đơn đặt trước, giá thùng"] --> B["Đi chuyến, hàng về kho, chế xong trước ca"]
+  B --> C["Lập danh mục: loại hàng và số thùng mỗi loại"]
+  C --> D{"Mở ca hay Bỏ ca?"}
+  D -->|"Bỏ ca"| E["Tàu không tới, kho giữ nguyên, cửa khí khóa"]
+  D -->|"Mở ca"| F{"Còn người ngoài chuyến hoặc danh mục rỗng?"}
+  F -->|"Có, nút Mở ca xám kèm lý do"| C
+  F -->|"Không"| G["Thông dịch viên đóng thùng, trừ kho, cửa khí khóa"]
+  G --> H["Tàu cập theo lịch, mỗi tàu gọi một thùng"]
+  H --> I["Mang thùng, bơm khí, nhận giá thùng và tip"]
+  I --> J{"Hết giờ ca, tàu cuối đã rời, hoặc hết thùng?"}
+  J -->|"Chưa"| H
+  J -->|"Có"| K["Bảng kết ca, thùng chưa bán về kho, đủ điểm thì lên Hạng cảng"]
+  K --> L["Tự lưu"]
+  L --> M["Cuối ngày"]
+  E --> M
+```
+*Hình II.1.4 - Toàn ca cảng, từ bảng tàu buổi sáng tới cuối ngày*
+
+Đọc sơ đồ: ca cảng bắt đầu từ bảng tàu buổi sáng. Người chơi xem tàu nào ghé và đơn đặt trước, đi chuyến lấy hàng, rồi lập danh mục từ hàng đã nằm trong kho. Bỏ ca thì không mất gì, tàu hôm đó không tới. Nút Mở ca xám khi còn người ở ngoài hoặc danh mục rỗng. Mở được thì Thông dịch viên đóng hết thùng ngay và cửa khí khóa tới ngày mới. Phần giữa ca là vòng của từng tàu, vẽ riêng ở mục II.6. Ca dừng ở điều tới trước: hết giờ ca, tàu cuối đã rời, hoặc hết thùng mà không còn tàu nào chờ. Bảng kết ca cộng Tally và điểm cảng, thùng chưa bán về kho, đủ điểm thì lên Hạng cảng ngay. Sau đó game tự lưu và sang cuối ngày.
+
 Chi tiết dữ liệu: tab Day khối Luật ngày, tab CORE LOOP khối Một ngày.
 
 ### II.1.4. Day Length
@@ -145,6 +169,25 @@ Truyện không chạy theo đồng hồ mà theo **mốc truyện**. Mỗi chư
 Số ngày tối thiểu là mức sàn. Nhóm đông chơi nhanh cũng không hết game sớm hơn tổng số ngày này. Nội dung truyện của từng chương ở mục II.9.
 
 Chương đầu là MVP. Những ngày đầu cảng chưa mở vì khoang liên lạc và cảng còn hỏng. Người chơi đi chuyến, sửa khoang neo, xưởng, khoang liên lạc và cảng. Lịch tàu sinh vào đầu ngày, nên cảng sửa xong thì sang ngày sau mới có tàu. Theo chuỗi mốc truyện, ca cảng sớm nhất là ngày 5. Hàng nhặt được trong những ngày này nằm trong kho chờ ca cảng đầu tiên. Ca cảng đầu tiên là ca dạy, chỉ có hai tàu.
+
+```mermaid
+flowchart TD
+  A["Mở chương: vùng mới, kiểu chơi mới"] --> B["Các ngày: chuyến, trạm, ca cảng"]
+  B --> C["Mốc truyện của chương xong dần"]
+  B --> D["Tài nguyên của dải mới và Tally"]
+  D --> E["Linh kiện động cơ: mua ở shop, giai đoạn cuối chế ở xưởng"]
+  E --> F["Lắp giai đoạn động cơ chính của chương"]
+  C --> G{"Điều kiện mốc đóng chương đủ và giai đoạn động cơ đã lắp?"}
+  F --> G
+  G -->|"Chưa"| B
+  G -->|"Đủ"| H{"Chương cuối?"}
+  H -->|"Chưa"| I["Đóng chương, mở chương sau"]
+  I --> A
+  H -->|"Rồi"| J["Ember rời neo, cảnh kết, về menu chính"]
+```
+*Hình II.1.5 - Vòng chương: hai đường truyện và động cơ cùng mở cổng chương*
+
+Đọc sơ đồ: mỗi chương mở một vùng và thêm kiểu chơi mới. Trong chương, các ngày chạy theo vòng ở đầu mục này và đẩy hai đường song song. Đường truyện là các mốc của chương, mỗi mốc xong theo điều kiện riêng. Đường động cơ cần tài nguyên của dải mới và một linh kiện: bốn giai đoạn đầu mua linh kiện ở shop bằng Tally, giai đoạn cuối chế ở xưởng. Mốc đóng chương chỉ xong khi cả hai đường cùng tới, thiếu một đường thì người chơi tiếp tục các ngày. Ngoài cổng này không có cổng kinh tế hay cổng trạm nào khác. Chương cuối đóng bằng giai đoạn động cơ cuối: Ember rời neo, cảnh kết chạy rồi game về menu chính.
 
 Chi tiết dữ liệu: tab Day khối 5 chương, tab GAME STORY.
 
