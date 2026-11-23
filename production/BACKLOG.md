@@ -2,7 +2,7 @@
 
 Mục đích: mọi việc có pipeline (nhiều hơn một agent hoặc nhiều hơn một lượt) có một dòng ở đây. Việc nhỏ GDM làm thẳng không cần dòng.
 Trạng thái: `todo` / `doing` / `review` / `done` / `blocked`. Chỉ GDM đặt `done`. Mã `GD-###` tăng dần, không tái dùng.
-Mã lớn nhất đã cấp: GD-067
+Mã lớn nhất đã cấp: GD-069
 
 | ID | Project | Việc | Agent | Phụ thuộc | Trạng thái | Tiêu chí hoàn thành |
 |---|---|---|---|---|---|---|
@@ -68,8 +68,10 @@ Mã lớn nhất đã cấp: GD-067
 | GD-060 | game-moi | Doc thiết kế: các mục Phần II còn lại II.1 tới II.9 | các vai giữ hệ thống, GDM | GD-058, GD-059 | done (9 mục qua kiem-book và soat, gộp 20 hình, chốt 10 chỗ lệch GDD log 101 tới 110) | mỗi mục qua `kiem-book.mjs` |
 | GD-061 | game-moi | Nghiệm thu Phần II khớp GDD hệ thống và Sheet | gd-qa | GD-060 | done (A ĐẠT, B ĐẠT, C TRẢ LẠI II.7. 0 nặng, 17 vừa, 22 nhẹ, sửa ở GD-067) | `qa/GD-061-A.md`, `-B.md`, `-C.md` ĐẠT. Kèm: MVP Criteria Checklist dòng 50, 60 (log 110), danh sách chữ "2/3" (log 103). Luật Scrapmaw khi cắt xong Dây nối lúc boss còn từ nửa Sinh lực: việc riêng của gd-combat |
 | GD-062 | game-moi | Chương đề xuất dự án: ràng buộc, pillar, PX goal, concept đã bỏ và lý do | GDM | Lead 2026-11-23 | review (bản nháp, chờ Lead đọc) | `book/de-xuat-du-an.md` qua soat |
-| GD-063 | game-moi | Folder Drive nộp bài, một tài khoản sở hữu, chia thư mục theo loại | Lead tạo, GDM xếp | GD-061 | todo | Lead mở folder thấy đủ Doc, Sheet, đề xuất, không shortcut |
-| GD-064 | game-moi | Codex Dave the Diver theo hệ thống: Dave làm gì, The Novent lấy gì, khác gì (đợt 2 kế hoạch) | gd-research | GD-061 | todo | `docs/knowledge/indie/06-dave-the-diver-cau-truc.md` có mục cho 9 hệ thống, có nguồn |
-| GD-065 | game-moi | Guides cho dev: Sheet sang ScriptableObject, prefab, thư mục Unity | gd-tech | Unity project | blocked (chưa có Unity project) | dev làm theo tạo được 1 item từ Sheet |
+| GD-063 | game-moi | Folder Drive nộp bài, một tài khoản sở hữu, chia thư mục theo loại: Doc thiết kế, Sheet GDD, đề xuất, Teardown, Codex, Hướng dẫn sử dụng, Danh sách SFX | Lead tạo, GDM xếp | GD-061 | todo | Lead mở folder thấy đủ các file, không shortcut |
+| GD-064 | game-moi | Teardown game tham chiếu Dave the Diver: Sheet mỗi hệ thống một tab, mỗi mục có ảnh chụp và ghi chú Dave làm gì, The Novent lấy gì, khác gì (học "The codex - Mind over magic" của Timberwalls) | gd-research, người chơi Dave chụp ảnh | GD-061 | todo | Đủ tab cho 9 hệ thống Phần II, mỗi mục có nguồn hoặc ảnh. Nền chữ lấy từ `docs/knowledge/indie/06-dave-the-diver-cau-truc.md` |
+| GD-065 | game-moi | Hướng dẫn sử dụng cho dev (Guides): từng bước tạo dữ liệu từ Sheet sang ScriptableObject, ghép prefab, thư mục Unity, cách test, có ảnh Editor | gd-tech | Unity project | blocked (chưa có Unity project) | dev làm theo tạo được 1 item từ Sheet |
 | GD-066 | game-moi | Doc thiết kế Phần I Điều khiển, ảnh build đánh số | gd-ux, gd-qa | build Unity | blocked (chưa có build) | mỗi thao tác MVP có mục và ảnh |
 | GD-067 | game-moi | Sửa Doc Phần II và GDD theo QA GD-061, chạy lại sim kinh tế ca đầu ngày 5 | 8 vai, GDM | GD-061 | done (17 lỗi vừa đã sửa, sim ca đầu ngày 5, giờ ngân sách chương 1 0,8 theo Lead, chương 1 1,77 giờ. doi-chieu-sheet 23/23 tab KHỚP, docx 15 sơ đồ) | Mỗi lỗi QA có dòng xử lý, cổng Doc 0 lỗi, validate-gdd 0 lỗi, sim in số mới |
+| GD-068 | game-moi | Codex The Novent: Sheet mỗi hệ thống một tab (Vật phẩm, Salvage, Driftlife, Trạm và khoang, Thương nhân, Nhân vật và trạng thái). Cột Loại, Tên, Lời trong game, Nguồn nhận, Công thức, Dùng cho, Ảnh (học "Book of timberwalls") | gd-story (lời), gd-items (cột dữ liệu), GDM | GD-061 | todo | Mọi dòng ITEM LIST, Salvage, Enemy, Customer MVP có một mục, cột dữ liệu sinh từ TSV bằng script, lời qua soat |
+| GD-069 | game-moi | Danh sách SFX: nâng AUDIO ASSETS LIST theo khuôn "Sounds" của Timberwalls, tách cột Mô tả và Sự kiện phát, thêm cột 1 lần hay lặp, ưu tiên MVP, nguồn âm miễn phí. Rà đủ sự kiện từ GDD và Event Tracking | GDM, gd-ux (sự kiện UI) | GD-061 | todo | Mỗi sự kiện có âm trong GDD có đúng một dòng, không dòng nào thiếu Sự kiện phát, doi-chieu-sheet KHỚP |

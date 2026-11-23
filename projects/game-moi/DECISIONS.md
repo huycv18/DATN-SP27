@@ -389,3 +389,8 @@ Lead: "tôi muốn đổi tên luồng Ca Cảng, nghe Ca Cảng tôi không hi�
 - Đã đổi trong GDD hệ thống, Book, TSV các tab, strings, sim, tool, prompt agent, CLAUDE.md. Giữ nguyên ở chỗ ghi lịch sử: các DECISIONS, log tự quyết, `production/`, `qa/`, `briefs/`, đề xuất cũ, lời trích của Lead.
 - Giữ tên file và ID kỹ thuật có chữ ca-cang (`sim-ca-cang.mjs`, `tham-so/ca-cang.json`, `ca-cang-dave.html`) để không gãy lệnh và đường dẫn.
 - Chữ "Ca" ở tiêu đề bảng trường hợp biên nghĩa là trường hợp, không đổi. Chữ "phiên" đã dùng cho phiên co-op nên không dùng cho tên mới.
+
+## 2026-11-23 - Thêm 4 loại tài liệu nộp học từ Timberwalls
+Lead: "Thêm 1. Teardown game tham chiếu 2. Codex của chính game họ, dựng theo khuôn codex Mind over Magic 3. Hướng dẫn sử dụng 4. Danh sách SFX".
+- "Codex" ở đây là bách khoa trong game (Mind over Magic có màn Codex liệt kê mọi phòng, vật phẩm, nghi thức, trạng thái), không phải Codex của OpenAI. Timberwalls có hai file: "The codex - Mind over magic" là teardown game tham chiếu, mỗi hệ thống một tab, chủ yếu ảnh chụp. "Book of timberwalls" là codex game của họ, mỗi hệ thống một tab, cột Loại, Tên, Lời trong game, Nguồn, Công thức, Dùng cho, Ảnh.
+- Việc tương ứng ở BACKLOG: Teardown Dave the Diver GD-064, Codex The Novent GD-068, Hướng dẫn sử dụng cho dev GD-065 (chờ Unity project), Danh sách SFX GD-069 (nâng tab AUDIO ASSETS LIST có sẵn). Folder nộp GD-063 thêm 4 file này.
