@@ -435,3 +435,9 @@ Lead bấm Duyệt bản đề xuất của gd-ux ở `ux/de-xuat-topdown/` kèm
 - Sơ đồ trạm thu nhỏ ở góc dưới phải, không che hành lang phía đông.
 - Tường phía bắc các phòng là tường thấp 0,8 u, không cần dither vách cao trong trạm.
 gd-ux chép vào `ux-ui.md`, thêm key cho nút Xem bản đồ chuyến và Ping của khối Chờ nhóm. Khung Figma Wireframe MVP vẽ lại theo hai SVG này.
+
+## 2026-11-23 - Teardown Dave the Diver (đợt 12, GD-064)
+Lead: "Làm tiếp Teardown Dave the Diver".
+- Sheet riêng "Teardown - Dave the Diver" (id 1JSE_C8ixTcDwE3d0BXXu6DnGsYoa88HP9P1_YuRwJxU), cùng thư mục Sheet GDD. Tab Overview, 9 tab trùng tiêu đề mục Phần II, tab Sources. Nguồn ở `projects/game-moi/teardown/`, cổng `tools/kiem-teardown.mjs`, gộp nguồn bằng `--nguon`.
+- Mỗi cơ chế Dave chỉ mổ ở một tab nhà, tab khác chỉ giữ góc riêng của hệ thống tab đó hoặc trỏ sang tab nhà (GDM quyết khi QA bắt trùng).
+- Cột Ảnh chờ người chơi Dave chụp theo cột Ảnh cần chụp.
