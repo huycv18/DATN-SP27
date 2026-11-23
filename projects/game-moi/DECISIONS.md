@@ -322,3 +322,16 @@ Hệ quả: MVP có co-op 2 người online từ đầu, nhãn đổi từ (G) l
 Lead chọn "Sửa ux-ui.md" sau đánh giá wireframe trên Figma (`production/reports/2026-11-23-wireframe-figma.md`). Đây là quyết định UX trong thẩm quyền GDM, không chạm luật lõi.
 Hệ quả: 35 màn còn 30. Bỏ sảnh co-op UI-03 (bạn vào sau bất kỳ lúc nào qua UI-04, chủ phòng mời từ UI-50). UI-20 thành trạng thái Chờ nhóm của UI-10, UI-45 thành khối trong UI-43. UI-32, UI-41, UI-42 thành phần tử HUD (HUD-16, HCH-06, HCH-12). Thêm UI-54 hộp xác nhận, xóa thế giới ở UI-01, HUD-17 thanh boss theo cơ chế pha (boss không có thanh Choáng), HUD-18 thanh Choáng và dấu Bất lực trên Driftlife. Đai dụng cụ 3 đến 5 ô theo `nguoi-choi.md`. Wireframe: Figma The Novent, trang Wireframe MVP. Tab WIREFRAME đã dán lên Sheet chính (1Naya...) bằng connector, hàng 3 đến 32, xóa 5 hàng thừa, `doi-chieu-sheet.mjs` KHỚP 30 hàng.
 
+## 2026-11-23 - Rà chéo 23 tab Sheet và các điểm GDM chốt khi sửa
+
+Lead giao: đợi phiên review GDD xong thì review và sửa GDD. GDM cho gd-qa rà chéo 18 tab còn lại theo 3 nhóm (`qa/2026-11-23-ra-cheo-A.md`, `-B.md`, `-C.md`), sửa repo và dán Sheet chính `1Naya...`. Báo cáo: `production/reports/2026-11-23-ra-cheo-sua-gdd.md`.
+GDM chốt trong thẩm quyền (chốt mâu thuẫn giữa vai, không đổi luật lõi):
+- Xưởng cấp 2 giữ vai cổng: bộ đồ từ bậc 2 (5 trục) cần Xưởng cấp 2, dụng cụ không. Sim mua Xưởng cấp 2 trước.
+- Khoang sinh quyển cấp 3 giữ mốc chương 3, có dòng giá riêng 14700 Tally ngoài phần chia ngân sách chương 3 (chương 3 chi thật 145000 so với ngân sách 130350, chấp nhận vì thời lượng vẫn trong mục tiêu). Gói chương 4 thành "Cấp 3 các khoang còn lại", giữ 18350.
+- Máy quét xung mở chương 2 theo Shop và sim.
+- Đơn đặt trước: chương 1 và từ chương 2 có 1 đơn mỗi ngày, từ Hạng cảng 8 có 2 đơn.
+- Sim kinh tế làm tròn Tally thu mỗi ca về số nguyên. Kết quả mới: chương 1 1,90 giờ, cả game 14,2 giờ, nhóm 4 bằng 71%.
+- Mọi phím gán lại được trừ Esc và Start (theo ux-ui.md mục 2.9).
+- Âm SFX_Order_Complete và SFX_Order_Missed đổi tên thành SFX_Ship_Served và SFX_Ship_Left vì đơn nhiều dòng đã bỏ.
+- Co-op MVP 2 người: không sửa ky-thuat.md luật 12 (4 slot là của bản đủ). Bản MVP khóa ô 3 và 4 ở màn Tạo thế giới như WIREFRAME.
+- Không đổi: Recipe ghi bậc 4 "chương 4 đến 5" (cửa sổ mở, khác chương mua), Balance Sheet hàng 28 (đã đánh dấu thay).
