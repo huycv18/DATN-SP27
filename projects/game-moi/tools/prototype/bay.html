@@ -338,6 +338,7 @@ addEventListener('keydown', (e) => {
   if (['Space', 'ShiftLeft'].includes(e.code)) e.preventDefault();
 });
 addEventListener('keyup', (e) => { phim[e.code] = false; });
+addEventListener('blur', () => { phim = {}; }); // rời cửa sổ khi đang giữ phím thì không nhận keyup, nhả hết để nhân vật không bay mãi
 for (const m of ['chuyen', 'b23', 'b24']) document.getElementById('m_' + m).onclick = () => batDau(m);
 document.getElementById('xuat').onclick = () => {
   document.getElementById('json').value = JSON.stringify({ nguon: 'tools/prototype/bay.html', ngay: new Date().toISOString(), thamSoHienTai: P, hang: HANG, chuyen: lichSu, thuNe: { lan: thu.lan, ne: thu.ne },

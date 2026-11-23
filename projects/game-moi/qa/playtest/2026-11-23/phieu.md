@@ -1,0 +1,26 @@
+# Phiếu playtest prototype một chuyến
+
+Người chơi: ............ Ngày: ............ Người quan sát: ............
+Đã chơi game giống Dave the Diver, game bay quán tính hay game sinh tồn chưa: ............
+
+## Phần người quan sát ghi trong lúc chơi
+
+| Phần | Thử mấy lần | Kết quả | Bối rối ở đâu (một câu) | Chán ở đâu | Vui ở đâu | Khó do điều khiển hay do chưa hiểu luật | Ghi chú tự do |
+|---|---|---|---|---|---|---|---|
+| Chuyến 1 | 1 | Về bằng: cửa khí / Beacon / bị kéo về | | | | | |
+| Chuyến 2 | 1 | Về bằng: cửa khí / Beacon / bị kéo về | | | | | |
+| Chuyến 3 (nếu có) | 1 | Về bằng: cửa khí / Beacon / bị kéo về | | | | | |
+| Bài 23 Hãm | 10 | Đạt ..... / 10 | | | | | |
+| Bài 24 Hành lang | 3 | Chạm tường lượt 3: ..... | | | | | |
+| Thử né | khoảng 10 đòn | Né ..... / ..... | | | | | |
+
+Câu hỏi giữa buổi, sau chuyến 1: "Bạn có muốn đi thêm chuyến nữa không?" Trả lời: Có / Không. Lý do (ghi nguyên văn): ............
+
+Người chơi hỏi gì về luật (ghi nguyên văn): ............
+
+## Phần người chơi tự điền (khoảng 3 phút)
+
+1. Điều bạn nhớ nhất: ............
+2. Điều bạn muốn bỏ hoặc thấy khó chịu: ............
+3. Nếu có thêm chuyến, bạn có chơi tiếp không: Có / Không. Vì sao: ............
+4. Điều khiển nhân vật bay khó tới mức nào: 1 (rất dễ) - 2 - 3 - 4 - 5 (rất khó). Khó nhất ở chỗ nào: ............
