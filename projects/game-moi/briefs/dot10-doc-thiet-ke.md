@@ -88,6 +88,30 @@ Lead duyệt mục mẫu II.6 ngày 2026-11-23: "Oke làm tiếp đi", rồi th�
 
 **Giới hạn.** Không đặt luật hay số mới. Thấy luật thiếu thì ghi vào báo cáo, không tự lấp. Không commit.
 
+## GD-061 gd-qa: nghiệm thu Phần II
+
+Lead: "Giao QA" (2026-11-23). Ba phiên gd-qa chạy song song, mỗi phiên một nhóm mục.
+
+| Nhóm | Mục | Ảnh sơ đồ phải soi | Ghi vào |
+|---|---|---|---|
+| A | II.1, II.2, II.3 | `book/hinh/so-do-01.png` tới `03` | `projects/game-moi/qa/GD-061-A.md` |
+| B | II.4, II.5, II.6 | `so-do-04.png` tới `09` | `projects/game-moi/qa/GD-061-B.md`, `projects/game-moi/gdd/sheet/MVP Criteria Checklist.tsv` |
+| C | II.7, II.8, II.9 | `so-do-10.png` tới `12` | `projects/game-moi/qa/GD-061-C.md` |
+
+**Mục tiêu.** Chấm từng mục ĐẠT hoặc TRẢ LẠI, có bằng chứng, trước khi Doc nộp hội đồng. Người đọc Doc là hội đồng chấm và dev mới. Chấm bốn lớp:
+1. Đúng nguồn: mọi số và luật trong mục khớp GDD hệ thống, `so-hien-hanh.md`, TSV Sheet. Lấy mẫu ít nhất 15 số mỗi mục, ghi bảng "số, dòng trong mục, nguồn, khớp".
+2. Khớp chéo: cùng một luật hay số nhắc ở nhiều mục thì giống nhau (ví dụ giá thùng ở II.5, II.6, II.7, Oxy ở II.2, II.3, sống so với hạ ở II.4, II.5, II.7). Đọc lướt các mục ngoài nhóm khi cần.
+3. Đọc hiểu: người chưa đọc GDD hiểu được. Bắt từ nội bộ chưa giải nghĩa, câu tối nghĩa, sơ đồ và đoạn đọc sơ đồ không khớp nhau.
+4. Ảnh: mở từng ảnh sơ đồ của nhóm bằng Read, kiểm chữ tiếng Việt đủ dấu, không chồng chữ, nhánh đọc được.
+
+Việc riêng nhóm B: sửa dòng 50 và 60 của `MVP Criteria Checklist.tsv` về mục tiêu sống so với hạ 1,2 đến 2 lần (log GDM 110), và liệt kê mọi chỗ ghi "trên 2/3" hay "từ 2/3" về điểm cảng trong repo (file, dòng) để GDM đồng bộ (log GDM 103).
+
+**Đọc trước.** `projects/game-moi/book/KHUON.md`, `projects/game-moi/so-hien-hanh.md`, `projects/game-moi/log-gdm-tu-quyet.md` dòng 101 tới 110 (các chỗ lệch GDM đã chốt khi viết Doc), GDD nguồn của từng mục theo bảng mục lục trong KHUON.
+
+**Tiêu chí hoàn thành.** File QA của nhóm có kết luận từng mục, bảng số đã đối chiếu, danh sách lỗi theo mức (nặng: sai số hay sai luật, vừa: lệch chéo hay khó hiểu, nhẹ: câu chữ) kèm dòng và đề xuất sửa. Không sửa file Doc của vai, không sửa GDD.
+
+**Giới hạn.** Chỉ ghi file trong cột Ghi vào. Không sửa Google Sheet. Không commit.
+
 ## Luật chung
 
 - Mỗi vai chỉ sửa file trong cột Ghi vào. Không sửa Google Sheet.
