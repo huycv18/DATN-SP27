@@ -365,7 +365,7 @@ Buổi sáng người chơi đọc bảng tàu để biết hôm nay nên mang g
 | Tally một ca | Khoảng 60% giá trị hai chuyến đầy túi của chương. Tip khoảng 20 tới 30% Tally một ca | 40% đến 80% | Thiếu hàng để sửa trạm | Cảng yếu | Cảng, kinh tế | gd-economy mục 8.4, khung mục 9. Sim GD-054 vòng 2, trễ 2 giây: Tally 1654, 3602, 3760, 3996 cho 1 tới 4 người, tip kể cả bơm khí 26 tới 29% |
 | Tốc độ chạy khi mang thùng | Bằng tốc độ thường | | | | Cảng | demo |
 | Hàng đợi chế của xưởng, cấp 1 | 2 mẻ | 1 đến 4 | Chế qua đêm nhiều, danh mục rộng | Ít hàng chế | Xưởng | ước, gd-items đề xuất |
-| Thời gian chế ở xưởng một mẻ | 10 giây | 8 đến 20 | Chế trước tốn thời gian hơn | Chế dễ | Xưởng | ước |
+| Thời gian chế ở xưởng một mẻ | Theo công thức, tab Recipe (Lọc băng 12 giây) | 8 đến 20 | Chế trước tốn thời gian hơn | Chế dễ | Xưởng | `vat-pham.md` khối RECIPE, log GDM 106 |
 | Số sự cố mỗi ca, chương 3, chương 4 và 5 | 1, 1 đến 2 | 0 đến 3 | Ca hỗn loạn | Ca như chương 1 | Cảng | ước |
 | Chu kỳ ôm thùng của Driftlife sổng | 20 giây | 10 đến 40 | Bỏ mặc được | Phải xử ngay | Cảng | ước |
 | Thời gian xử lý sự cố | 4 giây | 2 đến 8 | Sự cố tốn người | Sự cố vô hại | Cảng | ước |

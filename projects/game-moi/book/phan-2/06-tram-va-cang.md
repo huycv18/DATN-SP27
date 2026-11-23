@@ -111,7 +111,7 @@ GiaThung = GiaKien / 2,5
 | Lồng Driftmoth, Skitter Ray, Sting Krill | Hàng sống | 1 | 65, 75, 55 | Bắt sống trong chuyến | Chương 1 |
 
 Độ gọi là trọng số để tàu chọn món, hàng rẻ được gọi nhiều hơn (xem mục II.6.6). Thùng nước tinh khiết là hàng cần chế duy nhất của chương đầu:
-- Xưởng chạy một mẻ một lúc và giữ thêm mẻ chờ trong hàng đợi. Số khởi điểm chưa đo: hàng đợi 2 mẻ ở cấp 1, mỗi mẻ 10 giây.
+- Xưởng chạy một mẻ một lúc và giữ thêm mẻ chờ trong hàng đợi. Hàng đợi xưởng cấp 1 giữ 2 mẻ. Thời gian mỗi mẻ theo công thức ở tab Recipe.
 - Mẻ chạy cả khi người chơi ra chuyến. Mẻ còn lúc ngủ thì xong khi sang ngày.
 - Mẻ xong sau khi Mở ca thì vào kho, không vào danh mục ca đó.
 - Danh mục chỉ dùng hàng đã nằm trong kho. Hàng trong túi của người còn ở ngoài chưa dùng được.
