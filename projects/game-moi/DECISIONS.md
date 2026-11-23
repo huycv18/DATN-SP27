@@ -399,7 +399,7 @@ Lead: "Thêm 1. Teardown game tham chiếu 2. Codex của chính game họ, dự
 
 Lead: "dải gần, dải giữa và dải xa là cái gì? nghe nó phèn lứm", rồi chê tên địa danh "tối nghĩa quá" vì không cho biết vùng nào gần trạm hơn. GDM đề xuất đặt tên theo khoảng cách tới tâm vụ nổ tàu mẹ. Lead chốt tên tiếng Việt: "Vành đai ngoài, Vành đai trong, Vùng trung tâm".
 
-| Mã | Cũ | Mới | Tên địa danh giữ cho truyện |
+| Mã | Cũ | Tên tiếng Việt mới | Tên tiếng Anh (giữ như cũ) |
 |---|---|---|---|
 | Z1 | dải Gần, Gần | Vành đai ngoài | Ember Anchorage |
 | Z2 | dải Giữa, Giữa | Vành đai trong | Shepherd Belt |
@@ -408,7 +408,7 @@ Lead: "dải gần, dải giữa và dải xa là cái gì? nghe nó phèn lứm
 - Tên mới dùng ở mọi chỗ, kể cả HUD-11, tên món (ví dụ Kiện đặc sản Vành đai ngoài) và key dữ liệu trong sim. Bỏ chữ "dải" đứng trước tên. Chữ "dải" chung chỉ cấu trúc map giữ nguyên.
 - Chỉ đổi chữ. Sim vật phẩm, kinh tế, ngân sách Oxy, bố cục chạy lại, không số nào đổi. Mã ID giữ nguyên (DL-G0x, DL-M0x, DL-X0x, SLV-1xx).
 - Đã đổi trong GDD hệ thống, Book, 18 tab TSV và Sheet, sim, tool, prototype, story. Giữ nguyên ở chỗ ghi lịch sử theo tiền lệ đổi tên Giờ Giao Thương: các DECISIONS, log tự quyết, `production/`, `qa/`, `briefs/`, `book/de-xuat-du-an.md`.
-- Tên tiếng Anh chưa chốt. Tên món tiếng Anh vẫn là Near, Mid, Far (ví dụ Near Specialty Crate). Không dùng "Outer Ring" vì trùng tên khu Lantern Outer Ring và Waypost Outer Ring.
+- Tên tiếng Anh giữ tên chính đã có, Lead: "chỉ dùng tên chính trước đó, chỉ là thay tên tiếng việt kia thôi". Tên món tiếng Anh giữ nguyên (ví dụ Near Specialty Crate).
 
 ## 2026-11-23 - Art: không gian 3D, đồ họa 2.5D, góc nhìn top-down 45 độ
 
