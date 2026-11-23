@@ -100,7 +100,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
 <div class="dock">
   <div class="brand">
     <h1>THE NOVENT <span>·</span> bản đồ sao</h1>
-    <p>Bấm vào ngôi sao để đọc nội dung. Bấm nút <kbd>›</kbd> cạnh sao để mở nhánh, <kbd>‹</kbd> để thu lại. Sao càng to, càng nhiều phần khác dẫn tới.</p>
+    <p>Sao lấp lánh là sao còn nhánh: bấm để mở nhánh và đọc nội dung, nháy đúp để thu lại. Sao càng to, càng nhiều phần khác dẫn tới.</p>
   </div>
   <div class="find">
     <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
@@ -277,22 +277,33 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
     for (const s of S) {
       if (s.v <= 0) continue;
       const [x, y] = P(s);
-      const tw = reduce ? 1 : 0.84 + 0.16 * Math.sin(t * s.sp + s.ph);
+      // sao còn nhánh chưa mở: sáng hơn và lấp lánh nhanh. Sao khác: dịu, nhấp nháy rất nhẹ
+      const can = s.lv > 0 && s.kids.length > 0 && !open.has(s.i);
+      const tw = reduce ? 1 : can ? 0.62 + 0.38 * Math.pow(Math.abs(Math.sin(t * (1.6 + s.sp) + s.ph)), 1.5) : 0.9 + 0.1 * Math.sin(t * s.sp + s.ph);
       // sao chính giữ cỡ tối thiểu trên màn hình để luôn nổi bật cả khi nhìn xa
       const floor = s.lv === 0 ? 11 / T.k : s.lv === 1 ? (7 + 6 * s.imp) / T.k : s.lv === 2 ? (2.6 + 2 * s.imp) / T.k : (1.8 + 1.2 * s.imp) / T.k;
       const r = Math.max(s.r, floor) * (0.4 + 0.6 * s.v);
       const c = d3.color(tint(s));
       const hl = s.i === sel || s.i === hov;
-      const a = s.v * s.lum;
+      const a = s.v * s.lum * (can ? 1 : 0.72);
       const halo = r * (s.lv <= 1 ? 5.5 : 3.2 + 2.2 * s.imp) * (hl ? 1.5 : 1);
       const hg = ctx.createRadialGradient(x, y, 0, x, y, halo);
-      hg.addColorStop(0, `rgba(${c.r},${c.g},${c.b},${0.6 * tw * a})`); hg.addColorStop(0.25, `rgba(${c.r},${c.g},${c.b},${0.2 * tw * a})`); hg.addColorStop(1, 'rgba(0,0,0,0)');
+      hg.addColorStop(0, `rgba(${c.r},${c.g},${c.b},${(can ? 0.5 : 0.36) * tw * a})`); hg.addColorStop(0.25, `rgba(${c.r},${c.g},${c.b},${(can ? 0.17 : 0.1) * tw * a})`); hg.addColorStop(1, 'rgba(0,0,0,0)');
       ctx.fillStyle = hg; ctx.beginPath(); ctx.arc(x, y, halo, 0, 7); ctx.fill();
-      if (s.lv <= 1 || s.imp > 0.6) { // tia chữ thập cho sao lớn
+      if (!can && (s.lv <= 1 || s.imp > 0.6)) { // tia chữ thập cho sao lớn đã mở
         ctx.strokeStyle = `rgba(${c.r},${c.g},${c.b},${0.35 * tw * a})`; ctx.lineWidth = Math.max(0.6 / T.k, r * 0.07);
         const L = r * (s.lv <= 1 ? 3.4 : 2.6) * tw; ctx.beginPath(); ctx.moveTo(x - L, y); ctx.lineTo(x + L, y); ctx.moveTo(x, y - L); ctx.lineTo(x, y + L); ctx.stroke();
       }
-      ctx.globalAlpha = a * (0.9 + 0.1 * tw); ctx.fillStyle = '#fff';
+      if (can && !reduce) { // tia lấp lánh bốn cánh xoay chậm, dài ra ngắn lại theo nhịp nháy
+        const rot = t * 0.5 + s.ph, L = Math.max(r * 2.8, 7 / T.k) * (0.55 + 0.6 * tw);
+        ctx.save(); ctx.translate(x, y); ctx.rotate(rot);
+        ctx.strokeStyle = `rgba(255,252,240,${0.55 * tw * s.v})`; ctx.lineWidth = Math.max(0.5 / T.k, r * 0.08);
+        ctx.beginPath(); ctx.moveTo(-L, 0); ctx.lineTo(L, 0); ctx.moveTo(0, -L); ctx.lineTo(0, L); ctx.stroke();
+        ctx.rotate(Math.PI / 4); ctx.strokeStyle = `rgba(${c.r},${c.g},${c.b},${0.35 * tw * s.v})`; const l2 = L * 0.5;
+        ctx.beginPath(); ctx.moveTo(-l2, 0); ctx.lineTo(l2, 0); ctx.moveTo(0, -l2); ctx.lineTo(0, l2); ctx.stroke();
+        ctx.restore();
+      }
+      ctx.globalAlpha = a * (can ? 0.75 + 0.25 * tw : 0.8); ctx.fillStyle = '#fff';
       ctx.beginPath(); ctx.arc(x, y, r * 0.55, 0, 7); ctx.fill();
       ctx.fillStyle = `rgb(${c.r},${c.g},${c.b})`; ctx.globalAlpha = 0.55 * a;
       ctx.beginPath(); ctx.arc(x, y, r * 0.85, 0, 7); ctx.fill(); ctx.globalAlpha = 1;
@@ -326,33 +337,8 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
       ctx.fillText(txt, x, y + off, 230);
       ctx.letterSpacing = '0px'; ctx.shadowBlur = 0; ctx.globalAlpha = 1;
     }
-    // nút mở nhánh kiểu NotebookLM: › kèm số nhánh khi đang thu, ‹ khi đã mở. Bấm sao để đọc, bấm nút để mở hoặc thu
-    badges = [];
-    for (const s of S) {
-      if (!s.kids.length || s.lv === 0 || s.v < 0.6) continue;
-      const vis = s.lv === 1 || s.i === sel || s.i === hov || za(s) > 0.3;
-      if (!vis) continue;
-      const [wx, wy] = P(s); const sx = wx * T.k + T.x, sy = wy * T.k + T.y;
-      const rs = Math.max(s.r * T.k * (s.lv === 1 ? 1 : 0.9), s.lv === 1 ? (7 + 6 * s.imp) : 3);
-      const bx = sx + rs + 15, by = sy;
-      if (bx < -20 || bx > W + 20 || by < -20 || by > H + 20) continue;
-      const isOpen = open.has(s.i); const c = d3.color(tint(s)); const hot = badgeHov === s.i;
-      ctx.globalAlpha = Math.min(1, s.v);
-      ctx.fillStyle = hot ? 'rgba(30,40,70,.95)' : 'rgba(12,17,32,.9)';
-      ctx.strokeStyle = `rgba(${c.r},${c.g},${c.b},${hot ? 1 : 0.75})`; ctx.lineWidth = 1.3;
-      ctx.beginPath(); ctx.arc(bx, by, 9, 0, 7); ctx.fill(); ctx.stroke();
-      ctx.strokeStyle = '#f2f5fc'; ctx.lineWidth = 1.6; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
-      ctx.beginPath();
-      if (isOpen) { ctx.moveTo(bx + 2, by - 4); ctx.lineTo(bx - 2, by); ctx.lineTo(bx + 2, by + 4); }
-      else { ctx.moveTo(bx - 2, by - 4); ctx.lineTo(bx + 2, by); ctx.lineTo(bx - 2, by + 4); }
-      ctx.stroke();
-      if (!isOpen) { ctx.font = '500 11px "JetBrains Mono", monospace'; ctx.fillStyle = '#aab4cb'; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillText(String(s.kids.length), bx + 13, by + 0.5); }
-      ctx.globalAlpha = 1;
-      badges.push({ i: s.i, x: bx, y: by });
-    }
     requestAnimationFrame(draw);
   }
-  let badges = [], badgeHov = null;
   function ease(v) { return 1 - Math.pow(1 - v, 3); }
 
   // camera
@@ -371,23 +357,16 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
   const visibleStars = () => S.filter(shown);
 
   // một cú bấm: chọn, mở chòm con, đọc. Nháy đúp: thu chòm đó lại
-  // bấm sao: chọn và đọc, mở đường tới sao đó nếu đang ẩn, không mở nhánh con của nó
+  // bấm sao: chọn, đọc, mở nhánh con nếu có (sao thôi lấp lánh). Các nhánh khác giữ nguyên, nháy đúp để thu
   function choose(i, move = true) {
     const s = S[i];
     let k = s.p; while (k >= 0) { open.add(k); k = S[k].p; }
+    if (s.kids.length) open.add(i);
     sel = i; render();
     if (!move) return;
     if (s.lv === 0) fly(visibleStars());
-    else if (open.has(i) && s.kids.length) fly([s, ...s.kids.map((c) => S[c])]);
-    else if (s.lv === 1) fly([s], 850, 650);
+    else if (s.kids.length) fly([s, ...s.kids.map((c) => S[c])]);
     else fly([s, S[s.p]]);
-  }
-  // nút › ‹ cạnh sao: mở hoặc thu nhánh con, các nhánh khác giữ nguyên
-  function toggle(i) {
-    const s = S[i];
-    if (open.has(i)) { collapse(i); return; }
-    open.add(i);
-    fly([s, ...s.kids.map((c) => S[c])]);
   }
   function collapse(i) {
     const s = S[i]; if (!s.kids.length) return;
@@ -437,31 +416,23 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
     return best;
   }
   const tip = $('tip');
-  function pickBadge(ev) {
-    const [mx, my] = d3.pointer(ev, cv);
-    let best = null, bd = 13;
-    for (const b of badges) { const d = Math.hypot(b.x - mx, b.y - my); if (d < bd) { bd = d; best = b.i; } }
-    return best;
-  }
   const place = (ev) => { tip.style.left = Math.min(ev.clientX + 14, innerWidth - 330) + 'px'; tip.style.top = ev.clientY + 14 + 'px'; };
   cv.addEventListener('pointermove', (ev) => {
-    const b = pickBadge(ev); badgeHov = b;
-    if (b != null) {
-      hov = null; cv.classList.add('hover'); tip.hidden = false;
-      tip.innerHTML = open.has(b) ? `Thu nhánh của ${esc(plain(S[b]))}` : `Mở ${S[b].kids.length} nhánh của ${esc(plain(S[b]))}`; place(ev); return;
-    }
     const s = pick(ev); hov = s ? s.i : null; cv.classList.toggle('hover', !!s);
-    if (s) { tip.hidden = false; tip.innerHTML = `${esc(plain(s))}<small>${s.lv >= 1 ? esc(sysOf(s).t) : 'lõi'} · bấm để đọc</small>`; place(ev); }
-    else tip.hidden = true;
+    if (s) {
+      const hint = s.kids.length && s.lv > 0 ? (open.has(s.i) ? 'nháy đúp để thu nhánh' : `bấm để mở ${s.kids.length} nhánh`) : 'bấm để đọc';
+      tip.hidden = false; tip.innerHTML = `${esc(plain(s))}<small>${s.lv >= 1 ? esc(sysOf(s).t) : 'lõi'} · ${hint}</small>`; place(ev);
+    } else tip.hidden = true;
   });
-  cv.addEventListener('pointerleave', () => { hov = null; badgeHov = null; tip.hidden = true; });
-  let downAt = null;
+  cv.addEventListener('pointerleave', () => { hov = null; tip.hidden = true; });
+  let downAt = null, pending = null;
   cv.addEventListener('pointerdown', (ev) => { downAt = [ev.clientX, ev.clientY]; });
   cv.addEventListener('pointerup', (ev) => {
     if (!downAt || Math.hypot(ev.clientX - downAt[0], ev.clientY - downAt[1]) > 5) return;
-    const b = pickBadge(ev); if (b != null) { toggle(b); return; }
-    const s = pick(ev); if (s) choose(s.i);
+    const s = pick(ev); if (!s) return;
+    clearTimeout(pending); pending = setTimeout(() => choose(s.i), 230); // chờ xem có phải nháy đúp
   });
+  cv.addEventListener('dblclick', (ev) => { clearTimeout(pending); const s = pick(ev); if (s) collapse(s.i); });
 
   // tìm kiếm
   $('q').addEventListener('input', (e) => {
