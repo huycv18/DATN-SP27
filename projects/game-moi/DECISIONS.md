@@ -315,7 +315,7 @@ Hệ quả: MVP có co-op 2 người online từ đầu, nhãn đổi từ (G) l
 
 - Lead xem GDD ở Sheet "Game Design Document - The Novent" (`1NayaWIuhGD9p3Czlff9sCubY610Ksye4bo97R_QqPdE`, chép từ Sheet cũ ngày 2026-11-20), trong khi tool và các lần dán vẫn trỏ vào Sheet cũ "GDD - The Novent" (`1kGdCePi8LDK1sGxfH7FK5sswVTgsXO71N4QyjzZP7Bs`). Lead chốt bằng lời: dùng Sheet mới làm GDD chính.
 - Hai Sheet cùng tên tab và cùng gid, nên chỉ đổi `spreadsheetId` trong `tools/tham-so/sheet.json` và dòng Sheet GDD trong `so-hien-hanh.md`. Sheet cũ thôi dùng, không dán vào nữa.
-- Ô OVERVIEW!B28 (USP) đã ghi bản mới vào Sheet mới. Các tab khác chưa đối chiếu: Sheet mới chưa bật chia sẻ xem bằng link nên `doi-chieu-sheet.mjs` nhận HTTP 401.
+- Lead bật chia sẻ xem bằng link cùng ngày. Đối chiếu lần đầu: 12 tab KHỚP, phần lệch là bản cũ chép từ 2026-11-20 (giá trị có trong lịch sử git). Đã dán OVERVIEW (USP và 6 ô), TRACKING I3, Upgrade D7. Kéo về repo tiêu đề OVERVIEW A1 Lead sửa tay ("OVERVIEW - The Novent"). Ô OVERVIEW B11 trống trên Sheet mới, giữ nguyên chờ Lead. Assets, AUDIO ASSETS LIST, WIREFRAME, ITEM LIST, GAME STORY còn lệch, để phiên đang sửa các TSV đó dán sau khi xong.
 
 ## 2026-11-23 - Bảng màn UX còn 30, thêm HUD boss và hộp xác nhận
 
