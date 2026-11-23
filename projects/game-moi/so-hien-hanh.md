@@ -10,7 +10,7 @@ Cập nhật lần cuối: 2026-11-20, sau đợt 9 (ca cảng khung Dave, QA GD
 | Mục | Giá trị hiện hành | Nguồn |
 |---|---|---|
 | Engine / nền tảng | Unity, PC, để mở đa nền tảng | (L) DECISIONS 2026-11-19 |
-| Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, cả hai là cách chơi chính. MVP có co-op 2 người | (L) DECISIONS 2026-11-20. MVP: (G) log 28 |
+| Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, cả hai là cách chơi chính. MVP có co-op 2 người | (L) DECISIONS 2026-11-20. MVP: (L) DECISIONS 2026-11-23 |
 | Art | 2D vector, có thể 2.5D (chưa chốt). Góc nhìn ngang ở mọi nơi | (L). Góc nhìn: (G) log 9 |
 | Kinh doanh | Bán đứt, không gói bán | (L) |
 | Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý | (L) |

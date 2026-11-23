@@ -10,7 +10,7 @@ Một câu: tỉnh dậy trên trạm hỏng giữa bãi vỡ của tàu mẹ, m
 | Ràng buộc Lead đã chốt | Giá trị |
 |---|---|
 | Engine / nền tảng | Unity, PC (có thể mở rộng đa nền tảng) |
-| Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, đều là cách chơi chính (chốt 2026-11-20). MVP có co-op 2 người (GDM đề xuất, log dòng 28) |
+| Multiplayer | Chơi đơn hoặc co-op online 2 đến 4 người, đều là cách chơi chính (chốt 2026-11-20). MVP có co-op 2 người (Lead chốt 2026-11-23) |
 | Art | 2D vector art, có thể thêm 3D thành 2.5D (chưa chốt) |
 | Kinh doanh | Bán đứt, không gói bán |
 | Thể loại | Hành động nhập vai phiêu lưu kết hợp mô phỏng quản lý (khá giống Dave the Diver) |

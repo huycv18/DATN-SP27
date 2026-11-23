@@ -305,3 +305,8 @@ Lead: "sửa lại GDD", "Sửa Sheet". Báo cáo: `production/reports/2026-11-2
 
 Lead đưa mẫu 3 ý theo khung USP của Dave the Diver: "kiểu kiểu như này ngôn từ nó chuyên nghiệp cơ". Lead giữ ý "Nội dung đa dạng, nhịp độ thư giãn" sau khi GDM đã phản biện ý này trái CP2 (log dòng 98).
 Hệ quả: USP gồm 4 ý, giọng giới thiệu sản phẩm, bỏ cột so với Dave. Ý 2 viết thành căng khi bay, chậm trên trạm, thất bại không phạt nặng để không trái CP2. Ý 4 co-op thay ý DLC. Sửa `gdd/00-khung-game.md` mục 15 và ô USP tab OVERVIEW.
+
+## 2026-11-23 - Giữ co-op 2 người trong MVP
+
+Lead: "Giữ co-op trong MVP", sau khi GDM phản biện trong review Sheet (`production/reports/2026-11-23-review-gdd-sheet.md`, rủi ro 2): co-op online trong MVP cộng với 1 artist, 4 dev và chưa có mốc thời gian là rủi ro phạm vi Cao, GDM đề xuất làm MVP một người trước rồi gộp co-op sau.
+Hệ quả: MVP có co-op 2 người online từ đầu, nhãn đổi từ (G) log 28 sang (L). Rủi ro phạm vi vẫn mở, cần dev ước công S/M/L từng mục MVP khi Lead có mốc thời gian.
