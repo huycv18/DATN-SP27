@@ -291,3 +291,12 @@ Lead: "Sửa lại sheet Game Story, trình bày nó khoa học, đầy đủ v�
 - Vòng 2: giá thùng 5 bậc (40 tới 80 Tally chương 1), hệ số ngân sách 0,40 lên 0,54 nên giá Shop và Upgrade tăng khoảng 35% (GD-055). Tàu vội chỉ tới khi danh mục có băng hoặc khoáng, Tikko gọi đồ Trái Đất nhiều gấp đôi hàng chợ (GD-051, cải thiện theo ý Lead).
 - Lead "Cho sửa" (2026-11-20): `sim/vat-pham.mjs` vá theo đơn vị thùng (sink "Bán theo thùng ở ca cảng", khối kho, bỏ cỡ kiện, bảng thùng mỗi kiện, công thức Cảng đóng lúc Mở ca). Chạy lại `--ghi` cập nhật 29 dòng khối ITEM còn sót "Bốc lên tàu". `--tsv` từ nay chỉ ghi ra `sim/out-tsv`, không ghi đè TSV bản đọc của Sheet.
 - Lead chốt (2026-11-20, "Nguyên cái"): Bản sao dữ liệu và Kiện tin mật bán nguyên cái như lồng sống, một cái là một đơn vị bán, giá bằng giá kiện (315 và 1305 Tally). Đã sửa script vật phẩm, sim kinh tế, `vat-pham.md`, `kinh-te-tien-trinh.md`, tab ITEM LIST, Recipe, Shop và dán Sheet, đối chiếu khớp.
+
+## 2026-11-23 - Soát văn GDD và đồng bộ Sheet
+
+Lead: "sửa lại GDD", "Sửa Sheet". Báo cáo: `production/reports/2026-11-23-humanizer-gdd.md`.
+
+- 11 file GDD sửa câu văn (bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp), không đổi luật, số, ID. Lịch sử chuyển xuống bảng Lịch sử thay đổi của từng file.
+- Lead sửa tay OVERVIEW B22 trên Sheet ("chưa chốt nhé"), đã kéo về `gdd/sheet/OVERVIEW.tsv`.
+- OVERVIEW trên Sheet còn bản trước đợt 9 và USP lần 1 ở 7 ô (B7, B9, B15, D15, B20, B24, B28): đã ghi bản repo lên, gồm USP lần 2. B28 tách dòng dài cho qua cổng 300 ký tự.
+- Sửa 3 ô nhỏ: ITEM LIST D143 (STY-501), Upgrade D7, TRACKING I3. Ghi bằng connector Google Sheets theo từng ô, giữ định dạng tab. `doi-chieu-sheet.mjs` KHỚP 23/23 tab.

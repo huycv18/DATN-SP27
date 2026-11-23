@@ -99,7 +99,20 @@ Các chỗ còn lại sau lượt sửa câu văn, đã xử lý cùng ngày (GD
 
 Tham chiếu "dòng N" tới file đổi số dòng dò bằng script theo nội dung dòng, chỉ một chỗ phải đổi (hàng trên). Kiểm: check_facts không mất số (chỉ báo phần cố ý thêm: GD-033, ngày và đường dẫn ở bảng lịch sử khung), selftest 33 ĐẠT, validate-gdd 0 lỗi, khối SIM của map giữ nguyên.
 
-Còn lệch: tab ITEM LIST trên Sheet (bản đọc sửa tay) vẫn ghi STY-501 "là cảnh truyện, không phải vật". Nghĩa không đổi, sửa khi dán tab đó lần tới.
+## Sheet GDD (cùng ngày)
+
+Quét 23 TSV bằng scan.py: điểm 0 tới 15, đa số dấu hiệu là khuôn "Nhãn: câu" một hàng một ý Lead đã duyệt ở đợt 8 và thuật ngữ game ("hành trình", "khám phá"), không sửa. `doi-chieu-sheet.mjs` trước khi sửa: 22 tab KHỚP, OVERVIEW lệch 8 ô.
+
+| Ô | Tình trạng | Xử lý |
+|---|---|---|
+| OVERVIEW B22 | Lead sửa tay trên Sheet ("chưa chốt nhé") | Kéo về TSV, không ghi lên |
+| OVERVIEW B7, B9, B15, D15, B20, B24 | Sheet còn bản trước đợt 9 | Ghi bản repo lên |
+| OVERVIEW B28 (USP) | Sheet còn USP trước lần viết lại 2, TSV có 2 dòng quá 300 ký tự | Tách dòng trong TSV, ghi lên |
+| ITEM LIST D143 | STY-501 "không phải vật" | "không có ID vật phẩm", khớp `vat-pham.md` |
+| Upgrade D7 | "đòn bẩy thu nhập chính" | "hai nâng cấp chính để tăng thu nhập" |
+| TRACKING I3 | "Bị thay bởi bản 3" | "Bản 3 thay thế" |
+
+Sau khi ghi: `doi-chieu-sheet.mjs` KHỚP 23/23, `kiem-de-doc.mjs` ĐẠT, validate-gdd 0 lỗi. Ghi từng ô bằng connector Google Sheets nên định dạng tab giữ nguyên.
 
 ## Giới hạn
 
