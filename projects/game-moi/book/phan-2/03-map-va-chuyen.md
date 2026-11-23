@@ -10,11 +10,11 @@ Một **chuyến** là một lần ra ngoài rồi về. Chuyến bắt đầu k
 
 ### II.3.2. The Wake and Tiles
 
-Map tổng nhìn ngang. Trạm Ember nằm ngoài lưới ở mép trái, cửa khí mở vào giữa chiều cao map. Đi sang phải là đi xa trạm. Map tổng gồm ba **dải** nối tiếp theo chiều ngang là Gần, Giữa và Xa. Bản MVP chỉ có dải Gần, tên riêng Ember Anchorage, môi trường chân không sạch nên không đòi cấp vỏ bộ đồ.
+Map tổng nhìn ngang. Trạm Ember nằm ngoài lưới ở mép trái, cửa khí mở vào giữa chiều cao map. Đi sang phải là đi xa trạm. Map tổng gồm ba **dải** nối tiếp theo chiều ngang là Vành đai ngoài, Vành đai trong và Vùng trung tâm. Bản MVP chỉ có Vành đai ngoài, tên riêng Ember Anchorage, môi trường chân không sạch nên không đòi cấp vỏ bộ đồ.
 
 Mỗi dải là một lưới **mảnh**, tức khối không gian dựng tay cùng kích thước:
 - Mảnh rộng 40 u, cao 24 u. 1 u bằng chiều cao nhân vật, một mảnh bằng khoảng 2,2 x 2,4 màn hình.
-- Dải cao 3 hàng. Dải Gần có 4 cột, tức 12 ô, chạy từ 0 tới 160 u theo chiều ngang.
+- Dải cao 3 hàng. Vành đai ngoài có 4 cột, tức 12 ô, chạy từ 0 tới 160 u theo chiều ngang.
 - Mỗi cạnh mảnh có một cổng mở rộng 8 u ở giữa cạnh, hoặc đóng. Hai mảnh cạnh nhau chỉ thông khi cả hai cạnh chạm nhau đều mở.
 - Biên trên và biên dưới là tường mảnh vỡ dày. Chạm biên thì dừng lại, không mất Oxy.
 
@@ -28,18 +28,18 @@ Mỗi mảnh thuộc một loại. Loại quyết định vai của mảnh trên
 | Xác lớn | Vật cản lớn có túi khai thác bên trong, che tầm nhìn | 2 | 10 | 1 | 1 | 1 | 20% |
 | Thưởng | Hàng hiếm, rủi ro cao, chỉ ở nửa ngoài dải | 1 | 6, có khe hàng hiếm | 2 | 2 | 0 | 10% |
 
-**Ô cố định** giữ nguyên mảnh qua mọi chuyến. Dải Gần có hai ô cố định:
+**Ô cố định** giữ nguyên mảnh qua mọi chuyến. Vành đai ngoài có hai ô cố định:
 - **Ember Mooring**, ô cột 1 hàng giữa, ngay trước cửa khí. Bốn cạnh đều mở. Ô luôn có 6 khe phế liệu và 1 khe Driftlife hiền có hàng, không hazard, không loài săn mồi. Đây là chỗ an toàn để học bay ở 30 giây đầu game.
 - Ô lối vào Station Cinder, cột 3 hàng trên. Vỏ xác 32 x 16 u nhìn thấy từ Ember Mooring, làm mốc định hướng cho cả dải.
 
-Dải chưa mở bị chặn bằng **Rạn vụn**, dải va chạm cứng dày 8 u nằm ở đầu dải sau, cao suốt chiều cao map. Không dụng cụ nào phá được. Ở MVP người chơi chạm Rạn vụn ở cuối dải Gần thì hiện dòng chưa có đường qua.
+Dải chưa mở bị chặn bằng **Rạn vụn**, dải va chạm cứng dày 8 u nằm ở đầu dải sau, cao suốt chiều cao map. Không dụng cụ nào phá được. Ở MVP người chơi chạm Rạn vụn ở cuối Vành đai ngoài thì hiện dòng chưa có đường qua.
 
-Chi tiết dữ liệu: tab Zone khối Map tổng The Wake và khối Dải Gần, Ember Anchorage.
+Chi tiết dữ liệu: tab Zone khối Map tổng The Wake và khối Vành đai ngoài, Ember Anchorage.
 
 ### II.3.3. Layout Generation
 
-Bố cục dải Gần được sinh lại khi chuyến bắt đầu và giữ nguyên tới hết chuyến. Seed của chuyến lấy từ thế giới, số ngày và số thứ tự chuyến trong ngày, nên nạp lại cùng ngày cùng chuyến thì ra đúng bố cục cũ. Máy sinh bố cục theo thứ tự sau:
-- Kho mảnh MVP của dải Gần có 16 mảnh cho 10 ô ghép, tức 12 ô trừ 2 ô cố định. Đặt ô cố định và Rạn vụn trước.
+Bố cục Vành đai ngoài được sinh lại khi chuyến bắt đầu và giữ nguyên tới hết chuyến. Seed của chuyến lấy từ thế giới, số ngày và số thứ tự chuyến trong ngày, nên nạp lại cùng ngày cùng chuyến thì ra đúng bố cục cũ. Máy sinh bố cục theo thứ tự sau:
+- Kho mảnh MVP của Vành đai ngoài có 16 mảnh cho 10 ô ghép, tức 12 ô trừ 2 ô cố định. Đặt ô cố định và Rạn vụn trước.
 - Chọn **đường chính**, đường đi được từ trạm tới mép ngoài dải mà không cần dụng cụ phá vật cản. Đường chính bắt đầu ở Ember Mooring, đi qua mọi cột từ trái sang phải, trong một cột đổi tối đa 1 hàng và chỉ sang hàng kề.
 - Đặt mảnh cho các ô trên đường chính, cổng khớp hướng đường. Chọn một cặp cột để tạo **vòng**, tức đường thứ hai nối cùng hai cột, rồi điền các ô còn lại bằng mảnh có cổng nối về ô đã nối.
 - Bật khe điểm sinh (mục II.3.4), đặt Recall Beacon (mục II.3.6), rồi kiểm hợp lệ.
@@ -47,7 +47,7 @@ Bố cục dải Gần được sinh lại khi chuyến bắt đầu và giữ n
 
 Bố cục hợp lệ khi đủ các luật sau:
 - Đường chính đi được, dải có vòng, mọi beacon và lối vào map nhánh nối được với đường chính.
-- Một mảnh chỉ xuất hiện một lần trong chuyến. Không hai mảnh Ổ hoặc Thưởng đứng liền nhau trên đường chính. Mảnh có cờ nửa ngoài, gồm mọi mảnh Thưởng, chỉ nằm ở cột 3 và cột 4 của dải Gần.
+- Một mảnh chỉ xuất hiện một lần trong chuyến. Không hai mảnh Ổ hoặc Thưởng đứng liền nhau trên đường chính. Mảnh có cờ nửa ngoài, gồm mọi mảnh Thưởng, chỉ nằm ở cột 3 và cột 4 của Vành đai ngoài.
 - So với chuyến liền trước, số ô trùng không quá 5 trên 10 ô ghép, trùng tính là cùng mảnh ở cùng ô. Beacon không nằm ở ô có beacon của chuyến trước.
 
 Chi tiết dữ liệu: tab Zone khối Map tổng The Wake.
@@ -61,14 +61,14 @@ TiLeBat = TiLeMotNguoi * HeSoNguoi
 HeSoNguoi = 1 + a * (SoNguoi - 1)
 ```
 - TiLeBat: phần khe tài nguyên hoặc khe Driftlife được bật trong chuyến, đơn vị phần trăm, trần 100%.
-- TiLeMotNguoi: tỉ lệ bật khi chơi một người, dải Gần là 40% cho cả hai loại khe. Nguồn tab Zone.
-- HeSoNguoi: hệ số số người, không đơn vị. a là hệ số theo dải, dải Gần là 0,30. Nguồn tab Zone.
+- TiLeMotNguoi: tỉ lệ bật khi chơi một người, Vành đai ngoài là 40% cho cả hai loại khe. Nguồn tab Zone.
+- HeSoNguoi: hệ số số người, không đơn vị. a là hệ số theo dải, Vành đai ngoài là 0,30. Nguồn tab Zone.
 - SoNguoi: số người trong chuyến, đơn vị người.
-- Ví dụ hai người ở dải Gần: HeSoNguoi = 1,30, TiLeBat = 52%.
+- Ví dụ hai người ở Vành đai ngoài: HeSoNguoi = 1,30, TiLeBat = 52%.
 
-Mật độ dải Gần ở bản MVP:
+Mật độ Vành đai ngoài ở bản MVP:
 
-| Chỉ số | Dải Gần |
+| Chỉ số | Vành đai ngoài |
 |---|---|
 | Khe tài nguyên và khe Driftlife được bật, một người | 40% mỗi loại |
 | Khe hàng hiếm, nửa trong và nửa ngoài dải | 5% và 15% |
@@ -82,9 +82,9 @@ Phần thưởng tăng theo rủi ro bằng các luật sau:
 - Node khoan và nạy đặt thành cụm 2 tới 3 node trong bán kính 4 u. Tính cả thời gian bay giữa các node thì nhặt tay cho giá trị mỗi giây bằng 1,04 lần khoan trung bình, hai cách gần ngang nhau.
 - Trọng số trục độ khó của một chuyến, GDM đã duyệt: Oxy bay ra 35%, mật độ đe dọa (Driftlife săn mồi, The Wardens) 30%, phần mảnh có hazard 20%, môi trường 15%.
 
-Khe Driftlife khai báo **điểm neo**, loại chỗ loài đó chịu sinh. Loài có điểm neo chỉ sinh ở khe có điểm neo đó. Ở dải Gần, Driftmoth, Sting Krill và Skitter Ray neo ở mảnh vỡ nhỏ trong mảnh Mở và mảnh Ổ. Arc Eel neo ở xác có điện hoặc cạnh Cáp chập, nằm trong mảnh Xác lớn và mảnh có Cáp chập.
+Khe Driftlife khai báo **điểm neo**, loại chỗ loài đó chịu sinh. Loài có điểm neo chỉ sinh ở khe có điểm neo đó. Ở Vành đai ngoài, Driftmoth, Sting Krill và Skitter Ray neo ở mảnh vỡ nhỏ trong mảnh Mở và mảnh Ổ. Arc Eel neo ở xác có điện hoặc cạnh Cáp chập, nằm trong mảnh Xác lớn và mảnh có Cáp chập.
 
-Chi tiết dữ liệu: tab Zone khối Dải Gần, Ember Anchorage. Cột điểm sinh của từng điểm khai thác ở tab Salvage, điểm sinh từng loài ở tab Enemy.
+Chi tiết dữ liệu: tab Zone khối Vành đai ngoài, Ember Anchorage. Cột điểm sinh của từng điểm khai thác ở tab Salvage, điểm sinh từng loài ở tab Enemy.
 
 ### II.3.5. Hazards
 
@@ -106,7 +106,7 @@ Bản MVP có ba hazard:
 Mảnh trôi cần chỉ báo ở mép màn hình vì nó có thể tới trước khi người chơi kịp thấy:
 - Vùng nhìn tối thiểu là 17,8 x 10 u, nửa chiều ngang là 8,9 u. Tốc độ tương đối lớn nhất là 17 u/s, gồm lướt 15 u/s và trôi 2 u/s. Ở tốc độ đó Mảnh trôi đi hết nửa màn trong 0,52 giây, ngắn hơn báo trước tối thiểu.
 
-Hazard cũng dùng để làm node khó lấy. Ở dải Gần, Hòm kỹ thuật vỡ đặt cạnh Cáp chập, nên muốn lấy hòm người chơi phải canh nhịp tia. Lần đầu gặp mỗi hazard có một dòng gợi ý. Trúng hazard thì nhân vật nháy và bị đẩy ngay trong khung hình đó, thanh Oxy rơi kèm số trừ.
+Hazard cũng dùng để làm node khó lấy. Ở Vành đai ngoài, Hòm kỹ thuật vỡ đặt cạnh Cáp chập, nên muốn lấy hòm người chơi phải canh nhịp tia. Lần đầu gặp mỗi hazard có một dòng gợi ý. Trúng hazard thì nhân vật nháy và bị đẩy ngay trong khung hình đó, thanh Oxy rơi kèm số trừ.
 
 Chi tiết dữ liệu: tab Zone khối Hazard: luật chung và ba khối Hazard Mảnh trôi, Cáp chập, Ống xì.
 
@@ -114,10 +114,10 @@ Chi tiết dữ liệu: tab Zone khối Hazard: luật chung và ba khối Hazar
 
 Chuyến kết thúc với từng người khi người đó bay vào cửa khí, kích beacon xong, hoặc bị kéo về. Chuyến của nhóm kết thúc khi người cuối cùng xong. Số chuyến mỗi ngày ở mục Một ngày.
 
-**Cửa khí** của Ember là lối về luôn có: bay vào là về, không cần giữ phím, túi đồ giữ nguyên. Ở dải Gần trạm đủ gần nên đây là đường về chính.
+**Cửa khí** của Ember là lối về luôn có: bay vào là về, không cần giữ phím, túi đồ giữ nguyên. Ở Vành đai ngoài trạm đủ gần nên đây là đường về chính.
 
 Recall Beacon là lối về thứ hai, đổi chỗ mỗi chuyến:
-- Dải Gần có 1 beacon mỗi chuyến, chỉ đặt ở khe beacon, không đặt ở Ember Mooring, nằm trên hoặc kề đường chính. Mỗi dải có ít nhất một beacon ở nửa ngoài.
+- Vành đai ngoài có 1 beacon mỗi chuyến, chỉ đặt ở khe beacon, không đặt ở Ember Mooring, nằm trên hoặc kề đường chính. Mỗi dải có ít nhất một beacon ở nửa ngoài.
 - Người chơi bay vào trong 30 u quanh beacon thì beacon hiện trên la bàn của cả nhóm tới hết chuyến. Chưa vào bán kính đó thì không thấy, người chơi phải đi dò.
 - Kích beacon: đứng trong 1,5 u, giữ phím Kích Recall 5 giây, trong lúc giữ Oxy vẫn hao. Trúng đòn, thả phím hoặc ra xa quá 2,5 u thì hủy, phải giữ lại từ đầu, thử lại không giới hạn.
 - Kích xong thì người đó về trạm, giữ nguyên túi đồ. Vật đang kéo trong 3 u đi cùng. Beacon dùng nhiều lần trong chuyến. Nhiều người kích cùng một beacon được, mỗi người tính riêng.
@@ -168,7 +168,7 @@ OxyBayRa = KhoangCach / TocDoBay * HeSoDuongVong * HaoNen
 - Ví dụ chương 1: OxyLamViec = 330 * 0,85 - 17 - 17 - 33 = 213 giây. Mỗi chặng bay 17 giây ứng với khoảng 78 u (17 * 6,0 / 1,3), 213 là làm tròn xuống từ 213,5.
 
 Từ đó trần của một chuyến chương 1:
-- Bay ra 17 giây, về 17 giây, làm việc 213 giây, dự trù trúng đòn 33 giây, tổng 280 giây, tức 4,7 phút. Túi đồ chương 1 chứa 80 Khối. Bay thẳng tới mép ngoài dải Gần mất 27 giây, có đường vòng thì 35 giây.
+- Bay ra 17 giây, về 17 giây, làm việc 213 giây, dự trù trúng đòn 33 giây, tổng 280 giây, tức 4,7 phút. Túi đồ chương 1 chứa 80 Khối. Bay thẳng tới mép ngoài Vành đai ngoài mất 27 giây, có đường vòng thì 35 giây.
 
 Thời lượng thật ngắn hơn trần, vì trần chưa tính hao thêm còn sim chuyến có tính:
 - Túi gần đầy: hao nền tăng tới 1,15 lần. Kéo buồng ngủ đông: hao 1,25 lần.
@@ -177,7 +177,7 @@ Thời lượng thật ngắn hơn trần, vì trần chưa tính hao thêm còn
 **Đường áp lực** của một chuyến được giữ bằng chính luật đặt mảnh:
 - Áp lực nhẹ ở Ember Mooring và tăng dần theo cột, vì khe hàng hiếm, mảnh Thưởng và loài săn mồi dày hơn ở nửa ngoài.
 - Sau mỗi mảnh Ổ hoặc Thưởng trên đường chính có mảnh Mở hoặc Xác lớn để người chơi thở.
-- Đi càng xa cửa khí thì đường về càng dài, và dải Gần chỉ có một beacon để rút ngắn.
+- Đi càng xa cửa khí thì đường về càng dài, và Vành đai ngoài chỉ có một beacon để rút ngắn.
 
 Chi tiết dữ liệu: tab Zone khối Ngân sách Oxy một chuyến.
 
@@ -185,7 +185,7 @@ Chi tiết dữ liệu: tab Zone khối Ngân sách Oxy một chuyến.
 
 Map nhánh là khu dựng tay không sinh lại bố cục. Map nhánh giữ trạng thái giữa các chuyến: cửa đã mở, vách đã cắt, boss đã hạ, đường tắt đã mở, vật kể chuyện đã lấy. Tài nguyên và Driftlife thường trong map nhánh vẫn sinh lại mỗi chuyến như map tổng. Vào và ra qua một màn chuyển cảnh ngắn. Khóa trong map nhánh mở bằng dụng cụ, mốc truyện hoặc hạ boss, và một người mở được mọi khóa. Map nhánh dùng môi trường của dải chứa lối vào.
 
-Bản MVP có một map nhánh là **Station Cinder**, xác Seed Station đầu tiên ở dải Gần. Lối vào mở sau mốc truyện Hãm trôi và neo, tức khi khoang neo của trạm Hoạt động (xem mục Trạm và cảng). Nội thất có hai tầng, chia thành các khu:
+Bản MVP có một map nhánh là **Station Cinder**, xác Seed Station đầu tiên ở Vành đai ngoài. Lối vào mở sau mốc truyện Hãm trôi và neo, tức khi khoang neo của trạm Hoạt động (xem mục Trạm và cảng). Nội thất có hai tầng, chia thành các khu:
 
 | Khu | Vị trí | Có gì |
 |---|---|---|
@@ -204,7 +204,7 @@ Người chơi đi Station Cinder trong hai lần:
 | Lần 1 | Không | Cửa khí hỏng, hành lang trục, giếng, khoang ngủ đông trái | Vớt Ingrid, kéo buồng về beacon ở cửa khí hỏng | 90 giây |
 | Lần 2 | Bộ kích nguồn | Cửa khí hỏng, hành lang trục, Cửa khóa nguồn, khoang máy, khoang lái, hành lang trên, khoang ngủ đông phải | Hạ hoặc xua Scrapmaw, vớt Linh, kéo buồng về beacon ở khoang lái | 150 giây, gồm trận boss ước 60 giây |
 
-Bộ kích nguồn là món đầu tiên Ingrid chế ở xưởng, chỉ dùng tài nguyên thô dải Gần. Vì vậy lần đầu dạy kéo buồng và beacon cố định, lần sau mới mở trận boss. Vách giữa khoang máy và khoang lái chỉ mở khi trận boss kết thúc, bằng cách hạ hoặc xua đi, nên muốn tới Linh phải qua trận boss. Cửa phòng boss không khóa. Beacon để rút giữa trận nằm ngoài phòng, cách Cửa khóa nguồn 6 u về phía hành lang trục. Driftlife do boss sinh ra không rời phòng, nên beacon đó luôn kích được. Cơ chế trận boss ở mục Combat.
+Bộ kích nguồn là món đầu tiên Ingrid chế ở xưởng, chỉ dùng tài nguyên thô Vành đai ngoài. Vì vậy lần đầu dạy kéo buồng và beacon cố định, lần sau mới mở trận boss. Vách giữa khoang máy và khoang lái chỉ mở khi trận boss kết thúc, bằng cách hạ hoặc xua đi, nên muốn tới Linh phải qua trận boss. Cửa phòng boss không khóa. Beacon để rút giữa trận nằm ngoài phòng, cách Cửa khóa nguồn 6 u về phía hành lang trục. Driftlife do boss sinh ra không rời phòng, nên beacon đó luôn kích được. Cơ chế trận boss ở mục Combat.
 
 Người vớt nằm trong **buồng ngủ đông**, vật kéo nặng không vào túi. Muốn vớt thì kéo buồng tới beacon hoặc tới cửa ra. Buồng tới trạm thì vào khu hồi sức (xem mục Trạm và cảng). Tốc độ khi kéo và Oxy hao thêm khi kéo ở mục Người chơi.
 
@@ -221,7 +221,7 @@ Chi tiết dữ liệu: tab Zone khối Map nhánh Station Cinder.
 |---|---|---|
 | Camera | Cao 10, rộng 17,8 ở tỉ lệ 16:9 | Mở ngang tới 21:9 |
 | Vỏ ngoài Ember | x từ -40 tới 0, y từ 24 tới 48 | Ngoài lưới. Cửa khí ở (0, 36) |
-| Lưới dải Gần | x từ 0 tới 160, y từ 0 tới 72 | 4 cột x 3 hàng, mỗi ô 40 x 24 |
+| Lưới Vành đai ngoài | x từ 0 tới 160, y từ 0 tới 72 | 4 cột x 3 hàng, mỗi ô 40 x 24 |
 | Ember Mooring | x từ 0 tới 40, y từ 24 tới 48 | Bốn cổng mở |
 | Lối vào Station Cinder | x từ 80 tới 120, y từ 48 tới 72 | Cổng Trái, Phải, Dưới mở, cạnh Trên là biên map. Cửa vào ở cạnh dưới vỏ xác |
 | Rạn vụn | x từ 160 tới 168, y từ 0 tới 72 | Va chạm cứng |
@@ -237,12 +237,12 @@ Chi tiết dữ liệu: tab Zone khối Map nhánh Station Cinder.
 | Khe | Marker điểm sinh | Không | Không |
 | Lối | Cửa khí, beacon, cửa map nhánh | Trigger | Không |
 
-Bố cục dự phòng dải Gần đi đường chính ở hàng giữa:
+Bố cục dự phòng Vành đai ngoài đi đường chính ở hàng giữa:
 
 | Hàng | Cột 1 | Cột 2 | Cột 3 | Cột 4 |
 |---|---|---|---|---|
 | Trên | Hành lang | Xác lớn | Lối vào Station Cinder | Mở, beacon nếu chuyến trước không ở đây |
-| Giữa | Ember Mooring | Hành lang | Xác lớn | Mở |
+| Vành đai trong | Ember Mooring | Hành lang | Xác lớn | Mở |
 | Dưới | Mở | Hành lang | Ổ | Xác lớn, beacon thay thế |
 
 Chi tiết dữ liệu: tab Zone khối Map tổng The Wake và khối Map nhánh Station Cinder.
@@ -266,7 +266,7 @@ Map và chuyến của MVP đạt khi đủ các điều sau:
 
 | Tiêu chí | Mục tiêu | Đo được | Đạt |
 |---|---|---|---|
-| Sinh 1000 chuyến liền nhau dải Gần | 100% hợp lệ, dưới 1% rơi vào bố cục dự phòng | Bản tham chiếu 0,00% rơi dự phòng | Có |
+| Sinh 1000 chuyến liền nhau Vành đai ngoài | 100% hợp lệ, dưới 1% rơi vào bố cục dự phòng | Bản tham chiếu 0,00% rơi dự phòng | Có |
 | Hai chuyến liền nhau | Trùng không quá 5 trên 10 ô ghép, không beacon cùng ô | Lớn nhất 5, trung bình 1,4, beacon trùng 0% | Có |
 | Phút một chuyến chương 1, một người, trung bình | 4 tới 6 phút | 4,4 phút | Có |
 | Bị kéo về, người chơi cẩn thận, chương 1 | Dưới 5% | 1% | Có |
@@ -293,8 +293,8 @@ Chi tiết dữ liệu: tab Zone khối Ngân sách Oxy một chuyến, tab MVP 
 
 ### II.3.z. Post-MVP
 
-- Dải Giữa (Shepherd Belt) và dải Xa (Glass Nebula), mở qua khe trong Rạn vụn, môi trường đòi cấp vỏ bộ đồ và hệ số hao khi thiếu cấp.
+- Vành đai trong (Shepherd Belt) và Vùng trung tâm (Glass Nebula), mở qua khe trong Rạn vụn, môi trường đòi cấp vỏ bộ đồ và hệ số hao khi thiếu cấp.
 - Sáu hazard còn lại: Dòng đá vụn, Băng nứt, Dòng trôi, Bùng tinh vân, Vùng nhiễu, Hàng rào cắt.
-- Khe đơn vị The Wardens ở dải Xa, nhiều Recall Beacon hơn mỗi chuyến ở dải Giữa và dải Xa.
+- Khe đơn vị The Wardens ở Vùng trung tâm, nhiều Recall Beacon hơn mỗi chuyến ở Vành đai trong và Vùng trung tâm.
 - Skiff, xuồng đi thẳng tới lối vào map nhánh đã từng vào. Co-op 3 và 4 người.
 - Bảy map nhánh còn lại: Station Wick, Station Lantern, Veyl Waypost, The Raft, Station Flint, Cradle Interior, Warden Rig, cùng bốn boss của chúng, khu có khí và hộ tống kén của Sevra.

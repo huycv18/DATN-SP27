@@ -132,7 +132,7 @@ Ai ghé bến theo tiến trình truyện `[GIẢ ĐỊNH]`:
 | Mở đầu | Chưa có ai | Cảng hỏng, Ember chưa neo, chưa ai biết trạm còn người. |
 | Sớm | Một dân buôn The Veyl gom phế liệu, đi lẻ | Thấy một trạm người còn sáng đèn giữa bãi vỡ nên tò mò ghé. Là khách quen đầu tiên của Ember. |
 | Sau khi bắt liên lạc với Lantern | Xuồng tiếp tế của Station Lantern | Người với người, đổi nhu yếu phẩm và tin tức về các trạm con khác. |
-| Giữa | Nhiều loài The Veyl từ Veyl Waypost | Tin về Ember lan ra bến. Mỗi loài cần một thứ hàng khác nhau. |
+| Vành đai trong | Nhiều loài The Veyl từ Veyl Waypost | Tin về Ember lan ra bến. Mỗi loài cần một thứ hàng khác nhau. |
 | Giữa về sau | Tàu của The Remainers, và những tàu lạ chưa ai từng thấy | The Remainers nửa buôn nửa dò xét. Tàu lạ là chỗ đặt đề xuất phản diện cải trang bên dưới. |
 | Gần cuối | Số thương nhân thưa dần | The Hollowers lộ mặt, phần lớn dân buôn bỏ bãi vỡ. Vài khách quen vẫn ghé Ember dù sợ, và đó là lúc giờ giao thương có sức nặng cảm xúc. |
 
@@ -170,20 +170,20 @@ Map tổng: The Wake [TẠM], bãi vỡ của Cradle. Đi xa dần từ điểm 
 
 | Dải | Tên | Một dòng |
 |---|---|---|
-| Gần | Ember Anchorage [TẠM] | Quanh điểm neo: mảnh vỡ nhỏ, kim loại, linh kiện, Driftlife nhỏ. Nơi học mọi thứ. |
-| Giữa | Shepherd Belt [TẠM] | Vành đai thiên thạch khoáng và băng mà bãi vỡ trôi vào, Driftlife đi thành đàn. Dấu vết đầu tiên của The Hollowers. |
-| Xa | Glass Nebula [TẠM] | Mây khí phát sáng quanh tâm vụ nổ, nhiễu liên lạc, Driftlife lớn và nguy hiểm, tài nguyên hiếm, tàu thu gom của The Hollowers qua lại. |
+| Vành đai ngoài | Ember Anchorage [TẠM] | Quanh điểm neo: mảnh vỡ nhỏ, kim loại, linh kiện, Driftlife nhỏ. Nơi học mọi thứ. |
+| Vành đai trong | Shepherd Belt [TẠM] | Vành đai thiên thạch khoáng và băng mà bãi vỡ trôi vào, Driftlife đi thành đàn. Dấu vết đầu tiên của The Hollowers. |
+| Vùng trung tâm | Glass Nebula [TẠM] | Mây khí phát sáng quanh tâm vụ nổ, nhiễu liên lạc, Driftlife lớn và nguy hiểm, tài nguyên hiếm, tàu thu gom của The Hollowers qua lại. |
 
 Map nhánh: khu riêng, không sinh lại, vào qua một lối từ map tổng `[GIẢ ĐỊNH]`.
 
 | Nhánh | Vào từ dải | Một dòng |
 |---|---|---|
 | Xác các Seed Station | Gần tới xa | Bên trong trạm con hỏng: bốn buồng ngủ đông, người còn sống để vớt, nhật ký, lõi dẫn đường. |
-| Station Lantern [TẠM] | Giữa | Một trong số ít trạm con còn người sống, thân thiện, điểm ghé để đổi hàng và nghe tin. |
-| Veyl Waypost [TẠM] | Giữa | Bến của thương nhân The Veyl ở rìa bãi vỡ, nhiều loài, không nhận phe. Nơi tiêu Tally mua thứ Ember không tự làm được, và nơi các tàu ghé cảng Ember xuất phát. |
-| The Remainers [TẠM] | Xa | Phe người ghép từ vài trạm con, đã bỏ nhiệm vụ, tin rằng đi tiếp tới Solace là tự sát vì kẻ đánh Cradle vẫn còn đó. |
-| Bên trong Cradle | Xa | Thân chính tàu mẹ ở tâm vụ nổ: buồng lái, kho lưu trữ, hộp ghi hành trình. Nơi lộ sự thật về tọa độ Solace. |
-| Hollower Rig [TẠM] | Xa | Tàu thu hoạch của The Hollowers đang gặm dần bãi vỡ. Chặng đối đầu cuối trước khi Ember rời neo. |
+| Station Lantern [TẠM] | Vành đai trong | Một trong số ít trạm con còn người sống, thân thiện, điểm ghé để đổi hàng và nghe tin. |
+| Veyl Waypost [TẠM] | Vành đai trong | Bến của thương nhân The Veyl ở rìa bãi vỡ, nhiều loài, không nhận phe. Nơi tiêu Tally mua thứ Ember không tự làm được, và nơi các tàu ghé cảng Ember xuất phát. |
+| The Remainers [TẠM] | Vùng trung tâm | Phe người ghép từ vài trạm con, đã bỏ nhiệm vụ, tin rằng đi tiếp tới Solace là tự sát vì kẻ đánh Cradle vẫn còn đó. |
+| Bên trong Cradle | Vùng trung tâm | Thân chính tàu mẹ ở tâm vụ nổ: buồng lái, kho lưu trữ, hộp ghi hành trình. Nơi lộ sự thật về tọa độ Solace. |
+| Hollower Rig [TẠM] | Vùng trung tâm | Tàu thu hoạch của The Hollowers đang gặm dần bãi vỡ. Chặng đối đầu cuối trước khi Ember rời neo. |
 
 Điểm thoát kéo về trạm và cổng tới map nhánh (Lead chốt là có, cơ chế ở bước 4). Lý do trong truyện `[GIẢ ĐỊNH]`:
 
@@ -217,9 +217,9 @@ Lead chốt:
 
 | Chặng | Người chơi tin gì | Manh mối lật | Tìm ở đâu |
 |---|---|---|---|
-| Mở đầu | Tai nạn kỹ thuật | Chưa có | Ember, dải gần |
+| Mở đầu | Tai nạn kỹ thuật | Chưa có | Ember, Vành đai ngoài |
 | Sớm | Không phải tai nạn | Vết phá trên các xác trạm con đi từ ngoài vào, và nhiều xác trạm đã bị cắt lấy đồ từ trước | Xác các Seed Station |
-| Giữa | Có kẻ đánh Cradle để cướp | Cú lật Driftlife: nhà sinh học thấy Driftlife không sinh ra trong chân không. Chúng là sinh vật sống sót từ những thế giới đã bị khoét rỗng, trôi theo sau đội thu hoạch | Phòng nghiên cứu trên Ember, dải giữa |
+| Vành đai trong | Có kẻ đánh Cradle để cướp | Cú lật Driftlife: nhà sinh học thấy Driftlife không sinh ra trong chân không. Chúng là sinh vật sống sót từ những thế giới đã bị khoét rỗng, trôi theo sau đội thu hoạch | Phòng nghiên cứu trên Ember, Vành đai trong |
 | Giữa về sau | Kẻ đó là The Hollowers | Thương nhân The Veyl nhận ra dấu vết nhưng không dám nói thẳng. The Remainers kể điều họ thấy. Một tàu "thương nhân" cập cảng Ember hóa ra là trinh sát của The Hollowers (đề xuất GDM, chưa chốt) | Veyl Waypost, The Remainers, cảng Ember |
 | Gần cuối | Loài người là nạn nhân | Hộp ghi hành trình của Cradle: United Accord đã mua tọa độ Solace từ The Hollowers bằng phần còn lại của Trái Đất | Bên trong Cradle |
 | Cuối | Loài người vừa là nạn nhân vừa tự dẫn sói về | Đối đầu ở Hollower Rig, sửa xong Ember, rời neo | Hollower Rig, Ember |
@@ -245,4 +245,4 @@ Nghiêng về: dùng cả hai. R1 giải thích thái độ của The Veyl trung
 |---|---|---|
 | 1 | Gốc lòng tham của nhân loại trong vụ tai nạn: United Accord mua tọa độ Solace từ chính The Hollowers bằng phần còn lại của Trái Đất, hay đơn giản là hai bên cùng nhắm Solace? | Bản mua tọa độ. Nếu chỉ là cùng nhắm Solace thì loài người thành nạn nhân thuần túy và gốc "lòng tham của nhân loại" Lead đã chốt bị mờ đi. |
 | 2 | Cú lật Driftlife: chúng là sinh vật chạy nạn khỏi The Hollowers (bản này), hay vẫn là nạn nhân của chính Cradle (bản trước)? | Chạy nạn khỏi The Hollowers, tấm gương về Trái Đất nói qua lời nhà sinh học. |
-| 3 | The Hollowers có mặt trong map như mối đe dọa lớn dần (dấu vết ở dải giữa, tàu thu gom ở dải xa, Hollower Rig là nhánh cuối), hay chỉ lộ ra ở cuối truyện? | Có mặt lớn dần. Chạm combat và map, cơ chế quyết ở bước 4. |
+| 3 | The Hollowers có mặt trong map như mối đe dọa lớn dần (dấu vết ở Vành đai trong, tàu thu gom ở Vùng trung tâm, Hollower Rig là nhánh cuối), hay chỉ lộ ra ở cuối truyện? | Có mặt lớn dần. Chạm combat và map, cơ chế quyết ở bước 4. |

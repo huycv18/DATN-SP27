@@ -9,53 +9,53 @@ Số trong file sinh từ `projects/game-moi/sim/ngan_sach_oxy.py` (bảng ở `
 
 | Mã | Loại | Tên | Ghi chú | Nhãn |
 |---|---|---|---|---|
-| Z1 | Dải | Dải Gần, Ember Anchorage | Mở từ đầu chương 1. Môi trường E0 | MVP |
-| Z2 | Dải | Dải Giữa, Shepherd Belt | Mở ở mốc đóng chương 1. Môi trường E1 | Sau MVP |
-| Z3 | Dải | Dải Xa, Glass Nebula | Mở ở mốc đóng chương 2. Môi trường E2 | Sau MVP |
+| Z1 | Dải | Vành đai ngoài, Ember Anchorage | Mở từ đầu chương 1. Môi trường E0 | MVP |
+| Z2 | Dải | Vành đai trong, Shepherd Belt | Mở ở mốc đóng chương 1. Môi trường E1 | Sau MVP |
+| Z3 | Dải | Vùng trung tâm, Glass Nebula | Mở ở mốc đóng chương 2. Môi trường E2 | Sau MVP |
 | E0 | Môi trường | Chân không sạch / Clear Vacuum | Không cần cấp vỏ bộ đồ | MVP |
 | E1 | Môi trường | Lạnh sâu / Deep Cold | Cần vỏ bộ đồ (T-VO) cấp 1 | Sau MVP |
 | E2 | Môi trường | Bức xạ tinh vân / Nebula Radiation | Cần vỏ bộ đồ (T-VO) cấp 2 | Sau MVP |
 | E3 | Môi trường | Lõi rò / Core Leak | Cần vỏ bộ đồ (T-VO) cấp 3. Chỉ trong Cradle Interior và Warden Rig | Sau MVP |
 | R0 | Ranh | Rạn vụn / Shatterline | Dải va chạm dày 8 u ở 8 u đầu cột 1 của dải chưa mở (ranh trong của dải đó). Không phải ô, không tính vào ô cố định | MVP |
-| H01 | Hazard | Mảnh trôi / Drifting Debris | Gần trở đi | MVP |
-| H02 | Hazard | Cáp chập / Live Cable | Gần trở đi, có trong map nhánh | MVP |
-| H03 | Hazard | Ống xì / Vent Jet | Gần trở đi, đẩy người chơi, không trừ Oxy | MVP |
-| H04 | Hazard | Dòng đá vụn / Rubble Stream | Giữa trở đi | Sau MVP |
-| H05 | Hazard | Băng nứt / Cracking Ice | Giữa | Sau MVP |
-| H06 | Hazard | Dòng trôi / Drift Current | Giữa trở đi, đẩy người chơi, không trừ Oxy | Sau MVP |
-| H07 | Hazard | Bùng tinh vân / Glassflare | Xa | Sau MVP |
-| H08 | Hazard | Vùng nhiễu / Dead Air | Xa, tắt la bàn, ping, tín hiệu Recall Beacon | Sau MVP |
-| H09 | Hazard | Hàng rào cắt / Warden Cutline | Xa, công trình tĩnh của The Wardens, từ chương 3 | Sau MVP |
-| N1 | Map nhánh | Station Cinder (xác Seed Station) | Gần, chương 1. Ingrid (Kỹ sư), Linh (Thông dịch viên), boss BS-1 | MVP |
-| N2 | Map nhánh | Station Wick (xác Seed Station) | Giữa, chương 2. Rafa (Hoa tiêu) | Sau MVP |
-| N3 | Map nhánh | Station Lantern (trạm còn người) | Giữa, chương 2. Amara (Nhà sinh học), boss BS-2 | Sau MVP |
-| N4 | Map nhánh | Veyl Waypost | Xa, chương 3 đến 5. Yusuf (Trưởng cảng). Nơi cứu Sevra Ilvane (mốc C3.8) và căn cứ The Hearth của mạng lưới The Kindling (đích hộ tống, mốc C5.1). Không boss | Sau MVP |
-| N5 | Map nhánh | The Raft (nơi ở của The Remainers) | Xa, chương 3. Không boss | Sau MVP |
-| N6 | Map nhánh | Station Flint (xác Seed Station) | Xa, chương 3. Manh mối cú lật Driftlife, boss BS-3 | Sau MVP |
-| N7 | Map nhánh | Cradle Interior | Xa, chương 4. Boss BS-4 | Sau MVP |
-| N8 | Map nhánh | Warden Rig | Xa, chương 5. Nơi Daskel chỉ huy ở bãi vỡ, căn cứ của The Wardens. Boss BS-5 | Sau MVP |
-| A01 | Địa danh | Ember Mooring | Ô cố định cột 1 hàng giữa dải Gần | MVP |
+| H01 | Hazard | Mảnh trôi / Drifting Debris | Vành đai ngoài trở đi | MVP |
+| H02 | Hazard | Cáp chập / Live Cable | Vành đai ngoài trở đi, có trong map nhánh | MVP |
+| H03 | Hazard | Ống xì / Vent Jet | Vành đai ngoài trở đi, đẩy người chơi, không trừ Oxy | MVP |
+| H04 | Hazard | Dòng đá vụn / Rubble Stream | Vành đai trong trở đi | Sau MVP |
+| H05 | Hazard | Băng nứt / Cracking Ice | Vành đai trong | Sau MVP |
+| H06 | Hazard | Dòng trôi / Drift Current | Vành đai trong trở đi, đẩy người chơi, không trừ Oxy | Sau MVP |
+| H07 | Hazard | Bùng tinh vân / Glassflare | Vùng trung tâm | Sau MVP |
+| H08 | Hazard | Vùng nhiễu / Dead Air | Vùng trung tâm, tắt la bàn, ping, tín hiệu Recall Beacon | Sau MVP |
+| H09 | Hazard | Hàng rào cắt / Warden Cutline | Vùng trung tâm, công trình tĩnh của The Wardens, từ chương 3 | Sau MVP |
+| N1 | Map nhánh | Station Cinder (xác Seed Station) | Vành đai ngoài, chương 1. Ingrid (Kỹ sư), Linh (Thông dịch viên), boss BS-1 | MVP |
+| N2 | Map nhánh | Station Wick (xác Seed Station) | Vành đai trong, chương 2. Rafa (Hoa tiêu) | Sau MVP |
+| N3 | Map nhánh | Station Lantern (trạm còn người) | Vành đai trong, chương 2. Amara (Nhà sinh học), boss BS-2 | Sau MVP |
+| N4 | Map nhánh | Veyl Waypost | Vùng trung tâm, chương 3 đến 5. Yusuf (Trưởng cảng). Nơi cứu Sevra Ilvane (mốc C3.8) và căn cứ The Hearth của mạng lưới The Kindling (đích hộ tống, mốc C5.1). Không boss | Sau MVP |
+| N5 | Map nhánh | The Raft (nơi ở của The Remainers) | Vùng trung tâm, chương 3. Không boss | Sau MVP |
+| N6 | Map nhánh | Station Flint (xác Seed Station) | Vùng trung tâm, chương 3. Manh mối cú lật Driftlife, boss BS-3 | Sau MVP |
+| N7 | Map nhánh | Cradle Interior | Vùng trung tâm, chương 4. Boss BS-4 | Sau MVP |
+| N8 | Map nhánh | Warden Rig | Vùng trung tâm, chương 5. Nơi Daskel chỉ huy ở bãi vỡ, căn cứ của The Wardens. Boss BS-5 | Sau MVP |
+| A01 | Địa danh | Ember Mooring | Ô cố định cột 1 hàng giữa Vành đai ngoài | MVP |
 | A02 | Địa danh | Lantern Outer Ring, Lantern Berth, Lantern Core | Ba khu của Station Lantern | Sau MVP |
 | A03 | Địa danh | Waypost Outer Ring, Waypost Concourse, The Hearth | Ba khu của Veyl Waypost. The Hearth là khoang ẩn của The Kindling (tên của gd-story), cửa mở khi kén của Sevra chạm tới | Sau MVP |
 | A04 | Địa danh | Broken Hold, Cryo Deck, Engine Core, Bridge Archive | Bốn khu của Cradle Interior (tên làm việc cũ: Khoang hàng sập, Khu ngủ đông chính, Lõi máy, Buồng lái và kho lưu trữ) | Sau MVP |
 | A05 | Địa danh | Rig Landing, Holding Pens, Command Deck, Data Core | Bốn khu của Warden Rig | Sau MVP |
 | SP-R | Điểm sinh | Tài nguyên | Nhóm theo dải, gd-items cấp | MVP |
 | SP-D | Điểm sinh | Driftlife (đơn, đàn, tổ) | Loài theo dải, gd-combat cấp | MVP |
-| SP-W | Điểm sinh | Đơn vị The Wardens | Xa, từ chương 3, gd-combat cấp | Sau MVP |
+| SP-W | Điểm sinh | Đơn vị The Wardens | Vùng trung tâm, từ chương 3, gd-combat cấp | Sau MVP |
 | SP-H | Điểm sinh | Hazard | gd-world | MVP |
 | SP-B | Điểm sinh | Recall Beacon | gd-world | MVP |
 | SP-L | Điểm sinh | Lối vào map nhánh | Cố định | MVP |
 
 ## Tóm tắt
 
-Hệ thống này dựng toàn bộ không gian ngoài trạm: map tổng The Wake gồm ba dải ghép mới mỗi chuyến từ mảnh dựng tay, tám map nhánh dựng tay cố định giữ truyện, người vớt và boss, cùng hai cách rút ngắn đường (Recall Beacon và Skiff). Hệ thống biến Oxy thành quyết định đi tiếp hay quay về (P1) và đặt nội dung một lần ở chỗ chắc chắn gặp (P4). Tầng: lõi. Ưu tiên: bản đầu cho MVP (dải Gần, Station Cinder), đầy đủ cho cả game. Phụ thuộc: tốc độ bay và bình Oxy của gd-character, loài và boss của gd-combat, nhóm tài nguyên của gd-items, mốc chương của gd-story.
+Hệ thống này dựng toàn bộ không gian ngoài trạm: map tổng The Wake gồm ba dải ghép mới mỗi chuyến từ mảnh dựng tay, tám map nhánh dựng tay cố định giữ truyện, người vớt và boss, cùng hai cách rút ngắn đường (Recall Beacon và Skiff). Hệ thống biến Oxy thành quyết định đi tiếp hay quay về (P1) và đặt nội dung một lần ở chỗ chắc chắn gặp (P4). Tầng: lõi. Ưu tiên: bản đầu cho MVP (Vành đai ngoài, Station Cinder), đầy đủ cho cả game. Phụ thuộc: tốc độ bay và bình Oxy của gd-character, loài và boss của gd-combat, nhóm tài nguyên của gd-items, mốc chương của gd-story.
 
 ## Hiện hành
 
-- Map tổng là một dải ngang: Ember ở mép trái, đi sang phải là đi xa trạm và về phía tâm vụ nổ. Ba dải Gần, Giữa, Xa nối tiếp nhau theo trục ngang.
-- Mỗi dải là lưới mảnh 40 x 24 u, cao 3 hàng. Gần 4 cột, Giữa 6 cột, Xa 8 cột. Mảnh dựng tay, ghép lại mỗi chuyến, một số ô cố định.
+- Map tổng là một dải ngang: Ember ở mép trái, đi sang phải là đi xa trạm và về phía tâm vụ nổ. Ba vùng Vành đai ngoài, Vành đai trong, Vùng trung tâm nối tiếp nhau theo trục ngang.
+- Mỗi dải là lưới mảnh 40 x 24 u, cao 3 hàng. Vành đai ngoài 4 cột, Vành đai trong 6 cột, Vùng trung tâm 8 cột. Mảnh dựng tay, ghép lại mỗi chuyến, một số ô cố định.
 - Dải chưa mở bị chặn bằng Rạn vụn. Dải đã mở mà vỏ bộ đồ thiếu cấp môi trường thì hao nền nhân hệ số thiếu cấp của gd-character (2,5 hoặc 4).
-- Recall Beacon: Gần 1, Giữa 2, Xa 3 mỗi chuyến, giữ phím 5 giây, dùng nhiều lần, ai cũng dùng được.
+- Recall Beacon: Vành đai ngoài 1, Vành đai trong 2, Vùng trung tâm 3 mỗi chuyến, giữ phím 5 giây, dùng nhiều lần, ai cũng dùng được.
 - Skiff mở ở chương 2, đưa cả nhóm tới lối vào một map nhánh đã từng vào, tính là một chuyến, chỉ đi vào map nhánh đó.
 - Map nhánh giữ trạng thái giữa các chuyến (cửa đã mở, boss đã hạ, đường tắt).
 - Thang đã chốt (GDM, log 54): túi bậc 0 đến 4 là 80, 100, 126, 168, 216 Khối, bình là 330, 450, 600, 780, 1000. Giây khai thác mỗi node đã nhân 2 (gd-items). Thời lượng chuyến và tỉ lệ bị kéo về hiện hành ở mục 3.9, chép từ sim bằng script.
@@ -79,22 +79,22 @@ Quyết định người chơi đưa ra trong hệ thống này:
 ### 2.1 Map tổng và mảnh
 
 1. Map tổng The Wake là mặt phẳng 2D nhìn ngang. Trục ngang là khoảng cách tới Ember. Ember nằm ngoài lưới, ở mép trái, cửa khí mở vào giữa chiều cao map. (MVP)
-2. Map tổng gồm ba dải nối tiếp theo trục ngang: Gần, Giữa, Xa. Mỗi dải là một lưới mảnh, số cột theo bảng tham số, cao 3 hàng. (MVP cho Gần)
+2. Map tổng gồm ba dải nối tiếp theo trục ngang: Vành đai ngoài, Vành đai trong, Vùng trung tâm. Mỗi dải là một lưới mảnh, số cột theo bảng tham số, cao 3 hàng. (MVP cho Vành đai ngoài)
 3. Mảnh là khối dựng tay cùng kích thước. Mỗi cạnh của mảnh khai báo một cổng: mở (lỗ rộng bằng tham số cổng mảnh, ở giữa cạnh) hoặc đóng. Hai mảnh cạnh nhau chỉ thông nhau khi cả hai cạnh chạm nhau đều mở. (MVP)
 4. Mỗi mảnh thuộc đúng một dải và một loại: Mở, Hành lang, Ổ, Xác lớn, Thưởng, Cố định. Định nghĩa loại ở bảng 3.3. (MVP)
-5. Ô cố định giữ nguyên mảnh qua mọi chuyến: ô Ember Mooring (cột 1 hàng giữa của Gần, cổng Trái, Phải, Trên, Dưới đều mở) và ô lối vào của mỗi map nhánh (cổng ghi ở mục 6.4). Rạn vụn không phải ô (luật 2.2.2). (MVP)
+5. Ô cố định giữ nguyên mảnh qua mọi chuyến: ô Ember Mooring (cột 1 hàng giữa của Vành đai ngoài, cổng Trái, Phải, Trên, Dưới đều mở) và ô lối vào của mỗi map nhánh (cổng ghi ở mục 6.4). Rạn vụn không phải ô (luật 2.2.2). (MVP)
 6. Bố cục mới được sinh khi chuyến bắt đầu, theo thứ tự xử lý ở 2.9. Seed của chuyến sinh từ thế giới, số ngày và số thứ tự chuyến trong ngày (1 hoặc 2), nên nạp lại cùng ngày cùng chuyến ra đúng bố cục cũ (K23). Trong một chuyến, bố cục không đổi. (MVP)
 7. Trong một chuyến, một mảnh xuất hiện tối đa một lần. Trùng mảnh là cùng một mảnh ở cùng một ô với chuyến liền trước, chỉ tính ô ghép. Số ô trùng không vượt tham số trùng tối đa. (MVP)
-8. Cờ nửa ngoài của mảnh: "Có" là mảnh chỉ đặt ở nửa ngoài của dải (cột lớn hơn nửa số cột, dải Gần là cột 3 và 4), "Không" là mảnh đặt ở mọi cột. Mảnh Thưởng luôn có cờ "Có". (MVP)
+8. Cờ nửa ngoài của mảnh: "Có" là mảnh chỉ đặt ở nửa ngoài của dải (cột lớn hơn nửa số cột, Vành đai ngoài là cột 3 và 4), "Không" là mảnh đặt ở mọi cột. Mảnh Thưởng luôn có cờ "Có". (MVP)
 9. Mỗi dải có đường chính đi được từ ranh trong tới ranh ngoài mà không cần dụng cụ phá vật cản. Mỗi dải có ít nhất một vòng: hai đường khác nhau nối cùng hai cột. (MVP)
 10. Mọi ô lối vào map nhánh, mọi Recall Beacon của chuyến và ô Ember Mooring đều nối được với đường chính. (MVP)
 11. Biên trên và biên dưới của map là ranh vô hình có hình mảnh vỡ dày. Người chơi chạm ranh thì dừng lại, không mất Oxy. (MVP)
 
 ### 2.2 Dải, mở dải và môi trường
 
-1. Dải Gần mở từ đầu game. Dải Giữa mở ở mốc đóng chương 1 (bắt được sóng của Lantern, Thông dịch viên giải ra khe đi qua Rạn vụn). Dải Xa mở ở mốc đóng chương 2 (Hoa tiêu đọc lõi dẫn đường). Mốc do gd-story giữ. (MVP cho Gần, Sau MVP cho Giữa, Xa)
+1. Vành đai ngoài mở từ đầu game. Vành đai trong mở ở mốc đóng chương 1 (bắt được sóng của Lantern, Thông dịch viên giải ra khe đi qua Rạn vụn). Vùng trung tâm mở ở mốc đóng chương 2 (Hoa tiêu đọc lõi dẫn đường). Mốc do gd-story giữ. (MVP cho Vành đai ngoài, Sau MVP cho Vành đai trong, Vùng trung tâm)
 2. Dải chưa mở có Rạn vụn chiếm 8 u đầu cột 1 của dải đó, suốt chiều cao map. Rạn vụn là va chạm cứng, không phá được bằng mọi dụng cụ. Khi dải mở, Rạn vụn mở một khe cao bằng cổng mảnh ở đúng hàng đường chính đi từ dải trước sang (mục 2.9 bước 4), phần còn lại giữ làm cảnh. (MVP)
-3. Mỗi dải có một môi trường: Gần E0, Giữa E1, Xa E2. Môi trường E0 không đòi gì. Môi trường E1, E2, E3 đòi cấp vỏ bộ đồ (trục T-VO của gd-character) bằng số trong mã. (MVP cho E0)
+3. Mỗi dải có một môi trường: Vành đai ngoài E0, Vành đai trong E1, Vùng trung tâm E2. Môi trường E0 không đòi gì. Môi trường E1, E2, E3 đòi cấp vỏ bộ đồ (trục T-VO của gd-character) bằng số trong mã. (MVP cho E0)
 4. Người chơi ở trong dải có môi trường cao hơn cấp vỏ bộ đồ thì hao nền Oxy nhân hệ số thiếu cấp. Hệ số do gd-character giữ (thiếu 1 cấp và thiếu từ 2 cấp). Hệ số tính theo khu người đó đang ở, đổi ngay khi qua ranh dải. (Sau MVP)
 5. Map nhánh dùng môi trường của dải chứa lối vào, trừ khu có khí (luật 2.7.4). Cradle Interior và Warden Rig dùng E3. (Sau MVP)
 6. Tài nguyên và loài Driftlife gắn với dải, không trộn giữa các dải (K5). Mỗi dải có loài và nhóm tài nguyên chỉ dải đó có, danh sách do gd-items và gd-combat giữ. (MVP)
@@ -117,8 +117,8 @@ Chi tiết từng hazard ở bảng 3.5.
 2. Khi sinh chuyến, máy kích hoạt một phần khe SP-R và SP-D theo tỉ lệ kích hoạt của dải nhân hệ số số người k(N). Khe không kích hoạt để trống. (MVP)
 3. Khe SP-R chọn một điểm khai thác (mã SLV của gd-items) trong danh sách của dải theo trọng số do gd-items cấp. Khe SP-D chọn một loài trong danh sách của dải và một kiểu sinh (đơn, đàn, tổ) do gd-combat cấp. (MVP)
 4. Tài nguyên và Driftlife không sinh lại trong cùng chuyến. Đã nhặt, đã bắt, đã hạ thì trống tới chuyến sau (K8 áp ở mức chuyến). (MVP)
-5. Khe SP-R hạng hiếm là khe chỉ cho phép điểm khai thác loại hòm của dải: SLV-104 (Gần), SLV-203 (Giữa), SLV-303 (Xa). Mảnh Thưởng luôn có ít nhất một khe hạng hiếm được kích hoạt, và luôn có ít nhất một SP-H hoặc một SP-D loài săn mồi được kích hoạt. (MVP)
-6. Từ chương 3, dải Xa kích hoạt khe SP-W theo tỉ lệ ở bảng 3.6. Trước chương 3 khe SP-W để trống. (Sau MVP)
+5. Khe SP-R hạng hiếm là khe chỉ cho phép điểm khai thác loại hòm của dải: SLV-104 (Vành đai ngoài), SLV-203 (Vành đai trong), SLV-303 (Vùng trung tâm). Mảnh Thưởng luôn có ít nhất một khe hạng hiếm được kích hoạt, và luôn có ít nhất một SP-H hoặc một SP-D loài săn mồi được kích hoạt. (MVP)
+6. Từ chương 3, Vùng trung tâm kích hoạt khe SP-W theo tỉ lệ ở bảng 3.6. Trước chương 3 khe SP-W để trống. (Sau MVP)
 7. Khe SP-D khai báo điểm neo (không neo, mảnh vỡ nhỏ, xác có điện hoặc cạnh Cáp chập, thiên thạch khoáng, mây khí, xác lớn). Loài có điểm neo trong bảng điểm sinh của gd-combat chỉ sinh ở khe có điểm neo đó. Loài đòi vùng trống hazard (Storm Siphon) chỉ sinh ở khe không có SP-H kích hoạt trong bán kính loài đó đòi. (MVP)
 8. Khe SLV-101 Mảnh vỡ trôi (nhặt tay) chiếm tối đa 25% khe SP-R của một mảnh, hai khe SLV-101 cách nhau ít nhất 2 u. Node khoan và nạy đặt thành cụm 2 đến 3 node trong bán kính 4 u. Với lượng của gd-items (1 lần quay), tính cả thời gian bay thì nhặt tay và khoan gần ngang nhau (bảng cuối mục 3.8). (MVP)
 
@@ -167,7 +167,7 @@ Sơ đồ từng map nhánh ở mục 2.10.
 
 1. Đọc chương, dải đã mở, map nhánh đã mở, số người N, seed của chuyến (từ thế giới, số ngày, số thứ tự chuyến, K23).
 2. Đặt ô cố định (Ember Mooring, ô lối vào map nhánh đã biết) và Rạn vụn ở dải chưa mở.
-3. Mỗi dải: chọn đường chính đi qua mọi cột từ trái sang phải. Trong một cột đường chính đổi tối đa một hàng, và chỉ sang hàng kề (hàng 1 sang 2, hàng 2 sang 1 hoặc 3, hàng 3 sang 2), rồi sang cột kế ở hàng đó. Dải Gần bắt đầu ở ô Ember Mooring.
+3. Mỗi dải: chọn đường chính đi qua mọi cột từ trái sang phải. Trong một cột đường chính đổi tối đa một hàng, và chỉ sang hàng kề (hàng 1 sang 2, hàng 2 sang 1 hoặc 3, hàng 3 sang 2), rồi sang cột kế ở hàng đó. Vành đai ngoài bắt đầu ở ô Ember Mooring.
 4. Hàng đường chính đi vào cột 1 của dải sau bằng hàng đường chính ra khỏi cột cuối của dải trước. Khe Rạn vụn (khi dải sau đã mở) đặt ở hàng đó.
 5. Đặt mảnh cho các ô trên đường chính: cổng phải khớp hướng đường. Áp luật nhịp 2.8.2.
 6. Chọn một cặp cột cho vòng, đặt mảnh ô phụ tạo đường thứ hai.
@@ -195,8 +195,8 @@ Lối vào mỗi map nhánh mở theo mốc truyện (bảng mốc ở `cot-truy
 | N8 Warden Rig | C4.7 |
 
 **N1 Station Cinder (MVP).**
-- Xác Seed Station đầu tiên, dải Gần, chương 1.
-- Ô lối vào cố định ở Gần cột 3 hàng trên, vỏ xác nhìn thấy từ Ember Mooring làm mốc.
+- Xác Seed Station đầu tiên, Vành đai ngoài, chương 1.
+- Ô lối vào cố định ở Vành đai ngoài cột 3 hàng trên, vỏ xác nhìn thấy từ Ember Mooring làm mốc.
 
 | Khu | Vị trí | Có gì |
 |---|---|---|
@@ -205,7 +205,7 @@ Lối vào mỗi map nhánh mở theo mốc truyện (bảng mốc ở `cot-truy
 | C3 Khoang ngủ đông trái | Tầng trên, lên bằng giếng ở đầu trái C2 | Buồng của Ingrid (sống), một buồng tắt (M1), khe M4 nhật ký trạm STY-101 (vật manh mối đầu tiên, lấy được ở lần 1) |
 | C4 Vách sập | Giữa tầng trên | Chặn đường sang C5 từ C3, không phá được |
 | C5 Khoang ngủ đông phải | Tầng trên | Buồng của Linh (sống), một buồng tắt (M2). Chỉ vào được từ C8, tức phải qua phòng boss |
-| D1 Cửa khóa nguồn | Cuối C2 | Mở bằng TOL-401 Bộ kích nguồn: công thức đầu tiên Ingrid chế ở xưởng sau lần 1 (RCP-205, chỉ dùng tài nguyên thô dải Gần). Nhóm đã có thì ai chạm cửa cũng mở |
+| D1 Cửa khóa nguồn | Cuối C2 | Mở bằng TOL-401 Bộ kích nguồn: công thức đầu tiên Ingrid chế ở xưởng sau lần 1 (RCP-205, chỉ dùng tài nguyên thô Vành đai ngoài). Nhóm đã có thì ai chạm cửa cũng mở |
 | C6 Khoang máy | Tầng dưới, sau D1 | Lõi năng lượng, tổ của boss BS-1 Scrapmaw (3 điểm neo xúc tu trên tường), hai Cáp chập |
 | C7 Khoang lái | Đầu phải, hai tầng | khe M3 (manh mối MM1.2 của gd-story), khe vật nhiệm vụ V1 (STY-102 mảnh lõi dẫn đường), beacon B2 mở sau khi xong boss |
 | C8 Hành lang trên | Tầng trên, từ C7 sang C5 | Đường duy nhất tới buồng của Linh |
@@ -222,13 +222,13 @@ Các map nhánh sau MVP (sơ đồ chi tiết làm ở đợt dựng chương t�
 
 | Nhánh | Dải, chương | Khu | Khóa và chìa | Người vớt | Boss | Khe manh mối | Thời lượng mỗi chuyến (giây) |
 |---|---|---|---|---|---|---|---|
-| N2 Station Wick | Giữa, 2 | Cửa khí, hành lang băng phủ (Băng nứt), khoang ngủ đông, khoang lái. Chung bộ nội thất với Cinder, đổi bố trí và hư hại | Khoang ngủ đông mất điện, mở bằng Bộ kích nguồn (dụng cụ cũ dùng lại) | Rafa (Hoa tiêu) | Không | M1, M2, M3 ở khoang ngủ đông (M3 là thẻ tên STY-601), V1 ở khoang lái (STY-103) | 150 |
-| N3 Station Lantern | Giữa, 2 | Lantern Outer Ring gồm Lantern Berth (chân không, đấu boss giữa các kiện hàng trôi), Lantern Core (khu có khí: Odile, Bram, Amara, chợ đổi tin) | Cửa cập chỉ mở sau khi đuổi BS-2 lần đầu (chìa là hạ boss). Sau đó là điểm ghé | Amara (Nhà sinh học) | BS-2 Tempest Gulper | M1, M2 ở Lantern Core | 180 lần đầu, 60 các lần ghé sau |
-| N4 Veyl Waypost | Xa, 3 đến 5 (ô lối vào cố định ở Xa cột 1) | Waypost Outer Ring (chân không, nơi tàu TA04 của Ilsume bị toán của Maro áp mạn ở C3.8), Waypost Concourse có khí (thương nhân, Yusuf đang làm ở bến), The Hearth (khoang ẩn có khí của The Kindling, sâu trong Waypost, cửa mở khi kén của Sevra chạm tới). Đường hộ tống từ cửa N4 tới cửa The Hearth dài khoảng 120 u, qua hai đoạn phong tỏa, beacon cố định ở khoảng 40 u và 90 u (ước, chốt khi dựng greybox) | Cứu Sevra (C3.8): sự kiện áp mạn tàu TA04 ở Waypost Outer Ring chỉ sinh khi mốc C3.7 đã xong và giai đoạn 3 của động cơ đã lắp (K25). Hạ toán của Maro, kéo kén về Ember bằng beacon hoặc cửa khí. Hộ tống (C5.1, luật 2.7.9): Skiff chở kén tới cửa N4, kéo kén qua vòng phong tỏa của The Wardens (Hàng rào cắt và đơn vị The Wardens) tới cửa The Hearth. Yusuf về Ember bằng mốc C3.2 | Yusuf (Trưởng cảng), còn thức. Sevra Ilvane trong kén thoát hiểm (không phải người vớt mở tính năng) | Không boss. Toán của Maro (gd-combat) | M1, M2 | 150 lần thường, 180 lúc cứu Sevra, 210 lúc hộ tống |
-| N5 The Raft | Xa, 3 | Cụm trạm con ghép của The Remainers, phần lớn có khí. Một khu ngoài có Hàng rào cắt cũ để dạy phá máy phát | Mốc truyện gặp Elias | Không | Không | M1 (Elias, Wren) | 120 |
-| N6 Station Flint | Xa, 3 | Xác Seed Station chung bộ nội thất, khoang nghiên cứu, khoang hàng bị The Wardens biến thành trạm thu (Driftlife bị giữ, đấu trường boss) | Khoang nghiên cứu mở sau khi hạ BS-3 | Không | BS-3 Warden Reaper | M1 nhật ký Flint, M2 manh mối lõi dẫn đường STY-104, V1 mẫu STY-301 ở khoang nghiên cứu (mở sau BS-3) | 210 |
-| N7 Cradle Interior | Xa, 4 | Bốn khu nối tiếp: Broken Hold, Cryo Deck, Engine Core, Bridge Archive (hộp ghi hành trình lộ ra Solace là thông tin mồi). Mỗi khu xong mở đường tắt về cửa vào và một beacon cố định | Vách thân tàu mở bằng TOL-402 Máy cắt thân tàu (bản thiết kế BPR-105 ở hòm cố định của Station Flint hoặc Shop) | Không | BS-4 Cradle Custodian ở Engine Core | M1 ở Broken Hold (STY-411), M2 ở Cryo Deck (STY-412), M3 ở Engine Core (STY-105). Khu cuối có M4 bản gốc Lodestar Survey và V1 hộp ghi hành trình STY-401. Mang hộp về trạm là mốc C4.5 của gd-story | 240, đi trọn trong 3 đến 4 chuyến |
-| N8 Warden Rig | Xa, 5 (chỉ vào bằng Skiff) | Rig Landing (Hàng rào cắt, đơn vị The Wardens), Holding Pens (thả để chúng đánh lại The Wardens), Command Deck (đấu boss), Data Core sau Command Deck (bản đồ sao thật và lệnh phục kích Cradle mang dấu Daskel). Nơi Daskel chỉ huy ở bãi vỡ, đánh khi cách mạng nổ ra | Vào Warden Rig: mốc đóng chương 4. Data Core: mở sau khi hạ BS-5 | Không | BS-5 (gd-combat đặt tên Daskel) | V1 bản đồ sao thật STY-501, M1 lệnh phục kích Cradle mang dấu Daskel STY-502, cả hai ở Data Core | 300, hai beacon cố định giữa các khu để chia trận cuối nhiều chuyến |
+| N2 Station Wick | Vành đai trong, 2 | Cửa khí, hành lang băng phủ (Băng nứt), khoang ngủ đông, khoang lái. Chung bộ nội thất với Cinder, đổi bố trí và hư hại | Khoang ngủ đông mất điện, mở bằng Bộ kích nguồn (dụng cụ cũ dùng lại) | Rafa (Hoa tiêu) | Không | M1, M2, M3 ở khoang ngủ đông (M3 là thẻ tên STY-601), V1 ở khoang lái (STY-103) | 150 |
+| N3 Station Lantern | Vành đai trong, 2 | Lantern Outer Ring gồm Lantern Berth (chân không, đấu boss giữa các kiện hàng trôi), Lantern Core (khu có khí: Odile, Bram, Amara, chợ đổi tin) | Cửa cập chỉ mở sau khi đuổi BS-2 lần đầu (chìa là hạ boss). Sau đó là điểm ghé | Amara (Nhà sinh học) | BS-2 Tempest Gulper | M1, M2 ở Lantern Core | 180 lần đầu, 60 các lần ghé sau |
+| N4 Veyl Waypost | Vùng trung tâm, 3 đến 5 (ô lối vào cố định ở Vùng trung tâm cột 1) | Waypost Outer Ring (chân không, nơi tàu TA04 của Ilsume bị toán của Maro áp mạn ở C3.8), Waypost Concourse có khí (thương nhân, Yusuf đang làm ở bến), The Hearth (khoang ẩn có khí của The Kindling, sâu trong Waypost, cửa mở khi kén của Sevra chạm tới). Đường hộ tống từ cửa N4 tới cửa The Hearth dài khoảng 120 u, qua hai đoạn phong tỏa, beacon cố định ở khoảng 40 u và 90 u (ước, chốt khi dựng greybox) | Cứu Sevra (C3.8): sự kiện áp mạn tàu TA04 ở Waypost Outer Ring chỉ sinh khi mốc C3.7 đã xong và giai đoạn 3 của động cơ đã lắp (K25). Hạ toán của Maro, kéo kén về Ember bằng beacon hoặc cửa khí. Hộ tống (C5.1, luật 2.7.9): Skiff chở kén tới cửa N4, kéo kén qua vòng phong tỏa của The Wardens (Hàng rào cắt và đơn vị The Wardens) tới cửa The Hearth. Yusuf về Ember bằng mốc C3.2 | Yusuf (Trưởng cảng), còn thức. Sevra Ilvane trong kén thoát hiểm (không phải người vớt mở tính năng) | Không boss. Toán của Maro (gd-combat) | M1, M2 | 150 lần thường, 180 lúc cứu Sevra, 210 lúc hộ tống |
+| N5 The Raft | Vùng trung tâm, 3 | Cụm trạm con ghép của The Remainers, phần lớn có khí. Một khu ngoài có Hàng rào cắt cũ để dạy phá máy phát | Mốc truyện gặp Elias | Không | Không | M1 (Elias, Wren) | 120 |
+| N6 Station Flint | Vùng trung tâm, 3 | Xác Seed Station chung bộ nội thất, khoang nghiên cứu, khoang hàng bị The Wardens biến thành trạm thu (Driftlife bị giữ, đấu trường boss) | Khoang nghiên cứu mở sau khi hạ BS-3 | Không | BS-3 Warden Reaper | M1 nhật ký Flint, M2 manh mối lõi dẫn đường STY-104, V1 mẫu STY-301 ở khoang nghiên cứu (mở sau BS-3) | 210 |
+| N7 Cradle Interior | Vùng trung tâm, 4 | Bốn khu nối tiếp: Broken Hold, Cryo Deck, Engine Core, Bridge Archive (hộp ghi hành trình lộ ra Solace là thông tin mồi). Mỗi khu xong mở đường tắt về cửa vào và một beacon cố định | Vách thân tàu mở bằng TOL-402 Máy cắt thân tàu (bản thiết kế BPR-105 ở hòm cố định của Station Flint hoặc Shop) | Không | BS-4 Cradle Custodian ở Engine Core | M1 ở Broken Hold (STY-411), M2 ở Cryo Deck (STY-412), M3 ở Engine Core (STY-105). Khu cuối có M4 bản gốc Lodestar Survey và V1 hộp ghi hành trình STY-401. Mang hộp về trạm là mốc C4.5 của gd-story | 240, đi trọn trong 3 đến 4 chuyến |
+| N8 Warden Rig | Vùng trung tâm, 5 (chỉ vào bằng Skiff) | Rig Landing (Hàng rào cắt, đơn vị The Wardens), Holding Pens (thả để chúng đánh lại The Wardens), Command Deck (đấu boss), Data Core sau Command Deck (bản đồ sao thật và lệnh phục kích Cradle mang dấu Daskel). Nơi Daskel chỉ huy ở bãi vỡ, đánh khi cách mạng nổ ra | Vào Warden Rig: mốc đóng chương 4. Data Core: mở sau khi hạ BS-5 | Không | BS-5 (gd-combat đặt tên Daskel) | V1 bản đồ sao thật STY-501, M1 lệnh phục kích Cradle mang dấu Daskel STY-502, cả hai ở Data Core | 300, hai beacon cố định giữa các khu để chia trận cuối nhiều chuyến |
 
 
 Phòng boss (kích thước theo thời lượng trận ước, cơ chế do gd-combat giữ):
@@ -264,7 +264,7 @@ Hòm và vật kể chuyện trong map nhánh (hòm là điểm khai thác SLV c
 | Hệ số đường vòng | 1,3 | 1,2 đến 1,5 | Bay ra tốn Oxy hơn | Map thẳng, ít vòng | Ngân sách Oxy | ước |
 | Kích thước mảnh | 40 x 24 u | rộng 32 đến 48 | Ít mảnh hơn mỗi dải, ít đa dạng | Nhiều mối nối, dễ vụn | Kho mảnh, greybox | ước |
 | Số hàng mỗi dải | 3 | 2 đến 4 | Dải rộng, khó lạc đường chính | Dải thành hành lang | Mọi dải | ước |
-| Số cột Gần, Giữa, Xa | 4, 6, 8 | ±1 mỗi dải | Dải dài, bay ra tốn Oxy | Thời lượng làm việc tăng | Ngân sách Oxy | ước |
+| Số cột Vành đai ngoài, Vành đai trong, Vùng trung tâm | 4, 6, 8 | ±1 mỗi dải | Dải dài, bay ra tốn Oxy | Thời lượng làm việc tăng | Ngân sách Oxy | ước |
 | Ranh dải (u) | 160, 400, 720 | theo số cột | | | Ngân sách Oxy | sinh từ số cột |
 | Cổng mảnh | 8 u | 6 đến 10 | Đi qua dễ, mảnh ít kín | Va chạm nhiều ở mối nối | Greybox | ước |
 | Khe hở tối thiểu | 3 u | 3 đến 4 | Dễ bay | Chật, hay va | Greybox | ước, nhân vật cao 1 u |
@@ -277,7 +277,7 @@ Hòm và vật kể chuyện trong map nhánh (hòm là điểm khai thác SLV c
 | Hao nền | 1 điểm/giây | cố định | | | Mọi chuyến | gd-character (1 điểm bằng 1 giây hao nền). Bảng trần dưới đây không tính hao thêm khi túi gần đầy (tới 1,15 lần) và khi kéo buồng (1,25 lần). Sim chuyến có tính |
 | Bình Oxy bậc 0 đến 4 | 330, 450, 600, 780, 1000 | GDM chốt (log 54) | Chuyến dài hơn | Chuyến ngắn hơn | Thời lượng chuyến cuối game | gd-character giữ trục, GDM chốt |
 | Túi bậc 0 đến 4 (Khối) | 80, 100, 126, 168, 216 | GDM chốt (log 54) | Oxy thành giới hạn sớm hơn | Túi đầy sớm, chuyến ngắn | Thời lượng chuyến đầu game | gd-character giữ trục, GDM chốt |
-| Hệ số thiếu cấp môi trường | 2,5 khi thiếu 1 cấp, 4,0 khi thiếu từ 2 cấp | theo gd-character | Cổng mềm thành tường | Người chơi bỏ qua nâng vỏ bộ đồ | Giữa, Xa, Cradle, Warden Rig | gd-character |
+| Hệ số thiếu cấp môi trường | 2,5 khi thiếu 1 cấp, 4,0 khi thiếu từ 2 cấp | theo gd-character | Cổng mềm thành tường | Người chơi bỏ qua nâng vỏ bộ đồ | Vành đai trong, Vùng trung tâm, Cradle, Warden Rig | gd-character |
 | Dự trù quay về trong phép tính | 15% bình | 10 đến 20% | Phép tính cho chuyến ngắn hơn | Phép tính cho nhiều chuyến ngạt hơn | Chỉ phép tính ngân sách và sim | ước. Giả định hành vi người chơi trong phép tính, HUD dùng vạch đủ về của gd-character |
 | Dự trù trúng đòn trong phép tính | 10% bình | 5 đến 15% | | | Phép tính ngân sách | ước |
 | Mục tiêu chuyến chương 1, chương 5 | 4 đến 6 phút, 10 đến 12 phút | | | | Khung mục 9 | khung |
@@ -286,28 +286,28 @@ Trần Oxy của một chuyến theo chương (sinh bởi script, đủ cấp m�
 
 | Chương | Bậc bình | Bậc bộ đẩy | Oxy | Túi | Dải | Bay ra | Về | Làm việc | Dự trù đòn | Tổng chuyến (giây) | Tổng (phút) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | 0 | 0 | 330 | 80 | Gần | 17 | 17 | 213 | 33 | 280 | 4,7 |
-| 2 | 1 | 1 | 450 | 100 | Giữa | 56 | 24 | 257 | 45 | 382 | 6,4 |
-| 3 | 2 | 2 | 600 | 126 | Xa | 89 | 24 | 336 | 60 | 510 | 8,5 |
-| 4 | 3 | 3 | 780 | 168 | Xa | 97 | 24 | 463 | 78 | 663 | 11,1 |
-| 5 | 4 | 3 | 1000 | 216 | Xa | 111 | 24 | 615 | 100 | 850 | 14,2 |
+| 1 | 0 | 0 | 330 | 80 | Vành đai ngoài | 17 | 17 | 213 | 33 | 280 | 4,7 |
+| 2 | 1 | 1 | 450 | 100 | Vành đai trong | 56 | 24 | 257 | 45 | 382 | 6,4 |
+| 3 | 2 | 2 | 600 | 126 | Vùng trung tâm | 89 | 24 | 336 | 60 | 510 | 8,5 |
+| 4 | 3 | 3 | 780 | 168 | Vùng trung tâm | 97 | 24 | 463 | 78 | 663 | 11,1 |
+| 5 | 4 | 3 | 1000 | 216 | Vùng trung tâm | 111 | 24 | 615 | 100 | 850 | 14,2 |
 
-Về bằng beacon tính bằng thời gian bay tới beacon gần nhất đã thấy cộng thời gian giữ phím. Chương 1 về bằng cửa khí vì Gần gần trạm.
+Về bằng beacon tính bằng thời gian bay tới beacon gần nhất đã thấy cộng thời gian giữ phím. Chương 1 về bằng cửa khí vì Vành đai ngoài gần trạm.
 
 Thiếu cấp môi trường (vào dải mới khi vỏ bộ đồ chưa nâng):
 
 | Chương | Dải | Làm việc đủ cấp | Làm việc thiếu 1 cấp | Còn lại |
 |---|---|---|---|---|
-| 2 | Giữa | 257 | 74 | 29% |
-| 3 | Xa | 336 | 111 | 33% |
+| 2 | Vành đai trong | 257 | 74 | 29% |
+| 3 | Vùng trung tâm | 336 | 111 | 33% |
 
 Ranh dải theo giây bay:
 
 | Dải | Từ (u) | Tới (u) | Giây bay thẳng tới ranh ngoài | Giây bay có đường vòng |
 |---|---|---|---|---|
-| Gần | 0 | 160 | 27 | 35 |
-| Giữa | 160 | 400 | 67 | 87 |
-| Xa | 400 | 720 | 120 | 156 |
+| Vành đai ngoài | 0 | 160 | 27 | 35 |
+| Vành đai trong | 160 | 400 | 67 | 87 |
+| Vùng trung tâm | 400 | 720 | 120 | 156 |
 
 - Công thức: Oxy làm việc = Bình x (1 trừ Dự trù quay về) trừ Oxy bay ra trừ Oxy về trừ Bình x Dự trù trúng đòn. Oxy bay ra = (khoảng cách tới điểm làm việc chia Tốc độ bay đều) x Hệ số đường vòng x Hao nền, phần nằm trong dải thiếu cấp nhân thêm Hệ số thiếu cấp. Ví dụ chương 1: 330 x 0,85 trừ 17 trừ 17 trừ 33 = 213 giây làm việc.
 
@@ -325,7 +325,7 @@ Núm gap: Hệ số đường vòng và Dự trù quay về là hai núm nối s
 | Cố định | Ember Mooring, lối vào map nhánh, Rạn vụn | theo thiết kế | theo thiết kế | theo thiết kế | 0 | 0 | ngoài kho |
 
 
-Điểm khai thác (mã SLV của gd-items) theo loại mảnh, dải Gần (MVP):
+Điểm khai thác (mã SLV của gd-items) theo loại mảnh, Vành đai ngoài (MVP):
 
 | Loại mảnh | SLV cho phép | Ghi chú |
 |---|---|---|
@@ -335,9 +335,9 @@ Núm gap: Hệ số đường vòng và Dự trù quay về là hai núm nối s
 | Xác lớn | SLV-104, SLV-105 Tấm vỏ lớn | SLV-105 chỉ có ở Xác lớn. Cạnh H02 là điểm neo của Arc Eel |
 | Thưởng | Mọi SLV của dải, có hạng hiếm | |
 
-Điểm khai thác dải Giữa và Xa (Sau MVP):
+Điểm khai thác Vành đai trong và Vùng trung tâm (Sau MVP):
 
-| Loại mảnh | Giữa | Xa |
+| Loại mảnh | Vành đai trong | Vùng trung tâm |
 |---|---|---|
 | Mở | SLV-201 Mạch quặng cobalt, SLV-202 Khối băng tinh | SLV-301 Mạch kính nebula, SLV-302 Túi khí plasma đông |
 | Hành lang | SLV-204 Tấm hợp kim trôi | SLV-301 |
@@ -346,17 +346,17 @@ Núm gap: Hệ số đường vòng và Dự trù quay về là hai núm nối s
 | Thưởng | Mọi SLV của dải, có hạng hiếm | Mọi SLV của dải, có hạng hiếm |
 
 Hazard làm node khó lấy:
-- Gần: Cáp chập cạnh SLV-104 Hòm kỹ thuật vỡ.
-- Giữa: Băng nứt là phản ứng của SLV-202 Khối băng tinh khi khoan mạnh. Dòng đá vụn chạy ngang qua SLV-201 Mạch quặng cobalt.
-- Xa: Bùng tinh vân đặt cạnh SLV-302 Túi khí plasma đông. Hàng rào cắt chắn trước SLV-303 Hòm Warden.
+- Vành đai ngoài: Cáp chập cạnh SLV-104 Hòm kỹ thuật vỡ.
+- Vành đai trong: Băng nứt là phản ứng của SLV-202 Khối băng tinh khi khoan mạnh. Dòng đá vụn chạy ngang qua SLV-201 Mạch quặng cobalt.
+- Vùng trung tâm: Bùng tinh vân đặt cạnh SLV-302 Túi khí plasma đông. Hàng rào cắt chắn trước SLV-303 Hòm Warden.
 
 ### 3.4 Kho mảnh và ô cố định
 
 | Dải | Số ô | Ô cố định | Ô ghép | Kho mảnh MVP | Kho mảnh đủ | Tỉ lệ kho trên ô ghép (đủ) |
 |---|---|---|---|---|---|---|
-| Gần | 12 | 2 (Ember Mooring, lối vào Cinder) | 10 | 16 | 22 | 2,2 |
-| Giữa | 18 | 2 (lối vào Wick, Lantern) | 16 | không có | 32 | 2,0 |
-| Xa | 24 | 4 (lối vào Waypost, Raft, Flint, Cradle) | 20 | không có | 40 | 2,0 |
+| Vành đai ngoài | 12 | 2 (Ember Mooring, lối vào Cinder) | 10 | 16 | 22 | 2,2 |
+| Vành đai trong | 18 | 2 (lối vào Wick, Lantern) | 16 | không có | 32 | 2,0 |
+| Vùng trung tâm | 24 | 4 (lối vào Waypost, Raft, Flint, Cradle) | 20 | không có | 40 | 2,0 |
 
 | Tên | Khởi điểm | Khoảng an toàn | Tăng thì | Giảm thì | Nguồn |
 |---|---|---|---|---|---|
@@ -369,15 +369,15 @@ Hazard làm node khó lấy:
 
 | Mã | Tên | Loại | Tác động | Báo trước | Chu kỳ | Cách né | Dải, chương | Nhãn |
 |---|---|---|---|---|---|---|---|---|
-| H01 | Mảnh trôi | Động | Khối tròn bán kính va chạm 1 u, trôi thẳng hết chiều ngang hoặc chiều dọc của mảnh rồi sinh lại ở đầu đường. Va trúng trừ 8 Oxy, đẩy 4 u/s | Vệt bụi phía trước 1,5 giây. Ngoài màn: chỉ báo ở mép 1 giây trước khi vào | Trôi 2 u/s | Tránh đường đi, nấp sau Xác lớn | Gần trở đi | MVP |
-| H02 | Cáp chập | Tĩnh theo nhịp | Tia thẳng giữa hai đầu cáp, dài 4 đến 8 u, rộng 0,5 u. Một lần phóng trúng mỗi người tối đa một lần: trừ 12 Oxy, choáng 0,5 giây | Tia lửa nhỏ 1 giây | Phóng 1,5 giây mỗi 5 giây | Đi qua lúc tắt | Gần trở đi, map nhánh | MVP |
-| H03 | Ống xì | Đẩy | Luồng hình chữ nhật dài 12 u, rộng 3 u, hướng khai báo ở marker SP-H (8 hướng). Đẩy 6 u/s, không trừ Oxy | Hơi trắng 1 giây | Xì 3 giây, nghỉ 3 giây | Đi xuôi để tăng tốc hoặc đợi nghỉ | Gần trở đi | MVP |
-| H04 | Dòng đá vụn | Động theo làn | Làn rộng 6 u, đá bay 10 u/s, mỗi viên trừ 10 Oxy | Chỉ báo ở mép màn hình (vạch đỏ theo làn, tiếng rền) 2 giây trước đợt, kể cả khi làn còn ngoài màn | Đợt 4 giây, nghỉ 6 giây | Ra khỏi làn, nấp | Giữa trở đi | Sau MVP |
-| H05 | Băng nứt | Phản ứng | Khai thác hoặc va mạnh thì vỡ, 6 mảnh văng, mỗi mảnh trừ 6 Oxy | Vết nứt sáng 1,5 giây | Một lần | Lùi xa khi thấy nứt | Giữa | Sau MVP |
-| H06 | Dòng trôi | Đẩy | Vùng lực 3 u/s một hướng, không trừ Oxy | Hạt bụi chảy thành dòng | Luôn bật | Bay xuôi để tiết kiệm Oxy | Giữa trở đi | Sau MVP |
-| H07 | Bùng tinh vân | Nổ | Bán kính 5 u, trừ 20 Oxy, đẩy 8 u/s | Sáng dần 2 giây. Túi khí cách mép màn dưới 5 u thì chỉ báo ở mép cùng lúc | Mỗi 8 giây | Ra khỏi bán kính | Xa | Sau MVP |
-| H08 | Vùng nhiễu | Môi trường cục bộ | Tắt la bàn, ping, tín hiệu beacon. Không trừ Oxy | Màn hình nhiễu ở mép | Luôn bật, bán kính 15 đến 25 u | Nhớ đường, ra khỏi vùng | Xa | Sau MVP |
-| H09 | Hàng rào cắt | Tĩnh theo nhịp | Tia giữa hai cột, trừ 25 Oxy, đẩy mạnh. Máy phát 60 máu (một người) | Tia mờ 1 giây | Bật 3 giây, tắt 2 giây | Đi qua lúc tắt hoặc phá máy phát | Xa từ chương 3 | Sau MVP |
+| H01 | Mảnh trôi | Động | Khối tròn bán kính va chạm 1 u, trôi thẳng hết chiều ngang hoặc chiều dọc của mảnh rồi sinh lại ở đầu đường. Va trúng trừ 8 Oxy, đẩy 4 u/s | Vệt bụi phía trước 1,5 giây. Ngoài màn: chỉ báo ở mép 1 giây trước khi vào | Trôi 2 u/s | Tránh đường đi, nấp sau Xác lớn | Vành đai ngoài trở đi | MVP |
+| H02 | Cáp chập | Tĩnh theo nhịp | Tia thẳng giữa hai đầu cáp, dài 4 đến 8 u, rộng 0,5 u. Một lần phóng trúng mỗi người tối đa một lần: trừ 12 Oxy, choáng 0,5 giây | Tia lửa nhỏ 1 giây | Phóng 1,5 giây mỗi 5 giây | Đi qua lúc tắt | Vành đai ngoài trở đi, map nhánh | MVP |
+| H03 | Ống xì | Đẩy | Luồng hình chữ nhật dài 12 u, rộng 3 u, hướng khai báo ở marker SP-H (8 hướng). Đẩy 6 u/s, không trừ Oxy | Hơi trắng 1 giây | Xì 3 giây, nghỉ 3 giây | Đi xuôi để tăng tốc hoặc đợi nghỉ | Vành đai ngoài trở đi | MVP |
+| H04 | Dòng đá vụn | Động theo làn | Làn rộng 6 u, đá bay 10 u/s, mỗi viên trừ 10 Oxy | Chỉ báo ở mép màn hình (vạch đỏ theo làn, tiếng rền) 2 giây trước đợt, kể cả khi làn còn ngoài màn | Đợt 4 giây, nghỉ 6 giây | Ra khỏi làn, nấp | Vành đai trong trở đi | Sau MVP |
+| H05 | Băng nứt | Phản ứng | Khai thác hoặc va mạnh thì vỡ, 6 mảnh văng, mỗi mảnh trừ 6 Oxy | Vết nứt sáng 1,5 giây | Một lần | Lùi xa khi thấy nứt | Vành đai trong | Sau MVP |
+| H06 | Dòng trôi | Đẩy | Vùng lực 3 u/s một hướng, không trừ Oxy | Hạt bụi chảy thành dòng | Luôn bật | Bay xuôi để tiết kiệm Oxy | Vành đai trong trở đi | Sau MVP |
+| H07 | Bùng tinh vân | Nổ | Bán kính 5 u, trừ 20 Oxy, đẩy 8 u/s | Sáng dần 2 giây. Túi khí cách mép màn dưới 5 u thì chỉ báo ở mép cùng lúc | Mỗi 8 giây | Ra khỏi bán kính | Vùng trung tâm | Sau MVP |
+| H08 | Vùng nhiễu | Môi trường cục bộ | Tắt la bàn, ping, tín hiệu beacon. Không trừ Oxy | Màn hình nhiễu ở mép | Luôn bật, bán kính 15 đến 25 u | Nhớ đường, ra khỏi vùng | Vùng trung tâm | Sau MVP |
+| H09 | Hàng rào cắt | Tĩnh theo nhịp | Tia giữa hai cột, trừ 25 Oxy, đẩy mạnh. Máy phát 60 máu (một người) | Tia mờ 1 giây | Bật 3 giây, tắt 2 giây | Đi qua lúc tắt hoặc phá máy phát | Vùng trung tâm từ chương 3 | Sau MVP |
 
 - Kiểm phép tính: vùng nhìn tối thiểu 17,8 x 10 u (gd-ux), nửa ngang 8,9 u. Tốc độ tương đối lớn nhất của Mảnh trôi là 17 u/s (lướt 15 u/s cộng trôi 2 u/s), đi hết 8,9 u trong 0,52 giây, dưới 1 giây. Vì vậy H01, H04, H07 cần chỉ báo ở mép (luật 2.3.2).
 - Báo trước tối thiểu của mọi hazard gây hại: 1 giây. Bán kính an toàn quanh beacon không có hazard: 8 u.
@@ -385,7 +385,7 @@ Hazard làm node khó lấy:
 
 ### 3.6 Mật độ và độ khó theo dải
 
-| Chỉ số | Gần | Giữa | Xa | Nguồn |
+| Chỉ số | Vành đai ngoài | Vành đai trong | Vùng trung tâm | Nguồn |
 |---|---|---|---|---|
 | Tỉ lệ kích hoạt khe SP-R (một người) | 40% | 38% | 35% | ước, trần 100% ở 4 người |
 | Tỉ lệ kích hoạt khe SP-D (một người) | 40% | 40% | 40% | ước, trần 100% ở 4 người |
@@ -414,20 +414,20 @@ Hazard làm node khó lấy:
 
 - Mục tiêu khung: mỗi người trong nhóm 4 nhặt từ 60% so với chơi một mình (log 50). Nhóm 4 hết game bằng 60 đến 75% thời gian chơi một mình (log 69). Mốc chương bị sàn ngày truyện giữ, nên a chỉ đổi lượng mỗi người nhặt.
 - Hệ số tổng k(N) = 1 + a x (N trừ 1), nhân vào tỉ lệ kích hoạt khe SP-R và SP-D, a đặt theo dải. Dải là núm vì mỗi chương làm việc chủ yếu ở một dải.
-- Bảng mục 4 của sim chuyến (`tools/ket-qua/sim-chuyen.md`) cho a tối thiểu khác nhau giữa dải Gần (chương 1) và dải Xa (chương 3 đến 5). a của Gần đặt trên mức tối thiểu của kịch bản tốt ở chương 1 một khoảng dư, vì kết quả sim dịch mỗi khi các vai khác đổi số.
+- Bảng mục 4 của sim chuyến (`tools/ket-qua/sim-chuyen.md`) cho a tối thiểu khác nhau giữa Vành đai ngoài (chương 1) và Vùng trung tâm (chương 3 đến 5). a của Vành đai ngoài đặt trên mức tối thiểu của kịch bản tốt ở chương 1 một khoảng dư, vì kết quả sim dịch mỗi khi các vai khác đổi số.
 - Bảng dưới là nguồn duy nhất của a. Sim chuyến, sim combat (gd-tech) và `projects/game-moi/sim/ngan_sach_oxy.py` đọc thẳng cột a. Giữ dạng bảng (cột Dải rồi cột a, số dùng dấu phẩy). Đổi a thì nhắn gd-tech chạy lại và gd-combat cập nhật hệ số sinh lực.
 
 | Dải | a | k(2) | k(3) | k(4) |
 |---|---|---|---|---|
-| Gần | 0,30 | 1,30 | 1,60 | 1,90 |
-| Giữa | 0,25 | 1,25 | 1,50 | 1,75 |
-| Xa | 0,38 | 1,38 | 1,76 | 2,14 |
+| Vành đai ngoài | 0,30 | 1,30 | 1,60 | 1,90 |
+| Vành đai trong | 0,25 | 1,25 | 1,50 | 1,75 |
+| Vùng trung tâm | 0,38 | 1,38 | 1,76 | 2,14 |
 
 | Dải | SP-R một người | SP-R 4 người | SP-D một người | SP-D 4 người |
 |---|---|---|---|---|
-| Gần | 40% | 76% | 40% | 76% |
-| Giữa | 38% | 66% | 40% | 70% |
-| Xa | 35% | 75% | 40% | 86% |
+| Vành đai ngoài | 40% | 76% | 40% | 76% |
+| Vành đai trong | 38% | 66% | 40% | 70% |
+| Vùng trung tâm | 35% | 75% | 40% | 86% |
 
 - Sinh lực Driftlife thường theo số người do gd-combat giữ, bằng N chia k(N) của dải để gánh mỗi người bằng 1 (gd-combat mục 6b).
 - Kết quả co-op hiện hành ở bảng đối chiếu mục 3.9 (chép bằng script). Thời gian nhóm 4 tới mốc chương ở `kinh-te-tien-trinh.md` mục 6b của gd-economy.
@@ -479,7 +479,7 @@ Một người, kịch bản trung bình, theo chương:
 <!--/SIM:DOI-CHIEU-->
 
 - Kịch bản "cẩn thận" của log 56 là kịch bản trung bình và tốt của sim. Kịch bản "tham" là kịch bản tham.
-- Tỉ lệ bị kéo về của người chơi tham lệch khỏi 15 đến 40% ở chương đầu và chương cuối. Không chỉnh map trước playtest vì kịch bản tham là giả định. Nếu playtest xác nhận, núm của gd-world là phần mảnh có hazard ở dải Xa.
+- Tỉ lệ bị kéo về của người chơi tham lệch khỏi 15 đến 40% ở chương đầu và chương cuối. Không chỉnh map trước playtest vì kịch bản tham là giả định. Nếu playtest xác nhận, núm của gd-world là phần mảnh có hazard ở Vùng trung tâm.
 
 - Bản chạy thử dùng để chọn hướng (đổi diện tích, giây khai thác, cỡ túi và bình) nằm ở `projects/game-moi/sim/do-nhay-chuyen.md`, sinh bởi `sim/do_nhay_chuyen.mjs`. Kết quả: thêm diện tích hay mật độ không kéo dài chuyến, túi quyết thời lượng đầu game, bình quyết cuối game.
 - Hướng đã chọn: map giữ nguyên kích thước và mật độ ở mục 3.1 đến 3.7. Giây khai thác nhân 2 (gd-items). Túi 80 đến 216 Khối và bình 330 đến 1000 (GDM, log 54).
@@ -512,8 +512,8 @@ Một người, kịch bản trung bình, theo chương:
 | Ràng buộc | Số | Lý do |
 |---|---|---|
 | Thời lượng chuyến tối đa khi Oxy là giới hạn | 85% dung lượng bình (giây) | Dự trù quay về là ngưỡng người chơi tự đặt, thời lượng không vượt dung lượng bình |
-| Xa cột cuối, bình bậc 0, bộ đẩy bậc 0 | Bay ra có đường vòng 156 giây trên bình 330 | Tới được nhưng còn ít Oxy làm việc: Xa thực tế cần bình bậc 2 trở lên |
-| Thiếu 1 cấp ở Giữa, bình bậc 1 | 74 giây làm việc | Cổng mềm rất đắt, đúng ý K6: vẫn vào được dải mới |
+| Vùng trung tâm cột cuối, bình bậc 0, bộ đẩy bậc 0 | Bay ra có đường vòng 156 giây trên bình 330 | Tới được nhưng còn ít Oxy làm việc: Vùng trung tâm thực tế cần bình bậc 2 trở lên |
+| Thiếu 1 cấp ở Vành đai trong, bình bậc 1 | 74 giây làm việc | Cổng mềm rất đắt, đúng ý K6: vẫn vào được dải mới |
 | Số mảnh khác nhau gặp trong một chuyến | tối đa 54 ô | 12 + 18 + 24 ô |
 | Số map nhánh cả game | 8 | 4 xác hoặc trạm con dùng chung bộ nội thất Seed Station (Cinder, Wick, Flint, phần ngoài Lantern) |
 | Người chơi không lạc | Mốc cố định nhìn được từ mọi cột của dải | Ember và vỏ Station Cinder cố định, luôn chỉ trên la bàn |
@@ -540,17 +540,17 @@ Chuyến bắt đầu (seed, N, chương), vào dải, ra dải, thấy beacon, 
 2. Validator kho mảnh: mỗi mảnh có cổng tối thiểu theo loại, khe SP-R cách vùng gây hại của hazard ít nhất 2 u, mảnh Thưởng có cờ nửa ngoài, kho đủ tỉ lệ loại.
 3. Sim chuyến (đợt 2, gd-tech): đề sim ở mục 8.
 
-### 6.4 Spec greybox MVP: dải Gần
+### 6.4 Spec greybox MVP: Vành đai ngoài
 
 - Đơn vị Unity: 1 u, nhân vật cao 1 u. Gốc tọa độ: x = 0 ở cửa khí của Ember, y = 0 ở biên dưới map. Camera cao 10 u, rộng 17,8 u ở 16:9, mở ngang tới 21:9 (gd-ux). Một mảnh 40 x 24 u bằng khoảng 2,2 x 2,4 màn hình.
 
 | Phần | Tọa độ (u) | Ghi chú |
 |---|---|---|
 | Ember (vỏ ngoài) | x từ âm 40 tới 0, y từ 24 tới 48 | Không vào lưới. Cửa khí ở (0, 36) |
-| Lưới Gần | x từ 0 tới 160, y từ 0 tới 72 | 4 cột x 3 hàng, mỗi ô 40 x 24 |
+| Lưới Vành đai ngoài | x từ 0 tới 160, y từ 0 tới 72 | 4 cột x 3 hàng, mỗi ô 40 x 24 |
 | Ô Ember Mooring (cố định) | Cột 1 hàng giữa: x từ 0 tới 40, y từ 24 tới 48 | Cổng 1111. 6 SP-R phế liệu và 1 SP-D loài hiền luôn kích hoạt (không nhân tỉ lệ), không hazard, không loài săn mồi |
 | Ô lối vào Station Cinder (cố định) | Cột 3 hàng trên: x từ 80 tới 120, y từ 48 tới 72 | Cổng 1101 (Trái, Phải, Dưới mở, Trên là biên map). Vỏ xác 32 x 16 u, cửa vào ở cạnh dưới vỏ |
-| Rạn vụn chương 1 | x từ 160 tới 168, y từ 0 tới 72 | 8 u đầu cột 1 dải Giữa. Va chạm cứng, khe mở ở chương 2 tại hàng đường chính ra khỏi cột 4 của Gần |
+| Rạn vụn chương 1 | x từ 160 tới 168, y từ 0 tới 72 | 8 u đầu cột 1 Vành đai trong. Va chạm cứng, khe mở ở chương 2 tại hàng đường chính ra khỏi cột 4 của Vành đai ngoài |
 | Biên trên, biên dưới | y = 0 và y = 72 | Va chạm vô hình kèm lớp hình mảnh vỡ dày |
 
 Lớp va chạm:
@@ -563,7 +563,7 @@ Lớp va chạm:
 | Khe | Marker điểm sinh | Không | Không |
 | Lối | Cửa khí, beacon, cửa map nhánh | Trigger | Không |
 
-- Kho mảnh MVP Gần (16 mảnh). Cổng ghi theo thứ tự Trái, Phải, Trên, Dưới, 1 là mở:
+- Kho mảnh MVP Vành đai ngoài (16 mảnh). Cổng ghi theo thứ tự Trái, Phải, Trên, Dưới, 1 là mở:
 
 | ID | Loại | Cổng | SP-R | SP-D | SP-H cho phép | SP-B | Nửa ngoài |
 |---|---|---|---|---|---|---|---|
@@ -586,7 +586,7 @@ Lớp va chạm:
 
 - Cột "Nửa ngoài": "Có" chỉ đặt ở cột 3 và 4, "Không" đặt mọi cột (luật 2.1.8). Khe SP-D của mảnh Mở và Ổ neo "mảnh vỡ nhỏ" (Driftmoth, Sting Krill, Skitter Ray). Khe SP-D của mảnh Xác lớn và mảnh có H02 neo "xác có điện hoặc cạnh Cáp chập" (Arc Eel).
 
-- Bố cục dự phòng dải Gần (dựng tay, đã kiểm bằng `sim/bo_cuc.py`), đường chính đi hàng giữa từ cột 1 tới cột 4:
+- Bố cục dự phòng Vành đai ngoài (dựng tay, đã kiểm bằng `sim/bo_cuc.py`), đường chính đi hàng giữa từ cột 1 tới cột 4:
 
 | Hàng | Cột 1 | Cột 2 | Cột 3 | Cột 4 |
 |---|---|---|---|---|
@@ -648,7 +648,7 @@ Chỉ số kết quả: thời lượng chuyến theo chương, tỉ lệ chuy�
 | Bố cục hợp lệ | Kho mảnh MVP, 1000 seed | Tỉ lệ hợp lệ lần đầu, số lần rơi vào dự phòng, độ trùng mảnh giữa hai chuyến |
 
 Tiêu chí nghiệm thu:
-1. Trình xem bố cục chạy 1000 chuyến liền nhau dải Gần: 100% bố cục cuối hợp lệ, dưới 1% rơi vào bố cục dự phòng. Bản tham chiếu `sim/bo_cuc.py` đo 0,00% rơi dự phòng ở 3 seed (`sim/bo-cuc.md`).
+1. Trình xem bố cục chạy 1000 chuyến liền nhau Vành đai ngoài: 100% bố cục cuối hợp lệ, dưới 1% rơi vào bố cục dự phòng. Bản tham chiếu `sim/bo_cuc.py` đo 0,00% rơi dự phòng ở 3 seed (`sim/bo-cuc.md`).
 2. Hai chuyến liền nhau bất kỳ: số ô có cùng mảnh ở cùng ô không vượt 5 trên 10 ô ghép, và không beacon nào ở cùng ô với chuyến trước. Bản tham chiếu đo lớn nhất 5, trung bình 1,4, beacon trùng ô 0%.
 3. Sim chương 1, chính sách trung bình: p50 thời lượng chuyến nằm trong 4 đến 6 phút.
 4. Sim chương 5, chính sách trung bình: p50 thời lượng chuyến nằm trong 10 đến 12 phút.
@@ -668,13 +668,13 @@ Tiêu chí nghiệm thu:
 | Khu đặc biệt | Glacial Area, Cargo Ship và khu khác có tên, cố định, có đường tắt bằng gương [D3][D6] | 8 map nhánh dựng tay giữ trạng thái, Skiff đi thẳng | Truyện và người vớt phải ở chỗ chắc chắn gặp (K7, P4) |
 | Một mình hay nhiều người | Một người | 1 đến 4 người, không gian giữ nguyên, tài nguyên theo k(N) | C1 đến C8 |
 
-- Điểm yếu tham chiếu được sửa: lặp lại đường đi xuống dải sâu mỗi lần lặn trong Dave không có số công bố. Ở đây, chuyến chương 5 bay ra chiếm khoảng 16% thời lượng chuyến, nên có Dòng trôi ở Giữa và Skiff cho map nhánh để giảm phần bay lặp. Chưa đo, đề sim ở mục 8.
+- Điểm yếu tham chiếu được sửa: lặp lại đường đi xuống dải sâu mỗi lần lặn trong Dave không có số công bố. Ở đây, chuyến chương 5 bay ra chiếm khoảng 16% thời lượng chuyến, nên có Dòng trôi ở Vành đai trong và Skiff cho map nhánh để giảm phần bay lặp. Chưa đo, đề sim ở mục 8.
 
 ## 10. Câu hỏi mở
 
 | Câu | Phương án đề xuất | Ai quyết |
 |---|---|---|
-| Bay ra Xa ở chương 5 chiếm khoảng 16% chuyến, có thấy lặp không | Giữ, đo ở playtest. Nếu lặp thì đặt Dòng trôi xuôi về Xa trên đường chính của Giữa | gd-world sau playtest |
+| Bay ra Vùng trung tâm ở chương 5 chiếm khoảng 16% chuyến, có thấy lặp không | Giữ, đo ở playtest. Nếu lặp thì đặt Dòng trôi xuôi về Vùng trung tâm trên đường chính của Vành đai trong | gd-world sau playtest |
 | Recall Beacon có hiện ngay khi vào dải không | Không, phải vào bán kính phát hiện. Giữ ý đồ dò đường | GDM |
 | Trọng số các trục độ khó | Đã chốt: Oxy bay ra 35%, mật độ đe dọa 30%, hazard 20%, môi trường 15% (log 79) | GDM |
 | Bản đồ chuyến (UI-33) trong MVP | Có. Map cấp ô đã vào, beacon đã thấy, lối vào map nhánh đã biết | gd-world, gd-ux đã thống nhất |
@@ -685,7 +685,7 @@ Tiêu chí nghiệm thu:
 | Luật | 1 người | 2 người | 3 người | 4 người |
 |---|---|---|---|---|
 | Kích thước map, số mảnh, số beacon | Giữ nguyên | Giữ nguyên | Giữ nguyên | Giữ nguyên |
-| Tỉ lệ kích hoạt SP-R, SP-D | x 1,00 | Gần x 1,30, Giữa x 1,25, Xa x 1,38 | Gần x 1,60, Giữa x 1,50, Xa x 1,76 | Gần x 1,90, Giữa x 1,75, Xa x 2,14 |
+| Tỉ lệ kích hoạt SP-R, SP-D | x 1,00 | Vành đai ngoài x 1,30, Vành đai trong x 1,25, Vùng trung tâm x 1,38 | Vành đai ngoài x 1,60, Vành đai trong x 1,50, Vùng trung tâm x 1,76 | Vành đai ngoài x 1,90, Vành đai trong x 1,75, Vùng trung tâm x 2,14 |
 | Hazard | Như nhau, trúng ai trừ người đó | Như nhau | Như nhau | Như nhau |
 | Máu máy phát Hàng rào cắt | Theo bảng 3.5 | x 1,6 | x 2,2 | x 2,8 (hệ số boss và The Wardens của gd-combat, 1 + 0,6 x (N trừ 1)) |
 | Recall Beacon | Một người kích | Mỗi người kích riêng, cùng beacon được | Như 2 người | Như 2 người |
@@ -707,23 +707,23 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | W1 | Hình học map tổng | Dải ngang một trục, Ember ở mép trái | Khoảng cách tới trạm là một trục, tính Oxy được, ghép mảnh theo cột đơn giản | Vòng tròn đồng tâm quanh trạm (diện tích tăng bậc hai, nặng art) | Đắt |
 | W2 | Đơn vị ghép | Lưới mảnh 40 x 24 u, cao 3 hàng | Mỗi mảnh khoảng 2 x 2 màn hình, đủ chỗ cho một ý | Mảnh tự do không lưới | Vừa |
 | W3 | Bảo đảm đường | Đường chính kiểu một hàng mỗi cột, ít nhất một vòng mỗi dải | Không sinh bố cục hỏng, có lựa chọn đường | Cây phân nhánh | Rẻ |
-| W4 | Mở dải | Rạn vụn chặn dải chưa mở, mở theo mốc chương. Giữa mở bởi mốc đóng chương 1, Xa bởi mốc đóng chương 2 | Khớp K6 (mở theo chương) và gd-story (Hoa tiêu ở Wick trong dải Giữa, mở dải Xa) | Hoa tiêu mở Giữa (Hoa tiêu nằm trong Giữa nên không tới được) | Rẻ |
-| W5 | Cấp môi trường từng dải | Gần 0, Giữa 1, Xa 2, Cradle Interior và Warden Rig 3 (môi trường E3 Lõi rò). Hệ số thiếu cấp dùng của gd-character | Mỗi chương lớn cần một bậc vỏ, khớp bảng T-VO của gd-character. Thiếu 1 cấp còn 29 đến 33% thời gian làm việc: đi được nhưng đắt (K6) | Cradle dùng E2 của dải Xa (cấp 3 của T-VO không có chỗ dùng) | Rẻ |
+| W4 | Mở dải | Rạn vụn chặn dải chưa mở, mở theo mốc chương. Vành đai trong mở bởi mốc đóng chương 1, Vùng trung tâm bởi mốc đóng chương 2 | Khớp K6 (mở theo chương) và gd-story (Hoa tiêu ở Wick trong Vành đai trong, mở Vùng trung tâm) | Hoa tiêu mở Vành đai trong (Hoa tiêu nằm trong Vành đai trong nên không tới được) | Rẻ |
+| W5 | Cấp môi trường từng dải | Vành đai ngoài 0, Vành đai trong 1, Vùng trung tâm 2, Cradle Interior và Warden Rig 3 (môi trường E3 Lõi rò). Hệ số thiếu cấp dùng của gd-character | Mỗi chương lớn cần một bậc vỏ, khớp bảng T-VO của gd-character. Thiếu 1 cấp còn 29 đến 33% thời gian làm việc: đi được nhưng đắt (K6) | Cradle dùng E2 của Vùng trung tâm (cấp 3 của T-VO không có chỗ dùng) | Rẻ |
 | W6 | Sinh lại trong chuyến | Không | Chống farm tại chỗ, K8 áp ở mức chuyến | Làm mới theo thời gian | Rẻ |
-| W7 | Số beacon | Gần 1, Giữa 2, Xa 3, phải thấy mới ghim | Beacon là núm của P1, giới hạn để còn quyết định quay về | Không giới hạn như Escape Pod | Rẻ |
+| W7 | Số beacon | Vành đai ngoài 1, Vành đai trong 2, Vùng trung tâm 3, phải thấy mới ghim | Beacon là núm của P1, giới hạn để còn quyết định quay về | Không giới hạn như Escape Pod | Rẻ |
 | W8 | Beacon dùng lại | Nhiều lần, nhiều người, mỗi người kích riêng | P3, không có luật cần đúng N người | Một lần mỗi beacon | Rẻ |
 | W9 | Beacon trong map nhánh | Cố định theo sơ đồ | Map nhánh không sinh lại (K7) | Đổi chỗ như map tổng | Rẻ |
-| W10 | Skiff chỉ vào map nhánh, không ra map tổng | Chuyến Skiff là chuyến map nhánh | Không để Skiff thành đường tắt khai thác Xa | Skiff thả ở map tổng | Vừa |
+| W10 | Skiff chỉ vào map nhánh, không ra map tổng | Chuyến Skiff là chuyến map nhánh | Không để Skiff thành đường tắt khai thác Vùng trung tâm | Skiff thả ở map tổng | Vừa |
 | W11 | Map nhánh giữ trạng thái | Cửa, boss, đường tắt giữ, tài nguyên sinh lại | Map nhánh lớn chia được nhiều chuyến | Đặt lại mỗi lần | Vừa |
 | W12 | Khu có khí | Không hao nền, không nạp Oxy | Trạm còn người có khí là hợp truyện, không vi phạm P1 vì không hồi | Hao như ngoài | Rẻ |
 | W13 | Hazard có máu | Chỉ máy phát Hàng rào cắt | Một hazard dạy người chơi phá vật thể The Wardens | Mọi hazard phá được | Rẻ |
 | W14 | Người vớt trong buồng | Kéo buồng tới beacon hoặc cửa ra | Một hành động vớt rõ, dùng lại luật kéo vật | Người vớt tự đi theo | Rẻ |
 | W15 | Đặt người vớt | Ingrid, Linh ở Cinder, Rafa ở Wick, Amara ở Lantern, Yusuf ở Waypost | Khớp bảng của gd-story | Mỗi người một xác riêng | Rẻ |
-| W16 | Hệ số số người | k(N) = 1 + a x (N trừ 1), a theo dải: Gần 0,30, Giữa 0,25, Xa 0,38 | Sim gd-tech: a tối thiểu khác nhau giữa chương 1 và chương 5. Một a chung không đạt cả hai mục tiêu ở mọi chương | a chung 0,47 (nhóm 4 qua chương đầu quá nhanh), a chung 0,25 (chương 5 dưới 60% mỗi người) | Rẻ |
+| W16 | Hệ số số người | k(N) = 1 + a x (N trừ 1), a theo dải: Vành đai ngoài 0,30, Vành đai trong 0,25, Vùng trung tâm 0,38 | Sim gd-tech: a tối thiểu khác nhau giữa chương 1 và chương 5. Một a chung không đạt cả hai mục tiêu ở mọi chương | a chung 0,47 (nhóm 4 qua chương đầu quá nhanh), a chung 0,25 (chương 5 dưới 60% mỗi người) | Rẻ |
 | W20 | Hướng sửa thời lượng chuyến | Không đổi map. Giây khai thác nhân 2 (gd-items đã làm). Túi bậc 0 đến 4 là 80, 100, 126, 168, 216 và bình 330, 450, 600, 780, 1000 (GDM đã chốt, log 54) | Sim: diện tích, mật độ, hazard không kéo dài chuyến đủ. Túi quyết đầu game, bình quyết cuối game | Tăng số hàng, mật độ, giảm hazard (sim cho ngắn hơn hoặc thêm dưới 1 phút) | Vừa |
 | W21 | Định nghĩa để dựng bộ sinh mảnh | Trùng mảnh là cùng mảnh cùng ô. Cờ nửa ngoài "Có" là chỉ cột 3, 4. Cổng ô cố định Ember Mooring 1111, Cinder 1101. Beacon không cùng ô chuyến trước. Đường chính nối liền giữa hai dải. Bố cục dự phòng dựng tay. Kiểm bằng `sim/bo_cuc.py` | QA GD-031: các luật cũ chưa dựng được, cách đọc khác nhau lệch tỉ lệ hợp lệ hàng nghìn lần | Trùng tính theo tập mảnh (kho 16 không đạt tiêu chí) | Rẻ |
 | W22 | Nơi cứu và hộ tống Sevra (lời Lead, GD-033) | Dùng lại N4 Veyl Waypost theo đề xuất của gd-story. Cứu ở Waypost Outer Ring, kén về Ember bằng beacon hoặc cửa khí (C3.8). Hộ tống: Skiff chở kén tới cửa N4, kéo tới cửa The Hearth (C5.1). Trong hộ tống kén không theo beacon, lưu ở beacon cố định gần nhất | Không thêm map nhánh và art mới. Một đích cho mỗi mốc. Kén không theo beacon để hộ tống không bị bỏ qua bằng một lần kích | Station Flint, kéo kén xuyên map tổng từ Ember | Rẻ |
-| W17 | Kho mảnh MVP | 16 mảnh Gần, 2 ô cố định | Tỉ lệ kho trên ô ghép 1,6, vừa sức 1 artist khi dựng bằng kit | 22 mảnh ngay MVP | Rẻ |
+| W17 | Kho mảnh MVP | 16 mảnh Vành đai ngoài, 2 ô cố định | Tỉ lệ kho trên ô ghép 1,6, vừa sức 1 artist khi dựng bằng kit | 22 mảnh ngay MVP | Rẻ |
 | W19 | Nơi đặt vật kể chuyện chương 4 và 5 | Hộp ghi hành trình ở Bridge Archive (khu cuối Cradle Interior). Bản đồ sao thật và lệnh phục kích mang dấu Daskel ở Data Core của Warden Rig, mở sau BS-5 | Vật kể chuyện là phần thưởng của trận cuối, người chơi tự tay lấy | Rơi từ boss (dễ lỡ khi xua hoặc rớt mạng) | Rẻ |
 | W18 | Boss chương 2 và 3 | BS-2 ở Lantern Outer Ring, BS-3 ở Flint. Waypost và Wick không boss | BS-2 là Gulper vây Lantern (mô tả của gd-combat), lần đầu tới Lantern thành trận cứu trạm. BS-3 là máy thu hoạch, đặt ở Flint thì trận boss và manh mối cú lật Driftlife nói cùng một điều. Waypost trung lập giữ vai bến buôn | BS-2 ở Wick, BS-3 ở Waypost | Rẻ |
 
@@ -743,12 +743,12 @@ Không có luật cần đúng N người: không cửa nào cần hai người 
 | 2026-11-20 | GD-033 phản diện mới: N4 thêm nơi cứu Sevra và The Hearth, luật hộ tống 2.7.9, Warden Rig là nơi Daskel chỉ huy ở bãi vỡ, STY-502 đổi nội dung. Sửa theo QA GD-033 vòng 1: đích C3.8 là Ember, Skiff chở kén tới N4, kén không theo beacon khi hộ tống, lưu vị trí kén, khoảng cách đường hộ tống | Brief đợt 6, tên của gd-story, phiếu `qa/GD-033-map.md` | gd-world |
 | 2026-11-20 | Đợt 4: địa danh tiếng Anh [TẠM] (log 74), seed và lưu bố cục theo K23, giờ giao thương biên thoát theo K23, trọng số độ khó đã duyệt (log 79), mục tiêu co-op 60 đến 75% (log 69) | Tin GDM, brief đợt 4 | gd-world |
 | 2026-11-20 | Sửa 5 lỗi nhẹ QA GD-031 vòng 2: chép lại sim 04:43, bỏ bảng chạy thử khỏi 3.9, khoảng cách khe tính theo vùng gây hại, beacon lối vào BS-2 đến BS-4 | Phiếu `qa/GD-031-map.md` | gd-world |
-| 2026-11-20 | Sửa theo QA GD-031 vòng 1: định nghĩa bộ sinh mảnh (W21), `sim/bo_cuc.py`, số 3.9 chép bằng `sim/dong_bo_sim.py`, a Gần 0,30, hình học hazard, cửa C6 sang C7, Amara, Skiff tới Warden Rig, giờ giao thương biên theo C10 và K23 | Phiếu `qa/GD-031-map.md` | gd-world |
+| 2026-11-20 | Sửa theo QA GD-031 vòng 1: định nghĩa bộ sinh mảnh (W21), `sim/bo_cuc.py`, số 3.9 chép bằng `sim/dong_bo_sim.py`, a Vành đai ngoài 0,30, hình học hazard, cửa C6 sang C7, Amara, Skiff tới Warden Rig, giờ giao thương biên theo C10 và K23 | Phiếu `qa/GD-031-map.md` | gd-world |
 | 2026-11-20 | Khe M và V khớp bảng khe chốt của gd-story (phiếu QA GD-031), thêm bảng mốc mở lối vào map nhánh | Tin gd-story | gd-world |
 | 2026-11-20 | Báo trước tính từ lúc thấy tín hiệu, chỉ báo ở mép cho H01, H04, H07, tốc độ đá H04 10 u/s | Tin gd-ux (QA) | gd-world |
 | 2026-11-20 | Thêm beacon B3 trước D1 ở Cinder, luật beacon phía lối vào mỗi phòng boss, giờ giao thương biên rút khỏi phòng boss | Tin gd-combat (QA N8, L6) | gd-world |
-| 2026-11-20 | k(N) theo dải nâng Gần 0,27, Xa 0,38 cho có dư mục tiêu 60% | Sim gd-tech bảng 2 | gd-world |
-| 2026-11-20 | k(N) theo dải: Gần 0,25, Giữa 0,25, Xa 0,35 | Tin gd-economy, bảng mục 4 sim chuyến gd-tech | gd-world |
+| 2026-11-20 | k(N) theo dải nâng Vành đai ngoài 0,27, Vùng trung tâm 0,38 cho có dư mục tiêu 60% | Sim gd-tech bảng 2 | gd-world |
+| 2026-11-20 | k(N) theo dải: Vành đai ngoài 0,25, Vành đai trong 0,25, Vùng trung tâm 0,35 | Tin gd-economy, bảng mục 4 sim chuyến gd-tech | gd-world |
 | 2026-11-20 | Đợt 2b: thang túi và bình GDM chốt (log 54) vào Hiện hành, 3.2, 3.9. Mục tiêu bị kéo về hai mức (log 56) | Tin GDM | gd-world |
 | 2026-11-20 | Mục 3.9 viết lại theo sim có Driftlife: đề xuất thang túi và bình | Tin gd-tech | gd-world |
 | 2026-11-20 | Camera 10 x 17,8 u theo gd-ux, bản đồ chuyến vào MVP, 15% chỉ là giả định của phép tính | Tin gd-ux | gd-world |

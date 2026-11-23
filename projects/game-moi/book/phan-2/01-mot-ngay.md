@@ -158,9 +158,9 @@ Truyện không chạy theo đồng hồ mà theo **mốc truyện**. Mỗi chư
 
 | Chương | Tên tạm | Vùng mới | Kiểu chơi mới | Số ngày tối thiểu |
 |---|---|---|---|---|
-| 1 | Tỉnh dậy | Dải Gần, xác Seed Station đầu tiên | Khai thác, bắt sống loài nhỏ bằng lưới, giờ giao thương | 7 |
-| 2 | Không cô độc | Dải Giữa, Station Lantern | Nuôi Driftlife, bắt sống cỡ M, lấy mẫu sinh thiết cỡ L | 5 |
-| 3 | Kẻ canh giữ | Dải Xa, Veyl Waypost, The Remainers | Sự cố trong giờ giao thương, kẻ địch có vũ khí | 8 |
+| 1 | Tỉnh dậy | Vành đai ngoài, xác Seed Station đầu tiên | Khai thác, bắt sống loài nhỏ bằng lưới, giờ giao thương | 7 |
+| 2 | Không cô độc | Vành đai trong, Station Lantern | Nuôi Driftlife, bắt sống cỡ M, lấy mẫu sinh thiết cỡ L | 5 |
+| 3 | Kẻ canh giữ | Vùng trung tâm, Veyl Waypost, The Remainers | Sự cố trong giờ giao thương, kẻ địch có vũ khí | 8 |
 | 4 | Tâm vụ nổ | Cradle Interior | Map nhánh lớn trong nội thất tàu | 3 |
 | 5 | Rời neo | Warden Rig | Hộ tống Sevra, trận đối đầu cuối | 3 |
 

@@ -1,4 +1,4 @@
-# Ngân sách Oxy một chuyến (sinh bởi ngan_sach_oxy.py, 2026-11-20 08:52)
+# Ngân sách Oxy một chuyến (sinh bởi ngan_sach_oxy.py, 2026-11-23 16:32)
 
 Phép tính ước, chưa sim. Đơn vị giây.
 
@@ -6,26 +6,26 @@ Phép tính ước, chưa sim. Đơn vị giây.
 
 | Dải | Từ (u) | Tới (u) | Giây bay thẳng tới ranh ngoài | Giây bay có đường vòng |
 |---|---|---|---|---|
-| Gần | 0 | 160 | 27 | 35 |
-| Giữa | 160 | 400 | 67 | 87 |
-| Xa | 400 | 720 | 120 | 156 |
+| Vành đai ngoài | 0 | 160 | 27 | 35 |
+| Vành đai trong | 160 | 400 | 67 | 87 |
+| Vùng trung tâm | 400 | 720 | 120 | 156 |
 
 ## Trần Oxy theo chương, đủ cấp môi trường (thời lượng thật đo bằng sim, xem do-nhay-chuyen.md)
 
 | Chương | Bậc bình | Bậc bộ đẩy | Oxy | Túi | Dải | Bay ra | Về | Làm việc | Dự trù đòn | Tổng chuyến (giây) | Tổng (phút) |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | 0 | 0 | 330 | 80 | Gần | 17 | 17 | 213 | 33 | 280 | 4,7 |
-| 2 | 1 | 1 | 450 | 100 | Giữa | 56 | 24 | 257 | 45 | 382 | 6,4 |
-| 3 | 2 | 2 | 600 | 126 | Xa | 89 | 24 | 336 | 60 | 510 | 8,5 |
-| 4 | 3 | 3 | 780 | 168 | Xa | 97 | 24 | 463 | 78 | 663 | 11,1 |
-| 5 | 4 | 3 | 1000 | 216 | Xa | 111 | 24 | 615 | 100 | 850 | 14,2 |
+| 1 | 0 | 0 | 330 | 80 | Vành đai ngoài | 17 | 17 | 213 | 33 | 280 | 4,7 |
+| 2 | 1 | 1 | 450 | 100 | Vành đai trong | 56 | 24 | 257 | 45 | 382 | 6,4 |
+| 3 | 2 | 2 | 600 | 126 | Vùng trung tâm | 89 | 24 | 336 | 60 | 510 | 8,5 |
+| 4 | 3 | 3 | 780 | 168 | Vùng trung tâm | 97 | 24 | 463 | 78 | 663 | 11,1 |
+| 5 | 4 | 3 | 1000 | 216 | Vùng trung tâm | 111 | 24 | 615 | 100 | 850 | 14,2 |
 
 ## Thiếu cấp môi trường (vào dải mới khi bộ đồ chưa nâng)
 
 | Chương | Dải | Làm việc đủ cấp | Làm việc thiếu 1 cấp | Còn lại |
 |---|---|---|---|---|
-| 2 | Giữa | 257 | 74 | 29% |
-| 3 | Xa | 336 | 111 | 33% |
+| 2 | Vành đai trong | 257 | 74 | 29% |
+| 3 | Vùng trung tâm | 336 | 111 | 33% |
 
 ## Hệ số tài nguyên theo số người (C8), theo dải
 
@@ -33,17 +33,17 @@ Số chốt đo bằng sim chuyến của gd-tech và sim kinh tế của gd-eco
 
 | Dải | a | k(2) | k(3) | k(4) |
 |---|---|---|---|---|
-| Gần | 0,30 | 1,30 | 1,60 | 1,90 |
-| Giữa | 0,25 | 1,25 | 1,50 | 1,75 |
-| Xa | 0,38 | 1,38 | 1,76 | 2,14 |
+| Vành đai ngoài | 0,30 | 1,30 | 1,60 | 1,90 |
+| Vành đai trong | 0,25 | 1,25 | 1,50 | 1,75 |
+| Vùng trung tâm | 0,38 | 1,38 | 1,76 | 2,14 |
 
 ## Tỉ lệ kích hoạt khe một người (trần 100% ở 4 người)
 
 | Dải | SP-R một người | SP-R 4 người | SP-D một người | SP-D 4 người |
 |---|---|---|---|---|
-| Gần | 40% | 76% | 40% | 76% |
-| Giữa | 38% | 66% | 40% | 70% |
-| Xa | 35% | 75% | 40% | 86% |
+| Vành đai ngoài | 40% | 76% | 40% | 76% |
+| Vành đai trong | 38% | 66% | 40% | 70% |
+| Vùng trung tâm | 35% | 75% | 40% | 86% |
 
 ## Nhặt tay so với khoan, có tính bay giữa các node
 

@@ -3,7 +3,7 @@
 Ghi chú nguồn: fandom.com trả HTTP 402 và nhiều trang guide trả 403 nên không đọc được nội dung trang con. Hai nguồn Lead đưa là [D1] (Fandom, không truy cập được) và [D2] (meowdb, đọc được). Mức tin cậy: meowdb là danh mục fan, nhiều guide là site phụ, một số mục chỉ qua đoạn tóm tắt tìm kiếm (ghi trong bảng nguồn). Chỗ ghi "không tìm thấy nguồn" là chưa có nguồn đọc được.
 
 ## 1. Cấu trúc map
-- Blue Hole chia 3 dải độ sâu: 0-50 m, 50-130 m, 130-250 m [D3]. Một guide ghi dải giữa là 50-100 m, mâu thuẫn, ưu tiên số của [D3] vì lấy từ dữ liệu in-game.
+- Blue Hole chia 3 dải độ sâu: 0-50 m, 50-130 m, 130-250 m [D3]. Một guide ghi Vành đai trong là 50-100 m, mâu thuẫn, ưu tiên số của [D3] vì lấy từ dữ liệu in-game.
 - Layout đổi mỗi chuyến lặn: địa hình và hệ sinh vật sinh lại mỗi dive, chest cũng xáo [D2][D4]. Loại cá nhất định luôn nằm ở dải sâu nhất định dù layout đổi [D5].
 - Khu nhánh và đặc biệt có tên trong dữ liệu: Glacial Area (có Bottom, Dungeon 1-3 và Glacial Passage), Hydrothermal Vents, Limestone Cave, Underwater Lake, Cargo Ship [D3]. Độ sâu các khu này: không tìm thấy nguồn.
 - Glacial Passage mở bằng chìa lấy ở Chapter 4 (nhiệm vụ của Sea People), Chapter 5 dùng gương trên boat để sang làng Sea People [D6]. Điều kiện mở Hydrothermal Vents: không tìm thấy nguồn.

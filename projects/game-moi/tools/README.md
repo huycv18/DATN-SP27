@@ -36,3 +36,13 @@ Vai đổi số: sửa GDD hoặc file tham số, chạy lại lệnh sim, đọ
 Không chạy `ux/xuat-sheet.mjs` và `qa/xuat-checklist-tsv.mjs`: hai script này còn khuôn cũ, chạy sẽ ghi đè bản đọc sửa tay của WIREFRAME, Tutorials và MVP Criteria Checklist. Ba tab này sửa thẳng trong TSV như các tab khác (2026-11-23).
 
 Quy ước cho mọi vai: tên file TSV trùng tên tab, hàng 1 của TSV là header và ứng với hàng 2 của tab (hàng 1 là tiêu đề tab), xuống dòng trong ô ghi `\n`. gid các tab ở `tham-so/sheet.json`. Sheet phải chia sẻ bằng link (đọc không cần đăng nhập), nếu không thì dùng `/gdd-sheet-sync doi-chieu` qua trình duyệt.
+
+## Codex trong game (GD-068)
+
+| Lệnh (chạy ở gốc repo) | Làm gì |
+|---|---|
+| `node projects/game-moi/tools/sinh-codex.mjs --khung` | Ghi `codex/khung.tsv` (khoa, tab, loai, ten, ten_en, tom_tat_luat) từ TSV các tab, chỉ mục MVP, in số mục mỗi tab. gd-story đọc file này để viết lời |
+| `node projects/game-moi/tools/sinh-codex.mjs` | Đọc `codex/loi.tsv` (khoa, loi), ghi 6 tab `codex/<Tab>.tsv` cột STT, Loại, Tên, Tên tiếng Anh, Lời trong game, Nguồn nhận, Công thức, Dùng cho, Ảnh. Chưa có `loi.tsv` thì cột lời để trống |
+| `node projects/game-moi/tools/sinh-codex.mjs --kiem` | Thoát 1 khi thiếu lời, lời thừa khóa, lời quá 200 ký tự, có chữ số, gạch dài, chấm phẩy |
+
+Khóa là ID của `ITEM LIST.json` và `Salvage.json`, các tab không có ID thì dùng tên đúng như TSV. Khóa chỉ ở `khung.tsv` và `loi.tsv`.

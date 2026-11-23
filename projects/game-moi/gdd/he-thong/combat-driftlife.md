@@ -17,36 +17,36 @@ gd-combat giữ tên Driftlife, kẻ địch, boss. Nhóm rơi ghi theo từ đi
 
 | ID | Tên | Dải | Cỡ | Kiểu | Bắt sống | Nuôi | Rơi khi hạ (nhóm) | Nhãn |
 |---|---|---|---|---|---|---|---|---|
-| DL-G01 | Driftmoth | Gần | S | Hiền, trôi thành đám | Có | Có | Mô sinh học Gần, Đặc sản Driftmoth (mẫu mô, phấn sinh học) | MVP |
-| DL-G02 | Skitter Ray | Gần | S | Chạy trốn | Có | Có | Mô sinh học Gần, Đặc sản Skitter Ray (mẫu màng) | MVP |
-| DL-G03 | Latchjaw | Gần | M | Phục kích, bám mảnh vỡ | Có (cạy khi bất lực) | Không | Mô sinh học Gần, Đặc sản Latchjaw (vỏ khoáng, tuyến keo) | Sau MVP |
-| DL-G04 | Sting Krill | Gần | S | Đi bầy | Có | Có | Mô sinh học Gần, Đặc sản Sting Krill (vỏ giáp nhỏ) | MVP |
-| DL-G05 | Arc Eel | Gần | M | Giữ lãnh thổ | Có (chỉ khi ngủ, Sau MVP) | Có (Sau MVP) | Mô sinh học Gần, Đặc sản Arc Eel (tuyến điện, mẫu mô) | MVP (chỉ hạ) |
-| DL-M01 | Shepherd Whale | Giữa | L | Hiền khổng lồ, không hạ được | Không, chỉ sinh thiết | Không | Không hạ được | Sau MVP |
-| DL-M02 | Lumen Jelly | Giữa | M | Hiền, chạm thì bỏng | Có | Có | Mô sinh học Giữa, Đặc sản Lumen Jelly (gel phát quang) | Sau MVP |
-| DL-M03 | Orebiter | Giữa | M | Giữ lãnh thổ, ăn khoáng | Có | Có | Mô sinh học Giữa, Đặc sản Orebiter (khoáng tinh, mẫu mô) | Sau MVP |
-| DL-M04 | Needlefin | Giữa | S | Đi bầy, săn mồi | Có | Có | Mô sinh học Giữa, Đặc sản Needlefin (gai, vỏ giáp nhỏ) | Sau MVP |
-| DL-M05 | Gulper | Giữa | L | Săn mồi, nuốt | Không, chỉ sinh thiết | Không | Mô sinh học Giữa, Đặc sản Gulper (túi tiêu hóa (chứa phế liệu, linh kiện nó đã nuốt)) | Sau MVP |
-| DL-X01 | Prism Wisp | Xa | S | Chạy trốn, ẩn trong mây khí | Có | Có | Mô sinh học Xa, Đặc sản Prism Wisp (tinh thể lăng kính) | Sau MVP |
-| DL-X02 | Mirror Mantis | Xa | M | Phục kích, phản xạ đạn mặt trước | Có (chỉ khi ngủ) | Không | Mô sinh học Xa, Đặc sản Mirror Mantis (vỏ gương, mẫu mô) | Sau MVP |
-| DL-X03 | Storm Siphon | Xa | L | Giữ lãnh thổ, hút Oxy | Không, chỉ sinh thiết | Không | Mô sinh học Xa, Đặc sản Storm Siphon (lõi khí, mẫu mô) | Sau MVP |
-| DL-X04 | Shardbrood Queen | Xa | L | Đẻ bầy liên tục | Không, chỉ sinh thiết | Không | Mô sinh học Xa, Đặc sản Shardbrood Queen (túi trứng, mẫu mô) | Sau MVP |
-| DL-X05 | Shardbrood Hatchling | Xa | S | Đi bầy, con của DL-X04 | Có | Có | Mô sinh học Xa, Đặc sản Shardbrood Hatchling (vỏ giáp nhỏ) | Sau MVP |
-| WD-01 | Warden Harvester | Xa, từ chương 3 | M | Máy The Wardens bắt Driftlife | Không (máy) | Không | Linh kiện Warden, thả Driftlife đang bị giữ | Sau MVP |
-| WD-02 | Warden Lancer | Xa, từ chương 3 | M | Lính có khiên trước | Không | Không | Linh kiện Warden | Sau MVP |
-| WD-03 | Warden Snarer | Xa, từ chương 3 | M | Lính bắn lưới vào người chơi | Không | Không | Linh kiện Warden, lưới năng lượng | Sau MVP |
-| WD-04 | Warden Collector | Xa, từ chương 3 | Boss nhỏ | Tàu thu gom, thả drone | Không | Không | Linh kiện Warden | Sau MVP |
-| BS-1 | Scrapmaw | Map nhánh Station Cinder (Gần), khoang máy C6 sau cửa D1 | Boss | Driftlife làm tổ quanh lõi năng lượng | Hai cách kết: hạ hoặc xua đi | Không | Theo cách kết | MVP |
-| BS-2 | Tempest Gulper | Map nhánh Station Lantern (Giữa), vành ngoài trạm | Boss | Gulper đầu đàn vây Lantern, cắt đường tiếp tế | Hai cách kết | Không | Theo cách kết | Sau MVP |
-| BS-3 | Warden Reaper | Map nhánh Station Flint (Xa), khoang hàng bị biến thành trạm thu, nơi có manh mối cú lật Driftlife | Boss | Máy săn bắt Driftlife của quân The Wardens | Hạ | Không | Linh kiện Warden | Sau MVP |
-| BS-4 | Cradle Custodian | Map nhánh Cradle Interior (Xa), Lõi máy | Boss | Hệ an ninh Cradle bị The Wardens cài lại | Hạ | Không | Linh kiện Cradle | Sau MVP |
-| BS-5 | Daskel | Map nhánh Warden Rig (Xa), Command Deck | Boss | Độc tài của Sennar, đứng đầu The Wardens (tên của gd-story). Tự tới bãi vỡ để bắt Sevra Ilvane | Khuất phục và bắt giữ, không hạ chết | Không | Không rơi trực tiếp, vật truyện mở sau trận theo `vat-pham.md` và `cot-truyen.md` | Sau MVP |
+| DL-G01 | Driftmoth | Vành đai ngoài | S | Hiền, trôi thành đám | Có | Có | Mô sinh học Vành đai ngoài, Đặc sản Driftmoth (mẫu mô, phấn sinh học) | MVP |
+| DL-G02 | Skitter Ray | Vành đai ngoài | S | Chạy trốn | Có | Có | Mô sinh học Vành đai ngoài, Đặc sản Skitter Ray (mẫu màng) | MVP |
+| DL-G03 | Latchjaw | Vành đai ngoài | M | Phục kích, bám mảnh vỡ | Có (cạy khi bất lực) | Không | Mô sinh học Vành đai ngoài, Đặc sản Latchjaw (vỏ khoáng, tuyến keo) | Sau MVP |
+| DL-G04 | Sting Krill | Vành đai ngoài | S | Đi bầy | Có | Có | Mô sinh học Vành đai ngoài, Đặc sản Sting Krill (vỏ giáp nhỏ) | MVP |
+| DL-G05 | Arc Eel | Vành đai ngoài | M | Giữ lãnh thổ | Có (chỉ khi ngủ, Sau MVP) | Có (Sau MVP) | Mô sinh học Vành đai ngoài, Đặc sản Arc Eel (tuyến điện, mẫu mô) | MVP (chỉ hạ) |
+| DL-M01 | Shepherd Whale | Vành đai trong | L | Hiền khổng lồ, không hạ được | Không, chỉ sinh thiết | Không | Không hạ được | Sau MVP |
+| DL-M02 | Lumen Jelly | Vành đai trong | M | Hiền, chạm thì bỏng | Có | Có | Mô sinh học Vành đai trong, Đặc sản Lumen Jelly (gel phát quang) | Sau MVP |
+| DL-M03 | Orebiter | Vành đai trong | M | Giữ lãnh thổ, ăn khoáng | Có | Có | Mô sinh học Vành đai trong, Đặc sản Orebiter (khoáng tinh, mẫu mô) | Sau MVP |
+| DL-M04 | Needlefin | Vành đai trong | S | Đi bầy, săn mồi | Có | Có | Mô sinh học Vành đai trong, Đặc sản Needlefin (gai, vỏ giáp nhỏ) | Sau MVP |
+| DL-M05 | Gulper | Vành đai trong | L | Săn mồi, nuốt | Không, chỉ sinh thiết | Không | Mô sinh học Vành đai trong, Đặc sản Gulper (túi tiêu hóa (chứa phế liệu, linh kiện nó đã nuốt)) | Sau MVP |
+| DL-X01 | Prism Wisp | Vùng trung tâm | S | Chạy trốn, ẩn trong mây khí | Có | Có | Mô sinh học Vùng trung tâm, Đặc sản Prism Wisp (tinh thể lăng kính) | Sau MVP |
+| DL-X02 | Mirror Mantis | Vùng trung tâm | M | Phục kích, phản xạ đạn mặt trước | Có (chỉ khi ngủ) | Không | Mô sinh học Vùng trung tâm, Đặc sản Mirror Mantis (vỏ gương, mẫu mô) | Sau MVP |
+| DL-X03 | Storm Siphon | Vùng trung tâm | L | Giữ lãnh thổ, hút Oxy | Không, chỉ sinh thiết | Không | Mô sinh học Vùng trung tâm, Đặc sản Storm Siphon (lõi khí, mẫu mô) | Sau MVP |
+| DL-X04 | Shardbrood Queen | Vùng trung tâm | L | Đẻ bầy liên tục | Không, chỉ sinh thiết | Không | Mô sinh học Vùng trung tâm, Đặc sản Shardbrood Queen (túi trứng, mẫu mô) | Sau MVP |
+| DL-X05 | Shardbrood Hatchling | Vùng trung tâm | S | Đi bầy, con của DL-X04 | Có | Có | Mô sinh học Vùng trung tâm, Đặc sản Shardbrood Hatchling (vỏ giáp nhỏ) | Sau MVP |
+| WD-01 | Warden Harvester | Vùng trung tâm, từ chương 3 | M | Máy The Wardens bắt Driftlife | Không (máy) | Không | Linh kiện Warden, thả Driftlife đang bị giữ | Sau MVP |
+| WD-02 | Warden Lancer | Vùng trung tâm, từ chương 3 | M | Lính có khiên trước | Không | Không | Linh kiện Warden | Sau MVP |
+| WD-03 | Warden Snarer | Vùng trung tâm, từ chương 3 | M | Lính bắn lưới vào người chơi | Không | Không | Linh kiện Warden, lưới năng lượng | Sau MVP |
+| WD-04 | Warden Collector | Vùng trung tâm, từ chương 3 | Boss nhỏ | Tàu thu gom, thả drone | Không | Không | Linh kiện Warden | Sau MVP |
+| BS-1 | Scrapmaw | Map nhánh Station Cinder (Vành đai ngoài), khoang máy C6 sau cửa D1 | Boss | Driftlife làm tổ quanh lõi năng lượng | Hai cách kết: hạ hoặc xua đi | Không | Theo cách kết | MVP |
+| BS-2 | Tempest Gulper | Map nhánh Station Lantern (Vành đai trong), vành ngoài trạm | Boss | Gulper đầu đàn vây Lantern, cắt đường tiếp tế | Hai cách kết | Không | Theo cách kết | Sau MVP |
+| BS-3 | Warden Reaper | Map nhánh Station Flint (Vùng trung tâm), khoang hàng bị biến thành trạm thu, nơi có manh mối cú lật Driftlife | Boss | Máy săn bắt Driftlife của quân The Wardens | Hạ | Không | Linh kiện Warden | Sau MVP |
+| BS-4 | Cradle Custodian | Map nhánh Cradle Interior (Vùng trung tâm), Lõi máy | Boss | Hệ an ninh Cradle bị The Wardens cài lại | Hạ | Không | Linh kiện Cradle | Sau MVP |
+| BS-5 | Daskel | Map nhánh Warden Rig (Vùng trung tâm), Command Deck | Boss | Độc tài của Sennar, đứng đầu The Wardens (tên của gd-story). Tự tới bãi vỡ để bắt Sevra Ilvane | Khuất phục và bắt giữ, không hạ chết | Không | Không rơi trực tiếp, vật truyện mở sau trận theo `vat-pham.md` và `cot-truyen.md` | Sau MVP |
 
 Dụng cụ combat theo `vat-pham.md` (gd-items giữ danh mục và bậc, gd-combat giữ hành vi và chỉ số combat): Lao từ TOL-211, Dùi xung TOL-201, Súng lưới TOL-202 (tốn Lưới cuộn CON-102), Súng gây mê TOL-203 (tốn Ống gây mê CON-103), Phao kéo CON-106, Kim sinh thiết CON-107, Lồng mẫu TOL-501. Lao từ và Dùi xung dùng cooldown. Dụng cụ không có độ bền.
 
 ### Điểm sinh và rơi (cho gd-world, gd-items)
 
-Thứ tự ID vật phẩm của gd-items: số loài trong dải theo cột "Số gd-items". Ví dụ DL-G04 là loài thứ 3 của dải Gần nên dùng SMP-113, LIV-113, BIO-113.
+Thứ tự ID vật phẩm của gd-items: số loài trong dải theo cột "Số gd-items". Ví dụ DL-G04 là loài thứ 3 của Vành đai ngoài nên dùng SMP-113, LIV-113, BIO-113.
 
 | ID | Số gd-items | Kiểu sinh | Số con mỗi điểm sinh | Điểm neo | Nguyên liệu chung khi hạ (SMP-101, 201, 301) | Đặc sản khi hạ (xác suất) | Khi bắt hoặc sinh thiết |
 |---|---|---|---|---|---|---|---|
@@ -73,19 +73,19 @@ Kết nhanh (hạ con đang bất lực) giữ nguyên số lượng, chỉ nân
 | WD-01 Warden Harvester | Tuần tra giữa các đàn Driftlife | Theo cặp với WD-03, hoặc do WD-04 thả ra |
 | WD-02 Warden Lancer | Đứng cố định canh trạm thu hoặc lối vào khu của The Wardens | 1 đến 2 mỗi điểm |
 | WD-03 Warden Snarer | Tuần tra | Đi cùng 1 WD-01 |
-| WD-04 Warden Collector | Đi theo đường cố định băng qua dải Xa, là sự kiện | Tối đa 1 mỗi chuyến |
+| WD-04 Warden Collector | Đi theo đường cố định băng qua Vùng trung tâm, là sự kiện | Tối đa 1 mỗi chuyến |
 
 | Boss | Chương | Nơi (gd-world, gd-story) | Rơi khi hạ | Rơi khi xua đi |
 |---|---|---|---|---|
-| BS-1 Scrapmaw | 1 | Station Cinder, khoang máy C6 sau cửa D1 | SMP-191 Hạch thủ lĩnh Gần, cộng 5 SMP-101 | SMP-192 Mẫu boss Gần, cộng 2 SMP-101 |
-| BS-2 Tempest Gulper | 2 | Station Lantern, vành ngoài trạm | SMP-291 Đặc sản Tempest Gulper, cộng phế liệu nó đã nuốt | SMP-292 Mẫu boss Giữa |
+| BS-1 Scrapmaw | 1 | Station Cinder, khoang máy C6 sau cửa D1 | SMP-191 Hạch thủ lĩnh Vành đai ngoài, cộng 5 SMP-101 | SMP-192 Mẫu boss Vành đai ngoài, cộng 2 SMP-101 |
+| BS-2 Tempest Gulper | 2 | Station Lantern, vành ngoài trạm | SMP-291 Đặc sản Tempest Gulper, cộng phế liệu nó đã nuốt | SMP-292 Mẫu boss Vành đai trong |
 | BS-3 Warden Reaper | 3 | Station Flint, khoang hàng thành trạm thu | RES-305 Linh kiện Warden | Không có xua đi |
 | BS-4 Cradle Custodian | 4 | Cradle Interior, Lõi máy | RES-401 Linh kiện Cradle | Không có xua đi |
 | BS-5 Daskel | 5 | Warden Rig, Command Deck | Không rơi trực tiếp, vật truyện mở sau trận theo `vat-pham.md` và `cot-truyen.md` | Không có xua đi. Kết là khuất phục và bắt giữ |
 
 ## Tóm tắt
 
-Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh lại mỗi chuyến) và ở nửa sau game gặp The Wardens. Combat là cách lấy mẫu và giữ Oxy. Mỗi con Driftlife cho ba lựa chọn: bắt sống, hạ hoặc né. Bắt sống luôn đáng hơn hạ (K9) nhưng tốn công, tốn vật tiêu hao, chiếm chỗ trong Lồng mẫu. Tầng: lõi. Ưu tiên: bản đầu cho MVP (các loài dải Gần và boss chương đầu), đầy đủ cho cả game. Phụ thuộc: `nguoi-choi.md` (Oxy, lướt, túi), `vat-pham.md` (dụng cụ, rơi), `map.md` (điểm sinh, phòng boss), `tram-va-cang.md` (nuôi, sự cố).
+Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh lại mỗi chuyến) và ở nửa sau game gặp The Wardens. Combat là cách lấy mẫu và giữ Oxy. Mỗi con Driftlife cho ba lựa chọn: bắt sống, hạ hoặc né. Bắt sống luôn đáng hơn hạ (K9) nhưng tốn công, tốn vật tiêu hao, chiếm chỗ trong Lồng mẫu. Tầng: lõi. Ưu tiên: bản đầu cho MVP (các loài Vành đai ngoài và boss chương đầu), đầy đủ cho cả game. Phụ thuộc: `nguoi-choi.md` (Oxy, lướt, túi), `vat-pham.md` (dụng cụ, rơi), `map.md` (điểm sinh, phòng boss), `tram-va-cang.md` (nuôi, sự cố).
 
 ## Hiện hành
 
@@ -116,7 +116,7 @@ Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh
 6. (MVP) Không có sát thương lên đồng đội. Dùi xung, Súng lưới, Súng gây mê không tác dụng lên người chơi. Lao từ trúng đồng đội thì móc dây và kéo đồng đội về phía người bắn, không trừ Oxy.
 7. (MVP) Trong trạm không dùng được dụng cụ combat. Dụng cụ chỉ hoạt động ngoài không gian và trong map nhánh.
 8. (MVP) Mọi đòn của Driftlife và The Wardens có ba pha: Báo trước, Đánh, Hồi. Báo trước có cả hình và tiếng. Báo trước tối thiểu 0,7 giây với đòn hẹp trừ dưới 15 điểm Oxy, 0,8 giây với đòn hẹp từ 15 điểm trở lên, 1,0 giây với đòn vùng bán kính 2 đến 3 u, 1,3 giây với đòn vùng bán kính trên 3 đến 4 u. Vùng lớn hơn 4 u phải có cách chống khác ngoài bay ra (bám mảnh vỡ, chỗ núp). Ý đồ: mọi đòn đều né được bằng bay thường, lướt là cách né dư dả, không bắt buộc (prototype bay của gd-tech: bay ra khỏi đòn hẹp cần khoảng 0,67 giây, khỏi vùng bán kính 2,5 u cần 0,92 giây, lướt ra cần 0,46 giây). Vùng hút của Storm Siphon chống bằng bám mảnh vỡ, không bằng bay ra. Kẻ địch ở ngoài màn hình của người bị nhắm mà ra đòn thì báo trước có thêm chỉ báo ở mép màn (mũi tên chỉ hướng và âm định hướng), hiện ngay từ đầu pha Báo trước, và pha Báo trước không được ngắn hơn mức tối thiểu ở trên tính từ lúc chỉ báo hiện. Hazard từ ngoài màn theo cùng luật này ở `map.md` (gd-world). Ngoại lệ: sát thương tiếp xúc khi người chơi tự lao vào con vật (Lumen Jelly, gai) không cần báo trước nhưng tối đa 5 điểm mỗi lần.
-9. (MVP) Vé tấn công: mỗi người chơi có 2 vé ở dải Gần, 3 vé ở dải Giữa và Xa. Một kẻ địch muốn ra đòn nhắm vào người chơi nào phải giữ một vé của người đó. Hết vé thì kẻ địch vòng quanh ở khoảng cách 4 u chờ. Đòn tiếp xúc và đòn vùng không cần vé.
+9. (MVP) Vé tấn công: mỗi người chơi có 2 vé ở Vành đai ngoài, 3 vé ở Vành đai trong và Vùng trung tâm. Một kẻ địch muốn ra đòn nhắm vào người chơi nào phải giữ một vé của người đó. Hết vé thì kẻ địch vòng quanh ở khoảng cách 4 u chờ. Đòn tiếp xúc và đòn vùng không cần vé.
 10. (MVP) Chọn mục tiêu: kẻ địch nhắm người gây sát thương, choáng hoặc mê cho nó gần nhất trong 3 giây vừa qua. Không có thì nhắm người chơi gần nhất trong vùng phát hiện. Ra khỏi vùng bỏ đuổi thì quay về chỗ cũ. Người chơi đang Ngạt hoặc Được cứu không bị nhắm tới và không nhận sát thương, kể cả đòn vùng (theo `nguoi-choi.md` 2.3). Kẻ địch đang nhắm người đó trả vé và chọn lại mục tiêu theo luật này, không còn ai thì về Trôi.
 11. (Sau MVP) Driftlife và The Wardens thù nhau: Driftlife kiểu Giữ lãnh thổ và Săn mồi tấn công đơn vị The Wardens trong vùng phát hiện, ưu tiên hơn người chơi.
 
@@ -156,11 +156,11 @@ Ngoài không gian người chơi gặp Driftlife (sinh vật bản địa, sinh
 27. (MVP) Loài gắn với dải (K5). Một loài chỉ sinh ở dải của nó và ở map nhánh trong dải đó.
 28. (MVP) Driftlife sinh lại mỗi chuyến, không cạn (K8). Không có luật phạt khi hạ nhiều.
 29. (MVP) Mỗi loài có đúng một kiểu hành vi chính trong 6 kiểu: Hiền, Chạy trốn, Giữ lãnh thổ, Săn mồi, Đi bầy, Phục kích. Kiểu quyết định nó làm gì khi thấy người chơi (bảng mục 2.7).
-30. (Sau MVP, chương 3) Một phần cá thể ở dải Giữa và Xa mang Dấu săn bắt (vết lưới năng lượng và vết cắt của quân The Wardens, hình art). Ở dải Xa dấu luôn có: mọi DL-X05 Shardbrood Hatchling mang thẻ đánh dấu của quân The Wardens, mọi DL-X04 Shardbrood Queen có sẹo cắt mô theo quy luật. Dấu này không đổi chỉ số, chỉ là chi tiết truyện cho cú lật Driftlife (B6 sửa lần 6): bằng chứng chế độ của Daskel cướp bóc tràn lan, trái với hình ảnh chúng tự dựng. Manh mối chính vẫn ở map nhánh (K7).
+30. (Sau MVP, chương 3) Một phần cá thể ở Vành đai trong và Vùng trung tâm mang Dấu săn bắt (vết lưới năng lượng và vết cắt của quân The Wardens, hình art). Ở Vùng trung tâm dấu luôn có: mọi DL-X05 Shardbrood Hatchling mang thẻ đánh dấu của quân The Wardens, mọi DL-X04 Shardbrood Queen có sẹo cắt mô theo quy luật. Dấu này không đổi chỉ số, chỉ là chi tiết truyện cho cú lật Driftlife (B6 sửa lần 6): bằng chứng chế độ của Daskel cướp bóc tràn lan, trái với hình ảnh chúng tự dựng. Manh mối chính vẫn ở map nhánh (K7).
 
 ### 2.5 The Wardens
 
-31. (Sau MVP) The Wardens là chế độ và quân đội của Daskel, độc tài của Sennar. Lính là người Sennari mặc giáp chế độ, không phải cả chủng tộc (log GDM dòng 84). Quân The Wardens xuất hiện ở dải Xa từ chương 3, theo sự kiện do gd-world đặt (điểm sinh SP-W). Khác Driftlife ở 5 điểm: dùng vũ khí bắn xa, phối hợp nhóm (một đơn vị gọi thêm drone), có khiên hướng, không bắt sống được, miễn mê.
+31. (Sau MVP) The Wardens là chế độ và quân đội của Daskel, độc tài của Sennar. Lính là người Sennari mặc giáp chế độ, không phải cả chủng tộc (log GDM dòng 84). Quân The Wardens xuất hiện ở Vùng trung tâm từ chương 3, theo sự kiện do gd-world đặt (điểm sinh SP-W). Khác Driftlife ở 5 điểm: dùng vũ khí bắn xa, phối hợp nhóm (một đơn vị gọi thêm drone), có khiên hướng, không bắt sống được, miễn mê.
 32. (Sau MVP) Hạ đơn vị The Wardens cho RES-305 Linh kiện Warden và RES-301 Hợp kim Warden. Đây là nguồn duy nhất của hai vật phẩm này.
 33. (Sau MVP) Warden Harvester đang giữ một Driftlife trong lưới năng lượng. Hạ drone thì con Driftlife được thả, ở trạng thái Choáng 6 giây, bắt sống được ngay.
 34. (Sau MVP) Warden Snarer bắn lưới lên người chơi: người trúng bị trói tối đa 2 giây rồi lưới tự tan, không bay được, mỗi giây trừ 2 điểm Oxy. Thoát sớm bằng Lướt 3 lần liên tiếp, hoặc đồng đội bắn Lao từ vào lưới để cắt. Người đang kéo vật lớp Nặng (không Lướt được theo `nguoi-choi.md`) thì chờ lưới tự tan, hoặc thả vật rồi Lướt. Một mình luôn thoát được (C1).
@@ -247,8 +247,8 @@ Cam kết với người chơi: mọi đòn đều có báo trước, không có
 | Báo trước tối thiểu, đòn hẹp dưới 15 Oxy | 0,7 s | 0,67 đến 0,9 s | Dễ né | Phải lướt mới né, dễ thấy oan | Mọi kẻ địch | đo, prototype bay của gd-tech (`tools/prototype/bay.html`): bay ra cần 0,67 s |
 | Báo trước tối thiểu, đòn vùng từ bán kính 2 u | 1,0 s | 0,92 đến 1,3 s | Dễ né | Phải lướt | Mọi kẻ địch | đo, prototype bay: bay ra khỏi vùng 2,5 u cần 0,92 s |
 | Báo trước tối thiểu, đòn hẹp từ 15 Oxy | 0,8 s | 0,7 đến 1,2 s | Như trên | Như trên | Mọi kẻ địch | ước, trên mức bay ra 0,67 s |
-| Vé tấn công mỗi người, dải Gần | 2 | 1 đến 3 | Dải Gần khó lên | Bầy thành vô hại | Mỗi người chơi | ước |
-| Vé tấn công mỗi người, Giữa và Xa | 3 | 2 đến 4 | Khó lên | Dễ đi | Mỗi người chơi | ước |
+| Vé tấn công mỗi người, Vành đai ngoài | 2 | 1 đến 3 | Vành đai ngoài khó lên | Bầy thành vô hại | Mỗi người chơi | ước |
+| Vé tấn công mỗi người, Vành đai trong và Vùng trung tâm | 3 | 2 đến 4 | Khó lên | Dễ đi | Mỗi người chơi | ước |
 | Hỗ trợ ngắm gamepad | 6 độ | 0 đến 10 độ | Dễ ngắm | Khó ngắm | Người dùng gamepad | ước |
 
 ### 3.2 Choáng, Mê, bắt
@@ -359,7 +359,7 @@ Giữ lãnh thổ bị bắn từ ngoài vùng phát hiện (ví dụ Lao từ b
 | DL-X02 | Phục kích, mặt trước dội ngược đạn và tia về người bắn | Không nuôi, chỉ hạ hoặc bắt ngủ cho nghiên cứu | Vỏ gương | Vòng ra sau, Súng gây mê từ sau | Vị trí quan trọng hơn bắn nhiều |
 | DL-X03 | Giữ vùng, chu kỳ hút kéo người vào và hút Oxy | Sinh thiết lõi khí sống | Lõi khí | Bám vào mảnh vỡ chống hút, đánh khi nó nghỉ | Hazard sống, quản lý Oxy |
 | DL-X04 | Đẻ bầy liên tục, hạ mẹ thì bầy tan | Sinh thiết túi trứng | Túi trứng | Bỏ qua bầy, đánh mẹ, co-op chia vai | Ưu tiên mục tiêu |
-| DL-X05 | Bầy con, tan khi mẹ bị hạ (bơi đi) | Nuôi, dễ bắt nhất dải Xa | Vỏ giáp nhỏ | Súng lưới | Bắt hàng loạt |
+| DL-X05 | Bầy con, tan khi mẹ bị hạ (bơi đi) | Nuôi, dễ bắt nhất Vùng trung tâm | Vỏ giáp nhỏ | Súng lưới | Bắt hàng loạt |
 
 ### 3.6 Đơn vị The Wardens (Sau MVP)
 
@@ -368,7 +368,7 @@ Giữ lãnh thổ bị bắn từ ngoài vùng phát hiện (ví dụ Lao từ b
 | WD-01 Warden Harvester | 80 | 60 | Không | Không đánh người, trừ khi bị chắn đường: đẩy 0 Oxy | Bắn lưới năng lượng giữ một Driftlife, kéo về Warden Collector | Hạ thì thả Driftlife đang bị giữ (luật 33) |
 | WD-02 Warden Lancer | 120 | 100 | Khiên trước chặn 100% sát thương và choáng từ phía trước | Tia: 12, 0,7, 2,5 | Giữ khoảng cách 6 u, quay khiên về người gần nhất | Phải vòng ra sau hoặc có đồng đội đánh lạc hướng. Một mình: dùng Lao từ kéo vật nổ hoặc dụ Driftlife lãnh thổ vào |
 | WD-03 Warden Snarer | 90 | 75 | Không | Lưới trói (luật 34). Gọi 1 WD-01 mỗi 15 s | Giữ 8 u, bắn lưới vào người đang kéo vật hoặc đang bắt | Săn người đang bắt sống |
-| WD-04 Warden Collector | 600 | Miễn | Giáp toàn thân, 2 động cơ là điểm yếu (mỗi cái 150) | Thả 2 WD-01 mỗi 20 s. Tháp tia: 15, 1,0, 6 | Trôi qua dải Xa theo đường, có khoang chứa Driftlife | Phá cả 2 động cơ thì tàu rút, khoang chứa vỡ, thả 3 đến 5 Driftlife đang choáng |
+| WD-04 Warden Collector | 600 | Miễn | Giáp toàn thân, 2 động cơ là điểm yếu (mỗi cái 150) | Thả 2 WD-01 mỗi 20 s. Tháp tia: 15, 1,0, 6 | Trôi qua Vùng trung tâm theo đường, có khoang chứa Driftlife | Phá cả 2 động cơ thì tàu rút, khoang chứa vỡ, thả 3 đến 5 Driftlife đang choáng |
 
 ### 3.7 Boss
 
@@ -517,7 +517,7 @@ Cột ròng theo thước đo thứ hai:
 ## 5. Ràng buộc vật lý của luật
 
 - Trần khóa liên tục: với hệ số DR 1,5 và trần 3, thời gian Choáng một con trên một phút giảm dần. Ước một người với Dùi xung bậc 1 giữ con DL-G05 không thể vì miễn choáng, giữ DL-M03 bất lực tối đa khoảng 40% thời gian. Đã đo bằng sim S3 (kết quả ở cuối mục 3.8): 4 người dùng Dùi xung liên tục giữ một con Bất lực 18 đến 32% thời gian trong 60 giây, dưới mục tiêu 70%.
-- Vé tấn công giới hạn số đòn cùng lúc: một người ở dải Gần chịu tối đa 2 đòn có vé trong một chu kỳ, cộng đòn vùng. Trần Oxy mất do combat mỗi giây vì vậy có giới hạn, sim S1 đo.
+- Vé tấn công giới hạn số đòn cùng lúc: một người ở Vành đai ngoài chịu tối đa 2 đòn có vé trong một chu kỳ, cộng đòn vùng. Trần Oxy mất do combat mỗi giây vì vậy có giới hạn, sim S1 đo.
 - Súng lưới bắt tối đa 3 con một phát, nên bầy 8 con cần 3 phát. Số con bắt được một chuyến bị chặn bởi số Lưới cuộn mang theo và 1 lồng 3 con mỗi người.
 - Cỡ L không bắt sống được bằng luật, nên khoang sinh quyển chỉ chứa S và M.
 - Một mình phải thắng được mọi boss: không cơ chế boss nào cần hai người đứng hai chỗ cùng lúc. BS-1 Neo xúc tu giật lần lượt được, BS-5 ống chứa phá lần lượt được.
@@ -544,12 +544,12 @@ Nơi phải cùng đổi khi đổi luật này: bảng Loài và Đòn, sim com
 
 | Chỉ số | Công thức theo số người N | N=1 | N=2 | N=3 | N=4 |
 |---|---|---|---|---|---|
-| Sinh lực, ngưỡng choáng, ngưỡng mê Driftlife, dải Gần | N chia k(N) của dải | 1 | 1,54 | 1,88 | 2,11 |
-| Sinh lực, ngưỡng choáng, ngưỡng mê Driftlife, dải Giữa | N chia k(N) của dải | 1 | 1,6 | 2 | 2,29 |
-| Sinh lực, ngưỡng choáng, ngưỡng mê Driftlife, dải Xa | N chia k(N) của dải | 1 | 1,45 | 1,7 | 1,87 |
-| Số Driftlife một chuyến, dải Gần | k(N) = 1 + 0,3 x (N - 1), `map.md` 3.8 | 1 | 1,3 | 1,6 | 1,9 |
-| Số Driftlife một chuyến, dải Giữa | k(N) = 1 + 0,25 x (N - 1), `map.md` 3.8 | 1 | 1,25 | 1,5 | 1,75 |
-| Số Driftlife một chuyến, dải Xa | k(N) = 1 + 0,38 x (N - 1), `map.md` 3.8 | 1 | 1,38 | 1,76 | 2,14 |
+| Sinh lực, ngưỡng choáng, ngưỡng mê Driftlife, Vành đai ngoài | N chia k(N) của dải | 1 | 1,54 | 1,88 | 2,11 |
+| Sinh lực, ngưỡng choáng, ngưỡng mê Driftlife, Vành đai trong | N chia k(N) của dải | 1 | 1,6 | 2 | 2,29 |
+| Sinh lực, ngưỡng choáng, ngưỡng mê Driftlife, Vùng trung tâm | N chia k(N) của dải | 1 | 1,45 | 1,7 | 1,87 |
+| Số Driftlife một chuyến, Vành đai ngoài | k(N) = 1 + 0,3 x (N - 1), `map.md` 3.8 | 1 | 1,3 | 1,6 | 1,9 |
+| Số Driftlife một chuyến, Vành đai trong | k(N) = 1 + 0,25 x (N - 1), `map.md` 3.8 | 1 | 1,25 | 1,5 | 1,75 |
+| Số Driftlife một chuyến, Vùng trung tâm | k(N) = 1 + 0,38 x (N - 1), `map.md` 3.8 | 1 | 1,38 | 1,76 | 2,14 |
 | Gánh mỗi người so với một mình = k(N) x hệ số Sinh lực / N | Kiểm, mục tiêu 0,9 đến 1,1 | 1 | 1 | 1 | 1 |
 | Sinh lực boss (kể cả BS-1, BS-2) và đơn vị The Wardens | Gốc x (1 + 0,6 x (N - 1)) | 1 | 1,6 | 2,2 | 2,8 |
 | Ngưỡng choáng đơn vị The Wardens | Gốc x (1 + 0,6 x (N - 1)) | 1 | 1,6 | 2,2 | 2,8 |
@@ -634,7 +634,7 @@ Tutorial (gd-ux):
 4. Bảng trạng thái không có trạng thái cụt.
 5. Mọi luật có nhãn MVP hoặc Sau MVP.
 6. Chơi một mình thắng được mọi boss theo mô tả cơ chế (không cơ chế cần hai người cùng lúc).
-7. MVP có đúng 4 loài dải Gần và 1 boss.
+7. MVP có đúng 4 loài Vành đai ngoài và 1 boss.
 8. Trên prototype bay (`tools/prototype/bay.html`, chế độ thử né phím T): người chơi mới né được đòn hẹp báo trước 0,7 s bằng bay thường, không lướt, ít nhất 70% lần sau 3 lần thử.
 9. Trên prototype bay: người chơi mới thoát khỏi đòn vùng bán kính 2,5 u báo trước 1,0 s bằng bay thường ít nhất 70% lần sau 3 lần thử. Biên thiết kế hiện tại: đòn hẹp 0,7 s so với 0,67 s cần để bay ra, đòn vùng 1,0 s so với 0,92 s, nên hai tiêu chí này là kiểm thật, có thể trượt.
 10. Trên prototype bay: người chơi mới thoát khỏi vùng phóng điện bán kính 4 u của lõi BS-1 (báo trước 1,3 s) từ sát lõi bằng bay thường ít nhất 70% lần sau 3 lần thử. Phép tính ước: phản xạ 0,27 s cộng khoảng 0,9 s bay 4,4 u từ đứng yên là khoảng 1,2 s, biên 0,1 s.
@@ -702,7 +702,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 7 | Chất lượng | 1 đến 3 sao theo Sinh lực lúc bắt | Một luật cho mọi dụng cụ, thưởng bắt khéo | Theo loại súng như Dave | Rẻ |
 | 8 | Kết nhanh | Hạ con bất lực cho 2 sao, có từ MVP | MVP có lý do làm choáng trước khi hạ, dạy trước động tác bắt | Không có | Rẻ |
 | 9 | Mẫu sống cỡ S đi trong Lồng mẫu kéo theo, tối đa 3 con, 1 lồng mỗi người | Có | Khớp `vat-pham.md` (mẫu sống là vật kéo). Cái giá thấy được của bắt sống | Vào túi chiếm gấp đôi chỗ | Rẻ |
-| 10 | Vé tấn công | 2 ở dải Gần, 3 ở Giữa và Xa, riêng từng người | Đông mà vẫn công bằng, co-op tự cân | Không giới hạn | Vừa |
+| 10 | Vé tấn công | 2 ở Vành đai ngoài, 3 ở Vành đai trong và Vùng trung tâm, riêng từng người | Đông mà vẫn công bằng, co-op tự cân | Không giới hạn | Vừa |
 | 11 | Không sát thương đồng đội, Lao từ kéo đồng đội | Có | C1 không PvP. Kéo đồng đội là động từ co-op rẻ, giúp cứu người ngạt | Bỏ qua va chạm với đồng đội | Rẻ |
 | 12 | Không dụng cụ combat trong trạm | Có | Trạm là nhà, sự cố xử bằng tay | Cho bắn trong trạm | Rẻ |
 | 13 | Số loài | 5 mỗi dải, 6 kiểu hành vi | Brief 4 đến 6. 5 đủ phủ các kiểu mà không vượt sức 1 artist | 6 mỗi dải | Vừa |
@@ -729,7 +729,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 2026-11-20 | Đợt 6 phản diện mới (phần không cần tên): Dấu săn bắt theo B6 mới, The Wardens là quân của X, toán bắt cóc Y chương 3 (luật 44), Y trong combat khi hộ tống (luật 40 đến 43) | Brief đợt 6, khung sửa lần 6, log 84 đến 92 | gd-combat |
 | 2026-11-20 | Đợt 4: K9 sửa lần 5 (sinh thiết ngoài K9, log 66), K27 cho Lồng mẫu khi Ngạt, C10 cho rớt mạng, K23 lưu trạng thái boss | Brief đợt 4, khung sửa lần 5 | gd-combat |
 | 2026-11-20 | BS-1 húc pha 2 từ 12 xuống 10 Oxy để người tệ một mình đạt Oxy P50 dưới 330 | Tin gd-tech, sim S5 tách nguồn Oxy | gd-combat |
-| 2026-11-20 | 6b dải Gần theo k(N) mới (0,30). Luật 36: Driftlife do boss sinh ra không rời phòng, lối sau phòng đóng tới khi boss kết thúc | Tin gd-world, QA map lỗi 8 | gd-combat |
+| 2026-11-20 | 6b Vành đai ngoài theo k(N) mới (0,30). Luật 36: Driftlife do boss sinh ra không rời phòng, lối sau phòng đóng tới khi boss kết thúc | Tin gd-world, QA map lỗi 8 | gd-combat |
 | 2026-11-20 | BS-1 giảm phun Krill (2 con, hồi chiêu 20, tối đa 3 sống). Mục tiêu S5 tách người trung bình và người tệ. Chép lại 3.8, S4 | Tin gd-tech: người tệ một mình vượt Oxy | gd-combat |
 | 2026-11-20 | Mirror Mantis ngưỡng mê 280, ghi tốc độ quay mặt gương. BS-1 pha 2 thân nhận sát thương mọi lúc. Chép lại 3.8, S4 từ sim mới | Tin gd-tech: sim đọc 3.4b, S5 quá nặng | gd-combat |
 | 2026-11-20 | Thêm Lao từ bậc 2, bậc 3 | Tin gd-items, QA lỗi 8 (UPG-HAR không có hiệu ứng) | gd-combat |
@@ -741,7 +741,7 @@ Luật sự cố, thời gian, hậu quả là của gd-quan. gd-combat chỉ c�
 | 2026-11-20 | QA vòng 1 (GD-031): tách thước đo K9 và ròng mỗi phút, bỏ "kéo chậm", bắt tay 1,5 s, Arc Eel MVP chỉ hạ, 3.4b đòn và di chuyển, boss miễn dụng cụ và hệ số co-op, BS-1 viết lại, cửa phòng boss không khóa, Mẫu boss theo `vat-pham.md`, DR viết lại, E18, E19, tiêu chí 9 | Phiếu `qa/GD-031-combat-driftlife.md` | gd-combat |
 | 2026-11-20 | Cập nhật số S3, S4 theo sim tự đọc k(N) từ `map.md` | Tin gd-tech | gd-combat |
 | 2026-11-20 | Ghi kết quả S4 có cột bắt dồn, nhận không đổi số | Tin gd-tech | gd-combat |
-| 2026-11-20 | Cập nhật bảng 6b theo k(N) mới của gd-world (Gần 0,27, Giữa 0,25, Xa 0,38) | Tin gd-world | gd-combat |
+| 2026-11-20 | Cập nhật bảng 6b theo k(N) mới của gd-world (Vành đai ngoài 0,27, Vành đai trong 0,25, Vùng trung tâm 0,38) | Tin gd-world | gd-combat |
 | 2026-11-20 | Hệ số Sinh lực và ngưỡng Driftlife theo số người đổi thành N chia k(N) của từng dải | k(N) của gd-world đổi theo dải | gd-combat |
 | 2026-11-20 | 3.8 lấy số từ sim chính thức của gd-tech (có Chạy trốn, giá mẫu mới). Arc Eel ròng 1,57 đạt. Nhận Mantis 1,82 và loài Chạy trốn cao | Tin gd-tech | gd-combat |
 | 2026-11-20 | Súng gây mê 60 điểm mỗi 3 s, ngưỡng mê Arc Eel 90, Mirror Mantis 150. Viết lại 3.8 theo sim có bay tới và vật tiêu hao | Tin gd-tech: hai loài bắt bằng mê ròng âm | gd-combat |

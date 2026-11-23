@@ -219,7 +219,7 @@ export function baoCao(cfg, seed, lan) {
         vn(r.gtdNguoi), pt(r.gtdDrift / r.gtdNguoi), `${vn(r.soBat)} / ${vn(r.soHa)}`, vn(r.gtdNhom), pt(r.gtdNguoi / solo.gtdNguoi), pt(r.dayTui), pt(r.tuiDay), pt(r.keo), pt(r.cuu), pt(r.beacon)]);
     }
   }
-  out.push(`\n## 1. Theo chương, kịch bản, số người (k(N) = 1 + a (N - 1), a theo dải: ${['Gần', 'Giữa', 'Xa'].map((d) => `${d} ${vn(cfg.dai[d].kHeSo ?? cfg.coop.kHeSo, 2)}`).join(', ')})\n`);
+  out.push(`\n## 1. Theo chương, kịch bản, số người (k(N) = 1 + a (N - 1), a theo dải: ${['Vành đai ngoài', 'Vành đai trong', 'Vùng trung tâm'].map((d) => `${d} ${vn(cfg.dai[d].kHeSo ?? cfg.coop.kHeSo, 2)}`).join(', ')})\n`);
   out.push(bangMd(['Chương', 'Dải', 'Bình', 'Kịch bản', 'Số người', 'Phút nhóm P50 (P10 đến P90)', 'GTĐ mỗi người', 'Phần từ Driftlife', 'Bắt / hạ mỗi người', 'GTĐ cả nhóm', 'Mỗi người so với một mình', 'Túi đầy trung bình', 'Về vì túi đầy', 'Bị kéo về (ngạt không cứu)', 'Được cứu', 'Về bằng beacon'], rows));
 
   out.push('\n## 2. Đối chiếu mục tiêu khung mục 9\n');

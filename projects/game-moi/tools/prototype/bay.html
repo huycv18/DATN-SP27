@@ -103,9 +103,9 @@ const SLV = {
   'SLV-104': { ten: 'Hòm kỹ thuật vỡ', giay: 6, quay: 2, bang: [['RES-104', 30, 1], ['RES-102', 30, 2], ['RES-101', 25, 2], ['RES-106', 15, 1]], mau: '#d29922' },
   'SLV-105': { ten: 'Tấm vỏ lớn', giay: 14, quay: 3, bang: [['RES-101', 100, 2]], mau: '#ff7b72' },
 };
-// Dụng cụ khai thác TOL-102 là ô 1 của bộ khởi điểm (VP luật T6) nên đủ bậc cho mọi SLV Gần.
+// Dụng cụ khai thác TOL-102 là ô 1 của bộ khởi điểm (VP luật T6) nên đủ bậc cho mọi SLV Vành đai ngoài.
 
-// Map dựng tay: 4 mảnh Gần ghép ngang (MAP 2.1, 3.3, 3.4), mảnh 40 x 24 u, cổng 8 u (MAP bảng tham số) ở giữa cạnh.
+// Map dựng tay: 4 mảnh Vành đai ngoài ghép ngang (MAP 2.1, 3.3, 3.4), mảnh 40 x 24 u, cổng 8 u (MAP bảng tham số) ở giữa cạnh.
 // Cột 1 Ember Mooring (cố định), 2 Mở, 3 Xác lớn, 4 Thưởng (chỉ nửa ngoài). Vị trí node và beacon là [GIẢ ĐỊNH], dựng tay cho prototype.
 function dungMapChuyen() {
   const kh = [], tuong = (x) => { kh.push({ x, y: 0, w: 1, h: 8 }, { x, y: 16, w: 1, h: 8 }); };
@@ -245,7 +245,7 @@ function hienKet() {
   <tr><td>Thời gian chuyến</td><td>${vn(k.thoiGian, 1)} giây</td></tr>
   <tr><td>Oxy còn khi về</td><td>${vn(k.oxyCon, 1)} trên ${P.binh}</td></tr>
   <tr><td>Oxy dưới vạch "đủ về"</td><td>${k.duoiVachLan ? `Có, ${k.duoiVachLan} lần, tổng ${vn(k.duoiVachGiay, 1)} giây, thấp nhất ${vn(k.duMin, 1)} Oxy so với vạch` : 'Không, dư thấp nhất ' + vn(k.duMin, 1) + ' Oxy'}</td></tr>
-  <tr><td>Xa nhất tới cửa khí</td><td>${vn(k.xaNhat, 0)} u</td></tr>
+  <tr><td>Vùng trung tâm nhất tới cửa khí</td><td>${vn(k.xaNhat, 0)} u</td></tr>
   <tr><td>Mang về</td><td>${k.monMangVe} món, ${vn(k.gtdMangVe, 1)} GTĐ (${giu})</td></tr>
   <tr><td>Nhặt được cả chuyến</td><td>${k.monNhat} món, ${vn(k.gtdNhat, 1)} GTĐ tại ${k.diemKhaiThac} điểm</td></tr>
   <tr><td>Mất</td><td>${vn(k.gtdMat, 1)} GTĐ${k.cach === 'keo' ? ' (bị kéo về chỉ giữ 1 món)' : ''}</td></tr></table>

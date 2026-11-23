@@ -170,9 +170,9 @@ t('sim-combat: co-op nhân Sinh lực 1,22 ở 2 người: 80 x 1,22 = 97,6 cầ
   assert.ok(Math.abs(CB.tran(CB.CFG, s, 2, 'trung bình', 'hạ', luonTrung).t - 3.2) < 0.06);
 });
 t('sim-combat: hệ số Sinh lực bằng N / k(N) với a theo dải đọc từ map.md (a = 0,27 thì N = 4 ra 4 / 1,81)', () => {
-  const c = { ...CB.CFG, coop: { ...CB.CFG.coop, kTheoDai: { Gần: 0.27 } } };
-  assert.ok(Math.abs(CB.heSoN(c, { dai: 'Gần' }, 4) - 4 / 1.81) < 1e-9);
-  assert.equal(CB.heSoN(c, { dai: 'Gần' }, 1), 1);
+  const c = { ...CB.CFG, coop: { ...CB.CFG.coop, kTheoDai: { 'Vành đai ngoài': 0.27 } } };
+  assert.ok(Math.abs(CB.heSoN(c, { dai: 'Vành đai ngoài' }, 4) - 4 / 1.81) < 1e-9);
+  assert.equal(CB.heSoN(c, { dai: 'Vành đai ngoài' }, 1), 1);
 });
 t('sim-combat: đọc được loài MVP từ combat-driftlife.md, Arc Eel miễn choáng thì bắt bằng mê', () => {
   const L = CB.docLoai();
@@ -191,9 +191,9 @@ t('sim-combat: bắt tay chỉ cho cỡ S có ngưỡng choáng, không tốn v�
   assert.equal(CB.tran(CB.CFG, { ...S, co: 'M' }, 1, 'trung bình', 'bắt tay', luonTrung), null);
 });
 const { docHeSoDai } = await import('./lib.mjs');
-t('lib: a theo dải ở map.md 3.8 có đủ Gần, Giữa, Xa, giá trị trong 0 đến 1', () => {
+t('lib: a theo dải ở map.md 3.8 có đủ Vành đai ngoài, Vành đai trong, Vùng trung tâm, giá trị trong 0 đến 1', () => {
   const k = docHeSoDai(new URL('../gdd/he-thong/map.md', import.meta.url));
-  assert.ok(['Gần', 'Giữa', 'Xa'].every((d) => k[d] > 0 && k[d] < 1));
+  assert.ok(['Vành đai ngoài', 'Vành đai trong', 'Vùng trung tâm'].every((d) => k[d] > 0 && k[d] < 1));
 });
 
 
@@ -275,6 +275,55 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
       assert.ok(/\*Hình 1 - Giờ giao thương/.test(g1.md) && /\*Hình 2 - Màn cảng/.test(g1.md) && !/Hình II\.6/.test(g1.md));
     } finally { rmSync(goc, { recursive: true }); }
   });
+}
+
+// sinh-codex: khung nhỏ dựng tay, kiểm lọc MVP, dịch ID, --kiem bắt lỗi.
+{
+  const SC2 = await import('./sinh-codex.mjs');
+  const T = (rows) => rows.map((r) => r.map((c) => c.replace(/\n/g, '\\n')).join('\t')).join('\n') + '\n';
+  const H = ['STT', 'Task', 'Sub Task', 'Short Description', 'Ref'];
+  const goc = mkdtempSync(join(tmpdir(), 'codex-'));
+  mkdirSync(join(goc, 'gdd', 'sheet'), { recursive: true });
+  const w = (f, x) => writeFileSync(join(goc, 'gdd', 'sheet', f), typeof x === 'string' ? x : T(x));
+  const itemH = ['STT', 'Item name', 'Type', 'Nguồn nhận', 'Nguồn tiêu', 'Note'];
+  w('ITEM LIST.tsv', [itemH, ['1', 'Mảnh vỏ', 'Phế liệu', 'Mảnh trôi', 'Ép tấm', 'Hull Shard. Thường, MVP'], ['2', 'Hợp kim', 'Phế liệu', 'Hòm', 'Sửa', 'Fused Alloy. Hiếm, Sau MVP'], ['3', 'Tấm nén', 'Vật liệu chế', 'RCP-101', 'Sửa', 'Thường, MVP']]);
+  w('ITEM LIST.json', JSON.stringify([['RES-101', 'Mảnh vỏ', 'Phế liệu', 'SLV-101', 'RCP-101', 'x'], ['RES-201', 'Hợp kim', 'Phế liệu', 'SLV-201', 'x', 'x'], ['COM-101', 'Tấm nén', 'Vật liệu chế', 'RCP-101', 'UPG-OXY-1', 'x']]));
+  w('Salvage.tsv', [H, ['1', 'Mảnh trôi', 'Type', 'Điểm khai thác, Vành đai ngoài. Nhãn: MVP', 'r'], ['', '', 'Resource Output', '- Mảnh vỏ: trọng số 60', ''], ['', '', 'Spawn Point', 'Vành đai ngoài. Tối đa 25%', ''], ['2', 'Hầm sâu', 'Type', 'Điểm khai thác, Vành đai trong. Nhãn: Sau MVP', 'r']]);
+  w('Salvage.json', JSON.stringify([['SLV-101', 'Mảnh trôi', 'Type', 'x', ''], ['RES-101', 'Mảnh vỏ', 'Type', 'x', ''], ['SLV-201', 'Hầm sâu', 'Type', 'x', '']]));
+  w('Recipe.tsv', [H, ['1', 'Ép tấm', 'Type', 'Xưởng', 'r'], ['', '', 'Ingredients', '3 x Mảnh vỏ', ''], ['', '', 'Output', '1 x Tấm nén\nThời gian: 10 giây', '']]);
+  w('Recipe.json', JSON.stringify([['RCP-101', 'Ép tấm', 'Type', 'Xưởng', ''], ['', '', 'Ingredients', '3 x RES-101 Mảnh vỏ', '']]));
+  w('Enemy.tsv', [H, ['1', 'Luật chung', 'Sát thương', '- Mất Oxy', 'r'], ['2', 'Moth', 'Type', '- Vành đai ngoài\n- Nhãn: MVP\n- Rơi khi hạ: Mô', 'r'], ['3', 'Eel', 'Type', '- Vành đai trong\n- Nhãn: Sau MVP', 'r']]);
+  w('Customer.tsv', [H, ['1', 'Loose Bolt (Tàu gom)', 'Type', '- Ai: Tikko, thương nhân người Oru\n- Nhãn: MVP', 'r'], ['', '', 'Order', 'Gọi mọi hàng', ''], ['2', 'Tàu xa', 'Type', '- Ai: Vaeth, thương nhân\n- Nhãn: Sau MVP', 'r'], ['3', 'Khoang trạm', 'Luật', '- Sửa khoang', 'r'], ['', '', 'Kho', '- Chức năng: Chỗ chứa\n- Người vớt: Có sẵn\n- Mở ở chương: 1\n- Nhãn: MVP', ''], ['', '', 'Sinh quyển', '- Chức năng: Nuôi\n- Người vớt: Nhà sinh học\n- Mở ở chương: 2\n- Nhãn: Sau MVP', '']]);
+  w('Upgrade.tsv', [H, ['1', 'Bình Oxy', 'Loại', 'Chỉ là số', 'r'], ['', '', 'Bậc 1', 'Oxy 330 lên 450. 930 Tally, vật liệu 26 GTĐ. Mở chương 1. MVP', ''], ['', '', 'Bậc 2', 'Oxy 600. 5000 Tally. Mở chương 2. Sau MVP', ''], ['2', 'Túi đồ', 'Loại', 'Chỉ là số', 'r'], ['', '', 'Bậc 2', 'Túi 126. 5000 Tally. Mở chương 2. Sau MVP', '']]);
+  w('Player.tsv', [H, ['1', 'Co-op 1 đến 4 người', 'Type', '- MVP chạy 2 người', 'r'], ['2', 'Hồ sơ nhân vật (tóm tắt cho art)', 'Type', '- 4 preset', 'r']]);
+  try {
+    t('sinh-codex: lọc MVP đúng từng tab, bỏ Sau MVP và hàng luật', () => {
+      const r = SC2.dung(goc), dem = (tab) => r.muc.filter((m) => m.tab === tab).length;
+      assert.deepEqual(TABS_DEM(r, dem), [2, 1, 1, 2, 2, 1]);
+      assert.deepEqual(r.canh, []);
+    });
+    t('sinh-codex: ID thành tên, công thức lấy từ Recipe, khóa không lọt ra tab Codex', () => {
+      const r = SC2.dung(goc), tam = r.muc.find((m) => m.khoa === 'COM-101');
+      assert.equal(tam.nguon, 'công thức Ép tấm');
+      assert.equal(tam.congthuc, '3 x Mảnh vỏ (10 giây)');
+      assert.equal(tam.dungcho, 'nâng cấp Bình Oxy bậc 1');
+      assert.equal(r.muc.find((m) => m.khoa === 'RES-101').ten_en, 'Hull Shard');
+      const tabs = SC2.ghiTab(r.muc, new Map([['RES-101', 'Lời mẫu.']]));
+      assert.ok(tabs.every((x) => !/COM-101|RES-101|SLV-101/.test(x.text)));
+      assert.ok(tabs[0].text.split('\n')[1].includes('Lời mẫu.'));
+      assert.equal(tabs[0].text.split('\n')[0], SC2.COT.join('\t'));
+    });
+    t('sinh-codex: --kiem bắt thiếu, thừa, quá dài, chữ số, gạch dài, chấm phẩy', () => {
+      const { muc } = SC2.dung(goc), ok1 = new Map(muc.map((m) => [m.khoa, 'Một câu gọn.']));
+      assert.deepEqual(SC2.kiem(muc, ok1), []);
+      const x = new Map(ok1);
+      x.delete('RES-101'); x.set('KHÔNG-CÓ', 'Thừa.'); x.set('COM-101', 'a'.repeat(201)); x.set('Moth', 'Có 3 con.'); x.set('Kho', 'Dài — thật.'); x.set('Tikko', 'Hai ý; một câu.');
+      const e = SC2.kiem(muc, x).join('\n');
+      for (const can of ['Thiếu lời: Vật phẩm / RES-101', 'Lời thừa', 'quá 200', 'chữ số: Moth', 'gạch dài: Kho', 'chấm phẩy: Tikko']) assert.ok(e.includes(can), 'thiếu bắt: ' + can);
+      assert.equal(SC2.kiem(muc, null).length, 1);
+    });
+  } finally { rmSync(goc, { recursive: true }); }
+  function TABS_DEM(r, dem) { return SC2.TABS.map((tab) => dem(tab)); }
 }
 
 console.log(`\n${ok} phép kiểm ĐẠT.`);

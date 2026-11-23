@@ -29,7 +29,7 @@ Các mức này đặt theo prototype bay, để mọi đòn đều né được
 - Đòn từ ngoài màn hình có thêm mũi tên ở mép màn và âm định hướng, hiện ngay từ đầu pha Báo trước.
 
 **Vé tấn công** giới hạn số kẻ địch cùng đánh một người:
-- Ở dải Gần mỗi người chơi có 2 vé. Kẻ địch muốn ra đòn vào ai phải giữ một vé của người đó, hết vé thì lượn vòng quanh chờ cách người chơi 4 u. Đòn vùng và đòn tiếp xúc không cần vé.
+- Ở Vành đai ngoài mỗi người chơi có 2 vé. Kẻ địch muốn ra đòn vào ai phải giữ một vé của người đó, hết vé thì lượn vòng quanh chờ cách người chơi 4 u. Đòn vùng và đòn tiếp xúc không cần vé.
 - Kẻ địch nhắm người vừa gây sát thương hoặc làm choáng nó gần nhất trong 3 giây qua, không có thì nhắm người gần nhất trong vùng phát hiện.
 - Người đang Ngạt hoặc đang được cứu không bị nhắm và không nhận sát thương, kể cả đòn vùng.
 
@@ -141,7 +141,7 @@ Chi tiết dữ liệu: tab Enemy khối Dụng cụ combat, tab ITEM LIST cho L
 
 ### II.4.6. Driftlife of the Near Belt
 
-Bản MVP có bốn loài của dải Gần, mỗi loài dạy người chơi một bài:
+Bản MVP có bốn loài của Vành đai ngoài, mỗi loài dạy người chơi một bài:
 
 | Loài | Cỡ, kiểu | Sinh lực | Ngưỡng choáng | Vùng phát hiện | Hành vi riêng | Khắc chế |
 |---|---|---|---|---|---|---|
@@ -158,7 +158,7 @@ Bản MVP có bốn loài của dải Gần, mỗi loài dạy người chơi m�
 
 Hạ một con cho nguyên liệu mô sinh học chung và có tỉ lệ ra đặc sản của loài, danh sách rơi xem mục II.5.
 
-[CHỜ ẢNH: bốn loài Driftlife dải Gần ở cỡ hiển thị thật, có hoạt ảnh Báo trước của Sting Krill và Arc Eel, lấy từ tab Assets khi artist giao]
+[CHỜ ẢNH: bốn loài Driftlife Vành đai ngoài ở cỡ hiển thị thật, có hoạt ảnh Báo trước của Sting Krill và Arc Eel, lấy từ tab Assets khi artist giao]
 *Hình II.4.2 - Driftmoth, Skitter Ray, Sting Krill và Arc Eel, silhouette khác nhau ở cỡ nhỏ*
 
 Chi tiết dữ liệu: tab Enemy khối Driftmoth, Skitter Ray, Sting Krill, Arc Eel. Nơi sinh và mật độ: tab Zone.
@@ -237,14 +237,14 @@ HeSoNguoiChoi = SoNguoi / k
 SinhLucBoss = SinhLucGoc * (1 + 0,6 * (SoNguoi - 1))
 ```
 - SoNguoi: số người ở ngoài không gian cùng map lúc con vật sinh ra hoặc lúc vào phòng boss, đơn vị người.
-- k: hệ số số Driftlife một chuyến của dải Gần, không đơn vị, nguồn mục II.3.
+- k: hệ số số Driftlife một chuyến của Vành đai ngoài, không đơn vị, nguồn mục II.3.
 - HeSoNguoiChoi: hệ số nhân Sinh lực và ngưỡng choáng của Driftlife, không đơn vị.
 - SinhLucBoss: Sinh lực boss theo số người, đơn vị điểm. Boss không có ngưỡng choáng nên chỉ nhân Sinh lực.
 
 | Chỉ số | 1 người | 2 người |
 |---|---|---|
-| Số Driftlife một chuyến, dải Gần | 1 | 1,3 |
-| Sinh lực và ngưỡng choáng Driftlife, dải Gần | 1 | 1,54 |
+| Số Driftlife một chuyến, Vành đai ngoài | 1 | 1,3 |
+| Sinh lực và ngưỡng choáng Driftlife, Vành đai ngoài | 1 | 1,54 |
 | Sinh lực boss | 1 | 1,6 |
 | Sát thương lên người chơi, vé tấn công mỗi người | Không đổi | Không đổi |
 
@@ -294,7 +294,7 @@ Chi tiết dữ liệu: tab Enemy khối Co-op.
 
 - Súng gây mê, thanh Mê và trạng thái Ngủ, bắt sống cỡ M bằng Phao kéo, mẫu sinh thiết cỡ L bằng Kim sinh thiết, bắt Arc Eel khi ngủ.
 - Lao từ bậc 3 và Súng lưới bậc 2.
-- Latchjaw của dải Gần và mười loài của dải Giữa, dải Xa, gồm các kiểu Săn mồi và Phục kích. Loài có đòn tiếp xúc như Lumen Jelly chạm thì bỏng: không báo trước vì người chơi tự lao vào, mất tối đa 5 Oxy mỗi lần.
-- Quân The Wardens ở dải Xa từ chương 3, dấu săn bắt trên Driftlife, toán bắt cóc Sevra và hộ tống kén của Sevra.
+- Latchjaw của Vành đai ngoài và mười loài của Vành đai trong, Vùng trung tâm, gồm các kiểu Săn mồi và Phục kích. Loài có đòn tiếp xúc như Lumen Jelly chạm thì bỏng: không báo trước vì người chơi tự lao vào, mất tối đa 5 Oxy mỗi lần.
+- Quân The Wardens ở Vùng trung tâm từ chương 3, dấu săn bắt trên Driftlife, toán bắt cóc Sevra và hộ tống kén của Sevra.
 - Boss chương 2 tới 5: Tempest Gulper, Warden Reaper, Cradle Custodian, Daskel.
 - Driftlife sổng trong trạm khi có khoang nuôi, hệ số co-op 3 và 4 người.

@@ -69,16 +69,16 @@ VAT_LIEU_SUA = [x * h for x, h in zip(VAT_LIEU_SUA, S["he_so_vat_lieu_sua_de_xua
 
 # Mật độ GTĐ mỗi Khối theo dải: trung bình bảng NODE (map tổng, không tính nhánh)
 MAT_DO = {}
-for d in ("Gần", "Giữa", "Xa"):
+for d in ("Vành đai ngoài", "Vành đai trong", "Vùng trung tâm"):
     ds = [so(n["GTĐ mỗi Khối"]) for n in NODE if n["Dải"] == d]
     MAT_DO[d] = sum(ds) / len(ds)
 # Món đắt nhất một đơn vị mỗi dải (giữ 1 món khi ngạt), không tính mẫu boss một lần
 MON_MAX = {}
-for d in ("Gần", "Giữa", "Xa"):
+for d in ("Vành đai ngoài", "Vành đai trong", "Vùng trung tâm"):
     MON_MAX[d] = max(GTD[k] for k, v in ITEM.items() if v["Dải"] == d and k[:3] in ("RES", "SMP") and GTD[k] and v["Độ hiếm"] != "Đặc biệt")
 # Kiện trung bình theo dải (kiện thô và tinh, không tính kiện sống, dữ liệu)
 KIEN = {}
-for d in ("Gần", "Giữa", "Xa"):
+for d in ("Vành đai ngoài", "Vành đai trong", "Vùng trung tâm"):
     rieng = {k for ks in S["kien_theo_chuong"].values() for k in ks}
     ds = [GTD[k] for k, v in ITEM.items() if k.startswith("CGO-") and v["Dải"] == d and GTD[k] and k not in ("CGO-121", "CGO-221", "CGO-321", "CGO-131", "CGO-141", "CGO-421") and k not in rieng]  # bỏ lồng sống, dữ liệu, vật tư, tin mật khỏi trung bình kiện hàng
     KIEN[d] = sum(ds) / len(ds)
@@ -178,7 +178,7 @@ NGUYEN_CAI = ("CGO-131", "CGO-421")  # Lead 2026-11-20: bán nguyên cái, một
 
 
 def gia_long(sp):  # lồng không chia: GTĐ mẫu sống x 10 x hệ số Hàng sống, tròn 5
-    cgo = {"Gần": "CGO-121", "Giữa": "CGO-221", "Xa": "CGO-321"}[sp["Dải"]]
+    cgo = {"Vành đai ngoài": "CGO-121", "Vành đai trong": "CGO-221", "Vùng trung tâm": "CGO-321"}[sp["Dải"]]
     return int(5 * round(so(sp["GTĐ mẫu bắt"]) * S["tally_moi_gtd"] * bac_gia(cgo)["he_so"] / 5))
 
 
@@ -307,9 +307,9 @@ def chay(kb, N, rng, beta=None, giu_mon=1, ghi_ngay=False, nguong=None):
         lam = oxy * (1 - S["du_tru_ve"] - S["du_tru_don"]) - ra - ve
         mat_do = MAT_DO[dai] * S["he_so_mat_do_them"][i] * K["mat_do"]
         # tốc độ nhặt thực: túi bậc 0 đầy ở 65% thời gian làm việc chương 1, các dải sau nhân theo mật độ
-        r = S["tui_theo_bac"][0] * MAT_DO["Gần"] / (S["ti_le_lam_viec_khi_day_tui"] * S["giay_lam_viec_ch1_tham_chieu"]) * (mat_do / MAT_DO["Gần"])
+        r = S["tui_theo_bac"][0] * MAT_DO["Vành đai ngoài"] / (S["ti_le_lam_viec_khi_day_tui"] * S["giay_lam_viec_ch1_tham_chieu"]) * (mat_do / MAT_DO["Vành đai ngoài"])
         tui = S["tui_theo_bac"][bac["TUI"]]
-        thieu_vo = bac["VO"] < i  # dải Giữa cần VO 1, Xa cần 2, Cradle và Rig cần 3
+        thieu_vo = bac["VO"] < i  # Vành đai trong cần VO 1, Vùng trung tâm cần 2, Cradle và Rig cần 3
         if i >= 3:
             thieu_vo = bac["VO"] < 3
         he_vo = S["he_so_thieu_vo"] if thieu_vo else 1.0
@@ -564,7 +564,7 @@ def bao_cao():
     for sp in SPECIES:
         if sp["Bắt"] != "Sống (LIV)":
             continue
-        cgo = {"Gần": "CGO-121", "Giữa": "CGO-221", "Xa": "CGO-321"}[sp["Dải"]]
+        cgo = {"Vành đai ngoài": "CGO-121", "Vành đai trong": "CGO-221", "Vùng trung tâm": "CGO-321"}[sp["Dải"]]
         rows.append([cgo, "%s %s" % (sp["Mã gd-combat"], sp["Tên"]), sp["Dải"], sp["GTĐ mẫu bắt"], gia_long(sp), sp["Nhãn"]])
     K["gia-song"] = tbl(["Lồng", "Loài bên trong", "Dải", "GTĐ mẫu sống (gd-items)", "Giá Tally một lồng", "Nhãn"], rows)
     rows = []
@@ -602,7 +602,7 @@ def bao_cao():
     V["phut-ca"] = ", ".join(f(PHUT_CA[c], 2) for c in range(1, 6))
     K["ngan_sach"] = tbl(["Chương", "Giờ dùng tính ngân sách", "Phút một ngày tham chiếu", "Ngày mục tiêu", "Thu nhập tham chiếu một ngày (Tally)", "Ngân sách Tally của chương"],
                          [[c, f(S["gio_muc_tieu_chuong"][c - 1], 2), f(phut_ngay_tham_chieu(c), 1), f(ngay_muc_tieu(c), 1), tron(thu_nhap_tham_chieu(c)), tron(ngan_sach(c)) if c <= 4 else "không có thứ mua mới"] for c in range(1, 6)])
-    V["kc"] = "%s ở dải Gần, %s ở Giữa, %s ở Xa" % (f(S["k_coop"][0], 2), f(S["k_coop"][1], 2), f(S["k_coop"][4], 2))
+    V["kc"] = "%s ở Vành đai ngoài, %s ở Vành đai trong, %s ở Vùng trung tâm" % (f(S["k_coop"][0], 2), f(S["k_coop"][1], 2), f(S["k_coop"][4], 2))
     # 3. Chạy chính
     R = {(kb, N): nhieu(kb, N) for kb in kbs for N in S["so_nguoi"]}
     # 3a. mốc chương
@@ -712,7 +712,7 @@ def bao_cao():
     # Lồng mẫu 3 con giữ như 1 món (luật 25 gd-combat)
     lon = max(GTD[k] for k in ITEM if k.startswith("LIV-1") and GTD[k])
     V["long_3"] = f(3 * lon, 1)
-    V["tui_ch1"] = f(S["tui_theo_bac"][0] * MAT_DO["Gần"], 1)
+    V["tui_ch1"] = f(S["tui_theo_bac"][0] * MAT_DO["Vành đai ngoài"], 1)
     # 5. Log 53: bắt sống, chi phí lưới
     luoi = GTD["CON-102"]
     rows = []
@@ -740,13 +740,13 @@ def bao_cao():
     S["san_ngay_truyen"] = san_cu
     V["sua_ch1_goc"] = f(VAT_LIEU_SUA_GOC[0], 0)
     V["sua_ch1_moi"] = f(VAT_LIEU_SUA[0], 0)
-    V["xa_gan"] = f(MAT_DO["Xa"] / MAT_DO["Gần"], 1)
+    V["xa_gan"] = f(MAT_DO["Vùng trung tâm"] / MAT_DO["Vành đai ngoài"], 1)
     V["gia_tui1"] = str([m for m in danh_sach_mua() if m["id"] == "UPG-BAG-1"][0]["gia"])
     kc = S["k_coop"]
     V["moi-nguoi-4"] = "%d%% đến %d%%" % (round(100 * min(MOI_NGUOI.get((c, 4), 1) for c in range(1, 6))), round(100 * max(MOI_NGUOI.get((c, 4), 0) for c in range(1, 6))))
     K["coop_he_so"] = tbl(["Phần", "1 người", "2 người", "3 người", "4 người"], [
         ["Ví Tally, giá, Hạng cảng", "Chung", "Chung", "Chung", "Chung"],
-        ["Hệ số khe điểm sinh k(N) (gd-world), Gần, Giữa, Xa"] + ["%s, %s, %s" % (f(1 + kc[0] * (n - 1), 2), f(1 + kc[1] * (n - 1), 2), f(1 + kc[4] * (n - 1), 2)) for n in range(1, 5)],
+        ["Hệ số khe điểm sinh k(N) (gd-world), Vành đai ngoài, Vành đai trong, Vùng trung tâm"] + ["%s, %s, %s" % (f(1 + kc[0] * (n - 1), 2), f(1 + kc[1] * (n - 1), 2), f(1 + kc[4] * (n - 1), 2)) for n in range(1, 5)],
         ["Mỗi người so với chơi một mình, sim chuyến gd-tech, chương 1 tới 5"] + [", ".join("%d%%" % round(100 * MOI_NGUOI.get((c, n), (1 + kc[c - 1] * (n - 1)) / n)) for c in range(1, 6)) for n in range(1, 5)],
         ["Số tàu một lượt giao thương và cửa neo (sim giờ giao thương gd-tech, C8)"] + ["%d tàu, %d cửa neo" % (port(n, "trung bình")["tau"], port(n, "trung bình")["cua"]) for n in range(1, 5)],
         ["Điểm cảng một lượt giao thương, kịch bản trung bình, kho đủ"] + [f(port(n, "trung bình")["diem_tau"] * port(n, "trung bình")["tau"] * port(n, "trung bình")["xong"], 0) for n in range(1, 5)],
@@ -765,7 +765,7 @@ def bao_cao():
     t_di = S["phan_tich"]["giay_di_giua_hai_diem"]
     rows = []
     for n in NODE:
-        if n["Dải"] != "Gần":
+        if n["Dải"] != "Vành đai ngoài":
             continue
         gt, kh, gi = so(n["GTĐ kỳ vọng"]), so(n["Khối kỳ vọng"]), so(n["Giây (bậc 1)"])
         rows.append([n["SLV ID"], n["Tên"], n["Dụng cụ"], f(gt / gi, 2), f(gt / (gi + t_di), 2), f(S["tui_theo_bac"][0] / kh * (gi + t_di), 0), f(gt / kh, 2)])

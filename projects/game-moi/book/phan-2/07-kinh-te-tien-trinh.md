@@ -60,7 +60,7 @@ GiaLongGiao = GiaLong * HeSoSao
 | Hàng sinh học | 1,0 | 2 | Phụ phẩm khi hạ Driftlife | Mô sinh học 54 |
 | Hàng chế | 1,35 | 1,5 | Phải chế ở Xưởng trước giờ giao thương, giá trả công chế | Nước tinh khiết 64 |
 | Hàng sống | 1,3 | 1 | Lồng Driftlife bắt sống | Driftmoth 65, Skitter Ray 75, Sting Krill 55 |
-| Hàng hiếm | 1,5 | 1 | Đồ ít gặp, không dùng để xây. Đắt, ít tàu gọi | Đồ Trái Đất 76, đặc sản Gần 80 |
+| Hàng hiếm | 1,5 | 1 | Đồ ít gặp, không dùng để xây. Đắt, ít tàu gọi | Đồ Trái Đất 76, đặc sản Vành đai ngoài 80 |
 
 Giá không nhân theo Hạng cảng, không nhân theo số người. Tip, bơm khí và đơn đặt trước cộng thêm trên giá thùng theo công thức ở mục II.6.7.
 
@@ -72,15 +72,15 @@ Thế cân của bậc giá hiện ra khi đo các kiểu **danh mục bán**, t
 | Hàng chợ thêm đồ Trái Đất | Phế liệu, cáp, quặng, đồ Trái Đất | 1589 | -5% | 3454 | 1,4 | 12,6 |
 | Chuẩn bị kỹ | Lồng, đồ Trái Đất, nước tinh khiết, phế liệu | 1666 | +0% | 3629 | 2,9 | 14,4 |
 | Chuẩn bị kỹ, bày thừa hàng chợ | Như trên, phế liệu gấp đôi | 1658 | -1% | 3621 | 2,9 | 13,9 |
-| Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng, nước tinh khiết, đặc sản Gần, phế liệu | 1551 | -7% | 3437 | 3,1 | 13,4 |
-| Ít mà đắt | Lồng, đồ Trái Đất, nước tinh khiết, đặc sản Gần | 1414 | -15% | 3059 | 10,0 | 19,0 |
+| Chuẩn bị kỹ, bỏ đồ Trái Đất | Lồng, nước tinh khiết, đặc sản Vành đai ngoài, phế liệu | 1551 | -7% | 3437 | 3,1 | 13,4 |
+| Ít mà đắt | Lồng, đồ Trái Đất, nước tinh khiết, đặc sản Vành đai ngoài | 1414 | -15% | 3059 | 10,0 | 19,0 |
 
 Đọc bảng:
 - Chuẩn bị trước giờ giao thương (bắt sống, chế nước, giữ đồ Trái Đất cho đơn đặt trước) cho thêm khoảng 30% Tally so với chỉ bày hàng chợ.
 - Bày thừa hàng chợ cạnh hàng chuẩn bị không thêm gì, vì tàu gọi hàng chợ trước còn hàng đắt nằm lại kho.
 - Ít mà đắt mất 10 tàu vì hết hàng, nhưng mỗi GTĐ bán ra được gấp đôi hàng chợ, nghĩa là giữ được hàng chợ để sửa trạm.
 - Bỏ đồ Trái Đất làm trượt đơn đặt trước và mất tip gấp đôi của Loose Bolt.
-- Bảng đo trên mô hình giờ giao thương có sẵn mọi loại hàng. Trong game, thùng mô sinh học và thùng đặc sản Gần chỉ bày được từ Hạng cảng 3 (mục II.6), nên hai kiểu dùng đặc sản Gần là kiểu của cuối chương 1 trở đi.
+- Bảng đo trên mô hình giờ giao thương có sẵn mọi loại hàng. Trong game, thùng mô sinh học và thùng đặc sản Vành đai ngoài chỉ bày được từ Hạng cảng 3 (mục II.6), nên hai kiểu dùng đặc sản Vành đai ngoài là kiểu của cuối chương 1 trở đi.
 
 Bắt sống phải đáng hơn hạ, nhưng không quá hai lần, để hạ vẫn là lựa chọn. Bảng dưới so Tally của lồng với Tally kỳ vọng khi hạ cùng loài, đã trừ Lưới cuộn tốn 1,10 GTĐ mỗi phát:
 
@@ -221,9 +221,9 @@ Người chơi học và mở theo chương, bảng chương 1:
 | Nội dung | Chương 1 |
 |---|---|
 | Người chơi học | Bay, Oxy, nhặt, khoan, nạy, hạ, bắt sống loài nhỏ, sửa khoang, lập danh mục bán, mang thùng ở giờ giao thương, mua nâng cấp đầu tiên |
-| Tài nguyên và map | Tài nguyên và map dải Gần, map nhánh Station Cinder |
+| Tài nguyên và map | Tài nguyên và map Vành đai ngoài, map nhánh Station Cinder |
 | Trang bị | Dùi xung, Súng lưới, Lồng mẫu, Bộ kích nguồn, nâng cấp bộ đồ bậc 1 |
-| Driftlife và boss | 4 loài dải Gần làm ở MVP, boss Scrapmaw |
+| Driftlife và boss | 4 loài Vành đai ngoài làm ở MVP, boss Scrapmaw |
 | Sức mạnh tăng | Túi đồ, Bình Oxy, Bộ đẩy lên bậc 1, Đai dụng cụ thêm 1 ô. Một chuyến mang về khoảng 102 GTĐ, quy ra 1021 Tally |
 
 Sim chạy ba kịch bản người chơi. Tham số hành vi là giả định nằm giữa người chơi cẩn thận và người chơi tham, chờ playtest để chỉnh:
@@ -291,7 +291,7 @@ Người chơi có hiểu bậc giá và độ gọi khi lập danh mục không
 
 ### II.7.z. Post-MVP
 
-- Giá thùng hàng dải Giữa, dải Xa, Cradle và hàng sau chương 1: kiện cơ khí, điện tử, sản phẩm nuôi, vật tư, bản sao dữ liệu và kiện tin mật bán nguyên cái. Giá lồng loài cỡ M và loài dải Giữa, dải Xa. Con nuôi giao trong lồng trả nửa giá.
+- Giá thùng hàng Vành đai trong, Vùng trung tâm, Cradle và hàng sau chương 1: kiện cơ khí, điện tử, sản phẩm nuôi, vật tư, bản sao dữ liệu và kiện tin mật bán nguyên cái. Giá lồng loài cỡ M và loài Vành đai trong, Vùng trung tâm. Con nuôi giao trong lồng trả nửa giá.
 - Ngân sách và giá Tally chương 2 tới 5. Chương 5 không có thứ mua mới.
 - Nâng cấp bộ đồ bậc 2 tới 4 cần Xưởng cấp 2, Vỏ bộ đồ cấp 1 tới 3 để vào dải mới, Đai dụng cụ bậc 2, dụng cụ bậc 3, Súng lưới bậc 2.
 - Hạng cảng 4 tới 8, linh kiện động cơ giai đoạn 2 tới 4 ở Shop theo Hạng cảng 5, 7 và 8. Món Shop và nâng cấp khoang: Cảng cấp 2, bản thiết kế, Xưởng cấp 2, Khoang sinh quyển cấp 3, cấp 3 các khoang còn lại.

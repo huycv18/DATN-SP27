@@ -1,4 +1,4 @@
-# Bố cục dải Gần (sinh bởi bo_cuc.py, seed 1, 300 chuyến liền nhau)
+# Bố cục Vành đai ngoài (sinh bởi bo_cuc.py, seed 1, 300 chuyến liền nhau)
 
 | Chỉ số | Kết quả | Tiêu chí (map.md mục 8) |
 |---|---|---|

@@ -46,7 +46,7 @@ export function docHeSoDai(file) {
   const txt = readFileSync(file, 'utf8');
   const muc = txt.split(/^### /m).find((x) => x.startsWith('3.8'));
   const out = {};
-  for (const m of (muc || '').matchAll(/^\| (Gần|Giữa|Xa) \| ([\d,]+) \| [\d,]+ \|/gm)) out[m[1]] = soVn(m[2]);
+  for (const m of (muc || '').matchAll(/^\| (Vành đai ngoài|Vành đai trong|Vùng trung tâm) \| ([\d,]+) \| [\d,]+ \|/gm)) out[m[1]] = soVn(m[2]);
   if (Object.keys(out).length !== 3) throw new Error(`Không đọc được bảng a theo dải ở ${file} mục 3.8`);
   return out;
 }

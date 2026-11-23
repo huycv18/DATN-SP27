@@ -18,8 +18,8 @@ STT	Task	Sub Task	Short Description	Ref
 		Bậc 2	Tốc độ tối đa 7,0 u/s, gia tốc 22, lướt tốn 3,5, hồi chiêu lướt 1,0 s. 3500 Tally, vật liệu 43,4 GTĐ. Mở chương 2, cần Xưởng cấp 2. Sau MVP
 		Bậc 3	Tốc độ tối đa 7,5 u/s, gia tốc 24, lướt tốn 3, hồi chiêu lướt 0,9 s. 12850 Tally, vật liệu 75,4 GTĐ. Mở chương 3. Sau MVP
 5	Vỏ bộ đồ	Loại	Mở khả năng: đủ cấp thì vào dải mới không bị hao Oxy gấp 2,5 (thiếu 1 cấp) hay gấp 4 (thiếu 2 cấp). Thiếu cấp vẫn vào được nhưng thời gian làm việc chỉ còn khoảng 27%	kinh-te-tien-trinh.md mục 3.2, nguoi-choi.md mục 2.6
-		Cấp 1	Chịu được dải Giữa, giảm đòn 5%. 6000 Tally, vật liệu 48,1 GTĐ. Mở chương 2. Sau MVP
-		Cấp 2	Chịu được dải Xa, giảm đòn 10%. 22050 Tally, vật liệu 90,6 GTĐ. Mở chương 3, cần Xưởng cấp 2. Sau MVP
+		Cấp 1	Chịu được Vành đai trong, giảm đòn 5%. 6000 Tally, vật liệu 48,1 GTĐ. Mở chương 2. Sau MVP
+		Cấp 2	Chịu được Vùng trung tâm, giảm đòn 10%. 22050 Tally, vật liệu 90,6 GTĐ. Mở chương 3, cần Xưởng cấp 2. Sau MVP
 		Cấp 3	Chịu được Cradle và Warden Rig, giảm đòn 15%. 27500 Tally, vật liệu 126,6 GTĐ. Mở chương 4. Sau MVP
 6	Đai dụng cụ	Loại	Mở khả năng: mang thêm một dụng cụ, thêm một kiểu chơi cùng lúc (khai thác, hạ, bắt)	kinh-te-tien-trinh.md mục 3.2, nguoi-choi.md mục 2.6
 		Bậc 1	3 lên 4 ô dụng cụ. 0 Tally (thưởng quest Kỹ sư, đi kèm Dùi xung), vật liệu 23,1 GTĐ. Mở chương 1. MVP
@@ -34,6 +34,6 @@ STT	Task	Sub Task	Short Description	Ref
 		Bậc 2	Bán kính lưới 2,2 u, nạp lại 2,5 s, tầm 8 u, tối đa 3 con. 1500 Tally, vật liệu 25,7 GTĐ. Mở bằng Bản thiết kế Súng lưới bậc 2 (nghiên cứu Driftmoth sống, chương 2). Sau MVP
 10	Nâng cấp khoang	Loại	Mở khả năng: khoang thêm tính năng. Trong lúc nâng cấp, khoang vẫn dùng được	kinh-te-tien-trinh.md mục 3.2, tram-va-cang.md mục 2
 		Xưởng cấp 2	Chế 2 mẻ song song, làm được nâng cấp bậc 2. 4000 Tally, vật liệu chưa có số. Mở chương 2. Sau MVP
-		Khoang sinh quyển cấp 3	Môi trường dải Xa, nuôi được loài dải Xa. 14700 Tally, vật liệu chưa có số. Mở chương 3. Sau MVP
+		Khoang sinh quyển cấp 3	Môi trường Vùng trung tâm, nuôi được loài Vùng trung tâm. 14700 Tally, vật liệu chưa có số. Mở chương 3. Sau MVP
 		Cấp 3 các khoang còn lại	Cấp 3 của từng khoang trừ khoang sinh quyển, giá ở đây là tổng các khoang đó. 18350 Tally, vật liệu chưa có số. Mở chương 4. Sau MVP
 		Cảng cấp 2	Cửa neo thứ 4 của bến 1, không theo số người. Mua ở tab Shop, cần Hạng cảng 4, mở chương 2. Sau MVP

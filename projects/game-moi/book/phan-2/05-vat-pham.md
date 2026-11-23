@@ -6,11 +6,11 @@ Mục này nói về mọi thứ người chơi nhặt, chế, mang và bán: t�
 
 Trong chuyến, người chơi khai thác **điểm khai thác** (mảnh vỡ, mạch quặng, khối băng, hòm kỹ thuật) và hạ hoặc bắt sống Driftlife, rồi nhét thứ nhặt được vào túi. Túi nhỏ và Oxy hữu hạn, nên mỗi lần nhặt là một lựa chọn "món này có đáng chỗ không". Về trạm, đồ trong túi tự chuyển sang kho chung.
 
-Ở trạm, vật phẩm có ba đường tiêu. Đường một là sửa khoang và lắp động cơ. Đường hai là chế ở xưởng thành vật liệu chế, vật tiêu hao, dụng cụ và nâng cấp bộ đồ. Đường ba là đóng thành thùng bán cho tàu ở giờ giao thương. Không có vật phẩm nào chỉ để bán lấy số: thứ nào cũng có ít nhất một nơi tiêu, và không công thức nào tạo ra tài nguyên thô từ hư không. Chương 1 chỉ dùng dải Gần.
+Ở trạm, vật phẩm có ba đường tiêu. Đường một là sửa khoang và lắp động cơ. Đường hai là chế ở xưởng thành vật liệu chế, vật tiêu hao, dụng cụ và nâng cấp bộ đồ. Đường ba là đóng thành thùng bán cho tàu ở giờ giao thương. Không có vật phẩm nào chỉ để bán lấy số: thứ nào cũng có ít nhất một nơi tiêu, và không công thức nào tạo ra tài nguyên thô từ hư không. Chương 1 chỉ dùng Vành đai ngoài.
 
 ### II.5.2. Resources and Salvage Nodes
 
-Dải Gần có sáu tài nguyên thô. **Khối** là đơn vị chiếm chỗ trong túi, **GTĐ** (giá trị tương đối) là thước đo giá trị nội bộ của vật phẩm, không phải Tally. Giá Tally của hàng nằm ở mục Economy and Progression.
+Vành đai ngoài có sáu tài nguyên thô. **Khối** là đơn vị chiếm chỗ trong túi, **GTĐ** (giá trị tương đối) là thước đo giá trị nội bộ của vật phẩm, không phải Tally. Giá Tally của hàng nằm ở mục Economy and Progression.
 
 | Tài nguyên | Nhóm | Độ hiếm | Khối | GTĐ |
 |---|---|---|---|---|
@@ -91,7 +91,7 @@ Chi tiết dữ liệu: tab ITEM LIST trên Sheet GDD, cột Nguồn nhận và 
 
 ### II.5.4. Driftlife Samples
 
-Mỗi Driftlife có ba lựa chọn: hạ, bắt sống hoặc né. Hạ cho nguyên liệu sinh học của dải (mô sinh học Gần, số lượng theo loài) và có xác suất rơi **đặc sản** của loài đó. Bắt sống cho mẫu sống, chỉ với loài cỡ S và M. Ở MVP, loài cỡ S bắt bằng Súng lưới vào Lồng mẫu, xem mục II.4.
+Mỗi Driftlife có ba lựa chọn: hạ, bắt sống hoặc né. Hạ cho nguyên liệu sinh học của dải (mô sinh học Vành đai ngoài, số lượng theo loài) và có xác suất rơi **đặc sản** của loài đó. Bắt sống cho mẫu sống, chỉ với loài cỡ S và M. Ở MVP, loài cỡ S bắt bằng Súng lưới vào Lồng mẫu, xem mục II.4.
 
 | Loài | Cỡ | Xác suất đặc sản khi hạ | Giá mẫu sống so với hạ | MVP |
 |---|---|---|---|---|
@@ -117,7 +117,7 @@ Bắt sống luôn đáng hơn hạ, kể cả sau khi trừ vật tiêu hao t�
 
 Hạ thường cho một sao, kết nhanh con đang bất lực cho hai sao. Mẫu sống ở MVP có hai nơi tiêu: đưa vào lồng giao để bán ở giờ giao thương, hoặc để dành cho nuôi và nghiên cứu ở các chương sau. Mẫu đã hạ có nguồn tiêu thô: kiện mô sinh học, kiện đặc sản, vật liệu cho Lưới cuộn. Boss Scrapmaw rơi hạch nếu bị hạ hoặc mẫu boss nếu bị xua đi, một trong hai dùng để sửa động cơ giai đoạn đầu.
 
-Chi tiết dữ liệu: tab ITEM LIST, các dòng đặc sản, mẫu sống và loài ở dải Gần.
+Chi tiết dữ liệu: tab ITEM LIST, các dòng đặc sản, mẫu sống và loài ở Vành đai ngoài.
 
 ### II.5.5. Tools and Suit Upgrades
 
@@ -219,11 +219,11 @@ Chương đầu có chín loại kiện, chia theo cách đóng:
 | Kiện cáp | 11 Dây cáp đứt | Thô |
 | Kiện quặng | 6 Quặng sắt thiên thạch | Thô |
 | Kiện băng | 7 Băng nước đục | Thô |
-| Kiện mô sinh học | 9 Mô sinh học Gần | Thô |
+| Kiện mô sinh học | 9 Mô sinh học Vành đai ngoài | Thô |
 | Kiện đồ Trái Đất | 5 Đồ Trái Đất vụn | Thô |
 | Kiện nước tinh khiết | 2 Khối nước tinh khiết | Tinh, có bước chế trước |
-| Kiện đặc sản Gần | 3 đặc sản, mỗi cái của một trong các loài Gần | Sinh học |
-| Lồng sinh vật sống Gần | 1 mẫu sống cỡ S | Sống, làm tay trước Mở giao thương, 8 giây |
+| Kiện đặc sản Vành đai ngoài | 3 đặc sản, mỗi cái của một trong các loài Vành đai ngoài | Sinh học |
+| Lồng sinh vật sống Vành đai ngoài | 1 mẫu sống cỡ S | Sống, làm tay trước Mở giao thương, 8 giây |
 
 Kiện thô đóng thẳng từ tài nguyên thô, hệ số giá trị đúng 1,0 vì chỉ đóng gói. Kiện tinh làm từ vật liệu chế nên có thêm giá trị. Lồng mang đúng giá trị mẫu bên trong nhân hệ số sao:
 ```text
@@ -246,7 +246,7 @@ Chi tiết dữ liệu: tab ITEM LIST và tab Recipe cho kiện, tab Shop cho gi
 Mọi luật vật phẩm chạy đúng với một người, co-op chỉ thay các điểm sau:
 - Kho, bản thiết kế, cấp dụng cụ, cấp nâng cấp bộ đồ và hàng đợi xưởng là dùng chung. Túi, dụng cụ đang mang và vật tiêu hao đang mang là riêng từng người.
 - Mỗi người một Lồng mẫu. Mỗi điểm khai thác chỉ một người khai thác cùng lúc, người đến trước giữ điểm.
-- Số điểm khai thác trên map tăng theo số người (xem mục II.3), không tăng lượng nhả của từng điểm. Ví dụ ở dải Gần, k(2) = 1 + 0,30 x (2 trừ 1) = 1,30.
+- Số điểm khai thác trên map tăng theo số người (xem mục II.3), không tăng lượng nhả của từng điểm. Ví dụ ở Vành đai ngoài, k(2) = 1 + 0,30 x (2 trừ 1) = 1,30.
 - Người vào sau nhận mọi dụng cụ và nâng cấp đã mở, túi rỗng. Khách mất kết nối được giữ chỗ 15 giây, quá hạn thì tính như bị kéo về và chỉ giữ 1 món.
 - Kho, hàng đợi, nâng cấp đồng bộ qua host. Khai thác điểm cần host xác nhận để chống nhân đôi vật phẩm.
 
@@ -281,12 +281,12 @@ Chi tiết dữ liệu: tab Salvage, ITEM LIST, Recipe trên Sheet GDD.
 
 ### II.5.z. Post-MVP
 
-- Dải Giữa và dải Xa: tài nguyên riêng, điểm khai thác mới, vật liệu chế và công thức luyện tương ứng.
+- Vành đai trong và Vùng trung tâm: tài nguyên riêng, điểm khai thác mới, vật liệu chế và công thức luyện tương ứng.
 - Nâng cấp bậc 2 trở lên cho Bình Oxy, Túi đồ, Bộ đẩy, Đai dụng cụ, Dụng cụ khai thác bậc 3, Lao từ bậc 3 và vỏ bộ đồ theo dải.
 - Dụng cụ mới: Súng gây mê, Máy quét xung, Máy cắt thân tàu, cùng Phao kéo, Kim sinh thiết, Ống gây mê, Keo vá và Cầu chì dự phòng.
 - Nghiên cứu mẫu sống ở phòng nghiên cứu để học bản thiết kế, và thức ăn nuôi cho khoang sinh quyển.
 - Mẫu sinh thiết cho loài cỡ L, bắt sống cỡ M ngoài việc hạ Arc Eel.
-- Kiện ngoài chương 1: kiện cơ khí, kiện điện tử, kiện sản phẩm nuôi, kiện vật tư, bản sao dữ liệu, kiện tin mật, kiện dải Giữa và dải Xa, kiện linh kiện Cradle và Warden.
-- Lồng giao từ con nuôi, lồng sinh vật sống cỡ M, giá lồng theo loài dải Giữa và Xa.
+- Kiện ngoài chương 1: kiện cơ khí, kiện điện tử, kiện sản phẩm nuôi, kiện vật tư, bản sao dữ liệu, kiện tin mật, kiện Vành đai trong và Vùng trung tâm, kiện linh kiện Cradle và Warden.
+- Lồng giao từ con nuôi, lồng sinh vật sống cỡ M, giá lồng theo loài Vành đai trong và Vùng trung tâm.
 - Linh kiện động cơ giai đoạn 2 tới 5 và vật liệu sửa các khoang chương 2 tới 5.
 - Vật kể chuyện thứ hai trở đi và công thức ghép lõi dẫn hướng rời bãi vỡ.

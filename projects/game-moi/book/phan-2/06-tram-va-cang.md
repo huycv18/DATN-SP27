@@ -25,7 +25,7 @@ Bản MVP gồm các khoang của chương 1:
 | Cảng | Bến 1 có 3 cửa neo và quầy cảng, nơi diễn ra giờ giao thương | Thông dịch viên |
 | Động cơ chính | Tiến độ rời neo, MVP có giai đoạn 1 | Có sẵn, đang hỏng |
 
-Kho có một nâng cấp ngay trong chương đầu là kho cấp 2, sửa bằng phế liệu và khoáng dải Gần. Mọi nâng cấp khoang khác thuộc bản đủ.
+Kho có một nâng cấp ngay trong chương đầu là kho cấp 2, sửa bằng phế liệu và khoáng Vành đai ngoài. Mọi nâng cấp khoang khác thuộc bản đủ.
 
 Trạm được nhìn theo mặt cắt ngang ba tầng, hai thang dọc nối các tầng:
 - Tầng giữa là nơi người chơi qua lại nhiều nhất: buồng ngủ đông, xưởng, kho, quầy cảng, và bến 1 ở mép phải với 3 cửa neo nằm ngang nối tiếp.
@@ -41,9 +41,9 @@ Chi tiết dữ liệu: tab Customer trên Sheet GDD, khối Khoang trạm.
 
 Muốn sửa một khoang, mọi vật liệu trong danh sách sửa phải nằm sẵn trong kho. Người chơi đứng ở khoang và giữ phím sửa trong thời gian sửa (số khởi điểm 5 giây, chưa đo). Vật liệu bị trừ khỏi kho ngay lúc bắt đầu giữ phím. Thả phím giữa chừng thì tiến độ giữ nguyên, vật liệu không hoàn lại, giữ phím lại thì làm tiếp. Kho thiếu một vật liệu thì không bắt đầu được, khung khoang liệt kê thứ còn thiếu.
 
-Sửa xong thì khoang sang Hoạt động cấp 1, mặt cắt đổi hình khoang đó và người phụ trách đứng làm việc tại chỗ. Đồ trong túi đồ tự vào kho khi người chơi qua cửa khí về trạm, nên vòng sửa khoang luôn là: ra chuyến, về kho, sửa. Khoang neo là khoang đầu tiên sửa được. Trước khi khoang neo Hoạt động, chỉ cửa khí, kho và buồng ngủ đông dùng được, và trạm trôi chậm trên nền. Sửa xong khoang neo thì trạm đứng yên tới hết game. Vật liệu sửa các khoang chương đầu là phế liệu, khoáng và linh kiện của dải Gần. Khoang neo và xưởng chỉ dùng tài nguyên thô, vì chưa có xưởng thì chưa chế được gì.
+Sửa xong thì khoang sang Hoạt động cấp 1, mặt cắt đổi hình khoang đó và người phụ trách đứng làm việc tại chỗ. Đồ trong túi đồ tự vào kho khi người chơi qua cửa khí về trạm, nên vòng sửa khoang luôn là: ra chuyến, về kho, sửa. Khoang neo là khoang đầu tiên sửa được. Trước khi khoang neo Hoạt động, chỉ cửa khí, kho và buồng ngủ đông dùng được, và trạm trôi chậm trên nền. Sửa xong khoang neo thì trạm đứng yên tới hết game. Vật liệu sửa các khoang chương đầu là phế liệu, khoáng và linh kiện của Vành đai ngoài. Khoang neo và xưởng chỉ dùng tài nguyên thô, vì chưa có xưởng thì chưa chế được gì.
 
-**Động cơ chính** là mục tiêu dài nhất của trạm. Động cơ có năm giai đoạn, mỗi chương mở đúng một giai đoạn, sửa một giai đoạn giống sửa khoang. Xong giai đoạn thì động cơ sáng thêm một phần. Giai đoạn đầu cần tài nguyên dải Gần, một hạch hoặc một mẫu của boss Scrapmaw, và linh kiện Van tiết lưu mua ở shop. Mốc đóng chương của truyện chỉ kích hoạt khi giai đoạn động cơ của chương đã lắp, trạm không có cổng chương riêng.
+**Động cơ chính** là mục tiêu dài nhất của trạm. Động cơ có năm giai đoạn, mỗi chương mở đúng một giai đoạn, sửa một giai đoạn giống sửa khoang. Xong giai đoạn thì động cơ sáng thêm một phần. Giai đoạn đầu cần tài nguyên Vành đai ngoài, một hạch hoặc một mẫu của boss Scrapmaw, và linh kiện Van tiết lưu mua ở shop. Mốc đóng chương của truyện chỉ kích hoạt khi giai đoạn động cơ của chương đã lắp, trạm không có cổng chương riêng.
 
 Chi tiết dữ liệu: tab Customer khối Khoang trạm, tab Upgrade và ITEM LIST cho danh sách và số lượng vật liệu.
 
@@ -107,7 +107,7 @@ GiaThung = GiaKien / 2,5
 | Thùng nước tinh khiết | Hàng chế | 1,5 | 64 | Khối nước tinh khiết chế xong ở xưởng | Chương 1 |
 | Thùng đồ Trái Đất | Hàng hiếm | 1 | 76 | Hàng trong kho | Chương 1 |
 | Thùng mô sinh học | Hàng sinh học | 2 | 54 | Hàng trong kho | Hạng cảng 3 |
-| Thùng đặc sản Gần | Hàng hiếm | 1 | 80 | Hàng trong kho | Hạng cảng 3 |
+| Thùng đặc sản Vành đai ngoài | Hàng hiếm | 1 | 80 | Hàng trong kho | Hạng cảng 3 |
 | Lồng Driftmoth, Skitter Ray, Sting Krill | Hàng sống | 1 | 65, 75, 55 | Bắt sống trong chuyến | Chương 1 |
 
 Độ gọi là trọng số để tàu chọn món, hàng rẻ được gọi nhiều hơn (xem mục II.6.6). Thùng nước tinh khiết là hàng cần chế duy nhất của chương đầu:
@@ -243,7 +243,7 @@ DiemTau = 1 + Thuong
 |---|---|---|
 | 1 | Khởi đầu | Loose Bolt, bến 1 với 3 cửa neo, danh mục 4 loại, shop danh mục cơ bản |
 | 2 | 70 | Tàu vội |
-| 3 | 135 | Danh mục bán được thùng mô sinh học và thùng đặc sản Gần. Shop bán Van tiết lưu cho động cơ giai đoạn 1 |
+| 3 | 135 | Danh mục bán được thùng mô sinh học và thùng đặc sản Vành đai ngoài. Shop bán Van tiết lưu cho động cơ giai đoạn 1 |
 
 Hạng cao nhất của chương đầu nối cảng với động cơ: linh kiện cho giai đoạn đầu của động cơ chỉ bán ở shop từ hạng đó, nên muốn đóng chương thì phải lên hạng.
 
@@ -293,6 +293,6 @@ Chi tiết dữ liệu: tab Customer khối Lịch tàu.
 - Người vớt Hoa tiêu, Nhà sinh học, Trưởng cảng và phần tính năng lớn dần của Kỹ sư, Thông dịch viên từ chương 2.
 - Chín loại tàu còn lại (Lamplighter, Vellune, Glasswing, Iron Keel, Stayfast, Tàu lạ, Tàu đơn gấp, Backchannel, Pilot Light), luật riêng của từng loại, mức kiên nhẫn Vừa, tàu theo mốc truyện.
 - Hạng cảng 4 tới 8, danh mục 5 và 6 loại, 2 đơn đặt trước mỗi ngày.
-- Hàng cảng ngoài chương 1: linh kiện, sản phẩm nuôi, vật tư, bản sao dữ liệu, kiện tinh dải Giữa và dải Xa, linh kiện đặc biệt, kiện tin mật, lồng loài cỡ M.
+- Hàng cảng ngoài chương 1: linh kiện, sản phẩm nuôi, vật tư, bản sao dữ liệu, kiện tinh Vành đai trong và Vùng trung tâm, linh kiện đặc biệt, kiện tin mật, lồng loài cỡ M.
 - Sự cố trong giờ giao thương từ chương 3 (rò khí, chập điện, Driftlife sổng) và nuôi Driftlife ở khoang sinh quyển.
 - Co-op 3 và 4 người, cấu hình lịch giờ giao thương chương 2 tới 5.

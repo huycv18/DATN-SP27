@@ -136,8 +136,8 @@ Hệ thống cốt truyện giữ bối cảnh, năm chương, nhân vật truy�
 
 | Chương | Tên tạm | Map nhánh có truyện | Người vớt | Mốc đóng chương |
 |---|---|---|---|---|
-| 1 | Tỉnh dậy | N1 Station Cinder | Ingrid, Linh | Bắt được sóng của Lantern, mở dải Giữa |
-| 2 | Không cô độc | N3 Station Lantern, N2 Station Wick | Amara, Rafa | Thấy vết phá từ ngoài vào, mở dải Xa |
+| 1 | Tỉnh dậy | N1 Station Cinder | Ingrid, Linh | Bắt được sóng của Lantern, mở Vành đai trong |
+| 2 | Không cô độc | N3 Station Lantern, N2 Station Wick | Amara, Rafa | Thấy vết phá từ ngoài vào, mở Vùng trung tâm |
 | 3 | Kẻ canh giữ | N4 Veyl Waypost, N5 The Raft, N6 Station Flint | Yusuf | Cứu Sevra khỏi toán bắt cóc của The Wardens, Sevra lộ danh tính |
 | 4 | Tâm vụ nổ | N7 Cradle Interior | Không | Hộp ghi hành trình: Solace là mồi do Daskel dựng. Kiện tin mật đầu tiên tới The Kindling. Mục tiêu đổi thành giúp Sevra lật đổ Daskel để rời được bãi vỡ |
 | 5 | Rời neo | N8 Warden Rig | Không | Daskel thua ở Warden Rig, Sevra lên nắm quyền và trao tọa độ hành tinh thật. Ember rời neo |
@@ -293,7 +293,7 @@ Mục tiêu người chơi: hãm trôi và neo Ember, vớt hai người đầu 
 
 | Mốc | Tên | Điều kiện | Nơi | Mở gì |
 |---|---|---|---|---|
-| C1.1 | Tỉnh dậy | Bắt đầu thế giới | Ember, buồng ngủ đông KH01 | Cửa khí, dải Gần |
+| C1.1 | Tỉnh dậy | Bắt đầu thế giới | Ember, buồng ngủ đông KH01 | Cửa khí, Vành đai ngoài |
 | C1.2 | Hãm trôi và neo | Khoang neo KH04 Hoạt động | Ember | Trạm ngừng xoay. Lối vào N1 |
 | C1.3 | Một trạm khác | Tới lối vào N1 | N1, khu C1 | Vật truyện của N1 hiện ra |
 | C1.4 | Người đầu tiên | Buồng của Ingrid qua cửa khí của Ember | Ember | Ingrid vào Hồi sức, tỉnh đầu ngày kế tiếp và giao quest sửa xưởng KH05 |
@@ -301,7 +301,7 @@ Mục tiêu người chơi: hãm trôi và neo Ember, vớt hai người đầu 
 | C1.6 | Người thứ hai | Buồng của Linh qua cửa khí của Ember | Ember | Linh vào Hồi sức, tỉnh đầu ngày kế tiếp và giao quest sửa KH06 và KH07 |
 | C1.7 | Lời gọi đầu tiên | Khoang liên lạc KH06 Hoạt động và cảng KH07 Hoạt động | Ember, khoang liên lạc | Khoang liên lạc, cảng, shop (K12, K20). Tàu TA01 vào lịch từ ngày kế tiếp |
 | C1.8 | Tàu đầu tiên | Ngày kế tiếp sau C1.7 và tàu TA01 của Tikko cập bến | Ember, bến 1 | Giờ giao thương (kiểu chơi mới) |
-| C1.9 | Sóng của Lantern (đóng chương) | Số giờ giao thương đã xong đạt ngưỡng ở mục 3 và giai đoạn 1 của động cơ chính đã lắp (K25) | Ember, khoang liên lạc | Dải Giữa, lối vào N3, chương 2 |
+| C1.9 | Sóng của Lantern (đóng chương) | Số giờ giao thương đã xong đạt ngưỡng ở mục 3 và giai đoạn 1 của động cơ chính đã lắp (K25) | Ember, khoang liên lạc | Vành đai trong, lối vào N3, chương 2 |
 
 | Mã | Là gì | ID vật | Nơi | Hiện từ mốc | Nói điều gì |
 |---|---|---|---|---|---|
@@ -328,13 +328,13 @@ Người vớt của chương:
 
 - Vai truyện của boss BS-1 Scrapmaw: nó làm tổ quanh lõi năng lượng ở khoang máy C6, chắn đường duy nhất tới buồng của Linh. Hạ hay xua nó đi đều được (hai cách kết của gd-combat). Xua đi là lần đầu game cho thấy không cần giết.
 
-Cảnh đóng (cảnh của C1.9, pha Cuối ngày): khoang liên lạc bắt được một giọng người lặp đi lặp lại một lời gọi cũ. Cả trạm đứng nghe. Linh trả lời. Bram Kowalski đọc vị trí của Station Lantern, và Linh giải từ sóng đó ra một khe đi qua Rạn vụn đang chặn dải Giữa (hazard của gd-world).
+Cảnh đóng (cảnh của C1.9, pha Cuối ngày): khoang liên lạc bắt được một giọng người lặp đi lặp lại một lời gọi cũ. Cả trạm đứng nghe. Linh trả lời. Bram Kowalski đọc vị trí của Station Lantern, và Linh giải từ sóng đó ra một khe đi qua Rạn vụn đang chặn Vành đai trong (hazard của gd-world).
 
 #### Chương 2 - Không cô độc `Sau MVP`
 
 Mục tiêu người chơi: phá vây cho Lantern, đưa về Nhà sinh học và Hoa tiêu, học nuôi và bắt sống Driftlife cỡ M, tìm hiểu vì sao các trạm con vỡ.
 
-Mở chương: không có cảnh. Lần đầu vào dải Giữa có một dòng radio: Bram nhận ra đèn của Ember.
+Mở chương: không có cảnh. Lần đầu vào Vành đai trong có một dòng radio: Bram nhận ra đèn của Ember.
 
 | Mốc | Tên | Điều kiện | Nơi | Mở gì |
 |---|---|---|---|---|
@@ -345,13 +345,13 @@ Mở chương: không có cảnh. Lần đầu vào dải Giữa có một dòng
 | C2.5 | Nhịp buồng trong vành đai | Ngày kế tiếp sau C2.4 | Ember, khoang liên lạc | Lối vào N2 |
 | C2.6 | Người chỉ đường | Buồng của Rafa qua cửa khí của Ember | Ember | Rafa vào Hồi sức, tỉnh đầu ngày kế tiếp và giao quest sửa khoang dẫn đường KH08 |
 | C2.7 | Không nổ từ trong ra | Đã nhặt MM2.1 và đã nhặt MM2.2 | Ember, xưởng | Cảnh Ingrid xem mảng vỏ. Tàu TA04 của Ilsume |
-| C2.8 | Bản đồ có một lỗ đen (đóng chương) | Khoang dẫn đường KH08 Hoạt động, đã nộp mảnh lõi dẫn đường của Wick STY-103 và giai đoạn 2 của động cơ chính đã lắp (K25) | Ember, khoang dẫn đường | Bến Skiff KH09, dải Xa, lối vào N4, chương 3 |
+| C2.8 | Bản đồ có một lỗ đen (đóng chương) | Khoang dẫn đường KH08 Hoạt động, đã nộp mảnh lõi dẫn đường của Wick STY-103 và giai đoạn 2 của động cơ chính đã lắp (K25) | Ember, khoang dẫn đường | Bến Skiff KH09, Vùng trung tâm, lối vào N4, chương 3 |
 
 | Mã | Là gì | ID vật | Nơi | Hiện từ mốc | Nói điều gì |
 |---|---|---|---|---|---|
 | MM2.1 | Mảng vỏ thân của Station Wick | STY-211 | N2, khe M1 ở khoang ngủ đông | C2.5 | Vỏ lõm vào trong. Vết phá đi từ ngoài vào |
 | MM2.2 | Nhật ký trạm của Wick | STY-101 | N2, khe M2 ở khoang ngủ đông | C2.5 | Sau vụ nổ có kẻ cắt rời khoang hàng của Wick. Đường cắt sạch, không phải dụng cụ của loài người |
-| MM2.3 | Sổ trực của Lantern | STY-212 | N3, khe M1 ở Lantern Core | C2.1 | Danh sách xuồng Lantern cử vào dải Xa không về, kèm ghi chú về những con tàu lạ không trả lời |
+| MM2.3 | Sổ trực của Lantern | STY-212 | N3, khe M1 ở Lantern Core | C2.1 | Danh sách xuồng Lantern cử vào Vùng trung tâm không về, kèm ghi chú về những con tàu lạ không trả lời |
 | MM2.4 | Bản Lodestar Survey Odile treo trên tường | STY-213 | N3, khe M2 ở Lantern Core | C2.1 | Lantern vẫn tin hồ sơ này và định đi tiếp tới Solace khi sửa xong động cơ |
 | MM2.5 | Thẻ tên các buồng đã tắt của Wick (không bắt buộc) | STY-601 | N2, khe M3 | C2.5 | Tên những người không qua khỏi ở Wick |
 | V2.1 | Mảnh lõi dẫn đường của Wick (vật nhiệm vụ) | STY-103 | N2, khe V1 ở khoang lái | C2.5 | Nộp ở khoang dẫn đường, là điều kiện của C2.8 |
@@ -362,16 +362,16 @@ Nhân vật xuất hiện: Odile Laurent, Bram Kowalski, Amara Okafor, Rafael Or
 
 Kiểu chơi mới và cách truyện đưa vào:
 - Bắt sống Driftlife cỡ M (gây mê, gắn Phao kéo): lưới của Ingrid chỉ bắt được cỡ S. Việc đầu tiên Amara nhờ là một con cỡ M còn sống. Cỡ L không bắt sống được, chỉ lấy mẫu sinh thiết (luật của gd-combat).
-- Dụng cụ cho C2.4, dòng mục tiêu Sổ tay ghi từng bước. Đường nhanh nhất theo `vat-pham.md` và `combat-driftlife.md`: chế Phao kéo CON-106 ở xưởng (chế nhanh), làm một con cỡ M bất lực bằng dụng cụ đã có rồi gắn phao, ví dụ Latchjaw DL-G03 ở dải Gần. Súng gây mê TOL-203 cần hai lần chế qua đêm (bản thiết kế BPR-102 rồi mới tới súng), dành cho loài phải gây mê mới bắt được.
+- Dụng cụ cho C2.4, dòng mục tiêu Sổ tay ghi từng bước. Đường nhanh nhất theo `vat-pham.md` và `combat-driftlife.md`: chế Phao kéo CON-106 ở xưởng (chế nhanh), làm một con cỡ M bất lực bằng dụng cụ đã có rồi gắn phao, ví dụ Latchjaw DL-G03 ở Vành đai ngoài. Súng gây mê TOL-203 cần hai lần chế qua đêm (bản thiết kế BPR-102 rồi mới tới súng), dành cho loài phải gây mê mới bắt được.
 - Nuôi: khoang sinh quyển sửa xong thì nhận những con cỡ S đã bắt bằng lưới từ chương 1. Mốc C2.4 không đòi con cỡ M đó phải là loài nuôi được. Vaeth, nhà sưu tầm Aelith từng nhờ Tikko gom hộ ở chương 1, tự tìm tới và trả giá cao cho Driftlife sống, cho việc nuôi một lý do kinh tế đúng K9.
-- Gieo trước cho cú lật Driftlife: ở dải Giữa một phần cá thể đã mang dấu lạ (luật 30 của `combat-driftlife.md`). Amara để ý và ghi lại, chưa ai hiểu nó là gì.
+- Gieo trước cho cú lật Driftlife: ở Vành đai trong một phần cá thể đã mang dấu lạ (luật 30 của `combat-driftlife.md`). Amara để ý và ghi lại, chưa ai hiểu nó là gì.
 
 Người vớt của chương:
 
 | Người | Đưa về thế nào | Quest mở (luật của gd-quan) | Cảnh truyện kèm quest | Mở (K12) |
 |---|---|---|---|---|
 | Amara Okafor | Cô đang thức ở Lantern, làm thầy thuốc bất đắc dĩ. Odile chỉ cho đi khi Lantern nhận được hàng tiếp tế. Bram chở cô sang ở mốc C2.3 | Sửa phòng nghiên cứu KH10 và khoang sinh quyển KH11 | Cô mang theo đúng một cuốn sổ, thứ duy nhất còn lại của kho giống Trái Đất | Nghiên cứu và nuôi Driftlife |
-| Rafael Ortega | Vào Wick: bật điện khoang ngủ đông bằng Bộ kích nguồn, kéo buồng về | Sửa khoang dẫn đường KH08 | Anh không chịu chạm vào bản đồ cho tới khi sửa xong khoang | Khoang dẫn đường: đọc lõi dẫn đường, mở dải Xa, Skiff |
+| Rafael Ortega | Vào Wick: bật điện khoang ngủ đông bằng Bộ kích nguồn, kéo buồng về | Sửa khoang dẫn đường KH08 | Anh không chịu chạm vào bản đồ cho tới khi sửa xong khoang | Khoang dẫn đường: đọc lõi dẫn đường, mở Vùng trung tâm, Skiff |
 
 Vai truyện của boss BS-2 Tempest Gulper: con đầu đàn vây Lantern, cắt đường tiếp tế. Đây là lý do nhiều năm Lantern không ra khỏi trạm được và xuồng của Bram không tới được Ember sớm hơn. Lần đầu tới Lantern là một trận cứu trạm.
 
@@ -379,9 +379,9 @@ Cảnh đóng (cảnh của C2.8): Rafa ghép lõi của Ember, Cinder và Wick.
 
 #### Chương 3 - Kẻ canh giữ `Sau MVP`
 
-Mục tiêu người chơi: vào dải Xa, tới Veyl Waypost và The Raft, đón Trưởng cảng, biết ai đã đánh Cradle, cứu một thương nhân khỏi tay The Wardens.
+Mục tiêu người chơi: vào Vùng trung tâm, tới Veyl Waypost và The Raft, đón Trưởng cảng, biết ai đã đánh Cradle, cứu một thương nhân khỏi tay The Wardens.
 
-Mở chương: không có cảnh. Lần đầu vào dải Xa có một sự kiện hình không lời: liên lạc nhiễu, trong mây khí bóng một cỗ máy rất lớn đi ngang rồi mất.
+Mở chương: không có cảnh. Lần đầu vào Vùng trung tâm có một sự kiện hình không lời: liên lạc nhiễu, trong mây khí bóng một cỗ máy rất lớn đi ngang rồi mất.
 
 | Mốc | Tên | Điều kiện | Nơi | Mở gì |
 |---|---|---|---|---|
@@ -411,7 +411,7 @@ Nhân vật xuất hiện: Yusuf Demir, Nhem, Dromm, Maro, Elias Vance, Wren, Il
 
 Kiểu chơi mới và cách truyện đưa vào:
 - Sự cố trong giờ giao thương: thiết bị Maro để lại làm trạm trục trặc. Thiết bị đó cũng nghe lén lịch tàu ở cảng, nhờ vậy The Wardens biết đường đi của Ilsume. Sau khi Ingrid gỡ nó, trạm vẫn mang di chứng, nên sự cố còn lại tới hết game.
-- Kẻ địch có vũ khí: đơn vị The Wardens có ở dải Xa từ đầu chương (theo gd-combat). Người chơi đọc được tên The Wardens ngay ở Veyl Waypost (MM3.2), nhưng tới C3.8 mới biết chính chúng đã đánh Cradle, khi toán bắt cóc của Maro lộ mặt.
+- Kẻ địch có vũ khí: đơn vị The Wardens có ở Vùng trung tâm từ đầu chương (theo gd-combat). Người chơi đọc được tên The Wardens ngay ở Veyl Waypost (MM3.2), nhưng tới C3.8 mới biết chính chúng đã đánh Cradle, khi toán bắt cóc của Maro lộ mặt.
 - Kéo kén thoát hiểm ở mốc đóng chương: dùng lại cách kéo buồng ngủ đông của chương 1. Không thêm luật (log GDM dòng 87).
 
 Người vớt của chương:
@@ -492,7 +492,7 @@ Cảnh đóng (cảnh của C4.7, cảnh ngắn, phát sau giờ giao thương):
 Mục tiêu người chơi: đưa Sevra về căn cứ của The Kindling, giữ đường dây tin thông suốt, đánh Warden Rig khi cách mạng nổ ra, lấy bản đồ sao thật, sửa xong động cơ chính và rời neo.
 
 - Cảnh mở (cảnh dài, không phải mốc): phát ở pha Chuẩn bị của ngày kế tiếp sau C4.7.
-- Warden Rig hiện rõ ở rìa dải Xa: Daskel đã tới và phong tỏa bãi vỡ. Giờ giao thương vắng hẳn, chỉ còn Tikko, Dromm và tàu đưa tin.
+- Warden Rig hiện rõ ở rìa Vùng trung tâm: Daskel đã tới và phong tỏa bãi vỡ. Giờ giao thương vắng hẳn, chỉ còn Tikko, Dromm và tàu đưa tin.
 - Sevra nói cô phải về The Hearth: người nằm vùng chỉ nổi dậy khi nghe lệnh từ chính cô.
 - Rafa nói thẳng: mọi bản đồ loài người đang có đều chép từ hồ sơ giả, không tấm nào tin được. Kẻ dựng hồ sơ thì phải có bản đồ thật.
 
@@ -836,8 +836,8 @@ Nơi phải đổi cùng lúc khi đổi truyện: `map.md` (map nhánh, khe M v
 | Cú lật Driftlife (C3.7) | Ảnh phóng to cái thẻ và vết cắt mô | Im lặng, bỏ nhạc nền | Cảnh 3 câu | `Sau MVP` |
 | Cuộc bắt cóc (C3.8), ở N4 | Tàu TA04 bị áp mạn, một kén thoát hiểm bị kéo đi giữa các tàu đang đậu | Nhạc bến tắt, chỉ còn sóng radio | Lời radio của Maro, một dòng mỗi lần | `Sau MVP` |
 | Sevra lộ danh tính (C3.8), khi kén về tới Ember | Cô gỡ mạng che của thương hội. Cùng một nhân vật, hai trạng thái hình | Không nhạc | Cảnh 8 câu | `Sau MVP` |
-| Vào dải Giữa lần đầu | Một trạm để đèn sáng ở xa | Không | Một dòng radio của Bram | `Sau MVP` |
-| Vào dải Xa lần đầu | Liên lạc nhiễu, bóng một cỗ máy rất lớn đi ngang trong mây khí | Tiếng rè | Không lời | `Sau MVP` |
+| Vào Vành đai trong lần đầu | Một trạm để đèn sáng ở xa | Không | Một dòng radio của Bram | `Sau MVP` |
+| Vào Vùng trung tâm lần đầu | Liên lạc nhiễu, bóng một cỗ máy rất lớn đi ngang trong mây khí | Tiếng rè | Không lời | `Sau MVP` |
 | Những dãy buồng (C4.2) | Cryo Deck của Cradle, dãy buồng tắt kéo dài hết màn hình | Chỉ tiếng thở của người chơi | Không lời | `Sau MVP` |
 | Không có gì ở đó (C4.6) | Màn hình khoang dẫn đường: chỗ lẽ ra có Solace là một khoảng trống. Sevra kể chuyện đảo chính bằng lời, không có cảnh hồi tưởng | Tiếng hộp ghi rè rồi tắt | Cảnh 8 câu, dòng mục tiêu trong Sổ tay đổi | `Sau MVP` |
 | Hộ tống (C5.1) | Kén của Sevra có đèn tín hiệu riêng, khác buồng ngủ đông | Tiếng thở của cô qua sóng | Lời radio một dòng | `Sau MVP` |
@@ -1099,7 +1099,7 @@ Chữ hoa trong cột cách đọc chỉ phần nhấn. Cột này dùng nội b
 | VO_LIN_02 | Linh | Nói chậm thôi. Lịch sự với họ rẻ hơn sửa tàu. | Trước khi Ilsume cập bến | Bong bóng |
 | VO_LIN_03 | Linh | Tôi dịch đúng từng chữ. Không ai dịch cho tôi ý đồ. | Lời thú nhận ở chương 4 | Hộp thoại |
 | VO_RAF_01 | Rafa | Sao không nói dối. Chỉ bản đồ mới nói dối. | Vừa được đánh thức | Hộp thoại |
-| VO_RAF_02 | Rafa | Tôi vẽ đường, Ember đi. Chia việc thế cho tôi dễ ngủ. | Mở dải Xa | Hộp thoại |
+| VO_RAF_02 | Rafa | Tôi vẽ đường, Ember đi. Chia việc thế cho tôi dễ ngủ. | Mở Vùng trung tâm | Hộp thoại |
 | VO_RAF_03 | Rafa | Ngoài kia tối lắm. Nhưng tối thì mới thấy đèn nhà. | Chào đầu ngày | Hộp thoại |
 | VO_AMA_01 | Amara | Nhẹ tay thôi. Nó sợ ta hơn ta sợ nó. | Nhận con cỡ M đầu tiên | Hộp thoại |
 | VO_AMA_02 | Amara | Tôi mang cả một kho giống lên tàu. Giờ còn cuốn sổ này. | Chuyện riêng | Hộp thoại |
@@ -1223,7 +1223,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 2 | Vật truyện có mất khi bị kéo về không | Vật manh mối ghi Sổ tay ngay khi nhặt. Vật nhiệm vụ rơi thì về vị trí gốc | P4 cấm bỏ lỡ manh mối. K2 chỉ cho giữ 1 món sẽ làm mất vật truyện | Tính như đồ mọi loại khác theo K2 | Rẻ |
 | 4 | Người chơi biết Solace là mồi bằng cách nào | Hộp ghi hành trình: đài quan sát của Cradle đã tự nhìn về phía Solace ngay trước vụ nổ và thấy không có gì khớp hồ sơ | Sự thật phải đến từ chính mắt loài người, không từ lời kẻ thù hay lời thương nhân, thì người chơi mới tin | Daskel nói ra, hoặc Nhem tìm ra | Rẻ |
 | 5 | Vì sao phải vào Warden Rig ở chương 5 | Mọi bản đồ loài người có đều chép từ hồ sơ giả. Bản đồ thật chỉ kẻ dựng hồ sơ mới có, và nó là thứ lắp bước cuối của động cơ | Cho chương 5 một mục tiêu cụ thể đúng log GDM dòng 36, nối boss cuối với việc rời neo | Rời neo không cần Rig | Vừa |
-| 6 | Dải Giữa mở bằng gì | Bằng mốc C1.9 (Lantern đọc vị trí). Hoa tiêu mở dải Xa và Skiff | Khung mục 7 đặt Hoa tiêu ở chương 2, trong dải Giữa. gd-world đã theo (W4) | Vớt Hoa tiêu ở chương 1 | Vừa |
+| 6 | Vành đai trong mở bằng gì | Bằng mốc C1.9 (Lantern đọc vị trí). Hoa tiêu mở Vùng trung tâm và Skiff | Khung mục 7 đặt Hoa tiêu ở chương 2, trong Vành đai trong. gd-world đã theo (W4) | Vớt Hoa tiêu ở chương 1 | Vừa |
 | 7 | Năm người vớt có cùng một kiểu vớt không | Ba người kéo buồng từ xác trạm (Ingrid, Linh, Rafa). Amara đang thức ở Lantern, tới bằng xuồng của Bram. Yusuf đang thức ở Veyl Waypost, đón bằng Skiff | Năm lần không lặp, và cho Lantern, giờ giao thương, Skiff mỗi thứ một vai trong truyện | Cả năm đều kéo buồng | Rẻ |
 | 8 | Nhân vật người chơi | Bốn hồ sơ mặc định có tên, đổi tên được, không có lời thoại riêng | Buồng tắt cần có tên. Người chơi 1 đến 4 không thể có thoại riêng mà vẫn đúng mọi số người | Nhân vật chính có tên và giọng riêng | Vừa |
 | 9 | Số xác trạm có truyện | Ba: Cinder, Wick, Flint. Flint không có người để vớt | Mỗi dải một xác trạm, khớp ba người kéo buồng và cú lật | Một xác trạm mỗi người vớt | Rẻ |
@@ -1269,8 +1269,8 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 
 | # | Vấn đề | Lý do và bằng chứng | Phương án thay | Đã viết theo |
 |---|---|---|---|---|
-| 1 | K21 nói mỗi chương thêm đúng một kiểu chơi mới, nhưng bảng mục 7 của khung ghi hai kiểu ở chương 1 (khai thác và giờ giao thương) và hai kiểu ở chương 3 (sự cố trong giờ giao thương, kẻ địch có vũ khí) | Hai chỗ của khung lệch nhau. Chương 3 còn gánh thêm dải Xa, ba map nhánh, một người vớt và ba mốc truyện lớn nhất | Sửa K21 thành "một hoặc hai". Hoặc dời một map nhánh của chương 3 sang chương 4 | GDM đã xử, log dòng 43: K21 sửa thành một hoặc hai. Chương 3 giữ nguyên |
-| 2 | K12 ghi Hoa tiêu mở dải, nhưng mục 7 đặt dải Giữa và Hoa tiêu cùng ở chương 2 | Phải vào dải Giữa mới vớt được Hoa tiêu | Sửa K12: Hoa tiêu mở dải Xa và Skiff | GDM đã xử, log dòng 44: K12 đã sửa đúng phương án thay |
+| 1 | K21 nói mỗi chương thêm đúng một kiểu chơi mới, nhưng bảng mục 7 của khung ghi hai kiểu ở chương 1 (khai thác và giờ giao thương) và hai kiểu ở chương 3 (sự cố trong giờ giao thương, kẻ địch có vũ khí) | Hai chỗ của khung lệch nhau. Chương 3 còn gánh thêm Vùng trung tâm, ba map nhánh, một người vớt và ba mốc truyện lớn nhất | Sửa K21 thành "một hoặc hai". Hoặc dời một map nhánh của chương 3 sang chương 4 | GDM đã xử, log dòng 43: K21 sửa thành một hoặc hai. Chương 3 giữ nguyên |
+| 2 | K12 ghi Hoa tiêu mở dải, nhưng mục 7 đặt Vành đai trong và Hoa tiêu cùng ở chương 2 | Phải vào Vành đai trong mới vớt được Hoa tiêu | Sửa K12: Hoa tiêu mở Vùng trung tâm và Skiff | GDM đã xử, log dòng 44: K12 đã sửa đúng phương án thay |
 | 3 | K7 ghi manh mối truyện chỉ nằm ở map nhánh | Nhiều mốc truyện phải diễn ra ở trạm và cảng: tàu lạ, cú lật ở phòng nghiên cứu, thiết bị dưới bến | Sửa chữ K7 thành "vật manh mối", còn mốc truyện được diễn ra ở trạm và cảng | GDM đã xử, log dòng 45: K7 đã sửa đúng phương án thay |
 | 4 | K2 chỉ cho giữ 1 món khi bị kéo về | Áp cho vật truyện thì người chơi phải chọn giữa manh mối và hàng, hoặc mất vật nhiệm vụ | Thêm ngoại lệ cho vật manh mối và vật nhiệm vụ | GDM đã xử, log dòng 46: K2 đã có ngoại lệ. gd-items đã ghi luật V4 cùng nghĩa, gd-character áp ở đợt 1b |
 | 5 | MVP chỉ có chương 1, trong đó chưa có The Wardens, chưa có cú lật | MVP không đo được sức kéo của truyện, chỉ đo được móc mở đầu. `10-narrative.md` nguyên lý 1: truyện đi sau cấu trúc chơi, nên chấp nhận được | Giữ MVP. Playtest MVP chỉ hỏi về móc: người chơi có muốn biết Lantern là ai và thứ gì đã đánh Cradle không | GDM đã nhận, không có dòng log riêng. Đã gieo MM1.1, MM1.2 và C1.9 vào chương 1. Log dòng 49 thêm bắt sống loài nhỏ vào chương 1, MVP thử được thêm điểm khác biệt đó |
@@ -1278,7 +1278,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 7 | B4 và B9, kết mở: người chơi theo đuổi Solace phần lớn game rồi biết đó là mồi | Rủi ro người chơi thấy bị lấy mất mục tiêu. GDM đã xử một phần ở log dòng 36 (lộ ở chương 4, chương 5 có mục tiêu mới) | Giữ. Thêm bốn thứ để kết mở không thành kết hụt: gieo nghi ngờ từ chương 1 tới 3 (mục 2.9), sự thật đến từ chính Cradle (Điểm tự quyết 4), chương 5 có thắng lợi cụ thể, và cảnh rời neo đi trước câu hỏi | GDM đã nhận, không có dòng log riêng. Mục 2.8, 2.9 và 7b. Đợt 6: kết nay có đích thật (B9), rủi ro này giảm |
 | 8 | Khung mục 1 ghi chương 1 đến 3 là "tìm đường tới Solace" | Trong ba chương đó khung không cho việc nào thật sự là tìm đường, người chơi chỉ sửa trạm và vớt người | Truyện thêm mảnh lõi dẫn đường ở mỗi xác trạm và cảnh đóng chương 2 để mục tiêu "tìm đường" có việc làm | GDM đã xử, log dòng 48: mỗi xác trạm một mảnh lõi dẫn đường, ghép dần (C2.8) |
 | 9 | Khung mục 7, chương 2 ghi "bắt sống loài lớn (gây mê, kéo về)" | Theo `combat-driftlife.md` cỡ L chỉ lấy được mẫu sinh thiết, cỡ M bắt sống bằng Phao kéo. Chữ "loài lớn" làm mốc C2.4 không thể xong nếu đọc đúng chữ | Sửa khung thành "bắt sống cỡ M (gây mê, Phao kéo)" | GDM đã xử, log dòng 76: khung đã sửa thành cỡ M |
-| 10 | Khung chưa định nghĩa "qua chương". Ba file đang định nghĩa ba kiểu | `kinh-te-tien-trinh.md` luật 12 (bốn cổng), `tram-va-cang.md` luật 11 (xong giai đoạn động cơ thì mở mốc truyện), file này luật 1 (mốc đóng chương). Người chơi xong C1.9 mà chưa lắp ENG-101 thì dải Giữa mở theo truyện, đóng theo kinh tế | Ghi vào khung một nghĩa: chương đóng và dải mở theo mốc đóng chương, cổng kinh tế là gợi ý tiến độ | GDM đã xử, log dòng 68: K25 |
+| 10 | Khung chưa định nghĩa "qua chương". Ba file đang định nghĩa ba kiểu | `kinh-te-tien-trinh.md` luật 12 (bốn cổng), `tram-va-cang.md` luật 11 (xong giai đoạn động cơ thì mở mốc truyện), file này luật 1 (mốc đóng chương). Người chơi xong C1.9 mà chưa lắp ENG-101 thì Vành đai trong mở theo truyện, đóng theo kinh tế | Ghi vào khung một nghĩa: chương đóng và dải mở theo mốc đóng chương, cổng kinh tế là gợi ý tiến độ | GDM đã xử, log dòng 68: K25 |
 | 11 | Lời Lead: Y trao tọa độ một hành tinh có sự sống thật, ngay sau khi loài người vừa bị một tọa độ từ Sennar lừa | Người chơi vừa học rằng tọa độ được cho không là bẫy. Nhận tọa độ thứ hai mà không kiểm được thì kết thành ngây thơ, hoặc người chơi chờ một cú lừa nữa | Giữ lời Lead, thêm cách kiểm: tọa độ đặt trên bản đồ sao thật do tổ Ember tự lấy ở Data Core, Odile và Rafa tự kiểm | gd-story đã viết theo phương án thay (mục 2.8). Báo GDM |
 | 12 | Lời Lead và log 88: cách mạng diễn ra trên Sennar, người chơi không tới | Cao trào chính trị xảy ra ngoài màn hình. Chương 5 dễ thành chuyện giành ghế của người khác, tổ Ember làm vai phụ, trong khi mục tiêu của người chơi suốt game là nhà cho loài người | Giữ phạm vi của log 88. Viết để việc của tổ Ember là điều kiện của cả hai thắng lợi: giữ chân Daskel ở Rig thì Sennar mới nổi dậy được, lấy bản đồ sao thật thì mới rời được bãi vỡ | gd-story đã viết theo phương án thay (chương 5, mục 7b). Báo GDM |
 | 13 | Lời Lead: tổ Ember tình cờ gặp cuộc bắt cóc một thương nhân | Nếu Y là người lạ xuất hiện lần đầu ở cuối chương 3 thì cú lộ danh tính nhẹ, và phải thêm một nhân vật, một chủng tộc cần art | Y là Ilsume, thương nhân người chơi đã bán hàng từ chương 2. Chủng tộc là Sennari đã có. Cuộc bắt cóc xảy ra vì thiết bị nghe lén Maro gắn ở cảng Ember | gd-story tự quyết trong thẩm quyền (log 89). Báo GDM |
@@ -1290,7 +1290,7 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 |---|---|---|---|
 | 2026-11-20 | Bản đủ đầu tiên, chuyển từ `story/game-story-v3.md` sang khung B1 tới B11. Phản diện là The Wardens, bỏ tên phản diện cũ và nguồn gốc cũ của đường đi | GD-022, log GDM dòng 2 tới 8 | gd-story |
 | 2026-11-20 | Viết lại chương 4, chương 5 và kết theo Solace là thông tin mồi và kết mở. Khớp boss, khe manh mối, quest sửa khoang, loại tàu với file của các vai khác | Khung đổi B4, B9, B11, K10 sau khi Lead chốt kết mở. File các vai khác có sau bản đầu | gd-story |
-| 2026-11-20 | Thêm mục 2.9 gieo nghi ngờ về Solace ở chương 1 tới 3, hai vật manh mối MM3.6 và MM3.7. Khớp ID vật kể chuyện STY và luật V4 của gd-items (bản cuối: vật nhiệm vụ chiếm túi, mất thì về vị trí gốc), loài mang thẻ DL-X05 của gd-combat, lý do mở dải Giữa của gd-world | Tin cập nhật của GDM và tin trả lời của gd-items, gd-combat, gd-world, gd-quan | gd-story |
+| 2026-11-20 | Thêm mục 2.9 gieo nghi ngờ về Solace ở chương 1 tới 3, hai vật manh mối MM3.6 và MM3.7. Khớp ID vật kể chuyện STY và luật V4 của gd-items (bản cuối: vật nhiệm vụ chiếm túi, mất thì về vị trí gốc), loài mang thẻ DL-X05 của gd-combat, lý do mở Vành đai trong của gd-world | Tin cập nhật của GDM và tin trả lời của gd-items, gd-combat, gd-world, gd-quan | gd-story |
 | 2026-11-20 | Đợt 1b: quest của Kỹ sư mở thêm Súng lưới cho loài nhỏ ở chương 1, chương 2 đổi thành nuôi và bắt sống loài lớn. Ghi kết quả GDM xử 8 phản biện. Gỡ dấu chờ gd-character | Khung sửa lần 2, log GDM dòng 43 đến 49 | gd-story |
 | 2026-11-20 | Gỡ dấu chờ gd-ux (bước T02, T29, T30, màn UI-19 và UI-53). Giữ tên cũ của vụ phục kích, đưa phương án đổi tên xuống mục 10. Ghi rõ Odile tin Solace tới chương 4. Bốn hồ sơ người chơi không có nghề riêng | Tin của gd-ux, lỗi validator của gd-tech, mục lệch của gd-character | gd-story |
 | 2026-11-20 | Thêm cột Kênh cho 36 câu mẫu, cắt VO_MAR_01 và VO_BRA_03 xuống dưới 60 ký tự. Script soát kiểm giới hạn theo kênh | gd-ux chốt story.box 80, story.radio 60, story.bubble 60 | gd-story |

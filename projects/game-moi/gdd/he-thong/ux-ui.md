@@ -236,7 +236,7 @@ Ba phần tử luôn hiện: Oxy (HUD-01 và HUD-02), túi (HUD-03 và HUD-04), 
 ```
 1280x720, lề an toàn 64 x 36 px
 +----------------------------------------------------------------------+
-| HUD-01 OXY [/////|####......] 187  ~3:07  x1,0   HUD-11 Dải Gần     HUD-13 Sửa |
+| HUD-01 OXY [/////|####......] 187  ~3:07  x1,0   HUD-11 Vành đai ngoài     HUD-13 Sửa |
 | HUD-02   vạch đủ về --^  Về cửa khí                              Khoang |
 | HUD-03 TÚI [######....|] 56/80 Nặng            HUD-09 +3 Phế liệu        neo |
 | HUD-04 GHIM: (pin) Mảnh lõi                        +1 Băng              |
@@ -443,7 +443,7 @@ Luật FTUE:
 1. Gợi ý là một dòng chữ không quá 40 ký tự đặt cạnh thứ cần làm, không chặn thao tác (luật 9 mục 2.1). Mỗi bước dạy đúng một ý. `MVP`
 2. Gợi ý tắt sau hành động đầu có ý nghĩa ở cột Tắt khi. Bước chỉ để thông tin tắt sau 8 giây hay khi người chơi làm việc tiếp. Mỗi bước hiện một lần cho mỗi người chơi, xem lại ở Sổ tay mục Cách chơi. `MVP`
 3. Cảnh báo (nguy hiểm sắp tới) có dáng khác lời giới thiệu: nền cảnh báo, biểu tượng, động từ ngắn, ví dụ "Sáng đỏ là sắp đánh". `MVP`
-4. Mọi tình huống dạy đặt ở dải Gần, mảnh Ember Mooring hoặc mảnh Mở đầu tiên, nơi `map.md` luật 2.3.8 cấm hazard ở Ember Mooring. Bước dạy kỹ năng chiến đấu chỉ đặt khi có đúng một con Driftlife thường trong vùng. `MVP`
+4. Mọi tình huống dạy đặt ở Vành đai ngoài, mảnh Ember Mooring hoặc mảnh Mở đầu tiên, nơi `map.md` luật 2.3.8 cấm hazard ở Ember Mooring. Bước dạy kỹ năng chiến đấu chỉ đặt khi có đúng một con Driftlife thường trong vùng. `MVP`
 5. Người chơi tắt gợi ý trong Cài đặt thì mọi gợi ý ẩn, Sổ tay mục Cách chơi vẫn đọc được. `MVP`
 6. Không có bước dạy cho thứ ngoài chương 1. Thứ Sau MVP chỉ có danh mục cuối mục này. `MVP`
 7. Cột Setup là cảnh dựng của thế giới, chỉ áp khi thế giới đang ở mốc chương ghi ở cột Trigger. Gợi ý là của từng người chơi. Hai người cùng tỉnh dậy thấy cùng một cảnh dựng (một con Driftlife ở T13), mỗi người nhận gợi ý của mình. Với người vào sau hay thế giới đã qua mốc, Setup bỏ qua, bước vẫn kích theo Trigger khi người đó lần đầu gặp tình huống. `MVP`
@@ -545,7 +545,7 @@ Mỗi luật khung mà người chơi cần thấy phải có tín hiệu. Cột
 | K2 | Bị kéo về chỉ giữ 1 món, không mất Tally | HUD-04, UI-31 ghim, UI-34, UI-35 hai cột Giữ và Mất | MVP |
 | K3 | Túi giới hạn, đồ chỉ thành của trạm khi về | HUD-03, UI-31, UI-36 dòng "Đã vào kho" | MVP |
 | K4 | Có đường về: cửa khí và Beacon | HUD-06, HUD-14, UI-33, T15 | MVP |
-| K5 | Dải Gần, Giữa, Xa | HUD-11 tên dải, UI-33 | MVP (Gần) |
+| K5 | Vành đai ngoài, Vành đai trong, Vùng trung tâm | HUD-11 tên dải, UI-33 | MVP (Vành đai ngoài) |
 | K6 | Dải chưa mở bị chặn bằng vật cản (MVP). Thiếu cấp vỏ thì Oxy hao nhanh (Sau MVP) | HUD-10 chữ "Chưa có đường qua", HUD-11, HUD-01 hệ số, UI-16 | MVP (vật cản), Sau MVP (thiếu cấp vỏ) |
 | K7 | Map nhánh có lối vào riêng, có thể cần chìa | UI-33 biểu tượng lối vào, HUD-10 chữ "Cần {tool} để mở", cảnh chuyển, Sổ tay | MVP |
 | K8 | Sinh lại mỗi chuyến, không cạn | Không cần tín hiệu riêng, điểm khai thác mới hiện ở chuyến sau | MVP |

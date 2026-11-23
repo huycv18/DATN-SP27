@@ -100,7 +100,7 @@ Thêm người cùng kéo một vật nặng hoặc vừa: mỗi người thêm 
 2. Người ngạt không bị AI nhắm tới và không nhận sát thương (để Ngạt là khoảnh khắc chọn đồ và chờ cứu, không phải bị đánh chết). Khớp `combat-driftlife.md` luật 10.
 3. Ngay khi vào Ngạt, túi đồ mở ở chế độ chọn món ghim (2.4). Hết giờ chọn vẫn giữ món đã ghim trước đó.
 4. Được cứu: một đồng đội ở trong 1,5 u giữ Chia Oxy (V, X) chuyển Oxy với tốc độ 10 điểm/giây. Khi người ngạt đạt từ 30 Oxy thì sang Được cứu (2 giây i-frame, rồi Bay). Trong lúc đang được chia Oxy thì đồng hồ ngạt tạm dừng.
-5. Tự thoát (không cần đồng đội): nếu người ngạt chạm cửa khí của trạm trong 12 giây (chỉ ở dải Gần mới khả thi: 12 giây ở tốc độ 2,4 u/s đi tối đa 28,8 u) thì tính là kết thúc chuyến bằng cửa khí (K4), giữ nguyên túi. Recall Beacon cần kích 5 giây nên không dùng được khi ngạt.
+5. Tự thoát (không cần đồng đội): nếu người ngạt chạm cửa khí của trạm trong 12 giây (chỉ ở Vành đai ngoài mới khả thi: 12 giây ở tốc độ 2,4 u/s đi tối đa 28,8 u) thì tính là kết thúc chuyến bằng cửa khí (K4), giữ nguyên túi. Recall Beacon cần kích 5 giây nên không dùng được khi ngạt.
 6. Hết 12 giây không ai cứu và chưa về: Bị kéo về. Nhân vật về buồng cửa khí của trạm. Túi chỉ giữ đúng 1 món ghim (một đơn vị vật phẩm, một lồng mẫu đang kéo hoặc một vật nhiệm vụ cũng được ghim. Ghim lồng mẫu thì chỉ giữ con có sao cao nhất trong lồng, các con còn lại mất, khớp luật 25 của `combat-driftlife.md`). Phần còn lại của túi biến mất, không rơi ra map. Ngoại lệ: vật nhiệm vụ không ghim thì trở về vị trí gốc (2.4 điểm 10), vật manh mối không nằm trong túi nên không mất. Dụng cụ mang theo trên đai và Tally không mất, không phí, không nợ (K2).
 7. Bị kéo về, cũng như Về an toàn sớm, là kết thúc chuyến của riêng người đó (C6). Người đã về trạm không ra lại trong cùng chuyến (C9, vì về trạm nạp đầy Oxy rồi ra lại sẽ phá giới hạn Oxy K1). Trong lúc chờ người đó làm việc trạm: xưởng (chế trước cho giờ giao thương), khoang nuôi, và xem vị trí đồng đội. Chuyến chung kết thúc khi người cuối cùng đã về hoặc bị kéo về.
 8. K27: người đang ngạt không trao và không thả được đồ. Đồng đội cứu bằng chia Oxy, không vét túi hộ. Muốn giữ đồ cho nhóm, người chơi phải trao trước khi Oxy chạm 0.
@@ -177,7 +177,7 @@ Mua một lần cho cả nhóm, mọi bộ đồ lên cấp cùng lúc (C4). Kh�
 | Trục | Bậc 0 | Bậc 1 | Bậc 2 | Bậc 3 | Bậc 4 | Mở dự kiến theo chương |
 |---|---|---|---|---|---|---|
 | T-OXY dung lượng Oxy | 330 | 450 | 600 | 780 | 1000 | Chương 1 đến 5 (xấp xỉ một bậc mỗi chương) |
-| T-VO cấp môi trường, giảm đòn | 0, 0% | 1, 5% | 2, 10% | 3, 15% | không có | Cấp bằng cấp dải: Gần 0, Giữa 1, Xa 2, Cradle và Warden Rig 3 (E3 trong `map.md`) |
+| T-VO cấp môi trường, giảm đòn | 0, 0% | 1, 5% | 2, 10% | 3, 15% | không có | Cấp bằng cấp dải: Vành đai ngoài 0, Vành đai trong 1, Vùng trung tâm 2, Cradle và Warden Rig 3 (E3 trong `map.md`) |
 | T-DAY vmax, gia tốc, chi phí lướt, hồi chiêu | 6,0 u/s, 18, 4, 1,2 s | 6,5, 20, 4, 1,1 s | 7,0, 22, 3,5, 1,0 s | 7,5, 24, 3, 0,9 s | không có | Bậc 1 chương 1, bậc 2 chương 2, bậc 3 chương 3 (theo `kinh-te-tien-trinh.md` mục 3.2) |
 | T-TUI sức chứa (Khối) | 80 | 100 | 126 | 168 | 216 | Chương 1 đến 5 |
 | T-DUNGCU số ô dụng cụ | 3 | 4 | 5 | không có | không có | Bậc 1 ở chương 1 (Dùi xung), bậc 2 ở chương 2 (bắt sống) |
@@ -236,7 +236,7 @@ Quy tắc: không phím nào đổi nghĩa theo chế độ ngoài hai ngữ c�
 | Oxy dung lượng bậc 4 | 1000 điểm | 900 đến 1100 | Chuyến chương 5 dài | Chuyến chương 5 ngắn | Độ dài chuyến | sim GD-030, map.md 3.9 (chuyến chương 5 dài 10,4 phút) |
 | Hao Oxy nền | 1,0 điểm/giây | 1,0 cố định | Đổi mọi số khác | Đổi mọi số khác | Mọi thứ | ước, định nghĩa đơn vị |
 | Hệ số thiếu 1 cấp môi trường | 2,5 | 2,0 đến 3,0 | Phạt đi sớm nặng | Cổng mềm | K6, độ khó dải | ước |
-| Hệ số thiếu 2 cấp trở lên | 4,0 | 3,0 đến 5,0 | Phạt nặng | Dải xa dễ ép | K6 | ước |
+| Hệ số thiếu 2 cấp trở lên | 4,0 | 3,0 đến 5,0 | Phạt nặng | Vùng trung tâm dễ ép | K6 | ước |
 | Chi phí lướt bậc 0 | 4 Oxy | 3 đến 6 | Lướt đắt, ít né | Lướt thành đường đi | Cảm giác, Oxy | ước |
 | Hồi chiêu lướt bậc 0 | 1,2 giây | 0,8 đến 1,6 | Ít lướt | Lướt dày | Cảm giác | ước |
 | Khoảng lướt | 3,3 u (15 u/s, 0,22 giây) | 2,5 đến 4,5 | Lướt qua khe rộng | Né ngắn | Né, chính xác | ước |
@@ -476,7 +476,7 @@ Giờ giao thương đặc biệt: hai người cùng bị kéo về cạnh nhau
 | Lướt | Tốn 4 Oxy một lần, hồi chiêu 1,2 giây, miễn sát thương 0,2 giây đầu | Lướt đắt hơn bay 7 lần mỗi u nên là công cụ chiến thuật, không phải đường đi | Lướt miễn phí, lướt có thanh stamina riêng | Rẻ |
 | Quán tính | Hãm tự nhiên 12 u/s2, có Hãm chủ động 36 u/s2 | Log dòng 22 chốt quán tính nhẹ. Có áp lực Oxy và combat nên cần dừng gọn | Quán tính nặng kiểu concept cũ | Rẻ |
 | Ngạt | 12 giây, tốc độ 40%, không bị nhắm | Đủ cho cứu hoặc chọn đồ, không chết ngay (K2) | 5 giây (quá ngắn cho co-op), 30 giây (kéo dài chờ) | Rẻ |
-| Ngạt chạm cửa khí | Cho phép tính là Về an toàn | Khoảnh khắc kịch tính ở dải Gần, thưởng người điều khiển giỏi, không phá K2 vì chỉ vài mét | Cấm, kéo về luôn | Rẻ |
+| Ngạt chạm cửa khí | Cho phép tính là Về an toàn | Khoảnh khắc kịch tính ở Vành đai ngoài, thưởng người điều khiển giỏi, không phá K2 vì chỉ vài mét | Cấm, kéo về luôn | Rẻ |
 | Ghim món | Người chơi ghim chủ động, mặc định vật hiếm nhất | K2 nói "tự chọn", ghim trước để không bị chọn vội lúc ngạt | Chọn lúc kéo về | Rẻ |
 | Mất phần còn lại | Biến mất, không rơi ra map | K2 nói mất, rơi ra map biến thành vòng lặp nhặt lại phá nhịp và đồng bộ khó | Rơi thành túi nhặt lại | Vừa |
 | Chia Oxy | Cho tự do (không chỉ khi ngạt), sàn người cho 20 | Thêm tay (P3), sàn tránh cả hai cùng ngạt | Chỉ chia khi ngạt, chia không sàn | Rẻ |

@@ -122,11 +122,11 @@
       1.5
     ],
     "dai_theo_chuong": [
-      "Gần",
-      "Giữa",
-      "Xa",
-      "Xa",
-      "Xa"
+      "Vành đai ngoài",
+      "Vành đai trong",
+      "Vùng trung tâm",
+      "Vùng trung tâm",
+      "Vùng trung tâm"
     ],
     "he_so_mat_do_them": [
       1,
@@ -346,7 +346,7 @@
         "map.md 3.8 (gd-world)",
         "0,47 mọi dải",
         "Với thang túi mới, Oxy là giới hạn từ chương 2, mỗi người nhóm 4 nhặt 73 đến 91%, nhóm 4 hết chương 1 ở 31%, chương 2 ở 29%",
-        "0,30 ở Gần, 0,25 ở Giữa, 0,38 ở Xa (gd-world, sau QA GD-026)",
+        "0,30 ở Vành đai ngoài, 0,25 ở Vành đai trong, 0,38 ở Vùng trung tâm (gd-world, sau QA GD-026)",
         "gd-world"
       ],
       [
@@ -416,7 +416,7 @@
       [
         "Kiện chương 4 và 5",
         "vat-pham.md (gd-items)",
-        "Dùng kiện dải Xa, khoảng 102 GTĐ",
+        "Dùng kiện Vùng trung tâm, khoảng 102 GTĐ",
         "Đơn chương 4, 5 cần khoảng 150 và 199 GTĐ mỗi kiện, chương 4 kéo dài",
         "CGO-411 161,0 và CGO-511 193,2 GTĐ (gd-items thêm)",
         "gd-items"
@@ -562,17 +562,17 @@
     "he_so_thieu_vo": 0.27,
     "nuoi_dai": [
       [
-        "Gần",
+        "Vành đai ngoài",
         "BIO-111",
         "FED-101"
       ],
       [
-        "Giữa",
+        "Vành đai trong",
         "BIO-212",
         "FED-201"
       ],
       [
-        "Xa",
+        "Vùng trung tâm",
         "BIO-311",
         "FED-301"
       ]
@@ -614,7 +614,7 @@
       ],
       [
         "KH11-C3",
-        "Khoang sinh quyển cấp 3 (môi trường dải Xa)",
+        "Khoang sinh quyển cấp 3 (môi trường Vùng trung tâm)",
         "KHOANG_CAP",
         3
       ],
@@ -704,7 +704,7 @@
         "Hàng chế": {
           "he_so": 1.35,
           "do_goi": 1.5,
-          "y_do": "Kiện tinh dải Gần phải chế ở Xưởng trước ca. Trả công chế"
+          "y_do": "Kiện tinh Vành đai ngoài phải chế ở Xưởng trước ca. Trả công chế"
         },
         "Hàng sống": {
           "he_so": 1.3,

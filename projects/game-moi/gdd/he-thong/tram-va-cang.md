@@ -70,16 +70,16 @@ Mã mốc truyện dạng C1.8 theo `cot-truyen.md` mục 2.5.
 | HC03 | Kiện băng | CGO-104 (thô), CGO-113 (chế) | Băng, khối nước tinh khiết COM-105 | CGO-104 có hàng trong kho. CGO-113 chế COM-105 ở xưởng trước giờ giao thương | Chương 1, MVP. CGO-113 là hàng cần chế duy nhất của chương 1 (log 67) |
 | HC04 | Kiện linh kiện | CGO-111, CGO-112 | Vật liệu chế COM của xưởng | Chế ở xưởng trước giờ giao thương | Chương 2, Sau MVP |
 | HC05 | Kiện mẫu Driftlife | CGO-105 | Mẫu Driftlife đã hạ SMP | Có hàng trong kho | Chương 1, Hạng 3, MVP |
-| HC06 | Lồng sinh vật sống | CGO-121 dải Gần (RCP-126 cho LIV-111 tới 113 cỡ S, RCP-128 cho LIV-114, 115 cỡ M), CGO-221, CGO-321. Lồng nhớ loài bên trong, giá theo loài (luật 30) | Mẫu sống LIV | Bắt sống trong chuyến. Thông dịch viên đưa vào lồng giao lúc Mở giao thương. Không chia thùng | CGO-121 chương 1, MVP (RCP-128 chương 2). CGO-221 chương 2, CGO-321 chương 3, Sau MVP |
+| HC06 | Lồng sinh vật sống | CGO-121 Vành đai ngoài (RCP-126 cho LIV-111 tới 113 cỡ S, RCP-128 cho LIV-114, 115 cỡ M), CGO-221, CGO-321. Lồng nhớ loài bên trong, giá theo loài (luật 30) | Mẫu sống LIV | Bắt sống trong chuyến. Thông dịch viên đưa vào lồng giao lúc Mở giao thương. Không chia thùng | CGO-121 chương 1, MVP (RCP-128 chương 2). CGO-221 chương 2, CGO-321 chương 3, Sau MVP |
 | HC07 | Kiện sản phẩm nuôi | CGO-107, CGO-207, CGO-307 | Sản phẩm nuôi BIO | Có hàng trong kho | Chương 2, Hạng 5, Sau MVP |
 | HC08 | Kiện vật tư | CGO-141 | 1 Bình Oxy nhỏ CON-101, 1 Lưới cuộn CON-102 (RCP-127) | Chế vật tiêu hao ở xưởng trước giờ giao thương | Chương 2, Sau MVP |
 | HC09 | Bản sao dữ liệu | CGO-131 (sao bằng RCP-141) | Sao từ vật kể chuyện loại dữ liệu STY-101, STY-401 ở khoang liên lạc, vật gốc ở lại trạm | Sao một lần mỗi vật gốc. Không chia thùng | Chương 3, Sau MVP |
 | HC10 | Kiện đồ Trái Đất | CGO-109 (RCP-116) | Đồ cũ của Cradle RES-106 | Có hàng trong kho | Chương 1, MVP |
 | HC11 | Kiện đặc sản Driftlife | CGO-106, CGO-206, CGO-306 | Mẫu đặc sản từng loài SMP (CGO-106: 1 trong SMP-111 tới 115, RCP-124) | Có hàng trong kho | CGO-106 chương 1, Hạng 3, MVP. CGO-206 chương 2, CGO-306 chương 3, Sau MVP |
-| HC12 | Kiện tinh dải Giữa | CGO-211, CGO-212, CGO-213 | Vật liệu chế COM dải Giữa | Chế ở xưởng trước giờ giao thương | Chương 2, Sau MVP |
-| HC13 | Kiện tinh dải Xa | CGO-311, CGO-312, CGO-313 | Vật liệu chế COM dải Xa | Chế ở xưởng trước giờ giao thương | Chương 3, Sau MVP |
+| HC12 | Kiện tinh Vành đai trong | CGO-211, CGO-212, CGO-213 | Vật liệu chế COM Vành đai trong | Chế ở xưởng trước giờ giao thương | Chương 2, Sau MVP |
+| HC13 | Kiện tinh Vùng trung tâm | CGO-311, CGO-312, CGO-313 | Vật liệu chế COM Vùng trung tâm | Chế ở xưởng trước giờ giao thương | Chương 3, Sau MVP |
 | HC14 | Kiện linh kiện đặc biệt | CGO-411, CGO-511 | Linh kiện Cradle RES-401 (RCP-421), linh kiện Warden RES-305 (RCP-521) | Có hàng trong kho | CGO-411 chương 4, CGO-511 chương 5, Sau MVP |
-| HC15 | Kiện tin mật | CGO-421 | 1 Gói tin mật STY-701 (khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày) và 1 kiện vỏ bọc dải Xa (RCP-422) | Có gói tin trong ngày. Không chia thùng | Chương 4, Sau MVP. Chỉ tàu của mạng lưới (TA11) gọi |
+| HC15 | Kiện tin mật | CGO-421 | 1 Gói tin mật STY-701 (khoang liên lạc nhận từ mạng lưới, tối đa 1 gói mỗi ngày) và 1 kiện vỏ bọc Vùng trung tâm (RCP-422) | Có gói tin trong ngày. Không chia thùng | Chương 4, Sau MVP. Chỉ tàu của mạng lưới (TA11) gọi |
 
 ## 1. Mục đích với người chơi
 
@@ -169,7 +169,7 @@ Cam kết với người chơi: không mất hàng vì tàu rời, không trừ 
 49. Cho ăn là bỏ 1 thức ăn đúng dải (FED-101, FED-201, FED-301, làm ở khoang sinh quyển từ mô sinh học) cho mỗi con. Mỗi ngày, mỗi con trưởng thành được cho ăn thì ra một sản phẩm nuôi (BIO của loài đó) vào đầu ngày kế tiếp. Không cho ăn thì không ra sản phẩm, con vật không chết, không yếu đi. Sản phẩm nuôi và Driftlife nuôi chỉ ra Tally khi bán ở giờ giao thương (HC06, HC07, HC11), nên lợi từ nuôi mỗi ngày có trần là số tàu một giờ giao thương và trần M của danh mục. `Sau MVP`
 50. Hai con cùng loài cùng trưởng thành và được cho ăn trong ngày thì đầu ngày kế tiếp sinh một con non nếu khoang còn ô trống. Một cặp sinh tối đa một con non mỗi ngày. Con non trưởng thành sau số ngày theo tham số. `Sau MVP`
 51. Lấy Driftlife trưởng thành ra khỏi ô bỏ vào lồng thì dùng được như Driftlife bắt sống: bán ở giờ giao thương (HC06), nghiên cứu, thả ra ngoài. Lồng con nuôi có giá bằng 0,5 lần lồng bắt ngoài chuyến cùng loài, mỗi loài tối đa 1 lồng con nuôi mỗi ngày (luật M5 của `vat-pham.md`). Con non chưa trưởng thành không lấy ra được. `Sau MVP`
-52. Nâng cấp khoang sinh quyển thêm ô. Môi trường cho loài dải Xa có ở cấp 3, riêng khoang sinh quyển được nâng cấp 3 từ chương 3 (bảng 2.6). Loài dải Xa không thả được vào khoang chưa có môi trường đó. `Sau MVP`
+52. Nâng cấp khoang sinh quyển thêm ô. Môi trường cho loài Vùng trung tâm có ở cấp 3, riêng khoang sinh quyển được nâng cấp 3 từ chương 3 (bảng 2.6). Loài Vùng trung tâm không thả được vào khoang chưa có môi trường đó. `Sau MVP`
 
 ### Luật chế trước và lập danh mục (C9)
 
@@ -243,14 +243,14 @@ Kiên nhẫn Dài là 60 giây, Vừa 45 giây, Ngắn 30 giây (mục 3). Hệ 
 | TA01 | Dài | 1 | Mọi hàng. Đồ Trái Đất HC10 hệ số 6 (trọng số cuối 6, gấp đôi mỗi loại hàng chợ là 3). Phế liệu hệ số 1 để giữ chất mê đồ Trái Đất | Đồ Trái Đất CGO-109 | Chủ đơn đặt trước của chương 1 (luật 71). Tikko mê đồ Trái Đất | 3 | Chương 1 | MVP |
 | TA02 | Ngắn | 2 | Chỉ gọi băng HC03 và khoáng HC02 | Không | Danh mục không còn băng hay khoáng thì không tới (luật 24) | 1 | Chương 1, Hạng 2 | MVP |
 | TA03 | Vừa | 1 | Băng HC03 3, sản phẩm nuôi HC07 3, vật tư HC08 3 | Không | Từ Hạng 4: giao xong khi còn từ 2/3 kiên nhẫn thì tàu gọi thêm 1 thùng thứ hai trong nhóm nó thích, giá gấp rưỡi, kiên nhẫn không hồi. Tàu truyện cho mốc C2.3: có trong lịch mỗi ngày tới khi một giờ giao thương phục vụ xong TA03 | 2 | Sau mốc C2.2 | Sau MVP |
-| TA04 | Dài | 1 | Linh kiện HC04 3, kiện tinh dải Giữa HC12 3 | Không | 15 giây đầu là nghi lễ chào: thùng ra quầy sau 15 giây thay vì 3, kiên nhẫn chưa giảm trong 15 giây đó, cửa neo vẫn bị chiếm | 2 | Mốc C2.7. Sau mốc C3.8 ra khỏi túi trộn, không ghé nữa (Sevra ở ẩn trên Ember) | Sau MVP |
+| TA04 | Dài | 1 | Linh kiện HC04 3, kiện tinh Vành đai trong HC12 3 | Không | 15 giây đầu là nghi lễ chào: thùng ra quầy sau 15 giây thay vì 3, kiên nhẫn chưa giảm trong 15 giây đó, cửa neo vẫn bị chiếm | 2 | Mốc C2.7. Sau mốc C3.8 ra khỏi túi trộn, không ghé nữa (Sevra ở ẩn trên Ember) | Sau MVP |
 | TA05 | Vừa | 1 | Chỉ gọi lồng sống HC06 và đặc sản HC11 | Lồng sống HC06 | Danh mục không còn hai nhóm đó thì không tới. Chê hàng mẫu đã hạ qua lời thoại | 2 | Mốc C2.4 | Sau MVP |
 | TA06 | Vừa | 1 | Khoáng HC02 3, kiện tinh HC12 3, HC13 3 | Không | Gọi bằng gợi ý (ví dụ "thứ lạnh") thay vì tên hàng. Thùng không tự ra quầy: người chơi chọn loại hàng ở ô quầy theo gợi ý. Chọn sai thì tàu từ chối, thùng sai về danh mục, chọn lại được. Bảng tàu ghi rõ TA06 gọi bằng gợi ý | 2, từ chương 4 là 3 | Mốc C3.1 | Sau MVP |
 | TA07 | Dài | 1 | Lồng sống HC06 2, vật tư HC08 2, đặc sản HC11 2, linh kiện đặc biệt HC14 2 | Không | Không bật yêu cầu bơm khí (tàu tự cấp khí). Hỏi về vị trí xác trạm qua lời thoại | 2 | Mốc C3.5 | Sau MVP |
 | TA08 | Dài | 1 | Lần 1 mọi hàng đã mở trừ HC15. Lần 2 đặt trước 1 bản sao HC09 | Không | Luật 38. Không vào túi trộn | Không | Mốc C3.3 | Sau MVP |
 | TA09 | Ngắn | 0 | Chỉ gọi kiện tinh và linh kiện đặc biệt HC04, HC12, HC13, HC14 | Không | Không có tip, giá thùng gấp rưỡi. Danh mục không còn các nhóm đó thì không tới | 1, từ chương 4 là 2 | Hạng 6 | Sau MVP |
 | TA10 | Vừa | 1 | Bản sao HC09 3, kiện tinh HC12 2, HC13 2 | Không | Mỗi giờ giao thương mua tối đa 1 bản sao. Giao xong kể một tin trên The Lattice, gợi manh mối hành lang an toàn | 1 | Mốc C3.1 | Sau MVP |
-| TA11 | Dài | 1 | Kiện tin mật HC15 như đơn đặt trước tự sinh mỗi ngày. Danh mục không có kiện tin mật thì gọi kiện tinh dải Xa HC13 như tàu thường | Không | Tàu có điều kiện truyện, không vào túi trộn. Có trong lịch mỗi ngày từ ngày kế tiếp sau mốc C3.8 tới khi mốc C5.2 xong, và luôn có trong lịch ngày đầu chương 4 và ngày đầu chương 5. Giao kiện tin mật là một đơn tin mật tới nơi. Mốc C4.7 cần ít nhất 1 đơn, mốc C5.2 cần tổng 2 đơn cộng dồn từ chương 4 (`cot-truyen.md`). Kiện tin mật không sinh thêm Tally so với kiện vỏ bọc (log 87) | Không | Ngày kế tiếp sau C3.8 | Sau MVP |
+| TA11 | Dài | 1 | Kiện tin mật HC15 như đơn đặt trước tự sinh mỗi ngày. Danh mục không có kiện tin mật thì gọi kiện tinh Vùng trung tâm HC13 như tàu thường | Không | Tàu có điều kiện truyện, không vào túi trộn. Có trong lịch mỗi ngày từ ngày kế tiếp sau mốc C3.8 tới khi mốc C5.2 xong, và luôn có trong lịch ngày đầu chương 4 và ngày đầu chương 5. Giao kiện tin mật là một đơn tin mật tới nơi. Mốc C4.7 cần ít nhất 1 đơn, mốc C5.2 cần tổng 2 đơn cộng dồn từ chương 4 (`cot-truyen.md`). Kiện tin mật không sinh thêm Tally so với kiện vỏ bọc (log 87) | Không | Ngày kế tiếp sau C3.8 | Sau MVP |
 
 ### 2.5 Bảng Hạng cảng
 
@@ -259,10 +259,10 @@ Kiên nhẫn Dài là 60 giây, Vừa 45 giây, Ngắn 30 giây (mục 3). Hệ 
 | 1 | 1 | TA01, bến 1 với 3 cửa neo, danh mục 4 loại, shop danh mục cơ bản | MVP |
 | 2 | 1 | TA02 | MVP |
 | 3 | 1 | Danh mục bán được kiện mẫu HC05 và đặc sản CGO-106. Mục shop ENG-101 | MVP |
-| 4 | 2 | Danh mục 5 loại, TA03 gọi thùng thứ hai, mục shop bản thiết kế dải Giữa, mục shop Cảng cấp 2 KH07-C2 (cửa neo thứ 4 của bến 1) | Sau MVP |
+| 4 | 2 | Danh mục 5 loại, TA03 gọi thùng thứ hai, mục shop bản thiết kế Vành đai trong, mục shop Cảng cấp 2 KH07-C2 (cửa neo thứ 4 của bến 1) | Sau MVP |
 | 5 | 2 | Danh mục bán được sản phẩm nuôi HC07, mục shop ENG-102 | Sau MVP |
 | 6 | 3 | TA09, danh mục 6 loại, mục shop tiện ích cảng | Sau MVP |
-| 7 | 3 | TA06 và TA10 gọi được kiện tinh dải Xa HC13, mục shop ENG-103 | Sau MVP |
+| 7 | 3 | TA06 và TA10 gọi được kiện tinh Vùng trung tâm HC13, mục shop ENG-103 | Sau MVP |
 | 8 | 4 | Mục shop ENG-104, đơn đặt trước tới 2 mỗi ngày ở mọi chương sau | Sau MVP |
 
 Trần ở chương nghĩa là hạng đó đạt được sớm nhất ở chương ghi trong cột. Chương 5 không mở hạng mới, đúng mạch truyện thương nhân thưa dần.
@@ -273,7 +273,7 @@ Trần ở chương nghĩa là hạng đó đạt được sớm nhất ở chư
 |---|---|---|---|---|
 | 1 | Khoang neo, kho cấp 2, xưởng, khoang liên lạc, cảng bến 1 (3 cửa neo, quầy cảng) | Kỹ sư, Thông dịch viên | 1 | MVP |
 | 2 | Khoang dẫn đường, bến Skiff, phòng nghiên cứu, khoang sinh quyển cấp 1 và 2, xưởng cấp 2, Cảng cấp 2 (cửa neo thứ 4 của bến 1) | Hoa tiêu, Nhà sinh học | 2 | Sau MVP |
-| 3 | Bến 2, tiện ích cảng, khoang sinh quyển cấp 3 (môi trường dải Xa) | Trưởng cảng | 3 | Sau MVP |
+| 3 | Bến 2, tiện ích cảng, khoang sinh quyển cấp 3 (môi trường Vùng trung tâm) | Trưởng cảng | 3 | Sau MVP |
 | 4 | Bến 3, quầy phụ, cấp 3 các khoang còn lại | Không | 4 | Sau MVP |
 | 5 | Không có khoang mới | Không | 5 | Sau MVP |
 
@@ -284,7 +284,7 @@ Mặt cắt ngang 3 tầng, đọc từ trái sang phải. Hai thang dọc ở c
 | Tầng | Cột 1 | Cột 2 | Cột 3 | Cột 4 | Mép phải |
 |---|---|---|---|---|---|
 | Trên | Khoang dẫn đường | Khoang liên lạc | Phòng nghiên cứu | Khoang sinh quyển | Bến 2 (2 cửa neo, ước) |
-| Giữa | Buồng ngủ đông và khu hồi sức | Xưởng | Kho | Quầy cảng (3 ô, mỗi ô một màu cửa neo) | Bến 1: cửa neo 1, 2, 3 nằm ngang nối tiếp |
+| Vành đai trong | Buồng ngủ đông và khu hồi sức | Xưởng | Kho | Quầy cảng (3 ô, mỗi ô một màu cửa neo) | Bến 1: cửa neo 1, 2, 3 nằm ngang nối tiếp |
 | Dưới | Cửa khí | Khoang neo | Động cơ chính | Bến Skiff | Bến 3 (2 cửa neo, ước) |
 
 - Ý đồ: quầy cảng nằm ngay trái cửa neo 1, ba cửa neo nối tiếp về bên phải trên cùng một sàn. Demo đo đường chạy từ quầy tới cửa neo 1, 2, 3 khoảng 1,1, 1,7, 2,3 giây. Cửa neo xa hơn thì đường dài hơn, đó là lý do người chơi chọn tàu nào phục vụ trước. Kho cạnh quầy chỉ là hình, trong giờ giao thương không có việc ở kho. Bến 2 và bến 3 khác tầng, cần thang, là nguồn khó mới ở chương 3 và 4, quầy phụ (tiện ích Trưởng cảng) gỡ bớt. Kích thước ô và tỉ lệ do gd-world và art quyết.
@@ -294,14 +294,14 @@ Mặt cắt ngang 3 tầng, đọc từ trái sang phải. Hai thang dọc ở c
 Số lượng do gd-economy đặt, bảng ID đầy đủ ở `vat-pham.md` mục 2.7. Khoang neo và xưởng chỉ dùng tài nguyên thô vì chưa có xưởng thì chưa chế được COM. Khoang của chương nào dùng tài nguyên của dải mở ở chương đó, để mỗi dải mới có chỗ tiêu nhìn thấy trên trạm (P2).
 | Khoang | Nhóm vật liệu | Có phần mua ở shop | Nhãn |
 |---|---|---|---|
-| Khoang neo | Phế liệu dải Gần, linh kiện | Không | MVP |
-| Kho cấp 2 | Phế liệu dải Gần, khoáng dải Gần | Không | MVP |
-| Xưởng | Phế liệu, khoáng, linh kiện dải Gần | Không | MVP |
-| Khoang liên lạc | Linh kiện, khoáng dải Gần | Không | MVP |
-| Cảng bến 1, quầy cảng | Phế liệu, linh kiện dải Gần | Không | MVP |
-| Khoang dẫn đường, bến Skiff | Linh kiện, khoáng dải Giữa, mảnh lõi dẫn đường, hạch hoặc mẫu boss BS-1 (SMP-191, SMP-192) | Không | Sau MVP |
-| Phòng nghiên cứu, khoang sinh quyển | Băng, khoáng dải Giữa, mẫu Driftlife | Không | Sau MVP |
-| Bến 2, bến 3, tiện ích cảng | Phế liệu, khoáng dải Xa, linh kiện | Bản thiết kế tiện ích | Sau MVP |
+| Khoang neo | Phế liệu Vành đai ngoài, linh kiện | Không | MVP |
+| Kho cấp 2 | Phế liệu Vành đai ngoài, khoáng Vành đai ngoài | Không | MVP |
+| Xưởng | Phế liệu, khoáng, linh kiện Vành đai ngoài | Không | MVP |
+| Khoang liên lạc | Linh kiện, khoáng Vành đai ngoài | Không | MVP |
+| Cảng bến 1, quầy cảng | Phế liệu, linh kiện Vành đai ngoài | Không | MVP |
+| Khoang dẫn đường, bến Skiff | Linh kiện, khoáng Vành đai trong, mảnh lõi dẫn đường, hạch hoặc mẫu boss BS-1 (SMP-191, SMP-192) | Không | Sau MVP |
+| Phòng nghiên cứu, khoang sinh quyển | Băng, khoáng Vành đai trong, mẫu Driftlife | Không | Sau MVP |
+| Bến 2, bến 3, tiện ích cảng | Phế liệu, khoáng Vùng trung tâm, linh kiện | Bản thiết kế tiện ích | Sau MVP |
 | Động cơ chính giai đoạn 1 đến 5 | Tài nguyên dải mới của chương, giai đoạn 1 thêm 1 hạch hoặc 1 mẫu boss BS-1 (SMP-191 hoặc SMP-192), linh kiện Warden ở giai đoạn 4 và 5 | ENG-101 tới ENG-104 ở giai đoạn 1 tới 4. ENG-105 chế, không mua | MVP giai đoạn 1 |
 
 ### 2.7 Người vớt và tính năng lớn dần
@@ -310,8 +310,8 @@ Số lượng do gd-economy đặt, bảng ID đầy đủ ở `vat-pham.md` m�
 |---|---|---|---|---|
 | Kỹ sư | Xưởng | Chế dụng cụ cơ bản, chế trước khối nước tinh khiết COM-105 cho CGO-113, nâng cấp bộ đồ bậc 1 | Cấp 2 (chương 2): chế 2 mẻ song song, bậc 2. Cấp 3: bậc cao nhất, chế HC08 | MVP cấp 1 |
 | Thông dịch viên | Khoang liên lạc, cảng | Bảng tàu, lập danh mục, đóng thùng tự động lúc Mở giao thương, giờ giao thương, shop | Chương 2: gọi xuồng Lantern, mở TA04, TA05. Chương 3: hiểu ngôn ngữ Veyl Waypost, mở TA06, TA07, TA10, dịch lời tàu lạ. Chương 4: liên lạc với The Kindling, nhận Gói tin mật STY-701 mỗi ngày | MVP chương 1 |
-| Hoa tiêu | Khoang dẫn đường, bến Skiff | Mở dải Xa (dải Giữa đã mở khi xong chương 1), Skiff tới map nhánh đã tìm ra | Mỗi lõi dẫn đường đọc được mở một map nhánh hoặc một dải | Sau MVP |
-| Nhà sinh học (Amara Okafor) | Phòng nghiên cứu, khoang sinh quyển | Tới bằng xuồng TA03 sau giờ giao thương đầu tiên phục vụ xong TA03 (C2.3). Nghiên cứu mẫu, nuôi Driftlife | Cấp 2: thêm ô, cấp 3: môi trường dải Xa. Mốc chương 3: cú lật Driftlife | Sau MVP |
+| Hoa tiêu | Khoang dẫn đường, bến Skiff | Mở Vùng trung tâm (Vành đai trong đã mở khi xong chương 1), Skiff tới map nhánh đã tìm ra | Mỗi lõi dẫn đường đọc được mở một map nhánh hoặc một dải | Sau MVP |
+| Nhà sinh học (Amara Okafor) | Phòng nghiên cứu, khoang sinh quyển | Tới bằng xuồng TA03 sau giờ giao thương đầu tiên phục vụ xong TA03 (C2.3). Nghiên cứu mẫu, nuôi Driftlife | Cấp 2: thêm ô, cấp 3: môi trường Vùng trung tâm. Mốc chương 3: cú lật Driftlife | Sau MVP |
 | Trưởng cảng (Yusuf Demir) | Bến 2, bến 3, tiện ích cảng | Về bằng Skiff sau giờ giao thương đầu tiên có TA06 cập bến (C3.2). Bến 2 | Tiện ích: quầy phụ 3 ô cạnh bến 2 và bến 3 (thùng của tàu ở bến xa ra quầy sát bến đó), bến 3 ở chương 4 | Sau MVP |
 
 ### 2.8 Bảng sự cố
@@ -651,7 +651,7 @@ Không có luật nào cần đúng N người, vì một người phục vụ �
 | 2026-11-20 | Khớp danh mục gd-items, gd-combat, gd-story: ID kiện CGO, cỡ kiện, thời gian đóng kiện 5 giây, chế 10 giây, hàng đợi chế 2 mẻ, Driftlife sổng ăn hàng và tóm bằng tay, TA04 và TA05 sang chương 2, sự cố bắt đầu sau lần đầu TA08 | Tin của ba vai | gd-quan |
 | 2026-11-20 | Khớp bản đủ gd-items: ID kiện HC06 tới HC09, thêm HC10 Kiện đồ Trái Đất, ENG-105 chế không mua, số đơn vị mỗi kiện theo Khối, thức ăn FED, hai người giữ kiện Lớn | Tin gd-items | gd-quan |
 | 2026-11-20 | Khớp bản đủ gd-story và khung mới: mốc mở từng tàu, tên TA02 và TA09, ba lần cập bến của TA08, Amara và Yusuf tới theo giờ giao thương, tàu có điều kiện truyện lặp lại tới khi xong, kết mở không tới Solace | Tin gd-story, khung đổi Solace là mồi | gd-quan |
-| 2026-11-20 | Đợt 1b: C8 mới (số tàu không theo số người), luật đóng kiện trước 53 tới 58 (C9), hàng Driftlife sống CGO-121 ở chương 1 (log 49), Hoa tiêu mở dải Xa (log 44) | Khung sửa lần 2 | gd-quan |
+| 2026-11-20 | Đợt 1b: C8 mới (số tàu không theo số người), luật đóng kiện trước 53 tới 58 (C9), hàng Driftlife sống CGO-121 ở chương 1 (log 49), Hoa tiêu mở Vùng trung tâm (log 44) | Khung sửa lần 2 | gd-quan |
 | 2026-11-20 | Bảng chốt tốc độ mang kiện, kiện Lớn giữ chung theo luật cộng 15 điểm của gd-character thay cho 90% cố định | Lệch gd-items báo giữa vat-pham và nguoi-choi | gd-quan |
 | 2026-11-20 | Chốt số theo sim giờ giao thương GD-030: chương 1 4 tàu, kiện gốc 2 đến 3, giãn cách 55 giây chia số bến, tàu cuối không vượt giờ giao thương, ô 2 giây, ngưỡng hạng mới | Sim cho thấy giờ giao thương chương 1 quá dễ, chương 4 tàu cuối đến muộn | gd-quan |
 | 2026-11-20 | Thêm luật 59 tới 61: xác nhận sang ngày ở buồng ngủ đông, hết giờ ở cửa khí khi co-op | Câu hỏi mở 2 của gd-ux | gd-quan |
@@ -665,7 +665,7 @@ Không có luật nào cần đúng N người, vì một người phục vụ �
 | 2026-11-20 | Trần rảnh 30% ở chương 1 tới 3. Chương 3 giữ hệ số 0,4 (0,5 cho cùng số kiện vì làm tròn) | Sim GD-030: chương 3 với 0,4 thì rảnh 32% ở 3 người, với 0,6 thì đơn đủ 68% ở 2 người. Cả hai lệch 2 điểm, dừng dò, chờ playtest | gd-quan |
 | 2026-11-20 | Chương 3 giãn cách 42 giây, hệ số 0,4 | Sim GD-030: đạt cả đơn đủ và rảnh ở mọi N | gd-quan |
 | 2026-11-20 | QA vòng 1 GD-031: luật mở giao thương và sinh lịch 64 tới 70, giờ giao thương đầu cố định, cấu hình lịch theo số bến, dòng đơn theo ID, giá và thưởng, điểm cảng làm tròn tích, nhóm HC11 tới HC13, HC06 vào lồng 8 giây, chỗ ngủ người vào sau, cửa khí K22, ngủ 30 giây K23, khoang người vớt sửa sau khi tỉnh, sổng không mất hàng, rò khí đi chậm, Hạng 7, số mục 8 theo sim, chuyển luật 53 tới 63 xuống sau nuôi | Biên bản `qa/GD-031-tram-va-cang.md` | gd-quan |
-| 2026-11-20 | CGO-106 lên MVP chương 1, TA01 từ Hạng 3 hỏi thêm HC11 (chỉ CGO-106) | gd-items đưa đặc sản dải Gần vào MVP | gd-quan |
+| 2026-11-20 | CGO-106 lên MVP chương 1, TA01 từ Hạng 3 hỏi thêm HC11 (chỉ CGO-106) | gd-items đưa đặc sản Vành đai ngoài vào MVP | gd-quan |
 | 2026-11-20 | QA vòng 2 GD-031: số kiện tính theo N online, chốt lúc Mở giao thương (R1). TA01 có tối đa 1 dòng kiện tinh từ khi xưởng Hoạt động (R2). Nghỉ giao thương cũng khóa cửa khí, làm tròn giờ giao thương đầu, K24, trả mục tiêu đơn đủ 70 tới 90% và giờ giao thương 180 giây về như khung | Biên bản vòng 2 | gd-quan |
 | 2026-11-20 | Lồng con nuôi giá 0,5 lần, tối đa 1 lồng mỗi loài mỗi ngày. Động cơ giai đoạn 1 nhận mẫu boss BS-1 | Khớp `vat-pham.md` luật M5 và bảng REPAIR | gd-quan |
 | 2026-11-20 | Dòng kiện cần chế và dòng lồng sống có kiện gốc 1. TA03, TA04, TA06 còn 2 dòng, TA09 còn 2 đến 3 dòng. Chờ sim | Sim GD-030 sau khi sửa tham số: chương 2 tới 5 đơn đủ 28 tới 65% vì kiện tinh qua xưởng, chương 1 nhóm 4 người nghẽn máy vì 9 lồng | gd-quan |

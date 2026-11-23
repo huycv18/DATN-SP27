@@ -16,13 +16,13 @@ DU_TRU = 0.15           # người chơi quay về khi còn 15% bình
 DON = 0.10              # phần bình dự trù cho trúng đòn và hazard
 GIU_BEACON = 5.0        # giây giữ phím Recall Beacon
 TOI_BEACON = 15.0       # giây bay đường thẳng tới beacon gần nhất đã thấy (trung bình)
-DAI = {"Gần": (0, 160), "Giữa": (160, 400), "Xa": (400, 720)}   # ranh dải, u (mảnh rộng 40 u: 4, 6, 8 cột)
+DAI = {"Vành đai ngoài": (0, 160), "Vành đai trong": (160, 400), "Vùng trung tâm": (400, 720)}   # ranh dải, u (mảnh rộng 40 u: 4, 6, 8 cột)
 BINH = {0: 330, 1: 450, 2: 600, 3: 780, 4: 1000}              # bình theo bậc T-OXY 0-4, GDM chốt log 54
 TUI = {0: 80, 1: 100, 2: 126, 3: 168, 4: 216}                  # túi theo bậc T-TUI 0-4, GDM chốt log 54
-CAP_DAI = {"Gần": 0, "Giữa": 1, "Xa": 2}                       # cấp môi trường của dải (gd-world)
+CAP_DAI = {"Vành đai ngoài": 0, "Vành đai trong": 1, "Vùng trung tâm": 2}                       # cấp môi trường của dải (gd-world)
 # chương: (bậc bình, dải làm việc, điểm làm việc u, có beacon, bậc bộ đẩy)
-CHUONG = {1: (0, "Gần", 80, True, 0), 2: (1, "Giữa", 280, True, 1), 3: (2, "Xa", 480, True, 2),
-          4: (3, "Xa", 560, True, 3), 5: (4, "Xa", 640, True, 3)}
+CHUONG = {1: (0, "Vành đai ngoài", 80, True, 0), 2: (1, "Vành đai trong", 280, True, 1), 3: (2, "Vùng trung tâm", 480, True, 2),
+          4: (3, "Vùng trung tâm", 560, True, 3), 5: (4, "Vùng trung tâm", 640, True, 3)}
 def doc_a_tu_map():
     """a của k(N) theo dải đọc từ bảng "| Dải | a |" ở map.md mục 3.8, nguồn duy nhất (gd-tech cũng đọc bảng này)."""
     md = (Path(__file__).parent.parent / "gdd" / "he-thong" / "map.md").read_text(encoding="utf-8")
@@ -30,15 +30,15 @@ def doc_a_tu_map():
     a = {}
     for dong in phan.splitlines():
         o = [x.strip() for x in dong.strip("|").split("|")]
-        if dong.startswith("| ") and len(o) >= 2 and o[0] in ("Gần", "Giữa", "Xa") and o[1].replace(",", "").isdigit():
+        if dong.startswith("| ") and len(o) >= 2 and o[0] in ("Vành đai ngoài", "Vành đai trong", "Vùng trung tâm") and o[1].replace(",", "").isdigit():
             a.setdefault(o[0], float(o[1].replace(",", ".")))
-    assert set(a) == {"Gần", "Giữa", "Xa"}, "không đọc được bảng a ở map.md mục 3.8"
+    assert set(a) == {"Vành đai ngoài", "Vành đai trong", "Vùng trung tâm"}, "không đọc được bảng a ở map.md mục 3.8"
     return a
 
 
 K_NGUOI = doc_a_tu_map()
-KICH_HOAT = {"Gần": (0.40, 0.40), "Giữa": (0.38, 0.40), "Xa": (0.35, 0.40)}   # tỉ lệ kích hoạt khe SP-R, SP-D khi 1 người
-# node khoan và nạy dải Gần: (GTĐ kỳ vọng, giây thao tác bậc 1), nguồn vat-pham.md bảng SLV
+KICH_HOAT = {"Vành đai ngoài": (0.40, 0.40), "Vành đai trong": (0.38, 0.40), "Vùng trung tâm": (0.35, 0.40)}   # tỉ lệ kích hoạt khe SP-R, SP-D khi 1 người
+# node khoan và nạy Vành đai ngoài: (GTĐ kỳ vọng, giây thao tác bậc 1), nguồn vat-pham.md bảng SLV
 NODE_KHOAN = {"SLV-102 Mạch quặng sắt": (4.4, 8.0), "SLV-103 Khối băng trôi": (4.0, 7.0),
               "SLV-104 Hòm kỹ thuật vỡ": (5.0, 6.0), "SLV-105 Tấm vỏ lớn": (6.0, 14.0)}   # giây đã nhân 2 (gd-items, GD-030)
 NHAT_TAY = (1.1, 1.6)   # SLV-101, 1 lần quay, giây đã nhân 2
@@ -51,7 +51,7 @@ def s(x, d=0):
     return f"{x:.{d}f}".replace(".", ",")
 
 
-def kn(n, dai="Gần"):
+def kn(n, dai="Vành đai ngoài"):
     return 1 + K_NGUOI[dai] * (n - 1)
 
 
@@ -127,9 +127,9 @@ def main():
     for c, (lo, hi) in MUC_TIEU.items():
         assert kq[c]["tong"] >= lo, f"chương {c}: trần Oxy {kq[c]['tong']:.0f}s ngắn hơn mục tiêu thấp {lo}s"
     assert all(r["lam"] > 0 for r in kq.values())
-    assert chuyen(3, 1)["lam"] > 0, "thiếu cấp ở Xa phải vẫn làm việc được (K6: đi được nhưng đắt)"
+    assert chuyen(3, 1)["lam"] > 0, "thiếu cấp ở Vùng trung tâm phải vẫn làm việc được (K6: đi được nhưng đắt)"
     assert all(r * kn(4, d) <= 1.0 and dd * kn(4, d) <= 1.0 for d, (r, dd) in KICH_HOAT.items()), "vượt 100% khe ở 4 người"
-    assert K_NGUOI["Gần"] >= 0.27 and K_NGUOI["Xa"] >= 0.37, "dưới mức tối thiểu đạt 60% mỗi người của sim gd-tech"
+    assert K_NGUOI["Vành đai ngoài"] >= 0.27 and K_NGUOI["Vùng trung tâm"] >= 0.37, "dưới mức tối thiểu đạt 60% mỗi người của sim gd-tech"
     assert 0.8 <= tay / tb <= 1.3, "nhặt tay và khoan phải gần ngang nhau khi tính bay"
     p = Path(__file__).with_name("ngan-sach-oxy.md")
     p.write_text("\n".join(out) + "\n", encoding="utf-8")

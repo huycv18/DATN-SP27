@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const MVP = 'MVP', SAU = 'Sau MVP';
-const G = 'Gần', M = 'Giữa', X = 'Xa', CR = 'Cradle';
+const G = 'Vành đai ngoài', M = 'Vành đai trong', X = 'Vùng trung tâm', CR = 'Cradle';
 const TH = 'Thường', IG = 'Ít gặp', HI = 'Hiếm', DB = 'Đặc biệt';
 const items = [];
 const I = (id, ten, en, nhom, hiem, khoi, gtd, dai, nhan, o = {}) => items.push({ id, ten, en, nhom, hiem, khoi, gtd, dai, nhan, ...o });
@@ -33,9 +33,9 @@ I('RES-305', 'Linh kiện Warden', 'Warden Part', 'Linh kiện', HI, 1, 12.0, X,
 I('RES-401', 'Linh kiện Cradle', 'Cradle Part', 'Linh kiện', DB, 1, 20.0, CR, SAU, { nguon: 'Boss BS-4 và map nhánh Cradle Interior (gd-combat, gd-world)', sink: 'Lắp động cơ chính giai đoạn 4 và 5' });
 
 // Mẫu Driftlife. Thứ tự và loài theo gd-combat (`combat-driftlife.md`, mục Điểm sinh và rơi).
-I('SMP-101', 'Mô sinh học Gần', 'Near Biomass', 'Mẫu', TH, 1, 1.5, G, MVP, { nguon: 'Mọi loài Gần khi hạ' });
-I('SMP-201', 'Mô sinh học Giữa', 'Mid Biomass', 'Mẫu', IG, 1, 4.0, M, SAU, { nguon: 'Mọi loài Giữa khi hạ' });
-I('SMP-301', 'Mô sinh học Xa', 'Far Biomass', 'Mẫu', HI, 1, 9.0, X, SAU, { nguon: 'Mọi loài Xa khi hạ' });
+I('SMP-101', 'Mô sinh học Vành đai ngoài', 'Near Biomass', 'Mẫu', TH, 1, 1.5, G, MVP, { nguon: 'Mọi loài Vành đai ngoài khi hạ' });
+I('SMP-201', 'Mô sinh học Vành đai trong', 'Mid Biomass', 'Mẫu', IG, 1, 4.0, M, SAU, { nguon: 'Mọi loài Vành đai trong khi hạ' });
+I('SMP-301', 'Mô sinh học Vùng trung tâm', 'Far Biomass', 'Mẫu', HI, 1, 9.0, X, SAU, { nguon: 'Mọi loài Vùng trung tâm khi hạ' });
 // [dải, số gd-items, mã combat, tên, hạ được, nls mỗi lần (mỗi con nếu đàn), xác suất đặc sản, bắt (LIV sống, BPS sinh thiết), nuôi, GTĐ đặc sản, hệ số k, nhãn, GTĐ sinh thiết cố định]
 const SP = [
   [G, 111, 'DL-G01', 'Driftmoth', 1, 1, 0.30, 'LIV', 1, 4, 1.5, MVP],
@@ -63,10 +63,10 @@ for (const [dai, so, ma, ten, ha, n, p, bat, nuoi, dac, k, nhan, bpsFix] of SP) 
   species.push(s);
   if (ha) I(s.dacId, `Đặc sản ${ma} ${ten}`, `${ma} Specialty`, 'Mẫu', dai === G ? IG : HI, 1, dac, dai, nhan, { nguon: `${ma} khi hạ (xác suất ${vn(p)}${so === 113 || so === 214 || so === 315 ? ' mỗi con' : ''})` });
 }
-I('SMP-191', 'Hạch thủ lĩnh Gần', 'Scrapmaw Core', 'Mẫu', DB, 2, 25, G, MVP, { nguon: 'BS-1 Scrapmaw bị hạ, cộng 5 SMP-101 (gd-combat)', sink: 'Sửa khoang theo chương' });
-I('SMP-192', 'Mẫu boss Gần', 'Scrapmaw Sample', 'Mẫu', DB, 2, 30, G, MVP, { nguon: 'BS-1 Scrapmaw bị xua đi, cộng 2 SMP-101 (gd-combat)', sink: 'Sửa khoang theo chương, thay được SMP-191' });
+I('SMP-191', 'Hạch thủ lĩnh Vành đai ngoài', 'Scrapmaw Core', 'Mẫu', DB, 2, 25, G, MVP, { nguon: 'BS-1 Scrapmaw bị hạ, cộng 5 SMP-101 (gd-combat)', sink: 'Sửa khoang theo chương' });
+I('SMP-192', 'Mẫu boss Vành đai ngoài', 'Scrapmaw Sample', 'Mẫu', DB, 2, 30, G, MVP, { nguon: 'BS-1 Scrapmaw bị xua đi, cộng 2 SMP-101 (gd-combat)', sink: 'Sửa khoang theo chương, thay được SMP-191' });
 I('SMP-291', 'Đặc sản Tempest Gulper', 'Tempest Gulper Core', 'Mẫu', DB, 2, 60, M, SAU, { nguon: 'BS-2 bị hạ, cộng phế liệu nó đã nuốt (gd-combat)', sink: 'Sửa khoang theo chương' });
-I('SMP-292', 'Mẫu boss Giữa', 'Tempest Gulper Sample', 'Mẫu', DB, 2, 65, M, SAU, { nguon: 'BS-2 bị xua đi (gd-combat)', sink: 'Sửa khoang theo chương, thay được SMP-291' });
+I('SMP-292', 'Mẫu boss Vành đai trong', 'Tempest Gulper Sample', 'Mẫu', DB, 2, 65, M, SAU, { nguon: 'BS-2 bị xua đi (gd-combat)', sink: 'Sửa khoang theo chương, thay được SMP-291' });
 
 const eHa = (s) => s.n * items.find((i) => i.id === s.nlsId).gtd + s.p * items.find((i) => i.id === s.dacId).gtd;
 const r2 = (x) => Math.round(x * 100) / 100;
@@ -98,9 +98,9 @@ D('CON-104', 'Keo vá', 'Sealant Patch', 'Vật tiêu hao', TH, 1, G, SAU, { sin
 D('CON-105', 'Cầu chì dự phòng', 'Spare Fuse', 'Vật tiêu hao', IG, 1, G, SAU, { sink: 'Xử lý sự cố chập điện, 1 mỗi lần (K14, gd-quan)' });
 D('CON-106', 'Phao kéo', 'Tow Buoy', 'Vật tiêu hao', IG, 1, G, SAU, { sink: 'Gửi Driftlife cỡ M bất lực về kho (gd-combat)' });
 D('CON-107', 'Kim sinh thiết', 'Biopsy Needle', 'Vật tiêu hao', IG, 1, G, SAU, { sink: 'Lấy mẫu sinh thiết loài cỡ L (gd-combat)' });
-D('FED-101', 'Thức ăn nuôi Gần', 'Near Feed', 'Thức ăn nuôi', TH, 1, G, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
-D('FED-201', 'Thức ăn nuôi Giữa', 'Mid Feed', 'Thức ăn nuôi', TH, 1, M, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
-D('FED-301', 'Thức ăn nuôi Xa', 'Far Feed', 'Thức ăn nuôi', TH, 1, X, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
+D('FED-101', 'Thức ăn nuôi Vành đai ngoài', 'Near Feed', 'Thức ăn nuôi', TH, 1, G, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
+D('FED-201', 'Thức ăn nuôi Vành đai trong', 'Mid Feed', 'Thức ăn nuôi', TH, 1, M, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
+D('FED-301', 'Thức ăn nuôi Vùng trung tâm', 'Far Feed', 'Thức ăn nuôi', TH, 1, X, SAU, { sink: 'Khoang sinh quyển, 1 mỗi con mỗi ngày (K16)' });
 const CG = (id, ten, en, hiem, dai, nhan, o = {}) => D(id, ten, en, 'Kiện', hiem, 'kho', dai, nhan, { sink: 'Bán theo thùng ở giờ giao thương (K13)', ...o });
 CG('CGO-101', 'Kiện phế liệu', 'Scrap Crate', TH, G, MVP, { ghi: 'Cỡ Vừa' });
 CG('CGO-102', 'Kiện cáp', 'Cable Crate', TH, G, MVP, { ghi: 'Cỡ Nhỏ' });
@@ -111,23 +111,23 @@ CG('CGO-109', 'Kiện đồ Trái Đất', 'Earth Trinket Crate', IG, G, MVP, { 
 CG('CGO-111', 'Kiện cơ khí', 'Mechanical Crate', IG, G, SAU, { ghi: 'Cỡ Vừa' });
 CG('CGO-112', 'Kiện điện tử', 'Electronics Crate', IG, G, SAU, { ghi: 'Cỡ Nhỏ' });
 CG('CGO-113', 'Kiện nước tinh khiết', 'Purified Water Crate', IG, G, MVP, { ghi: 'Cỡ Vừa' });
-CG('CGO-106', 'Kiện đặc sản Gần', 'Near Specialty Crate', IG, G, MVP, { ghi: 'Cỡ Nhỏ' });
-CG('CGO-107', 'Kiện sản phẩm nuôi Gần', 'Near Farm Crate', IG, G, SAU, { ghi: 'Cỡ Nhỏ (HC07)' });
-CG('CGO-121', 'Lồng sinh vật sống Gần', 'Near Live Cage', HI, G, MVP, { ghi: 'Cỡ Lớn, mang nguyên lồng (HC06), nhớ loài để khớp đơn' });
+CG('CGO-106', 'Kiện đặc sản Vành đai ngoài', 'Near Specialty Crate', IG, G, MVP, { ghi: 'Cỡ Nhỏ' });
+CG('CGO-107', 'Kiện sản phẩm nuôi Vành đai ngoài', 'Near Farm Crate', IG, G, SAU, { ghi: 'Cỡ Nhỏ (HC07)' });
+CG('CGO-121', 'Lồng sinh vật sống Vành đai ngoài', 'Near Live Cage', HI, G, MVP, { ghi: 'Cỡ Lớn, mang nguyên lồng (HC06), nhớ loài để khớp đơn' });
 CG('CGO-141', 'Kiện vật tư', 'Supply Crate', IG, G, SAU, { ghi: 'Cỡ Vừa (HC08, đồ chế)' });
 CG('CGO-131', 'Bản sao dữ liệu', 'Data Copy', HI, G, SAU, { ghi: 'Cỡ Nhỏ (HC09), sao từ vật kể chuyện loại dữ liệu, vật gốc ở lại' });
 CG('CGO-211', 'Kiện hợp kim', 'Alloy Crate', IG, M, SAU, { ghi: 'Cỡ Vừa' });
 CG('CGO-212', 'Kiện cảm biến', 'Sensor Crate', HI, M, SAU, { ghi: 'Cỡ Nhỏ' });
 CG('CGO-213', 'Kiện dung dịch lạnh', 'Coolant Crate', IG, M, SAU, { ghi: 'Cỡ Vừa' });
-CG('CGO-206', 'Kiện đặc sản Giữa', 'Mid Specialty Crate', HI, M, SAU, { ghi: 'Cỡ Nhỏ' });
-CG('CGO-207', 'Kiện sản phẩm nuôi Giữa', 'Mid Farm Crate', IG, M, SAU, { ghi: 'Cỡ Nhỏ' });
-CG('CGO-221', 'Lồng sinh vật sống Giữa', 'Mid Live Cage', HI, M, SAU, { ghi: 'Cỡ Lớn' });
+CG('CGO-206', 'Kiện đặc sản Vành đai trong', 'Mid Specialty Crate', HI, M, SAU, { ghi: 'Cỡ Nhỏ' });
+CG('CGO-207', 'Kiện sản phẩm nuôi Vành đai trong', 'Mid Farm Crate', IG, M, SAU, { ghi: 'Cỡ Nhỏ' });
+CG('CGO-221', 'Lồng sinh vật sống Vành đai trong', 'Mid Live Cage', HI, M, SAU, { ghi: 'Cỡ Lớn' });
 CG('CGO-311', 'Kiện giáp', 'Armor Crate', HI, X, SAU, { ghi: 'Cỡ Vừa' });
 CG('CGO-312', 'Kiện plasma', 'Plasma Crate', HI, X, SAU, { ghi: 'Cỡ Vừa' });
 CG('CGO-313', 'Kiện lõi nguội', 'Cold Core Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ' });
-CG('CGO-306', 'Kiện đặc sản Xa', 'Far Specialty Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ' });
-CG('CGO-307', 'Kiện sản phẩm nuôi Xa', 'Far Farm Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ' });
-CG('CGO-321', 'Lồng sinh vật sống Xa', 'Far Live Cage', HI, X, SAU, { ghi: 'Cỡ Lớn' });
+CG('CGO-306', 'Kiện đặc sản Vùng trung tâm', 'Far Specialty Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ' });
+CG('CGO-307', 'Kiện sản phẩm nuôi Vùng trung tâm', 'Far Farm Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ' });
+CG('CGO-321', 'Lồng sinh vật sống Vùng trung tâm', 'Far Live Cage', HI, X, SAU, { ghi: 'Cỡ Lớn' });
 CG('CGO-411', 'Kiện linh kiện Cradle', 'Cradle Parts Crate', HI, CR, SAU, { ghi: 'Cỡ Nhỏ' });
 CG('CGO-421', 'Kiện tin mật', 'Dispatch Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ (giao cho tàu của mạng lưới, nhóm hàng HC15 của gd-quan, giá trị bằng kiện vỏ bọc)' });
 CG('CGO-511', 'Kiện linh kiện Warden', 'Warden Parts Crate', HI, X, SAU, { ghi: 'Cỡ Nhỏ' });
@@ -185,14 +185,14 @@ R('RCP-102', 'Bện dây dẫn', XU, 'COM', [['RES-102', 3]], ['COM-102', 1], 8,
 R('RCP-103', 'Luyện thỏi sắt', XU, 'COM', [['RES-103', 2]], ['COM-103', 1], 15, KH, MVP, 1.35);
 R('RCP-104', 'Phục hồi mạch', XU, 'COM', [['RES-104', 2], ['RES-102', 1]], ['COM-104', 1], 20, KH, MVP, 1.45);
 R('RCP-105', 'Lọc băng', XU, 'COM', [['RES-105', 2]], ['COM-105', 1], 12, KH, MVP, 1.3);
-R('RCP-151', 'Ép tấm hợp kim chịu nhiệt', XU, 'COM', [['RES-201', 3]], ['COM-201', 1], 10, 'Kỹ sư, dải Giữa mở', SAU, 1.3);
-R('RCP-152', 'Luyện thỏi cobalt', XU, 'COM', [['RES-202', 2]], ['COM-202', 1], 15, 'Kỹ sư, dải Giữa mở', SAU, 1.35);
-R('RCP-153', 'Chế mạch cảm biến', XU, 'COM', [['RES-204', 1], ['COM-104', 1]], ['COM-203', 1], 20, 'Kỹ sư, dải Giữa mở', SAU, 1.4);
-R('RCP-154', 'Pha dung dịch lạnh', XU, 'COM', [['RES-203', 2]], ['COM-204', 1], 12, 'Kỹ sư, dải Giữa mở', SAU, 1.3);
-R('RCP-161', 'Ép tấm giáp Warden', XU, 'COM', [['RES-301', 3]], ['COM-301', 1], 12, 'Kỹ sư, dải Xa mở', SAU, 1.3);
-R('RCP-162', 'Mài phiến kính', XU, 'COM', [['RES-302', 2]], ['COM-302', 1], 18, 'Kỹ sư, dải Xa mở', SAU, 1.35);
-R('RCP-163', 'Cuộn plasma', XU, 'COM', [['RES-303', 2]], ['COM-303', 1], 18, 'Kỹ sư, dải Xa mở', SAU, 1.35);
-R('RCP-164', 'Nạp lõi nguội', XU, 'COM', [['RES-304', 1], ['COM-204', 1]], ['COM-304', 1], 20, 'Kỹ sư, dải Xa mở', SAU, 1.4);
+R('RCP-151', 'Ép tấm hợp kim chịu nhiệt', XU, 'COM', [['RES-201', 3]], ['COM-201', 1], 10, 'Kỹ sư, Vành đai trong mở', SAU, 1.3);
+R('RCP-152', 'Luyện thỏi cobalt', XU, 'COM', [['RES-202', 2]], ['COM-202', 1], 15, 'Kỹ sư, Vành đai trong mở', SAU, 1.35);
+R('RCP-153', 'Chế mạch cảm biến', XU, 'COM', [['RES-204', 1], ['COM-104', 1]], ['COM-203', 1], 20, 'Kỹ sư, Vành đai trong mở', SAU, 1.4);
+R('RCP-154', 'Pha dung dịch lạnh', XU, 'COM', [['RES-203', 2]], ['COM-204', 1], 12, 'Kỹ sư, Vành đai trong mở', SAU, 1.3);
+R('RCP-161', 'Ép tấm giáp Warden', XU, 'COM', [['RES-301', 3]], ['COM-301', 1], 12, 'Kỹ sư, Vùng trung tâm mở', SAU, 1.3);
+R('RCP-162', 'Mài phiến kính', XU, 'COM', [['RES-302', 2]], ['COM-302', 1], 18, 'Kỹ sư, Vùng trung tâm mở', SAU, 1.35);
+R('RCP-163', 'Cuộn plasma', XU, 'COM', [['RES-303', 2]], ['COM-303', 1], 18, 'Kỹ sư, Vùng trung tâm mở', SAU, 1.35);
+R('RCP-164', 'Nạp lõi nguội', XU, 'COM', [['RES-304', 1], ['COM-204', 1]], ['COM-304', 1], 20, 'Kỹ sư, Vùng trung tâm mở', SAU, 1.4);
 // Vật tiêu hao (không bán, m = 1)
 R('RCP-131', 'Nạp Bình Oxy nhỏ', XU, 'CON', [['COM-105', 1], ['COM-101', 1]], ['CON-101', 1], 10, KH, MVP);
 R('RCP-132', 'Quấn Lưới cuộn', XU, 'CON', [['COM-102', 2], ['SMP-101', 1]], ['CON-102', 10], 10, 'Quest Kỹ sư (chương 1)', MVP);
@@ -202,9 +202,9 @@ R('RCP-135', 'Lắp Cầu chì dự phòng', XU, 'CON', [['COM-104', 1], ['SMP-1
 R('RCP-136', 'Chế Phao kéo', XU, 'CON', [['COM-103', 1], ['COM-102', 1], ['COM-105', 1]], ['CON-106', 2], 10, 'Chương 2', SAU);
 R('RCP-137', 'Chế Kim sinh thiết', NC, 'CON', [['COM-104', 1], ['COM-105', 1]], ['CON-107', 2], 10, 'Nhà sinh học (chương 2)', SAU);
 // Thức ăn nuôi: 1 đơn vị cho 1 con mỗi ngày, rẻ hơn sản phẩm nuôi (kiểm bằng script)
-R('RCP-171', 'Pha thức ăn nuôi Gần', SQ, 'FOD', [['SMP-101', 2]], ['FED-101', 4], 8, 'Chương 2', SAU);
-R('RCP-271', 'Pha thức ăn nuôi Giữa', SQ, 'FOD', [['SMP-201', 2]], ['FED-201', 4], 8, 'Chương 2', SAU);
-R('RCP-371', 'Pha thức ăn nuôi Xa', SQ, 'FOD', [['SMP-301', 2]], ['FED-301', 4], 8, 'Chương 3', SAU);
+R('RCP-171', 'Pha thức ăn nuôi Vành đai ngoài', SQ, 'FOD', [['SMP-101', 2]], ['FED-101', 4], 8, 'Chương 2', SAU);
+R('RCP-271', 'Pha thức ăn nuôi Vành đai trong', SQ, 'FOD', [['SMP-201', 2]], ['FED-201', 4], 8, 'Chương 2', SAU);
+R('RCP-371', 'Pha thức ăn nuôi Vùng trung tâm', SQ, 'FOD', [['SMP-301', 2]], ['FED-301', 4], 8, 'Chương 3', SAU);
 // Đóng kiện thô (m = 1,0), kiện tinh (m trong [1,1 ; 1,25]), kiện sống (m = 1,0), bản sao dữ liệu (m trong [1,5 ; 2,5])
 R('RCP-111', 'Đóng kiện phế liệu', CA, 'CGOT', [['RES-101', 14]], ['CGO-101', 1], 5, TD, MVP);
 R('RCP-112', 'Đóng kiện cáp', CA, 'CGOT', [['RES-102', 11]], ['CGO-102', 1], 5, TD, MVP);
@@ -215,27 +215,27 @@ R('RCP-116', 'Đóng kiện đồ Trái Đất', CA, 'CGOT', [['RES-106', 5]], [
 R('RCP-121', 'Đóng kiện cơ khí', CA, 'CGOF', [['COM-101', 3]], ['CGO-111', 1], 5, 'Chương 2', SAU, 1.15);
 R('RCP-122', 'Đóng kiện điện tử', CA, 'CGOF', [['COM-102', 3]], ['CGO-112', 1], 5, 'Chương 2', SAU, 1.15);
 R('RCP-123', 'Đóng kiện nước tinh khiết', CA, 'CGOF', [['COM-105', 2]], ['CGO-113', 1], 5, TD, MVP, 1.15);
-R('RCP-124', 'Đóng kiện đặc sản Gần', CA, 'CGOF', [[SG, 3]], ['CGO-106', 1], 5, TD, MVP, 1.1);
-R('RCP-125', 'Đóng kiện sản phẩm nuôi Gần', CA, 'CGOF', [[BG, 13]], ['CGO-107', 1], 5, 'Chương 2', SAU, 1.1);
-R('RCP-126', 'Đưa sinh vật sống cỡ S Gần vào lồng giao', CA, 'CGOL', [[LG, 1]], ['CGO-121', 1], 8, TD, MVP);
-R('RCP-128', 'Đưa sinh vật sống cỡ M Gần vào lồng giao', CA, 'CGOL', [[LGM, 1]], ['CGO-121', 1], 8, 'Chương 2', SAU);
+R('RCP-124', 'Đóng kiện đặc sản Vành đai ngoài', CA, 'CGOF', [[SG, 3]], ['CGO-106', 1], 5, TD, MVP, 1.1);
+R('RCP-125', 'Đóng kiện sản phẩm nuôi Vành đai ngoài', CA, 'CGOF', [[BG, 13]], ['CGO-107', 1], 5, 'Chương 2', SAU, 1.1);
+R('RCP-126', 'Đưa sinh vật sống cỡ S Vành đai ngoài vào lồng giao', CA, 'CGOL', [[LG, 1]], ['CGO-121', 1], 8, TD, MVP);
+R('RCP-128', 'Đưa sinh vật sống cỡ M Vành đai ngoài vào lồng giao', CA, 'CGOL', [[LGM, 1]], ['CGO-121', 1], 8, 'Chương 2', SAU);
 R('RCP-127', 'Đóng kiện vật tư', CA, 'CGOF', [['CON-101', 4], ['CON-102', 4]], ['CGO-141', 1], 5, 'Chương 2', SAU, 1.15);
 R('RCP-141', 'Sao bản dữ liệu', LL, 'CGOD', [['COM-104', 1]], ['CGO-131', 1], 10, 'Chương 3', SAU, 2.0, 'một vật kể chuyện loại dữ liệu (STY-101, STY-401), mỗi vật gốc sao một lần');
 R('RCP-221', 'Đóng kiện hợp kim', CA, 'CGOF', [['COM-201', 3]], ['CGO-211', 1], 5, 'Chương 2', SAU, 1.15);
 R('RCP-222', 'Đóng kiện cảm biến', CA, 'CGOF', [['COM-203', 1]], ['CGO-212', 1], 5, 'Chương 2', SAU, 1.15);
 R('RCP-223', 'Đóng kiện dung dịch lạnh', CA, 'CGOF', [['COM-204', 3]], ['CGO-213', 1], 5, 'Chương 2', SAU, 1.15);
-R('RCP-224', 'Đóng kiện đặc sản Giữa', CA, 'CGOF', [[SM, 4]], ['CGO-206', 1], 5, 'Chương 2', SAU, 1.1);
-R('RCP-225', 'Đóng kiện sản phẩm nuôi Giữa', CA, 'CGOF', [[BM, 6]], ['CGO-207', 1], 5, 'Chương 2', SAU, 1.1);
-R('RCP-226', 'Đưa sinh vật sống Giữa vào lồng giao', CA, 'CGOL', [[LM, 1]], ['CGO-221', 1], 8, 'Chương 2', SAU);
+R('RCP-224', 'Đóng kiện đặc sản Vành đai trong', CA, 'CGOF', [[SM, 4]], ['CGO-206', 1], 5, 'Chương 2', SAU, 1.1);
+R('RCP-225', 'Đóng kiện sản phẩm nuôi Vành đai trong', CA, 'CGOF', [[BM, 6]], ['CGO-207', 1], 5, 'Chương 2', SAU, 1.1);
+R('RCP-226', 'Đưa sinh vật sống Vành đai trong vào lồng giao', CA, 'CGOL', [[LM, 1]], ['CGO-221', 1], 8, 'Chương 2', SAU);
 R('RCP-321', 'Đóng kiện giáp', CA, 'CGOF', [['COM-301', 3]], ['CGO-311', 1], 5, 'Chương 3', SAU, 1.15);
 R('RCP-322', 'Đóng kiện plasma', CA, 'CGOF', [['COM-303', 2]], ['CGO-312', 1], 5, 'Chương 3', SAU, 1.15);
 R('RCP-323', 'Đóng kiện lõi nguội', CA, 'CGOF', [['COM-304', 3]], ['CGO-313', 1], 5, 'Chương 3', SAU, 1.15);
-R('RCP-324', 'Đóng kiện đặc sản Xa', CA, 'CGOF', [[SX, 5]], ['CGO-306', 1], 5, 'Chương 3', SAU, 1.1);
-R('RCP-325', 'Đóng kiện sản phẩm nuôi Xa', CA, 'CGOF', [[BX, 7]], ['CGO-307', 1], 5, 'Chương 3', SAU, 1.1);
+R('RCP-324', 'Đóng kiện đặc sản Vùng trung tâm', CA, 'CGOF', [[SX, 5]], ['CGO-306', 1], 5, 'Chương 3', SAU, 1.1);
+R('RCP-325', 'Đóng kiện sản phẩm nuôi Vùng trung tâm', CA, 'CGOF', [[BX, 7]], ['CGO-307', 1], 5, 'Chương 3', SAU, 1.1);
 R('RCP-421', 'Đóng kiện linh kiện Cradle', CA, 'CGOF', [['RES-401', 7]], ['CGO-411', 1], 6, 'Chương 4', SAU, 1.15);
 R('RCP-422', 'Đóng kiện tin mật', CA, 'CGOT', [[['CGO-311', 'CGO-312', 'CGO-313', 'CGO-306', 'CGO-307'], 1], ['STY-701', 1]], ['CGO-421', 1], 6, 'Chương 4', SAU, 1.0);
 R('RCP-521', 'Đóng kiện linh kiện Warden', CA, 'CGOF', [['RES-305', 14]], ['CGO-511', 1], 6, 'Chương 5', SAU, 1.15);
-R('RCP-326', 'Đưa sinh vật sống Xa vào lồng giao', CA, 'CGOL', [[LX, 1]], ['CGO-321', 1], 8, 'Chương 3', SAU);
+R('RCP-326', 'Đưa sinh vật sống Vùng trung tâm vào lồng giao', CA, 'CGOL', [[LX, 1]], ['CGO-321', 1], 8, 'Chương 3', SAU);
 // Nghiên cứu: mẫu sống đổi ra bản thiết kế
 R('RCP-301', 'Phân tích DL-G01', NC, 'NCU', [['LIV-111', 1], ['COM-105', 2]], ['BPR-101', 1], 'đêm', 'Nhà sinh học (chương 2)', SAU);
 R('RCP-302', 'Phân tích DL-G04', NC, 'NCU', [['LIV-113', 1], ['COM-105', 2]], ['BPR-102', 1], 'đêm', 'Nhà sinh học (chương 2)', SAU);
@@ -263,12 +263,12 @@ U('UPG-BAG-2', 3, [['COM-201', 2], ['COM-102', 2], ['COM-101', 2]], 'Chương 2'
 U('UPG-THR-2', 3, [['COM-202', 1], ['COM-203', 1]], 'Chương 2', SAU);
 U('UPG-MIN-3', 3, [['COM-202', 2], ['COM-103', 2]], 'Chương 2', SAU);
 U('UPG-HAR-3', 3, [['COM-203', 1], ['COM-202', 1]], 'Chương 2', SAU);
-U('UPG-ENV-1', 3, [['COM-204', 2], ['COM-201', 1], ['COM-105', 2]], 'Chương 2 (dải Giữa)', SAU);
+U('UPG-ENV-1', 3, [['COM-204', 2], ['COM-201', 1], ['COM-105', 2]], 'Chương 2 (Vành đai trong)', SAU);
 U('UPG-RACK-2', 3, [['COM-103', 2], ['COM-202', 1], ['COM-102', 2]], 'Chương 2', SAU);
 U('UPG-OXY-3', 4, [['COM-302', 1], ['COM-301', 1]], 'Chương 3', SAU);
 U('UPG-BAG-3', 4, [['COM-303', 1], ['COM-301', 1], ['COM-104', 1]], 'Chương 3', SAU);
 U('UPG-THR-3', 4, [['COM-304', 1], ['COM-302', 1]], 'Chương 3', SAU);
-U('UPG-ENV-2', 4, [['COM-301', 1], ['COM-304', 1], ['COM-203', 1]], 'Chương 3 (dải Xa)', SAU);
+U('UPG-ENV-2', 4, [['COM-301', 1], ['COM-304', 1], ['COM-203', 1]], 'Chương 3 (Vùng trung tâm)', SAU);
 U('UPG-OXY-4', 5, [['COM-302', 1], ['COM-304', 1], ['COM-303', 1], ['RES-401', 1]], 'Chương 4 đến 5', SAU);
 U('UPG-BAG-4', 5, [['COM-303', 1], ['COM-304', 1], ['COM-301', 1], ['RES-401', 1]], 'Chương 4 đến 5', SAU);
 U('UPG-ENV-3', 5, [['COM-301', 1], ['COM-302', 1], ['COM-304', 1], ['RES-401', 1]], 'Chương 4 (Cradle)', SAU);
@@ -292,8 +292,8 @@ const nodes = [
   ['SLV-103', 'Khối băng trôi', G, 'TOL-102', 1, 3.5, 1, [['RES-105', 100, 2]], MVP],
   ['SLV-104', 'Hòm kỹ thuật vỡ', G, 'TOL-102', 1, 3, 2, [['RES-104', 30, 1], ['RES-102', 30, 2], ['RES-101', 25, 2], ['RES-106', 15, 1]], MVP],
   ['SLV-105', 'Tấm vỏ lớn', G, 'TOL-102', 1, 7, 3, [['RES-101', 100, 2]], MVP],
-  ['SLV-111', 'Hòm kỹ thuật Seed (nhánh)', 'Nhánh Gần', 'TOL-102', 1, 4, 3, [['RES-104', 35, 1], ['RES-102', 25, 2], ['RES-101', 25, 2], ['RES-106', 15, 1]], MVP],
-  ['SLV-112', 'Kho hàng Seed (nhánh)', 'Nhánh Gần', 'TOL-102', 2, 6, 3, [['RES-104', 35, 1], ['RES-103', 35, 1], ['RES-106', 30, 1]], MVP],
+  ['SLV-111', 'Hòm kỹ thuật Seed (nhánh)', 'Nhánh Vành đai ngoài', 'TOL-102', 1, 4, 3, [['RES-104', 35, 1], ['RES-102', 25, 2], ['RES-101', 25, 2], ['RES-106', 15, 1]], MVP],
+  ['SLV-112', 'Kho hàng Seed (nhánh)', 'Nhánh Vành đai ngoài', 'TOL-102', 2, 6, 3, [['RES-104', 35, 1], ['RES-103', 35, 1], ['RES-106', 30, 1]], MVP],
   ['SLV-201', 'Mạch quặng cobalt', M, 'TOL-102', 2, 6, 1, [['RES-202', 100, 2]], SAU],
   ['SLV-202', 'Khối băng tinh', M, 'TOL-102', 2, 5.5, 1, [['RES-203', 100, 2]], SAU],
   ['SLV-203', 'Hòm Cradle', M, 'TOL-102', 2, 4, 2, [['RES-204', 25, 1], ['RES-201', 45, 2], ['RES-104', 30, 2]], SAU],
@@ -310,14 +310,14 @@ const repairs = [
   ['Khoang neo (KH04, hãm trôi và neo, K10)', 'Chương 1, trước khi có Xưởng nên chỉ tài nguyên thô', [['RES-101', 10], ['RES-102', 4], ['RES-104', 1]], MVP],
   ['Kho cấp 2 (KH03)', 'Chương 1', [['RES-101', 8], ['RES-103', 3]], MVP],
   ['Xưởng (KH05, Kỹ sư mở)', 'Chương 1, chỉ tài nguyên thô vì chưa chế được COM', [['RES-101', 8], ['RES-103', 4], ['RES-104', 2], ['RES-102', 3]], MVP],
-  ['Khoang liên lạc (KH06, Thông dịch viên mở)', 'Chương 1, linh kiện và khoáng Gần', [['RES-104', 3], ['RES-103', 4], ['RES-102', 2]], MVP],
-  ['Cảng bến 1 (KH07)', 'Chương 1, phế liệu và linh kiện Gần', [['RES-101', 8], ['RES-102', 4], ['RES-104', 2]], MVP],
-  ['Động cơ chính, giai đoạn 1 (KH13)', 'Chương 1, linh kiện ENG mua ở Shop cộng vật liệu Gần cộng hạch hoặc mẫu boss BS-1', [['ENG-101', 1], ['COM-101', 6], ['COM-103', 4], [['SMP-191', 'SMP-192'], 1]], MVP],
+  ['Khoang liên lạc (KH06, Thông dịch viên mở)', 'Chương 1, linh kiện và khoáng Vành đai ngoài', [['RES-104', 3], ['RES-103', 4], ['RES-102', 2]], MVP],
+  ['Cảng bến 1 (KH07)', 'Chương 1, phế liệu và linh kiện Vành đai ngoài', [['RES-101', 8], ['RES-102', 4], ['RES-104', 2]], MVP],
+  ['Động cơ chính, giai đoạn 1 (KH13)', 'Chương 1, linh kiện ENG mua ở Shop cộng vật liệu Vành đai ngoài cộng hạch hoặc mẫu boss BS-1', [['ENG-101', 1], ['COM-101', 6], ['COM-103', 4], [['SMP-191', 'SMP-192'], 1]], MVP],
   ['Khoang dẫn đường và bến Skiff (KH08, KH09)', 'Chương 2, hạch hoặc mẫu boss BS-1 cộng mảnh lõi dẫn đường', [['RES-204', 1], ['RES-202', 3], ['STY-102', 1], [['SMP-191', 'SMP-192'], 1]], SAU],
-  ['Phòng nghiên cứu (KH10)', 'Chương 2, băng, khoáng Giữa, mẫu Driftlife', [['RES-203', 3], ['RES-202', 2], ['SMP-201', 2]], SAU],
+  ['Phòng nghiên cứu (KH10)', 'Chương 2, băng, khoáng Vành đai trong, mẫu Driftlife', [['RES-203', 3], ['RES-202', 2], ['SMP-201', 2]], SAU],
   ['Khoang sinh quyển (KH11)', 'Chương 2', [['RES-203', 4], ['RES-204', 1], ['SMP-201', 4]], SAU],
   ['Động cơ chính, giai đoạn 2', 'Chương 2', [['ENG-102', 1], ['COM-201', 4], ['COM-202', 2]], SAU],
-  ['Bến 2, bến 3, tiện ích cảng (KH12, Trưởng cảng)', 'Chương 3, phế liệu, khoáng Xa, linh kiện cộng bản thiết kế', [['RES-301', 4], ['RES-302', 2], ['RES-304', 2], ['BPR-106', 1]], SAU],
+  ['Bến 2, bến 3, tiện ích cảng (KH12, Trưởng cảng)', 'Chương 3, phế liệu, khoáng Vùng trung tâm, linh kiện cộng bản thiết kế', [['RES-301', 4], ['RES-302', 2], ['RES-304', 2], ['BPR-106', 1]], SAU],
   ['Động cơ chính, giai đoạn 3', 'Chương 3', [['ENG-103', 1], ['COM-301', 3], ['COM-302', 2]], SAU],
   ['Động cơ chính, giai đoạn 4', 'Chương 4, linh kiện Warden và Cradle', [['ENG-104', 1], ['RES-305', 3], ['RES-401', 2]], SAU],
   ['Động cơ chính, giai đoạn 5', 'Chương 5, ENG-105 chế từ vật kể chuyện', [['ENG-105', 1], ['RES-305', 3], ['RES-401', 3]], SAU],
@@ -451,20 +451,20 @@ if (process.argv.includes('--ghi')) {
 
 // ---------- Sinh TSV cho Sheet (GD-032): Salvage, ITEM LIST, Recipe. Không ghi giá, không ghi GTĐ. ----------
 const SPAWN = { // vị trí theo map.md (mục 2.10, 3.3): loại mảnh và điểm nhánh
-  'SLV-101': 'Dải Gần, khe SP-R các mảnh Mở, Hành lang, Ổ. Tối đa 25% khe SP-R của một mảnh, hai khe cách nhau ít nhất 2 u',
-  'SLV-102': 'Dải Gần, mảnh Mở và Ổ',
-  'SLV-103': 'Dải Gần, mảnh Mở',
-  'SLV-104': 'Dải Gần, mảnh Hành lang (cạnh Cáp chập) và Xác lớn. Khe SP-R hạng hiếm của dải Gần',
-  'SLV-105': 'Dải Gần, chỉ mảnh Xác lớn',
+  'SLV-101': 'Vành đai ngoài, khe SP-R các mảnh Mở, Hành lang, Ổ. Tối đa 25% khe SP-R của một mảnh, hai khe cách nhau ít nhất 2 u',
+  'SLV-102': 'Vành đai ngoài, mảnh Mở và Ổ',
+  'SLV-103': 'Vành đai ngoài, mảnh Mở',
+  'SLV-104': 'Vành đai ngoài, mảnh Hành lang (cạnh Cáp chập) và Xác lớn. Khe SP-R hạng hiếm của Vành đai ngoài',
+  'SLV-105': 'Vành đai ngoài, chỉ mảnh Xác lớn',
   'SLV-111': 'Xác Seed Station: Cinder 3 hòm (C2, C3, C7), Wick 3, Flint 3 (map.md mục 2.10)',
   'SLV-112': 'Xác Seed Station: Cinder 1 (C6, sau boss), Wick 1. Cradle Interior 2 mỗi khu (map.md mục 2.10)',
-  'SLV-201': 'Dải Giữa, mảnh Mở và Ổ (dòng đá vụn chạy ngang qua)',
-  'SLV-202': 'Dải Giữa, mảnh Mở (băng nứt khi khoan mạnh)',
-  'SLV-203': 'Dải Giữa, mảnh Xác lớn. Khe SP-R hạng hiếm của dải Giữa',
-  'SLV-204': 'Dải Giữa, mảnh Hành lang và Xác lớn',
-  'SLV-301': 'Dải Xa, mảnh Mở và Hành lang',
-  'SLV-302': 'Dải Xa, mảnh Mở và Ổ (trong mây khí, bùng tinh vân)',
-  'SLV-303': 'Dải Xa, mảnh Xác lớn cạnh trạm thu (WD-02 canh, hàng rào cắt). Khe SP-R hạng hiếm của dải Xa',
+  'SLV-201': 'Vành đai trong, mảnh Mở và Ổ (dòng đá vụn chạy ngang qua)',
+  'SLV-202': 'Vành đai trong, mảnh Mở (băng nứt khi khoan mạnh)',
+  'SLV-203': 'Vành đai trong, mảnh Xác lớn. Khe SP-R hạng hiếm của Vành đai trong',
+  'SLV-204': 'Vành đai trong, mảnh Hành lang và Xác lớn',
+  'SLV-301': 'Vùng trung tâm, mảnh Mở và Hành lang',
+  'SLV-302': 'Vùng trung tâm, mảnh Mở và Ổ (trong mây khí, bùng tinh vân)',
+  'SLV-303': 'Vùng trung tâm, mảnh Xác lớn cạnh trạm thu (WD-02 canh, hàng rào cắt). Khe SP-R hạng hiếm của Vùng trung tâm',
 };
 if (process.argv.includes('--tsv')) {
   const cell = (x) => { const t = String(x ?? ''); return /[\t\n"]/.test(t) ? '"' + t.replaceAll('"', '""') + '"' : t; };

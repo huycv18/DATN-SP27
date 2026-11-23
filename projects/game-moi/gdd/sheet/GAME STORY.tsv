@@ -28,15 +28,15 @@ STT	Thời điểm	Việc xảy ra
 						
 3. NĂM CHƯƠNG (nguồn: cot-truyen.md mục 2.5)						
 STT	Chương	Mục tiêu người chơi	Map nhánh có truyện	Người vớt	Đóng chương khi	Phạm vi
-1	Chương 1. Tỉnh dậy	Hãm trôi và neo Ember, vớt hai người đầu tiên, sửa cảng, bán chuyến hàng đầu, nghe được tiếng người khác	Station Cinder	Ingrid, Linh	Bắt được sóng của Lantern, mở dải Giữa	MVP
-2	Chương 2. Không cô độc	Phá vây cho Lantern, đưa về Nhà sinh học và Hoa tiêu, học nuôi và bắt sống Driftlife cỡ M, tìm hiểu vì sao các trạm con vỡ	Station Lantern, Station Wick	Amara, Rafa	Thấy vết phá từ ngoài vào, mở dải Xa	Sau MVP
-3	Chương 3. Kẻ canh giữ	Vào dải Xa, tới Veyl Waypost và The Raft, đón Trưởng cảng, biết ai đã đánh Cradle, cứu một thương nhân khỏi tay The Wardens	Veyl Waypost, The Raft, Station Flint	Yusuf	Cứu Sevra khỏi toán bắt cóc của The Wardens, Sevra lộ danh tính	Sau MVP
+1	Chương 1. Tỉnh dậy	Hãm trôi và neo Ember, vớt hai người đầu tiên, sửa cảng, bán chuyến hàng đầu, nghe được tiếng người khác	Station Cinder	Ingrid, Linh	Bắt được sóng của Lantern, mở Vành đai trong	MVP
+2	Chương 2. Không cô độc	Phá vây cho Lantern, đưa về Nhà sinh học và Hoa tiêu, học nuôi và bắt sống Driftlife cỡ M, tìm hiểu vì sao các trạm con vỡ	Station Lantern, Station Wick	Amara, Rafa	Thấy vết phá từ ngoài vào, mở Vùng trung tâm	Sau MVP
+3	Chương 3. Kẻ canh giữ	Vào Vùng trung tâm, tới Veyl Waypost và The Raft, đón Trưởng cảng, biết ai đã đánh Cradle, cứu một thương nhân khỏi tay The Wardens	Veyl Waypost, The Raft, Station Flint	Yusuf	Cứu Sevra khỏi toán bắt cóc của The Wardens, Sevra lộ danh tính	Sau MVP
 4	Chương 4. Tâm vụ nổ	Vào trong Cradle lấy bằng chứng của chính loài người, xem đường tới Solace có thật không	Cradle Interior	Không	Hộp ghi hành trình xác nhận Solace là mồi. Kiện tin mật đầu tiên tới The Kindling	Sau MVP
 5	Chương 5. Rời neo	Đưa Sevra về căn cứ của The Kindling, giữ đường dây tin thông suốt, đánh Warden Rig khi cách mạng nổ ra, lấy bản đồ sao thật, sửa xong động cơ chính và rời neo	Warden Rig	Không	Daskel thua ở Warden Rig, Sevra lên nắm quyền và trao tọa độ hành tinh thật. Ember rời neo	Sau MVP
 						
 4. MỐC TRUYỆN (nguồn: cot-truyen.md mục 2.5)						
 STT	Chương	Mốc	Điều kiện	Nơi diễn ra	Mở ra	Phạm vi
-1	1	Tỉnh dậy	Bắt đầu game	Ember, buồng ngủ đông	Cửa khí, dải Gần	MVP
+1	1	Tỉnh dậy	Bắt đầu game	Ember, buồng ngủ đông	Cửa khí, Vành đai ngoài	MVP
 2	1	Hãm trôi và neo	Khoang neo hoạt động	Ember	Trạm ngừng xoay, lối vào Station Cinder	MVP
 3	1	Một trạm khác	Tới lối vào Station Cinder	Station Cinder, khu ngoài	Vật truyện của Station Cinder hiện ra	MVP
 4	1	Người đầu tiên	Buồng của Ingrid đã qua cửa khí của Ember	Ember	Ingrid vào khu hồi sức, tỉnh vào đầu ngày kế tiếp và giao quest sửa xưởng	MVP
@@ -44,7 +44,7 @@ STT	Chương	Mốc	Điều kiện	Nơi diễn ra	Mở ra	Phạm vi
 6	1	Người thứ hai	Buồng của Linh đã qua cửa khí của Ember	Ember	Linh vào khu hồi sức, tỉnh vào đầu ngày kế tiếp và giao quest sửa khoang liên lạc và cảng	MVP
 7	1	Lời gọi đầu tiên	Khoang liên lạc và cảng đều hoạt động	Ember, khoang liên lạc	Khoang liên lạc, cảng, shop. Tàu Loose Bolt vào lịch từ ngày kế tiếp	MVP
 8	1	Tàu đầu tiên	Ngày kế tiếp sau Lời gọi đầu tiên và tàu Loose Bolt của Tikko cập bến	Ember, bến 1	Giờ giao thương (kiểu chơi mới)	MVP
-9	1	Sóng của Lantern (đóng chương)	Đủ số giờ giao thương đã xong theo ngưỡng chương 1, và động cơ chính đã lắp giai đoạn 1	Ember, khoang liên lạc	Dải Giữa, lối vào Station Lantern, chương 2	MVP
+9	1	Sóng của Lantern (đóng chương)	Đủ số giờ giao thương đã xong theo ngưỡng chương 1, và động cơ chính đã lắp giai đoạn 1	Ember, khoang liên lạc	Vành đai trong, lối vào Station Lantern, chương 2	MVP
 10	2	Đèn của Lantern	Tới lối vào Station Lantern	Station Lantern, vành ngoài	Trận Tempest Gulper đang vây bến cập. Vật truyện của Station Lantern hiện ra	Sau MVP
 11	2	Phá vây	Trận Tempest Gulper xong (hạ hoặc xua)	Station Lantern, lõi trạm	Cửa cập mở. Gặp Odile Laurent, Bram, Amara. Odile ra điều kiện cho Amara đi. Tàu Lamplighter của Bram vào lịch từ ngày kế tiếp	Sau MVP
 12	2	Chuyến xuồng đặc biệt	Phục vụ xong tàu Lamplighter	Ember, bến	Bram chở Amara sang Ember. Quest sửa phòng nghiên cứu và khoang sinh quyển	Sau MVP
@@ -52,7 +52,7 @@ STT	Chương	Mốc	Điều kiện	Nơi diễn ra	Mở ra	Phạm vi
 14	2	Nhịp buồng trong vành đai	Ngày kế tiếp sau Mẫu sống cho Amara	Ember, khoang liên lạc	Lối vào Station Wick	Sau MVP
 15	2	Người chỉ đường	Buồng của Rafa đã qua cửa khí của Ember	Ember	Rafa vào khu hồi sức, tỉnh vào đầu ngày kế tiếp và giao quest sửa khoang dẫn đường	Sau MVP
 16	2	Không nổ từ trong ra	Đã nhặt Mảng vỏ thân của Station Wick và Nhật ký trạm của Wick	Ember, xưởng	Cảnh Ingrid xem mảng vỏ. Tàu Vellune của Ilsume vào lịch	Sau MVP
-17	2	Bản đồ có một lỗ đen (đóng chương)	Khoang dẫn đường hoạt động, đã nộp Mảnh lõi dẫn đường Wick, và động cơ chính đã lắp giai đoạn 2	Ember, khoang dẫn đường	Bến Skiff, dải Xa, lối vào Veyl Waypost, chương 3	Sau MVP
+17	2	Bản đồ có một lỗ đen (đóng chương)	Khoang dẫn đường hoạt động, đã nộp Mảnh lõi dẫn đường Wick, và động cơ chính đã lắp giai đoạn 2	Ember, khoang dẫn đường	Bến Skiff, Vùng trung tâm, lối vào Veyl Waypost, chương 3	Sau MVP
 18	3	Bến của The Veyl	Tới lối vào Veyl Waypost	Veyl Waypost, sảnh chính	Nhem, Dromm, Yusuf Demir. Tàu Iron Keel và Backchannel vào lịch từ ngày kế tiếp. Vật truyện của Veyl Waypost hiện ra	Sau MVP
 19	3	Trưởng cảng về bến	Đã xong một giờ giao thương có tàu Iron Keel của Dromm cập bến, và sau giờ giao thương đó tới Veyl Waypost bằng Skiff	Ember, bến	Yusuf về Ember cùng chuyến Skiff. Quest sửa bến 2, bến 3 và tiện ích cảng	Sau MVP
 20	3	Tàu lạ	Bến 2, bến 3 và tiện ích cảng hoạt động, và Tàu lạ của Maro cập bến lần thứ nhất	Ember, bến	Maro vào truyện: thương nhân Sennari trả hậu, đúng giờ, hay hỏi những thương hội nào ghé Ember	Sau MVP

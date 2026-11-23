@@ -27,8 +27,8 @@ Chỉ chương đầu nằm trong MVP. Bốn chương sau là bản đủ, ghi �
 
 | Chương | Tên | Map nhánh có truyện | Người vớt | Mốc đóng chương | Nhãn |
 |---|---|---|---|---|---|
-| 1 | Tỉnh dậy | Station Cinder | Ingrid, Linh | Bắt được sóng của Lantern, mở dải Giữa | MVP |
-| 2 | Không cô độc | Station Lantern, Station Wick | Amara, Rafa | Thấy vết phá từ ngoài vào, mở dải Xa | Post-MVP |
+| 1 | Tỉnh dậy | Station Cinder | Ingrid, Linh | Bắt được sóng của Lantern, mở Vành đai trong | MVP |
+| 2 | Không cô độc | Station Lantern, Station Wick | Amara, Rafa | Thấy vết phá từ ngoài vào, mở Vùng trung tâm | Post-MVP |
 | 3 | Kẻ canh giữ | Veyl Waypost, The Raft, Station Flint | Yusuf | Cứu Sevra khỏi toán bắt cóc của The Wardens | Post-MVP |
 | 4 | Tâm vụ nổ | Cradle Interior | Không | Hộp ghi hành trình lộ Solace là mồi, tin mật tới The Kindling | Post-MVP |
 | 5 | Rời neo | Warden Rig | Không | Daskel thua, Ember rời neo | Post-MVP |
@@ -45,7 +45,7 @@ Tên riêng trong bảng mốc: **Station Cinder** là trạm hoang đầu tiên
 
 | Mốc | Điều kiện | Mở gì |
 |---|---|---|
-| Tỉnh dậy | Bắt đầu thế giới | Cửa khí, dải Gần |
+| Tỉnh dậy | Bắt đầu thế giới | Cửa khí, Vành đai ngoài |
 | Hãm trôi và neo | Khoang neo Hoạt động | Trạm ngừng xoay, lối vào Station Cinder |
 | Một trạm khác | Tới lối vào Station Cinder | Vật truyện của Cinder hiện ra |
 | Người đầu tiên | Buồng của Ingrid qua cửa khí | Ingrid tỉnh đầu ngày kế tiếp, giao quest sửa xưởng |
@@ -53,7 +53,7 @@ Tên riêng trong bảng mốc: **Station Cinder** là trạm hoang đầu tiên
 | Người thứ hai | Buồng của Linh qua cửa khí | Linh tỉnh đầu ngày kế tiếp, giao quest sửa khoang liên lạc và cảng |
 | Lời gọi đầu tiên | Khoang liên lạc và cảng cùng Hoạt động | Giờ giao thương, shop, tàu Loose Bolt vào lịch từ ngày kế tiếp |
 | Tàu đầu tiên | Ngày kế tiếp sau mốc trên và tàu Loose Bolt của Tikko cập bến | Giờ giao thương thành kiểu chơi mới |
-| Sóng của Lantern (đóng chương) | Đủ 3 lượt giao thương xong và động cơ chính xong giai đoạn 1 | Dải Giữa, lối vào Station Lantern, chương 2 |
+| Sóng của Lantern (đóng chương) | Đủ 3 lượt giao thương xong và động cơ chính xong giai đoạn 1 | Vành đai trong, lối vào Station Lantern, chương 2 |
 
 Luật của chuỗi:
 - Mọi điều kiện trong một mốc phải cùng đúng, không có điều kiện dạng "hoặc". Mỗi mốc xong đúng một lần trong một thế giới.
@@ -90,7 +90,7 @@ flowchart TD
   J -->|Có| L{"Đủ 3 lượt giao thương xong và động cơ giai đoạn 1?"}
   L -->|Chưa đủ| M["Làm thêm giờ giao thương, sửa động cơ"]
   M --> L
-  L -->|Đủ| N["Đóng chương: mở dải Giữa và Lantern"]
+  L -->|Đủ| N["Đóng chương: mở Vành đai trong và Lantern"]
 ```
 *Hình II.9.3 - Cổng thứ hai: tàu đầu tiên và đóng chương*
 

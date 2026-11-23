@@ -1,150 +1,150 @@
 STT	Item name	Type	Nguồn nhận	Nguồn tiêu	Note
-1	Mảnh vỏ Cradle	Phế liệu	Mảnh vỡ trôi, Hòm kỹ thuật vỡ, Tấm vỏ lớn, Hòm kỹ thuật Seed (nhánh)	Ép tấm thép, Đóng kiện phế liệu, Chế Bộ kích nguồn, Sửa khoang	Hull Shard. Thường, Khối 1, Gần, MVP
-2	Dây cáp đứt	Phế liệu	Mảnh vỡ trôi, Hòm kỹ thuật vỡ, Hòm kỹ thuật Seed (nhánh)	Bện dây dẫn, Phục hồi mạch, Đóng kiện cáp, Chế Bộ kích nguồn, nâng cấp Túi đồ bậc 1, Sửa khoang	Frayed Cable. Thường, Khối 1, Gần, MVP
-3	Quặng sắt thiên thạch	Khoáng	Mạch quặng sắt, Kho hàng Seed (nhánh)	Luyện thỏi sắt, Đóng kiện quặng, Sửa khoang	Meteoric Iron Ore. Thường, Khối 2, Gần, MVP
-4	Bo mạch cháy	Linh kiện	Hòm kỹ thuật vỡ, Hòm kỹ thuật Seed (nhánh), Kho hàng Seed (nhánh), Hòm Cradle	Phục hồi mạch, Chế Bộ kích nguồn, Sửa khoang	Scorched Circuit. Ít gặp, Khối 1, Gần, MVP
-5	Băng nước đục	Băng	Khối băng trôi	Lọc băng, Đóng kiện băng, Sửa khoang	Murky Ice. Thường, Khối 2, Gần, MVP
-6	Đồ Trái Đất vụn	Phế liệu	Hòm kỹ thuật vỡ, Hòm kỹ thuật Seed (nhánh), Kho hàng Seed (nhánh)	Đóng kiện đồ Trái Đất	Earth Trinkets. Ít gặp, Khối 1, Gần, MVP
-7	Hợp kim nóng chảy	Phế liệu	Hòm Cradle, Tấm hợp kim trôi	Ép tấm hợp kim chịu nhiệt, Sửa khoang	Fused Alloy. Ít gặp, Khối 1, Giữa, Sau MVP
-8	Quặng cobalt	Khoáng	Mạch quặng cobalt	Luyện thỏi cobalt, Sửa khoang	Cobalt Ore. Ít gặp, Khối 2, Giữa, Sau MVP
-9	Băng tinh	Băng	Khối băng tinh	Pha dung dịch lạnh, Sửa khoang	Clear Ice. Ít gặp, Khối 2, Giữa, Sau MVP
-10	Lõi cảm biến	Linh kiện	Hòm Cradle	Chế mạch cảm biến, Sửa khoang	Sensor Core. Hiếm, Khối 1, Giữa, Sau MVP
-11	Hợp kim Warden	Phế liệu	Hòm Warden, Đơn vị The Wardens hạ được	Ép tấm giáp Warden, Sửa khoang	Warden Alloy. Hiếm, Khối 1, Xa, Sau MVP
-12	Kính nebula	Khoáng	Mạch kính nebula	Mài phiến kính, Sửa khoang	Nebula Glass. Hiếm, Khối 2, Xa, Sau MVP
-13	Băng plasma	Băng	Túi khí plasma đông	Ép cuộn plasma	Plasma Ice. Hiếm, Khối 2, Xa, Sau MVP
-14	Lõi năng lượng nguội	Linh kiện	Hòm Warden	Nạp lõi nguội, Sửa khoang	Cold Core. Hiếm, Khối 1, Xa, Sau MVP
-15	Linh kiện Warden	Linh kiện	Mọi đơn vị The Wardens và boss Warden Reaper	Đóng kiện linh kiện Warden, Lắp động cơ chính giai đoạn 4 và 5	Warden Part. Hiếm, Khối 1, Xa, Sau MVP
+1	Mảnh vỏ Cradle	Phế liệu	Mảnh vỡ trôi, Hòm kỹ thuật vỡ, Tấm vỏ lớn, Hòm kỹ thuật Seed (nhánh)	Ép tấm thép, Đóng kiện phế liệu, Chế Bộ kích nguồn, Sửa khoang	Hull Shard. Thường, Khối 1, Vành đai ngoài, MVP
+2	Dây cáp đứt	Phế liệu	Mảnh vỡ trôi, Hòm kỹ thuật vỡ, Hòm kỹ thuật Seed (nhánh)	Bện dây dẫn, Phục hồi mạch, Đóng kiện cáp, Chế Bộ kích nguồn, nâng cấp Túi đồ bậc 1, Sửa khoang	Frayed Cable. Thường, Khối 1, Vành đai ngoài, MVP
+3	Quặng sắt thiên thạch	Khoáng	Mạch quặng sắt, Kho hàng Seed (nhánh)	Luyện thỏi sắt, Đóng kiện quặng, Sửa khoang	Meteoric Iron Ore. Thường, Khối 2, Vành đai ngoài, MVP
+4	Bo mạch cháy	Linh kiện	Hòm kỹ thuật vỡ, Hòm kỹ thuật Seed (nhánh), Kho hàng Seed (nhánh), Hòm Cradle	Phục hồi mạch, Chế Bộ kích nguồn, Sửa khoang	Scorched Circuit. Ít gặp, Khối 1, Vành đai ngoài, MVP
+5	Băng nước đục	Băng	Khối băng trôi	Lọc băng, Đóng kiện băng, Sửa khoang	Murky Ice. Thường, Khối 2, Vành đai ngoài, MVP
+6	Đồ Trái Đất vụn	Phế liệu	Hòm kỹ thuật vỡ, Hòm kỹ thuật Seed (nhánh), Kho hàng Seed (nhánh)	Đóng kiện đồ Trái Đất	Earth Trinkets. Ít gặp, Khối 1, Vành đai ngoài, MVP
+7	Hợp kim nóng chảy	Phế liệu	Hòm Cradle, Tấm hợp kim trôi	Ép tấm hợp kim chịu nhiệt, Sửa khoang	Fused Alloy. Ít gặp, Khối 1, Vành đai trong, Sau MVP
+8	Quặng cobalt	Khoáng	Mạch quặng cobalt	Luyện thỏi cobalt, Sửa khoang	Cobalt Ore. Ít gặp, Khối 2, Vành đai trong, Sau MVP
+9	Băng tinh	Băng	Khối băng tinh	Pha dung dịch lạnh, Sửa khoang	Clear Ice. Ít gặp, Khối 2, Vành đai trong, Sau MVP
+10	Lõi cảm biến	Linh kiện	Hòm Cradle	Chế mạch cảm biến, Sửa khoang	Sensor Core. Hiếm, Khối 1, Vành đai trong, Sau MVP
+11	Hợp kim Warden	Phế liệu	Hòm Warden, Đơn vị The Wardens hạ được	Ép tấm giáp Warden, Sửa khoang	Warden Alloy. Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+12	Kính nebula	Khoáng	Mạch kính nebula	Mài phiến kính, Sửa khoang	Nebula Glass. Hiếm, Khối 2, Vùng trung tâm, Sau MVP
+13	Băng plasma	Băng	Túi khí plasma đông	Ép cuộn plasma	Plasma Ice. Hiếm, Khối 2, Vùng trung tâm, Sau MVP
+14	Lõi năng lượng nguội	Linh kiện	Hòm Warden	Nạp lõi nguội, Sửa khoang	Cold Core. Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+15	Linh kiện Warden	Linh kiện	Mọi đơn vị The Wardens và boss Warden Reaper	Đóng kiện linh kiện Warden, Lắp động cơ chính giai đoạn 4 và 5	Warden Part. Hiếm, Khối 1, Vùng trung tâm, Sau MVP
 16	Linh kiện Cradle	Linh kiện	Boss Cradle Custodian và map nhánh Cradle Interior	Đóng kiện linh kiện Cradle, nâng cấp Bình Oxy bậc 4, nâng cấp Túi đồ bậc 4, nâng cấp Vỏ bộ đồ cấp 3, Lắp động cơ chính giai đoạn 4 và 5	Cradle Part. Đặc biệt, Khối 1, Cradle, Sau MVP
-17	Mô sinh học Gần	Mẫu	Mọi loài Gần khi hạ	Quấn Lưới cuộn, Pha thức ăn nuôi Gần, Đóng kiện mô sinh học	Thường, Khối 1, Gần, MVP
-18	Mô sinh học Giữa	Mẫu	Mọi loài Giữa khi hạ	Pha thức ăn nuôi Giữa	Ít gặp, Khối 1, Giữa, Sau MVP
-19	Mô sinh học Xa	Mẫu	Mọi loài Xa khi hạ	Pha thức ăn nuôi Xa	Hiếm, Khối 1, Xa, Sau MVP
-20	Đặc sản Driftmoth	Mẫu	Driftmoth khi hạ (xác suất 0,3)	Chiết Ống gây mê, Đóng kiện đặc sản Gần	Ít gặp, Khối 1, Gần, MVP
-21	Đặc sản Skitter Ray	Mẫu	Skitter Ray khi hạ (xác suất 0,4)	Đóng kiện đặc sản Gần	Ít gặp, Khối 1, Gần, MVP
-22	Đặc sản Sting Krill	Mẫu	Sting Krill khi hạ (xác suất 0,2 mỗi con)	Trộn Keo vá, Đóng kiện đặc sản Gần	Ít gặp, Khối 1, Gần, MVP
-23	Đặc sản Arc Eel	Mẫu	Arc Eel khi hạ (xác suất 0,6)	Lắp Cầu chì dự phòng, Đóng kiện đặc sản Gần	Ít gặp, Khối 1, Gần, MVP
-24	Đặc sản Latchjaw	Mẫu	Latchjaw khi hạ (xác suất 0,6)	Đóng kiện đặc sản Gần	Ít gặp, Khối 1, Gần, Sau MVP
-25	Đặc sản Lumen Jelly	Mẫu	Lumen Jelly khi hạ (xác suất 0,4)	Đóng kiện đặc sản Giữa	Hiếm, Khối 1, Giữa, Sau MVP
-26	Đặc sản Orebiter	Mẫu	Orebiter khi hạ (xác suất 0,6)	Đóng kiện đặc sản Giữa	Hiếm, Khối 1, Giữa, Sau MVP
-27	Đặc sản Needlefin	Mẫu	Needlefin khi hạ (xác suất 0,15 mỗi con)	Đóng kiện đặc sản Giữa	Hiếm, Khối 1, Giữa, Sau MVP
-28	Đặc sản Gulper	Mẫu	Gulper khi hạ (xác suất 1)	Đóng kiện đặc sản Giữa	Hiếm, Khối 1, Giữa, Sau MVP
-29	Đặc sản Prism Wisp	Mẫu	Prism Wisp khi hạ (xác suất 0,5)	Đóng kiện đặc sản Xa	Hiếm, Khối 1, Xa, Sau MVP
-30	Đặc sản Mirror Mantis	Mẫu	Mirror Mantis khi hạ (xác suất 0,6)	Đóng kiện đặc sản Xa	Hiếm, Khối 1, Xa, Sau MVP
-31	Đặc sản Storm Siphon	Mẫu	Storm Siphon khi hạ (xác suất 1)	Đóng kiện đặc sản Xa	Hiếm, Khối 1, Xa, Sau MVP
-32	Đặc sản Shardbrood Queen	Mẫu	Shardbrood Queen khi hạ (xác suất 1)	Đóng kiện đặc sản Xa	Hiếm, Khối 1, Xa, Sau MVP
-33	Đặc sản Shardbrood Hatchling	Mẫu	Shardbrood Hatchling khi hạ (xác suất 0,2 mỗi con)	Đóng kiện đặc sản Xa	Hiếm, Khối 1, Xa, Sau MVP
-34	Hạch thủ lĩnh Gần	Mẫu	Boss Scrapmaw bị hạ, cộng 5 Mô sinh học Gần	Sửa khoang theo chương	Đặc biệt, Khối 2, Gần, MVP
-35	Mẫu boss Gần	Mẫu	Boss Scrapmaw bị xua đi, cộng 2 Mô sinh học Gần	Sửa khoang theo chương, thay được Hạch thủ lĩnh Gần	Đặc biệt, Khối 2, Gần, MVP
-36	Đặc sản Tempest Gulper	Mẫu	Boss Tempest Gulper bị hạ, cộng phế liệu nó đã nuốt	Sửa khoang theo chương	Đặc biệt, Khối 2, Giữa, Sau MVP
-37	Mẫu boss Giữa	Mẫu	Boss Tempest Gulper bị xua đi	Sửa khoang theo chương, thay được Đặc sản Tempest Gulper	Đặc biệt, Khối 2, Giữa, Sau MVP
-38	Mẫu sống Driftmoth	Mẫu sống	Bắt sống Driftmoth bằng Súng lưới (từ chương 1)	Đưa sinh vật sống cỡ S Gần vào lồng giao, Phân tích Driftmoth, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, MVP
-39	Sản phẩm nuôi Driftmoth	Sản phẩm nuôi	Khoang sinh quyển Driftmoth (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Gần	Thường, Khối 1, Gần, Sau MVP
-40	Mẫu sống Skitter Ray	Mẫu sống	Bắt sống Skitter Ray bằng Súng lưới (từ chương 1)	Đưa sinh vật sống cỡ S Gần vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, MVP
-41	Sản phẩm nuôi Skitter Ray	Sản phẩm nuôi	Khoang sinh quyển Skitter Ray (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Gần	Thường, Khối 1, Gần, Sau MVP
-42	Mẫu sống Sting Krill	Mẫu sống	Bắt sống Sting Krill bằng Súng lưới (từ chương 1)	Đưa sinh vật sống cỡ S Gần vào lồng giao, Phân tích Sting Krill, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, MVP
-43	Sản phẩm nuôi Sting Krill	Sản phẩm nuôi	Khoang sinh quyển Sting Krill (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Gần	Thường, Khối 1, Gần, Sau MVP
-44	Mẫu sống Arc Eel	Mẫu sống	Bắt sống Arc Eel bằng Súng gây mê rồi Phao kéo (chương 2, miễn choáng)	Đưa sinh vật sống cỡ M Gần vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, Sau MVP
-45	Sản phẩm nuôi Arc Eel	Sản phẩm nuôi	Khoang sinh quyển Arc Eel (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Gần	Thường, Khối 1, Gần, Sau MVP
-46	Mẫu sống Latchjaw	Mẫu sống	Bắt sống Latchjaw bằng choáng hoặc mê rồi Phao kéo (chương 2)	Đưa sinh vật sống cỡ M Gần vào lồng giao, bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Gần, Sau MVP
-47	Mẫu sinh thiết Shepherd Whale	Mẫu sinh thiết	Kim sinh thiết trên Shepherd Whale (loài L, chương 2)	Đóng kiện đặc sản Giữa, Nghiên cứu (Hồ sơ loài)	Hiếm, Khối 1, Giữa, Sau MVP
-48	Mẫu sống Lumen Jelly	Mẫu sống	Bắt sống Lumen Jelly bằng choáng hoặc mê rồi Phao kéo (chương 2)	Đưa sinh vật sống Giữa vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
-49	Sản phẩm nuôi Lumen Jelly	Sản phẩm nuôi	Khoang sinh quyển Lumen Jelly (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Giữa	Ít gặp, Khối 1, Giữa, Sau MVP
-50	Mẫu sống Orebiter	Mẫu sống	Bắt sống Orebiter bằng choáng hoặc mê rồi Phao kéo (chương 2)	Đưa sinh vật sống Giữa vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
-51	Sản phẩm nuôi Orebiter	Sản phẩm nuôi	Khoang sinh quyển Orebiter (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Giữa	Ít gặp, Khối 1, Giữa, Sau MVP
-52	Mẫu sống Needlefin	Mẫu sống	Bắt sống Needlefin bằng Súng lưới (từ chương 1)	Đưa sinh vật sống Giữa vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Giữa, Sau MVP
-53	Sản phẩm nuôi Needlefin	Sản phẩm nuôi	Khoang sinh quyển Needlefin (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Giữa	Ít gặp, Khối 1, Giữa, Sau MVP
-54	Mẫu sinh thiết Gulper	Mẫu sinh thiết	Kim sinh thiết trên Gulper (loài L, chương 2)	Đóng kiện đặc sản Giữa, Nghiên cứu (Hồ sơ loài)	Hiếm, Khối 1, Giữa, Sau MVP
-55	Mẫu sống Prism Wisp	Mẫu sống	Bắt sống Prism Wisp bằng Súng lưới (từ chương 1)	Đưa sinh vật sống Xa vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
-56	Sản phẩm nuôi Prism Wisp	Sản phẩm nuôi	Khoang sinh quyển Prism Wisp (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Xa	Ít gặp, Khối 1, Xa, Sau MVP
-57	Mẫu sống Mirror Mantis	Mẫu sống	Bắt sống Mirror Mantis bằng choáng hoặc mê rồi Phao kéo (chương 2)	Đưa sinh vật sống Xa vào lồng giao, bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
-58	Mẫu sinh thiết Storm Siphon	Mẫu sinh thiết	Kim sinh thiết trên Storm Siphon (loài L, chương 2)	Đóng kiện đặc sản Xa, Nghiên cứu (Hồ sơ loài)	Hiếm, Khối 1, Xa, Sau MVP
-59	Mẫu sinh thiết Shardbrood Queen	Mẫu sinh thiết	Kim sinh thiết trên Shardbrood Queen (loài L, chương 2)	Đóng kiện đặc sản Xa, Nghiên cứu (Hồ sơ loài)	Hiếm, Khối 1, Xa, Sau MVP
-60	Mẫu sống Shardbrood Hatchling	Mẫu sống	Bắt sống Shardbrood Hatchling bằng Súng lưới (từ chương 1)	Đưa sinh vật sống Xa vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Xa, Sau MVP
-61	Sản phẩm nuôi Shardbrood Hatchling	Sản phẩm nuôi	Khoang sinh quyển Shardbrood Hatchling (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Xa	Ít gặp, Khối 1, Xa, Sau MVP
-62	Tấm thép nén	Vật liệu chế	Ép tấm thép	Nạp Bình Oxy nhỏ, Trộn Keo vá, Đóng kiện cơ khí, Chế Máy quét xung, Chế Dùi xung, Chế Lồng mẫu, nâng cấp Bình Oxy bậc 1, nâng cấp Túi đồ bậc 1, nâng cấp Bộ đẩy bậc 1, nâng cấp Dụng cụ khai thác bậc 2, nâng cấp Đai dụng cụ bậc 1, nâng cấp Túi đồ bậc 2	Thường, Khối 1, Gần, MVP
-63	Dây dẫn bện	Vật liệu chế	Bện dây dẫn	Quấn Lưới cuộn, Chế Phao kéo, Đóng kiện điện tử, Chế Súng lưới, Chế Máy quét xung, Chế Lồng mẫu, nâng cấp Túi đồ bậc 1, nâng cấp Dụng cụ khai thác bậc 2, nâng cấp Lao từ bậc 2, nâng cấp Đai dụng cụ bậc 1, nâng cấp Súng lưới bậc 2, nâng cấp Túi đồ bậc 2, nâng cấp Đai dụng cụ bậc 2	Thường, Khối 1, Gần, MVP
-64	Thỏi sắt	Vật liệu chế	Luyện thỏi sắt	Chế Phao kéo, Chế Súng lưới, Chế Súng gây mê, Chế Dùi xung, Chế Lồng mẫu, nâng cấp Bộ đẩy bậc 1, nâng cấp Dụng cụ khai thác bậc 2, nâng cấp Lao từ bậc 2, nâng cấp Đai dụng cụ bậc 1, nâng cấp Súng lưới bậc 2, nâng cấp Dụng cụ khai thác bậc 3, nâng cấp Đai dụng cụ bậc 2	Thường, Khối 1, Gần, MVP
-65	Mạch phục hồi	Vật liệu chế	Phục hồi mạch	Chế mạch cảm biến, Lắp Cầu chì dự phòng, Chế Kim sinh thiết, Sao bản dữ liệu, Chế Súng lưới, Chế Súng gây mê, Chế Máy quét xung, Chế Dùi xung, Chế Máy cắt thân tàu, nâng cấp Bộ đẩy bậc 1, nâng cấp Lao từ bậc 2, nâng cấp Súng lưới bậc 2, nâng cấp Túi đồ bậc 3	Ít gặp, Khối 1, Gần, MVP
-66	Khối nước tinh khiết	Vật liệu chế	Lọc băng	Nạp Bình Oxy nhỏ, Chiết Ống gây mê, Chế Phao kéo, Chế Kim sinh thiết, Đóng kiện nước tinh khiết, Phân tích Driftmoth, Phân tích Sting Krill, Chế Súng gây mê, Chế Lồng mẫu, nâng cấp Bình Oxy bậc 1, nâng cấp Vỏ bộ đồ cấp 1	Thường, Khối 1, Gần, MVP
-67	Tấm hợp kim chịu nhiệt	Vật liệu chế	Ép tấm hợp kim chịu nhiệt	Đóng kiện hợp kim, nâng cấp Bình Oxy bậc 2, nâng cấp Túi đồ bậc 2, nâng cấp Vỏ bộ đồ cấp 1	Ít gặp, Khối 1, Giữa, Sau MVP
-68	Thỏi cobalt	Vật liệu chế	Luyện thỏi cobalt	Nâng cấp Bộ đẩy bậc 2, nâng cấp Dụng cụ khai thác bậc 3, nâng cấp Lao từ bậc 3, nâng cấp Đai dụng cụ bậc 2	Ít gặp, Khối 1, Giữa, Sau MVP
-69	Mạch cảm biến	Vật liệu chế	Chế mạch cảm biến	Đóng kiện cảm biến, Ghép Lõi dẫn hướng rời bãi vỡ, nâng cấp Bộ đẩy bậc 2, nâng cấp Lao từ bậc 3, nâng cấp Vỏ bộ đồ cấp 2	Hiếm, Khối 1, Giữa, Sau MVP
-70	Dung dịch lạnh	Vật liệu chế	Pha dung dịch lạnh	Nạp lõi nguội, Đóng kiện dung dịch lạnh, nâng cấp Bình Oxy bậc 2, nâng cấp Vỏ bộ đồ cấp 1	Ít gặp, Khối 1, Giữa, Sau MVP
-71	Tấm giáp Warden	Vật liệu chế	Ép tấm giáp Warden	Đóng kiện giáp, Chế Máy cắt thân tàu, nâng cấp Bình Oxy bậc 3, nâng cấp Túi đồ bậc 3, nâng cấp Vỏ bộ đồ cấp 2, nâng cấp Túi đồ bậc 4, nâng cấp Vỏ bộ đồ cấp 3	Hiếm, Khối 1, Xa, Sau MVP
-72	Phiến kính	Vật liệu chế	Mài phiến kính	Nâng cấp Bình Oxy bậc 3, nâng cấp Bộ đẩy bậc 3, nâng cấp Bình Oxy bậc 4, nâng cấp Vỏ bộ đồ cấp 3	Hiếm, Khối 1, Xa, Sau MVP
-73	Cuộn plasma	Vật liệu chế	Ép cuộn plasma	Đóng kiện plasma, Chế Máy cắt thân tàu, nâng cấp Túi đồ bậc 3, nâng cấp Bình Oxy bậc 4, nâng cấp Túi đồ bậc 4	Hiếm, Khối 1, Xa, Sau MVP
-74	Lõi nguội nạp	Vật liệu chế	Nạp lõi nguội	Đóng kiện lõi nguội, nâng cấp Bộ đẩy bậc 3, nâng cấp Vỏ bộ đồ cấp 2, nâng cấp Bình Oxy bậc 4, nâng cấp Túi đồ bậc 4, nâng cấp Vỏ bộ đồ cấp 3	Hiếm, Khối 1, Xa, Sau MVP
-75	Bình Oxy nhỏ	Vật tiêu hao	Nạp Bình Oxy nhỏ	Đóng kiện vật tư, Dùng trong chuyến	Ít gặp, Khối 2, Gần, MVP. Dùng trong chuyến: hồi 40 điểm Oxy (khoảng 12% bình bậc 0) cho chính người dùng, dùng 1,5 giây, chiếm túi, tối đa 2 bình trong túi mỗi chuyến (trần chống nạp Oxy vô hạn)
-76	Lưới cuộn	Vật tiêu hao	Quấn Lưới cuộn	Đóng kiện vật tư, Dùng với Súng lưới	Thường, Khối 1, Gần, MVP
-77	Ống gây mê	Vật tiêu hao	Chiết Ống gây mê	Dùng với Súng gây mê	Thường, Khối 1, Gần, Sau MVP
-78	Keo vá	Vật tiêu hao	Trộn Keo vá	Xử lý sự cố rò khí, 1 mỗi lần	Thường, Khối 1, Gần, Sau MVP
-79	Cầu chì dự phòng	Vật tiêu hao	Lắp Cầu chì dự phòng	Xử lý sự cố chập điện, 1 mỗi lần	Ít gặp, Khối 1, Gần, Sau MVP
-80	Phao kéo	Vật tiêu hao	Chế Phao kéo	Gửi Driftlife cỡ M bất lực về kho	Ít gặp, Khối 1, Gần, Sau MVP
-81	Kim sinh thiết	Vật tiêu hao	Chế Kim sinh thiết	Lấy mẫu sinh thiết loài cỡ L	Ít gặp, Khối 1, Gần, Sau MVP
-82	Thức ăn nuôi Gần	Thức ăn nuôi	Pha thức ăn nuôi Gần	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Gần, Sau MVP
-83	Thức ăn nuôi Giữa	Thức ăn nuôi	Pha thức ăn nuôi Giữa	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Giữa, Sau MVP
-84	Thức ăn nuôi Xa	Thức ăn nuôi	Pha thức ăn nuôi Xa	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Xa, Sau MVP
-85	Kiện phế liệu	Kiện	Đóng kiện phế liệu	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
-86	Kiện cáp	Kiện	Đóng kiện cáp	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
-87	Kiện quặng	Kiện	Đóng kiện quặng	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
-88	Kiện băng	Kiện	Đóng kiện băng	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
-89	Kiện mô sinh học	Kiện	Đóng kiện mô sinh học	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
-90	Kiện đồ Trái Đất	Kiện	Đóng kiện đồ Trái Đất	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng. Tàu của người mê đồ Trái Đất hỏi
-91	Kiện cơ khí	Kiện	Đóng kiện cơ khí	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng
-92	Kiện điện tử	Kiện	Đóng kiện điện tử	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng
-93	Kiện nước tinh khiết	Kiện	Đóng kiện nước tinh khiết	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
-94	Kiện đặc sản Gần	Kiện	Đóng kiện đặc sản Gần	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Gần, MVP. 1 kiện = 2,5 thùng
-95	Kiện sản phẩm nuôi Gần	Kiện	Đóng kiện sản phẩm nuôi Gần	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng
-96	Lồng sinh vật sống Gần	Kiện	Đưa sinh vật sống cỡ S Gần vào lồng giao, Đưa sinh vật sống cỡ M Gần vào lồng giao	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Gần, MVP. Một lồng là một đơn vị bán, không chia thùng. Mang nguyên lồng, nhớ loài để khớp đơn
-97	Kiện vật tư	Kiện	Đóng kiện vật tư	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Gần, Sau MVP. 1 kiện = 2,5 thùng (đồ chế)
-98	Bản sao dữ liệu	Kiện	Sao bản dữ liệu	Bán nguyên cái ở giờ giao thương	Hiếm, Khối kho, Gần, Sau MVP. Một cái là một đơn vị bán, không chia thùng. Sao từ vật kể chuyện loại dữ liệu, vật gốc ở lại
-99	Kiện hợp kim	Kiện	Đóng kiện hợp kim	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
-100	Kiện cảm biến	Kiện	Đóng kiện cảm biến	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
-101	Kiện dung dịch lạnh	Kiện	Đóng kiện dung dịch lạnh	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
-102	Kiện đặc sản Giữa	Kiện	Đóng kiện đặc sản Giữa	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
-103	Kiện sản phẩm nuôi Giữa	Kiện	Đóng kiện sản phẩm nuôi Giữa	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Giữa, Sau MVP. 1 kiện = 2,5 thùng
-104	Lồng sinh vật sống Giữa	Kiện	Đưa sinh vật sống Giữa vào lồng giao	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Giữa, Sau MVP. Một lồng là một đơn vị bán, không chia thùng
-105	Kiện giáp	Kiện	Đóng kiện giáp	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
-106	Kiện plasma	Kiện	Đóng kiện plasma	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
-107	Kiện lõi nguội	Kiện	Đóng kiện lõi nguội	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
-108	Kiện đặc sản Xa	Kiện	Đóng kiện đặc sản Xa	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
-109	Kiện sản phẩm nuôi Xa	Kiện	Đóng kiện sản phẩm nuôi Xa	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
-110	Lồng sinh vật sống Xa	Kiện	Đưa sinh vật sống Xa vào lồng giao	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Xa, Sau MVP. Một lồng là một đơn vị bán, không chia thùng
+17	Mô sinh học Vành đai ngoài	Mẫu	Mọi loài Vành đai ngoài khi hạ	Quấn Lưới cuộn, Pha thức ăn nuôi Vành đai ngoài, Đóng kiện mô sinh học	Thường, Khối 1, Vành đai ngoài, MVP
+18	Mô sinh học Vành đai trong	Mẫu	Mọi loài Vành đai trong khi hạ	Pha thức ăn nuôi Vành đai trong	Ít gặp, Khối 1, Vành đai trong, Sau MVP
+19	Mô sinh học Vùng trung tâm	Mẫu	Mọi loài Vùng trung tâm khi hạ	Pha thức ăn nuôi Vùng trung tâm	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+20	Đặc sản Driftmoth	Mẫu	Driftmoth khi hạ (xác suất 0,3)	Chiết Ống gây mê, Đóng kiện đặc sản Vành đai ngoài	Ít gặp, Khối 1, Vành đai ngoài, MVP
+21	Đặc sản Skitter Ray	Mẫu	Skitter Ray khi hạ (xác suất 0,4)	Đóng kiện đặc sản Vành đai ngoài	Ít gặp, Khối 1, Vành đai ngoài, MVP
+22	Đặc sản Sting Krill	Mẫu	Sting Krill khi hạ (xác suất 0,2 mỗi con)	Trộn Keo vá, Đóng kiện đặc sản Vành đai ngoài	Ít gặp, Khối 1, Vành đai ngoài, MVP
+23	Đặc sản Arc Eel	Mẫu	Arc Eel khi hạ (xác suất 0,6)	Lắp Cầu chì dự phòng, Đóng kiện đặc sản Vành đai ngoài	Ít gặp, Khối 1, Vành đai ngoài, MVP
+24	Đặc sản Latchjaw	Mẫu	Latchjaw khi hạ (xác suất 0,6)	Đóng kiện đặc sản Vành đai ngoài	Ít gặp, Khối 1, Vành đai ngoài, Sau MVP
+25	Đặc sản Lumen Jelly	Mẫu	Lumen Jelly khi hạ (xác suất 0,4)	Đóng kiện đặc sản Vành đai trong	Hiếm, Khối 1, Vành đai trong, Sau MVP
+26	Đặc sản Orebiter	Mẫu	Orebiter khi hạ (xác suất 0,6)	Đóng kiện đặc sản Vành đai trong	Hiếm, Khối 1, Vành đai trong, Sau MVP
+27	Đặc sản Needlefin	Mẫu	Needlefin khi hạ (xác suất 0,15 mỗi con)	Đóng kiện đặc sản Vành đai trong	Hiếm, Khối 1, Vành đai trong, Sau MVP
+28	Đặc sản Gulper	Mẫu	Gulper khi hạ (xác suất 1)	Đóng kiện đặc sản Vành đai trong	Hiếm, Khối 1, Vành đai trong, Sau MVP
+29	Đặc sản Prism Wisp	Mẫu	Prism Wisp khi hạ (xác suất 0,5)	Đóng kiện đặc sản Vùng trung tâm	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+30	Đặc sản Mirror Mantis	Mẫu	Mirror Mantis khi hạ (xác suất 0,6)	Đóng kiện đặc sản Vùng trung tâm	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+31	Đặc sản Storm Siphon	Mẫu	Storm Siphon khi hạ (xác suất 1)	Đóng kiện đặc sản Vùng trung tâm	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+32	Đặc sản Shardbrood Queen	Mẫu	Shardbrood Queen khi hạ (xác suất 1)	Đóng kiện đặc sản Vùng trung tâm	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+33	Đặc sản Shardbrood Hatchling	Mẫu	Shardbrood Hatchling khi hạ (xác suất 0,2 mỗi con)	Đóng kiện đặc sản Vùng trung tâm	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+34	Hạch thủ lĩnh Vành đai ngoài	Mẫu	Boss Scrapmaw bị hạ, cộng 5 Mô sinh học Vành đai ngoài	Sửa khoang theo chương	Đặc biệt, Khối 2, Vành đai ngoài, MVP
+35	Mẫu boss Vành đai ngoài	Mẫu	Boss Scrapmaw bị xua đi, cộng 2 Mô sinh học Vành đai ngoài	Sửa khoang theo chương, thay được Hạch thủ lĩnh Vành đai ngoài	Đặc biệt, Khối 2, Vành đai ngoài, MVP
+36	Đặc sản Tempest Gulper	Mẫu	Boss Tempest Gulper bị hạ, cộng phế liệu nó đã nuốt	Sửa khoang theo chương	Đặc biệt, Khối 2, Vành đai trong, Sau MVP
+37	Mẫu boss Vành đai trong	Mẫu	Boss Tempest Gulper bị xua đi	Sửa khoang theo chương, thay được Đặc sản Tempest Gulper	Đặc biệt, Khối 2, Vành đai trong, Sau MVP
+38	Mẫu sống Driftmoth	Mẫu sống	Bắt sống Driftmoth bằng Súng lưới (từ chương 1)	Đưa sinh vật sống cỡ S Vành đai ngoài vào lồng giao, Phân tích Driftmoth, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Vành đai ngoài, MVP
+39	Sản phẩm nuôi Driftmoth	Sản phẩm nuôi	Khoang sinh quyển Driftmoth (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vành đai ngoài	Thường, Khối 1, Vành đai ngoài, Sau MVP
+40	Mẫu sống Skitter Ray	Mẫu sống	Bắt sống Skitter Ray bằng Súng lưới (từ chương 1)	Đưa sinh vật sống cỡ S Vành đai ngoài vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Vành đai ngoài, MVP
+41	Sản phẩm nuôi Skitter Ray	Sản phẩm nuôi	Khoang sinh quyển Skitter Ray (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vành đai ngoài	Thường, Khối 1, Vành đai ngoài, Sau MVP
+42	Mẫu sống Sting Krill	Mẫu sống	Bắt sống Sting Krill bằng Súng lưới (từ chương 1)	Đưa sinh vật sống cỡ S Vành đai ngoài vào lồng giao, Phân tích Sting Krill, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Vành đai ngoài, MVP
+43	Sản phẩm nuôi Sting Krill	Sản phẩm nuôi	Khoang sinh quyển Sting Krill (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vành đai ngoài	Thường, Khối 1, Vành đai ngoài, Sau MVP
+44	Mẫu sống Arc Eel	Mẫu sống	Bắt sống Arc Eel bằng Súng gây mê rồi Phao kéo (chương 2, miễn choáng)	Đưa sinh vật sống cỡ M Vành đai ngoài vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Vành đai ngoài, Sau MVP
+45	Sản phẩm nuôi Arc Eel	Sản phẩm nuôi	Khoang sinh quyển Arc Eel (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vành đai ngoài	Thường, Khối 1, Vành đai ngoài, Sau MVP
+46	Mẫu sống Latchjaw	Mẫu sống	Bắt sống Latchjaw bằng choáng hoặc mê rồi Phao kéo (chương 2)	Đưa sinh vật sống cỡ M Vành đai ngoài vào lồng giao, bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Ít gặp, Khối kéo, Vành đai ngoài, Sau MVP
+47	Mẫu sinh thiết Shepherd Whale	Mẫu sinh thiết	Kim sinh thiết trên Shepherd Whale (loài L, chương 2)	Đóng kiện đặc sản Vành đai trong, Nghiên cứu (Hồ sơ loài)	Hiếm, Khối 1, Vành đai trong, Sau MVP
+48	Mẫu sống Lumen Jelly	Mẫu sống	Bắt sống Lumen Jelly bằng choáng hoặc mê rồi Phao kéo (chương 2)	Đưa sinh vật sống Vành đai trong vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Vành đai trong, Sau MVP
+49	Sản phẩm nuôi Lumen Jelly	Sản phẩm nuôi	Khoang sinh quyển Lumen Jelly (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vành đai trong	Ít gặp, Khối 1, Vành đai trong, Sau MVP
+50	Mẫu sống Orebiter	Mẫu sống	Bắt sống Orebiter bằng choáng hoặc mê rồi Phao kéo (chương 2)	Đưa sinh vật sống Vành đai trong vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Vành đai trong, Sau MVP
+51	Sản phẩm nuôi Orebiter	Sản phẩm nuôi	Khoang sinh quyển Orebiter (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vành đai trong	Ít gặp, Khối 1, Vành đai trong, Sau MVP
+52	Mẫu sống Needlefin	Mẫu sống	Bắt sống Needlefin bằng Súng lưới (từ chương 1)	Đưa sinh vật sống Vành đai trong vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Vành đai trong, Sau MVP
+53	Sản phẩm nuôi Needlefin	Sản phẩm nuôi	Khoang sinh quyển Needlefin (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vành đai trong	Ít gặp, Khối 1, Vành đai trong, Sau MVP
+54	Mẫu sinh thiết Gulper	Mẫu sinh thiết	Kim sinh thiết trên Gulper (loài L, chương 2)	Đóng kiện đặc sản Vành đai trong, Nghiên cứu (Hồ sơ loài)	Hiếm, Khối 1, Vành đai trong, Sau MVP
+55	Mẫu sống Prism Wisp	Mẫu sống	Bắt sống Prism Wisp bằng Súng lưới (từ chương 1)	Đưa sinh vật sống Vùng trung tâm vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Vùng trung tâm, Sau MVP
+56	Sản phẩm nuôi Prism Wisp	Sản phẩm nuôi	Khoang sinh quyển Prism Wisp (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vùng trung tâm	Ít gặp, Khối 1, Vùng trung tâm, Sau MVP
+57	Mẫu sống Mirror Mantis	Mẫu sống	Bắt sống Mirror Mantis bằng choáng hoặc mê rồi Phao kéo (chương 2)	Đưa sinh vật sống Vùng trung tâm vào lồng giao, bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Vùng trung tâm, Sau MVP
+58	Mẫu sinh thiết Storm Siphon	Mẫu sinh thiết	Kim sinh thiết trên Storm Siphon (loài L, chương 2)	Đóng kiện đặc sản Vùng trung tâm, Nghiên cứu (Hồ sơ loài)	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+59	Mẫu sinh thiết Shardbrood Queen	Mẫu sinh thiết	Kim sinh thiết trên Shardbrood Queen (loài L, chương 2)	Đóng kiện đặc sản Vùng trung tâm, Nghiên cứu (Hồ sơ loài)	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+60	Mẫu sống Shardbrood Hatchling	Mẫu sống	Bắt sống Shardbrood Hatchling bằng Súng lưới (từ chương 1)	Đưa sinh vật sống Vùng trung tâm vào lồng giao, Nuôi (chương 2), bán ở giờ giao thương (lồng sinh vật sống), nghiên cứu (chương 2)	Hiếm, Khối kéo, Vùng trung tâm, Sau MVP
+61	Sản phẩm nuôi Shardbrood Hatchling	Sản phẩm nuôi	Khoang sinh quyển Shardbrood Hatchling (1 đơn vị mỗi con trưởng thành mỗi ngày khi được cho ăn)	Đóng kiện sản phẩm nuôi Vùng trung tâm	Ít gặp, Khối 1, Vùng trung tâm, Sau MVP
+62	Tấm thép nén	Vật liệu chế	Ép tấm thép	Nạp Bình Oxy nhỏ, Trộn Keo vá, Đóng kiện cơ khí, Chế Máy quét xung, Chế Dùi xung, Chế Lồng mẫu, nâng cấp Bình Oxy bậc 1, nâng cấp Túi đồ bậc 1, nâng cấp Bộ đẩy bậc 1, nâng cấp Dụng cụ khai thác bậc 2, nâng cấp Đai dụng cụ bậc 1, nâng cấp Túi đồ bậc 2	Thường, Khối 1, Vành đai ngoài, MVP
+63	Dây dẫn bện	Vật liệu chế	Bện dây dẫn	Quấn Lưới cuộn, Chế Phao kéo, Đóng kiện điện tử, Chế Súng lưới, Chế Máy quét xung, Chế Lồng mẫu, nâng cấp Túi đồ bậc 1, nâng cấp Dụng cụ khai thác bậc 2, nâng cấp Lao từ bậc 2, nâng cấp Đai dụng cụ bậc 1, nâng cấp Súng lưới bậc 2, nâng cấp Túi đồ bậc 2, nâng cấp Đai dụng cụ bậc 2	Thường, Khối 1, Vành đai ngoài, MVP
+64	Thỏi sắt	Vật liệu chế	Luyện thỏi sắt	Chế Phao kéo, Chế Súng lưới, Chế Súng gây mê, Chế Dùi xung, Chế Lồng mẫu, nâng cấp Bộ đẩy bậc 1, nâng cấp Dụng cụ khai thác bậc 2, nâng cấp Lao từ bậc 2, nâng cấp Đai dụng cụ bậc 1, nâng cấp Súng lưới bậc 2, nâng cấp Dụng cụ khai thác bậc 3, nâng cấp Đai dụng cụ bậc 2	Thường, Khối 1, Vành đai ngoài, MVP
+65	Mạch phục hồi	Vật liệu chế	Phục hồi mạch	Chế mạch cảm biến, Lắp Cầu chì dự phòng, Chế Kim sinh thiết, Sao bản dữ liệu, Chế Súng lưới, Chế Súng gây mê, Chế Máy quét xung, Chế Dùi xung, Chế Máy cắt thân tàu, nâng cấp Bộ đẩy bậc 1, nâng cấp Lao từ bậc 2, nâng cấp Súng lưới bậc 2, nâng cấp Túi đồ bậc 3	Ít gặp, Khối 1, Vành đai ngoài, MVP
+66	Khối nước tinh khiết	Vật liệu chế	Lọc băng	Nạp Bình Oxy nhỏ, Chiết Ống gây mê, Chế Phao kéo, Chế Kim sinh thiết, Đóng kiện nước tinh khiết, Phân tích Driftmoth, Phân tích Sting Krill, Chế Súng gây mê, Chế Lồng mẫu, nâng cấp Bình Oxy bậc 1, nâng cấp Vỏ bộ đồ cấp 1	Thường, Khối 1, Vành đai ngoài, MVP
+67	Tấm hợp kim chịu nhiệt	Vật liệu chế	Ép tấm hợp kim chịu nhiệt	Đóng kiện hợp kim, nâng cấp Bình Oxy bậc 2, nâng cấp Túi đồ bậc 2, nâng cấp Vỏ bộ đồ cấp 1	Ít gặp, Khối 1, Vành đai trong, Sau MVP
+68	Thỏi cobalt	Vật liệu chế	Luyện thỏi cobalt	Nâng cấp Bộ đẩy bậc 2, nâng cấp Dụng cụ khai thác bậc 3, nâng cấp Lao từ bậc 3, nâng cấp Đai dụng cụ bậc 2	Ít gặp, Khối 1, Vành đai trong, Sau MVP
+69	Mạch cảm biến	Vật liệu chế	Chế mạch cảm biến	Đóng kiện cảm biến, Ghép Lõi dẫn hướng rời bãi vỡ, nâng cấp Bộ đẩy bậc 2, nâng cấp Lao từ bậc 3, nâng cấp Vỏ bộ đồ cấp 2	Hiếm, Khối 1, Vành đai trong, Sau MVP
+70	Dung dịch lạnh	Vật liệu chế	Pha dung dịch lạnh	Nạp lõi nguội, Đóng kiện dung dịch lạnh, nâng cấp Bình Oxy bậc 2, nâng cấp Vỏ bộ đồ cấp 1	Ít gặp, Khối 1, Vành đai trong, Sau MVP
+71	Tấm giáp Warden	Vật liệu chế	Ép tấm giáp Warden	Đóng kiện giáp, Chế Máy cắt thân tàu, nâng cấp Bình Oxy bậc 3, nâng cấp Túi đồ bậc 3, nâng cấp Vỏ bộ đồ cấp 2, nâng cấp Túi đồ bậc 4, nâng cấp Vỏ bộ đồ cấp 3	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+72	Phiến kính	Vật liệu chế	Mài phiến kính	Nâng cấp Bình Oxy bậc 3, nâng cấp Bộ đẩy bậc 3, nâng cấp Bình Oxy bậc 4, nâng cấp Vỏ bộ đồ cấp 3	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+73	Cuộn plasma	Vật liệu chế	Ép cuộn plasma	Đóng kiện plasma, Chế Máy cắt thân tàu, nâng cấp Túi đồ bậc 3, nâng cấp Bình Oxy bậc 4, nâng cấp Túi đồ bậc 4	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+74	Lõi nguội nạp	Vật liệu chế	Nạp lõi nguội	Đóng kiện lõi nguội, nâng cấp Bộ đẩy bậc 3, nâng cấp Vỏ bộ đồ cấp 2, nâng cấp Bình Oxy bậc 4, nâng cấp Túi đồ bậc 4, nâng cấp Vỏ bộ đồ cấp 3	Hiếm, Khối 1, Vùng trung tâm, Sau MVP
+75	Bình Oxy nhỏ	Vật tiêu hao	Nạp Bình Oxy nhỏ	Đóng kiện vật tư, Dùng trong chuyến	Ít gặp, Khối 2, Vành đai ngoài, MVP. Dùng trong chuyến: hồi 40 điểm Oxy (khoảng 12% bình bậc 0) cho chính người dùng, dùng 1,5 giây, chiếm túi, tối đa 2 bình trong túi mỗi chuyến (trần chống nạp Oxy vô hạn)
+76	Lưới cuộn	Vật tiêu hao	Quấn Lưới cuộn	Đóng kiện vật tư, Dùng với Súng lưới	Thường, Khối 1, Vành đai ngoài, MVP
+77	Ống gây mê	Vật tiêu hao	Chiết Ống gây mê	Dùng với Súng gây mê	Thường, Khối 1, Vành đai ngoài, Sau MVP
+78	Keo vá	Vật tiêu hao	Trộn Keo vá	Xử lý sự cố rò khí, 1 mỗi lần	Thường, Khối 1, Vành đai ngoài, Sau MVP
+79	Cầu chì dự phòng	Vật tiêu hao	Lắp Cầu chì dự phòng	Xử lý sự cố chập điện, 1 mỗi lần	Ít gặp, Khối 1, Vành đai ngoài, Sau MVP
+80	Phao kéo	Vật tiêu hao	Chế Phao kéo	Gửi Driftlife cỡ M bất lực về kho	Ít gặp, Khối 1, Vành đai ngoài, Sau MVP
+81	Kim sinh thiết	Vật tiêu hao	Chế Kim sinh thiết	Lấy mẫu sinh thiết loài cỡ L	Ít gặp, Khối 1, Vành đai ngoài, Sau MVP
+82	Thức ăn nuôi Vành đai ngoài	Thức ăn nuôi	Pha thức ăn nuôi Vành đai ngoài	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Vành đai ngoài, Sau MVP
+83	Thức ăn nuôi Vành đai trong	Thức ăn nuôi	Pha thức ăn nuôi Vành đai trong	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Vành đai trong, Sau MVP
+84	Thức ăn nuôi Vùng trung tâm	Thức ăn nuôi	Pha thức ăn nuôi Vùng trung tâm	Khoang sinh quyển, 1 mỗi con mỗi ngày	Thường, Khối 1, Vùng trung tâm, Sau MVP
+85	Kiện phế liệu	Kiện	Đóng kiện phế liệu	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Vành đai ngoài, MVP. 1 kiện = 2,5 thùng
+86	Kiện cáp	Kiện	Đóng kiện cáp	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Vành đai ngoài, MVP. 1 kiện = 2,5 thùng
+87	Kiện quặng	Kiện	Đóng kiện quặng	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Vành đai ngoài, MVP. 1 kiện = 2,5 thùng
+88	Kiện băng	Kiện	Đóng kiện băng	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Vành đai ngoài, MVP. 1 kiện = 2,5 thùng
+89	Kiện mô sinh học	Kiện	Đóng kiện mô sinh học	Bán theo thùng ở giờ giao thương	Thường, Khối kho, Vành đai ngoài, MVP. 1 kiện = 2,5 thùng
+90	Kiện đồ Trái Đất	Kiện	Đóng kiện đồ Trái Đất	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai ngoài, MVP. 1 kiện = 2,5 thùng. Tàu của người mê đồ Trái Đất hỏi
+91	Kiện cơ khí	Kiện	Đóng kiện cơ khí	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai ngoài, Sau MVP. 1 kiện = 2,5 thùng
+92	Kiện điện tử	Kiện	Đóng kiện điện tử	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai ngoài, Sau MVP. 1 kiện = 2,5 thùng
+93	Kiện nước tinh khiết	Kiện	Đóng kiện nước tinh khiết	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai ngoài, MVP. 1 kiện = 2,5 thùng
+94	Kiện đặc sản Vành đai ngoài	Kiện	Đóng kiện đặc sản Vành đai ngoài	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai ngoài, MVP. 1 kiện = 2,5 thùng
+95	Kiện sản phẩm nuôi Vành đai ngoài	Kiện	Đóng kiện sản phẩm nuôi Vành đai ngoài	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai ngoài, Sau MVP. 1 kiện = 2,5 thùng
+96	Lồng sinh vật sống Vành đai ngoài	Kiện	Đưa sinh vật sống cỡ S Vành đai ngoài vào lồng giao, Đưa sinh vật sống cỡ M Vành đai ngoài vào lồng giao	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vành đai ngoài, MVP. Một lồng là một đơn vị bán, không chia thùng. Mang nguyên lồng, nhớ loài để khớp đơn
+97	Kiện vật tư	Kiện	Đóng kiện vật tư	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai ngoài, Sau MVP. 1 kiện = 2,5 thùng (đồ chế)
+98	Bản sao dữ liệu	Kiện	Sao bản dữ liệu	Bán nguyên cái ở giờ giao thương	Hiếm, Khối kho, Vành đai ngoài, Sau MVP. Một cái là một đơn vị bán, không chia thùng. Sao từ vật kể chuyện loại dữ liệu, vật gốc ở lại
+99	Kiện hợp kim	Kiện	Đóng kiện hợp kim	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai trong, Sau MVP. 1 kiện = 2,5 thùng
+100	Kiện cảm biến	Kiện	Đóng kiện cảm biến	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vành đai trong, Sau MVP. 1 kiện = 2,5 thùng
+101	Kiện dung dịch lạnh	Kiện	Đóng kiện dung dịch lạnh	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai trong, Sau MVP. 1 kiện = 2,5 thùng
+102	Kiện đặc sản Vành đai trong	Kiện	Đóng kiện đặc sản Vành đai trong	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vành đai trong, Sau MVP. 1 kiện = 2,5 thùng
+103	Kiện sản phẩm nuôi Vành đai trong	Kiện	Đóng kiện sản phẩm nuôi Vành đai trong	Bán theo thùng ở giờ giao thương	Ít gặp, Khối kho, Vành đai trong, Sau MVP. 1 kiện = 2,5 thùng
+104	Lồng sinh vật sống Vành đai trong	Kiện	Đưa sinh vật sống Vành đai trong vào lồng giao	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vành đai trong, Sau MVP. Một lồng là một đơn vị bán, không chia thùng
+105	Kiện giáp	Kiện	Đóng kiện giáp	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vùng trung tâm, Sau MVP. 1 kiện = 2,5 thùng
+106	Kiện plasma	Kiện	Đóng kiện plasma	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vùng trung tâm, Sau MVP. 1 kiện = 2,5 thùng
+107	Kiện lõi nguội	Kiện	Đóng kiện lõi nguội	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vùng trung tâm, Sau MVP. 1 kiện = 2,5 thùng
+108	Kiện đặc sản Vùng trung tâm	Kiện	Đóng kiện đặc sản Vùng trung tâm	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vùng trung tâm, Sau MVP. 1 kiện = 2,5 thùng
+109	Kiện sản phẩm nuôi Vùng trung tâm	Kiện	Đóng kiện sản phẩm nuôi Vùng trung tâm	Đóng kiện tin mật, Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vùng trung tâm, Sau MVP. 1 kiện = 2,5 thùng
+110	Lồng sinh vật sống Vùng trung tâm	Kiện	Đưa sinh vật sống Vùng trung tâm vào lồng giao	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vùng trung tâm, Sau MVP. Một lồng là một đơn vị bán, không chia thùng
 111	Kiện linh kiện Cradle	Kiện	Đóng kiện linh kiện Cradle	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Cradle, Sau MVP. 1 kiện = 2,5 thùng
-112	Kiện tin mật	Kiện	Đóng kiện tin mật	Bán nguyên cái ở giờ giao thương	Hiếm, Khối kho, Xa, Sau MVP. Một cái là một đơn vị bán, không chia thùng. Giao cho tàu của mạng lưới, giá trị bằng kiện vỏ bọc
-113	Kiện linh kiện Warden	Kiện	Đóng kiện linh kiện Warden	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Xa, Sau MVP. 1 kiện = 2,5 thùng
-114	Van tiết lưu	Linh kiện lõi	Shop, mở ở Hạng cảng 3	Lắp động cơ chính, giai đoạn 1	Hiếm, Khối kho, Gần, MVP
-115	Buồng đốt tái chế	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 2	Hiếm, Khối kho, Giữa, Sau MVP
-116	Cuộn ổn định từ	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 3	Hiếm, Khối kho, Xa, Sau MVP
-117	Bơm nhiên liệu Veyl	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 4	Hiếm, Khối kho, Xa, Sau MVP
+112	Kiện tin mật	Kiện	Đóng kiện tin mật	Bán nguyên cái ở giờ giao thương	Hiếm, Khối kho, Vùng trung tâm, Sau MVP. Một cái là một đơn vị bán, không chia thùng. Giao cho tàu của mạng lưới, giá trị bằng kiện vỏ bọc
+113	Kiện linh kiện Warden	Kiện	Đóng kiện linh kiện Warden	Bán theo thùng ở giờ giao thương	Hiếm, Khối kho, Vùng trung tâm, Sau MVP. 1 kiện = 2,5 thùng
+114	Van tiết lưu	Linh kiện lõi	Shop, mở ở Hạng cảng 3	Lắp động cơ chính, giai đoạn 1	Hiếm, Khối kho, Vành đai ngoài, MVP
+115	Buồng đốt tái chế	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 2	Hiếm, Khối kho, Vành đai trong, Sau MVP
+116	Cuộn ổn định từ	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 3	Hiếm, Khối kho, Vùng trung tâm, Sau MVP
+117	Bơm nhiên liệu Veyl	Linh kiện lõi	Shop	Lắp động cơ chính, giai đoạn 4	Hiếm, Khối kho, Vùng trung tâm, Sau MVP
 118	Lõi dẫn hướng rời bãi vỡ	Linh kiện lõi	Ghép Lõi dẫn hướng rời bãi vỡ từ vật kể chuyện. Không mua được vì đường rời bãi vỡ không ai bán	Lắp động cơ chính, giai đoạn 5	Đặc biệt, Khối kho, Cradle, Sau MVP
-119	Bản thiết kế Súng lưới bậc 2	Bản thiết kế	Phân tích Driftmoth (nghiên cứu mẫu sống Driftmoth)	Học để mở nâng cấp Súng lưới bậc 2 (vùng lưới rộng hơn, chỉ số ở tab Enemy)	Ít gặp, Khối 0, Gần, Sau MVP
-120	Bản thiết kế Súng gây mê	Bản thiết kế	Phân tích Sting Krill (nghiên cứu mẫu sống Sting Krill)	Học để mở Chế Súng gây mê	Ít gặp, Khối 0, Gần, Sau MVP
-121	Bản thiết kế Máy quét xung	Bản thiết kế	Shop và hòm nhánh Seed Station thứ hai	Học để mở Chế Máy quét xung	Ít gặp, Khối 0, Gần, Sau MVP
-122	Bản thiết kế Máy cắt thân tàu	Bản thiết kế	Hòm cố định trong khoang nghiên cứu Station Flint, mở sau boss Warden Reaper (chương 3), và Shop	Học để mở Chế Máy cắt thân tàu	Hiếm, Khối 0, Xa, Sau MVP
-123	Bản thiết kế tiện ích cảng	Bản thiết kế	Shop	Sửa khoang Bến 2, bến 3 và tiện ích cảng	Hiếm, Khối 0, Xa, Sau MVP
-124	Nhật ký trạm	Vật manh mối	Mỗi xác Seed Station một bản	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi. Loại dữ liệu, sao được thành Bản sao dữ liệu	Đặc biệt, Khối 0, Gần, MVP
-125	Mảnh lõi dẫn đường Cinder	Vật nhiệm vụ	Xác Seed Station Cinder	Vật liệu sửa khoang dẫn đường (chương 2), bị tiêu ở việc sửa đó, ghép đường đi	Đặc biệt, Khối 1, Gần, MVP
-126	Mảnh lõi dẫn đường Wick	Vật nhiệm vụ	Xác Seed Station Wick	Nộp ở khoang dẫn đường (Hoa tiêu), không tiêu vật, vào kho, ghép đường đi	Đặc biệt, Khối 1, Giữa, Sau MVP
-127	Manh mối lõi dẫn đường Flint	Vật manh mối	Xác Seed Station Flint	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
+119	Bản thiết kế Súng lưới bậc 2	Bản thiết kế	Phân tích Driftmoth (nghiên cứu mẫu sống Driftmoth)	Học để mở nâng cấp Súng lưới bậc 2 (vùng lưới rộng hơn, chỉ số ở tab Enemy)	Ít gặp, Khối 0, Vành đai ngoài, Sau MVP
+120	Bản thiết kế Súng gây mê	Bản thiết kế	Phân tích Sting Krill (nghiên cứu mẫu sống Sting Krill)	Học để mở Chế Súng gây mê	Ít gặp, Khối 0, Vành đai ngoài, Sau MVP
+121	Bản thiết kế Máy quét xung	Bản thiết kế	Shop và hòm nhánh Seed Station thứ hai	Học để mở Chế Máy quét xung	Ít gặp, Khối 0, Vành đai ngoài, Sau MVP
+122	Bản thiết kế Máy cắt thân tàu	Bản thiết kế	Hòm cố định trong khoang nghiên cứu Station Flint, mở sau boss Warden Reaper (chương 3), và Shop	Học để mở Chế Máy cắt thân tàu	Hiếm, Khối 0, Vùng trung tâm, Sau MVP
+123	Bản thiết kế tiện ích cảng	Bản thiết kế	Shop	Sửa khoang Bến 2, bến 3 và tiện ích cảng	Hiếm, Khối 0, Vùng trung tâm, Sau MVP
+124	Nhật ký trạm	Vật manh mối	Mỗi xác Seed Station một bản	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi. Loại dữ liệu, sao được thành Bản sao dữ liệu	Đặc biệt, Khối 0, Vành đai ngoài, MVP
+125	Mảnh lõi dẫn đường Cinder	Vật nhiệm vụ	Xác Seed Station Cinder	Vật liệu sửa khoang dẫn đường (chương 2), bị tiêu ở việc sửa đó, ghép đường đi	Đặc biệt, Khối 1, Vành đai ngoài, MVP
+126	Mảnh lõi dẫn đường Wick	Vật nhiệm vụ	Xác Seed Station Wick	Nộp ở khoang dẫn đường (Hoa tiêu), không tiêu vật, vào kho, ghép đường đi	Đặc biệt, Khối 1, Vành đai trong, Sau MVP
+127	Manh mối lõi dẫn đường Flint	Vật manh mối	Xác Seed Station Flint	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Vùng trung tâm, Sau MVP
 128	Manh mối lõi dẫn đường Cradle	Vật manh mối	Cradle Interior	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
-129	Bản tin trong máy liên lạc Cinder	Vật manh mối	Máy liên lạc xác Seed Station Cinder	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Gần, MVP
-130	Mảng vỏ thân Wick	Vật manh mối	Xác Seed Station Wick	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Giữa, Sau MVP
-131	Sổ trực Lantern	Vật manh mối	Station Lantern	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Giữa, Sau MVP
-132	Bản Lodestar Survey treo tường ở Lantern	Vật manh mối	Station Lantern	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Giữa, Sau MVP
-133	Bản ghi chuyển tin The Lattice và sổ hải trình	Vật manh mối	Veyl Waypost	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
-134	Lời tuyên bố khu bảo hộ	Vật manh mối	Veyl Waypost, khu Waypost Concourse	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
-135	Xác máy thu hoạch	Vật manh mối	The Raft, kho của Elias	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Xa, Sau MVP
+129	Bản tin trong máy liên lạc Cinder	Vật manh mối	Máy liên lạc xác Seed Station Cinder	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Vành đai ngoài, MVP
+130	Mảng vỏ thân Wick	Vật manh mối	Xác Seed Station Wick	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Vành đai trong, Sau MVP
+131	Sổ trực Lantern	Vật manh mối	Station Lantern	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Vành đai trong, Sau MVP
+132	Bản Lodestar Survey treo tường ở Lantern	Vật manh mối	Station Lantern	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Vành đai trong, Sau MVP
+133	Bản ghi chuyển tin The Lattice và sổ hải trình	Vật manh mối	Veyl Waypost	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Vùng trung tâm, Sau MVP
+134	Lời tuyên bố khu bảo hộ	Vật manh mối	Veyl Waypost, khu Waypost Concourse	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Vùng trung tâm, Sau MVP
+135	Xác máy thu hoạch	Vật manh mối	The Raft, kho của Elias	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Vùng trung tâm, Sau MVP
 136	Vết vũ khí trên vỏ Cradle	Vật manh mối	Bên trong và vỏ Cradle	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
 137	Hiến chương định cư United Accord	Vật manh mối	Bên trong Cradle	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
 138	Bản gốc Lodestar Survey	Vật manh mối	Bên trong Cradle	Tự ghi vào Sổ tay, mở cảnh truyện, không chiếm túi	Đặc biệt, Khối 0, Cradle, Sau MVP
-139	Mẫu mang dấu săn bắt Wardens	Vật nhiệm vụ	Station Flint (chương 3)	Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife	Đặc biệt, Khối 1, Xa, Sau MVP
+139	Mẫu mang dấu săn bắt Wardens	Vật nhiệm vụ	Station Flint (chương 3)	Nộp ở phòng nghiên cứu (Nhà sinh học), không tiêu vật, vào kho, mở cú lật Driftlife	Đặc biệt, Khối 1, Vùng trung tâm, Sau MVP
 140	Hộp ghi hành trình Cradle	Vật nhiệm vụ	Cradle Interior (chương 4)	Ghép Lõi dẫn hướng rời bãi vỡ, Nộp ở khoang dẫn đường	Đặc biệt, Khối 1, Cradle, Sau MVP. Ghép Lõi dẫn hướng rời bãi vỡ (bị tiêu ở đó, sau cảnh Sevra trao tọa độ thật). Nộp ở khoang dẫn đường: không tiêu vật, vào kho, mở cảnh truyện. Loại dữ liệu, sao được thành Bản sao dữ liệu
 141	Bản đồ sao thật	Vật nhiệm vụ	Data Core ở Warden Rig, mở sau boss Daskel (chương 5). Không rơi từ Daskel. Tọa độ hành tinh thật do Sevra trao là cảnh truyện, không có ID vật phẩm	Ghép Lõi dẫn hướng rời bãi vỡ (bị tiêu ở đó, sau cảnh Sevra trao tọa độ thật). Nộp ở khoang dẫn đường, không tiêu vật, vào kho	Đặc biệt, Khối 1, Cradle, Sau MVP
-142	Gói tin mật	Vật nhiệm vụ	Nhận ở khoang liên lạc từ mạng lưới, tối đa 1 gói mỗi ngày kể từ khi mốc nối tình báo mở (chương 4 đến 5). Không mua bán	Đóng kiện tin mật (bị tiêu khi đóng kiện). Mất khi rời phiên thì về lại khoang liên lạc	Đặc biệt, Khối 1, Xa, Sau MVP
+142	Gói tin mật	Vật nhiệm vụ	Nhận ở khoang liên lạc từ mạng lưới, tối đa 1 gói mỗi ngày kể từ khi mốc nối tình báo mở (chương 4 đến 5). Không mua bán	Đóng kiện tin mật (bị tiêu khi đóng kiện). Mất khi rời phiên thì về lại khoang liên lạc	Đặc biệt, Khối 1, Vùng trung tâm, Sau MVP
 143	Lệnh phục kích Cradle mang dấu Daskel	Vật manh mối	Data Core ở Warden Rig, cùng chỗ Bản đồ sao thật, mở sau boss Daskel (chương 5). Không rơi từ Daskel	Tự ghi vào Sổ tay, mở cảnh truyện. Không sao thành Bản sao dữ liệu (Sao bản dữ liệu chỉ sao Nhật ký trạm và Hộp ghi hành trình Cradle)	Đặc biệt, Khối 0, Cradle, Sau MVP
-144	Thẻ tên buồng ngủ đông	Vật manh mối	Xác Seed Station, mỗi buồng đã tắt một thẻ	Tự ghi vào Sổ tay, hiện trên tường khoang buồng ngủ đông (đổi hình trạm), không có công dụng chơi	Đặc biệt, Khối 0, Gần, Sau MVP
-145	Kén thoát hiểm của Ilsume	Vật kéo	Map nhánh Veyl Waypost, khu Waypost Outer Ring, cứu Sevra ở cuối chương 3	Kéo tới The Hearth ở Veyl Waypost	Đặc biệt, Khối kéo, Xa, Sau MVP. Đưa về trạm qua cửa khí, sau đó kéo tới The Hearth ở Veyl Waypost. Không mở người vớt hay tính năng. Kén rơi thì nằm lại chỗ thả, lưu ở beacon cố định gần nhất đã qua (chưa qua beacon nào thì ở cửa Veyl Waypost), ngoài luật Ngất và bị kéo về
-146	Buồng ngủ đông (có người)	Vật kéo	Map nhánh xác Seed Station, người vớt	Đưa về trạm, mở người vớt và tính năng	Đặc biệt, Khối kéo, Gần, MVP
+144	Thẻ tên buồng ngủ đông	Vật manh mối	Xác Seed Station, mỗi buồng đã tắt một thẻ	Tự ghi vào Sổ tay, hiện trên tường khoang buồng ngủ đông (đổi hình trạm), không có công dụng chơi	Đặc biệt, Khối 0, Vành đai ngoài, Sau MVP
+145	Kén thoát hiểm của Ilsume	Vật kéo	Map nhánh Veyl Waypost, khu Waypost Outer Ring, cứu Sevra ở cuối chương 3	Kéo tới The Hearth ở Veyl Waypost	Đặc biệt, Khối kéo, Vùng trung tâm, Sau MVP. Đưa về trạm qua cửa khí, sau đó kéo tới The Hearth ở Veyl Waypost. Không mở người vớt hay tính năng. Kén rơi thì nằm lại chỗ thả, lưu ở beacon cố định gần nhất đã qua (chưa qua beacon nào thì ở cửa Veyl Waypost), ngoài luật Ngất và bị kéo về
+146	Buồng ngủ đông (có người)	Vật kéo	Map nhánh xác Seed Station, người vớt	Đưa về trạm, mở người vớt và tính năng	Đặc biệt, Khối kéo, Vành đai ngoài, MVP
 147	Dụng cụ khai thác	Dụng cụ (Khai thác)	Khởi đầu	Không tiêu, chọn mang theo ở trạm	Khoan khoáng và băng (độ cứng 1 đến 3), nạy hòm (cấp khóa 1 đến 3). Bậc thấp hơn độ cứng hoặc cấp khóa thì chậm gấp 4. MVP
 148	Lao từ	Dụng cụ (Hạ)	Khởi đầu	Không tiêu, chọn mang theo ở trạm	Đòn tầm xa dùng cooldown. Chỉ số theo bậc ở tab Enemy. MVP
 149	Dùi xung	Dụng cụ (Choáng)	Quest Kỹ sư, Chế Dùi xung	Không tiêu, chọn mang theo ở trạm	Làm choáng cận chiến, dùng cooldown. Chỉ số ở tab Enemy. MVP

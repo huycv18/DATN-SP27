@@ -2,7 +2,7 @@
   "_ghi_chu": "Tham số sim chuyến. Mỗi khóa có _nguon. Số có [GIẢ ĐỊNH] là gd-tech tự đặt vì GDD chưa có, sim in lại ở đầu kết quả. Bảng điểm khai thác SLV đọc thẳng từ gdd/he-thong/vat-pham.md khối <!--B:NODE-->, không chép ở đây.",
   "dai": {
     "_nguon": "map.md 3.1 (số cột 4, 6, 8, mảnh 40 x 24 u, 3 hàng, ranh 160, 400, 720), 3.3 (khe theo loại mảnh), 3.5 (DMG hazard), 3.6 (tỉ lệ kích hoạt, hazard, beacon)",
-    "Gần": {
+    "Vành đai ngoài": {
       "tu": 0,
       "cot": 4,
       "rR": 0.4,
@@ -14,7 +14,7 @@
       "dmgDrift": 10,
       "envCap": 0
     },
-    "Giữa": {
+    "Vành đai trong": {
       "tu": 160,
       "cot": 6,
       "rR": 0.38,
@@ -26,7 +26,7 @@
       "dmgDrift": 13,
       "envCap": 1
     },
-    "Xa": {
+    "Vùng trung tâm": {
       "tu": 400,
       "cot": 8,
       "rR": 0.35,
@@ -38,7 +38,7 @@
       "dmgDrift": 17,
       "envCap": 2
     },
-    "_dmg_nguon": "dmgHazard: trung bình DMG hazard của dải ở map.md 3.5 (Gần H01 8, H02 12. Giữa thêm H04 10, H05 6. Xa H07 20, H09 25 làm tròn). dmgDrift: trung bình DMG đòn loài chủ động của dải ở combat-driftlife.md 3.4. phanTanCong: số loài chủ động trên tổng loài, map.md 3.6"
+    "_dmg_nguon": "dmgHazard: trung bình DMG hazard của dải ở map.md 3.5 (Vành đai ngoài H01 8, H02 12. Vành đai trong thêm H04 10, H05 6. Vùng trung tâm H07 20, H09 25 làm tròn). dmgDrift: trung bình DMG đòn loài chủ động của dải ở combat-driftlife.md 3.4. phanTanCong: số loài chủ động trên tổng loài, map.md 3.6"
   },
   "manh": {
     "_nguon": "map.md 3.3 (khe SP-R, SP-D, tỉ lệ trong kho, Thưởng chỉ nửa ngoài dải) và bảng SLV cho phép theo loại mảnh",
@@ -47,16 +47,16 @@
       "spR": 8,
       "spD": 2,
       "slv": {
-        "Gần": [
+        "Vành đai ngoài": [
           "SLV-101",
           "SLV-102",
           "SLV-103"
         ],
-        "Giữa": [
+        "Vành đai trong": [
           "SLV-201",
           "SLV-202"
         ],
-        "Xa": [
+        "Vùng trung tâm": [
           "SLV-301",
           "SLV-302"
         ]
@@ -67,14 +67,14 @@
       "spR": 3,
       "spD": 1,
       "slv": {
-        "Gần": [
+        "Vành đai ngoài": [
           "SLV-101",
           "SLV-104"
         ],
-        "Giữa": [
+        "Vành đai trong": [
           "SLV-204"
         ],
-        "Xa": [
+        "Vùng trung tâm": [
           "SLV-301"
         ]
       }
@@ -84,14 +84,14 @@
       "spR": 4,
       "spD": 4,
       "slv": {
-        "Gần": [
+        "Vành đai ngoài": [
           "SLV-101",
           "SLV-102"
         ],
-        "Giữa": [
+        "Vành đai trong": [
           "SLV-201"
         ],
-        "Xa": [
+        "Vùng trung tâm": [
           "SLV-302"
         ]
       }
@@ -101,15 +101,15 @@
       "spR": 10,
       "spD": 1,
       "slv": {
-        "Gần": [
+        "Vành đai ngoài": [
           "SLV-104",
           "SLV-105"
         ],
-        "Giữa": [
+        "Vành đai trong": [
           "SLV-203",
           "SLV-204"
         ],
-        "Xa": [
+        "Vùng trung tâm": [
           "SLV-303"
         ]
       }
@@ -119,20 +119,20 @@
       "spR": 6,
       "spD": 2,
       "slv": {
-        "Gần": [
+        "Vành đai ngoài": [
           "SLV-101",
           "SLV-102",
           "SLV-103",
           "SLV-104",
           "SLV-105"
         ],
-        "Giữa": [
+        "Vành đai trong": [
           "SLV-201",
           "SLV-202",
           "SLV-203",
           "SLV-204"
         ],
-        "Xa": [
+        "Vùng trung tâm": [
           "SLV-301",
           "SLV-302",
           "SLV-303"
@@ -154,7 +154,7 @@
     "1": {
       "binh": 330,
       "vmax": 6.0,
-      "dai": "Gần",
+      "dai": "Vành đai ngoài",
       "tui": 80,
       "dungCu": 1,
       "nhanh": true
@@ -162,28 +162,28 @@
     "2": {
       "binh": 450,
       "vmax": 6.5,
-      "dai": "Giữa",
+      "dai": "Vành đai trong",
       "tui": 100,
       "dungCu": 2
     },
     "3": {
       "binh": 600,
       "vmax": 7.0,
-      "dai": "Xa",
+      "dai": "Vùng trung tâm",
       "tui": 126,
       "dungCu": 3
     },
     "4": {
       "binh": 780,
       "vmax": 7.5,
-      "dai": "Xa",
+      "dai": "Vùng trung tâm",
       "tui": 168,
       "dungCu": 3
     },
     "5": {
       "binh": 1000,
       "vmax": 7.5,
-      "dai": "Xa",
+      "dai": "Vùng trung tâm",
       "tui": 216,
       "dungCu": 3
     }

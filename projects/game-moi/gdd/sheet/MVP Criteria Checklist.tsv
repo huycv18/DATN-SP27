@@ -49,14 +49,14 @@ STT	Feature/Metric	Category	Acceptance Criteria	Status	Actual Result	Notes
 48	Chất lượng mẫu	Combat	70% là 3 sao, 30% là 2 sao, dưới 30% là 1 sao. Kết nhanh cho 2 sao	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
 49	Ghim lồng	Combat	Bị kéo về thì giữ 1 con sao cao nhất	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
 50	Bắt sống giá trị hơn hạ	Kinh tế	Giá trị mẫu sống sau trừ vật tiêu hao chia giá trị hạ nằm trong 1,2 đến 2. Ròng mỗi phút từ 1,0, cỡ M không quá 1,6 (sim bắt sống)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
-51	Loài và boss MVP	Phạm vi	4 loài dải Gần (Arc Eel chỉ hạ) và boss Scrapmaw. Không xuất hiện thứ Sau MVP	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
+51	Loài và boss MVP	Phạm vi	4 loài Vành đai ngoài (Arc Eel chỉ hạ) và boss Scrapmaw. Không xuất hiện thứ Sau MVP	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
 52	Boss Scrapmaw chơi một mình	Combat	Thắng được một mình bằng hạ và Xua đi trong 1 đến 2 phút. Cửa không khóa, rút lui qua beacon trong phòng, boss hồi đầy khi phòng trống quá 10 giây. Cần sim boss chạy lại	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
 53	Co-op chia hệ số	Co-op	Sinh lực và ngưỡng Driftlife chia theo số người, boss tăng 1 + 0,6 x (số người - 1). Gánh mỗi người kiểu chia là 1,00. Kiểu dồn chỉ để biết, không đặt mục tiêu	FALSE	Chưa chấm, chưa có build	Nhãn: MVP (2 người). Cách kiểm: Máy. Nguồn: combat-driftlife.md
 54	Né đòn trong prototype	Hit feel	Prototype bay phím T: người mới né đòn hẹp 0,7 giây và vùng 2,5 u báo trước 1,0 giây ít nhất 70% sau 3 lần thử	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: combat-driftlife.md
 55	Cổng kiểm vật phẩm	Dữ liệu	Script vat-pham.mjs thoát mã 0, 0 lỗi. Hiện đạt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 56	Nguồn nhận và nguồn tiêu	Kinh tế	Mọi vật phẩm nhãn MVP có nguồn nhận và nguồn tiêu nhãn MVP (script)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 57	Công thức dùng vật phẩm có thật	Dữ liệu	Mọi đầu vào công thức đều có trong ITEM LIST (script)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
-58	Tài nguyên riêng mỗi dải	Dữ liệu	Mỗi dải có ít nhất 2 tài nguyên riêng. Gần 6, Giữa 4, Xa 5 cộng Cradle 1	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+58	Tài nguyên riêng mỗi dải	Dữ liệu	Mỗi dải có ít nhất 2 tài nguyên riêng. Vành đai ngoài 6, Vành đai trong 4, Vùng trung tâm 5 cộng Cradle 1	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 59	Biên lợi công thức	Cân bằng	Hệ số lợi nằm trong khoảng cho phép. Đạt trừ công thức Lồng cỡ M (0,24, loại hàng sống không có kiểm)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 60	Mẫu sống trên hạ	Cân bằng	Mẫu sống chia hạ từ 1,2 đến 2,0 cho cỡ S và M. Sinh thiết cỡ L đứng ngoài luật này	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 61	Không ghi giá Tally trong tab vật phẩm	Quy tắc	Chữ "Tally" chỉ xuất hiện ở phần thuộc kinh tế	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
@@ -68,7 +68,7 @@ STT	Feature/Metric	Category	Acceptance Criteria	Status	Actual Result	Notes
 67	Chuyến dùng đủ khoan, nạy, hạ	Nhịp	Trên 90% chuyến chương 1 dùng cả khoan, nạy, hạ (sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 68	Kiện tinh trên kiện thô	Cân bằng	Kiện tinh chia kiện thô trên 50% sau chương 1 khi đủ nguyên liệu (sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 69	Hiểu vì sao đồ đáng nhặt	Trải nghiệm	Người chơi hiểu vì sao đồ đáng nhặt và bỏ gì khi túi đầy (cần build, ghi lại khi playtest)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Build hoặc playtest. Nguồn: vat-pham.md
-70	Sinh bố cục dải Gần	Kỹ thuật	1000 chuyến liền nhau: 100% hợp lệ, dưới 1% dùng bố cục dự phòng. Đo được 0,00% ở 3 seed	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
+70	Sinh bố cục Vành đai ngoài	Kỹ thuật	1000 chuyến liền nhau: 100% hợp lệ, dưới 1% dùng bố cục dự phòng. Đo được 0,00% ở 3 seed	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
 71	Đa dạng bố cục	Kỹ thuật	Hai chuyến liền nhau: không quá 5 trên 10 ô ghép cùng mảnh cùng ô, không beacon cùng ô. Đo được lớn nhất 5, beacon trùng 0%	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
 72	Thời lượng chuyến chương 1 (map)	Cân bằng	Trung vị 4 đến 6 phút. Đo được 4,4	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md
 73	Tỉ lệ bị kéo về (map)	Cân bằng	Cẩn thận dưới 5%, tham 15 đến 40%. Cẩn thận đạt, tham chưa đạt	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: map.md

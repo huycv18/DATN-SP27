@@ -36,7 +36,7 @@ GAME VISION & CONCEPT	"- Vision: tự tay kéo một trạm chết sống lại 
 CORE PILLARS	Five Core Pillars theo Dave the Diver, game bám đúng năm pillar này. Mỗi tính năng phải phục vụ ít nhất một pillar và không phạm cột Cấm. Khi hai pillar xung đột, ưu tiên theo thứ tự 1 đến 5. Bản đủ: 00-khung-game.md mục 2. Tab CORE LOOP ghi chặng nào của vòng chơi gánh pillar nào
 Pillar	Mô tả	Player Experience	Giữ bằng luật và cách đo	Cấm
 "1. Exploration & Discovery
-Khám phá"	Khuyến khích người chơi khám phá bãi vỡ của tàu mẹ Cradle: ba dải Gần, Giữa, Xa, các map nhánh, loài Driftlife mới, tài nguyên hiếm, xác các trạm con, người còn sống để vớt và những điều bất ngờ. Mỗi chuyến bố cục đổi khác, mỗi chương mở vùng mới	Curiosity, Wonder, Discovery	"Luật: map tổng sinh lại mỗi chuyến, dải mở theo chương, map nhánh dựng tay giữ người vớt, vật manh mối, boss
+Khám phá"	Khuyến khích người chơi khám phá bãi vỡ của tàu mẹ Cradle: ba vùng Vành đai ngoài, Vành đai trong, Vùng trung tâm, các map nhánh, loài Driftlife mới, tài nguyên hiếm, xác các trạm con, người còn sống để vớt và những điều bất ngờ. Mỗi chuyến bố cục đổi khác, mỗi chương mở vùng mới	Curiosity, Wonder, Discovery	"Luật: map tổng sinh lại mỗi chuyến, dải mở theo chương, map nhánh dựng tay giữ người vớt, vật manh mối, boss
 Đo: mỗi dải có ít nhất 2 tài nguyên chỉ dải đó có. Mỗi chương mở ít nhất 1 vùng hoặc map nhánh mới"	Map cố định lặp lại y hệt. Nội dung một lần nằm ở chỗ sinh lại ngẫu nhiên. Vùng mới chỉ khác màu mà không có thứ mới
 "2. Risk & Reward
 Rủi ro và phần thưởng"	"Người chơi phải cân nhắc lượng Oxy, sức chứa túi đồ, Driftlife nguy hiểm và thời điểm quay về. Oxy vừa là thời gian vừa là máu. Đi càng xa càng có phần thưởng giá trị nhưng rủi ro cũng cao hơn. Lựa chọn luôn có thông tin để tính (vạch ""đủ về"", cảnh báo theo phần trăm)"	Tension, Challenge, Satisfaction	"Luật: Oxy là chỉ số duy nhất, hết Oxy chỉ giữ 1 món, túi đồ có giới hạn, Recall Beacon, bắt sống giá trị hơn hạ, tối đa 2 chuyến mỗi ngày, Oxy hồi từ vật tiêu hao tối đa 25%, đang ngạt không trao đồ
@@ -71,7 +71,7 @@ ART DIRECTION	"- Phong cách: 2D vector, nhìn ngang ở mọi nơi (Lead chốt
 
 PROJECT SCOPE	"- Nhóm: 1 Game Designer, 4 Game Developer, 1 Artist 2D. Unity, PC, co-op online 2 đến 4 người
 - Cả game: 5 chương, 3 dải map tổng, 8 map nhánh, 15 loài Driftlife, 4 đơn vị The Wardens, 5 boss, khoảng 150 vật phẩm, 5 người vớt, 5 thương nhân, 12 đến 15 giờ chơi một mình
-- MVP: trọn chương 1. Dải Gần, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến 3 cửa neo, có 1 loại hàng phải chế trước giờ giao thương và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Khoảng 1,5 đến 2 giờ chơi
+- MVP: trọn chương 1. Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến 3 cửa neo, có 1 loại hàng phải chế trước giờ giao thương và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Dài 1,5 đến 2 giờ
 - Ngoài phạm vi: PvP, chơi chung một máy, tiền thứ hai, XP, sinh map thủ tục hoàn toàn, chọn chặng trên bản đồ, vùng chơi trên hành tinh Sennar hay hành tinh đích
 - Mốc thời gian: chưa có, chờ Lead. Phạm vi art tính lại khi có mốc
 - Chi tiết: tab TRACKING, MVP Criteria Checklist"

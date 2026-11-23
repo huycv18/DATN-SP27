@@ -1,11 +1,11 @@
-"""Trình xem và kiểm bố cục dải Gần (GD-026 mục 2.9 và 6.3.1, gd-world). Bản tham chiếu cho dev dựng bộ sinh thật.
+"""Trình xem và kiểm bố cục Vành đai ngoài (GD-026 mục 2.9 và 6.3.1, gd-world). Bản tham chiếu cho dev dựng bộ sinh thật.
 
 Chạy: python -X utf8 projects/game-moi/sim/bo_cuc.py [--seed 1] [--lan 1000] [--xem 3]
 Ghi `bo-cuc.md` cạnh file này: tỉ lệ hợp lệ, tỉ lệ rơi bố cục dự phòng, trùng mảnh, beacon đổi ô.
 Định nghĩa dùng (khớp map.md):
 - Ô là (cột, hàng), cột 1 đến 4 từ trái sang phải, hàng 1 dưới, 2 giữa, 3 trên.
 - Cổng ghi Trái, Phải, Trên, Dưới. Cạnh chạm biên map không tính.
-- Nửa ngoài là cột lớn hơn nửa số cột (Gần: cột 3, 4). Mảnh cờ "Có" chỉ đặt ở nửa ngoài, cờ "Không" đặt mọi cột.
+- Nửa ngoài là cột lớn hơn nửa số cột (Vành đai ngoài: cột 3, 4). Mảnh cờ "Có" chỉ đặt ở nửa ngoài, cờ "Không" đặt mọi cột.
 - Trùng mảnh: cùng mảnh ở cùng ô với chuyến trước, chỉ tính ô ghép.
 """
 import random
@@ -203,7 +203,7 @@ def main():
             mau.append(ve(kq))
         truoc = kq
     cap = lan - 1
-    out = [f"# Bố cục dải Gần (sinh bởi bo_cuc.py, seed {seed}, {lan} chuyến liền nhau)", "",
+    out = [f"# Bố cục Vành đai ngoài (sinh bởi bo_cuc.py, seed {seed}, {lan} chuyến liền nhau)", "",
            "| Chỉ số | Kết quả | Tiêu chí (map.md mục 8) |", "|---|---|---|",
            f"| Hợp lệ ngay lần thử đầu | {vn(lan_dau / lan * 100)}% | |",
            f"| Rơi bố cục dự phòng (quá {THU_LAI} lần thử) | {vn(du_phong / lan * 100, 2)}% | dưới 1% |",

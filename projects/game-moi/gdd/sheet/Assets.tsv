@@ -31,7 +31,7 @@ STT	Asset Name	Link	Note
 30	[MVP] VFX nhặt vật, khai thác điểm (thanh tiến độ, tia khoan, mảnh vụn), cổng mềm, túi đầy		Nguồn: vat-pham.md mục 7
 31	[MVP] Hoạt ảnh xưởng chế (máy ép, lò, hàng đợi) và Thông dịch viên đóng thùng lúc Mở giao thương (hộp gấp lại)		Nguồn: vat-pham.md mục 7
 32	[MVP] Bộ đồ đổi hình theo trục nâng cấp và trạm đổi hình khi sửa xong khoang		Nguồn: vat-pham.md và kinh-te-tien-trinh.md mục 7
-33	[MVP] Kit map tổng dải Gần: khối vỏ tàu, thiên thạch, băng, mây khí (một kit dùng chung cho các mảnh)		Nguồn: map.md mục 7. Mối nối che bằng vật trôi và mảnh vỡ
+33	[MVP] Kit map tổng Vành đai ngoài: khối vỏ tàu, thiên thạch, băng, mây khí (một kit dùng chung cho các mảnh)		Nguồn: map.md mục 7. Mối nối che bằng vật trôi và mảnh vỡ
 34	[MVP] Kit nội thất xác Seed Station (Station Cinder, dùng chung các xác)		Nguồn: map.md mục 7
 35	[MVP] Mốc cố định: silhouette lớn, đèn nháy riêng của mỗi xác		Nguồn: map.md mục 7
 36	[MVP] Hazard Mảnh trôi, Cáp chập, Ống xì kèm báo trước và chỉ báo mép màn hình		Nguồn: map.md mục 7. MVP cho 3 hazard này
@@ -67,14 +67,14 @@ STT	Asset Name	Link	Note
 66	[Sau MVP] Mảnh bộ đồ còn lại: bình bậc 2 đến 4, vỏ cấp 1 đến 3, bộ đẩy bậc 2 đến 3, túi bậc 2 đến 4, đai 3 ô		Nguồn: ho-so-nhan-vat.md mục 7
 67	[Sau MVP] Clip bước xuống từ xuồng hoặc Skiff (Amara, Yusuf)		Nguồn: ho-so-nhan-vat.md mục 7
 68	[Sau MVP] Rig trẻ em (Wren)		Nguồn: ho-so-nhan-vat.md mục 7
-69	[Sau MVP] Driftlife dải Gần còn lại: Latchjaw		Nguồn: combat-driftlife.md mục 7
-70	[Sau MVP] Driftlife dải Giữa: Shepherd Whale, Lumen Jelly, Orebiter, Needlefin, Gulper		Nguồn: combat-driftlife.md mục 7
-71	[Sau MVP] Driftlife dải Xa: Prism Wisp, Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling		Nguồn: combat-driftlife.md mục 7
+69	[Sau MVP] Driftlife Vành đai ngoài còn lại: Latchjaw		Nguồn: combat-driftlife.md mục 7
+70	[Sau MVP] Driftlife Vành đai trong: Shepherd Whale, Lumen Jelly, Orebiter, Needlefin, Gulper		Nguồn: combat-driftlife.md mục 7
+71	[Sau MVP] Driftlife Vùng trung tâm: Prism Wisp, Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling		Nguồn: combat-driftlife.md mục 7
 72	[Sau MVP] The Wardens: Warden Harvester, Warden Lancer, Warden Snarer, Warden Collector		Nguồn: combat-driftlife.md mục 7
 73	[Sau MVP] Boss Tempest Gulper, Warden Reaper, Cradle Custodian, Daskel		Nguồn: combat-driftlife.md mục 7
 74	[Sau MVP] VFX ngủ, Phao kéo bay về		Nguồn: combat-driftlife.md mục 7
 75	[Sau MVP] VFX bị lưới The Wardens trói và dấu săn bắt của quân The Wardens (vết cắt máy trên cá thể)		Nguồn: combat-driftlife.md mục 7
-76	[Sau MVP] Kit map tổng dải Giữa và dải Xa		Nguồn: map.md mục 7
+76	[Sau MVP] Kit map tổng Vành đai trong và Vùng trung tâm		Nguồn: map.md mục 7
 77	[Sau MVP] Map nhánh Station Lantern, Station Flint, bên trong Cradle, Warden Rig		Nguồn: map.md mục 7, combat-driftlife.md
 78	[Sau MVP] Hazard Dòng đá vụn, Băng nứt, Dòng trôi, Bùng tinh vân, Vùng nhiễu, Hàng rào cắt		Nguồn: map.md mục 7
 79	[Sau MVP] Viền màn hình và cảnh báo vào dải thiếu cấp bộ đồ		Nguồn: map.md mục 7
@@ -86,7 +86,7 @@ STT	Asset Name	Link	Note
 85	[Sau MVP] Hoạt ảnh học bản thiết kế (bản vẽ mở ra, dụng cụ mới hiện)		Nguồn: vat-pham.md mục 7
 86	[Sau MVP] Cảnh truyện: cú lật Driftlife (ảnh thẻ và vết cắt mô)		Nguồn: cot-truyen.md mục 7
 87	[Sau MVP] Cảnh cuộc bắt cóc ở Veyl Waypost (tàu của Ilsume bị áp mạn, kén thoát hiểm bị kéo đi, Maro lộ mặt qua radio) và cảnh Sevra gỡ mạng che khi kén về Ember		Nguồn: cot-truyen.md mục 7
-88	[Sau MVP] Cảnh vào dải Giữa và dải Xa lần đầu (trạm đèn sáng, bóng cỗ máy lớn)		Nguồn: cot-truyen.md mục 7
+88	[Sau MVP] Cảnh vào Vành đai trong và Vùng trung tâm lần đầu (trạm đèn sáng, bóng cỗ máy lớn)		Nguồn: cot-truyen.md mục 7
 89	[Sau MVP] Cảnh Cryo Deck của Cradle và cảnh không có gì ở đó (khoang dẫn đường, chỗ Solace trống)		Nguồn: cot-truyen.md mục 7
 90	[Sau MVP] Cảnh rời neo và cảnh ngoài bãi vỡ (bầu trời sao sạch), màn hình tên game		Nguồn: cot-truyen.md mục 7
 91	[Sau MVP] Sevra Ilvane trạng thái bỏ mạng (lớp phủ thứ hai trên rig của Ilsume, huy hiệu nhà Ilvane, 5 biểu cảm)		Nguồn: ho-so-nhan-vat.md mục 7

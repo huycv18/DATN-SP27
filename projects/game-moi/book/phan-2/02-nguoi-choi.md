@@ -123,7 +123,7 @@ Ngay khi vào Ngạt, túi đồ mở ở chế độ chọn món ghim. Món ghi
 
 Có ba lối ra khỏi Ngạt:
 - **Được cứu**: một đồng đội trong 1,5 u giữ phím Chia Oxy, chuyển 10 điểm mỗi giây. Đồng hồ ngạt tạm dừng trong lúc đang được chia. Người ngạt đạt 30 điểm thì sang Được cứu, có 2 giây miễn sát thương rồi bay lại. Người cho không xuống dưới 20 điểm.
-- **Tự thoát**: chạm cửa khí trong 12 giây thì tính là kết thúc chuyến bằng cửa khí, túi giữ nguyên. Ở tốc độ ngạt 2,4 u/s chỉ khả thi ở dải Gần. Recall Beacon cần kênh 5 giây nên không dùng được khi ngạt.
+- **Tự thoát**: chạm cửa khí trong 12 giây thì tính là kết thúc chuyến bằng cửa khí, túi giữ nguyên. Ở tốc độ ngạt 2,4 u/s chỉ khả thi ở Vành đai ngoài. Recall Beacon cần kênh 5 giây nên không dùng được khi ngạt.
 - **Bị kéo về**: hết 12 giây không ai cứu và chưa về. Nhân vật về buồng cửa khí. Túi chỉ giữ đúng 1 món ghim, phần còn lại biến mất, không rơi ra map. Dụng cụ trên đai và Tally không mất.
 
 Món ghim là một đơn vị vật phẩm, một lồng mẫu đang kéo hoặc một vật nhiệm vụ. Ghim lồng mẫu thì chỉ giữ con có sao cao nhất trong lồng. Vật nhiệm vụ không ghim thì trở về vị trí gốc để lấy lại ở chuyến sau. Vật manh mối ghi thẳng vào Sổ tay nên không bao giờ mất.
@@ -292,7 +292,7 @@ Chi tiết dữ liệu: tab Player, khối Co-op, tab MVP Criteria Checklist.
 
 ### II.2.z. Post-MVP
 
-- Vỏ bộ đồ cấp 1 tới 3, mở theo dải Giữa, Xa và các khu cuối.
+- Vỏ bộ đồ cấp 1 tới 3, mở theo Vành đai trong, Vùng trung tâm và các khu cuối.
 - Bình Oxy bậc 2 tới 4, Bộ đẩy bậc 2 tới 3, Túi bậc 2 tới 4, Đai dụng cụ bậc 2, với số ở Sheet.
 - Lớp vật kéo Vừa, chờ vật cỡ lớn ở bản sau.
 - Co-op 3 và 4 người, kéo chung hệ số 0,80 và 0,95.
