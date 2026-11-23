@@ -153,7 +153,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
   const maxW = [1, 1, 1, 1];
   S.forEach((s) => { maxW[s.lv] = Math.max(maxW[s.lv], s.w); });
   S.forEach((s) => { s.imp = s.lv === 0 ? 1 : Math.pow(Math.min(1, s.w / maxW[s.lv]), 0.8); });
-  const RANGE = [[46, 46], [26, 48], [2.4, 13], [1.4, 6.5]];
+  const RANGE = [[46, 46], [26, 48], [4.5, 17], [2.8, 9]];
   S.forEach((s) => { const [a, b] = RANGE[s.lv]; s.r = s.lv === 0 ? a : a + (b - a) * s.imp; s.lum = s.lv <= 1 ? 1 : 0.45 + 0.55 * s.imp; });
 
   // bố cục kiểu bầu trời thật: hệ thống nằm lệch ngẫu nhiên quanh lõi, sao con rải lộn xộn,
@@ -279,7 +279,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outl
       const [x, y] = P(s);
       const tw = reduce ? 1 : 0.84 + 0.16 * Math.sin(t * s.sp + s.ph);
       // sao chính giữ cỡ tối thiểu trên màn hình để luôn nổi bật cả khi nhìn xa
-      const floor = s.lv === 0 ? 11 / T.k : s.lv === 1 ? (7 + 6 * s.imp) / T.k : minPx;
+      const floor = s.lv === 0 ? 11 / T.k : s.lv === 1 ? (7 + 6 * s.imp) / T.k : s.lv === 2 ? (2.6 + 2 * s.imp) / T.k : (1.8 + 1.2 * s.imp) / T.k;
       const r = Math.max(s.r, floor) * (0.4 + 0.6 * s.v);
       const c = d3.color(tint(s));
       const hl = s.i === sel || s.i === hov;
