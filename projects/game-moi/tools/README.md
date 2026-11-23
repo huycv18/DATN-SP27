@@ -27,5 +27,7 @@ Vai đổi số: sửa GDD hoặc file tham số, chạy lại lệnh sim, đọ
 | `node projects/game-moi/tools/dinh-dang-sheet.mjs <ra.json>` | Sinh lệnh định dạng thân bảng mọi tab (viền, font, wrap, cao dòng, màu tab) theo số hàng TSV. Dán vào `update_spreadsheet` sau khi tab thêm hàng |
 | `node projects/game-moi/tools/doi-chieu-sheet.mjs` | So mọi `gdd/sheet/<Tab>.tsv` với tab cùng tên trên Sheet qua export CSV, in bảng ô lệch và hàng thừa. Thoát 1 khi có tab lệch |
 | `node projects/game-moi/tools/doi-chieu-sheet.mjs --tab "Customer" --ra <file.md>` | Chỉ một tab, ghi kết quả ra file |
+| `python -X utf8 -I projects/game-moi/tools/ban-do-tri-thuc/trich_sao.py` | Sinh lại `ban-do-tri-thuc/sao.json` (cây sao từ 11 GDD, trọng số và liên hệ chéo từ `graphify-out/graph.json`). Chạy sau khi sửa GDD hoặc làm mới graphify |
+| `python -m http.server 8791` trong `ban-do-tri-thuc/`, mở `http://127.0.0.1:8791/` | Xem bản đồ sao ở máy (trang đọc `sao.json` nên không mở thẳng file được). Bản đăng: claude.ai/artifact/4Kji863AvcdJYsxHp9DpMt |
 
 Quy ước cho mọi vai: tên file TSV trùng tên tab, hàng 1 của TSV là header và ứng với hàng 2 của tab (hàng 1 là tiêu đề tab), xuống dòng trong ô ghi `\n`. gid các tab ở `tham-so/sheet.json`. Sheet phải chia sẻ bằng link (đọc không cần đăng nhập), nếu không thì dùng `/gdd-sheet-sync doi-chieu` qua trình duyệt.
