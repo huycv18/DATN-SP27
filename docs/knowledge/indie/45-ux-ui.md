@@ -121,4 +121,4 @@ Trừ khi ghi khác, nguồn đã thấy trong kết quả tìm kiếm ngày 202
 | S22 | IxDF: Hick-Hyman Law (cộng ghi chú về luật Miller) | https://ixdf.org/literature/article/the-hick-hyman-law-an-argument-against-complexity-in-user-interface-design |
 | S23 | Game Developer: UI as gameplay. HUD The Long Dark | https://www.gamedeveloper.com/design/ui-as-gameplay và https://gamedeveloper.com/design/long-dark-survival-game-hud-ui |
 | S24 | Onboarding: Game Wisdom, Game Developer (invisible tutorials), GDevelop (blog) | https://game-wisdom.com/critical/onboarding và https://gamedeveloper.com/design/methods-of-creating-invisible-tutorials và https://gdevelop.io/blog/improve-game-tutorials |
-| S25 | Nội bộ: số FTUE (Supersonic, GameAnalytics 2025) | `docs/knowledge/70-ux-ftue.md` mục 6 |
+| S25 | Nội bộ: số FTUE (Supersonic, GameAnalytics 2025) | Tri thức Puzzle cũ, đã xóa 2026-11-23 |

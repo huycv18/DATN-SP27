@@ -1,6 +1,6 @@
 # Playbook gd-character (indie PC, Space Salvage)
 
-Thay `docs/playbooks/gd-systems.md` làm tài liệu nghề của vai. Chỉ lấy phương pháp, không áp Puzzle.
+Chỉ lấy phương pháp, không áp Puzzle.
 
 ## 1. Vai và đầu ra chuẩn nghề
 

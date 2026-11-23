@@ -1,6 +1,6 @@
 # Playbook indie - gd-economy (Economy và tiến độ)
 
-Viết 2026-11-19 cho team game indie PC, áp thẳng vào Space Salvage. Thay `docs/playbooks/gd-economy.md` (bản Puzzle mobile: bỏ booster, revive, ads, liveops, A/B, remote config). Phương pháp giữ lại từ bản cũ: số do sim in, `economy_doc.py kiem`, dải nhạy cho tham số hành vi, bất biến kiểm bằng máy.
+Viết 2026-11-19 cho team game indie PC, áp thẳng vào Space Salvage. Phương pháp giữ lại từ bản cũ: số do sim in, `economy_doc.py kiem`, dải nhạy cho tham số hành vi, bất biến kiểm bằng máy.
 
 ## 1. Vai và đầu ra chuẩn nghề
 

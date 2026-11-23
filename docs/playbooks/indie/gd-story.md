@@ -38,7 +38,7 @@
 | Barks: câu ngắn lặp theo trạng thái (chào, đợi lâu, hài lòng, chê) | Khách quán, NPC nói nhiều lần trong ngày | Thực hành chung, xem cách ink gắn câu với điều kiện: github.com/inkle/ink |
 | Điều kiện kích hoạt bằng cờ (flag) và nhịp ngày | Sự kiện truyện theo ngày, gắn core loop | Yarn Spinner docs về variables và conditions: yarnspinner.dev |
 | Nhịp 3 hồi nhỏ trong một ngày (mở, thám hiểm, quán) | Dàn sự kiện truyện trong 1 ngày | Cấu trúc ngày của game tham chiếu, chỉ lấy cấu trúc, ghi trong README dự án |
-| Danh sách 10-12 ứng viên rồi rút theo tiêu chí, kiểm thương hiệu | Đặt tên game, item, quái, món | Quy tắc phòng (playbook `docs/playbooks/gd-ux.md` mục tên) |
+| Danh sách 10-12 ứng viên rồi rút theo tiêu chí, kiểm thương hiệu | Đặt tên game, item, quái, món | Quy tắc phòng (phòng Game Designer) |
 | Strings theo key, tách text khỏi code, chừa chỗ localization | Mọi lời thoại | Tài liệu localization Unity: docs.unity3d.com, gói Localization |
 
 ## 4. Checklist trước khi báo xong

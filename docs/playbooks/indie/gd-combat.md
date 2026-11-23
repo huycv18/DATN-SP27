@@ -1,6 +1,6 @@
 # Playbook - Combat Designer (gd-combat)
 
-Chuẩn nghề Combat Designer ở team indie PC, áp cho Space Salvage. Thay `docs/playbooks/gd-systems.md` (gốc Puzzle, chỉ giữ phương pháp chốt luật ra giấy, hỏi đáp một lượt, luật một bản). Viết 2026-11-19.
+Chuẩn nghề Combat Designer ở team indie PC, áp cho Space Salvage. Viết 2026-11-19.
 
 ## 1. Vai và đầu ra chuẩn nghề
 

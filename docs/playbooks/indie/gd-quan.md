@@ -1,6 +1,6 @@
 # Playbook indie - gd-quan (Restaurant Management Designer)
 
-Viết 2026-11-19 cho Space Salvage (Unity PC, 1 người chơi, offline). Thay `docs/playbooks/gd-systems.md` cho vai này. Từ playbook cũ chỉ giữ: chốt luật ra giấy trước khi code, hỏi đáp một lượt, luật một bản duy nhất, dùng đúng từ của Lead, mỗi luật có tín hiệu nhìn thấy.
+Viết 2026-11-19 cho Space Salvage (Unity PC, 1 người chơi, offline). Từ playbook cũ chỉ giữ: chốt luật ra giấy trước khi code, hỏi đáp một lượt, luật một bản duy nhất, dùng đúng từ của Lead, mỗi luật có tín hiệu nhìn thấy.
 
 ## 1. Vai và đầu ra chuẩn nghề
 

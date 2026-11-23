@@ -1,6 +1,6 @@
 # Playbook indie - gd-ux (UX / UI Designer, Space Salvage)
 
-Thay `docs/playbooks/gd-ux.md` (rút từ Puzzle mobile). Phần phương pháp cũ còn đúng đã gộp vào đây: 5 trạng thái, 3 câu mỗi màn, tab Sheet ngắn. Bỏ hẳn: cảm ứng mobile, 44 px, booster, ads trong onboarding. Ngày soạn 2026-11-19.
+Phần phương pháp cũ còn đúng đã gộp vào đây: 5 trạng thái, 3 câu mỗi màn, tab Sheet ngắn. Bỏ hẳn: cảm ứng mobile, 44 px, booster, ads trong onboarding. Ngày soạn 2026-11-19.
 
 ## 1. Vai và đầu ra chuẩn nghề
 
@@ -35,14 +35,14 @@ Nguồn dưới đây xác minh qua tóm tắt tìm kiếm ngày 2026-11-19, ch�
 
 | Khung | Dùng khi | Nguồn |
 |---|---|---|
-| Màn 3 câu và 5 trạng thái (bình thường, rỗng, đang tải, lỗi, đầy hay giới hạn) | Mọi màn, trước khi giao Dev. Ví dụ rỗng: khoang hàng trống. Đầy: khoang hàng hết ô | Nội bộ `docs/knowledge/70-ux-ftue.md` mục 3 |
+| Màn 3 câu và 5 trạng thái (bình thường, rỗng, đang tải, lỗi, đầy hay giới hạn) | Mọi màn, trước khi giao Dev. Ví dụ rỗng: khoang hàng trống. Đầy: khoang hàng hết ô | Nội bộ |
 | HUD theo mức ưu tiên: thứ quyết định sống chết luôn hiện, thứ còn lại hiện khi cần. Cảnh báo nhấp nháy khi thấp | Thiết kế HUD khi bay (năng lượng bộ đồ, khoang hàng, nhiên liệu khi còn hiển thị) | [UI as gameplay](https://www.gamedeveloper.com/design/ui-as-gameplay), [HUD The Long Dark](https://gamedeveloper.com/design/long-dark-survival-game-hud-ui) |
 | Dạy bằng chơi, mỗi bước một ý mới (kiểu Celeste: mechanic vào từng màn nhỏ, có tình huống thật) | FTUE ngày 1, thiết kế bước dạy cắt, choáng, lưới | [Game Wisdom onboarding](https://game-wisdom.com/critical/onboarding), [Invisible tutorials](https://gamedeveloper.com/design/methods-of-creating-invisible-tutorials) |
 | Nhân vật và lời thoại giải thích hệ thống phức tạp (GDC 2024 Dave the Diver nói về hài và thoại làm bớt nặng hệ thống) | Dạy quán, chế món, nâng cấp. Phối hợp gd-story viết lời | [GDC24 Dave the Diver, Inven](https://www.invenglobal.com/articles/18786/gdc24-blending-humor-and-gameplay-insights-from-dave-the-divers-session) |
 | Game Accessibility Guidelines mức cơ bản: đổi phím, cỡ chữ đọc được, tương phản, không dùng riêng màu để truyền thông tin | Bảng input, chọn font, màu cảnh báo, kiểm trước khi chốt HUD | [Game Accessibility Guidelines, Basic](https://gameaccessibilityguidelines.com/basic/), [Unity: tương phản 4.5:1 chữ thường, 3:1 chữ lớn](https://unity.com/blog/video-game-accessibility-basics) |
 | Game feel của Swink: điều khiển thời gian thực, không gian mô phỏng, polish nhấn vào tương tác | Checklist phản hồi cho cắt, choáng, lưới, phối hợp gd-character và gd-combat | [Tóm tắt Game feel (Swink 2008)](https://www.wikiwand.com/en/articles/Game_feel) |
 | Juice từng lớp một, bật tắt từng lớp để thấy lớp nào đáng giữ (The Art of Screenshake, Vlambeer) | Thêm rung màn, hit stop, âm, hạt cho cắt và lưới, đo giá trị từng lớp | [Video Nijman trong danh sách của Kenney](https://kenney.nl/knowledge-base/learning/must-see-videos-for-indie-developers) |
-| Funnel FTUE: sự kiện mỗi bước, thời gian ở bước, xong hay bỏ | Khi có build, đặt event với gd-tech, tìm bước làm người chơi rơi | Nội bộ `docs/knowledge/70-ux-ftue.md` mục 6 (Supersonic, GameAnalytics 2025) |
+| Funnel FTUE: sự kiện mỗi bước, thời gian ở bước, xong hay bỏ | Khi có build, đặt event với gd-tech, tìm bước làm người chơi rơi | Nội bộ (Supersonic, GameAnalytics 2025) |
 
 ## 4. Checklist trước khi báo xong
 
@@ -70,7 +70,7 @@ Nguồn dưới đây xác minh qua tóm tắt tìm kiếm ngày 2026-11-19, ch�
 | Người chơi không biết còn đủ năng lượng về hay không | Năng lượng vừa là máu vừa là đồng hồ nên một thanh chứa hai ý | HUD có chỉ báo "đủ về" hay "không đủ về" tính theo khoảng cách tới tàu, đã nói ở mục 6 |
 | Khoang hàng đầy mà không báo, nhặt thêm bị mất thông báo | Đầy là trạng thái thứ 5 hay bị quên | Phản hồi khi nhặt thất bại do đầy, phân biệt với nhặt thành công |
 | Tutorial chặn lúc đang bay hay đang đánh | Dạy ngay tại chỗ, quên rằng thao tác thời gian thực | Dạy ở chỗ an toàn, hoặc hạ nhịp, không hiện hộp thoại che màn trong lúc có quái |
-| Dạy quá nhiều ở ngày 1 | Có hai nửa game (khám phá và quán) cần dạy | Mỗi bước một ý, chia ngày 1 thành bay trước rồi quán sau, đo funnel khi có build (ca tham chiếu: 60% rơi trong tutorial game hybrid sim, `docs/knowledge/70-ux-ftue.md` mục 6) |
+| Dạy quá nhiều ở ngày 1 | Có hai nửa game (khám phá và quán) cần dạy | Mỗi bước một ý, chia ngày 1 thành bay trước rồi quán sau, đo funnel khi có build (ca tham chiếu: 60% rơi trong tutorial game hybrid sim) |
 | Ca bán buổi tối quá rối | Nhiều thao tác cùng lúc: chế, phục vụ, thu tiền | Bản đồ thao tác trên một màn, mỗi lúc chỉ một hành động chính, tiến độ khách luôn thấy |
 | Cảnh báo chỉ dùng màu đỏ | Quen tay làm cyberpunk neon | Thêm hình và nhịp nhấp nháy, kiểm bằng mô phỏng mù màu |
 | Feel làm sau cùng | Cho rằng là polish | Đưa feel vào prototype từ đầu, checklist phản hồi đi cùng luật cắt, choáng, lưới |

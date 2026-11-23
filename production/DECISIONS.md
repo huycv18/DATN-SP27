@@ -12,3 +12,12 @@ Mỗi mục: ngày, `phòng`, quyết định, người quyết, lý do, hệ qu
 - 2026-11-19, phòng: Bỏ concept Space Salvage, định nghĩa lại game từ đầu theo từng bước Lead chốt (`projects/game-moi/concept.md`). Người quyết: Huy. Hệ quả: CLAUDE.md mục Game viết lại, slug tạm `game-moi`, agent và playbook còn nhắc Space Salvage phải sửa sau khi concept chốt.
 - 2026-11-20, phòng: Mọi phiên được và phải phản biện Lead và GDM khi thấy vấn đề, không im lặng làm theo (Lead: "Thông nhất cho toàn bộ phiên có thể phản biện và cãi nhau với tôi chứ không im im làm theo"). Người quyết: Huy. Hệ quả: CLAUDE.md nguyên tắc 13, `_shared-protocol.md` luật 12. Vai phản biện trong báo cáo, GDM chuyển tới Lead nguyên ý kèm nhận định của GDM. Lead quyết cuối.
 - 2026-11-20, phòng: Tab dạng STT / Task / Sub Task / Short Description / Ref gộp dọc ô STT, Task, Ref theo từng nhóm (Lead: "Formats thì gộp các ô nhóm đi nhé", "Làm tiếp đi ở các sheet khác nữa"). Áp cho 9 tab: CORE LOOP, Player, Enemy, Salvage, Recipe, Customer, Upgrade, Day, Zone. Người quyết: Huy. Hệ quả: `projects/game-moi/tools/dinh-dang-sheet.mjs` sinh luôn lệnh hủy gộp rồi gộp lại theo TSV. Dán chữ thuần hủy ô gộp nên sau mỗi lần dán tab phải chạy lại tool này.
+
+## 2026-11-23 - Xóa tri thức Puzzle khỏi repo
+
+Lead: "xóa tri thức liên quan tới puzzle game khỏi dự án này, không động chạm tới skill", chốt phạm vi đề xuất.
+
+- Xóa 24 file: kho cũ `docs/knowledge/00` tới `90` và README, 8 playbook Puzzle ở `docs/playbooks/*.md`, 2 mẫu level `ban-giao-level.md`, `mo-hinh-do-kho.md`. Bản cũ còn trong lịch sử git.
+- Giữ `docs/knowledge/95-cach-lead-lam-viec.md` (cách Lead làm việc, không phải Puzzle), `docs/knowledge/indie/`, `docs/playbooks/indie/`.
+- Không đụng `.claude/skills`, `.agents/skills`, `.gd-department`. Skill gốc Puzzle (level-forge, gdd-v05, gdd-v1 sheet) vẫn còn, CLAUDE.md mục "Skill gốc Puzzle, đọc thế nào" ghi cách dùng.
+- Đã gỡ mọi chỗ trỏ tới file đã xóa ở CLAUDE.md, AGENTS.md, docs/org, .claude/agents, kho và playbook indie.

@@ -1,6 +1,6 @@
 # Playbook indie - gd-tech (Technical Designer)
 
-Thay `docs/playbooks/gd-tools.md` (gốc Puzzle) cho Space Salvage. Giữ từ bản cũ: luật một bản, round-trip trùng byte, selftest so mọi đầu ra sinh từ một nguồn, migrate có backup và dry-run, cổng riêng và dừng đúng PID, ghi file bằng Write, nói ra khi tool tự thu hẹp yêu cầu. Bỏ hẳn: solver, sinh level, editor dựng màn, bot chơi màn, bộ 15 level.
+Giữ từ bản cũ: luật một bản, round-trip trùng byte, selftest so mọi đầu ra sinh từ một nguồn, migrate có backup và dry-run, cổng riêng và dừng đúng PID, ghi file bằng Write, nói ra khi tool tự thu hẹp yêu cầu. Bỏ hẳn: solver, sinh level, editor dựng màn, bot chơi màn, bộ 15 level.
 
 ## 1. Vai và đầu ra chuẩn nghề
 

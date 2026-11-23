@@ -1,6 +1,6 @@
 # Playbook indie - gd-qa (Design QA / Playtester)
 
-Bản chuẩn nghề cho Space Salvage (Unity PC, offline, action exploration 2D + quản lý quán). Thay `docs/playbooks/gd-qa.md` (rút từ Puzzle mobile). Phần bot theo lời giải, soi mắt từng bàn, tờ tổng hợp ảnh level, viewport mobile: bỏ.
+Bản chuẩn nghề cho Space Salvage (Unity PC, offline, action exploration 2D + quản lý quán). Phần bot theo lời giải, soi mắt từng bàn, tờ tổng hợp ảnh level, viewport mobile: bỏ.
 Nguồn gắn nhãn (V) là blog hoặc bài của nhà cung cấp dịch vụ, chỉ để tham khảo. Nguồn nghề gốc không gắn nhãn.
 
 ## 1. Vai và đầu ra chuẩn nghề
@@ -62,7 +62,7 @@ QA ở team indie là người giữ định nghĩa "xong" và bằng chứng. K
 
 ## 5. Lỗi hay gặp ở game cùng thể loại và cách tránh
 
-Phần này tổng hợp từ bài học nội bộ (`docs/knowledge/90-bai-hoc.md`) và kinh nghiệm nghề chung, chưa có nguồn trích riêng.
+Phần này tổng hợp từ bài học nội bộ và kinh nghiệm nghề chung, chưa có nguồn trích riêng.
 
 | Lỗi | Biểu hiện | Cách tránh |
 |---|---|---|

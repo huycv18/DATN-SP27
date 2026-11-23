@@ -63,15 +63,15 @@ Khi có game thứ hai mới tách theo `docs/org/gd-manager.md`.
 
 Lead là dân chuyên nghiệp: không giải thích khái niệm cơ bản (core loop, MDA, pillar). Đi thẳng vào nội dung.
 
-### Khung gốc viết cho Puzzle mobile, đọc thế nào
+### Skill gốc Puzzle, đọc thế nào
 
-Playbook, knowledge và một số skill của phòng rút từ dự án Puzzle mobile. Với game này:
+Một số skill của phòng rút từ dự án Puzzle mobile. Tri thức và playbook Puzzle đã xóa khỏi repo (2026-11-23), chỉ còn bản indie. Với game này:
 
 | Thứ | Cách dùng |
 |---|---|
 | Phương pháp chung (chốt luật ra giấy, chứng minh bằng số, brief, QA độc lập, DECISIONS) | Dùng nguyên |
 | Solver, bàn, tile, khay, hàng chờ, booster, revive, ads, liveops | Bỏ, không áp |
-| `docs/knowledge/15-dang-puzzle-va-nguon-kho.md`, `level-forge`, `/gdd-v05`, `/gdd-v1 sheet` (khuôn 6 tab) | Không dùng cho game mới. Chỉ lấy cấu trúc khi thật cần |
+| `level-forge`, `/gdd-v05`, `/gdd-v1 sheet` (khuôn 6 tab) | Không dùng cho game mới. Chỉ lấy cấu trúc khi thật cần |
 | `/gdd-v1 he-thong`, `/gdd-review`, `/gdd-sheet-sync`, `/playtest`, `/retro`, `/kickoff-game` | Dùng được, GDD chuẩn vẫn là Sheet 25 tab của game, theo khuôn `docs/process/templates/gdd-sheet-khuon-indie.md` |
 
 ### Nguyên tắc vận hành
@@ -138,8 +138,8 @@ GDM viết yêu cầu bàn giao trong file và báo Lead.
 
 Không dùng cho game này: `/gdd-v05`, `/gdd-v1 sheet`, `level-forge` (đều cho Puzzle).
 
-Chi tiết tổ chức, thẩm quyền: `docs/org/to-chuc.md`. Playbook từng vai: `docs/playbooks/indie/<tên>.md` (bản Puzzle cũ ở `docs/playbooks/` chỉ để tra).
-Kho tri thức chuyên môn indie: `docs/knowledge/indie/` (đọc `docs/knowledge/indie/README.md` trước khi giao việc). Kho cũ `docs/knowledge/*.md` là tri thức Puzzle, chỉ để tra phương pháp.
+Chi tiết tổ chức, thẩm quyền: `docs/org/to-chuc.md`. Playbook từng vai: `docs/playbooks/indie/<tên>.md`.
+Kho tri thức chuyên môn indie: `docs/knowledge/indie/` (đọc `docs/knowledge/indie/README.md` trước khi giao việc).
 
 ### Cách giao việc
 

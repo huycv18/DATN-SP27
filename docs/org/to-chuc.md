@@ -31,7 +31,7 @@ Nguyên tắc gộp: hai vai dùng chung tri thức và chung file thì gộp, v
 | gd-research | reference-analyst + product-analyst | Cùng là người đi tìm số có nguồn: game tham chiếu, benchmark, event, bot so với người | Phân tích tham chiếu cỡ L dồn cho game-designer. "Không ai đo vui". Event tracking không có spec |
 | gd-qa | giữ nguyên | Nghiệm thu phải độc lập | QA ĐẠT mà Lead thấy lỗi ngay. Bot và người lệch nhau cần truy nguyên |
 
-Vai thứ tám `gd-algo`: nghiên cứu, thử bằng số và đặc tả thuật toán (sinh level, thứ tự rơi, phân bổ tile, DDA, solver). Không dựng tool UI (gd-tools), không dựng bộ level (gd-level). Playbook `docs/playbooks/gd-algo.md`. Opus.
+Vai thứ tám `gd-algo`: nghiên cứu, thử bằng số và đặc tả thuật toán (sinh level, thứ tự rơi, phân bổ tile, DDA, solver). Không dựng tool UI (gd-tools), không dựng bộ level (gd-level). Opus.
 
 Tên gọn (Lead chốt): tiền tố chung `gd-` cộng một từ, trùng tên phiên vai.
 
@@ -90,7 +90,7 @@ Vai không có việc thật trong một dự án thì không gọi (game tycoon
 4. GDM mở file kiểm chứng. Việc có đầu ra nhìn thấy (level, tool, prototype) đi qua gd-qa trước khi báo Lead.
 5. GDM báo Lead theo mẫu. Cần Lead quyết thì một câu hỏi kèm phương án nghiêng về.
 6. Quyết định ghi ngay khi quyết (ngày, ai, lý do, hệ quả): của một sản phẩm vào `projects/<slug>/DECISIONS.md`, của cả phòng vào `production/DECISIONS.md`.
-7. Bài học sau mỗi mốc: sửa playbook, prompt agent, `docs/knowledge/90-bai-hoc.md`.
+7. Bài học sau mỗi mốc: sửa playbook `docs/playbooks/indie/`, prompt agent, ghi `production/DECISIONS.md`.
 
 ## 6. Model, effort, song song
 

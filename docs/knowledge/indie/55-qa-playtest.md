@@ -76,7 +76,7 @@ Số Space Salvage (HP, giá, thời lượng chuyến bay) không có trong kho
 
 | Sai lầm | Hậu quả | Cách tránh |
 |---|---|---|
-| Chấm theo handoff của tác giả | ĐẠT trên giấy, Lead chơi 2 phút thấy lỗi | Tự tái hiện từng tiêu chí (bài học nội bộ, `docs/knowledge/90-bai-hoc.md`) |
+| Chấm theo handoff của tác giả | ĐẠT trên giấy, Lead chơi 2 phút thấy lỗi | Tự tái hiện từng tiêu chí (bài học nội bộ) |
 | Gọi script là playtest | Không có dữ liệu hành vi người chơi | Ghi rõ "chưa có người chơi thật". Sim chứng minh số, người chứng minh cảm giác |
 | Hỏi câu dẫn, giải thích khi người chơi kẹt | Dữ liệu lệch, che lỗi FTUE | Hỏi mở, im lặng, ghi chỗ kẹt [24][25] |
 | Một người test rồi kết luận | Sửa theo cá nhân, không theo mẫu | Chờ lặp lại ở người thứ hai trở đi, quyết theo mẫu [4][3] |

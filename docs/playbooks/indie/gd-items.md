@@ -1,6 +1,6 @@
 # Playbook indie - gd-items (Weapons & Items Designer)
 
-Áp cho Space Salvage MVP. Soạn 2026-11-19 theo brief `production/briefs/2026-11-19-chuyen-nghiep-hoa-vai.md`. Thay `docs/playbooks/gd-systems.md` cho vai này (phương pháp chung chốt luật, brief, DECISIONS vẫn theo CLAUDE.md gốc).
+Áp cho Space Salvage MVP. Soạn 2026-11-19 theo brief `production/briefs/2026-11-19-chuyen-nghiep-hoa-vai.md`.
 
 ## 1. Vai và đầu ra chuẩn nghề
 

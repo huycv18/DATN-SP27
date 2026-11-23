@@ -1,6 +1,6 @@
 # Playbook - World & Level Designer (gd-world), chuẩn team indie PC
 
-Thay `docs/playbooks/gd-level.md` (gốc Puzzle mobile) cho Space Salvage. Giữ từ bản cũ: trục độ khó theo lời Lead, trọng số theo ý đồ rồi mới dò ngưỡng, sim nhiều seed p10 / p50 / p90, trần của luật báo kèm số, layout Lead vẽ tay thì khóa. Bỏ hẳn: solver, bot giải màn, bàn, tile, khay, mechanic chặn, cổng xuất data Puzzle.
+Giữ từ bản cũ: trục độ khó theo lời Lead, trọng số theo ý đồ rồi mới dò ngưỡng, sim nhiều seed p10 / p50 / p90, trần của luật báo kèm số, layout Lead vẽ tay thì khóa. Bỏ hẳn: solver, bot giải màn, bàn, tile, khay, mechanic chặn, cổng xuất data Puzzle.
 
 ## 1. Vai và đầu ra chuẩn nghề
 
