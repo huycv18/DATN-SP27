@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="64" height="40" viewBox="0 0 64 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Sting Krill (Driftlife th&#198;&#176;&#225;&#187;&#157;ng)">
+<ellipse cx="32" cy="20" rx="32" ry="20" fill="#BFBFBF"/>
+<mask id="stroke0_0_12" fill="white">
+<path d="M64 20C64 31.0457 49.6731 40 32 40C14.3269 40 0 31.0457 0 20C0 8.9543 14.3269 0 32 0C49.6731 0 64 8.9543 64 20Z"/>
+</mask>
+<ellipse cx="32" cy="20" rx="32" ry="20" stroke-width="2" stroke="#1F1F1F" mask="url(#stroke0_0_12)"/>
+</g>
+</svg>

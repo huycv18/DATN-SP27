@@ -447,3 +447,25 @@ Teardown Dave (tab Co-op and Saving) lộ kẽ hở: chơi một mình hoặc ho
 - Khi cả nhóm qua cửa khí ra chuyến, game ghi số chuyến đã dùng vào file lưu (ghi nhanh, không phải điểm lưu đầy đủ). Thoát giữa chuyến thì vào lại ở điểm lưu sau chuyến trước, đồ nhặt trong chuyến dở mất, chuyến dở vẫn trừ vào hạn 2 chuyến của ngày, chuyến kế dùng số thứ tự kế nên bố cục khác.
 - Khách rời giữa chuyến giữ luật cũ: tính như bị kéo về, giữ 1 món ghim (C10).
 - Sửa cùng lúc: khung K23, `ky-thuat.md` luật 18, `nguoi-choi.md`, `ux-ui.md` luật 23 và chuỗi xác nhận thoát, `map.md`, Doc II.1 và II.8, các tab Sheet nhắc luật này, Teardown.
+
+
+## 2026-11-23 - Demo màn hình The Novent
+
+Lead yêu cầu tạo art và asset mới để dựng các màn hình trong game từ Figma, rồi nối thành luồng trình diễn tương tác. Bản web nằm tại `tools/prototype/game-demo/index.html`. Luồng mẫu chạy trong một ngày đã có ca cảng tại Ember. Nút Chọn cảnh mở dữ liệu trình diễn riêng để xem một đoạn mà không thay đổi bản lưu. Phòng co-op, điều kiện sửa khoang và đơn chế trong demo dùng dữ liệu mẫu.
+
+## 2026-11-23 - UI game theo tham chiếu WarFront Demo
+
+Lead muốn UI demo Figma có cách trình bày như game PC và lấy bản WarFront Demo trên Steam làm mốc chất lượng. Đã chỉnh trang `The Novent / Demo màn hình`: màn chuẩn bị chiếm toàn khung, mỗi bước có một hành động chính, HUD bay bám mép, ca cảng chỉ nhấn thùng và cửa neo đang thao tác. Màu, ký hiệu và art dùng hệ hình ảnh của Ember. Đây là hướng trình bày của prototype Figma, các thông số và luật vẫn lấy từ tài liệu dự án.
+
+[Figma Present](https://www.figma.com/proto/rwemYZkNuUXZKONbA2c2EW/The-Novent?node-id=37-184&page-id=37%3A110&starting-point-node-id=37%3A184&scaling=scale-down)
+
+## 2026-11-23 - Hướng hình ảnh gameplay ngoài không gian
+
+Lead yêu cầu môi trường 3D, đồ họa 2.5D, camera top-down nghiêng 45° cho ảnh demo gameplay. Sau khi xem cảnh thu hồi vật liệu cạnh xác tàu và cảnh Noor bay giữa bãi vỡ, Lead chốt: “Oke tôi muốn dùng như này”.
+
+- Hai ảnh duyệt làm mẫu cho cảnh bay ở Dải Gần: [Thu hồi cạnh xác tàu](art/gameplay-dai-gan-thu-hoi.png) và [Bay giữa bãi vỡ](art/gameplay-dai-gan-bai-vo.png).
+- Vật cản, đường bay và Driftlife cần đọc rõ ở cùng góc camera. Dữ liệu mặt phẳng bay và điều khiển dùng luật hiện hành. Phê duyệt này áp dụng cho hình ảnh ngoài không gian.
+
+## 2026-11-23 - Gộp nhánh codex-cty vào main
+
+Ba mục ngay trên (Demo màn hình, UI theo WarFront, Hướng hình ảnh ngoài không gian) đến từ nhánh codex-cty. Mục Hướng hình ảnh viết trong trạm vẫn dùng mặt cắt ngang và gọi vùng 1 là Dải Gần. Hai điểm này đã bị thay bởi mục "Art: không gian 3D, đồ họa 2.5D, góc nhìn top-down 45 độ" (Lead: "Chuyển hết sang top-down") và mục đổi tên vùng thành Vành đai ngoài. Khi gộp, AGENTS.md, khung, `so-hien-hanh.md`, `map.md`, chương đề xuất giữ bản main. Hai ảnh mẫu cảnh bay Lead duyệt được thêm vào khung mục 13. Demo `tools/prototype/wireframe/` và `tools/prototype/game-demo/` còn dùng chữ cũ (ca cảng, Dải Gần), chưa sửa.

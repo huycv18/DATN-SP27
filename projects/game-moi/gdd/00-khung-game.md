@@ -270,6 +270,7 @@ Chương 1 trọn vẹn: Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Th
 ## 13. Art Direction (L phong cách, G phần còn lại)
 
 - Phong cách (L, 2026-11-23): không gian game 3D, đồ họa 2.5D, góc nhìn top-down 45 độ. Unity dựng cảnh 3D, mọi asset do artist 2D làm (sprite nhân vật, Driftlife, vật phẩm, nền, tile, hiệu ứng), không có model 3D
+- Ảnh mẫu cảnh bay Lead duyệt (2026-11-23, nhánh codex-cty): [Thu hồi cạnh xác tàu](../art/gameplay-dai-gan-thu-hoi.png) và [Bay giữa bãi vỡ](../art/gameplay-dai-gan-bai-vo.png). Dùng làm mẫu bố cục, chiều sâu và độ đọc vật cản, Driftlife, tương tác ngoài không gian
 - Không khí: khoa học viễn tưởng sinh tồn, nền nghiêm, hài nhẹ từ tính cách nhân vật. Bãi vỡ tối và lạnh, trạm Ember ấm dần lên theo từng khoang sửa xong (thấy được tiến trình bằng mắt)
 - Màu: không gian xanh than, tím đậm. Ánh sáng trạm cam ấm. Driftlife phát quang để đọc được trên nền tối. Giáp chế độ The Wardens trắng xương EDEBE0 và lục acid 7CFC3A, không ai khác dùng. 4 slot người chơi mỗi slot một màu kèm một hình: cam ○, lam ngọc △, vàng chanh □, hồng tím ◇
 - Nhân vật: silhouette đọc được ở 72 điểm ảnh mỗi u (720p). Mỗi nhân vật tối đa 6 màu chính cộng 2 nhấn. Người chơi bão hòa từ 70%, NPC tới 45%. Rig xương chung cho nhân loại, mảnh bộ đồ hoán đổi theo 5 trục nâng cấp
