@@ -57,7 +57,7 @@ const SP = [
 const SIZE = { 111: 'S', 112: 'S', 113: 'S', 114: 'M', 115: 'M', 211: 'L', 212: 'M', 213: 'M', 214: 'S', 215: 'L', 311: 'S', 312: 'M', 313: 'L', 314: 'L', 315: 'S' };
 const NLS = { [G]: 'SMP-101', [M]: 'SMP-201', [X]: 'SMP-301' };
 const species = [];
-const K_M = 1.5, K_BPS = 0.45; // cỡ M ở đầu thấp của khoảng 1,5 đến 2,0, mẫu sinh thiết 0,4 đến 0,5 lần E(hạ) vì sinh thiết không phải bắt sống
+const K_M = 1.5, K_BPS = 0.45; // cỡ M ở đầu thấp của khoảng 1,2 đến 2 (log 110), mẫu sinh thiết 0,4 đến 0,5 lần E(hạ) vì sinh thiết không phải bắt sống
 for (const [dai, so, ma, ten, ha, n, p, bat, nuoi, dac, k, nhan, bpsFix] of SP) {
   const s = { dai, so, ma, ten, ha, n, p, bat, nuoi, dac, k: bat === 'BPS' ? K_BPS : SIZE[so] === 'M' ? K_M : k, nhan, bpsFix, nlsId: NLS[dai], size: SIZE[so], dacId: `SMP-${so}`, livId: `LIV-${so}`, bpsId: `BPS-${so}`, bioId: `BIO-${so}` };
   species.push(s);
@@ -394,7 +394,7 @@ for (const [ax, n] of Object.entries({ OXY: 4, BAG: 4, THR: 3, ENV: 3, RACK: 2 }
 for (const dai of [G, M, X]) { const c = items.filter((i) => i.id.startsWith('RES-') && i.dai === dai).length; if (c < 2) err(`Dải ${dai} chỉ có ${c} tài nguyên riêng`); }
 const sp = species.filter((s) => s.bat && s.ha).map((s) => { const e = eHa(s), live = byId.get(s.bat === 'LIV' ? s.livId : s.bpsId).gtd, cost = useCost(s.so); return { ...s, e, live, cost, ratio: (live - cost) / e }; });
 for (const s of sp) {
-  const [lo, hi] = s.bat === 'BPS' ? [0.4, 0.5] : [1.5, 2.0];
+  const [lo, hi] = s.bat === 'BPS' ? [0.4, 0.5] : [1.2, 2.0];
   if (s.ratio < lo - 0.01 || s.ratio > hi + 0.01) err(`${s.ma}: tỉ lệ ròng mẫu bắt (đã trừ vật tiêu hao) trên hạ ${s.ratio.toFixed(2)} ngoài ${lo} đến ${hi}`);
   if (s.bat === 'LIV' && s.size === 'S' && s.live / s.e > 2.0 + 0.01) err(`${s.ma}: bắt tay sau choáng (không tốn vật tiêu hao) vượt trần 2,0: ${(s.live / s.e).toFixed(2)}`);
   if (s.bat === 'LIV' && s.ratio < 1.25) err(`${s.ma}: mẫu 1 sao thấp hơn mẫu hạ 2 sao (ràng buộc K9 của gd-combat)`);

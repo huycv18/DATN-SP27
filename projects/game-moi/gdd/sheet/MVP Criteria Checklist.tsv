@@ -62,7 +62,7 @@ STT	Feature/Metric	Category	Acceptance Criteria	Status	Actual Result	Notes
 61	Không ghi giá Tally trong tab vật phẩm	Quy tắc	Chữ "Tally" chỉ xuất hiện ở phần thuộc kinh tế	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 62	Đủ số lượng nhãn MVP	Phạm vi	6 tài nguyên, 5 linh kiện chế, 9 kiện (Kiện nước tinh khiết là kiện chế duy nhất), 6 nâng cấp, 2 vật tiêu hao, 5 dụng cụ cộng chìa, 4 loài với 3 loài cỡ S bắt sống	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 63	Không còn dấu chờ	Quy tắc	Dấu chờ chỉ còn ở phần thuộc kinh tế, không còn dấu chờ nào ở món đã có giá	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
-64	Sim vật phẩm	Cân bằng	Sim in ra: thời gian làm đầy túi, thu nhập một ngày của chuỗi thô và chuỗi tinh, mức trội của chiến lược nhặt, giá trị lồng ròng mỗi loài bằng 1,5 đến 2,0 lần giá trị hạ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
+64	Sim vật phẩm	Cân bằng	Sim in ra: thời gian làm đầy túi, thu nhập một ngày của chuỗi thô và chuỗi tinh, mức trội của chiến lược nhặt, giá trị lồng ròng mỗi loài bằng 1,2 đến 2 lần giá trị hạ	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 65	Giá trị đồ mỗi chuyến	Cân bằng	Giá trị đồ mỗi chuyến đo ở sim chuyến (sim-chuyen.md)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 66	Thời gian làm đầy túi	Nhịp	Túi đầy sau 60 đến 70% thời gian chuyến ở chương 1 (ước tay 56 đến 63%, chờ sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
 67	Chuyến dùng đủ khoan, nạy, hạ	Nhịp	Trên 90% chuyến chương 1 dùng cả khoan, nạy, hạ (sim)	FALSE	Chưa chấm, chưa có build	Nhãn: MVP. Cách kiểm: Máy. Nguồn: vat-pham.md
