@@ -42,6 +42,29 @@ Thang 1 (dễ) tới 5 (rất khó). Đây là ước lượng so sánh giữa 3
 | Hades 2 | Mỗi vùng một bảng màu riêng, vật tương tác và sinh vật phát sáng trên nền tối, nét viền dày mỏng khác nhau giữa tiền cảnh và hậu cảnh | Artist |
 | Death's Door | Đèn 2D, bloom, vignette, làm mờ hậu cảnh, vệt sáng, bụi trôi | Dev trong Unity (URP 2D Lights, post-processing). Artist chỉ vẽ sprite vệt sáng và hạt bụi |
 
+## 5b. Death's Door và ref AI của Lead, nếu làm 2D hết
+
+Ref AI của Lead là 2 tranh key art: trạm neo trên bãi vỡ, phi hành gia kéo thùng cạnh cửa khoang.
+
+| | Death's Door làm 2D | Ref AI của Lead làm 2D |
+|---|---|---|
+| Ưu | Khối hình to, đơn giản, ít chi tiết nên vẽ nhanh. Đẹp nhờ ánh sáng (mảng sáng tối lớn, đốm nắng, phát sáng xanh ngọc, DOF), mà những thứ này engine làm được trên sprite 2D. Ít nét viền nên dễ giữ đồng đều | Bản sắc mạnh: tím chàm của không gian đối với cam ấm của đèn trạm, vỏ tàu đỏ và kem có rỉ sét, sinh vật xanh ngọc. Nét viền ngoài dày nên silhouette đọc rõ trên nền tối. Chất liệu kể chuyện được (rỉ, băng, san hô). Nhân vật có biểu cảm. Cùng họ với 2 ảnh gameplay Lead đã duyệt |
+| Nhược | Ra 2D mà thiếu ánh sáng engine thì nhìn phẳng và đục. Màu xanh lá, độ bão hòa thấp, hợp rừng chứ không hợp không gian tối: Death's Door đọc rõ nhờ nền sáng, nền không gian thì ngược lại. Bản sắc yếu nếu chỉ chép cách làm | Chi tiết rất dày (đường gạch bóng, đinh tán, đường ghép tấm), 1 artist không giữ nổi qua cả game. Đây là key art góc nhìn ngang và 3/4, không phải góc camera trong game, nên phải dịch lại. Nét gạch bóng thu nhỏ về cỡ trong game thành nhiễu. Nền nhiều chi tiết dễ tranh chỗ với vật cần đọc trong gameplay. Ảnh AI có chi tiết vô lý, không chép thẳng được |
+| Độ khó vẽ | Trung bình thấp, cộng phần việc ánh sáng của dev | Cao |
+
+### Kết hợp: khối và ánh sáng của Death's Door, màu và bản sắc của ref Lead
+
+| Lấy từ | Lấy gì | Quy tắc khi vẽ |
+|---|---|---|
+| Ref Lead | Bảng màu | Nền tím chàm, đèn trạm cam ấm, vỏ tàu đỏ và kem có rỉ, Driftlife xanh ngọc, băng xanh lạnh. Cặp tím đối cam là màu chủ đạo của game |
+| Ref Lead | Nét viền ngoài | Chỉ giữ nét dày ở viền ngoài silhouette. Bên trong bỏ gần hết nét, bỏ gạch bóng |
+| Ref Lead | Thiết kế nhân vật và chất liệu | Bộ đồ cam, mặt nhìn thấy qua kính mũ, rỉ sét, băng, sinh vật dạng san hô phát sáng |
+| Death's Door | Khối hình | Khối to và đơn giản, mặt phẳng lớn để trơn, chi tiết chỉ đặt ở chỗ người chơi tương tác |
+| Death's Door | Tô bóng | 2 tới 3 tông màu mỗi vật, ranh giới sáng tối mềm hơn cel shading của ref Lead |
+| Death's Door | Ánh sáng | Mảng sáng tối lớn do engine làm: vũng sáng dưới đèn trạm và quanh Driftlife thay cho đốm nắng, viền sáng tím từ tinh vân, DOF, sương nhiều lớp, bloom. Dùng light cookie cho vệt sáng in trên sàn |
+
+Tóm lại: ref Lead cho biết game **trông là ai** (màu, nhân vật, chất liệu), Death's Door cho biết **cách làm cho rẻ mà vẫn đẹp** (khối đơn giản, ánh sáng gánh phần đẹp). Độ khó gộp lại ở mức trung bình.
+
 ## 5. Phải chốt trước khi vẽ concept: isometric hay top-down 45 độ
 
 Hai cách nhìn này khác nhau, và hồ sơ dự án đang lệch nhau ở chỗ này.
