@@ -491,4 +491,4 @@ Lead: "Có, thêm cột" (cột nhãn MVP riêng cho các tab còn ghi nhãn l�
 
 ## 2026-11-25 - Priority tab Assets đổi sang chữ tiếng Anh, có màu
 
-Lead: "không đánh số mà đánh là Highest High Medium và Low thêm màu cho các drop down này". Thay "1 - Cao nhất, 2 - Cao, 3 - Trung bình, 4 - Thấp" bằng Highest, High, Medium, Low (nghĩa từng mức giữ nguyên). Màu bằng định dạng có điều kiện trên cột Priority: Highest đỏ, High cam, Medium vàng, Low xám.
+Lead: "không đánh số mà đánh là Highest High Medium và Low thêm màu cho các drop down này". Thay "1 - Cao nhất, 2 - Cao, 3 - Trung bình, 4 - Thấp" bằng Highest, High, Medium, Low (nghĩa từng mức giữ nguyên). Màu là màu chip của danh sách chọn, kiểu hiển thị Khối (Lead: "để nó như này chứ ko phải màu nền"): Highest đỏ đậm, High cam nhạt, Medium vàng nhạt, Low xanh nhạt. API Sheets không đặt được màu chip, phải đặt trên giao diện Dữ liệu > Xác thực dữ liệu, quy tắc áp cho Assets!D3:D98.
