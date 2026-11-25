@@ -46,11 +46,24 @@ Mỗi phần một thư mục trong `C/`, README trong thư mục ghi việc c�
 | 9 | `C/09-icon` | Quy tắc + 2 icon mẫu mỗi nhóm | Nhiều (155) nhưng vẽ theo quy tắc, cần bậc hiếm từ 4 |
 | 10 | `C/10-vfx` | Storyboard VFX | Phụ thuộc màu, nhân vật và Driftlife đã chốt |
 
-## 3. Cách đi qua các mốc
+## 3. Cách đi qua các mốc: làm theo lô, Lead duyệt một lần
 
-1. Xong 01 và 02 thì gửi Lead duyệt style frame.
-2. Duyệt xong thì làm 03 và 04 song song, gửi dev xem 03.
-3. Từ 05 trở đi làm lần lượt. Mỗi phần xong thì cập nhật README của thư mục đó.
+Không chờ Lead chốt từng món. Làm một lô rồi gửi Lead xem cả lô (artist chọn cách này 2026-11-25).
+
+1. Ngay hôm đầu, gửi Lead 2 câu cần chốt sớm: camera isometric, nhân vật chính và boss làm 3D (`dinh-huong-art.md` mục 4). Gửi rồi làm tiếp, không ngồi chờ.
+2. Lô 1, làm song song, không phụ thuộc camera:
+
+| Món | Thư mục |
+|---|---|
+| Bảng màu | `C/04-bang-mau` |
+| Nhân vật chính (bộ đồ cam, 3 góc, biểu cảm) và Tikko (loài Oru) | `C/05-nhan-vat` |
+| Driftmoth, Sting Krill, boss Scrapmaw | `C/07-driftlife-boss` |
+| 1 icon mẫu cho mỗi nhóm trong 6 nhóm vật phẩm | `C/09-icon` |
+| Tham chiếu trạm Ember, cảng | `C/01-moodboard` |
+
+3. Lô 2: ghép các món của lô 1 thành style frame Vành đai ngoài và một khoang trạm Ember, vẽ theo camera Lead đã trả lời. Lead chưa trả lời thì vẽ theo isometric và ghi rõ là chờ chốt.
+4. Gửi Lead cả hai lô trong một lần, kèm một trang liệt kê từng thứ cần Lead chọn hoặc duyệt.
+5. Sửa theo góp ý, rồi mới sang quy chuẩn kỹ thuật (`C/03`) và kit môi trường (`C/06`).
 
 ## 4. Rủi ro cần biết
 
