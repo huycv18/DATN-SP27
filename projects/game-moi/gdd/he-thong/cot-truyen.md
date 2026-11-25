@@ -542,7 +542,7 @@ Hồ sơ ngoại hình và yêu cầu art do gd-character giữ ở `ho-so-nhan-
 - Người chơi chọn một hồ sơ và đổi tên được. Hồ sơ không ai chọn mà rơi vào buồng hỏng thì là người đã chết, tên trên buồng giữ tên mặc định.
 - Nhân vật người chơi không có lời thoại riêng. Nhân vật khác gọi họ bằng tên người chơi đặt, hoặc gọi chung là "Ember".
 
-**Tính cách bốn hồ sơ mặc định** (GD-078) `MVP`
+**Tính cách bốn hồ sơ mặc định** (GD-079) `MVP`
 
 Tính cách của PC chỉ hiện qua kênh không phải lời thoại: idle trong trạm, biểu cảm, đồ vật, mô tả preset, cách người vớt nhắc. Không có câu nói nào của PC. Nghề cũ thuộc kíp vận hành của Cradle, chỉ là nền, không ai thành chuyên gia: mở tính năng trạm vẫn là việc của người vớt. Bốn người chung một khuôn: nền là người thường làm việc ở hậu trường con tàu, hài đến từ tính cách chứ không từ câu đùa.
 
@@ -1331,9 +1331,9 @@ Khi tỉnh khỏi giấc ngủ đông, Nguyễn Việt phát hiện trạm Ember
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Bảng mốc ở đầu file bỏ cột Trước, giá trị cũ: C3.7 là cú lật Driftlife bản trước, C3.8 là tàu TA08 cập bến lần thứ ba, C4.6 là nguồn ẩn danh (Nhem ở N4), C4.7 là ngày kế tiếp sau C4.5, C5.1 là tàu TA06 cập bến, C5.2 là ngày kế tiếp sau C5.1, C5.6 là nộp bản đồ sao thật. Mục 5 bỏ câu kể lịch sử sàn ngày (bản đầu 6, 5, 8, 3, 4, chương 1 sửa thành 7 ở vòng QA 2) | Báo cáo humanizer GDD của GDM | GDM |
 | 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): Station Cinder ghi rõ buồng Ingrid và Linh còn chạy, hai buồng khác đã tắt. Không đổi luật | Báo cáo humanizer GDD của GDM | GDM |
 | 2026-11-23 | Mục 9: dòng Kết ghi điều nguồn C4 nói (Epilogue: Friends sau chương 7, chỉ qua tóm tắt tìm kiếm), dòng Số chương ghi 7 chương tính cả prologue (C3). Không đổi luật | Lead giao sửa 8 chỗ lệch mục 9 (production/reports/2026-11-23-teardown-dot12.md) | gd-research |
-| 2026-11-25 | Thêm bảng tính cách PC-1 đến PC-4 (nghề cũ, quốc gia, 3 nét, thói quen, gợi ý dáng và mặt, vật để lại khi buồng hỏng) ở mục Tổ Ember. Không đổi luật lời thoại, tên, slot, màu | GD-078, Lead yêu cầu bổ sung tính cách PC | gd-story |
-| 2026-11-25 | Lượt 2 GD-078: đổi đội hình PC theo Lead. PC-1 nam Việt Nam Lê Quốc Bảo (Lead sửa cùng ngày: nam chính, PC-4 thành nữ) thay hồ sơ PC-1 cũ, PC-4 nữ Niamh Doyle (Ireland) thay hồ sơ PC-4 cũ, Jonas và Mei giữ tên. Bảng thêm giới tính, tuổi, da và tóc, nét mặt, nhãn. Bỏ đồ vật và thói quen gợi vai (hộp y tế, đếm khẩu phần, hướng dẫn, đếm khóa). Đổi tên ở truyện kể, dòng buồng tắt, khối GAME STORY | Lead chốt 2026-11-25: bốn người ngang luật, nhân vật chính là người Việt | gd-story |
-| 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-078 | GDM |
+| 2026-11-25 | Thêm bảng tính cách PC-1 đến PC-4 (nghề cũ, quốc gia, 3 nét, thói quen, gợi ý dáng và mặt, vật để lại khi buồng hỏng) ở mục Tổ Ember. Không đổi luật lời thoại, tên, slot, màu | GD-079, Lead yêu cầu bổ sung tính cách PC | gd-story |
+| 2026-11-25 | Lượt 2 GD-079: đổi đội hình PC theo Lead. PC-1 nam Việt Nam Lê Quốc Bảo (Lead sửa cùng ngày: nam chính, PC-4 thành nữ) thay hồ sơ PC-1 cũ, PC-4 nữ Niamh Doyle (Ireland) thay hồ sơ PC-4 cũ, Jonas và Mei giữ tên. Bảng thêm giới tính, tuổi, da và tóc, nét mặt, nhãn. Bỏ đồ vật và thói quen gợi vai (hộp y tế, đếm khẩu phần, hướng dẫn, đếm khóa). Đổi tên ở truyện kể, dòng buồng tắt, khối GAME STORY | Lead chốt 2026-11-25: bốn người ngang luật, nhân vật chính là người Việt | gd-story |
+| 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-079 | GDM |
 
 ### Lệch đã xong (chuyển từ mục Lệch với vai khác, 2026-11-23)
 

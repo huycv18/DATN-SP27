@@ -1,111 +1,111 @@
-STT	Task	Sub Task	Short Description	Ref
-1	Mảnh vỡ trôi	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3
+STT	Task	Sub Task	Short Description	Ref	Phiên bản
+1	Mảnh vỡ trôi	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3	MVP
 		Characteristic	"Dụng cụ: Nhặt tay, không cần dụng cụ
-Độ cứng hoặc cấp khóa: 0 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 0 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		MVP
 		Attribute	"Khai thác ở bậc 1: 1,6 giây
-Số lần quay bảng rơi: 1"	
+Số lần quay bảng rơi: 1"		MVP
 		Resource Output	"- Mảnh vỏ Cradle: trọng số 60, số lượng 1
-- Dây cáp đứt: trọng số 40, số lượng 1"	
-		Spawn Point	Vành đai ngoài, điểm sinh tài nguyên của các mảnh Mở, Hành lang, Ổ. Tối đa 25% điểm sinh tài nguyên của một mảnh, hai khe cách nhau ít nhất 2 u	
-2	Mạch quặng sắt	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3
+- Dây cáp đứt: trọng số 40, số lượng 1"		MVP
+		Spawn Point	Vành đai ngoài, điểm sinh tài nguyên của các mảnh Mở, Hành lang, Ổ. Tối đa 25% điểm sinh tài nguyên của một mảnh, hai khe cách nhau ít nhất 2 u		MVP
+2	Mạch quặng sắt	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3	MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		MVP
 		Attribute	"Khai thác ở bậc 1: 8,0 giây
-Số lần quay bảng rơi: 1"	
-		Resource Output	- Quặng sắt thiên thạch: trọng số 100, số lượng 2	
-		Spawn Point	Vành đai ngoài, mảnh Mở và Ổ	
-3	Khối băng trôi	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3
+Số lần quay bảng rơi: 1"		MVP
+		Resource Output	- Quặng sắt thiên thạch: trọng số 100, số lượng 2		MVP
+		Spawn Point	Vành đai ngoài, mảnh Mở và Ổ		MVP
+3	Khối băng trôi	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3	MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		MVP
 		Attribute	"Khai thác ở bậc 1: 7,0 giây
-Số lần quay bảng rơi: 1"	
-		Resource Output	- Băng nước đục: trọng số 100, số lượng 2	
-		Spawn Point	Vành đai ngoài, mảnh Mở	
-4	Hòm kỹ thuật vỡ	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3
+Số lần quay bảng rơi: 1"		MVP
+		Resource Output	- Băng nước đục: trọng số 100, số lượng 2		MVP
+		Spawn Point	Vành đai ngoài, mảnh Mở		MVP
+4	Hòm kỹ thuật vỡ	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3	MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		MVP
 		Attribute	"Khai thác ở bậc 1: 6,0 giây
-Số lần quay bảng rơi: 2"	
+Số lần quay bảng rơi: 2"		MVP
 		Resource Output	"- Bo mạch cháy: trọng số 30, số lượng 1
 - Dây cáp đứt: trọng số 30, số lượng 2
 - Mảnh vỏ Cradle: trọng số 25, số lượng 2
-- Đồ Trái Đất vụn: trọng số 15, số lượng 1"	
-		Spawn Point	Vành đai ngoài, mảnh Hành lang (cạnh Cáp chập) và Xác lớn. Điểm sinh tài nguyên hạng hiếm của Vành đai ngoài	
-5	Tấm vỏ lớn	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3
+- Đồ Trái Đất vụn: trọng số 15, số lượng 1"		MVP
+		Spawn Point	Vành đai ngoài, mảnh Hành lang (cạnh Cáp chập) và Xác lớn. Điểm sinh tài nguyên hạng hiếm của Vành đai ngoài		MVP
+5	Tấm vỏ lớn	Type	Điểm khai thác, Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3	MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		MVP
 		Attribute	"Khai thác ở bậc 1: 14,0 giây
-Số lần quay bảng rơi: 3"	
-		Resource Output	- Mảnh vỏ Cradle: trọng số 100, số lượng 2	
-		Spawn Point	Vành đai ngoài, chỉ mảnh Xác lớn	
-6	Hòm kỹ thuật Seed (nhánh)	Type	Điểm khai thác, Nhánh Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3
+Số lần quay bảng rơi: 3"		MVP
+		Resource Output	- Mảnh vỏ Cradle: trọng số 100, số lượng 2		MVP
+		Spawn Point	Vành đai ngoài, chỉ mảnh Xác lớn		MVP
+6	Hòm kỹ thuật Seed (nhánh)	Type	Điểm khai thác, Nhánh Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3	MVP một phần
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		MVP một phần
 		Attribute	"Khai thác ở bậc 1: 8,0 giây
-Số lần quay bảng rơi: 3"	
+Số lần quay bảng rơi: 3"		MVP một phần
 		Resource Output	"- Bo mạch cháy: trọng số 35, số lượng 1
 - Dây cáp đứt: trọng số 25, số lượng 2
 - Mảnh vỏ Cradle: trọng số 25, số lượng 2
-- Đồ Trái Đất vụn: trọng số 15, số lượng 1"	
-		Spawn Point	Xác Seed Station: Cinder 3 hòm (MVP). Wick 3, Flint 3 (Sau MVP)	
-7	Kho hàng Seed (nhánh)	Type	Điểm khai thác, Nhánh Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3
+- Đồ Trái Đất vụn: trọng số 15, số lượng 1"		MVP một phần
+		Spawn Point	Xác Seed Station: Cinder 3 hòm (MVP). Wick 3, Flint 3 (Sau MVP)		MVP một phần
+7	Kho hàng Seed (nhánh)	Type	Điểm khai thác, Nhánh Vành đai ngoài. Nhãn: MVP	vat-pham.md mục 3	MVP một phần
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		MVP một phần
 		Attribute	"Khai thác ở bậc 1: 12,0 giây
-Số lần quay bảng rơi: 3"	
+Số lần quay bảng rơi: 3"		MVP một phần
 		Resource Output	"- Bo mạch cháy: trọng số 35, số lượng 1
 - Quặng sắt thiên thạch: trọng số 35, số lượng 1
-- Đồ Trái Đất vụn: trọng số 30, số lượng 1"	
-		Spawn Point	Xác Seed Station: Cinder 1 (sau boss, MVP). Wick 1, Cradle Interior 2 mỗi khu (Sau MVP)	
-8	Mạch quặng cobalt	Type	Điểm khai thác, Vành đai trong. Nhãn: Sau MVP	vat-pham.md mục 3
+- Đồ Trái Đất vụn: trọng số 30, số lượng 1"		MVP một phần
+		Spawn Point	Xác Seed Station: Cinder 1 (sau boss, MVP). Wick 1, Cradle Interior 2 mỗi khu (Sau MVP)		MVP một phần
+8	Mạch quặng cobalt	Type	Điểm khai thác, Vành đai trong. Nhãn: Sau MVP	vat-pham.md mục 3	Sau MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		Sau MVP
 		Attribute	"Khai thác ở bậc 1: 12,0 giây
-Số lần quay bảng rơi: 1"	
-		Resource Output	- Quặng cobalt: trọng số 100, số lượng 2	
-		Spawn Point	Vành đai trong, mảnh Mở và Ổ (dòng đá vụn chạy ngang qua)	
-9	Khối băng tinh	Type	Điểm khai thác, Vành đai trong. Nhãn: Sau MVP	vat-pham.md mục 3
+Số lần quay bảng rơi: 1"		Sau MVP
+		Resource Output	- Quặng cobalt: trọng số 100, số lượng 2		Sau MVP
+		Spawn Point	Vành đai trong, mảnh Mở và Ổ (dòng đá vụn chạy ngang qua)		Sau MVP
+9	Khối băng tinh	Type	Điểm khai thác, Vành đai trong. Nhãn: Sau MVP	vat-pham.md mục 3	Sau MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		Sau MVP
 		Attribute	"Khai thác ở bậc 1: 11,0 giây
-Số lần quay bảng rơi: 1"	
-		Resource Output	- Băng tinh: trọng số 100, số lượng 2	
-		Spawn Point	Vành đai trong, mảnh Mở (băng nứt khi khoan mạnh)	
-10	Hòm Cradle	Type	Điểm khai thác, Vành đai trong. Nhãn: Sau MVP	vat-pham.md mục 3
+Số lần quay bảng rơi: 1"		Sau MVP
+		Resource Output	- Băng tinh: trọng số 100, số lượng 2		Sau MVP
+		Spawn Point	Vành đai trong, mảnh Mở (băng nứt khi khoan mạnh)		Sau MVP
+10	Hòm Cradle	Type	Điểm khai thác, Vành đai trong. Nhãn: Sau MVP	vat-pham.md mục 3	Sau MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 2 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		Sau MVP
 		Attribute	"Khai thác ở bậc 1: 8,0 giây
-Số lần quay bảng rơi: 2"	
+Số lần quay bảng rơi: 2"		Sau MVP
 		Resource Output	"- Lõi cảm biến: trọng số 25, số lượng 1
 - Hợp kim nóng chảy: trọng số 45, số lượng 2
-- Bo mạch cháy: trọng số 30, số lượng 2"	
-		Spawn Point	Vành đai trong, mảnh Xác lớn. Điểm sinh tài nguyên hạng hiếm của Vành đai trong	
-11	Tấm hợp kim trôi	Type	Điểm khai thác, Vành đai trong. Nhãn: Sau MVP	vat-pham.md mục 3
+- Bo mạch cháy: trọng số 30, số lượng 2"		Sau MVP
+		Spawn Point	Vành đai trong, mảnh Xác lớn. Điểm sinh tài nguyên hạng hiếm của Vành đai trong		Sau MVP
+11	Tấm hợp kim trôi	Type	Điểm khai thác, Vành đai trong. Nhãn: Sau MVP	vat-pham.md mục 3	Sau MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 1 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		Sau MVP
 		Attribute	"Khai thác ở bậc 1: 10,0 giây
-Số lần quay bảng rơi: 3"	
-		Resource Output	- Hợp kim nóng chảy: trọng số 100, số lượng 1	
-		Spawn Point	Vành đai trong, mảnh Hành lang và Xác lớn	
-12	Mạch kính nebula	Type	Điểm khai thác, Vùng trung tâm. Nhãn: Sau MVP	vat-pham.md mục 3
+Số lần quay bảng rơi: 3"		Sau MVP
+		Resource Output	- Hợp kim nóng chảy: trọng số 100, số lượng 1		Sau MVP
+		Spawn Point	Vành đai trong, mảnh Hành lang và Xác lớn		Sau MVP
+12	Mạch kính nebula	Type	Điểm khai thác, Vùng trung tâm. Nhãn: Sau MVP	vat-pham.md mục 3	Sau MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 3 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 3 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		Sau MVP
 		Attribute	"Khai thác ở bậc 1: 16,0 giây
-Số lần quay bảng rơi: 1"	
-		Resource Output	- Kính nebula: trọng số 100, số lượng 2	
-		Spawn Point	Vùng trung tâm, mảnh Mở và Hành lang	
-13	Túi khí plasma đông	Type	Điểm khai thác, Vùng trung tâm. Nhãn: Sau MVP	vat-pham.md mục 3
+Số lần quay bảng rơi: 1"		Sau MVP
+		Resource Output	- Kính nebula: trọng số 100, số lượng 2		Sau MVP
+		Spawn Point	Vùng trung tâm, mảnh Mở và Hành lang		Sau MVP
+13	Túi khí plasma đông	Type	Điểm khai thác, Vùng trung tâm. Nhãn: Sau MVP	vat-pham.md mục 3	Sau MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 3 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 3 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		Sau MVP
 		Attribute	"Khai thác ở bậc 1: 14,0 giây
-Số lần quay bảng rơi: 1"	
-		Resource Output	- Băng plasma: trọng số 100, số lượng 2	
-		Spawn Point	Vùng trung tâm, mảnh Mở và Ổ (trong mây khí, bùng tinh vân)	
-14	Hòm Warden	Type	Điểm khai thác, Vùng trung tâm. Nhãn: Sau MVP	vat-pham.md mục 3
+Số lần quay bảng rơi: 1"		Sau MVP
+		Resource Output	- Băng plasma: trọng số 100, số lượng 2		Sau MVP
+		Spawn Point	Vùng trung tâm, mảnh Mở và Ổ (trong mây khí, bùng tinh vân)		Sau MVP
+14	Hòm Warden	Type	Điểm khai thác, Vùng trung tâm. Nhãn: Sau MVP	vat-pham.md mục 3	Sau MVP
 		Characteristic	"Dụng cụ: Dụng cụ khai thác
-Độ cứng hoặc cấp khóa: 3 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"	
+Độ cứng hoặc cấp khóa: 3 (bậc dụng cụ thấp hơn thì khai thác chậm gấp 4)"		Sau MVP
 		Attribute	"Khai thác ở bậc 1: 10,0 giây
-Số lần quay bảng rơi: 2"	
+Số lần quay bảng rơi: 2"		Sau MVP
 		Resource Output	"- Lõi năng lượng nguội: trọng số 30, số lượng 1
-- Hợp kim Warden: trọng số 70, số lượng 2"	
-		Spawn Point	Vùng trung tâm, mảnh Xác lớn cạnh trạm thu (Warden Lancer canh, hàng rào cắt). Điểm sinh tài nguyên hạng hiếm của Vùng trung tâm	
+- Hợp kim Warden: trọng số 70, số lượng 2"		Sau MVP
+		Spawn Point	Vùng trung tâm, mảnh Xác lớn cạnh trạm thu (Warden Lancer canh, hàng rào cắt). Điểm sinh tài nguyên hạng hiếm của Vùng trung tâm		Sau MVP

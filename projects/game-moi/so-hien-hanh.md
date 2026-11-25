@@ -30,7 +30,7 @@ Cập nhật lần cuối: 2026-11-20, sau đợt 9 (giờ giao thương khung D
 | Đồng tiền | Tally, duy nhất | (L) vấn đề 7. (G) log 17 |
 | Nửa chơi tay thứ hai | Giờ giao thương theo khung bán sushi của Dave: lập danh mục trước giờ giao thương, tàu cập 3 cửa neo, mỗi tàu gọi 1 thùng, mang thùng, bơm khí, tip theo kiên nhẫn | (L) DECISIONS 2026-11-20, mục "Giờ giao thương theo khung Dave" |
 | Một ngày | Tối đa 2 chuyến, rồi giờ giao thương, rồi cuối ngày. Tự lưu sau mỗi chuyến, sau giờ giao thương, lúc ngủ | (G) log 12, 62, 65 |
-| Phạm vi MVP | Chương 1 trọn: Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến 3 cửa neo, có 1 loại hàng phải chế trước giờ giao thương (CGO-113) và 1 loại hàng Driftlife sống, bắt sống cỡ S bằng lưới, 1 boss nhỏ, co-op 2 người | (G) log 29, 49, 67. Lead nên xem lại vì chạm thời hạn |
+| Phạm vi MVP | Chương 1 trọn: Vành đai ngoài và map nhánh Station Cinder, Ingrid và Linh, 8 khoang, giờ giao thương 1 bến 3 cửa neo (Tikko, Tàu vội, hàng chế CGO-113, 1 loại hàng Driftlife sống), 4 loài Driftlife (Driftmoth, Skitter Ray, Sting Krill, Arc Eel), bắt sống cỡ S bằng lưới, boss Scrapmaw, 3 hazard, co-op 2 người. Bảng đủ ở khung mục 12 | (G) log 29, 49, 67. Lead nên xem lại vì chạm thời hạn |
 
 ## Số cân bằng
 

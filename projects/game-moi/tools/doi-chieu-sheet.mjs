@@ -30,7 +30,8 @@ export function docTsv(text) {
 }
 // Sheet hiện 14 cho ô gõ 14,0: số kiểu Việt so theo giá trị.
 const SO = /^-?\d+(,\d+)?$/;
-export const giongO = (a, b) => a === b || (SO.test(a) && SO.test(b) && Number(a.replace(',', '.')) === Number(b.replace(',', '.')));
+// Ô ảnh =IMAGE(...) xuất CSV ra chuỗi trống. a là ô Sheet, b là ô nguồn
+export const giongO = (a, b) => a === b || (a === '' && b.startsWith('=IMAGE(')) || (SO.test(a) && SO.test(b) && Number(a.replace(',', '.')) === Number(b.replace(',', '.')));
 
 // So một bảng nguồn với các hàng CSV của tab. Trả {lech: [{o, tab, nguon}], thua: số hàng có chữ ngay dưới bảng}.
 export function soBang(nguon, csv, dongDau = 2) {

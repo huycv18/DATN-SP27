@@ -1,49 +1,49 @@
-STT	Item List	Quantity	Unit	Value	Price (Tally)	New Price (Tally)	Note
-1	Thùng phế liệu	1	thùng	5,60	42		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 105. Vành đai ngoài. MVP
-2	Thùng cáp	1	thùng	5,28	40		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 100. Vành đai ngoài. MVP
-3	Thùng quặng	1	thùng	5,28	40		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 100. Vành đai ngoài. MVP
-4	Thùng băng	1	thùng	5,60	42		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 105. Vành đai ngoài. MVP
-5	Thùng mô sinh học	1	thùng	5,40	54		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 135. Vành đai ngoài. MVP
-6	Thùng đồ Trái Đất	1	thùng	5,00	76		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 190. Vành đai ngoài. MVP
-7	Thùng cơ khí	1	thùng	5,36	72		Tàu trả. Hàng chế, độ gọi 1,5. Một kiện bằng 2,5 thùng, giá kiện 180. Vành đai ngoài. Sau MVP
-8	Thùng điện tử	1	thùng	6,44	86		Tàu trả. Hàng chế, độ gọi 1,5. Một kiện bằng 2,5 thùng, giá kiện 215. Vành đai ngoài. Sau MVP
-9	Thùng nước tinh khiết	1	thùng	4,80	64		Tàu trả. Hàng chế, độ gọi 1,5. Một kiện bằng 2,5 thùng, giá kiện 160. Vành đai ngoài. MVP
-10	Thùng đặc sản Vành đai ngoài	1	thùng	5,28	80		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 200. Vành đai ngoài. MVP
-11	Thùng sản phẩm nuôi Vành đai ngoài	1	thùng	17,16	172		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 430. Vành đai ngoài. Sau MVP
-12	Thùng vật tư	1	thùng	18,76	282		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 705. Vành đai ngoài. Sau MVP
-13	Bản sao dữ liệu	1	cái	20,90	315		Tàu trả. Hàng hiếm, độ gọi 1. Bán nguyên cái, không chia thùng. Vành đai ngoài. Sau MVP
-14	Thùng hợp kim	1	thùng	16,16	122		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 305. Vành đai trong. Sau MVP
-15	Thùng cảm biến	1	thùng	12,52	94		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 235. Vành đai trong. Sau MVP
-16	Thùng dung dịch lạnh	1	thùng	17,96	134		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 335. Vành đai trong. Sau MVP
-17	Thùng đặc sản Vành đai trong	1	thùng	17,60	264		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 660. Vành đai trong. Sau MVP
-18	Thùng sản phẩm nuôi Vành đai trong	1	thùng	18,48	184		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 460. Vành đai trong. Sau MVP
-19	Thùng giáp	1	thùng	43,04	322		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 805. Vùng trung tâm. Sau MVP
-20	Thùng plasma	1	thùng	34,76	260		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 650. Vùng trung tâm. Sau MVP
-21	Thùng lõi nguội	1	thùng	44,44	334		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 835. Vùng trung tâm. Sau MVP
-22	Thùng đặc sản Vùng trung tâm	1	thùng	39,60	594		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 1485. Vùng trung tâm. Sau MVP
-23	Thùng sản phẩm nuôi Vùng trung tâm	1	thùng	43,12	432		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 1080. Vùng trung tâm. Sau MVP
-24	Thùng linh kiện Cradle	1	thùng	64,40	484		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 1210. Dải Cradle. Sau MVP
-25	Kiện tin mật	1	cái	86,90	1305		Tàu trả. Hàng hiếm, độ gọi 1. Bán nguyên cái, không chia thùng. Vùng trung tâm. Sau MVP
-26	Thùng linh kiện Warden	1	thùng	77,28	580		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 1450. Vùng trung tâm. Sau MVP
-27	Lồng sinh vật sống: Driftmoth	1	lồng	5,14	65		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. MVP
-28	Lồng sinh vật sống: Skitter Ray	1	lồng	5,74	75		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. MVP
-29	Lồng sinh vật sống: Sting Krill	1	lồng	4,04	55		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. MVP
-30	Lồng sinh vật sống: Arc Eel	1	lồng	30,71	400		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. Hạ là MVP, bắt sống là Sau MVP
-31	Lồng sinh vật sống: Latchjaw	1	lồng	16,91	220		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. Sau MVP
-32	Lồng sinh vật sống: Lumen Jelly	1	lồng	25,91	335		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai trong. Sau MVP
-33	Lồng sinh vật sống: Orebiter	1	lồng	28,91	375		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai trong. Sau MVP
-34	Lồng sinh vật sống: Needlefin	1	lồng	10,26	135		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai trong. Sau MVP
-35	Lồng sinh vật sống: Prism Wisp	1	lồng	33,49	435		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vùng trung tâm. Sau MVP
-36	Lồng sinh vật sống: Mirror Mantis	1	lồng	69,51	905		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vùng trung tâm. Sau MVP
-37	Lồng sinh vật sống: Shardbrood Hatchling	1	lồng	23,04	300		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vùng trung tâm. Sau MVP
-38	Cảng cấp 2	1	cái	-	2000		Shop bán. Cửa neo thứ 4 của bến 1, không theo số người. Cần Hạng cảng 4. Mở chương 2. Sau MVP
-39	Bản thiết kế Máy quét xung	1	cái	-	3000		Shop bán. Cũng có ở hòm Seed Station thứ hai. Cần Hạng cảng 4. Mở chương 2. Sau MVP
-40	Bản thiết kế Máy cắt thân tàu	1	cái	-	11000		Shop bán. Cũng có ở hòm Station Flint. Mở chương 3. Sau MVP
-41	Bản thiết kế tiện ích cảng	1	cái	-	11000		Shop bán. Cần Hạng cảng 6. Mở chương 3. Sau MVP
-42	Van tiết lưu (động cơ giai đoạn 1)	1	cái	-	1850		Shop bán. Cần Hạng cảng 3. Mở chương 1. MVP
-43	Buồng đốt tái chế (động cơ giai đoạn 2)	1	cái	-	10050		Shop bán. Cần Hạng cảng 5. Mở chương 2. Sau MVP
-44	Cuộn ổn định từ (động cơ giai đoạn 3)	1	cái	-	36700		Shop bán. Cần Hạng cảng 7. Mở chương 3. Sau MVP
-45	Bơm nhiên liệu Veyl (động cơ giai đoạn 4)	1	cái	-	45850		Shop bán. Cần Hạng cảng 8. Mở chương 4. Sau MVP
-	Ghi chú: Tally chỉ đến từ giờ giao thương. Giá một thùng bằng GTĐ thùng (cột Value) nhân 10 nhân hệ số bậc giá, làm tròn số chẵn. Giá lồng bằng GTĐ mẫu sống nhân 10 nhân 1,3, làm tròn 5						Bậc giá: hàng chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Độ gọi ngược với giá: chợ 3, sinh học 2, chế 1,5, sống và hiếm 1
-	Ghi chú: tip tối đa 25% giá thùng nhân kiên nhẫn còn lại. Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Đơn đặt trước trả giá thùng nhân 1,5						Con nuôi bỏ vào lồng trả nửa giá, tối đa 1 lồng mỗi loài mỗi ngày. Lồng nhân hệ số sao 1,0, 1,25, 1,5
-	Ghi chú: giá không đổi theo số người và theo thời gian. Shop không bán tài nguyên, kiện, vật tiêu hao. Giá nâng cấp ở tab Upgrade						Bảng giá duy nhất của game. Tab khác ghi tên và trỏ về đây
+STT	Item List	Quantity	Unit	Value	Price (Tally)	New Price (Tally)	Note	Phiên bản
+1	Thùng phế liệu	1	thùng	5,60	42		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 105. Vành đai ngoài. MVP	MVP
+2	Thùng cáp	1	thùng	5,28	40		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 100. Vành đai ngoài. MVP	MVP
+3	Thùng quặng	1	thùng	5,28	40		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 100. Vành đai ngoài. MVP	MVP
+4	Thùng băng	1	thùng	5,60	42		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 105. Vành đai ngoài. MVP	MVP
+5	Thùng mô sinh học	1	thùng	5,40	54		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 135. Vành đai ngoài. MVP	MVP
+6	Thùng đồ Trái Đất	1	thùng	5,00	76		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 190. Vành đai ngoài. MVP	MVP
+7	Thùng cơ khí	1	thùng	5,36	72		Tàu trả. Hàng chế, độ gọi 1,5. Một kiện bằng 2,5 thùng, giá kiện 180. Vành đai ngoài. Sau MVP	Sau MVP
+8	Thùng điện tử	1	thùng	6,44	86		Tàu trả. Hàng chế, độ gọi 1,5. Một kiện bằng 2,5 thùng, giá kiện 215. Vành đai ngoài. Sau MVP	Sau MVP
+9	Thùng nước tinh khiết	1	thùng	4,80	64		Tàu trả. Hàng chế, độ gọi 1,5. Một kiện bằng 2,5 thùng, giá kiện 160. Vành đai ngoài. MVP	MVP
+10	Thùng đặc sản Vành đai ngoài	1	thùng	5,28	80		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 200. Vành đai ngoài. MVP	MVP
+11	Thùng sản phẩm nuôi Vành đai ngoài	1	thùng	17,16	172		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 430. Vành đai ngoài. Sau MVP	Sau MVP
+12	Thùng vật tư	1	thùng	18,76	282		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 705. Vành đai ngoài. Sau MVP	Sau MVP
+13	Bản sao dữ liệu	1	cái	20,90	315		Tàu trả. Hàng hiếm, độ gọi 1. Bán nguyên cái, không chia thùng. Vành đai ngoài. Sau MVP	Sau MVP
+14	Thùng hợp kim	1	thùng	16,16	122		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 305. Vành đai trong. Sau MVP	Sau MVP
+15	Thùng cảm biến	1	thùng	12,52	94		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 235. Vành đai trong. Sau MVP	Sau MVP
+16	Thùng dung dịch lạnh	1	thùng	17,96	134		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 335. Vành đai trong. Sau MVP	Sau MVP
+17	Thùng đặc sản Vành đai trong	1	thùng	17,60	264		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 660. Vành đai trong. Sau MVP	Sau MVP
+18	Thùng sản phẩm nuôi Vành đai trong	1	thùng	18,48	184		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 460. Vành đai trong. Sau MVP	Sau MVP
+19	Thùng giáp	1	thùng	43,04	322		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 805. Vùng trung tâm. Sau MVP	Sau MVP
+20	Thùng plasma	1	thùng	34,76	260		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 650. Vùng trung tâm. Sau MVP	Sau MVP
+21	Thùng lõi nguội	1	thùng	44,44	334		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 835. Vùng trung tâm. Sau MVP	Sau MVP
+22	Thùng đặc sản Vùng trung tâm	1	thùng	39,60	594		Tàu trả. Hàng hiếm, độ gọi 1. Một kiện bằng 2,5 thùng, giá kiện 1485. Vùng trung tâm. Sau MVP	Sau MVP
+23	Thùng sản phẩm nuôi Vùng trung tâm	1	thùng	43,12	432		Tàu trả. Hàng sinh học, độ gọi 2. Một kiện bằng 2,5 thùng, giá kiện 1080. Vùng trung tâm. Sau MVP	Sau MVP
+24	Thùng linh kiện Cradle	1	thùng	64,40	484		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 1210. Dải Cradle. Sau MVP	Sau MVP
+25	Kiện tin mật	1	cái	86,90	1305		Tàu trả. Hàng hiếm, độ gọi 1. Bán nguyên cái, không chia thùng. Vùng trung tâm. Sau MVP	Sau MVP
+26	Thùng linh kiện Warden	1	thùng	77,28	580		Tàu trả. Hàng chợ, độ gọi 3. Một kiện bằng 2,5 thùng, giá kiện 1450. Vùng trung tâm. Sau MVP	Sau MVP
+27	Lồng sinh vật sống: Driftmoth	1	lồng	5,14	65		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. MVP	MVP
+28	Lồng sinh vật sống: Skitter Ray	1	lồng	5,74	75		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. MVP	MVP
+29	Lồng sinh vật sống: Sting Krill	1	lồng	4,04	55		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. MVP	MVP
+30	Lồng sinh vật sống: Arc Eel	1	lồng	30,71	400		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. Hạ là MVP, bắt sống là Sau MVP	MVP một phần
+31	Lồng sinh vật sống: Latchjaw	1	lồng	16,91	220		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai ngoài. Sau MVP	Sau MVP
+32	Lồng sinh vật sống: Lumen Jelly	1	lồng	25,91	335		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai trong. Sau MVP	Sau MVP
+33	Lồng sinh vật sống: Orebiter	1	lồng	28,91	375		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai trong. Sau MVP	Sau MVP
+34	Lồng sinh vật sống: Needlefin	1	lồng	10,26	135		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vành đai trong. Sau MVP	Sau MVP
+35	Lồng sinh vật sống: Prism Wisp	1	lồng	33,49	435		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vùng trung tâm. Sau MVP	Sau MVP
+36	Lồng sinh vật sống: Mirror Mantis	1	lồng	69,51	905		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vùng trung tâm. Sau MVP	Sau MVP
+37	Lồng sinh vật sống: Shardbrood Hatchling	1	lồng	23,04	300		Tàu trả theo loài trong lồng, không chia thùng. Hàng sống, độ gọi 1. Vùng trung tâm. Sau MVP	Sau MVP
+38	Cảng cấp 2	1	cái	-	2000		Shop bán. Cửa neo thứ 4 của bến 1, không theo số người. Cần Hạng cảng 4. Mở chương 2. Sau MVP	Sau MVP
+39	Bản thiết kế Máy quét xung	1	cái	-	3000		Shop bán. Cũng có ở hòm Seed Station thứ hai. Cần Hạng cảng 4. Mở chương 2. Sau MVP	Sau MVP
+40	Bản thiết kế Máy cắt thân tàu	1	cái	-	11000		Shop bán. Cũng có ở hòm Station Flint. Mở chương 3. Sau MVP	Sau MVP
+41	Bản thiết kế tiện ích cảng	1	cái	-	11000		Shop bán. Cần Hạng cảng 6. Mở chương 3. Sau MVP	Sau MVP
+42	Van tiết lưu (động cơ giai đoạn 1)	1	cái	-	1850		Shop bán. Cần Hạng cảng 3. Mở chương 1. MVP	MVP
+43	Buồng đốt tái chế (động cơ giai đoạn 2)	1	cái	-	10050		Shop bán. Cần Hạng cảng 5. Mở chương 2. Sau MVP	Sau MVP
+44	Cuộn ổn định từ (động cơ giai đoạn 3)	1	cái	-	36700		Shop bán. Cần Hạng cảng 7. Mở chương 3. Sau MVP	Sau MVP
+45	Bơm nhiên liệu Veyl (động cơ giai đoạn 4)	1	cái	-	45850		Shop bán. Cần Hạng cảng 8. Mở chương 4. Sau MVP	Sau MVP
+	Ghi chú: Tally chỉ đến từ giờ giao thương. Giá một thùng bằng GTĐ thùng (cột Value) nhân 10 nhân hệ số bậc giá, làm tròn số chẵn. Giá lồng bằng GTĐ mẫu sống nhân 10 nhân 1,3, làm tròn 5						Bậc giá: hàng chợ 0,75, sinh học 1,0, chế 1,35, sống 1,3, hiếm 1,5. Độ gọi ngược với giá: chợ 3, sinh học 2, chế 1,5, sống và hiếm 1	MVP
+	Ghi chú: tip tối đa 25% giá thùng nhân kiên nhẫn còn lại. Tàu vội gấp đôi, Tikko gọi đồ Trái Đất gấp đôi, bơm khí cộng 10. Đơn đặt trước trả giá thùng nhân 1,5						Con nuôi bỏ vào lồng trả nửa giá, tối đa 1 lồng mỗi loài mỗi ngày. Lồng nhân hệ số sao 1,0, 1,25, 1,5	MVP
+	Ghi chú: giá không đổi theo số người và theo thời gian. Shop không bán tài nguyên, kiện, vật tiêu hao. Giá nâng cấp ở tab Upgrade						Bảng giá duy nhất của game. Tab khác ghi tên và trỏ về đây	MVP

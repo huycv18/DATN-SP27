@@ -1,0 +1,6 @@
+[mcp_servers.codegraphcontext]
+command = "C:/Users/huycv/.local/bin/cgc.exe"
+args = [
+    "mcp",
+    "start",
+]

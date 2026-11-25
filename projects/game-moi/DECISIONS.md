@@ -470,11 +470,49 @@ Lead yêu cầu môi trường 3D, đồ họa 2.5D, camera top-down nghiêng 45
 
 Ba mục ngay trên (Demo màn hình, UI theo WarFront, Hướng hình ảnh ngoài không gian) đến từ nhánh codex-cty. Mục Hướng hình ảnh viết trong trạm vẫn dùng mặt cắt ngang và gọi vùng 1 là Dải Gần. Hai điểm này đã bị thay bởi mục "Art: không gian 3D, đồ họa 2.5D, góc nhìn top-down 45 độ" (Lead: "Chuyển hết sang top-down") và mục đổi tên vùng thành Vành đai ngoài. Khi gộp, AGENTS.md, khung, `so-hien-hanh.md`, `map.md`, chương đề xuất giữ bản main. Hai ảnh mẫu cảnh bay Lead duyệt được thêm vào khung mục 13. Demo `tools/prototype/wireframe/` và `tools/prototype/game-demo/` còn dùng chữ cũ (ca cảng, Dải Gần), chưa sửa.
 
+## 2026-11-25 - Làm rõ phạm vi MVP, tab Assets có cột Phiên bản và Priority
+
+Lead: "Clear thông tin cho bản MVP trong GDD, Danh sách Assets cần thêm cột Prioriti để biết mức độ Ưu tiên cho các task".
+
+- Phạm vi MVP không đổi, chỉ ghi đích danh: khung mục 12 thành bảng (map, người vớt, 8 khoang, giờ giao thương, 4 loài Driftlife, boss Scrapmaw, 3 hazard, co-op 2 người), OVERVIEW PROJECT SCOPE và `so-hien-hanh.md` theo cùng nội dung. "3 đến 4 loài Driftlife" thành 4 loài đúng như Enemy.
+- Tab Assets: kéo bản Sheet về trước (Sheet có thêm 5 dòng VFX người chơi từ `nguoi-choi.md` mà repo chưa có, nay 96 dòng). Bỏ tiền tố [MVP] trong tên, thêm cột Phiên bản (MVP, Sau MVP) và Priority (danh sách chọn): 1 - Cao nhất là vòng lõi chơi thử, 2 - Cao là trọn một ngày, 3 - Trung bình là trọn chương 1, 4 - Thấp là Sau MVP. Mức đặt cho từng dòng là GDM tự quyết (thẩm quyền ưu tiên), Lead đổi được trên Sheet.
+- Priority ghi bằng chữ, không ghi P1 tới P4, vì `kiem-de-doc.mjs` coi P1 là mã.
+
+## 2026-11-25 - Cột Phiên bản cho mọi tab nội dung
+
+Lead: "Có, thêm cột" (cột nhãn MVP riêng cho các tab còn ghi nhãn lẫn trong chữ).
+
+- 18 tab thêm cột `Phiên bản` ở cuối: ITEM LIST, Salvage, Recipe, Shop, Upgrade, PROCESSING, Balance Sheet, Enemy, Customer, Zone, Player, GAME STORY, CORE LOOP, Day, Tutorials, WIREFRAME, MVP Criteria Checklist, Event Tracking. Assets đã có từ trước. Giá trị: `MVP`, `Sau MVP`, `MVP một phần` (hàng có cả hai phần, chữ trong hàng nói phần nào). Nhãn trong chữ giữ nguyên vì `sinh-codex.mjs` đang đọc.
+- Không thêm: OVERVIEW, TRACKING (không phải nội dung), ECONOMIC (sim sinh theo ngày, chương 1 là MVP).
+- Cột đặt ở cuối để không lệch chỉ số cột của tool. GAME STORY có nhiều bảng con: chữ `Phiên bản` nằm ở mỗi hàng header bảng con, tiêu đề mục và hàng trống để trống.
+- Nhãn gán bằng máy từ nhãn có sẵn trong chữ, rồi 3 subagent soát và tự định hàng thiếu theo khung mục 12 và GDD hệ thống (brief `briefs/2026-11-25-cot-phien-ban.md`). GDM đổi 4 hàng Balance Sheet tham số dùng chung cả game sang `MVP một phần` cho khớp Upgrade.
+- Cổng máy: `kiem-de-doc.mjs` báo tab nội dung thiếu cột và hàng dữ liệu có giá trị ngoài 3 giá trị trên. Thêm hàng mới vào các tab này phải ghi Phiên bản.
+- `xuat-event-tracking.mjs` có thêm cột, nhưng TSV Event Tracking là bản sửa tay đã lệch script từ trước (DECISIONS dòng 258), `--kiem` vẫn báo LỆCH như cũ.
+
+## 2026-11-25 - Priority tab Assets đổi sang chữ tiếng Anh, có màu
+
+Lead: "không đánh số mà đánh là Highest High Medium và Low thêm màu cho các drop down này". Thay "1 - Cao nhất, 2 - Cao, 3 - Trung bình, 4 - Thấp" bằng Highest, High, Medium, Low (nghĩa từng mức giữ nguyên). Màu là màu chip của danh sách chọn, kiểu hiển thị Khối (Lead: "để nó như này chứ ko phải màu nền"): Highest đỏ đậm, High cam nhạt, Medium vàng nhạt, Low xanh nhạt. API Sheets không đặt được màu chip, phải đặt trên giao diện Dữ liệu > Xác thực dữ liệu, quy tắc áp cho Assets!D3:D98.
+
+## 2026-11-25 - Sửa định dạng từng tab Sheet GDD theo khuôn indie
+
+Lead: "Sửa từng Sheet tab một". GDM rà 25 tab, lệch chính: tiêu đề dòng 1 chưa gộp đúng bề rộng bảng (ECONOMIC căn trái), header dòng 2 không wrap, cột STT lúc căn phải lúc căn giữa, cột Phiên bản mới thêm chưa có viền, ô gộp khối Task lệch dòng ở Recipe sau các lần dán chữ thuần, GAME STORY kẻ một khung chung cả dòng trống giữa các mục. Tab Ref (danh bạ, link) Lead tự thêm, định dạng tay theo khuôn và sửa Sđt mất số 0 đầu.
+Hệ quả: `tools/dinh-dang-sheet.mjs` thêm dòng tiêu đề, header, cột STT, khung riêng từng mục cho tab nhiều mục, tham số chọn tab. Đã chạy cho 22 tab (trừ OVERVIEW giữ định dạng tay), `doi-chieu-sheet` 23 tab KHỚP sau gộp ô. Màu tab, độ rộng cột, chip Priority của Assets giữ nguyên.
+
+## 2026-11-25 - Tab WIREFRAME gắn ảnh khung Figma ở cột Ref 1
+
+Lead: "Gắn ảnh ref vào Sheet Wireframe". Ref 1 của 28 màn MVP là ảnh khung trang Wireframe MVP trên Figma, xuất PNG 1280x720 vào `ux/wireframe-png/`, hiện trong ô bằng `=IMAGE()` trỏ link raw GitHub theo commit `24cae39` (repo public, link không đổi khi nhánh đổi). Ref 2 gộp chỗ đọc `ux-ui.md` và ghi chú khung. Động cơ chính dùng chung khung với Sửa khoang, Kết chuyến dùng chung với Bị kéo về, HUD bay ghi thêm khung khi đánh boss. Nghiên cứu và Khoang sinh quyển là Sau MVP, chưa có khung. Cột Ref 1 rộng 320 px, dòng có ảnh cao 190 px.
+Hệ quả: `ux/gan-anh-wireframe.mjs <sha>` sinh lại hai cột khi Figma đổi khung. `doi-chieu-sheet` coi ô `=IMAGE(` khớp với ô CSV trống, `kiem-de-doc` bỏ qua ô ảnh, `dinh-dang-sheet` giữ dòng có ảnh cao 190 px. `ux/xuat-sheet.mjs` đã cũ so với TSV WIREFRAME hiện hành (thiếu STT, Phiên bản), không chạy lại để khỏi ghi đè.
+
+## 2026-11-25 - Tab Tutorials gắn ảnh khung màn ở cột Ref 1
+
+Lead: "Gắn ảnh ref vào tab Tutorials". Ref 1 của 37 bước là ảnh khung màn nơi bước đó hiện, dùng lại ảnh trong `ux/wireframe-png/` (commit `24cae39`). Chèn cột Ref 2 trước Phiên bản, chuyển chỗ đọc tài liệu từ Ref 1 cũ sang. Ghép màn: HUD bay 18 bước, HUD giờ giao thương 4, Trạm mặt bằng 2, Bảng tàu và danh mục bán 2, còn lại mỗi màn 1 bước (Cửa khí, Túi đồ, Sửa khoang, Xưởng, Ngạt, Tổng kết giao thương, Nâng cấp, Shop, Sổ tay, Cảnh tỉnh dậy, Bản đồ chuyến). Bảng ghép nằm trong `ux/gan-anh-tutorials.mjs`.
+Hệ quả: thêm bước tutorial mới thì ghi màn của nó vào bảng ghép trong script, script dừng khi có bước chưa ghép. Cột Ref 1 rộng 320 px, dòng cao 190 px. doi-chieu Tutorials KHỚP, kiem-de-doc ĐẠT.
+
 ## 2026-11-25 - Đội hình bốn nhân vật người chơi
 
 Lead: "4 người chơi này như nhau trước nhé, không có vai trò riêng hay kĩ năng đặc biệt, viết mô tả bối cảnh giúp dễ dàng trong việc thiết kế Assets ấy. Tôi muốn có một nhân vật chính là người Việt Nam. Có 2 nam 2 nữ không da màu."
 
-- PC-1 đến PC-4 ngang nhau về luật: cùng chỉ số, cùng kỹ năng, không vai trò riêng. Phần tính cách và nghề cũ (GD-078) chỉ là mô tả bối cảnh để art dựng asset, không đồ vật hay thói quen nào được gợi một vai gameplay (ví dụ hộp y tế gợi người chữa).
+- PC-1 đến PC-4 ngang nhau về luật: cùng chỉ số, cùng kỹ năng, không vai trò riêng. Phần tính cách và nghề cũ (GD-079) chỉ là mô tả bối cảnh để art dựng asset, không đồ vật hay thói quen nào được gợi một vai gameplay (ví dụ hộp y tế gợi người chữa).
 - Nhân vật chính là PC-1, hồ sơ mặc định khi chơi đơn và là người truyện gọi tên, đổi thành người Việt Nam.
 - Đội hình: 2 nam, 2 nữ, không nhân vật da màu.
 - Lead sửa cùng ngày: "PC-1 là nhân vật nam chính". PC-1 là nam người Việt, thay Noor Haddad. GDM tự quyết (Lead đổi được) để giữ 2 nam 2 nữ: PC-4 thay Tariq Bello bằng một nữ không da màu, bỏ râu ở hồ sơ PC-4. Jonas Weber và Mei Tanaka giữ nguyên. Tên PC-1 không trùng họ Trần với Linh Tran (RS-2).

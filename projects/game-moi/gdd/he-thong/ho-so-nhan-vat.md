@@ -56,7 +56,7 @@ Vai: người sống sót của Ember, kíp vận hành trạm, không ai là ch
 | PC-3 | Slot 3 □, vàng chanh `#D8E21F` | Mei Tanaka | Kíp vận hành trạm | 0,9 u | Mũ trứng có chóp sáng, balo tròn nhỏ, dáng nhỏ gọn đầu tương đối lớn | Tóc ngắn bồng thấy qua tấm kính mũ, bộ đồ vàng chanh đen, găng ngón mảnh | Sau MVP |
 | PC-4 | Slot 4 ◇, hồng tím `#D6309B` | Niamh Doyle | Kíp vận hành trạm | 1,2 u | Vai rất rộng, mũ tròn đáy phẳng, bình Oxy nghiêng trên vai, túi dụng cụ hông | Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông | Sau MVP |
 
-Nhân dạng để art dựng (khớp `cot-truyen.md` khối GD-078, GD-078 Lead chốt 2026-11-25: bốn PC ngang nhau về luật, không vai trò hay kỹ năng riêng, 2 nam 2 nữ, không ai da màu, PC-1 là nam chính người Việt Nam):
+Nhân dạng để art dựng (khớp `cot-truyen.md` khối GD-079, GD-079 Lead chốt 2026-11-25: bốn PC ngang nhau về luật, không vai trò hay kỹ năng riêng, 2 nam 2 nữ, không ai da màu, PC-1 là nam chính người Việt Nam):
 
 | Mã | Tên, quốc gia | Giới tính, tuổi | Da | Tóc | Nét mặt khi bình thường |
 |---|---|---|---|---|---|
@@ -239,7 +239,7 @@ Clip trong trạm (top-down 45 độ, 3 hướng vẽ lên, xuống, ngang, ngan
 | 8 | Thức dậy từ buồng ngủ đông | 3,0 | Không | MVP |
 | 9 | Bước xuống từ xuồng hoặc Skiff (Amara, Yusuf) | 2,0 | Không | Sau MVP |
 
-Clip idle đứng tại chỗ riêng từng preset (GD-078, thay clip Idle chung ở dòng 1 khi đứng yên trong trạm, 2,0 giây loop, tắt được trong tùy chọn, không chạy khi đang điều khiển) và vật để lại trên buồng tắt (đặt trên hoặc cạnh buồng, bấm vào hiện dòng ở `cot-truyen.md` mục "Dòng trên buồng đã tắt"):
+Clip idle đứng tại chỗ riêng từng preset (GD-079, thay clip Idle chung ở dòng 1 khi đứng yên trong trạm, 2,0 giây loop, tắt được trong tùy chọn, không chạy khi đang điều khiển) và vật để lại trên buồng tắt (đặt trên hoặc cạnh buồng, bấm vào hiện dòng ở `cot-truyen.md` mục "Dòng trên buồng đã tắt"):
 
 | Preset | Clip idle | Vật để lại trên buồng tắt | Nhãn |
 |---|---|---|---|
@@ -374,5 +374,5 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | 2026-11-20 | Đợt 4 sau GD-031: bộ màu sinh lại và kiểm bằng script (HSV), hình slot, luật slot và người vào sau, luật chiều cao không đổi va chạm, Odile giữ niềm tin tới chương 4, clip bắt sống MVP, bảng clip và biểu cảm NPC MVP, 108 điểm ảnh một u, nhãn MVP | GD-023 Đ4 | gd-character |
 | 2026-11-20 | Đợt 6 phản diện mới: Daskel là độc tài Sennar, Sevra (NP-5) gộp với Ilsume hai trạng thái, Maro là gián điệp của Daskel, lính The Wardens là người Sennari, bỏ ý tham lam hơn loài người và đạo đức giả | GD-033 | gd-character |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Chuyển xuống đây: The Wardens không còn là một chủng tộc, là chế độ và quân của Daskel | Rà văn phong GDD | gd-character |
-| 2026-11-25 | Đội hình bốn PC mới: PC-1 Lê Quốc Bảo (nam Việt Nam), PC-4 Niamh Doyle (nữ Ireland), bảng giới tính, tuổi, da, tóc, nét mặt, bỏ râu và hộp y tế PC-4 (đổi túi dụng cụ thường), thêm 4 clip idle và 4 vật để lại vào yêu cầu art mục 7, bốn PC ngang nhau về luật | GD-078 | gd-character |
-| 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-078 | GDM |
+| 2026-11-25 | Đội hình bốn PC mới: PC-1 Lê Quốc Bảo (nam Việt Nam), PC-4 Niamh Doyle (nữ Ireland), bảng giới tính, tuổi, da, tóc, nét mặt, bỏ râu và hộp y tế PC-4 (đổi túi dụng cụ thường), thêm 4 clip idle và 4 vật để lại vào yêu cầu art mục 7, bốn PC ngang nhau về luật | GD-079 | gd-character |
+| 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-079 | GDM |
