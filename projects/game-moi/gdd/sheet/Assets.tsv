@@ -8,8 +8,8 @@ STT	Asset Name	Link	Note
 7	[MVP] Clip người chơi trong trạm (8 clip x 3 hướng vẽ = 24 bộ): Idle, Đi ngang, Đi lên và xuống, Mang thùng, Nhặt và giao thùng, Tương tác, Mặc bộ đồ, Thức dậy từ buồng ngủ đông		Nguồn: ho-so-nhan-vat.md mục 7
 8	[MVP] Clip riêng NPC MVP (14): Ingrid 4, Linh 4, Tikko 6		Nguồn: ho-so-nhan-vat.md mục 7
 9	[MVP] Rig nhân loại và rig Oru (2 MVP, 3 tổng gồm rig trẻ em)		Nguồn: ho-so-nhan-vat.md mục 7
-10	[MVP] Clip idle riêng 4 preset người chơi đứng tại chỗ (2 MVP, 4 tổng)		Nguồn: ho-so-nhan-vat.md mục 7, cot-truyen.md GD-078. Chỉ là nền, không gợi vai
-11	[MVP] Vật để lại trên buồng ngủ đông tắt, 1 vật mỗi preset (2 MVP, 4 tổng)		Nguồn: ho-so-nhan-vat.md mục 7, cot-truyen.md GD-078
+10	[MVP] Clip idle riêng 4 preset người chơi đứng tại chỗ (2 MVP, 4 tổng)		Nguồn: ho-so-nhan-vat.md mục 7, cot-truyen.md mục Tính cách bốn hồ sơ mặc định. Chỉ là nền, không gợi vai
+11	[MVP] Vật để lại trên buồng ngủ đông tắt, 1 vật mỗi preset (2 MVP, 4 tổng)		Nguồn: ho-so-nhan-vat.md mục 7, cot-truyen.md mục Tính cách bốn hồ sơ mặc định
 12	[MVP] Driftlife Driftmoth (8 hoạt ảnh: Trôi, Cảnh giác, Báo trước, Đánh, Hồi, Choáng, Ngủ, Bị hạ)		Nguồn: combat-driftlife.md mục 7. Hiền, màu lạnh
 13	[MVP] Driftlife Skitter Ray (8 hoạt ảnh)		Nguồn: combat-driftlife.md mục 7. Chạy trốn, hàng sống giá cao
 14	[MVP] Driftlife Sting Krill (8 hoạt ảnh, đi bầy)		Nguồn: combat-driftlife.md mục 7. Điểm đỏ hoặc vàng báo săn mồi

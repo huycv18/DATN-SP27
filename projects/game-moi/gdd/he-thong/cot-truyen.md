@@ -117,7 +117,7 @@ Hệ thống cốt truyện giữ bối cảnh, năm chương, nhân vật truy�
 
 | Tên [TẠM] | Mã (gd-character) | Vai | Xuất hiện |
 |---|---|---|---|
-| Nguyễn Việt, Jonas Weber, Mei Tanaka, Niamh Doyle | PC-1 đến PC-4 | Bốn hồ sơ mặc định của tổ Ember: kíp vận hành trạm, không có nghề riêng (nhân vật người chơi, đổi tên được) | Chương 1 |
+| Nguyễn Việt, Jonas Weber, Mei Tanaka, Niamh Doyle | PC-1 đến PC-4 | Bốn hồ sơ mặc định của tổ Ember: kíp vận hành trạm, không có vai trò riêng (nhân vật người chơi, đổi tên được) | Chương 1 |
 | Ingrid Halvorsen | RS-1 | Người vớt: Kỹ sư, xưởng | Chương 1, Station Cinder |
 | Linh Tran | RS-2 | Người vớt: Thông dịch viên, khoang liên lạc và cảng | Chương 1, Station Cinder |
 | Rafael Ortega (Rafa) | RS-3 | Người vớt: Hoa tiêu, khoang dẫn đường và bến Skiff | Chương 2, Station Wick |
@@ -560,7 +560,7 @@ Ghi chú để bốn người khác nhau và không trùng người vớt:
 - Không trùng người vớt: không ai thẳng và khô như Ingrid, không ai lịch sự bối rối như Linh, không ai mê tín như Rafa, không ai nói chuyện với vật như Amara, không ai ồn như Yusuf. Hồ sơ PC im lặng, người vớt là người nói.
 - Hài nhẹ: Jonas đẩy kính khi kính không trượt, Mei vỗ balo giữa cảnh hỏng, Niamh gãi gáy khi bị nhìn, Việt vươn vai giữa lúc căng. Không câu đùa nào, không dùng ở mốc mất mát.
 - Biểu cảm 8 loại (`ho-so-nhan-vat.md` 2b.1) là bộ chung. Mỗi hồ sơ có biểu cảm "bình thường" đặt khác nhau như cột Nét mặt ở trên, và cùng một sự kiện thì thời gian giữ biểu cảm khác nhau. Các hoạt cảnh idle ở bảng là clip đứng tại chỗ, tắt được trong tùy chọn, không chạy khi đang điều khiển.
-- Mô tả ngắn trên màn chọn preset (không phải lời của PC, ghi ngôi thứ ba, tối đa 80 ký tự, ví dụ trình gd-ux): Việt "Bền bỉ, ít lời. Cứ bình tĩnh đi tiếp." Jonas "Ngay thật, tốt bụng. Chậm một nhịp." Mei "Nhanh nhẹn, thực tế. Hay bướng." Niamh "Điềm tĩnh, hiền. Hơi vụng."
+- Mô tả ngắn trên màn chọn preset (không phải lời của PC, ghi ngôi thứ ba, tối đa 80 ký tự, ví dụ trình gd-ux): Việt "Bền bỉ, ít lời. Cứ bình tĩnh đi tiếp." Jonas "Ngay thật, tốt bụng. Chậm một nhịp." Mei "Nhanh nhẹn, thực tế. Hay bướng." Niamh "Điềm tĩnh, hiền. Hơi vụng." Màn chọn luôn kèm một dòng cố định: "Bốn hồ sơ giống nhau về chỉ số và kỹ năng."
 - Người vớt nhắc tới họ qua nét nhìn thấy, không qua lời của PC. Ví dụ hướng: Ingrid nhận xét người hay vươn vai giữa lúc căng là người không chịu căng theo, Linh nhận xét người hay đẩy kính là người nghĩ xong mới nói, Yusuf mời trà người đang xoay tròn nhìn quanh. Chỉ nhắc nét của hồ sơ đang có người chơi dùng, gọi theo tên người chơi đặt (luật 14). Hồ sơ buồng hỏng không được người vớt nhắc tên.
 - Vật để lại đặt trên hoặc cạnh buồng tắt, bấm vào hiện dòng ở mục "Dòng trên buồng đã tắt" (cuối file), không thêm cảnh. Vật là thứ nhìn thấy khớp với thói quen, người chơi tự đọc ra ai đã mất.
 - Người vào sau (luật 11 mục 2, biến thể B, đặt tên mới) dùng chung thói quen và idle của slot, vì thói quen gắn với hình preset chứ không gắn với người chơi. Người chơi nhập vai tự do: tính cách chỉ là nền nhìn thấy, không ép hành vi hay kỹ năng.
@@ -1236,7 +1236,7 @@ Khi tỉnh khỏi giấc ngủ đông, Nguyễn Việt phát hiện trạm Ember
 - gd-quan: luật 38 (lần hai và lần ba của TA08 chờ mốc), luật 15 (quest của Linh là KH06 và KH07), luật 14 (Hồi sức), tên TA02 và TA09.
 - gd-ux: giới hạn ký tự của hộp thoại, radio, bong bóng, dòng Sổ tay và lời theo trạng thái, tên Sổ tay, cảnh sau giờ giao thương, bước T29, thẻ tên chương.
 - gd-combat: vai truyện và vị trí của BS-1 tới BS-5, loài mang thẻ, cỡ M cho mốc C2.4.
-- gd-character: cảnh đến của người vào sau, bốn hồ sơ người chơi không có nghề riêng.
+- gd-character: cảnh đến của người vào sau, bốn hồ sơ người chơi không có vai trò riêng.
 
 ## Điểm tự quyết (gd-story, để GDM gom vào log)
 
@@ -1315,7 +1315,7 @@ Khi tỉnh khỏi giấc ngủ đông, Nguyễn Việt phát hiện trạm Ember
 | 2026-11-20 | Viết lại chương 4, chương 5 và kết theo Solace là thông tin mồi và kết mở. Khớp boss, khe manh mối, quest sửa khoang, loại tàu với file của các vai khác | Khung đổi B4, B9, B11, K10 sau khi Lead chốt kết mở. File các vai khác có sau bản đầu | gd-story |
 | 2026-11-20 | Thêm mục 2.9 gieo nghi ngờ về Solace ở chương 1 tới 3, hai vật manh mối MM3.6 và MM3.7. Khớp ID vật kể chuyện STY và luật V4 của gd-items (bản cuối: vật nhiệm vụ chiếm túi, mất thì về vị trí gốc), loài mang thẻ DL-X05 của gd-combat, lý do mở Vành đai trong của gd-world | Tin cập nhật của GDM và tin trả lời của gd-items, gd-combat, gd-world, gd-quan | gd-story |
 | 2026-11-20 | Đợt 1b: quest của Kỹ sư mở thêm Súng lưới cho loài nhỏ ở chương 1, chương 2 đổi thành nuôi và bắt sống loài lớn. Ghi kết quả GDM xử 8 phản biện. Gỡ dấu chờ gd-character | Khung sửa lần 2, log GDM dòng 43 đến 49 | gd-story |
-| 2026-11-20 | Gỡ dấu chờ gd-ux (bước T02, T29, T30, màn UI-19 và UI-53). Giữ tên cũ của vụ phục kích, đưa phương án đổi tên xuống mục 10. Ghi rõ Odile tin Solace tới chương 4. Bốn hồ sơ người chơi không có nghề riêng | Tin của gd-ux, lỗi validator của gd-tech, mục lệch của gd-character | gd-story |
+| 2026-11-20 | Gỡ dấu chờ gd-ux (bước T02, T29, T30, màn UI-19 và UI-53). Giữ tên cũ của vụ phục kích, đưa phương án đổi tên xuống mục 10. Ghi rõ Odile tin Solace tới chương 4. Bốn hồ sơ người chơi không có vai trò riêng | Tin của gd-ux, lỗi validator của gd-tech, mục lệch của gd-character | gd-story |
 | 2026-11-20 | Thêm cột Kênh cho 36 câu mẫu, cắt VO_MAR_01 và VO_BRA_03 xuống dưới 60 ký tự. Script soát kiểm giới hạn theo kênh | gd-ux chốt story.box 80, story.radio 60, story.bubble 60 | gd-story |
 | 2026-11-20 | Đính chính sàn ngày chương 5 từ 4 xuống 3 (tổng 25). Ghi kết quả sim của gd-economy và bảng bốn chỗ hạ sàn được, chưa áp | Tin của gd-economy, tự soát lại bảng sàn | gd-story |
 | 2026-11-20 | Luật 21 khớp luật 25 và 26 của `ux-ui.md`: cảnh sau giờ giao thương phát ở màn Kết thúc giờ giao thương hoặc Cuối ngày, khi giờ giao thương đang chạy không cảnh nào chặn màn của ai. Thêm năm thẻ tên chương | Tin của gd-ux | gd-story |
