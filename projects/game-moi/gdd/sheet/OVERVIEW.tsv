@@ -71,7 +71,12 @@ ART DIRECTION	"- Phong cách: không gian game 3D, đồ họa 2.5D, góc nhìn 
 
 PROJECT SCOPE	"- Nhóm: 1 Game Designer, 4 Game Developer, 1 Artist 2D. Unity, PC, co-op online 2 đến 4 người
 - Cả game: 5 chương, 3 dải map tổng, 8 map nhánh, 15 loài Driftlife, 4 đơn vị The Wardens, 5 boss, khoảng 150 vật phẩm, 5 người vớt, 5 thương nhân, 12 đến 15 giờ chơi một mình
-- MVP: trọn chương 1. Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến 3 cửa neo, có 1 loại hàng phải chế trước giờ giao thương và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Dài 1,5 đến 2 giờ
+- MVP: trọn chương 1, dài 1,5 đến 2 giờ (sim 1,77 giờ). Co-op online 2 người
+- MVP map: Vành đai ngoài và 1 map nhánh Station Cinder (xác Seed Station). Hazard: Mảnh trôi, Cáp chập, Ống xì
+- MVP trạm: người vớt Ingrid (Kỹ sư) và Linh (Thông dịch viên). 8 khoang: Buồng ngủ đông, Cửa khí, Kho, Khoang neo, Xưởng, Khoang liên lạc, Cảng, Động cơ chính
+- MVP giờ giao thương: 1 bến 3 cửa neo, thương nhân Tikko và Tàu vội, 1 loại hàng phải chế trước, 1 loại hàng Driftlife sống
+- MVP Driftlife: 4 loài Driftmoth, Skitter Ray, Sting Krill, Arc Eel (Arc Eel chỉ hạ), bắt sống cỡ S bằng lưới. Boss Scrapmaw
+- Priority ở tab Assets: 1 - Cao nhất là vòng lõi chơi thử (một chuyến ra bãi vỡ, nhặt, gặp Driftlife, về trạm). 2 - Cao là trọn một ngày (người vớt, xưởng, giờ giao thương, co-op). 3 - Trung bình là trọn chương 1 (boss, cảnh truyện, hoạt ảnh NPC, VFX phụ). 4 - Thấp là Sau MVP
 - Ngoài phạm vi: PvP, chơi chung một máy, tiền thứ hai, XP, sinh map thủ tục hoàn toàn, chọn chặng trên bản đồ, vùng chơi trên hành tinh Sennar hay hành tinh đích
 - Mốc thời gian: chưa có, chờ Lead. Phạm vi art tính lại khi có mốc
 - Chi tiết: tab TRACKING, MVP Criteria Checklist"

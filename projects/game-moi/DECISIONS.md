@@ -469,3 +469,11 @@ Lead yêu cầu môi trường 3D, đồ họa 2.5D, camera top-down nghiêng 45
 ## 2026-11-23 - Gộp nhánh codex-cty vào main
 
 Ba mục ngay trên (Demo màn hình, UI theo WarFront, Hướng hình ảnh ngoài không gian) đến từ nhánh codex-cty. Mục Hướng hình ảnh viết trong trạm vẫn dùng mặt cắt ngang và gọi vùng 1 là Dải Gần. Hai điểm này đã bị thay bởi mục "Art: không gian 3D, đồ họa 2.5D, góc nhìn top-down 45 độ" (Lead: "Chuyển hết sang top-down") và mục đổi tên vùng thành Vành đai ngoài. Khi gộp, AGENTS.md, khung, `so-hien-hanh.md`, `map.md`, chương đề xuất giữ bản main. Hai ảnh mẫu cảnh bay Lead duyệt được thêm vào khung mục 13. Demo `tools/prototype/wireframe/` và `tools/prototype/game-demo/` còn dùng chữ cũ (ca cảng, Dải Gần), chưa sửa.
+
+## 2026-11-25 - Làm rõ phạm vi MVP, tab Assets có cột Phiên bản và Priority
+
+Lead: "Clear thông tin cho bản MVP trong GDD, Danh sách Assets cần thêm cột Prioriti để biết mức độ Ưu tiên cho các task".
+
+- Phạm vi MVP không đổi, chỉ ghi đích danh: khung mục 12 thành bảng (map, người vớt, 8 khoang, giờ giao thương, 4 loài Driftlife, boss Scrapmaw, 3 hazard, co-op 2 người), OVERVIEW PROJECT SCOPE và `so-hien-hanh.md` theo cùng nội dung. "3 đến 4 loài Driftlife" thành 4 loài đúng như Enemy.
+- Tab Assets: kéo bản Sheet về trước (Sheet có thêm 5 dòng VFX người chơi từ `nguoi-choi.md` mà repo chưa có, nay 96 dòng). Bỏ tiền tố [MVP] trong tên, thêm cột Phiên bản (MVP, Sau MVP) và Priority (danh sách chọn): 1 - Cao nhất là vòng lõi chơi thử, 2 - Cao là trọn một ngày, 3 - Trung bình là trọn chương 1, 4 - Thấp là Sau MVP. Mức đặt cho từng dòng là GDM tự quyết (thẩm quyền ưu tiên), Lead đổi được trên Sheet.
+- Priority ghi bằng chữ, không ghi P1 tới P4, vì `kiem-de-doc.mjs` coi P1 là mã.
