@@ -55,6 +55,8 @@ for (const [tab, sheetId] of Object.entries(cfg.gid)) {
       req.push({ mergeCells: { range: { sheetId, startRowIndex: d + 1, endRowIndex: k + 2, startColumnIndex: j, endColumnIndex: j + 1 }, mergeType: 'MERGE_ALL' } });
   }
   req.push({ autoResizeDimensions: { dimensions: { sheetId, dimension: 'ROWS', startIndex: thanTu, endIndex: cuoi } } });
+  // Dòng có ảnh =IMAGE() giữ cao 190 px (ảnh 16:9 trong cột rộng 320 px), tự co sẽ làm ảnh bé lại
+  rows.forEach((r, i) => { if (i && r.some((x) => x.startsWith('=IMAGE('))) req.push({ updateDimensionProperties: { range: { sheetId, dimension: 'ROWS', startIndex: i + 1, endIndex: i + 2 }, properties: { pixelSize: 190 }, fields: 'pixelSize' } }); });
   const mau = NHOM_C.includes(tab) ? '#B4A7D6' : NHOM_A.includes(tab) ? '#351C75' : NHOM_D.includes(tab) ? '#8E7CC3' : null;
   req.push({ updateSheetProperties: { properties: { sheetId, gridProperties: { hideGridlines: true }, ...(mau && { tabColorStyle: { rgbColor: hex(mau) } }) },
     fields: 'gridProperties.hideGridlines' + (mau ? ',tabColorStyle' : '') } });

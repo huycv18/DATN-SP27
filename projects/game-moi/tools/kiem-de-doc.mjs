@@ -40,6 +40,7 @@ export function kiemTab(tab, rows) {
   rows.forEach((r, ri) => {
     r.forEach((o, ci) => {
       const vt = `${String.fromCharCode(65 + ci)}${ri + 1}`;
+      if (o.startsWith('=IMAGE(')) return; // ô ảnh: người đọc thấy ảnh, không thấy link
       if (ri > 0 && cotId.includes(ci) && o.trim() && !/^\d+$/.test(o.trim()) && !o.startsWith('#')) loi.push([vt, 'ID không phải số thứ tự', o]);
       const ma = [...o.matchAll(MA)].map((m) => m[0]).filter((m) => !CHO_PHEP.test(m));
       if (ma.length) loi.push([vt, 'Còn mã', [...new Set(ma)].slice(0, 6).join(', ')]);

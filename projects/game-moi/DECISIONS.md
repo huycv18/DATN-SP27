@@ -497,3 +497,8 @@ Lead: "không đánh số mà đánh là Highest High Medium và Low thêm màu 
 
 Lead: "Sửa từng Sheet tab một". GDM rà 25 tab, lệch chính: tiêu đề dòng 1 chưa gộp đúng bề rộng bảng (ECONOMIC căn trái), header dòng 2 không wrap, cột STT lúc căn phải lúc căn giữa, cột Phiên bản mới thêm chưa có viền, ô gộp khối Task lệch dòng ở Recipe sau các lần dán chữ thuần, GAME STORY kẻ một khung chung cả dòng trống giữa các mục. Tab Ref (danh bạ, link) Lead tự thêm, định dạng tay theo khuôn và sửa Sđt mất số 0 đầu.
 Hệ quả: `tools/dinh-dang-sheet.mjs` thêm dòng tiêu đề, header, cột STT, khung riêng từng mục cho tab nhiều mục, tham số chọn tab. Đã chạy cho 22 tab (trừ OVERVIEW giữ định dạng tay), `doi-chieu-sheet` 23 tab KHỚP sau gộp ô. Màu tab, độ rộng cột, chip Priority của Assets giữ nguyên.
+
+## 2026-11-25 - Tab WIREFRAME gắn ảnh khung Figma ở cột Ref 1
+
+Lead: "Gắn ảnh ref vào Sheet Wireframe". Ref 1 của 28 màn MVP là ảnh khung trang Wireframe MVP trên Figma, xuất PNG 1280x720 vào `ux/wireframe-png/`, hiện trong ô bằng `=IMAGE()` trỏ link raw GitHub theo commit `24cae39` (repo public, link không đổi khi nhánh đổi). Ref 2 gộp chỗ đọc `ux-ui.md` và ghi chú khung. Động cơ chính dùng chung khung với Sửa khoang, Kết chuyến dùng chung với Bị kéo về, HUD bay ghi thêm khung khi đánh boss. Nghiên cứu và Khoang sinh quyển là Sau MVP, chưa có khung. Cột Ref 1 rộng 320 px, dòng có ảnh cao 190 px.
+Hệ quả: `ux/gan-anh-wireframe.mjs <sha>` sinh lại hai cột khi Figma đổi khung. `doi-chieu-sheet` coi ô `=IMAGE(` khớp với ô CSV trống, `kiem-de-doc` bỏ qua ô ảnh, `dinh-dang-sheet` giữ dòng có ảnh cao 190 px. `ux/xuat-sheet.mjs` đã cũ so với TSV WIREFRAME hiện hành (thiếu STT, Phiên bản), không chạy lại để khỏi ghi đè.
