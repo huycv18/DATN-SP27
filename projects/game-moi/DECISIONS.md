@@ -502,3 +502,8 @@ Hệ quả: `tools/dinh-dang-sheet.mjs` thêm dòng tiêu đề, header, cột S
 
 Lead: "Gắn ảnh ref vào Sheet Wireframe". Ref 1 của 28 màn MVP là ảnh khung trang Wireframe MVP trên Figma, xuất PNG 1280x720 vào `ux/wireframe-png/`, hiện trong ô bằng `=IMAGE()` trỏ link raw GitHub theo commit `24cae39` (repo public, link không đổi khi nhánh đổi). Ref 2 gộp chỗ đọc `ux-ui.md` và ghi chú khung. Động cơ chính dùng chung khung với Sửa khoang, Kết chuyến dùng chung với Bị kéo về, HUD bay ghi thêm khung khi đánh boss. Nghiên cứu và Khoang sinh quyển là Sau MVP, chưa có khung. Cột Ref 1 rộng 320 px, dòng có ảnh cao 190 px.
 Hệ quả: `ux/gan-anh-wireframe.mjs <sha>` sinh lại hai cột khi Figma đổi khung. `doi-chieu-sheet` coi ô `=IMAGE(` khớp với ô CSV trống, `kiem-de-doc` bỏ qua ô ảnh, `dinh-dang-sheet` giữ dòng có ảnh cao 190 px. `ux/xuat-sheet.mjs` đã cũ so với TSV WIREFRAME hiện hành (thiếu STT, Phiên bản), không chạy lại để khỏi ghi đè.
+
+## 2026-11-25 - Tab Tutorials gắn ảnh khung màn ở cột Ref 1
+
+Lead: "Gắn ảnh ref vào tab Tutorials". Ref 1 của 37 bước là ảnh khung màn nơi bước đó hiện, dùng lại ảnh trong `ux/wireframe-png/` (commit `24cae39`). Chèn cột Ref 2 trước Phiên bản, chuyển chỗ đọc tài liệu từ Ref 1 cũ sang. Ghép màn: HUD bay 18 bước, HUD giờ giao thương 4, Trạm mặt bằng 2, Bảng tàu và danh mục bán 2, còn lại mỗi màn 1 bước (Cửa khí, Túi đồ, Sửa khoang, Xưởng, Ngạt, Tổng kết giao thương, Nâng cấp, Shop, Sổ tay, Cảnh tỉnh dậy, Bản đồ chuyến). Bảng ghép nằm trong `ux/gan-anh-tutorials.mjs`.
+Hệ quả: thêm bước tutorial mới thì ghi màn của nó vào bảng ghép trong script, script dừng khi có bước chưa ghép. Cột Ref 1 rộng 320 px, dòng cao 190 px. doi-chieu Tutorials KHỚP, kiem-de-doc ĐẠT.
