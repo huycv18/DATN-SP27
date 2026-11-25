@@ -19,7 +19,7 @@ Hồ sơ cho art và cho gd-story: mỗi nhân vật có vai, ngoại hình, sil
 | Rig | Một rig xương chung cho nhân loại, 4 skin người chơi, người vớt dùng cùng rig | MVP |
 | Phong cách | 2D vector, bóng đổ phẳng 2 mức, nét viền theo màu tối của vùng | Chốt khung |
 
-Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-1 đến PC-4 (preset Bảo, Jonas, Mei, Niamh), người vớt mã RS-1 đến RS-5 (Ingrid, Linh, Rafa, Amara, Yusuf), thương nhân mã TR-1 đến TR-5 (Tikko, Ilsume, Dromm, Vaeth, Nhem). The Wardens mã WD-P1 và WD-P2 (Daskel, Maro, không trùng mã WD-01 đến WD-04 là đơn vị chiến đấu của gd-combat), người phụ mã NP-1 đến NP-4 (Odile, Bram, Elias, Wren). NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Daskel, Sevra, Maro và lính The Wardens, không thêm chủng mới.
+Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-1 đến PC-4 (preset Việt, Jonas, Mei, Niamh), người vớt mã RS-1 đến RS-5 (Ingrid, Linh, Rafa, Amara, Yusuf), thương nhân mã TR-1 đến TR-5 (Tikko, Ilsume, Dromm, Vaeth, Nhem). The Wardens mã WD-P1 và WD-P2 (Daskel, Maro, không trùng mã WD-01 đến WD-04 là đơn vị chiến đấu của gd-combat), người phụ mã NP-1 đến NP-4 (Odile, Bram, Elias, Wren). NP-5 là Sevra Ilvane, trạng thái thứ hai của TR-2 Ilsume (cùng một nhân vật). Chủng tộc: Sennari là chủng của Daskel, Sevra, Maro và lính The Wardens, không thêm chủng mới.
 
 ## 1. Mục đích với người chơi
 
@@ -51,7 +51,7 @@ Vai: người sống sót của Ember, kíp vận hành trạm, không ai là ch
 
 | Mã | Slot, màu nhận diện | Tên mặc định | Vai truyện | Chiều cao | Silhouette (khi tô đen) | Ngoại hình | Nhãn |
 |---|---|---|---|---|---|---|---|
-| PC-1 | Slot 1 ○, cam Ember `#F26B1D` | Lê Quốc Bảo | Kíp vận hành trạm | 1,0 u | Mũ tròn có ăng-ten chữ L bên phải, bình Oxy vuông ngang rộng sau lưng, vai vuông | Tóc đen dài ngang vai búi gọn dưới mũ, găng dày, bộ đồ cam xám than, đai dụng cụ chéo ngực | MVP |
+| PC-1 | Slot 1 ○, cam Ember `#F26B1D` | Nguyễn Việt | Kíp vận hành trạm | 1,0 u | Mũ tròn có ăng-ten chữ L bên phải, bình Oxy vuông ngang rộng sau lưng, vai vuông | Tóc đen dài ngang vai búi gọn dưới mũ, găng dày, bộ đồ cam xám than, đai dụng cụ chéo ngực | MVP |
 | PC-2 | Slot 2 △, lam ngọc `#1FB5D6` | Jonas Weber | Kíp vận hành trạm | 1,1 u | Mũ vuông bo góc, một bình Oxy dài dọc lưng kiểu thùng, dáng cao chữ nhật | Gọng kính trong mũ, bộ đồ lam xám, dây đai vai dày | MVP |
 | PC-3 | Slot 3 □, vàng chanh `#D8E21F` | Mei Tanaka | Kíp vận hành trạm | 0,9 u | Mũ trứng có chóp sáng, balo tròn nhỏ, dáng nhỏ gọn đầu tương đối lớn | Tóc ngắn bồng thấy qua tấm kính mũ, bộ đồ vàng chanh đen, găng ngón mảnh | Sau MVP |
 | PC-4 | Slot 4 ◇, hồng tím `#D6309B` | Niamh Doyle | Kíp vận hành trạm | 1,2 u | Vai rất rộng, mũ tròn đáy phẳng, bình Oxy nghiêng trên vai, túi dụng cụ hông | Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông | Sau MVP |
@@ -60,7 +60,7 @@ Nhân dạng để art dựng (khớp `cot-truyen.md` khối GD-078, GD-078 Lead
 
 | Mã | Tên, quốc gia | Giới tính, tuổi | Da | Tóc | Nét mặt khi bình thường |
 |---|---|---|---|---|---|
-| PC-1 | Lê Quốc Bảo, Việt Nam | Nam, khoảng 29 | Sáng ngả vàng nhạt | Đen, dài ngang vai, búi gọn dưới mũ | Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ |
+| PC-1 | Nguyễn Việt, Việt Nam | Nam, khoảng 29 | Sáng ngả vàng nhạt | Đen, dài ngang vai, búi gọn dưới mũ | Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ |
 | PC-2 | Jonas Weber, Đức | Nam, khoảng 34 | Sáng | Nâu rối, râu lún phún | Mắt mở to chăm chú, hơi gù khi nghe, miệng mím khi nghĩ |
 | PC-3 | Mei Tanaka, Nhật Bản | Nữ, khoảng 26 | Sáng | Đen ngắn bồng | Đầu hơi nghiêng, má phồng khi tập trung, cười nhanh rồi tắt |
 | PC-4 | Niamh Doyle, Ireland | Nữ, khoảng 36 | Sáng có tàn nhang | Nâu đỏ, đuôi thấp gọn trong mũ | Vai rộng nhưng mắt hiền, nhìn xuống khi bị khen |
@@ -243,7 +243,7 @@ Clip idle đứng tại chỗ riêng từng preset (GD-078, thay clip Idle chung
 
 | Preset | Clip idle | Vật để lại trên buồng tắt | Nhãn |
 |---|---|---|---|
-| PC-1 Bảo | Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Đứng lâu thì ngẩng nhìn ra xa | Một cuốn sổ nhỏ bìa mòn, trang cuối còn trống | MVP |
+| PC-1 Việt | Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Đứng lâu thì ngẩng nhìn ra xa | Một cuốn sổ nhỏ bìa mòn, trang cuối còn trống | MVP |
 | PC-2 Jonas | Đẩy gọng kính trong mũ dù kính không trượt, rồi nhìn quanh chậm | Cặp kính gập, một gọng quấn băng keo | MVP |
 | PC-3 Mei | Vỗ balo hai cái rồi xoay tròn tại chỗ nhìn quanh | Một con thú nhồi bông nhỏ buộc ở quai balo | Sau MVP |
 | PC-4 Niamh | Gãi gáy khi thấy mình bị nhìn, rồi xoay vai cho đỡ mỏi | Một đôi găng da sờn, xếp ngay ngắn | Sau MVP |
@@ -375,3 +375,4 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | 2026-11-20 | Đợt 6 phản diện mới: Daskel là độc tài Sennar, Sevra (NP-5) gộp với Ilsume hai trạng thái, Maro là gián điệp của Daskel, lính The Wardens là người Sennari, bỏ ý tham lam hơn loài người và đạo đức giả | GD-033 | gd-character |
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Chuyển xuống đây: The Wardens không còn là một chủng tộc, là chế độ và quân của Daskel | Rà văn phong GDD | gd-character |
 | 2026-11-25 | Đội hình bốn PC mới: PC-1 Lê Quốc Bảo (nam Việt Nam), PC-4 Niamh Doyle (nữ Ireland), bảng giới tính, tuổi, da, tóc, nét mặt, bỏ râu và hộp y tế PC-4 (đổi túi dụng cụ thường), thêm 4 clip idle và 4 vật để lại vào yêu cầu art mục 7, bốn PC ngang nhau về luật | GD-078 | gd-character |
+| 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-078 | GDM |
