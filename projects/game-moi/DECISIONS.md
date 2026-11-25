@@ -477,3 +477,14 @@ Lead: "Clear thông tin cho bản MVP trong GDD, Danh sách Assets cần thêm c
 - Phạm vi MVP không đổi, chỉ ghi đích danh: khung mục 12 thành bảng (map, người vớt, 8 khoang, giờ giao thương, 4 loài Driftlife, boss Scrapmaw, 3 hazard, co-op 2 người), OVERVIEW PROJECT SCOPE và `so-hien-hanh.md` theo cùng nội dung. "3 đến 4 loài Driftlife" thành 4 loài đúng như Enemy.
 - Tab Assets: kéo bản Sheet về trước (Sheet có thêm 5 dòng VFX người chơi từ `nguoi-choi.md` mà repo chưa có, nay 96 dòng). Bỏ tiền tố [MVP] trong tên, thêm cột Phiên bản (MVP, Sau MVP) và Priority (danh sách chọn): 1 - Cao nhất là vòng lõi chơi thử, 2 - Cao là trọn một ngày, 3 - Trung bình là trọn chương 1, 4 - Thấp là Sau MVP. Mức đặt cho từng dòng là GDM tự quyết (thẩm quyền ưu tiên), Lead đổi được trên Sheet.
 - Priority ghi bằng chữ, không ghi P1 tới P4, vì `kiem-de-doc.mjs` coi P1 là mã.
+
+## 2026-11-25 - Cột Phiên bản cho mọi tab nội dung
+
+Lead: "Có, thêm cột" (cột nhãn MVP riêng cho các tab còn ghi nhãn lẫn trong chữ).
+
+- 18 tab thêm cột `Phiên bản` ở cuối: ITEM LIST, Salvage, Recipe, Shop, Upgrade, PROCESSING, Balance Sheet, Enemy, Customer, Zone, Player, GAME STORY, CORE LOOP, Day, Tutorials, WIREFRAME, MVP Criteria Checklist, Event Tracking. Assets đã có từ trước. Giá trị: `MVP`, `Sau MVP`, `MVP một phần` (hàng có cả hai phần, chữ trong hàng nói phần nào). Nhãn trong chữ giữ nguyên vì `sinh-codex.mjs` đang đọc.
+- Không thêm: OVERVIEW, TRACKING (không phải nội dung), ECONOMIC (sim sinh theo ngày, chương 1 là MVP).
+- Cột đặt ở cuối để không lệch chỉ số cột của tool. GAME STORY có nhiều bảng con: chữ `Phiên bản` nằm ở mỗi hàng header bảng con, tiêu đề mục và hàng trống để trống.
+- Nhãn gán bằng máy từ nhãn có sẵn trong chữ, rồi 3 subagent soát và tự định hàng thiếu theo khung mục 12 và GDD hệ thống (brief `briefs/2026-11-25-cot-phien-ban.md`). GDM đổi 4 hàng Balance Sheet tham số dùng chung cả game sang `MVP một phần` cho khớp Upgrade.
+- Cổng máy: `kiem-de-doc.mjs` báo tab nội dung thiếu cột và hàng dữ liệu có giá trị ngoài 3 giá trị trên. Thêm hàng mới vào các tab này phải ghi Phiên bản.
+- `xuat-event-tracking.mjs` có thêm cột, nhưng TSV Event Tracking là bản sửa tay đã lệch script từ trước (DECISIONS dòng 258), `--kiem` vẫn báo LỆCH như cũ.

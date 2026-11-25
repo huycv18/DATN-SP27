@@ -1,492 +1,492 @@
-STT	Task	Sub Task	Short Description	Ref
-1	Ép tấm thép	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	3 x Mảnh vỏ Cradle	
+STT	Task	Sub Task	Short Description	Ref	Phiên bản
+1	Ép tấm thép	Type	Xưởng	vat-pham.md mục 3	MVP
+		Ingredients	3 x Mảnh vỏ Cradle		MVP
 		Output	"1 x Tấm thép nén
-Thời gian: 10 giây"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-2	Bện dây dẫn	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	3 x Dây cáp đứt	
+Thời gian: 10 giây"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+2	Bện dây dẫn	Type	Xưởng	vat-pham.md mục 3	MVP
+		Ingredients	3 x Dây cáp đứt		MVP
 		Output	"1 x Dây dẫn bện
-Thời gian: 8 giây"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-3	Luyện thỏi sắt	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	2 x Quặng sắt thiên thạch	
+Thời gian: 8 giây"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+3	Luyện thỏi sắt	Type	Xưởng	vat-pham.md mục 3	MVP
+		Ingredients	2 x Quặng sắt thiên thạch		MVP
 		Output	"1 x Thỏi sắt
-Thời gian: 15 giây"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-4	Phục hồi mạch	Type	Xưởng	vat-pham.md mục 3
+Thời gian: 15 giây"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+4	Phục hồi mạch	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Bo mạch cháy
-1 x Dây cáp đứt"	
+1 x Dây cáp đứt"		MVP
 		Output	"1 x Mạch phục hồi
-Thời gian: 20 giây"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-5	Lọc băng	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	2 x Băng nước đục	
+Thời gian: 20 giây"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+5	Lọc băng	Type	Xưởng	vat-pham.md mục 3	MVP
+		Ingredients	2 x Băng nước đục		MVP
 		Output	"1 x Khối nước tinh khiết
-Thời gian: 12 giây"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-6	Ép tấm hợp kim chịu nhiệt	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	3 x Hợp kim nóng chảy	
+Thời gian: 12 giây"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+6	Ép tấm hợp kim chịu nhiệt	Type	Xưởng	vat-pham.md mục 3	Sau MVP
+		Ingredients	3 x Hợp kim nóng chảy		Sau MVP
 		Output	"1 x Tấm hợp kim chịu nhiệt
-Thời gian: 10 giây"	
-		Unlock	Kỹ sư, Vành đai trong mở. Nhãn: Sau MVP	
-7	Luyện thỏi cobalt	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	2 x Quặng cobalt	
+Thời gian: 10 giây"		Sau MVP
+		Unlock	Kỹ sư, Vành đai trong mở. Nhãn: Sau MVP		Sau MVP
+7	Luyện thỏi cobalt	Type	Xưởng	vat-pham.md mục 3	Sau MVP
+		Ingredients	2 x Quặng cobalt		Sau MVP
 		Output	"1 x Thỏi cobalt
-Thời gian: 15 giây"	
-		Unlock	Kỹ sư, Vành đai trong mở. Nhãn: Sau MVP	
-8	Chế mạch cảm biến	Type	Xưởng	vat-pham.md mục 3
+Thời gian: 15 giây"		Sau MVP
+		Unlock	Kỹ sư, Vành đai trong mở. Nhãn: Sau MVP		Sau MVP
+8	Chế mạch cảm biến	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Lõi cảm biến
-1 x Mạch phục hồi"	
+1 x Mạch phục hồi"		Sau MVP
 		Output	"1 x Mạch cảm biến
-Thời gian: 20 giây"	
-		Unlock	Kỹ sư, Vành đai trong mở. Nhãn: Sau MVP	
-9	Pha dung dịch lạnh	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	2 x Băng tinh	
+Thời gian: 20 giây"		Sau MVP
+		Unlock	Kỹ sư, Vành đai trong mở. Nhãn: Sau MVP		Sau MVP
+9	Pha dung dịch lạnh	Type	Xưởng	vat-pham.md mục 3	Sau MVP
+		Ingredients	2 x Băng tinh		Sau MVP
 		Output	"1 x Dung dịch lạnh
-Thời gian: 12 giây"	
-		Unlock	Kỹ sư, Vành đai trong mở. Nhãn: Sau MVP	
-10	Ép tấm giáp Warden	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	3 x Hợp kim Warden	
+Thời gian: 12 giây"		Sau MVP
+		Unlock	Kỹ sư, Vành đai trong mở. Nhãn: Sau MVP		Sau MVP
+10	Ép tấm giáp Warden	Type	Xưởng	vat-pham.md mục 3	Sau MVP
+		Ingredients	3 x Hợp kim Warden		Sau MVP
 		Output	"1 x Tấm giáp Warden
-Thời gian: 12 giây"	
-		Unlock	Kỹ sư, Vùng trung tâm mở. Nhãn: Sau MVP	
-11	Mài phiến kính	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	2 x Kính nebula	
+Thời gian: 12 giây"		Sau MVP
+		Unlock	Kỹ sư, Vùng trung tâm mở. Nhãn: Sau MVP		Sau MVP
+11	Mài phiến kính	Type	Xưởng	vat-pham.md mục 3	Sau MVP
+		Ingredients	2 x Kính nebula		Sau MVP
 		Output	"1 x Phiến kính
-Thời gian: 18 giây"	
-		Unlock	Kỹ sư, Vùng trung tâm mở. Nhãn: Sau MVP	
-12	Ép cuộn plasma	Type	Xưởng	vat-pham.md mục 3
-		Ingredients	2 x Băng plasma	
+Thời gian: 18 giây"		Sau MVP
+		Unlock	Kỹ sư, Vùng trung tâm mở. Nhãn: Sau MVP		Sau MVP
+12	Ép cuộn plasma	Type	Xưởng	vat-pham.md mục 3	Sau MVP
+		Ingredients	2 x Băng plasma		Sau MVP
 		Output	"1 x Cuộn plasma
-Thời gian: 18 giây"	
-		Unlock	Kỹ sư, Vùng trung tâm mở. Nhãn: Sau MVP	
-13	Nạp lõi nguội	Type	Xưởng	vat-pham.md mục 3
+Thời gian: 18 giây"		Sau MVP
+		Unlock	Kỹ sư, Vùng trung tâm mở. Nhãn: Sau MVP		Sau MVP
+13	Nạp lõi nguội	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Lõi năng lượng nguội
-1 x Dung dịch lạnh"	
+1 x Dung dịch lạnh"		Sau MVP
 		Output	"1 x Lõi nguội nạp
-Thời gian: 20 giây"	
-		Unlock	Kỹ sư, Vùng trung tâm mở. Nhãn: Sau MVP	
-14	Nạp Bình Oxy nhỏ	Type	Xưởng	vat-pham.md mục 3
+Thời gian: 20 giây"		Sau MVP
+		Unlock	Kỹ sư, Vùng trung tâm mở. Nhãn: Sau MVP		Sau MVP
+14	Nạp Bình Oxy nhỏ	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"1 x Khối nước tinh khiết
-1 x Tấm thép nén"	
+1 x Tấm thép nén"		MVP
 		Output	"1 x Bình Oxy nhỏ
-Thời gian: 10 giây"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-15	Quấn Lưới cuộn	Type	Xưởng	vat-pham.md mục 3
+Thời gian: 10 giây"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+15	Quấn Lưới cuộn	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Dây dẫn bện
-1 x Mô sinh học Vành đai ngoài"	
+1 x Mô sinh học Vành đai ngoài"		MVP
 		Output	"10 x Lưới cuộn
-Thời gian: 10 giây"	
-		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-16	Chiết Ống gây mê	Type	Phòng nghiên cứu	vat-pham.md mục 3
+Thời gian: 10 giây"		MVP
+		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP		MVP
+16	Chiết Ống gây mê	Type	Phòng nghiên cứu	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Đặc sản Driftmoth
-1 x Khối nước tinh khiết"	
+1 x Khối nước tinh khiết"		Sau MVP
 		Output	"2 x Ống gây mê
-Thời gian: 10 giây"	
-		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP	
-17	Trộn Keo vá	Type	Xưởng	vat-pham.md mục 3
+Thời gian: 10 giây"		Sau MVP
+		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP		Sau MVP
+17	Trộn Keo vá	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"2 x Tấm thép nén
-1 x Đặc sản Sting Krill"	
+1 x Đặc sản Sting Krill"		Sau MVP
 		Output	"2 x Keo vá
-Thời gian: 10 giây"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-18	Lắp Cầu chì dự phòng	Type	Xưởng	vat-pham.md mục 3
+Thời gian: 10 giây"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+18	Lắp Cầu chì dự phòng	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Mạch phục hồi
-1 x Đặc sản Arc Eel"	
+1 x Đặc sản Arc Eel"		Sau MVP
 		Output	"2 x Cầu chì dự phòng
-Thời gian: 10 giây"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-19	Chế Phao kéo	Type	Xưởng	vat-pham.md mục 3
+Thời gian: 10 giây"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+19	Chế Phao kéo	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Thỏi sắt
 1 x Dây dẫn bện
-1 x Khối nước tinh khiết"	
+1 x Khối nước tinh khiết"		Sau MVP
 		Output	"2 x Phao kéo
-Thời gian: 10 giây"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-20	Chế Kim sinh thiết	Type	Phòng nghiên cứu	vat-pham.md mục 3
+Thời gian: 10 giây"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+20	Chế Kim sinh thiết	Type	Phòng nghiên cứu	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Mạch phục hồi
-1 x Khối nước tinh khiết"	
+1 x Khối nước tinh khiết"		Sau MVP
 		Output	"2 x Kim sinh thiết
-Thời gian: 10 giây"	
-		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP	
-21	Pha thức ăn nuôi Vành đai ngoài	Type	Khoang sinh quyển	vat-pham.md mục 3
-		Ingredients	2 x Mô sinh học Vành đai ngoài	
+Thời gian: 10 giây"		Sau MVP
+		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP		Sau MVP
+21	Pha thức ăn nuôi Vành đai ngoài	Type	Khoang sinh quyển	vat-pham.md mục 3	Sau MVP
+		Ingredients	2 x Mô sinh học Vành đai ngoài		Sau MVP
 		Output	"4 x Thức ăn nuôi Vành đai ngoài
-Thời gian: 8 giây"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-22	Pha thức ăn nuôi Vành đai trong	Type	Khoang sinh quyển	vat-pham.md mục 3
-		Ingredients	2 x Mô sinh học Vành đai trong	
+Thời gian: 8 giây"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+22	Pha thức ăn nuôi Vành đai trong	Type	Khoang sinh quyển	vat-pham.md mục 3	Sau MVP
+		Ingredients	2 x Mô sinh học Vành đai trong		Sau MVP
 		Output	"4 x Thức ăn nuôi Vành đai trong
-Thời gian: 8 giây"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-23	Pha thức ăn nuôi Vùng trung tâm	Type	Khoang sinh quyển	vat-pham.md mục 3
-		Ingredients	2 x Mô sinh học Vùng trung tâm	
+Thời gian: 8 giây"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+23	Pha thức ăn nuôi Vùng trung tâm	Type	Khoang sinh quyển	vat-pham.md mục 3	Sau MVP
+		Ingredients	2 x Mô sinh học Vùng trung tâm		Sau MVP
 		Output	"4 x Thức ăn nuôi Vùng trung tâm
-Thời gian: 8 giây"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-24	Đóng kiện phế liệu	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	14 x Mảnh vỏ Cradle	
+Thời gian: 8 giây"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+24	Đóng kiện phế liệu	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	14 x Mảnh vỏ Cradle		MVP
 		Output	"1 x Kiện phế liệu (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-25	Đóng kiện cáp	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	11 x Dây cáp đứt	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+25	Đóng kiện cáp	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	11 x Dây cáp đứt		MVP
 		Output	"1 x Kiện cáp (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-26	Đóng kiện quặng	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	6 x Quặng sắt thiên thạch	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+26	Đóng kiện quặng	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	6 x Quặng sắt thiên thạch		MVP
 		Output	"1 x Kiện quặng (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-27	Đóng kiện băng	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	7 x Băng nước đục	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+27	Đóng kiện băng	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	7 x Băng nước đục		MVP
 		Output	"1 x Kiện băng (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-28	Đóng kiện mô sinh học	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	9 x Mô sinh học Vành đai ngoài	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+28	Đóng kiện mô sinh học	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	9 x Mô sinh học Vành đai ngoài		MVP
 		Output	"1 x Kiện mô sinh học (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-29	Đóng kiện đồ Trái Đất	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	5 x Đồ Trái Đất vụn	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+29	Đóng kiện đồ Trái Đất	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	5 x Đồ Trái Đất vụn		MVP
 		Output	"1 x Kiện đồ Trái Đất (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-30	Đóng kiện cơ khí	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	3 x Tấm thép nén	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+30	Đóng kiện cơ khí	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	3 x Tấm thép nén		Sau MVP
 		Output	"1 x Kiện cơ khí (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-31	Đóng kiện điện tử	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	3 x Dây dẫn bện	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+31	Đóng kiện điện tử	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	3 x Dây dẫn bện		Sau MVP
 		Output	"1 x Kiện điện tử (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-32	Đóng kiện nước tinh khiết	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	2 x Khối nước tinh khiết	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+32	Đóng kiện nước tinh khiết	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	2 x Khối nước tinh khiết		MVP
 		Output	"1 x Kiện nước tinh khiết (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-33	Đóng kiện đặc sản Vành đai ngoài	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	3 x một trong Đặc sản Driftmoth, Skitter Ray, Sting Krill, Arc Eel, Latchjaw	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+33	Đóng kiện đặc sản Vành đai ngoài	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	3 x một trong Đặc sản Driftmoth, Skitter Ray, Sting Krill, Arc Eel, Latchjaw		MVP
 		Output	"1 x Kiện đặc sản Vành đai ngoài (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-34	Đóng kiện sản phẩm nuôi Vành đai ngoài	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	13 x một trong Sản phẩm nuôi Driftmoth, Skitter Ray, Sting Krill, Arc Eel	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+34	Đóng kiện sản phẩm nuôi Vành đai ngoài	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	13 x một trong Sản phẩm nuôi Driftmoth, Skitter Ray, Sting Krill, Arc Eel		Sau MVP
 		Output	"1 x Kiện sản phẩm nuôi Vành đai ngoài (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-35	Đưa sinh vật sống cỡ S Vành đai ngoài vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3
-		Ingredients	1 x một trong Mẫu sống Driftmoth, Skitter Ray, Sting Krill	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+35	Đưa sinh vật sống cỡ S Vành đai ngoài vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3	MVP
+		Ingredients	1 x một trong Mẫu sống Driftmoth, Skitter Ray, Sting Krill		MVP
 		Output	"1 x Lồng sinh vật sống Vành đai ngoài (1 đơn vị bán)
-Thời gian: 8 giây"	
-		Unlock	Thông dịch viên (chương 1). Nhãn: MVP	
-36	Đưa sinh vật sống cỡ M Vành đai ngoài vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3
-		Ingredients	1 x một trong Mẫu sống Arc Eel, Latchjaw	
+Thời gian: 8 giây"		MVP
+		Unlock	Thông dịch viên (chương 1). Nhãn: MVP		MVP
+36	Đưa sinh vật sống cỡ M Vành đai ngoài vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	1 x một trong Mẫu sống Arc Eel, Latchjaw		Sau MVP
 		Output	"1 x Lồng sinh vật sống Vành đai ngoài (1 đơn vị bán)
-Thời gian: 8 giây"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-37	Đóng kiện vật tư	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
+Thời gian: 8 giây"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+37	Đóng kiện vật tư	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
 		Ingredients	"4 x Bình Oxy nhỏ
-4 x Lưới cuộn"	
+4 x Lưới cuộn"		Sau MVP
 		Output	"1 x Kiện vật tư (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-38	Sao bản dữ liệu	Type	Khoang liên lạc	vat-pham.md mục 3
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+38	Sao bản dữ liệu	Type	Khoang liên lạc	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Mạch phục hồi
-Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (Nhật ký trạm, Hộp ghi hành trình Cradle), mỗi vật gốc sao một lần"	
+Giữ nguyên, không tiêu: một vật kể chuyện loại dữ liệu (Nhật ký trạm, Hộp ghi hành trình Cradle), mỗi vật gốc sao một lần"		Sau MVP
 		Output	"1 x Bản sao dữ liệu (1 đơn vị bán)
-Thời gian: 10 giây"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-39	Đóng kiện hợp kim	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	3 x Tấm hợp kim chịu nhiệt	
+Thời gian: 10 giây"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+39	Đóng kiện hợp kim	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	3 x Tấm hợp kim chịu nhiệt		Sau MVP
 		Output	"1 x Kiện hợp kim (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-40	Đóng kiện cảm biến	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	1 x Mạch cảm biến	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+40	Đóng kiện cảm biến	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	1 x Mạch cảm biến		Sau MVP
 		Output	"1 x Kiện cảm biến (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-41	Đóng kiện dung dịch lạnh	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	3 x Dung dịch lạnh	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+41	Đóng kiện dung dịch lạnh	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	3 x Dung dịch lạnh		Sau MVP
 		Output	"1 x Kiện dung dịch lạnh (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-42	Đóng kiện đặc sản Vành đai trong	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	4 x một trong Đặc sản Lumen Jelly, Orebiter, Needlefin, Gulper hoặc Mẫu sinh thiết Shepherd Whale, Gulper	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+42	Đóng kiện đặc sản Vành đai trong	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	4 x một trong Đặc sản Lumen Jelly, Orebiter, Needlefin, Gulper hoặc Mẫu sinh thiết Shepherd Whale, Gulper		Sau MVP
 		Output	"1 x Kiện đặc sản Vành đai trong (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-43	Đóng kiện sản phẩm nuôi Vành đai trong	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	6 x một trong Sản phẩm nuôi Lumen Jelly, Orebiter, Needlefin	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+43	Đóng kiện sản phẩm nuôi Vành đai trong	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	6 x một trong Sản phẩm nuôi Lumen Jelly, Orebiter, Needlefin		Sau MVP
 		Output	"1 x Kiện sản phẩm nuôi Vành đai trong (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-44	Đưa sinh vật sống Vành đai trong vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3
-		Ingredients	1 x một trong Mẫu sống Lumen Jelly, Orebiter, Needlefin	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+44	Đưa sinh vật sống Vành đai trong vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	1 x một trong Mẫu sống Lumen Jelly, Orebiter, Needlefin		Sau MVP
 		Output	"1 x Lồng sinh vật sống Vành đai trong (1 đơn vị bán)
-Thời gian: 8 giây"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-45	Đóng kiện giáp	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	3 x Tấm giáp Warden	
+Thời gian: 8 giây"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+45	Đóng kiện giáp	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	3 x Tấm giáp Warden		Sau MVP
 		Output	"1 x Kiện giáp (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-46	Đóng kiện plasma	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	2 x Cuộn plasma	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+46	Đóng kiện plasma	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	2 x Cuộn plasma		Sau MVP
 		Output	"1 x Kiện plasma (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-47	Đóng kiện lõi nguội	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	3 x Lõi nguội nạp	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+47	Đóng kiện lõi nguội	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	3 x Lõi nguội nạp		Sau MVP
 		Output	"1 x Kiện lõi nguội (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-48	Đóng kiện đặc sản Vùng trung tâm	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	5 x một trong Đặc sản Prism Wisp, Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling hoặc Mẫu sinh thiết Storm Siphon, Shardbrood Queen	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+48	Đóng kiện đặc sản Vùng trung tâm	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	5 x một trong Đặc sản Prism Wisp, Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling hoặc Mẫu sinh thiết Storm Siphon, Shardbrood Queen		Sau MVP
 		Output	"1 x Kiện đặc sản Vùng trung tâm (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-49	Đóng kiện sản phẩm nuôi Vùng trung tâm	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	7 x một trong Sản phẩm nuôi Prism Wisp, Shardbrood Hatchling	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+49	Đóng kiện sản phẩm nuôi Vùng trung tâm	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	7 x một trong Sản phẩm nuôi Prism Wisp, Shardbrood Hatchling		Sau MVP
 		Output	"1 x Kiện sản phẩm nuôi Vùng trung tâm (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-50	Đóng kiện linh kiện Cradle	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	7 x Linh kiện Cradle	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+50	Đóng kiện linh kiện Cradle	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	7 x Linh kiện Cradle		Sau MVP
 		Output	"1 x Kiện linh kiện Cradle (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 4. Nhãn: Sau MVP	
-51	Đóng kiện tin mật	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 4. Nhãn: Sau MVP		Sau MVP
+51	Đóng kiện tin mật	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x một trong Kiện đặc sản Vùng trung tâm, Kiện sản phẩm nuôi Vùng trung tâm, Kiện giáp, Kiện plasma, Kiện lõi nguội
-1 x Gói tin mật"	
+1 x Gói tin mật"		Sau MVP
 		Output	"1 x Kiện tin mật (1 đơn vị bán)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 4. Nhãn: Sau MVP	
-52	Đóng kiện linh kiện Warden	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3
-		Ingredients	14 x Linh kiện Warden	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 4. Nhãn: Sau MVP		Sau MVP
+52	Đóng kiện linh kiện Warden	Type	Cảng (tự động lúc Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	14 x Linh kiện Warden		Sau MVP
 		Output	"1 x Kiện linh kiện Warden (2,5 thùng)
-Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"	
-		Unlock	Chương 5. Nhãn: Sau MVP	
-53	Đưa sinh vật sống Vùng trung tâm vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3
-		Ingredients	1 x một trong Mẫu sống Prism Wisp, Mirror Mantis, Shardbrood Hatchling	
+Thời gian: đóng lúc Mở giao thương, không tốn thời gian giờ giao thương"		Sau MVP
+		Unlock	Chương 5. Nhãn: Sau MVP		Sau MVP
+53	Đưa sinh vật sống Vùng trung tâm vào lồng giao	Type	Cảng (trước Mở giao thương)	vat-pham.md mục 3	Sau MVP
+		Ingredients	1 x một trong Mẫu sống Prism Wisp, Mirror Mantis, Shardbrood Hatchling		Sau MVP
 		Output	"1 x Lồng sinh vật sống Vùng trung tâm (1 đơn vị bán)
-Thời gian: 8 giây"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-54	Phân tích Driftmoth	Type	Phòng nghiên cứu	vat-pham.md mục 3
+Thời gian: 8 giây"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+54	Phân tích Driftmoth	Type	Phòng nghiên cứu	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Mẫu sống Driftmoth
-2 x Khối nước tinh khiết"	
+2 x Khối nước tinh khiết"		Sau MVP
 		Output	"1 x Bản thiết kế Súng lưới bậc 2
-Thời gian: qua đêm"	
-		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP	
-55	Phân tích Sting Krill	Type	Phòng nghiên cứu	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP		Sau MVP
+55	Phân tích Sting Krill	Type	Phòng nghiên cứu	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Mẫu sống Sting Krill
-2 x Khối nước tinh khiết"	
+2 x Khối nước tinh khiết"		Sau MVP
 		Output	"1 x Bản thiết kế Súng gây mê
-Thời gian: qua đêm"	
-		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP	
-56	Ghép Lõi dẫn hướng rời bãi vỡ	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Nhà sinh học (chương 2). Nhãn: Sau MVP		Sau MVP
+56	Ghép Lõi dẫn hướng rời bãi vỡ	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Bản đồ sao thật
 1 x Hộp ghi hành trình Cradle
-2 x Mạch cảm biến"	
+2 x Mạch cảm biến"		Sau MVP
 		Output	"1 x Lõi dẫn hướng rời bãi vỡ
-Thời gian: qua đêm"	
-		Unlock	Chương 5. Nhãn: Sau MVP	
-57	Chế Bộ kích nguồn	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 5. Nhãn: Sau MVP		Sau MVP
+57	Chế Bộ kích nguồn	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"6 x Mảnh vỏ Cradle
 3 x Dây cáp đứt
-1 x Bo mạch cháy"	
+1 x Bo mạch cháy"		MVP
 		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	Xưởng, công thức đầu tiên sau khi vớt Kỹ sư. Nhãn: MVP	
-58	Chế Súng lưới	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Xưởng, công thức đầu tiên sau khi vớt Kỹ sư. Nhãn: MVP		MVP
+58	Chế Súng lưới	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Thỏi sắt
 1 x Dây dẫn bện
-1 x Mạch phục hồi"	
+1 x Mạch phục hồi"		MVP
 		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-59	Chế Súng gây mê	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP		MVP
+59	Chế Súng gây mê	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Thỏi sắt
 1 x Mạch phục hồi
-2 x Khối nước tinh khiết"	
+2 x Khối nước tinh khiết"		Sau MVP
 		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	Bản thiết kế Súng gây mê. Nhãn: Sau MVP	
-60	Chế Máy quét xung	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Bản thiết kế Súng gây mê. Nhãn: Sau MVP		Sau MVP
+60	Chế Máy quét xung	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Mạch phục hồi
 1 x Dây dẫn bện
-2 x Tấm thép nén"	
+2 x Tấm thép nén"		Sau MVP
 		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	Bản thiết kế Máy quét xung. Nhãn: Sau MVP	
-61	Chế Dùi xung	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Bản thiết kế Máy quét xung. Nhãn: Sau MVP		Sau MVP
+61	Chế Dùi xung	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Thỏi sắt
 1 x Mạch phục hồi
-1 x Tấm thép nén"	
+1 x Tấm thép nén"		MVP
 		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-62	Chế Máy cắt thân tàu	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP		MVP
+62	Chế Máy cắt thân tàu	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Tấm giáp Warden
 1 x Cuộn plasma
-1 x Mạch phục hồi"	
+1 x Mạch phục hồi"		Sau MVP
 		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	Bản thiết kế Máy cắt thân tàu. Nhãn: Sau MVP	
-63	Chế Lồng mẫu	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Bản thiết kế Máy cắt thân tàu. Nhãn: Sau MVP		Sau MVP
+63	Chế Lồng mẫu	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Tấm thép nén
 1 x Thỏi sắt
 1 x Dây dẫn bện
-1 x Khối nước tinh khiết"	
+1 x Khối nước tinh khiết"		MVP
 		Output	"Mở khóa dụng cụ cho cả nhóm
-Thời gian: qua đêm"	
-		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP	
-64	Nâng cấp Bình Oxy bậc 1	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Quest Kỹ sư (chương 1). Nhãn: MVP		MVP
+64	Nâng cấp Bình Oxy bậc 1	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"4 x Tấm thép nén
-2 x Khối nước tinh khiết"	
+2 x Khối nước tinh khiết"		MVP
 		Output	"Nâng cấp Bình Oxy bậc 1 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-65	Nâng cấp Túi đồ bậc 1	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+65	Nâng cấp Túi đồ bậc 1	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"3 x Dây dẫn bện
 2 x Tấm thép nén
-2 x Dây cáp đứt"	
+2 x Dây cáp đứt"		MVP
 		Output	"Nâng cấp Túi đồ bậc 1 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-66	Nâng cấp Bộ đẩy bậc 1	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+66	Nâng cấp Bộ đẩy bậc 1	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Thỏi sắt
 1 x Mạch phục hồi
-1 x Tấm thép nén"	
+1 x Tấm thép nén"		MVP
 		Output	"Nâng cấp Bộ đẩy bậc 1 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-67	Nâng cấp Dụng cụ khai thác bậc 2	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+67	Nâng cấp Dụng cụ khai thác bậc 2	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Thỏi sắt
 2 x Tấm thép nén
-1 x Dây dẫn bện"	
+1 x Dây dẫn bện"		MVP
 		Output	"Nâng cấp Dụng cụ khai thác bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-68	Nâng cấp Lao từ bậc 2	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+68	Nâng cấp Lao từ bậc 2	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Thỏi sắt
 1 x Mạch phục hồi
-1 x Dây dẫn bện"	
+1 x Dây dẫn bện"		MVP
 		Output	"Nâng cấp Lao từ bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Kỹ sư (chương 1). Nhãn: MVP	
-69	Nâng cấp Đai dụng cụ bậc 1	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Kỹ sư (chương 1). Nhãn: MVP		MVP
+69	Nâng cấp Đai dụng cụ bậc 1	Type	Xưởng	vat-pham.md mục 3	MVP
 		Ingredients	"2 x Tấm thép nén
 2 x Dây dẫn bện
-1 x Thỏi sắt"	
+1 x Thỏi sắt"		MVP
 		Output	"Nâng cấp Đai dụng cụ bậc 1 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Quest Kỹ sư (chương 1), đi kèm Dùi xung. Nhãn: MVP	
-70	Nâng cấp Súng lưới bậc 2	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		MVP
+		Unlock	Quest Kỹ sư (chương 1), đi kèm Dùi xung. Nhãn: MVP		MVP
+70	Nâng cấp Súng lưới bậc 2	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Thỏi sắt
 2 x Dây dẫn bện
-1 x Mạch phục hồi"	
+1 x Mạch phục hồi"		Sau MVP
 		Output	"Nâng cấp Súng lưới bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Bản thiết kế Súng lưới bậc 2. Nhãn: Sau MVP	
-71	Nâng cấp Bình Oxy bậc 2	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Bản thiết kế Súng lưới bậc 2. Nhãn: Sau MVP		Sau MVP
+71	Nâng cấp Bình Oxy bậc 2	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"2 x Tấm hợp kim chịu nhiệt
-2 x Dung dịch lạnh"	
+2 x Dung dịch lạnh"		Sau MVP
 		Output	"Nâng cấp Bình Oxy bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-72	Nâng cấp Túi đồ bậc 2	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+72	Nâng cấp Túi đồ bậc 2	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"2 x Tấm hợp kim chịu nhiệt
 2 x Dây dẫn bện
-2 x Tấm thép nén"	
+2 x Tấm thép nén"		Sau MVP
 		Output	"Nâng cấp Túi đồ bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-73	Nâng cấp Bộ đẩy bậc 2	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+73	Nâng cấp Bộ đẩy bậc 2	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Thỏi cobalt
-1 x Mạch cảm biến"	
+1 x Mạch cảm biến"		Sau MVP
 		Output	"Nâng cấp Bộ đẩy bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-74	Nâng cấp Dụng cụ khai thác bậc 3	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+74	Nâng cấp Dụng cụ khai thác bậc 3	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"2 x Thỏi cobalt
-2 x Thỏi sắt"	
+2 x Thỏi sắt"		Sau MVP
 		Output	"Nâng cấp Dụng cụ khai thác bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-75	Nâng cấp Lao từ bậc 3	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+75	Nâng cấp Lao từ bậc 3	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Mạch cảm biến
-1 x Thỏi cobalt"	
+1 x Thỏi cobalt"		Sau MVP
 		Output	"Nâng cấp Lao từ bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-76	Nâng cấp Vỏ bộ đồ cấp 1	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+76	Nâng cấp Vỏ bộ đồ cấp 1	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"2 x Dung dịch lạnh
 1 x Tấm hợp kim chịu nhiệt
-2 x Khối nước tinh khiết"	
+2 x Khối nước tinh khiết"		Sau MVP
 		Output	"Nâng cấp Vỏ bộ đồ cấp 1 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 2 (Vành đai trong). Nhãn: Sau MVP	
-77	Nâng cấp Đai dụng cụ bậc 2	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 2 (Vành đai trong). Nhãn: Sau MVP		Sau MVP
+77	Nâng cấp Đai dụng cụ bậc 2	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"2 x Thỏi sắt
 1 x Thỏi cobalt
-2 x Dây dẫn bện"	
+2 x Dây dẫn bện"		Sau MVP
 		Output	"Nâng cấp Đai dụng cụ bậc 2 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 2. Nhãn: Sau MVP	
-78	Nâng cấp Bình Oxy bậc 3	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 2. Nhãn: Sau MVP		Sau MVP
+78	Nâng cấp Bình Oxy bậc 3	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Phiến kính
-1 x Tấm giáp Warden"	
+1 x Tấm giáp Warden"		Sau MVP
 		Output	"Nâng cấp Bình Oxy bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-79	Nâng cấp Túi đồ bậc 3	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+79	Nâng cấp Túi đồ bậc 3	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Cuộn plasma
 1 x Tấm giáp Warden
-1 x Mạch phục hồi"	
+1 x Mạch phục hồi"		Sau MVP
 		Output	"Nâng cấp Túi đồ bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-80	Nâng cấp Bộ đẩy bậc 3	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+80	Nâng cấp Bộ đẩy bậc 3	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Lõi nguội nạp
-1 x Phiến kính"	
+1 x Phiến kính"		Sau MVP
 		Output	"Nâng cấp Bộ đẩy bậc 3 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 3. Nhãn: Sau MVP	
-81	Nâng cấp Vỏ bộ đồ cấp 2	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 3. Nhãn: Sau MVP		Sau MVP
+81	Nâng cấp Vỏ bộ đồ cấp 2	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Tấm giáp Warden
 1 x Lõi nguội nạp
-1 x Mạch cảm biến"	
+1 x Mạch cảm biến"		Sau MVP
 		Output	"Nâng cấp Vỏ bộ đồ cấp 2 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 3 (Vùng trung tâm). Nhãn: Sau MVP	
-82	Nâng cấp Bình Oxy bậc 4	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 3 (Vùng trung tâm). Nhãn: Sau MVP		Sau MVP
+82	Nâng cấp Bình Oxy bậc 4	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Phiến kính
 1 x Lõi nguội nạp
 1 x Cuộn plasma
-1 x Linh kiện Cradle"	
+1 x Linh kiện Cradle"		Sau MVP
 		Output	"Nâng cấp Bình Oxy bậc 4 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 4 đến 5. Nhãn: Sau MVP	
-83	Nâng cấp Túi đồ bậc 4	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 4 đến 5. Nhãn: Sau MVP		Sau MVP
+83	Nâng cấp Túi đồ bậc 4	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Cuộn plasma
 1 x Lõi nguội nạp
 1 x Tấm giáp Warden
-1 x Linh kiện Cradle"	
+1 x Linh kiện Cradle"		Sau MVP
 		Output	"Nâng cấp Túi đồ bậc 4 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 4 đến 5. Nhãn: Sau MVP	
-84	Nâng cấp Vỏ bộ đồ cấp 3	Type	Xưởng	vat-pham.md mục 3
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 4 đến 5. Nhãn: Sau MVP		Sau MVP
+84	Nâng cấp Vỏ bộ đồ cấp 3	Type	Xưởng	vat-pham.md mục 3	Sau MVP
 		Ingredients	"1 x Tấm giáp Warden
 1 x Phiến kính
 1 x Lõi nguội nạp
-1 x Linh kiện Cradle"	
+1 x Linh kiện Cradle"		Sau MVP
 		Output	"Nâng cấp Vỏ bộ đồ cấp 3 cho cả nhóm. Giá Tally ở tab Upgrade
-Thời gian: qua đêm"	
-		Unlock	Chương 4 (Cradle). Nhãn: Sau MVP	
+Thời gian: qua đêm"		Sau MVP
+		Unlock	Chương 4 (Cradle). Nhãn: Sau MVP		Sau MVP
