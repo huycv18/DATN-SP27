@@ -469,3 +469,13 @@ Lead yêu cầu môi trường 3D, đồ họa 2.5D, camera top-down nghiêng 45
 ## 2026-11-23 - Gộp nhánh codex-cty vào main
 
 Ba mục ngay trên (Demo màn hình, UI theo WarFront, Hướng hình ảnh ngoài không gian) đến từ nhánh codex-cty. Mục Hướng hình ảnh viết trong trạm vẫn dùng mặt cắt ngang và gọi vùng 1 là Dải Gần. Hai điểm này đã bị thay bởi mục "Art: không gian 3D, đồ họa 2.5D, góc nhìn top-down 45 độ" (Lead: "Chuyển hết sang top-down") và mục đổi tên vùng thành Vành đai ngoài. Khi gộp, AGENTS.md, khung, `so-hien-hanh.md`, `map.md`, chương đề xuất giữ bản main. Hai ảnh mẫu cảnh bay Lead duyệt được thêm vào khung mục 13. Demo `tools/prototype/wireframe/` và `tools/prototype/game-demo/` còn dùng chữ cũ (ca cảng, Dải Gần), chưa sửa.
+
+## 2026-11-25 - Đội hình bốn nhân vật người chơi
+
+Lead: "4 người chơi này như nhau trước nhé, không có vai trò riêng hay kĩ năng đặc biệt, viết mô tả bối cảnh giúp dễ dàng trong việc thiết kế Assets ấy. Tôi muốn có một nhân vật chính là người Việt Nam. Có 2 nam 2 nữ không da màu."
+
+- PC-1 đến PC-4 ngang nhau về luật: cùng chỉ số, cùng kỹ năng, không vai trò riêng. Phần tính cách và nghề cũ (GD-078) chỉ là mô tả bối cảnh để art dựng asset, không đồ vật hay thói quen nào được gợi một vai gameplay (ví dụ hộp y tế gợi người chữa).
+- Nhân vật chính là PC-1, hồ sơ mặc định khi chơi đơn và là người truyện gọi tên, đổi thành người Việt Nam.
+- Đội hình: 2 nam, 2 nữ, không nhân vật da màu.
+- Lead sửa cùng ngày: "PC-1 là nhân vật nam chính". PC-1 là nam người Việt, thay Noor Haddad. GDM tự quyết (Lead đổi được) để giữ 2 nam 2 nữ: PC-4 thay Tariq Bello bằng một nữ không da màu, bỏ râu ở hồ sơ PC-4. Jonas Weber và Mei Tanaka giữ nguyên. Tên PC-1 không trùng họ Trần với Linh Tran (RS-2).
+- Hệ quả: đổi tên ở cot-truyen.md, GAME STORY, ho-so-nhan-vat.md, Player, MVP Criteria Checklist, Book. File QA cũ và DECISIONS cũ giữ nguyên làm lịch sử. Ảnh cảnh bay đã duyệt 2026-11-23 ghi "Noor" vẫn dùng được vì mặt không thấy qua mũ.

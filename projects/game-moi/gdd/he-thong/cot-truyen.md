@@ -117,7 +117,7 @@ Hệ thống cốt truyện giữ bối cảnh, năm chương, nhân vật truy�
 
 | Tên [TẠM] | Mã (gd-character) | Vai | Xuất hiện |
 |---|---|---|---|
-| Noor Haddad, Jonas Weber, Mei Tanaka, Tariq Bello | PC-1 đến PC-4 | Bốn hồ sơ mặc định của tổ Ember: kíp vận hành trạm, không có nghề riêng (nhân vật người chơi, đổi tên được) | Chương 1 |
+| Lê Quốc Bảo, Jonas Weber, Mei Tanaka, Niamh Doyle | PC-1 đến PC-4 | Bốn hồ sơ mặc định của tổ Ember: kíp vận hành trạm, không có nghề riêng (nhân vật người chơi, đổi tên được) | Chương 1 |
 | Ingrid Halvorsen | RS-1 | Người vớt: Kỹ sư, xưởng | Chương 1, Station Cinder |
 | Linh Tran | RS-2 | Người vớt: Thông dịch viên, khoang liên lạc và cảng | Chương 1, Station Cinder |
 | Rafael Ortega (Rafa) | RS-3 | Người vớt: Hoa tiêu, khoang dẫn đường và bến Skiff | Chương 2, Station Wick |
@@ -538,9 +538,32 @@ Hồ sơ ngoại hình và yêu cầu art do gd-character giữ ở `ho-so-nhan-
 
 #### Tổ Ember (nhân vật người chơi) `MVP`
 
-- Bốn hồ sơ mặc định: Noor Haddad, Jonas Weber, Mei Tanaka, Tariq Bello. Cả bốn là kíp vận hành trạm, không ai là chuyên gia. Chuyên gia là những người vớt.
+- Bốn hồ sơ mặc định: Lê Quốc Bảo, Jonas Weber, Mei Tanaka, Niamh Doyle. Cả bốn là kíp vận hành trạm, không ai là chuyên gia. Chuyên gia là những người vớt.
 - Người chơi chọn một hồ sơ và đổi tên được. Hồ sơ không ai chọn mà rơi vào buồng hỏng thì là người đã chết, tên trên buồng giữ tên mặc định.
 - Nhân vật người chơi không có lời thoại riêng. Nhân vật khác gọi họ bằng tên người chơi đặt, hoặc gọi chung là "Ember".
+
+**Tính cách bốn hồ sơ mặc định** (GD-078) `MVP`
+
+Tính cách của PC chỉ hiện qua kênh không phải lời thoại: idle trong trạm, biểu cảm, đồ vật, mô tả preset, cách người vớt nhắc. Không có câu nói nào của PC. Nghề cũ thuộc kíp vận hành của Cradle, chỉ là nền, không ai thành chuyên gia: mở tính năng trạm vẫn là việc của người vớt. Bốn người chung một khuôn: nền là người thường làm việc ở hậu trường con tàu, hài đến từ tính cách chứ không từ câu đùa.
+
+| Mã | Tên, quốc gia | Giới tính, tuổi | Da và tóc | Nghề cũ trên Cradle (chỉ là nền) | 3 nét tính cách | Thói quen nhìn thấy (idle đứng tại chỗ) | Nét mặt | Vật để lại khi buồng hỏng | Nhãn |
+|---|---|---|---|---|---|---|---|---|---|
+| PC-1 | Lê Quốc Bảo, Việt Nam | Nam, khoảng 29 | Da sáng ngả vàng nhạt, tóc đen dài ngang vai búi gọn dưới mũ | Nhân viên trực ca ở khu ngủ đông | Bền bỉ, ít lời, bướng một cách bình tĩnh | Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Khi đứng lâu thì ngẩng nhìn ra xa | Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ khi bình thường | Một cuốn sổ nhỏ bìa mòn, trang cuối còn trống | MVP |
+| PC-2 | Jonas Weber, Đức | Nam, khoảng 34 | Da sáng, tóc nâu rối, râu lún phún | Nhân viên bảo trì băng tải và cửa khoang ở kho Cradle | Ngay thật, tốt bụng, chậm một nhịp | Đẩy gọng kính trong mũ dù kính không trượt, rồi nhìn quanh chậm | Mắt mở to chăm chú, hơi gù khi nghe, miệng mím khi nghĩ | Cặp kính gập, một gọng quấn băng keo | MVP |
+| PC-3 | Mei Tanaka, Nhật Bản | Nữ, khoảng 26 | Da sáng, tóc đen ngắn bồng | Nhân viên dịch vụ khu ở tập thể của đoàn | Thực tế, nhanh nhẹn, hay bướng | Vỗ balo hai cái rồi xoay tròn tại chỗ nhìn quanh | Dáng nhỏ, đầu hơi nghiêng, má phồng khi tập trung, cười nhanh rồi tắt | Một con thú nhồi bông nhỏ buộc ở quai balo | Sau MVP |
+| PC-4 | Niamh Doyle, Ireland | Nữ, khoảng 36 | Da sáng có tàn nhang, tóc nâu đỏ buộc đuôi thấp gọn trong mũ | Nhân viên bốc xếp ở bến hàng Cradle | Điềm tĩnh, hiền, vụng về khi cần tinh tế | Gãi gáy khi thấy mình bị nhìn, rồi xoay vai cho đỡ mỏi | Vai rộng nhưng mắt hiền, nhìn xuống khi bị khen | Một đôi găng da sờn, xếp ngay ngắn | Sau MVP |
+
+Ghi chú để bốn người khác nhau và không trùng người vớt:
+
+- Bốn người ngang nhau về luật (Lead chốt 2026-11-25): cùng chỉ số, cùng kỹ năng, không vai trò riêng. Bảng trên chỉ là nền để art dựng asset, không đồ vật hay thói quen nào gợi một vai gameplay. Nghề cũ chỉ là nền, không cấp lợi thế nào.
+- Trục khác nhau: Bảo bền (vươn vai, ngẩng nhìn xa), Jonas chậm (đẩy kính, nhìn quanh), Mei nhanh (vỗ balo, xoay tròn), Niamh hiền (gãi gáy, xoay vai). Mỗi người một nhịp idle riêng nên hai người cùng đứng trong trạm vẫn tách nhau, kể cả khi tô đen.
+- Không trùng người vớt: không ai thẳng và khô như Ingrid, không ai lịch sự bối rối như Linh, không ai mê tín như Rafa, không ai nói chuyện với vật như Amara, không ai ồn như Yusuf. Hồ sơ PC im lặng, người vớt là người nói.
+- Hài nhẹ: Jonas đẩy kính khi kính không trượt, Mei vỗ balo giữa cảnh hỏng, Niamh gãi gáy khi bị nhìn, Bảo vươn vai giữa lúc căng. Không câu đùa nào, không dùng ở mốc mất mát.
+- Biểu cảm 8 loại (`ho-so-nhan-vat.md` 2b.1) là bộ chung. Mỗi hồ sơ có biểu cảm "bình thường" đặt khác nhau như cột Nét mặt ở trên, và cùng một sự kiện thì thời gian giữ biểu cảm khác nhau. Các hoạt cảnh idle ở bảng là clip đứng tại chỗ, tắt được trong tùy chọn, không chạy khi đang điều khiển.
+- Mô tả ngắn trên màn chọn preset (không phải lời của PC, ghi ngôi thứ ba, tối đa 80 ký tự, ví dụ trình gd-ux): Bảo "Bền bỉ, ít lời. Cứ bình tĩnh đi tiếp." Jonas "Ngay thật, tốt bụng. Chậm một nhịp." Mei "Nhanh nhẹn, thực tế. Hay bướng." Niamh "Điềm tĩnh, hiền. Hơi vụng."
+- Người vớt nhắc tới họ qua nét nhìn thấy, không qua lời của PC. Ví dụ hướng: Ingrid nhận xét người hay vươn vai giữa lúc căng là người không chịu căng theo, Linh nhận xét người hay đẩy kính là người nghĩ xong mới nói, Yusuf mời trà người đang xoay tròn nhìn quanh. Chỉ nhắc nét của hồ sơ đang có người chơi dùng, gọi theo tên người chơi đặt (luật 14). Hồ sơ buồng hỏng không được người vớt nhắc tên.
+- Vật để lại đặt trên hoặc cạnh buồng tắt, bấm vào hiện dòng ở mục "Dòng trên buồng đã tắt" (cuối file), không thêm cảnh. Vật là thứ nhìn thấy khớp với thói quen, người chơi tự đọc ra ai đã mất.
+- Người vào sau (luật 11 mục 2, biến thể B, đặt tên mới) dùng chung thói quen và idle của slot, vì thói quen gắn với hình preset chứ không gắn với người chơi. Người chơi nhập vai tự do: tính cách chỉ là nền nhìn thấy, không ép hành vi hay kỹ năng.
 
 #### Năm người vớt
 
@@ -1014,7 +1037,7 @@ Nguồn tra:
 | Nơi khác (tên vùng do gd-world giữ) | Ember Anchorage, Shepherd Belt, Glass Nebula, Veyl Waypost, Warden Rig, The Hearth |
 | Chủng tộc | The Veyl (tên chung), Oru, Sennari, Brakk, Aelith, Kesh |
 | Sinh vật | Driftlife. Tên loài và boss đã chốt ở combat-driftlife.md |
-| Tổ Ember | Noor Haddad, Jonas Weber, Mei Tanaka, Tariq Bello |
+| Tổ Ember | Lê Quốc Bảo, Jonas Weber, Mei Tanaka, Niamh Doyle |
 | Người vớt | Ingrid Halvorsen, Linh Tran, Rafael Ortega, Amara Okafor, Yusuf Demir |
 | Người khác | Odile Laurent, Bram Kowalski, Elias Vance, Wren |
 | Thương nhân | Tikko, Ilsume (tên giả của Sevra Ilvane), Vaeth, Dromm, Nhem |
@@ -1184,14 +1207,14 @@ Hiện khi người chơi bấm vào một buồng tắt (mục 2.7). Hồ sơ n
 
 | Mã | Hồ sơ | Dòng |
 |---|---|---|
-| SO_BUONG_PC1 | Noor Haddad | Noor Haddad. Buồng tắt khi trạm còn trôi. |
+| SO_BUONG_PC1 | Lê Quốc Bảo | Lê Quốc Bảo. Buồng tắt khi trạm còn trôi. |
 | SO_BUONG_PC2 | Jonas Weber | Jonas Weber. Không tỉnh lại. |
 | SO_BUONG_PC3 | Mei Tanaka | Mei Tanaka. Buồng mất khí giữa giấc ngủ. |
-| SO_BUONG_PC4 | Tariq Bello | Tariq Bello. Đèn buồng tắt trước khi trạm gọi dậy. |
+| SO_BUONG_PC4 | Niamh Doyle | Niamh Doyle. Đèn buồng tắt trước khi trạm gọi dậy. |
 
 ## 14. Khối GAME STORY (dán vào một ô Sheet)
 
-Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đang trôi giữa xác Cradle, con tàu mẹ từng đưa đoàn di cư rời Trái Đất để đến Solace. Cùng những người sống sót, Noor thu hồi vật liệu để sửa trạm và tìm cách tiếp tục hành trình. Khi lần theo tọa độ cũ, họ phát hiện The Wardens đang phong tỏa bãi vỡ. Trong một chuyến đi, cả nhóm cứu được Sevra Ilvane, người thừa kế của Sennar đang sống dưới vỏ bọc thương nhân. Cô tiết lộ rằng Daskel, kẻ đã lật đổ cha cô, dùng một hồ sơ khảo sát giả để dụ Cradle vào ổ phục kích. Mang mối hận từ cuộc chiến cũ, hắn biến đoàn di cư thành kẻ thù chung để củng cố quyền lực ở Sennar. Tổ Ember quay lại Cradle và tìm được bản ghi xác nhận con tàu đã phát hiện tọa độ giả ngay trước khi bị tấn công. Họ chuyển bằng chứng cho Sevra, rồi giữ chân Daskel tại Warden Rig để lực lượng của cô có thời gian giành quyền kiểm soát ở Sennar. Daskel bị bắt, vòng phong tỏa được dỡ bỏ và những con tàu cứu hộ bắt đầu tìm kiếm các buồng ngủ đông còn tín hiệu. Sevra trao cho Ember tọa độ của một hành tinh có sự sống. Sau khi tự kiểm tra tọa độ trên bản đồ sao thu được ở Warden Rig, cả kíp nhả neo, đưa trạm rời bãi vỡ để tiếp tục hành trình tìm một nơi định cư.
+Khi tỉnh khỏi giấc ngủ đông, Lê Quốc Bảo phát hiện trạm Ember đang trôi giữa xác Cradle, con tàu mẹ từng đưa đoàn di cư rời Trái Đất để đến Solace. Cùng những người sống sót, Bảo thu hồi vật liệu để sửa trạm và tìm cách tiếp tục hành trình. Khi lần theo tọa độ cũ, họ phát hiện The Wardens đang phong tỏa bãi vỡ. Trong một chuyến đi, cả nhóm cứu được Sevra Ilvane, người thừa kế của Sennar đang sống dưới vỏ bọc thương nhân. Cô tiết lộ rằng Daskel, kẻ đã lật đổ cha cô, dùng một hồ sơ khảo sát giả để dụ Cradle vào ổ phục kích. Mang mối hận từ cuộc chiến cũ, hắn biến đoàn di cư thành kẻ thù chung để củng cố quyền lực ở Sennar. Tổ Ember quay lại Cradle và tìm được bản ghi xác nhận con tàu đã phát hiện tọa độ giả ngay trước khi bị tấn công. Họ chuyển bằng chứng cho Sevra, rồi giữ chân Daskel tại Warden Rig để lực lượng của cô có thời gian giành quyền kiểm soát ở Sennar. Daskel bị bắt, vòng phong tỏa được dỡ bỏ và những con tàu cứu hộ bắt đầu tìm kiếm các buồng ngủ đông còn tín hiệu. Sevra trao cho Ember tọa độ của một hành tinh có sự sống. Sau khi tự kiểm tra tọa độ trên bản đồ sao thu được ở Warden Rig, cả kíp nhả neo, đưa trạm rời bãi vỡ để tiếp tục hành trình tìm một nơi định cư.
 
 ## Lệch với vai khác (cập nhật ở vòng QA 2, 2026-11-20)
 
@@ -1308,6 +1331,8 @@ Khi tỉnh khỏi giấc ngủ đông, Noor Haddad phát hiện trạm Ember đa
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Bảng mốc ở đầu file bỏ cột Trước, giá trị cũ: C3.7 là cú lật Driftlife bản trước, C3.8 là tàu TA08 cập bến lần thứ ba, C4.6 là nguồn ẩn danh (Nhem ở N4), C4.7 là ngày kế tiếp sau C4.5, C5.1 là tàu TA06 cập bến, C5.2 là ngày kế tiếp sau C5.1, C5.6 là nộp bản đồ sao thật. Mục 5 bỏ câu kể lịch sử sàn ngày (bản đầu 6, 5, 8, 3, 4, chương 1 sửa thành 7 ở vòng QA 2) | Báo cáo humanizer GDD của GDM | GDM |
 | 2026-11-23 | Theo rà chéo Sheet nhóm C (qa/2026-11-23-ra-cheo-C.md): Station Cinder ghi rõ buồng Ingrid và Linh còn chạy, hai buồng khác đã tắt. Không đổi luật | Báo cáo humanizer GDD của GDM | GDM |
 | 2026-11-23 | Mục 9: dòng Kết ghi điều nguồn C4 nói (Epilogue: Friends sau chương 7, chỉ qua tóm tắt tìm kiếm), dòng Số chương ghi 7 chương tính cả prologue (C3). Không đổi luật | Lead giao sửa 8 chỗ lệch mục 9 (production/reports/2026-11-23-teardown-dot12.md) | gd-research |
+| 2026-11-25 | Thêm bảng tính cách PC-1 đến PC-4 (nghề cũ, quốc gia, 3 nét, thói quen, gợi ý dáng và mặt, vật để lại khi buồng hỏng) ở mục Tổ Ember. Không đổi luật lời thoại, tên, slot, màu | GD-078, Lead yêu cầu bổ sung tính cách PC | gd-story |
+| 2026-11-25 | Lượt 2 GD-078: đổi đội hình PC theo Lead. PC-1 nam Việt Nam Lê Quốc Bảo (Lead sửa cùng ngày: nam chính, PC-4 thành nữ) thay hồ sơ PC-1 cũ, PC-4 nữ Niamh Doyle (Ireland) thay hồ sơ PC-4 cũ, Jonas và Mei giữ tên. Bảng thêm giới tính, tuổi, da và tóc, nét mặt, nhãn. Bỏ đồ vật và thói quen gợi vai (hộp y tế, đếm khẩu phần, hướng dẫn, đếm khóa). Đổi tên ở truyện kể, dòng buồng tắt, khối GAME STORY | Lead chốt 2026-11-25: bốn người ngang luật, nhân vật chính là người Việt | gd-story |
 
 ### Lệch đã xong (chuyển từ mục Lệch với vai khác, 2026-11-23)
 

@@ -10,7 +10,7 @@ Truyện không đòi người chơi làm gì ngoài vòng ngày. Ra chuyến, s
 
 ### II.9.2. Setting and Conflict
 
-Người chơi là một người trong kíp vận hành của **Station Ember**, tỉnh dậy sau giấc ngủ đông. Trạm trôi giữa **The Wake**, bãi vỡ của Cradle, con tàu mẹ của **United Accord** chở đoàn di cư rời Trái Đất đi tìm hành tinh **Solace**. Tàu đã nổ trước khi tới nơi. Bốn hồ sơ nhân vật mặc định là Noor Haddad, Jonas Weber, Mei Tanaka và Tariq Bello, người chơi đổi được tên.
+Người chơi là một người trong kíp vận hành của **Station Ember**, tỉnh dậy sau giấc ngủ đông. Trạm trôi giữa **The Wake**, bãi vỡ của Cradle, con tàu mẹ của **United Accord** chở đoàn di cư rời Trái Đất đi tìm hành tinh **Solace**. Tàu đã nổ trước khi tới nơi. Bốn hồ sơ nhân vật mặc định là Lê Quốc Bảo, Jonas Weber, Mei Tanaka và Niamh Doyle, người chơi đổi được tên.
 
 Thế giới có ba lực lượng:
 - **The Veyl** là tên chung các chủng tộc ngoài hành tinh, gồm Oru, Sennari, Aelith, Brakk và Kesh. Họ buôn bán với nhau và với loài người, dùng chung Tally. Thương nhân The Veyl lui tới rìa bãi vỡ gom hàng, và họ là khách của giờ giao thương.

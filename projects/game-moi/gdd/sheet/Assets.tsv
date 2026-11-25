@@ -8,85 +8,87 @@ STT	Asset Name	Link	Note
 7	[MVP] Clip người chơi trong trạm (8 clip x 3 hướng vẽ = 24 bộ): Idle, Đi ngang, Đi lên và xuống, Mang thùng, Nhặt và giao thùng, Tương tác, Mặc bộ đồ, Thức dậy từ buồng ngủ đông		Nguồn: ho-so-nhan-vat.md mục 7
 8	[MVP] Clip riêng NPC MVP (14): Ingrid 4, Linh 4, Tikko 6		Nguồn: ho-so-nhan-vat.md mục 7
 9	[MVP] Rig nhân loại và rig Oru (2 MVP, 3 tổng gồm rig trẻ em)		Nguồn: ho-so-nhan-vat.md mục 7
-10	[MVP] Driftlife Driftmoth (8 hoạt ảnh: Trôi, Cảnh giác, Báo trước, Đánh, Hồi, Choáng, Ngủ, Bị hạ)		Nguồn: combat-driftlife.md mục 7. Hiền, màu lạnh
-11	[MVP] Driftlife Skitter Ray (8 hoạt ảnh)		Nguồn: combat-driftlife.md mục 7. Chạy trốn, hàng sống giá cao
-12	[MVP] Driftlife Sting Krill (8 hoạt ảnh, đi bầy)		Nguồn: combat-driftlife.md mục 7. Điểm đỏ hoặc vàng báo săn mồi
-13	[MVP] Driftlife Arc Eel (8 hoạt ảnh, miễn choáng, hiệu ứng điện)		Nguồn: combat-driftlife.md mục 7. Ở MVP chỉ hạ
-14	[MVP] Boss Scrapmaw (hoạt ảnh các đòn và chuyển pha, lõi năng lượng)		Nguồn: combat-driftlife.md mục 7. Station Cinder, khoang máy
-15	[MVP] VFX báo trước đòn: thân sáng vàng hoặc đỏ, viền vùng trúng, mũi tên mép màn hình chỉ hướng		Nguồn: combat-driftlife.md mục 7
-16	[MVP] VFX người chơi trúng đòn và miễn sát thương: nháy trắng 2 khung, vệt đỏ Oxy, nhấp nháy 0,8 giây		Nguồn: combat-driftlife.md mục 7
-17	[MVP] VFX lao móc trúng: hitstop 3 khung, tia lửa, dây căng		Nguồn: combat-driftlife.md mục 7
-18	[MVP] VFX choáng: vòng xanh dương, sao quay, đồng hồ vòng đếm ngược		Nguồn: combat-driftlife.md mục 7
-19	[MVP] VFX hạ Driftlife: con vật vỡ, nguyên liệu trôi ra có viền sáng		Nguồn: combat-driftlife.md mục 7
-20	[MVP] VFX miễn choáng (Arc Eel): biểu tượng miễn, Dùi xung làm nó sáng thêm		Nguồn: combat-driftlife.md mục 7
-21	[MVP] VFX chuyển pha boss: màn tối viền, khung chậm 0,3 giây		Nguồn: combat-driftlife.md mục 7
-22	[MVP] VFX bắt được: súng lưới co lại, mẫu bay vào lồng mẫu, hiện số sao		Nguồn: combat-driftlife.md mục 7
-23	[MVP] Icon vector phế liệu (nhóm hình khối góc cạnh)		Nguồn: vat-pham.md mục 7. Mọi ID trong ITEM LIST, khoảng 155 icon cho 6 nhóm
-24	[MVP] Icon vector khoáng (tinh thể)		Nguồn: vat-pham.md mục 7
-25	[MVP] Icon vector băng (khối trong)		Nguồn: vat-pham.md mục 7
-26	[MVP] Icon vector linh kiện (bo mạch)		Nguồn: vat-pham.md mục 7
-27	[MVP] Icon vector mẫu (thể sinh học)		Nguồn: vat-pham.md mục 7
-28	[MVP] Icon vector kiện (hộp, nhãn phẩm cấp) và biểu tượng thùng ở giờ giao thương (1 cỡ, nhãn loại hàng, viền và số theo cửa neo 1 đến 3, nhãn riêng cho thùng đặt trước)		Nguồn: vat-pham.md mục 7, ux-ui.md mục 7
-29	[MVP] 4 bậc hiếm khác nhau cả màu, viền và hình		Nguồn: vat-pham.md và ux-ui.md mục 7. Cho người mù màu
-30	[MVP] VFX nhặt vật, khai thác điểm (thanh tiến độ, tia khoan, mảnh vụn), cổng mềm, túi đầy		Nguồn: vat-pham.md mục 7
-31	[MVP] Hoạt ảnh xưởng chế (máy ép, lò, hàng đợi) và Thông dịch viên đóng thùng lúc Mở giao thương (hộp gấp lại)		Nguồn: vat-pham.md mục 7
-32	[MVP] Bộ đồ đổi hình theo trục nâng cấp và trạm đổi hình khi sửa xong khoang		Nguồn: vat-pham.md và kinh-te-tien-trinh.md mục 7
-33	[MVP] Kit map tổng Vành đai ngoài: khối vỏ tàu, thiên thạch, băng, mây khí (một kit dùng chung cho các mảnh)		Nguồn: map.md mục 7. Mối nối che bằng vật trôi và mảnh vỡ
-34	[MVP] Kit nội thất xác Seed Station (Station Cinder, dùng chung các xác)		Nguồn: map.md mục 7
-35	[MVP] Mốc cố định: silhouette lớn, đèn nháy riêng của mỗi xác		Nguồn: map.md mục 7
-36	[MVP] Hazard Mảnh trôi, Cáp chập, Ống xì kèm báo trước và chỉ báo mép màn hình		Nguồn: map.md mục 7. MVP cho 3 hazard này
-37	[MVP] Rạn vụn: tường mảnh vỡ dày, chớp nhẹ ở khe		Nguồn: map.md mục 7. Chặn dải chưa mở
-38	[MVP] Recall Beacon: cột sáng, ghim la bàn, vòng tiến độ, vòng vỡ khi bị hủy		Nguồn: map.md mục 7
-39	[MVP] Bản đồ chuyến (phím M): lưới mảnh, ô đã vào, ghim beacon, lối vào map nhánh, vị trí đồng đội		Nguồn: map.md mục 7
-40	[MVP] Buồng ngủ đông kéo được ở Station Cinder: dây kéo, buồng phát sáng nhịp tim		Nguồn: map.md mục 7
-41	[MVP] Đổi màu nền và hạt bụi môi trường khi qua ranh dải, thẻ tên dải		Nguồn: map.md mục 7
-42	[MVP] Khoang trên mặt bằng trạm 3 trạng thái (Hỏng, Hoạt động, Đang nâng cấp) cho 8 khoang MVP: Buồng ngủ đông, Cửa khí, Kho, Khoang neo, Xưởng, Khoang liên lạc, Cảng, Động cơ chính		Nguồn: ux-ui.md và tram-va-cang.md mục 7
-43	[MVP] Tàu Loose Bolt (tàu gom phế liệu của Tikko) và Tàu vội, hoạt ảnh cập bến lệch, kẹp neo		Nguồn: tram-va-cang.md và cot-truyen.md mục 7
-44	[MVP] Chân dung thương nhân Tikko và khách Tàu vội		Nguồn: ux-ui.md mục 7
-45	[MVP] Hiệu ứng giờ giao thương: thùng trượt vào tàu, thanh kiên nhẫn trên tàu, bong bóng gọi món, Tally và tip bay lên, hơi khí khi bơm, tàu rời khi chưa giao (tô xám)		Nguồn: tram-va-cang.md mục 7
-46	[MVP] Cửa neo và ô quầy cảng: 3 cửa neo có số lớn, màu khác màu slot đồng đội, ô quầy cùng số cùng màu, bộ màu khác cả độ sáng cho người mù màu		Nguồn: ux-ui.md mục 7, tram-va-cang.md mục 7
-47	[MVP] Giao sai cửa neo: thùng bật nhẹ về tay, cửa neo đúng nháy màu. Tàu rời chưa giao: thương nhân lắc đầu, bong bóng tắt		Nguồn: tram-va-cang.md mục 7
-48	[MVP] Bảng tổng kết giao thương, bảng tàu và danh mục bán, bảng hạng cảng		Nguồn: tram-va-cang.md và kinh-te-tien-trinh.md mục 7
-49	[MVP] Bộ kit UI: khung, nút 5 trạng thái, thanh, danh sách, bảng, vòng tiến độ		Nguồn: ux-ui.md mục 7
-50	[MVP] Font sans đủ dấu tiếng Việt, số có độ rộng đều (tối thiểu 12 px ở 720p)		Nguồn: ux-ui.md mục 7
-51	[MVP] Màu và hình slot đồng đội: 4 màu, 4 hình (tròn, tam giác, vuông, thoi), kiểm mù màu		Nguồn: ux-ui.md mục 7
-52	[MVP] Biểu tượng ping (Tới đây, Cảnh báo, Cần Oxy, Tìm thấy) và la bàn (Ember, Recall Beacon, đồng đội, ping)		Nguồn: ux-ui.md mục 7
-53	[MVP] Biểu tượng trạng thái Oxy: bình đủ, 50%, 25%, 10%, vạch đủ về sọc chéo		Nguồn: ux-ui.md mục 7
-54	[MVP] Bộ glyph phím: bàn phím, Xbox, PlayStation		Nguồn: ux-ui.md mục 7
-55	[MVP] Nút Bỏ qua cảnh luôn hiện ở góc		Nguồn: ux-ui.md mục 7
-56	[MVP] Biểu tượng trạng thái mạng đồng đội (ổn, trễ, đang Giữ chỗ) và thông báo host thoát, lệch phiên bản		Nguồn: ky-thuat.md mục 7. Co-op 2 người thuộc MVP
-57	[MVP] Cảnh truyện MVP: Tỉnh dậy (buồng mở, hơi lạnh), Neo trạm, buồng ngủ đông còn chạy, buồng về trạm, đánh thức người vớt		Nguồn: cot-truyen.md mục 7
-58	[MVP] Vật manh mối: phát sáng nhẹ, dấu riêng dùng chung cả game, mục Sổ tay		Nguồn: cot-truyen.md mục 7
-59	[MVP] Khoang mở tính năng: khoang sáng đèn, có người đứng trong		Nguồn: cot-truyen.md mục 7
-60	[MVP] Cảnh tàu đầu tiên và sóng của Lantern (đèn khoang liên lạc nhấp theo giọng)		Nguồn: cot-truyen.md mục 7
-61	[MVP] Hộp thoại truyện 2 dòng có tên và chân dung, dòng radio mép màn hình, lời bong bóng, Sổ tay 3 phần		Nguồn: cot-truyen.md mục 7. Màn cảnh truyện và Sổ tay ở ux-ui.md
-62	[Sau MVP] Skin người chơi thứ 3 và 4, biến thể B của 4 preset cho người vào sau		Nguồn: ho-so-nhan-vat.md mục 7
-63	[Sau MVP] Người vớt Rafael, Amara, Yusuf (3 người còn lại)		Nguồn: ho-so-nhan-vat.md mục 7
-64	[Sau MVP] Thương nhân Ilsume (Sennari), Vaeth (Aelith), Dromm (Brakk), Nhem (Kesh) (4 còn lại trong 5 tổng) và người phụ Odile, Bram, Elias, Wren (4)		Nguồn: ho-so-nhan-vat.md mục 7
-65	[Sau MVP] Daskel, Maro (hai biến thể) và giáp lính The Wardens (3 biến thể)		Nguồn: ho-so-nhan-vat.md mục 7
-66	[Sau MVP] Mảnh bộ đồ còn lại: bình bậc 2 đến 4, vỏ cấp 1 đến 3, bộ đẩy bậc 2 đến 3, túi bậc 2 đến 4, đai 3 ô		Nguồn: ho-so-nhan-vat.md mục 7
-67	[Sau MVP] Clip bước xuống từ xuồng hoặc Skiff (Amara, Yusuf)		Nguồn: ho-so-nhan-vat.md mục 7
-68	[Sau MVP] Rig trẻ em (Wren)		Nguồn: ho-so-nhan-vat.md mục 7
-69	[Sau MVP] Driftlife Vành đai ngoài còn lại: Latchjaw		Nguồn: combat-driftlife.md mục 7
-70	[Sau MVP] Driftlife Vành đai trong: Shepherd Whale, Lumen Jelly, Orebiter, Needlefin, Gulper		Nguồn: combat-driftlife.md mục 7
-71	[Sau MVP] Driftlife Vùng trung tâm: Prism Wisp, Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling		Nguồn: combat-driftlife.md mục 7
-72	[Sau MVP] The Wardens: Warden Harvester, Warden Lancer, Warden Snarer, Warden Collector		Nguồn: combat-driftlife.md mục 7
-73	[Sau MVP] Boss Tempest Gulper, Warden Reaper, Cradle Custodian, Daskel		Nguồn: combat-driftlife.md mục 7
-74	[Sau MVP] VFX ngủ, Phao kéo bay về		Nguồn: combat-driftlife.md mục 7
-75	[Sau MVP] VFX bị lưới The Wardens trói và dấu săn bắt của quân The Wardens (vết cắt máy trên cá thể)		Nguồn: combat-driftlife.md mục 7
-76	[Sau MVP] Kit map tổng Vành đai trong và Vùng trung tâm		Nguồn: map.md mục 7
-77	[Sau MVP] Map nhánh Station Lantern, Station Flint, bên trong Cradle, Warden Rig		Nguồn: map.md mục 7, combat-driftlife.md
-78	[Sau MVP] Hazard Dòng đá vụn, Băng nứt, Dòng trôi, Bùng tinh vân, Vùng nhiễu, Hàng rào cắt		Nguồn: map.md mục 7
-79	[Sau MVP] Viền màn hình và cảnh báo vào dải thiếu cấp bộ đồ		Nguồn: map.md mục 7
-80	[Sau MVP] Cảnh Skiff tách bến và bay qua các dải		Nguồn: map.md mục 7
-81	[Sau MVP] 5 khoang Sau MVP: Khoang dẫn đường, Bến Skiff, Phòng nghiên cứu, Khoang sinh quyển, Bến 2 và 3		Nguồn: tram-va-cang.md mục 7
-82	[Sau MVP] 9 tàu Sau MVP: Lamplighter, Vellune, Glasswing, Iron Keel, Stayfast, tàu lạ của Maro, tàu đơn gấp, Backchannel, Pilot Light, kèm chân dung		Nguồn: tram-va-cang.md, ux-ui.md mục 7
-83	[Sau MVP] Biểu tượng sự cố (rò khí, chập điện, Driftlife sổng), đèn đỏ nháy khoang		Nguồn: tram-va-cang.md, ux-ui.md mục 7
-84	[Sau MVP] Driftlife sinh con non cạnh bố mẹ trong ô nuôi, bảng lên hạng cảng		Nguồn: tram-va-cang.md mục 7
-85	[Sau MVP] Hoạt ảnh học bản thiết kế (bản vẽ mở ra, dụng cụ mới hiện)		Nguồn: vat-pham.md mục 7
-86	[Sau MVP] Cảnh truyện: cú lật Driftlife (ảnh thẻ và vết cắt mô)		Nguồn: cot-truyen.md mục 7
-87	[Sau MVP] Cảnh cuộc bắt cóc ở Veyl Waypost (tàu của Ilsume bị áp mạn, kén thoát hiểm bị kéo đi, Maro lộ mặt qua radio) và cảnh Sevra gỡ mạng che khi kén về Ember		Nguồn: cot-truyen.md mục 7
-88	[Sau MVP] Cảnh vào Vành đai trong và Vùng trung tâm lần đầu (trạm đèn sáng, bóng cỗ máy lớn)		Nguồn: cot-truyen.md mục 7
-89	[Sau MVP] Cảnh Cryo Deck của Cradle và cảnh không có gì ở đó (khoang dẫn đường, chỗ Solace trống)		Nguồn: cot-truyen.md mục 7
-90	[Sau MVP] Cảnh rời neo và cảnh ngoài bãi vỡ (bầu trời sao sạch), màn hình tên game		Nguồn: cot-truyen.md mục 7
-91	[Sau MVP] Sevra Ilvane trạng thái bỏ mạng (lớp phủ thứ hai trên rig của Ilsume, huy hiệu nhà Ilvane, 5 biểu cảm)		Nguồn: ho-so-nhan-vat.md mục 7
+10	[MVP] Clip idle riêng 4 preset người chơi đứng tại chỗ (2 MVP, 4 tổng)		Nguồn: ho-so-nhan-vat.md mục 7, cot-truyen.md GD-078. Chỉ là nền, không gợi vai
+11	[MVP] Vật để lại trên buồng ngủ đông tắt, 1 vật mỗi preset (2 MVP, 4 tổng)		Nguồn: ho-so-nhan-vat.md mục 7, cot-truyen.md GD-078
+12	[MVP] Driftlife Driftmoth (8 hoạt ảnh: Trôi, Cảnh giác, Báo trước, Đánh, Hồi, Choáng, Ngủ, Bị hạ)		Nguồn: combat-driftlife.md mục 7. Hiền, màu lạnh
+13	[MVP] Driftlife Skitter Ray (8 hoạt ảnh)		Nguồn: combat-driftlife.md mục 7. Chạy trốn, hàng sống giá cao
+14	[MVP] Driftlife Sting Krill (8 hoạt ảnh, đi bầy)		Nguồn: combat-driftlife.md mục 7. Điểm đỏ hoặc vàng báo săn mồi
+15	[MVP] Driftlife Arc Eel (8 hoạt ảnh, miễn choáng, hiệu ứng điện)		Nguồn: combat-driftlife.md mục 7. Ở MVP chỉ hạ
+16	[MVP] Boss Scrapmaw (hoạt ảnh các đòn và chuyển pha, lõi năng lượng)		Nguồn: combat-driftlife.md mục 7. Station Cinder, khoang máy
+17	[MVP] VFX báo trước đòn: thân sáng vàng hoặc đỏ, viền vùng trúng, mũi tên mép màn hình chỉ hướng		Nguồn: combat-driftlife.md mục 7
+18	[MVP] VFX người chơi trúng đòn và miễn sát thương: nháy trắng 2 khung, vệt đỏ Oxy, nhấp nháy 0,8 giây		Nguồn: combat-driftlife.md mục 7
+19	[MVP] VFX lao móc trúng: hitstop 3 khung, tia lửa, dây căng		Nguồn: combat-driftlife.md mục 7
+20	[MVP] VFX choáng: vòng xanh dương, sao quay, đồng hồ vòng đếm ngược		Nguồn: combat-driftlife.md mục 7
+21	[MVP] VFX hạ Driftlife: con vật vỡ, nguyên liệu trôi ra có viền sáng		Nguồn: combat-driftlife.md mục 7
+22	[MVP] VFX miễn choáng (Arc Eel): biểu tượng miễn, Dùi xung làm nó sáng thêm		Nguồn: combat-driftlife.md mục 7
+23	[MVP] VFX chuyển pha boss: màn tối viền, khung chậm 0,3 giây		Nguồn: combat-driftlife.md mục 7
+24	[MVP] VFX bắt được: súng lưới co lại, mẫu bay vào lồng mẫu, hiện số sao		Nguồn: combat-driftlife.md mục 7
+25	[MVP] Icon vector phế liệu (nhóm hình khối góc cạnh)		Nguồn: vat-pham.md mục 7. Mọi ID trong ITEM LIST, khoảng 155 icon cho 6 nhóm
+26	[MVP] Icon vector khoáng (tinh thể)		Nguồn: vat-pham.md mục 7
+27	[MVP] Icon vector băng (khối trong)		Nguồn: vat-pham.md mục 7
+28	[MVP] Icon vector linh kiện (bo mạch)		Nguồn: vat-pham.md mục 7
+29	[MVP] Icon vector mẫu (thể sinh học)		Nguồn: vat-pham.md mục 7
+30	[MVP] Icon vector kiện (hộp, nhãn phẩm cấp) và biểu tượng thùng ở giờ giao thương (1 cỡ, nhãn loại hàng, viền và số theo cửa neo 1 đến 3, nhãn riêng cho thùng đặt trước)		Nguồn: vat-pham.md mục 7, ux-ui.md mục 7
+31	[MVP] 4 bậc hiếm khác nhau cả màu, viền và hình		Nguồn: vat-pham.md và ux-ui.md mục 7. Cho người mù màu
+32	[MVP] VFX nhặt vật, khai thác điểm (thanh tiến độ, tia khoan, mảnh vụn), cổng mềm, túi đầy		Nguồn: vat-pham.md mục 7
+33	[MVP] Hoạt ảnh xưởng chế (máy ép, lò, hàng đợi) và Thông dịch viên đóng thùng lúc Mở giao thương (hộp gấp lại)		Nguồn: vat-pham.md mục 7
+34	[MVP] Bộ đồ đổi hình theo trục nâng cấp và trạm đổi hình khi sửa xong khoang		Nguồn: vat-pham.md và kinh-te-tien-trinh.md mục 7
+35	[MVP] Kit map tổng Vành đai ngoài: khối vỏ tàu, thiên thạch, băng, mây khí (một kit dùng chung cho các mảnh)		Nguồn: map.md mục 7. Mối nối che bằng vật trôi và mảnh vỡ
+36	[MVP] Kit nội thất xác Seed Station (Station Cinder, dùng chung các xác)		Nguồn: map.md mục 7
+37	[MVP] Mốc cố định: silhouette lớn, đèn nháy riêng của mỗi xác		Nguồn: map.md mục 7
+38	[MVP] Hazard Mảnh trôi, Cáp chập, Ống xì kèm báo trước và chỉ báo mép màn hình		Nguồn: map.md mục 7. MVP cho 3 hazard này
+39	[MVP] Rạn vụn: tường mảnh vỡ dày, chớp nhẹ ở khe		Nguồn: map.md mục 7. Chặn dải chưa mở
+40	[MVP] Recall Beacon: cột sáng, ghim la bàn, vòng tiến độ, vòng vỡ khi bị hủy		Nguồn: map.md mục 7
+41	[MVP] Bản đồ chuyến (phím M): lưới mảnh, ô đã vào, ghim beacon, lối vào map nhánh, vị trí đồng đội		Nguồn: map.md mục 7
+42	[MVP] Buồng ngủ đông kéo được ở Station Cinder: dây kéo, buồng phát sáng nhịp tim		Nguồn: map.md mục 7
+43	[MVP] Đổi màu nền và hạt bụi môi trường khi qua ranh dải, thẻ tên dải		Nguồn: map.md mục 7
+44	[MVP] Khoang trên mặt bằng trạm 3 trạng thái (Hỏng, Hoạt động, Đang nâng cấp) cho 8 khoang MVP: Buồng ngủ đông, Cửa khí, Kho, Khoang neo, Xưởng, Khoang liên lạc, Cảng, Động cơ chính		Nguồn: ux-ui.md và tram-va-cang.md mục 7
+45	[MVP] Tàu Loose Bolt (tàu gom phế liệu của Tikko) và Tàu vội, hoạt ảnh cập bến lệch, kẹp neo		Nguồn: tram-va-cang.md và cot-truyen.md mục 7
+46	[MVP] Chân dung thương nhân Tikko và khách Tàu vội		Nguồn: ux-ui.md mục 7
+47	[MVP] Hiệu ứng giờ giao thương: thùng trượt vào tàu, thanh kiên nhẫn trên tàu, bong bóng gọi món, Tally và tip bay lên, hơi khí khi bơm, tàu rời khi chưa giao (tô xám)		Nguồn: tram-va-cang.md mục 7
+48	[MVP] Cửa neo và ô quầy cảng: 3 cửa neo có số lớn, màu khác màu slot đồng đội, ô quầy cùng số cùng màu, bộ màu khác cả độ sáng cho người mù màu		Nguồn: ux-ui.md mục 7, tram-va-cang.md mục 7
+49	[MVP] Giao sai cửa neo: thùng bật nhẹ về tay, cửa neo đúng nháy màu. Tàu rời chưa giao: thương nhân lắc đầu, bong bóng tắt		Nguồn: tram-va-cang.md mục 7
+50	[MVP] Bảng tổng kết giao thương, bảng tàu và danh mục bán, bảng hạng cảng		Nguồn: tram-va-cang.md và kinh-te-tien-trinh.md mục 7
+51	[MVP] Bộ kit UI: khung, nút 5 trạng thái, thanh, danh sách, bảng, vòng tiến độ		Nguồn: ux-ui.md mục 7
+52	[MVP] Font sans đủ dấu tiếng Việt, số có độ rộng đều (tối thiểu 12 px ở 720p)		Nguồn: ux-ui.md mục 7
+53	[MVP] Màu và hình slot đồng đội: 4 màu, 4 hình (tròn, tam giác, vuông, thoi), kiểm mù màu		Nguồn: ux-ui.md mục 7
+54	[MVP] Biểu tượng ping (Tới đây, Cảnh báo, Cần Oxy, Tìm thấy) và la bàn (Ember, Recall Beacon, đồng đội, ping)		Nguồn: ux-ui.md mục 7
+55	[MVP] Biểu tượng trạng thái Oxy: bình đủ, 50%, 25%, 10%, vạch đủ về sọc chéo		Nguồn: ux-ui.md mục 7
+56	[MVP] Bộ glyph phím: bàn phím, Xbox, PlayStation		Nguồn: ux-ui.md mục 7
+57	[MVP] Nút Bỏ qua cảnh luôn hiện ở góc		Nguồn: ux-ui.md mục 7
+58	[MVP] Biểu tượng trạng thái mạng đồng đội (ổn, trễ, đang Giữ chỗ) và thông báo host thoát, lệch phiên bản		Nguồn: ky-thuat.md mục 7. Co-op 2 người thuộc MVP
+59	[MVP] Cảnh truyện MVP: Tỉnh dậy (buồng mở, hơi lạnh), Neo trạm, buồng ngủ đông còn chạy, buồng về trạm, đánh thức người vớt		Nguồn: cot-truyen.md mục 7
+60	[MVP] Vật manh mối: phát sáng nhẹ, dấu riêng dùng chung cả game, mục Sổ tay		Nguồn: cot-truyen.md mục 7
+61	[MVP] Khoang mở tính năng: khoang sáng đèn, có người đứng trong		Nguồn: cot-truyen.md mục 7
+62	[MVP] Cảnh tàu đầu tiên và sóng của Lantern (đèn khoang liên lạc nhấp theo giọng)		Nguồn: cot-truyen.md mục 7
+63	[MVP] Hộp thoại truyện 2 dòng có tên và chân dung, dòng radio mép màn hình, lời bong bóng, Sổ tay 3 phần		Nguồn: cot-truyen.md mục 7. Màn cảnh truyện và Sổ tay ở ux-ui.md
+64	[Sau MVP] Skin người chơi thứ 3 và 4, biến thể B của 4 preset cho người vào sau		Nguồn: ho-so-nhan-vat.md mục 7
+65	[Sau MVP] Người vớt Rafael, Amara, Yusuf (3 người còn lại)		Nguồn: ho-so-nhan-vat.md mục 7
+66	[Sau MVP] Thương nhân Ilsume (Sennari), Vaeth (Aelith), Dromm (Brakk), Nhem (Kesh) (4 còn lại trong 5 tổng) và người phụ Odile, Bram, Elias, Wren (4)		Nguồn: ho-so-nhan-vat.md mục 7
+67	[Sau MVP] Daskel, Maro (hai biến thể) và giáp lính The Wardens (3 biến thể)		Nguồn: ho-so-nhan-vat.md mục 7
+68	[Sau MVP] Mảnh bộ đồ còn lại: bình bậc 2 đến 4, vỏ cấp 1 đến 3, bộ đẩy bậc 2 đến 3, túi bậc 2 đến 4, đai 3 ô		Nguồn: ho-so-nhan-vat.md mục 7
+69	[Sau MVP] Clip bước xuống từ xuồng hoặc Skiff (Amara, Yusuf)		Nguồn: ho-so-nhan-vat.md mục 7
+70	[Sau MVP] Rig trẻ em (Wren)		Nguồn: ho-so-nhan-vat.md mục 7
+71	[Sau MVP] Driftlife Vành đai ngoài còn lại: Latchjaw		Nguồn: combat-driftlife.md mục 7
+72	[Sau MVP] Driftlife Vành đai trong: Shepherd Whale, Lumen Jelly, Orebiter, Needlefin, Gulper		Nguồn: combat-driftlife.md mục 7
+73	[Sau MVP] Driftlife Vùng trung tâm: Prism Wisp, Mirror Mantis, Storm Siphon, Shardbrood Queen, Shardbrood Hatchling		Nguồn: combat-driftlife.md mục 7
+74	[Sau MVP] The Wardens: Warden Harvester, Warden Lancer, Warden Snarer, Warden Collector		Nguồn: combat-driftlife.md mục 7
+75	[Sau MVP] Boss Tempest Gulper, Warden Reaper, Cradle Custodian, Daskel		Nguồn: combat-driftlife.md mục 7
+76	[Sau MVP] VFX ngủ, Phao kéo bay về		Nguồn: combat-driftlife.md mục 7
+77	[Sau MVP] VFX bị lưới The Wardens trói và dấu săn bắt của quân The Wardens (vết cắt máy trên cá thể)		Nguồn: combat-driftlife.md mục 7
+78	[Sau MVP] Kit map tổng Vành đai trong và Vùng trung tâm		Nguồn: map.md mục 7
+79	[Sau MVP] Map nhánh Station Lantern, Station Flint, bên trong Cradle, Warden Rig		Nguồn: map.md mục 7, combat-driftlife.md
+80	[Sau MVP] Hazard Dòng đá vụn, Băng nứt, Dòng trôi, Bùng tinh vân, Vùng nhiễu, Hàng rào cắt		Nguồn: map.md mục 7
+81	[Sau MVP] Viền màn hình và cảnh báo vào dải thiếu cấp bộ đồ		Nguồn: map.md mục 7
+82	[Sau MVP] Cảnh Skiff tách bến và bay qua các dải		Nguồn: map.md mục 7
+83	[Sau MVP] 5 khoang Sau MVP: Khoang dẫn đường, Bến Skiff, Phòng nghiên cứu, Khoang sinh quyển, Bến 2 và 3		Nguồn: tram-va-cang.md mục 7
+84	[Sau MVP] 9 tàu Sau MVP: Lamplighter, Vellune, Glasswing, Iron Keel, Stayfast, tàu lạ của Maro, tàu đơn gấp, Backchannel, Pilot Light, kèm chân dung		Nguồn: tram-va-cang.md, ux-ui.md mục 7
+85	[Sau MVP] Biểu tượng sự cố (rò khí, chập điện, Driftlife sổng), đèn đỏ nháy khoang		Nguồn: tram-va-cang.md, ux-ui.md mục 7
+86	[Sau MVP] Driftlife sinh con non cạnh bố mẹ trong ô nuôi, bảng lên hạng cảng		Nguồn: tram-va-cang.md mục 7
+87	[Sau MVP] Hoạt ảnh học bản thiết kế (bản vẽ mở ra, dụng cụ mới hiện)		Nguồn: vat-pham.md mục 7
+88	[Sau MVP] Cảnh truyện: cú lật Driftlife (ảnh thẻ và vết cắt mô)		Nguồn: cot-truyen.md mục 7
+89	[Sau MVP] Cảnh cuộc bắt cóc ở Veyl Waypost (tàu của Ilsume bị áp mạn, kén thoát hiểm bị kéo đi, Maro lộ mặt qua radio) và cảnh Sevra gỡ mạng che khi kén về Ember		Nguồn: cot-truyen.md mục 7
+90	[Sau MVP] Cảnh vào Vành đai trong và Vùng trung tâm lần đầu (trạm đèn sáng, bóng cỗ máy lớn)		Nguồn: cot-truyen.md mục 7
+91	[Sau MVP] Cảnh Cryo Deck của Cradle và cảnh không có gì ở đó (khoang dẫn đường, chỗ Solace trống)		Nguồn: cot-truyen.md mục 7
+92	[Sau MVP] Cảnh rời neo và cảnh ngoài bãi vỡ (bầu trời sao sạch), màn hình tên game		Nguồn: cot-truyen.md mục 7
+93	[Sau MVP] Sevra Ilvane trạng thái bỏ mạng (lớp phủ thứ hai trên rig của Ilsume, huy hiệu nhà Ilvane, 5 biểu cảm)		Nguồn: ho-so-nhan-vat.md mục 7
