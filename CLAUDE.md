@@ -21,7 +21,7 @@ Vì là dự án Unity: việc cần Unity Editor làm ở phiên cục bộ ho�
 
 ## Quy tắc cho mọi phiên (kể cả phiên đám mây, vốn không đọc CLAUDE.md global của máy)
 - Trả lời tiếng Việt có dấu, thuật ngữ kỹ thuật giữ tiếng Anh. Kết luận trước, ngắn. Không emoji, không gạch dài, chỉ dùng "-". Số liệu để trong bảng.
-- Không push khi chưa được bảo. Không --no-verify. Commit đứng tên Huy, không thêm Co-Authored-By.
+- Nhánh claude-cty: tự commit khi việc đã qua cổng máy và tự push nhánh claude-cty lên origin ngay sau đó, không cần hỏi (Lead 2026-11-25: "tự động commit và push"). Nhánh khác và `main` vẫn chỉ push khi Lead bảo. Không --no-verify. Commit đứng tên Huy, không thêm Co-Authored-By.
 - Tri thức dự án ghi vào file trong repo (CLAUDE.md, DECISIONS.md), không để trong memory của máy.
 
 ## DECISIONS (repo)
@@ -31,6 +31,7 @@ Vì là dự án Unity: việc cần Unity Editor làm ở phiên cục bộ ho�
 - 2026-11-19: Cài phòng Game Designer (skill gd-department) vào repo, chuyển khung Puzzle mobile sang game indie. Quyết định của phòng ghi tiếp ở `production/DECISIONS.md`, của game ở `projects/space-salvage/DECISIONS.md`.
 - 2026-11-20: Tách nhánh theo máy và công cụ (Lead: "tách 3 nhánh cho 1 Claude trên công ty, 1 Claude trên Laptop Ahy G15, 1 CodeX trên công ty"). Bảng và luật ở mục Nhánh theo máy dưới đây.
 - 2026-11-25: Tách nhánh `art` từ `main` (Lead: "tách 1 nhánh art ra cho t"), worktree `D:\DATN-SP27-art`. Theo luật chung của bảng nhánh.
+- 2026-11-25: Lead: "tự động commit và push". Phiên `claude-cty` tự commit khi qua cổng máy và tự push nhánh `claude-cty`. Không áp cho `main` và nhánh khác.
 
 ## Nhánh theo máy
 
@@ -45,7 +46,7 @@ Vì là dự án Unity: việc cần Unity Editor làm ở phiên cục bộ ho�
 - Mỗi phiên chỉ commit vào nhánh của mình. Mở phiên: kiểm `git branch --show-current` đúng nhánh trong bảng, rồi `git merge main` để lấy việc mới.
 - Mỗi việc GD-### chỉ một nhánh làm. Ghi tên nhánh vào cột Agent của `production/BACKLOG.md` khi nhận việc. Một tab Sheet chỉ một nhánh dán tại một thời điểm.
 - Gộp vào `main` khi việc đã qua cổng máy (`selftest.mjs`, `validate-gdd.mjs`, `doi-chieu-sheet.mjs` cho tab vừa dán) và gd-qa ĐẠT. Xung đột ở file luật thì dừng, báo Lead, không tự chọn một bên.
-- Laptop và máy công ty trao đổi qua GitHub, nên mỗi lần push nhánh hay `main` phải được Lead bảo.
+- Laptop và máy công ty trao đổi qua GitHub, nên mỗi lần push nhánh hay `main` phải được Lead bảo. Riêng `claude-cty` tự push sau mỗi commit (2026-11-25).
 - Các worktree trên máy công ty dùng chung một `.git`. Không checkout nhánh của phiên khác. Không xóa worktree khi chưa hỏi Lead.
 
 ---
