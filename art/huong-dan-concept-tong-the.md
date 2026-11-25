@@ -29,27 +29,28 @@ Lưu ý: chữ "Dải Gần" trong ảnh mẫu là tên cũ, nay gọi là Vành
 | `projects/game-moi/gdd/he-thong/tram-va-cang.md` mục 7 | Trạm, khoang, tàu thương nhân |
 | `projects/game-moi/ux/de-xuat-topdown/` | Bố cục top-down trạm (UI-10) và cảng (UI-40) Lead đã duyệt |
 
-## 2. Các phần của concept tổng thể
+## 2. 10 phần theo thứ tự ưu tiên
 
-| # | Phần | Làm gì | Đầu ra | Để ở |
-|---|---|---|---|---|
-| 1 | Moodboard | Gom ảnh tham chiếu cho từng chủ đề: bãi vỡ, nội thất trạm, sinh vật phát quang, thương nhân ngoài hành tinh, UI sci-fi. Mỗi ảnh ghi nguồn và lý do chọn | 4 đến 6 bảng moodboard | `nghien-cuu/` |
-| 2 | Style frame (key art) | Vẽ 4 khung hình 1920x1080 đúng góc camera: Vành đai ngoài (đã có mẫu), trạm Ember lúc hỏng, trạm Ember lúc sửa xong vài khoang, cảng giờ giao thương có tàu của Tikko | 4 style frame. **Lead duyệt** | `lam-viec/style-frame/` |
-| 3 | Bảng màu | Bảng màu chung, bảng riêng mỗi vùng, màu trạm theo trạng thái (Hỏng, Hoạt động, Đang nâng cấp), màu tín hiệu (báo đòn vàng và đỏ, choáng xanh dương, 4 bậc hiếm). Kiểm mù màu | 1 file palette có mã hex | `lam-viec/palette/` |
-| 4 | Quy chuẩn kỹ thuật | Tỉ lệ px mỗi u, kích thước nhân vật so với cửa và thùng, 3 hướng vẽ và hướng nào lật ngang, pivot, hướng nguồn sáng cố định, bóng đổ, nét viền có hay không và dày bao nhiêu, định dạng xuất | 1 trang spec + 1 ảnh thước đo. **Chốt với dev** | `lam-viec/spec/` |
-| 5 | Nhân vật | Shape language, bảng silhouette, turnaround 3 hướng, bảng biểu cảm, bộ đồ chia mảnh thay được. Người chơi trước, rồi Ingrid, Linh, Tikko (loài Oru) | Sheet nhân vật mỗi người | `lam-viec/nhan-vat/` |
-| 6 | Driftlife và boss | Hình dáng theo hành vi: loài hiền tròn, màu lạnh, loài săn mồi nhọn, có điểm đỏ hoặc vàng báo đòn. 4 loài MVP (Driftmoth, Skitter Ray, Sting Krill, Arc Eel) và boss Scrapmaw | Sheet mỗi loài, 1 tư thế báo đòn | `lam-viec/driftlife/` |
-| 7 | Môi trường | Kit mảnh ghép (vỏ tàu, thiên thạch, băng, mây khí), nội thất Seed Station, mốc lớn, 3 hazard MVP, khoang trạm 3 trạng thái | Bảng kit + 1 cảnh ghép thử | `lam-viec/moi-truong/` |
-| 8 | Icon và prop | Quy tắc vẽ icon cho 6 nhóm vật phẩm (phế liệu góc cạnh, khoáng tinh thể, băng khối trong, linh kiện bo mạch, mẫu sinh học, kiện hộp). 4 bậc hiếm khác nhau cả màu, viền và hình | 1 trang quy tắc + 2 icon mẫu mỗi nhóm | `lam-viec/icon/` |
-| 9 | VFX | Ngôn ngữ hình của hiệu ứng: trúng đòn, choáng, bắt được, nhặt đồ, Recall Beacon | 1 trang storyboard VFX | `lam-viec/vfx/` |
-| 10 | UI art | Khung, nút 5 trạng thái, thanh, font đủ dấu tiếng Việt. Bám wireframe của gd-ux, không tự đổi bố cục | Kit UI mẫu | `lam-viec/ui/` |
+Mỗi phần một thư mục trong `C/`, README trong thư mục ghi việc cần làm, đầu ra và file cần đọc.
 
-## 3. Thứ tự làm
+| Ưu tiên | Thư mục | Đầu ra | Vì sao ở thứ tự này |
+|---|---|---|---|
+| 1 | `C/01-moodboard` | 4 đến 6 bảng ảnh tham chiếu có nguồn | Mọi phần sau dựa vào đây |
+| 2 | `C/02-style-frame` | 4 khung 1920x1080. **Lead duyệt** | Chưa duyệt thì chưa vẽ asset |
+| 3 | `C/03-quy-chuan-ky-thuat` | Spec + ảnh thước đo. **Chốt với dev** | Dev cần sớm nhất để dựng greybox đúng tỉ lệ. Làm song song với 4 |
+| 4 | `C/04-bang-mau` | Palette có mã hex, kiểm mù màu | Màu tín hiệu dùng cho nhân vật, Driftlife, UI, VFX |
+| 5 | `C/05-nhan-vat` | Sheet mỗi nhân vật | Người chơi có nhiều hình nhất (75 bộ), chốt sớm để vẽ clip |
+| 6 | `C/06-moi-truong` | Bảng kit + cảnh ghép thử | Chiếm phần lớn màn hình, dev cần kit để thay greybox |
+| 7 | `C/07-driftlife-boss` | Sheet mỗi loài, tư thế báo đòn | Cần bảng màu và tỉ lệ nhân vật đã chốt |
+| 8 | `C/08-ui-art` | Kit UI mẫu | HUD cần cho bản chơi thử, bố cục đã có wireframe |
+| 9 | `C/09-icon` | Quy tắc + 2 icon mẫu mỗi nhóm | Nhiều (155) nhưng vẽ theo quy tắc, cần bậc hiếm từ 4 |
+| 10 | `C/10-vfx` | Storyboard VFX | Phụ thuộc màu, nhân vật và Driftlife đã chốt |
 
-1. Moodboard, rồi style frame. Đây là mốc Lead duyệt đầu tiên. Chưa duyệt thì chưa vẽ asset.
-2. Bảng màu và quy chuẩn kỹ thuật, làm song song. Dev cần quy chuẩn kỹ thuật sớm nhất để dựng greybox đúng tỉ lệ.
-3. Nhân vật người chơi, vì có nhiều clip nhất (17 clip ngoài không gian + 8 clip trong trạm, mỗi clip 3 hướng).
-4. Driftlife, môi trường, icon, VFX, UI.
+## 3. Cách đi qua các mốc
+
+1. Xong 01 và 02 thì gửi Lead duyệt style frame.
+2. Duyệt xong thì làm 03 và 04 song song, gửi dev xem 03.
+3. Từ 05 trở đi làm lần lượt. Mỗi phần xong thì cập nhật README của thư mục đó.
 
 ## 4. Rủi ro cần biết
 
