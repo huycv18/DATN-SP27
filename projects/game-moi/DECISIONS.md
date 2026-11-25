@@ -518,3 +518,4 @@ Lead: "4 người chơi này như nhau trước nhé, không có vai trò riêng
 - Lead sửa cùng ngày: "PC-1 là nhân vật nam chính". PC-1 là nam người Việt, thay Noor Haddad. GDM tự quyết (Lead đổi được) để giữ 2 nam 2 nữ: PC-4 thay Tariq Bello bằng một nữ không da màu, bỏ râu ở hồ sơ PC-4. Jonas Weber và Mei Tanaka giữ nguyên. Tên PC-1 không trùng họ Trần với Linh Tran (RS-2).
 - Hệ quả: đổi tên ở cot-truyen.md, GAME STORY, ho-so-nhan-vat.md, Player, MVP Criteria Checklist, Book. File QA cũ và DECISIONS cũ giữ nguyên làm lịch sử. Ảnh cảnh bay đã duyệt 2026-11-23 ghi "Noor" vẫn dùng được vì mặt không thấy qua mũ.
 - Lead đặt tên PC-1: "tên là Nguyễn Việt" (thay tên gd-story đề xuất Lê Quốc Bảo). Tên gọi ngắn trong truyện là Việt.
+- Lead xem concept 4 PC do GPT vẽ: "PC-4 đô con quá, cô ấy là phụ nữ mà". PC-4 Niamh đổi sang dáng cao và mảnh, vai hẹp, giữ chiều cao 1,2 u. Bỏ "vai rất rộng" ở silhouette và nét mặt (ho-so-nhan-vat.md 2b.1, cot-truyen.md bảng tính cách).

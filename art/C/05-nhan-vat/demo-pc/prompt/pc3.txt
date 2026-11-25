@@ -1,0 +1,25 @@
+Attached: pc1.png = AUTHORITATIVE style and layout anchor of the same cast: copy its line weight, cel shading, proportions system, cream background, sheet layout (two full bodies on top, 4 expression busts below, small item bottom right) exactly. It shows a DIFFERENT person, do not copy his face, hair, colors or suit shapes.
+
+Make ONE square character concept sheet for a 2.5D sci-fi survival game (top-down 45 degree camera, all assets are 2D sprites).
+
+STYLE (keep identical for the whole cast):
+- Clean 2D game illustration, bold dark outline about 4 px (#1B1530) on the outer silhouette, thinner inner lines only at big form breaks, 2-3 flat cel-shading tones per material, one key light from the upper left. No painterly texture, no tiny noisy detail, no hatching.
+- Stylized but grounded proportions, about 5 heads tall, friendly readable faces with big clear expressions (cozy indie game feel).
+- Plain flat light cream background (#F5EFE0), no scenery, no text, no letters, no logos, no numbers.
+
+LAYOUT:
+- Top 70%: the SAME character shown twice side by side, full body, front three-quarter view, standing idle pose.
+  - Left: in the EVA space suit, helmet ON with clear visor so the face is visible.
+  - Right: inside the station, NO space suit and NO helmet, wearing a charcoal grey station jumpsuit with the slot color only on the shoulders and sleeve cuffs.
+- Bottom row: 4 head-and-shoulders expression busts without helmet, left to right: neutral, happy, worried, determined.
+- Bottom right corner, small: one personal item (described below).
+
+CHARACTER: Mei Tanaka, Japanese woman, about 26 years old.
+- Light skin, East Asian Japanese facial features, short fluffy black bob hair with volume.
+- Neutral face: head tilted slightly, cheeks puffed a little when focused, quick smile. Practical, nimble, a bit stubborn.
+- EVA suit: lime yellow #D8E21F main panels with near-black #24242C joints and boots, slim-fingered gloves. Egg-shaped helmet with a small glowing tip on top, hair visible through the visor. A small round backpack. Small compact build, head relatively large. A small white square emblem on the chest.
+- Station outfit: charcoal grey jumpsuit, lime yellow #D8E21F only on shoulders and cuffs.
+- Personal item: a tiny plush toy tied to a backpack strap.
+- Height reference: short, small build.
+
+HARD NEGATIVES: no weapons, no medical kit, no extra accessories beyond those listed, no dark skin, no text, no watermark, no background scenery.

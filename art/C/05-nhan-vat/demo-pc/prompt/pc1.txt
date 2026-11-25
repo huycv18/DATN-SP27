@@ -1,0 +1,26 @@
+Attached: style.png = ONLY the art style reference (line weight, cel shading, palette mood, sci-fi salvage look of the small orange astronaut). Do not copy its scene or layout.
+
+Make ONE square character concept sheet for a 2.5D sci-fi survival game (top-down 45 degree camera, all assets are 2D sprites).
+
+STYLE (keep identical for the whole cast):
+- Clean 2D game illustration, bold dark outline about 4 px (#1B1530) on the outer silhouette, thinner inner lines only at big form breaks, 2-3 flat cel-shading tones per material, one key light from the upper left. No painterly texture, no tiny noisy detail, no hatching.
+- Stylized but grounded proportions, about 5 heads tall, friendly readable faces with big clear expressions (cozy indie game feel).
+- Plain flat light cream background (#F5EFE0), no scenery, no text, no letters, no logos, no numbers.
+
+LAYOUT:
+- Top 70%: the SAME character shown twice side by side, full body, front three-quarter view, standing idle pose.
+  - Left: in the EVA space suit, helmet ON with clear visor so the face is visible.
+  - Right: inside the station, NO space suit and NO helmet, wearing a charcoal grey station jumpsuit with the slot color only on the shoulders and sleeve cuffs.
+- Bottom row: 4 head-and-shoulders expression busts without helmet, left to right: neutral, happy, worried, determined.
+- Bottom right corner, small: one personal item (described below).
+
+CHARACTER: Nguyen Viet, Vietnamese man, about 29 years old.
+- Light skin with a faint warm yellow undertone, East Asian Vietnamese facial features, straight dark eyebrows.
+- Black straight hair, shoulder length, tied in a neat low bun at the nape.
+- Neutral face: bright direct eyes, chin slightly raised, lips lightly pressed. Calm, quietly stubborn, enduring.
+- EVA suit: Ember orange #F26B1D main panels with charcoal #3A3A44 joints and boots, thick gloves, a tool belt strapped diagonally across the chest. Round helmet with a small L-shaped antenna on the RIGHT side. A wide horizontal square oxygen tank on the back. Square shoulders. A small white circle emblem on the chest.
+- Station outfit: charcoal grey jumpsuit, orange #F26B1D only on shoulders and cuffs, sleeves rolled once, same black bun.
+- Personal item: a small notebook with a worn cover.
+- Height reference: average build.
+
+HARD NEGATIVES: no weapons, no medical kit, no extra accessories beyond those listed, no dark skin, no text, no watermark, no background scenery.

@@ -54,7 +54,7 @@ Vai: người sống sót của Ember, kíp vận hành trạm, không ai là ch
 | PC-1 | Slot 1 ○, cam Ember `#F26B1D` | Nguyễn Việt | Kíp vận hành trạm | 1,0 u | Mũ tròn có ăng-ten chữ L bên phải, bình Oxy vuông ngang rộng sau lưng, vai vuông | Tóc đen dài ngang vai búi gọn dưới mũ, găng dày, bộ đồ cam xám than, đai dụng cụ chéo ngực | MVP |
 | PC-2 | Slot 2 △, lam ngọc `#1FB5D6` | Jonas Weber | Kíp vận hành trạm | 1,1 u | Mũ vuông bo góc, một bình Oxy dài dọc lưng kiểu thùng, dáng cao chữ nhật | Gọng kính trong mũ, bộ đồ lam xám, dây đai vai dày | MVP |
 | PC-3 | Slot 3 □, vàng chanh `#D8E21F` | Mei Tanaka | Kíp vận hành trạm | 0,9 u | Mũ trứng có chóp sáng, balo tròn nhỏ, dáng nhỏ gọn đầu tương đối lớn | Tóc ngắn bồng thấy qua tấm kính mũ, bộ đồ vàng chanh đen, găng ngón mảnh | Sau MVP |
-| PC-4 | Slot 4 ◇, hồng tím `#D6309B` | Niamh Doyle | Kíp vận hành trạm | 1,2 u | Vai rất rộng, mũ tròn đáy phẳng, bình Oxy nghiêng trên vai, túi dụng cụ hông | Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông | Sau MVP |
+| PC-4 | Slot 4 ◇, hồng tím `#D6309B` | Niamh Doyle | Kíp vận hành trạm | 1,2 u | Cao và mảnh, chân tay dài, vai hẹp, mũ tròn đáy phẳng, bình Oxy nghiêng trên vai, túi dụng cụ hông | Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông | Sau MVP |
 
 Nhân dạng để art dựng (khớp `cot-truyen.md` khối GD-079, GD-079 Lead chốt 2026-11-25: bốn PC ngang nhau về luật, không vai trò hay kỹ năng riêng, 2 nam 2 nữ, không ai da màu, PC-1 là nam chính người Việt Nam):
 
@@ -63,7 +63,7 @@ Nhân dạng để art dựng (khớp `cot-truyen.md` khối GD-079, GD-079 Lead
 | PC-1 | Nguyễn Việt, Việt Nam | Nam, khoảng 29 | Sáng ngả vàng nhạt | Đen, dài ngang vai, búi gọn dưới mũ | Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ |
 | PC-2 | Jonas Weber, Đức | Nam, khoảng 34 | Sáng | Nâu rối, râu lún phún | Mắt mở to chăm chú, hơi gù khi nghe, miệng mím khi nghĩ |
 | PC-3 | Mei Tanaka, Nhật Bản | Nữ, khoảng 26 | Sáng | Đen ngắn bồng | Đầu hơi nghiêng, má phồng khi tập trung, cười nhanh rồi tắt |
-| PC-4 | Niamh Doyle, Ireland | Nữ, khoảng 36 | Sáng có tàn nhang | Nâu đỏ, đuôi thấp gọn trong mũ | Vai rộng nhưng mắt hiền, nhìn xuống khi bị khen |
+| PC-4 | Niamh Doyle, Ireland | Nữ, khoảng 36 | Sáng có tàn nhang | Nâu đỏ, đuôi thấp gọn trong mũ | Mặt mềm, mắt hiền, nhìn xuống khi bị khen |
 
 Cả bốn dùng chung rig, chung chỉ số, chung kỹ năng. Ngoại hình ở bảng trên chỉ là hình, không chi tiết nào gợi vai gameplay.
 
@@ -376,3 +376,4 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | 2026-11-23 | Sửa câu văn theo đánh giá humanizer (production/reports/2026-11-23-humanizer-gdd.md): bỏ lịch sử trong thân luật, phủ định thừa, câu chốt lặp. Không đổi luật, số, ID. Chuyển xuống đây: The Wardens không còn là một chủng tộc, là chế độ và quân của Daskel | Rà văn phong GDD | gd-character |
 | 2026-11-25 | Đội hình bốn PC mới: PC-1 Lê Quốc Bảo (nam Việt Nam), PC-4 Niamh Doyle (nữ Ireland), bảng giới tính, tuổi, da, tóc, nét mặt, bỏ râu và hộp y tế PC-4 (đổi túi dụng cụ thường), thêm 4 clip idle và 4 vật để lại vào yêu cầu art mục 7, bốn PC ngang nhau về luật | GD-079 | gd-character |
 | 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-079 | GDM |
+| 2026-11-25 | PC-4 đổi dáng: cao và mảnh, vai hẹp, bỏ vai rất rộng. Lead xem concept: "PC-4 đô con quá, cô ấy là phụ nữ mà" | GD-078 | GDM |

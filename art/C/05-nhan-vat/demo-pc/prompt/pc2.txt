@@ -1,0 +1,26 @@
+Attached: pc1.png = AUTHORITATIVE style and layout anchor of the same cast: copy its line weight, cel shading, proportions system, cream background, sheet layout (two full bodies on top, 4 expression busts below, small item bottom right) exactly. It shows a DIFFERENT person, do not copy his face, hair, colors or suit shapes.
+
+Make ONE square character concept sheet for a 2.5D sci-fi survival game (top-down 45 degree camera, all assets are 2D sprites).
+
+STYLE (keep identical for the whole cast):
+- Clean 2D game illustration, bold dark outline about 4 px (#1B1530) on the outer silhouette, thinner inner lines only at big form breaks, 2-3 flat cel-shading tones per material, one key light from the upper left. No painterly texture, no tiny noisy detail, no hatching.
+- Stylized but grounded proportions, about 5 heads tall, friendly readable faces with big clear expressions (cozy indie game feel).
+- Plain flat light cream background (#F5EFE0), no scenery, no text, no letters, no logos, no numbers.
+
+LAYOUT:
+- Top 70%: the SAME character shown twice side by side, full body, front three-quarter view, standing idle pose.
+  - Left: in the EVA space suit, helmet ON with clear visor so the face is visible.
+  - Right: inside the station, NO space suit and NO helmet, wearing a charcoal grey station jumpsuit with the slot color only on the shoulders and sleeve cuffs.
+- Bottom row: 4 head-and-shoulders expression busts without helmet, left to right: neutral, happy, worried, determined.
+- Bottom right corner, small: one personal item (described below).
+
+CHARACTER: Jonas Weber, German man, about 34 years old.
+- Light fair skin, messy short brown hair, short stubble beard.
+- Neutral face: wide attentive eyes, slightly hunched as if listening, mouth pressed when thinking. Honest, kind, one beat slow.
+- Thin rectangular glasses (worn inside the helmet too).
+- EVA suit: teal #1FB5D6 main panels with blue-grey #4A5868 joints and boots, thick shoulder straps. Rounded-square helmet. ONE long vertical barrel-shaped oxygen tank down the back. Tall rectangular silhouette, slightly taller than average. A small white triangle emblem on the chest.
+- Station outfit: charcoal grey jumpsuit, teal #1FB5D6 only on shoulders and cuffs.
+- Personal item: a pair of folded glasses with one arm wrapped in tape.
+- Height reference: tall, lanky build.
+
+HARD NEGATIVES: no weapons, no medical kit, no extra accessories beyond those listed, no dark skin, no text, no watermark, no background scenery.

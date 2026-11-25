@@ -1,0 +1,27 @@
+Attached: pc4.png = previous draft of THIS character: keep its magenta suit panel layout, helmet, slanted shoulder oxygen tank, hip pouch, auburn low ponytail, freckles. But it was drawn far too bulky and masculine, REDRAW the body and face as described below.
+Attached: pc1.png = AUTHORITATIVE style and layout anchor of the same cast: copy its line weight, cel shading, proportions system, cream background, sheet layout (two full bodies on top, 4 expression busts below, small item bottom right) exactly. It shows a DIFFERENT person, do not copy his face, hair, colors or suit shapes.
+
+Make ONE square character concept sheet for a 2.5D sci-fi survival game (top-down 45 degree camera, all assets are 2D sprites).
+
+STYLE (keep identical for the whole cast):
+- Clean 2D game illustration, bold dark outline about 4 px (#1B1530) on the outer silhouette, thinner inner lines only at big form breaks, 2-3 flat cel-shading tones per material, one key light from the upper left. No painterly texture, no tiny noisy detail, no hatching.
+- Stylized but grounded proportions, about 5 heads tall, friendly readable faces with big clear expressions (cozy indie game feel).
+- Plain flat light cream background (#F5EFE0), no scenery, no text, no letters, no logos, no numbers.
+
+LAYOUT:
+- Top 70%: the SAME character shown twice side by side, full body, front three-quarter view, standing idle pose.
+  - Left: in the EVA space suit, helmet ON with clear visor so the face is visible.
+  - Right: inside the station, NO space suit and NO helmet, wearing a charcoal grey station jumpsuit with the slot color only on the shoulders and sleeve cuffs.
+- Bottom row: 4 head-and-shoulders expression busts without helmet, left to right: neutral, happy, worried, determined.
+- Bottom right corner, small: one personal item (described below).
+
+CHARACTER: Niamh Doyle, Irish woman, about 36 years old.
+- Fair skin with freckles, auburn red-brown hair in a low neat ponytail tucked inside the helmet.
+- Clearly a WOMAN: soft feminine face (soft jaw, fuller lips, lashes), gentle soft eyes, looks down shyly when praised. Calm, kind, a little clumsy with fine work.
+- Body: tall and SLIM, long limbs, narrow shoulders, slender waist, female figure. NOT muscular, NOT bulky, NOT broad-shouldered.
+- EVA suit: magenta #D6309B main panels with grey #555560 joints and boots, slim fitted cut (no bulky shoulder armor). Round helmet with a flat bottom rim. Oxygen tank slanted over one shoulder. An ordinary tool pouch on the hip. A small white diamond emblem on the chest.
+- Station outfit: charcoal grey jumpsuit, magenta #D6309B only on shoulders and cuffs.
+- Personal item: a pair of worn leather work gloves folded neatly.
+- Height reference: tallest of the cast, slim build (head noticeably smaller relative to body than the others).
+
+HARD NEGATIVES: no bulky or masculine body, no weapons, no medical kit, no extra accessories beyond those listed, no dark skin, no text, no watermark, no background scenery.
