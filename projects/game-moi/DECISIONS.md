@@ -488,3 +488,7 @@ Lead: "Có, thêm cột" (cột nhãn MVP riêng cho các tab còn ghi nhãn l�
 - Nhãn gán bằng máy từ nhãn có sẵn trong chữ, rồi 3 subagent soát và tự định hàng thiếu theo khung mục 12 và GDD hệ thống (brief `briefs/2026-11-25-cot-phien-ban.md`). GDM đổi 4 hàng Balance Sheet tham số dùng chung cả game sang `MVP một phần` cho khớp Upgrade.
 - Cổng máy: `kiem-de-doc.mjs` báo tab nội dung thiếu cột và hàng dữ liệu có giá trị ngoài 3 giá trị trên. Thêm hàng mới vào các tab này phải ghi Phiên bản.
 - `xuat-event-tracking.mjs` có thêm cột, nhưng TSV Event Tracking là bản sửa tay đã lệch script từ trước (DECISIONS dòng 258), `--kiem` vẫn báo LỆCH như cũ.
+
+## 2026-11-25 - Priority tab Assets đổi sang chữ tiếng Anh, có màu
+
+Lead: "không đánh số mà đánh là Highest High Medium và Low thêm màu cho các drop down này". Thay "1 - Cao nhất, 2 - Cao, 3 - Trung bình, 4 - Thấp" bằng Highest, High, Medium, Low (nghĩa từng mức giữ nguyên). Màu bằng định dạng có điều kiện trên cột Priority: Highest đỏ, High cam, Medium vàng, Low xám.

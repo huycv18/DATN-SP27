@@ -278,7 +278,7 @@ Chương 1 trọn vẹn, dài 1,5 đến 2 giờ (sim 1,77 giờ). GDD viết ch
 | Hazard | Mảnh trôi, Cáp chập, Ống xì |
 | Co-op | Online 2 người (L, 2026-11-23) |
 
-Priority ở tab Assets (GDM đặt 2026-11-25): 1 - Cao nhất là vòng lõi chơi thử (một chuyến ra bãi vỡ, nhặt, gặp Driftlife, về trạm). 2 - Cao là trọn một ngày (người vớt, xưởng, giờ giao thương, co-op 2 người). 3 - Trung bình là trọn chương 1 (boss, cảnh truyện, hoạt ảnh NPC, VFX phụ). 4 - Thấp là Sau MVP.
+Priority ở tab Assets (GDM đặt 2026-11-25): Highest là vòng lõi chơi thử (một chuyến ra bãi vỡ, nhặt, gặp Driftlife, về trạm). High là trọn một ngày (người vớt, xưởng, giờ giao thương, co-op 2 người). Medium là trọn chương 1 (boss, cảnh truyện, hoạt ảnh NPC, VFX phụ). Low là Sau MVP.
 
 ## 13. Art Direction (L phong cách, G phần còn lại)
 
