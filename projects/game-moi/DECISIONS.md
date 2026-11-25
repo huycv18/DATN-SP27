@@ -492,3 +492,8 @@ Lead: "Có, thêm cột" (cột nhãn MVP riêng cho các tab còn ghi nhãn l�
 ## 2026-11-25 - Priority tab Assets đổi sang chữ tiếng Anh, có màu
 
 Lead: "không đánh số mà đánh là Highest High Medium và Low thêm màu cho các drop down này". Thay "1 - Cao nhất, 2 - Cao, 3 - Trung bình, 4 - Thấp" bằng Highest, High, Medium, Low (nghĩa từng mức giữ nguyên). Màu là màu chip của danh sách chọn, kiểu hiển thị Khối (Lead: "để nó như này chứ ko phải màu nền"): Highest đỏ đậm, High cam nhạt, Medium vàng nhạt, Low xanh nhạt. API Sheets không đặt được màu chip, phải đặt trên giao diện Dữ liệu > Xác thực dữ liệu, quy tắc áp cho Assets!D3:D98.
+
+## 2026-11-25 - Sửa định dạng từng tab Sheet GDD theo khuôn indie
+
+Lead: "Sửa từng Sheet tab một". GDM rà 25 tab, lệch chính: tiêu đề dòng 1 chưa gộp đúng bề rộng bảng (ECONOMIC căn trái), header dòng 2 không wrap, cột STT lúc căn phải lúc căn giữa, cột Phiên bản mới thêm chưa có viền, ô gộp khối Task lệch dòng ở Recipe sau các lần dán chữ thuần, GAME STORY kẻ một khung chung cả dòng trống giữa các mục. Tab Ref (danh bạ, link) Lead tự thêm, định dạng tay theo khuôn và sửa Sđt mất số 0 đầu.
+Hệ quả: `tools/dinh-dang-sheet.mjs` thêm dòng tiêu đề, header, cột STT, khung riêng từng mục cho tab nhiều mục, tham số chọn tab. Đã chạy cho 22 tab (trừ OVERVIEW giữ định dạng tay), `doi-chieu-sheet` 23 tab KHỚP sau gộp ô. Màu tab, độ rộng cột, chip Priority của Assets giữ nguyên.
