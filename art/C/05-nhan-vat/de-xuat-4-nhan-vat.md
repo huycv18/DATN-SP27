@@ -67,12 +67,21 @@ Bản trước dùng vòng một chiều (Noor đỡ Tariq, Tariq đỡ Mei, Mei
 
 ## 4. Nét ngược tính cách
 
-Mỗi người có một mặt trái với vẻ ngoài. Mặt này lộ ra từ từ qua truyện và qua một vài hoạt ảnh hiếm, làm nhân vật bớt khuôn mẫu. Bốn nét ngược không trùng nhau: Noor là nỗi lo giấu bên trong, Jonas là sự tinh tế giấu sau vẻ ồn ào, Mei là sự bình tĩnh lúc nguy cấp, Tariq là sự dịu dàng với thứ mong manh. Nỗi sợ chỉ thuộc về Noor, vì người trầm tính thường mang nhiều lo lắng thầm kín và hay nghĩ ngợi linh tinh. Noor và Jonas nối với nhau: Noor giấu nỗi lo, Jonas là người nhìn ra.
+Mỗi người có một mặt trái với vẻ ngoài. Mặt này lộ ra từ từ qua truyện và qua một vài hoạt ảnh hiếm, làm nhân vật bớt khuôn mẫu. Logic: nét ngược lật dấu vẻ ngoài. Người có vẻ ngoài là điểm mạnh thì nét ngược là một nhược điểm giấu kín. Người có vẻ ngoài là điểm yếu thì nét ngược là một điểm mạnh giấu kín. Hai người được lật mỗi chiều, nên 4 người vẫn cân bằng.
+
+| Người | Vẻ ngoài | Nét ngược |
+|---|---|---|
+| Noor | Mạnh: bình tĩnh, kỷ luật | Yếu: lo âu thầm kín, hay nghĩ linh tinh |
+| Jonas | Mạnh: lạc quan, nhiệt huyết | Yếu: lạc quan tới mức né tránh, không chịu nhìn vào chuyện xấu |
+| Mei | Yếu: hậu đậu, tự ti | Mạnh: bình tĩnh nhất lúc nguy cấp |
+| Tariq | Yếu: nóng nảy, hay đập phá | Mạnh: nhẹ tay, dịu dàng với thứ mong manh |
+
+Noor và Jonas là hai cực của cùng một vấn đề: Noor thấy toàn kịch bản xấu, Jonas không chịu nhìn kịch bản xấu nào. Vì vậy cặp này đỡ nhau hai chiều rất tự nhiên.
 
 | Người | Vẻ ngoài | Nét ngược | Vì sao có | Lộ ra lúc nào | Hoạt ảnh |
 |---|---|---|---|---|---|
 | Noor | Lạnh, nghiêm, kỹ tính, bình tĩnh | Bên trong đầy lo âu. Hay nghĩ linh tinh, tự vẽ ra trăm kịch bản xấu, sợ nhất là mất người. Kỹ tính là cách Noor giữ nỗi lo trong tầm tay, không phải vì thích ra lệnh | Ở thành phố sa mạc, Noor từng thấy hàng xóm bỏ đi vì không đủ nước và không quay lại | Lần đầu có đồng đội bị kéo về (ngạt hết Oxy). Và những lúc ở một mình trong trạm | Lần đầu đồng đội bị kéo về: Noor lao tới trước tiên, mặt hoảng thật sự, lần duy nhất mất bình tĩnh. Idle hiếm khi ngồi một mình: xoắn dải vải đỏ trên tay, nhìn đồng hồ thật lâu, mắt không tập trung. Đeo lén vòng tay Jonas tặng dưới găng |
-| Jonas | Ồn ào, hăng hái, làm theo cảm xúc | Tinh tế và biết lắng nghe. Đông người thì ồn ào, nhưng khi chỉ có hai người thì Jonas im lặng, để ý từng chi tiết nhỏ và nhớ hết những gì người khác thích hay sợ | Làm huấn luyện viên trại hè, Jonas học được rằng đứa trẻ cần giúp nhất thường là đứa im lặng nhất | Khi có người trong tổ suy sụp hoặc ngồi một mình, nhất là Noor. Jonas là người duy nhất nhìn ra nỗi lo Noor giấu | Đi tới ngồi cạnh, không nói gì, đưa một tấm ảnh vừa chụp. Máy ảnh của Jonas toàn chụp chi tiết nhỏ người khác bỏ qua: tay Mei dính dầu, Tariq ngủ gật, Noor cười lúc không ai nhìn |
+| Jonas | Lạc quan, nhiệt huyết, lúc nào cũng cười | Lạc quan tới mức né tránh. Không chịu nhìn vào chuyện xấu, gặp thất bại thì cười cho qua và nói "sẽ ổn thôi" thay vì giải quyết. Không biết cách buồn, nên nỗi buồn dồn lại | Ở trại hè, Jonas được dặn luôn giữ nụ cười trước bọn trẻ dù chuyện gì xảy ra. Lâu dần Jonas quên mất cách cho phép mình buồn | Khi Oxy báo thấp mà Jonas vẫn muốn bay tiếp. Khi chuyến bay thất bại hay đồng đội bị kéo về, Jonas vẫn cười, làm Noor nổi giận một lần hiếm hoi | Thấy cảnh báo Oxy thì phẩy tay, mắt vẫn nhìn về phía xa. Sau thất bại: cười gượng, quay lưng lảng sang việc khác ngay, không bao giờ đứng yên với nỗi buồn |
 | Mei | Hậu đậu, hay tự ti | Bình tĩnh nhất lúc nguy cấp. Ngày thường lóng ngóng vì nghĩ quá nhiều, lúc nguy thì chỉ còn một việc để nghĩ | Thần đồng quen áp lực thi cử: càng gấp càng tỉnh | Khi Oxy của cả nhóm xuống thấp hoặc có người đang ngạt | Tay hết run, thao tác nhanh và chính xác, mắt sắc lại. Ngược hẳn với idle thường ngày |
 | Tariq | Nóng nảy, cơ bắp, hay đá máy móc | Cực kỳ nhẹ tay với thứ mong manh: băng bó, con Driftlife nhỏ, đồ của người khác | Lớn lên chăm em nhỏ ở khu lao động, học sơ cứu để băng cho em sau những trận đánh nhau | Khi băng bó cho đồng đội, hoặc khi gặp Driftlife non | Bàn tay to đeo băng quyền anh làm động tác rất chậm và cẩn thận, mặt dịu hẳn đi |
 
