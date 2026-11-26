@@ -9,7 +9,7 @@ STT	Asset Name	Phiên bản	Priority	Link	Note
 8	Clip riêng NPC (14 clip): Ingrid 4, Linh 4, Tikko 6	MVP	Medium		Nguồn: ho-so-nhan-vat.md mục 7
 9	Rig nhân loại và rig Oru (cả game 3 rig, rig trẻ em làm Sau MVP)	MVP	Highest		Nguồn: ho-so-nhan-vat.md mục 7
 10	Clip idle riêng 4 preset người chơi, đứng tại chỗ (MVP 2, cả game 4)	MVP	Medium		Nguồn: ho-so-nhan-vat.md mục 7, cot-truyen.md mục Tính cách bốn hồ sơ mặc định. Chỉ là nền, không gợi vai
-11	Vật để lại trên buồng ngủ đông đã tắt, mỗi preset 1 vật (MVP 2, cả game 4)	MVP	Low		Nguồn: ho-so-nhan-vat.md mục 7, cot-truyen.md mục Tính cách bốn hồ sơ mặc định
+11	Hòm buồng ngủ đông của người đã mất (buồng đóng nắp kín, biển tên trên nắp), 1 asset dùng chung cho mọi buồng tắt	MVP	Low		Nguồn: ho-so-nhan-vat.md mục 7 (CHR-PROP-HOM), cot-truyen.md mục 2.7. Tên trên biển là chữ của game, không vẽ vào ảnh
 12	Driftlife Driftmoth (8 hoạt ảnh: Trôi, Cảnh giác, Báo trước, Đánh, Hồi, Choáng, Ngủ, Bị hạ)	MVP	Highest		Nguồn: combat-driftlife.md mục 7. Hiền, màu lạnh
 13	Driftlife Skitter Ray (8 hoạt ảnh)	MVP	High		Nguồn: combat-driftlife.md mục 7. Chạy trốn, hàng sống giá cao
 14	Driftlife Sting Krill (8 hoạt ảnh, đi bầy)	MVP	Highest		Nguồn: combat-driftlife.md mục 7. Điểm đỏ hoặc vàng báo săn mồi

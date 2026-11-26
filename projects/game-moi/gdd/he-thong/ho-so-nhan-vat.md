@@ -239,14 +239,14 @@ Clip trong trạm (top-down 45 độ, 3 hướng vẽ lên, xuống, ngang, ngan
 | 8 | Thức dậy từ buồng ngủ đông | 3,0 | Không | MVP |
 | 9 | Bước xuống từ xuồng hoặc Skiff (Amara, Yusuf) | 2,0 | Không | Sau MVP |
 
-Clip idle đứng tại chỗ riêng từng preset (GD-079, thay clip Idle chung ở dòng 1 khi đứng yên trong trạm, 2,0 giây loop, tắt được trong tùy chọn, không chạy khi đang điều khiển) và vật để lại trên buồng tắt (đặt trên hoặc cạnh buồng, bấm vào hiện dòng ở `cot-truyen.md` mục "Dòng trên buồng đã tắt"):
+Clip idle đứng tại chỗ riêng từng preset (GD-079, thay clip Idle chung ở dòng 1 khi đứng yên trong trạm, 2,0 giây loop, tắt được trong tùy chọn, không chạy khi đang điều khiển). Buồng của preset không ai chọn đóng nắp thành hòm dùng chung có biển tên, bấm vào hiện dòng ở `cot-truyen.md` mục "Dòng trên buồng đã tắt":
 
-| Preset | Clip idle | Vật để lại trên buồng tắt | Nhãn |
-|---|---|---|---|
-| PC-1 Việt | Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Đứng lâu thì ngẩng nhìn ra xa | Một cuốn sổ nhỏ bìa mòn, trang cuối còn trống | MVP |
-| PC-2 Jonas | Đẩy gọng kính trong mũ dù kính không trượt, rồi nhìn quanh chậm | Cặp kính gập, một gọng quấn băng keo | MVP |
-| PC-3 Mei | Vỗ balo hai cái rồi xoay tròn tại chỗ nhìn quanh | Một con thú nhồi bông nhỏ buộc ở quai balo | Sau MVP |
-| PC-4 Niamh | Gãi gáy khi thấy mình bị nhìn, rồi xoay vai cho đỡ mỏi | Một đôi găng da sờn, xếp ngay ngắn | Sau MVP |
+| Preset | Clip idle | Nhãn |
+|---|---|---|
+| PC-1 Việt | Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Đứng lâu thì ngẩng nhìn ra xa | MVP |
+| PC-2 Jonas | Đẩy gọng kính trong mũ dù kính không trượt, rồi nhìn quanh chậm | MVP |
+| PC-3 Mei | Vỗ balo hai cái rồi xoay tròn tại chỗ nhìn quanh | Sau MVP |
+| PC-4 Niamh | Gãi gáy khi thấy mình bị nhìn, rồi xoay vai cho đỡ mỏi | Sau MVP |
 
 Biến thể mảnh bộ đồ (xem `nguoi-choi.md` mục 2.6):
 
@@ -280,7 +280,7 @@ Danh sách yêu cầu để GDM đưa vào tab Assets:
 | CHR-PART | Mảnh bộ đồ theo 5 trục | 21 biến thể tổng (5, 4, 4, 5, 3), MVP cần 9 (bình 2, vỏ 1, bộ đẩy 2, túi 2, đai 2) | MVP |
 | CHR-ANIM | Clip người chơi ngoài và trong trạm | 17 và 8 (cộng 1 Sau MVP) | MVP |
 | CHR-ANIM-PC-IDLE | Clip idle riêng 4 preset (bảng trên) | 4 (2 MVP) | MVP |
-| CHR-PROP-PC | Vật để lại trên buồng tắt, 1 vật mỗi preset | 4 (2 MVP) | MVP |
+| CHR-PROP-HOM | Hòm buồng ngủ đông của người đã mất: buồng đóng nắp kim loại kín, biển tên trên nắp, tên là chữ của game. Một asset dùng chung cho mọi buồng tắt | 1 | MVP |
 | CHR-ANIM-NPC | Clip riêng Ingrid, Linh, Tikko | 14 (bảng dưới) | MVP |
 | CHR-RIG | Rig nhân loại, rig Oru (Tikko, TA02), rig trẻ em (Wren) | 2 MVP, 3 tổng | MVP |
 | CHR-TA02 | Biến thể màu Oru không tên cho TA02 | 1 | MVP |
@@ -377,3 +377,4 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | 2026-11-25 | Đội hình bốn PC mới: PC-1 Lê Quốc Bảo (nam Việt Nam), PC-4 Niamh Doyle (nữ Ireland), bảng giới tính, tuổi, da, tóc, nét mặt, bỏ râu và hộp y tế PC-4 (đổi túi dụng cụ thường), thêm 4 clip idle và 4 vật để lại vào yêu cầu art mục 7, bốn PC ngang nhau về luật | GD-079 | gd-character |
 | 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-079 | GDM |
 | 2026-11-25 | PC-4 đổi dáng: cao và mảnh, vai hẹp, bỏ vai rất rộng. Lead xem concept: "PC-4 đô con quá, cô ấy là phụ nữ mà" | GD-078 | GDM |
+| 2026-11-26 | Bỏ CHR-PROP-PC (4 vật để lại, 2 MVP), thay bằng CHR-PROP-HOM (1 hòm dùng chung có biển tên). Lead: "khi chết thì cho đóng hòm hết" | GD-078 | GDM |

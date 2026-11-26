@@ -5,7 +5,7 @@ Ngày 2026-11-25. GPT (Codex CLI, image_gen) vẽ theo bảng bối cảnh ở `
 | File | Nội dung |
 |---|---|
 | `doi-hinh-4-pc.webp` | Bảng ghép 4 tấm, có nhãn tên, quốc gia, giới tính, tuổi, slot |
-| `pc1.webp` - `pc4.webp` | Mỗi tấm 1254x1254: bộ đồ ngoài đội mũ, đồ trạm, 4 biểu cảm (bình thường, vui, lo, quyết tâm), vật để lại |
+| `pc1.webp` - `pc4.webp` | Mỗi tấm 1254x1254: bộ đồ ngoài đội mũ, đồ trạm, 4 biểu cảm (bình thường, vui, lo, quyết tâm) |
 | `prompt/` | Prompt từng tấm và `ghep.py` (ghép và ghi nhãn bằng PIL) |
 
 ## Cách làm
@@ -26,7 +26,8 @@ Ngày 2026-11-25. GPT (Codex CLI, image_gen) vẽ theo bảng bối cảnh ở `
 | Silhouette theo hồ sơ | Ăng-ten chữ L, bình Oxy ngang | Bình Oxy dọc, kính | Mũ trứng có chóp sáng, balo tròn | Cao mảnh, bình Oxy trên vai, túi hông |
 | Đồ trạm xám than, màu slot ở vai và cổ tay | Đạt | Đạt | Đạt | Đạt |
 
+Vật để lại ở góc phải dưới đã xóa ngày 2026-11-26 (Lead chốt đổi sang hòm dùng chung): `python -X utf8 -P prompt/xoavat.py` tô màu nền lấy mẫu ngay trên vùng xóa, rồi ghép lại. Ảnh gốc GPT vẫn còn vật.
+
 Lệch còn để ngỏ:
 - PC-3: tóc dài tới cằm, gợn sóng, chưa đúng kiểu "ngắn bồng".
 - PC-3 chưa thấp hơn rõ so với người khác.
-- Vật để lại ở góc mỗi tấm chưa bỏ, chờ Lead chốt ý "chết thì đóng hòm hết".

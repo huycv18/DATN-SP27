@@ -544,14 +544,14 @@ Hồ sơ ngoại hình và yêu cầu art do gd-character giữ ở `ho-so-nhan-
 
 **Tính cách bốn hồ sơ mặc định** (GD-079) `MVP`
 
-Tính cách của PC chỉ hiện qua kênh không phải lời thoại: idle trong trạm, biểu cảm, đồ vật, mô tả preset, cách người vớt nhắc. Không có câu nói nào của PC. Nghề cũ thuộc kíp vận hành của Cradle, chỉ là nền, không ai thành chuyên gia: mở tính năng trạm vẫn là việc của người vớt. Bốn người chung một khuôn: nền là người thường làm việc ở hậu trường con tàu, hài đến từ tính cách chứ không từ câu đùa.
+Tính cách của PC chỉ hiện qua kênh không phải lời thoại: idle trong trạm, biểu cảm, mô tả preset, cách người vớt nhắc. Không có câu nói nào của PC. Nghề cũ thuộc kíp vận hành của Cradle, chỉ là nền, không ai thành chuyên gia: mở tính năng trạm vẫn là việc của người vớt. Bốn người chung một khuôn: nền là người thường làm việc ở hậu trường con tàu, hài đến từ tính cách chứ không từ câu đùa.
 
-| Mã | Tên, quốc gia | Giới tính, tuổi | Da và tóc | Nghề cũ trên Cradle (chỉ là nền) | 3 nét tính cách | Thói quen nhìn thấy (idle đứng tại chỗ) | Nét mặt | Vật để lại khi buồng hỏng | Nhãn |
-|---|---|---|---|---|---|---|---|---|---|
-| PC-1 | Nguyễn Việt, Việt Nam | Nam, khoảng 29 | Da sáng ngả vàng nhạt, tóc đen dài ngang vai búi gọn dưới mũ | Nhân viên trực ca ở khu ngủ đông | Bền bỉ, ít lời, bướng một cách bình tĩnh | Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Khi đứng lâu thì ngẩng nhìn ra xa | Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ khi bình thường | Một cuốn sổ nhỏ bìa mòn, trang cuối còn trống | MVP |
-| PC-2 | Jonas Weber, Đức | Nam, khoảng 34 | Da sáng, tóc nâu rối, râu lún phún | Nhân viên bảo trì băng tải và cửa khoang ở kho Cradle | Ngay thật, tốt bụng, chậm một nhịp | Đẩy gọng kính trong mũ dù kính không trượt, rồi nhìn quanh chậm | Mắt mở to chăm chú, hơi gù khi nghe, miệng mím khi nghĩ | Cặp kính gập, một gọng quấn băng keo | MVP |
-| PC-3 | Mei Tanaka, Nhật Bản | Nữ, khoảng 26 | Da sáng, tóc đen ngắn bồng | Nhân viên dịch vụ khu ở tập thể của đoàn | Thực tế, nhanh nhẹn, hay bướng | Vỗ balo hai cái rồi xoay tròn tại chỗ nhìn quanh | Dáng nhỏ, đầu hơi nghiêng, má phồng khi tập trung, cười nhanh rồi tắt | Một con thú nhồi bông nhỏ buộc ở quai balo | Sau MVP |
-| PC-4 | Niamh Doyle, Ireland | Nữ, khoảng 36 | Da sáng có tàn nhang, tóc nâu đỏ buộc đuôi thấp gọn trong mũ | Nhân viên bốc xếp ở bến hàng Cradle | Điềm tĩnh, hiền, vụng về khi cần tinh tế | Gãi gáy khi thấy mình bị nhìn, rồi xoay vai cho đỡ mỏi | Dáng cao mảnh, mắt hiền, nhìn xuống khi bị khen | Một đôi găng da sờn, xếp ngay ngắn | Sau MVP |
+| Mã | Tên, quốc gia | Giới tính, tuổi | Da và tóc | Nghề cũ trên Cradle (chỉ là nền) | 3 nét tính cách | Thói quen nhìn thấy (idle đứng tại chỗ) | Nét mặt | Nhãn |
+|---|---|---|---|---|---|---|---|---|
+| PC-1 | Nguyễn Việt, Việt Nam | Nam, khoảng 29 | Da sáng ngả vàng nhạt, tóc đen dài ngang vai búi gọn dưới mũ | Nhân viên trực ca ở khu ngủ đông | Bền bỉ, ít lời, bướng một cách bình tĩnh | Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Khi đứng lâu thì ngẩng nhìn ra xa | Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ khi bình thường | MVP |
+| PC-2 | Jonas Weber, Đức | Nam, khoảng 34 | Da sáng, tóc nâu rối, râu lún phún | Nhân viên bảo trì băng tải và cửa khoang ở kho Cradle | Ngay thật, tốt bụng, chậm một nhịp | Đẩy gọng kính trong mũ dù kính không trượt, rồi nhìn quanh chậm | Mắt mở to chăm chú, hơi gù khi nghe, miệng mím khi nghĩ | MVP |
+| PC-3 | Mei Tanaka, Nhật Bản | Nữ, khoảng 26 | Da sáng, tóc đen ngắn bồng | Nhân viên dịch vụ khu ở tập thể của đoàn | Thực tế, nhanh nhẹn, hay bướng | Vỗ balo hai cái rồi xoay tròn tại chỗ nhìn quanh | Dáng nhỏ, đầu hơi nghiêng, má phồng khi tập trung, cười nhanh rồi tắt | Sau MVP |
+| PC-4 | Niamh Doyle, Ireland | Nữ, khoảng 36 | Da sáng có tàn nhang, tóc nâu đỏ buộc đuôi thấp gọn trong mũ | Nhân viên bốc xếp ở bến hàng Cradle | Điềm tĩnh, hiền, vụng về khi cần tinh tế | Gãi gáy khi thấy mình bị nhìn, rồi xoay vai cho đỡ mỏi | Dáng cao mảnh, mắt hiền, nhìn xuống khi bị khen | Sau MVP |
 
 Ghi chú để bốn người khác nhau và không trùng người vớt:
 
@@ -562,7 +562,7 @@ Ghi chú để bốn người khác nhau và không trùng người vớt:
 - Biểu cảm 8 loại (`ho-so-nhan-vat.md` 2b.1) là bộ chung. Mỗi hồ sơ có biểu cảm "bình thường" đặt khác nhau như cột Nét mặt ở trên, và cùng một sự kiện thì thời gian giữ biểu cảm khác nhau. Các hoạt cảnh idle ở bảng là clip đứng tại chỗ, tắt được trong tùy chọn, không chạy khi đang điều khiển.
 - Mô tả ngắn trên màn chọn preset (không phải lời của PC, ghi ngôi thứ ba, tối đa 80 ký tự, ví dụ trình gd-ux): Việt "Bền bỉ, ít lời. Cứ bình tĩnh đi tiếp." Jonas "Ngay thật, tốt bụng. Chậm một nhịp." Mei "Nhanh nhẹn, thực tế. Hay bướng." Niamh "Điềm tĩnh, hiền. Hơi vụng." Màn chọn luôn kèm một dòng cố định: "Bốn hồ sơ giống nhau về chỉ số và kỹ năng."
 - Người vớt nhắc tới họ qua nét nhìn thấy, không qua lời của PC. Ví dụ hướng: Ingrid nhận xét người hay vươn vai giữa lúc căng là người không chịu căng theo, Linh nhận xét người hay đẩy kính là người nghĩ xong mới nói, Yusuf mời trà người đang xoay tròn nhìn quanh. Chỉ nhắc nét của hồ sơ đang có người chơi dùng, gọi theo tên người chơi đặt (luật 14). Hồ sơ buồng hỏng không được người vớt nhắc tên.
-- Vật để lại đặt trên hoặc cạnh buồng tắt, bấm vào hiện dòng ở mục "Dòng trên buồng đã tắt" (cuối file), không thêm cảnh. Vật là thứ nhìn thấy khớp với thói quen, người chơi tự đọc ra ai đã mất.
+- Buồng của người đã mất đóng nắp thành hòm: nắp kim loại kín che mặt kính, biển tên gắn trên nắp. Một asset hòm dùng chung cho mọi buồng tắt, tên trên biển là chữ của game, không vẽ vào ảnh. Bấm vào hòm hiện tên và dòng ở mục "Dòng trên buồng đã tắt" (cuối file), không thêm cảnh. Người chơi đọc ra ai đã mất qua biển tên.
 - Người vào sau (luật 11 mục 2, biến thể B, đặt tên mới) dùng chung thói quen và idle của slot, vì thói quen gắn với hình preset chứ không gắn với người chơi. Người chơi nhập vai tự do: tính cách chỉ là nền nhìn thấy, không ép hành vi hay kỹ năng.
 
 #### Năm người vớt
@@ -631,7 +631,7 @@ Cảnh tỉnh dậy theo số người tỉnh dậy ban đầu host chọn (C2):
 | 4 | Cả bốn buồng mở. Không có buồng tắt | Như trên |
 
 - Cảnh dài như nhau với mọi số người. Không nhân vật nào nói thay người chơi.
-- Buồng tắt bấm vào được: hiện tên người trong buồng và một dòng (bảng "Dòng trên buồng đã tắt của Ember" ở mục 13). Không bắt buộc, không phải vật manh mối.
+- Buồng tắt đóng nắp thành hòm có biển tên (hòm dùng chung, mục Tính cách bốn hồ sơ mặc định). Bấm vào hòm: hiện tên người trong buồng và một dòng (bảng "Dòng trên buồng đã tắt của Ember" ở mục 13). Không bắt buộc, không phải vật manh mối.
 - Chơi bốn người thì Ember không có buồng tắt. Người chơi gặp buồng tắt lần đầu ở Station Cinder (MM1.3), nên không thiếu nhịp mất mát.
 
 Người chơi vào sau (C2):
@@ -1203,7 +1203,7 @@ Chữ hoa trong cột cách đọc chỉ phần nhấn. Cột này dùng nội b
 
 ### Dòng trên buồng đã tắt của Ember `MVP`
 
-Hiện khi người chơi bấm vào một buồng tắt (mục 2.7). Hồ sơ nào có người chơi dùng thì không có dòng này.
+Hiện khi người chơi bấm vào hòm của một buồng tắt (mục 2.7). Hồ sơ nào có người chơi dùng thì không có dòng này.
 
 | Mã | Hồ sơ | Dòng |
 |---|---|---|
@@ -1334,6 +1334,7 @@ Khi tỉnh khỏi giấc ngủ đông, Nguyễn Việt phát hiện trạm Ember
 | 2026-11-25 | Thêm bảng tính cách PC-1 đến PC-4 (nghề cũ, quốc gia, 3 nét, thói quen, gợi ý dáng và mặt, vật để lại khi buồng hỏng) ở mục Tổ Ember. Không đổi luật lời thoại, tên, slot, màu | GD-079, Lead yêu cầu bổ sung tính cách PC | gd-story |
 | 2026-11-25 | Lượt 2 GD-079: đổi đội hình PC theo Lead. PC-1 nam Việt Nam Lê Quốc Bảo (Lead sửa cùng ngày: nam chính, PC-4 thành nữ) thay hồ sơ PC-1 cũ, PC-4 nữ Niamh Doyle (Ireland) thay hồ sơ PC-4 cũ, Jonas và Mei giữ tên. Bảng thêm giới tính, tuổi, da và tóc, nét mặt, nhãn. Bỏ đồ vật và thói quen gợi vai (hộp y tế, đếm khẩu phần, hướng dẫn, đếm khóa). Đổi tên ở truyện kể, dòng buồng tắt, khối GAME STORY | Lead chốt 2026-11-25: bốn người ngang luật, nhân vật chính là người Việt | gd-story |
 | 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-079 | GDM |
+| 2026-11-26 | Bỏ 4 vật để lại khi buồng hỏng (sổ, kính, thú bông, găng) và cột của nó. Buồng người đã mất đóng nắp thành một hòm dùng chung có biển tên, giữ 4 dòng SO_BUONG. Lead: "khi chết thì cho đóng hòm hết", chốt "Đổi sang hòm" | GD-078 | GDM |
 
 ### Lệch đã xong (chuyển từ mục Lệch với vai khác, 2026-11-23)
 
