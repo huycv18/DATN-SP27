@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { kiem } from './validate-gdd.mjs';
+import { trichNhanVat, dung as dungWiki } from './xuat-wiki.mjs';
 
 let ok = 0;
 const t = (ten, fn) => { fn(); ok++; console.log(`ĐẠT  ${ten}`); };
@@ -334,5 +335,21 @@ t('validate-gdd: bắt cụm phản diện cũ ở GDD và TSV Sheet, bỏ qua �
   } finally { rmSync(goc, { recursive: true }); }
   function TABS_DEM(r, dem) { return SC2.TABS.map((tab) => dem(tab)); }
 }
+
+// xuat-wiki: ghép nhiều bảng vào một nhân vật theo Mã và theo bí danh, tách tên phụ, bắt khuôn thiếu chỗ dữ liệu.
+t('xuat-wiki: ghép bảng theo Mã và theo tên, tách tên phụ', () => {
+  const hs = '### 2b.2 Người vớt\nGhi chú nhóm.\n\n| Mã | Tên | Màu nhận diện | Nhãn |\n|---|---|---|---|\n| RS-3 | Rafael Ortega (Rafa) | Đỏ `#B8665C` | Sau MVP |\n\n'
+    + '| Tên | Chương |\n|---|---|\n| Rafa | 2 |\n\n### 2b.4 The Wardens\n| Mã | Tên | Nhãn |\n|---|---|---|\n| WD-P1 | Daskel, danh xưng First Warden | Sau MVP |\n';
+  const l = trichNhanVat(hs, '');
+  const g = (ten) => l.nhom.find((x) => x.ten === ten);
+  const rs = g('Người vớt').muc[0];
+  assert.equal(rs.ten, 'Rafael Ortega'); assert.equal(rs.tenPhu, 'Rafa'); assert.equal(rs.mau, '#B8665C');
+  assert.deepEqual(rs.truong.find(([h]) => h === 'Chương'), ['Chương', '2']);
+  assert.deepEqual(g('Người vớt').ghiChu, ['Ghi chú nhóm.']);
+  const wd = g('The Wardens').muc[0];
+  assert.equal(wd.ma, 'WD-P1'); assert.equal(wd.ten, 'Daskel'); assert.equal(wd.tenPhu, 'danh xưng First Warden');
+  assert.match(dungWiki('<script>const D = /*DATA*/null</script>', [l]), /"Rafael Ortega"/);
+  assert.throws(() => dungWiki('<html>', [l]), /DATA/);
+});
 
 console.log(`\n${ok} phép kiểm ĐẠT.`);

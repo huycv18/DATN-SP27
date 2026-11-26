@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Novent Wiki</title>
+<!-- File sinh từ khuon.html bằng tools/xuat-wiki.mjs. Sửa GDD hoặc khuon.html, không sửa index.html. -->
+<style>
+:root {
+  --nen: #f4f1ea; --mat: #fffdf8; --mat-2: #efebe2; --vien: #ddd6c8; --chu: #1b1530; --chu-2: #5c5670; --chu-3: #8a8499;
+  --nhan: #f26b1d; --nhan-chu: #fff; --mvp: #1f7a4d; --mvp-nen: #dcf1e5; --sau: #6b6580; --sau-nen: #e9e6f0;
+  --bong: 0 1px 2px rgb(27 21 48 / .06), 0 4px 16px rgb(27 21 48 / .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --nen: #0f0d17; --mat: #181524; --mat-2: #211d31; --vien: #2e2943; --chu: #ece8f6; --chu-2: #aba4c0; --chu-3: #7c7594;
+    --mvp: #6fd6a0; --mvp-nen: #173527; --sau: #b3adc6; --sau-nen: #26223a; --bong: 0 1px 2px rgb(0 0 0 / .3), 0 6px 20px rgb(0 0 0 / .25);
+  }
+}
+:root[data-theme="dark"] {
+  --nen: #0f0d17; --mat: #181524; --mat-2: #211d31; --vien: #2e2943; --chu: #ece8f6; --chu-2: #aba4c0; --chu-3: #7c7594;
+  --mvp: #6fd6a0; --mvp-nen: #173527; --sau: #b3adc6; --sau-nen: #26223a; --bong: 0 1px 2px rgb(0 0 0 / .3), 0 6px 20px rgb(0 0 0 / .25);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--nen); color: var(--chu); font: 15px/1.55 "Segoe UI", system-ui, -apple-system, sans-serif; }
+button, input { font: inherit; color: inherit; }
+code { font: 13px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace; background: var(--mat-2); padding: 1px 5px; border-radius: 4px; }
+
+header { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--nen) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--vien); }
+.dau { max-width: 1280px; margin: 0 auto; padding: 12px 20px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.logo { font-weight: 700; letter-spacing: .02em; display: flex; align-items: center; gap: 10px; margin-right: 8px; }
+.logo i { width: 12px; height: 12px; border-radius: 3px; background: var(--nhan); transform: rotate(45deg); }
+.logo small { color: var(--chu-3); font-weight: 500; }
+nav.loai { display: flex; gap: 4px; }
+nav.loai a { text-decoration: none; color: var(--chu-2); padding: 6px 12px; border-radius: 8px; font-weight: 600; }
+nav.loai a[aria-current="page"] { background: var(--chu); color: var(--nen); }
+.tim { margin-left: auto; position: relative; flex: 0 1 280px; }
+.tim input { width: 100%; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--vien); background: var(--mat); outline: none; }
+.tim input:focus-visible { border-color: var(--chu-2); }
+
+main { max-width: 1280px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 24px; align-items: start; }
+aside { position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; padding-right: 4px; }
+.loc { display: flex; gap: 6px; margin-bottom: 14px; }
+.loc button { border: 1px solid var(--vien); background: var(--mat); border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 13px; color: var(--chu-2); }
+.loc button[aria-pressed="true"] { background: var(--chu); color: var(--nen); border-color: var(--chu); }
+.nhom-ds { margin-bottom: 18px; }
+.nhom-ds h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--chu-3); margin: 0 0 6px 8px; font-weight: 700; }
+.nhom-ds h3 span { font-weight: 500; }
+.dong { display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-radius: 10px; text-decoration: none; color: var(--chu); }
+.dong:hover { background: var(--mat-2); }
+.dong[aria-current="true"] { background: var(--mat); box-shadow: var(--bong); }
+.cham { width: 28px; height: 28px; border-radius: 8px; flex: none; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: #fff; text-shadow: 0 1px 1px rgb(0 0 0 / .35); background: var(--c, var(--chu-3)); overflow: hidden; }
+/* shortcut: khung mặt cắt theo bố cục tấm concept GPT (bust đầu tiên ở góc trái dưới), đổi khi artist có avatar riêng */
+.cham.co-anh { background: var(--mat-2) no-repeat 7% 80% / 520%; }
+.dong b { font-weight: 600; display: block; line-height: 1.25; }
+.dong small { color: var(--chu-3); font-size: 12px; }
+.dong .the { margin-left: auto; }
+.rong { color: var(--chu-3); padding: 8px; }
+
+.the { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.the.mvp { color: var(--mvp); background: var(--mvp-nen); }
+.the.sau { color: var(--sau); background: var(--sau-nen); }
+
+.lui { display: none; border: 0; background: none; color: var(--chu-2); padding: 0; margin-bottom: 12px; cursor: pointer; font-weight: 600; }
+.ho-so { background: var(--mat); border: 1px solid var(--vien); border-radius: 16px; box-shadow: var(--bong); overflow: hidden; }
+.dau-hs { display: grid; grid-template-columns: minmax(220px, 380px) 1fr; border-bottom: 1px solid var(--vien); }
+.anh { background: var(--mat-2); position: relative; aspect-ratio: 1; display: grid; place-items: center; overflow: hidden; }
+.anh::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--c) 30%, transparent), transparent 70%); }
+.anh button { all: unset; cursor: zoom-in; position: relative; width: 100%; height: 100%; }
+.anh button:focus-visible { outline: 2px solid var(--c); outline-offset: -4px; }
+.anh img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.chu-cai { position: relative; font-size: 72px; font-weight: 800; color: var(--c); opacity: .9; }
+.chua-anh { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; color: var(--chu-3); font-size: 12px; }
+.tom { padding: 24px 28px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.ma { color: var(--chu-3); font: 600 13px ui-monospace, Consolas, monospace; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.tom h1 { margin: 0; font-size: 34px; line-height: 1.1; letter-spacing: -.01em; }
+.phu { color: var(--chu-2); margin-top: -6px; }
+.mau { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--chu-2); }
+.mau i { width: 18px; height: 18px; border-radius: 5px; background: var(--c); border: 1px solid rgb(0 0 0 / .1); }
+.nhanh { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-top: 4px; }
+.nhanh div { background: var(--mat-2); border-radius: 10px; padding: 8px 12px; }
+.nhanh dt { font-size: 11px; color: var(--chu-3); text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+.nhanh dd { margin: 2px 0 0; font-weight: 600; }
+
+.than { padding: 8px 28px 24px; }
+.than h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--chu-3); margin: 20px 0 6px; }
+dl.truong { margin: 0; display: grid; grid-template-columns: 210px 1fr; }
+dl.truong dt, dl.truong dd { padding: 10px 0; border-top: 1px solid var(--vien); margin: 0; }
+dl.truong dt { color: var(--chu-2); font-size: 13px; padding-right: 16px; font-weight: 600; }
+.chip { display: inline-flex; align-items: center; gap: 4px; }
+.chip i { width: 12px; height: 12px; border-radius: 3px; background: var(--c); border: 1px solid rgb(0 0 0 / .15); display: inline-block; }
+details { margin-top: 18px; border: 1px solid var(--vien); border-radius: 12px; padding: 0 16px; }
+summary { cursor: pointer; padding: 12px 0; font-weight: 600; color: var(--chu-2); }
+details p { margin: 0 0 12px; color: var(--chu-2); }
+.nguon { margin-top: 18px; font-size: 12px; color: var(--chu-3); }
+
+dialog { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
+dialog::backdrop { background: rgb(10 8 20 / .8); }
+dialog img { display: block; max-width: 96vw; max-height: 92vh; border-radius: 12px; }
+dialog button { position: fixed; top: 16px; right: 16px; border: 0; border-radius: 999px; padding: 8px 14px; background: #fff; color: #111; cursor: pointer; font-weight: 700; }
+
+@media (max-width: 860px) {
+  .dau { padding: 10px 16px; }
+  .tim { flex: 1 1 100%; order: 3; }
+  main { grid-template-columns: 1fr; padding: 16px; }
+  aside { position: static; max-height: none; }
+  body.chi-tiet aside { display: none; }
+  body:not(.chi-tiet) section#xem { display: none; }
+  .lui { display: inline-block; }
+  .dau-hs { grid-template-columns: 1fr; }
+  .tom, .than { padding-left: 18px; padding-right: 18px; }
+  .tom h1 { font-size: 28px; }
+  dl.truong { grid-template-columns: 1fr; }
+  dl.truong dd { border-top: 0; padding-top: 0; }
+}
+@media (prefers-reduced-motion: no-preference) { .dong { transition: background .12s; } }
+</style>
+</head>
+<body>
+<header><div class="dau">
+  <div class="logo"><i></i>The Novent <small>Wiki</small></div>
+  <nav class="loai" id="loai" aria-label="Loại thông tin"></nav>
+  <label class="tim"><input id="tim" type="search" placeholder="Tìm tên, mã, chủng, vai..." aria-label="Tìm"></label>
+</div></header>
+<main>
+  <aside aria-label="Danh sách">
+    <div class="loc" role="group" aria-label="Lọc theo phiên bản">
+      <button data-loc="" aria-pressed="true">Tất cả</button><button data-loc="mvp" aria-pressed="false">MVP</button><button data-loc="sau" aria-pressed="false">Sau MVP</button>
+    </div>
+    <div id="ds"></div>
+  </aside>
+  <section id="xem" aria-live="polite"></section>
+</main>
+<dialog id="phong"><button type="button" onclick="this.closest('dialog').close()">Đóng</button></dialog>
+<script>
+const DATA = /*DATA*/null;
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+// Chữ trong GDD: `mã` thành code, mã màu thành ô màu, **đậm**.
+const md = (s) => esc(s)
+  .replace(/`(#[0-9A-Fa-f]{6})`/g, '<span class="chip" style="--c:$1"><i></i><code>$1</code></span>')
+  .replace(/`([^`]+)`/g, '<code>$1</code>')
+  .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+const laMvp = (n) => /^MVP/.test(n);
+const theNhan = (n) => n ? `<span class="the ${laMvp(n) ? 'mvp' : 'sau'}">${esc(n.length > 14 ? (laMvp(n) ? 'MVP' : 'Sau MVP') : n)}</span>` : '';
+const chuCai = (t) => t.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
+const NHANH = ['Vai', 'Vai truyện', 'Chủng', 'Chiều cao', 'Chiều cao, tỉ lệ', 'Tên, quốc gia', 'Giới tính, tuổi', 'Chương'];
+
+let loc = '', tu = '';
+const tatCa = () => DATA.loai.flatMap((l) => l.nhom.flatMap((g) => g.muc.map((m) => ({ ...m, loai: l, nhom: g }))));
+const timTheo = (m) => [m.ma, m.ten, m.tenPhu, ...m.truong.map((t) => t[1])].join(' ').toLowerCase();
+
+function duongDan() {
+  const [l, ma] = decodeURIComponent(location.hash.slice(1)).split('/');
+  const loai = DATA.loai.find((x) => x.id === l) || DATA.loai[0];
+  return { loai, ma };
+}
+
+function veDanhSach() {
+  const { loai, ma } = duongDan();
+  $('#loai').innerHTML = DATA.loai.map((l) => `<a href="#${l.id}" ${l === loai ? 'aria-current="page"' : ''}>${esc(l.ten)}</a>`).join('');
+  const q = tu.trim().toLowerCase();
+  const html = loai.nhom.map((g) => {
+    const muc = g.muc.filter((m) => (!loc || (loc === 'mvp') === laMvp(m.nhan)) && (!q || timTheo(m).includes(q)));
+    if (!muc.length) return '';
+    return `<div class="nhom-ds"><h3>${esc(g.ten)} <span>${muc.length}</span></h3>${muc.map((m) => `
+      <a class="dong" href="#${loai.id}/${m.ma}" ${m.ma === ma ? 'aria-current="true"' : ''}>
+        ${m.anh
+          ? `<span class="cham co-anh" style="background-image:url('${esc(m.anh)}')" aria-hidden="true"></span>`
+          : `<span class="cham" style="--c:${m.mau || 'var(--chu-3)'}" aria-hidden="true">${esc(chuCai(m.ten))}</span>`}
+        <span><b>${esc(m.ten)}</b><small>${esc(m.ma)}</small></span>${theNhan(m.nhan)}
+      </a>`).join('')}</div>`;
+  }).join('');
+  $('#ds').innerHTML = html || '<div class="rong">Không có mục nào khớp.</div>';
+}
+
+function veHoSo() {
+  const { loai, ma } = duongDan();
+  const ds = tatCa().filter((m) => m.loai === loai);
+  const m = ds.find((x) => x.ma === ma) || (matchMedia('(max-width: 860px)').matches ? null : ds[0]);
+  document.body.classList.toggle('chi-tiet', !!ma && !!m);
+  if (!m) { $('#xem').innerHTML = ''; return; }
+  const c = m.mau || 'var(--chu-3)';
+  // Ô nhanh chỉ cho giá trị ngắn, giá trị dài đã có ở bảng đầy đủ.
+  const nhanh = NHANH.map((k) => m.truong.find((t) => t[0] === k && t[1].length <= 60)).filter(Boolean).slice(0, 4);
+  const mauTruong = m.truong.find((t) => /màu nhận diện/i.test(t[0]));
+  document.title = `${m.ten} - The Novent Wiki`;
+  $('#xem').innerHTML = `
+    <button class="lui" onclick="location.hash='${loai.id}'">&larr; Danh sách</button>
+    <article class="ho-so" style="--c:${c}">
+      <div class="dau-hs">
+        <div class="anh">${m.anh
+          ? `<button type="button" aria-label="Xem ảnh lớn" onclick="phongTo('${esc(m.anh)}')"><img src="${esc(m.anh)}" alt="Concept ${esc(m.ten)}"></button>`
+          : `<span class="chu-cai">${esc(chuCai(m.ten))}</span><span class="chua-anh">Chưa có concept</span>`}</div>
+        <div class="tom">
+          <div class="ma">${esc(m.ma)} · ${esc(m.nhom.ten)} ${theNhan(m.nhan)}</div>
+          <h1>${esc(m.ten)}</h1>
+          ${m.tenPhu ? `<div class="phu">${esc(m.tenPhu)}</div>` : ''}
+          ${mauTruong ? `<div class="mau">${m.mau ? '<i></i>' : ''}<span>${md(mauTruong[1])}</span></div>` : ''}
+          <dl class="nhanh">${nhanh.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${md(v)}</dd></div>`).join('')}</dl>
+        </div>
+      </div>
+      <div class="than">
+        <h2>Hồ sơ đầy đủ</h2>
+        <dl class="truong">${m.truong.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${md(v)}</dd>`).join('')}</dl>
+        ${m.nhom.ghiChu.length ? `<details><summary>Ghi chú chung cho nhóm ${esc(m.nhom.ten)}</summary>${m.nhom.ghiChu.map((p) => `<p>${md(p)}</p>`).join('')}</details>` : ''}
+        <div class="nguon">Nguồn: ${esc(m.nhom.nguon)}. Trang sinh từ GDD, sửa ở GDD rồi chạy lại tools/xuat-wiki.mjs.</div>
+      </div>
+    </article>`;
+}
+
+function phongTo(src) {
+  const d = $('#phong');
+  d.querySelector('img')?.remove();
+  d.insertAdjacentHTML('beforeend', `<img src="${esc(src)}" alt="Concept phóng to">`);
+  d.showModal();
+}
+$('#phong').addEventListener('click', (e) => { if (e.target.id === 'phong') e.target.close(); });
+function ve() { veDanhSach(); veHoSo(); }
+addEventListener('hashchange', () => { ve(); if (document.body.classList.contains('chi-tiet')) scrollTo(0, 0); });
+$('#tim').addEventListener('input', (e) => { tu = e.target.value; veDanhSach(); });
+document.querySelectorAll('.loc button').forEach((b) => b.addEventListener('click', () => {
+  loc = b.dataset.loc;
+  document.querySelectorAll('.loc button').forEach((x) => x.setAttribute('aria-pressed', x === b));
+  veDanhSach();
+}));
+ve();
+</script>
+</body>
+</html>

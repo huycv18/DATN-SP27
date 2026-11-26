@@ -520,3 +520,11 @@ Lead: "4 người chơi này như nhau trước nhé, không có vai trò riêng
 - Lead đặt tên PC-1: "tên là Nguyễn Việt" (thay tên gd-story đề xuất Lê Quốc Bảo). Tên gọi ngắn trong truyện là Việt.
 - Lead xem concept 4 PC do GPT vẽ: "PC-4 đô con quá, cô ấy là phụ nữ mà". PC-4 Niamh đổi sang dáng cao và mảnh, vai hẹp, giữ chiều cao 1,2 u. Bỏ "vai rất rộng" ở silhouette và nét mặt (ho-so-nhan-vat.md 2b.1, cot-truyen.md bảng tính cách).
 - 2026-11-26, Lead: "khi chết thì cho đóng hòm hết", chốt "Đổi sang hòm". Bỏ 4 vật để lại trên buồng tắt (sổ, kính, thú bông, găng). Buồng của preset không ai chọn đóng nắp thành hòm có biển tên, một asset dùng chung (CHR-PROP-HOM, Assets STT 11), giữ 4 dòng SO_BUONG khi bấm vào hòm. Concept 4 PC đã xóa vật ở góc.
+
+## 2026-11-26 - Wiki thông tin game
+
+Lead: "Dựng một trang web để lưu trữ thông tin hồ sơ tất cả các nhân vật trong game, sau này mở rộng ra các loài Driftlife, item".
+
+- Wiki ở `wiki/index.html`, sinh từ GDD bằng `tools/xuat-wiki.mjs`, không phải bản thứ hai của luật. Bản đầu có 21 nhân vật (PC 4, người vớt 5, thương nhân 5, The Wardens 2, người phụ 5), lấy từ `ho-so-nhan-vat.md` mục 2b và bảng tính cách PC ở `cot-truyen.md`.
+- GDM tự quyết (Lead đổi được): trang là file tĩnh trong repo, chưa đăng lên mạng. Driftlife và item chưa làm, chờ Lead mở. Ảnh chỉ có 4 PC (concept GPT), nhân vật khác hiện chữ cái đầu trên màu nhận diện.
+- Sửa `ho-so-nhan-vat.md` hay bảng tính cách PC thì chạy lại `node projects/game-moi/tools/xuat-wiki.mjs`. Cổng: `xuat-wiki.mjs --kiem`, selftest có phép kiểm ghép bảng.

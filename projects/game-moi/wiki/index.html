@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Novent Wiki</title>
+<!-- File sinh từ khuon.html bằng tools/xuat-wiki.mjs. Sửa GDD hoặc khuon.html, không sửa index.html. -->
+<style>
+:root {
+  --nen: #f4f1ea; --mat: #fffdf8; --mat-2: #efebe2; --vien: #ddd6c8; --chu: #1b1530; --chu-2: #5c5670; --chu-3: #8a8499;
+  --nhan: #f26b1d; --nhan-chu: #fff; --mvp: #1f7a4d; --mvp-nen: #dcf1e5; --sau: #6b6580; --sau-nen: #e9e6f0;
+  --bong: 0 1px 2px rgb(27 21 48 / .06), 0 4px 16px rgb(27 21 48 / .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --nen: #0f0d17; --mat: #181524; --mat-2: #211d31; --vien: #2e2943; --chu: #ece8f6; --chu-2: #aba4c0; --chu-3: #7c7594;
+    --mvp: #6fd6a0; --mvp-nen: #173527; --sau: #b3adc6; --sau-nen: #26223a; --bong: 0 1px 2px rgb(0 0 0 / .3), 0 6px 20px rgb(0 0 0 / .25);
+  }
+}
+:root[data-theme="dark"] {
+  --nen: #0f0d17; --mat: #181524; --mat-2: #211d31; --vien: #2e2943; --chu: #ece8f6; --chu-2: #aba4c0; --chu-3: #7c7594;
+  --mvp: #6fd6a0; --mvp-nen: #173527; --sau: #b3adc6; --sau-nen: #26223a; --bong: 0 1px 2px rgb(0 0 0 / .3), 0 6px 20px rgb(0 0 0 / .25);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--nen); color: var(--chu); font: 15px/1.55 "Segoe UI", system-ui, -apple-system, sans-serif; }
+button, input { font: inherit; color: inherit; }
+code { font: 13px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace; background: var(--mat-2); padding: 1px 5px; border-radius: 4px; }
+
+header { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--nen) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--vien); }
+.dau { max-width: 1280px; margin: 0 auto; padding: 12px 20px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.logo { font-weight: 700; letter-spacing: .02em; display: flex; align-items: center; gap: 10px; margin-right: 8px; }
+.logo i { width: 12px; height: 12px; border-radius: 3px; background: var(--nhan); transform: rotate(45deg); }
+.logo small { color: var(--chu-3); font-weight: 500; }
+nav.loai { display: flex; gap: 4px; }
+nav.loai a { text-decoration: none; color: var(--chu-2); padding: 6px 12px; border-radius: 8px; font-weight: 600; }
+nav.loai a[aria-current="page"] { background: var(--chu); color: var(--nen); }
+.tim { margin-left: auto; position: relative; flex: 0 1 280px; }
+.tim input { width: 100%; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--vien); background: var(--mat); outline: none; }
+.tim input:focus-visible { border-color: var(--chu-2); }
+
+main { max-width: 1280px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 24px; align-items: start; }
+aside { position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; padding-right: 4px; }
+.loc { display: flex; gap: 6px; margin-bottom: 14px; }
+.loc button { border: 1px solid var(--vien); background: var(--mat); border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 13px; color: var(--chu-2); }
+.loc button[aria-pressed="true"] { background: var(--chu); color: var(--nen); border-color: var(--chu); }
+.nhom-ds { margin-bottom: 18px; }
+.nhom-ds h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--chu-3); margin: 0 0 6px 8px; font-weight: 700; }
+.nhom-ds h3 span { font-weight: 500; }
+.dong { display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-radius: 10px; text-decoration: none; color: var(--chu); }
+.dong:hover { background: var(--mat-2); }
+.dong[aria-current="true"] { background: var(--mat); box-shadow: var(--bong); }
+.cham { width: 28px; height: 28px; border-radius: 8px; flex: none; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: #fff; text-shadow: 0 1px 1px rgb(0 0 0 / .35); background: var(--c, var(--chu-3)); overflow: hidden; }
+/* shortcut: khung mặt cắt theo bố cục tấm concept GPT (bust đầu tiên ở góc trái dưới), đổi khi artist có avatar riêng */
+.cham.co-anh { background: var(--mat-2) no-repeat 7% 80% / 520%; }
+.dong b { font-weight: 600; display: block; line-height: 1.25; }
+.dong small { color: var(--chu-3); font-size: 12px; }
+.dong .the { margin-left: auto; }
+.rong { color: var(--chu-3); padding: 8px; }
+
+.the { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+.the.mvp { color: var(--mvp); background: var(--mvp-nen); }
+.the.sau { color: var(--sau); background: var(--sau-nen); }
+
+.lui { display: none; border: 0; background: none; color: var(--chu-2); padding: 0; margin-bottom: 12px; cursor: pointer; font-weight: 600; }
+.ho-so { background: var(--mat); border: 1px solid var(--vien); border-radius: 16px; box-shadow: var(--bong); overflow: hidden; }
+.dau-hs { display: grid; grid-template-columns: minmax(220px, 380px) 1fr; border-bottom: 1px solid var(--vien); }
+.anh { background: var(--mat-2); position: relative; aspect-ratio: 1; display: grid; place-items: center; overflow: hidden; }
+.anh::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--c) 30%, transparent), transparent 70%); }
+.anh button { all: unset; cursor: zoom-in; position: relative; width: 100%; height: 100%; }
+.anh button:focus-visible { outline: 2px solid var(--c); outline-offset: -4px; }
+.anh img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.chu-cai { position: relative; font-size: 72px; font-weight: 800; color: var(--c); opacity: .9; }
+.chua-anh { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; color: var(--chu-3); font-size: 12px; }
+.tom { padding: 24px 28px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.ma { color: var(--chu-3); font: 600 13px ui-monospace, Consolas, monospace; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.tom h1 { margin: 0; font-size: 34px; line-height: 1.1; letter-spacing: -.01em; }
+.phu { color: var(--chu-2); margin-top: -6px; }
+.mau { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--chu-2); }
+.mau i { width: 18px; height: 18px; border-radius: 5px; background: var(--c); border: 1px solid rgb(0 0 0 / .1); }
+.nhanh { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-top: 4px; }
+.nhanh div { background: var(--mat-2); border-radius: 10px; padding: 8px 12px; }
+.nhanh dt { font-size: 11px; color: var(--chu-3); text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+.nhanh dd { margin: 2px 0 0; font-weight: 600; }
+
+.than { padding: 8px 28px 24px; }
+.than h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--chu-3); margin: 20px 0 6px; }
+dl.truong { margin: 0; display: grid; grid-template-columns: 210px 1fr; }
+dl.truong dt, dl.truong dd { padding: 10px 0; border-top: 1px solid var(--vien); margin: 0; }
+dl.truong dt { color: var(--chu-2); font-size: 13px; padding-right: 16px; font-weight: 600; }
+.chip { display: inline-flex; align-items: center; gap: 4px; }
+.chip i { width: 12px; height: 12px; border-radius: 3px; background: var(--c); border: 1px solid rgb(0 0 0 / .15); display: inline-block; }
+details { margin-top: 18px; border: 1px solid var(--vien); border-radius: 12px; padding: 0 16px; }
+summary { cursor: pointer; padding: 12px 0; font-weight: 600; color: var(--chu-2); }
+details p { margin: 0 0 12px; color: var(--chu-2); }
+.nguon { margin-top: 18px; font-size: 12px; color: var(--chu-3); }
+
+dialog { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
+dialog::backdrop { background: rgb(10 8 20 / .8); }
+dialog img { display: block; max-width: 96vw; max-height: 92vh; border-radius: 12px; }
+dialog button { position: fixed; top: 16px; right: 16px; border: 0; border-radius: 999px; padding: 8px 14px; background: #fff; color: #111; cursor: pointer; font-weight: 700; }
+
+@media (max-width: 860px) {
+  .dau { padding: 10px 16px; }
+  .tim { flex: 1 1 100%; order: 3; }
+  main { grid-template-columns: 1fr; padding: 16px; }
+  aside { position: static; max-height: none; }
+  body.chi-tiet aside { display: none; }
+  body:not(.chi-tiet) section#xem { display: none; }
+  .lui { display: inline-block; }
+  .dau-hs { grid-template-columns: 1fr; }
+  .tom, .than { padding-left: 18px; padding-right: 18px; }
+  .tom h1 { font-size: 28px; }
+  dl.truong { grid-template-columns: 1fr; }
+  dl.truong dd { border-top: 0; padding-top: 0; }
+}
+@media (prefers-reduced-motion: no-preference) { .dong { transition: background .12s; } }
+</style>
+</head>
+<body>
+<header><div class="dau">
+  <div class="logo"><i></i>The Novent <small>Wiki</small></div>
+  <nav class="loai" id="loai" aria-label="Loại thông tin"></nav>
+  <label class="tim"><input id="tim" type="search" placeholder="Tìm tên, mã, chủng, vai..." aria-label="Tìm"></label>
+</div></header>
+<main>
+  <aside aria-label="Danh sách">
+    <div class="loc" role="group" aria-label="Lọc theo phiên bản">
+      <button data-loc="" aria-pressed="true">Tất cả</button><button data-loc="mvp" aria-pressed="false">MVP</button><button data-loc="sau" aria-pressed="false">Sau MVP</button>
+    </div>
+    <div id="ds"></div>
+  </aside>
+  <section id="xem" aria-live="polite"></section>
+</main>
+<dialog id="phong"><button type="button" onclick="this.closest('dialog').close()">Đóng</button></dialog>
+<script>
+const DATA = {"loai":[{"id":"nhan-vat","ten":"Nhân vật","nguon":"gdd/he-thong/ho-so-nhan-vat.md, cot-truyen.md","nhom":[{"ten":"Người chơi","ghiChu":["Vai: người sống sót của Ember, kíp vận hành trạm, không ai là chuyên gia (chuyên gia là những người vớt). Bộ đồ có màu và hình slot. Người tỉnh dậy ban đầu chọn một preset và đổi tên được, preset không ai chọn rơi vào buồng hỏng là người đã chết, tên trên buồng giữ tên mặc định. Nhân vật người chơi không có lời thoại riêng. Người vào sau theo luật 11 mục 2 (biến thể B, đặt tên mới, không lấp buồng tắt).","Nhân dạng để art dựng (khớp `cot-truyen.md` khối GD-079, GD-079 Lead chốt 2026-11-25: bốn PC ngang nhau về luật, không vai trò hay kỹ năng riêng, 2 nam 2 nữ, không ai da màu, PC-1 là nam chính người Việt Nam):","Cả bốn dùng chung rig, chung chỉ số, chung kỹ năng. Ngoại hình ở bảng trên chỉ là hình, không chi tiết nào gợi vai gameplay.","Trong trạm: nhân vật không mặc bộ đồ ngoài, mặc đồ trạm màu xám than với một mảng màu slot ở vai và ống tay để vẫn nhận ra slot. Mặt thấy rõ nên cần biểu cảm đầy đủ.","Biểu cảm cần có (8, mặt thấy trong trạm và qua tấm kính mũ ngoài không gian): bình thường, vui, lo, đau (trúng đòn), sợ và ngạt, mệt, quyết tâm, ngạc nhiên. Cảm xúc phụ cho emote: vẫy, ngón cái (hai emote MVP).","Yêu cầu art: rig chung, 4 skin. Mỗi người có hai bộ màu (bộ đồ ngoài và đồ trạm), mỗi bộ tối đa 6 màu chính cộng 2 nhấn. Biến thể bộ đồ: bình Oxy 5 bậc, vỏ 4 cấp, bộ đẩy 4 bậc, túi 5 bậc, đai dụng cụ 3 bậc, xem bảng 7."],"nguon":"ho-so-nhan-vat.md mục 2b.1","muc":[{"ma":"PC-1","ten":"Nguyễn Việt","tenPhu":"","nhan":"MVP","mau":"#F26B1D","anh":"../../../art/C/05-nhan-vat/demo-pc/pc1.webp","truong":[["Slot, màu nhận diện","Slot 1 ○, cam Ember `#F26B1D`"],["Tên mặc định","Nguyễn Việt"],["Vai truyện","Kíp vận hành trạm"],["Chiều cao","1,0 u"],["Silhouette (khi tô đen)","Mũ tròn có ăng-ten chữ L bên phải, bình Oxy vuông ngang rộng sau lưng, vai vuông"],["Ngoại hình","Tóc đen dài ngang vai búi gọn dưới mũ, găng dày, bộ đồ cam xám than, đai dụng cụ chéo ngực"],["Nhãn","MVP"],["Tên, quốc gia","Nguyễn Việt, Việt Nam"],["Giới tính, tuổi","Nam, khoảng 29"],["Da","Sáng ngả vàng nhạt"],["Tóc","Đen, dài ngang vai, búi gọn dưới mũ"],["Nét mặt khi bình thường","Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ"],["Da và tóc","Da sáng ngả vàng nhạt, tóc đen dài ngang vai búi gọn dưới mũ"],["Nghề cũ trên Cradle (chỉ là nền)","Nhân viên trực ca ở khu ngủ đông"],["3 nét tính cách","Bền bỉ, ít lời, bướng một cách bình tĩnh"],["Thói quen nhìn thấy (idle đứng tại chỗ)","Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Khi đứng lâu thì ngẩng nhìn ra xa"],["Nét mặt","Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ khi bình thường"]]},{"ma":"PC-2","ten":"Jonas Weber","tenPhu":"","nhan":"MVP","mau":"#1FB5D6","anh":"../../../art/C/05-nhan-vat/demo-pc/pc2.webp","truong":[["Slot, màu nhận diện","Slot 2 △, lam ngọc `#1FB5D6`"],["Tên mặc định","Jonas Weber"],["Vai truyện","Kíp vận hành trạm"],["Chiều cao","1,1 u"],["Silhouette (khi tô đen)","Mũ vuông bo góc, một bình Oxy dài dọc lưng kiểu thùng, dáng cao chữ nhật"],["Ngoại hình","Gọng kính trong mũ, bộ đồ lam xám, dây đai vai dày"],["Nhãn","MVP"],["Tên, quốc gia","Jonas Weber, Đức"],["Giới tính, tuổi","Nam, khoảng 34"],["Da","Sáng"],["Tóc","Nâu rối, râu lún phún"],["Nét mặt khi bình thường","Mắt mở to chăm chú, hơi gù khi nghe, miệng mím khi nghĩ"],["Da và tóc","Da sáng, tóc nâu rối, râu lún phún"],["Nghề cũ trên Cradle (chỉ là nền)","Nhân viên bảo trì băng tải và cửa khoang ở kho Cradle"],["3 nét tính cách","Ngay thật, tốt bụng, chậm một nhịp"],["Thói quen nhìn thấy (idle đứng tại chỗ)","Đẩy gọng kính trong mũ dù kính không trượt, rồi nhìn quanh chậm"],["Nét mặt","Mắt mở to chăm chú, hơi gù khi nghe, miệng mím khi nghĩ"]]},{"ma":"PC-3","ten":"Mei Tanaka","tenPhu":"","nhan":"Sau MVP","mau":"#D8E21F","anh":"../../../art/C/05-nhan-vat/demo-pc/pc3.webp","truong":[["Slot, màu nhận diện","Slot 3 □, vàng chanh `#D8E21F`"],["Tên mặc định","Mei Tanaka"],["Vai truyện","Kíp vận hành trạm"],["Chiều cao","0,9 u"],["Silhouette (khi tô đen)","Mũ trứng có chóp sáng, balo tròn nhỏ, dáng nhỏ gọn đầu tương đối lớn"],["Ngoại hình","Tóc ngắn bồng thấy qua tấm kính mũ, bộ đồ vàng chanh đen, găng ngón mảnh"],["Nhãn","Sau MVP"],["Tên, quốc gia","Mei Tanaka, Nhật Bản"],["Giới tính, tuổi","Nữ, khoảng 26"],["Da","Sáng"],["Tóc","Đen ngắn bồng"],["Nét mặt khi bình thường","Đầu hơi nghiêng, má phồng khi tập trung, cười nhanh rồi tắt"],["Da và tóc","Da sáng, tóc đen ngắn bồng"],["Nghề cũ trên Cradle (chỉ là nền)","Nhân viên dịch vụ khu ở tập thể của đoàn"],["3 nét tính cách","Thực tế, nhanh nhẹn, hay bướng"],["Thói quen nhìn thấy (idle đứng tại chỗ)","Vỗ balo hai cái rồi xoay tròn tại chỗ nhìn quanh"],["Nét mặt","Dáng nhỏ, đầu hơi nghiêng, má phồng khi tập trung, cười nhanh rồi tắt"]]},{"ma":"PC-4","ten":"Niamh Doyle","tenPhu":"","nhan":"Sau MVP","mau":"#D6309B","anh":"../../../art/C/05-nhan-vat/demo-pc/pc4.webp","truong":[["Slot, màu nhận diện","Slot 4 ◇, hồng tím `#D6309B`"],["Tên mặc định","Niamh Doyle"],["Vai truyện","Kíp vận hành trạm"],["Chiều cao","1,2 u"],["Silhouette (khi tô đen)","Cao và mảnh, chân tay dài, vai hẹp, mũ tròn đáy phẳng, bình Oxy nghiêng trên vai, túi dụng cụ hông"],["Ngoại hình","Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông"],["Nhãn","Sau MVP"],["Tên, quốc gia","Niamh Doyle, Ireland"],["Giới tính, tuổi","Nữ, khoảng 36"],["Da","Sáng có tàn nhang"],["Tóc","Nâu đỏ, đuôi thấp gọn trong mũ"],["Nét mặt khi bình thường","Mặt mềm, mắt hiền, nhìn xuống khi bị khen"],["Da và tóc","Da sáng có tàn nhang, tóc nâu đỏ buộc đuôi thấp gọn trong mũ"],["Nghề cũ trên Cradle (chỉ là nền)","Nhân viên bốc xếp ở bến hàng Cradle"],["3 nét tính cách","Điềm tĩnh, hiền, vụng về khi cần tinh tế"],["Thói quen nhìn thấy (idle đứng tại chỗ)","Gãi gáy khi thấy mình bị nhìn, rồi xoay vai cho đỡ mỏi"],["Nét mặt","Dáng cao mảnh, mắt hiền, nhìn xuống khi bị khen"]]}]},{"ten":"Người vớt","ghiChu":["Người vớt là NPC. Ingrid, Linh, Rafa được kéo từ buồng ngủ đông của xác trạm nên mặc đồ Seed Station (xám nhạt, mòn, mang số hiệu buồng). Amara và Yusuf đang thức ở Lantern và Veyl Waypost, mặc đồ nghề của họ (blouse, áo phản quang). Mỗi người một nhấn trầm. Tính cách, quest: `cot-truyen.md`.","Tính cách trích từ `cot-truyen.md` để art đặt dáng và biểu cảm:","Yêu cầu art người vớt: dùng cùng rig xương người chơi, hoán đổi bộ phận, bảng 6 màu chính cộng 1 nhấn trầm. Clip riêng: Ingrid (đập búa, đo), Linh (bấm bảng, đứng nghe), Rafa (trải bản đồ), Amara (soi mẫu), Yusuf (vẫy tay điều phối). Clip \"thức dậy từ buồng ngủ đông\" dùng chung cho Ingrid, Linh, Rafa (khác mặt). Amara và Yusuf dùng clip \"bước xuống từ xuồng hoặc Skiff\" (Sau MVP).","Chương xuất hiện và chức năng K12 đầy đủ:"],"nguon":"ho-so-nhan-vat.md mục 2b.2","muc":[{"ma":"RS-1","ten":"Ingrid Halvorsen","tenPhu":"","nhan":"MVP","mau":"#6A8DB8","anh":"","truong":[["Tên","Ingrid Halvorsen"],["Vai","Kỹ sư, mở xưởng"],["Chiều cao","0,95 u"],["Silhouette (khi tô đen)","Thấp và rộng vai, tóc búi cao, đai công cụ lớn và kính bảo hộ đẩy lên trán"],["Ngoại hình","Tay áo xắn tới khuỷu, găng da, tạp dề thợ, vết dầu"],["Màu nhận diện","Xanh cobalt trầm `#6A8DB8`"],["Biểu cảm cần có","Bình thường, bực, tập trung, vui khi sửa được, mệt"],["Nhãn","MVP"],["Nghề, quốc gia","Kỹ sư, Na Uy, làm giàn khoan biển"],["Tính cách","Thẳng, khô, làm trước nói sau, đùa không đổi nét mặt"],["Gợi ý cho dáng và mặt","Mặt ít biểu cảm, vai và tay to, đùa chỉ ở mắt"],["Chương","1"],["Khoang, chức năng K12","Xưởng: chế và nâng cấp trang bị"]]},{"ma":"RS-2","ten":"Linh Tran","tenPhu":"","nhan":"MVP","mau":"#8A7FC9","anh":"","truong":[["Tên","Linh Tran"],["Vai","Thông dịch viên, mở khoang liên lạc"],["Chiều cao","1,05 u"],["Silhouette (khi tô đen)","Gầy cao, tai nghe vành lớn, áo khoác dài chạm gối, máy bảng cầm tay"],["Ngoại hình","Tóc bob, áo khoác dài xám nhạt, dây tai nghe vắt cổ"],["Màu nhận diện","Tím chàm trầm `#8A7FC9`"],["Biểu cảm cần có","Bình thường, lịch sự, bối rối trước thương nhân, lo, cười ngượng"],["Nhãn","MVP"],["Nghề, quốc gia","Thông dịch viên, Việt Nam"],["Tính cách","Nhanh miệng, khéo, giữ thể diện cho cả hai bên, dịch quá trung thực"],["Gợi ý cho dáng và mặt","Nghiêng đầu, tay hay chen vào, cười lịch sự"],["Chương","1"],["Khoang, chức năng K12","Khoang liên lạc: gọi tàu, mở giờ giao thương, shop"]]},{"ma":"RS-3","ten":"Rafael Ortega","tenPhu":"Rafa","nhan":"Sau MVP","mau":"#B8665C","anh":"","truong":[["Tên","Rafael Ortega (Rafa)"],["Vai","Hoa tiêu, mở khoang dẫn đường"],["Chiều cao","1,1 u"],["Silhouette (khi tô đen)","Dáng thẳng, mũ lưỡi trai hoa tiêu, khăn quàng dài buông sau lưng"],["Ngoại hình","Ria nhẹ, áo hoa tiêu có dây vai, bản đồ cuộn đeo lưng"],["Màu nhận diện","Đỏ gạch trầm `#B8665C`"],["Biểu cảm cần có","Bình thường, mơ màng nhìn bản đồ, tự tin, hoảng, hài hước"],["Nhãn","Sau MVP"],["Nghề, quốc gia","Hoa tiêu, Chile"],["Tính cách","Mơ mộng, mê tín với sao, sợ chịu trách nhiệm cho đường đi"],["Gợi ý cho dáng và mặt","Mắt hay nhìn lên, nói vòng, hay chạm bùa trên cổ"],["Chương","2"],["Khoang, chức năng K12","Khoang dẫn đường: mở dải, Skiff"]]},{"ma":"RS-4","ten":"Amara Okafor","tenPhu":"","nhan":"Sau MVP","mau":"#6FA88A","anh":"","truong":[["Tên","Amara Okafor"],["Vai","Nhà sinh học, mở nghiên cứu và nuôi"],["Chiều cao","1,0 u"],["Silhouette (khi tô đen)","Áo blouse dài, tóc xù lớn có kẹp, hộp mẫu đeo ngực"],["Ngoại hình","Blouse ngả vàng, găng cao su, kính lúp gập trên cổ, sổ ghi mẫu kẹp tay"],["Màu nhận diện","Lục thẫm trầm `#6FA88A`"],["Biểu cảm cần có","Bình thường, tò mò sáng mắt, buồn (cú lật Driftlife), giận, dịu dàng khi nuôi"],["Nhãn","Sau MVP"],["Nghề, quốc gia","Nhà sinh học, Nigeria"],["Tính cách","Tỉ mỉ, ấm, nói chuyện với mẫu vật"],["Gợi ý cho dáng và mặt","Cúi sát mẫu, tay nhẹ, nghiêm hẳn khi nói tuyệt chủng"],["Chương","2"],["Khoang, chức năng K12","Nghiên cứu và nuôi Driftlife"]]},{"ma":"RS-5","ten":"Yusuf Demir","tenPhu":"","nhan":"Sau MVP","mau":"#9AA06A","anh":"","truong":[["Tên","Yusuf Demir"],["Vai","Trưởng cảng, thêm bến và tiện ích cảng"],["Chiều cao","1,15 u"],["Silhouette (khi tô đen)","Vai to, mũ cứng có đèn, áo phản quang, bộ đàm trước ngực"],["Ngoại hình","Râu rậm, cốc trà hay cầm tay, găng, áo phản quang bạc màu"],["Màu nhận diện","Olive trầm `#9AA06A`"],["Biểu cảm cần có","Bình thường, cau có, quát điều phối, hài lòng khi tàu đi đúng giờ, lo"],["Nhãn","Sau MVP"],["Nghề, quốc gia","Trưởng cảng, Thổ Nhĩ Kỳ"],["Tính cách","Ồn ào, hiếu khách, mặc cả là niềm vui, quát và pha trà"],["Gợi ý cho dáng và mặt","Dáng to, tay vung, hay cầm cốc trà"],["Chương","3"],["Khoang, chức năng K12","Thêm bến và tiện ích cảng"]]}]},{"ten":"Thương nhân The Veyl","ghiChu":["Mỗi chủng một rig và hình khối riêng, để người chơi đọc chủng tộc từ xa rồi mới đến tên. Tính cách theo `cot-truyen.md`. Tàu: Tikko TA01, Ilsume TA04, Vaeth TA05, Dromm TA06, Nhem TA10, Maro TA08 (Bram TA03).","Sevra (NP-5, trạng thái 2, xem mục 2b.5) lộ ra ở cuối chương 3 (C3.8). Từ đó Ilsume không còn che mạng trong trạm.","Ghé cảng từ: Tikko chương 1 (và TA02 là dân Oru vãng lai không tên, dùng rig Oru, biến thể màu), Ilsume chương 2, Vaeth chương 2, Dromm chương 3, Nhem chương 3, Maro chương 3 (hai lần cập bến khi còn cải trang, lộ mặt khi chỉ huy toán bắt cóc Sevra ở N4, mốc C3.8).","Yêu cầu art thương nhân: tàu của mỗi chủng cần màu và hình khối ăn khớp với chủng (yêu cầu tab Assets cho tàu do gd-quan lấy từ hồ sơ này và danh sách tàu). Mỗi chủng cần 6 clip: Idle, Nói, Mặc cả (gật hoặc lắc), Vui, Bối rối, Rời đi."],"nguon":"ho-so-nhan-vat.md mục 2b.3","muc":[{"ma":"TR-1","ten":"Tikko","tenPhu":"","nhan":"MVP","mau":"#C2A77E","anh":"","truong":[["Tên","Tikko"],["Chủng","Oru"],["Chiều cao, tỉ lệ","0,7 u, tròn"],["Silhouette","Thân tròn nhỏ, bốn tay mảnh, đội thùng tôn làm mũ"],["Ngoại hình","Da nâu tro, bộ đồ vá chằng, túi đựng phế liệu đeo đầy"],["Màu nhận diện","Hổ phách nhạt `#C2A77E`"],["Tính cách (gd-story)","Kẻ mê đồ Trái Đất, trả giá cao cho thứ con người coi là rác, hiểu sai công dụng"],["Biểu cảm cần có","Tò mò, mê mẩn, bối rối, mặc cả, vui"],["Nhãn","MVP"]]},{"ma":"TR-2","ten":"Ilsume","tenPhu":"tên giả của Sevra Ilvane, trạng thái 1: thương nhân che mạng","nhan":"Sau MVP","mau":"#A5667A","anh":"","truong":[["Tên","Ilsume (tên giả của Sevra Ilvane, trạng thái 1: thương nhân che mạng)"],["Chủng","Sennari"],["Chiều cao, tỉ lệ","1,6 u, thon"],["Silhouette","Áo choàng dài nhiều lớp nghi lễ, mũ nhọn cao, mạng che kín mặt"],["Ngoại hình","Da trắng ngọc, tay dài, vòng cổ nghi thức, giọng bà lão trang trọng (giả). Dưới áo là dáng người trẻ"],["Màu nhận diện","Hồng rượu trầm `#A5667A`"],["Tính cách (gd-story)","Trọng nghi thức, mỗi giao dịch có chuỗi lễ dài (vỏ bọc). Sợ bị nhận ra, đúng mực, lo giấu sau lễ nghi"],["Biểu cảm cần có","Trang nghiêm, sốt ruột bị che giấu, hài lòng, bối rối khi lễ bị phá, giật mình khi nghe tên Daskel"],["Nhãn","Sau MVP"]]},{"ma":"TR-3","ten":"Dromm","tenPhu":"","nhan":"Sau MVP","mau":"#6E6A66","anh":"","truong":[["Tên","Dromm"],["Chủng","Brakk"],["Chiều cao, tỉ lệ","1,8 u cao, 1,6 u rộng, thân khối"],["Silhouette","Khối vuông lớn, giáp đá, đầu nhỏ chìm giữa vai"],["Ngoại hình","Một mắt lớn, da xám đá có vân kim loại"],["Màu nhận diện","Xám đá `#6E6A66` nhấn đồng `#B87333`"],["Tính cách (gd-story)","Ít lời, không bao giờ nói thẳng giá, mặc cả bằng ánh nhìn"],["Biểu cảm cần có","Im lặng, nhìn xuống, nhướng mắt, gật rất nhỏ"],["Nhãn","Sau MVP"]]},{"ma":"TR-4","ten":"Vaeth","tenPhu":"","nhan":"Sau MVP","mau":"#CBA6E4","anh":"","truong":[["Tên","Vaeth"],["Chủng","Aelith"],["Chiều cao, tỉ lệ","1,3 u, uyển chuyển"],["Silhouette","Tua mềm như sứa quanh thân, bể thủy tinh nhỏ đeo vai"],["Ngoại hình","Da trong mờ, tua phát sáng, bể chứa một sinh vật nhỏ sống"],["Màu nhận diện","Oải hương `#CBA6E4`"],["Tính cách (gd-story)","Nhà sưu tầm sinh vật sống, quan tâm Driftlife còn sống hơn Tally"],["Biểu cảm cần có","Mê say, thương cảm, giận khi thấy Driftlife bị hạ"],["Nhãn","Sau MVP"]]},{"ma":"TR-5","ten":"Nhem","tenPhu":"","nhan":"Sau MVP","mau":"#D8382C","anh":"","truong":[["Tên","Nhem"],["Chủng","Kesh"],["Chiều cao, tỉ lệ","1,0 u, lơ lửng"],["Silhouette","Thân dẹt trôi, nhiều mắt nhỏ, bó dây cáp mạng buông dưới"],["Ngoại hình","Da xám đen, mắt trắng nhỏ như điểm sáng, dây cáp có đèn"],["Màu nhận diện","Xám đen nhấn đỏ tươi nhỏ `#D8382C`"],["Tính cách (gd-story)","Dân buôn tin, giữ The Lattice, câu ngắn hai vế, áy náy về thông tin giả"],["Biểu cảm cần có","Nhìn nghiêng, im lặng, sợ, dè dặt, thú nhận"],["Nhãn","Sau MVP"]]}]},{"ten":"The Wardens","ghiChu":["Đơn vị chiến đấu (WD-01 đến WD-04) do gd-combat giữ, là lính Sennari mặc giáp của chế độ (không thêm chủng tộc, dùng rig Sennari, mặt che bằng mũ giáp). The Wardens là chế độ và quân của Daskel. File này giữ Daskel và Maro. Ngôn ngữ hình: sạch, nhẵn, đối xứng, kỷ luật, đối lập với thương nhân lấm lem và với mạng lưới cách mạng của Sevra (đồ chắp vá). Màu chung của chế độ: trắng xương `#EDEBE0` và lục acid `#7CFC3A` (đường sáng).","Lính The Wardens: một bộ giáp trắng xương đường lục acid dùng chung rig Sennari, mũ giáp che mặt, 3 biến thể theo loại đơn vị (gd-combat cấp danh sách). Yêu cầu art: Maro cần hai biến thể (cải trang và lộ mặt) dùng chung rig Sennari, đổi lớp phủ. Tàu của Maro cần sạch bất thường trong cảng (gd-quan lấy làm manh mối). Daskel là boss BS-5 nên ngoài 6 clip hội thoại (Idle, Nói, Chỉ tay, Giận, Rút, Rời) cần danh sách clip chiến đấu và cỡ boss do gd-combat cấp (`combat-driftlife.md`), Sau MVP."],"nguon":"ho-so-nhan-vat.md mục 2b.4","muc":[{"ma":"WD-P1","ten":"Daskel","tenPhu":"danh xưng tự phong First Warden","nhan":"Sau MVP","mau":"","anh":"","truong":[["Tên","Daskel, danh xưng tự phong First Warden"],["Vai","Độc tài cầm quyền Sennar, đứng đầu The Wardens, boss BS-5 (chương 3 đến 5, qua lời Maro và tín hiệu, tới Warden Rig ở chương 5). Ghét loài người vì cha là sĩ quan chết trong cuộc chiến vũ trụ đầu tiên giữa các hành tinh (tên cuộc chiến ở `cot-truyen.md` mục Tên mới), cái nhìn phiến diện của hắn"],["Chiều cao","2,0 u (cao hơn Ilsume nhờ giáp và bục), rất gầy"],["Silhouette","Cao, tay dài quá gối, vòng sáng tròn sau gáy (halo), mặt nạ nhẵn, vai giáp nhọn đối xứng"],["Ngoại hình","Áo giáp choàng trắng xương không một vết bẩn, đường lục acid chạy dọc áo, huy hiệu chế độ trên ngực, không thấy mắt. Sạch vì hắn tin mình đang dọn dẹp"],["Màu nhận diện","Trắng xương và lục acid"],["Biểu cảm cần có","Bình thản, khinh miệt nhẹ, cuồng tín (mặt nạ nứt khi mất bình tĩnh), thương hại giả, giận lạnh khi nhắc tên Sevra hay cha mình"],["Nhãn","Sau MVP"]]},{"ma":"WD-P2","ten":"Maro","tenPhu":"","nhan":"Sau MVP","mau":"#A3A8A0","anh":"","truong":[["Tên","Maro"],["Vai","Gián điệp của Daskel săn Sevra, chỉ huy toán bắt cóc. Người Sennari, giả thương nhân của một thương hội Sennari không có thật (tàu TA08), hai lần cập bến khi còn cải trang, lộ mặt ở N4 khi chỉ huy toán bắt cóc (C3.8)"],["Chiều cao","1,7 u khi cải trang (khom người), 2,0 u sau khi lộ"],["Silhouette","Cải trang: dáng thương nhân Sennari, áo choàng nghi lễ rút gọn, che đầu bằng khăn, sạch hơn hẳn thương nhân thật. Lộ mặt: dáng cao gầy cùng kiểu Daskel, ít chi tiết hơn, giáp chế độ"],["Ngoại hình","Khi cải trang: áo xám không vết, đường lục acid mờ 10 phần trăm ở gáy, chi tiết thưởng cho người tinh ý, không ai cần nó để hiểu truyện (P4). Lộ mặt: đường lục 100 phần trăm, bỏ khăn, huy hiệu The Wardens"],["Màu nhận diện","Xám nhạt `#A3A8A0`, lục acid mờ khi cải trang, lục acid sáng khi lộ"],["Biểu cảm cần có","Vồn vã, hào phóng, hỏi quá nhiều, khi lộ mặt thì phẳng lặng, soi mói"],["Nhãn","Sau MVP"]]}]},{"ten":"Người phụ","ghiChu":[],"nguon":"ho-so-nhan-vat.md mục 2b.5","muc":[{"ma":"NP-1","ten":"Odile Laurent","tenPhu":"","nhan":"Sau MVP","mau":"#7FAE7A","anh":"","truong":[["Tên","Odile Laurent"],["Vai","Trưởng trạm Lantern, chương 2"],["Chiều cao","1,0 u"],["Silhouette","Gọn, tóc bạc, áo khoác Lantern dài, gậy đèn"],["Màu nhận diện","Lục đèn pin trầm `#7FAE7A`"],["Biểu cảm tối thiểu","Bình thường, nghiêm, mệt, quát"],["Nhãn","Sau MVP"]]},{"ma":"NP-2","ten":"Bram Kowalski","tenPhu":"","nhan":"MVP (chỉ giọng), Sau MVP (hiện hình)","mau":"#6B5640","anh":"","truong":[["Tên","Bram Kowalski"],["Vai","Trưởng xuồng tiếp tế Lantern, tàu TA03, chương 1 qua sóng, chương 2 hiện hình"],["Chiều cao","1,2 u"],["Silhouette","Vóc to, râu, mũ nồi, thùng hàng sau lưng"],["Màu nhận diện","Nâu sẫm `#6B5640`"],["Biểu cảm tối thiểu","Bình thường, than thở, vui, xin thêm"],["Nhãn","MVP (chỉ giọng), Sau MVP (hiện hình)"]]},{"ma":"NP-3","ten":"Elias Vance","tenPhu":"","nhan":"Sau MVP","mau":"#8C95A0","anh":"","truong":[["Tên","Elias Vance"],["Vai","Thủ lĩnh The Remainers, chương 3"],["Chiều cao","1,15 u"],["Silhouette","Cao gầy, áo bạc màu, băng tay cũ"],["Màu nhận diện","Xám bạc `#8C95A0`"],["Biểu cảm tối thiểu","Bình thường, khắc nghiệt, sợ giấu"],["Nhãn","Sau MVP"]]},{"ma":"NP-4","ten":"Wren","tenPhu":"","nhan":"Sau MVP","mau":"#E4F0D0","anh":"","truong":[["Tên","Wren"],["Vai","Đứa trẻ sinh trên The Raft, chương 3 và kết"],["Chiều cao","0,6 u"],["Silhouette","Rất nhỏ, đầu tròn, áo thùng thình vá"],["Màu nhận diện","Xanh lá nhạt `#E4F0D0`"],["Biểu cảm tối thiểu","Bình thường, tò mò, ngạc nhiên, vui"],["Nhãn","Sau MVP"]]},{"ma":"NP-5","ten":"Sevra Ilvane","tenPhu":"trạng thái 2 của TR-2 Ilsume","nhan":"Sau MVP","mau":"#A5667A","anh":"","truong":[["Tên","Sevra Ilvane (trạng thái 2 của TR-2 Ilsume)"],["Vai","Người thừa kế hợp pháp của Ilvane (Steward of Sennar, cha của Sevra, bị Daskel lật đổ, chết trong giam cầm). Giả làm Ilsume để trốn Daskel. Người chơi cứu ở cuối chương 3 (C3.8), hộ tống ở chương 5, nhận tọa độ thật"],["Chiều cao","1,6 u"],["Silhouette","Bỏ mạng và mũ nhọn, thân thon cùng rig Sennari với Ilsume, khuôn mặt trẻ, tóc buộc gọn, dáng thẳng hơn dáng bà lão giả"],["Màu nhận diện","Hồng rượu trầm `#A5667A` (cùng Ilsume), thêm nhấn nhỏ là huy hiệu nhà Ilvane ở cổ áo, không dùng trắng xương và lục acid"],["Biểu cảm tối thiểu","Bình thường, kiệt sức, sợ, quyết tâm, đau buồn khi nhắc cha, nhẹ nhõm khi được nhận ra"],["Nhãn","Sau MVP"]]}]}]}]};
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+// Chữ trong GDD: `mã` thành code, mã màu thành ô màu, **đậm**.
+const md = (s) => esc(s)
+  .replace(/`(#[0-9A-Fa-f]{6})`/g, '<span class="chip" style="--c:$1"><i></i><code>$1</code></span>')
+  .replace(/`([^`]+)`/g, '<code>$1</code>')
+  .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+const laMvp = (n) => /^MVP/.test(n);
+const theNhan = (n) => n ? `<span class="the ${laMvp(n) ? 'mvp' : 'sau'}">${esc(n.length > 14 ? (laMvp(n) ? 'MVP' : 'Sau MVP') : n)}</span>` : '';
+const chuCai = (t) => t.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
+const NHANH = ['Vai', 'Vai truyện', 'Chủng', 'Chiều cao', 'Chiều cao, tỉ lệ', 'Tên, quốc gia', 'Giới tính, tuổi', 'Chương'];
+
+let loc = '', tu = '';
+const tatCa = () => DATA.loai.flatMap((l) => l.nhom.flatMap((g) => g.muc.map((m) => ({ ...m, loai: l, nhom: g }))));
+const timTheo = (m) => [m.ma, m.ten, m.tenPhu, ...m.truong.map((t) => t[1])].join(' ').toLowerCase();
+
+function duongDan() {
+  const [l, ma] = decodeURIComponent(location.hash.slice(1)).split('/');
+  const loai = DATA.loai.find((x) => x.id === l) || DATA.loai[0];
+  return { loai, ma };
+}
+
+function veDanhSach() {
+  const { loai, ma } = duongDan();
+  $('#loai').innerHTML = DATA.loai.map((l) => `<a href="#${l.id}" ${l === loai ? 'aria-current="page"' : ''}>${esc(l.ten)}</a>`).join('');
+  const q = tu.trim().toLowerCase();
+  const html = loai.nhom.map((g) => {
+    const muc = g.muc.filter((m) => (!loc || (loc === 'mvp') === laMvp(m.nhan)) && (!q || timTheo(m).includes(q)));
+    if (!muc.length) return '';
+    return `<div class="nhom-ds"><h3>${esc(g.ten)} <span>${muc.length}</span></h3>${muc.map((m) => `
+      <a class="dong" href="#${loai.id}/${m.ma}" ${m.ma === ma ? 'aria-current="true"' : ''}>
+        ${m.anh
+          ? `<span class="cham co-anh" style="background-image:url('${esc(m.anh)}')" aria-hidden="true"></span>`
+          : `<span class="cham" style="--c:${m.mau || 'var(--chu-3)'}" aria-hidden="true">${esc(chuCai(m.ten))}</span>`}
+        <span><b>${esc(m.ten)}</b><small>${esc(m.ma)}</small></span>${theNhan(m.nhan)}
+      </a>`).join('')}</div>`;
+  }).join('');
+  $('#ds').innerHTML = html || '<div class="rong">Không có mục nào khớp.</div>';
+}
+
+function veHoSo() {
+  const { loai, ma } = duongDan();
+  const ds = tatCa().filter((m) => m.loai === loai);
+  const m = ds.find((x) => x.ma === ma) || (matchMedia('(max-width: 860px)').matches ? null : ds[0]);
+  document.body.classList.toggle('chi-tiet', !!ma && !!m);
+  if (!m) { $('#xem').innerHTML = ''; return; }
+  const c = m.mau || 'var(--chu-3)';
+  // Ô nhanh chỉ cho giá trị ngắn, giá trị dài đã có ở bảng đầy đủ.
+  const nhanh = NHANH.map((k) => m.truong.find((t) => t[0] === k && t[1].length <= 60)).filter(Boolean).slice(0, 4);
+  const mauTruong = m.truong.find((t) => /màu nhận diện/i.test(t[0]));
+  document.title = `${m.ten} - The Novent Wiki`;
+  $('#xem').innerHTML = `
+    <button class="lui" onclick="location.hash='${loai.id}'">&larr; Danh sách</button>
+    <article class="ho-so" style="--c:${c}">
+      <div class="dau-hs">
+        <div class="anh">${m.anh
+          ? `<button type="button" aria-label="Xem ảnh lớn" onclick="phongTo('${esc(m.anh)}')"><img src="${esc(m.anh)}" alt="Concept ${esc(m.ten)}"></button>`
+          : `<span class="chu-cai">${esc(chuCai(m.ten))}</span><span class="chua-anh">Chưa có concept</span>`}</div>
+        <div class="tom">
+          <div class="ma">${esc(m.ma)} · ${esc(m.nhom.ten)} ${theNhan(m.nhan)}</div>
+          <h1>${esc(m.ten)}</h1>
+          ${m.tenPhu ? `<div class="phu">${esc(m.tenPhu)}</div>` : ''}
+          ${mauTruong ? `<div class="mau">${m.mau ? '<i></i>' : ''}<span>${md(mauTruong[1])}</span></div>` : ''}
+          <dl class="nhanh">${nhanh.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${md(v)}</dd></div>`).join('')}</dl>
+        </div>
+      </div>
+      <div class="than">
+        <h2>Hồ sơ đầy đủ</h2>
+        <dl class="truong">${m.truong.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${md(v)}</dd>`).join('')}</dl>
+        ${m.nhom.ghiChu.length ? `<details><summary>Ghi chú chung cho nhóm ${esc(m.nhom.ten)}</summary>${m.nhom.ghiChu.map((p) => `<p>${md(p)}</p>`).join('')}</details>` : ''}
+        <div class="nguon">Nguồn: ${esc(m.nhom.nguon)}. Trang sinh từ GDD, sửa ở GDD rồi chạy lại tools/xuat-wiki.mjs.</div>
+      </div>
+    </article>`;
+}
+
+function phongTo(src) {
+  const d = $('#phong');
+  d.querySelector('img')?.remove();
+  d.insertAdjacentHTML('beforeend', `<img src="${esc(src)}" alt="Concept phóng to">`);
+  d.showModal();
+}
+$('#phong').addEventListener('click', (e) => { if (e.target.id === 'phong') e.target.close(); });
+function ve() { veDanhSach(); veHoSo(); }
+addEventListener('hashchange', () => { ve(); if (document.body.classList.contains('chi-tiet')) scrollTo(0, 0); });
+$('#tim').addEventListener('input', (e) => { tu = e.target.value; veDanhSach(); });
+document.querySelectorAll('.loc button').forEach((b) => b.addEventListener('click', () => {
+  loc = b.dataset.loc;
+  document.querySelectorAll('.loc button').forEach((x) => x.setAttribute('aria-pressed', x === b));
+  veDanhSach();
+}));
+ve();
+</script>
+</body>
+</html>
