@@ -39,7 +39,7 @@ Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-
 7. Nguồn tính cách `MVP`: tính cách, nghề, quốc gia, mâu thuẫn, quest theo `cot-truyen.md`.
 8. Solace `MVP`: là thông tin mồi, kết game mở (B4, B9, K10). Hồ sơ không viết Solace là đích thật hay giả. Riêng Odile (NP-1) giữ niềm tin "tới Solace" tới hết chương 3 và mất niềm tin ở chương 4 (log 73, `cot-truyen.md`). Hồ sơ của mọi nhân vật khác không gắn đích Solace.
 9. Co-op `MVP`: không nhân vật nào cần đúng N người chơi để hiện diện (P3). Chơi 1 người thì ba buồng còn lại tắt, tên trên buồng lấy từ các preset chưa dùng.
-10. Hình không đổi luật `MVP`: chiều cao và silhouette chỉ là hình. Va chạm, tầm nhặt, vùng trúng giữ bán kính 0,4 u cho mọi preset (P3, công bằng co-op).
+10. Hình không đổi luật `MVP`: chiều cao, tỉ lệ xương từng preset (luật 4) và silhouette chỉ là hình. Va chạm, tầm nhặt, vùng trúng giữ bán kính 0,4 u cho mọi preset (P3, công bằng co-op).
 11. Slot và người vào sau `MVP`: người tỉnh dậy ban đầu chọn preset, mỗi preset một slot, không trùng. Người vào sau lấy slot trống thấp nhất, dùng ngoại hình preset đó ở biến thể B (đổi tóc, râu hoặc kính), và bắt buộc đặt tên mới. Buồng tắt vẫn tắt với tên mặc định của preset, người vào sau là người khác, không lấp buồng. Hết slot thì hiện "Phòng đầy" (xem `nguoi-choi.md` 2.9).
 12. Màu cùng cảnh `MVP`: hai nhân vật cùng cảnh phải khác nhau từ 25 độ Hue hoặc từ 25 điểm bão hòa hoặc từ 25 điểm sáng (V của HSV). Bộ màu đã kiểm bằng script cho cả 20 nhân vật, 0 cặp trượt.
 
