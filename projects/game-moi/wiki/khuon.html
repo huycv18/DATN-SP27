@@ -1,156 +1,129 @@
 <!doctype html>
-<html lang="vi">
+<html lang="vi" data-theme="novent-dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Novent Wiki</title>
 <!-- File sinh từ khuon.html bằng tools/xuat-wiki.mjs. Sửa GDD hoặc khuon.html, không sửa index.html. -->
+<!-- Giao diện: Tailwind CSS 4 (bản chạy trong trình duyệt) và daisyUI 5. Cần mạng lần đầu mở, sau đó trình duyệt giữ cache. -->
+<script>
+  // Theme đặt trước khi vẽ để không nháy: lựa chọn đã lưu, không thì theo hệ điều hành.
+  (() => {
+    let t = null;
+    try { t = localStorage.getItem('novent-wiki-theme'); } catch {}
+    document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'novent-light' : 'novent-dark');
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.43" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+<style type="text/tailwindcss">
+@theme {
+  --font-sans: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+</style>
 <style>
-:root {
-  --nen: #f4f1ea; --mat: #fffdf8; --mat-2: #efebe2; --vien: #ddd6c8; --chu: #1b1530; --chu-2: #5c5670; --chu-3: #8a8499;
-  --nhan: #f26b1d; --nhan-chu: #fff; --mvp: #1f7a4d; --mvp-nen: #dcf1e5; --sau: #6b6580; --sau-nen: #e9e6f0;
-  --bong: 0 1px 2px rgb(27 21 48 / .06), 0 4px 16px rgb(27 21 48 / .06);
+/* Hai theme daisyUI riêng của game: nền đêm tím than, nhấn cam Ember (#F26B1D, màu slot 1). */
+[data-theme="novent-dark"] {
+  color-scheme: dark;
+  --color-base-100: #14111f; --color-base-200: #0e0c17; --color-base-300: #262138; --color-base-content: #e9e5f5;
+  --color-primary: #f26b1d; --color-primary-content: #1b0d04;
+  --color-secondary: #1fb5d6; --color-secondary-content: #021a20;
+  --color-accent: #d6309b; --color-accent-content: #fff;
+  --color-neutral: #2a2540; --color-neutral-content: #d9d4ea;
+  --color-info: #5aa9e6; --color-info-content: #04121d;
+  --color-success: #4cc38a; --color-success-content: #04170d;
+  --color-warning: #e8b931; --color-warning-content: #1d1502;
+  --color-error: #ef5d5d; --color-error-content: #200404;
+  --radius-selector: 0.5rem; --radius-field: 0.6rem; --radius-box: 1rem;
+  --size-selector: 0.25rem; --size-field: 0.25rem; --border: 1px; --depth: 1; --noise: 0;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --nen: #0f0d17; --mat: #181524; --mat-2: #211d31; --vien: #2e2943; --chu: #ece8f6; --chu-2: #aba4c0; --chu-3: #7c7594;
-    --mvp: #6fd6a0; --mvp-nen: #173527; --sau: #b3adc6; --sau-nen: #26223a; --bong: 0 1px 2px rgb(0 0 0 / .3), 0 6px 20px rgb(0 0 0 / .25);
-  }
+[data-theme="novent-light"] {
+  color-scheme: light;
+  --color-base-100: #fffdf8; --color-base-200: #f4f1ea; --color-base-300: #e4ddd0; --color-base-content: #1b1530;
+  --color-primary: #e05a10; --color-primary-content: #fff;
+  --color-secondary: #1189a6; --color-secondary-content: #fff;
+  --color-accent: #b81f80; --color-accent-content: #fff;
+  --color-neutral: #2a2540; --color-neutral-content: #f4f1ea;
+  --color-info: #2f7fc1; --color-info-content: #fff;
+  --color-success: #1f8a55; --color-success-content: #fff;
+  --color-warning: #b98a0b; --color-warning-content: #fff;
+  --color-error: #c93b3b; --color-error-content: #fff;
+  --radius-selector: 0.5rem; --radius-field: 0.6rem; --radius-box: 1rem;
+  --size-selector: 0.25rem; --size-field: 0.25rem; --border: 1px; --depth: 1; --noise: 0;
 }
-:root[data-theme="dark"] {
-  --nen: #0f0d17; --mat: #181524; --mat-2: #211d31; --vien: #2e2943; --chu: #ece8f6; --chu-2: #aba4c0; --chu-3: #7c7594;
-  --mvp: #6fd6a0; --mvp-nen: #173527; --sau: #b3adc6; --sau-nen: #26223a; --bong: 0 1px 2px rgb(0 0 0 / .3), 0 6px 20px rgb(0 0 0 / .25);
+html, body { background: var(--color-base-200); }
+/* Thanh cuộn mảnh theo theme, thay thanh trắng mặc định */
+* { scrollbar-width: thin; scrollbar-color: color-mix(in oklab, var(--color-base-content) 22%, transparent) transparent; }
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--color-base-content) 20%, transparent); border-radius: 999px; border: 2px solid transparent; background-clip: padding-box; }
+*::-webkit-scrollbar-thumb:hover { background-color: color-mix(in oklab, var(--color-base-content) 35%, transparent); }
+.nen-sao { background:
+  radial-gradient(1200px 500px at 85% -10%, color-mix(in oklab, var(--color-primary) 10%, transparent), transparent 60%),
+  radial-gradient(900px 500px at -10% 110%, color-mix(in oklab, var(--color-secondary) 8%, transparent), transparent 60%),
+  var(--color-base-200); }
+.cham-anh { background-repeat: no-repeat; background-position: 7% 80%; background-size: 520%; }
+.ve-mau { background: radial-gradient(circle at 30% 0%, color-mix(in oklab, var(--c) 32%, transparent), transparent 65%), linear-gradient(180deg, color-mix(in oklab, var(--c) 10%, var(--color-base-100)), var(--color-base-100)); }
+.lien { text-decoration: underline; text-decoration-color: color-mix(in oklab, var(--color-primary) 45%, transparent); text-underline-offset: 3px; font-weight: 500; }
+.lien:hover { color: var(--color-primary); text-decoration-color: currentColor; }
+code { font-family: var(--font-mono); font-size: .82em; padding: .1em .4em; border-radius: .35rem; background: var(--color-base-300); }
+.chip i { display: inline-block; width: .8rem; height: .8rem; border-radius: .25rem; background: var(--c); vertical-align: -1px; margin-right: .3rem; box-shadow: inset 0 0 0 1px rgb(0 0 0 / .2); }
+.menu .dong.active-muc { background: color-mix(in oklab, var(--color-primary) 14%, transparent); color: var(--color-base-content); }
+@media (max-width: 1023px) {
+  body.chi-tiet #ben { display: none; }
+  body:not(.chi-tiet) #xem { display: none; }
 }
-* { box-sizing: border-box; }
-html, body { margin: 0; }
-body { background: var(--nen); color: var(--chu); font: 15px/1.55 "Segoe UI", system-ui, -apple-system, sans-serif; }
-button, input { font: inherit; color: inherit; }
-code { font: 13px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace; background: var(--mat-2); padding: 1px 5px; border-radius: 4px; }
-
-header { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--nen) 88%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--vien); }
-.dau { max-width: 1280px; margin: 0 auto; padding: 12px 20px; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
-.logo { font-weight: 700; letter-spacing: .02em; display: flex; align-items: center; gap: 10px; margin-right: 8px; }
-.logo i { width: 12px; height: 12px; border-radius: 3px; background: var(--nhan); transform: rotate(45deg); }
-.logo small { color: var(--chu-3); font-weight: 500; }
-nav.loai { display: flex; gap: 4px; }
-nav.loai a { text-decoration: none; color: var(--chu-2); padding: 6px 12px; border-radius: 8px; font-weight: 600; }
-nav.loai a[aria-current="page"] { background: var(--chu); color: var(--nen); }
-.tim { margin-left: auto; position: relative; flex: 0 1 280px; }
-.tim input { width: 100%; padding: 8px 12px; border-radius: 10px; border: 1px solid var(--vien); background: var(--mat); outline: none; }
-.tim input:focus-visible { border-color: var(--chu-2); }
-
-main { max-width: 1280px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 24px; align-items: start; }
-aside { position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: auto; padding-right: 4px; }
-.loc { display: flex; gap: 6px; margin-bottom: 14px; }
-.loc button { border: 1px solid var(--vien); background: var(--mat); border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 13px; color: var(--chu-2); }
-.loc button[aria-pressed="true"] { background: var(--chu); color: var(--nen); border-color: var(--chu); }
-.nhom-ds { margin-bottom: 18px; }
-.nhom-ds > summary { list-style: none; cursor: pointer; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--chu-3); margin: 0 0 6px; padding: 2px 8px; font-weight: 700; display: flex; gap: 6px; }
-.nhom-ds > summary::-webkit-details-marker { display: none; }
-.nhom-ds > summary::before { content: "▸"; transition: transform .12s; }
-.nhom-ds[open] > summary::before { transform: rotate(90deg); }
-.nhom-ds > summary span { font-weight: 500; margin-left: auto; }
-.dong { display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-radius: 10px; text-decoration: none; color: var(--chu); }
-.dong:hover { background: var(--mat-2); }
-.dong[aria-current="true"] { background: var(--mat); box-shadow: var(--bong); }
-.cham { width: 28px; height: 28px; border-radius: 8px; flex: none; display: grid; place-items: center; font-size: 12px; font-weight: 700; color: #fff; text-shadow: 0 1px 1px rgb(0 0 0 / .35); background: var(--c, var(--chu-3)); overflow: hidden; }
-/* shortcut: khung mặt cắt theo bố cục tấm concept GPT (bust đầu tiên ở góc trái dưới), đổi khi artist có avatar riêng */
-.cham.co-anh { background: var(--mat-2) no-repeat 7% 80% / 520%; }
-.dong b { font-weight: 600; display: block; line-height: 1.25; }
-.dong small { color: var(--chu-3); font-size: 12px; }
-.dong .the { margin-left: auto; }
-.rong { color: var(--chu-3); padding: 8px; }
-
-.the { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
-.the.mvp { color: var(--mvp); background: var(--mvp-nen); }
-.the.sau { color: var(--sau); background: var(--sau-nen); }
-
-.lui { display: none; border: 0; background: none; color: var(--chu-2); padding: 0; margin-bottom: 12px; cursor: pointer; font-weight: 600; }
-.ho-so { background: var(--mat); border: 1px solid var(--vien); border-radius: 16px; box-shadow: var(--bong); overflow: hidden; }
-.dau-hs { display: grid; grid-template-columns: minmax(220px, 380px) 1fr; border-bottom: 1px solid var(--vien); }
-.anh { background: var(--mat-2); position: relative; aspect-ratio: 1; display: grid; place-items: center; overflow: hidden; }
-.anh::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--c) 30%, transparent), transparent 70%); }
-.anh button { all: unset; cursor: zoom-in; position: relative; width: 100%; height: 100%; }
-.anh button:focus-visible { outline: 2px solid var(--c); outline-offset: -4px; }
-.anh img { width: 100%; height: 100%; object-fit: contain; display: block; }
-.chu-cai { position: relative; font-size: 72px; font-weight: 800; color: var(--c); opacity: .9; }
-.chua-anh { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; color: var(--chu-3); font-size: 12px; }
-/* Mục chưa có ảnh: ô chữ cái nhỏ, không chiếm nửa thẻ */
-.dau-hs.khong-anh { grid-template-columns: 1fr; }
-.dau-hs.khong-anh .anh { display: none; }
-.dau-hs.khong-anh .tom { flex-direction: row; flex-wrap: wrap; align-items: flex-start; column-gap: 20px; }
-.o-chu { width: 88px; height: 88px; border-radius: 20px; flex: none; display: grid; place-items: center; font-size: 30px; font-weight: 800; color: var(--c);
-  background: color-mix(in srgb, var(--c) 16%, var(--mat-2)); border: 1px solid color-mix(in srgb, var(--c) 35%, transparent); }
-.dau-hs:not(.khong-anh) .o-chu { display: none; }
-.cot-tom { flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
-a.lien { color: inherit; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--chu-2) 45%, transparent); text-underline-offset: 2px; }
-a.lien:hover { text-decoration-color: currentColor; }
-.cuon { overflow-x: auto; border: 1px solid var(--vien); border-radius: 10px; }
-table.bang-con { border-collapse: collapse; width: 100%; font-size: 13px; }
-.bang-con th, .bang-con td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--vien); }
-.bang-con th { background: var(--mat-2); color: var(--chu-2); font-weight: 600; white-space: nowrap; }
-.bang-con tr:last-child td { border-bottom: 0; }
-.tom { padding: 24px 28px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
-.ma { color: var(--chu-3); font: 600 13px ui-monospace, Consolas, monospace; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-.tom h1 { margin: 0; font-size: 34px; line-height: 1.1; letter-spacing: -.01em; }
-.phu { color: var(--chu-2); margin-top: -6px; }
-.mau { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--chu-2); }
-.mau i { width: 18px; height: 18px; border-radius: 5px; background: var(--c); border: 1px solid rgb(0 0 0 / .1); }
-.nhanh { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-top: 4px; }
-.nhanh div { background: var(--mat-2); border-radius: 10px; padding: 8px 12px; }
-.nhanh dt { font-size: 11px; color: var(--chu-3); text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
-.nhanh dd { margin: 2px 0 0; font-weight: 600; }
-
-.than { padding: 8px 28px 24px; }
-.than h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--chu-3); margin: 20px 0 6px; }
-dl.truong { margin: 0; display: grid; grid-template-columns: 210px 1fr; }
-dl.truong dt, dl.truong dd { padding: 10px 0; border-top: 1px solid var(--vien); margin: 0; }
-dl.truong dt { color: var(--chu-2); font-size: 13px; padding-right: 16px; font-weight: 600; }
-.chip { display: inline-flex; align-items: center; gap: 4px; }
-.chip i { width: 12px; height: 12px; border-radius: 3px; background: var(--c); border: 1px solid rgb(0 0 0 / .15); display: inline-block; }
-details.ghi-chu { margin-top: 18px; border: 1px solid var(--vien); border-radius: 12px; padding: 0 16px; }
-.ghi-chu summary { cursor: pointer; padding: 12px 0; font-weight: 600; color: var(--chu-2); }
-.ghi-chu p { margin: 0 0 12px; color: var(--chu-2); }
-.nguon { margin-top: 18px; font-size: 12px; color: var(--chu-3); }
-
-dialog { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
-dialog::backdrop { background: rgb(10 8 20 / .8); }
-dialog img { display: block; max-width: 96vw; max-height: 92vh; border-radius: 12px; }
-dialog button { position: fixed; top: 16px; right: 16px; border: 0; border-radius: 999px; padding: 8px 14px; background: #fff; color: #111; cursor: pointer; font-weight: 700; }
-
-@media (max-width: 860px) {
-  .dau { padding: 10px 16px; }
-  .tim { flex: 1 1 100%; order: 3; }
-  main { grid-template-columns: minmax(0, 1fr); padding: 16px; }
-  aside { position: static; max-height: none; }
-  body.chi-tiet aside { display: none; }
-  body:not(.chi-tiet) section#xem { display: none; }
-  .lui { display: inline-block; }
-  .dau-hs { grid-template-columns: 1fr; }
-  .tom, .than { padding-left: 18px; padding-right: 18px; }
-  .tom h1 { font-size: 28px; }
-  dl.truong { grid-template-columns: 1fr; }
-  dl.truong dd { border-top: 0; padding-top: 0; }
-}
-@media (prefers-reduced-motion: no-preference) { .dong { transition: background .12s; } }
+@media (min-width: 1024px) { #nut-lui { display: none; } }
+@media (prefers-reduced-motion: no-preference) { #xem > * { animation: hien .18s ease-out; } }
+@keyframes hien { from { opacity: 0; transform: translateY(4px); } }
 </style>
 </head>
-<body>
-<header><div class="dau">
-  <div class="logo"><i></i>The Novent <small>Wiki</small></div>
-  <nav class="loai" id="loai" aria-label="Loại thông tin"></nav>
-  <label class="tim"><input id="tim" type="search" placeholder="Tìm tên, mã, nhóm, công dụng..." aria-label="Tìm"></label>
-</div></header>
-<main>
-  <aside aria-label="Danh sách">
-    <div class="loc" role="group" aria-label="Lọc theo phiên bản">
-      <button data-loc="" aria-pressed="true">Tất cả</button><button data-loc="mvp" aria-pressed="false">MVP</button><button data-loc="sau" aria-pressed="false">Sau MVP</button>
+<body class="nen-sao min-h-screen font-sans text-base-content antialiased">
+
+<header class="navbar sticky top-0 z-30 gap-3 flex-wrap border-b border-base-300/70 bg-base-100/75 backdrop-blur-md px-4 lg:px-6">
+  <a href="#" class="flex items-center gap-2.5 mr-2 shrink-0" aria-label="Trang đầu wiki">
+    <span class="size-3.5 rotate-45 rounded-[3px] bg-primary shadow-[0_0_14px_var(--color-primary)]"></span>
+    <span class="font-extrabold tracking-tight text-lg">The Novent</span>
+    <span class="badge badge-sm badge-ghost font-semibold">Wiki</span>
+  </a>
+  <nav id="loai" role="tablist" aria-label="Loại thông tin" class="tabs tabs-box tabs-sm bg-base-200/80"></nav>
+  <div class="flex items-center gap-2 ml-auto max-md:w-full max-md:order-3">
+    <label class="input input-sm w-full md:w-72 bg-base-200/80">
+      <svg class="size-4 opacity-60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="tim" type="search" class="grow" placeholder="Tìm tên, mã, nhóm, công dụng..." aria-label="Tìm">
+      <kbd class="kbd kbd-sm max-md:hidden">/</kbd>
+    </label>
+    <button id="doi-theme" class="btn btn-sm btn-ghost btn-square" aria-label="Đổi sáng tối">
+      <svg class="size-[18px] hidden [[data-theme=novent-dark]_&]:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="size-[18px] hidden [[data-theme=novent-light]_&]:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="mx-auto max-w-[1400px] grid gap-6 p-4 lg:p-6 lg:grid-cols-[320px_minmax(0,1fr)] items-start">
+  <aside id="ben" aria-label="Danh sách" class="lg:sticky lg:top-[84px] card bg-base-100/90 border border-base-300/70 shadow-sm">
+    <div class="p-3 pb-2 flex items-center justify-between gap-2 border-b border-base-300/60">
+      <div class="join" role="group" aria-label="Lọc theo phiên bản">
+        <button data-loc="" aria-pressed="true" class="btn btn-xs join-item">Tất cả</button>
+        <button data-loc="mvp" aria-pressed="false" class="btn btn-xs join-item">MVP</button>
+        <button data-loc="sau" aria-pressed="false" class="btn btn-xs join-item">Sau MVP</button>
+      </div>
+      <span id="dem" class="text-xs opacity-60 tabular-nums"></span>
     </div>
-    <div id="ds"></div>
+    <div id="ds" class="lg:max-h-[calc(100vh-160px)] overflow-y-auto p-2"></div>
   </aside>
-  <section id="xem" aria-live="polite"></section>
+  <section id="xem" aria-live="polite" class="min-w-0"></section>
 </main>
-<dialog id="phong"><button type="button" onclick="this.closest('dialog').close()">Đóng</button></dialog>
+
+<dialog id="phong" class="modal">
+  <div class="modal-box max-w-[min(96vw,1100px)] p-2 bg-base-100"><img id="anh-lon" class="w-full rounded-xl" alt="Concept phóng to"></div>
+  <form method="dialog" class="modal-backdrop"><button>Đóng</button></form>
+</dialog>
+
 <script>
 const DATA = /*DATA*/null;
 const $ = (s) => document.querySelector(s);
@@ -160,7 +133,7 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 const MUC = [];
 for (const l of DATA.loai) for (const g of l.nhom) for (const m of g.muc) {
   m.loai = l; m.nhom = g; m.truong = m.phan.flatMap((p) => p.truong);
-  m.tim = [m.ma, m.ten, m.tenPhu, ...m.truong.map((t) => t[1])].join(' ').toLowerCase();
+  m.tim = [m.ma, m.ten, m.tenPhu, g.ten, ...m.truong.map((t) => t[1])].join(' ').toLowerCase();
   MUC.push(m);
 }
 const THEO_MA = new Map(MUC.map((m) => [m.ma, m]));
@@ -169,15 +142,25 @@ const RE_MA = new RegExp(`\\b(${[...THEO_MA.keys()].sort((a, b) => b.length - a.
 // Chữ trong GDD: mã thành link, `mã` thành code, mã màu thành ô màu, **đậm**.
 const md = (s, bo = '') => esc(s)
   .replace(RE_MA, (ma) => ma === bo ? ma : `<a class="lien" href="#${THEO_MA.get(ma).loai.id}/${ma}" title="${esc(THEO_MA.get(ma).ten)}">${ma}</a>`)
-  .replace(/`(#[0-9A-Fa-f]{6})`/g, '<span class="chip" style="--c:$1"><i></i><code>$1</code></span>')
+  .replace(/`(#[0-9A-Fa-f]{6})`/g, '<span class="chip whitespace-nowrap" style="--c:$1"><i></i><code>$1</code></span>')
   .replace(/`([^`]+)`/g, '<code>$1</code>')
   .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
 const laMvp = (n) => /^MVP/.test(n);
-const theNhan = (n) => n ? `<span class="the ${laMvp(n) ? 'mvp' : 'sau'}">${esc(n.length > 14 ? (laMvp(n) ? 'MVP' : 'Sau MVP') : n)}</span>` : '';
+const theNhan = (n, cl = 'badge-sm') => n
+  ? `<span class="badge ${cl} ${laMvp(n) ? 'badge-soft' : ''} ${laMvp(n) ? 'badge-success' : 'badge-ghost opacity-80'} font-semibold whitespace-nowrap shrink-0" title="${esc(n)}">${esc(n.length > 14 ? (laMvp(n) ? 'MVP' : 'Sau MVP') : n)}</span>`
+  : '';
 const chuCai = (t) => t.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
 // Mục không có màu nhận diện lấy màu theo tên nhóm, cùng nhóm cùng màu.
-const mauNhom = (t) => `hsl(${[...t].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 7)} 45% 55%)`;
+const mauNhom = (t) => `hsl(${[...t].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 7)} 48% 58%)`;
 const mauCua = (m) => m.mau || mauNhom(m.nhom.ten);
+const ICON = {
+  lui: '<svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>',
+  toi: '<svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>',
+  phong: '<svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>',
+};
+const anhNho = (m, cl) => m.anh
+  ? `<span class="${cl} cham-anh bg-base-300" style="background-image:url('${esc(m.anh)}')" aria-hidden="true"></span>`
+  : `<span class="${cl} grid place-items-center font-bold text-white/95 [text-shadow:0_1px_2px_rgb(0_0_0/.35)]" style="background:${mauCua(m)}" aria-hidden="true">${esc(chuCai(m.ten))}</span>`;
 
 let loc = '', tu = '';
 
@@ -186,86 +169,125 @@ function duongDan() {
   const loai = DATA.loai.find((x) => x.id === l) || DATA.loai[0];
   return { loai, ma };
 }
+const hepManHinh = () => matchMedia('(max-width: 1023px)').matches;
 
 function veDanhSach() {
   const { loai, ma } = duongDan();
-  $('#loai').innerHTML = DATA.loai.map((l) => `<a href="#${l.id}" ${l === loai ? 'aria-current="page"' : ''}>${esc(l.ten)}</a>`).join('');
+  $('#loai').innerHTML = DATA.loai.map((l) => {
+    const n = l.nhom.reduce((s, g) => s + g.muc.length, 0);
+    return `<a role="tab" href="#${l.id}" class="tab gap-2 font-semibold ${l === loai ? 'tab-active' : ''}" ${l === loai ? 'aria-selected="true"' : ''}>${esc(l.ten)}<span class="text-[11px] opacity-60 tabular-nums">${n}</span></a>`;
+  }).join('');
   const q = tu.trim().toLowerCase();
   const nhieu = loai.nhom.length > 6;
+  let tong = 0;
   const html = loai.nhom.map((g) => {
     const muc = g.muc.filter((m) => (!loc || (loc === 'mvp') === laMvp(m.nhan)) && (!q || m.tim.includes(q)));
+    tong += muc.length;
     if (!muc.length) return '';
     // Loại nhiều nhóm thì chỉ mở nhóm đang xem, trừ khi đang tìm.
     const mo = !nhieu || q || muc.some((m) => m.ma === ma);
-    return `<details class="nhom-ds" ${mo ? 'open' : ''}><summary>${esc(g.ten)} <span>${muc.length}</span></summary>${muc.map((m) => `
-      <a class="dong" href="#${loai.id}/${m.ma}" ${m.ma === ma ? 'aria-current="true"' : ''}>
-        ${m.anh
-          ? `<span class="cham co-anh" style="background-image:url('${esc(m.anh)}')" aria-hidden="true"></span>`
-          : `<span class="cham" style="--c:${mauCua(m)}" aria-hidden="true">${esc(chuCai(m.ten))}</span>`}
-        <span><b>${esc(m.ten)}</b><small>${esc(m.ma)}</small></span>${theNhan(m.nhan)}
-      </a>`).join('')}</details>`;
+    return `<li><details ${mo ? 'open' : ''}>
+      <summary class="text-[11px] uppercase tracking-[.08em] font-bold opacity-70">${esc(g.ten)}<span class="ml-auto badge badge-xs badge-ghost tabular-nums">${muc.length}</span></summary>
+      <ul class="before:hidden ms-0 ps-0">${muc.map((m) => `<li>
+        <a class="dong gap-3 py-2 ${m.ma === ma ? 'active-muc' : ''}" href="#${loai.id}/${m.ma}" ${m.ma === ma ? 'aria-current="page"' : ''}>
+          ${anhNho(m, 'size-8 rounded-lg shrink-0 text-[11px]')}
+          <span class="min-w-0 grow"><span class="block font-semibold leading-tight truncate">${esc(m.ten)}</span><span class="block font-mono text-[11px] opacity-55">${esc(m.ma)}</span></span>
+          ${theNhan(m.nhan, 'badge-xs')}
+        </a></li>`).join('')}</ul></details></li>`;
   }).join('');
-  $('#ds').innerHTML = html || '<div class="rong">Không có mục nào khớp.</div>';
+  $('#ds').innerHTML = html
+    ? `<ul class="menu menu-sm w-full p-0 gap-0.5">${html}</ul>`
+    : '<div class="p-6 text-center text-sm opacity-60">Không có mục nào khớp.</div>';
+  $('#dem').textContent = `${tong} mục`;
 }
 
 function veHoSo() {
   const { loai, ma } = duongDan();
-  const m = THEO_MA.get(ma)?.loai === loai ? THEO_MA.get(ma) : (matchMedia('(max-width: 860px)').matches ? null : loai.nhom[0].muc[0]);
+  const m = THEO_MA.get(ma)?.loai === loai ? THEO_MA.get(ma) : (hepManHinh() ? null : loai.nhom[0].muc[0]);
   document.body.classList.toggle('chi-tiet', !!ma && !!m);
   if (!m) { $('#xem').innerHTML = ''; document.title = 'The Novent Wiki'; return; }
   const c = mauCua(m);
   // Ô nhanh chỉ cho giá trị ngắn, giá trị dài đã có ở các phần bên dưới.
   const nhanh = loai.nhanh.map((k) => m.truong.find((t) => t[0] === k && t[1].length <= 60)).filter(Boolean).slice(0, 4);
   const mauTruong = m.truong.find((t) => /màu nhận diện/i.test(t[0]));
+  const cung = m.nhom.muc, i = cung.indexOf(m);
+  const ke = (x, huong) => x ? `<a href="#${loai.id}/${x.ma}" class="btn btn-ghost btn-sm max-w-[48%] font-medium">
+      ${huong === 'lui' ? ICON.lui : ''}<span class="truncate">${esc(x.ten)}</span>${huong === 'toi' ? ICON.toi : ''}</a>` : '<span></span>';
+  const phan = [...m.phan.map((p) => ({ ten: p.ten, html: `<dl class="divide-y divide-base-300/70">${p.truong.map(([k, v]) => `
+      <div class="grid sm:grid-cols-[220px_minmax(0,1fr)] gap-x-6 gap-y-1 py-3">
+        <dt class="text-sm font-semibold opacity-65">${esc(k)}</dt><dd class="leading-relaxed">${md(v, m.ma)}</dd>
+      </div>`).join('')}</dl>` })),
+    ...m.bangCon.map((b) => ({ ten: m.phan.some((p) => p.ten === b.ten) ? `${b.ten}, bảng` : b.ten, html: `<div class="overflow-x-auto rounded-box border border-base-300/70"><table class="table table-sm table-zebra">
+      <thead><tr>${b.head.map((h) => `<th class="whitespace-nowrap">${esc(h)}</th>`).join('')}</tr></thead>
+      <tbody>${b.rows.map((r) => `<tr>${b.head.map((_, k) => `<td class="align-top">${md(r[k] || '', m.ma)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` }))];
   document.title = `${m.ten} - The Novent Wiki`;
   $('#xem').innerHTML = `
-    <button class="lui" onclick="location.hash='${loai.id}'">&larr; Danh sách</button>
-    <article class="ho-so" style="--c:${c}">
-      <div class="dau-hs ${m.anh ? '' : 'khong-anh'}">
-        <div class="anh">${m.anh ? `<button type="button" aria-label="Xem ảnh lớn" onclick="phongTo('${esc(m.anh)}')"><img src="${esc(m.anh)}" alt="Concept ${esc(m.ten)}"></button>` : ''}</div>
-        <div class="tom">
-          <div class="o-chu" aria-hidden="true">${esc(chuCai(m.ten))}</div>
-          <div class="cot-tom">
-            <div class="ma">${esc(m.ma)} · ${esc(m.nhom.ten)} ${theNhan(m.nhan)}</div>
-            <h1>${esc(m.ten)}</h1>
-            ${m.tenPhu ? `<div class="phu">${md(m.tenPhu)}</div>` : ''}
-            ${mauTruong ? `<div class="mau">${m.mau ? '<i></i>' : ''}<span>${md(mauTruong[1])}</span></div>` : ''}
-            ${nhanh.length ? `<dl class="nhanh">${nhanh.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${md(v, m.ma)}</dd></div>`).join('')}</dl>` : ''}
+    <button id="nut-lui" class="btn btn-sm btn-ghost mb-3 -ml-2" onclick="location.hash='${loai.id}'">${ICON.lui} Danh sách</button>
+    <article class="card bg-base-100 border border-base-300/70 shadow-sm overflow-hidden" style="--c:${c}">
+      <div class="ve-mau grid ${m.anh ? 'md:grid-cols-[minmax(260px,420px)_minmax(0,1fr)]' : ''} border-b border-base-300/70">
+        ${m.anh ? `<button type="button" class="group relative aspect-square bg-[#f3ede0] cursor-zoom-in" onclick="phongTo('${esc(m.anh)}')" aria-label="Xem ảnh lớn">
+            <img src="${esc(m.anh)}" alt="Concept ${esc(m.ten)}" class="size-full object-contain">
+            <span class="absolute right-3 bottom-3 btn btn-xs btn-neutral opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity">${ICON.phong} Phóng to</span>
+          </button>` : ''}
+        <div class="p-5 sm:p-7 flex gap-5 items-start min-w-0">
+          ${m.anh ? '' : anhNho(m, 'size-20 sm:size-24 rounded-2xl shrink-0 text-2xl sm:text-3xl shadow-lg')}
+          <div class="min-w-0 grow flex flex-col gap-3">
+            <div class="breadcrumbs text-xs py-0 opacity-70"><ul>
+              <li><a href="#${loai.id}">${esc(loai.ten)}</a></li><li>${esc(m.nhom.ten)}</li><li class="font-mono">${esc(m.ma)}</li>
+            </ul></div>
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
+              <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight">${esc(m.ten)}</h1>${theNhan(m.nhan, 'badge-md')}
+            </div>
+            ${m.tenPhu ? `<p class="-mt-1 opacity-75">${md(m.tenPhu)}</p>` : ''}
+            ${mauTruong ? `<div class="flex items-center gap-2 text-sm opacity-80">${m.mau ? '<span class="size-4 rounded-md shadow-inner" style="background:var(--c)"></span>' : ''}<span>${md(mauTruong[1])}</span></div>` : ''}
+            ${nhanh.length ? `<div class="grid grid-cols-[repeat(auto-fill,minmax(130px,1fr))] gap-2.5 mt-1">${nhanh.map(([k, v]) => `
+              <div class="rounded-box bg-base-200/80 border border-base-300/60 px-3.5 py-2.5 min-w-0">
+                <div class="text-[10px] uppercase tracking-[.08em] font-bold opacity-55">${esc(k)}</div>
+                <div class="font-semibold mt-0.5">${md(v, m.ma)}</div>
+              </div>`).join('')}</div>` : ''}
           </div>
         </div>
       </div>
-      <div class="than">
-        ${m.phan.map((p) => `<h2>${esc(p.ten)}</h2>
-          <dl class="truong">${p.truong.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${md(v, m.ma)}</dd>`).join('')}</dl>`).join('')}
-        ${m.bangCon.map((b) => `<h2>${esc(b.ten)}</h2><div class="cuon"><table class="bang-con">
-          <thead><tr>${b.head.map((h) => `<th>${esc(h)}</th>`).join('')}</tr></thead>
-          <tbody>${b.rows.map((r) => `<tr>${b.head.map((_, k) => `<td>${md(r[k] || '', m.ma)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`).join('')}
-        ${m.nhom.ghiChu.length ? `<details class="ghi-chu"><summary>Ghi chú chung cho nhóm ${esc(m.nhom.ten)}</summary>${m.nhom.ghiChu.map((p) => `<p>${md(p)}</p>`).join('')}</details>` : ''}
-        <div class="nguon">Nguồn: ${esc(m.nhom.nguon)}. Trang sinh từ GDD, sửa ở GDD rồi chạy lại tools/xuat-wiki.mjs.</div>
+      ${phan.length > 2 ? `<nav aria-label="Các phần" class="flex flex-wrap gap-1.5 px-5 sm:px-7 pt-5">${phan.map((p, k) =>
+        `<button class="btn btn-xs btn-soft rounded-full font-medium" onclick="document.getElementById('phan-${k}').scrollIntoView({behavior:'smooth',block:'start'})">${esc(p.ten)}</button>`).join('')}</nav>` : ''}
+      <div class="px-5 sm:px-7 pb-6">
+        ${phan.map((p, k) => `<section id="phan-${k}" class="scroll-mt-24 pt-6">
+          <h2 class="flex items-center gap-2 text-xs uppercase tracking-[.1em] font-bold opacity-60 mb-1"><span class="h-3 w-1 rounded-full" style="background:var(--c)"></span>${esc(p.ten)}</h2>
+          ${p.html}</section>`).join('')}
+        ${m.nhom.ghiChu.length ? `<div class="collapse collapse-arrow bg-base-200/70 border border-base-300/70 mt-6">
+          <input type="checkbox" aria-label="Mở ghi chú chung"><div class="collapse-title font-semibold text-sm">Ghi chú chung cho nhóm ${esc(m.nhom.ten)}</div>
+          <div class="collapse-content text-sm leading-relaxed opacity-85 space-y-2">${m.nhom.ghiChu.map((p) => `<p>${md(p)}</p>`).join('')}</div></div>` : ''}
+        <div class="flex justify-between gap-2 mt-6 pt-4 border-t border-base-300/70">${ke(cung[i - 1], 'lui')}${ke(cung[i + 1], 'toi')}</div>
+        <p class="mt-4 text-xs opacity-50">Nguồn: ${esc(m.nhom.nguon)}. Trang sinh từ GDD, sửa ở GDD rồi chạy lại tools/xuat-wiki.mjs.</p>
       </div>
     </article>`;
 }
 
-function phongTo(src) {
-  const d = $('#phong');
-  d.querySelector('img')?.remove();
-  d.insertAdjacentHTML('beforeend', `<img src="${esc(src)}" alt="Concept phóng to">`);
-  d.showModal();
-}
-$('#phong').addEventListener('click', (e) => { if (e.target.id === 'phong') e.target.close(); });
+function phongTo(src) { $('#anh-lon').src = src; $('#phong').showModal(); }
 function ve() { veDanhSach(); veHoSo(); }
 addEventListener('hashchange', () => {
   ve();
   scrollTo(0, 0);
-  document.querySelector('.dong[aria-current="true"]')?.scrollIntoView({ block: 'nearest' });
+  document.querySelector('.dong[aria-current="page"]')?.scrollIntoView({ block: 'nearest' });
 });
 $('#tim').addEventListener('input', (e) => { tu = e.target.value; veDanhSach(); });
-document.querySelectorAll('.loc button').forEach((b) => b.addEventListener('click', () => {
+addEventListener('keydown', (e) => {
+  if (e.key === '/' && document.activeElement !== $('#tim')) { e.preventDefault(); $('#tim').focus(); }
+  if (e.key === 'Escape' && document.activeElement === $('#tim')) { $('#tim').value = ''; tu = ''; veDanhSach(); }
+});
+document.querySelectorAll('[data-loc]').forEach((b) => b.addEventListener('click', () => {
   loc = b.dataset.loc;
-  document.querySelectorAll('.loc button').forEach((x) => x.setAttribute('aria-pressed', x === b));
+  document.querySelectorAll('[data-loc]').forEach((x) => { x.setAttribute('aria-pressed', x === b); x.classList.toggle('btn-primary', x === b); });
   veDanhSach();
 }));
+document.querySelector('[data-loc=""]').classList.add('btn-primary');
+$('#doi-theme').addEventListener('click', () => {
+  const t = document.documentElement.dataset.theme === 'novent-dark' ? 'novent-light' : 'novent-dark';
+  document.documentElement.dataset.theme = t;
+  try { localStorage.setItem('novent-wiki-theme', t); } catch {}
+});
 ve();
+document.querySelector('.dong[aria-current="page"]')?.scrollIntoView({ block: 'nearest' });
 </script>
 </body>
 </html>

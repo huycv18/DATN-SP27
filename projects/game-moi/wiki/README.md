@@ -4,7 +4,7 @@ Trang tra thông tin game: hồ sơ nhân vật, sau này thêm Driftlife, item.
 
 | File | Vai trò |
 |---|---|
-| `khuon.html` | Giao diện, sửa tay ở đây |
+| `khuon.html` | Giao diện, sửa tay ở đây. Dùng Tailwind CSS 4.1.11 (bản chạy trong trình duyệt) và daisyUI 5.0.43 qua jsDelivr, font Be Vietnam Pro. Lần đầu mở cần mạng |
 | `index.html` | File sinh ra, không sửa tay |
 | `../tools/xuat-wiki.mjs` | Đọc GDD, ghép bảng theo Mã, nhúng dữ liệu vào khuôn |
 

@@ -182,7 +182,7 @@ export function dung(khuon, loai) {
   }
   const json = JSON.stringify({ loai }).replace(/</g, '\\u003c');
   if (!khuon.includes('/*DATA*/null')) throw new Error('khuon.html thiếu chỗ /*DATA*/null');
-  return khuon.replace('/*DATA*/null', json);
+  return khuon.replace('/*DATA*/null', () => json); // hàm để $ trong dữ liệu không bị hiểu là mẫu thay thế
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
