@@ -194,6 +194,31 @@ Character design sheet, 2D stylized game art, bold outer outline, minimal interi
 | NVC3 Mei | `cute clumsy genius 16-year-old girl, the analyst of the team, 150 cm, pear-shaped soft build, wholesome, thick round glasses, bowl-shaped helmet with big visor and a small homemade sensor antenna, black-gray suit with small lime #D8E21F panels, holding a homemade handheld scanner wrapped in tape with dangling cables, thinking expression` |
 | NVC4 Tariq | `hot-tempered loyal 18-year-old man, the strong protective one with comic temper, 174 cm, muscular trapezoid build, thick neck, low wide stance, fists ready, flat-bottom helmet with side ridges and a dent, warm gray suit with heavy shoulder armor and large magenta #D6309B panels, boxing hand wraps, first aid case on hip, hair sticking up on one side, angry comedic face` |
 
+## 7b. Ưu và nhược điểm của bản này
+
+### Ưu điểm
+
+| Ưu | Vì sao |
+|---|---|
+| 4 người khác nhau rõ ở cả dáng lẫn tính cách | Mỗi người một khối thân, một thế mạnh, một kiểu biểu cảm, khó nhầm vai |
+| Tính cách nối được với gameplay | Noor với Oxy và quyết định quay về (pillar CP2), Mei với Driftlife và "nuôi thay vì săn" (B10), Tariq với kéo đồng đội đang ngạt về, Jonas với không khí ở cảng và thương nhân |
+| Cặp MVP Noor và Jonas tương phản tốt | Kỷ luật đi với tinh thần, một người nghiêm một người cười. Bản trình diễn co-op 2 người có cảm xúc |
+| Tiếng cười chia đều | Mei hậu đậu, Tariq nóng nảy, Noor là người đứng nghiêm làm nền, Jonas cười theo. Không dồn hết vào một người |
+| Ngang nhau, khớp luật co-op | Không ai là thủ lĩnh cố định, khớp với việc nhân vật người chơi không ai có lợi thế gameplay (luật 10) |
+
+### Nhược điểm và cách sửa
+
+| Nhược | Vì sao là vấn đề | Cách sửa |
+|---|---|---|
+| Vòng đỡ nhau chỉ khép kín khi đủ 4 người | Vòng là Noor đỡ Tariq, Tariq đỡ Mei, Mei đỡ Jonas, Jonas đỡ Noor. Cặp MVP Noor và Jonas thì Jonas đỡ Noor, nhưng Noor không đỡ lại ai, vì Tariq không có mặt. Chơi 2 hay 3 người thì vòng bị gãy, có người chỉ nhận mà không cho | Đổi từ vòng một chiều sang đỡ hai chiều theo từng cặp: cặp nào cũng có cả hai hướng. Ví dụ Noor và Jonas: Jonas kéo Noor mở lòng, Noor giữ cho Jonas khỏi liều |
+| Chơi một mình thì không thấy tính cách nhóm | Chơi 1 người thì 3 người kia nằm chết trong buồng hỏng (luật 9). Mà chơi một mình là cách chơi chính | Tính cách từng người vẫn phải đứng được một mình: idle, biểu cảm, cách bay và cách nhặt đồ. Phần quan hệ nhóm chỉ là phần thưởng thêm khi co-op |
+| Tính cách không có tác dụng trong gameplay | Mei là "thiên tài phân tích" nhưng chơi Mei không phân tích được gì hơn người khác. Tariq là "người bảo vệ" nhưng va chạm vẫn 0,4 u như mọi người. Người chơi có thể thấy hình nói một đằng, chơi một nẻo | Không thêm chỉ số (sẽ phá luật công bằng co-op). Thể hiện thế mạnh bằng hoạt ảnh: Mei quét vật thể có động tác khác, Tariq kéo đồng đội có tư thế gồng, Noor kiểm Oxy kỹ hơn trong idle |
+| Dễ thành khuôn mẫu quen thuộc | Cô gái lạnh lùng, chàng trai vui vẻ, thiên tài đeo kính hậu đậu, võ sĩ nóng nảy đều là kiểu nhân vật rất quen | Mỗi người thêm một nét ngược với kiểu của mình. Noor lạnh nhưng giữ dải vải của mẹ và lén đeo vòng tay Jonas tặng. Tariq nóng nhưng băng bó cho đồng đội rất nhẹ tay. Jonas vui nhưng là người buồn lâu nhất khi có mất mát. Mei hậu đậu nhưng là người bình tĩnh nhất lúc nguy cấp |
+| Mei tròn và đáng yêu dễ bị đọc là linh vật hơn là thiên tài | Bộ não thường có dáng mảnh, góc cạnh | Dồn chất thông minh vào đồ dùng góc cạnh (kính dày, máy quét tự chế) và ánh mắt tập trung |
+| 2 nhân vật nam dễ nhầm khi tô đen | Jonas 1m76 và Tariq 1m74 | Xem mục 6 |
+| 16 tuổi đi cùng truyện có chiến tranh, bắt cóc, cách mạng | Có thể ảnh hưởng giọng truyện và độ tuổi phát hành | Cần gd-story xem lại các cảnh nặng có Mei |
+| Khối lượng hoạt ảnh tăng | 6 emote theo cặp và idle riêng từng người là thêm việc cho 1 artist | MVP chỉ làm cặp Noor và Jonas. 5 cặp còn lại để Sau MVP |
+
 ## 8. Khác với GDD hiện tại, cần duyệt
 
 | Thay đổi | GDD hiện tại | Đề xuất | Ai duyệt |
