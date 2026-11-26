@@ -541,3 +541,4 @@ Lead gửi khung 4 hình mẫu tính cách (CN, Disney), hình học cơ bản v
 - Chưa làm: áp cùng lăng kính cho 5 người vớt (họ có lời thoại, khung phát huy đủ), chờ Lead mở.
 - Lead xem concept bản 2, gửi ảnh mẫu 4 nhân vật dáng chắc: "kiểu như này đẹp mà, người kiểu kia dài ngoằng ấy". Tỉ lệ chung cả dàn nhân loại đổi sang dáng chắc khoảng 4,5 đầu, bàn tay và giày to, đồ dày có vết mòn. Niamh vẫn cao nhất (1,2 u) nhưng tỉ lệ thường, bỏ chân tay dài. Ảnh mẫu lưu ở `art/C/05-nhan-vat/ref-ti-le-lead.webp`.
 - Lead xem concept bản 3 (vẽ theo ảnh mẫu): "giờ thì người bị to quá béo béo". Tỉ lệ chung chốt ở giữa: khoảng 5,5 đầu, thân gọn khỏe, bàn tay và giày cỡ thường. Giữ chất vẽ của ảnh mẫu (nét mực, vết vá, bẩn, màu ấm).
+- Lead xem bảng so dáng bản 4: "nữ dáng người cao nhưng đừng để nó cao hơn mấy thằng đàn ông chứ". Niamh từ 1,2 u xuống 0,98 u, giữ dáng cao mảnh. Thứ tự chiều cao: Jonas 1,1, Việt 1,0, Niamh 0,98, Mei 0,9. PC nữ không cao hơn PC nam.

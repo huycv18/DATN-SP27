@@ -54,7 +54,7 @@ Vai: người sống sót của Ember, kíp vận hành trạm, không ai là ch
 | PC-1 | Slot 1 ○, cam Ember `#F26B1D` | Nguyễn Việt | Kíp vận hành trạm | Người truyền lửa | 1,0 u | Khối tròn, dáng chuẩn làm mốc: mũ tròn có ăng-ten chữ L bên phải, vai tròn, bình Oxy vuông ngang rộng sau lưng | Tóc đen dài ngang vai búi gọn dưới mũ, găng dày, bộ đồ cam xám than, đai dụng cụ chéo ngực | MVP |
 | PC-2 | Slot 2 △, lam ngọc `#1FB5D6` | Jonas Weber | Kíp vận hành trạm | Chỗ dựa | 1,1 u | Khối vuông: mũ vuông bo góc, vai rộng ngang, tay và bàn tay to, một bình Oxy dài dọc lưng kiểu thùng | Gọng kính trong mũ, bộ đồ lam xám, dây đai vai dày | MVP |
 | PC-3 | Slot 3 □, vàng chanh `#D8E21F` | Mei Tanaka | Kíp vận hành trạm | Cây hài | 0,9 u | Khối tròn phóng đại: mũ trứng có chóp sáng, đầu to hơn chuẩn, tay chân ngắn, balo tròn nhỏ | Tóc ngắn bồng thấy qua tấm kính mũ, bộ đồ vàng chanh đen, găng ngón mảnh | Sau MVP |
-| PC-4 | Slot 4 ◇, hồng tím `#D6309B` | Niamh Doyle | Kíp vận hành trạm | Bộ não | 1,2 u | Khối tam giác: cao và mảnh nhưng tỉ lệ thường, không chân tay dài, vai hẹp, mũ đáy phẳng kính vát góc, bình Oxy nghiêng trên vai, túi dụng cụ hông | Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông | Sau MVP |
+| PC-4 | Slot 4 ◇, hồng tím `#D6309B` | Niamh Doyle | Kíp vận hành trạm | Bộ não | 0,98 u | Khối tam giác: dáng cao và mảnh của một phụ nữ cao, không cao hơn hai PC nam, tỉ lệ thường, không chân tay dài, vai hẹp, mũ đáy phẳng kính vát góc, bình Oxy nghiêng trên vai, túi dụng cụ hông | Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông | Sau MVP |
 
 Tỉ lệ preset (luật 4, số khởi điểm, artist chỉnh khi thử 3 clip, giữ trong 0,8 đến 1,25). Hệ số nhân sau scale chiều cao. Hình khối theo quy ước tròn thân thiện, vuông vững, tam giác sắc:
 
@@ -63,11 +63,11 @@ Tỉ lệ preset (luật 4, số khởi điểm, artist chỉnh khi thử 3 clip
 | PC-1 Việt | Người truyền lửa | Tròn | 1,0 u | 1,0 | 1,0 | 1,0 | 1,0 | 1,0 |
 | PC-2 Jonas | Chỗ dựa | Vuông | 1,1 u | 1,0 | 1,2 | 1,05 | 1,2 | 1,0 |
 | PC-3 Mei | Cây hài | Tròn | 0,9 u | 1,2 | 0,9 | 1,05 | 0,85 | 0,85 |
-| PC-4 Niamh | Bộ não | Tam giác | 1,2 u | 1,0 | 0,9 | 0,95 | 1,0 | 1,05 |
+| PC-4 Niamh | Bộ não | Tam giác | 0,98 u | 1,0 | 0,9 | 0,95 | 1,0 | 1,05 |
 
 Tỉ lệ chung của cả dàn nhân loại: khoảng 5,5 đầu, thân gọn khỏe, bàn tay và giày cỡ thường, áo quần dày có vết mòn, vá, bẩn. Không dài ngoằng (bản 2), không to béo (bản 3). Mẫu tỉ lệ là ảnh Lead gửi 2026-11-26 (`art/C/05-nhan-vat/ref-ti-le-lead.webp`).
 
-Bốn nấc dáng: một người cao và mảnh (Niamh), một người thấp tròn (Mei), một người chuẩn (Việt), một người tỉ lệ phóng đại (Jonas tay to, Mei đầu to). Hình slot ○ △ □ ◇ là icon UI, không phải hình khối thân.
+Thứ tự chiều cao: Jonas 1,1, Việt 1,0, Niamh 0,98, Mei 0,9. Hai PC nữ không cao hơn hai PC nam (Lead 2026-11-26). Bốn nấc dáng: một người cao và mảnh (Niamh), một người thấp tròn (Mei), một người chuẩn (Việt), một người tỉ lệ phóng đại (Jonas tay to, Mei đầu to). Hình slot ○ △ □ ◇ là icon UI, không phải hình khối thân.
 
 Nhân dạng để art dựng (khớp `cot-truyen.md` khối GD-079, GD-079 Lead chốt 2026-11-25: bốn PC ngang nhau về luật, không vai trò hay kỹ năng riêng, 2 nam 2 nữ, không ai da màu, PC-1 là nam chính người Việt Nam):
 
@@ -390,6 +390,7 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | 2026-11-25 | Đội hình bốn PC mới: PC-1 Lê Quốc Bảo (nam Việt Nam), PC-4 Niamh Doyle (nữ Ireland), bảng giới tính, tuổi, da, tóc, nét mặt, bỏ râu và hộp y tế PC-4 (đổi túi dụng cụ thường), thêm 4 clip idle và 4 vật để lại vào yêu cầu art mục 7, bốn PC ngang nhau về luật | GD-079 | gd-character |
 | 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-079 | GDM |
 | 2026-11-25 | PC-4 đổi dáng: cao và mảnh, vai hẹp, bỏ vai rất rộng. Lead xem concept: "PC-4 đô con quá, cô ấy là phụ nữ mà" | GD-078 | GDM |
+| 2026-11-26 | Niamh từ 1,2 u xuống 0,98 u, vẫn dáng cao mảnh nhưng thấp hơn Việt và Jonas. Lead: "nữ dáng người cao nhưng đừng để nó cao hơn mấy thằng đàn ông chứ" | Lead xem bảng so dáng bản 4 | GDM |
 | 2026-11-26 | Tỉ lệ chung đổi sang khoảng 5,5 đầu, thân gọn khỏe, bàn tay và giày cỡ thường. Lead xem bản 3: "giờ thì người bị to quá béo béo" | Lead xem concept bản 3 | GDM |
 | 2026-11-26 | Tỉ lệ chung chắc, khoảng 4,5 đầu, theo ảnh mẫu Lead. Niamh bỏ "rất cao gầy, chân tay dài", bảng Tỉ lệ preset của Niamh về gần chuẩn (đầu 1,0, chân 1,05). Lead: "kiểu như này đẹp mà, người kiểu kia dài ngoằng ấy" | Lead xem concept bản 2 | GDM |
 | 2026-11-26 | Khung 4 vai tâm lý: cột Vai trong nhóm, silhouette theo hình khối (tròn, vuông, tròn phóng đại, tam giác), bảng Tỉ lệ preset, luật 4 cho chỉnh tỉ lệ xương riêng từng preset 0,8 đến 1,25 lần, nét mặt và clip idle mới. Không đổi chỉ số, va chạm, slot, màu | Lead duyệt `de-xuat-4-pc-vai-tam-ly.md` | GDM |

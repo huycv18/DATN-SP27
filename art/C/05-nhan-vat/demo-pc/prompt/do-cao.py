@@ -21,6 +21,6 @@ cao = []
 for a, b in cum:
     ys = [y for y in range(y0, H - 30) if any(den(x, y) for x in range(a, b + 1, 2))]
     cao.append(ys[-1] - ys[0])
-MUC_TIEU = [1.2, 1.1, 1.0, 0.9]  # Niamh, Jonas, Việt, Mei theo bảng Tỉ lệ preset
+MUC_TIEU = [0.98, 1.1, 1.0, 0.9]  # Niamh, Jonas, Việt, Mei theo bảng Tỉ lệ preset
 for ten, h, mt in zip(["Niamh", "Jonas", "Việt", "Mei"], cao, MUC_TIEU):
     print(f"{ten}: {h} px, {h / cao[2]:.2f} lần Việt, mục tiêu {mt}")
