@@ -1,0 +1,13 @@
+Attached: pc1.png, pc2.png, pc3.png, pc4.png = character concept sheets of 4 crew members. Use them ONLY as the exact reference for each character's face, hair, outfit colors, shape language and proportions. Do not copy their layout.
+
+Make ONE wide character LINEUP sheet in the same art style (bold dark outline #1B1530, flat cel shading, cream background #F5EFE0, no scenery).
+
+TOP HALF: the 4 characters standing side by side on one shared ground line, full body, front three-quarter view, in their charcoal STATION jumpsuits (no space suit, no helmet), each in a pose matching their personality. Faint thin horizontal guide lines behind them to compare height. Left to right, with these relative heights:
+1. pc4.png woman (magenta accents): TALLEST, height 1.2, very tall and slim, long limbs, small head, angular triangle shapes, checking her wrist gauge.
+2. pc2.png man with glasses (teal accents): height 1.1, broad square shoulders, big hands, boxy, arms crossed, calm.
+3. pc1.png man with black bun (orange accents): height 1.0, normal proportions, rounded friendly shapes, fist into palm, eager grin.
+4. pc3.png woman with short fluffy bob (lime accents): SHORTEST, height 0.9, big head, short limbs, round body, bouncing playfully. Still an adult woman.
+
+BOTTOM HALF: the exact same 4 figures in the exact same poses and positions, filled solid black as pure silhouettes (no inner lines), to test that each one is recognizable from the silhouette alone.
+
+No text, no letters, no numbers, no labels.

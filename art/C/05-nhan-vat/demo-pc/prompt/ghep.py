@@ -4,10 +4,10 @@ from PIL import Image, ImageDraw, ImageFont
 src, dst = sys.argv[1], sys.argv[2]
 os.makedirs(dst, exist_ok=True)
 CARDS = [
-    ("pc1.png", "PC-1  Nguyễn Việt", "Việt Nam - nam, 29 - slot cam ○ - MVP"),
-    ("pc2.png", "PC-2  Jonas Weber", "Đức - nam, 34 - slot lam ngọc △ - MVP"),
-    ("pc3.png", "PC-3  Mei Tanaka", "Nhật Bản - nữ, 26 - slot vàng chanh □ - Sau MVP"),
-    ("pc4c.png", "PC-4  Niamh Doyle", "Ireland - nữ, 36 - slot hồng tím ◇ - Sau MVP"),
+    ("pc1.png", "PC-1  Nguyễn Việt", "Người truyền lửa - Việt Nam, nam, 29 - slot cam ○ - MVP"),
+    ("pc2.png", "PC-2  Jonas Weber", "Chỗ dựa - Đức, nam, 34 - slot lam ngọc △ - MVP"),
+    ("pc3.png", "PC-3  Mei Tanaka", "Cây hài - Nhật Bản, nữ, 26 - slot vàng chanh □ - Sau MVP"),
+    ("pc4.png", "PC-4  Niamh Doyle", "Bộ não - Ireland, nữ, 36 - slot hồng tím ◇ - Sau MVP"),
 ]
 F = "C:/Windows/Fonts/"
 big = ImageFont.truetype(F + "segoeuib.ttf", 44)
@@ -27,7 +27,7 @@ for i, (f, name, sub) in enumerate(CARDS):
         cx += d.textlength(part + " ", font=f2)
     del cx
     sheet.paste(im, (x, y + BAR))
-    im.save(os.path.join(dst, f.replace("pc4c", "pc4").replace(".png", ".webp")), quality=88)
+    im.save(os.path.join(dst, f.replace(".png", ".webp")), quality=88)
 sheet.save(os.path.join(dst, "doi-hinh-4-pc.webp"), quality=88)
 sheet.resize((W, W + BAR)).save(os.path.join(src, "preview.png"))
 print("ok", sheet.size)

@@ -1,0 +1,10 @@
+Attached: doihinh.png = the previous version of this lineup sheet. EDIT it.
+
+Keep EVERYTHING the same: the 4 characters, their faces, outfits, colors, poses, order, the shared ground line, the faint guide lines, the cream background, and the bottom row of solid black silhouettes mirroring the top row.
+
+Change ONLY the heights, in BOTH rows, measured from the ground line to the top of the head (hair included). Take the orange-accent man (third figure) as 1.0 and keep him exactly as he is:
+1. The magenta woman (first figure, left) must be 1.2 times his height: clearly the tallest by a lot, stretch her legs and torso longer, keep her slim.
+2. The teal man with glasses (second figure) must be 1.1 times his height.
+3. The lime woman with fluffy hair (fourth figure) stays 0.9 times his height.
+
+No text, no letters, no numbers, no labels.
