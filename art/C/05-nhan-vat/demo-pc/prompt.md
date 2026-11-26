@@ -18,16 +18,16 @@ Bản 4 ngày 2026-11-26 là bản hiện hành. Khung 4 vai tâm lý Lead duy�
 
 Bản 3 vẽ bằng `codex-img.sh -e medium -i ref.png -i <tấm bản 2> prompt/v3-pcN.txt`. Bản 4 sửa từ tấm bản 3: `codex-img.sh -e medium -i <tấm bản 3> prompt/v4-pcN.txt`, chỉ thon người khoảng 20%, giày và găng về cỡ thường. Bảng so dáng bản 4: `prompt/v4-doihinh.txt`, rồi `prompt/v4-doihinh-b.txt` chỉnh chiều cao.
 
-Chiều cao trên `so-dang-4-pc.webp` bản 4, đo hàng tô đen bằng `python -X utf8 -P prompt/do-cao.py so-dang-4-pc.webp`:
+Chiều cao trên `so-dang-4-pc.webp` bản 4, đo hàng tô đen bằng `python -X utf8 -P prompt/do-cao.py so-dang-4-pc.webp`. Lead: "nữ dáng người cao nhưng đừng để nó cao hơn mấy thằng đàn ông chứ", nên Niamh hạ xuống 0,98 u (vòng `prompt/v4-doihinh-c.txt`):
 
 | Người | Đo được (lần Việt) | Mục tiêu GDD |
 |---|---|---|
-| Niamh | 1,10 | 1,2 |
 | Jonas | 1,07 | 1,1 |
 | Việt | 1,00 | 1,0 |
+| Niamh | 0,96 | 0,98 |
 | Mei | 0,90 | 0,9 |
 
-GPT nén chênh lệch chiều cao, 2 vòng chỉnh vẫn không kéo Niamh lên. Artist dựng theo số GDD, không theo ảnh này.
+Thứ tự đúng GDD. Artist dựng theo số GDD, không theo ảnh này.
 
 ## Lịch sử bản 2
 
