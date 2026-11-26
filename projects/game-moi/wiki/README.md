@@ -35,3 +35,9 @@ Link: https://claude.ai/artifact/DpJKfUbVkGY29EGuA6dXme (đăng 2026-11-26). M�
 
 Đăng lại sau khi sửa GDD: chạy `node projects/game-moi/tools/xuat-wiki.mjs --artifact <thư mục>`, rồi nhờ Claude đăng lại đúng link trên với file `index.html` và 4 ảnh trong `anh/`. Bản đăng nhúng thẳng CSS daisyUI vì khung Artifact chặn stylesheet ngoài Google Fonts. Link trong trang dùng dạng `#loai--MA` vì khung chỉ giữ hash chữ, số, gạch nối.
 
+## Web công khai (GitHub Pages)
+
+Link: https://huycv18.github.io/DATN-SP27/ (bật 2026-11-26, Lead: "Cho đẩy và bật"). Ai có link cũng xem được, không cần đăng nhập. Trang chạy từ nhánh `gh-pages`, nhánh này chỉ chứa bản dựng, không có lịch sử chung với `main`.
+
+Cập nhật sau khi sửa GDD: chạy `node projects/game-moi/tools/xuat-wiki.mjs --pages <thư mục>`, commit thư mục đó vào nhánh `gh-pages` rồi đẩy lên (cần Lead cho push). Trang không tự cập nhật theo repo.
+
