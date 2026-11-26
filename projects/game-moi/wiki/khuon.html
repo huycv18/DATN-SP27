@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="vi" data-theme="novent-dark">
+<html lang="vi">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,9 @@
   (() => {
     let t = null;
     try { t = localStorage.getItem('novent-wiki-theme'); } catch {}
-    document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'novent-light' : 'novent-dark');
+    // Trang Artifact: khung xem có thể đã đặt data-theme theo lựa chọn của người xem, giữ nguyên.
+    const r = document.documentElement;
+    r.dataset.theme = t || r.dataset.theme || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +29,7 @@
 </style>
 <style>
 /* Hai theme daisyUI riêng của game: nền đêm tím than, nhấn cam Ember (#F26B1D, màu slot 1). */
-[data-theme="novent-dark"] {
+[data-theme="dark"] {
   color-scheme: dark;
   --color-base-100: #14111f; --color-base-200: #0e0c17; --color-base-300: #262138; --color-base-content: #e9e5f5;
   --color-primary: #f26b1d; --color-primary-content: #1b0d04;
@@ -41,7 +43,7 @@
   --radius-selector: 0.5rem; --radius-field: 0.6rem; --radius-box: 1rem;
   --size-selector: 0.25rem; --size-field: 0.25rem; --border: 1px; --depth: 1; --noise: 0;
 }
-[data-theme="novent-light"] {
+[data-theme="light"] {
   color-scheme: light;
   --color-base-100: #fffdf8; --color-base-200: #f4f1ea; --color-base-300: #e4ddd0; --color-base-content: #1b1530;
   --color-primary: #e05a10; --color-primary-content: #fff;
@@ -98,8 +100,8 @@ code { font-family: var(--font-mono); font-size: .82em; padding: .1em .4em; bord
       <kbd class="kbd kbd-sm max-md:hidden">/</kbd>
     </label>
     <button id="doi-theme" class="btn btn-sm btn-ghost btn-square" aria-label="Đổi sáng tối">
-      <svg class="size-[18px] hidden [[data-theme=novent-dark]_&]:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-      <svg class="size-[18px] hidden [[data-theme=novent-light]_&]:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      <svg class="size-[18px] hidden [[data-theme=dark]_&]:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-14.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      <svg class="size-[18px] hidden [[data-theme=light]_&]:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     </button>
   </div>
 </header>
@@ -141,7 +143,7 @@ const RE_MA = new RegExp(`\\b(${[...THEO_MA.keys()].sort((a, b) => b.length - a.
 
 // Chữ trong GDD: mã thành link, `mã` thành code, mã màu thành ô màu, **đậm**.
 const md = (s, bo = '') => esc(s)
-  .replace(RE_MA, (ma) => ma === bo ? ma : `<a class="lien" href="#${THEO_MA.get(ma).loai.id}/${ma}" title="${esc(THEO_MA.get(ma).ten)}">${ma}</a>`)
+  .replace(RE_MA, (ma) => ma === bo ? ma : `<a class="lien" href="#${THEO_MA.get(ma).loai.id}--${ma}" title="${esc(THEO_MA.get(ma).ten)}">${ma}</a>`)
   .replace(/`(#[0-9A-Fa-f]{6})`/g, '<span class="chip whitespace-nowrap" style="--c:$1"><i></i><code>$1</code></span>')
   .replace(/`([^`]+)`/g, '<code>$1</code>')
   .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
@@ -165,7 +167,7 @@ const anhNho = (m, cl) => m.anh
 let loc = '', tu = '';
 
 function duongDan() {
-  const [l, ma] = decodeURIComponent(location.hash.slice(1)).split('/');
+  const [l, ma] = decodeURIComponent(location.hash.slice(1)).split('--'); // khung Artifact chỉ giữ hash chữ, số, gạch nối
   const loai = DATA.loai.find((x) => x.id === l) || DATA.loai[0];
   return { loai, ma };
 }
@@ -189,7 +191,7 @@ function veDanhSach() {
     return `<li><details ${mo ? 'open' : ''}>
       <summary class="text-[11px] uppercase tracking-[.08em] font-bold opacity-70">${esc(g.ten)}<span class="ml-auto badge badge-xs badge-ghost tabular-nums">${muc.length}</span></summary>
       <ul class="before:hidden ms-0 ps-0">${muc.map((m) => `<li>
-        <a class="dong gap-3 py-2 ${m.ma === ma ? 'active-muc' : ''}" href="#${loai.id}/${m.ma}" ${m.ma === ma ? 'aria-current="page"' : ''}>
+        <a class="dong gap-3 py-2 ${m.ma === ma ? 'active-muc' : ''}" href="#${loai.id}--${m.ma}" ${m.ma === ma ? 'aria-current="page"' : ''}>
           ${anhNho(m, 'size-8 rounded-lg shrink-0 text-[11px]')}
           <span class="min-w-0 grow"><span class="block font-semibold leading-tight truncate">${esc(m.ten)}</span><span class="block font-mono text-[11px] opacity-75">${esc(m.ma)}</span></span>
           ${theNhan(m.nhan, 'badge-xs')}
@@ -211,7 +213,7 @@ function veHoSo() {
   const nhanh = loai.nhanh.map((k) => m.truong.find((t) => t[0] === k && t[1].length <= 60)).filter(Boolean).slice(0, 4);
   const mauTruong = m.truong.find((t) => /màu nhận diện/i.test(t[0]));
   const cung = m.nhom.muc, i = cung.indexOf(m);
-  const ke = (x, huong) => x ? `<a href="#${loai.id}/${x.ma}" class="btn btn-ghost btn-sm max-w-[48%] font-medium">
+  const ke = (x, huong) => x ? `<a href="#${loai.id}--${x.ma}" class="btn btn-ghost btn-sm max-w-[48%] font-medium">
       ${huong === 'lui' ? ICON.lui : ''}<span class="truncate">${esc(x.ten)}</span>${huong === 'toi' ? ICON.toi : ''}</a>` : '<span></span>';
   const phan = [...m.phan.map((p) => ({ ten: p.ten, html: `<dl class="divide-y divide-base-300/70">${p.truong.map(([k, v]) => `
       <div class="grid sm:grid-cols-[220px_minmax(0,1fr)] gap-x-6 gap-y-1 py-3">
@@ -285,7 +287,7 @@ document.querySelectorAll('[data-loc]').forEach((b) => b.addEventListener('click
 }));
 document.querySelector('[data-loc=""]').classList.add('btn-primary');
 $('#doi-theme').addEventListener('click', () => {
-  const t = document.documentElement.dataset.theme === 'novent-dark' ? 'novent-light' : 'novent-dark';
+  const t = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
   document.documentElement.dataset.theme = t;
   try { localStorage.setItem('novent-wiki-theme', t); } catch {}
 });

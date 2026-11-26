@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { kiem } from './validate-gdd.mjs';
-import { trichNhanVat, trichDriftlife, dung as dungWiki } from './xuat-wiki.mjs';
+import { trichNhanVat, trichDriftlife, dung as dungWiki, choArtifact } from './xuat-wiki.mjs';
 
 let ok = 0;
 const t = (ten, fn) => { fn(); ok++; console.log(`ĐẠT  ${ten}`); };
@@ -364,6 +364,13 @@ t('xuat-wiki: cột khóa không phải cột đầu, ô nhiều mã, mã lặp 
   assert.deepEqual(jaw.phan.find((p) => p.ten === 'Di chuyển').truong, [['Tốc độ', '1,5']]);
   assert.deepEqual(jaw.bangCon, [{ ten: 'Đòn', head: ['Đòn', 'DMG'], rows: [['Đớp', '12'], ['Cắn', '5']] }]);
   assert.equal(l.nhom[0].ten, 'Vành đai ngoài');
+});
+t('xuat-wiki: bản Artifact bỏ thẻ khung, body thành div, ảnh về anh/', () => {
+  const html = '<!doctype html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="x">\n<title>W</title>\n</head>\n<body class="a b">\n<img src="../../../art/C/05-nhan-vat/demo-pc/pc1.webp">\n</body>\n</html>\n';
+  const ra = choArtifact(html);
+  assert.ok(ra.startsWith('<title>W</title>'));
+  assert.ok(ra.includes('<div class="a b">') && ra.includes('src="anh/pc1.webp"'));
+  assert.ok(!/<(html|head|body|meta)\b/i.test(ra));
 });
 
 console.log(`\n${ok} phép kiểm ĐẠT.`);

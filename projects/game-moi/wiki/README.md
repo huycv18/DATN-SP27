@@ -28,3 +28,10 @@ node projects/game-moi/tools/xuat-wiki.mjs --kiem
 `--kiem` thoát 1 khi `index.html` cũ hơn GDD.
 
 Thêm loại mới: viết hàm `trich<Loai>()` trong `xuat-wiki.mjs` (thường chỉ cần gọi `gomTheoMa` với file nguồn và regex mã, rồi `chiaNhom`), thêm vào `LOAI()`. Giao diện tự hiện thêm tab. Ảnh concept khai báo ở bảng `ANH` trong script.
+
+## Bản đăng web (Artifact claude.ai)
+
+Link: https://claude.ai/artifact/DpJKfUbVkGY29EGuA6dXme (đăng 2026-11-26). Mặc định riêng tư, chia sẻ ở menu Share trên trang.
+
+Đăng lại sau khi sửa GDD: chạy `node projects/game-moi/tools/xuat-wiki.mjs --artifact <thư mục>`, rồi nhờ Claude đăng lại đúng link trên với file `index.html` và 4 ảnh trong `anh/`. Bản đăng nhúng thẳng CSS daisyUI vì khung Artifact chặn stylesheet ngoài Google Fonts. Link trong trang dùng dạng `#loai--MA` vì khung chỉ giữ hash chữ, số, gạch nối.
+

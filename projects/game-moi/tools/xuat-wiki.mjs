@@ -5,7 +5,7 @@
 // Cách ghép: bảng nào có một cột mà phần lớn ô mở đầu bằng mã (DL-G01, RES-101...) thì mỗi hàng ghép vào mục có mã đó,
 // thành một phần đặt tên theo câu dẫn hoặc tiêu đề của bảng. Mã lặp nhiều hàng trong một bảng (bảng đòn) thì giữ nguyên thành bảng con.
 // Thêm loại mới: thêm một mục vào LOAI() với file nguồn, regex mã, cách chia nhóm.
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -185,6 +185,19 @@ export function dung(khuon, loai) {
   return khuon.replace('/*DATA*/null', () => json); // hàm để $ trong dữ liệu không bị hiểu là mẫu thay thế
 }
 
+// Bản đăng Artifact: khung xem tự bọc doctype, head, body, nên bỏ các thẻ đó (body thành div giữ class),
+// và ảnh nằm cạnh trang ở thư mục anh/ thay vì đường dẫn tương đối ra ngoài repo.
+export function choArtifact(html) {
+  const ra = html
+    .replace(/<!doctype html>\s*/i, '').replace(/<html[^>]*>\s*/i, '').replace(/<\/html>\s*$/i, '')
+    .replace(/<head>\s*/i, '').replace(/<\/head>\s*/i, '')
+    .replace(/<meta charset[^>]*>\s*/i, '').replace(/<meta name="viewport"[^>]*>\s*/i, '')
+    .replace(/<body([^>]*)>/i, '<div$1>').replace(/<\/body>/i, '</div>')
+    .replaceAll('../../../art/C/05-nhan-vat/demo-pc/', 'anh/');
+  if (/<(html|head|body)/i.test(ra) || !ra.trimStart().startsWith('<title>')) throw new Error('Bản Artifact còn thẻ khung hoặc title không đứng đầu');
+  return ra;
+}
+
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const loai = LOAI();
   const html = dung(readFileSync(KHUON, 'utf8'), loai);
@@ -195,6 +208,19 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     // git autocrlf trả CRLF trên Windows, so theo nội dung.
     if (cu.replace(/\r\n/g, '\n') !== html) { console.log('TRẢ LẠI  wiki/index.html cũ hơn GDD, chạy lại node projects/game-moi/tools/xuat-wiki.mjs'); process.exit(1); }
     console.log(`ĐẠT  wiki khớp GDD. ${dem}`);
+  } else if (process.argv.includes('--artifact')) {
+    const ra = process.argv[process.argv.indexOf('--artifact') + 1];
+    mkdirSync(join(ra, 'anh'), { recursive: true });
+    // Khung Artifact chỉ cho nạp script từ CDN, stylesheet ngoài Google Fonts bị chặn, nên nhúng thẳng CSS daisyUI.
+    const link = '<link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.43" rel="stylesheet" type="text/css">';
+    const css = await (await fetch('https://cdn.jsdelivr.net/npm/daisyui@5.0.43/daisyui.css')).text();
+    const ban = choArtifact(html);
+    if (!ban.includes(link) || css.length < 100000 || css.includes('</style')) throw new Error('Không nhúng được CSS daisyUI');
+    writeFileSync(join(ra, 'index.html'), ban.replace(link, () => `<style>
+${css}
+</style>`));
+    for (const f of Object.values(ANH)) copyFileSync(join(GAME, 'wiki', f), join(ra, 'anh', f.split('/').pop()));
+    console.log(`Đã ghi bản Artifact vào ${ra}. ${dem}`);
   } else {
     writeFileSync(RA, html);
     console.log(`Đã ghi wiki/index.html. ${dem}`);
