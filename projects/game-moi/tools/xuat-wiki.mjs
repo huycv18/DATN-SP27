@@ -144,7 +144,7 @@ export function trichNhanVat(hoSo, cotTruyen) {
   }
   const nhom = chiaNhom(map, (m) => NHOM_NV[m.ma.replace(/\d+$/, '')], Object.values(NHOM_NV),
     (ds) => hs.muc[ds[0].td] || [], (ds) => `ho-so-nhan-vat.md mục ${ds[0].td.split(' ')[0]}`);
-  return { id: 'nhan-vat', ten: 'Nhân vật', nhanh: ['Vai', 'Vai truyện', 'Chủng', 'Chiều cao', 'Chiều cao, tỉ lệ', 'Tên, quốc gia', 'Giới tính, tuổi', 'Chương'], nhom };
+  return { id: 'nhan-vat', ten: 'Nhân vật', nhanh: ['Vai trong nhóm', 'Vai', 'Vai truyện', 'Chủng', 'Chiều cao', 'Chiều cao, tỉ lệ', 'Tên, quốc gia', 'Giới tính, tuổi', 'Chương'], nhom };
 }
 
 const ID_DL = /DL-[GMX]\d{2}|WD-\d{2}|BS-\d+/;

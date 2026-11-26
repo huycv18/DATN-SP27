@@ -58,7 +58,7 @@ Vai: người sống sót của Ember, kíp vận hành trạm, không ai là ch
 
 Tỉ lệ preset (luật 4, số khởi điểm, artist chỉnh khi thử 3 clip, giữ trong 0,8 đến 1,25). Hệ số nhân sau scale chiều cao. Hình khối theo quy ước tròn thân thiện, vuông vững, tam giác sắc:
 
-| Preset | Vai trong nhóm | Hình khối | Chiều cao | Đầu | Vai | Hông | Tay, bàn tay | Chân |
+| Preset | Vai trong nhóm | Hình khối | Chiều cao | Đầu | Bề rộng vai | Hông | Tay, bàn tay | Chân |
 |---|---|---|---|---|---|---|---|---|
 | PC-1 Việt | Người truyền lửa | Tròn | 1,0 u | 1,0 | 1,0 | 1,0 | 1,0 | 1,0 |
 | PC-2 Jonas | Chỗ dựa | Vuông | 1,1 u | 1,0 | 1,2 | 1,05 | 1,2 | 1,0 |
