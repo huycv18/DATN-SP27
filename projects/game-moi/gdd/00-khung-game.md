@@ -265,7 +265,20 @@ PvP. Chơi chung một máy. Tiền thứ hai. XP và cấp nhân vật. Hệ đ
 
 ## 12. Phạm vi MVP đề xuất (G, Lead nên xem lại vì chạm thời hạn)
 
-Chương 1 trọn vẹn: Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến, 3 đến 4 loài Driftlife, bắt sống loài nhỏ bằng lưới và 1 loại hàng Driftlife sống ở cảng, 1 boss nhỏ, co-op 2 người chạy được. GDD viết cho cả game, mỗi mục ghi nhãn MVP hoặc Sau MVP.
+Chương 1 trọn vẹn, dài 1,5 đến 2 giờ (sim 1,77 giờ). GDD viết cho cả game, mỗi mục ghi nhãn MVP hoặc Sau MVP. Danh sách nội dung MVP (làm rõ 2026-11-25, không đổi phạm vi):
+
+| Phần | MVP |
+|---|---|
+| Map | Vành đai ngoài (Ember Anchorage), 1 map nhánh Station Cinder (xác Seed Station) |
+| Người vớt | Ingrid (Kỹ sư), Linh (Thông dịch viên) |
+| Trạm | 8 khoang: Buồng ngủ đông, Cửa khí, Kho, Khoang neo, Xưởng, Khoang liên lạc, Cảng, Động cơ chính |
+| Giờ giao thương | 1 bến 3 cửa neo, thương nhân Tikko và Tàu vội, 1 loại hàng phải chế trước (CGO-113), 1 loại hàng Driftlife sống |
+| Driftlife | 4 loài: Driftmoth, Skitter Ray, Sting Krill, Arc Eel (Arc Eel chỉ hạ). Bắt sống cỡ S bằng lưới |
+| Boss | Scrapmaw (BS-1) |
+| Hazard | Mảnh trôi, Cáp chập, Ống xì |
+| Co-op | Online 2 người (L, 2026-11-23) |
+
+Priority ở tab Assets (GDM đặt 2026-11-25): Highest là vòng lõi chơi thử (một chuyến ra bãi vỡ, nhặt, gặp Driftlife, về trạm). High là trọn một ngày (người vớt, xưởng, giờ giao thương, co-op 2 người). Medium là trọn chương 1 (boss, cảnh truyện, hoạt ảnh NPC, VFX phụ). Low là Sau MVP.
 
 ## 13. Art Direction (L phong cách, G phần còn lại)
 
@@ -283,7 +296,7 @@ Chương 1 trọn vẹn: Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Th
 
 - Nhóm: 1 Game Designer, 4 Game Developer, 1 Artist 2D. Unity, PC, co-op online 2 đến 4 người
 - Cả game: 5 chương, 3 dải map tổng, 8 map nhánh, 15 loài Driftlife, 4 đơn vị The Wardens, 5 boss, khoảng 150 vật phẩm, 5 người vớt, 5 thương nhân, 12 đến 15 giờ chơi một mình
-- MVP: trọn chương 1. Vành đai ngoài, 1 xác Seed Station, Kỹ sư và Thông dịch viên, xưởng, giờ giao thương 1 bến có 1 loại kiện phải chế và 1 loại hàng Driftlife sống, bắt sống loài nhỏ bằng lưới, 3 đến 4 loài Driftlife, 1 boss nhỏ, co-op 2 người. Dài 1,5 đến 2 giờ
+- MVP: trọn chương 1, nội dung ở mục 12
 - Ngoài phạm vi: PvP, chơi chung một máy, tiền thứ hai, XP, sinh map thủ tục hoàn toàn, chọn chặng trên bản đồ, vùng chơi trên hành tinh Sennar hay hành tinh đích
 - Mốc thời gian: chưa có, chờ Lead. Phạm vi art tính lại khi có mốc
 - Chi tiết: tab TRACKING, MVP Criteria Checklist

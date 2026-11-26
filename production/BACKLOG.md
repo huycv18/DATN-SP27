@@ -2,7 +2,7 @@
 
 Mục đích: mọi việc có pipeline (nhiều hơn một agent hoặc nhiều hơn một lượt) có một dòng ở đây. Việc nhỏ GDM làm thẳng không cần dòng.
 Trạng thái: `todo` / `doing` / `review` / `done` / `blocked`. Chỉ GDM đặt `done`. Mã `GD-###` tăng dần, không tái dùng.
-Mã lớn nhất đã cấp: GD-077
+Mã lớn nhất đã cấp: GD-078
 
 | ID | Project | Việc | Agent | Phụ thuộc | Trạng thái | Tiêu chí hoàn thành |
 |---|---|---|---|---|---|---|
@@ -83,3 +83,4 @@ Mã lớn nhất đã cấp: GD-077
 | GD-075 | game-moi | Wireframe, HUD theo top-down | gd-ux | GD-070, GD-071 | done (gd-qa GD-076 ĐẠT) | ux-ui.md, WIREFRAME, Tutorials khớp mặt bằng mới, kiem-ux 0 lỗi |
 | GD-076 | game-moi | Nghiệm thu đợt 10 top-down | gd-qa | GD-070 tới GD-075 | done (gd-qa GD-076 ĐẠT) | qa/GD-076.md ĐẠT hoặc TRẢ LẠI kèm bằng chứng |
 | GD-077 | game-moi | Đề xuất bố cục top-down cho khung Figma UI-10 (trạm) và UI-40 (cảng) | gd-ux | GD-075 | done (Lead duyệt) | Hai wireframe SVG 1920x1080 có chú thích ở ux/de-xuat-topdown/, khớp tram-va-cang.md 2.6b và ux-ui.md, Lead duyệt rồi mới vẽ Figma |
+| GD-078 | game-moi | Cột Phiên bản (MVP, Sau MVP, MVP một phần) cho 19 tab GDD, cột Priority cho Assets | claude-cty, 3 subagent theo nhóm tab | Lead 2026-11-25 | done (23 tab doi-chieu KHỚP, kiem-de-doc ĐẠT) | Mỗi tab nội dung có cột Phiên bản, kiem-de-doc bắt hàng thiếu nhãn |

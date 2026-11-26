@@ -22,14 +22,25 @@ const CAM = [
   [/projects\/game-moi\//, 'Đường dẫn dài (Ref chỉ ghi <file>.md mục X)'],
 ];
 const DAI_TOI_DA = 300; // ký tự mỗi dòng trong ô
+// Cột Phiên bản (Lead 2026-11-25): tab nội dung phải có, mỗi hàng một giá trị hợp lệ
+const PHIEN_BAN = new Set(['MVP', 'Sau MVP', 'MVP một phần']);
+const CAN_PHIEN_BAN = new Set(['Assets', 'ITEM LIST', 'Salvage', 'Recipe', 'Shop', 'Upgrade', 'PROCESSING', 'Balance Sheet', 'Enemy', 'Customer', 'Zone', 'Player', 'GAME STORY', 'CORE LOOP', 'Day', 'Tutorials', 'WIREFRAME', 'MVP Criteria Checklist', 'Event Tracking']);
 
 export function kiemTab(tab, rows) {
   const loi = [];
   const hdr = rows[0] || [];
+  // GAME STORY có nhiều bảng con: cột lấy từ hàng header đầu tiên có chữ Phiên bản. Bỏ qua tiêu đề mục, hàng trống, hàng header
+  const cotPb = (rows.find((r) => r.includes('Phiên bản')) || []).indexOf('Phiên bản');
+  if (CAN_PHIEN_BAN.has(tab) && cotPb < 0) loi.push(['1', 'Thiếu cột Phiên bản', tab]);
+  if (cotPb >= 0) rows.forEach((r, i) => {
+    if (i === 0 || r.includes('Phiên bản') || r.filter((o, j) => j !== cotPb && o.trim()).length <= 1) return;
+    if (!PHIEN_BAN.has((r[cotPb] || '').trim())) loi.push([`${String.fromCharCode(65 + cotPb)}${i + 1}`, 'Phiên bản sai', r[cotPb] || '(trống)']);
+  });
   const cotId = KHONG_SO_ID.has(tab) ? [] : hdr.map((h, i) => (COT_ID.has(h.trim()) ? i : -1)).filter((i) => i >= 0);
   rows.forEach((r, ri) => {
     r.forEach((o, ci) => {
       const vt = `${String.fromCharCode(65 + ci)}${ri + 1}`;
+      if (o.startsWith('=IMAGE(')) return; // ô ảnh: người đọc thấy ảnh, không thấy link
       if (ri > 0 && cotId.includes(ci) && o.trim() && !/^\d+$/.test(o.trim()) && !o.startsWith('#')) loi.push([vt, 'ID không phải số thứ tự', o]);
       const ma = [...o.matchAll(MA)].map((m) => m[0]).filter((m) => !CHO_PHEP.test(m));
       if (ma.length) loi.push([vt, 'Còn mã', [...new Set(ma)].slice(0, 6).join(', ')]);

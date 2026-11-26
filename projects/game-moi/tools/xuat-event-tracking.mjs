@@ -8,7 +8,9 @@ import { fileURLToPath } from 'node:url';
 const GOC = join(dirname(fileURLToPath(import.meta.url)), '..');
 const NGUON = join(GOC, 'gdd', 'he-thong', 'ky-thuat.md');
 const RA = join(GOC, 'gdd', 'sheet', 'Event Tracking.tsv');
-const HEADER = ['No', 'Group', 'Event Name', 'When To Send', 'Event Params Key', 'Description', 'Value Type'];
+const HEADER = ['No', 'Group', 'Event Name', 'When To Send', 'Event Params Key', 'Description', 'Value Type', 'Phiên bản'];
+// Sự kiện của tính năng Sau MVP (sự cố trạm từ chương 3, nuôi Driftlife ở khoang sinh quyển). Còn lại là MVP
+const SAU_MVP = new Set(['incident', 'creature_born']);
 // Kiểu của trường chung ở luật 24 (luật chỉ liệt kê tên)
 const KIEU_CHUNG = { session_id: 'string', world_id: 'string', world_seed: 'int', build: 'string', t: 'float', play_seconds_total: 'float', day: 'int', chapter: 'int', n_players: 'int', slot: 'int' };
 
@@ -49,7 +51,7 @@ export function sinh(md) {
     'Ghi ra file JSON Lines cục bộ mỗi phiên, không gửi mạng. Sự kiện do host nắm chỉ máy host ghi, sự kiện của người chơi mỗi máy tự ghi, gộp theo session_id (luật 23 đến 25)',
     chung.map((k) => KIEU_CHUNG[k]).join('\n')]);
   rows.push(['Ref', '', '', '', '',
-    'Bản đủ: projects/game-moi/gdd/he-thong/ky-thuat.md mục 2.4 (cột Nguồn ghi GDD sinh ra từng sự kiện). Sự kiện của tính năng Sau MVP chỉ ghi khi tính năng có trong build. Tab sinh bằng projects/game-moi/tools/xuat-event-tracking.mjs, không sửa tay', '']);
+    'Bản đủ: projects/game-moi/gdd/he-thong/ky-thuat.md mục 2.4 (cột Nguồn ghi GDD sinh ra từng sự kiện). Sự kiện của tính năng Sau MVP chỉ ghi khi tính năng có trong build. Tab sinh bằng projects/game-moi/tools/xuat-event-tracking.mjs, không sửa tay', '', '', 'MVP']);
   return { rows, loi };
 }
 
