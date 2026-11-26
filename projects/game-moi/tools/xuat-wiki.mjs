@@ -132,7 +132,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   if (process.argv.includes('--kiem')) {
     let cu = '';
     try { cu = readFileSync(RA, 'utf8'); } catch {}
-    if (cu !== html) { console.log('TRẢ LẠI  wiki/index.html cũ hơn GDD, chạy lại node projects/game-moi/tools/xuat-wiki.mjs'); process.exit(1); }
+    // git autocrlf trả CRLF trên Windows, so theo nội dung.
+    if (cu.replace(/\r\n/g, '\n') !== html) { console.log('TRẢ LẠI  wiki/index.html cũ hơn GDD, chạy lại node projects/game-moi/tools/xuat-wiki.mjs'); process.exit(1); }
     console.log(`ĐẠT  wiki khớp GDD. ${dem}`);
   } else {
     writeFileSync(RA, html);
