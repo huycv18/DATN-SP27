@@ -67,12 +67,12 @@ Bản trước dùng vòng một chiều (Noor đỡ Tariq, Tariq đỡ Mei, Mei
 
 ## 4. Nét ngược tính cách
 
-Mỗi người có một mặt trái với vẻ ngoài. Mặt này lộ ra từ từ qua truyện và qua một vài hoạt ảnh hiếm, làm nhân vật bớt khuôn mẫu. Bốn nét ngược cũng nối với nhau: Noor sợ mất người, Jonas đã mất người, Mei hết lóng ngóng lúc nguy, Tariq dịu dàng với thứ mong manh.
+Mỗi người có một mặt trái với vẻ ngoài. Mặt này lộ ra từ từ qua truyện và qua một vài hoạt ảnh hiếm, làm nhân vật bớt khuôn mẫu. Bốn nét ngược không trùng nhau và mỗi cái gắn với một thứ khác trong game: Noor với đồng đội, Jonas với khoảng không, Mei với lúc nguy cấp, Tariq với thứ mong manh.
 
 | Người | Vẻ ngoài | Nét ngược | Vì sao có | Lộ ra lúc nào | Hoạt ảnh |
 |---|---|---|---|---|---|
 | Noor | Lạnh, nghiêm, kỹ tính | Sợ nhất là mất người. Kỹ tính vì sợ, không phải vì thích ra lệnh | Ở thành phố sa mạc, Noor từng thấy hàng xóm bỏ đi vì không đủ nước và không quay lại | Lần đầu có đồng đội bị kéo về (ngạt hết Oxy) | Noor lao tới trước tiên, mặt hoảng thật sự, lần duy nhất mất bình tĩnh. Đeo lén vòng tay Jonas tặng dưới găng |
-| Jonas | Lạc quan, lúc nào cũng cười | Mang nỗi buồn giấu kín. Lạc quan là cách Jonas đứng vững | Gia đình Jonas không được chọn lên Cradle, Jonas đi một mình | Khi có mất mát trong truyện, Jonas là người buồn lâu nhất | Idle hiếm khi đứng yên lâu: ngồi xem lại ảnh trong máy ảnh, nụ cười tắt dần. Máy ảnh là để nhớ những người còn lại |
+| Jonas | Lạc quan, hăng hái, luôn đòi đi xa hơn | Sợ khoảng không. Người đòi đi xa nhất lại là người sợ ra ngoài nhất. Lạc quan của Jonas là dũng cảm chủ động: cười đi trước để người khác không sợ | Ở trại hè, Jonas dạy bọn trẻ vượt nỗi sợ bằng cách tự mình làm trước, dù chính Jonas sợ độ cao. Giờ khoảng không vô tận còn đáng sợ hơn | Mỗi lần đứng ở cửa khí trước chuyến bay. Noor là người duy nhất biết, và lặng lẽ đứng cạnh Jonas lúc đó | Ở cửa khí: tay bám khung cửa, hít sâu, tự vỗ hai má, rồi quay lại cười giơ ngón cái và lao ra trước |
 | Mei | Hậu đậu, hay tự ti | Bình tĩnh nhất lúc nguy cấp. Ngày thường lóng ngóng vì nghĩ quá nhiều, lúc nguy thì chỉ còn một việc để nghĩ | Thần đồng quen áp lực thi cử: càng gấp càng tỉnh | Khi Oxy của cả nhóm xuống thấp hoặc có người đang ngạt | Tay hết run, thao tác nhanh và chính xác, mắt sắc lại. Ngược hẳn với idle thường ngày |
 | Tariq | Nóng nảy, cơ bắp, hay đá máy móc | Cực kỳ nhẹ tay với thứ mong manh: băng bó, con Driftlife nhỏ, đồ của người khác | Lớn lên chăm em nhỏ ở khu lao động, học sơ cứu để băng cho em sau những trận đánh nhau | Khi băng bó cho đồng đội, hoặc khi gặp Driftlife non | Bàn tay to đeo băng quyền anh làm động tác rất chậm và cẩn thận, mặt dịu hẳn đi |
 
