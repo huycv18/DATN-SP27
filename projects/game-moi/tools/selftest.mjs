@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { kiem } from './validate-gdd.mjs';
-import { trichNhanVat, dung as dungWiki } from './xuat-wiki.mjs';
+import { trichNhanVat, trichDriftlife, dung as dungWiki } from './xuat-wiki.mjs';
 
 let ok = 0;
 const t = (ten, fn) => { fn(); ok++; console.log(`ĐẠT  ${ten}`); };
@@ -344,12 +344,26 @@ t('xuat-wiki: ghép bảng theo Mã và theo tên, tách tên phụ', () => {
   const g = (ten) => l.nhom.find((x) => x.ten === ten);
   const rs = g('Người vớt').muc[0];
   assert.equal(rs.ten, 'Rafael Ortega'); assert.equal(rs.tenPhu, 'Rafa'); assert.equal(rs.mau, '#B8665C');
-  assert.deepEqual(rs.truong.find(([h]) => h === 'Chương'), ['Chương', '2']);
+  assert.deepEqual(rs.phan.flatMap((p) => p.truong).find(([h]) => h === 'Chương'), ['Chương', '2']);
   assert.deepEqual(g('Người vớt').ghiChu, ['Ghi chú nhóm.']);
   const wd = g('The Wardens').muc[0];
   assert.equal(wd.ma, 'WD-P1'); assert.equal(wd.ten, 'Daskel'); assert.equal(wd.tenPhu, 'danh xưng First Warden');
   assert.match(dungWiki('<script>const D = /*DATA*/null</script>', [l]), /"Rafael Ortega"/);
   assert.throws(() => dungWiki('<html>', [l]), /DATA/);
+});
+t('xuat-wiki: cột khóa không phải cột đầu, ô nhiều mã, mã lặp thành bảng con, nguồn phụ chỉ ghép', () => {
+  const chinh = '### Danh mục\n| ID | Tên | Dải | Nhãn |\n|---|---|---|---|\n| DL-G01 | Driftmoth | Vành đai ngoài | MVP |\n| DL-G03 | Latchjaw | Vành đai ngoài | Sau MVP |\n\n'
+    + '### Đòn\n| Loài | Đòn | DMG |\n|---|---|---|\n| DL-G03 | Đớp | 12 |\n| DL-G03 | Cắn | 5 |\n\n'
+    + '### Di chuyển\n| Loài | Tốc độ |\n|---|---|\n| DL-G01, DL-G03 (Hiền) | 1,5 |\n';
+  const phu = '### Danh sách tham chiếu sinh từ script\n- Loài Driftlife và hệ số (ghi chú). Cột Số\n\n| Số | Mã gd-combat | Hệ số k |\n|---|---|---|\n| 111 | DL-G01 | 0,45 |\n| 115 | DL-M05 | 0,5 |\n';
+  const l = trichDriftlife(chinh, phu);
+  const ds = l.nhom.flatMap((g) => g.muc);
+  assert.deepEqual(ds.map((m) => m.ma), ['DL-G01', 'DL-G03']);
+  const [moth, jaw] = ds;
+  assert.deepEqual(moth.phan.map((p) => p.ten), ['Danh mục', 'Di chuyển', 'Loài Driftlife và hệ số']);
+  assert.deepEqual(jaw.phan.find((p) => p.ten === 'Di chuyển').truong, [['Tốc độ', '1,5']]);
+  assert.deepEqual(jaw.bangCon, [{ ten: 'Đòn', head: ['Đòn', 'DMG'], rows: [['Đớp', '12'], ['Cắn', '5']] }]);
+  assert.equal(l.nhom[0].ten, 'Vành đai ngoài');
 });
 
 console.log(`\n${ok} phép kiểm ĐẠT.`);

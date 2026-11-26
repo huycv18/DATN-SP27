@@ -45,8 +45,11 @@ aside { position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: a
 .loc button { border: 1px solid var(--vien); background: var(--mat); border-radius: 999px; padding: 4px 12px; cursor: pointer; font-size: 13px; color: var(--chu-2); }
 .loc button[aria-pressed="true"] { background: var(--chu); color: var(--nen); border-color: var(--chu); }
 .nhom-ds { margin-bottom: 18px; }
-.nhom-ds h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--chu-3); margin: 0 0 6px 8px; font-weight: 700; }
-.nhom-ds h3 span { font-weight: 500; }
+.nhom-ds > summary { list-style: none; cursor: pointer; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--chu-3); margin: 0 0 6px; padding: 2px 8px; font-weight: 700; display: flex; gap: 6px; }
+.nhom-ds > summary::-webkit-details-marker { display: none; }
+.nhom-ds > summary::before { content: "▸"; transition: transform .12s; }
+.nhom-ds[open] > summary::before { transform: rotate(90deg); }
+.nhom-ds > summary span { font-weight: 500; margin-left: auto; }
 .dong { display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-radius: 10px; text-decoration: none; color: var(--chu); }
 .dong:hover { background: var(--mat-2); }
 .dong[aria-current="true"] { background: var(--mat); box-shadow: var(--bong); }
@@ -72,6 +75,21 @@ aside { position: sticky; top: 76px; max-height: calc(100vh - 96px); overflow: a
 .anh img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .chu-cai { position: relative; font-size: 72px; font-weight: 800; color: var(--c); opacity: .9; }
 .chua-anh { position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; color: var(--chu-3); font-size: 12px; }
+/* Mục chưa có ảnh: ô chữ cái nhỏ, không chiếm nửa thẻ */
+.dau-hs.khong-anh { grid-template-columns: 1fr; }
+.dau-hs.khong-anh .anh { display: none; }
+.dau-hs.khong-anh .tom { flex-direction: row; flex-wrap: wrap; align-items: flex-start; column-gap: 20px; }
+.o-chu { width: 88px; height: 88px; border-radius: 20px; flex: none; display: grid; place-items: center; font-size: 30px; font-weight: 800; color: var(--c);
+  background: color-mix(in srgb, var(--c) 16%, var(--mat-2)); border: 1px solid color-mix(in srgb, var(--c) 35%, transparent); }
+.dau-hs:not(.khong-anh) .o-chu { display: none; }
+.cot-tom { flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+a.lien { color: inherit; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--chu-2) 45%, transparent); text-underline-offset: 2px; }
+a.lien:hover { text-decoration-color: currentColor; }
+.cuon { overflow-x: auto; border: 1px solid var(--vien); border-radius: 10px; }
+table.bang-con { border-collapse: collapse; width: 100%; font-size: 13px; }
+.bang-con th, .bang-con td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--vien); }
+.bang-con th { background: var(--mat-2); color: var(--chu-2); font-weight: 600; white-space: nowrap; }
+.bang-con tr:last-child td { border-bottom: 0; }
 .tom { padding: 24px 28px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
 .ma { color: var(--chu-3); font: 600 13px ui-monospace, Consolas, monospace; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .tom h1 { margin: 0; font-size: 34px; line-height: 1.1; letter-spacing: -.01em; }
@@ -90,9 +108,9 @@ dl.truong dt, dl.truong dd { padding: 10px 0; border-top: 1px solid var(--vien);
 dl.truong dt { color: var(--chu-2); font-size: 13px; padding-right: 16px; font-weight: 600; }
 .chip { display: inline-flex; align-items: center; gap: 4px; }
 .chip i { width: 12px; height: 12px; border-radius: 3px; background: var(--c); border: 1px solid rgb(0 0 0 / .15); display: inline-block; }
-details { margin-top: 18px; border: 1px solid var(--vien); border-radius: 12px; padding: 0 16px; }
-summary { cursor: pointer; padding: 12px 0; font-weight: 600; color: var(--chu-2); }
-details p { margin: 0 0 12px; color: var(--chu-2); }
+details.ghi-chu { margin-top: 18px; border: 1px solid var(--vien); border-radius: 12px; padding: 0 16px; }
+.ghi-chu summary { cursor: pointer; padding: 12px 0; font-weight: 600; color: var(--chu-2); }
+.ghi-chu p { margin: 0 0 12px; color: var(--chu-2); }
 .nguon { margin-top: 18px; font-size: 12px; color: var(--chu-3); }
 
 dialog { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
@@ -103,7 +121,7 @@ dialog button { position: fixed; top: 16px; right: 16px; border: 0; border-radiu
 @media (max-width: 860px) {
   .dau { padding: 10px 16px; }
   .tim { flex: 1 1 100%; order: 3; }
-  main { grid-template-columns: 1fr; padding: 16px; }
+  main { grid-template-columns: minmax(0, 1fr); padding: 16px; }
   aside { position: static; max-height: none; }
   body.chi-tiet aside { display: none; }
   body:not(.chi-tiet) section#xem { display: none; }
@@ -121,7 +139,7 @@ dialog button { position: fixed; top: 16px; right: 16px; border: 0; border-radiu
 <header><div class="dau">
   <div class="logo"><i></i>The Novent <small>Wiki</small></div>
   <nav class="loai" id="loai" aria-label="Loại thông tin"></nav>
-  <label class="tim"><input id="tim" type="search" placeholder="Tìm tên, mã, chủng, vai..." aria-label="Tìm"></label>
+  <label class="tim"><input id="tim" type="search" placeholder="Tìm tên, mã, nhóm, công dụng..." aria-label="Tìm"></label>
 </div></header>
 <main>
   <aside aria-label="Danh sách">
@@ -137,19 +155,31 @@ dialog button { position: fixed; top: 16px; right: 16px; border: 0; border-radiu
 const DATA = /*DATA*/null;
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
-// Chữ trong GDD: `mã` thành code, mã màu thành ô màu, **đậm**.
-const md = (s) => esc(s)
+
+// Gắn loại và nhóm cho từng mục, bảng mã -> mục để mã trong chữ thành link.
+const MUC = [];
+for (const l of DATA.loai) for (const g of l.nhom) for (const m of g.muc) {
+  m.loai = l; m.nhom = g; m.truong = m.phan.flatMap((p) => p.truong);
+  m.tim = [m.ma, m.ten, m.tenPhu, ...m.truong.map((t) => t[1])].join(' ').toLowerCase();
+  MUC.push(m);
+}
+const THEO_MA = new Map(MUC.map((m) => [m.ma, m]));
+const RE_MA = new RegExp(`\\b(${[...THEO_MA.keys()].sort((a, b) => b.length - a.length).join('|')})\\b`, 'g');
+
+// Chữ trong GDD: mã thành link, `mã` thành code, mã màu thành ô màu, **đậm**.
+const md = (s, bo = '') => esc(s)
+  .replace(RE_MA, (ma) => ma === bo ? ma : `<a class="lien" href="#${THEO_MA.get(ma).loai.id}/${ma}" title="${esc(THEO_MA.get(ma).ten)}">${ma}</a>`)
   .replace(/`(#[0-9A-Fa-f]{6})`/g, '<span class="chip" style="--c:$1"><i></i><code>$1</code></span>')
   .replace(/`([^`]+)`/g, '<code>$1</code>')
   .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
 const laMvp = (n) => /^MVP/.test(n);
 const theNhan = (n) => n ? `<span class="the ${laMvp(n) ? 'mvp' : 'sau'}">${esc(n.length > 14 ? (laMvp(n) ? 'MVP' : 'Sau MVP') : n)}</span>` : '';
 const chuCai = (t) => t.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
-const NHANH = ['Vai', 'Vai truyện', 'Chủng', 'Chiều cao', 'Chiều cao, tỉ lệ', 'Tên, quốc gia', 'Giới tính, tuổi', 'Chương'];
+// Mục không có màu nhận diện lấy màu theo tên nhóm, cùng nhóm cùng màu.
+const mauNhom = (t) => `hsl(${[...t].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 7)} 45% 55%)`;
+const mauCua = (m) => m.mau || mauNhom(m.nhom.ten);
 
 let loc = '', tu = '';
-const tatCa = () => DATA.loai.flatMap((l) => l.nhom.flatMap((g) => g.muc.map((m) => ({ ...m, loai: l, nhom: g }))));
-const timTheo = (m) => [m.ma, m.ten, m.tenPhu, ...m.truong.map((t) => t[1])].join(' ').toLowerCase();
 
 function duongDan() {
   const [l, ma] = decodeURIComponent(location.hash.slice(1)).split('/');
@@ -161,50 +191,56 @@ function veDanhSach() {
   const { loai, ma } = duongDan();
   $('#loai').innerHTML = DATA.loai.map((l) => `<a href="#${l.id}" ${l === loai ? 'aria-current="page"' : ''}>${esc(l.ten)}</a>`).join('');
   const q = tu.trim().toLowerCase();
+  const nhieu = loai.nhom.length > 6;
   const html = loai.nhom.map((g) => {
-    const muc = g.muc.filter((m) => (!loc || (loc === 'mvp') === laMvp(m.nhan)) && (!q || timTheo(m).includes(q)));
+    const muc = g.muc.filter((m) => (!loc || (loc === 'mvp') === laMvp(m.nhan)) && (!q || m.tim.includes(q)));
     if (!muc.length) return '';
-    return `<div class="nhom-ds"><h3>${esc(g.ten)} <span>${muc.length}</span></h3>${muc.map((m) => `
+    // Loại nhiều nhóm thì chỉ mở nhóm đang xem, trừ khi đang tìm.
+    const mo = !nhieu || q || muc.some((m) => m.ma === ma);
+    return `<details class="nhom-ds" ${mo ? 'open' : ''}><summary>${esc(g.ten)} <span>${muc.length}</span></summary>${muc.map((m) => `
       <a class="dong" href="#${loai.id}/${m.ma}" ${m.ma === ma ? 'aria-current="true"' : ''}>
         ${m.anh
           ? `<span class="cham co-anh" style="background-image:url('${esc(m.anh)}')" aria-hidden="true"></span>`
-          : `<span class="cham" style="--c:${m.mau || 'var(--chu-3)'}" aria-hidden="true">${esc(chuCai(m.ten))}</span>`}
+          : `<span class="cham" style="--c:${mauCua(m)}" aria-hidden="true">${esc(chuCai(m.ten))}</span>`}
         <span><b>${esc(m.ten)}</b><small>${esc(m.ma)}</small></span>${theNhan(m.nhan)}
-      </a>`).join('')}</div>`;
+      </a>`).join('')}</details>`;
   }).join('');
   $('#ds').innerHTML = html || '<div class="rong">Không có mục nào khớp.</div>';
 }
 
 function veHoSo() {
   const { loai, ma } = duongDan();
-  const ds = tatCa().filter((m) => m.loai === loai);
-  const m = ds.find((x) => x.ma === ma) || (matchMedia('(max-width: 860px)').matches ? null : ds[0]);
+  const m = THEO_MA.get(ma)?.loai === loai ? THEO_MA.get(ma) : (matchMedia('(max-width: 860px)').matches ? null : loai.nhom[0].muc[0]);
   document.body.classList.toggle('chi-tiet', !!ma && !!m);
-  if (!m) { $('#xem').innerHTML = ''; return; }
-  const c = m.mau || 'var(--chu-3)';
-  // Ô nhanh chỉ cho giá trị ngắn, giá trị dài đã có ở bảng đầy đủ.
-  const nhanh = NHANH.map((k) => m.truong.find((t) => t[0] === k && t[1].length <= 60)).filter(Boolean).slice(0, 4);
+  if (!m) { $('#xem').innerHTML = ''; document.title = 'The Novent Wiki'; return; }
+  const c = mauCua(m);
+  // Ô nhanh chỉ cho giá trị ngắn, giá trị dài đã có ở các phần bên dưới.
+  const nhanh = loai.nhanh.map((k) => m.truong.find((t) => t[0] === k && t[1].length <= 60)).filter(Boolean).slice(0, 4);
   const mauTruong = m.truong.find((t) => /màu nhận diện/i.test(t[0]));
   document.title = `${m.ten} - The Novent Wiki`;
   $('#xem').innerHTML = `
     <button class="lui" onclick="location.hash='${loai.id}'">&larr; Danh sách</button>
     <article class="ho-so" style="--c:${c}">
-      <div class="dau-hs">
-        <div class="anh">${m.anh
-          ? `<button type="button" aria-label="Xem ảnh lớn" onclick="phongTo('${esc(m.anh)}')"><img src="${esc(m.anh)}" alt="Concept ${esc(m.ten)}"></button>`
-          : `<span class="chu-cai">${esc(chuCai(m.ten))}</span><span class="chua-anh">Chưa có concept</span>`}</div>
+      <div class="dau-hs ${m.anh ? '' : 'khong-anh'}">
+        <div class="anh">${m.anh ? `<button type="button" aria-label="Xem ảnh lớn" onclick="phongTo('${esc(m.anh)}')"><img src="${esc(m.anh)}" alt="Concept ${esc(m.ten)}"></button>` : ''}</div>
         <div class="tom">
-          <div class="ma">${esc(m.ma)} · ${esc(m.nhom.ten)} ${theNhan(m.nhan)}</div>
-          <h1>${esc(m.ten)}</h1>
-          ${m.tenPhu ? `<div class="phu">${esc(m.tenPhu)}</div>` : ''}
-          ${mauTruong ? `<div class="mau">${m.mau ? '<i></i>' : ''}<span>${md(mauTruong[1])}</span></div>` : ''}
-          <dl class="nhanh">${nhanh.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${md(v)}</dd></div>`).join('')}</dl>
+          <div class="o-chu" aria-hidden="true">${esc(chuCai(m.ten))}</div>
+          <div class="cot-tom">
+            <div class="ma">${esc(m.ma)} · ${esc(m.nhom.ten)} ${theNhan(m.nhan)}</div>
+            <h1>${esc(m.ten)}</h1>
+            ${m.tenPhu ? `<div class="phu">${md(m.tenPhu)}</div>` : ''}
+            ${mauTruong ? `<div class="mau">${m.mau ? '<i></i>' : ''}<span>${md(mauTruong[1])}</span></div>` : ''}
+            ${nhanh.length ? `<dl class="nhanh">${nhanh.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${md(v, m.ma)}</dd></div>`).join('')}</dl>` : ''}
+          </div>
         </div>
       </div>
       <div class="than">
-        <h2>Hồ sơ đầy đủ</h2>
-        <dl class="truong">${m.truong.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${md(v)}</dd>`).join('')}</dl>
-        ${m.nhom.ghiChu.length ? `<details><summary>Ghi chú chung cho nhóm ${esc(m.nhom.ten)}</summary>${m.nhom.ghiChu.map((p) => `<p>${md(p)}</p>`).join('')}</details>` : ''}
+        ${m.phan.map((p) => `<h2>${esc(p.ten)}</h2>
+          <dl class="truong">${p.truong.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${md(v, m.ma)}</dd>`).join('')}</dl>`).join('')}
+        ${m.bangCon.map((b) => `<h2>${esc(b.ten)}</h2><div class="cuon"><table class="bang-con">
+          <thead><tr>${b.head.map((h) => `<th>${esc(h)}</th>`).join('')}</tr></thead>
+          <tbody>${b.rows.map((r) => `<tr>${b.head.map((_, k) => `<td>${md(r[k] || '', m.ma)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`).join('')}
+        ${m.nhom.ghiChu.length ? `<details class="ghi-chu"><summary>Ghi chú chung cho nhóm ${esc(m.nhom.ten)}</summary>${m.nhom.ghiChu.map((p) => `<p>${md(p)}</p>`).join('')}</details>` : ''}
         <div class="nguon">Nguồn: ${esc(m.nhom.nguon)}. Trang sinh từ GDD, sửa ở GDD rồi chạy lại tools/xuat-wiki.mjs.</div>
       </div>
     </article>`;
@@ -218,7 +254,11 @@ function phongTo(src) {
 }
 $('#phong').addEventListener('click', (e) => { if (e.target.id === 'phong') e.target.close(); });
 function ve() { veDanhSach(); veHoSo(); }
-addEventListener('hashchange', () => { ve(); if (document.body.classList.contains('chi-tiet')) scrollTo(0, 0); });
+addEventListener('hashchange', () => {
+  ve();
+  scrollTo(0, 0);
+  document.querySelector('.dong[aria-current="true"]')?.scrollIntoView({ block: 'nearest' });
+});
 $('#tim').addEventListener('input', (e) => { tu = e.target.value; veDanhSach(); });
 document.querySelectorAll('.loc button').forEach((b) => b.addEventListener('click', () => {
   loc = b.dataset.loc;

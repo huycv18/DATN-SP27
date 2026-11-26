@@ -527,4 +527,5 @@ Lead: "Dựng một trang web để lưu trữ thông tin hồ sơ tất cả c�
 
 - Wiki ở `wiki/index.html`, sinh từ GDD bằng `tools/xuat-wiki.mjs`, không phải bản thứ hai của luật. Bản đầu có 21 nhân vật (PC 4, người vớt 5, thương nhân 5, The Wardens 2, người phụ 5), lấy từ `ho-so-nhan-vat.md` mục 2b và bảng tính cách PC ở `cot-truyen.md`.
 - GDM tự quyết (Lead đổi được): trang là file tĩnh trong repo, chưa đăng lên mạng. Driftlife và item chưa làm, chờ Lead mở. Ảnh chỉ có 4 PC (concept GPT), nhân vật khác hiện chữ cái đầu trên màu nhận diện.
+- Lead: "Làm Driftlife và item". Thêm tab Driftlife (24: 15 loài, 4 đơn vị The Wardens, 5 boss) từ `combat-driftlife.md` và bảng loài ở `vat-pham.md`, tab Vật phẩm (232: 155 vật phẩm, 63 công thức, 14 điểm khai thác) từ `vat-pham.md`. GDM tự quyết: công thức và điểm khai thác vào tab Vật phẩm để mã trong cột Nguồn nhận, Nguồn tiêu bấm được. Nâng cấp bậc (UPG) chưa đưa vào.
 - Sửa `ho-so-nhan-vat.md` hay bảng tính cách PC thì chạy lại `node projects/game-moi/tools/xuat-wiki.mjs`. Cổng: `xuat-wiki.mjs --kiem`, selftest có phép kiểm ghép bảng.
