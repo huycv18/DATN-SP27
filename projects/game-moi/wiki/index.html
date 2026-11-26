@@ -93,7 +93,7 @@ code { font-family: var(--font-mono); font-size: .82em; padding: .1em .4em; bord
   <nav id="loai" role="tablist" aria-label="Loại thông tin" class="tabs tabs-box tabs-sm bg-base-200/80"></nav>
   <div class="flex items-center gap-2 ml-auto max-md:w-full max-md:order-3">
     <label class="input input-sm w-full md:w-72 bg-base-200/80">
-      <svg class="size-4 opacity-60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <svg class="size-4 opacity-75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
       <input id="tim" type="search" class="grow" placeholder="Tìm tên, mã, nhóm, công dụng..." aria-label="Tìm">
       <kbd class="kbd kbd-sm max-md:hidden">/</kbd>
     </label>
@@ -112,7 +112,7 @@ code { font-family: var(--font-mono); font-size: .82em; padding: .1em .4em; bord
         <button data-loc="mvp" aria-pressed="false" class="btn btn-xs join-item">MVP</button>
         <button data-loc="sau" aria-pressed="false" class="btn btn-xs join-item">Sau MVP</button>
       </div>
-      <span id="dem" class="text-xs opacity-60 tabular-nums"></span>
+      <span id="dem" class="text-xs opacity-75 tabular-nums"></span>
     </div>
     <div id="ds" class="lg:max-h-[calc(100vh-160px)] overflow-y-auto p-2"></div>
   </aside>
@@ -120,7 +120,7 @@ code { font-family: var(--font-mono); font-size: .82em; padding: .1em .4em; bord
 </main>
 
 <dialog id="phong" class="modal">
-  <div class="modal-box max-w-[min(96vw,1100px)] p-2 bg-base-100"><img id="anh-lon" class="w-full rounded-xl" alt="Concept phóng to"></div>
+  <div id="khung-anh" class="modal-box max-w-[min(96vw,1100px)] p-2 bg-base-100"></div>
   <form method="dialog" class="modal-backdrop"><button>Đóng</button></form>
 </dialog>
 
@@ -151,7 +151,7 @@ const theNhan = (n, cl = 'badge-sm') => n
   : '';
 const chuCai = (t) => t.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
 // Mục không có màu nhận diện lấy màu theo tên nhóm, cùng nhóm cùng màu.
-const mauNhom = (t) => `hsl(${[...t].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 7)} 48% 58%)`;
+const mauNhom = (t) => `hsl(${[...t].reduce((h, c) => (h * 31 + c.charCodeAt(0)) % 360, 7)} 45% 42%)`;
 const mauCua = (m) => m.mau || mauNhom(m.nhom.ten);
 const ICON = {
   lui: '<svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>',
@@ -175,7 +175,7 @@ function veDanhSach() {
   const { loai, ma } = duongDan();
   $('#loai').innerHTML = DATA.loai.map((l) => {
     const n = l.nhom.reduce((s, g) => s + g.muc.length, 0);
-    return `<a role="tab" href="#${l.id}" class="tab gap-2 font-semibold ${l === loai ? 'tab-active' : ''}" ${l === loai ? 'aria-selected="true"' : ''}>${esc(l.ten)}<span class="text-[11px] opacity-60 tabular-nums">${n}</span></a>`;
+    return `<a role="tab" href="#${l.id}" class="tab gap-2 font-semibold ${l === loai ? 'tab-active' : ''}" ${l === loai ? 'aria-selected="true"' : ''}>${esc(l.ten)}<span class="text-[11px] opacity-75 tabular-nums">${n}</span></a>`;
   }).join('');
   const q = tu.trim().toLowerCase();
   const nhieu = loai.nhom.length > 6;
@@ -191,13 +191,13 @@ function veDanhSach() {
       <ul class="before:hidden ms-0 ps-0">${muc.map((m) => `<li>
         <a class="dong gap-3 py-2 ${m.ma === ma ? 'active-muc' : ''}" href="#${loai.id}/${m.ma}" ${m.ma === ma ? 'aria-current="page"' : ''}>
           ${anhNho(m, 'size-8 rounded-lg shrink-0 text-[11px]')}
-          <span class="min-w-0 grow"><span class="block font-semibold leading-tight truncate">${esc(m.ten)}</span><span class="block font-mono text-[11px] opacity-55">${esc(m.ma)}</span></span>
+          <span class="min-w-0 grow"><span class="block font-semibold leading-tight truncate">${esc(m.ten)}</span><span class="block font-mono text-[11px] opacity-75">${esc(m.ma)}</span></span>
           ${theNhan(m.nhan, 'badge-xs')}
         </a></li>`).join('')}</ul></details></li>`;
   }).join('');
   $('#ds').innerHTML = html
     ? `<ul class="menu menu-sm w-full p-0 gap-0.5">${html}</ul>`
-    : '<div class="p-6 text-center text-sm opacity-60">Không có mục nào khớp.</div>';
+    : '<div class="p-6 text-center text-sm opacity-75">Không có mục nào khớp.</div>';
   $('#dem').textContent = `${tong} mục`;
 }
 
@@ -215,7 +215,7 @@ function veHoSo() {
       ${huong === 'lui' ? ICON.lui : ''}<span class="truncate">${esc(x.ten)}</span>${huong === 'toi' ? ICON.toi : ''}</a>` : '<span></span>';
   const phan = [...m.phan.map((p) => ({ ten: p.ten, html: `<dl class="divide-y divide-base-300/70">${p.truong.map(([k, v]) => `
       <div class="grid sm:grid-cols-[220px_minmax(0,1fr)] gap-x-6 gap-y-1 py-3">
-        <dt class="text-sm font-semibold opacity-65">${esc(k)}</dt><dd class="leading-relaxed">${md(v, m.ma)}</dd>
+        <dt class="text-sm font-semibold opacity-75">${esc(k)}</dt><dd class="leading-relaxed">${md(v, m.ma)}</dd>
       </div>`).join('')}</dl>` })),
     ...m.bangCon.map((b) => ({ ten: m.phan.some((p) => p.ten === b.ten) ? `${b.ten}, bảng` : b.ten, html: `<div class="overflow-x-auto rounded-box border border-base-300/70"><table class="table table-sm table-zebra">
       <thead><tr>${b.head.map((h) => `<th class="whitespace-nowrap">${esc(h)}</th>`).join('')}</tr></thead>
@@ -242,7 +242,7 @@ function veHoSo() {
             ${mauTruong ? `<div class="flex items-center gap-2 text-sm opacity-80">${m.mau ? '<span class="size-4 rounded-md shadow-inner" style="background:var(--c)"></span>' : ''}<span>${md(mauTruong[1])}</span></div>` : ''}
             ${nhanh.length ? `<div class="grid grid-cols-[repeat(auto-fill,minmax(130px,1fr))] gap-2.5 mt-1">${nhanh.map(([k, v]) => `
               <div class="rounded-box bg-base-200/80 border border-base-300/60 px-3.5 py-2.5 min-w-0">
-                <div class="text-[10px] uppercase tracking-[.08em] font-bold opacity-55">${esc(k)}</div>
+                <div class="text-[10px] uppercase tracking-[.08em] font-bold opacity-75">${esc(k)}</div>
                 <div class="font-semibold mt-0.5">${md(v, m.ma)}</div>
               </div>`).join('')}</div>` : ''}
           </div>
@@ -252,18 +252,21 @@ function veHoSo() {
         `<button class="btn btn-xs btn-soft rounded-full font-medium" onclick="document.getElementById('phan-${k}').scrollIntoView({behavior:'smooth',block:'start'})">${esc(p.ten)}</button>`).join('')}</nav>` : ''}
       <div class="px-5 sm:px-7 pb-6">
         ${phan.map((p, k) => `<section id="phan-${k}" class="scroll-mt-24 pt-6">
-          <h2 class="flex items-center gap-2 text-xs uppercase tracking-[.1em] font-bold opacity-60 mb-1"><span class="h-3 w-1 rounded-full" style="background:var(--c)"></span>${esc(p.ten)}</h2>
+          <h2 class="flex items-center gap-2 text-xs uppercase tracking-[.1em] font-bold opacity-75 mb-1"><span class="h-3 w-1 rounded-full" style="background:var(--c)"></span>${esc(p.ten)}</h2>
           ${p.html}</section>`).join('')}
         ${m.nhom.ghiChu.length ? `<div class="collapse collapse-arrow bg-base-200/70 border border-base-300/70 mt-6">
           <input type="checkbox" aria-label="Mở ghi chú chung"><div class="collapse-title font-semibold text-sm">Ghi chú chung cho nhóm ${esc(m.nhom.ten)}</div>
           <div class="collapse-content text-sm leading-relaxed opacity-85 space-y-2">${m.nhom.ghiChu.map((p) => `<p>${md(p)}</p>`).join('')}</div></div>` : ''}
         <div class="flex justify-between gap-2 mt-6 pt-4 border-t border-base-300/70">${ke(cung[i - 1], 'lui')}${ke(cung[i + 1], 'toi')}</div>
-        <p class="mt-4 text-xs opacity-50">Nguồn: ${esc(m.nhom.nguon)}. Trang sinh từ GDD, sửa ở GDD rồi chạy lại tools/xuat-wiki.mjs.</p>
+        <p class="mt-4 text-xs opacity-75">Nguồn: ${esc(m.nhom.nguon)}. Trang sinh từ GDD, sửa ở GDD rồi chạy lại tools/xuat-wiki.mjs.</p>
       </div>
     </article>`;
 }
 
-function phongTo(src) { $('#anh-lon').src = src; $('#phong').showModal(); }
+function phongTo(src) {
+  $('#khung-anh').innerHTML = `<img src="${esc(src)}" class="w-full rounded-xl" alt="Concept phóng to">`;
+  $('#phong').showModal();
+}
 function ve() { veDanhSach(); veHoSo(); }
 addEventListener('hashchange', () => {
   ve();
