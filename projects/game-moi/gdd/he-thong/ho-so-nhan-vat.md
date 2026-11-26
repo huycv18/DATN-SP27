@@ -65,7 +65,7 @@ Tỉ lệ preset (luật 4, số khởi điểm, artist chỉnh khi thử 3 clip
 | PC-3 Mei | Cây hài | Tròn | 0,9 u | 1,2 | 0,9 | 1,05 | 0,85 | 0,85 |
 | PC-4 Niamh | Bộ não | Tam giác | 1,2 u | 1,0 | 0,9 | 0,95 | 1,0 | 1,05 |
 
-Tỉ lệ chung của cả dàn nhân loại: dáng chắc, khoảng 4,5 đầu, bàn tay và giày to, áo quần dày có vết mòn, vá, bẩn. Không vẽ dáng dài ngoằng. Mẫu tỉ lệ là ảnh Lead gửi 2026-11-26 (`art/C/05-nhan-vat/ref-ti-le-lead.webp`).
+Tỉ lệ chung của cả dàn nhân loại: khoảng 5,5 đầu, thân gọn khỏe, bàn tay và giày cỡ thường, áo quần dày có vết mòn, vá, bẩn. Không dài ngoằng (bản 2), không to béo (bản 3). Mẫu tỉ lệ là ảnh Lead gửi 2026-11-26 (`art/C/05-nhan-vat/ref-ti-le-lead.webp`).
 
 Bốn nấc dáng: một người cao và mảnh (Niamh), một người thấp tròn (Mei), một người chuẩn (Việt), một người tỉ lệ phóng đại (Jonas tay to, Mei đầu to). Hình slot ○ △ □ ◇ là icon UI, không phải hình khối thân.
 
@@ -390,6 +390,7 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | 2026-11-25 | Đội hình bốn PC mới: PC-1 Lê Quốc Bảo (nam Việt Nam), PC-4 Niamh Doyle (nữ Ireland), bảng giới tính, tuổi, da, tóc, nét mặt, bỏ râu và hộp y tế PC-4 (đổi túi dụng cụ thường), thêm 4 clip idle và 4 vật để lại vào yêu cầu art mục 7, bốn PC ngang nhau về luật | GD-079 | gd-character |
 | 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-079 | GDM |
 | 2026-11-25 | PC-4 đổi dáng: cao và mảnh, vai hẹp, bỏ vai rất rộng. Lead xem concept: "PC-4 đô con quá, cô ấy là phụ nữ mà" | GD-078 | GDM |
+| 2026-11-26 | Tỉ lệ chung đổi sang khoảng 5,5 đầu, thân gọn khỏe, bàn tay và giày cỡ thường. Lead xem bản 3: "giờ thì người bị to quá béo béo" | Lead xem concept bản 3 | GDM |
 | 2026-11-26 | Tỉ lệ chung chắc, khoảng 4,5 đầu, theo ảnh mẫu Lead. Niamh bỏ "rất cao gầy, chân tay dài", bảng Tỉ lệ preset của Niamh về gần chuẩn (đầu 1,0, chân 1,05). Lead: "kiểu như này đẹp mà, người kiểu kia dài ngoằng ấy" | Lead xem concept bản 2 | GDM |
 | 2026-11-26 | Khung 4 vai tâm lý: cột Vai trong nhóm, silhouette theo hình khối (tròn, vuông, tròn phóng đại, tam giác), bảng Tỉ lệ preset, luật 4 cho chỉnh tỉ lệ xương riêng từng preset 0,8 đến 1,25 lần, nét mặt và clip idle mới. Không đổi chỉ số, va chạm, slot, màu | Lead duyệt `de-xuat-4-pc-vai-tam-ly.md` | GDM |
 | 2026-11-26 | Bỏ CHR-PROP-PC (4 vật để lại, 2 MVP), thay bằng CHR-PROP-HOM (1 hòm dùng chung có biển tên). Lead: "khi chết thì cho đóng hòm hết" | GD-078 | GDM |
