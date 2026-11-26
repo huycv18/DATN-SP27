@@ -1,6 +1,6 @@
 # Đề xuất: 4 nhân vật người chơi theo khung 4 vai tâm lý, hình khối và tương phản dáng
 
-Trạng thái: CHỜ LEAD DUYỆT. Chưa sửa GDD, Sheet, concept.
+Trạng thái: ĐÃ CHỐT 2026-11-26 (Lead: "Duyệt, sửa GDD", rồi "Update vào GDD, rồi giao GPT gen thử nhé"). Luật chuẩn từ nay ở `gdd/he-thong/ho-so-nhan-vat.md` (luật 4, 2b.1) và `cot-truyen.md` (Tính cách bốn hồ sơ mặc định).
 Nguồn: Lead 2026-11-26 gửi 2 ảnh (khung 4 hình mẫu tính cách, ứng dụng hình học và tương phản chiều cao), lời Lead: "Về nhân vật hãy tham khảo những yếu tố này và nghiên cứu về chúng".
 
 ## 1. Kết luận

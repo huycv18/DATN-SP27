@@ -33,7 +33,7 @@ Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-
 1. Thang tỉ lệ `MVP`: người trưởng thành cao 1 u. Mỗi hồ sơ ghi chiều cao theo u. Cỡ hiển thị mục tiêu 108 điểm ảnh một u trên màn 1080p, nguồn vẽ gấp 4 lần.
 2. Silhouette test `MVP`: tô đen cả nhóm trong cùng cảnh, ở cỡ hiển thị, phải phân biệt từng nhân vật trong 1 giây. Mỗi nhân vật có ít nhất hai đặc điểm ngoại hình nhận ra được khi tô đen (hình mũ, tỉ lệ thân, đồ mang sau lưng, phụ kiện).
 3. Màu `MVP`: mỗi nhân vật có một màu nhận diện (nhấn lớn) và tối đa 6 màu chính cộng 2 màu nhấn nhỏ. Bão hòa luôn là kênh S của HSV, đo bằng công cụ lấy mẫu màu. Người chơi dùng nhấn từ 70% ở bộ đồ ngoài. Người vớt và thương nhân dùng nhấn tới 45%. Giáp và cờ của chế độ The Wardens dùng cặp trắng xương và lục acid, không ai khác dùng. Sevra khi bỏ mạng không dùng cặp này.
-4. Rig `MVP`: một bộ xương chung cho nhân loại. Chiều cao preset (0,9 đến 1,2 u) là scale đồng đều của rig, chênh tối đa 20% quanh 1,0 u, phần còn lại phân biệt bằng hoán đổi bộ phận (mũ, bình Oxy, túi, phụ kiện). Chủng tộc The Veyl mỗi chủng một rig riêng, mức độ đơn giản. Ngoại lệ ghi tên: Wren (0,6 u) dùng rig trẻ em riêng đơn giản.
+4. Rig `MVP`: một bộ xương chung cho nhân loại, chung mọi clip. Chiều cao preset (0,9 đến 1,2 u) là scale đều của rig, chênh tối đa 20% quanh 1,0 u. Mỗi preset người chơi được chỉnh riêng tỉ lệ xương đầu, vai, hông, tay, chân trong khoảng 0,8 đến 1,25 lần (bảng Tỉ lệ preset ở 2b.1, Lead duyệt 2026-11-26, `de-xuat-4-pc-vai-tam-ly.md`). Phần còn lại phân biệt bằng hoán đổi bộ phận (mũ, bình Oxy, túi, phụ kiện). Trước khi vẽ hết clip, artist chạy thử Mang thùng, Kéo vật, Ngạt trên cả 4 preset để kiểm méo. Chủng tộc The Veyl mỗi chủng một rig riêng, mức độ đơn giản. Ngoại lệ ghi tên: Wren (0,6 u) dùng rig trẻ em riêng đơn giản.
 5. Bộ đồ `MVP bậc 0 và 1`: người chơi lắp mảnh theo 5 trục (bình Oxy, vỏ, bộ đẩy, túi, đai dụng cụ) theo `nguoi-choi.md`, mỗi bậc là một biến thể mảnh, không vẽ lại cả nhân vật.
 6. Màu và hình slot `MVP`: slot gán cố định theo slot, không theo người, hiện trên HUD đồng đội và ping kèm hình để không chỉ dựa vào màu: Slot 1 ○ cam `#F26B1D`, Slot 2 △ lam ngọc `#1FB5D6`, Slot 3 □ vàng chanh `#D8E21F`, Slot 4 ◇ hồng tím `#D6309B`. Bảng này là nguồn duy nhất, `ux-ui.md` đọc từ đây.
 7. Nguồn tính cách `MVP`: tính cách, nghề, quốc gia, mâu thuẫn, quest theo `cot-truyen.md`.
@@ -49,21 +49,32 @@ Danh mục sơ bộ (để vai khác đọc): nhân vật người chơi mã PC-
 
 Vai: người sống sót của Ember, kíp vận hành trạm, không ai là chuyên gia (chuyên gia là những người vớt). Bộ đồ có màu và hình slot. Người tỉnh dậy ban đầu chọn một preset và đổi tên được, preset không ai chọn rơi vào buồng hỏng là người đã chết, tên trên buồng giữ tên mặc định. Nhân vật người chơi không có lời thoại riêng. Người vào sau theo luật 11 mục 2 (biến thể B, đặt tên mới, không lấp buồng tắt).
 
-| Mã | Slot, màu nhận diện | Tên mặc định | Vai truyện | Chiều cao | Silhouette (khi tô đen) | Ngoại hình | Nhãn |
-|---|---|---|---|---|---|---|---|
-| PC-1 | Slot 1 ○, cam Ember `#F26B1D` | Nguyễn Việt | Kíp vận hành trạm | 1,0 u | Mũ tròn có ăng-ten chữ L bên phải, bình Oxy vuông ngang rộng sau lưng, vai vuông | Tóc đen dài ngang vai búi gọn dưới mũ, găng dày, bộ đồ cam xám than, đai dụng cụ chéo ngực | MVP |
-| PC-2 | Slot 2 △, lam ngọc `#1FB5D6` | Jonas Weber | Kíp vận hành trạm | 1,1 u | Mũ vuông bo góc, một bình Oxy dài dọc lưng kiểu thùng, dáng cao chữ nhật | Gọng kính trong mũ, bộ đồ lam xám, dây đai vai dày | MVP |
-| PC-3 | Slot 3 □, vàng chanh `#D8E21F` | Mei Tanaka | Kíp vận hành trạm | 0,9 u | Mũ trứng có chóp sáng, balo tròn nhỏ, dáng nhỏ gọn đầu tương đối lớn | Tóc ngắn bồng thấy qua tấm kính mũ, bộ đồ vàng chanh đen, găng ngón mảnh | Sau MVP |
-| PC-4 | Slot 4 ◇, hồng tím `#D6309B` | Niamh Doyle | Kíp vận hành trạm | 1,2 u | Cao và mảnh, chân tay dài, vai hẹp, mũ tròn đáy phẳng, bình Oxy nghiêng trên vai, túi dụng cụ hông | Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông | Sau MVP |
+| Mã | Slot, màu nhận diện | Tên mặc định | Vai truyện | Vai trong nhóm | Chiều cao | Silhouette (khi tô đen) | Ngoại hình | Nhãn |
+|---|---|---|---|---|---|---|---|---|
+| PC-1 | Slot 1 ○, cam Ember `#F26B1D` | Nguyễn Việt | Kíp vận hành trạm | Người truyền lửa | 1,0 u | Khối tròn, dáng chuẩn làm mốc: mũ tròn có ăng-ten chữ L bên phải, vai tròn, bình Oxy vuông ngang rộng sau lưng | Tóc đen dài ngang vai búi gọn dưới mũ, găng dày, bộ đồ cam xám than, đai dụng cụ chéo ngực | MVP |
+| PC-2 | Slot 2 △, lam ngọc `#1FB5D6` | Jonas Weber | Kíp vận hành trạm | Chỗ dựa | 1,1 u | Khối vuông: mũ vuông bo góc, vai rộng ngang, tay và bàn tay to, một bình Oxy dài dọc lưng kiểu thùng | Gọng kính trong mũ, bộ đồ lam xám, dây đai vai dày | MVP |
+| PC-3 | Slot 3 □, vàng chanh `#D8E21F` | Mei Tanaka | Kíp vận hành trạm | Cây hài | 0,9 u | Khối tròn phóng đại: mũ trứng có chóp sáng, đầu to hơn chuẩn, tay chân ngắn, balo tròn nhỏ | Tóc ngắn bồng thấy qua tấm kính mũ, bộ đồ vàng chanh đen, găng ngón mảnh | Sau MVP |
+| PC-4 | Slot 4 ◇, hồng tím `#D6309B` | Niamh Doyle | Kíp vận hành trạm | Bộ não | 1,2 u | Khối tam giác: rất cao và mảnh, chân tay dài, vai hẹp, mũ đáy phẳng kính vát góc, bình Oxy nghiêng trên vai, túi dụng cụ hông | Tóc nâu đỏ đuôi thấp trong mũ, bộ đồ hồng tím và xám, túi dụng cụ thường đeo hông | Sau MVP |
+
+Tỉ lệ preset (luật 4, số khởi điểm, artist chỉnh khi thử 3 clip, giữ trong 0,8 đến 1,25). Hệ số nhân sau scale chiều cao. Hình khối theo quy ước tròn thân thiện, vuông vững, tam giác sắc:
+
+| Preset | Vai trong nhóm | Hình khối | Chiều cao | Đầu | Vai | Hông | Tay, bàn tay | Chân |
+|---|---|---|---|---|---|---|---|---|
+| PC-1 Việt | Người truyền lửa | Tròn | 1,0 u | 1,0 | 1,0 | 1,0 | 1,0 | 1,0 |
+| PC-2 Jonas | Chỗ dựa | Vuông | 1,1 u | 1,0 | 1,2 | 1,05 | 1,2 | 1,0 |
+| PC-3 Mei | Cây hài | Tròn | 0,9 u | 1,2 | 0,9 | 1,05 | 0,85 | 0,85 |
+| PC-4 Niamh | Bộ não | Tam giác | 1,2 u | 0,9 | 0,85 | 0,9 | 1,1 | 1,15 |
+
+Bốn nấc dáng: một người rất cao và gầy (Niamh), một người thấp tròn (Mei), một người chuẩn (Việt), một người tỉ lệ phóng đại (Jonas tay to, Mei đầu to). Hình slot ○ △ □ ◇ là icon UI, không phải hình khối thân.
 
 Nhân dạng để art dựng (khớp `cot-truyen.md` khối GD-079, GD-079 Lead chốt 2026-11-25: bốn PC ngang nhau về luật, không vai trò hay kỹ năng riêng, 2 nam 2 nữ, không ai da màu, PC-1 là nam chính người Việt Nam):
 
 | Mã | Tên, quốc gia | Giới tính, tuổi | Da | Tóc | Nét mặt khi bình thường |
 |---|---|---|---|---|---|
-| PC-1 | Nguyễn Việt, Việt Nam | Nam, khoảng 29 | Sáng ngả vàng nhạt | Đen, dài ngang vai, búi gọn dưới mũ | Mắt sáng và thẳng, cằm hơi ngẩng, môi mím nhẹ |
-| PC-2 | Jonas Weber, Đức | Nam, khoảng 34 | Sáng | Nâu rối, râu lún phún | Mắt mở to chăm chú, hơi gù khi nghe, miệng mím khi nghĩ |
-| PC-3 | Mei Tanaka, Nhật Bản | Nữ, khoảng 26 | Sáng | Đen ngắn bồng | Đầu hơi nghiêng, má phồng khi tập trung, cười nhanh rồi tắt |
-| PC-4 | Niamh Doyle, Ireland | Nữ, khoảng 36 | Sáng có tàn nhang | Nâu đỏ, đuôi thấp gọn trong mũ | Mặt mềm, mắt hiền, nhìn xuống khi bị khen |
+| PC-1 | Nguyễn Việt, Việt Nam | Nam, khoảng 29 | Sáng ngả vàng nhạt | Đen, dài ngang vai, búi gọn dưới mũ | Mắt sáng và thẳng, cười nửa miệng, cằm hơi ngẩng |
+| PC-2 | Jonas Weber, Đức | Nam, khoảng 34 | Sáng | Nâu rối, râu lún phún | Mắt hiền sau kính, hơi gù khi nghe, gật chậm |
+| PC-3 | Mei Tanaka, Nhật Bản | Nữ, khoảng 26 | Sáng | Đen ngắn bồng | Mắt to tròn, má phồng khi tập trung, cười toe rồi nghĩ ra trò khác |
+| PC-4 | Niamh Doyle, Ireland | Nữ, khoảng 36 | Sáng có tàn nhang | Nâu đỏ, đuôi thấp gọn trong mũ | Mặt mềm, mày hơi nhíu, mắt liếc như đang tính, nhìn xuống khi bị khen |
 
 Cả bốn dùng chung rig, chung chỉ số, chung kỹ năng. Ngoại hình ở bảng trên chỉ là hình, không chi tiết nào gợi vai gameplay.
 
@@ -243,10 +254,10 @@ Clip idle đứng tại chỗ riêng từng preset (GD-079, thay clip Idle chung
 
 | Preset | Clip idle | Nhãn |
 |---|---|---|
-| PC-1 Việt | Vươn vai xoay cổ tay một lần rồi chỉnh lại quai đai. Đứng lâu thì ngẩng nhìn ra xa | MVP |
-| PC-2 Jonas | Đẩy gọng kính trong mũ dù kính không trượt, rồi nhìn quanh chậm | MVP |
-| PC-3 Mei | Vỗ balo hai cái rồi xoay tròn tại chỗ nhìn quanh | Sau MVP |
-| PC-4 Niamh | Gãi gáy khi thấy mình bị nhìn, rồi xoay vai cho đỡ mỏi | Sau MVP |
+| PC-1 Việt | Đấm nhẹ nắm tay vào lòng bàn tay, vươn vai rồi ngẩng nhìn ra xa | MVP |
+| PC-2 Jonas | Khoanh tay đứng yên lâu, thỉnh thoảng đẩy gọng kính dù kính không trượt | MVP |
+| PC-3 Mei | Vỗ balo hai cái, nhún tại chỗ rồi xoay tròn nhìn quanh | Sau MVP |
+| PC-4 Niamh | Liếc đồng hồ Oxy, gãi gáy khi thấy mình bị nhìn, rồi xoay vai | Sau MVP |
 
 Biến thể mảnh bộ đồ (xem `nguoi-choi.md` mục 2.6):
 
@@ -377,4 +388,5 @@ Kiểm: không hồ sơ nào đổi theo số người ngoài số preset hiển
 | 2026-11-25 | Đội hình bốn PC mới: PC-1 Lê Quốc Bảo (nam Việt Nam), PC-4 Niamh Doyle (nữ Ireland), bảng giới tính, tuổi, da, tóc, nét mặt, bỏ râu và hộp y tế PC-4 (đổi túi dụng cụ thường), thêm 4 clip idle và 4 vật để lại vào yêu cầu art mục 7, bốn PC ngang nhau về luật | GD-079 | gd-character |
 | 2026-11-25 | Lead đặt tên PC-1 là Nguyễn Việt (gọi ngắn Việt), thay Lê Quốc Bảo | GD-079 | GDM |
 | 2026-11-25 | PC-4 đổi dáng: cao và mảnh, vai hẹp, bỏ vai rất rộng. Lead xem concept: "PC-4 đô con quá, cô ấy là phụ nữ mà" | GD-078 | GDM |
+| 2026-11-26 | Khung 4 vai tâm lý: cột Vai trong nhóm, silhouette theo hình khối (tròn, vuông, tròn phóng đại, tam giác), bảng Tỉ lệ preset, luật 4 cho chỉnh tỉ lệ xương riêng từng preset 0,8 đến 1,25 lần, nét mặt và clip idle mới. Không đổi chỉ số, va chạm, slot, màu | Lead duyệt `de-xuat-4-pc-vai-tam-ly.md` | GDM |
 | 2026-11-26 | Bỏ CHR-PROP-PC (4 vật để lại, 2 MVP), thay bằng CHR-PROP-HOM (1 hòm dùng chung có biển tên). Lead: "khi chết thì cho đóng hòm hết" | GD-078 | GDM |

@@ -530,3 +530,12 @@ Lead: "Dựng một trang web để lưu trữ thông tin hồ sơ tất cả c�
 - Lead: "Làm Driftlife và item". Thêm tab Driftlife (24: 15 loài, 4 đơn vị The Wardens, 5 boss) từ `combat-driftlife.md` và bảng loài ở `vat-pham.md`, tab Vật phẩm (232: 155 vật phẩm, 63 công thức, 14 điểm khai thác) từ `vat-pham.md`. GDM tự quyết: công thức và điểm khai thác vào tab Vật phẩm để mã trong cột Nguồn nhận, Nguồn tiêu bấm được. Nâng cấp bậc (UPG) chưa đưa vào.
 - Sửa `ho-so-nhan-vat.md` hay bảng tính cách PC thì chạy lại `node projects/game-moi/tools/xuat-wiki.mjs`. Cổng: `xuat-wiki.mjs --kiem`, selftest có phép kiểm ghép bảng.
 - Lead: "Sử dụng thư viện thiết kế web hiện đại để sửa cho wiki đẹp hơn". GDM chọn Tailwind CSS 4 và daisyUI 5 (nạp qua CDN, ghim bản), theme sáng tối riêng nhấn cam Ember, font Be Vietnam Pro. Đổi lại wiki cần mạng ở lần mở đầu.
+
+## 2026-11-26 - Bốn PC theo khung 4 vai tâm lý
+
+Lead gửi khung 4 hình mẫu tính cách (CN, Disney), hình học cơ bản và tương phản chiều cao: "Về nhân vật hãy tham khảo những yếu tố này và nghiên cứu về chúng". GDM nghiên cứu và trình `de-xuat-4-pc-vai-tam-ly.md`. Lead: "Duyệt, sửa GDD", rồi "Update vào GDD, rồi giao GPT gen thử nhé".
+
+- Việt Người truyền lửa (khối tròn, 1,0 u), Jonas Chỗ dựa (khối vuông, 1,1 u, vai và tay to), Mei Cây hài (khối tròn phóng đại, 0,9 u, đầu to), Niamh Bộ não (khối tam giác, 1,2 u, rất cao gầy).
+- Vai chỉ là hình, idle, biểu cảm, mô tả preset. Bốn PC vẫn cùng chỉ số, cùng kỹ năng, cùng va chạm 0,4 u. Tên, slot, màu, tuổi giữ nguyên. Hình slot ○ △ □ ◇ là icon UI, tách khỏi hình khối thân.
+- Luật 4 đổi: chung bộ xương và clip, mỗi preset chỉnh riêng tỉ lệ đầu, vai, hông, tay, chân 0,8 đến 1,25 lần. Số khởi điểm ở bảng Tỉ lệ preset, artist thử 3 clip (Mang thùng, Kéo vật, Ngạt) trên cả 4 preset trước khi vẽ hết.
+- Chưa làm: áp cùng lăng kính cho 5 người vớt (họ có lời thoại, khung phát huy đủ), chờ Lead mở.
