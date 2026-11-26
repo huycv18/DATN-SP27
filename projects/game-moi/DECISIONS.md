@@ -539,3 +539,4 @@ Lead gửi khung 4 hình mẫu tính cách (CN, Disney), hình học cơ bản v
 - Vai chỉ là hình, idle, biểu cảm, mô tả preset. Bốn PC vẫn cùng chỉ số, cùng kỹ năng, cùng va chạm 0,4 u. Tên, slot, màu, tuổi giữ nguyên. Hình slot ○ △ □ ◇ là icon UI, tách khỏi hình khối thân.
 - Luật 4 đổi: chung bộ xương và clip, mỗi preset chỉnh riêng tỉ lệ đầu, vai, hông, tay, chân 0,8 đến 1,25 lần. Số khởi điểm ở bảng Tỉ lệ preset, artist thử 3 clip (Mang thùng, Kéo vật, Ngạt) trên cả 4 preset trước khi vẽ hết.
 - Chưa làm: áp cùng lăng kính cho 5 người vớt (họ có lời thoại, khung phát huy đủ), chờ Lead mở.
+- Lead xem concept bản 2, gửi ảnh mẫu 4 nhân vật dáng chắc: "kiểu như này đẹp mà, người kiểu kia dài ngoằng ấy". Tỉ lệ chung cả dàn nhân loại đổi sang dáng chắc khoảng 4,5 đầu, bàn tay và giày to, đồ dày có vết mòn. Niamh vẫn cao nhất (1,2 u) nhưng tỉ lệ thường, bỏ chân tay dài. Ảnh mẫu lưu ở `art/C/05-nhan-vat/ref-ti-le-lead.webp`.
