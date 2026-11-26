@@ -29,6 +29,8 @@ Chiều cao trên `so-dang-4-pc.webp` bản 4, đo hàng tô đen bằng `python
 
 Thứ tự đúng GDD. Artist dựng theo số GDD, không theo ảnh này.
 
+Tấm `pc4.webp` vẽ lại theo dáng mới (`prompt/v5-pc4.txt`, đính kèm tấm Việt làm thước): đầu to bằng đầu Việt, người mảnh, eo gọn. Hình đồ trạm của Niamh cao 0,98 lần hình đồ trạm của Việt khi đo trên hai tấm cùng khổ 1254, khớp GDD 0,98 u.
+
 ## Lịch sử bản 2
 
 ## Cách làm
