@@ -208,6 +208,14 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     // git autocrlf trả CRLF trên Windows, so theo nội dung.
     if (cu.replace(/\r\n/g, '\n') !== html) { console.log('TRẢ LẠI  wiki/index.html cũ hơn GDD, chạy lại node projects/game-moi/tools/xuat-wiki.mjs'); process.exit(1); }
     console.log(`ĐẠT  wiki khớp GDD. ${dem}`);
+  } else if (process.argv.includes('--pages')) {
+    // Bản GitHub Pages: giữ nguyên trang, chỉ đưa ảnh về anh/ cạnh trang. .nojekyll để Pages phục vụ file y nguyên.
+    const ra = process.argv[process.argv.indexOf('--pages') + 1];
+    mkdirSync(join(ra, 'anh'), { recursive: true });
+    writeFileSync(join(ra, 'index.html'), html.replaceAll('../../../art/C/05-nhan-vat/demo-pc/', 'anh/'));
+    writeFileSync(join(ra, '.nojekyll'), '');
+    for (const f of Object.values(ANH)) copyFileSync(join(GAME, 'wiki', f), join(ra, 'anh', f.split('/').pop()));
+    console.log(`Đã ghi bản GitHub Pages vào ${ra}. ${dem}`);
   } else if (process.argv.includes('--artifact')) {
     const ra = process.argv[process.argv.indexOf('--artifact') + 1];
     mkdirSync(join(ra, 'anh'), { recursive: true });
