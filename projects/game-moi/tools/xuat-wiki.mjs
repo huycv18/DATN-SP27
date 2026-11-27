@@ -144,7 +144,7 @@ export function trichNhanVat(hoSo, cotTruyen) {
   }
   const nhom = chiaNhom(map, (m) => NHOM_NV[m.ma.replace(/\d+$/, '')], Object.values(NHOM_NV),
     (ds) => hs.muc[ds[0].td] || [], (ds) => `ho-so-nhan-vat.md mục ${ds[0].td.split(' ')[0]}`);
-  return { id: 'nhan-vat', ten: 'Nhân vật', nhanh: ['Vai trong nhóm', 'Vai', 'Vai truyện', 'Chủng', 'Chiều cao', 'Chiều cao, tỉ lệ', 'Tên, quốc gia', 'Giới tính, tuổi', 'Chương'], nhom };
+  return { id: 'nhan-vat', ten: 'Nhân vật', nhom };
 }
 
 const ID_DL = /DL-[GMX]\d{2}|WD-\d{2}|BS-\d+/;
@@ -152,7 +152,7 @@ export function trichDriftlife(combat, vatPham) {
   const map = gomTheoMa([{ text: combat }, { text: vatPham, tao: false }], ID_DL);
   const nhom = chiaNhom(map, (m) => (m.ma.startsWith('BS') ? 'Boss' : m.ma.startsWith('WD') ? 'Đơn vị The Wardens' : lay(m, /^Dải$/)),
     ['Vành đai ngoài', 'Vành đai trong', 'Vùng trung tâm', 'Đơn vị The Wardens', 'Boss'], () => [], () => 'combat-driftlife.md, vat-pham.md');
-  return { id: 'driftlife', ten: 'Driftlife', nhanh: ['Dải', 'Cỡ', 'Kiểu', 'Sinh lực', 'Sinh lực (một mình)', 'Bắt sống', 'Nuôi'], nhom };
+  return { id: 'driftlife', ten: 'Driftlife', nhom };
 }
 
 const ID_VP = /[A-Z]{3}-\d{3}/;
@@ -163,16 +163,109 @@ export function trichVatPham(vatPham) {
   const thuTu = ['Phế liệu', 'Khoáng', 'Băng', 'Linh kiện', 'Linh kiện lõi', 'Vật liệu chế', 'Mẫu', 'Mẫu sinh thiết', 'Mẫu sống', 'Sản phẩm nuôi', 'Thức ăn nuôi',
     'Vật tiêu hao', 'Dụng cụ', 'Bản thiết kế', 'Kiện', 'Vật kéo', 'Vật manh mối', 'Vật nhiệm vụ', 'Công thức', 'Điểm khai thác'];
   const nhom = chiaNhom(map, (m) => dauMa[m.ma.slice(0, 3)] || lay(m, /^Nhóm$/) || 'Khác', thuTu, () => [], () => 'vat-pham.md');
-  return { id: 'vat-pham', ten: 'Vật phẩm', nhanh: ['Nhóm', 'Độ hiếm', 'Khối', 'GTĐ', 'Dải', 'Nơi chế', 'Thời gian (giây)', 'Dụng cụ'], nhom };
+  return { id: 'vat-pham', ten: 'Vật phẩm', nhom };
+}
+
+// Trường tra cứu lấy từ GDD, gỡ chú thích dành cho các vai và tham chiếu nội bộ.
+const chuTraCuu = (s) => s
+  .replace(/\s+\(([^()]*)\)/g, (_, ghiChu) => {
+    const phan = ghiChu.split(', ').filter((x) => !/^(?:gd-[\w-]+(?: và gd-[\w-]+)*|[\w-]+\.md\b.*|(?:\w+ )?luật .+|chỉ số do gd-[\w-]+|[A-Z]{1,2}\d+(?:\.\d+)*)$/.test(x));
+    return phan.length ? ` (${phan.join(', ')})` : '';
+  })
+  .replace(/\. (?:Chỉ số(?: theo bậc)?|Bán kính) do gd-[^.]+\.?$/i, '')
+  .replace(/^Mã truyện MM\d+(?:\.\d+)+(?:, )?/, '')
+  .replace(/\s+theo `[\w-]+\.md` và `[\w-]+\.md`/g, '')
+  .replace(/, mở cú lật Driftlife\b/g, '')
+  .replace(/[–—]/g, '-')
+  .trim();
+
+// Tóm tắt vai khi trường nguồn kể luôn diễn biến hoặc danh tính về sau.
+const VAI_TOM_TAT = {
+  'WD-P1': 'Người đứng đầu The Wardens, cầm quyền ở Sennar.',
+  'WD-P2': 'Người Sennari từng cập bến với tư cách thương nhân.',
+  'NP-5': 'Người thừa kế của nhà Ilvane trên Sennar.',
+};
+
+function phanNhanVat(m, truong) {
+  if (m.ma.startsWith('PC-')) {
+    truong.set('Quốc gia', truong.get('Tên, quốc gia')?.split(', ').at(-1));
+    return [['Vai', 'Vai truyện'], ['Quốc gia'], ['Nghề cũ', 'Nghề cũ trên Cradle (chỉ là nền)'], ['Tính cách', '3 nét tính cách']];
+  }
+  if (m.ma.startsWith('RS-')) {
+    return [['Xuất thân', 'Nghề, quốc gia'], ['Hỗ trợ tại trạm', 'Khoang, chức năng K12'], ['Tính cách']];
+  }
+  if (m.ma.startsWith('TR-')) {
+    if (m.ma === 'TR-2') {
+      truong.set('Tính cách (gd-story)', 'Coi trọng nghi thức trong mọi cuộc giao dịch.');
+      truong.set('Ngoại hình', 'Áo choàng nghi lễ nhiều lớp, mũ nhọn và mạng che mặt.');
+    }
+    return [['Chủng loài', 'Chủng'], ['Tính cách', 'Tính cách (gd-story)'], ['Nhận diện', 'Ngoại hình']];
+  }
+  if (VAI_TOM_TAT[m.ma]) truong.set('Vai', VAI_TOM_TAT[m.ma]);
+  return [['Vai']];
+}
+
+function phanSinhVat(m, truong, phan) {
+  if (m.ma.startsWith('BS-')) {
+    const cachKet = truong.get('Cách kết');
+    const batSong = truong.get('Bắt sống')?.replace(/^Hai cách kết: /, '');
+    const laDaskel = m.ma === 'BS-5';
+    truong.set('Kết thúc trận', !laDaskel && cachKet && cachKet.length <= 96 ? cachKet : batSong);
+    if (laDaskel) truong.set('Kiểu', VAI_TOM_TAT['WD-P1']);
+    if (truong.get('Rơi khi xua đi')?.startsWith('Không có xua đi')) truong.delete('Rơi khi xua đi');
+    return [
+      phan('Chạm trán', [['Khu vực', 'Nơi'], ['Đặc điểm', 'Kiểu'], ['Kết thúc trận']]),
+      phan('Phần thưởng', [[laDaskel ? 'Sau trận' : 'Khi hạ', 'Rơi khi hạ'], ['Khi xua đi', 'Rơi khi xua đi']]),
+    ];
+  }
+  if (m.ma.startsWith('WD-')) {
+    return [phan('Chạm trán', [['Khu vực', 'Dải'], ['Hành vi'], ['Rơi khi hạ', 'Rơi khi hạ (nhóm)']])];
+  }
+  if (truong.get('Khắc chế bằng') === 'Bất kỳ') truong.delete('Khắc chế bằng');
+  return [
+    phan('Gặp và đối phó', [['Tìm ở', 'Điểm neo'], ['Hành vi', 'Hành vi riêng (không chỉ khác số)'], ['Đối phó', 'Khắc chế bằng'], ['Bắt sống'], ['Nuôi']]),
+    phan('Mẫu và vật phẩm', [['Khi hạ', 'Rơi khi hạ (nhóm)'], ['Khi bắt hoặc sinh thiết']]),
+  ];
+}
+
+function phanVatPham(m, truong) {
+  if (m.ma.startsWith('RCP-')) {
+    return [['Nguyên liệu', 'Đầu vào'], ['Kết quả', 'Đầu ra'], ['Chế tại', 'Nơi chế'], ['Điều kiện mở', 'Mở bằng']];
+  }
+  if (m.ma.startsWith('SLV-')) {
+    const maRoi = truong.get('Bảng rơi (ID, trọng số, số lượng mỗi lần)')?.match(/\b[A-Z]{3}-\d{3}\b/g) || [];
+    truong.set('Có thể nhận', [...new Set(maRoi)].join(', '));
+    return [['Khu vực', 'Dải'], ['Dụng cụ'], ['Có thể nhận']];
+  }
+  if (m.ma.startsWith('TOL-')) return [['Cách nhận', 'Cách có'], ['Công dụng', 'Công dụng và gating']];
+  return [['Cách nhận', 'Nguồn nhận'], ['Dùng để', 'Nguồn tiêu'], ['Khu vực', 'Dải'], ['Độ hiếm'], ['Khối'], ['Thùng mỗi kiện']];
+}
+
+// Chỉ nhúng dữ liệu tra cứu vào trang, kể cả khi GDD bổ sung trường mới.
+export function rutGonWiki(loai) {
+  return loai.map(({ id, ten, nhom }) => ({
+    id, ten, nhom: nhom.map((g) => ({
+      ten: g.ten, muc: g.muc.map((m) => {
+        const truong = new Map(m.phan.flatMap((p) => p.truong).reverse());
+        const phan = (ten, cot) => ({
+          ten, truong: cot.map(([nhan, nguon = nhan]) => [nhan, chuTraCuu(truong.get(nguon) || '')]).filter(([, giaTri]) => giaTri),
+        });
+        const noiDung = id === 'nhan-vat' ? [phan('Hồ sơ', phanNhanVat(m, truong))]
+          : id === 'driftlife' ? phanSinhVat(m, truong, phan) : [phan('Tra cứu', phanVatPham(m, truong))];
+        const tenPhu = ['TR-2', 'NP-5'].includes(m.ma) ? '' : chuTraCuu(m.tenPhu);
+        return { ma: m.ma, ten: m.ten, tenPhu, nhan: m.nhan, anh: m.anh, phan: noiDung.filter((p) => p.truong.length) };
+      }),
+    })),
+  }));
 }
 
 const LOAI = () => {
   const doc = (f) => readFileSync(HT(f), 'utf8');
-  return [
+  return rutGonWiki([
     trichNhanVat(doc('ho-so-nhan-vat.md'), doc('cot-truyen.md')),
     trichDriftlife(doc('combat-driftlife.md'), doc('vat-pham.md')),
     trichVatPham(doc('vat-pham.md')),
-  ];
+  ]);
 };
 
 export function dung(khuon, loai) {

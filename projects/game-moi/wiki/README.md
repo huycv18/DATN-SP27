@@ -8,7 +8,7 @@ Tra hồ sơ nhân vật, Driftlife, vật phẩm, công thức và điểm khai
 | `index.html` | File sinh ra, không sửa tay |
 | `../tools/xuat-wiki.mjs` | Đọc GDD, ghép bảng theo Mã, nhúng dữ liệu vào khuôn |
 
-Wiki không phải bản thứ hai của luật. Mọi chữ lấy từ GDD:
+Wiki xuất các trường dùng để tra cứu từ GDD.
 
 | Loại | Số mục | Nguồn |
 |---|---|---|
@@ -16,7 +16,7 @@ Wiki không phải bản thứ hai của luật. Mọi chữ lấy từ GDD:
 | Driftlife | 24 (15 loài, 4 đơn vị The Wardens, 5 boss) | `combat-driftlife.md`, bảng loài và lồng ở `vat-pham.md` |
 | Vật phẩm | 232 (155 vật phẩm, 63 công thức, 14 điểm khai thác) | `vat-pham.md` |
 
-Cách ghép: bảng nào có một cột mà phần lớn ô mở đầu bằng mã (DL-G01, RES-101...) thì mỗi hàng ghép vào mục có mã đó, thành một phần đặt tên theo câu dẫn hoặc tiêu đề của bảng. Mã lặp nhiều hàng trong một bảng (bảng đòn, bảng lồng) giữ nguyên thành bảng con. Mã nhắc trong chữ thành link sang mục đó, kể cả khác loại.
+Script ghép các hàng GDD theo mã mục, rồi chọn trường xuất qua `rutGonWiki`. Bản wiki ưu tiên vai trò nhân vật, cách gặp và đối phó Driftlife, nguồn nhận và công dụng vật phẩm. Các phần dùng để dựng art, cân bằng, sim và phối hợp nội bộ nằm trong GDD. Mã xuất hiện trong phần tra cứu thành link sang mục tương ứng, kể cả khác loại.
 
 Sửa GDD xong thì chạy lại:
 
@@ -27,7 +27,7 @@ node projects/game-moi/tools/xuat-wiki.mjs --kiem
 
 `--kiem` thoát 1 khi `index.html` cũ hơn GDD.
 
-Thêm loại mới: viết hàm `trich<Loai>()` trong `xuat-wiki.mjs` (thường chỉ cần gọi `gomTheoMa` với file nguồn và regex mã, rồi `chiaNhom`), thêm vào `LOAI()`. Giao diện tự hiện thêm tab. Ảnh concept khai báo ở bảng `ANH` trong script.
+Khi thêm loại mới, đọc dữ liệu bằng `gomTheoMa`, chia nhóm bằng `chiaNhom`, rồi khai báo trường tra cứu trong `rutGonWiki`. Thêm loại vào `LOAI()` để giao diện hiện thêm tab. Ảnh concept khai báo ở bảng `ANH`.
 
 ## Bản đăng web (Artifact claude.ai)
 

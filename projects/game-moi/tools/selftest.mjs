@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { kiem } from './validate-gdd.mjs';
-import { trichNhanVat, trichDriftlife, dung as dungWiki, choArtifact } from './xuat-wiki.mjs';
+import { trichNhanVat, trichDriftlife, rutGonWiki, dung as dungWiki, choArtifact } from './xuat-wiki.mjs';
 
 let ok = 0;
 const t = (ten, fn) => { fn(); ok++; console.log(`ĐẠT  ${ten}`); };
@@ -364,6 +364,25 @@ t('xuat-wiki: cột khóa không phải cột đầu, ô nhiều mã, mã lặp 
   assert.deepEqual(jaw.phan.find((p) => p.ten === 'Di chuyển').truong, [['Tốc độ', '1,5']]);
   assert.deepEqual(jaw.bangCon, [{ ten: 'Đòn', head: ['Đòn', 'DMG'], rows: [['Đớp', '12'], ['Cắn', '5']] }]);
   assert.equal(l.nhom[0].ten, 'Vành đai ngoài');
+});
+t('xuat-wiki: bản tra cứu loại trường nội bộ và giữ mã để dẫn sang mục liên quan', () => {
+  const muc = (ma, truong, tenPhu = '') => ({ ma, ten: ma, tenPhu, nhan: 'MVP', anh: '', phan: [{ ten: 'Nguồn', truong }] });
+  const loai = (id, ...muc) => ({ id, ten: id, nhom: [{ ten: 'Nhóm', muc, ghiChu: ['Ghi chú nội bộ'] }] });
+  const ds = rutGonWiki([
+    loai('nhan-vat',
+      muc('PC-1', [['Tên, quốc gia', 'Nguyễn Việt, Việt Nam'], ['Tỉ lệ preset', '1,2'], ['3 nét tính cách', 'Nhiệt huyết']]),
+      muc('TR-2', [['Chủng', 'Sennari']], 'Tên giả để lộ danh tính')),
+    loai('driftlife', muc('DL-G01', [['Sinh lực', '10'], ['Bắt sống', 'Có'], ['Khi bắt hoặc sinh thiết', 'LIV-111']])),
+    loai('vat-pham',
+      muc('SLV-101', [['Bảng rơi (ID, trọng số, số lượng mỗi lần)', 'RES-101 w60 x1, RES-102 w40 x1'], ['GTĐ kỳ vọng', '1,1']]),
+      muc('RES-101', [['Nguồn nhận', 'SLV-101 (gd-world)'], ['Nguồn tiêu', 'Sửa khoang (tram-va-cang.md mục 2.6c)'], ['Khối', '1']])),
+  ]).flatMap((l) => l.nhom[0].muc);
+  const truong = (m) => m.phan.flatMap((p) => p.truong);
+  assert.deepEqual(truong(ds[0]), [['Quốc gia', 'Việt Nam'], ['Tính cách', 'Nhiệt huyết']]);
+  assert.equal(ds[1].tenPhu, '');
+  assert.deepEqual(truong(ds[2]), [['Bắt sống', 'Có'], ['Khi bắt hoặc sinh thiết', 'LIV-111']]);
+  assert.deepEqual(truong(ds[3]), [['Có thể nhận', 'RES-101, RES-102']]);
+  assert.deepEqual(truong(ds[4]), [['Cách nhận', 'SLV-101'], ['Dùng để', 'Sửa khoang'], ['Khối', '1']]);
 });
 t('xuat-wiki: bản Artifact bỏ thẻ khung, body thành div, ảnh về anh/', () => {
   const html = '<!doctype html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="x">\n<title>W</title>\n</head>\n<body class="a b">\n<img src="../../../art/C/05-nhan-vat/demo-pc/pc1.webp">\n</body>\n</html>\n';

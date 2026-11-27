@@ -127,7 +127,7 @@
 #wiki .nhom[open] summary::before { transform: rotate(45deg); }
 #wiki .nhom summary:hover, #wiki .dong:hover { background: var(--nang); }
 #wiki .dong {
-  display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; align-items: center;
+  display: grid; grid-template-columns: 32px minmax(0, 1fr); align-items: center;
   gap: 8px; padding: 4px 8px; min-height: 48px; border-radius: 6px; font-size: 13px;
 }
 #wiki .dong[aria-current] { background: var(--nang); box-shadow: inset 2px 0 var(--ember); }
@@ -143,7 +143,7 @@
 
 #wiki .ho-so { overflow: clip; }
 #wiki .dau-ho-so { display: grid; border-bottom: 1px solid var(--vien); padding: 32px; }
-#wiki .dau-ho-so.co-anh { grid-template-columns: minmax(0, 1fr) minmax(208px, 36%); align-items: center; gap: 32px; }
+#wiki .dau-ho-so.co-anh { grid-template-columns: minmax(0, 1fr) minmax(208px, 36%); align-items: center; gap: 32px; border: 0; }
 #wiki .dau-chu { min-width: 0; }
 #wiki .duong-dan { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; color: var(--phu); font-size: 13px; }
 #wiki .duong-dan a:hover { text-decoration: underline; }
@@ -151,19 +151,7 @@
 #wiki .tieu-de { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; margin-top: 8px; }
 #wiki h1 { margin: 0; font-size: clamp(28px, 4vw, 48px); line-height: 1.16; font-weight: 500; letter-spacing: -.025em; overflow-wrap: anywhere; }
 #wiki .ten-phu { color: var(--phu); margin-top: 8px; }
-#wiki .nhan-dien { margin-top: 12px; color: var(--phu); font-size: 13px; }
-#wiki .chip i {
-  flex: none; display: inline-block; width: 12px; height: 12px; border-radius: 3px;
-  border: 1px solid rgb(0 0 0 / .25); background: var(--c);
-}
-#wiki .chip { white-space: nowrap; }
-#wiki .chip i { vertical-align: -1px; margin-inline-end: 4px; }
-#wiki .tom-tat {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 116px), 1fr)); gap: 12px 20px;
-  margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--vien);
-}
-#wiki .tom-tat dt { color: var(--mo); font-size: 12px; }
-#wiki .tom-tat dd { margin-top: 4px; font-size: 14px; font-weight: 500; overflow-wrap: anywhere; }
+#wiki .dau-chu .phan { padding-top: 16px; }
 #wiki .concept { width: 100%; border-radius: 8px; overflow: hidden; background: var(--nang); text-align: start; }
 #wiki .concept img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain; }
 #wiki .concept span {
@@ -171,14 +159,8 @@
   padding: 8px 12px; color: var(--phu); font-size: 13px;
 }
 #wiki .concept:hover span { color: var(--chu); }
-#wiki .muc-luc {
-  display: flex; flex-wrap: wrap; gap: 4px 16px; padding: 12px 32px;
-  border-bottom: 1px solid var(--vien); color: var(--phu);
-}
-#wiki .muc-luc button { min-height: 32px; font-size: 13px; text-align: start; }
-#wiki .muc-luc button:hover { color: var(--lien); text-decoration: underline; }
 #wiki .than-ho-so { padding: 0 32px 24px; }
-#wiki .phan { padding-top: 24px; scroll-margin-top: 84px; }
+#wiki .phan { padding-top: 16px; }
 #wiki h2 { margin-bottom: 8px; font-size: 20px; line-height: 1.4; font-weight: 500; }
 #wiki .truong {
   display: grid; grid-template-columns: minmax(128px, 23%) minmax(0, 1fr); gap: 4px 24px;
@@ -186,18 +168,8 @@
 }
 #wiki .truong dt { color: var(--phu); font-size: 13px; padding-top: 2px; }
 #wiki .truong dd { max-width: 76ch; overflow-wrap: anywhere; }
-#wiki .bo-bang { overflow: auto; border: 1px solid var(--vien); border-radius: 8px; }
-#wiki .bo-bang table { width: 100%; text-align: start; font-size: 14px; }
-#wiki .bo-bang th, #wiki .bo-bang td { padding: 8px 12px; vertical-align: top; text-align: start; }
-#wiki .bo-bang th { background: var(--nang); color: var(--phu); font-weight: 500; white-space: nowrap; }
-#wiki .bo-bang td { min-width: 100px; border-top: 1px solid var(--vien); }
 #wiki .lien { color: var(--lien); text-decoration: underline; text-underline-offset: 3px; }
 #wiki code { font: .85em var(--mono); padding: 2px 4px; border-radius: 4px; background: var(--nang); }
-#wiki .ghi-chu {
-  margin-top: 24px; padding: 8px 16px; border: 1px solid var(--vien); border-radius: 8px;
-}
-#wiki .ghi-chu summary { padding: 4px 0; color: var(--phu); font-size: 14px; }
-#wiki .ghi-chu p { margin-block: 8px; }
 #wiki .ke-ho-so {
   display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;
   margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--vien);
@@ -205,8 +177,6 @@
 #wiki .ke-ho-so .nut { width: fit-content; max-width: 100%; }
 #wiki .ke-ho-so .nut span { overflow-wrap: anywhere; }
 #wiki .ke-ho-so .sau { grid-column: 2; justify-self: end; text-align: end; }
-#wiki .nguon { margin-top: 16px; color: var(--mo); font-size: 12px; overflow-wrap: anywhere; }
-#wiki .nguon cite { font-style: normal; }
 
 #wiki #nut-lui { display: none; }
 #wiki #phong { color: var(--chu); }
@@ -224,7 +194,7 @@
   #wiki #nut-lui { display: inline-flex; margin-bottom: 12px; }
   #wiki .nut, #wiki .tim, #wiki .loc button { min-height: 44px; }
   #wiki .nut-icon { width: 44px; }
-  #wiki .nhom summary, #wiki .muc-luc button { min-height: 44px; }
+  #wiki .nhom summary { min-height: 44px; }
 }
 @media (max-width: 679px) {
   #wiki .thanh-dau { grid-template-columns: auto 1fr; gap: 4px 12px; padding: 8px 16px 0; }
@@ -234,13 +204,10 @@
   #wiki .phim { display: none; }
   #wiki #loai { grid-row: 2; grid-column: 1 / -1; gap: 16px; justify-content: space-between; }
   #wiki #loai a { min-height: 44px; gap: 4px; font-size: 13px; }
-  #wiki #loai .so { font-size: 11px; }
   #wiki .bo-cuc { padding-inline: 12px; }
   #wiki .dau-ho-so, #wiki .dau-ho-so.co-anh { display: block; padding: 20px; }
   #wiki .concept { margin-top: 20px; }
-  #wiki .muc-luc { gap: 0 12px; padding: 4px 20px; }
   #wiki .than-ho-so { padding: 0 20px 20px; }
-  #wiki .phan { scroll-margin-top: 112px; }
   #wiki .truong { grid-template-columns: minmax(0, 1fr); }
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -300,25 +267,19 @@ const chuan = (s) => s.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '').rep
 // Bảng mã dùng chung cho link giữa các loại hồ sơ.
 const MUC = [];
 for (const l of DATA.loai) for (const g of l.nhom) for (const m of g.muc) {
-  m.loai = l; m.nhom = g; m.truong = m.phan.flatMap((p) => p.truong);
-  m.tim = chuan([m.ma, m.ten, m.tenPhu, g.ten, ...m.truong.map((t) => t[1])].join(' '));
+  m.loai = l; m.nhom = g;
+  m.tim = chuan([m.ma, m.ten, m.tenPhu, g.ten, ...m.phan.flatMap((p) => p.truong.map(([, v]) => v))].join(' '));
   MUC.push(m);
 }
 const THEO_MA = new Map(MUC.map((m) => [m.ma, m]));
 const RE_MA = new RegExp(`\\b(${[...THEO_MA.keys()].sort((a, b) => b.length - a.length).join('|')})\\b`, 'g');
 
-// Chữ trong GDD: link cho mã mục, ô màu cho mã màu và định dạng Markdown ngắn.
+// Mã mục thành link và giữ định dạng Markdown ngắn.
 const md = (s, bo = '') => esc(s)
   .replace(RE_MA, (ma) => ma === bo ? ma : `<a class="lien" href="#${THEO_MA.get(ma).loai.id}--${ma}" title="${esc(THEO_MA.get(ma).ten)}">${ma}</a>`)
-  .replace(/`(#[0-9A-Fa-f]{6})`/g, '<span class="chip" style="--c:$1"><i></i><code>$1</code></span>')
   .replace(/`([^`]+)`/g, '<code>$1</code>')
   .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
 const laMvp = (n) => /^MVP/.test(n);
-const nhan = (n, rutGon = false) => {
-  if (!n) return '';
-  const text = rutGon && n.length > 14 ? (laMvp(n) ? 'MVP' : 'Sau MVP') : n;
-  return `<span class="nhan" title="${esc(n)}">${esc(text)}</span>`;
-};
 const chuCai = (t) => t.split(/\s+/).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
 const bieuTuong = (d) => `<svg class="bieu-tuong" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${d}"/></svg>`;
 const ICON = {
@@ -343,10 +304,8 @@ function duongDan() {
   return { loai, muc: muc?.loai === loai ? muc : null };
 }
 
-$('#loai').innerHTML = DATA.loai.map((l) => {
-  const n = l.nhom.reduce((s, g) => s + g.muc.length, 0);
-  return `<a href="#${l.id}" data-loai="${l.id}">${esc(l.ten)}<span class="so">${n}</span></a>`;
-}).join('');
+$('#loai').innerHTML = DATA.loai.map((l) =>
+  `<a href="#${l.id}" data-loai="${l.id}">${esc(l.ten)}</a>`).join('');
 
 function veDanhSach() {
   const { loai, muc: dangXem } = duongDan();
@@ -365,7 +324,6 @@ function veDanhSach() {
         <a class="dong" href="#${loai.id}--${m.ma}" ${m === dangChon ? 'aria-current="page"' : ''}>
           ${anhNho(m)}
           <span class="ten-muc">${esc(m.ten)}<span class="ma">${esc(m.ma)}</span></span>
-          ${nhan(m.nhan, true)}
         </a></li>`).join('')}</ul></details>`;
   }).join('');
   $('#ds').innerHTML = html || '<p class="khong-khop">Không có mục nào khớp</p>';
@@ -376,19 +334,13 @@ function veHoSo(loai, daChon) {
   const m = daChon || (mobile.matches ? null : loai.nhom[0].muc[0]);
   $('#wiki').classList.toggle('chi-tiet', !!daChon);
   if (!m) { $('#xem').innerHTML = ''; document.title = 'The Novent Wiki'; return; }
-  const nhanh = loai.nhanh.map((k) => m.truong.find((t) => t[0] === k && t[1].length <= 60)).filter(Boolean).slice(0, 4);
-  const mauTruong = m.truong.find((t) => /màu nhận diện/i.test(t[0]));
   const cung = m.nhom.muc, i = cung.indexOf(m);
   const ke = (x, huong) => x ? `<a href="#${loai.id}--${x.ma}" class="nut ${huong === 'toi' ? 'sau' : ''}">
     ${huong === 'lui' ? ICON.lui : ''}<span>${esc(x.ten)}</span>${huong === 'toi' ? ICON.toi : ''}</a>` : '';
-  const phan = [...m.phan.map((p) => ({ ten: p.ten, html: `<dl>${p.truong.map(([k, v]) => `
-    <div class="truong"><dt>${esc(k)}</dt><dd>${md(v, m.ma)}</dd></div>`).join('')}</dl>` })),
-    ...m.bangCon.map((b) => {
-      const ten = m.phan.some((p) => p.ten === b.ten) ? `${b.ten}, bảng` : b.ten;
-      return { ten, html: `<div class="bo-bang" tabindex="0" role="region" aria-label="${esc(ten)}"><table>
-        <thead><tr>${b.head.map((h) => `<th scope="col">${esc(h)}</th>`).join('')}</tr></thead>
-        <tbody>${b.rows.map((r) => `<tr>${b.head.map((_, k) => `<td>${md(r[k] || '', m.ma)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` };
-    })];
+  const noiDung = m.phan.map((p) => `<div class="phan">
+    ${m.phan.length > 1 ? `<h2>${esc(p.ten)}</h2>` : ''}
+    <dl>${p.truong.map(([k, v]) => `<div class="truong"><dt>${esc(k)}</dt><dd>${md(v, m.ma)}</dd></div>`).join('')}</dl>
+  </div>`).join('');
   document.title = `${m.ten} - The Novent Wiki`;
   $('#xem').innerHTML = `
     <a id="nut-lui" class="nut" href="#${loai.id}">${ICON.lui} Danh sách</a>
@@ -398,27 +350,19 @@ function veHoSo(loai, daChon) {
           <ol class="duong-dan" aria-label="Vị trí trong danh mục">
             <li><a href="#${loai.id}">${esc(loai.ten)}</a></li><li>${esc(m.nhom.ten)}</li><li class="ma">${esc(m.ma)}</li>
           </ol>
-          <div class="tieu-de"><h1 id="ten-ho-so" tabindex="-1">${esc(m.ten)}</h1>${nhan(m.nhan)}</div>
+          <div class="tieu-de"><h1 id="ten-ho-so" tabindex="-1">${esc(m.ten)}</h1>${m.nhan ? `<span class="nhan">${esc(m.nhan)}</span>` : ''}</div>
           ${m.tenPhu ? `<p class="ten-phu">${md(m.tenPhu)}</p>` : ''}
-          ${mauTruong ? `<p class="nhan-dien">${md(mauTruong[1])}</p>` : ''}
-          ${nhanh.length ? `<dl class="tom-tat">${nhanh.map(([k, v]) => `
-            <div><dt>${esc(k)}</dt><dd>${md(v, m.ma)}</dd></div>`).join('')}</dl>` : ''}
+          ${m.anh ? noiDung : ''}
         </div>
         ${m.anh ? `<button id="anh-concept" class="concept" type="button" aria-haspopup="dialog">
           <img src="${esc(m.anh)}" alt="Concept ${esc(m.ten)}">
           <span>Phóng to concept ${ICON.phong}</span>
         </button>` : ''}
       </header>
-      ${phan.length > 2 ? `<nav class="muc-luc" aria-label="Các phần trong hồ sơ">${phan.map((p, k) =>
-        `<button type="button" data-phan="${k}">${esc(p.ten)}</button>`).join('')}</nav>` : ''}
-      <div class="than-ho-so">
-        ${phan.map((p, k) => `<section id="phan-${k}" class="phan" tabindex="-1"><h2>${esc(p.ten)}</h2>${p.html}</section>`).join('')}
-        ${m.nhom.ghiChu.length ? `<details class="ghi-chu">
-          <summary>Ghi chú chung cho nhóm ${esc(m.nhom.ten)}</summary>
-          ${m.nhom.ghiChu.map((p) => `<p>${md(p)}</p>`).join('')}</details>` : ''}
+      ${!m.anh || cung.length > 1 ? `<div class="than-ho-so">
+        ${m.anh ? '' : noiDung}
         ${cung.length > 1 ? `<nav class="ke-ho-so" aria-label="Hồ sơ cùng nhóm">${ke(cung[i - 1], 'lui')}${ke(cung[i + 1], 'toi')}</nav>` : ''}
-        <p class="nguon">Nguồn GDD <cite>${esc(m.nhom.nguon)}</cite></p>
-      </div>
+      </div>` : ''}
     </article>`;
   $('#anh-concept')?.addEventListener('click', () => {
     $('#khung-anh').innerHTML = `<img src="${esc(m.anh)}" alt="Concept ${esc(m.ten)}">`;
@@ -442,13 +386,6 @@ addEventListener('hashchange', () => {
   scrollTo(0, 0);
 });
 mobile.addEventListener('change', ve);
-$('#xem').addEventListener('click', (e) => {
-  const nut = e.target.closest('[data-phan]');
-  if (!nut) return;
-  const muc = $(`#phan-${nut.dataset.phan}`);
-  muc.focus({ preventScroll: true });
-  muc.scrollIntoView({ block: 'start' });
-});
 $('#tim').addEventListener('input', (e) => { tu = chuan(e.target.value.trim()); veDanhSach(); });
 addEventListener('keydown', (e) => {
   if (e.key === '/' && !e.ctrlKey && !e.metaKey && !e.altKey && !$('#phong').open && document.activeElement !== $('#tim')) {

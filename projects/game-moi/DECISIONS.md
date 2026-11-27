@@ -547,3 +547,5 @@ Lead gửi khung 4 hình mẫu tính cách (CN, Disney), hình học cơ bản v
 ## 2026-11-27 - Giao diện wiki The Novent
 
 Lead yêu cầu rà lại giao diện wiki theo [unslop](https://github.com/heydamir/unslop) của Damir Sokolovsky. GDM chọn bố cục sổ tra cứu trên trạm, dùng cam Ember cho mục đang chọn và concept nhân vật làm điểm nhấn. Giữ bộ lọc, link theo mã và ảnh hiện có. Tìm kiếm nhận cả chữ có dấu và không dấu.
+
+Lead yêu cầu giản lược thông tin wiki. GDM chốt xuất các trường phục vụ tra cứu, bỏ bảng art, thông số sim, ghi chú nội bộ và thông tin lặp. Vai trò nhân vật, cách gặp và đối phó Driftlife, công thức, nguồn nhận và công dụng vật phẩm lấy từ GDD. Một số vai truyện được tóm tắt để bỏ chi tiết diễn biến.
