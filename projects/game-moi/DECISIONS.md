@@ -543,3 +543,7 @@ Lead gửi khung 4 hình mẫu tính cách (CN, Disney), hình học cơ bản v
 - Lead xem concept bản 3 (vẽ theo ảnh mẫu): "giờ thì người bị to quá béo béo". Tỉ lệ chung chốt ở giữa: khoảng 5,5 đầu, thân gọn khỏe, bàn tay và giày cỡ thường. Giữ chất vẽ của ảnh mẫu (nét mực, vết vá, bẩn, màu ấm).
 - Lead xem bảng so dáng bản 4: "nữ dáng người cao nhưng đừng để nó cao hơn mấy thằng đàn ông chứ". Niamh từ 1,2 u xuống 0,98 u, giữ dáng cao mảnh. Thứ tự chiều cao: Jonas 1,1, Việt 1,0, Niamh 0,98, Mei 0,9. PC nữ không cao hơn PC nam.
 - Lead: "Public web", rồi "Tôi muốn public web cơ", "Cho đẩy và bật". Wiki đăng công khai bằng GitHub Pages ở https://huycv18.github.io/DATN-SP27/, chạy từ nhánh `gh-pages` (chỉ chứa bản dựng của `xuat-wiki.mjs --pages`). Bản Artifact claude.ai vẫn giữ, mặc định riêng tư. Đẩy lại `gh-pages` khi wiki đổi vẫn cần Lead cho push.
+
+## 2026-11-27 - Giao diện wiki The Novent
+
+Lead yêu cầu rà lại giao diện wiki theo [unslop](https://github.com/heydamir/unslop) của Damir Sokolovsky. GDM chọn bố cục sổ tra cứu trên trạm, dùng cam Ember cho mục đang chọn và concept nhân vật làm điểm nhấn. Giữ bộ lọc, link theo mã và ảnh hiện có. Tìm kiếm nhận cả chữ có dấu và không dấu.

@@ -1,6 +1,6 @@
 # Wiki The Novent
 
-Trang tra thông tin game: hồ sơ nhân vật, sau này thêm Driftlife, item. Mở `index.html` qua một server tĩnh ở gốc repo để ảnh concept hiện đúng (cấu hình `wiki` trong `.claude/launch.json`, cổng 8796), rồi vào `/projects/game-moi/wiki/index.html`.
+Tra hồ sơ nhân vật, Driftlife, vật phẩm, công thức và điểm khai thác. Mở `index.html` qua một server tĩnh ở gốc repo để ảnh concept hiện đúng (cấu hình `wiki` trong `.claude/launch.json`, cổng 8796), rồi vào `/projects/game-moi/wiki/index.html`.
 
 | File | Vai trò |
 |---|---|

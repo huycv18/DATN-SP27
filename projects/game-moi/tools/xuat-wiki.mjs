@@ -206,7 +206,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     let cu = '';
     try { cu = readFileSync(RA, 'utf8'); } catch {}
     // git autocrlf trả CRLF trên Windows, so theo nội dung.
-    if (cu.replace(/\r\n/g, '\n') !== html) { console.log('TRẢ LẠI  wiki/index.html cũ hơn GDD, chạy lại node projects/game-moi/tools/xuat-wiki.mjs'); process.exit(1); }
+    if (cu.replace(/\r\n/g, '\n') !== html.replace(/\r\n/g, '\n')) { console.log('TRẢ LẠI  wiki/index.html cũ hơn GDD, chạy lại node projects/game-moi/tools/xuat-wiki.mjs'); process.exit(1); }
     console.log(`ĐẠT  wiki khớp GDD. ${dem}`);
   } else if (process.argv.includes('--pages')) {
     // Bản GitHub Pages: giữ nguyên trang, chỉ đưa ảnh về anh/ cạnh trang. .nojekyll để Pages phục vụ file y nguyên.
