@@ -17,6 +17,15 @@ Một câu: tỉnh dậy trên trạm hỏng giữa bãi vỡ của tàu mẹ, m
 | Nhóm | 1 Game Designer, 4 Game Developer, 1 Artist 2D |
 | Cách định nghĩa | Lead đưa ý tưởng, phòng cùng phát triển, chốt từng bước |
 
+## Hai repo của dự án
+
+| Repo | Là gì | Máy công ty |
+|---|---|---|
+| `huycv18/DATN-SP27` (repo này) | Thiết kế: GDD, sim, tool thiết kế, art direction. Phòng Game Designer làm ở đây | `D:\DATN SP27` và các worktree |
+| `huyhao27/The-Novent` | Code game Unity, là sản phẩm cuối. Asset nằm ở submodule `Assets/NoventAssets` (repo private `huyhao27/the-novent-assets`) | `D:\GitHub\The-Novent` |
+
+The-Novent có bộ `.claude/` riêng (luật code, skill, hook), làm trong repo đó thì theo `.claude/CLAUDE.md` của nó. Phòng Game Designer không sửa code gameplay ở The-Novent, chỉ bàn giao yêu cầu và data.
+
 Vì là dự án Unity: việc cần Unity Editor làm ở phiên cục bộ hoặc Remote Control, phiên Đám mây chỉ làm được tài liệu và script.
 
 ## Quy tắc cho mọi phiên (kể cả phiên đám mây, vốn không đọc CLAUDE.md global của máy)
@@ -32,6 +41,7 @@ Vì là dự án Unity: việc cần Unity Editor làm ở phiên cục bộ ho�
 - 2026-11-20: Tách nhánh theo máy và công cụ (Lead: "tách 3 nhánh cho 1 Claude trên công ty, 1 Claude trên Laptop Ahy G15, 1 CodeX trên công ty"). Bảng và luật ở mục Nhánh theo máy dưới đây.
 - 2026-11-25: Tách nhánh `art` từ `main` (Lead: "tách 1 nhánh art ra cho t"), worktree `D:\DATN-SP27-art`. Theo luật chung của bảng nhánh.
 - 2026-11-25: Lead: "tự động commit và push". Phiên `claude-cty` tự commit khi qua cổng máy và tự push nhánh `claude-cty`. Không áp cho `main` và nhánh khác.
+- 2026-11-27: Lead làm rõ hai repo: DATN-SP27 phục vụ việc GDD, The-Novent (`huyhao27/The-Novent`) là repo code game, sản phẩm sau này. Unity project đã có ở The-Novent, thay giả định "chưa tạo Unity project" ngày 2026-11-19. Bảng ở mục Hai repo của dự án.
 
 ## Nhánh theo máy
 
